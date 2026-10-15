@@ -171,6 +171,15 @@
     "fecha_consulta": "2026-10-14"
   },
   {
+    "id": "os-ibs",
+    "titulo": "Introductory Business Statistics 2e",
+    "autor_editor": "OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introductory-business-statistics-2e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
     "id": "os-calc1",
     "titulo": "Calculus Volume 1",
     "autor_editor": "Gilbert Strang, Edwin Herman · OpenStax (Rice University)",

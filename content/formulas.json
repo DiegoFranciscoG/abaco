@@ -1,0 +1,6301 @@
+[
+  {
+    "id": "ecuacion-contable",
+    "nombre": "Ecuación contable",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Todo lo que la empresa controla (activos) se financia con deudas (pasivos) o con recursos de los dueños (patrimonio). La igualdad se cumple después de cada transacción.",
+    "latex": "A = P + Pt",
+    "variables": [
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Activo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Pasivo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Pt",
+        "nombre": "Pt",
+        "significado": "Patrimonio",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Los valores están medidos en la misma fecha y en la misma moneda."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "P + Pt"
+    },
+    "excel": {
+      "es": "=P+Pt",
+      "en": "=P+Pt"
+    },
+    "ejemplo": {
+      "enunciado": "Comercial El Ejido (empresa ficticia) tiene pasivos por USD 18.500 y un patrimonio de USD 41.500. ¿Cuál es su activo total?",
+      "entradas": {
+        "P": 18500,
+        "Pt": 41500
+      },
+      "celdas": {
+        "B1": 18500,
+        "B2": 41500
+      },
+      "pasos": [
+        "A = P + Pt",
+        "A = 18.500,00 + 41.500,00",
+        "A = 60.000,00"
+      ],
+      "resultado": 60000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1+B2",
+      "excel_en": "=B1+B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2 Activos, pasivos y patrimonio"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "patrimonio",
+    "nombre": "Patrimonio (activo neto)",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "El patrimonio es lo que queda para los dueños después de restar las deudas al activo.",
+    "latex": "Pt = A - P",
+    "variables": [
+      {
+        "simbolo": "Pt",
+        "nombre": "Pt",
+        "significado": "Patrimonio",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Activo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Pasivo total",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A - P"
+    },
+    "excel": {
+      "es": "=A-P",
+      "en": "=A-P"
+    },
+    "ejemplo": {
+      "enunciado": "Una ferretería registra activos por USD 75.200 y pasivos por USD 30.450. Calcula su patrimonio.",
+      "entradas": {
+        "A": 75200,
+        "P": 30450
+      },
+      "celdas": {
+        "B1": 75200,
+        "B2": 30450
+      },
+      "pasos": [
+        "Pt = A − P",
+        "Pt = 75.200,00 − 30.450,00",
+        "Pt = 44.750,00"
+      ],
+      "resultado": 44750.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2",
+      "excel_en": "=B1-B2"
+    },
+    "aparece_en": [
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2 Activos, pasivos y patrimonio"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "ecuacion-contable-ampliada",
+    "nombre": "Ecuación contable ampliada",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Abre el patrimonio en sus componentes: aportes de los dueños, ingresos, gastos y retiros. Muestra cómo el resultado del período cambia el patrimonio.",
+    "latex": "A = P + C + I - G - R",
+    "variables": [
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Activo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Pasivo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Capital aportado por los dueños",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "I",
+        "nombre": "I",
+        "significado": "Ingresos del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "G",
+        "nombre": "G",
+        "significado": "Gastos del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "R",
+        "nombre": "R",
+        "significado": "Retiros o dividendos",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "P + C + I - G - R"
+    },
+    "excel": {
+      "es": "=P+C+I-G-R",
+      "en": "=P+C+I-G-R"
+    },
+    "ejemplo": {
+      "enunciado": "Un estudio contable tiene pasivos de USD 12.000, capital aportado de USD 30.000, ingresos de USD 9.500, gastos de USD 6.200 y retiros del dueño por USD 800. ¿Cuánto suma su activo?",
+      "entradas": {
+        "P": 12000,
+        "C": 30000,
+        "I": 9500,
+        "G": 6200,
+        "R": 800
+      },
+      "celdas": {
+        "B1": 12000,
+        "B2": 30000,
+        "B3": 9500,
+        "B4": 6200,
+        "B5": 800
+      },
+      "pasos": [
+        "A = P + C + I − G − R",
+        "A = 12.000,00 + 30.000,00 + 9.500,00 − 6.200,00 − 800,00",
+        "A = 44.500,00"
+      ],
+      "resultado": 44500.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1+B2+B3-B4-B5",
+      "excel_en": "=B1+B2+B3-B4-B5"
+    },
+    "aparece_en": [
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
+      "seccion": "3.2 Ecuación contable ampliada"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "saldo-cuenta-deudora",
+    "nombre": "Saldo de una cuenta de naturaleza deudora",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "En una cuenta de activo o de gasto el saldo normal es deudor: suma de cargos (Debe) menos suma de abonos (Haber).",
+    "latex": "S = \\sum D - \\sum H",
+    "variables": [
+      {
+        "simbolo": "\\sum D",
+        "nombre": "debe",
+        "significado": "Cargos registrados en el Debe",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "\\sum H",
+        "nombre": "haber",
+        "significado": "Abonos registrados en el Haber",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Cuenta de naturaleza deudora (activos y gastos). En pasivos, patrimonio e ingresos el saldo normal se calcula al revés."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM(debe) - SUM(haber)"
+    },
+    "excel": {
+      "es": "=SUMA(Debe)-SUMA(Haber)",
+      "en": "=SUM(Debit)-SUM(Credit)"
+    },
+    "ejemplo": {
+      "enunciado": "La cuenta Caja registró cargos de USD 1.200, 450 y 300, y abonos de USD 700 y 150. ¿Cuál es su saldo?",
+      "entradas": {
+        "debe": [
+          1200,
+          450,
+          300
+        ],
+        "haber": [
+          700,
+          150
+        ]
+      },
+      "celdas": {
+        "B2": 1200,
+        "B3": 450,
+        "B4": 300,
+        "C2": 700,
+        "C3": 150
+      },
+      "pasos": [
+        "Σ Debe = 1.200 + 450 + 300 = 1.950,00",
+        "Σ Haber = 700 + 150 = 850,00",
+        "Saldo = 1.950,00 − 850,00 = 1.100,00 (deudor)"
+      ],
+      "resultado": 1100.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=SUMA(B2:B4)-SUMA(C2:C3)",
+      "excel_en": "=SUM(B2:B4)-SUM(C2:C3)"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad comercial"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5 Asientos de diario y cuentas T"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "comprobacion-partida-doble",
+    "nombre": "Comprobación de la partida doble",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "En un balance de comprobación la suma de saldos deudores debe ser igual a la suma de saldos acreedores. Una diferencia distinta de cero indica un error de registro o de pase al mayor.",
+    "latex": "\\Delta = \\sum \\text{Debe} - \\sum \\text{Haber} = 0",
+    "variables": [
+      {
+        "simbolo": "\\sum \\text{Debe}",
+        "nombre": "debe",
+        "significado": "Saldos deudores",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "\\sum \\text{Haber}",
+        "nombre": "haber",
+        "significado": "Saldos acreedores",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Un balance cuadrado no garantiza que no haya errores: un asiento omitido o registrado en la cuenta equivocada no altera la igualdad."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM(debe) - SUM(haber)"
+    },
+    "excel": {
+      "es": "=SUMA(Debe)-SUMA(Haber)",
+      "en": "=SUM(Debit)-SUM(Credit)"
+    },
+    "ejemplo": {
+      "enunciado": "Saldos deudores: Caja 5.400, Inventario 2.600, Gastos 1.000. Saldos acreedores: Proveedores 3.000, Capital 6.000. ¿Cuadra el balance?",
+      "entradas": {
+        "debe": [
+          5400,
+          2600,
+          1000
+        ],
+        "haber": [
+          3000,
+          6000
+        ]
+      },
+      "celdas": {
+        "B2": 5400,
+        "B3": 2600,
+        "B4": 1000,
+        "C2": 3000,
+        "C3": 6000
+      },
+      "pasos": [
+        "Σ Debe = 5.400 + 2.600 + 1.000 = 9.000,00",
+        "Σ Haber = 3.000 + 6.000 = 9.000,00",
+        "Diferencia = 0 → el balance cuadra"
+      ],
+      "resultado": 0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=SUMA(B2:B4)-SUMA(C2:C3)",
+      "excel_en": "=SUM(B2:B4)-SUM(C2:C3)"
+    },
+    "aparece_en": [
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "seccion": "3.6 Balance de comprobación"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "utilidad-neta",
+    "nombre": "Utilidad (o pérdida) neta",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Resultado del período en el estado de resultados: ingresos menos gastos. Si es negativo, hay pérdida.",
+    "latex": "UN = I - G",
+    "variables": [
+      {
+        "simbolo": "UN",
+        "nombre": "UN",
+        "significado": "Utilidad neta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "I",
+        "nombre": "I",
+        "significado": "Ingresos del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "G",
+        "nombre": "G",
+        "significado": "Gastos del período",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "I - G"
+    },
+    "excel": {
+      "es": "=I-G",
+      "en": "=I-G"
+    },
+    "ejemplo": {
+      "enunciado": "Una consultora facturó USD 48.300 en el año y sus gastos sumaron USD 39.875. ¿Cuál fue su utilidad neta?",
+      "entradas": {
+        "I": 48300,
+        "G": 39875
+      },
+      "celdas": {
+        "B1": 48300,
+        "B2": 39875
+      },
+      "pasos": [
+        "UN = I − G",
+        "UN = 48.300,00 − 39.875,00",
+        "UN = 8.425,00"
+      ],
+      "resultado": 8425.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2",
+      "excel_en": "=B1-B2"
+    },
+    "aparece_en": [
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+      "seccion": "2.1 Estados financieros"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "ventas-netas",
+    "nombre": "Ventas netas",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Ventas brutas menos devoluciones y descuentos concedidos a los clientes.",
+    "latex": "VN = VB - Dv - Ds",
+    "variables": [
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Ventas netas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VB",
+        "nombre": "VB",
+        "significado": "Ventas brutas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Dv",
+        "nombre": "Dv",
+        "significado": "Devoluciones en ventas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Ds",
+        "nombre": "Ds",
+        "significado": "Descuentos en ventas",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VB - Dv - Ds"
+    },
+    "excel": {
+      "es": "=VB-Dv-Ds",
+      "en": "=VB-Dv-Ds"
+    },
+    "ejemplo": {
+      "enunciado": "Una distribuidora vendió USD 85.000; los clientes devolvieron mercadería por USD 2.300 y se concedieron descuentos por pronto pago de USD 1.700.",
+      "entradas": {
+        "VB": 85000,
+        "Dv": 2300,
+        "Ds": 1700
+      },
+      "celdas": {
+        "B1": 85000,
+        "B2": 2300,
+        "B3": 1700
+      },
+      "pasos": [
+        "VN = VB − Dv − Ds",
+        "VN = 85.000,00 − 2.300,00 − 1.700,00",
+        "VN = 81.000,00"
+      ],
+      "resultado": 81000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2-B3",
+      "excel_en": "=B1-B2-B3"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad comercial"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-4-analyze-and-record-transactions-for-the-sale-of-merchandise-using-the-perpetual-inventory-system",
+      "seccion": "6.4 Ventas, devoluciones y descuentos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "compras-netas",
+    "nombre": "Compras netas",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Costo de las compras del período ajustado por fletes pagados y por devoluciones y descuentos obtenidos de los proveedores.",
+    "latex": "CN = Co + Fl - Dc - Dd",
+    "variables": [
+      {
+        "simbolo": "CN",
+        "nombre": "CN",
+        "significado": "Compras netas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Co",
+        "nombre": "Co",
+        "significado": "Compras brutas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Fl",
+        "nombre": "Fl",
+        "significado": "Fletes en compras",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Dc",
+        "nombre": "Dc",
+        "significado": "Devoluciones en compras",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Dd",
+        "nombre": "Dd",
+        "significado": "Descuentos en compras",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Sistema de inventario periódico."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Co + Fl - Dc - Dd"
+    },
+    "excel": {
+      "es": "=Co+Fl-Dc-Dd",
+      "en": "=Co+Fl-Dc-Dd"
+    },
+    "ejemplo": {
+      "enunciado": "Se compró mercadería por USD 40.000, se pagaron fletes de USD 1.200, se devolvió mercadería por USD 900 y se obtuvieron descuentos de USD 600.",
+      "entradas": {
+        "Co": 40000,
+        "Fl": 1200,
+        "Dc": 900,
+        "Dd": 600
+      },
+      "celdas": {
+        "B1": 40000,
+        "B2": 1200,
+        "B3": 900,
+        "B4": 600
+      },
+      "pasos": [
+        "CN = Co + Fl − Dc − Dd",
+        "CN = 40.000,00 + 1.200,00 − 900,00 − 600,00",
+        "CN = 39.700,00"
+      ],
+      "resultado": 39700.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1+B2-B3-B4",
+      "excel_en": "=B1+B2-B3-B4"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad comercial"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-7-appendix-analyze-and-record-transactions-for-merchandise-purchases-and-sales-using-the-periodic-inventory-system",
+      "seccion": "6.7 Sistema periódico"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "costo-ventas-periodico",
+    "nombre": "Costo de ventas (sistema periódico)",
+    "categoria": "inventarios",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Lo que costó la mercadería vendida: lo que había al inicio más lo que se compró, menos lo que quedó al final.",
+    "latex": "CV = II + CN - IF",
+    "variables": [
+      {
+        "simbolo": "CV",
+        "nombre": "CV",
+        "significado": "Costo de ventas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "II",
+        "nombre": "II",
+        "significado": "Inventario inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CN",
+        "nombre": "CN",
+        "significado": "Compras netas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IF",
+        "nombre": "IF",
+        "significado": "Inventario final (conteo físico)",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "El inventario final se determina por conteo físico y se valora con un método de costeo (PEPS o promedio)."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "II + CN - IF"
+    },
+    "excel": {
+      "es": "=II+CN-IF",
+      "en": "=II+CN-IF"
+    },
+    "ejemplo": {
+      "enunciado": "Inventario inicial USD 12.000, compras netas USD 39.700 e inventario final USD 9.800. ¿Cuál es el costo de ventas?",
+      "entradas": {
+        "II": 12000,
+        "CN": 39700,
+        "IF": 9800
+      },
+      "celdas": {
+        "B1": 12000,
+        "B2": 39700,
+        "B3": 9800
+      },
+      "pasos": [
+        "CV = II + CN − IF",
+        "CV = 12.000,00 + 39.700,00 − 9.800,00",
+        "CV = 41.900,00"
+      ],
+      "resultado": 41900.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1+B2-B3",
+      "excel_en": "=B1+B2-B3"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad comercial",
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Costo de ventas e inventario final (periódico)"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "utilidad-bruta",
+    "nombre": "Utilidad bruta en ventas",
+    "categoria": "contabilidad-basica",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Margen que deja la venta de mercadería antes de los gastos operativos.",
+    "latex": "UB = VN - CV",
+    "variables": [
+      {
+        "simbolo": "UB",
+        "nombre": "UB",
+        "significado": "Utilidad bruta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Ventas netas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CV",
+        "nombre": "CV",
+        "significado": "Costo de ventas",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VN - CV"
+    },
+    "excel": {
+      "es": "=VN-CV",
+      "en": "=VN-CV"
+    },
+    "ejemplo": {
+      "enunciado": "Con ventas netas de USD 81.000 y costo de ventas de USD 41.900, calcula la utilidad bruta.",
+      "entradas": {
+        "VN": 81000,
+        "CV": 41900
+      },
+      "celdas": {
+        "B1": 81000,
+        "B2": 41900
+      },
+      "pasos": [
+        "UB = VN − CV",
+        "UB = 81.000,00 − 41.900,00",
+        "UB = 39.100,00"
+      ],
+      "resultado": 39100.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2",
+      "excel_en": "=B1-B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad comercial"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-6-describe-and-prepare-multi-step-and-simple-income-statements-for-merchandising-companies",
+      "seccion": "6.6 Estado de resultados de varios pasos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "margen-bruto",
+    "nombre": "Margen bruto",
+    "categoria": "razones-financieras",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "descripcion": "Qué parte de cada dólar vendido queda después de cubrir el costo de la mercadería.",
+    "latex": "MB = \\frac{UB}{VN}",
+    "variables": [
+      {
+        "simbolo": "MB",
+        "nombre": "MB",
+        "significado": "Margen bruto",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "UB",
+        "nombre": "UB",
+        "significado": "Utilidad bruta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Ventas netas",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "UB / VN"
+    },
+    "excel": {
+      "es": "=UB/VN",
+      "en": "=UB/VN"
+    },
+    "ejemplo": {
+      "enunciado": "La utilidad bruta es USD 39.100 y las ventas netas USD 81.000. ¿Cuál es el margen bruto?",
+      "entradas": {
+        "UB": 39100,
+        "VN": 81000
+      },
+      "celdas": {
+        "B1": 39100,
+        "B2": 81000
+      },
+      "pasos": [
+        "MB = UB ÷ VN",
+        "MB = 39.100,00 ÷ 81.000,00",
+        "MB = 0,4827 ≈ 48,27 %"
+      ],
+      "resultado": 0.4827,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-6-describe-and-prepare-multi-step-and-simple-income-statements-for-merchandising-companies",
+      "seccion": "6.6 Margen bruto"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "margen-neto",
+    "nombre": "Margen neto (de utilidad)",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Qué parte de cada dólar vendido termina como utilidad neta después de todos los gastos e impuestos.",
+    "latex": "MN = \\frac{UN}{VN}",
+    "variables": [
+      {
+        "simbolo": "MN",
+        "nombre": "MN",
+        "significado": "Margen neto",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "UN",
+        "nombre": "UN",
+        "significado": "Utilidad neta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Ventas netas",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "UN / VN"
+    },
+    "excel": {
+      "es": "=UN/VN",
+      "en": "=UN/VN"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa ganó USD 12.800 netos sobre ventas de USD 200.000. ¿Cuál es su margen neto?",
+      "entradas": {
+        "UN": 12800,
+        "VN": 200000
+      },
+      "celdas": {
+        "B1": 12800,
+        "B2": 200000
+      },
+      "pasos": [
+        "MN = UN ÷ VN",
+        "MN = 12.800,00 ÷ 200.000,00",
+        "MN = 0,0640 = 6,40 %"
+      ],
+      "resultado": 0.064,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "finanza",
+      "contabilidad financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
+      "seccion": "6.6 Margen de utilidad"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "costo-promedio-ponderado",
+    "nombre": "Costo unitario promedio ponderado",
+    "categoria": "inventarios",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Costo de cada unidad disponible cuando se mezclan lotes comprados a precios distintos: costo total disponible dividido para las unidades disponibles.",
+    "latex": "\\bar{c} = \\frac{\\sum u_i c_i}{\\sum u_i}",
+    "variables": [
+      {
+        "simbolo": "u_i",
+        "nombre": "u",
+        "significado": "Unidades de cada lote (incluye el inventario inicial)",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "c_i",
+        "nombre": "c",
+        "significado": "Costo unitario de cada lote",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "supuestos": [
+      "Sistema periódico: el promedio se calcula una vez con todas las unidades disponibles del período."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUMPRODUCT(u, c) / SUM(u)"
+    },
+    "excel": {
+      "es": "=SUMAPRODUCTO(Unidades;Costos)/SUMA(Unidades)",
+      "en": "=SUMPRODUCT(Units,Costs)/SUM(Units)"
+    },
+    "ejemplo": {
+      "enunciado": "Inventario inicial: 100 u a USD 5,00. Compras: 200 u a USD 5,60 y 100 u a USD 6,20. ¿Cuál es el costo promedio ponderado?",
+      "entradas": {
+        "u": [
+          100,
+          200,
+          100
+        ],
+        "c": [
+          5.0,
+          5.6,
+          6.2
+        ]
+      },
+      "celdas": {
+        "B2": 100,
+        "B3": 200,
+        "B4": 100,
+        "C2": 5,
+        "C3": 5.6,
+        "C4": 6.2
+      },
+      "pasos": [
+        "Costo disponible = 100×5,00 + 200×5,60 + 100×6,20 = 500 + 1.120 + 620 = 2.240,00",
+        "Unidades disponibles = 100 + 200 + 100 = 400",
+        "Costo promedio = 2.240,00 ÷ 400 = 5,60"
+      ],
+      "resultado": 5.6,
+      "unidad": "USD/unidad",
+      "tolerancia": 5e-05,
+      "excel_es": "=SUMAPRODUCTO(B2:B4;C2:C4)/SUMA(B2:B4)",
+      "excel_en": "=SUMPRODUCT(B2:B4,C2:C4)/SUM(B2:B4)"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Promedio ponderado"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "costo-ventas-promedio",
+    "nombre": "Costo de ventas con costo promedio",
+    "categoria": "inventarios",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Unidades vendidas por el costo unitario promedio ponderado.",
+    "latex": "CV = q \\cdot \\bar{c}",
+    "variables": [
+      {
+        "simbolo": "q",
+        "nombre": "q",
+        "significado": "Unidades vendidas",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "\\bar{c}",
+        "nombre": "cp",
+        "significado": "Costo promedio ponderado",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "q * cp"
+    },
+    "excel": {
+      "es": "=q*cp",
+      "en": "=q*cp"
+    },
+    "ejemplo": {
+      "enunciado": "Se vendieron 250 unidades y el costo promedio ponderado es USD 5,60. ¿Cuál es el costo de ventas?",
+      "entradas": {
+        "q": 250,
+        "cp": 5.6
+      },
+      "celdas": {
+        "B1": 250,
+        "B2": 5.6
+      },
+      "pasos": [
+        "CV = q × c̄",
+        "CV = 250 × 5,60",
+        "CV = 1.400,00"
+      ],
+      "resultado": 1400.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1*B2",
+      "excel_en": "=B1*B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Promedio ponderado"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "costo-ventas-peps",
+    "nombre": "Costo de ventas por PEPS",
+    "categoria": "inventarios",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Primeras en entrar, primeras en salir: las unidades vendidas se costean empezando por los lotes más antiguos.",
+    "latex": "CV = \\sum_{\\text{lotes antiguos}} q_i \\cdot c_i",
+    "variables": [
+      {
+        "simbolo": "q_1",
+        "nombre": "q1",
+        "significado": "Unidades tomadas del lote más antiguo",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "c_1",
+        "nombre": "c1",
+        "significado": "Costo unitario del lote más antiguo",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "q_2",
+        "nombre": "q2",
+        "significado": "Unidades tomadas del siguiente lote",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "c_2",
+        "nombre": "c2",
+        "significado": "Costo unitario del siguiente lote",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "supuestos": [
+      "Se agota cada lote antes de pasar al siguiente."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "q1 * c1 + q2 * c2"
+    },
+    "excel": {
+      "es": "=q1*c1+q2*c2",
+      "en": "=q1*c1+q2*c2"
+    },
+    "ejemplo": {
+      "enunciado": "Con los lotes del ejemplo anterior (100 u a 5,00; 200 u a 5,60; 100 u a 6,20) se venden 250 unidades. ¿Costo de ventas por PEPS?",
+      "entradas": {
+        "q1": 100,
+        "c1": 5.0,
+        "q2": 150,
+        "c2": 5.6
+      },
+      "celdas": {
+        "B2": 100,
+        "C2": 5.0,
+        "B3": 150,
+        "C3": 5.6
+      },
+      "pasos": [
+        "Primero salen las 100 u del inventario inicial: 100 × 5,00 = 500,00",
+        "Faltan 150 u del lote siguiente: 150 × 5,60 = 840,00",
+        "CV = 500,00 + 840,00 = 1.340,00"
+      ],
+      "resultado": 1340.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B2*C2+B3*C3",
+      "excel_en": "=B2*C2+B3*C3"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 PEPS (FIFO)"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "inventario-final",
+    "nombre": "Inventario final por diferencia",
+    "categoria": "inventarios",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Lo que queda en bodega valorado al costo: costo de la mercadería disponible menos el costo de ventas.",
+    "latex": "IF = CD - CV",
+    "variables": [
+      {
+        "simbolo": "IF",
+        "nombre": "IF",
+        "significado": "Inventario final",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CD",
+        "nombre": "CD",
+        "significado": "Costo de la mercadería disponible",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CV",
+        "nombre": "CV",
+        "significado": "Costo de ventas",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CD - CV"
+    },
+    "excel": {
+      "es": "=CD-CV",
+      "en": "=CD-CV"
+    },
+    "ejemplo": {
+      "enunciado": "El costo disponible fue USD 2.240 y el costo de ventas por PEPS USD 1.340. ¿Cuánto vale el inventario final?",
+      "entradas": {
+        "CD": 2240,
+        "CV": 1340
+      },
+      "celdas": {
+        "B1": 2240,
+        "B2": 1340
+      },
+      "pasos": [
+        "IF = CD − CV",
+        "IF = 2.240,00 − 1.340,00",
+        "IF = 900,00 (50 u a 5,60 + 100 u a 6,20)"
+      ],
+      "resultado": 900.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2",
+      "excel_en": "=B1-B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Mercadería disponible"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "rotacion-inventarios",
+    "nombre": "Rotación de inventarios",
+    "categoria": "razones-financieras",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "descripcion": "Cuántas veces se vendió y repuso el inventario promedio durante el período.",
+    "latex": "RI = \\frac{CV}{(II + IF)/2}",
+    "variables": [
+      {
+        "simbolo": "RI",
+        "nombre": "RI",
+        "significado": "Rotación de inventarios",
+        "unidad": "veces"
+      },
+      {
+        "simbolo": "CV",
+        "nombre": "CV",
+        "significado": "Costo de ventas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "II",
+        "nombre": "II",
+        "significado": "Inventario inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IF",
+        "nombre": "IF",
+        "significado": "Inventario final",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CV / ((II + IF) / 2)"
+    },
+    "excel": {
+      "es": "=CV/PROMEDIO(II;IF)",
+      "en": "=CV/AVERAGE(II,IF)"
+    },
+    "ejemplo": {
+      "enunciado": "Costo de ventas USD 41.900; inventario inicial USD 12.000 y final USD 9.800. ¿Rotación de inventarios?",
+      "entradas": {
+        "CV": 41900,
+        "II": 12000,
+        "IF": 9800
+      },
+      "celdas": {
+        "B1": 41900,
+        "B2": 12000,
+        "B3": 9800
+      },
+      "pasos": [
+        "Inventario promedio = (12.000 + 9.800) ÷ 2 = 10.900,00",
+        "RI = 41.900 ÷ 10.900 = 3,8440 veces"
+      ],
+      "resultado": 3.844,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/PROMEDIO(B2;B3)",
+      "excel_en": "=B1/AVERAGE(B2,B3)"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-5-examine-the-efficiency-of-inventory-management-using-financial-ratios",
+      "seccion": "10.5 Rotación de inventarios"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "dias-inventario",
+    "nombre": "Días de inventario",
+    "categoria": "razones-financieras",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "descripcion": "Cuántos días, en promedio, permanece la mercadería en bodega antes de venderse.",
+    "latex": "DI = \\frac{365 \\cdot \\bar{Inv}}{CV}",
+    "variables": [
+      {
+        "simbolo": "DI",
+        "nombre": "DI",
+        "significado": "Días de inventario",
+        "unidad": "días"
+      },
+      {
+        "simbolo": "\\bar{Inv}",
+        "nombre": "Inv",
+        "significado": "Inventario promedio",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CV",
+        "nombre": "CV",
+        "significado": "Costo de ventas",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Año de 365 días."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "365 * Inv / CV"
+    },
+    "excel": {
+      "es": "=365*Inv/CV",
+      "en": "=365*Inv/CV"
+    },
+    "ejemplo": {
+      "enunciado": "Con inventario promedio de USD 10.900 y costo de ventas de USD 41.900, ¿cuántos días dura el inventario?",
+      "entradas": {
+        "Inv": 10900,
+        "CV": 41900
+      },
+      "celdas": {
+        "B1": 10900,
+        "B2": 41900
+      },
+      "pasos": [
+        "DI = 365 × Inventario promedio ÷ CV",
+        "DI = 365 × 10.900 ÷ 41.900",
+        "DI = 94,95 días"
+      ],
+      "resultado": 94.95,
+      "unidad": "días",
+      "tolerancia": 0.005,
+      "excel_es": "=365*B1/B2",
+      "excel_en": "=365*B1/B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-2-operating-efficiency-ratios",
+      "seccion": "6.2 Razones de eficiencia operativa"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "depreciacion-linea-recta",
+    "nombre": "Depreciación en línea recta",
+    "categoria": "depreciacion",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Reparte el costo depreciable en partes iguales durante la vida útil del activo.",
+    "latex": "D = \\frac{C - VR}{n}",
+    "variables": [
+      {
+        "simbolo": "D",
+        "nombre": "D",
+        "significado": "Depreciación anual",
+        "unidad": "USD/año"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Costo del activo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VR",
+        "nombre": "VR",
+        "significado": "Valor residual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Vida útil",
+        "unidad": "años"
+      }
+    ],
+    "supuestos": [
+      "El activo se usa de manera uniforme durante su vida útil."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(C - VR) / n"
+    },
+    "excel": {
+      "es": "=SLN(C;VR;n)",
+      "en": "=SLN(C,VR,n)"
+    },
+    "ejemplo": {
+      "enunciado": "Un vehículo de reparto cuesta USD 32.000, tiene un valor residual de USD 4.000 y una vida útil de 5 años.",
+      "entradas": {
+        "C": 32000,
+        "VR": 4000,
+        "n": 5
+      },
+      "pasos": [
+        "Costo depreciable = 32.000 − 4.000 = 28.000,00",
+        "D = 28.000 ÷ 5 = 5.600,00 por año"
+      ],
+      "resultado": 5600.0,
+      "unidad": "USD/año",
+      "tolerancia": 0.005,
+      "excel_es": "=SLN(32000;4000;5)",
+      "excel_en": "=SLN(32000,4000,5)"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Métodos de depreciación"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "depreciacion-suma-digitos",
+    "nombre": "Depreciación por suma de dígitos de los años",
+    "categoria": "depreciacion",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Método acelerado: deprecia más en los primeros años usando fracciones decrecientes (n, n−1, …, 1) sobre la suma de los dígitos.",
+    "latex": "D_k = (C - VR)\\cdot\\frac{n - k + 1}{n(n+1)/2}",
+    "variables": [
+      {
+        "simbolo": "D_k",
+        "nombre": "Dk",
+        "significado": "Depreciación del año k",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Costo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VR",
+        "nombre": "VR",
+        "significado": "Valor residual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Vida útil",
+        "unidad": "años"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Año que se calcula",
+        "unidad": "año"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(C - VR) * (n - k + 1) / (n * (n + 1) / 2)"
+    },
+    "excel": {
+      "es": "=SYD(C;VR;n;k)",
+      "en": "=SYD(C,VR,n,k)"
+    },
+    "ejemplo": {
+      "enunciado": "Mismo vehículo (USD 32.000, residual 4.000, 5 años). ¿Depreciación del año 2?",
+      "entradas": {
+        "C": 32000,
+        "VR": 4000,
+        "n": 5,
+        "k": 2
+      },
+      "pasos": [
+        "Suma de dígitos = 5×6÷2 = 15",
+        "Fracción del año 2 = (5 − 2 + 1) ÷ 15 = 4/15",
+        "D₂ = 28.000 × 4/15 = 7.466,67"
+      ],
+      "resultado": 7466.67,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=SYD(32000;4000;5;2)",
+      "excel_en": "=SYD(32000,4000,5,2)"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Métodos de depreciación"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "depreciacion-unidades-produccion",
+    "nombre": "Depreciación por unidades producidas",
+    "categoria": "depreciacion",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "La depreciación sigue al uso real: costo depreciable por unidad multiplicado por las unidades producidas en el período.",
+    "latex": "D = \\frac{C - VR}{U}\\cdot u",
+    "variables": [
+      {
+        "simbolo": "D",
+        "nombre": "D",
+        "significado": "Depreciación del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Costo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VR",
+        "nombre": "VR",
+        "significado": "Valor residual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "U",
+        "nombre": "U",
+        "significado": "Producción total estimada",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "u",
+        "nombre": "u",
+        "significado": "Unidades producidas en el período",
+        "unidad": "unidades"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(C - VR) / U * u"
+    },
+    "excel": {
+      "es": "=(C-VR)/U*u",
+      "en": "=(C-VR)/U*u"
+    },
+    "ejemplo": {
+      "enunciado": "Una máquina de USD 50.000 con valor residual de USD 5.000 producirá 150.000 unidades en su vida. Este año produjo 32.000.",
+      "entradas": {
+        "C": 50000,
+        "VR": 5000,
+        "U": 150000,
+        "u": 32000
+      },
+      "celdas": {
+        "B1": 50000,
+        "B2": 5000,
+        "B3": 150000,
+        "B4": 32000
+      },
+      "pasos": [
+        "Tasa por unidad = (50.000 − 5.000) ÷ 150.000 = 0,30",
+        "D = 0,30 × 32.000 = 9.600,00"
+      ],
+      "resultado": 9600.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=(B1-B2)/B3*B4",
+      "excel_en": "=(B1-B2)/B3*B4"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Unidades de producción"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "depreciacion-doble-saldo",
+    "nombre": "Depreciación por doble saldo decreciente",
+    "categoria": "depreciacion",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Aplica el doble de la tasa de línea recta sobre el valor en libros del inicio de cada año, sin depreciar por debajo del valor residual.",
+    "latex": "D_k = VL_{k-1}\\cdot\\frac{2}{n}",
+    "variables": [
+      {
+        "simbolo": "D_k",
+        "nombre": "Dk",
+        "significado": "Depreciación del año k",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VL_{k-1}",
+        "nombre": "VL",
+        "significado": "Valor en libros al inicio del año",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Vida útil",
+        "unidad": "años"
+      }
+    ],
+    "supuestos": [
+      "El valor residual no entra en la base del cálculo, pero el activo nunca se deprecia por debajo de él."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VL * 2 / n"
+    },
+    "excel": {
+      "es": "=DDB(C;VR;n;k)",
+      "en": "=DDB(C,VR,n,k)"
+    },
+    "ejemplo": {
+      "enunciado": "Vehículo de USD 32.000, residual 4.000, vida 5 años. Año 1: 32.000 × 40 % = 12.800. ¿Depreciación del año 2?",
+      "entradas": {
+        "VL": 19200.0,
+        "n": 5
+      },
+      "pasos": [
+        "Tasa = 2 ÷ 5 = 40 %",
+        "Valor en libros al inicio del año 2 = 32.000 − 12.800 = 19.200,00",
+        "D₂ = 19.200 × 0,40 = 7.680,00"
+      ],
+      "resultado": 7680.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=DDB(32000;4000;5;2)",
+      "excel_en": "=DDB(32000,4000,5,2)"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "contabilidad financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Doble saldo decreciente"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "valor-en-libros",
+    "nombre": "Valor en libros de un activo",
+    "categoria": "depreciacion",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Costo del activo menos la depreciación acumulada hasta la fecha.",
+    "latex": "VL = C - DA",
+    "variables": [
+      {
+        "simbolo": "VL",
+        "nombre": "VL",
+        "significado": "Valor en libros",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Costo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "DA",
+        "nombre": "DA",
+        "significado": "Depreciación acumulada",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "C - DA"
+    },
+    "excel": {
+      "es": "=C-DA",
+      "en": "=C-DA"
+    },
+    "ejemplo": {
+      "enunciado": "El vehículo de USD 32.000 lleva dos años depreciándose en línea recta (5.600 por año). ¿Valor en libros?",
+      "entradas": {
+        "C": 32000,
+        "DA": 11200
+      },
+      "celdas": {
+        "B1": 32000,
+        "B2": 5600
+      },
+      "pasos": [
+        "DA = 2 × 5.600 = 11.200,00",
+        "VL = 32.000 − 11.200",
+        "VL = 20.800,00"
+      ],
+      "resultado": 20800.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-2*B2",
+      "excel_en": "=B1-2*B2"
+    },
+    "aparece_en": [
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Valor en libros"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "interes-simple",
+    "nombre": "Interés simple",
+    "categoria": "interes",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "El interés se calcula siempre sobre el capital inicial: no se suman intereses a intereses.",
+    "latex": "I = P \\cdot i \\cdot t",
+    "variables": [
+      {
+        "simbolo": "I",
+        "nombre": "I",
+        "significado": "Interés",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Capital o principal",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa de interés por unidad de tiempo",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tiempo, en la misma unidad que la tasa",
+        "unidad": "años"
+      }
+    ],
+    "supuestos": [
+      "Tasa y tiempo en la misma unidad (si la tasa es anual y el plazo en meses, t = meses ÷ 12)."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "P * i * t"
+    },
+    "excel": {
+      "es": "=P*i*t",
+      "en": "=P*i*t"
+    },
+    "ejemplo": {
+      "enunciado": "Se prestan USD 2.500 al 9 % anual de interés simple durante 8 meses. ¿Cuánto interés se paga?",
+      "entradas": {
+        "P": 2500,
+        "i": 0.09,
+        "t": 0.6666666666666666
+      },
+      "pasos": [
+        "t = 8 ÷ 12 años",
+        "I = 2.500 × 0,09 × 8/12",
+        "I = 150,00"
+      ],
+      "resultado": 150.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=2500*0,09*8/12",
+      "excel_en": "=2500*0.09*8/12"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "matematica"
+    ],
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/6-3-simple-interest",
+      "seccion": "6.3 Interés simple"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "monto-interes-simple",
+    "nombre": "Monto con interés simple",
+    "categoria": "interes",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Capital más el interés simple acumulado al final del plazo.",
+    "latex": "M = P\\,(1 + i\\,t)",
+    "variables": [
+      {
+        "simbolo": "M",
+        "nombre": "M",
+        "significado": "Monto final",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Capital",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tiempo",
+        "unidad": "años"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "P * (1 + i * t)"
+    },
+    "excel": {
+      "es": "=P*(1+i*t)",
+      "en": "=P*(1+i*t)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuánto se devuelve en total por el préstamo de USD 2.500 al 9 % anual simple a 8 meses?",
+      "entradas": {
+        "P": 2500,
+        "i": 0.09,
+        "t": 0.6666666666666666
+      },
+      "pasos": [
+        "M = 2.500 × (1 + 0,09 × 8/12)",
+        "M = 2.500 × 1,06",
+        "M = 2.650,00"
+      ],
+      "resultado": 2650.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=2500*(1+0,09*8/12)",
+      "excel_en": "=2500*(1+0.09*8/12)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/6-3-simple-interest",
+      "seccion": "6.3 Interés simple"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "monto-compuesto",
+    "nombre": "Valor futuro con interés compuesto",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Los intereses se capitalizan: cada período se gana interés sobre el capital y los intereses anteriores.",
+    "latex": "VF = VA\\,(1+i)^n",
+    "variables": [
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período de capitalización",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de períodos",
+        "unidad": "períodos"
+      }
+    ],
+    "supuestos": [
+      "Tasa constante y capitalización al final de cada período."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VA * (1 + i) ^ n"
+    },
+    "excel": {
+      "es": "=VF(i;n;0;-VA)",
+      "en": "=FV(i,n,0,-VA)"
+    },
+    "ejemplo": {
+      "enunciado": "Se depositan USD 5.000 al 8 % anual capitalizable trimestralmente durante 3 años. ¿Monto final?",
+      "entradas": {
+        "VA": 5000,
+        "i": 0.02,
+        "n": 12
+      },
+      "pasos": [
+        "i = 8 % ÷ 4 = 2 % trimestral; n = 3 × 4 = 12 trimestres",
+        "VF = 5.000 × 1,02¹²",
+        "VF = 6.341,21"
+      ],
+      "resultado": 6341.21,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VF(0,02;12;0;-5000)",
+      "excel_en": "=FV(0.02,12,0,-5000)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/6-4-compound-interest",
+      "seccion": "6.4 Interés compuesto"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "valor-actual",
+    "nombre": "Valor actual de un monto futuro",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Cuánto vale hoy un dinero que se recibirá en el futuro, descontándolo a una tasa por período.",
+    "latex": "VA = \\frac{VF}{(1+i)^n}",
+    "variables": [
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa de descuento por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de períodos",
+        "unidad": "períodos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VF / (1 + i) ^ n"
+    },
+    "excel": {
+      "es": "=VA(i;n;0;-VF)",
+      "en": "=PV(i,n,0,-VF)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuánto hay que invertir hoy al 10 % anual para tener USD 10.000 dentro de 4 años?",
+      "entradas": {
+        "VF": 10000,
+        "i": 0.1,
+        "n": 4
+      },
+      "pasos": [
+        "VA = 10.000 ÷ 1,10⁴",
+        "1,10⁴ = 1,4641",
+        "VA = 6.830,13"
+      ],
+      "resultado": 6830.13,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VA(0,1;4;0;-10000)",
+      "excel_en": "=PV(0.1,4,0,-10000)"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/7-2-time-value-of-money-tvm-basics",
+      "seccion": "7.2 Fundamentos del valor del dinero en el tiempo"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-periodica",
+    "nombre": "Tasa por período a partir de la nominal",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Una tasa nominal anual capitalizable m veces al año equivale a una tasa por período igual a j ÷ m.",
+    "latex": "i = \\frac{j}{m}",
+    "variables": [
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "j",
+        "nombre": "j",
+        "significado": "Tasa nominal anual",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "m",
+        "nombre": "m",
+        "significado": "Capitalizaciones por año",
+        "unidad": "veces/año"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "j / m"
+    },
+    "excel": {
+      "es": "=j/m",
+      "en": "=j/m"
+    },
+    "ejemplo": {
+      "enunciado": "Una tarjeta cobra 18 % anual capitalizable mensualmente. ¿Tasa mensual?",
+      "entradas": {
+        "j": 0.18,
+        "m": 12
+      },
+      "pasos": [
+        "i = 0,18 ÷ 12",
+        "i = 0,015 = 1,5 % mensual"
+      ],
+      "resultado": 0.015,
+      "unidad": "por período",
+      "tolerancia": 5e-07,
+      "excel_es": "=0,18/12",
+      "excel_en": "=0.18/12"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
+      "seccion": "8.4 Tasa declarada y tasa efectiva"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-efectiva-anual",
+    "nombre": "Tasa efectiva anual",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Lo que realmente rinde o cuesta una tasa nominal en un año, considerando la capitalización.",
+    "latex": "TEA = \\left(1 + \\frac{j}{m}\\right)^m - 1",
+    "variables": [
+      {
+        "simbolo": "TEA",
+        "nombre": "TEA",
+        "significado": "Tasa efectiva anual",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "j",
+        "nombre": "j",
+        "significado": "Tasa nominal anual",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "m",
+        "nombre": "m",
+        "significado": "Capitalizaciones por año",
+        "unidad": "veces/año"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(1 + j / m) ^ m - 1"
+    },
+    "excel": {
+      "es": "=INT.EFECTIVO(j;m)",
+      "en": "=EFFECT(j,m)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuál es la tasa efectiva anual de un crédito al 18 % nominal capitalizable mensualmente?",
+      "entradas": {
+        "j": 0.18,
+        "m": 12
+      },
+      "pasos": [
+        "TEA = (1 + 0,18/12)¹² − 1",
+        "TEA = 1,015¹² − 1",
+        "TEA = 0,195618 ≈ 19,56 %"
+      ],
+      "resultado": 0.195618,
+      "unidad": "por año",
+      "tolerancia": 5e-07,
+      "excel_es": "=INT.EFECTIVO(0,18;12)",
+      "excel_en": "=EFFECT(0.18,12)"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
+      "seccion": "8.4 Tasa declarada y tasa efectiva"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-nominal-desde-efectiva",
+    "nombre": "Tasa nominal equivalente a una efectiva",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Proceso inverso: qué tasa nominal, capitalizable m veces, produce una tasa efectiva anual dada.",
+    "latex": "j = m\\left[(1+TEA)^{1/m} - 1\\right]",
+    "variables": [
+      {
+        "simbolo": "j",
+        "nombre": "j",
+        "significado": "Tasa nominal anual",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "TEA",
+        "nombre": "TEA",
+        "significado": "Tasa efectiva anual",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "m",
+        "nombre": "m",
+        "significado": "Capitalizaciones por año",
+        "unidad": "veces/año"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "m * ((1 + TEA) ^ (1 / m) - 1)"
+    },
+    "excel": {
+      "es": "=TASA.NOMINAL(TEA;m)",
+      "en": "=NOMINAL(TEA,m)"
+    },
+    "ejemplo": {
+      "enunciado": "Una inversión rinde 12 % efectivo anual. ¿Qué tasa nominal capitalizable mensualmente es equivalente?",
+      "entradas": {
+        "TEA": 0.12,
+        "m": 12
+      },
+      "pasos": [
+        "j = 12 × (1,12^(1/12) − 1)",
+        "1,12^(1/12) = 1,0094888",
+        "j = 0,113866 ≈ 11,39 %"
+      ],
+      "resultado": 0.113866,
+      "unidad": "por año",
+      "tolerancia": 5e-07,
+      "excel_es": "=TASA.NOMINAL(0,12;12)",
+      "excel_en": "=NOMINAL(0.12,12)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
+      "seccion": "8.4 Tasa declarada y tasa efectiva"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "interes-continuo",
+    "nombre": "Capitalización continua",
+    "categoria": "valor-dinero",
+    "areas": [
+      "cuantitativo",
+      "finanzas"
+    ],
+    "descripcion": "Límite del interés compuesto cuando las capitalizaciones por año crecen sin fin; aparece al estudiar la función exponencial.",
+    "latex": "VF = VA\\,e^{j t}",
+    "variables": [
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "j",
+        "nombre": "j",
+        "significado": "Tasa nominal anual",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tiempo",
+        "unidad": "años"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VA * EXP(j * t)"
+    },
+    "excel": {
+      "es": "=VA*EXP(j*t)",
+      "en": "=VA*EXP(j*t)"
+    },
+    "ejemplo": {
+      "enunciado": "USD 1.000 al 6 % anual con capitalización continua durante 5 años.",
+      "entradas": {
+        "VA": 1000,
+        "j": 0.06,
+        "t": 5
+      },
+      "pasos": [
+        "VF = 1.000 × e^(0,06×5) = 1.000 × e^0,3",
+        "e^0,3 ≈ 1,3498588",
+        "VF = 1.349,86"
+      ],
+      "resultado": 1349.86,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=1000*EXP(0,06*5)",
+      "excel_en": "=1000*EXP(0.06*5)"
+    },
+    "aparece_en": [
+      "calculo diferencial",
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions",
+      "seccion": "1.5 Funciones exponenciales"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "numero-periodos",
+    "nombre": "Número de períodos",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Cuántos períodos tarda un capital en crecer hasta un valor objetivo a una tasa dada.",
+    "latex": "n = \\frac{\\ln(VF/VA)}{\\ln(1+i)}",
+    "variables": [
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de períodos",
+        "unidad": "períodos"
+      },
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro objetivo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "LN(VF / VA) / LN(1 + i)"
+    },
+    "excel": {
+      "es": "=NPER(i;0;-VA;VF)",
+      "en": "=NPER(i,0,-VA,VF)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuántos años tarda en duplicarse una inversión de USD 1.000 al 6 % anual compuesto?",
+      "entradas": {
+        "VF": 2000,
+        "VA": 1000,
+        "i": 0.06
+      },
+      "pasos": [
+        "n = ln(2.000/1.000) ÷ ln(1,06)",
+        "n = 0,693147 ÷ 0,058269",
+        "n = 11,8957 años"
+      ],
+      "resultado": 11.8957,
+      "unidad": "períodos",
+      "tolerancia": 5e-05,
+      "excel_es": "=NPER(0,06;0;-1000;2000)",
+      "excel_en": "=NPER(0.06,0,-1000,2000)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/7-3-methods-for-solving-time-value-of-money-problems",
+      "seccion": "7.3 Métodos para resolver problemas de valor del dinero"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-implicita",
+    "nombre": "Tasa de interés implícita",
+    "categoria": "valor-dinero",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Qué tasa compuesta por período convierte un valor actual en un valor futuro en n períodos.",
+    "latex": "i = \\left(\\frac{VF}{VA}\\right)^{1/n} - 1",
+    "variables": [
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Períodos",
+        "unidad": "períodos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(VF / VA) ^ (1 / n) - 1"
+    },
+    "excel": {
+      "es": "=TASA(n;0;-VA;VF)",
+      "en": "=RATE(n,0,-VA,VF)"
+    },
+    "ejemplo": {
+      "enunciado": "Una inversión de USD 4.000 se convirtió en USD 5.000 en 3 años. ¿Qué tasa anual compuesta rindió?",
+      "entradas": {
+        "VF": 5000,
+        "VA": 4000,
+        "n": 3
+      },
+      "pasos": [
+        "i = (5.000/4.000)^(1/3) − 1",
+        "i = 1,25^(1/3) − 1",
+        "i = 0,077217 ≈ 7,72 %"
+      ],
+      "resultado": 0.077217,
+      "unidad": "por período",
+      "tolerancia": 5e-07,
+      "excel_es": "=TASA(3;0;-4000;5000)",
+      "excel_en": "=RATE(3,0,-4000,5000)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/7-3-methods-for-solving-time-value-of-money-problems",
+      "seccion": "7.3 Métodos para resolver problemas de valor del dinero"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "vf-anualidad-vencida",
+    "nombre": "Valor futuro de una anualidad vencida",
+    "categoria": "anualidades",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Monto acumulado al depositar una cuota igual al final de cada período a una tasa constante.",
+    "latex": "VF = A\\,\\frac{(1+i)^n - 1}{i}",
+    "variables": [
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota periódica",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de cuotas",
+        "unidad": "cuotas"
+      }
+    ],
+    "supuestos": [
+      "Cuotas iguales al final de cada período (anualidad vencida u ordinaria)."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A * ((1 + i) ^ n - 1) / i"
+    },
+    "excel": {
+      "es": "=VF(i;n;-A)",
+      "en": "=FV(i,n,-A)"
+    },
+    "ejemplo": {
+      "enunciado": "Una estudiante ahorra USD 150 al final de cada mes durante 2 años en una cuenta que paga 0,5 % mensual. ¿Cuánto tendrá?",
+      "entradas": {
+        "A": 150,
+        "i": 0.005,
+        "n": 24
+      },
+      "pasos": [
+        "VF = 150 × (1,005²⁴ − 1) ÷ 0,005",
+        "(1,005²⁴ − 1) ÷ 0,005 = 25,431955",
+        "VF = 3.814,79"
+      ],
+      "resultado": 3814.79,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VF(0,005;24;-150)",
+      "excel_en": "=FV(0.005,24,-150)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
+      "seccion": "8.2 Anualidades"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "va-anualidad-vencida",
+    "nombre": "Valor actual de una anualidad vencida",
+    "categoria": "anualidades",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Cuánto valen hoy varias cuotas iguales que se pagarán al final de cada período.",
+    "latex": "VA = A\\,\\frac{1-(1+i)^{-n}}{i}",
+    "variables": [
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota periódica",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de cuotas",
+        "unidad": "cuotas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A * (1 - (1 + i) ^ -n) / i"
+    },
+    "excel": {
+      "es": "=VA(i;n;-A)",
+      "en": "=PV(i,n,-A)"
+    },
+    "ejemplo": {
+      "enunciado": "Un contrato paga USD 300 al final de cada mes durante 3 años. Con una tasa de 1 % mensual, ¿cuánto vale hoy?",
+      "entradas": {
+        "A": 300,
+        "i": 0.01,
+        "n": 36
+      },
+      "pasos": [
+        "VA = 300 × (1 − 1,01⁻³⁶) ÷ 0,01",
+        "(1 − 1,01⁻³⁶) ÷ 0,01 = 30,107505",
+        "VA = 9.032,25"
+      ],
+      "resultado": 9032.25,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VA(0,01;36;-300)",
+      "excel_en": "=PV(0.01,36,-300)"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
+      "seccion": "8.2 Anualidades"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "cuota-prestamo",
+    "nombre": "Cuota fija de un préstamo (sistema francés)",
+    "categoria": "amortizacion",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Cuota constante que paga un préstamo en n períodos: cada cuota cubre el interés del período y amortiza una parte del capital.",
+    "latex": "A = \\frac{VA\\cdot i}{1-(1+i)^{-n}}",
+    "variables": [
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota periódica",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Monto del préstamo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de cuotas",
+        "unidad": "cuotas"
+      }
+    ],
+    "supuestos": [
+      "Tasa fija, cuotas iguales al final de cada período, sin seguros ni comisiones incluidos."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VA * i / (1 - (1 + i) ^ -n)"
+    },
+    "excel": {
+      "es": "=PAGO(i;n;-VA)",
+      "en": "=PMT(i,n,-VA)"
+    },
+    "ejemplo": {
+      "enunciado": "Un microcrédito de USD 12.000 a 24 meses con tasa de 1,25 % mensual. ¿Cuota mensual?",
+      "entradas": {
+        "VA": 12000,
+        "i": 0.0125,
+        "n": 24
+      },
+      "pasos": [
+        "A = 12.000 × 0,0125 ÷ (1 − 1,0125⁻²⁴)",
+        "1 − 1,0125⁻²⁴ = 0,257803",
+        "A = 581,84"
+      ],
+      "resultado": 581.84,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=PAGO(0,0125;24;-12000)",
+      "excel_en": "=PMT(0.0125,24,-12000)"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "va-anualidad-anticipada",
+    "nombre": "Valor actual de una anualidad anticipada",
+    "categoria": "anualidades",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Igual que la vencida, pero las cuotas se pagan al inicio de cada período, así que cada una se descuenta un período menos.",
+    "latex": "VA = A\\,\\frac{1-(1+i)^{-n}}{i}\\,(1+i)",
+    "variables": [
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota al inicio de cada período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de cuotas",
+        "unidad": "cuotas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A * (1 - (1 + i) ^ -n) / i * (1 + i)"
+    },
+    "excel": {
+      "es": "=VA(i;n;-A;0;1)",
+      "en": "=PV(i,n,-A,0,1)"
+    },
+    "ejemplo": {
+      "enunciado": "Un arriendo de USD 300 se paga al inicio de cada mes durante 3 años. Con 1 % mensual, ¿valor actual?",
+      "entradas": {
+        "A": 300,
+        "i": 0.01,
+        "n": 36
+      },
+      "pasos": [
+        "VA vencida = 9.032,25",
+        "VA anticipada = 9.032,25 × 1,01",
+        "VA = 9.122,57"
+      ],
+      "resultado": 9122.57,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VA(0,01;36;-300;0;1)",
+      "excel_en": "=PV(0.01,36,-300,0,1)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
+      "seccion": "8.2 Anualidad anticipada"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "vf-anualidad-anticipada",
+    "nombre": "Valor futuro de una anualidad anticipada",
+    "categoria": "anualidades",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Monto acumulado cuando las cuotas se depositan al inicio de cada período: cada una gana un período más de interés.",
+    "latex": "VF = A\\,\\frac{(1+i)^n - 1}{i}\\,(1+i)",
+    "variables": [
+      {
+        "simbolo": "VF",
+        "nombre": "VF",
+        "significado": "Valor futuro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota al inicio de cada período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de cuotas",
+        "unidad": "cuotas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A * ((1 + i) ^ n - 1) / i * (1 + i)"
+    },
+    "excel": {
+      "es": "=VF(i;n;-A;0;1)",
+      "en": "=FV(i,n,-A,0,1)"
+    },
+    "ejemplo": {
+      "enunciado": "Si la estudiante del ejemplo de ahorro deposita los USD 150 al inicio de cada mes, ¿cuánto tendrá a los 24 meses?",
+      "entradas": {
+        "A": 150,
+        "i": 0.005,
+        "n": 24
+      },
+      "pasos": [
+        "VF vencida = 3.814,79",
+        "VF anticipada = 3.814,79 × 1,005",
+        "VF = 3.833,87"
+      ],
+      "resultado": 3833.87,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VF(0,005;24;-150;0;1)",
+      "excel_en": "=FV(0.005,24,-150,0,1)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
+      "seccion": "8.2 Anualidad anticipada"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "perpetuidad",
+    "nombre": "Valor actual de una perpetuidad",
+    "categoria": "anualidades",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Un flujo igual que se recibe al final de cada período para siempre vale hoy la cuota dividida para la tasa.",
+    "latex": "VA = \\frac{A}{i}",
+    "variables": [
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Pago periódico",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A / i"
+    },
+    "excel": {
+      "es": "=A/i",
+      "en": "=A/i"
+    },
+    "ejemplo": {
+      "enunciado": "Una fundación quiere entregar una beca de USD 1.200 al final de cada año para siempre. Si invierte al 6 % anual, ¿cuánto necesita hoy?",
+      "entradas": {
+        "A": 1200,
+        "i": 0.06
+      },
+      "pasos": [
+        "VA = 1.200 ÷ 0,06",
+        "VA = 20.000,00"
+      ],
+      "resultado": 20000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=1200/0,06",
+      "excel_en": "=1200/0.06"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-1-perpetuities",
+      "seccion": "8.1 Perpetuidades"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "perpetuidad-creciente",
+    "nombre": "Valor actual de una perpetuidad creciente",
+    "categoria": "anualidades",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Si el pago crece a una tasa constante g menor que la tasa de descuento, su valor actual es el primer pago dividido para (i − g).",
+    "latex": "VA = \\frac{A_1}{i - g}",
+    "variables": [
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Valor actual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A_1",
+        "nombre": "A1",
+        "significado": "Primer pago (al final del período 1)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa de descuento",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "g",
+        "nombre": "g",
+        "significado": "Tasa de crecimiento del pago",
+        "unidad": "por período"
+      }
+    ],
+    "supuestos": [
+      "g < i; el crecimiento es constante para siempre."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A1 / (i - g)"
+    },
+    "excel": {
+      "es": "=A1/(i-g)",
+      "en": "=A1/(i-g)"
+    },
+    "ejemplo": {
+      "enunciado": "La beca anterior empieza en USD 1.200 y crece 2 % cada año. Con 6 % de descuento, ¿cuánto se necesita hoy?",
+      "entradas": {
+        "A1": 1200,
+        "i": 0.06,
+        "g": 0.02
+      },
+      "pasos": [
+        "VA = 1.200 ÷ (0,06 − 0,02)",
+        "VA = 1.200 ÷ 0,04",
+        "VA = 30.000,00"
+      ],
+      "resultado": 30000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=1200/(0,06-0,02)",
+      "excel_en": "=1200/(0.06-0.02)"
+    },
+    "aparece_en": [
+      "matematica financiera",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-1-perpetuities",
+      "seccion": "8.1 Perpetuidad creciente"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "interes-cuota",
+    "nombre": "Interés de una cuota (sistema francés)",
+    "categoria": "amortizacion",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "El interés de cada cuota se calcula sobre el saldo que quedó después de la cuota anterior.",
+    "latex": "I_k = S_{k-1}\\cdot i",
+    "variables": [
+      {
+        "simbolo": "I_k",
+        "nombre": "Ik",
+        "significado": "Interés de la cuota k",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "S_{k-1}",
+        "nombre": "S",
+        "significado": "Saldo pendiente antes de la cuota k",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "S * i"
+    },
+    "excel": {
+      "es": "=PAGOINT(i;k;n;-VA)",
+      "en": "=IPMT(i,k,n,-VA)"
+    },
+    "ejemplo": {
+      "enunciado": "En el microcrédito de USD 12.000 a 24 meses al 1,25 % mensual, ¿cuánto interés tiene la primera cuota?",
+      "entradas": {
+        "S": 12000,
+        "i": 0.0125
+      },
+      "pasos": [
+        "Antes de la cuota 1 el saldo es el préstamo completo: 12.000,00",
+        "I₁ = 12.000 × 0,0125",
+        "I₁ = 150,00"
+      ],
+      "resultado": 150.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=PAGOINT(0,0125;1;24;-12000)",
+      "excel_en": "=IPMT(0.0125,1,24,-12000)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "capital-cuota",
+    "nombre": "Capital amortizado en una cuota",
+    "categoria": "amortizacion",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "La parte de la cuota que reduce la deuda: cuota menos interés del período.",
+    "latex": "K_k = A - I_k",
+    "variables": [
+      {
+        "simbolo": "K_k",
+        "nombre": "Kk",
+        "significado": "Capital amortizado en la cuota k",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota fija",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "I_k",
+        "nombre": "Ik",
+        "significado": "Interés de la cuota k",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "A - Ik"
+    },
+    "excel": {
+      "es": "=PAGOPRIN(i;k;n;-VA)",
+      "en": "=PPMT(i,k,n,-VA)"
+    },
+    "ejemplo": {
+      "enunciado": "Con la cuota del microcrédito y el interés de 150,00 de la primera cuota, ¿cuánto capital se amortiza?",
+      "entradas": {
+        "A": 581.839776563414,
+        "Ik": 150.0
+      },
+      "pasos": [
+        "Cuota = 581,84",
+        "Interés de la cuota 1 = 150,00",
+        "K₁ = 581,84 − 150,00 = 431,84"
+      ],
+      "resultado": 431.84,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=PAGOPRIN(0,0125;1;24;-12000)",
+      "excel_en": "=PPMT(0.0125,1,24,-12000)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "saldo-insoluto",
+    "nombre": "Saldo pendiente después de k cuotas",
+    "categoria": "amortizacion",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Lo que aún se debe: el préstamo llevado al período k menos el valor acumulado de las cuotas pagadas.",
+    "latex": "S_k = VA(1+i)^k - A\\,\\frac{(1+i)^k - 1}{i}",
+    "variables": [
+      {
+        "simbolo": "S_k",
+        "nombre": "Sk",
+        "significado": "Saldo después de k cuotas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Préstamo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Cuota fija",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Cuotas pagadas",
+        "unidad": "cuotas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VA * (1 + i) ^ k - A * ((1 + i) ^ k - 1) / i"
+    },
+    "excel": {
+      "es": "=VF(i;k;A;-VA)",
+      "en": "=FV(i,k,A,-VA)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuánto se debe del microcrédito después de pagar 12 de las 24 cuotas?",
+      "entradas": {
+        "VA": 12000,
+        "A": 581.839776563414,
+        "i": 0.0125,
+        "k": 12
+      },
+      "pasos": [
+        "12.000 × 1,0125¹² = 13.929,05",
+        "Cuotas acumuladas = 581,84 × (1,0125¹² − 1) ÷ 0,0125 = 7.482,67",
+        "S₁₂ = 6.446,38"
+      ],
+      "resultado": 6446.38,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VF(0,0125;12;PAGO(0,0125;24;-12000);-12000)",
+      "excel_en": "=FV(0.0125,12,PMT(0.0125,24,-12000),-12000)"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "cuota-capital-constante",
+    "nombre": "Cuota con amortización de capital constante",
+    "categoria": "amortizacion",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Variante en la que cada cuota devuelve la misma porción de capital (VA ÷ n) más el interés sobre el saldo; las cuotas bajan con el tiempo.",
+    "latex": "C_k = \\frac{VA}{n} + \\left[VA - (k-1)\\frac{VA}{n}\\right] i",
+    "variables": [
+      {
+        "simbolo": "C_k",
+        "nombre": "Ck",
+        "significado": "Cuota del período k",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "VA",
+        "nombre": "VA",
+        "significado": "Préstamo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de cuotas",
+        "unidad": "cuotas"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Número de la cuota",
+        "unidad": "cuota"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa por período",
+        "unidad": "por período"
+      }
+    ],
+    "supuestos": [
+      "El interés se calcula sobre el saldo, igual que en el sistema de cuota fija (sección 8.3); solo cambia la forma de devolver el capital."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VA / n + (VA - (k - 1) * VA / n) * i"
+    },
+    "excel": {
+      "es": "=VA/n+(VA-(k-1)*VA/n)*i",
+      "en": "=VA/n+(VA-(k-1)*VA/n)*i"
+    },
+    "ejemplo": {
+      "enunciado": "El mismo préstamo de USD 12.000 a 24 meses al 1,25 % mensual, pero con capital constante. ¿Cuota número 13?",
+      "entradas": {
+        "VA": 12000,
+        "n": 24,
+        "k": 13,
+        "i": 0.0125
+      },
+      "pasos": [
+        "Capital por cuota = 12.000 ÷ 24 = 500,00",
+        "Saldo antes de la cuota 13 = 12.000 − 12 × 500 = 6.000,00",
+        "Interés = 6.000 × 0,0125 = 75,00",
+        "C₁₃ = 500 + 75 = 575,00"
+      ],
+      "resultado": 575.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=12000/24+(12000-12*12000/24)*0,0125",
+      "excel_en": "=12000/24+(12000-12*12000/24)*0.0125"
+    },
+    "aparece_en": [
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "van",
+    "nombre": "Valor actual neto (VAN)",
+    "categoria": "evaluacion-proyectos",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Suma de los flujos futuros descontados al costo de capital menos la inversión inicial. VAN > 0: el proyecto crea valor a esa tasa.",
+    "latex": "VAN = -I_0 + \\sum_{t=1}^{n}\\frac{FC_t}{(1+k)^t}",
+    "variables": [
+      {
+        "simbolo": "I_0",
+        "nombre": "I0",
+        "significado": "Inversión inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_1",
+        "nombre": "FC1",
+        "significado": "Flujo de caja del año 1",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_2",
+        "nombre": "FC2",
+        "significado": "Flujo de caja del año 2",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_3",
+        "nombre": "FC3",
+        "significado": "Flujo de caja del año 3",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Tasa de descuento (costo de capital)",
+        "unidad": "por año"
+      }
+    ],
+    "supuestos": [
+      "Flujos al final de cada año; la inversión ocurre en t = 0."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "-I0 + FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3"
+    },
+    "excel": {
+      "es": "=VNA(k;FC1:FCn)-I0",
+      "en": "=NPV(k,FC1:FCn)-I0"
+    },
+    "notas": [
+      "En Excel, VNA (NPV) descuenta desde el período 1: la inversión de t = 0 se suma afuera de la función."
+    ],
+    "ejemplo": {
+      "enunciado": "Un proyecto cuesta USD 10.000 y genera 3.000, 4.000 y 5.000 al final de los años 1, 2 y 3. Con un costo de capital de 10 %, ¿conviene?",
+      "entradas": {
+        "I0": 10000,
+        "FC1": 3000,
+        "FC2": 4000,
+        "FC3": 5000,
+        "k": 0.1
+      },
+      "celdas": {
+        "B1": -10000,
+        "B2": 3000,
+        "B3": 4000,
+        "B4": 5000
+      },
+      "pasos": [
+        "3.000 ÷ 1,10 = 2.727,27",
+        "4.000 ÷ 1,10² = 3.305,79",
+        "5.000 ÷ 1,10³ = 3.756,57",
+        "VAN = 9.789,63 − 10.000 = -210,37",
+        "El VAN es negativo: a 10 % el proyecto no recupera su costo de capital."
+      ],
+      "resultado": -210.37,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=VNA(0,1;B2:B4)+B1",
+      "excel_en": "=NPV(0.1,B2:B4)+B1"
+    },
+    "aparece_en": [
+      "proyecto",
+      "finanza",
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+      "seccion": "16.2 Método del VAN"
+    },
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "tir",
+    "nombre": "Tasa interna de retorno (TIR)",
+    "categoria": "evaluacion-proyectos",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "La tasa que hace VAN = 0. Se compara con el costo de capital: si la TIR es mayor, el proyecto rinde más de lo que cuesta financiarlo.",
+    "latex": "0 = -I_0 + \\sum_{t=1}^{n}\\frac{FC_t}{(1+TIR)^t}",
+    "variables": [
+      {
+        "simbolo": "TIR",
+        "nombre": "r",
+        "significado": "Tasa interna de retorno (incógnita)",
+        "unidad": "por año"
+      },
+      {
+        "simbolo": "I_0",
+        "nombre": "I0",
+        "significado": "Inversión inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_1",
+        "nombre": "FC1",
+        "significado": "Flujo del año 1",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_2",
+        "nombre": "FC2",
+        "significado": "Flujo del año 2",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_3",
+        "nombre": "FC3",
+        "significado": "Flujo del año 3",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Flujos convencionales (un solo cambio de signo); con varios cambios de signo puede haber más de una TIR."
+    ],
+    "calculo": {
+      "tipo": "implicito",
+      "expresion": "-I0 + FC1 / (1 + r) + FC2 / (1 + r) ^ 2 + FC3 / (1 + r) ^ 3",
+      "incognita": "r",
+      "tolerancia_residuo": 0.01
+    },
+    "excel": {
+      "es": "=TIR(I0:FCn)",
+      "en": "=IRR(I0:FCn)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuál es la TIR del proyecto anterior (−10.000; 3.000; 4.000; 5.000)?",
+      "entradas": {
+        "I0": 10000,
+        "FC1": 3000,
+        "FC2": 4000,
+        "FC3": 5000
+      },
+      "celdas": {
+        "B1": -10000,
+        "B2": 3000,
+        "B3": 4000,
+        "B4": 5000
+      },
+      "pasos": [
+        "Se busca la tasa r que anula el VAN (Excel usa un método iterativo).",
+        "A 10 % el VAN es −210,37; a 8 % es positivo: la TIR está entre ambos.",
+        "TIR ≈ 0,088963 ≈ 8,90 %",
+        "Como 8,90 % < 10 %, se rechaza: coincide con el VAN negativo."
+      ],
+      "resultado": 0.088963,
+      "unidad": "por año",
+      "tolerancia": 5e-07,
+      "excel_es": "=TIR(B1:B4)",
+      "excel_en": "=IRR(B1:B4)"
+    },
+    "aparece_en": [
+      "proyecto",
+      "finanza",
+      "matematica financiera"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-3-internal-rate-of-return-irr-method",
+      "seccion": "16.3 Método de la TIR"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "indice-rentabilidad",
+    "nombre": "Índice de rentabilidad",
+    "categoria": "evaluacion-proyectos",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Valor actual de los flujos futuros por cada dólar invertido. Mayor que 1 equivale a VAN positivo.",
+    "latex": "IR = \\frac{\\sum FC_t/(1+k)^t}{I_0}",
+    "variables": [
+      {
+        "simbolo": "I_0",
+        "nombre": "I0",
+        "significado": "Inversión inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_1",
+        "nombre": "FC1",
+        "significado": "Flujo del año 1",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_2",
+        "nombre": "FC2",
+        "significado": "Flujo del año 2",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_3",
+        "nombre": "FC3",
+        "significado": "Flujo del año 3",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Tasa de descuento",
+        "unidad": "por año"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3) / I0"
+    },
+    "excel": {
+      "es": "=VNA(k;FC1:FCn)/I0",
+      "en": "=NPV(k,FC1:FCn)/I0"
+    },
+    "ejemplo": {
+      "enunciado": "Con el mismo proyecto y 10 % de costo de capital, ¿índice de rentabilidad?",
+      "entradas": {
+        "I0": 10000,
+        "FC1": 3000,
+        "FC2": 4000,
+        "FC3": 5000,
+        "k": 0.1
+      },
+      "celdas": {
+        "B1": -10000,
+        "B2": 3000,
+        "B3": 4000,
+        "B4": 5000
+      },
+      "pasos": [
+        "VA de los flujos = 9.789,63",
+        "IR = 9.789,63 ÷ 10.000 = 0,9790",
+        "IR < 1: se rechaza."
+      ],
+      "resultado": 0.979,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=VNA(0,1;B2:B4)/-B1",
+      "excel_en": "=NPV(0.1,B2:B4)/-B1"
+    },
+    "aparece_en": [
+      "proyecto",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-4-alternative-methods",
+      "seccion": "16.4 Métodos alternativos: índice de rentabilidad"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "periodo-recuperacion",
+    "nombre": "Período de recuperación de la inversión",
+    "categoria": "evaluacion-proyectos",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Tiempo que tardan los flujos (sin descontar) en devolver la inversión. Fácil de calcular, pero ignora el valor del dinero en el tiempo y los flujos posteriores.",
+    "latex": "PR = n + \\frac{I_0 - \\sum_{t\\le n} FC_t}{FC_{n+1}}",
+    "variables": [
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Último año completo antes de recuperar",
+        "unidad": "años"
+      },
+      {
+        "simbolo": "I_0",
+        "nombre": "I0",
+        "significado": "Inversión inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "\\sum_{t\\le n} FC_t",
+        "nombre": "Acum",
+        "significado": "Flujos acumulados hasta el año n",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FC_{n+1}",
+        "nombre": "FCs",
+        "significado": "Flujo del año siguiente",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Flujos distribuidos uniformemente dentro del año."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "n + (I0 - Acum) / FCs"
+    },
+    "excel": {
+      "es": "=n+(I0-Acum)/FCs",
+      "en": "=n+(I0-Acum)/FCs"
+    },
+    "ejemplo": {
+      "enunciado": "Proyecto de USD 10.000 con flujos de 3.000, 4.000 y 5.000. ¿En cuánto tiempo se recupera?",
+      "entradas": {
+        "n": 2,
+        "I0": 10000,
+        "Acum": 7000,
+        "FCs": 5000
+      },
+      "pasos": [
+        "Acumulado al año 2 = 3.000 + 4.000 = 7.000",
+        "Falta recuperar 10.000 − 7.000 = 3.000",
+        "Fracción del año 3 = 3.000 ÷ 5.000 = 0,6",
+        "PR = 2,6 años"
+      ],
+      "resultado": 2.6,
+      "unidad": "años",
+      "tolerancia": 5e-05,
+      "excel_es": "=2+(10000-7000)/5000",
+      "excel_en": "=2+(10000-7000)/5000"
+    },
+    "aparece_en": [
+      "proyecto",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-1-payback-period-method",
+      "seccion": "16.1 Período de recuperación"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "margen-contribucion-unitario",
+    "nombre": "Margen de contribución unitario",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Lo que aporta cada unidad vendida para cubrir los costos fijos y generar utilidad.",
+    "latex": "MC_u = P - CV_u",
+    "variables": [
+      {
+        "simbolo": "MC_u",
+        "nombre": "MCu",
+        "significado": "Margen de contribución por unidad",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Precio de venta unitario",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "CV_u",
+        "nombre": "CVu",
+        "significado": "Costo variable unitario",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "P - CVu"
+    },
+    "excel": {
+      "es": "=P-CVu",
+      "en": "=P-CVu"
+    },
+    "ejemplo": {
+      "enunciado": "Una panadería vende tortas a USD 25 con un costo variable de USD 15 por torta. ¿Margen de contribución unitario?",
+      "entradas": {
+        "P": 25,
+        "CVu": 15
+      },
+      "celdas": {
+        "B1": 25,
+        "B2": 15
+      },
+      "pasos": [
+        "MCu = 25 − 15",
+        "MCu = 10,00"
+      ],
+      "resultado": 10.0,
+      "unidad": "USD/unidad",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2",
+      "excel_en": "=B1-B2"
+    },
+    "aparece_en": [
+      "costo",
+      "presupuesto"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-1-explain-contribution-margin-and-calculate-contribution-margin-per-unit-contribution-margin-ratio-and-total-contribution-margin",
+      "seccion": "3.1 Margen de contribución"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "razon-margen-contribucion",
+    "nombre": "Razón de margen de contribución",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Qué parte de cada dólar de venta queda para cubrir costos fijos y utilidad.",
+    "latex": "RMC = \\frac{MC_u}{P}",
+    "variables": [
+      {
+        "simbolo": "RMC",
+        "nombre": "RMC",
+        "significado": "Razón de margen de contribución",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "MC_u",
+        "nombre": "MCu",
+        "significado": "Margen de contribución unitario",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Precio de venta",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "MCu / P"
+    },
+    "excel": {
+      "es": "=MCu/P",
+      "en": "=MCu/P"
+    },
+    "ejemplo": {
+      "enunciado": "Con margen de USD 10 por torta y precio de USD 25, ¿razón de margen de contribución?",
+      "entradas": {
+        "MCu": 10,
+        "P": 25
+      },
+      "celdas": {
+        "B1": 10,
+        "B2": 25
+      },
+      "pasos": [
+        "RMC = 10 ÷ 25",
+        "RMC = 0,40 = 40 %"
+      ],
+      "resultado": 0.4,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-1-explain-contribution-margin-and-calculate-contribution-margin-per-unit-contribution-margin-ratio-and-total-contribution-margin",
+      "seccion": "3.1 Razón de margen de contribución"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "punto-equilibrio-unidades",
+    "nombre": "Punto de equilibrio en unidades",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Unidades que hay que vender para que la utilidad sea cero: costos fijos entre margen de contribución unitario.",
+    "latex": "Q_e = \\frac{CF}{P - CV_u}",
+    "variables": [
+      {
+        "simbolo": "Q_e",
+        "nombre": "Qe",
+        "significado": "Unidades de equilibrio",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "CF",
+        "nombre": "CF",
+        "significado": "Costos fijos del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Precio de venta",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "CV_u",
+        "nombre": "CVu",
+        "significado": "Costo variable unitario",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "supuestos": [
+      "Precio y costo variable unitario constantes; todo lo producido se vende."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CF / (P - CVu)"
+    },
+    "excel": {
+      "es": "=CF/(P-CVu)",
+      "en": "=CF/(P-CVu)"
+    },
+    "ejemplo": {
+      "enunciado": "La panadería tiene costos fijos de USD 18.000 al año. ¿Cuántas tortas debe vender para no perder?",
+      "entradas": {
+        "CF": 18000,
+        "P": 25,
+        "CVu": 15
+      },
+      "celdas": {
+        "B1": 18000,
+        "B2": 25,
+        "B3": 15
+      },
+      "pasos": [
+        "Qe = 18.000 ÷ (25 − 15)",
+        "Qe = 18.000 ÷ 10",
+        "Qe = 1.800 tortas"
+      ],
+      "resultado": 1800.0,
+      "unidad": "unidades",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/(B2-B3)",
+      "excel_en": "=B1/(B2-B3)"
+    },
+    "aparece_en": [
+      "costo",
+      "presupuesto"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "seccion": "3.2 Punto de equilibrio en unidades"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "punto-equilibrio-dolares",
+    "nombre": "Punto de equilibrio en dólares",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Ventas en dólares que cubren exactamente los costos fijos y variables.",
+    "latex": "V_e = \\frac{CF}{RMC}",
+    "variables": [
+      {
+        "simbolo": "V_e",
+        "nombre": "Ve",
+        "significado": "Ventas de equilibrio",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CF",
+        "nombre": "CF",
+        "significado": "Costos fijos",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "RMC",
+        "nombre": "RMC",
+        "significado": "Razón de margen de contribución",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CF / RMC"
+    },
+    "excel": {
+      "es": "=CF/RMC",
+      "en": "=CF/RMC"
+    },
+    "ejemplo": {
+      "enunciado": "Con costos fijos de USD 18.000 y una razón de margen de 40 %, ¿ventas de equilibrio?",
+      "entradas": {
+        "CF": 18000,
+        "RMC": 0.4
+      },
+      "pasos": [
+        "Ve = 18.000 ÷ 0,40",
+        "Ve = 45.000,00 (= 1.800 tortas × 25)"
+      ],
+      "resultado": 45000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=18000/0,4",
+      "excel_en": "=18000/0.4"
+    },
+    "aparece_en": [
+      "costo"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "seccion": "3.2 Punto de equilibrio en dólares"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "unidades-utilidad-objetivo",
+    "nombre": "Unidades para una utilidad objetivo",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Unidades necesarias para cubrir costos fijos y además alcanzar una utilidad operativa deseada.",
+    "latex": "Q = \\frac{CF + UO}{P - CV_u}",
+    "variables": [
+      {
+        "simbolo": "Q",
+        "nombre": "Q",
+        "significado": "Unidades a vender",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "CF",
+        "nombre": "CF",
+        "significado": "Costos fijos",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "UO",
+        "nombre": "UO",
+        "significado": "Utilidad operativa deseada",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Precio",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "CV_u",
+        "nombre": "CVu",
+        "significado": "Costo variable unitario",
+        "unidad": "USD/unidad"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(CF + UO) / (P - CVu)"
+    },
+    "excel": {
+      "es": "=(CF+UO)/(P-CVu)",
+      "en": "=(CF+UO)/(P-CVu)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Cuántas tortas debe vender la panadería para ganar USD 6.000 en el año?",
+      "entradas": {
+        "CF": 18000,
+        "UO": 6000,
+        "P": 25,
+        "CVu": 15
+      },
+      "celdas": {
+        "B1": 18000,
+        "B2": 6000,
+        "B3": 25,
+        "B4": 15
+      },
+      "pasos": [
+        "Q = (18.000 + 6.000) ÷ (25 − 15)",
+        "Q = 24.000 ÷ 10",
+        "Q = 2.400 tortas"
+      ],
+      "resultado": 2400.0,
+      "unidad": "unidades",
+      "tolerancia": 5e-05,
+      "excel_es": "=(B1+B2)/(B3-B4)",
+      "excel_en": "=(B1+B2)/(B3-B4)"
+    },
+    "aparece_en": [
+      "costo",
+      "presupuesto"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "seccion": "3.2 Utilidad deseada"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "margen-seguridad",
+    "nombre": "Margen de seguridad",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Cuánto pueden caer las ventas antes de llegar al punto de equilibrio, como proporción de las ventas actuales.",
+    "latex": "MS = \\frac{V_r - V_e}{V_r}",
+    "variables": [
+      {
+        "simbolo": "MS",
+        "nombre": "MS",
+        "significado": "Margen de seguridad",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "V_r",
+        "nombre": "Vr",
+        "significado": "Ventas reales o presupuestadas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "V_e",
+        "nombre": "Ve",
+        "significado": "Ventas de equilibrio",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(Vr - Ve) / Vr"
+    },
+    "excel": {
+      "es": "=(Vr-Ve)/Vr",
+      "en": "=(Vr-Ve)/Vr"
+    },
+    "ejemplo": {
+      "enunciado": "La panadería vende USD 60.000 al año y su equilibrio está en USD 45.000. ¿Margen de seguridad?",
+      "entradas": {
+        "Vr": 60000,
+        "Ve": 45000
+      },
+      "celdas": {
+        "B1": 60000,
+        "B2": 45000
+      },
+      "pasos": [
+        "MS = (60.000 − 45.000) ÷ 60.000",
+        "MS = 0,25 = 25 %: las ventas pueden caer 25 % antes de tener pérdidas"
+      ],
+      "resultado": 0.25,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=(B1-B2)/B1",
+      "excel_en": "=(B1-B2)/B1"
+    },
+    "aparece_en": [
+      "costo",
+      "presupuesto"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-5-calculate-and-interpret-a-companys-margin-of-safety-and-operating-leverage",
+      "seccion": "3.5 Margen de seguridad"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "apalancamiento-operativo",
+    "nombre": "Grado de apalancamiento operativo",
+    "categoria": "costo-volumen-utilidad",
+    "areas": [
+      "contabilidad",
+      "gestion",
+      "finanzas"
+    ],
+    "descripcion": "Cuántas veces cambia porcentualmente la utilidad operativa por cada cambio porcentual de las ventas.",
+    "latex": "GAO = \\frac{MC}{UO}",
+    "variables": [
+      {
+        "simbolo": "GAO",
+        "nombre": "GAO",
+        "significado": "Grado de apalancamiento operativo",
+        "unidad": "veces"
+      },
+      {
+        "simbolo": "MC",
+        "nombre": "MC",
+        "significado": "Margen de contribución total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "UO",
+        "nombre": "UO",
+        "significado": "Utilidad operativa",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "MC / UO"
+    },
+    "excel": {
+      "es": "=MC/UO",
+      "en": "=MC/UO"
+    },
+    "ejemplo": {
+      "enunciado": "Vendiendo 2.400 tortas, el margen de contribución total es USD 24.000 y la utilidad operativa USD 6.000. ¿GAO?",
+      "entradas": {
+        "MC": 24000,
+        "UO": 6000
+      },
+      "celdas": {
+        "B1": 24000,
+        "B2": 6000
+      },
+      "pasos": [
+        "GAO = 24.000 ÷ 6.000",
+        "GAO = 4: si las ventas suben 10 %, la utilidad operativa sube 40 %"
+      ],
+      "resultado": 4.0,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "costo",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-5-calculate-and-interpret-a-companys-margin-of-safety-and-operating-leverage",
+      "seccion": "3.5 Apalancamiento operativo"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "razon-corriente",
+    "nombre": "Razón corriente (liquidez)",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas",
+      "contabilidad"
+    ],
+    "descripcion": "Cuántos dólares de activo corriente hay por cada dólar de deuda de corto plazo.",
+    "latex": "RC = \\frac{AC}{PC}",
+    "variables": [
+      {
+        "simbolo": "RC",
+        "nombre": "RC",
+        "significado": "Razón corriente",
+        "unidad": "veces"
+      },
+      {
+        "simbolo": "AC",
+        "nombre": "AC",
+        "significado": "Activo corriente",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "PC",
+        "nombre": "PC",
+        "significado": "Pasivo corriente",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "AC / PC"
+    },
+    "excel": {
+      "es": "=AC/PC",
+      "en": "=AC/PC"
+    },
+    "ejemplo": {
+      "enunciado": "Activo corriente USD 48.000 y pasivo corriente USD 30.000. ¿Razón corriente?",
+      "entradas": {
+        "AC": 48000,
+        "PC": 30000
+      },
+      "celdas": {
+        "B1": 48000,
+        "B2": 30000
+      },
+      "pasos": [
+        "RC = 48.000 ÷ 30.000",
+        "RC = 1,60"
+      ],
+      "resultado": 1.6,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/5-3-apply-the-results-from-the-adjusted-trial-balance-to-compute-current-ratio-and-working-capital-balance-and-explain-how-these-measures-represent-liquidity",
+      "seccion": "5.3 Razón corriente y capital de trabajo"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "prueba-acida",
+    "nombre": "Prueba ácida",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Liquidez sin contar el inventario, que es el activo corriente más difícil de convertir en efectivo.",
+    "latex": "PA = \\frac{AC - Inv}{PC}",
+    "variables": [
+      {
+        "simbolo": "PA",
+        "nombre": "PA",
+        "significado": "Prueba ácida",
+        "unidad": "veces"
+      },
+      {
+        "simbolo": "AC",
+        "nombre": "AC",
+        "significado": "Activo corriente",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Inv",
+        "nombre": "Inv",
+        "significado": "Inventarios",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "PC",
+        "nombre": "PC",
+        "significado": "Pasivo corriente",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(AC - Inv) / PC"
+    },
+    "excel": {
+      "es": "=(AC-Inv)/PC",
+      "en": "=(AC-Inv)/PC"
+    },
+    "ejemplo": {
+      "enunciado": "Del activo corriente de USD 48.000, USD 18.000 son inventarios. Pasivo corriente USD 30.000.",
+      "entradas": {
+        "AC": 48000,
+        "Inv": 18000,
+        "PC": 30000
+      },
+      "celdas": {
+        "B1": 48000,
+        "B2": 18000,
+        "B3": 30000
+      },
+      "pasos": [
+        "PA = (48.000 − 18.000) ÷ 30.000",
+        "PA = 1,00"
+      ],
+      "resultado": 1.0,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=(B1-B2)/B3",
+      "excel_en": "=(B1-B2)/B3"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-3-liquidity-ratios",
+      "seccion": "6.3 Razones de liquidez"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "capital-trabajo",
+    "nombre": "Capital de trabajo",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas",
+      "contabilidad"
+    ],
+    "descripcion": "Recursos de corto plazo que quedan después de cubrir las deudas de corto plazo.",
+    "latex": "CT = AC - PC",
+    "variables": [
+      {
+        "simbolo": "CT",
+        "nombre": "CT",
+        "significado": "Capital de trabajo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "AC",
+        "nombre": "AC",
+        "significado": "Activo corriente",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "PC",
+        "nombre": "PC",
+        "significado": "Pasivo corriente",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "AC - PC"
+    },
+    "excel": {
+      "es": "=AC-PC",
+      "en": "=AC-PC"
+    },
+    "ejemplo": {
+      "enunciado": "Con activo corriente de USD 48.000 y pasivo corriente de USD 30.000, ¿capital de trabajo?",
+      "entradas": {
+        "AC": 48000,
+        "PC": 30000
+      },
+      "celdas": {
+        "B1": 48000,
+        "B2": 30000
+      },
+      "pasos": [
+        "CT = 48.000 − 30.000",
+        "CT = 18.000,00"
+      ],
+      "resultado": 18000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1-B2",
+      "excel_en": "=B1-B2"
+    },
+    "aparece_en": [
+      "contabilidad general",
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/5-3-apply-the-results-from-the-adjusted-trial-balance-to-compute-current-ratio-and-working-capital-balance-and-explain-how-these-measures-represent-liquidity",
+      "seccion": "5.3 Capital de trabajo"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "razon-endeudamiento",
+    "nombre": "Razón de deuda a activos",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Qué proporción de los activos se financia con deuda.",
+    "latex": "RD = \\frac{PT}{AT}",
+    "variables": [
+      {
+        "simbolo": "RD",
+        "nombre": "RD",
+        "significado": "Deuda sobre activos",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "PT",
+        "nombre": "PT",
+        "significado": "Pasivo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "AT",
+        "nombre": "AT",
+        "significado": "Activo total",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PT / AT"
+    },
+    "excel": {
+      "es": "=PT/AT",
+      "en": "=PT/AT"
+    },
+    "ejemplo": {
+      "enunciado": "Pasivo total USD 70.000 y activo total USD 160.000. ¿Razón de deuda a activos?",
+      "entradas": {
+        "PT": 70000,
+        "AT": 160000
+      },
+      "celdas": {
+        "B1": 70000,
+        "B2": 160000
+      },
+      "pasos": [
+        "RD = 70.000 ÷ 160.000",
+        "RD = 0,4375 = 43,75 %"
+      ],
+      "resultado": 0.4375,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-4-solvency-ratios",
+      "seccion": "6.4 Razones de solvencia: deuda a activos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "deuda-patrimonio",
+    "nombre": "Razón de deuda a patrimonio",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Cuántos dólares de deuda hay por cada dólar aportado por los dueños.",
+    "latex": "D/P = \\frac{PT}{Pt}",
+    "variables": [
+      {
+        "simbolo": "PT",
+        "nombre": "PT",
+        "significado": "Pasivo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Pt",
+        "nombre": "Pt",
+        "significado": "Patrimonio",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PT / Pt"
+    },
+    "excel": {
+      "es": "=PT/Pt",
+      "en": "=PT/Pt"
+    },
+    "ejemplo": {
+      "enunciado": "Pasivo total USD 70.000 y patrimonio USD 90.000. ¿Deuda a patrimonio?",
+      "entradas": {
+        "PT": 70000,
+        "Pt": 90000
+      },
+      "celdas": {
+        "B1": 70000,
+        "B2": 90000
+      },
+      "pasos": [
+        "D/P = 70.000 ÷ 90.000",
+        "D/P = 0,7778"
+      ],
+      "resultado": 0.7778,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-4-solvency-ratios",
+      "seccion": "6.4 Razones de solvencia: deuda a patrimonio"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "roa",
+    "nombre": "Rentabilidad sobre activos (ROA)",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Utilidad neta generada por cada dólar de activo.",
+    "latex": "ROA = \\frac{UN}{AT}",
+    "variables": [
+      {
+        "simbolo": "UN",
+        "nombre": "UN",
+        "significado": "Utilidad neta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "AT",
+        "nombre": "AT",
+        "significado": "Activo total",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "UN / AT"
+    },
+    "excel": {
+      "es": "=UN/AT",
+      "en": "=UN/AT"
+    },
+    "ejemplo": {
+      "enunciado": "Utilidad neta USD 12.800 y activo total USD 160.000. ¿ROA?",
+      "entradas": {
+        "UN": 12800,
+        "AT": 160000
+      },
+      "celdas": {
+        "B1": 12800,
+        "B2": 160000
+      },
+      "pasos": [
+        "ROA = 12.800 ÷ 160.000",
+        "ROA = 0,08 = 8 %"
+      ],
+      "resultado": 0.08,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
+      "seccion": "6.6 Rentabilidad sobre activos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "roe",
+    "nombre": "Rentabilidad sobre patrimonio (ROE)",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Utilidad neta generada por cada dólar aportado por los dueños.",
+    "latex": "ROE = \\frac{UN}{Pt}",
+    "variables": [
+      {
+        "simbolo": "UN",
+        "nombre": "UN",
+        "significado": "Utilidad neta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Pt",
+        "nombre": "Pt",
+        "significado": "Patrimonio",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "UN / Pt"
+    },
+    "excel": {
+      "es": "=UN/Pt",
+      "en": "=UN/Pt"
+    },
+    "ejemplo": {
+      "enunciado": "Utilidad neta USD 12.800 y patrimonio USD 90.000. ¿ROE?",
+      "entradas": {
+        "UN": 12800,
+        "Pt": 90000
+      },
+      "celdas": {
+        "B1": 12800,
+        "B2": 90000
+      },
+      "pasos": [
+        "ROE = 12.800 ÷ 90.000",
+        "ROE = 0,1422 ≈ 14,22 %"
+      ],
+      "resultado": 0.1422,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
+      "seccion": "6.6 Rentabilidad sobre patrimonio"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "rotacion-cuentas-cobrar",
+    "nombre": "Rotación de cuentas por cobrar",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas",
+      "contabilidad"
+    ],
+    "descripcion": "Cuántas veces al año se cobra el saldo promedio de cuentas por cobrar.",
+    "latex": "RCC = \\frac{VC}{(CxC_i + CxC_f)/2}",
+    "variables": [
+      {
+        "simbolo": "VC",
+        "nombre": "VC",
+        "significado": "Ventas netas a crédito",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CxC_i",
+        "nombre": "CxCi",
+        "significado": "Cuentas por cobrar al inicio",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "CxC_f",
+        "nombre": "CxCf",
+        "significado": "Cuentas por cobrar al final",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VC / ((CxCi + CxCf) / 2)"
+    },
+    "excel": {
+      "es": "=VC/PROMEDIO(CxCi;CxCf)",
+      "en": "=VC/AVERAGE(CxCi,CxCf)"
+    },
+    "ejemplo": {
+      "enunciado": "Ventas a crédito USD 120.000; cuentas por cobrar de USD 14.000 al inicio y USD 10.000 al final.",
+      "entradas": {
+        "VC": 120000,
+        "CxCi": 14000,
+        "CxCf": 10000
+      },
+      "celdas": {
+        "B1": 120000,
+        "B2": 14000,
+        "B3": 10000
+      },
+      "pasos": [
+        "Promedio = (14.000 + 10.000) ÷ 2 = 12.000",
+        "RCC = 120.000 ÷ 12.000 = 10 veces"
+      ],
+      "resultado": 10.0,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/PROMEDIO(B2;B3)",
+      "excel_en": "=B1/AVERAGE(B2,B3)"
+    },
+    "aparece_en": [
+      "finanza",
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/9-3-determine-the-efficiency-of-receivables-management-using-financial-ratios",
+      "seccion": "9.3 Rotación de cuentas por cobrar"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "periodo-cobro",
+    "nombre": "Período promedio de cobro",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas",
+      "contabilidad"
+    ],
+    "descripcion": "Días que, en promedio, tarda la empresa en cobrar sus ventas a crédito.",
+    "latex": "PPC = \\frac{365}{RCC}",
+    "variables": [
+      {
+        "simbolo": "PPC",
+        "nombre": "PPC",
+        "significado": "Período promedio de cobro",
+        "unidad": "días"
+      },
+      {
+        "simbolo": "RCC",
+        "nombre": "RCC",
+        "significado": "Rotación de cuentas por cobrar",
+        "unidad": "veces"
+      }
+    ],
+    "supuestos": [
+      "Año de 365 días."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "365 / RCC"
+    },
+    "excel": {
+      "es": "=365/RCC",
+      "en": "=365/RCC"
+    },
+    "ejemplo": {
+      "enunciado": "Si las cuentas por cobrar rotan 10 veces al año, ¿cuántos días tarda el cobro?",
+      "entradas": {
+        "RCC": 10
+      },
+      "pasos": [
+        "PPC = 365 ÷ 10",
+        "PPC = 36,5 días"
+      ],
+      "resultado": 36.5,
+      "unidad": "días",
+      "tolerancia": 0.005,
+      "excel_es": "=365/10",
+      "excel_en": "=365/10"
+    },
+    "aparece_en": [
+      "finanza",
+      "contabilidad general"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/9-3-determine-the-efficiency-of-receivables-management-using-financial-ratios",
+      "seccion": "9.3 Número de días de cobro"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "rotacion-activos",
+    "nombre": "Rotación de activos totales",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Ventas generadas por cada dólar invertido en activos.",
+    "latex": "RA = \\frac{V}{AT}",
+    "variables": [
+      {
+        "simbolo": "V",
+        "nombre": "V",
+        "significado": "Ventas netas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "AT",
+        "nombre": "AT",
+        "significado": "Activo total",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "V / AT"
+    },
+    "excel": {
+      "es": "=V/AT",
+      "en": "=V/AT"
+    },
+    "ejemplo": {
+      "enunciado": "Ventas de USD 200.000 con activos de USD 160.000. ¿Rotación de activos?",
+      "entradas": {
+        "V": 200000,
+        "AT": 160000
+      },
+      "celdas": {
+        "B1": 200000,
+        "B2": 160000
+      },
+      "pasos": [
+        "RA = 200.000 ÷ 160.000",
+        "RA = 1,25 veces"
+      ],
+      "resultado": 1.25,
+      "unidad": "veces",
+      "tolerancia": 5e-05,
+      "excel_es": "=B1/B2",
+      "excel_en": "=B1/B2"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-2-operating-efficiency-ratios",
+      "seccion": "6.2 Rotación de activos"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "dupont",
+    "nombre": "Análisis DuPont del ROE",
+    "categoria": "razones-financieras",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Descompone el ROE en margen neto, rotación de activos y multiplicador de capital para saber de dónde viene la rentabilidad.",
+    "latex": "ROE = \\frac{UN}{V}\\cdot\\frac{V}{AT}\\cdot\\frac{AT}{Pt}",
+    "variables": [
+      {
+        "simbolo": "UN",
+        "nombre": "UN",
+        "significado": "Utilidad neta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "V",
+        "nombre": "V",
+        "significado": "Ventas netas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "AT",
+        "nombre": "AT",
+        "significado": "Activo total",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Pt",
+        "nombre": "Pt",
+        "significado": "Patrimonio",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(UN / V) * (V / AT) * (AT / Pt)"
+    },
+    "excel": {
+      "es": "=(UN/V)*(V/AT)*(AT/Pt)",
+      "en": "=(UN/V)*(V/AT)*(AT/Pt)"
+    },
+    "ejemplo": {
+      "enunciado": "UN 12.800; ventas 200.000; activos 160.000; patrimonio 90.000. Descompón el ROE.",
+      "entradas": {
+        "UN": 12800,
+        "V": 200000,
+        "AT": 160000,
+        "Pt": 90000
+      },
+      "celdas": {
+        "B1": 12800,
+        "B2": 200000,
+        "B3": 160000,
+        "B4": 90000
+      },
+      "pasos": [
+        "Margen neto = 12.800 ÷ 200.000 = 0,064",
+        "Rotación de activos = 200.000 ÷ 160.000 = 1,25",
+        "Multiplicador = 160.000 ÷ 90.000 = 1,7778",
+        "ROE = 0,064 × 1,25 × 1,7778 = 0,1422 (igual al ROE directo)"
+      ],
+      "resultado": 0.1422,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=(B1/B2)*(B2/B3)*(B3/B4)",
+      "excel_en": "=(B1/B2)*(B2/B3)*(B3/B4)"
+    },
+    "aparece_en": [
+      "finanza"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
+      "seccion": "6.6 Método DuPont"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "iva-causado",
+    "nombre": "IVA causado en una venta",
+    "categoria": "tributario",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Impuesto que se genera al vender bienes o servicios gravados: base imponible por la tarifa.",
+    "latex": "IVA = BI \\cdot t",
+    "variables": [
+      {
+        "simbolo": "BI",
+        "nombre": "BI",
+        "significado": "Base imponible (precio sin IVA)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tarifa de IVA",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "BI * t"
+    },
+    "excel": {
+      "es": "=BI*t",
+      "en": "=BI*t"
+    },
+    "notas": [
+      "Tarifa general de 15 % según el Decreto Ejecutivo 198 (desde el 01-04-2024), publicada por el SRI. Existen tarifas de 0 % y 5 % y reducciones temporales: confirma la tarifa vigente en sri.gob.ec antes de declarar."
+    ],
+    "ejemplo": {
+      "enunciado": "Una papelería vende mercadería gravada por USD 1.250 sin IVA. ¿Cuánto IVA cobra con la tarifa general de 15 %?",
+      "entradas": {
+        "BI": 1250,
+        "t": 0.15
+      },
+      "celdas": {
+        "B1": 1250,
+        "B2": 0.15
+      },
+      "pasos": [
+        "IVA = 1.250 × 0,15",
+        "IVA = 187,50"
+      ],
+      "resultado": 187.5,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1*B2",
+      "excel_en": "=B1*B2"
+    },
+    "aparece_en": [
+      "tributari",
+      "contabilidad comercial"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Tarifas del IVA (Decreto Ejecutivo 198)"
+    },
+    "supuestos": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "precio-con-iva",
+    "nombre": "Precio final con IVA",
+    "categoria": "tributario",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Lo que paga el cliente: base imponible más el IVA.",
+    "latex": "PVP = BI\\,(1 + t)",
+    "variables": [
+      {
+        "simbolo": "PVP",
+        "nombre": "PVP",
+        "significado": "Precio de venta al público",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "BI",
+        "nombre": "BI",
+        "significado": "Base imponible",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tarifa de IVA",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "BI * (1 + t)"
+    },
+    "excel": {
+      "es": "=BI*(1+t)",
+      "en": "=BI*(1+t)"
+    },
+    "notas": [
+      "Tarifa general de 15 % según el Decreto Ejecutivo 198 (desde el 01-04-2024), publicada por el SRI. Existen tarifas de 0 % y 5 % y reducciones temporales: confirma la tarifa vigente en sri.gob.ec antes de declarar."
+    ],
+    "ejemplo": {
+      "enunciado": "¿Cuánto paga el cliente por la compra de USD 1.250 + IVA 15 %?",
+      "entradas": {
+        "BI": 1250,
+        "t": 0.15
+      },
+      "celdas": {
+        "B1": 1250,
+        "B2": 0.15
+      },
+      "pasos": [
+        "PVP = 1.250 × 1,15",
+        "PVP = 1.437,50"
+      ],
+      "resultado": 1437.5,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1*(1+B2)",
+      "excel_en": "=B1*(1+B2)"
+    },
+    "aparece_en": [
+      "tributari"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Tarifas del IVA"
+    },
+    "supuestos": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "base-desde-pvp",
+    "nombre": "Base imponible a partir del precio con IVA",
+    "categoria": "tributario",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Separa el IVA incluido en un precio final: se divide para (1 + tarifa), no se resta el 15 % del precio.",
+    "latex": "BI = \\frac{PVP}{1 + t}",
+    "variables": [
+      {
+        "simbolo": "BI",
+        "nombre": "BI",
+        "significado": "Base imponible",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "PVP",
+        "nombre": "PVP",
+        "significado": "Precio con IVA incluido",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tarifa de IVA",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PVP / (1 + t)"
+    },
+    "excel": {
+      "es": "=PVP/(1+t)",
+      "en": "=PVP/(1+t)"
+    },
+    "notas": [
+      "Tarifa general de 15 % según el Decreto Ejecutivo 198 (desde el 01-04-2024), publicada por el SRI. Existen tarifas de 0 % y 5 % y reducciones temporales: confirma la tarifa vigente en sri.gob.ec antes de declarar."
+    ],
+    "ejemplo": {
+      "enunciado": "Un producto cuesta USD 230 con IVA incluido (15 %). ¿Cuál es su base imponible?",
+      "entradas": {
+        "PVP": 230,
+        "t": 0.15
+      },
+      "celdas": {
+        "B1": 230,
+        "B2": 0.15
+      },
+      "pasos": [
+        "BI = 230 ÷ 1,15",
+        "BI = 200,00 (el IVA es 30,00)",
+        "Error típico: 230 × 0,85 = 195,50 no es la base"
+      ],
+      "resultado": 200.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1/(1+B2)",
+      "excel_en": "=B1/(1+B2)"
+    },
+    "aparece_en": [
+      "tributari"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Tarifas del IVA"
+    },
+    "supuestos": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "iva-a-pagar",
+    "nombre": "IVA a pagar en el período",
+    "categoria": "tributario",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "El IVA cobrado en ventas menos el IVA pagado en compras que da derecho a crédito tributario.",
+    "latex": "IVA_{pagar} = IVA_{ventas} - IVA_{compras}",
+    "variables": [
+      {
+        "simbolo": "IVA_{ventas}",
+        "nombre": "IVAv",
+        "significado": "IVA cobrado en ventas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IVA_{compras}",
+        "nombre": "IVAc",
+        "significado": "IVA pagado en compras con derecho a crédito tributario",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Si el resultado es negativo, se trata de crédito tributario para el siguiente período."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "IVAv - IVAc"
+    },
+    "excel": {
+      "es": "=IVAv-IVAc",
+      "en": "=IVAv-IVAc"
+    },
+    "notas": [
+      "Tarifa general de 15 % según el Decreto Ejecutivo 198 (desde el 01-04-2024), publicada por el SRI. Existen tarifas de 0 % y 5 % y reducciones temporales: confirma la tarifa vigente en sri.gob.ec antes de declarar."
+    ],
+    "ejemplo": {
+      "enunciado": "En el mes se vendieron USD 8.000 gravados y se compraron USD 5.000 gravados (tarifa 15 %). ¿IVA a pagar?",
+      "entradas": {
+        "IVAv": 1200,
+        "IVAc": 750
+      },
+      "celdas": {
+        "B1": 8000,
+        "B2": 5000,
+        "B3": 0.15
+      },
+      "pasos": [
+        "IVA en ventas = 8.000 × 0,15 = 1.200,00",
+        "IVA en compras = 5.000 × 0,15 = 750,00",
+        "IVA a pagar = 1.200 − 750 = 450,00"
+      ],
+      "resultado": 450.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1*B3-B2*B3",
+      "excel_en": "=B1*B3-B2*B3"
+    },
+    "aparece_en": [
+      "tributari"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Liquidación del IVA"
+    },
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "impuesto-renta-personas",
+    "nombre": "Impuesto a la renta de personas naturales (tabla 2026)",
+    "categoria": "tributario",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Se ubica la base imponible en la tabla del año y se suma el impuesto de la fracción básica más el porcentaje sobre el excedente.",
+    "latex": "IR = IFB + (BI - FB)\\cdot t",
+    "variables": [
+      {
+        "simbolo": "BI",
+        "nombre": "BI",
+        "significado": "Base imponible anual",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "FB",
+        "nombre": "FB",
+        "significado": "Fracción básica del tramo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IFB",
+        "nombre": "IFB",
+        "significado": "Impuesto sobre la fracción básica",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Porcentaje sobre la fracción excedente",
+        "unidad": "proporción"
+      }
+    ],
+    "supuestos": [
+      "Tabla del ejercicio fiscal 2026 (Res. NAC-DGERCGC25-00000043). La rebaja por gastos personales se aplica después, sobre el impuesto."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "IFB + (BI - FB) * t"
+    },
+    "excel": {
+      "es": "=IFB+(BI-FB)*t",
+      "en": "=IFB+(BI-FB)*t"
+    },
+    "notas": [
+      "Tramo usado en el ejemplo: de USD 15.549 a 20.188, impuesto sobre la fracción básica USD 167 y 10 % sobre el excedente (tabla 2026 publicada por el SRI)."
+    ],
+    "ejemplo": {
+      "enunciado": "Una persona tiene una base imponible de USD 20.000 en 2026. ¿Impuesto causado según la tabla?",
+      "entradas": {
+        "BI": 20000,
+        "FB": 15549,
+        "IFB": 167,
+        "t": 0.1
+      },
+      "pasos": [
+        "20.000 cae en el tramo 15.549 – 20.188",
+        "Excedente = 20.000 − 15.549 = 4.451,00",
+        "Impuesto del excedente = 4.451 × 10 % = 445,10",
+        "IR = 167 + 445,10 = 612,10"
+      ],
+      "resultado": 612.1,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=167+(20000-15549)*0,1",
+      "excel_en": "=167+(20000-15549)*0.1"
+    },
+    "aparece_en": [
+      "tributari",
+      "renta"
+    ],
+    "fuente": {
+      "ref": "sri-tablas-ir",
+      "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
+    },
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "impuesto-renta-sociedades",
+    "nombre": "Impuesto a la renta de sociedades (tarifa general)",
+    "categoria": "tributario",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Las sociedades aplican la tarifa general sobre su base imponible, con incrementos o reducciones en casos específicos.",
+    "latex": "IR = BI \\cdot 25\\,\\%",
+    "variables": [
+      {
+        "simbolo": "BI",
+        "nombre": "BI",
+        "significado": "Base imponible de la sociedad",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tarifa general",
+        "unidad": "proporción"
+      }
+    ],
+    "supuestos": [
+      "Tarifa general de 25 %; existen recargos (por ejemplo, +3 puntos por paraísos fiscales) y reducciones (reinversión, nuevas sociedades, microempresas) descritas por el SRI."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "BI * t"
+    },
+    "excel": {
+      "es": "=BI*t",
+      "en": "=BI*t"
+    },
+    "ejemplo": {
+      "enunciado": "Una compañía tiene una base imponible de USD 80.000 y aplica la tarifa general. ¿Impuesto causado?",
+      "entradas": {
+        "BI": 80000,
+        "t": 0.25
+      },
+      "celdas": {
+        "B1": 80000,
+        "B2": 0.25
+      },
+      "pasos": [
+        "IR = 80.000 × 0,25",
+        "IR = 20.000,00"
+      ],
+      "resultado": 20000.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=B1*B2",
+      "excel_en": "=B1*B2"
+    },
+    "aparece_en": [
+      "tributari",
+      "renta"
+    ],
+    "fuente": {
+      "ref": "sri-renta",
+      "seccion": "¿Cuál es la tarifa? Sociedades"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "media-aritmetica",
+    "nombre": "Media aritmética",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Suma de los datos dividida para cuántos son. Es sensible a valores extremos.",
+    "latex": "\\bar{x} = \\frac{\\sum x_i}{n}",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Datos",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM(x) / COUNT(x)"
+    },
+    "excel": {
+      "es": "=PROMEDIO(Datos)",
+      "en": "=AVERAGE(Data)"
+    },
+    "ejemplo": {
+      "enunciado": "Ventas diarias (USD) de una cafetería durante una semana: 120, 135, 150, 110, 145, 160 y 130. ¿Media?",
+      "entradas": {
+        "x": [
+          120,
+          135,
+          150,
+          110,
+          145,
+          160,
+          130
+        ]
+      },
+      "celdas": {
+        "B2": 120,
+        "B3": 135,
+        "B4": 150,
+        "B5": 110,
+        "B6": 145,
+        "B7": 160,
+        "B8": 130
+      },
+      "pasos": [
+        "Σx = 950",
+        "n = 7",
+        "x̄ = 950 ÷ 7 = 135,7143"
+      ],
+      "resultado": 135.7143,
+      "unidad": "USD",
+      "tolerancia": 5e-05,
+      "excel_es": "=PROMEDIO(B2:B8)",
+      "excel_en": "=AVERAGE(B2:B8)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "seccion": "2.5 Medidas de centro"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "media-ponderada",
+    "nombre": "Media ponderada",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Promedio en el que cada dato pesa distinto. Útil para notas con porcentajes o precios con cantidades.",
+    "latex": "\\bar{x}_w = \\frac{\\sum w_i x_i}{\\sum w_i}",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Datos",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "w_i",
+        "nombre": "w",
+        "significado": "Pesos",
+        "unidad": "según los pesos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUMPRODUCT(w, x) / SUM(w)"
+    },
+    "excel": {
+      "es": "=SUMAPRODUCTO(Pesos;Datos)/SUMA(Pesos)",
+      "en": "=SUMPRODUCT(Weights,Data)/SUM(Weights)"
+    },
+    "ejemplo": {
+      "enunciado": "Notas: aporte 8 (30 %), lección 7 (30 %) y examen 9 (40 %). ¿Nota final?",
+      "entradas": {
+        "x": [
+          8,
+          7,
+          9
+        ],
+        "w": [
+          0.3,
+          0.3,
+          0.4
+        ]
+      },
+      "celdas": {
+        "B2": 8,
+        "B3": 7,
+        "B4": 9,
+        "C2": 0.3,
+        "C3": 0.3,
+        "C4": 0.4
+      },
+      "pasos": [
+        "Σwx = 8×0,3 + 7×0,3 + 9×0,4 = 2,4 + 2,1 + 3,6 = 8,1",
+        "Σw = 1",
+        "x̄w = 8,1"
+      ],
+      "resultado": 8.1,
+      "unidad": "puntos",
+      "tolerancia": 5e-05,
+      "excel_es": "=SUMAPRODUCTO(C2:C4;B2:B4)/SUMA(C2:C4)",
+      "excel_en": "=SUMPRODUCT(C2:C4,B2:B4)/SUM(C2:C4)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/13-1-measures-of-center",
+      "seccion": "13.1 Medidas de centro: media ponderada"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "mediana",
+    "nombre": "Mediana",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Valor central de los datos ordenados. Con un número par de datos es el promedio de los dos centrales. No se altera por valores extremos.",
+    "latex": "Me = x_{\\left(\\frac{n+1}{2}\\right)}",
+    "variables": [
+      {
+        "simbolo": "x",
+        "nombre": "x",
+        "significado": "Datos ordenados",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "MEDIAN(x)"
+    },
+    "excel": {
+      "es": "=MEDIANA(Datos)",
+      "en": "=MEDIAN(Data)"
+    },
+    "ejemplo": {
+      "enunciado": "Con las ventas de la semana (120, 135, 150, 110, 145, 160, 130), ¿cuál es la mediana?",
+      "entradas": {
+        "x": [
+          120,
+          135,
+          150,
+          110,
+          145,
+          160,
+          130
+        ]
+      },
+      "celdas": {
+        "B2": 120,
+        "B3": 135,
+        "B4": 150,
+        "B5": 110,
+        "B6": 145,
+        "B7": 160,
+        "B8": 130
+      },
+      "pasos": [
+        "Ordenados: 110, 120, 130, 135, 145, 150, 160",
+        "n = 7 → posición (7 + 1) ÷ 2 = 4",
+        "Me = 135"
+      ],
+      "resultado": 135.0,
+      "unidad": "USD",
+      "tolerancia": 5e-05,
+      "excel_es": "=MEDIANA(B2:B8)",
+      "excel_en": "=MEDIAN(B2:B8)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "seccion": "2.5 Mediana"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "varianza-muestral",
+    "nombre": "Varianza muestral",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Promedio de los cuadrados de las desviaciones respecto a la media, dividiendo para n − 1 porque se trabaja con una muestra.",
+    "latex": "s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n-1}",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Datos de la muestra",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM((x - AVERAGE(x)) ^ 2) / (COUNT(x) - 1)"
+    },
+    "excel": {
+      "es": "=VAR.S(Datos)",
+      "en": "=VAR.S(Data)"
+    },
+    "ejemplo": {
+      "enunciado": "Calcula la varianza muestral de las ventas de la semana.",
+      "entradas": {
+        "x": [
+          120,
+          135,
+          150,
+          110,
+          145,
+          160,
+          130
+        ]
+      },
+      "celdas": {
+        "B2": 120,
+        "B3": 135,
+        "B4": 150,
+        "B5": 110,
+        "B6": 145,
+        "B7": 160,
+        "B8": 130
+      },
+      "pasos": [
+        "x̄ = 135,7143",
+        "Σ(x − x̄)² = 1.821,4286",
+        "s² = 1.821,4286 ÷ 6 = 303,5714"
+      ],
+      "resultado": 303.5714,
+      "unidad": "USD²",
+      "tolerancia": 5e-05,
+      "excel_es": "=VAR.S(B2:B8)",
+      "excel_en": "=VAR.S(B2:B8)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Medidas de dispersión"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "desviacion-estandar-muestral",
+    "nombre": "Desviación estándar muestral",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Raíz cuadrada de la varianza: mide la dispersión típica en las mismas unidades que los datos.",
+    "latex": "s = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n-1}}",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Datos de la muestra",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SQRT(SUM((x - AVERAGE(x)) ^ 2) / (COUNT(x) - 1))"
+    },
+    "excel": {
+      "es": "=DESVEST.M(Datos)",
+      "en": "=STDEV.S(Data)"
+    },
+    "ejemplo": {
+      "enunciado": "¿Desviación estándar muestral de las ventas de la semana?",
+      "entradas": {
+        "x": [
+          120,
+          135,
+          150,
+          110,
+          145,
+          160,
+          130
+        ]
+      },
+      "celdas": {
+        "B2": 120,
+        "B3": 135,
+        "B4": 150,
+        "B5": 110,
+        "B6": 145,
+        "B7": 160,
+        "B8": 130
+      },
+      "pasos": [
+        "s² = 303,5714",
+        "s = √303,5714 = 17,4233"
+      ],
+      "resultado": 17.4233,
+      "unidad": "USD",
+      "tolerancia": 5e-05,
+      "excel_es": "=DESVEST.M(B2:B8)",
+      "excel_en": "=STDEV.S(B2:B8)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Desviación estándar"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "coeficiente-variacion",
+    "nombre": "Coeficiente de variación",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Desviación estándar relativa a la media. Permite comparar la variabilidad de datos con escalas distintas.",
+    "latex": "CV = \\frac{s}{\\bar{x}}",
+    "variables": [
+      {
+        "simbolo": "s",
+        "nombre": "s",
+        "significado": "Desviación estándar",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "\\bar{x}",
+        "nombre": "media",
+        "significado": "Media",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "s / media"
+    },
+    "excel": {
+      "es": "=DESVEST.M(Datos)/PROMEDIO(Datos)",
+      "en": "=STDEV.S(Data)/AVERAGE(Data)"
+    },
+    "ejemplo": {
+      "enunciado": "Con las ventas de la semana, ¿cuál es el coeficiente de variación?",
+      "entradas": {
+        "s": 17.42330131092924,
+        "media": 135.71428571428572
+      },
+      "celdas": {
+        "B2": 120,
+        "B3": 135,
+        "B4": 150,
+        "B5": 110,
+        "B6": 145,
+        "B7": 160,
+        "B8": 130
+      },
+      "pasos": [
+        "s = 17,4233; x̄ = 135,7143",
+        "CV = 17,4233 ÷ 135,7143 = 0,1284 ≈ 12,84 %"
+      ],
+      "resultado": 0.1284,
+      "unidad": "proporción",
+      "tolerancia": 5e-05,
+      "excel_es": "=DESVEST.M(B2:B8)/PROMEDIO(B2:B8)",
+      "excel_en": "=STDEV.S(B2:B8)/AVERAGE(B2:B8)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Coeficiente de variación"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "puntuacion-z",
+    "nombre": "Puntuación z",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Cuántas desviaciones estándar está un dato por encima (z > 0) o por debajo (z < 0) de la media.",
+    "latex": "z = \\frac{x - \\mu}{\\sigma}",
+    "variables": [
+      {
+        "simbolo": "x",
+        "nombre": "x",
+        "significado": "Valor observado",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "\\mu",
+        "nombre": "mu",
+        "significado": "Media",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "\\sigma",
+        "nombre": "sigma",
+        "significado": "Desviación estándar",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(x - mu) / sigma"
+    },
+    "excel": {
+      "es": "=NORMALIZACION(x;mu;sigma)",
+      "en": "=STANDARDIZE(x,mu,sigma)"
+    },
+    "ejemplo": {
+      "enunciado": "En un examen la media fue 70 y la desviación estándar 8. Una estudiante obtuvo 82. ¿Puntuación z?",
+      "entradas": {
+        "x": 82,
+        "mu": 70,
+        "sigma": 8
+      },
+      "pasos": [
+        "z = (82 − 70) ÷ 8",
+        "z = 1,5: está 1,5 desviaciones estándar sobre la media"
+      ],
+      "resultado": 1.5,
+      "unidad": "desviaciones estándar",
+      "tolerancia": 5e-05,
+      "excel_es": "=NORMALIZACION(82;70;8)",
+      "excel_en": "=STANDARDIZE(82,70,8)"
+    },
+    "aparece_en": [
+      "estadistica descriptiva",
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/6-1-the-standard-normal-distribution",
+      "seccion": "6.1 Puntuación z"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "correlacion-pearson",
+    "nombre": "Coeficiente de correlación de Pearson",
+    "categoria": "estadistica",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Mide la fuerza y el sentido de la relación lineal entre dos variables, entre −1 y 1. Correlación no implica causalidad.",
+    "latex": "r = \\frac{\\sum (x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum (x_i-\\bar{x})^2\\sum (y_i-\\bar{y})^2}}",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Primera variable",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "y_i",
+        "nombre": "y",
+        "significado": "Segunda variable",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM((x - AVERAGE(x)) * (y - AVERAGE(y))) / SQRT(SUM((x - AVERAGE(x)) ^ 2) * SUM((y - AVERAGE(y)) ^ 2))"
+    },
+    "excel": {
+      "es": "=COEF.DE.CORREL(X;Y)",
+      "en": "=CORREL(X,Y)"
+    },
+    "ejemplo": {
+      "enunciado": "Gasto en publicidad (miles USD): 2, 3, 5, 7, 8. Ventas (miles USD): 14, 18, 22, 30, 31. ¿Correlación?",
+      "entradas": {
+        "x": [
+          2,
+          3,
+          5,
+          7,
+          8
+        ],
+        "y": [
+          14,
+          18,
+          22,
+          30,
+          31
+        ]
+      },
+      "celdas": {
+        "B2": 2,
+        "B3": 3,
+        "B4": 5,
+        "B5": 7,
+        "B6": 8,
+        "C2": 14,
+        "C3": 18,
+        "C4": 22,
+        "C5": 30,
+        "C6": 31
+      },
+      "pasos": [
+        "x̄ = 5; ȳ = 23",
+        "Σ(x−x̄)(y−ȳ) = 75,00",
+        "√(Σ(x−x̄)²·Σ(y−ȳ)²) = 75,6307",
+        "r = 0,9917: relación lineal positiva muy fuerte"
+      ],
+      "resultado": 0.9917,
+      "unidad": "sin unidad",
+      "tolerancia": 5e-05,
+      "excel_es": "=COEF.DE.CORREL(B2:B6;C2:C6)",
+      "excel_en": "=CORREL(B2:B6,C2:C6)"
+    },
+    "aparece_en": [
+      "estadistica"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+      "seccion": "12.3 Coeficiente de correlación"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-cambio-promedio",
+    "nombre": "Tasa de cambio promedio",
+    "categoria": "calculo",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Pendiente de la recta secante entre dos puntos de una función: cuánto cambia f por cada unidad que cambia x en ese intervalo.",
+    "latex": "\\frac{\\Delta f}{\\Delta x} = \\frac{f(b) - f(a)}{b - a}",
+    "variables": [
+      {
+        "simbolo": "f(a)",
+        "nombre": "fa",
+        "significado": "Valor de la función en a",
+        "unidad": "según la función"
+      },
+      {
+        "simbolo": "f(b)",
+        "nombre": "fb",
+        "significado": "Valor de la función en b",
+        "unidad": "según la función"
+      },
+      {
+        "simbolo": "a",
+        "nombre": "a",
+        "significado": "Inicio del intervalo",
+        "unidad": "según x"
+      },
+      {
+        "simbolo": "b",
+        "nombre": "b",
+        "significado": "Fin del intervalo",
+        "unidad": "según x"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(fb - fa) / (b - a)"
+    },
+    "excel": {
+      "es": "=(fb-fa)/(b-a)",
+      "en": "=(fb-fa)/(b-a)"
+    },
+    "ejemplo": {
+      "enunciado": "El costo de producir q unidades es C(q) = 2.000 + 15q + 0,02q². ¿Cuánto aumenta el costo por unidad, en promedio, entre 100 y 200 unidades?",
+      "entradas": {
+        "fa": 3700.0,
+        "fb": 5800.0,
+        "a": 100,
+        "b": 200
+      },
+      "pasos": [
+        "C(100) = 2.000 + 1.500 + 200 = 3.700",
+        "C(200) = 2.000 + 3.000 + 800 = 5.800",
+        "ΔC/Δq = (5.800 − 3.700) ÷ (200 − 100) = 21 USD por unidad"
+      ],
+      "resultado": 21.0,
+      "unidad": "USD/unidad",
+      "tolerancia": 5e-05,
+      "excel_es": "=((2000+15*200+0,02*200^2)-(2000+15*100+0,02*100^2))/(200-100)",
+      "excel_en": "=((2000+15*200+0.02*200^2)-(2000+15*100+0.02*100^2))/(200-100)"
+    },
+    "aparece_en": [
+      "calculo diferencial",
+      "calculo"
+    ],
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+      "seccion": "3.1 Rectas secantes y tangentes"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "costo-marginal",
+    "nombre": "Costo marginal (derivada de una función cuadrática)",
+    "categoria": "calculo",
+    "areas": [
+      "cuantitativo",
+      "economia"
+    ],
+    "descripcion": "La derivada del costo total aproxima el costo de producir una unidad adicional. Para C(q) = a + bq + cq², C′(q) = b + 2cq.",
+    "latex": "C'(q) = b + 2cq",
+    "variables": [
+      {
+        "simbolo": "b",
+        "nombre": "b",
+        "significado": "Coeficiente lineal del costo",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "c",
+        "nombre": "c",
+        "significado": "Coeficiente cuadrático del costo",
+        "unidad": "USD/unidad²"
+      },
+      {
+        "simbolo": "q",
+        "nombre": "q",
+        "significado": "Nivel de producción",
+        "unidad": "unidades"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "b + 2 * c * q"
+    },
+    "excel": {
+      "es": "=b+2*c*q",
+      "en": "=b+2*c*q"
+    },
+    "ejemplo": {
+      "enunciado": "Con C(q) = 2.000 + 15q + 0,02q², ¿cuál es el costo marginal cuando se producen 150 unidades?",
+      "entradas": {
+        "b": 15,
+        "c": 0.02,
+        "q": 150
+      },
+      "pasos": [
+        "Regla de la potencia: d/dq (0,02q²) = 0,04q; d/dq (15q) = 15; d/dq (2.000) = 0",
+        "C′(q) = 15 + 0,04q",
+        "C′(150) = 15 + 6 = 21 USD por unidad adicional"
+      ],
+      "resultado": 21.0,
+      "unidad": "USD/unidad",
+      "tolerancia": 5e-05,
+      "excel_es": "=15+2*0,02*150",
+      "excel_en": "=15+2*0.02*150"
+    },
+    "aparece_en": [
+      "calculo diferencial",
+      "microeconomia"
+    ],
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
+      "seccion": "3.4 Costo e ingreso marginal"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "maximo-ingreso",
+    "nombre": "Cantidad que maximiza el ingreso (función cuadrática)",
+    "categoria": "calculo",
+    "areas": [
+      "cuantitativo",
+      "economia"
+    ],
+    "descripcion": "Si el ingreso es R(q) = pq − dq², su derivada R′(q) = p − 2dq se anula en q* = p ÷ 2d; como R″ = −2d < 0, ese punto es un máximo.",
+    "latex": "q^* = \\frac{p}{2d}",
+    "variables": [
+      {
+        "simbolo": "p",
+        "nombre": "p",
+        "significado": "Coeficiente lineal del ingreso",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "d",
+        "nombre": "d",
+        "significado": "Coeficiente cuadrático (pendiente de la demanda)",
+        "unidad": "USD/unidad²"
+      }
+    ],
+    "supuestos": [
+      "d > 0 (la demanda tiene pendiente negativa)."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "p / (2 * d)"
+    },
+    "excel": {
+      "es": "=p/(2*d)",
+      "en": "=p/(2*d)"
+    },
+    "ejemplo": {
+      "enunciado": "El ingreso de un emprendimiento es R(q) = 80q − 0,4q². ¿Qué cantidad maximiza el ingreso?",
+      "entradas": {
+        "p": 80,
+        "d": 0.4
+      },
+      "pasos": [
+        "R′(q) = 80 − 0,8q",
+        "80 − 0,8q = 0 → q* = 80 ÷ 0,8 = 100",
+        "R″(q) = −0,8 < 0: es un máximo"
+      ],
+      "resultado": 100.0,
+      "unidad": "unidades",
+      "tolerancia": 5e-05,
+      "excel_es": "=80/(2*0,4)",
+      "excel_en": "=80/(2*0.4)"
+    },
+    "aparece_en": [
+      "calculo diferencial"
+    ],
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems",
+      "seccion": "4.7 Problemas de optimización"
+    },
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  },
+  {
+    "id": "elasticidad-precio",
+    "nombre": "Elasticidad precio de la demanda (punto medio)",
+    "categoria": "economia",
+    "areas": [
+      "economia",
+      "cuantitativo"
+    ],
+    "descripcion": "Cambio porcentual de la cantidad demandada dividido para el cambio porcentual del precio, usando promedios para que el resultado no dependa de la dirección del cambio.",
+    "latex": "E_d = \\frac{(Q_2 - Q_1)/\\left[(Q_2+Q_1)/2\\right]}{(P_2 - P_1)/\\left[(P_2+P_1)/2\\right]}",
+    "variables": [
+      {
+        "simbolo": "Q_1",
+        "nombre": "Q1",
+        "significado": "Cantidad inicial",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "Q_2",
+        "nombre": "Q2",
+        "significado": "Cantidad final",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "P_1",
+        "nombre": "P1",
+        "significado": "Precio inicial",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "P_2",
+        "nombre": "P2",
+        "significado": "Precio final",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "((Q2 - Q1) / ((Q2 + Q1) / 2)) / ((P2 - P1) / ((P2 + P1) / 2))"
+    },
+    "excel": {
+      "es": "=((Q2-Q1)/PROMEDIO(Q1;Q2))/((P2-P1)/PROMEDIO(P1;P2))",
+      "en": "=((Q2-Q1)/AVERAGE(Q1,Q2))/((P2-P1)/AVERAGE(P1,P2))"
+    },
+    "ejemplo": {
+      "enunciado": "Una cafetería sube el precio del almuerzo de USD 10 a 12 y las ventas bajan de 500 a 420 al mes. ¿Elasticidad?",
+      "entradas": {
+        "Q1": 500,
+        "Q2": 420,
+        "P1": 10,
+        "P2": 12
+      },
+      "celdas": {
+        "B1": 500,
+        "B2": 420,
+        "C1": 10,
+        "C2": 12
+      },
+      "pasos": [
+        "%ΔQ = (420 − 500) ÷ 460 = −0,1739",
+        "%ΔP = (12 − 10) ÷ 11 = 0,1818",
+        "Ed = −0,1739 ÷ 0,1818 = -0,9565",
+        "|Ed| < 1: demanda inelástica en ese tramo; el ingreso total sube"
+      ],
+      "resultado": -0.9565,
+      "unidad": "sin unidad",
+      "tolerancia": 5e-05,
+      "excel_es": "=((B2-B1)/PROMEDIO(B1;B2))/((C2-C1)/PROMEDIO(C1;C2))",
+      "excel_en": "=((B2-B1)/AVERAGE(B1,B2))/((C2-C1)/AVERAGE(C1,C2))"
+    },
+    "aparece_en": [
+      "microeconomia",
+      "calculo diferencial"
+    ],
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+      "seccion": "5.1 Método del punto medio"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-14",
+    "estado": "verificada"
+  }
+]
