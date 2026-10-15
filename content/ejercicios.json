@@ -1,0 +1,821 @@
+[
+  {
+    "id": "ej-cg-patrimonio",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Una librería tiene activos por USD 52.000 y pasivos por USD 19.300. ¿Cuál es su patrimonio?",
+    "datos": {
+      "A": 52000,
+      "P": 19300
+    },
+    "calculo": "A - P",
+    "respuesta": 32700.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Pt = A − P",
+      "Pt = 52.000 − 19.300 = 32.700,00"
+    ],
+    "pistas": [
+      "El patrimonio es lo que queda para los dueños.",
+      "Resta el pasivo del activo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2 Activos, pasivos y patrimonio"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-ecuacion-elementos",
+    "formula": "patrimonio"
+  },
+  {
+    "id": "ej-cg-ampliada",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Un taller tiene pasivos de USD 8.400, capital aportado de USD 25.000, ingresos de USD 14.200, gastos de USD 9.850 y retiros del dueño por USD 1.000. ¿Cuánto suman sus activos?",
+    "datos": {
+      "P": 8400,
+      "C": 25000,
+      "I": 14200,
+      "G": 9850,
+      "R": 1000
+    },
+    "calculo": "P + C + I - G - R",
+    "respuesta": 36750.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "A = P + C + I − G − R",
+      "A = 8.400 + 25.000 + 14.200 − 9.850 − 1.000 = 36.750,00"
+    ],
+    "pistas": [
+      "Los retiros reducen el patrimonio.",
+      "Los ingresos suman y los gastos restan."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
+      "seccion": "3.2 Ecuación contable ampliada"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-ecuacion-ampliada",
+    "formula": "ecuacion-contable-ampliada"
+  },
+  {
+    "id": "ej-cg-transaccion",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Una empresa tiene activos por USD 40.000. Compra mercadería a crédito por USD 3.500. ¿Cuál es su activo total después de la compra?",
+    "datos": {
+      "A0": 40000,
+      "compra": 3500
+    },
+    "calculo": "A0 + compra",
+    "respuesta": 43500.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "La mercadería (activo) sube 3.500.",
+      "Proveedores (pasivo) sube 3.500; el efectivo no cambia.",
+      "Activo = 40.000 + 3.500 = 43.500,00"
+    ],
+    "pistas": [
+      "¿Salió dinero de la caja?",
+      "Una compra a crédito sube un activo y un pasivo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-4-analyze-business-transactions-using-the-accounting-equation-and-show-the-impact-of-business-transactions-on-financial-statements",
+      "seccion": "3.4 Análisis de transacciones"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-ecuacion-transacciones",
+    "formula": "ecuacion-contable"
+  },
+  {
+    "id": "ej-cg-saldo-bancos",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "La cuenta Bancos registra cargos por USD 2.500, 1.800 y 640, y abonos por USD 1.200, 900 y 75. ¿Cuál es su saldo?",
+    "datos": {
+      "debe": [
+        2500,
+        1800,
+        640
+      ],
+      "haber": [
+        1200,
+        900,
+        75
+      ]
+    },
+    "calculo": "SUM(debe) - SUM(haber)",
+    "respuesta": 2765.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Σ Debe = 4.940",
+      "Σ Haber = 2.175",
+      "Saldo deudor = 4.940 − 2.175 = 2.765,00"
+    ],
+    "pistas": [
+      "Bancos es un activo: su saldo normal es deudor.",
+      "Suma cada lado por separado y resta."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5 Cuentas T"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-partida-doble-mayor",
+    "formula": "saldo-cuenta-deudora"
+  },
+  {
+    "id": "ej-cg-diferencia-balance",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "En un balance de comprobación los saldos deudores son USD 3.200, 1.450, 870 y 2.480; los acreedores, USD 2.000 y 5.910. ¿Qué diferencia hay que investigar?",
+    "datos": {
+      "debe": [
+        3200,
+        1450,
+        870,
+        2480
+      ],
+      "haber": [
+        2000,
+        5910
+      ]
+    },
+    "calculo": "SUM(debe) - SUM(haber)",
+    "respuesta": 90.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Σ Debe = 8.000",
+      "Σ Haber = 7.910",
+      "Diferencia = 90,00: el balance no cuadra"
+    ],
+    "pistas": [
+      "Suma cada columna.",
+      "Una diferencia distinta de cero indica un error de registro o de pase."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "seccion": "3.6 Balance de comprobación"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-partida-doble-comprobacion",
+    "formula": "comprobacion-partida-doble"
+  },
+  {
+    "id": "ej-cg-utilidad",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Una agencia tuvo ingresos de USD 31.400. Sus gastos fueron sueldos 12.000, arriendo 4.800, servicios básicos 1.350 y depreciación 2.100. ¿Utilidad neta?",
+    "datos": {
+      "I": 31400,
+      "g": [
+        12000,
+        4800,
+        1350,
+        2100
+      ]
+    },
+    "calculo": "I - SUM(g)",
+    "respuesta": 11150.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Gastos = 12.000 + 4.800 + 1.350 + 2.100 = 20.250",
+      "UN = 31.400 − 20.250 = 11.150,00"
+    ],
+    "pistas": [
+      "La depreciación también es un gasto.",
+      "Suma todos los gastos antes de restar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+      "seccion": "2.1 Estado de resultados"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-estados-resultados",
+    "formula": "utilidad-neta"
+  },
+  {
+    "id": "ej-cg-costo-ventas",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Inventario inicial USD 8.500; compras USD 27.000; fletes en compras USD 600; devoluciones en compras USD 1.100; inventario final USD 7.200. ¿Costo de ventas?",
+    "datos": {
+      "II": 8500,
+      "Co": 27000,
+      "Fl": 600,
+      "Dc": 1100,
+      "IF": 7200
+    },
+    "calculo": "II + (Co + Fl - Dc) - IF",
+    "respuesta": 27800.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Compras netas = 27.000 + 600 − 1.100 = 26.500",
+      "CV = 8.500 + 26.500 − 7.200 = 27.800,00"
+    ],
+    "pistas": [
+      "Primero calcula las compras netas.",
+      "Los fletes en compras se suman al costo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Costo de ventas"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-mercaderias-costo",
+    "formula": "costo-ventas-periodico"
+  },
+  {
+    "id": "ej-cg-margen-bruto",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Con ventas netas de USD 60.000 y costo de ventas de USD 27.800, ¿cuál es el margen bruto? (Escribe 0,5367 o 53,67 %)",
+    "datos": {
+      "VN": 60000,
+      "CV": 27800
+    },
+    "calculo": "(VN - CV) / VN",
+    "respuesta": 0.5367,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Utilidad bruta = 60.000 − 27.800 = 32.200",
+      "Margen = 32,200 ÷ 60,000 = 0,5367"
+    ],
+    "pistas": [
+      "El margen se calcula sobre ventas netas.",
+      "Primero obtén la utilidad bruta."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-6-describe-and-prepare-multi-step-and-simple-income-statements-for-merchandising-companies",
+      "seccion": "6.6 Margen bruto"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-mercaderias-costo",
+    "formula": "margen-bruto"
+  },
+  {
+    "id": "ej-cg-peps",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Hay 50 unidades a USD 10 (las más antiguas) y 80 unidades a USD 11. Se venden 100 unidades. ¿Costo de ventas por PEPS?",
+    "datos": {
+      "q1": 50,
+      "c1": 10,
+      "q2": 50,
+      "c2": 11
+    },
+    "calculo": "q1 * c1 + q2 * c2",
+    "respuesta": 1050.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Salen primero las 50 u a 10: 500",
+      "Faltan 50 u del segundo lote a 11: 550",
+      "CV = 1.050,00"
+    ],
+    "pistas": [
+      "PEPS: primero salen las más antiguas.",
+      "Del segundo lote solo tomas las unidades que faltan."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 PEPS"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-mercaderias-valoracion",
+    "formula": "costo-ventas-peps"
+  },
+  {
+    "id": "ej-cg-promedio",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "enunciado": "Con los mismos lotes (50 u a USD 10 y 80 u a USD 11), ¿cuál es el costo de ventas de 100 unidades con promedio ponderado?",
+    "datos": {
+      "q1": 50,
+      "c1": 10,
+      "q2": 80,
+      "c2": 11,
+      "v": 100
+    },
+    "calculo": "(q1 * c1 + q2 * c2) / (q1 + q2) * v",
+    "respuesta": 1061.54,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Costo disponible = 500 + 880 = 1.380",
+      "Costo promedio = 1.380 ÷ 130 = 10,6154",
+      "CV = 100 × 10,6154 = 1061,54"
+    ],
+    "pistas": [
+      "Pondera cada costo por sus unidades.",
+      "Divide para todas las unidades disponibles."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Promedio ponderado"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cg-mercaderias-valoracion",
+    "formula": "costo-promedio-ponderado"
+  },
+  {
+    "id": "ej-ed-media",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "enunciado": "Clientes atendidos por día en una agencia: 18, 22, 25, 19, 21 y 23. ¿Cuál es la media? (redondea a dos decimales)",
+    "datos": {
+      "x": [
+        18,
+        22,
+        25,
+        19,
+        21,
+        23
+      ]
+    },
+    "calculo": "SUM(x) / COUNT(x)",
+    "respuesta": 21.33,
+    "unidad": "clientes",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Σx = 128",
+      "n = 6",
+      "x̄ = 128 ÷ 6 = 21,33"
+    ],
+    "pistas": [
+      "Suma todos los datos.",
+      "Divide para cuántos son."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "seccion": "2.5 Media"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ed-centro-media",
+    "formula": "media-aritmetica"
+  },
+  {
+    "id": "ej-ed-mediana",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "enunciado": "Días de cobro de seis facturas: 7, 3, 9, 5, 11 y 6. ¿Cuál es la mediana?",
+    "datos": {
+      "x": [
+        7,
+        3,
+        9,
+        5,
+        11,
+        6
+      ]
+    },
+    "calculo": "MEDIAN(x)",
+    "respuesta": 6.5,
+    "unidad": "días",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Ordenados: 3, 5, 6, 7, 9, 11",
+      "n par: promedio de los dos centrales",
+      "Me = (6 + 7) ÷ 2 = 6,5"
+    ],
+    "pistas": [
+      "Ordena antes de buscar el centro.",
+      "Con un número par de datos se promedian los dos del medio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "seccion": "2.5 Mediana"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ed-centro-mediana-moda",
+    "formula": "mediana"
+  },
+  {
+    "id": "ej-ed-ponderada",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "enunciado": "Notas: deberes 9 (25 %), prueba 6 (35 %) y examen 8 (40 %). ¿Nota final?",
+    "datos": {
+      "x": [
+        9,
+        6,
+        8
+      ],
+      "w": [
+        0.25,
+        0.35,
+        0.4
+      ]
+    },
+    "calculo": "SUMPRODUCT(w, x) / SUM(w)",
+    "respuesta": 7.55,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Σwx = 2,25 + 2,10 + 3,20 = 7,55",
+      "Σw = 1",
+      "Nota = 7,55"
+    ],
+    "pistas": [
+      "Multiplica cada nota por su peso.",
+      "Divide para la suma de los pesos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/13-1-measures-of-center",
+      "seccion": "13.1 Media ponderada"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ed-centro-media",
+    "formula": "media-ponderada"
+  },
+  {
+    "id": "ej-ed-desviacion",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "enunciado": "Una muestra de ventas semanales (miles USD) es 10, 12, 14, 16 y 18. ¿Desviación estándar muestral? (4 decimales)",
+    "datos": {
+      "x": [
+        10,
+        12,
+        14,
+        16,
+        18
+      ]
+    },
+    "calculo": "SQRT(SUM((x - AVERAGE(x)) ^ 2) / (COUNT(x) - 1))",
+    "respuesta": 3.1623,
+    "unidad": "miles USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "x̄ = 14",
+      "Σ(x − x̄)² = 16 + 4 + 0 + 4 + 16 = 40",
+      "s² = 40 ÷ 4 = 10",
+      "s = √10 = 3,1623"
+    ],
+    "pistas": [
+      "Es una muestra: divide para n − 1.",
+      "La desviación estándar es la raíz de la varianza."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Desviación estándar"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ed-dispersion-varianza",
+    "formula": "desviacion-estandar-muestral"
+  },
+  {
+    "id": "ej-ed-cv",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "enunciado": "Con la misma muestra (10, 12, 14, 16, 18), ¿cuál es el coeficiente de variación? (4 decimales)",
+    "datos": {
+      "x": [
+        10,
+        12,
+        14,
+        16,
+        18
+      ]
+    },
+    "calculo": "SQRT(SUM((x - AVERAGE(x)) ^ 2) / (COUNT(x) - 1)) / AVERAGE(x)",
+    "respuesta": 0.2259,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "s = 3,1623",
+      "x̄ = 14",
+      "CV = 3,1623 ÷ 14 = 0,2259"
+    ],
+    "pistas": [
+      "Divide la desviación estándar para la media."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Coeficiente de variación"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ed-dispersion-cv",
+    "formula": "coeficiente-variacion"
+  },
+  {
+    "id": "ej-ed-z",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "enunciado": "En un parcial la media fue 58 y la desviación estándar 5. ¿Cuál es la puntuación z de quien obtuvo 65?",
+    "datos": {
+      "x": 65,
+      "mu": 58,
+      "sigma": 5
+    },
+    "calculo": "(x - mu) / sigma",
+    "respuesta": 1.4,
+    "unidad": "desviaciones estándar",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "z = (65 − 58) ÷ 5",
+      "z = 1,4"
+    ],
+    "pistas": [
+      "Resta la media.",
+      "Divide para la desviación estándar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/6-1-the-standard-normal-distribution",
+      "seccion": "6.1 Puntuación z"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ed-dispersion-posicion",
+    "formula": "puntuacion-z"
+  },
+  {
+    "id": "ej-cd-secante",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "enunciado": "Para f(x) = 3x² + 2x, calcula la tasa de cambio promedio entre x = 1 y x = 4.",
+    "datos": {
+      "a": 1,
+      "b": 4
+    },
+    "calculo": "((3 * b ^ 2 + 2 * b) - (3 * a ^ 2 + 2 * a)) / (b - a)",
+    "respuesta": 17.0,
+    "unidad": "unidades de f por unidad de x",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "f(1) = 3 + 2 = 5",
+      "f(4) = 48 + 8 = 56",
+      "(56 − 5) ÷ (4 − 1) = 17"
+    ],
+    "pistas": [
+      "Evalúa la función en los extremos.",
+      "Divide el cambio de f para el cambio de x."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+      "seccion": "3.1 Rectas secantes"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cd-derivada-secante",
+    "formula": "tasa-cambio-promedio"
+  },
+  {
+    "id": "ej-cd-marginal",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "enunciado": "El costo total es C(q) = 500 + 8q + 0,05q². ¿Cuál es el costo marginal cuando q = 40?",
+    "datos": {
+      "b": 8,
+      "c": 0.05,
+      "q": 40
+    },
+    "calculo": "b + 2 * c * q",
+    "respuesta": 12.0,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "C′(q) = 8 + 0,1q",
+      "C′(40) = 8 + 4 = 12"
+    ],
+    "pistas": [
+      "Deriva término a término.",
+      "La derivada de una constante es cero."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
+      "seccion": "3.4 Costo marginal"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cd-aplicaciones-marginal",
+    "formula": "costo-marginal"
+  },
+  {
+    "id": "ej-cd-optimo",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "enunciado": "El ingreso de una pequeña empresa es R(q) = 120q − 0,6q². ¿Qué cantidad maximiza el ingreso?",
+    "datos": {
+      "p": 120,
+      "d": 0.6
+    },
+    "calculo": "p / (2 * d)",
+    "respuesta": 100.0,
+    "unidad": "unidades",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "R′(q) = 120 − 1,2q",
+      "120 − 1,2q = 0 → q = 100",
+      "R″ = −1,2 < 0: máximo"
+    ],
+    "pistas": [
+      "Iguala la derivada a cero.",
+      "Comprueba que sea un máximo con la segunda derivada."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems",
+      "seccion": "4.7 Optimización"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cd-aplicaciones-optimizacion",
+    "formula": "maximo-ingreso"
+  },
+  {
+    "id": "ej-cd-elasticidad",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "enunciado": "Una heladería sube el precio de USD 4 a 5 y sus ventas pasan de 1.000 a 900 unidades. Calcula la elasticidad por el método del punto medio (4 decimales).",
+    "datos": {
+      "Q1": 1000,
+      "Q2": 900,
+      "P1": 4,
+      "P2": 5
+    },
+    "calculo": "((Q2 - Q1) / ((Q2 + Q1) / 2)) / ((P2 - P1) / ((P2 + P1) / 2))",
+    "respuesta": -0.4737,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "%ΔQ = −100 ÷ 950 = −0,1053",
+      "%ΔP = 1 ÷ 4,5 = 0,2222",
+      "E = -0,4737: inelástica"
+    ],
+    "pistas": [
+      "Usa los promedios como base de cada cambio.",
+      "El signo negativo indica que precio y cantidad se mueven en sentidos opuestos."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+      "seccion": "5.1 Punto medio"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "cd-aplicaciones-elasticidad",
+    "formula": "elasticidad-precio"
+  },
+  {
+    "id": "ej-ii-referencias",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "enunciado": "En B1 está la tarifa 0,15. En A2, A3 y A4 hay 100, 250 y 80. En B2 escribes =A2*$B$1 y la arrastras hasta B4. ¿Cuánto suma B2:B4?",
+    "datos": {
+      "bases": [
+        100,
+        250,
+        80
+      ],
+      "t": 0.15
+    },
+    "calculo": "SUM(bases * t)",
+    "respuesta": 64.5,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "$B$1 queda fija al arrastrar",
+      "B2:B4 = 15; 37,5; 12",
+      "Suma = 64,50"
+    ],
+    "pistas": [
+      "El signo $ fija la celda de la tarifa.",
+      "Cada fila multiplica su propia base."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ms-excel-formulas",
+      "url": "https://support.microsoft.com/es-es/office/cambiar-entre-referencias-relativas-absolutas-y-mixtas-dfec08cd-ae65-4f56-839e-5f0d8d0baca9",
+      "seccion": "Referencias absolutas"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ii-formulas-referencias"
+  },
+  {
+    "id": "ej-ii-sumarsi",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "enunciado": "Ventas por sucursal: Cuenca 1.200; Azogues 800; Cuenca 950; Loja 600; Cuenca 400. ¿Qué devuelve =SUMAR.SI(A2:A6;\"Cuenca\";B2:B6)?",
+    "datos": {
+      "v": [
+        1200,
+        800,
+        950,
+        600,
+        400
+      ],
+      "f": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "calculo": "SUMPRODUCT(v, f)",
+    "respuesta": 2550.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Filas de Cuenca: 1.200, 950 y 400",
+      "Suma = 2.550"
+    ],
+    "pistas": [
+      "Solo se suman las filas que cumplen el criterio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ms-excel-alfa",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-sumar-si-169b8c99-c05c-4483-a712-1697a653039b",
+      "seccion": "Función SUMAR.SI"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ii-funciones-sumarsi"
+  },
+  {
+    "id": "ej-ii-pago",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "enunciado": "Un préstamo de USD 5.000 se paga en 12 cuotas mensuales al 2 % mensual. ¿Qué cuota devuelve =PAGO(2%;12;-5000)?",
+    "datos": {
+      "VA": 5000,
+      "i": 0.02,
+      "n": 12
+    },
+    "calculo": "VA * i / (1 - (1 + i) ^ -n)",
+    "respuesta": 472.8,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "A = 5.000 × 0,02 ÷ (1 − 1,02⁻¹²)",
+      "A = 472,80"
+    ],
+    "pistas": [
+      "Tasa y plazo en meses.",
+      "El préstamo va con signo negativo para que la cuota salga positiva."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-pago-0214da64-9a63-4996-bc20-214433fa6441",
+      "seccion": "Función PAGO"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ii-financieras-pago",
+    "formula": "cuota-prestamo"
+  },
+  {
+    "id": "ej-ii-van",
+    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "enunciado": "Un proyecto cuesta USD 8.000 y genera 3.000, 3.500 y 4.000 en los años 1 a 3. Con 12 % de descuento, ¿cuál es el VAN? (=VNA(12%;B2:B4)+B1)",
+    "datos": {
+      "I0": 8000,
+      "FC1": 3000,
+      "FC2": 3500,
+      "FC3": 4000,
+      "k": 0.12
+    },
+    "calculo": "-I0 + FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3",
+    "respuesta": 315.87,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "3.000 ÷ 1,12 = 2.678,57",
+      "3.500 ÷ 1,12² = 2.790,18",
+      "4.000 ÷ 1,12³ = 2.847,12",
+      "VAN = 315,87: se acepta"
+    ],
+    "pistas": [
+      "VNA descuenta desde el año 1.",
+      "La inversión inicial se suma fuera de VNA."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-vna-8672cb67-2576-4d07-b67b-ac28acf2a568",
+      "seccion": "Función VNA"
+    },
+    "actualizado_en": "2026-10-15",
+    "subtema": "ii-financieras-vna-tir",
+    "formula": "van"
+  }
+]

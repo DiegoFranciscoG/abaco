@@ -1,0 +1,329 @@
+{
+  "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+  "actualizado_en": "2026-10-15",
+  "temas": [
+    {
+      "id": "ed-datos",
+      "nombre": "Datos y muestreo",
+      "orden": 1,
+      "descripcion": "Vocabulario básico, tipos de datos y formas de obtener una muestra representativa.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ed-datos-conceptos",
+          "nombre": "Población, muestra, parámetro y estadístico",
+          "explicacion": "La población es el conjunto completo que interesa estudiar (todas las facturas del año); la muestra es la parte que se observa (200 facturas elegidas). Un parámetro describe a la población y casi nunca se conoce con exactitud; un estadístico describe a la muestra y se usa para estimar el parámetro. La estadística descriptiva resume datos; la inferencial saca conclusiones sobre la población.",
+          "puntos_clave": [
+            "Parámetro → población; estadístico → muestra.",
+            "La muestra sirve para estimar lo que no se puede medir completo."
+          ],
+          "errores_frecuentes": [
+            "Llamar «parámetro» al promedio calculado con una muestra.",
+            "Sacar conclusiones de toda la población con una muestra no representativa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms",
+            "seccion": "1.1 Definiciones y términos clave"
+          }
+        },
+        {
+          "id": "ed-datos-tipos",
+          "nombre": "Tipos de datos y niveles de medición",
+          "explicacion": "Los datos cualitativos describen categorías (sector económico, ciudad); los cuantitativos son números que se pueden operar, discretos si se cuentan (número de clientes) o continuos si se miden (ventas en dólares). Los niveles de medición, de menor a mayor información, son nominal, ordinal, de intervalo y de razón. El nivel determina qué medidas tienen sentido: no se promedia una categoría.",
+          "puntos_clave": [
+            "Cualitativos vs. cuantitativos (discretos o continuos).",
+            "Niveles: nominal, ordinal, intervalo, razón."
+          ],
+          "errores_frecuentes": [
+            "Promediar códigos numéricos que en realidad son categorías (por ejemplo, el código de una provincia).",
+            "Tratar una escala de satisfacción del 1 al 5 como si las distancias entre valores fueran iguales sin justificarlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-3-frequency-frequency-tables-and-levels-of-measurement",
+            "seccion": "1.3 Niveles de medición"
+          }
+        },
+        {
+          "id": "ed-datos-muestreo",
+          "nombre": "Métodos de muestreo",
+          "explicacion": "En el muestreo aleatorio simple cada elemento tiene la misma probabilidad de ser elegido. El estratificado divide la población en grupos (por ejemplo, por tamaño de cliente) y toma una muestra de cada uno; el de conglomerados elige grupos completos al azar; el sistemático toma uno de cada k elementos. La muestra de conveniencia (los que están a la mano) suele estar sesgada.",
+          "puntos_clave": [
+            "Aleatorio simple, estratificado, por conglomerados y sistemático.",
+            "La conveniencia no garantiza representatividad."
+          ],
+          "errores_frecuentes": [
+            "Encuestar solo a compañeros de curso y generalizar a toda la universidad.",
+            "Usar muestreo sistemático sobre listas con patrones repetitivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
+            "seccion": "1.2 Datos, muestreo y variación"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed-graficos",
+      "nombre": "Tablas y gráficos",
+      "orden": 2,
+      "descripcion": "Cómo organizar y mostrar datos para ver su forma antes de calcular.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ed-graficos-frecuencias",
+          "nombre": "Tablas de frecuencia",
+          "explicacion": "Una tabla de frecuencias cuenta cuántas veces aparece cada valor o cada intervalo. La frecuencia relativa divide ese conteo para el total y la frecuencia acumulada va sumando las anteriores. Con datos continuos se agrupan en clases del mismo ancho que no se superponen.",
+          "puntos_clave": [
+            "Frecuencia relativa = frecuencia ÷ total.",
+            "Las frecuencias relativas suman 1 (100 %)."
+          ],
+          "errores_frecuentes": [
+            "Definir clases que se superponen (10–20 y 20–30) sin decir a cuál pertenece el 20.",
+            "Olvidar que la última frecuencia acumulada debe ser igual al total."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-3-frequency-frequency-tables-and-levels-of-measurement",
+            "seccion": "1.3 Tablas de frecuencia"
+          }
+        },
+        {
+          "id": "ed-graficos-histogramas",
+          "nombre": "Histogramas y polígonos de frecuencia",
+          "explicacion": "El histograma muestra datos cuantitativos agrupados en barras contiguas cuya altura es la frecuencia de cada clase. Sirve para ver la forma de la distribución: simétrica, sesgada a la derecha o a la izquierda, con uno o varios picos. El polígono de frecuencias une los puntos medios de las barras y facilita comparar dos distribuciones en un mismo gráfico.",
+          "puntos_clave": [
+            "Barras contiguas: los datos son continuos.",
+            "La forma del histograma anticipa la relación entre media y mediana."
+          ],
+          "errores_frecuentes": [
+            "Confundir un histograma con un gráfico de barras de categorías.",
+            "Usar clases de anchos distintos sin ajustar la escala."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-2-histograms-frequency-polygons-and-time-series-graphs",
+            "seccion": "2.2 Histogramas y polígonos"
+          }
+        },
+        {
+          "id": "ed-graficos-caja",
+          "nombre": "Diagramas de caja",
+          "explicacion": "El diagrama de caja resume los datos con cinco números: mínimo, primer cuartil, mediana, tercer cuartil y máximo. La caja contiene el 50 % central de los datos y su ancho es el rango intercuartílico. Permite comparar grupos rápidamente y detectar valores atípicos.",
+          "puntos_clave": [
+            "Cinco números: mínimo, Q1, mediana, Q3, máximo.",
+            "La caja cubre el 50 % central."
+          ],
+          "errores_frecuentes": [
+            "Leer la línea dentro de la caja como la media: es la mediana."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-4-box-plots",
+            "seccion": "2.4 Diagramas de caja"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed-centro",
+      "nombre": "Medidas de tendencia central",
+      "orden": 3,
+      "descripcion": "Media, media ponderada, mediana y moda: qué valor representa mejor a los datos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ed-centro-media",
+          "nombre": "Media aritmética y media ponderada",
+          "explicacion": "La media suma todos los datos y divide para su cantidad. Es útil cuando los datos son simétricos, pero un solo valor extremo la mueve mucho. La media ponderada asigna a cada dato un peso según su importancia, como en una nota final con porcentajes o un costo promedio con distintas cantidades compradas.",
+          "puntos_clave": [
+            "Media simple: todos los datos pesan igual.",
+            "Media ponderada: Σwx ÷ Σw."
+          ],
+          "errores_frecuentes": [
+            "Promediar porcentajes de grupos de distinto tamaño sin ponderarlos.",
+            "Dividir para el número de datos en vez de dividir para la suma de los pesos."
+          ],
+          "formulas": ["media-aritmetica", "media-ponderada"],
+          "fuente": {
+            "ref": "os-pfin",
+            "url": "https://openstax.org/books/principles-finance/pages/13-1-measures-of-center",
+            "seccion": "13.1 Medidas de centro"
+          }
+        },
+        {
+          "id": "ed-centro-mediana-moda",
+          "nombre": "Mediana y moda",
+          "explicacion": "La mediana es el valor que queda en la mitad cuando los datos se ordenan; si hay un número par de datos, se promedian los dos centrales. No le afectan los valores extremos, por eso se prefiere para ingresos o precios de vivienda. La moda es el valor más frecuente y es la única medida de centro que sirve también para datos cualitativos.",
+          "puntos_clave": [
+            "Ordenar antes de buscar la mediana.",
+            "La moda puede no existir o haber más de una."
+          ],
+          "errores_frecuentes": [
+            "Tomar el dato del centro de la lista sin ordenarla.",
+            "Usar la media para describir ingresos muy desiguales."
+          ],
+          "formulas": ["mediana"],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+            "seccion": "2.5 Medidas de centro"
+          }
+        },
+        {
+          "id": "ed-centro-asimetria",
+          "nombre": "Asimetría: media frente a mediana",
+          "explicacion": "Si la distribución es simétrica, media y mediana son parecidas. Cuando hay una cola larga a la derecha (pocos valores muy altos, como en ventas o salarios), la media queda por encima de la mediana; con una cola a la izquierda ocurre lo contrario. Comparar ambas medidas es una forma rápida de detectar sesgo.",
+          "puntos_clave": [
+            "Sesgo a la derecha: media > mediana.",
+            "Sesgo a la izquierda: media < mediana."
+          ],
+          "errores_frecuentes": [
+            "Concluir que los datos son simétricos solo porque la media está «en el centro» del rango."
+          ],
+          "formulas": ["media-aritmetica", "mediana"],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode",
+            "seccion": "2.6 Asimetría, media, mediana y moda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed-dispersion",
+      "nombre": "Medidas de dispersión y posición",
+      "orden": 4,
+      "descripcion": "Cuánto se alejan los datos del centro y dónde se ubica un dato respecto a los demás.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ed-dispersion-varianza",
+          "nombre": "Varianza y desviación estándar",
+          "explicacion": "La varianza promedia los cuadrados de las distancias de cada dato a la media; en una muestra se divide para n − 1 para no subestimar la dispersión de la población. La desviación estándar es su raíz cuadrada y se expresa en las mismas unidades que los datos, por eso es más fácil de interpretar: indica la distancia típica de un dato a la media.",
+          "puntos_clave": [
+            "Muestra: dividir para n − 1; población: para N.",
+            "La desviación estándar tiene las unidades de los datos."
+          ],
+          "errores_frecuentes": [
+            "Usar DESVEST.P con datos de una muestra.",
+            "Interpretar la varianza en dólares cuando está en dólares al cuadrado."
+          ],
+          "formulas": ["varianza-muestral", "desviacion-estandar-muestral"],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+            "seccion": "2.7 Medidas de dispersión"
+          }
+        },
+        {
+          "id": "ed-dispersion-cv",
+          "nombre": "Coeficiente de variación",
+          "explicacion": "El coeficiente de variación divide la desviación estándar para la media. Como no tiene unidades, permite comparar la variabilidad de conjuntos con escalas distintas: por ejemplo, las ventas diarias de una tienda pequeña frente a las de una cadena. Solo tiene sentido con datos de razón y medias positivas.",
+          "puntos_clave": [
+            "CV = s ÷ x̄, sin unidades.",
+            "Sirve para comparar dispersión relativa."
+          ],
+          "errores_frecuentes": [
+            "Comparar desviaciones estándar de datos con medias muy distintas en lugar de usar el CV."
+          ],
+          "formulas": ["coeficiente-variacion"],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+            "seccion": "2.7 Coeficiente de variación"
+          }
+        },
+        {
+          "id": "ed-dispersion-posicion",
+          "nombre": "Percentiles, cuartiles y puntuación z",
+          "explicacion": "El percentil k es el valor que deja por debajo al k % de los datos; los cuartiles son los percentiles 25, 50 y 75. La puntuación z mide cuántas desviaciones estándar está un dato por encima o por debajo de la media, lo que permite comparar resultados de escalas distintas, como dos exámenes con promedios diferentes.",
+          "puntos_clave": [
+            "Q1 = percentil 25; mediana = percentil 50; Q3 = percentil 75.",
+            "z > 0: por encima de la media; z < 0: por debajo."
+          ],
+          "errores_frecuentes": [
+            "Confundir el percentil 80 con «sacar 80 sobre 100»."
+          ],
+          "formulas": ["puntuacion-z"],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-3-measures-of-the-location-of-the-data",
+            "seccion": "2.3 Medidas de posición"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed-relacion",
+      "nombre": "Relación entre dos variables",
+      "orden": 5,
+      "descripcion": "Diagramas de dispersión y coeficiente de correlación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ed-relacion-dispersion",
+          "nombre": "Diagramas de dispersión",
+          "explicacion": "Un diagrama de dispersión ubica cada observación como un punto con dos coordenadas (por ejemplo, gasto en publicidad y ventas). Permite ver si existe una tendencia lineal, si es positiva o negativa, qué tan fuerte es y si hay puntos atípicos, antes de calcular cualquier coeficiente.",
+          "puntos_clave": [
+            "Graficar antes de calcular.",
+            "Buscar dirección, forma y fuerza de la relación."
+          ],
+          "errores_frecuentes": [
+            "Calcular la correlación de datos con una relación curva y concluir que no hay relación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-2-scatter-plots",
+            "seccion": "12.2 Diagramas de dispersión"
+          }
+        },
+        {
+          "id": "ed-relacion-correlacion",
+          "nombre": "Coeficiente de correlación de Pearson",
+          "explicacion": "El coeficiente r mide la fuerza de la relación lineal entre dos variables y va de −1 a 1. Valores cercanos a 1 indican relación lineal positiva fuerte; cercanos a −1, negativa fuerte; cercanos a 0, poca relación lineal. El signo indica la dirección y el valor absoluto, la fuerza.",
+          "puntos_clave": [
+            "−1 ≤ r ≤ 1.",
+            "Solo mide relaciones lineales."
+          ],
+          "errores_frecuentes": [
+            "Interpretar r = 0,9 como «el 90 % de las ventas se explica por la publicidad»."
+          ],
+          "formulas": ["correlacion-pearson"],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+            "seccion": "12.3 Coeficiente de correlación"
+          }
+        },
+        {
+          "id": "ed-relacion-causalidad",
+          "nombre": "Correlación no implica causalidad",
+          "explicacion": "Que dos variables se muevan juntas no prueba que una cause a la otra. Puede existir una tercera variable que influye en ambas (por ejemplo, la temporada navideña sube tanto la publicidad como las ventas) o la relación puede ser casual. Para hablar de causa se necesitan diseños de estudio que controlen esas otras variables.",
+          "puntos_clave": [
+            "Buscar variables omitidas antes de interpretar.",
+            "La correlación describe, no explica."
+          ],
+          "errores_frecuentes": [
+            "Recomendar aumentar el gasto en publicidad solo porque la correlación con las ventas es alta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+            "seccion": "12.3 Correlación y causalidad"
+          }
+        }
+      ]
+    }
+  ]
+}

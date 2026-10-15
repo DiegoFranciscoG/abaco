@@ -279,15 +279,6 @@
     "fecha_consulta": "2026-10-14"
   },
   {
-    "id": "codigo-comercio",
-    "titulo": "Código de Comercio (R.O. Supl. 497, 29-05-2019)",
-    "autor_editor": "Asamblea Nacional del Ecuador",
-    "tipo": "ley",
-    "url": "https://www.asambleanacional.gob.ec/sites/default/files/codigo_de_comercio.pdf",
-    "licencia": "Norma pública",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
     "id": "supercias",
     "titulo": "Portal de la Superintendencia de Compañías, Valores y Seguros",
     "autor_editor": "Superintendencia de Compañías, Valores y Seguros",

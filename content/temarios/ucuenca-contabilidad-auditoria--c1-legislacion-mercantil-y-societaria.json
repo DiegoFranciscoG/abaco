@@ -1,0 +1,282 @@
+{
+  "asignatura": "ucuenca-contabilidad-auditoria--c1-legislacion-mercantil-y-societaria",
+  "actualizado_en": "2026-10-15",
+  "temas": [
+    {
+      "id": "lm-companias",
+      "nombre": "La compañía y sus especies",
+      "orden": 1,
+      "descripcion": "Cómo nace una compañía en Ecuador, qué tipos reconoce la ley y qué requisitos básicos debe cumplir.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "lm-companias-contrato",
+          "nombre": "Contrato de compañía y acto unilateral",
+          "explicacion": "Según el artículo 1 de la Ley de Compañías, una compañía nace por contrato entre dos o más personas naturales o jurídicas que unen capitales, trabajo o conocimiento para hacer negocios y repartir utilidades, o por acto unilateral de una sola persona que aporta capital para emprender de manera individual. Además de esta ley, se aplican el Código de Comercio, el contrato social y el Código Civil.",
+          "puntos_clave": [
+            "Dos vías: contrato (dos o más personas) o acto unilateral (una persona).",
+            "Normas aplicables: Ley de Compañías, Código de Comercio, contrato social y Código Civil."
+          ],
+          "errores_frecuentes": [
+            "Afirmar que toda compañía necesita al menos dos socios: la ley vigente permite el acto unilateral."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Art. 1" }
+        },
+        {
+          "id": "lm-companias-especies",
+          "nombre": "Las seis especies de compañías",
+          "explicacion": "El artículo 2 reconoce seis especies de sociedades mercantiles: en nombre colectivo; en comandita simple y dividida por acciones; de responsabilidad limitada; anónima; de economía mixta; y sociedad por acciones simplificada (S.A.S.). Todas son personas jurídicas, es decir, sujetos distintos de sus socios, con patrimonio, derechos y obligaciones propios.",
+          "puntos_clave": [
+            "Seis especies, todas con personalidad jurídica.",
+            "La S.A.S. es la especie más reciente."
+          ],
+          "errores_frecuentes": [
+            "Confundir la compañía con sus socios: las deudas de la compañía no son, en principio, deudas de los socios."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Art. 2" }
+        },
+        {
+          "id": "lm-companias-objeto",
+          "nombre": "Objeto social y domicilio",
+          "explicacion": "El artículo 3 prohíbe compañías contrarias a la Constitución y la ley, las que no tengan un objeto real y lícito y las que carezcan de esencia económica. El objeto social puede abarcar una o varias actividades lícitas y debe constar con claridad en el contrato o documento de constitución. El domicilio es el que fija el contrato, y toda compañía constituida en Ecuador tiene su domicilio principal dentro del país (artículos 4 y 5).",
+          "puntos_clave": [
+            "Objeto real, lícito y con esencia económica.",
+            "Domicilio principal en el territorio nacional."
+          ],
+          "errores_frecuentes": [
+            "Redactar un objeto social ambiguo que luego impide realizar actividades del negocio."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 3, 4 y 5" }
+        }
+      ]
+    },
+    {
+      "id": "lm-personas",
+      "nombre": "Compañías de personas y de economía mixta",
+      "orden": 2,
+      "descripcion": "Especies en las que la responsabilidad de los socios puede ser ilimitada, y la participación del Estado.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "lm-personas-colectivo",
+          "nombre": "Compañía en nombre colectivo",
+          "explicacion": "Se constituye por una persona natural o entre dos o más personas naturales que hacen el comercio bajo una razón social formada por los nombres de todos o algunos socios, más las palabras «y compañía» (artículo 36). El contrato se celebra por escritura pública (artículo 37). Los socios colectivos responden de forma solidaria e ilimitada por los actos realizados bajo la razón social por quien está autorizado (artículo 74).",
+          "puntos_clave": [
+            "Solo personas naturales.",
+            "Razón social con nombres de socios + «y compañía».",
+            "Responsabilidad solidaria e ilimitada."
+          ],
+          "errores_frecuentes": [
+            "Creer que el socio colectivo solo arriesga su aporte."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 36, 37 y 74" }
+        },
+        {
+          "id": "lm-personas-comandita",
+          "nombre": "Compañía en comandita simple",
+          "explicacion": "Combina dos clases de socios: uno o varios solidaria e ilimitadamente responsables y otros, los comanditarios, que solo aportan fondos y responden hasta el monto de sus aportes (artículo 59). La razón social lleva el nombre de uno o varios socios solidarios y las palabras «compañía en comandita». Los socios comanditados responden de forma solidaria e ilimitada, igual que en la colectiva (artículo 74).",
+          "puntos_clave": [
+            "Socios comanditados: responsabilidad ilimitada.",
+            "Socios comanditarios: responsabilidad hasta su aporte."
+          ],
+          "errores_frecuentes": [
+            "Incluir el nombre de un comanditario en la razón social: la ley la forma con los socios solidarios."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 59 y 74" }
+        },
+        {
+          "id": "lm-personas-mixta",
+          "nombre": "Compañía de economía mixta",
+          "explicacion": "Permite que el Estado, las municipalidades, los consejos provinciales y las entidades del sector público participen junto con el capital privado en el capital y en la gestión de la compañía (artículo 308). Está sujeta a la vigilancia y control de la Superintendencia de Compañías (artículo 431).",
+          "puntos_clave": [
+            "Capital público y privado en la misma compañía.",
+            "Controlada por la Superintendencia de Compañías."
+          ],
+          "errores_frecuentes": [
+            "Confundirla con una empresa pública, cuyo capital es íntegramente estatal."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 308 y 431" }
+        }
+      ]
+    },
+    {
+      "id": "lm-limitada",
+      "nombre": "Compañía de responsabilidad limitada",
+      "orden": 3,
+      "descripcion": "La especie más usada por pequeños y medianos negocios familiares.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "lm-limitada-naturaleza",
+          "nombre": "Naturaleza y responsabilidad de los socios",
+          "explicacion": "Se constituye por contrato o por acto unilateral, y los socios responden por las obligaciones sociales solo hasta el monto de sus aportaciones. Su nombre debe incluir «Compañía Limitada» o su abreviatura (artículo 92). Es siempre mercantil, pero sus socios no adquieren por eso la calidad de comerciantes (artículo 93). No puede realizar operaciones de banco, seguros, capitalización y ahorro (artículo 94).",
+          "puntos_clave": [
+            "Responsabilidad limitada al aporte.",
+            "Siempre mercantil.",
+            "Prohibidas las operaciones de banca, seguros, capitalización y ahorro."
+          ],
+          "errores_frecuentes": [
+            "Usar una compañía limitada para captar ahorro del público."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 92, 93 y 94" }
+        },
+        {
+          "id": "lm-limitada-socios",
+          "nombre": "Número de socios y nacimiento de la compañía",
+          "explicacion": "La compañía limitada no puede funcionar si sus socios exceden de quince; si supera ese número debe transformarse en otra especie o disolverse (artículo 95). Su existencia comienza en la fecha de inscripción del contrato social en el Registro Mercantil (artículo 96), no en la fecha de la escritura.",
+          "puntos_clave": [
+            "Máximo 15 socios.",
+            "Existe desde la inscripción en el Registro Mercantil."
+          ],
+          "errores_frecuentes": [
+            "Contar la existencia de la compañía desde la firma de la escritura."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 95 y 96" }
+        },
+        {
+          "id": "lm-limitada-capital",
+          "nombre": "Capital y participaciones",
+          "explicacion": "El capital está formado por las aportaciones de los socios, no puede ser inferior al mínimo fijado por el Superintendente de Compañías y se divide en participaciones. Al constituirse debe estar suscrito por completo y pagado al menos en el cincuenta por ciento de cada participación; el saldo se integra en un plazo no mayor de doce meses. Los aportes pueden ser en dinero o en especie (artículo 102).",
+          "puntos_clave": [
+            "Capital íntegramente suscrito.",
+            "Al menos 50 % pagado de cada participación al constituirse.",
+            "Saldo en máximo 12 meses."
+          ],
+          "errores_frecuentes": [
+            "Pensar que basta con pagar el 50 % del capital total aunque alguna participación quede impaga.",
+            "Llamar «acciones» a las participaciones de una limitada."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Art. 102" }
+        },
+        {
+          "id": "lm-limitada-junta",
+          "nombre": "La junta general de socios",
+          "explicacion": "La junta general, formada por los socios legalmente convocados y reunidos, es el órgano supremo. En primera convocatoria necesita socios que representen más de la mitad del capital; en segunda, se reúne con los presentes (artículo 116). Salvo disposición distinta, resuelve por mayoría absoluta de los presentes y los votos en blanco y abstenciones se suman a la mayoría (artículo 117). Entre sus atribuciones está designar y remover administradores y gerentes (artículo 118).",
+          "puntos_clave": [
+            "Órgano supremo de la compañía.",
+            "Quórum en primera convocatoria: más de la mitad del capital.",
+            "Blancos y abstenciones se suman a la mayoría."
+          ],
+          "errores_frecuentes": [
+            "Calcular el quórum por número de socios en lugar de por capital representado."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 116, 117 y 118" }
+        }
+      ]
+    },
+    {
+      "id": "lm-capitales",
+      "nombre": "Compañía anónima y sociedad por acciones simplificada",
+      "orden": 4,
+      "descripcion": "Sociedades de capital: acciones, responsabilidad limitada y reglas de constitución.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "lm-capitales-anonima",
+          "nombre": "Compañía anónima: naturaleza y administración",
+          "explicacion": "Su capital se divide en acciones negociables y los accionistas responden únicamente por el monto de sus acciones; puede constituirse por contrato o por acto unilateral (artículo 143). Se administra por mandatarios amovibles, socios o no, y su denominación debe incluir «compañía anónima», «sociedad anónima» o sus siglas; puede añadir «Sociedad de Beneficio e Interés Colectivo» (B.I.C.) si adopta esa categoría (artículo 144).",
+          "puntos_clave": [
+            "Capital en acciones negociables.",
+            "Administradores amovibles, socios o no."
+          ],
+          "errores_frecuentes": [
+            "Creer que los administradores deben ser accionistas."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 143 y 144" }
+        },
+        {
+          "id": "lm-capitales-capital",
+          "nombre": "Capital de la compañía anónima",
+          "explicacion": "Ninguna compañía anónima puede constituirse sin que su capital esté totalmente suscrito, y debe pagarse al menos una cuarta parte una vez inscrita en el Registro Mercantil (artículo 147). Puede establecer un capital autorizado hasta el cual emite acciones; los mínimos de capital suscrito y pagado los fija la Superintendencia por resolución (artículo 160). Las acciones son nominativas (artículo 168).",
+          "puntos_clave": [
+            "Capital totalmente suscrito; al menos 25 % pagado.",
+            "Capital autorizado como techo de emisión.",
+            "Acciones nominativas."
+          ],
+          "errores_frecuentes": [
+            "Aplicar a la anónima el 50 % de pago inicial que corresponde a la limitada."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Arts. 147, 160 y 168" }
+        },
+        {
+          "id": "lm-capitales-sas",
+          "nombre": "Sociedad por acciones simplificada (S.A.S.)",
+          "explicacion": "Es una sociedad de capitales de naturaleza siempre mercantil, que pueden constituir una o varias personas naturales o jurídicas, responsables solo hasta el monto de sus aportes. Se crea por contrato o acto unilateral en documento privado inscrito en el Registro de Sociedades de la Superintendencia, momento desde el cual adquiere vida jurídica. Sus acciones no pueden inscribirse en el Catastro Público de Mercado de Valores ni negociarse en bolsa, y no puede realizar actividades financieras, de mercado de valores ni de seguros.",
+          "puntos_clave": [
+            "Uno o varios accionistas, responsabilidad limitada.",
+            "Documento privado inscrito en el Registro de Sociedades.",
+            "Sus acciones no se negocian en bolsa."
+          ],
+          "errores_frecuentes": [
+            "Suponer que una S.A.S. puede emitir acciones en la bolsa de valores para financiarse."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Sección de las sociedades por acciones simplificadas" }
+        }
+      ]
+    },
+    {
+      "id": "lm-control",
+      "nombre": "Control de la Superintendencia de Compañías",
+      "orden": 5,
+      "descripcion": "Quién vigila a las compañías y qué deben reportar cada año.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "lm-control-sujetos",
+          "nombre": "Compañías sujetas a vigilancia y control",
+          "explicacion": "La Superintendencia de Compañías, Valores y Seguros ejerce la vigilancia y control de las compañías anónimas, en comandita por acciones y de economía mixta; de las empresas extranjeras que operan en Ecuador; de las compañías de responsabilidad limitada; de las sociedades por acciones simplificadas; y de las bolsas de valores y otros entes del mercado de valores (artículo 431).",
+          "puntos_clave": [
+            "Controla anónimas, limitadas, S.A.S., mixtas y extranjeras.",
+            "También promueve el buen gobierno corporativo."
+          ],
+          "errores_frecuentes": [
+            "Pensar que solo las compañías grandes están bajo control de la Superintendencia."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Art. 431" }
+        },
+        {
+          "id": "lm-control-informacion",
+          "nombre": "Información anual que se envía",
+          "explicacion": "Las compañías sujetas a control envían a la Superintendencia, en el primer cuatrimestre de cada año o en los períodos que esta apruebe, copias del juego completo de estados financieros preparados con la normativa contable vigente, las memorias e informes de los administradores y de los órganos de fiscalización, y la nómina de administradores, representantes legales y socios o accionistas, incluidos los beneficiarios finales (artículo 20).",
+          "puntos_clave": [
+            "Plazo general: primer cuatrimestre del año.",
+            "Estados financieros completos + informes + nómina de socios y beneficiarios."
+          ],
+          "errores_frecuentes": [
+            "Enviar solo el balance general sin el juego completo de estados financieros."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Art. 20" }
+        },
+        {
+          "id": "lm-control-normativa",
+          "nombre": "Facultad normativa del Superintendente",
+          "explicacion": "El Superintendente expide las regulaciones, reglamentos y resoluciones necesarios para el buen gobierno, vigilancia y control de las compañías y resuelve los casos de duda que surjan en la práctica (artículo 433). Por eso muchos detalles operativos, como montos mínimos de capital o formularios, están en resoluciones y no en la ley: conviene revisar el portal de la Superintendencia.",
+          "puntos_clave": [
+            "Las resoluciones de la Superintendencia complementan la ley.",
+            "Los montos mínimos de capital se fijan por resolución."
+          ],
+          "errores_frecuentes": [
+            "Buscar en la ley un monto de capital mínimo que en realidad fija una resolución."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "ley-companias", "seccion": "Art. 433" }
+        }
+      ]
+    }
+  ]
+}

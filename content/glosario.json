@@ -1,0 +1,709 @@
+[
+  {
+    "id": "activo",
+    "termino": "Activo",
+    "definicion": "Recurso que la entidad controla como resultado de hechos pasados y del que espera obtener beneficios económicos, como efectivo, mercadería o equipos.",
+    "sinonimos": [],
+    "equivalente_ingles": "Asset",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "pasivo",
+    "termino": "Pasivo",
+    "definicion": "Obligación presente de la entidad que se cancelará entregando recursos, por ejemplo deudas con proveedores, préstamos o impuestos por pagar.",
+    "sinonimos": [],
+    "equivalente_ingles": "Liability",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "patrimonio",
+    "termino": "Patrimonio",
+    "definicion": "Parte de los activos que pertenece a los dueños después de descontar todos los pasivos.",
+    "sinonimos": [
+      "Capital contable",
+      "Activo neto"
+    ],
+    "equivalente_ingles": "Equity",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "partida-doble",
+    "termino": "Partida doble",
+    "definicion": "Principio de registro según el cual cada transacción afecta al menos dos cuentas y el total cargado en el Debe es igual al total abonado en el Haber.",
+    "sinonimos": [],
+    "equivalente_ingles": "Double-entry bookkeeping",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "debe",
+    "termino": "Debe (débito, cargo)",
+    "definicion": "Lado izquierdo de una cuenta. Aumenta activos y gastos; disminuye pasivos, patrimonio e ingresos.",
+    "sinonimos": [
+      "Cargo",
+      "Débito"
+    ],
+    "equivalente_ingles": "Debit",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "haber",
+    "termino": "Haber (crédito, abono)",
+    "definicion": "Lado derecho de una cuenta. Aumenta pasivos, patrimonio e ingresos; disminuye activos y gastos.",
+    "sinonimos": [
+      "Abono",
+      "Crédito"
+    ],
+    "equivalente_ingles": "Credit",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "libro-diario",
+    "termino": "Libro diario",
+    "definicion": "Registro cronológico de las transacciones mediante asientos que indican fecha, cuentas, valores y explicación.",
+    "sinonimos": [],
+    "equivalente_ingles": "Journal",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "libro-mayor",
+    "termino": "Libro mayor",
+    "definicion": "Conjunto de cuentas que agrupa los movimientos registrados en el diario y permite conocer el saldo de cada una.",
+    "sinonimos": [],
+    "equivalente_ingles": "General ledger",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "balance-comprobacion",
+    "termino": "Balance de comprobación",
+    "definicion": "Lista de las cuentas del mayor con sus saldos, usada para verificar que los saldos deudores sumen lo mismo que los acreedores.",
+    "sinonimos": [],
+    "equivalente_ingles": "Trial balance",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "seccion": "3.6"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "devengado",
+    "termino": "Base de acumulación (devengado)",
+    "definicion": "Criterio que reconoce ingresos y gastos en el período en que ocurren, aunque el cobro o el pago se realicen en otro momento.",
+    "sinonimos": [
+      "Devengo"
+    ],
+    "equivalente_ingles": "Accrual basis",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-1-describe-principles-assumptions-and-concepts-of-accounting-and-their-relationship-to-financial-statements",
+      "seccion": "3.1"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "estado-resultados",
+    "termino": "Estado de resultados",
+    "definicion": "Estado financiero que muestra los ingresos y gastos de un período y la utilidad o pérdida resultante.",
+    "sinonimos": [
+      "Estado de pérdidas y ganancias"
+    ],
+    "equivalente_ingles": "Income statement",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+      "seccion": "2.1"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "estado-situacion",
+    "termino": "Estado de situación financiera",
+    "definicion": "Estado que presenta activos, pasivos y patrimonio de la entidad en una fecha determinada.",
+    "sinonimos": [
+      "Balance general"
+    ],
+    "equivalente_ingles": "Balance sheet",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+      "seccion": "2.1"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "costo-ventas",
+    "termino": "Costo de ventas",
+    "definicion": "Costo de la mercadería vendida durante el período; en el sistema periódico se obtiene con inventario inicial más compras netas menos inventario final.",
+    "sinonimos": [],
+    "equivalente_ingles": "Cost of goods sold",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "peps",
+    "termino": "PEPS",
+    "definicion": "Método de valoración que asume que las primeras unidades compradas son las primeras en venderse, por lo que el inventario final queda a los costos más recientes.",
+    "sinonimos": [
+      "Primeras en entrar, primeras en salir"
+    ],
+    "equivalente_ingles": "FIFO (first-in, first-out)",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "depreciacion",
+    "termino": "Depreciación",
+    "definicion": "Distribución sistemática del costo de un activo de larga duración, menos su valor residual, a lo largo de su vida útil.",
+    "sinonimos": [],
+    "equivalente_ingles": "Depreciation",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "valor-residual",
+    "termino": "Valor residual",
+    "definicion": "Importe que se espera obtener por un activo al final de su vida útil; no se deprecia.",
+    "sinonimos": [
+      "Valor de salvamento"
+    ],
+    "equivalente_ingles": "Salvage value",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "capital-trabajo",
+    "termino": "Capital de trabajo",
+    "definicion": "Diferencia entre activo corriente y pasivo corriente; indica los recursos de corto plazo disponibles después de cubrir las deudas de corto plazo.",
+    "sinonimos": [],
+    "equivalente_ingles": "Working capital",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/5-3-apply-the-results-from-the-adjusted-trial-balance-to-compute-current-ratio-and-working-capital-balance-and-explain-how-these-measures-represent-liquidity",
+      "seccion": "5.3"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "valor-actual",
+    "termino": "Valor actual",
+    "definicion": "Valor que tiene hoy un monto que se recibirá o pagará en el futuro, descontado a una tasa de interés.",
+    "sinonimos": [
+      "Valor presente"
+    ],
+    "equivalente_ingles": "Present value",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/7-2-time-value-of-money-tvm-basics",
+      "seccion": "7.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "valor-futuro",
+    "termino": "Valor futuro",
+    "definicion": "Monto que alcanzará una cantidad actual luego de ganar intereses durante cierto número de períodos.",
+    "sinonimos": [],
+    "equivalente_ingles": "Future value",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/7-2-time-value-of-money-tvm-basics",
+      "seccion": "7.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "tasa-efectiva",
+    "termino": "Tasa efectiva anual",
+    "definicion": "Rendimiento o costo real de una tasa nominal en un año, considerando cuántas veces se capitaliza el interés.",
+    "sinonimos": [],
+    "equivalente_ingles": "Effective annual rate (EAR)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
+      "seccion": "8.4"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "anualidad",
+    "termino": "Anualidad",
+    "definicion": "Serie de pagos iguales realizados a intervalos regulares; es vencida si los pagos ocurren al final de cada período y anticipada si ocurren al inicio.",
+    "sinonimos": [],
+    "equivalente_ingles": "Annuity",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
+      "seccion": "8.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "amortizacion",
+    "termino": "Amortización de un préstamo",
+    "definicion": "Proceso de pagar una deuda mediante cuotas que cubren el interés del período y una parte del capital.",
+    "sinonimos": [],
+    "equivalente_ingles": "Loan amortization",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "van",
+    "termino": "Valor actual neto (VAN)",
+    "definicion": "Suma de los flujos futuros de un proyecto descontados al costo de capital, menos la inversión inicial.",
+    "sinonimos": [
+      "VPN",
+      "Valor presente neto"
+    ],
+    "equivalente_ingles": "Net present value (NPV)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+      "seccion": "16.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "tir",
+    "termino": "Tasa interna de retorno (TIR)",
+    "definicion": "Tasa de descuento que hace que el valor actual neto de un proyecto sea igual a cero.",
+    "sinonimos": [],
+    "equivalente_ingles": "Internal rate of return (IRR)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-3-internal-rate-of-return-irr-method",
+      "seccion": "16.3"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "margen-contribucion",
+    "termino": "Margen de contribución",
+    "definicion": "Diferencia entre el precio de venta y el costo variable; es lo que cada unidad aporta para cubrir costos fijos y generar utilidad.",
+    "sinonimos": [],
+    "equivalente_ingles": "Contribution margin",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-1-explain-contribution-margin-and-calculate-contribution-margin-per-unit-contribution-margin-ratio-and-total-contribution-margin",
+      "seccion": "3.1"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "punto-equilibrio",
+    "termino": "Punto de equilibrio",
+    "definicion": "Nivel de ventas en el que los ingresos totales igualan a los costos totales y la utilidad es cero.",
+    "sinonimos": [],
+    "equivalente_ingles": "Break-even point",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "seccion": "3.2"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "iva",
+    "termino": "Impuesto al Valor Agregado (IVA)",
+    "definicion": "Impuesto que grava la transferencia de bienes y la prestación de servicios en todas sus etapas de comercialización; el consumidor final soporta su carga.",
+    "sinonimos": [],
+    "equivalente_ingles": "Value added tax (VAT)",
+    "areas": [
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "IVA"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "base-imponible",
+    "termino": "Base imponible",
+    "definicion": "Valor sobre el cual se aplica la tarifa de un impuesto.",
+    "sinonimos": [],
+    "equivalente_ingles": "Tax base",
+    "areas": [
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "IVA"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "credito-tributario",
+    "termino": "Crédito tributario de IVA",
+    "definicion": "IVA pagado en compras que puede descontarse del IVA cobrado en ventas al liquidar el impuesto del período.",
+    "sinonimos": [],
+    "equivalente_ingles": "Input VAT credit",
+    "areas": [
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "IVA"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "impuesto-renta",
+    "termino": "Impuesto a la Renta",
+    "definicion": "Impuesto sobre los ingresos obtenidos por personas naturales, sucesiones indivisas y sociedades, menos los costos y gastos deducibles que permite la ley.",
+    "sinonimos": [],
+    "equivalente_ingles": "Income tax",
+    "areas": [
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "sri-renta",
+      "seccion": "Impuesto a la Renta"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "fraccion-basica",
+    "termino": "Fracción básica desgravada",
+    "definicion": "Primer tramo de la tabla del Impuesto a la Renta de personas naturales, sobre el cual la tarifa es 0 %; para 2026 llega hasta USD 12.208.",
+    "sinonimos": [],
+    "equivalente_ingles": "Tax-exempt bracket",
+    "areas": [
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "sri-tablas-ir",
+      "seccion": "Tabla 2026"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "niif",
+    "termino": "NIIF",
+    "definicion": "Normas Internacionales de Información Financiera emitidas por el IASB, de la Fundación IFRS, para preparar estados financieros comparables.",
+    "sinonimos": [],
+    "equivalente_ingles": "IFRS (International Financial Reporting Standards)",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-normas",
+      "seccion": "Normas NIIF"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "niif-pymes",
+    "termino": "NIIF para las PYMES",
+    "definicion": "Versión simplificada de las NIIF pensada para entidades que no tienen obligación pública de rendir cuentas.",
+    "sinonimos": [],
+    "equivalente_ingles": "IFRS for SMEs",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-pymes",
+      "seccion": "NIIF para las PYMES"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "supercias",
+    "termino": "Superintendencia de Compañías, Valores y Seguros",
+    "definicion": "Organismo técnico que vigila y controla a las compañías, el mercado de valores y los seguros en Ecuador.",
+    "sinonimos": [
+      "Supercias"
+    ],
+    "equivalente_ingles": "Superintendency of Companies, Securities and Insurance",
+    "areas": [
+      "derecho"
+    ],
+    "fuente": {
+      "ref": "supercias",
+      "seccion": "Portal institucional"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "sbu",
+    "termino": "Salario Básico Unificado (SBU)",
+    "definicion": "Remuneración mínima mensual del trabajador en general, que se fija cada año; para 2026 es de USD 482.",
+    "sinonimos": [],
+    "equivalente_ingles": "Unified basic wage",
+    "areas": [
+      "derecho",
+      "economia"
+    ],
+    "fuente": {
+      "ref": "mdt-sbu-2026",
+      "seccion": "SBU 2026"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "compania-limitada",
+    "termino": "Compañía de responsabilidad limitada",
+    "definicion": "Especie de compañía cuyos socios responden por las obligaciones sociales solo hasta el monto de sus aportes, con un máximo de quince socios.",
+    "sinonimos": [],
+    "equivalente_ingles": "Limited liability company",
+    "areas": [
+      "derecho"
+    ],
+    "fuente": {
+      "ref": "ley-companias",
+      "seccion": "Arts. 92 y 95"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "sas",
+    "termino": "Sociedad por acciones simplificada (S.A.S.)",
+    "definicion": "Sociedad de capitales de naturaleza mercantil que pueden constituir una o varias personas mediante documento privado inscrito en el Registro de Sociedades.",
+    "sinonimos": [],
+    "equivalente_ingles": "Simplified stock company",
+    "areas": [
+      "derecho"
+    ],
+    "fuente": {
+      "ref": "ley-companias",
+      "seccion": "Sección de las S.A.S."
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "media",
+    "termino": "Media aritmética",
+    "definicion": "Suma de los datos dividida para el número de datos.",
+    "sinonimos": [
+      "Promedio"
+    ],
+    "equivalente_ingles": "Mean",
+    "areas": [
+      "cuantitativo"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "seccion": "2.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "mediana",
+    "termino": "Mediana",
+    "definicion": "Valor que divide en dos mitades a los datos ordenados.",
+    "sinonimos": [],
+    "equivalente_ingles": "Median",
+    "areas": [
+      "cuantitativo"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "seccion": "2.5"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "desviacion-estandar",
+    "termino": "Desviación estándar",
+    "definicion": "Medida de dispersión que indica la distancia típica de los datos respecto a su media, en las mismas unidades que los datos.",
+    "sinonimos": [],
+    "equivalente_ingles": "Standard deviation",
+    "areas": [
+      "cuantitativo"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "muestra",
+    "termino": "Muestra",
+    "definicion": "Subconjunto de la población que se observa para obtener información sobre toda la población.",
+    "sinonimos": [],
+    "equivalente_ingles": "Sample",
+    "areas": [
+      "cuantitativo"
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms",
+      "seccion": "1.1"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "amenaza-autorrevision",
+    "termino": "Amenaza de autorrevisión",
+    "definicion": "Riesgo de que un profesional no evalúe con objetividad un trabajo realizado por él mismo o por su propia firma.",
+    "sinonimos": [],
+    "equivalente_ingles": "Self-review threat",
+    "areas": [
+      "formacion"
+    ],
+    "fuente": {
+      "ref": "iesba-code",
+      "seccion": "Conceptual framework — Step 1"
+    },
+    "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "principios-fundamentales",
+    "termino": "Principios fundamentales de ética",
+    "definicion": "Integridad, objetividad, competencia profesional y diligencia debida, confidencialidad y comportamiento profesional, según el Código del IESBA.",
+    "sinonimos": [],
+    "equivalente_ingles": "Fundamental principles",
+    "areas": [
+      "formacion"
+    ],
+    "fuente": {
+      "ref": "iesba-code",
+      "seccion": "Five fundamental principles"
+    },
+    "actualizado_en": "2026-10-15"
+  }
+]

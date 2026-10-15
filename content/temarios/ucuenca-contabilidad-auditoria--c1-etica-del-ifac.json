@@ -1,0 +1,225 @@
+{
+  "asignatura": "ucuenca-contabilidad-auditoria--c1-etica-del-ifac",
+  "actualizado_en": "2026-10-15",
+  "temas": [
+    {
+      "id": "et-codigo",
+      "nombre": "El Código de Ética del IESBA",
+      "orden": 1,
+      "descripcion": "Qué es el Código internacional de ética para profesionales de la contabilidad y cómo está organizado.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "et-codigo-que-es",
+          "nombre": "Qué es el Código y para qué sirve",
+          "explicacion": "El Consejo de Normas Internacionales de Ética para Contadores (IESBA), que opera con el apoyo de la IFAC, emite el Código Internacional de Ética para Profesionales de la Contabilidad, que incluye las Normas Internacionales de Independencia. Establece requisitos basados en principios para guiar la conducta profesional y ayudar a los contadores a actuar en interés público. Cada país puede adoptarlo por ley o regulación, o mediante sus organismos nacionales de normas.",
+          "puntos_clave": [
+            "Basado en principios, no en una lista cerrada de prohibiciones.",
+            "Incluye las Normas Internacionales de Independencia.",
+            "Su fin último es el interés público."
+          ],
+          "errores_frecuentes": [
+            "Pensar que si una situación no está prohibida de forma expresa, está permitida: el Código pide aplicar los principios."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Presentación del Código" }
+        },
+        {
+          "id": "et-codigo-estructura",
+          "nombre": "Estructura y alcance",
+          "explicacion": "La edición 2025 del Código se publica en dos volúmenes. El primero reúne las partes que aplican a todos los profesionales (cumplimiento del Código, principios fundamentales y marco conceptual), a los contadores en la empresa, a los contadores en ejercicio público y las normas de independencia; el segundo incorpora normas de ética e independencia para el aseguramiento de información de sostenibilidad. Conviene ubicar primero en qué parte se encuentra una situación antes de buscar la respuesta.",
+          "puntos_clave": [
+            "Dos volúmenes en la edición 2025.",
+            "Partes distintas para contadores en la empresa y en ejercicio público."
+          ],
+          "errores_frecuentes": [
+            "Aplicar a un contador que trabaja en una empresa las reglas pensadas para el auditor externo."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Overview of the 2025 IESBA Code" }
+        },
+        {
+          "id": "et-codigo-interes-publico",
+          "nombre": "Interés público y escepticismo profesional",
+          "explicacion": "La profesión contable tiene una responsabilidad con el interés público: inversionistas, bancos, el Estado y la sociedad confían en la información que los contadores preparan o revisan. Por eso el Código pide una actitud de mente inquisitiva y juicio profesional, y advierte que relaciones cercanas o prolongadas pueden reducir el escepticismo profesional.",
+          "puntos_clave": [
+            "La información contable sostiene decisiones de terceros.",
+            "El juicio profesional exige una mente inquisitiva."
+          ],
+          "errores_frecuentes": [
+            "Creer que la ética del contador solo importa frente al empleador o al cliente."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Role and mindset; professional skepticism" }
+        }
+      ]
+    },
+    {
+      "id": "et-principios",
+      "nombre": "Los cinco principios fundamentales",
+      "orden": 2,
+      "descripcion": "Integridad, objetividad, competencia profesional y diligencia debida, confidencialidad y comportamiento profesional.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "et-principios-integridad-objetividad",
+          "nombre": "Integridad y objetividad",
+          "explicacion": "Integridad es ser franco y honesto en todas las relaciones profesionales y de negocios: no asociarse a información que se sabe falsa o engañosa. Objetividad es no permitir que sesgos, conflictos de interés o influencias indebidas comprometan el juicio profesional. Ambos principios se ponen a prueba cuando hay presión para «mejorar» unas cifras.",
+          "puntos_clave": [
+            "Integridad: franqueza y honestidad.",
+            "Objetividad: juicio libre de sesgos e influencias indebidas."
+          ],
+          "errores_frecuentes": [
+            "Firmar un informe con cifras dudosas porque «otro lo preparó»."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+        },
+        {
+          "id": "et-principios-competencia",
+          "nombre": "Competencia profesional y diligencia debida",
+          "explicacion": "Exige mantener los conocimientos y habilidades al nivel que requiere el trabajo y actuar con diligencia, es decir, con cuidado, a tiempo y conforme a las normas técnicas aplicables. Aceptar un encargo para el que no se está preparado, o hacerlo sin la atención necesaria, incumple este principio aunque no exista mala intención.",
+          "puntos_clave": [
+            "Actualización permanente (normas, leyes tributarias, tecnología).",
+            "Diligencia: cuidado y oportunidad."
+          ],
+          "errores_frecuentes": [
+            "Asumir que el título universitario basta para siempre."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+        },
+        {
+          "id": "et-principios-confidencialidad",
+          "nombre": "Confidencialidad",
+          "explicacion": "La información obtenida en relaciones profesionales y de negocios debe protegerse: no se revela sin autorización ni se usa para beneficio propio o de terceros. Este deber continúa incluso después de terminar la relación con el cliente o el empleador. El Código contempla circunstancias en las que revelar información es obligatorio o está permitido, por ejemplo cuando lo exige la ley.",
+          "puntos_clave": [
+            "No revelar ni aprovechar información confidencial.",
+            "El deber continúa después de la relación."
+          ],
+          "errores_frecuentes": [
+            "Comentar en redes sociales datos de clientes «sin dar nombres» que permiten identificarlos."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+        },
+        {
+          "id": "et-principios-comportamiento",
+          "nombre": "Comportamiento profesional",
+          "explicacion": "Pide cumplir las leyes y regulaciones y evitar cualquier conducta que desacredite a la profesión. Incluye, por ejemplo, no exagerar los servicios que se ofrecen ni hacer comparaciones despectivas con el trabajo de otros profesionales.",
+          "puntos_clave": [
+            "Cumplir leyes y regulaciones.",
+            "Evitar conductas que desacrediten a la profesión."
+          ],
+          "errores_frecuentes": [
+            "Publicitar resultados garantizados, como «te aseguro que no pagas impuestos»."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+        }
+      ]
+    },
+    {
+      "id": "et-marco",
+      "nombre": "El marco conceptual",
+      "orden": 3,
+      "descripcion": "Identificar, evaluar y responder a las amenazas contra los principios.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "et-marco-amenazas",
+          "nombre": "Identificar amenazas",
+          "explicacion": "El primer paso es reconocer circunstancias que amenazan el cumplimiento de los principios. El Código las agrupa en cinco categorías: interés propio (un interés financiero o personal influye indebidamente), autorrevisión (evaluar trabajo hecho por uno mismo o por la propia firma), abogacía o promoción (defender la posición del cliente o empleador), familiaridad (relaciones cercanas o largas) e intimidación (presiones reales o percibidas).",
+          "puntos_clave": [
+            "Cinco amenazas: interés propio, autorrevisión, abogacía, familiaridad, intimidación.",
+            "Una misma situación puede generar varias amenazas."
+          ],
+          "errores_frecuentes": [
+            "Confundir la amenaza de familiaridad con la de interés propio: la primera nace de la relación, la segunda de un beneficio."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Conceptual framework — Step 1" }
+        },
+        {
+          "id": "et-marco-evaluar",
+          "nombre": "Evaluar: la prueba del tercero razonable e informado",
+          "explicacion": "Una vez identificada la amenaza se evalúa si su nivel es aceptable. La referencia es un tercero razonable e informado: alguien con conocimiento y objetividad que, conociendo los hechos, concluiría si el cumplimiento de los principios sigue garantizado. Lo que importa no es lo que piensa el propio contador, sino cómo vería la situación esa persona.",
+          "puntos_clave": [
+            "Nivel aceptable desde la mirada de un tercero informado.",
+            "Se consideran factores cualitativos y cuantitativos."
+          ],
+          "errores_frecuentes": [
+            "Decidir que no hay problema porque «yo sé que soy objetivo»."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Conceptual framework — Step 2" }
+        },
+        {
+          "id": "et-marco-responder",
+          "nombre": "Responder a las amenazas",
+          "explicacion": "Si la amenaza no está en un nivel aceptable, el profesional tiene tres caminos: eliminar la circunstancia que la crea (deshacerse del interés o salir del rol), aplicar salvaguardas que la reduzcan a un nivel aceptable (por ejemplo, una revisión adicional o redistribuir responsabilidades) o declinar o terminar la actividad cuando ninguna salvaguarda basta.",
+          "puntos_clave": [
+            "Eliminar, salvaguardar o declinar.",
+            "Una salvaguarda debe reducir de verdad la amenaza."
+          ],
+          "errores_frecuentes": [
+            "Aceptar el encargo y «tenerlo en cuenta» como si eso fuera una salvaguarda."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Conceptual framework — Step 3" }
+        }
+      ]
+    },
+    {
+      "id": "et-situaciones",
+      "nombre": "Situaciones frecuentes",
+      "orden": 4,
+      "descripcion": "Casos que el Código trata de forma específica y que aparecen pronto en la vida profesional.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "et-situaciones-incentivos",
+          "nombre": "Regalos, invitaciones y otros incentivos",
+          "explicacion": "Ofrecer o aceptar regalos, invitaciones u otros incentivos puede generar amenazas de interés propio, familiaridad o intimidación. El Código dedica secciones específicas a este tema tanto para contadores en la empresa como en ejercicio público. La pregunta clave es si el incentivo busca influir de forma indebida en una decisión, o si un tercero informado podría pensarlo.",
+          "puntos_clave": [
+            "Evaluar la intención y la apariencia.",
+            "Valor, frecuencia y momento importan."
+          ],
+          "errores_frecuentes": [
+            "Aceptar un regalo de un proveedor justo antes de aprobar sus facturas."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Inducements (secciones 250 y 340)" }
+        },
+        {
+          "id": "et-situaciones-presion",
+          "nombre": "Presión para incumplir los principios",
+          "explicacion": "Un superior, un cliente o un compañero puede presionar para registrar una operación de forma indebida, ocultar información o cumplir una meta a cualquier costo. El Código pide no ceder ante esa presión y no ejercerla sobre otros. Consultar con colegas de confianza, con instancias internas o con un asesor legal ayuda a decidir cómo actuar.",
+          "puntos_clave": [
+            "No ceder ni presionar a otros.",
+            "Documentar y consultar antes de decidir."
+          ],
+          "errores_frecuentes": [
+            "Justificar un registro indebido con «me lo pidió el gerente»."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Pressure to breach the fundamental principles" }
+        },
+        {
+          "id": "et-situaciones-noclar",
+          "nombre": "Incumplimiento de leyes y regulaciones (NOCLAR)",
+          "explicacion": "Cuando un contador detecta que el cliente o el empleador podría estar incumpliendo leyes o regulaciones, el Código establece cómo responder: entender el asunto, tratarlo con el nivel adecuado de la organización y evaluar si se requieren más acciones, incluida la comunicación a una autoridad cuando corresponde. Mirar hacia otro lado no es una opción compatible con el interés público.",
+          "puntos_clave": [
+            "Entender, escalar internamente y evaluar acciones adicionales.",
+            "El interés público guía la decisión."
+          ],
+          "errores_frecuentes": [
+            "Ignorar indicios de evasión porque «no es mi área»."
+          ],
+          "formulas": [],
+          "fuente": { "ref": "iesba-code", "seccion": "Responding to non-compliance with laws and regulations (NOCLAR)" }
+        }
+      ]
+    }
+  ]
+}

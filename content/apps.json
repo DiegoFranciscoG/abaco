@@ -1,0 +1,275 @@
+[
+  {
+    "id": "libreoffice-calc",
+    "nombre": "LibreOffice Calc",
+    "para_que": "Hoja de cálculo de escritorio, libre y gratuita. Abre y guarda archivos .xlsx, ideal si no tienes licencia de Excel en tu computadora.",
+    "aparece_en": [
+      "informatica",
+      "contabilidad general",
+      "matematica financiera"
+    ],
+    "areas": [
+      "tecnologia",
+      "contabilidad"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.libreoffice.org/",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "excel-web",
+    "nombre": "Excel para la web",
+    "para_que": "Versión en línea de Excel. Sirve para practicar las mismas funciones en español (VA, PAGO, TIR) desde el navegador.",
+    "aparece_en": [
+      "informatica",
+      "matematica financiera"
+    ],
+    "areas": [
+      "tecnologia",
+      "finanzas"
+    ],
+    "costo": "gratis-con-cuenta",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://www.microsoft.com/es-es/microsoft-365/free-office-online-for-the-web",
+    "fecha_consulta": "2026-10-14",
+    "nota": "Requiere una cuenta de Microsoft."
+  },
+  {
+    "id": "google-sheets",
+    "nombre": "Hojas de cálculo de Google",
+    "para_que": "Hoja de cálculo en línea para trabajar en grupo sobre el mismo archivo y ver los cambios de cada integrante.",
+    "aparece_en": [
+      "informatica",
+      "estadistica"
+    ],
+    "areas": [
+      "tecnologia"
+    ],
+    "costo": "gratis-con-cuenta",
+    "plataformas": [
+      "Navegador",
+      "Android",
+      "iOS"
+    ],
+    "url_oficial": "https://workspace.google.com/intl/es-419/products/sheets/",
+    "fecha_consulta": "2026-10-14",
+    "nota": "Requiere una cuenta de Google."
+  },
+  {
+    "id": "geogebra",
+    "nombre": "GeoGebra",
+    "para_que": "Graficar funciones, ver rectas secantes y tangentes y comprobar derivadas y máximos de forma visual.",
+    "aparece_en": [
+      "calculo",
+      "matematica"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador",
+      "Android",
+      "iOS",
+      "Windows",
+      "macOS"
+    ],
+    "url_oficial": "https://www.geogebra.org/",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "desmos",
+    "nombre": "Calculadora gráfica Desmos",
+    "para_que": "Graficar funciones de costo, ingreso y utilidad con deslizadores para ver cómo cambian al mover un parámetro.",
+    "aparece_en": [
+      "calculo",
+      "microeconomia"
+    ],
+    "areas": [
+      "cuantitativo",
+      "economia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador",
+      "Android",
+      "iOS"
+    ],
+    "url_oficial": "https://www.desmos.com/calculator",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "jasp",
+    "nombre": "JASP",
+    "para_que": "Estadística con menús, sin programar: estadística descriptiva, gráficos y pruebas que luego se ven en Estadística Inferencial.",
+    "aparece_en": [
+      "estadistica"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://jasp-stats.org/",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "r-project",
+    "nombre": "R",
+    "para_que": "Lenguaje estadístico para analizar datos con código reproducible; muy usado en econometría y en trabajos de titulación.",
+    "aparece_en": [
+      "estadistica",
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo",
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.r-project.org/",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "zotero",
+    "nombre": "Zotero",
+    "para_que": "Guardar artículos y generar citas y bibliografía en formato APA dentro de Word o LibreOffice.",
+    "aparece_en": [
+      "metodologia",
+      "titulacion",
+      "escritura academica"
+    ],
+    "areas": [
+      "formacion"
+    ],
+    "costo": "freemium",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Navegador"
+    ],
+    "url_oficial": "https://www.zotero.org/",
+    "fecha_consulta": "2026-10-14",
+    "nota": "La aplicación es gratuita; el almacenamiento en la nube adicional es de pago."
+  },
+  {
+    "id": "anki",
+    "nombre": "Anki",
+    "para_que": "Tarjetas de repaso espaciado para memorizar cuentas, artículos de ley o fórmulas antes de un examen.",
+    "aparece_en": [
+      "contabilidad general",
+      "legislacion",
+      "etica"
+    ],
+    "areas": [
+      "formacion"
+    ],
+    "costo": "freemium",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "url_oficial": "https://apps.ankiweb.net/",
+    "fecha_consulta": "2026-10-14",
+    "nota": "Gratis en computadora y Android; la aplicación oficial para iOS es de pago."
+  },
+  {
+    "id": "supercias-consulta",
+    "nombre": "Consulta de compañías — Superintendencia de Compañías",
+    "para_que": "Buscar una compañía ecuatoriana y revisar su información pública: especie, situación legal y documentos presentados.",
+    "aparece_en": [
+      "legislacion mercantil",
+      "contabilidad societaria"
+    ],
+    "areas": [
+      "derecho",
+      "contabilidad"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://appscvsgen.supercias.gob.ec/consultaCompanias/societario/busquedaCompanias.jsf",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "sri-en-linea",
+    "nombre": "SRI en Línea",
+    "para_que": "Portal oficial del Servicio de Rentas Internas para trámites y declaraciones; útil para conocer los formularios reales que se ven en Legislación y Práctica Tributaria.",
+    "aparece_en": [
+      "tributaria"
+    ],
+    "areas": [
+      "tributario"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://srienlinea.sri.gob.ec/sri-en-linea/inicio/NAT",
+    "fecha_consulta": "2026-10-14",
+    "nota": "Para declarar se necesita la clave personal del contribuyente: nunca uses datos de otra persona."
+  },
+  {
+    "id": "khan-calculo",
+    "nombre": "Khan Academy — Cálculo 1",
+    "para_que": "Videos y ejercicios con retroalimentación inmediata sobre límites, derivadas y sus aplicaciones.",
+    "aparece_en": [
+      "calculo diferencial"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador",
+      "Android",
+      "iOS"
+    ],
+    "url_oficial": "https://www.khanacademy.org/math/calculus-1",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "openstax",
+    "nombre": "OpenStax",
+    "para_que": "Libros universitarios abiertos de contabilidad, finanzas, estadística, cálculo y economía: las mismas fuentes que cita ÁBACO.",
+    "aparece_en": [
+      "contabilidad general",
+      "estadistica",
+      "calculo",
+      "microeconomia",
+      "matematica financiera"
+    ],
+    "areas": [
+      "contabilidad",
+      "finanzas",
+      "cuantitativo"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://openstax.org/details/books/principles-financial-accounting",
+    "fecha_consulta": "2026-10-14",
+    "nota": "Contenido en inglés con licencia CC BY-NC-SA 4.0."
+  }
+]

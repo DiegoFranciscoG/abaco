@@ -1,0 +1,295 @@
+{
+  "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+  "actualizado_en": "2026-10-15",
+  "temas": [
+    {
+      "id": "cd-funciones",
+      "nombre": "Funciones",
+      "orden": 1,
+      "descripcion": "Lenguaje de las funciones y los modelos más usados en economía y finanzas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cd-funciones-concepto",
+          "nombre": "Funciones y su representación",
+          "explicacion": "Una función asigna a cada valor de entrada (dominio) exactamente un valor de salida (rango). Se puede expresar con una fórmula, una tabla, un gráfico o una descripción en palabras. En negocios es común modelar el costo, el ingreso o la utilidad como funciones de la cantidad producida.",
+          "puntos_clave": [
+            "Cada entrada tiene una sola salida.",
+            "Dominio: valores permitidos de la variable independiente."
+          ],
+          "errores_frecuentes": [
+            "Olvidar restricciones del dominio económico (no hay producción negativa).",
+            "Confundir f(a + b) con f(a) + f(b)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/1-1-review-of-functions",
+            "seccion": "1.1 Repaso de funciones"
+          }
+        },
+        {
+          "id": "cd-funciones-clases",
+          "nombre": "Funciones lineales, cuadráticas y polinómicas",
+          "explicacion": "Una función lineal tiene pendiente constante: cada unidad adicional cambia la salida en la misma cantidad. Una cuadrática describe una curva con un máximo o un mínimo (vértice), útil para ingresos que primero suben y luego bajan. Las polinómicas generalizan ambas y aparecen en funciones de costo con economías y deseconomías de escala.",
+          "puntos_clave": [
+            "Lineal: pendiente constante.",
+            "Cuadrática: tiene un vértice (máximo o mínimo)."
+          ],
+          "errores_frecuentes": [
+            "Interpretar la pendiente de una recta como un porcentaje cuando está en unidades."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/1-2-basic-classes-of-functions",
+            "seccion": "1.2 Clases básicas de funciones"
+          }
+        },
+        {
+          "id": "cd-funciones-exponenciales",
+          "nombre": "Funciones exponenciales y logarítmicas",
+          "explicacion": "Las funciones exponenciales describen crecimientos proporcionales al valor actual, como el interés compuesto. El número e aparece cuando la capitalización se vuelve continua. El logaritmo es la función inversa de la exponencial y sirve para despejar el tiempo, por ejemplo, cuántos años tarda en duplicarse una inversión.",
+          "puntos_clave": [
+            "Crecimiento exponencial: porcentaje constante por período.",
+            "ln despeja exponentes."
+          ],
+          "errores_frecuentes": [
+            "Escribir ln(a + b) = ln a + ln b; lo correcto es ln(a·b) = ln a + ln b."
+          ],
+          "formulas": ["interes-continuo", "numero-periodos"],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions",
+            "seccion": "1.5 Exponenciales y logaritmos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cd-limites",
+      "nombre": "Límites y continuidad",
+      "orden": 2,
+      "descripcion": "La idea que sostiene a la derivada.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cd-limites-idea",
+          "nombre": "Idea intuitiva de límite",
+          "explicacion": "El límite de f(x) cuando x se acerca a a es el valor al que se aproxima la función, aunque en x = a no esté definida o valga otra cosa. Se puede estimar con tablas de valores que se acercan por la izquierda y por la derecha: si ambos lados tienden al mismo número, el límite existe.",
+          "puntos_clave": [
+            "El límite describe el comportamiento cerca de a, no en a.",
+            "Límites laterales iguales → el límite existe."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el límite siempre es f(a).",
+            "Probar solo por un lado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function",
+            "seccion": "2.2 El límite de una función"
+          }
+        },
+        {
+          "id": "cd-limites-leyes",
+          "nombre": "Leyes de los límites",
+          "explicacion": "Los límites respetan las operaciones: el límite de una suma es la suma de los límites, y lo mismo para productos, cocientes (si el denominador no tiende a cero) y potencias. Cuando la sustitución directa da 0/0 se simplifica la expresión, por ejemplo factorizando, antes de evaluar.",
+          "puntos_clave": [
+            "Sustitución directa cuando la función es «bien portada».",
+            "0/0 es una forma indeterminada: hay que simplificar."
+          ],
+          "errores_frecuentes": [
+            "Concluir que un límite «0/0» vale 1 o no existe sin simplificar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/2-3-the-limit-laws",
+            "seccion": "2.3 Leyes de los límites"
+          }
+        },
+        {
+          "id": "cd-limites-continuidad",
+          "nombre": "Continuidad",
+          "explicacion": "Una función es continua en a si está definida en a, el límite existe y ambos coinciden. Gráficamente, se puede dibujar sin levantar el lápiz. Las tarifas por tramos, como la tabla del impuesto a la renta, son ejemplos donde conviene revisar la continuidad en los puntos de cambio.",
+          "puntos_clave": [
+            "Tres condiciones: f(a) existe, el límite existe, son iguales.",
+            "Los polinomios son continuos en todos los reales."
+          ],
+          "errores_frecuentes": [
+            "Afirmar que una función por tramos es continua sin revisar los extremos de cada tramo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/2-4-continuity",
+            "seccion": "2.4 Continuidad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cd-derivada",
+      "nombre": "La derivada",
+      "orden": 3,
+      "descripcion": "De la tasa de cambio promedio a la tasa instantánea, y cómo calcularla.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cd-derivada-secante",
+          "nombre": "Tasa de cambio promedio y recta secante",
+          "explicacion": "La tasa de cambio promedio entre a y b es el cociente (f(b) − f(a)) ÷ (b − a), que coincide con la pendiente de la recta secante que une ambos puntos de la gráfica. Si el intervalo se hace cada vez más pequeño, la secante se acerca a la recta tangente y su pendiente se acerca a la derivada.",
+          "puntos_clave": [
+            "Promedio: cambio en f ÷ cambio en x.",
+            "La derivada es el límite de las pendientes de las secantes."
+          ],
+          "errores_frecuentes": [
+            "Dividir para el cambio en f en lugar del cambio en x."
+          ],
+          "formulas": ["tasa-cambio-promedio"],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+            "seccion": "3.1 Definición de la derivada"
+          }
+        },
+        {
+          "id": "cd-derivada-definicion",
+          "nombre": "Definición de derivada",
+          "explicacion": "La derivada de f en a es el límite, cuando h tiende a cero, de (f(a + h) − f(a)) ÷ h. Representa la pendiente de la tangente y la tasa de cambio instantánea. Si ese límite existe en cada punto de un intervalo, la derivada es una nueva función f′(x).",
+          "puntos_clave": [
+            "f′(a) = lím (f(a+h) − f(a)) / h cuando h → 0.",
+            "Derivada = pendiente de la tangente."
+          ],
+          "errores_frecuentes": [
+            "Sustituir h = 0 antes de simplificar el cociente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+            "seccion": "3.1 Definición de la derivada"
+          }
+        },
+        {
+          "id": "cd-derivada-reglas",
+          "nombre": "Reglas de derivación",
+          "explicacion": "En la práctica no se usa la definición cada vez, sino reglas: la derivada de una constante es cero, la de xⁿ es n·xⁿ⁻¹, y la derivada de una suma es la suma de derivadas. Para productos y cocientes hay reglas propias. Con ellas, derivar una función de costo polinómica toma segundos.",
+          "puntos_clave": [
+            "d/dx (xⁿ) = n·xⁿ⁻¹.",
+            "La derivada de una constante es 0."
+          ],
+          "errores_frecuentes": [
+            "Derivar un producto multiplicando las derivadas de cada factor."
+          ],
+          "formulas": ["costo-marginal"],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules",
+            "seccion": "3.3 Reglas de derivación"
+          }
+        },
+        {
+          "id": "cd-derivada-cadena",
+          "nombre": "Regla de la cadena",
+          "explicacion": "Sirve para derivar funciones compuestas, es decir, una función dentro de otra: la derivada es la derivada de la función externa evaluada en la interna, multiplicada por la derivada de la interna. Aparece, por ejemplo, al derivar (1 + i)ⁿ respecto a i o una exponencial con exponente variable.",
+          "puntos_clave": [
+            "(f(g(x)))′ = f′(g(x)) · g′(x)."
+          ],
+          "errores_frecuentes": [
+            "Olvidar multiplicar por la derivada de la función interna."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule",
+            "seccion": "3.6 Regla de la cadena"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cd-aplicaciones",
+      "nombre": "Aplicaciones en economía y negocios",
+      "orden": 4,
+      "descripcion": "Análisis marginal, máximos y mínimos, optimización y elasticidad.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cd-aplicaciones-marginal",
+          "nombre": "Costo e ingreso marginal",
+          "explicacion": "La derivada del costo total respecto a la cantidad aproxima cuánto cuesta producir una unidad más; la del ingreso, cuánto ingreso adicional trae esa unidad. Comparar ingreso marginal con costo marginal ayuda a decidir si conviene ampliar la producción.",
+          "puntos_clave": [
+            "Costo marginal ≈ C(q + 1) − C(q) ≈ C′(q).",
+            "Producir más conviene mientras el ingreso marginal supere al costo marginal."
+          ],
+          "errores_frecuentes": [
+            "Confundir costo marginal con costo promedio por unidad."
+          ],
+          "formulas": ["costo-marginal"],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
+            "seccion": "3.4 Derivadas como tasas de cambio"
+          }
+        },
+        {
+          "id": "cd-aplicaciones-extremos",
+          "nombre": "Máximos y mínimos",
+          "explicacion": "Los valores extremos de una función derivable en un intervalo abierto ocurren en puntos críticos, donde la derivada es cero o no existe. En un intervalo cerrado también se revisan los extremos del intervalo. Comparar los valores de la función en esos puntos indica cuál es el máximo o el mínimo absoluto.",
+          "puntos_clave": [
+            "Punto crítico: f′(x) = 0 o no existe.",
+            "En intervalos cerrados se evalúan también los extremos."
+          ],
+          "errores_frecuentes": [
+            "Asumir que todo punto crítico es un máximo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima",
+            "seccion": "4.3 Máximos y mínimos"
+          }
+        },
+        {
+          "id": "cd-aplicaciones-optimizacion",
+          "nombre": "Problemas de optimización",
+          "explicacion": "Un problema de optimización se resuelve en pasos: identificar la cantidad a maximizar o minimizar, expresarla como función de una sola variable, fijar el dominio con sentido económico, derivar e igualar a cero, y comprobar que el punto encontrado es realmente el máximo o el mínimo buscado.",
+          "puntos_clave": [
+            "Una función, una variable, un dominio.",
+            "Verificar con la segunda derivada o comparando valores."
+          ],
+          "errores_frecuentes": [
+            "Dar como respuesta la variable óptima cuando se pedía el valor máximo de la función."
+          ],
+          "formulas": ["maximo-ingreso"],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems",
+            "seccion": "4.7 Optimización aplicada"
+          }
+        },
+        {
+          "id": "cd-aplicaciones-elasticidad",
+          "nombre": "Elasticidad precio de la demanda",
+          "explicacion": "La elasticidad compara el cambio porcentual de la cantidad con el cambio porcentual del precio. Si su valor absoluto es mayor que 1 la demanda es elástica (una subida de precio reduce el ingreso); si es menor que 1, inelástica (el ingreso sube). El método del punto medio usa promedios para que el resultado no dependa de si el precio sube o baja.",
+          "puntos_clave": [
+            "|E| > 1: elástica; |E| < 1: inelástica.",
+            "Punto medio: cambios relativos sobre el promedio."
+          ],
+          "errores_frecuentes": [
+            "Usar cambios absolutos (dólares, unidades) en lugar de porcentuales."
+          ],
+          "formulas": ["elasticidad-precio"],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+            "seccion": "5.1 Elasticidad precio"
+          }
+        }
+      ]
+    }
+  ]
+}

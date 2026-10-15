@@ -35,7 +35,7 @@ Facultades: [FCEA — Universidad de Cuenca](https://www.ucuenca.edu.ec/facultad
 | N3 | SRI — PDF "Tablas de cálculo de Impuesto a la Renta" | https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/58a7f4f6-ab51-48b6-b9ff-a8e97e1a28ef/Tablas%20de%20c%c3%a1lculo%20de%20Impuesto%20a%20la%20Renta.pdf | Tabla 2026 completa (Res. NAC-DGERCGC25-00000043, 2.º Supl. R.O. 194, 30-12-2025): fracción básica desgravada USD 12 208; tramos 5 %…37 % |
 | N4 | Ministerio del Trabajo — boletín SBU 2026 | https://www.trabajo.gob.ec/despues-de-casi-una-decada-hay-consenso-gobierno-empleadores-y-trabajadores-acuerdan-fijar-el-salario-basico-unificado-de-2026-en-usd-482-no-hay-imposicion-hay-union/ | Salario Básico Unificado 2026: USD 482 |
 | N5 | Ley de Compañías (texto vigente compilado, publicado en el portal del SERCOP) | https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf | Contrato de compañía, especies de compañías, requisitos de constitución, administración, obligaciones de información a la Superintendencia |
-| N6 | Código de Comercio (Asamblea Nacional) | https://www.asambleanacional.gob.ec/sites/default/files/codigo_de_comercio.pdf | Referencia general de actos de comercio y comerciantes (R.O. Supl. 497, 29-05-2019) |
+| N6 | Código de Comercio (Asamblea Nacional) | https://www.asambleanacional.gob.ec/sites/default/files/codigo_de_comercio.pdf | **No usado**: el PDF oficial es una imagen escaneada y no permite verificar artículos; se cita solo a través del art. 1 de la Ley de Compañías |
 | N7 | Superintendencia de Compañías — portal y consulta de compañías | https://www.supercias.gob.ec/portalscvs/ | App recomendada (consulta pública de compañías) |
 
 **Tarifa de IVA 2026 — verificación parcial.** La página oficial del SRI muestra el 15 % por Decreto 198 (desde 01-04-2024) pero no menciona 2026 de forma expresa, y su texto general aún cita el 13 % de la ley base. La continuidad del 15 % en 2026 la confirman El Universo, Expreso y Bloomberg Tax citando la Circular NAC-DGECCGC25-00000006 (26-12-2025), cuyo texto oficial no pude abrir. Decisión: la fórmula del IVA trata la tarifa como **variable**; el ejemplo usa 15 % y la ficha muestra la advertencia "confirma la tarifa vigente en sri.gob.ec".
@@ -53,11 +53,12 @@ Se cita y enlaza; el texto de ÁBACO es redacción propia. Licencias verificadas
 | B1 | OpenStax — *Principles of Financial Accounting* | https://openstax.org/details/books/principles-financial-accounting | CC BY-NC-SA 4.0 | Ecuación contable, partida doble, ciclo contable, balance de comprobación, mercaderías, inventarios PEPS/promedio, depreciación, razones de liquidez y de cuentas por cobrar |
 | B2 | OpenStax — *Principles of Managerial Accounting* | https://openstax.org/details/books/principles-managerial-accounting | CC BY-NC-SA 4.0 | Margen de contribución, punto de equilibrio, margen de seguridad, apalancamiento operativo |
 | B3 | OpenStax — *Principles of Finance* | https://openstax.org/details/books/principles-finance | CC BY-NC-SA 4.0 | Valor del dinero en el tiempo, anualidades, perpetuidades, amortización, tasas efectivas, VAN, TIR, periodo de recuperación, razones financieras y DuPont |
+| B4b | OpenStax — *Introductory Business Statistics 2e* | https://openstax.org/details/books/introductory-business-statistics-2e | CC BY-NC-SA 4.0 | Coeficiente de variación (sección 2.7); *Introductory Statistics 2e* no lo incluye |
 | B4 | OpenStax — *Introductory Statistics 2e* | https://openstax.org/details/books/introductory-statistics-2e | CC BY-NC-SA 4.0 | Medidas de centro, posición y dispersión; puntuación z; correlación |
 | B5 | OpenStax — *Calculus Volume 1* | https://openstax.org/details/books/calculus-volume-1 | CC BY-NC-SA 4.0 | Funciones, límites, derivada, reglas de derivación, optimización |
 | B6 | OpenStax — *Contemporary Mathematics* | https://openstax.org/details/books/contemporary-mathematics | CC BY-NC-SA 4.0 | Interés simple y compuesto |
 | B7 | OpenStax — *Principles of Economics 3e* | https://openstax.org/details/books/principles-economics-3e | CC BY-NC-SA 4.0 | Elasticidad precio |
-| B8 | IESBA — *International Code of Ethics for Professional Accountants* | https://www.ethicsboard.org/iesba-code | Uso de consulta | Principios fundamentales, marco conceptual, amenazas y salvaguardas |
+| B8 | IESBA — *International Code of Ethics for Professional Accountants* | https://www.ethicsboard.org/iesba-code | Uso de consulta | Cinco principios, los tres pasos del marco conceptual, las cinco categorías de amenazas y la prueba del tercero razonable e informado, leídos en la página oficial el 2026-10-15 |
 | B9 | IFRS Foundation — lista de normas y NIIF para las PYMES | https://www.ifrs.org/issued-standards/list-of-standards/ | Uso de consulta | Referencia de normas (NIC 2, NIC 16) |
 
 Las URLs de sección de OpenStax se tomaron del índice publicado de cada libro (`/books/<libro>/pages/<sección>`).
@@ -88,3 +89,12 @@ Detalle con versión, licencia y fecha en [docs/dependencias.md](dependencias.md
 | W2 | MDN — Storage quotas and eviction criteria | https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria | Aislamiento por origen, cuotas, `navigator.storage.persist()` y `estimate()` |
 | W3 | OWASP Top 10 (2021) | https://owasp.org/Top10/ | Revisión de inyección (evaluador de fórmulas sin `eval`), componentes vulnerables (SheetJS desde su CDN oficial), integridad |
 | W4 | Ley Orgánica de Protección de Datos Personales (Ecuador) | https://www.asambleanacional.gob.ec/ | Minimización: la app no recolecta datos personales; todo queda en el dispositivo |
+
+## 8. Verificación de contenido por sección (2026-10-15)
+
+Antes de citar una sección de OpenStax se comprobó, descargando la página, que contiene el concepto citado (por ejemplo: «IFRS does not permit the use of LIFO» en 10.1; «growing perpetuity» en 8.1; «correlation does not imply causation» en 12.3; «marginal cost» en *Calculus* 3.4). Dos hallazgos cambiaron el contenido:
+
+- El **margen operativo** no aparece en *Principles of Finance* 6.6 → se excluyó esa fórmula.
+- La **media ponderada** no aparece en *Introductory Statistics* 2.5 → se cita *Principles of Finance* 13.1, donde sí está.
+
+Los artículos de la Ley de Compañías usados en Legislación Mercantil (1, 2, 3, 4, 5, 20, 36, 37, 59, 74, 92–96, 102, 116–118, 143, 144, 147, 160, 168, 308, 431, 433 y la sección de las S.A.S.) se leyeron en el texto vigente compilado; la redacción de ÁBACO es propia.

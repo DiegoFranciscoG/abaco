@@ -1,0 +1,294 @@
+{
+  "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+  "actualizado_en": "2026-10-15",
+  "temas": [
+    {
+      "id": "ii-formulas",
+      "nombre": "Fórmulas y referencias",
+      "orden": 1,
+      "descripcion": "Cómo se escribe una fórmula, cómo se copian sin romperse y cómo controlar sus errores.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ii-formulas-estructura",
+          "nombre": "Estructura de una fórmula y operadores",
+          "explicacion": "Toda fórmula empieza con el signo igual y puede combinar constantes, referencias a celdas, operadores y funciones. Excel respeta un orden de operaciones: primero lo que está entre paréntesis, luego potencias, multiplicaciones y divisiones, y al final sumas y restas. En Excel en español los argumentos de las funciones se separan con punto y coma y los decimales se escriben con coma.",
+          "puntos_clave": [
+            "Siempre empieza con =.",
+            "Los paréntesis cambian el orden de cálculo.",
+            "En español: ; separa argumentos y , separa decimales."
+          ],
+          "errores_frecuentes": [
+            "Escribir =A1+A2*10% esperando que primero se sume.",
+            "Copiar una fórmula de un tutorial en inglés con comas y obtener un error de sintaxis."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-formulas",
+            "seccion": "Información general sobre fórmulas"
+          }
+        },
+        {
+          "id": "ii-formulas-referencias",
+          "nombre": "Referencias relativas, absolutas y mixtas",
+          "explicacion": "Al copiar una fórmula, las referencias relativas (A1) se ajustan a la nueva posición; las absolutas ($A$1) se quedan fijas; las mixtas fijan solo la columna ($A1) o solo la fila (A$1). Fijar con $ la celda de una tasa o de un porcentaje es clave para que una tabla de cálculo funcione al arrastrar. En Windows, la tecla F4 alterna entre los tipos de referencia.",
+          "puntos_clave": [
+            "Relativa: cambia al copiar.",
+            "Absoluta: $columna$fila, no cambia.",
+            "F4 alterna entre tipos."
+          ],
+          "errores_frecuentes": [
+            "Olvidar fijar la celda de la tasa de IVA y obtener ceros o errores al arrastrar la fórmula."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-formulas",
+            "url": "https://support.microsoft.com/es-es/office/cambiar-entre-referencias-relativas-absolutas-y-mixtas-dfec08cd-ae65-4f56-839e-5f0d8d0baca9",
+            "seccion": "Cambiar entre referencias relativas, absolutas y mixtas"
+          }
+        },
+        {
+          "id": "ii-formulas-errores",
+          "nombre": "Controlar errores con SI.ERROR",
+          "explicacion": "Cuando una fórmula puede fallar (por ejemplo, una división cuyo divisor aún está vacío), SI.ERROR devuelve un valor alternativo en lugar del error. Es útil para presentar reportes limpios, pero no debe ocultar errores que indican datos mal ingresados: primero hay que entender por qué aparece el error.",
+          "puntos_clave": [
+            "SI.ERROR(valor; valor_si_error).",
+            "Útil para presentación, no para esconder problemas."
+          ],
+          "errores_frecuentes": [
+            "Envolver todas las fórmulas en SI.ERROR y no notar que un dato está mal escrito."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-log",
+            "seccion": "Función SI.ERROR"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ii-funciones",
+      "nombre": "Funciones esenciales",
+      "orden": 2,
+      "descripcion": "Sumar, contar, decidir y buscar: las funciones que se usan todos los días en contabilidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ii-funciones-basicas",
+          "nombre": "SUMA, PROMEDIO, CONTAR y CONTARA",
+          "explicacion": "SUMA agrega los números de un rango y PROMEDIO calcula su media. CONTAR cuenta las celdas que contienen números, mientras CONTARA cuenta todas las celdas no vacías, incluidas las de texto. Saber cuál usar evita errores al contar facturas, clientes o registros.",
+          "puntos_clave": [
+            "CONTAR: solo números. CONTARA: cualquier dato.",
+            "Las celdas vacías no entran en PROMEDIO."
+          ],
+          "errores_frecuentes": [
+            "Usar CONTAR en una columna de nombres y obtener cero."
+          ],
+          "formulas": ["media-aritmetica"],
+          "fuente": {
+            "ref": "ms-excel-est",
+            "seccion": "PROMEDIO, CONTAR y CONTARA"
+          }
+        },
+        {
+          "id": "ii-funciones-si",
+          "nombre": "La función SI y las funciones lógicas",
+          "explicacion": "SI evalúa una condición y devuelve un valor si es verdadera y otro si es falsa: SI(prueba_lógica; valor_si_verdadero; [valor_si_falso]). Con Y y O se combinan varias condiciones. Sirve, por ejemplo, para marcar facturas vencidas o decidir si un proyecto se acepta según su VAN.",
+          "puntos_clave": [
+            "SI(prueba; si_verdadero; si_falso).",
+            "Y exige todas las condiciones; O, al menos una."
+          ],
+          "errores_frecuentes": [
+            "Anidar muchos SI cuando una tabla de búsqueda sería más clara."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-log",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-si-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2",
+            "seccion": "Función SI"
+          }
+        },
+        {
+          "id": "ii-funciones-sumarsi",
+          "nombre": "SUMAR.SI: sumar con un criterio",
+          "explicacion": "SUMAR.SI suma solo las celdas que cumplen una condición: SUMAR.SI(rango; criterio; [rango_suma]). Por ejemplo, el total de ventas de una sucursal o de las facturas mayores a cierto valor. Es la base de muchos reportes contables antes de pasar a tablas dinámicas.",
+          "puntos_clave": [
+            "El criterio puede ser texto, número o una comparación como \">1000\".",
+            "rango_suma es opcional."
+          ],
+          "errores_frecuentes": [
+            "Usar rangos de distinto tamaño en rango y rango_suma."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-alfa",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-sumar-si-169b8c99-c05c-4483-a712-1697a653039b",
+            "seccion": "Función SUMAR.SI"
+          }
+        },
+        {
+          "id": "ii-funciones-buscar",
+          "nombre": "BUSCARX y BUSCARV",
+          "explicacion": "Las funciones de búsqueda traen un dato de una tabla a partir de una clave, como el nombre de una cuenta a partir de su código. BUSCARV busca en la primera columna de la tabla y devuelve un valor de otra columna; BUSCARX, disponible en versiones recientes de Excel, busca en cualquier columna y devuelve un resultado más claro cuando no encuentra el dato.",
+          "puntos_clave": [
+            "Usar coincidencia exacta para códigos de cuentas.",
+            "BUSCARX no exige que la clave esté en la primera columna."
+          ],
+          "errores_frecuentes": [
+            "Usar BUSCARV con coincidencia aproximada sobre una lista desordenada y obtener datos equivocados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-alfa",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-buscarx-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+            "seccion": "Función BUSCARX"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ii-financieras",
+      "nombre": "Funciones financieras",
+      "orden": 3,
+      "descripcion": "Valor actual, valor futuro, cuotas, VNA y TIR directamente en la hoja.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ii-financieras-va-vf",
+          "nombre": "VA y VF",
+          "explicacion": "VA calcula el valor actual y VF el valor futuro de una inversión o préstamo con tasa constante. Excel usa una convención de signos de flujo de caja: el dinero que sale se escribe negativo y el que entra, positivo. Por eso =VA(1%;12;-100) devuelve un valor positivo: pagas 100 cada mes y eso equivale a recibir hoy el resultado.",
+          "puntos_clave": [
+            "La tasa y el número de períodos deben estar en la misma unidad.",
+            "Salidas negativas, entradas positivas."
+          ],
+          "errores_frecuentes": [
+            "Usar la tasa anual con períodos mensuales."
+          ],
+          "formulas": ["valor-actual", "monto-compuesto", "va-anualidad-vencida", "vf-anualidad-vencida"],
+          "fuente": {
+            "ref": "ms-excel-fin",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-va-23879d31-0e02-4321-be01-da16e8168cbd",
+            "seccion": "Función VA"
+          }
+        },
+        {
+          "id": "ii-financieras-pago",
+          "nombre": "PAGO y tablas de amortización",
+          "explicacion": "PAGO devuelve la cuota fija de un préstamo. Con PAGOINT y PAGOPRIN se separa cada cuota en interés y capital, y con referencias absolutas a la tasa y al plazo se arma una tabla de amortización que se arrastra hasta la última cuota. La última fila debe dejar el saldo en cero, lo que sirve como comprobación.",
+          "puntos_clave": [
+            "PAGO = interés + capital de cada período.",
+            "El saldo final debe ser cero."
+          ],
+          "errores_frecuentes": [
+            "Olvidar el signo negativo del préstamo y obtener cuotas negativas sin entender por qué."
+          ],
+          "formulas": ["cuota-prestamo", "interes-cuota", "capital-cuota", "saldo-insoluto"],
+          "fuente": {
+            "ref": "ms-excel-fin",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-pago-0214da64-9a63-4996-bc20-214433fa6441",
+            "seccion": "Función PAGO"
+          }
+        },
+        {
+          "id": "ii-financieras-vna-tir",
+          "nombre": "VNA y TIR",
+          "explicacion": "VNA descuenta una serie de flujos que empiezan al final del primer período; por eso la inversión inicial, que ocurre en el período cero, se suma fuera de la función. TIR busca la tasa que hace cero el valor neto de todos los flujos, incluida la inversión inicial, y usa un método iterativo.",
+          "puntos_clave": [
+            "=VNA(tasa; flujos 1..n) + inversión inicial (negativa).",
+            "TIR incluye el flujo del período cero."
+          ],
+          "errores_frecuentes": [
+            "Incluir la inversión inicial dentro de VNA y descontarla un período de más."
+          ],
+          "formulas": ["van", "tir"],
+          "fuente": {
+            "ref": "ms-excel-fin",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-vna-8672cb67-2576-4d07-b67b-ac28acf2a568",
+            "seccion": "Función VNA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ii-datos",
+      "nombre": "Organizar y presentar datos",
+      "orden": 4,
+      "descripcion": "Validación, formato condicional, tablas dinámicas y gráficos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ii-datos-validacion",
+          "nombre": "Validación de datos",
+          "explicacion": "La validación limita lo que se puede escribir en una celda: una lista desplegable de cuentas, fechas dentro de un rango o números positivos. Reduce errores de digitación desde el origen y permite mostrar un mensaje que explica qué dato se espera.",
+          "puntos_clave": [
+            "Listas desplegables para datos repetidos.",
+            "Mensajes de entrada y de error."
+          ],
+          "errores_frecuentes": [
+            "Pegar datos copiados sobre celdas validadas: el pegado puede saltarse la validación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-formulas",
+            "url": "https://support.microsoft.com/es-es/office/aplicar-validaci%C3%B3n-de-datos-a-celdas-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249",
+            "seccion": "Aplicar validación de datos a celdas"
+          }
+        },
+        {
+          "id": "ii-datos-formato-condicional",
+          "nombre": "Formato condicional",
+          "explicacion": "El formato condicional cambia el color o el estilo de una celda según su valor: resaltar saldos negativos en rojo, facturas vencidas o los diez mayores clientes. Ayuda a ver patrones sin leer cada número.",
+          "puntos_clave": [
+            "Reglas basadas en valores o en fórmulas.",
+            "Pocas reglas y colores con significado."
+          ],
+          "errores_frecuentes": [
+            "Aplicar tantas reglas que nada se distingue."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-formulas",
+            "url": "https://support.microsoft.com/es-es/office/usar-formato-condicional-para-resaltar-informaci%C3%B3n-en-excel-fed60dfa-1d3f-4e13-9ecb-f1951ff89d7f",
+            "seccion": "Usar formato condicional"
+          }
+        },
+        {
+          "id": "ii-datos-tablas-dinamicas",
+          "nombre": "Tablas dinámicas",
+          "explicacion": "Una tabla dinámica resume miles de filas en segundos: ventas por mes y vendedor, gastos por centro de costo o saldos por cuenta. Se construye arrastrando campos a filas, columnas, valores y filtros, y se actualiza cuando cambian los datos de origen.",
+          "puntos_clave": [
+            "Los datos de origen deben tener encabezados y no tener filas vacías.",
+            "Actualizar después de modificar los datos."
+          ],
+          "errores_frecuentes": [
+            "Olvidar actualizar la tabla dinámica y reportar cifras viejas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-formulas",
+            "url": "https://support.microsoft.com/es-es/office/crear-una-tabla-din%C3%A1mica-para-analizar-datos-de-una-hoja-de-c%C3%A1lculo-a9a84538-bfe9-40a9-a8e9-f99134456576",
+            "seccion": "Crear una tabla dinámica"
+          }
+        },
+        {
+          "id": "ii-datos-graficos",
+          "nombre": "Gráficos",
+          "explicacion": "El gráfico adecuado depende de la pregunta: columnas para comparar categorías, líneas para ver tendencias en el tiempo y dispersión para la relación entre dos variables. Un buen gráfico tiene título, ejes rotulados y solo los elementos necesarios.",
+          "puntos_clave": [
+            "Elegir el gráfico según la pregunta.",
+            "Títulos y ejes claros."
+          ],
+          "errores_frecuentes": [
+            "Usar gráficos circulares con demasiadas categorías."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-formulas",
+            "url": "https://support.microsoft.com/es-es/office/crear-un-gr%C3%A1fico-de-principio-a-fin-0baf399e-dd61-4e18-8a73-b3fd5d5680c2",
+            "seccion": "Crear un gráfico de principio a fin"
+          }
+        }
+      ]
+    }
+  ]
+}
