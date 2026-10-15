@@ -1,0 +1,32 @@
+# ---- Secretos y entorno
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ---- Node / Vite
+node_modules/
+dist/
+dev-dist/
+coverage/
+npm-debug.log*
+*.tsbuildinfo
+
+# ---- Archivos generados en el build
+src/generated/
+
+# ---- Pruebas
+playwright-report/
+test-results/
+blob-report/
+.lighthouseci/
+
+# ---- IDE / SO
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db

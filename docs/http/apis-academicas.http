@@ -1,0 +1,15 @@
+### Crossref: búsqueda de trabajos (solo los campos que se muestran)
+GET https://api.crossref.org/works?query=contabilidad%20de%20costos&rows=10&select=DOI,title,author,issued,container-title,type,URL,publisher,abstract
+Accept: application/json
+
+### OpenAlex: búsqueda (consume 10 créditos del cupo diario por IP)
+GET https://api.openalex.org/works?search=contabilidad%20de%20costos&per-page=10&select=id,doi,title,publication_year,authorships,primary_location,open_access,abstract_inverted_index,type,language
+Accept: application/json
+
+### DOAJ: artículos de acceso abierto
+GET https://doaj.org/api/search/articles/contabilidad%20de%20costos?pageSize=10
+Accept: application/json
+
+### LA Referencia: repositorios latinoamericanos (VuFind API)
+GET https://buscador.lareferencia.info/api/v1/search?lookfor=contabilidad%20de%20costos&type=AllFields&limit=10&field[]=id&field[]=title&field[]=primaryAuthors&field[]=publicationDates&field[]=urls&field[]=formats&field[]=summary&field[]=languages
+Accept: application/json
