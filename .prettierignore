@@ -1,0 +1,11 @@
+dist
+dev-dist
+coverage
+node_modules
+package-lock.json
+playwright-report
+test-results
+src/generated
+content
+docs
+*.md
