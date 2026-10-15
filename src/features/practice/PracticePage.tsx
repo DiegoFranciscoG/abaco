@@ -1,0 +1,90 @@
+import { useLiveQuery } from 'dexie-react-hooks';
+import { useMemo } from 'react';
+import { useSearchParams } from 'react-router';
+import { carreraOfAsignatura, loadEjercicios, loadMalla } from '../../data/content';
+import { listAttempts } from '../../data/repositories';
+import { useAsync, useDocumentTitle } from '../../ui/hooks';
+import { Icon } from '../../ui/icons';
+import { AppLink, PageHeader, Skeleton } from '../../ui/primitives';
+import { summarizeAttempts } from './progress';
+
+export default function PracticePage() {
+  useDocumentTitle('Práctica');
+  const [params] = useSearchParams();
+  const only = params.get('asignatura');
+  const data = useAsync(async () => {
+    const exercises = await loadEjercicios();
+    const careerIds = [...new Set(exercises.map((e) => carreraOfAsignatura(e.asignatura)))];
+    const mallas = await Promise.all(careerIds.map((id) => loadMalla(id)));
+    const names = new Map(mallas.flatMap((m) => m?.asignaturas.map((a) => [a.id, a.nombre] as const) ?? []));
+    return { exercises, names };
+  }, []);
+  const attempts = useLiveQuery(() => listAttempts(), [], []);
+  const summary = useMemo(() => summarizeAttempts(attempts ?? []), [attempts]);
+
+  if (data.status !== 'ready') return <Skeleton lines={5} />;
+  const groups = new Map<string, typeof data.data.exercises>();
+  for (const e of data.data.exercises) {
+    if (only && e.asignatura !== only) continue;
+    groups.set(e.asignatura, [...(groups.get(e.asignatura) ?? []), e]);
+  }
+  const solved = data.data.exercises.filter((e) => summary.get(e.id)?.solved).length;
+
+  return (
+    <div>
+      <PageHeader
+        eyebrow="Práctica y autoevaluación"
+        title="Ejercicios con respuesta verificable"
+        subtitle="Cada respuesta se comprueba con tolerancia; tus intentos se guardan solo en este dispositivo."
+        actions={
+          <div className="card flex items-center gap-3 px-4 py-2">
+            <span className="tnum font-display text-2xl font-semibold text-red">
+              {solved}/{data.data.exercises.length}
+            </span>
+            <span className="text-sm text-muted">resueltos</span>
+          </div>
+        }
+      />
+      {only ? (
+        <AppLink to="/practica" className="link-red mb-6 inline-block text-sm">
+          ← Ver todos los ejercicios
+        </AppLink>
+      ) : null}
+      <div className="space-y-10">
+        {[...groups.entries()].map(([subjectId, list]) => (
+          <section key={subjectId} aria-labelledby={`ej-${subjectId}`}>
+            <h2 id={`ej-${subjectId}`} className="mb-3 font-display text-2xl font-semibold">
+              {data.data.names.get(subjectId) ?? subjectId}
+            </h2>
+            <ul className="grid gap-2.5 md:grid-cols-2">
+              {list.map((e, i) => {
+                const s = summary.get(e.id);
+                return (
+                  <li key={e.id}>
+                    <AppLink to={`/practica/${e.id}`} className="card card-lift flex h-full items-start gap-3 p-4">
+                      <span
+                        className={`tnum grid h-9 w-9 shrink-0 place-items-center rounded-xl text-sm font-bold ${
+                          s?.solved ? 'bg-ok-soft text-ok' : s ? 'bg-warn-soft text-warn' : 'bg-red-soft text-red'
+                        }`}
+                        aria-label={s?.solved ? 'Resuelto' : s ? 'Intentado' : 'Sin intentar'}
+                      >
+                        {s?.solved ? <Icon name="check" size={18} /> : i + 1}
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="line-clamp-2 text-sm text-ink">{e.enunciado}</span>
+                        <span className="mt-1 flex gap-3 text-xs text-muted">
+                          <span>{'●'.repeat(e.dificultad)}{'○'.repeat(3 - e.dificultad)}</span>
+                          {s ? <span className="tnum">{s.attempts} intento{s.attempts === 1 ? '' : 's'}</span> : null}
+                        </span>
+                      </span>
+                    </AppLink>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
+  );
+}

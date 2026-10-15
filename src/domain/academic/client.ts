@@ -37,7 +37,7 @@ export interface SearchResponse {
 }
 
 export function cleanQuery(query: string): string {
-  return query.replace(/[\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, MAX_QUERY_LENGTH);
+  return query.replace(/\p{Cc}/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, MAX_QUERY_LENGTH);
 }
 
 export const cacheKey = (source: SourceId, query: string): string => `${source}:${normalizeText(query)}`;

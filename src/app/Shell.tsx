@@ -1,0 +1,164 @@
+import { LazyMotion, MotionConfig } from 'motion/react';
+import { useEffect, useState } from 'react';
+import { NavLink, Outlet, ScrollRestoration } from 'react-router';
+import { updateProfile } from '../data/repositories';
+import { LogoMark } from '../ui/art';
+import { useApplyPreferences, useEffectiveTheme, useOnline, useReducedMotion } from '../ui/hooks';
+import { Icon, type IconName } from '../ui/icons';
+import { AppLink } from '../ui/primitives';
+import { ToastProvider } from '../ui/toast';
+import { CommandPalette } from './CommandPalette';
+import { Onboarding } from './Onboarding';
+import { UpdatePrompt } from './UpdatePrompt';
+
+const loadMotionFeatures = () => import('./motion-features').then((module) => module.default);
+
+const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
+  { to: '/', label: 'Inicio', icon: 'home', end: true },
+  { to: '/carreras', label: 'Mallas', icon: 'mallas' },
+  { to: '/formulas', label: 'Fórmulas', icon: 'formula' },
+  { to: '/laboratorio', label: 'Laboratorio', icon: 'lab' },
+  { to: '/mi-espacio', label: 'Mi espacio', icon: 'me' },
+];
+
+function ThemeToggle() {
+  const theme = useEffectiveTheme();
+  return (
+    <button
+      type="button"
+      className="btn btn-icon btn-ghost border-0"
+      aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+      onClick={() => void updateProfile({ tema: theme === 'dark' ? 'light' : 'dark' })}
+    >
+      <Icon name={theme === 'dark' ? 'sun' : 'moon'} />
+    </button>
+  );
+}
+
+export function Shell() {
+  useApplyPreferences();
+  const reduce = useReducedMotion();
+  const online = useOnline();
+  const [paletteOpen, setPaletteOpen] = useState(false);
+
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        setPaletteOpen(true);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  return (
+    <LazyMotion features={loadMotionFeatures} strict>
+      <MotionConfig reducedMotion={reduce ? 'always' : 'never'}>
+        <ToastProvider>
+          <a href="#contenido" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:rounded-xl focus:bg-surface focus:px-4 focus:py-3">
+            Saltar al contenido
+          </a>
+          <header className="sticky top-0 z-40 border-b border-line/70 bg-paper/80 backdrop-blur-xl supports-[backdrop-filter]:bg-paper/70">
+            <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
+              <AppLink to="/" className="flex min-h-11 items-center gap-2.5" aria-label="ÁBACO, inicio">
+                <LogoMark />
+                <span className="font-display text-xl font-semibold tracking-tight">ÁBACO</span>
+              </AppLink>
+              <nav aria-label="Principal" className="ml-6 hidden items-center gap-1 md:flex">
+                {NAV.map((item) => (
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    end={item.end ?? false}
+                    viewTransition={!reduce}
+                    className={({ isActive }) =>
+                      `relative flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold transition-colors ${
+                        isActive ? 'text-red' : 'text-ink-2 hover:text-ink'
+                      }`
+                    }
+                  >
+                    {({ isActive }) => (
+                      <>
+                        {item.label}
+                        {isActive ? <span className="absolute inset-x-3 -bottom-[13px] h-0.5 rounded-full bg-red" /> : null}
+                      </>
+                    )}
+                  </NavLink>
+                ))}
+              </nav>
+              <div className="ml-auto flex items-center gap-1">
+                <button
+                  type="button"
+                  onClick={() => setPaletteOpen(true)}
+                  className="btn btn-ghost hidden h-11 w-64 justify-start text-muted sm:inline-flex"
+                  aria-label="Buscar fórmulas, asignaturas y temas"
+                >
+                  <Icon name="search" size={18} />
+                  <span className="truncate text-sm font-medium">Buscar…</span>
+                  <span className="kbd ml-auto">Ctrl K</span>
+                </button>
+                <button type="button" onClick={() => setPaletteOpen(true)} className="btn btn-icon btn-ghost border-0 sm:hidden" aria-label="Buscar">
+                  <Icon name="search" />
+                </button>
+                <ThemeToggle />
+                <AppLink to="/ajustes" className="btn btn-icon btn-ghost border-0" aria-label="Ajustes y respaldo">
+                  <Icon name="settings" />
+                </AppLink>
+              </div>
+            </div>
+            {!online ? (
+              <div className="border-t border-line bg-warn-soft px-4 py-1.5 text-center text-xs font-semibold text-warn" role="status">
+                Sin conexión: tus apuntes, las mallas y el laboratorio siguen funcionando.
+              </div>
+            ) : null}
+          </header>
+
+          <main id="contenido" className="mx-auto min-h-[70dvh] max-w-6xl px-4 pt-6 pb-28 md:pt-10 md:pb-16">
+            <Outlet />
+          </main>
+
+          <footer className="mx-auto max-w-6xl px-4 pb-28 text-xs leading-relaxed text-muted md:pb-10">
+            <div className="border-t border-line pt-6">
+              <p>
+                <strong className="text-ink-2">ÁBACO no está afiliado a ninguna universidad.</strong> Las mallas se reproducen con
+                enlace a su fuente oficial; el contenido académico es redacción propia y cada ficha cita su fuente.
+              </p>
+              <p className="mt-2">
+                Tus apuntes viven solo en este dispositivo. <AppLink to="/acerca" className="link-red">Fuentes, licencias y privacidad</AppLink>
+              </p>
+            </div>
+          </footer>
+
+          <nav
+            aria-label="Principal (móvil)"
+            className="fixed inset-x-3 bottom-3 z-40 grid grid-cols-5 rounded-2xl border border-line bg-surface/90 p-1 shadow-[0_18px_40px_-18px_rgb(0_0_0/0.35)] backdrop-blur-xl md:hidden"
+            style={{ paddingBottom: 'max(0.25rem, env(safe-area-inset-bottom))' }}
+          >
+            {NAV.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.end ?? false}
+                viewTransition={!reduce}
+                className={({ isActive }) =>
+                  `flex min-h-14 flex-col items-center justify-center gap-0.5 rounded-xl text-[0.68rem] font-semibold ${
+                    isActive ? 'bg-red-soft text-red' : 'text-muted'
+                  }`
+                }
+              >
+                <Icon name={item.icon} size={21} />
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
+          <Onboarding />
+          <UpdatePrompt />
+          <ScrollRestoration />
+        </ToastProvider>
+      </MotionConfig>
+    </LazyMotion>
+  );
+}

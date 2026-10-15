@@ -1,0 +1,454 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ fonts (latin subset, self-hosted) */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/fraunces/files/fraunces-latin-opsz-normal.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url('@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2') format('woff2-variations');
+}
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ------------------------------------------------------------------ tokens
+   Concept: an accountant's ledger. Cream ledger paper, red ink for what matters, graphite for the rest. */
+:root {
+  --paper: #fbf6ef;
+  --paper-2: #f5ece0;
+  --surface: #ffffff;
+  --surface-2: #fdf9f4;
+  --ink: #1f1a17;
+  --ink-2: #4a423c;
+  --muted: #6b625a;
+  --line: #e8ddd0;
+  --line-strong: #d6c7b5;
+  --red: #b3122e;
+  --red-ink: #9a0f27;
+  --red-soft: #fbe8ea;
+  --red-tint: #fdf2f3;
+  --gold: #a8741a;
+  --ok: #1e7a4c;
+  --ok-soft: #e4f3ea;
+  --warn: #9a5b00;
+  --warn-soft: #fbf0dc;
+  --shadow-color: 32 20 10;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --paper: #15110e;
+  --paper-2: #1b1612;
+  --surface: #211b17;
+  --surface-2: #29221d;
+  --ink: #f4ebe1;
+  --ink-2: #ddd0c2;
+  --muted: #b3a597;
+  --line: #3a312a;
+  --line-strong: #4d4138;
+  --red: #f0566c;
+  --red-ink: #ff7a8c;
+  --red-soft: #3c1a20;
+  --red-tint: #2c181b;
+  --gold: #e0ab4f;
+  --ok: #5fcf93;
+  --ok-soft: #173326;
+  --warn: #f0b54f;
+  --warn-soft: #3a2a12;
+  --shadow-color: 0 0 0;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-red: var(--red);
+  --color-red-ink: var(--red-ink);
+  --color-red-soft: var(--red-soft);
+  --color-red-tint: var(--red-tint);
+  --color-gold: var(--gold);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces Variable', ui-serif, Georgia, serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'Cascadia Mono', monospace;
+}
+
+@theme {
+  --radius-card: 1.125rem;
+  --ease-spring: cubic-bezier(0.22, 1.2, 0.36, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ------------------------------------------------------------------ base */
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background:
+    radial-gradient(1200px 600px at 85% -10%, color-mix(in oklab, var(--red) 7%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%) fixed;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ledger rule lines behind the page: a quiet nod to accounting paper. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent 0 31px,
+    color-mix(in oklab, var(--line) 55%, transparent) 31px 32px
+  );
+  mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%);
+  opacity: 0.55;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--red) 22%, transparent);
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--red);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-variation-settings: 'SOFT' 50, 'WONK' 0;
+  letter-spacing: -0.015em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ------------------------------------------------------------------ components */
+@layer components {
+  .card {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    box-shadow:
+      0 1px 0 rgb(var(--shadow-color) / 0.03),
+      0 1px 2px rgb(var(--shadow-color) / 0.04),
+      0 10px 24px -14px rgb(var(--shadow-color) / 0.16);
+  }
+
+  .card-lift {
+    transition:
+      transform 240ms var(--ease-spring),
+      box-shadow 240ms var(--ease-out-soft),
+      border-color 200ms;
+    will-change: transform;
+  }
+  @media (hover: hover) {
+    .card-lift:hover {
+      transform: translateY(-3px);
+      border-color: var(--line-strong);
+      box-shadow:
+        0 1px 0 rgb(var(--shadow-color) / 0.03),
+        0 2px 4px rgb(var(--shadow-color) / 0.05),
+        0 22px 40px -18px rgb(var(--shadow-color) / 0.28);
+    }
+  }
+  .card-lift:active {
+    transform: translateY(0) scale(0.985);
+  }
+
+  .tile {
+    display: inline-grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.875rem;
+    background: var(--red-soft);
+    color: var(--red);
+    box-shadow: inset 0 -2px 0 rgb(var(--shadow-color) / 0.06);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0 1.1rem;
+    border-radius: 0.875rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition:
+      transform 160ms var(--ease-spring),
+      background-color 160ms,
+      box-shadow 160ms;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn:active {
+    transform: scale(0.97);
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+  .btn-primary {
+    background: var(--red);
+    color: #fff;
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.25) inset,
+      0 8px 18px -10px color-mix(in oklab, var(--red) 80%, transparent);
+  }
+  :root[data-theme='dark'] .btn-primary {
+    color: #1b0d10;
+  }
+  .btn-primary:hover {
+    background: var(--red-ink);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .btn-ghost:hover {
+    background: var(--surface-2);
+    border-color: var(--line-strong);
+  }
+  .btn-soft {
+    background: var(--red-soft);
+    color: var(--red-ink);
+  }
+  .btn-soft:hover {
+    background: color-mix(in oklab, var(--red-soft) 70%, var(--red) 12%);
+  }
+  .btn-icon {
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    padding: 0;
+  }
+
+  .link-red {
+    color: var(--red);
+    font-weight: 600;
+    text-underline-offset: 3px;
+  }
+  .link-red:hover {
+    text-decoration: underline;
+  }
+
+  .field {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 1rem;
+    transition:
+      border-color 150ms,
+      box-shadow 150ms;
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 4px color-mix(in oklab, var(--red) 15%, transparent);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 2rem;
+    padding: 0 0.75rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink-2);
+  }
+  .chip[aria-pressed='true'],
+  .chip[aria-selected='true'] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+
+  .prose-abaco p {
+    line-height: 1.7;
+    color: var(--ink-2);
+  }
+
+  .kbd {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--line-strong);
+    background: var(--surface-2);
+  }
+
+  /* Excel syntax block */
+  .code-excel {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    background: var(--surface-2);
+    border: 1px dashed var(--line-strong);
+    border-radius: 0.75rem;
+    padding: 0.6rem 0.85rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* ------------------------------------------------------------------ view transitions between pages */
+@supports (view-transition-name: none) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 260ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  ::view-transition-old(root) {
+    animation-name: abaco-fade-out;
+  }
+  ::view-transition-new(root) {
+    animation-name: abaco-fade-in;
+  }
+}
+
+@keyframes abaco-fade-out {
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+@keyframes abaco-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes abaco-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: abaco-rise 520ms var(--ease-out-soft) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root[data-motion='reduce'] *,
+:root[data-motion='reduce'] *::before,
+:root[data-motion='reduce'] *::after {
+  animation-duration: 1ms !important;
+  transition-duration: 1ms !important;
+}
+:root[data-motion='reduce']::view-transition-old(root),
+:root[data-motion='reduce']::view-transition-new(root) {
+  animation: none;
+}
+
+/* KaTeX inherits color and keeps formulas readable on small screens. */
+.katex {
+  font-size: 1.15em;
+}
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+/* ------------------------------------------------------------------ area identity */
+.area {
+  --area: var(--area-light, var(--red));
+}
+:root[data-theme='dark'] .area {
+  --area: var(--area-dark, var(--red));
+}
+.area-tile {
+  background: color-mix(in oklab, var(--area) 12%, var(--surface));
+  color: var(--area);
+}
+.area-text {
+  color: var(--area);
+}
+.area-bar {
+  background: var(--area);
+}
+.area-border {
+  border-color: color-mix(in oklab, var(--area) 35%, var(--line));
+}
