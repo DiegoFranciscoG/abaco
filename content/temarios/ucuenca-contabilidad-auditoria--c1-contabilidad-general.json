@@ -1,0 +1,396 @@
+{
+  "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+  "actualizado_en": "2026-10-14",
+  "temas": [
+    {
+      "id": "cg-fundamentos",
+      "nombre": "Fundamentos de la contabilidad",
+      "orden": 1,
+      "descripcion": "Para qué sirve la contabilidad, quién usa su información y sobre qué supuestos se construye.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cg-fundamentos-usuarios",
+          "nombre": "La contabilidad como sistema de información",
+          "explicacion": "La contabilidad identifica, registra y comunica los hechos económicos de una organización para que otros tomen decisiones. Los usuarios internos (gerencia, jefes de área) la usan para planificar y controlar; los externos (inversionistas, bancos, el SRI, proveedores) la usan para decidir si invierten, prestan, cobran impuestos o venden a crédito. Por eso la información debe ser útil, comparable y confiable.",
+          "puntos_clave": [
+            "Usuarios internos: deciden dentro de la empresa.",
+            "Usuarios externos: deciden desde afuera (bancos, inversionistas, Estado).",
+            "El valor de la contabilidad está en las decisiones que permite."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la contabilidad solo sirve para pagar impuestos.",
+            "Confundir registrar (anotar) con informar (presentar estados útiles)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/1-2-identify-users-of-accounting-information-and-how-they-apply-information",
+            "seccion": "1.2 Usuarios de la información contable"
+          }
+        },
+        {
+          "id": "cg-fundamentos-financiera-gestion",
+          "nombre": "Contabilidad financiera y contabilidad de gestión",
+          "explicacion": "La contabilidad financiera prepara estados para usuarios externos siguiendo normas contables comunes. La contabilidad de gestión produce informes internos a la medida de cada decisión: costos por producto, presupuestos, márgenes por línea. La primera mira sobre todo el pasado y se publica; la segunda mira también al futuro y no tiene un formato obligatorio.",
+          "puntos_clave": [
+            "Financiera: normas comunes, usuarios externos, periodicidad fija.",
+            "De gestión: formato libre, usuarios internos, orientada a decisiones."
+          ],
+          "errores_frecuentes": [
+            "Creer que la contabilidad de gestión debe seguir el mismo formato de los estados financieros."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/1-1-explain-the-importance-of-accounting-and-distinguish-between-financial-and-managerial-accounting",
+            "seccion": "1.1 Contabilidad financiera y de gestión"
+          }
+        },
+        {
+          "id": "cg-fundamentos-supuestos",
+          "nombre": "Principios y supuestos básicos",
+          "explicacion": "Los estados financieros se apoyan en supuestos que conviene tener presentes: la entidad es distinta de sus dueños (no se mezclan gastos personales), se asume que seguirá funcionando (negocio en marcha), todo se mide en una unidad monetaria estable y los ingresos y gastos se reconocen cuando ocurren, no cuando se cobra o paga (base de acumulación o devengado). Estos supuestos explican muchas reglas que parecen arbitrarias.",
+          "puntos_clave": [
+            "Entidad separada de los dueños.",
+            "Negocio en marcha.",
+            "Base de acumulación (devengado), no de caja."
+          ],
+          "errores_frecuentes": [
+            "Registrar como gasto de la empresa una compra personal del dueño.",
+            "Reconocer el ingreso solo cuando se cobra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-1-describe-principles-assumptions-and-concepts-of-accounting-and-their-relationship-to-financial-statements",
+            "seccion": "3.1 Principios, supuestos y conceptos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cg-ecuacion",
+      "nombre": "La ecuación contable",
+      "orden": 2,
+      "descripcion": "Activo, pasivo y patrimonio: la igualdad que se mantiene después de cada transacción.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cg-ecuacion-elementos",
+          "nombre": "Activo, pasivo y patrimonio",
+          "explicacion": "Un activo es un recurso que la empresa controla y del que espera beneficios (efectivo, mercadería, equipos, cuentas por cobrar). Un pasivo es una obligación presente que se cancelará entregando recursos (proveedores, préstamos, impuestos por pagar). El patrimonio es la parte de los activos que pertenece a los dueños. Se clasifican en corrientes (se realizan o vencen en el ciclo normal, por lo general un año) y no corrientes.",
+          "puntos_clave": [
+            "Activo = recursos controlados.",
+            "Pasivo = obligaciones con terceros.",
+            "Patrimonio = activo − pasivo."
+          ],
+          "errores_frecuentes": [
+            "Clasificar un préstamo a cinco años completo como pasivo corriente: solo la porción que vence en el año es corriente.",
+            "Registrar como activo algo que la empresa no controla (por ejemplo, un local arrendado sin contrato que lo reconozca)."
+          ],
+          "formulas": ["ecuacion-contable", "patrimonio"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+            "seccion": "2.2 Activos, pasivos y patrimonio"
+          }
+        },
+        {
+          "id": "cg-ecuacion-ampliada",
+          "nombre": "Ecuación contable ampliada",
+          "explicacion": "La ecuación ampliada separa el patrimonio en sus piezas: capital aportado, ingresos, gastos y retiros (o dividendos). Así se ve que los ingresos aumentan el patrimonio, los gastos lo disminuyen y los retiros de los dueños también lo reducen, aunque no son gastos. Es el puente entre el estado de resultados y el estado de situación financiera.",
+          "puntos_clave": [
+            "Ingresos ↑ patrimonio; gastos ↓ patrimonio.",
+            "Los retiros reducen el patrimonio pero no son gastos del negocio."
+          ],
+          "errores_frecuentes": [
+            "Registrar el retiro del dueño como un gasto en el estado de resultados."
+          ],
+          "formulas": ["ecuacion-contable-ampliada"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
+            "seccion": "3.2 Ecuación contable ampliada"
+          }
+        },
+        {
+          "id": "cg-ecuacion-transacciones",
+          "nombre": "Efecto de las transacciones en la ecuación",
+          "explicacion": "Cada transacción mueve al menos dos elementos y la ecuación siempre sigue cuadrando. Comprar mercadería al contado cambia un activo por otro; comprarla a crédito sube un activo y un pasivo; pagar al proveedor baja un activo y un pasivo; prestar un servicio al contado sube el efectivo y el patrimonio (vía ingresos). Analizar así antes de registrar evita la mayoría de los errores.",
+          "puntos_clave": [
+            "Toda transacción tiene al menos dos efectos.",
+            "Después de cada transacción: A = P + Pt."
+          ],
+          "errores_frecuentes": [
+            "Registrar solo un lado de la transacción.",
+            "Pensar que una compra a crédito disminuye el efectivo."
+          ],
+          "formulas": ["ecuacion-contable"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-4-analyze-business-transactions-using-the-accounting-equation-and-show-the-impact-of-business-transactions-on-financial-statements",
+            "seccion": "3.4 Análisis de transacciones"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cg-partida-doble",
+      "nombre": "Registro de transacciones: partida doble",
+      "orden": 3,
+      "descripcion": "Débitos y créditos, libro diario, libro mayor y balance de comprobación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cg-partida-doble-reglas",
+          "nombre": "Débito y crédito: reglas de cargo y abono",
+          "explicacion": "Debe (débito) es el lado izquierdo de una cuenta y Haber (crédito) el derecho. Activos y gastos aumentan por el Debe; pasivos, patrimonio e ingresos aumentan por el Haber. En cada asiento la suma de débitos es igual a la suma de créditos: por eso se llama partida doble. «Débito» no significa algo malo ni «crédito» algo bueno; solo indican el lado.",
+          "puntos_clave": [
+            "Activos y gastos: saldo normal deudor.",
+            "Pasivos, patrimonio e ingresos: saldo normal acreedor.",
+            "Débitos = créditos en cada asiento."
+          ],
+          "errores_frecuentes": [
+            "Creer que «acreditar» la cuenta Bancos significa que entra dinero: en la contabilidad de la empresa, un crédito a Bancos la disminuye.",
+            "Aumentar un ingreso por el Debe."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+            "seccion": "3.5 Débitos, créditos y saldo normal"
+          }
+        },
+        {
+          "id": "cg-partida-doble-diario",
+          "nombre": "Libro diario y asientos contables",
+          "explicacion": "El libro diario registra las transacciones en orden cronológico. Cada asiento indica la fecha, las cuentas que se cargan (primero) y las que se abonan (después, con sangría), los valores y una breve explicación. Un buen asiento se puede entender sin el documento de respaldo y siempre cuadra.",
+          "puntos_clave": [
+            "Orden cronológico.",
+            "Cuentas deudoras primero, acreedoras después.",
+            "Glosa clara y documento de respaldo."
+          ],
+          "errores_frecuentes": [
+            "Omitir la glosa o escribir algo que no explica la operación.",
+            "Registrar en el diario montos que no coinciden con la factura."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+            "seccion": "3.5 Asientos de diario"
+          }
+        },
+        {
+          "id": "cg-partida-doble-mayor",
+          "nombre": "Libro mayor y cuentas T",
+          "explicacion": "El mayor agrupa los movimientos por cuenta. Pasar del diario al mayor (mayorizar) permite conocer el saldo de cada cuenta. La cuenta T es una forma rápida de hacerlo a mano: cargos a la izquierda, abonos a la derecha y saldo al final, del lado que sea mayor.",
+          "puntos_clave": [
+            "El mayor muestra el saldo de cada cuenta.",
+            "Saldo = diferencia entre Debe y Haber, del lado mayor."
+          ],
+          "errores_frecuentes": [
+            "Pasar un valor del diario al lado equivocado de la cuenta T.",
+            "Sumar Debe y Haber en lugar de restarlos."
+          ],
+          "formulas": ["saldo-cuenta-deudora"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+            "seccion": "3.5 Cuentas T"
+          }
+        },
+        {
+          "id": "cg-partida-doble-comprobacion",
+          "nombre": "Balance de comprobación",
+          "explicacion": "Es una lista de todas las cuentas del mayor con sus saldos. Si la suma de saldos deudores es igual a la de saldos acreedores, los registros están aritméticamente cuadrados. Que cuadre no prueba que todo esté bien: un asiento omitido, duplicado o cargado a la cuenta equivocada no rompe la igualdad.",
+          "puntos_clave": [
+            "Total de saldos deudores = total de saldos acreedores.",
+            "Detecta errores aritméticos, no todos los errores."
+          ],
+          "errores_frecuentes": [
+            "Dar por correcto un balance solo porque cuadra.",
+            "Omitir cuentas con saldo cero que sí tuvieron movimientos."
+          ],
+          "formulas": ["comprobacion-partida-doble"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+            "seccion": "3.6 Balance de comprobación"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cg-estados",
+      "nombre": "Ajustes y estados financieros",
+      "orden": 4,
+      "descripcion": "Del balance de comprobación a los estados financieros, pasando por los ajustes y el cierre.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cg-estados-ajustes",
+          "nombre": "Asientos de ajuste",
+          "explicacion": "Al cierre del período se ajustan las cuentas para que los ingresos y gastos queden en el período al que pertenecen: gastos pagados por adelantado que ya se consumieron, ingresos cobrados por anticipado que ya se ganaron, gastos ocurridos que aún no se pagan (sueldos, intereses) y la depreciación de los activos fijos. Sin ajustes, la utilidad queda distorsionada.",
+          "puntos_clave": [
+            "Los ajustes aplican la base de acumulación.",
+            "Casi siempre afectan una cuenta de resultados y una de balance."
+          ],
+          "errores_frecuentes": [
+            "Olvidar la depreciación del período.",
+            "Registrar un ajuste que mueve efectivo: los ajustes normalmente no tocan Caja ni Bancos."
+          ],
+          "formulas": ["depreciacion-linea-recta"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/4-2-discuss-the-adjustment-process-and-illustrate-common-types-of-adjusting-entries",
+            "seccion": "4.2 Proceso de ajuste"
+          }
+        },
+        {
+          "id": "cg-estados-resultados",
+          "nombre": "Estado de resultados",
+          "explicacion": "Resume los ingresos y gastos de un período y muestra la utilidad o pérdida. Responde a la pregunta «¿cuánto ganó la empresa en este período?». Se prepara antes que los demás estados porque la utilidad neta alimenta el patrimonio.",
+          "puntos_clave": [
+            "Cubre un período (un mes, un año).",
+            "Utilidad neta = ingresos − gastos."
+          ],
+          "errores_frecuentes": [
+            "Incluir compras de activos fijos como gasto del período.",
+            "Confundir utilidad con efectivo disponible."
+          ],
+          "formulas": ["utilidad-neta"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+            "seccion": "2.1 Estado de resultados"
+          }
+        },
+        {
+          "id": "cg-estados-situacion",
+          "nombre": "Estado de situación financiera y relación entre estados",
+          "explicacion": "El estado de situación financiera (balance general) muestra activos, pasivos y patrimonio en una fecha. Se conecta con los demás estados: la utilidad del estado de resultados pasa al estado de cambios en el patrimonio, y el patrimonio final aparece en el balance. El estado de flujos de efectivo explica por qué cambió el saldo de efectivo.",
+          "puntos_clave": [
+            "Balance: una fecha. Resultados: un período.",
+            "La utilidad neta une resultados y balance."
+          ],
+          "errores_frecuentes": [
+            "Poner una fecha de período («del 1 de enero al 31 de diciembre») en el balance."
+          ],
+          "formulas": ["ecuacion-contable"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/2-3-prepare-an-income-statement-statement-of-owners-equity-and-balance-sheet",
+            "seccion": "2.3 Preparación de los estados"
+          }
+        },
+        {
+          "id": "cg-estados-cierre",
+          "nombre": "Cierre del ciclo contable",
+          "explicacion": "Los asientos de cierre llevan a cero las cuentas temporales (ingresos, gastos y retiros) y trasladan su efecto al patrimonio. Las cuentas permanentes (activos, pasivos y patrimonio) pasan con su saldo al período siguiente. Después del cierre se prepara un balance de comprobación posterior al cierre, que solo contiene cuentas permanentes.",
+          "puntos_clave": [
+            "Cuentas temporales: se cierran.",
+            "Cuentas permanentes: continúan."
+          ],
+          "errores_frecuentes": [
+            "Cerrar cuentas de activo o pasivo.",
+            "Olvidar cerrar la cuenta de retiros del dueño."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/5-1-describe-and-prepare-closing-entries-for-a-business",
+            "seccion": "5.1 Asientos de cierre"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cg-mercaderias",
+      "nombre": "Operaciones con mercaderías",
+      "orden": 5,
+      "descripcion": "Sistemas de inventario, ventas y compras netas, costo de ventas y utilidad bruta.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cg-mercaderias-sistemas",
+          "nombre": "Sistema periódico y sistema permanente",
+          "explicacion": "En el sistema permanente (perpetuo) cada compra y venta actualiza el inventario y el costo de ventas al momento, normalmente con un software. En el periódico las compras se acumulan en una cuenta propia y el costo de ventas se calcula al final, después de contar físicamente el inventario. El permanente da información continua; el periódico es más simple pero solo informa al cierre.",
+          "puntos_clave": [
+            "Permanente: costo de ventas en cada venta.",
+            "Periódico: costo de ventas al cierre, con conteo físico."
+          ],
+          "errores_frecuentes": [
+            "Usar la cuenta Compras en un sistema permanente.",
+            "No hacer conteo físico en el sistema periódico."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/6-2-compare-and-contrast-perpetual-versus-periodic-inventory-systems",
+            "seccion": "6.2 Sistema perpetuo y periódico"
+          }
+        },
+        {
+          "id": "cg-mercaderias-netas",
+          "nombre": "Ventas netas y compras netas",
+          "explicacion": "Las ventas netas restan a las ventas brutas las devoluciones y los descuentos concedidos a clientes. Las compras netas parten de las compras, suman los fletes pagados para traer la mercadería y restan las devoluciones y descuentos obtenidos de proveedores. Llevar estos conceptos en cuentas separadas permite controlar cuánto se devuelve y cuánto se descuenta.",
+          "puntos_clave": [
+            "Ventas netas = ventas − devoluciones − descuentos.",
+            "Compras netas = compras + fletes − devoluciones − descuentos."
+          ],
+          "errores_frecuentes": [
+            "Restar los fletes en compras en lugar de sumarlos.",
+            "Registrar el descuento por pronto pago como gasto financiero sin revisar la política contable."
+          ],
+          "formulas": ["ventas-netas", "compras-netas"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/6-7-appendix-analyze-and-record-transactions-for-merchandise-purchases-and-sales-using-the-periodic-inventory-system",
+            "seccion": "6.7 Compras y ventas en el sistema periódico"
+          }
+        },
+        {
+          "id": "cg-mercaderias-costo",
+          "nombre": "Costo de ventas y utilidad bruta",
+          "explicacion": "El costo de ventas es lo que costó la mercadería que se vendió. En el sistema periódico se obtiene con inventario inicial más compras netas menos inventario final. La utilidad bruta es ventas netas menos costo de ventas, y el margen bruto la expresa como porcentaje de las ventas: muestra si los precios cubren con holgura el costo de lo vendido.",
+          "puntos_clave": [
+            "CV = II + CN − IF.",
+            "Utilidad bruta = ventas netas − costo de ventas."
+          ],
+          "errores_frecuentes": [
+            "Sobrevalorar el inventario final: el costo de ventas baja y la utilidad sube de forma ficticia.",
+            "Calcular el margen bruto sobre las ventas brutas."
+          ],
+          "formulas": ["costo-ventas-periodico", "utilidad-bruta", "margen-bruto"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+            "seccion": "10.2 Costo de ventas e inventario final"
+          }
+        },
+        {
+          "id": "cg-mercaderias-valoracion",
+          "nombre": "Valoración de inventarios: PEPS y promedio ponderado",
+          "explicacion": "Cuando la mercadería se compra a precios distintos hay que decidir qué costo asignar a lo vendido. PEPS asume que salen primero las unidades más antiguas; el promedio ponderado usa un costo único que mezcla todos los lotes. Con precios en alza, PEPS da un costo de ventas menor y un inventario final más alto que el promedio. La NIC 2 no permite el método UEPS.",
+          "puntos_clave": [
+            "PEPS: el inventario final queda a precios recientes.",
+            "Promedio: un solo costo unitario para todos los lotes.",
+            "El método elegido debe aplicarse de forma uniforme."
+          ],
+          "errores_frecuentes": [
+            "Promediar los costos unitarios sin ponderarlos por las unidades de cada lote.",
+            "Cambiar de método de un período a otro para mejorar la utilidad."
+          ],
+          "formulas": ["costo-promedio-ponderado", "costo-ventas-promedio", "costo-ventas-peps", "inventario-final"],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/10-1-describe-and-demonstrate-the-basic-inventory-valuation-methods-and-their-cost-flow-assumptions",
+            "seccion": "10.1 Métodos de valoración de inventarios"
+          }
+        }
+      ]
+    }
+  ]
+}
