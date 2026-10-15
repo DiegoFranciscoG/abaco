@@ -22,8 +22,10 @@ export function MathFormula({ latex, display = true, label }: { latex: string; d
     };
   }, [latex, display]);
   return (
-    <span className={display ? 'block text-center text-ink' : 'text-ink'} aria-label={label}>
-      <span ref={ref}>{ready ? null : <code className="font-mono text-sm text-muted">{latex}</code>}</span>
+    <span className={display ? 'block text-center text-ink' : 'text-ink'} {...(label ? { role: 'math', 'aria-label': label } : {})}>
+      {/* KaTeX owns this node; React never renders children inside it. */}
+      <span ref={ref} />
+      {ready ? null : <code className="font-mono text-sm text-muted">{latex}</code>}
     </span>
   );
 }

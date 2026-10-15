@@ -167,10 +167,10 @@ export default function FormulaPage() {
               <Icon name="lab" className="text-red" /> En Excel
             </h2>
             <p className="mb-2 text-sm text-muted">Forma general ({profile.sintaxisExcel === 'es' ? 'Excel en español' : 'Excel en inglés / Google Sheets'}):</p>
-            <code className="code-excel mb-4 block">{profile.sintaxisExcel === 'es' ? formula.excel.es : formula.excel.en}</code>
+            <code className="code-excel mb-4 block" tabIndex={0}>{profile.sintaxisExcel === 'es' ? formula.excel.es : formula.excel.en}</code>
             <p className="mb-2 text-sm text-muted">El ejemplo, listo para pegar{formula.ejemplo.celdas ? ' (con los datos en las celdas indicadas)' : ''}:</p>
             <div className="flex flex-wrap items-center gap-2">
-              <code className="code-excel flex-1">{excelPrimary}</code>
+              <code className="code-excel flex-1" tabIndex={0}>{excelPrimary}</code>
               <CopyButton text={excelPrimary} />
             </div>
             <p className="mt-2 text-xs text-muted">

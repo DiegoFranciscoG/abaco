@@ -32,7 +32,8 @@ export default function SettingsPage() {
   const toast = useToast();
   const counts = useLiveQuery(() => countUserData(), []);
   const lastBackup = useLiveQuery(() => getMeta<string>('lastBackupAt'), []);
-  const deviceId = useLiveQuery(() => getDeviceId(), []);
+  // getDeviceId may write (first time), so it cannot run inside a read-only live query.
+  const [deviceId, setDeviceId] = useState<string | null>(null);
   const [status, setStatus] = useState<StorageStatus | null>(null);
   const [mode, setMode] = useState<RestoreMode>('reemplazar');
   const [confirmText, setConfirmText] = useState('');
@@ -40,6 +41,7 @@ export default function SettingsPage() {
 
   useEffect(() => {
     void checkStorage().then(setStatus);
+    void getDeviceId().then(setDeviceId);
   }, []);
 
   const doBackup = async () => {

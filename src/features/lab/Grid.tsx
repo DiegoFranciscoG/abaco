@@ -126,7 +126,7 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
         <input
           ref={formulaBar}
           value={value}
-          onFocus={() => draft === null && setDraft(raw)}
+          onFocus={() => setDraftState((prev) => (prev && prev.key === selected ? prev : { key: selected, value: raw }))}
           onChange={(e) => {
             setDraft(e.target.value);
             setSuggestIndex(0);

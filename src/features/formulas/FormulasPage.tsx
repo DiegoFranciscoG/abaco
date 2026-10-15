@@ -113,7 +113,7 @@ export default function FormulasPage() {
                 </span>
               </span>
               <span className="line-clamp-2 text-sm text-muted">{f.descripcion}</span>
-              <code className="code-excel mt-auto block text-[0.8rem]">{profile.sintaxisExcel === 'es' ? f.excel.es : f.excel.en}</code>
+              <code className="code-excel mt-auto block truncate overflow-hidden text-[0.8rem]">{profile.sintaxisExcel === 'es' ? f.excel.es : f.excel.en}</code>
             </AppLink>
           </li>
         ))}
