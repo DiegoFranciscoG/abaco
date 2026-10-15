@@ -1,0 +1,533 @@
+{
+  "carrera": "ucuenca-administracion-empresas-dual",
+  "fuente": {
+    "ref": "malla-ucuenca-administracion-empresas-dual"
+  },
+  "actualizado_en": "2026-10-14",
+  "asignaturas": [
+    {
+      "id": "ucuenca-administracion-empresas-dual--c1-fundamentos-de-administracion",
+      "ciclo": 1,
+      "orden": 1,
+      "nombre": "Fundamentos de Administración",
+      "nombre_oficial": "Fundamentos de Administración",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c1-estadistica",
+      "ciclo": 1,
+      "orden": 2,
+      "nombre": "Estadística",
+      "nombre_oficial": "Estadística",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c1-matematicas",
+      "ciclo": 1,
+      "orden": 3,
+      "nombre": "Matemáticas",
+      "nombre_oficial": "Matemáticas",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c1-comunicacion-y-lenguaje",
+      "ciclo": 1,
+      "orden": 4,
+      "nombre": "Comunicación y Lenguaje",
+      "nombre_oficial": "Comunicación y Lenguaje",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c1-contabilidad-general",
+      "ciclo": 1,
+      "orden": 5,
+      "nombre": "Contabilidad General",
+      "nombre_oficial": "Contabilidad General",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c1-entorno-legal-y-de-negocios-i",
+      "ciclo": 1,
+      "orden": 6,
+      "nombre": "Entorno Legal y de Negocios I",
+      "nombre_oficial": "Entorno Legal y de Negocios I",
+      "areas": [
+        "derecho",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c2-matematicas-aplicadas",
+      "ciclo": 2,
+      "orden": 1,
+      "nombre": "Matemáticas Aplicadas",
+      "nombre_oficial": "Matemáticas Aplicadas",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c2-administracion-aplicada",
+      "ciclo": 2,
+      "orden": 2,
+      "nombre": "Administración Aplicada",
+      "nombre_oficial": "Administración Aplicada",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c2-marketing-estrategico",
+      "ciclo": 2,
+      "orden": 3,
+      "nombre": "Marketing Estratégico",
+      "nombre_oficial": "Marketing Estratégico",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c2-contabilidad-aplicada",
+      "ciclo": 2,
+      "orden": 4,
+      "nombre": "Contabilidad Aplicada",
+      "nombre_oficial": "Contabilidad Aplicada",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c2-marketing-practica-preprofesional-i",
+      "ciclo": 2,
+      "orden": 5,
+      "nombre": "Marketing – Práctica Preprofesional I",
+      "nombre_oficial": "Marketing – Práctica Preprofesional I",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c2-estadistica-aplicada",
+      "ciclo": 2,
+      "orden": 6,
+      "nombre": "Estadística Aplicada",
+      "nombre_oficial": "Estadística Aplicada",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c3-administracion-de-la-produccion-y-logistica",
+      "ciclo": 3,
+      "orden": 1,
+      "nombre": "Administración de la Producción y Logística",
+      "nombre_oficial": "Administración de la Producción y Logística",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c3-sistemas-de-informacion",
+      "ciclo": 3,
+      "orden": 2,
+      "nombre": "Sistemas de Información",
+      "nombre_oficial": "Sistemas de Información",
+      "areas": [
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c3-administracion-de-la-produccion-y-logistica-practica-preprof",
+      "ciclo": 3,
+      "orden": 3,
+      "nombre": "Administración de la Producción y Logística – Práctica Preprofesional II",
+      "nombre_oficial": "Administración de la Producción y Logística – Práctica Preprofesional II",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c3-microeconomia",
+      "ciclo": 3,
+      "orden": 4,
+      "nombre": "Microeconomía",
+      "nombre_oficial": "Microeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c3-costos",
+      "ciclo": 3,
+      "orden": 5,
+      "nombre": "Costos",
+      "nombre_oficial": "Costos",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c3-matematicas-financieras",
+      "ciclo": 3,
+      "orden": 6,
+      "nombre": "Matemáticas Financieras",
+      "nombre_oficial": "Matemáticas Financieras",
+      "areas": [
+        "finanzas",
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-organizacion-y-gestion-del-talento-humano-practica",
+      "ciclo": 4,
+      "orden": 1,
+      "nombre": "Organización y Gestión del Talento Humano. Práctica",
+      "nombre_oficial": "Organización y Gestión del Talento Humano. Práctica",
+      "areas": [
+        "gestion",
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-preprofesional-iii",
+      "ciclo": 4,
+      "orden": 2,
+      "nombre": "Preprofesional III",
+      "nombre_oficial": "Preprofesional III",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-microeconomia-aplicada",
+      "ciclo": 4,
+      "orden": 3,
+      "nombre": "Microeconomía Aplicada",
+      "nombre_oficial": "Microeconomía Aplicada",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-entorno-legal-y-de-negocios-ii",
+      "ciclo": 4,
+      "orden": 4,
+      "nombre": "Entorno Legal y de Negocios II",
+      "nombre_oficial": "Entorno Legal y de Negocios II",
+      "areas": [
+        "derecho",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-investigacion-de-mercados",
+      "ciclo": 4,
+      "orden": 5,
+      "nombre": "Investigación de Mercados",
+      "nombre_oficial": "Investigación de Mercados",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-realidad-socioeconomica",
+      "ciclo": 4,
+      "orden": 6,
+      "nombre": "Realidad Socioeconómica",
+      "nombre_oficial": "Realidad Socioeconómica",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-organizacion-y-gestion-del-talento-humano",
+      "ciclo": 4,
+      "orden": 7,
+      "nombre": "Organización y Gestión del Talento Humano",
+      "nombre_oficial": "Organización y Gestión del Talento Humano",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c4-auditoria",
+      "ciclo": 4,
+      "orden": 8,
+      "nombre": "Auditoría",
+      "nombre_oficial": "Auditoría",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c5-administracion-financiera-practica-preprofesional-iv",
+      "ciclo": 5,
+      "orden": 1,
+      "nombre": "Administración Financiera – Práctica Preprofesional IV",
+      "nombre_oficial": "Administración Financiera – Práctica Preprofesional IV",
+      "areas": [
+        "formacion",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c5-ingles-de-negocios-i",
+      "ciclo": 5,
+      "orden": 2,
+      "nombre": "Inglés de Negocios I",
+      "nombre_oficial": "Inglés de Negocios I",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c5-comportamiento-organizacional",
+      "ciclo": 5,
+      "orden": 3,
+      "nombre": "Comportamiento Organizacional",
+      "nombre_oficial": "Comportamiento Organizacional",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c5-administracion-financiera",
+      "ciclo": 5,
+      "orden": 4,
+      "nombre": "Administración Financiera",
+      "nombre_oficial": "Administración Financiera",
+      "areas": [
+        "finanzas",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c5-emprendimiento",
+      "ciclo": 5,
+      "orden": 5,
+      "nombre": "Emprendimiento",
+      "nombre_oficial": "Emprendimiento",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c5-informatica-redes-y-programacion",
+      "ciclo": 5,
+      "orden": 6,
+      "nombre": "Informática, Redes y Programación",
+      "nombre_oficial": "Informática, Redes y Programación",
+      "areas": [
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-profundizacion-i",
+      "ciclo": 6,
+      "orden": 1,
+      "nombre": "Profundización I",
+      "nombre_oficial": "Profundización I",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-innovaciones-tecnologicas-aplicadas-a-la-gestion",
+      "ciclo": 6,
+      "orden": 2,
+      "nombre": "Innovaciones Tecnológicas Aplicadas a la Gestión",
+      "nombre_oficial": "Innovaciones Tecnológicas Aplicadas a la Gestión",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-profundizacion-i-practica-preprofesional-v",
+      "ciclo": 6,
+      "orden": 3,
+      "nombre": "Profundización I – Práctica Preprofesional V",
+      "nombre_oficial": "Profundización I – Práctica Preprofesional V",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-ingles-de-negocios-ii",
+      "ciclo": 6,
+      "orden": 4,
+      "nombre": "Inglés de Negocios II",
+      "nombre_oficial": "Inglés de Negocios II",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-comercio-exterior",
+      "ciclo": 6,
+      "orden": 5,
+      "nombre": "Comercio Exterior",
+      "nombre_oficial": "Comercio Exterior",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-practicas-de-servicio-comunitario",
+      "ciclo": 6,
+      "orden": 6,
+      "nombre": "Prácticas de Servicio Comunitario",
+      "nombre_oficial": "Prácticas de Servicio Comunitario",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c6-macroeconomia",
+      "ciclo": 6,
+      "orden": 7,
+      "nombre": "Macroeconomía",
+      "nombre_oficial": "Macroeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-ingles-de-negocios-iii",
+      "ciclo": 7,
+      "orden": 1,
+      "nombre": "Inglés de Negocios III",
+      "nombre_oficial": "Inglés de Negocios III",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-etica-y-responsabilidad-social-empresarial",
+      "ciclo": 7,
+      "orden": 2,
+      "nombre": "Ética y Responsabilidad Social Empresarial",
+      "nombre_oficial": "Ética y Responsabilidad Social Empresarial",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-presupuestos",
+      "ciclo": 7,
+      "orden": 3,
+      "nombre": "Presupuestos",
+      "nombre_oficial": "Presupuestos",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-profundizacion-ii",
+      "ciclo": 7,
+      "orden": 4,
+      "nombre": "Profundización II",
+      "nombre_oficial": "Profundización II",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-gestion-estrategica",
+      "ciclo": 7,
+      "orden": 5,
+      "nombre": "Gestión Estratégica",
+      "nombre_oficial": "Gestión Estratégica",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-profundizacion-ii-practica-preprofesional-vi",
+      "ciclo": 7,
+      "orden": 6,
+      "nombre": "Profundización II – Práctica Preprofesional VI",
+      "nombre_oficial": "Profundización II – Práctica Preprofesional VI",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c7-unidad-de-integracion-curricular-i",
+      "ciclo": 7,
+      "orden": 7,
+      "nombre": "Unidad de Integración Curricular I",
+      "nombre_oficial": "Unidad de Integración Curricular I",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c8-gerencia-practica-preprofesional-vii",
+      "ciclo": 8,
+      "orden": 1,
+      "nombre": "Gerencia – Práctica Preprofesional VII",
+      "nombre_oficial": "Gerencia – Práctica Preprofesional VII",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c8-formulacion-y-evaluacion-de-proyectos",
+      "ciclo": 8,
+      "orden": 2,
+      "nombre": "Formulación y Evaluación de Proyectos",
+      "nombre_oficial": "Formulación y Evaluación de Proyectos",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c8-negocios-internacionales-y-gerencia",
+      "ciclo": 8,
+      "orden": 3,
+      "nombre": "Negocios Internacionales y Gerencia",
+      "nombre_oficial": "Negocios Internacionales y Gerencia",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c8-gestion-de-calidad-seguridad-industrial-y-ambiental",
+      "ciclo": 8,
+      "orden": 4,
+      "nombre": "Gestión de Calidad, Seguridad Industrial y Ambiental",
+      "nombre_oficial": "Gestión de Calidad, Seguridad Industrial y Ambiental",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas-dual--c8-unidad-de-integracion-curricular-ii",
+      "ciclo": 8,
+      "orden": 5,
+      "nombre": "Unidad de Integración Curricular II",
+      "nombre_oficial": "Unidad de Integración Curricular II",
+      "areas": [
+        "formacion"
+      ]
+    }
+  ]
+}

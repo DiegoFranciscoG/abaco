@@ -1,0 +1,519 @@
+{
+  "carrera": "ucuenca-administracion-empresas",
+  "fuente": {
+    "ref": "malla-ucuenca-administracion-empresas"
+  },
+  "actualizado_en": "2026-10-14",
+  "asignaturas": [
+    {
+      "id": "ucuenca-administracion-empresas--c1-calculo-diferencial",
+      "ciclo": 1,
+      "orden": 1,
+      "nombre": "Cálculo Diferencial",
+      "nombre_oficial": "Cálculo Diferencial",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c1-contabilidad",
+      "ciclo": 1,
+      "orden": 2,
+      "nombre": "Contabilidad",
+      "nombre_oficial": "Contabilidad",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c1-estadistica-descriptiva-y-probabilidad",
+      "ciclo": 1,
+      "orden": 3,
+      "nombre": "Estadística Descriptiva y Probabilidad",
+      "nombre_oficial": "Estadística Descriptiva y Probabilidad",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c1-fundamentos-de-la-administracion",
+      "ciclo": 1,
+      "orden": 4,
+      "nombre": "Fundamentos de la Administración",
+      "nombre_oficial": "Fundamentos de la Administración",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c1-introduccion-a-la-economia-empresarial",
+      "ciclo": 1,
+      "orden": 5,
+      "nombre": "Introducción a la Economía Empresarial",
+      "nombre_oficial": "Introducción a la Economía Empresarial",
+      "areas": [
+        "economia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c1-algebra-matricial",
+      "ciclo": 1,
+      "orden": 6,
+      "nombre": "Algebra Matricial",
+      "nombre_oficial": "Algebra Matricial",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c2-calculo-integral",
+      "ciclo": 2,
+      "orden": 1,
+      "nombre": "Cálculo Integral",
+      "nombre_oficial": "Cálculo Integral",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c2-contabilidad-de-gestion",
+      "ciclo": 2,
+      "orden": 2,
+      "nombre": "Contabilidad de Gestión",
+      "nombre_oficial": "Contabilidad de Gestión",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c2-estadistica-inferencial",
+      "ciclo": 2,
+      "orden": 3,
+      "nombre": "Estadística Inferencial",
+      "nombre_oficial": "Estadística Inferencial",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c2-gestion-administrativa",
+      "ciclo": 2,
+      "orden": 4,
+      "nombre": "Gestión Administrativa",
+      "nombre_oficial": "Gestión Administrativa",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c2-derecho-laboral",
+      "ciclo": 2,
+      "orden": 5,
+      "nombre": "Derecho Laboral",
+      "nombre_oficial": "Derecho Laboral",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c2-microeconomia",
+      "ciclo": 2,
+      "orden": 6,
+      "nombre": "Microeconomía",
+      "nombre_oficial": "Microeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c3-contabilidad-de-costos",
+      "ciclo": 3,
+      "orden": 1,
+      "nombre": "Contabilidad de Costos",
+      "nombre_oficial": "Contabilidad de Costos",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c3-liderazgo-y-equipos",
+      "ciclo": 3,
+      "orden": 2,
+      "nombre": "Liderazgo y Equipos",
+      "nombre_oficial": "Liderazgo y Equipos",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c3-macroeconomia",
+      "ciclo": 3,
+      "orden": 3,
+      "nombre": "Macroeconomía",
+      "nombre_oficial": "Macroeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c3-matematicas-financieras",
+      "ciclo": 3,
+      "orden": 4,
+      "nombre": "Matemáticas Financieras",
+      "nombre_oficial": "Matemáticas Financieras",
+      "areas": [
+        "finanzas",
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c3-estadistica-aplicada",
+      "ciclo": 3,
+      "orden": 5,
+      "nombre": "Estadística Aplicada",
+      "nombre_oficial": "Estadística Aplicada",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c3-fundamentos-de-programacion",
+      "ciclo": 3,
+      "orden": 6,
+      "nombre": "Fundamentos de Programación",
+      "nombre_oficial": "Fundamentos de Programación",
+      "areas": [
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c4-fundamentos-de-marketing",
+      "ciclo": 4,
+      "orden": 1,
+      "nombre": "Fundamentos de Marketing",
+      "nombre_oficial": "Fundamentos de Marketing",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c4-finanzas-corporativas-a-corto-plazo",
+      "ciclo": 4,
+      "orden": 2,
+      "nombre": "Finanzas Corporativas a Corto Plazo",
+      "nombre_oficial": "Finanzas Corporativas a Corto Plazo",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c4-gestion-de-talento-humano",
+      "ciclo": 4,
+      "orden": 3,
+      "nombre": "Gestión de Talento Humano",
+      "nombre_oficial": "Gestión de Talento Humano",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c4-gestion-presupuestaria",
+      "ciclo": 4,
+      "orden": 4,
+      "nombre": "Gestión Presupuestaria",
+      "nombre_oficial": "Gestión Presupuestaria",
+      "areas": [
+        "finanzas",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c4-investigacion-operativa",
+      "ciclo": 4,
+      "orden": 5,
+      "nombre": "Investigación Operativa",
+      "nombre_oficial": "Investigación Operativa",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c4-planificacion-estrategica-tactica-y-operativa",
+      "ciclo": 4,
+      "orden": 6,
+      "nombre": "Planificación Estratégica, Táctica y Operativa",
+      "nombre_oficial": "Planificación Estratégica, Táctica y Operativa",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-auditoria-de-gestion",
+      "ciclo": 5,
+      "orden": 1,
+      "nombre": "Auditoría de Gestión",
+      "nombre_oficial": "Auditoría de Gestión",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-derecho-empresarial",
+      "ciclo": 5,
+      "orden": 2,
+      "nombre": "Derecho Empresarial",
+      "nombre_oficial": "Derecho Empresarial",
+      "areas": [
+        "derecho",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-emprendimiento-e-innovacion",
+      "ciclo": 5,
+      "orden": 3,
+      "nombre": "Emprendimiento e Innovación",
+      "nombre_oficial": "Emprendimiento e Innovación",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-finanzas-corporativas-a-largo-plazo",
+      "ciclo": 5,
+      "orden": 4,
+      "nombre": "Finanzas Corporativas a Largo Plazo",
+      "nombre_oficial": "Finanzas Corporativas a Largo Plazo",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-gestion-de-la-produccion",
+      "ciclo": 5,
+      "orden": 5,
+      "nombre": "Gestión de la Producción",
+      "nombre_oficial": "Gestión de la Producción",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-administracion-de-marketing",
+      "ciclo": 5,
+      "orden": 6,
+      "nombre": "Administración de Marketing",
+      "nombre_oficial": "Administración de Marketing",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c5-practicas-de-servicio-comunitario",
+      "ciclo": 5,
+      "orden": 7,
+      "nombre": "Practicas de Servicio Comunitario",
+      "nombre_oficial": "Practicas de Servicio Comunitario",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-management-and-financial-training",
+      "ciclo": 6,
+      "orden": 1,
+      "nombre": "Management and Financial Training",
+      "nombre_oficial": "Management and Financial Training",
+      "areas": [
+        "finanzas",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-formulacion-de-proyectos",
+      "ciclo": 6,
+      "orden": 2,
+      "nombre": "Formulación de Proyectos",
+      "nombre_oficial": "Formulación de Proyectos",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-administracion-publica",
+      "ciclo": 6,
+      "orden": 3,
+      "nombre": "Administración Pública",
+      "nombre_oficial": "Administración Pública",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-herramientas-informaticas-y-sistemas-de-informacion-gerencia",
+      "ciclo": 6,
+      "orden": 4,
+      "nombre": "Herramientas Informáticas y Sistemas de Información Gerencial",
+      "nombre_oficial": "Herramientas Informáticas y Sistemas de Información Gerencial",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-logistica-empresarial",
+      "ciclo": 6,
+      "orden": 5,
+      "nombre": "Logística Empresarial",
+      "nombre_oficial": "Logística Empresarial",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-practica-laboral",
+      "ciclo": 6,
+      "orden": 6,
+      "nombre": "Practica Laboral",
+      "nombre_oficial": "Practica Laboral",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c6-comunicacion-digital-y-e-commerce",
+      "ciclo": 6,
+      "orden": 7,
+      "nombre": "Comunicación Digital y E-Commerce",
+      "nombre_oficial": "Comunicación Digital y E-Commerce",
+      "areas": [
+        "tecnologia",
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c7-evaluacion-de-proyectos",
+      "ciclo": 7,
+      "orden": 1,
+      "nombre": "Evaluación de Proyectos",
+      "nombre_oficial": "Evaluación de Proyectos",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c7-finanzas-internacionales",
+      "ciclo": 7,
+      "orden": 2,
+      "nombre": "Finanzas Internacionales",
+      "nombre_oficial": "Finanzas Internacionales",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c7-tecnicas-y-metodos-de-investigacion-empresarial",
+      "ciclo": 7,
+      "orden": 3,
+      "nombre": "Técnicas y Métodos de Investigación Empresarial",
+      "nombre_oficial": "Técnicas y Métodos de Investigación Empresarial",
+      "areas": [
+        "formacion",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c7-gerencia-de-sostenibilidad",
+      "ciclo": 7,
+      "orden": 4,
+      "nombre": "Gerencia de Sostenibilidad",
+      "nombre_oficial": "Gerencia de Sostenibilidad",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c7-gestion-de-empresas-publicas",
+      "ciclo": 7,
+      "orden": 5,
+      "nombre": "Gestión de Empresas Públicas",
+      "nombre_oficial": "Gestión de Empresas Públicas",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c7-comercio-exterior",
+      "ciclo": 7,
+      "orden": 6,
+      "nombre": "Comercio Exterior",
+      "nombre_oficial": "Comercio Exterior",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c8-gestion-de-calidad",
+      "ciclo": 8,
+      "orden": 1,
+      "nombre": "Gestión de Calidad",
+      "nombre_oficial": "Gestión de Calidad",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c8-estrategia-y-toma-de-decisiones",
+      "ciclo": 8,
+      "orden": 2,
+      "nombre": "Estrategia y Toma de Decisiones",
+      "nombre_oficial": "Estrategia y Toma de Decisiones",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c8-trabajo-de-integracion-curricular",
+      "ciclo": 8,
+      "orden": 3,
+      "nombre": "Trabajo de Integración Curricular",
+      "nombre_oficial": "Trabajo de Integración Curricular",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c8-negociacion",
+      "ciclo": 8,
+      "orden": 4,
+      "nombre": "Negociación",
+      "nombre_oficial": "Negociación",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c8-creacion-de-empresas",
+      "ciclo": 8,
+      "orden": 5,
+      "nombre": "Creación de Empresas",
+      "nombre_oficial": "Creación de Empresas",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-administracion-empresas--c8-business-intelligence",
+      "ciclo": 8,
+      "orden": 6,
+      "nombre": "Business Intelligence",
+      "nombre_oficial": "Business Intelligence",
+      "areas": [
+        "tecnologia"
+      ]
+    }
+  ]
+}

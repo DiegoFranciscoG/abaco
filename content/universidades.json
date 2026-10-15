@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ucuenca",
+    "nombre": "Universidad de Cuenca",
+    "siglas": "UCuenca",
+    "ciudad": "Cuenca",
+    "sitio": "https://www.ucuenca.edu.ec/",
+    "unidad_academica": "Facultad de Ciencias Económicas y Administrativas",
+    "url_unidad": "https://www.ucuenca.edu.ec/facultad/ciencias-economicas-y-administrativas/",
+    "fuente": {
+      "ref": "fac-ucuenca-fcea"
+    }
+  },
+  {
+    "id": "ucacue",
+    "nombre": "Universidad Católica de Cuenca",
+    "siglas": "UCACUE",
+    "ciudad": "Cuenca",
+    "sitio": "https://www.ucacue.edu.ec/",
+    "unidad_academica": "Unidad Académica de Ciencias Económicas y Empresariales",
+    "url_unidad": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/",
+    "fuente": {
+      "ref": "fac-ucacue-ccee"
+    }
+  }
+]

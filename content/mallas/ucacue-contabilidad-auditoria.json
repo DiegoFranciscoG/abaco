@@ -1,0 +1,401 @@
+{
+  "carrera": "ucacue-contabilidad-auditoria",
+  "fuente": {
+    "ref": "malla-ucacue-contabilidad-auditoria"
+  },
+  "actualizado_en": "2026-10-14",
+  "asignaturas": [
+    {
+      "id": "ucacue-contabilidad-auditoria--c1-matematica-basica",
+      "ciclo": 1,
+      "orden": 1,
+      "nombre": "Matemática Básica",
+      "nombre_oficial": "MATEMÁTICA BÁSICA",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c1-contabilidad-general",
+      "ciclo": 1,
+      "orden": 2,
+      "nombre": "Contabilidad General",
+      "nombre_oficial": "CONTABILIDAD GENERAL",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c1-metodologia-de-la-investigacion",
+      "ciclo": 1,
+      "orden": 3,
+      "nombre": "Metodología de la Investigación",
+      "nombre_oficial": "METODOLOGÍA DE LA INVESTIGACIÓN",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c1-filosofia-empresarial-y-etica-financiera",
+      "ciclo": 1,
+      "orden": 4,
+      "nombre": "Filosofía Empresarial y Ética Financiera",
+      "nombre_oficial": "FILOSOFÍA EMPRESARIAL Y ÉTICA FINANCIERA",
+      "areas": [
+        "formacion",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c1-legislacion-mercantil-y-societaria",
+      "ciclo": 1,
+      "orden": 5,
+      "nombre": "Legislación Mercantil y Societaria",
+      "nombre_oficial": "LEGISLACIÓN MERCANTIL Y SOCIETARIA",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c2-matematica-aplicada",
+      "ciclo": 2,
+      "orden": 1,
+      "nombre": "Matemática Aplicada",
+      "nombre_oficial": "MATEMÁTICA APLICADA",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c2-contabilidad-comercial",
+      "ciclo": 2,
+      "orden": 2,
+      "nombre": "Contabilidad Comercial",
+      "nombre_oficial": "CONTABILIDAD COMERCIAL",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c2-estadistica-descriptiva",
+      "ciclo": 2,
+      "orden": 3,
+      "nombre": "Estadística Descriptiva",
+      "nombre_oficial": "ESTADÍSTICA DESCRIPTIVA",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c2-derecho-laboral-y-seguridad-social",
+      "ciclo": 2,
+      "orden": 4,
+      "nombre": "Derecho Laboral y Seguridad Social",
+      "nombre_oficial": "DERECHO LABORAL Y SEGURIDAD SOCIAL",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c2-microeconomia",
+      "ciclo": 2,
+      "orden": 5,
+      "nombre": "Microeconomía",
+      "nombre_oficial": "MICROECONOMÍA",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c3-matematica-financiera",
+      "ciclo": 3,
+      "orden": 1,
+      "nombre": "Matemática Financiera",
+      "nombre_oficial": "MATEMÁTICA FINANCIERA",
+      "areas": [
+        "finanzas",
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c3-estadistica-inferencial",
+      "ciclo": 3,
+      "orden": 2,
+      "nombre": "Estadística Inferencial",
+      "nombre_oficial": "ESTADÍSTICA INFERENCIAL",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c3-macroeconomia",
+      "ciclo": 3,
+      "orden": 3,
+      "nombre": "Macroeconomía",
+      "nombre_oficial": "MACROECONOMÍA",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c3-contabilidad-de-costos",
+      "ciclo": 3,
+      "orden": 4,
+      "nombre": "Contabilidad de Costos",
+      "nombre_oficial": "CONTABILIDAD DE COSTOS",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c3-regimen-impositivo-y-fiscalidad",
+      "ciclo": 3,
+      "orden": 5,
+      "nombre": "Régimen Impositivo y Fiscalidad",
+      "nombre_oficial": "RÉGIMEN IMPOSITIVO Y FISCALIDAD",
+      "areas": [
+        "tributario"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c4-aplicaciones-de-costos",
+      "ciclo": 4,
+      "orden": 1,
+      "nombre": "Aplicaciones de Costos",
+      "nombre_oficial": "APLICACIONES DE COSTOS",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c4-renta-y-otros-impuestos",
+      "ciclo": 4,
+      "orden": 2,
+      "nombre": "Renta y Otros Impuestos",
+      "nombre_oficial": "RENTA Y OTROS IMPUESTOS",
+      "areas": [
+        "tributario"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c4-normas-internacionales-de-informacion-financiera",
+      "ciclo": 4,
+      "orden": 3,
+      "nombre": "Normas Internacionales de Información Financiera",
+      "nombre_oficial": "NORMAS INTERNACIONALES DE INFORMACIÓN FINANCIERA",
+      "areas": [
+        "contabilidad",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c4-administracion",
+      "ciclo": 4,
+      "orden": 4,
+      "nombre": "Administración",
+      "nombre_oficial": "ADMINISTRACIÓN",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c4-finanzas-corporativas",
+      "ciclo": 4,
+      "orden": 5,
+      "nombre": "Finanzas Corporativas",
+      "nombre_oficial": "FINANZAS CORPORATIVAS",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c5-control-interno-y-gestion-de-riesgos",
+      "ciclo": 5,
+      "orden": 1,
+      "nombre": "Control Interno y Gestión de Riesgos",
+      "nombre_oficial": "CONTROL INTERNO Y GESTIÓN DE RIESGOS",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c5-aplicacion-tributaria",
+      "ciclo": 5,
+      "orden": 2,
+      "nombre": "Aplicación Tributaria",
+      "nombre_oficial": "APLICACIÓN TRIBUTARIA",
+      "areas": [
+        "tributario"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c5-inteligencia-de-negocios",
+      "ciclo": 5,
+      "orden": 3,
+      "nombre": "Inteligencia de Negocios",
+      "nombre_oficial": "INTELIGENCIA DE NEGOCIOS",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c5-contabilidad-de-ifis-y-economia-popular-y-solidaria",
+      "ciclo": 5,
+      "orden": 4,
+      "nombre": "Contabilidad de IFIS y Economía Popular y Solidaria",
+      "nombre_oficial": "CONTABILIDAD DE IFIS Y ECONOMÍA POPULAR Y SOLIDARIA",
+      "areas": [
+        "contabilidad",
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c5-gestion-de-talento-humano",
+      "ciclo": 5,
+      "orden": 5,
+      "nombre": "Gestión de Talento Humano",
+      "nombre_oficial": "GESTIÓN DE TALENTO HUMANO",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c6-planificacion-y-direccion-estrategica",
+      "ciclo": 6,
+      "orden": 1,
+      "nombre": "Planificación y Dirección Estratégica",
+      "nombre_oficial": "PLANIFICACIÓN Y DIRECCIÓN ESTRATÉGICA",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c6-auditoria-administrativa",
+      "ciclo": 6,
+      "orden": 2,
+      "nombre": "Auditoría Administrativa",
+      "nombre_oficial": "AUDITORÍA ADMINISTRATIVA",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c6-presupuesto-publico-y-privado",
+      "ciclo": 6,
+      "orden": 3,
+      "nombre": "Presupuesto Público y Privado",
+      "nombre_oficial": "PRESUPUESTO PÚBLICO Y PRIVADO",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c6-planificacion-tributaria",
+      "ciclo": 6,
+      "orden": 4,
+      "nombre": "Planificación Tributaria",
+      "nombre_oficial": "PLANIFICACIÓN TRIBUTARIA",
+      "areas": [
+        "tributario",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c6-liderazgo-emprendimiento-e-innovacion",
+      "ciclo": 6,
+      "orden": 5,
+      "nombre": "Liderazgo, Emprendimiento e Innovación",
+      "nombre_oficial": "LIDERAZGO, EMPRENDIMIENTO E INNOVACIÓN.",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c7-formulacion-y-evaluacion-financiera-de-proyectos",
+      "ciclo": 7,
+      "orden": 1,
+      "nombre": "Formulación y Evaluación Financiera de Proyectos",
+      "nombre_oficial": "FORMULACIÓN Y EVALUACIÓN FINANCIERA DE PROYECTOS",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c7-inteligencia-artificial-en-contabilidad-y-auditoria",
+      "ciclo": 7,
+      "orden": 2,
+      "nombre": "Inteligencia Artificial en Contabilidad y Auditoría",
+      "nombre_oficial": "INTELIGENCIA ARTIFICIAL EN CONTABILIDAD Y AUDITORÍA",
+      "areas": [
+        "contabilidad",
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c7-auditoria-financiera",
+      "ciclo": 7,
+      "orden": 3,
+      "nombre": "Auditoría Financiera",
+      "nombre_oficial": "AUDITORÍA FINANCIERA",
+      "areas": [
+        "contabilidad",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c7-redaccion-cientifica",
+      "ciclo": 7,
+      "orden": 4,
+      "nombre": "Redacción Científica",
+      "nombre_oficial": "REDACCIÓN CIENTÍFICA",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c7-comercio-internacional-y-aduanas",
+      "ciclo": 7,
+      "orden": 5,
+      "nombre": "Comercio Internacional y Aduanas",
+      "nombre_oficial": "COMERCIO INTERNACIONAL Y ADUANAS",
+      "areas": [
+        "tributario",
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c8-auditoria-forense-y-prevencion-de-lavado-de-activos",
+      "ciclo": 8,
+      "orden": 1,
+      "nombre": "Auditoria Forense y Prevención de Lavado de Activos",
+      "nombre_oficial": "AUDITORIA FORENSE Y PREVENCIÓN DE LAVADO DE ACTIVOS",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c8-auditorias-especiales",
+      "ciclo": 8,
+      "orden": 2,
+      "nombre": "Auditorias Especiales",
+      "nombre_oficial": "AUDITORIAS ESPECIALES",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-contabilidad-auditoria--c8-contabilidad-gubernamental-y-contratacion-publica",
+      "ciclo": 8,
+      "orden": 3,
+      "nombre": "Contabilidad Gubernamental y Contratación Pública",
+      "nombre_oficial": "CONTABILIDAD GUBERNAMENTAL Y CONTRATACIÓN PÚBLICA",
+      "areas": [
+        "contabilidad",
+        "derecho"
+      ]
+    }
+  ]
+}

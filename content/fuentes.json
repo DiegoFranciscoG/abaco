@@ -1,0 +1,335 @@
+[
+  {
+    "id": "fac-ucuenca-fcea",
+    "titulo": "Facultad de Ciencias Económicas y Administrativas — Universidad de Cuenca",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/facultad/ciencias-economicas-y-administrativas/",
+    "licencia": "Información institucional pública",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "fac-ucacue-ccee",
+    "titulo": "Unidad Académica de Ciencias Económicas y Empresariales — UCACUE",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/",
+    "licencia": "Información institucional pública",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucuenca-administracion-empresas",
+    "titulo": "Administración de Empresas — página oficial de la carrera",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/carreras/administracion-de-empresas/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucuenca-administracion-empresas-dual",
+    "titulo": "Administración de Empresas (Modalidad Dual) — página oficial de la carrera",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/carreras/administracion-de-empresas-modalidad-dual/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucuenca-contabilidad-auditoria",
+    "titulo": "Contabilidad y Auditoría — página oficial de la carrera",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/carreras/contabilidad-y-auditoria/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucuenca-economia",
+    "titulo": "Economía — página oficial de la carrera",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/carreras/economia/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucuenca-emprendimiento-innovacion",
+    "titulo": "Emprendimiento e Innovación — página oficial de la carrera",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/carreras/emprendimiento-e-innovacion/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucuenca-mercadotecnia",
+    "titulo": "Mercadotecnia — página oficial de la carrera",
+    "autor_editor": "Universidad de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucuenca.edu.ec/carreras/mercadotecnia/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-administracion-empresas",
+    "titulo": "Administración de Empresas — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-administracion-de-empresas/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-administracion-empresas-dual",
+    "titulo": "Administración de Empresas DUAL — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-administracin-de-empresas-dual/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-contabilidad-auditoria",
+    "titulo": "Carrera de Contabilidad y Auditoría — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-contabilidad-y-auditoria/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-economia",
+    "titulo": "Carrera de Economía — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-economia/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-finanzas-banca-seguros",
+    "titulo": "Carrera de Finanzas, Banca y Seguros — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-finanzas-banca-y-seguros/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-marketing-inteligencia-mercados",
+    "titulo": "Carrera de Marketing e Inteligencia de Mercados — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-marketing-e-inteligencia-de-mercado/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "malla-ucacue-negocios-internacionales",
+    "titulo": "Carrera de Negocios Internacionales — página oficial de la carrera",
+    "autor_editor": "Universidad Católica de Cuenca",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-negocios-internacionales/",
+    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-pfa",
+    "titulo": "Principles of Accounting, Volume 1: Financial Accounting",
+    "autor_editor": "Mitchell Franklin, Patty Graybeal, Dixon Cooper · OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-financial-accounting",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-pma",
+    "titulo": "Principles of Accounting, Volume 2: Managerial Accounting",
+    "autor_editor": "Mitchell Franklin, Patty Graybeal, Dixon Cooper · OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-managerial-accounting",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-pfin",
+    "titulo": "Principles of Finance",
+    "autor_editor": "OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-finance",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-stats",
+    "titulo": "Introductory Statistics 2e",
+    "autor_editor": "OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introductory-statistics-2e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-calc1",
+    "titulo": "Calculus Volume 1",
+    "autor_editor": "Gilbert Strang, Edwin Herman · OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/calculus-volume-1",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-cmath",
+    "titulo": "Contemporary Mathematics",
+    "autor_editor": "OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/contemporary-mathematics",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-econ",
+    "titulo": "Principles of Economics 3e",
+    "autor_editor": "OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-economics-3e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "iesba-code",
+    "titulo": "International Code of Ethics for Professional Accountants (including International Independence Standards)",
+    "autor_editor": "International Ethics Standards Board for Accountants (IESBA)",
+    "tipo": "norma",
+    "url": "https://www.ethicsboard.org/iesba-code",
+    "licencia": "Consulta pública; se cita y resume con redacción propia",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ifrs-normas",
+    "titulo": "Lista de Normas NIIF emitidas",
+    "autor_editor": "IFRS Foundation",
+    "tipo": "norma",
+    "url": "https://www.ifrs.org/issued-standards/list-of-standards/",
+    "licencia": "Consulta pública",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ifrs-pymes",
+    "titulo": "NIIF para las PYMES",
+    "autor_editor": "IFRS Foundation",
+    "tipo": "norma",
+    "url": "https://www.ifrs.org/issued-standards/ifrs-for-smes/",
+    "licencia": "Consulta pública",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "sri-iva",
+    "titulo": "Impuesto al Valor Agregado (IVA) — información general y tarifas",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.sri.gob.ec/impuesto-al-valor-agregado-iva",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "sri-renta",
+    "titulo": "Impuesto a la Renta — información general y tarifas",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.sri.gob.ec/impuesto-renta",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "sri-tablas-ir",
+    "titulo": "Tablas de cálculo de Impuesto a la Renta (2026: Res. NAC-DGERCGC25-00000043, 2.º Supl. R.O. 194, 30-12-2025)",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "norma",
+    "url": "https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/58a7f4f6-ab51-48b6-b9ff-a8e97e1a28ef/Tablas%20de%20c%c3%a1lculo%20de%20Impuesto%20a%20la%20Renta.pdf",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "mdt-sbu-2026",
+    "titulo": "Salario Básico Unificado 2026: USD 482",
+    "autor_editor": "Ministerio del Trabajo del Ecuador",
+    "tipo": "pagina_oficial",
+    "url": "https://www.trabajo.gob.ec/despues-de-casi-una-decada-hay-consenso-gobierno-empleadores-y-trabajadores-acuerdan-fijar-el-salario-basico-unificado-de-2026-en-usd-482-no-hay-imposicion-hay-union/",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ley-companias",
+    "titulo": "Ley de Compañías (R.O. 312, 05-11-1999; texto vigente compilado)",
+    "autor_editor": "Asamblea Nacional del Ecuador · copia publicada por el SERCOP",
+    "tipo": "ley",
+    "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+    "licencia": "Norma pública",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "codigo-comercio",
+    "titulo": "Código de Comercio (R.O. Supl. 497, 29-05-2019)",
+    "autor_editor": "Asamblea Nacional del Ecuador",
+    "tipo": "ley",
+    "url": "https://www.asambleanacional.gob.ec/sites/default/files/codigo_de_comercio.pdf",
+    "licencia": "Norma pública",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "supercias",
+    "titulo": "Portal de la Superintendencia de Compañías, Valores y Seguros",
+    "autor_editor": "Superintendencia de Compañías, Valores y Seguros",
+    "tipo": "pagina_oficial",
+    "url": "https://www.supercias.gob.ec/portalscvs/",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ms-excel-formulas",
+    "titulo": "Información general sobre fórmulas en Excel",
+    "autor_editor": "Microsoft",
+    "tipo": "documentacion",
+    "url": "https://support.microsoft.com/es-es/office/informaci%C3%B3n-general-sobre-f%C3%B3rmulas-en-excel-ecfdc708-9162-49e8-b993-c311f47ca173",
+    "licencia": "Documentación de consulta",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ms-excel-fin",
+    "titulo": "Funciones financieras (referencia)",
+    "autor_editor": "Microsoft",
+    "tipo": "documentacion",
+    "url": "https://support.microsoft.com/es-es/office/funciones-financieras-referencia-5658d81e-6035-4f24-89c1-fbf124c2b1d8",
+    "licencia": "Documentación de consulta",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ms-excel-est",
+    "titulo": "Funciones estadísticas (referencia)",
+    "autor_editor": "Microsoft",
+    "tipo": "documentacion",
+    "url": "https://support.microsoft.com/es-es/office/funciones-estad%C3%ADsticas-referencia-624dac86-a375-4435-bc25-76d659719ffd",
+    "licencia": "Documentación de consulta",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ms-excel-log",
+    "titulo": "Funciones lógicas (referencia)",
+    "autor_editor": "Microsoft",
+    "tipo": "documentacion",
+    "url": "https://support.microsoft.com/es-es/office/funciones-l%C3%B3gicas-referencia-e093c192-278b-43f6-8c3a-b6ce299931f5",
+    "licencia": "Documentación de consulta",
+    "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "ms-excel-alfa",
+    "titulo": "Funciones de Excel (por orden alfabético)",
+    "autor_editor": "Microsoft",
+    "tipo": "documentacion",
+    "url": "https://support.microsoft.com/es-es/office/funciones-de-excel-por-orden-alfab%C3%A9tico-b3944572-255d-4efb-bb96-c6d90033e188",
+    "licencia": "Documentación de consulta",
+    "fecha_consulta": "2026-10-14"
+  }
+]

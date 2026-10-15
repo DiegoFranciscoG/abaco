@@ -1,0 +1,516 @@
+{
+  "carrera": "ucuenca-mercadotecnia",
+  "fuente": {
+    "ref": "malla-ucuenca-mercadotecnia"
+  },
+  "actualizado_en": "2026-10-14",
+  "asignaturas": [
+    {
+      "id": "ucuenca-mercadotecnia--c1-contabilidad",
+      "ciclo": 1,
+      "orden": 1,
+      "nombre": "Contabilidad",
+      "nombre_oficial": "Contabilidad",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c1-introduccion-al-marketing",
+      "ciclo": 1,
+      "orden": 2,
+      "nombre": "Introducción al Marketing",
+      "nombre_oficial": "Introducción al Marketing",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c1-administracion-y-organizacion",
+      "ciclo": 1,
+      "orden": 3,
+      "nombre": "Administración y Organización",
+      "nombre_oficial": "Administración y Organización",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c1-psicologia-del-comportamiento",
+      "ciclo": 1,
+      "orden": 4,
+      "nombre": "Psicología del Comportamiento",
+      "nombre_oficial": "Psicología del Comportamiento",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c1-matematicas-i",
+      "ciclo": 1,
+      "orden": 5,
+      "nombre": "Matemáticas I",
+      "nombre_oficial": "Matemáticas I",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c1-diseno-para-marketing-i",
+      "ciclo": 1,
+      "orden": 6,
+      "nombre": "Diseño para Marketing I",
+      "nombre_oficial": "Diseño para Marketing I",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c2-estadistica-i",
+      "ciclo": 2,
+      "orden": 1,
+      "nombre": "Estadística I",
+      "nombre_oficial": "Estadística I",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c2-costos",
+      "ciclo": 2,
+      "orden": 2,
+      "nombre": "Costos",
+      "nombre_oficial": "Costos",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c2-estrategia-competitiva",
+      "ciclo": 2,
+      "orden": 3,
+      "nombre": "Estrategia Competitiva",
+      "nombre_oficial": "Estrategia Competitiva",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c2-comportamiento-del-consumidor",
+      "ciclo": 2,
+      "orden": 4,
+      "nombre": "Comportamiento del Consumidor",
+      "nombre_oficial": "Comportamiento del Consumidor",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c2-matematicas-ii",
+      "ciclo": 2,
+      "orden": 5,
+      "nombre": "Matemáticas II",
+      "nombre_oficial": "Matemáticas II",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c2-diseno-para-marketing-ii",
+      "ciclo": 2,
+      "orden": 6,
+      "nombre": "Diseño para Marketing II",
+      "nombre_oficial": "Diseño para Marketing II",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c3-marketing-sostenible",
+      "ciclo": 3,
+      "orden": 1,
+      "nombre": "Marketing Sostenible",
+      "nombre_oficial": "Marketing Sostenible",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c3-matematicas-financiera",
+      "ciclo": 3,
+      "orden": 2,
+      "nombre": "Matemáticas Financiera",
+      "nombre_oficial": "Matemáticas Financiera",
+      "areas": [
+        "finanzas",
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c3-estadistica-ii",
+      "ciclo": 3,
+      "orden": 3,
+      "nombre": "Estadística II",
+      "nombre_oficial": "Estadística II",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c3-marca-personal",
+      "ciclo": 3,
+      "orden": 4,
+      "nombre": "Marca personal",
+      "nombre_oficial": "Marca personal",
+      "areas": [
+        "gestion",
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c3-emprendimiento",
+      "ciclo": 3,
+      "orden": 5,
+      "nombre": "Emprendimiento",
+      "nombre_oficial": "Emprendimiento",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c3-microeconomia",
+      "ciclo": 3,
+      "orden": 6,
+      "nombre": "Microeconomía",
+      "nombre_oficial": "Microeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-estadistica-iii",
+      "ciclo": 4,
+      "orden": 1,
+      "nombre": "Estadística III",
+      "nombre_oficial": "Estadística III",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-finanzas-y-marketing",
+      "ciclo": 4,
+      "orden": 2,
+      "nombre": "Finanzas y Marketing",
+      "nombre_oficial": "Finanzas y Marketing",
+      "areas": [
+        "finanzas",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-entorno-macroeconomico",
+      "ciclo": 4,
+      "orden": 3,
+      "nombre": "Entorno Macroeconómico",
+      "nombre_oficial": "Entorno Macroeconómico",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-business-english",
+      "ciclo": 4,
+      "orden": 4,
+      "nombre": "Business English",
+      "nombre_oficial": "Business English",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-marketing-estrategico",
+      "ciclo": 4,
+      "orden": 5,
+      "nombre": "Marketing Estratégico",
+      "nombre_oficial": "Marketing Estratégico",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-businness-intelligence",
+      "ciclo": 4,
+      "orden": 6,
+      "nombre": "Businness Intelligence",
+      "nombre_oficial": "Businness Intelligence",
+      "areas": [
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c4-practicas-laborales-i",
+      "ciclo": 4,
+      "orden": 7,
+      "nombre": "Prácticas laborales I",
+      "nombre_oficial": "Prácticas laborales I",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-branding",
+      "ciclo": 5,
+      "orden": 1,
+      "nombre": "Branding",
+      "nombre_oficial": "Branding",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-estrategia-de-precio",
+      "ciclo": 5,
+      "orden": 2,
+      "nombre": "Estrategia de Precio",
+      "nombre_oficial": "Estrategia de Precio",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-estrategia-de-producto",
+      "ciclo": 5,
+      "orden": 3,
+      "nombre": "Estrategia de Producto",
+      "nombre_oficial": "Estrategia de Producto",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-investigacion-de-mercado",
+      "ciclo": 5,
+      "orden": 4,
+      "nombre": "Investigación de Mercado",
+      "nombre_oficial": "Investigación de Mercado",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-metodologia-de-la-investigacion",
+      "ciclo": 5,
+      "orden": 5,
+      "nombre": "Metodología de la Investigación",
+      "nombre_oficial": "Metodología de la Investigación",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-gestion-logistica",
+      "ciclo": 5,
+      "orden": 6,
+      "nombre": "Gestión Logística",
+      "nombre_oficial": "Gestión Logística",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c5-practicas-laborales-ii",
+      "ciclo": 5,
+      "orden": 7,
+      "nombre": "Prácticas Laborales II",
+      "nombre_oficial": "Prácticas Laborales II",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-campanas-publicitarias",
+      "ciclo": 6,
+      "orden": 1,
+      "nombre": "Campañas Publicitarias",
+      "nombre_oficial": "Campañas Publicitarias",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-gerencia-de-ventas",
+      "ciclo": 6,
+      "orden": 2,
+      "nombre": "Gerencia de Ventas",
+      "nombre_oficial": "Gerencia de Ventas",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-gestion-de-proyectos",
+      "ciclo": 6,
+      "orden": 3,
+      "nombre": "Gestión de Proyectos",
+      "nombre_oficial": "Gestión de Proyectos",
+      "areas": [
+        "finanzas",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-sistemas-de-informacion-den-marketing",
+      "ciclo": 6,
+      "orden": 4,
+      "nombre": "Sistemas de Información den Marketing",
+      "nombre_oficial": "Sistemas de Información den Marketing",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-propiedad-intelectual",
+      "ciclo": 6,
+      "orden": 5,
+      "nombre": "Propiedad Intelectual",
+      "nombre_oficial": "Propiedad Intelectual",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-tecnicas-de-ventas",
+      "ciclo": 6,
+      "orden": 6,
+      "nombre": "Técnicas de Ventas",
+      "nombre_oficial": "Técnicas de Ventas",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c6-practicas-laborales-iii",
+      "ciclo": 6,
+      "orden": 7,
+      "nombre": "Prácticas Laborales III",
+      "nombre_oficial": "Prácticas Laborales III",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c7-marketing-promocional",
+      "ciclo": 7,
+      "orden": 1,
+      "nombre": "Marketing Promocional",
+      "nombre_oficial": "Marketing Promocional",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c7-gerencia-de-distribucion",
+      "ciclo": 7,
+      "orden": 2,
+      "nombre": "Gerencia de Distribución",
+      "nombre_oficial": "Gerencia de Distribución",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c7-planes-de-marketing",
+      "ciclo": 7,
+      "orden": 3,
+      "nombre": "Planes de Marketing",
+      "nombre_oficial": "Planes de Marketing",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c7-modelos-de-simulacion",
+      "ciclo": 7,
+      "orden": 4,
+      "nombre": "Modelos de Simulación",
+      "nombre_oficial": "Modelos de Simulación",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c7-uic-i",
+      "ciclo": 7,
+      "orden": 5,
+      "nombre": "UIC I",
+      "nombre_oficial": "UIC I",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c7-servicio-comunitario",
+      "ciclo": 7,
+      "orden": 6,
+      "nombre": "Servicio Comunitario",
+      "nombre_oficial": "Servicio Comunitario",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c8-auditoria-en-marketing",
+      "ciclo": 8,
+      "orden": 1,
+      "nombre": "Auditoría en Marketing",
+      "nombre_oficial": "Auditoría en Marketing",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c8-marketing-en-servicios",
+      "ciclo": 8,
+      "orden": 2,
+      "nombre": "Marketing en Servicios",
+      "nombre_oficial": "Marketing en Servicios",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c8-marketing-global",
+      "ciclo": 8,
+      "orden": 3,
+      "nombre": "Marketing Global",
+      "nombre_oficial": "Marketing Global",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c8-uic-ii",
+      "ciclo": 8,
+      "orden": 4,
+      "nombre": "UIC II",
+      "nombre_oficial": "UIC II",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-mercadotecnia--c8-marketing-digital",
+      "ciclo": 8,
+      "orden": 5,
+      "nombre": "Marketing Digital",
+      "nombre_oficial": "Marketing Digital",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    }
+  ]
+}

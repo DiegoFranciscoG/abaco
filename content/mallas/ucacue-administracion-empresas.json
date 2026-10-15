@@ -1,0 +1,422 @@
+{
+  "carrera": "ucacue-administracion-empresas",
+  "fuente": {
+    "ref": "malla-ucacue-administracion-empresas"
+  },
+  "actualizado_en": "2026-10-14",
+  "asignaturas": [
+    {
+      "id": "ucacue-administracion-empresas--c1-matematica-empresarial",
+      "ciclo": 1,
+      "orden": 1,
+      "nombre": "Matemática Empresarial",
+      "nombre_oficial": "MATEMÁTICA EMPRESARIAL",
+      "areas": [
+        "cuantitativo",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c1-teorias-y-fundamentos-de-administracion",
+      "ciclo": 1,
+      "orden": 2,
+      "nombre": "Teorías y Fundamentos de Administración",
+      "nombre_oficial": "TEORÍAS Y FUNDAMENTOS DE ADMINISTRACIÓN",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c1-pensamiento-creativo",
+      "ciclo": 1,
+      "orden": 3,
+      "nombre": "Pensamiento Creativo",
+      "nombre_oficial": "PENSAMIENTO CREATIVO",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c1-metodologia-de-investigacion-cientifica",
+      "ciclo": 1,
+      "orden": 4,
+      "nombre": "Metodología de Investigación Científica",
+      "nombre_oficial": "METODOLOGÍA DE INVESTIGACIÓN CIENTÍFICA",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c1-contabilidad-general",
+      "ciclo": 1,
+      "orden": 5,
+      "nombre": "Contabilidad General",
+      "nombre_oficial": "CONTABILIDAD GENERAL",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c2-tic-aplicada-en-la-empresa",
+      "ciclo": 2,
+      "orden": 1,
+      "nombre": "TIC Aplicada en la Empresa",
+      "nombre_oficial": "TIC APLICADA EN LA EMPRESA",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c2-contabilidad-de-costos-para-la-gestion",
+      "ciclo": 2,
+      "orden": 2,
+      "nombre": "Contabilidad de Costos para la Gestión",
+      "nombre_oficial": "CONTABILIDAD DE COSTOS PARA LA GESTIÓN",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c2-economia-popular-y-solidaria",
+      "ciclo": 2,
+      "orden": 3,
+      "nombre": "Economía Popular y Solidaria",
+      "nombre_oficial": "ECONOMÍA POPULAR Y SOLIDARIA",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c2-derecho-empresarial",
+      "ciclo": 2,
+      "orden": 4,
+      "nombre": "Derecho Empresarial",
+      "nombre_oficial": "DERECHO EMPRESARIAL",
+      "areas": [
+        "derecho",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c2-estadistica-descriptiva",
+      "ciclo": 2,
+      "orden": 5,
+      "nombre": "Estadística Descriptiva",
+      "nombre_oficial": "ESTADÍSTICA DESCRIPTIVA",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c3-matematicas-financieras",
+      "ciclo": 3,
+      "orden": 1,
+      "nombre": "Matemáticas Financieras",
+      "nombre_oficial": "MATEMÁTICAS FINANCIERAS",
+      "areas": [
+        "finanzas",
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c3-estadistica-inferencial",
+      "ciclo": 3,
+      "orden": 2,
+      "nombre": "Estadística Inferencial",
+      "nombre_oficial": "ESTADÍSTICA INFERENCIAL",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c3-microeconomia",
+      "ciclo": 3,
+      "orden": 3,
+      "nombre": "Microeconomía",
+      "nombre_oficial": "MICROECONOMÍA",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c3-transformacion-digital-en-los-negocios",
+      "ciclo": 3,
+      "orden": 4,
+      "nombre": "Transformación Digital en los Negocios",
+      "nombre_oficial": "TRANSFORMACIÓN DIGITAL EN LOS NEGOCIOS",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c3-administracion-tributaria",
+      "ciclo": 3,
+      "orden": 5,
+      "nombre": "Administración Tributaria",
+      "nombre_oficial": "ADMINISTRACIÓN TRIBUTARIA",
+      "areas": [
+        "tributario",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c4-analisis-multivariante",
+      "ciclo": 4,
+      "orden": 1,
+      "nombre": "Análisis Multivariante",
+      "nombre_oficial": "ANÁLISIS MULTIVARIANTE",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c4-diseno-y-comportamiento-organizacional",
+      "ciclo": 4,
+      "orden": 2,
+      "nombre": "Diseño y Comportamiento Organizacional",
+      "nombre_oficial": "DISEÑO Y COMPORTAMIENTO ORGANIZACIONAL",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c4-marketing-e-investigacion-de-mercados",
+      "ciclo": 4,
+      "orden": 3,
+      "nombre": "Marketing e Investigación de Mercados",
+      "nombre_oficial": "MARKETING E INVESTIGACIÓN DE MERCADOS",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c4-macroeconomia",
+      "ciclo": 4,
+      "orden": 4,
+      "nombre": "Macroeconomía",
+      "nombre_oficial": "MACROECONOMÍA",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c4-gestion-de-talento-humano",
+      "ciclo": 4,
+      "orden": 5,
+      "nombre": "Gestión de Talento Humano",
+      "nombre_oficial": "GESTIÓN DE TALENTO HUMANO",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c5-planificacion-estrategica",
+      "ciclo": 5,
+      "orden": 1,
+      "nombre": "Planificación Estratégica",
+      "nombre_oficial": "PLANIFICACIÓN ESTRATÉGICA",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c5-presupuestos",
+      "ciclo": 5,
+      "orden": 2,
+      "nombre": "Presupuestos",
+      "nombre_oficial": "PRESUPUESTOS",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c5-administracion-y-planificacion-de-talento-humano",
+      "ciclo": 5,
+      "orden": 3,
+      "nombre": "Administración y Planificación de Talento Humano",
+      "nombre_oficial": "ADMINISTRACIÓN Y PLANIFICACIÓN DE TALENTO HUMANO",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c5-ecosistemas-de-emprendimiento-e-innovacion",
+      "ciclo": 5,
+      "orden": 4,
+      "nombre": "Ecosistemas de Emprendimiento e Innovación",
+      "nombre_oficial": "ECOSISTEMAS DE EMPRENDIMIENTO E INNOVACIÓN",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c5-inteligencias-de-negocios-bi-y-sistemas-gerenciales",
+      "ciclo": 5,
+      "orden": 5,
+      "nombre": "Inteligencias de Negocios (BI) y Sistemas Gerenciales",
+      "nombre_oficial": "INTELIGENCIAS DE NEGOCIOS (BI) Y SISTEMAS GERENCIALES",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c6-finanzas",
+      "ciclo": 6,
+      "orden": 1,
+      "nombre": "Finanzas",
+      "nombre_oficial": "FINANZAS",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c6-formulacion-y-evaluacion-de-proyectos",
+      "ciclo": 6,
+      "orden": 2,
+      "nombre": "Formulación y Evaluación de Proyectos",
+      "nombre_oficial": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c6-auditoria-para-administradores",
+      "ciclo": 6,
+      "orden": 3,
+      "nombre": "Auditoría para Administradores",
+      "nombre_oficial": "AUDITORÍA PARA ADMINISTRADORES",
+      "areas": [
+        "contabilidad",
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c6-administracion-estrategica",
+      "ciclo": 6,
+      "orden": 4,
+      "nombre": "Administración Estratégica",
+      "nombre_oficial": "ADMINISTRACIÓN ESTRATÉGICA",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c6-comercio-exterior-y-negocios-internacionales",
+      "ciclo": 6,
+      "orden": 5,
+      "nombre": "Comercio Exterior y Negocios Internacionales",
+      "nombre_oficial": "COMERCIO EXTERIOR Y NEGOCIOS INTERNACIONALES",
+      "areas": [
+        "economia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c7-administracion-de-la-produccion-y-operaciones",
+      "ciclo": 7,
+      "orden": 1,
+      "nombre": "Administración de la Producción y Operaciones",
+      "nombre_oficial": "ADMINISTRACIÓN DE LA PRODUCCIÓN Y OPERACIONES",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c7-analitica-de-datos-y-simulacion-de-negocios",
+      "ciclo": 7,
+      "orden": 2,
+      "nombre": "Analítica de Datos y Simulación de Negocios",
+      "nombre_oficial": "ANALÍTICA DE DATOS Y SIMULACIÓN DE NEGOCIOS",
+      "areas": [
+        "cuantitativo",
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c7-redaccion-academica",
+      "ciclo": 7,
+      "orden": 3,
+      "nombre": "Redacción Académica",
+      "nombre_oficial": "REDACCIÓN ACADÉMICA",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c7-negociacion-y-direccion-de-ventas",
+      "ciclo": 7,
+      "orden": 4,
+      "nombre": "Negociación y Dirección de Ventas",
+      "nombre_oficial": "NEGOCIACIÓN Y DIRECCIÓN DE VENTAS",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c7-ia-para-la-toma-de-decisiones-gerenciales",
+      "ciclo": 7,
+      "orden": 5,
+      "nombre": "IA para la Toma de Decisiones Gerenciales",
+      "nombre_oficial": "IA PARA LA TOMA DE DECISIONES GERENCIALES",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c8-gestion-de-riesgos-empresariales",
+      "ciclo": 8,
+      "orden": 1,
+      "nombre": "Gestión de Riesgos Empresariales",
+      "nombre_oficial": "GESTIÓN DE RIESGOS EMPRESARIALES",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c8-e-commerce-y-marketing-digital",
+      "ciclo": 8,
+      "orden": 2,
+      "nombre": "E-Commerce y Marketing Digital",
+      "nombre_oficial": "E-COMMERCE Y MARKETING DIGITAL",
+      "areas": [
+        "tecnologia",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c8-administracion-publica",
+      "ciclo": 8,
+      "orden": 3,
+      "nombre": "Administración Pública",
+      "nombre_oficial": "ADMINISTRACIÓN PÚBLICA",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c8-sistemas-de-control-de-la-calidad",
+      "ciclo": 8,
+      "orden": 4,
+      "nombre": "Sistemas de Control de la Calidad",
+      "nombre_oficial": "SISTEMAS DE CONTROL DE LA CALIDAD",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucacue-administracion-empresas--c8-responsabilidad-social-corporativa-y-etica",
+      "ciclo": 8,
+      "orden": 5,
+      "nombre": "Responsabilidad Social Corporativa y Ética",
+      "nombre_oficial": "RESPONSABILIDAD SOCIAL CORPORATIVA Y ÉTICA",
+      "areas": [
+        "formacion"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "carrera": "ucuenca-contabilidad-auditoria",
+  "fuente": {
+    "ref": "malla-ucuenca-contabilidad-auditoria"
+  },
+  "actualizado_en": "2026-10-14",
+  "asignaturas": [
+    {
+      "id": "ucuenca-contabilidad-auditoria--c1-legislacion-mercantil-y-societaria",
+      "ciclo": 1,
+      "orden": 1,
+      "nombre": "Legislación Mercantil y Societaria",
+      "nombre_oficial": "Legislación Mercantil y Societaria",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+      "ciclo": 1,
+      "orden": 2,
+      "nombre": "Cálculo Diferencial",
+      "nombre_oficial": "Cálculo Diferencial",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+      "ciclo": 1,
+      "orden": 3,
+      "nombre": "Contabilidad General",
+      "nombre_oficial": "Contabilidad General",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+      "ciclo": 1,
+      "orden": 4,
+      "nombre": "Estadística Descriptiva",
+      "nombre_oficial": "Estadística Descriptiva",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c1-etica-del-ifac",
+      "ciclo": 1,
+      "orden": 5,
+      "nombre": "Ética del IFAC",
+      "nombre_oficial": "Ética del IFAC",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+      "ciclo": 1,
+      "orden": 6,
+      "nombre": "Informática Intermedia",
+      "nombre_oficial": "Informática Intermedia",
+      "areas": [
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c2-legislacion-laboral-y-seguridad-social",
+      "ciclo": 2,
+      "orden": 1,
+      "nombre": "Legislación Laboral y Seguridad Social",
+      "nombre_oficial": "Legislación Laboral y Seguridad Social",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c2-calculo-integral",
+      "ciclo": 2,
+      "orden": 2,
+      "nombre": "Cálculo Integral",
+      "nombre_oficial": "Cálculo Integral",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c2-contabilidad-comercial",
+      "ciclo": 2,
+      "orden": 3,
+      "nombre": "Contabilidad Comercial",
+      "nombre_oficial": "Contabilidad Comercial",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c2-legislacion-tributaria",
+      "ciclo": 2,
+      "orden": 4,
+      "nombre": "Legislación Tributaria",
+      "nombre_oficial": "Legislación Tributaria",
+      "areas": [
+        "tributario",
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c2-microeconomia",
+      "ciclo": 2,
+      "orden": 5,
+      "nombre": "Microeconomía",
+      "nombre_oficial": "Microeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c2-estadistica-inferencial",
+      "ciclo": 2,
+      "orden": 6,
+      "nombre": "Estadística Inferencial",
+      "nombre_oficial": "Estadística Inferencial",
+      "areas": [
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c3-practica-tributaria",
+      "ciclo": 3,
+      "orden": 1,
+      "nombre": "Práctica Tributaria",
+      "nombre_oficial": "Práctica Tributaria",
+      "areas": [
+        "tributario",
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c3-matematica-financiera",
+      "ciclo": 3,
+      "orden": 2,
+      "nombre": "Matemática Financiera",
+      "nombre_oficial": "Matemática Financiera",
+      "areas": [
+        "finanzas",
+        "cuantitativo"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c3-macroeconomia",
+      "ciclo": 3,
+      "orden": 3,
+      "nombre": "Macroeconomía",
+      "nombre_oficial": "Macroeconomía",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c3-contabilidad-costos-basica",
+      "ciclo": 3,
+      "orden": 4,
+      "nombre": "Contabilidad Costos Básica",
+      "nombre_oficial": "Contabilidad Costos Básica",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c3-contabilidad-de-gestion-ambiental",
+      "ciclo": 3,
+      "orden": 5,
+      "nombre": "Contabilidad de Gestión Ambiental",
+      "nombre_oficial": "Contabilidad de Gestión Ambiental",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c3-teoria-administrativa",
+      "ciclo": 3,
+      "orden": 6,
+      "nombre": "Teoría Administrativa",
+      "nombre_oficial": "Teoría Administrativa",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c4-control-interno-y-gestion-de-riesgos",
+      "ciclo": 4,
+      "orden": 1,
+      "nombre": "Control Interno y Gestión de Riesgos",
+      "nombre_oficial": "Control Interno y Gestión de Riesgos",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c4-contabilidad-financiera",
+      "ciclo": 4,
+      "orden": 2,
+      "nombre": "Contabilidad Financiera",
+      "nombre_oficial": "Contabilidad Financiera",
+      "areas": [
+        "contabilidad",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c4-contabilidad-societaria",
+      "ciclo": 4,
+      "orden": 3,
+      "nombre": "Contabilidad Societaria",
+      "nombre_oficial": "Contabilidad Societaria",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c4-contabilidad-costos-avanzada",
+      "ciclo": 4,
+      "orden": 4,
+      "nombre": "Contabilidad Costos Avanzada",
+      "nombre_oficial": "Contabilidad Costos Avanzada",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c4-comercio-exterior",
+      "ciclo": 4,
+      "orden": 5,
+      "nombre": "Comercio Exterior",
+      "nombre_oficial": "Comercio Exterior",
+      "areas": [
+        "economia"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c4-legislacion-del-sector-publico",
+      "ciclo": 4,
+      "orden": 6,
+      "nombre": "Legislación del Sector Público",
+      "nombre_oficial": "Legislación del Sector Público",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-fundamentos-de-contabilidad-gubernamental",
+      "ciclo": 5,
+      "orden": 1,
+      "nombre": "Fundamentos de Contabilidad Gubernamental",
+      "nombre_oficial": "Fundamentos de Contabilidad Gubernamental",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-finanzas-a-corto-plazo",
+      "ciclo": 5,
+      "orden": 2,
+      "nombre": "Finanzas a Corto Plazo",
+      "nombre_oficial": "Finanzas a Corto Plazo",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-costos-aplicados-1",
+      "ciclo": 5,
+      "orden": 3,
+      "nombre": "Costos Aplicados 1",
+      "nombre_oficial": "Costos Aplicados 1",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-emprendimiento",
+      "ciclo": 5,
+      "orden": 4,
+      "nombre": "Emprendimiento",
+      "nombre_oficial": "Emprendimiento",
+      "areas": [
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-administracion-publica-y-presupuesto",
+      "ciclo": 5,
+      "orden": 5,
+      "nombre": "Administración Pública y Presupuesto",
+      "nombre_oficial": "Administración Pública y Presupuesto",
+      "areas": [
+        "finanzas",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-practicas-de-servicio-comunitario",
+      "ciclo": 5,
+      "orden": 6,
+      "nombre": "Prácticas de Servicio Comunitario",
+      "nombre_oficial": "Prácticas de Servicio Comunitario",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c5-fiscalidad-internacional",
+      "ciclo": 5,
+      "orden": 7,
+      "nombre": "Fiscalidad Internacional",
+      "nombre_oficial": "Fiscalidad Internacional",
+      "areas": [
+        "tributario"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c6-contratacion-publica",
+      "ciclo": 6,
+      "orden": 1,
+      "nombre": "Contratación Pública",
+      "nombre_oficial": "Contratación Pública",
+      "areas": [
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c6-finanzas-a-largo-plazo",
+      "ciclo": 6,
+      "orden": 2,
+      "nombre": "Finanzas a Largo Plazo",
+      "nombre_oficial": "Finanzas a Largo Plazo",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c6-auditoria-de-gestion",
+      "ciclo": 6,
+      "orden": 3,
+      "nombre": "Auditoría de Gestión",
+      "nombre_oficial": "Auditoría de Gestión",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c6-costos-aplicados-2",
+      "ciclo": 6,
+      "orden": 4,
+      "nombre": "Costos Aplicados 2",
+      "nombre_oficial": "Costos Aplicados 2",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c6-marco-legal-de-la-auditoria-financiera",
+      "ciclo": 6,
+      "orden": 5,
+      "nombre": "Marco Legal de la Auditoría Financiera",
+      "nombre_oficial": "Marco Legal de la Auditoría Financiera",
+      "areas": [
+        "contabilidad",
+        "derecho"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c6-legislacion-de-instituciones-financieras-y-eps",
+      "ciclo": 6,
+      "orden": 6,
+      "nombre": "Legislación de Instituciones Financieras y EPS",
+      "nombre_oficial": "Legislación de Instituciones Financieras y EPS",
+      "areas": [
+        "derecho",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-metodologia-de-la-investigacion",
+      "ciclo": 7,
+      "orden": 1,
+      "nombre": "Metodología de la Investigación",
+      "nombre_oficial": "Metodología de la Investigación",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-practica-contabilidad-gubernamental",
+      "ciclo": 7,
+      "orden": 2,
+      "nombre": "Práctica Contabilidad Gubernamental",
+      "nombre_oficial": "Práctica Contabilidad Gubernamental",
+      "areas": [
+        "contabilidad",
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-presupuesto-privado",
+      "ciclo": 7,
+      "orden": 3,
+      "nombre": "Presupuesto Privado",
+      "nombre_oficial": "Presupuesto Privado",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-contabilidad-instituciones-financieras",
+      "ciclo": 7,
+      "orden": 4,
+      "nombre": "Contabilidad Instituciones Financieras",
+      "nombre_oficial": "Contabilidad Instituciones Financieras",
+      "areas": [
+        "contabilidad",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-aplicacion-practica-de-la-auditoria-financiera",
+      "ciclo": 7,
+      "orden": 5,
+      "nombre": "Aplicación Práctica de la Auditoría Financiera",
+      "nombre_oficial": "Aplicación Práctica de la Auditoría Financiera",
+      "areas": [
+        "contabilidad",
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-practicas-laborales",
+      "ciclo": 7,
+      "orden": 6,
+      "nombre": "Prácticas Laborales",
+      "nombre_oficial": "Prácticas Laborales",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c7-trabajo-de-titulacion-i-proyecto-de-titulacion",
+      "ciclo": 7,
+      "orden": 7,
+      "nombre": "Trabajo de Titulación I: Proyecto de Titulación",
+      "nombre_oficial": "Trabajo de Titulación I: Proyecto de Titulación",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-escritura-academica",
+      "ciclo": 8,
+      "orden": 1,
+      "nombre": "Escritura Académica",
+      "nombre_oficial": "Escritura Académica",
+      "areas": [
+        "formacion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-informatica-aplicada",
+      "ciclo": 8,
+      "orden": 2,
+      "nombre": "Informática Aplicada",
+      "nombre_oficial": "Informática Aplicada",
+      "areas": [
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-auditoria-forense",
+      "ciclo": 8,
+      "orden": 3,
+      "nombre": "Auditoría Forense",
+      "nombre_oficial": "Auditoría Forense",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-evaluacion-financiera-de-proyectos",
+      "ciclo": 8,
+      "orden": 4,
+      "nombre": "Evaluación Financiera de Proyectos",
+      "nombre_oficial": "Evaluación Financiera de Proyectos",
+      "areas": [
+        "finanzas"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-auditoria-gubernamental",
+      "ciclo": 8,
+      "orden": 5,
+      "nombre": "Auditoría Gubernamental",
+      "nombre_oficial": "Auditoría Gubernamental",
+      "areas": [
+        "contabilidad"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-auditoria-de-calidad",
+      "ciclo": 8,
+      "orden": 6,
+      "nombre": "Auditoría de Calidad",
+      "nombre_oficial": "Auditoría de Calidad",
+      "areas": [
+        "contabilidad",
+        "gestion"
+      ]
+    },
+    {
+      "id": "ucuenca-contabilidad-auditoria--c8-trabajo-de-titulacion-ii-ejecucion-del-proyecto-de-investiga",
+      "ciclo": 8,
+      "orden": 7,
+      "nombre": "Trabajo de Titulación II: Ejecución del Proyecto de Investigación",
+      "nombre_oficial": "Trabajo de Titulación II: Ejecución del Proyecto de Investigación",
+      "areas": [
+        "formacion"
+      ]
+    }
+  ]
+}
