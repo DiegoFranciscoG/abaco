@@ -1,9 +1,9 @@
 ### Crossref: búsqueda de trabajos (solo los campos que se muestran)
-GET https://api.crossref.org/works?query=contabilidad%20de%20costos&rows=10&select=DOI,title,author,issued,container-title,type,URL,publisher,abstract
+GET https://api.crossref.org/works?query=contabilidad%20de%20costos&rows=10&select=DOI,title,author,issued,container-title,volume,issue,page,type,URL,abstract
 Accept: application/json
 
 ### OpenAlex: búsqueda (consume 10 créditos del cupo diario por IP)
-GET https://api.openalex.org/works?search=contabilidad%20de%20costos&per-page=10&select=id,doi,title,publication_year,authorships,primary_location,open_access,abstract_inverted_index,type,language
+GET https://api.openalex.org/works?search=contabilidad%20de%20costos&per-page=10&select=id,doi,title,publication_year,language,type,authorships,primary_location,open_access,abstract_inverted_index,biblio
 Accept: application/json
 
 ### DOAJ: artículos de acceso abierto
