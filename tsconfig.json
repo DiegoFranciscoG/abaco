@@ -16,7 +16,7 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
-    "allowImportingTsExtensions": false,
+    "allowImportingTsExtensions": true,
     "noEmit": true,
     "types": ["vite/client", "vite-plugin-pwa/client", "vitest/globals", "@testing-library/jest-dom", "node"]
   },

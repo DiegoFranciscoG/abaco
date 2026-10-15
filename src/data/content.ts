@@ -18,9 +18,9 @@ import type {
 import { matchesSubject } from '../domain/text/normalize';
 
 /** Small, always-needed catalogs are bundled; everything else is loaded on demand (one chunk per career/subject). */
-export const universidades = universidadesJson as Universidad[];
-export const carreras = carrerasJson as Carrera[];
-export const fuentes = fuentesJson as Fuente[];
+export const universidades = universidadesJson as unknown as Universidad[];
+export const carreras = carrerasJson as unknown as Carrera[];
+export const fuentes = fuentesJson as unknown as Fuente[];
 
 const mallaLoaders = import.meta.glob<Malla>('../../content/mallas/*.json', { import: 'default' });
 const temarioLoaders = import.meta.glob<Temario>('../../content/temarios/*.json', { import: 'default' });
@@ -74,25 +74,25 @@ export async function findAsignatura(asignaturaId: string): Promise<{ asignatura
 let formulasCache: Promise<Formula[]> | null = null;
 export function loadFormulas(): Promise<Formula[]> {
   formulasCache ??= import('../../content/formulas.json').then(
-    (m) => (m.default as Formula[]).filter((f) => f.estado !== 'pendiente'),
+    (m) => (m.default as unknown as Formula[]).filter((f) => f.estado !== 'pendiente'),
   );
   return formulasCache;
 }
 
 export async function loadEjercicios(): Promise<Ejercicio[]> {
-  return (await import('../../content/ejercicios.json')).default as Ejercicio[];
+  return (await import('../../content/ejercicios.json')).default as unknown as Ejercicio[];
 }
 
 export async function loadApps(): Promise<App[]> {
-  return (await import('../../content/apps.json')).default as App[];
+  return (await import('../../content/apps.json')).default as unknown as App[];
 }
 
 export async function loadGlosario(): Promise<Termino[]> {
-  return (await import('../../content/glosario.json')).default as Termino[];
+  return (await import('../../content/glosario.json')).default as unknown as Termino[];
 }
 
 export async function loadPlantillas(): Promise<Plantilla[]> {
-  return (await import('../../content/plantillas.json')).default as Plantilla[];
+  return (await import('../../content/plantillas.json')).default as unknown as Plantilla[];
 }
 
 /** Items whose `aparece_en` keys match a subject name ("Matemáticas Financieras" ↔ "matematica financiera"). */
