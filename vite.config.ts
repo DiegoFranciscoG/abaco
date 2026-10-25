@@ -1,30 +1,9 @@
 import { defineConfig, loadEnv, type Plugin } from 'vite';
+import type { OutputBundle } from 'rolldown';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
-
-/** Academic APIs the browser may call directly (see docs/apis.md). Nothing else leaves the device. */
-export const ACADEMIC_API_ORIGINS = [
-  'https://api.crossref.org',
-  'https://api.openalex.org',
-  'https://doaj.org',
-  'https://buscador.lareferencia.info',
-];
-
-const CSP = [
-  "default-src 'self'",
-  "script-src 'self'",
-  // KaTeX renders inline style attributes; no inline scripts are allowed.
-  "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
-  "font-src 'self' data:",
-  `connect-src 'self' ${ACADEMIC_API_ORIGINS.join(' ')}`,
-  "worker-src 'self' blob:",
-  "manifest-src 'self'",
-  "object-src 'none'",
-  "base-uri 'self'",
-  "form-action 'none'",
-].join('; ');
+import { ACADEMIC_API_ORIGINS, CSP_META } from './csp.config';
 
 /** Injects the Content-Security-Policy only in production builds (the dev server needs inline HMR scripts). */
 function contentSecurityPolicy(): Plugin {
@@ -34,8 +13,50 @@ function contentSecurityPolicy(): Plugin {
     transformIndexHtml(html) {
       return html.replace(
         '<meta charset="UTF-8" />',
-        `<meta charset="UTF-8" />\n    <meta http-equiv="Content-Security-Policy" content="${CSP}" />`,
+        `<meta charset="UTF-8" />\n    <meta http-equiv="Content-Security-Policy" content="${CSP_META}" />`,
       );
+    },
+  };
+}
+
+/**
+ * The entry only paints the static shell and then imports the app after the first frame. To keep the download
+ * parallel, the app chunks are announced in index.html as modulepreload with low priority: they arrive while the
+ * shell is on screen without competing with the CSS that the first paint needs.
+ */
+function lowPriorityAppPreload(): Plugin {
+  let base = '/';
+  return {
+    name: 'abaco-low-priority-preload',
+    apply: 'build',
+    configResolved(config) {
+      base = config.base;
+    },
+    transformIndexHtml: {
+      order: 'post',
+      handler(html, ctx) {
+        const bundle = ctx.bundle as OutputBundle | undefined;
+        const entry = ctx.chunk;
+        if (!bundle || !entry) return html;
+        const files = new Set<string>();
+        const visit = (fileName: string) => {
+          const chunk = bundle[fileName];
+          if (files.has(fileName) || !chunk || chunk.type !== 'chunk') return;
+          files.add(fileName);
+          chunk.imports.forEach(visit);
+        };
+        entry.dynamicImports.forEach(visit);
+        files.delete(entry.fileName);
+        entry.imports.forEach((file) => files.delete(file));
+        return {
+          html,
+          tags: [...files].map((file) => ({
+            tag: 'link',
+            attrs: { rel: 'modulepreload', href: `${base}${file}`, fetchpriority: 'low', crossorigin: '' },
+            injectTo: 'head' as const,
+          })),
+        };
+      },
     },
   };
 }
@@ -49,6 +70,7 @@ export default defineConfig(({ mode }) => {
       react(),
       tailwindcss(),
       contentSecurityPolicy(),
+      lowPriorityAppPreload(),
       VitePWA({
         registerType: 'prompt',
         injectRegister: false,
