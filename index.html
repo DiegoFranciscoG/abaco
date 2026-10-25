@@ -13,10 +13,25 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
     <title>ÁBACO — estudia con tu malla real</title>
-    <script type="module" src="/src/theme-boot.ts"></script>
+    <script src="/boot.js"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static shell: painted before any JavaScript runs; React replaces it when the app mounts. -->
+      <div class="shell" aria-hidden="true">
+        <div class="shell-bar">
+          <span class="shell-logo"></span><span class="shell-brand">ÁBACO</span>
+        </div>
+        <div class="shell-hero">
+          <p class="shell-eyebrow">Contabilidad · Finanzas · Economía · Administración</p>
+          <h1 class="shell-title">Tu malla real.<br /><span>Tus fórmulas</span> verificadas.<br />Tus apuntes, en tu bolsillo.</h1>
+          <p class="shell-text">
+            Para estudiantes del área económica y administrativa de Cuenca. Sin registrarte, sin servidores y sin costo:
+            lo que escribes se queda en tu teléfono.
+          </p>
+        </div>
+      </div>
+    </div>
     <noscript>ÁBACO necesita JavaScript para funcionar: todo se calcula en tu navegador.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>

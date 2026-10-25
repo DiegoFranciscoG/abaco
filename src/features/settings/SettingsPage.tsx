@@ -5,7 +5,9 @@ import { carreras, universidades } from '../../data/content';
 import { countUserData, getDeviceId, getMeta, updateProfile, wipeAllData } from '../../data/repositories';
 import { checkStorage, formatBytes, requestPersistence, type StorageStatus } from '../../data/storage-health';
 import type { MotionPreference, ThemePreference } from '../../data/types';
-import { useDocumentTitle, useProfile } from '../../ui/hooks';
+import { resetDisplayPrefs } from '../../ui/display-prefs';
+import { useDocumentTitle } from '../../ui/hooks';
+import { useProfile } from '../../ui/use-profile';
 import { Icon } from '../../ui/icons';
 import { Notice, PageHeader } from '../../ui/primitives';
 import { downloadFile, formatDate } from '../../ui/utils';
@@ -199,6 +201,7 @@ export default function SettingsPage() {
             disabled={confirmText.trim().toUpperCase() !== 'BORRAR'}
             onClick={async () => {
               await wipeAllData();
+              resetDisplayPrefs();
               setConfirmText('');
               toast.show('Todo se borró de este dispositivo');
             }}

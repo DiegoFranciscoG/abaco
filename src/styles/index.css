@@ -452,3 +452,91 @@ body::before {
 .area-border {
   border-color: color-mix(in oklab, var(--area) 35%, var(--line));
 }
+
+/* ------------------------------------------------------------------ static shell (index.html, before JS) */
+.shell {
+  min-height: 100dvh;
+}
+.shell-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  height: 4rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.shell-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--red);
+}
+.shell-brand {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.shell-hero {
+  display: none;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0;
+}
+:root[data-route='home'] .shell-hero {
+  display: block;
+}
+.shell-hero > * {
+  max-width: 36rem;
+}
+.shell-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.shell-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 4.4rem);
+  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.shell-title span {
+  color: var(--red);
+}
+.shell-text {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+@media (min-width: 768px) {
+  .shell-hero {
+    padding-top: 2.5rem;
+  }
+}
+
+/* Animated static abacus: beads settle with a spring-like curve (no WebGL needed). */
+@keyframes abaco-bead-in {
+  0% {
+    transform: translateY(var(--from, -40px));
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.bead-in {
+  animation: abaco-bead-in 620ms cubic-bezier(0.22, 1.2, 0.36, 1) both;
+  transform-box: fill-box;
+}

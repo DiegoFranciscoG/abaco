@@ -1,31 +1,28 @@
-import { useEffect, useRef, useState } from 'react';
+import 'katex/dist/katex.min.css';
 
-let katexPromise: Promise<typeof import('katex')> | null = null;
-function loadKatex() {
-  katexPromise ??= Promise.all([import('katex'), import('katex/dist/katex.min.css')]).then(([k]) => k);
-  return katexPromise;
-}
-
-/** Typesets LaTeX with KaTeX (loaded on demand). The raw expression is the accessible fallback. */
-export function MathFormula({ latex, display = true, label }: { latex: string; display?: boolean; label?: string }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const [ready, setReady] = useState(false);
-  useEffect(() => {
-    let alive = true;
-    void loadKatex().then((katex) => {
-      if (!alive || !ref.current) return;
-      katex.default.render(latex, ref.current, { displayMode: display, throwOnError: false, output: 'htmlAndMathml', strict: 'ignore', trust: false });
-      setReady(true);
-    });
-    return () => {
-      alive = false;
-    };
-  }, [latex, display]);
-  return (
-    <span className={display ? 'block text-center text-ink' : 'text-ink'} {...(label ? { role: 'math', 'aria-label': label } : {})}>
-      {/* KaTeX owns this node; React never renders children inside it. */}
-      <span ref={ref} />
-      {ready ? null : <code className="font-mono text-sm text-muted">{latex}</code>}
-    </span>
-  );
+/**
+ * Shows a formula already typeset with KaTeX. Before the HTML arrives, the raw LaTeX keeps the space
+ * reserved (no layout shift). The main formula carries an accessible name.
+ */
+export function MathFormula({
+  latex,
+  html,
+  display = true,
+  label,
+}: {
+  latex: string;
+  html?: string;
+  display?: boolean;
+  label?: string;
+}) {
+  const a11y = label ? { role: 'math' as const, 'aria-label': label } : {};
+  const className = display ? 'block min-h-[3.25rem] text-center text-ink' : 'text-ink';
+  if (!html) {
+    return (
+      <span className={className} {...a11y}>
+        <code className="font-mono text-sm text-muted">{latex}</code>
+      </span>
+    );
+  }
+  return <span className={className} {...a11y} dangerouslySetInnerHTML={{ __html: html }} />;
 }

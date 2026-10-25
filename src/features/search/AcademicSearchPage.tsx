@@ -8,7 +8,8 @@ import { deepLinks } from '../../domain/academic/deep-links';
 import { DIRECT_SOURCES, SOURCE_LABELS, type AcademicResult, type SourceId } from '../../domain/academic/types';
 import { useDocumentTitle, useOnline } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
-import { CopyButton, EmptyState, Notice, PageHeader, StarButton } from '../../ui/primitives';
+import { CopyButton, EmptyState, Notice, PageHeader } from '../../ui/primitives';
+import { StarButton } from '../../ui/StarButton';
 import { AddToCollectionButton } from '../me/AddToCollection';
 
 const cache = {

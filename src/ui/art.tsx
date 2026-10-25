@@ -8,12 +8,17 @@ export function AbacusArt({ value = 2026, className = '' }: { value?: number; cl
   const left = 70;
   const spacing = 95;
   const beamY = 128;
-  const bead = (cx: number, cy: number, heaven: boolean, key: string) => (
-    <g key={key} transform={`translate(${cx} ${cy})`}>
-      <ellipse rx="40" ry="17" fill={heaven ? 'url(#beadRed)' : 'url(#beadCream)'} />
-      <ellipse rx="28" ry="5" cy="-6" fill="#fff" opacity={heaven ? 0.18 : 0.45} />
-    </g>
-  );
+  const bead = (cx: number, cy: number, heaven: boolean, key: string, order: number) => {
+    const style = { animationDelay: `${120 + order * 28}ms`, '--from': heaven ? '-34px' : '34px' } as React.CSSProperties;
+    return (
+      <g key={key} transform={`translate(${cx} ${cy})`}>
+        <g className="bead-in" style={style}>
+          <ellipse rx="40" ry="17" fill={heaven ? 'url(#beadRed)' : 'url(#beadCream)'} />
+          <ellipse rx="28" ry="5" cy="-6" fill="#fff" opacity={heaven ? 0.18 : 0.45} />
+        </g>
+      </g>
+    );
+  };
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className={className} role="img" aria-label={`Ábaco que marca ${value}`}>
       <defs>
@@ -48,11 +53,11 @@ export function AbacusArt({ value = 2026, className = '' }: { value?: number; cl
       {digits.map((digit, r) => {
         const state = rodFromDigit(digit);
         const cx = left + 20 + r * spacing;
-        const items = [bead(cx, state.heaven ? beamY - 26 : 66, true, `h-${r}`)];
+        const items = [bead(cx, state.heaven ? beamY - 26 : 66, true, `h-${r}`, r * 5)];
         for (let j = 0; j < 4; j += 1) {
           const active = j < state.earth;
           const y = active ? beamY + 26 + j * 34 : H - 90 - (3 - j) * 34;
-          items.push(bead(cx, y, false, `e-${r}-${j}`));
+          items.push(bead(cx, y, false, `e-${r}-${j}`, r * 5 + j + 1));
         }
         return <g key={`r-${r}`}>{items}</g>;
       })}

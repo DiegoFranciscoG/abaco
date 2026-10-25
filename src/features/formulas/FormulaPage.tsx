@@ -1,98 +1,33 @@
-import { m } from 'motion/react';
-import { useMemo, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import { useParams } from 'react-router';
 import { loadFormulas } from '../../data/content';
-import type { Formula } from '../../domain/content/schemas';
-import { calculate, parseNumberInput, parseNumberList } from '../../domain/formula/calculator';
 import { NotFoundPage } from '../../app/Fallbacks';
-import { useAsync, useDocumentTitle, useProfile } from '../../ui/hooks';
+import { useAsync, useDocumentTitle } from '../../ui/hooks';
+import { useProfile } from '../../ui/use-profile';
 import { Icon } from '../../ui/icons';
-import { AppLink, AreaBadge, AreaTile, CopyButton, Notice, PageHeader, Skeleton, SourceNote, StarButton } from '../../ui/primitives';
+import { AppLink, AreaBadge, AreaTile, CopyButton, Notice, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import { StarButton } from '../../ui/StarButton';
 import { AddToCollectionButton } from '../me/AddToCollection';
 import { NotesPanel } from '../me/NotesPanel';
 import { CATEGORY_LABELS } from './categories';
+import { formatNumber as fmt } from './format';
+import { loadMath } from './math';
 import { MathFormula } from './MathFormula';
 
-const fmt = (value: number) =>
-  Math.abs(value) >= 1000 || Number.isInteger(value)
-    ? value.toLocaleString('es-EC', { maximumFractionDigits: 2 })
-    : value.toLocaleString('es-EC', { maximumSignificantDigits: 8 });
+// The calculator brings the formula engine (about 50 KB): it loads after the formula itself is on screen.
+const Calculator = lazy(() => import('./Calculator'));
 
-function Calculator({ formula }: { formula: Formula }) {
-  const initial = useMemo(
-    () =>
-      Object.fromEntries(
-        Object.entries(formula.ejemplo.entradas).map(([k, v]) => [k, Array.isArray(v) ? v.map((n) => fmt(n)).join('; ') : fmt(v)]),
-      ),
-    [formula],
-  );
-  const [inputs, setInputs] = useState<Record<string, string>>(initial);
-  const variables = formula.variables.filter((v) => v.nombre in formula.ejemplo.entradas);
 
-  const parsed: Record<string, number | number[]> | null = useMemo(() => {
-    const out: Record<string, number | number[]> = {};
-    for (const [key, raw] of Object.entries(inputs)) {
-      const isList = Array.isArray(formula.ejemplo.entradas[key]);
-      const value = isList ? parseNumberList(raw) : parseNumberInput(raw);
-      if (value === null) return null;
-      out[key] = value;
-    }
-    return out;
-  }, [inputs, formula]);
-
-  const result = parsed ? calculate(formula.calculo, parsed) : { ok: false as const, message: 'Revisa que todos los datos sean números.' };
-  const unknownVar = formula.calculo.incognita ? formula.variables.find((v) => v.nombre === formula.calculo.incognita) : undefined;
-
-  return (
-    <section aria-labelledby="calc" className="card overflow-hidden">
-      <div className="border-b border-line bg-surface-2 px-5 py-4">
-        <h2 id="calc" className="flex items-center gap-2 font-display text-xl font-semibold">
-          <Icon name="sparkle" className="text-red" /> Calcula con tus datos
-        </h2>
-        <p className="text-sm text-muted">Empieza con los datos del ejemplo y cámbialos. Las listas se separan con punto y coma.</p>
-      </div>
-      <div className="grid gap-4 p-5 sm:grid-cols-2">
-        {variables.map((v) => (
-          <label key={v.nombre} className="block">
-            <span className="mb-1 flex items-baseline justify-between gap-2 text-sm">
-              <span className="font-semibold text-ink">
-                <MathFormula latex={v.simbolo} display={false} /> <span className="font-normal text-muted">{v.significado}</span>
-              </span>
-              <span className="shrink-0 text-xs text-muted">{v.unidad}</span>
-            </span>
-            <input
-              className="field tnum"
-              inputMode="decimal"
-              value={inputs[v.nombre] ?? ''}
-              onChange={(e) => setInputs((prev) => ({ ...prev, [v.nombre]: e.target.value }))}
-              aria-label={`${v.significado} (${v.unidad})`}
-            />
-          </label>
-        ))}
-      </div>
-      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-4" aria-live="polite">
-        {result.ok ? (
-          <m.p key={result.value} initial={{ opacity: 0.4, y: 4 }} animate={{ opacity: 1, y: 0 }} className="flex items-baseline gap-3">
-            <span className="text-sm text-muted">{unknownVar ? `${unknownVar.significado} =` : 'Resultado ='}</span>
-            <span className="tnum font-display text-3xl font-semibold text-red">{fmt(result.value)}</span>
-            <span className="text-sm text-muted">{formula.ejemplo.unidad}</span>
-          </m.p>
-        ) : (
-          <p className="text-sm font-semibold text-warn">{result.message}</p>
-        )}
-        <button type="button" className="btn btn-ghost min-h-10 text-sm" onClick={() => setInputs(initial)}>
-          Volver al ejemplo
-        </button>
-      </div>
-    </section>
-  );
-}
 
 export default function FormulaPage() {
   const { formulaId = '' } = useParams();
   const profile = useProfile();
-  const state = useAsync(loadFormulas, []);
-  const formula = state.status === 'ready' ? state.data.find((f) => f.id === formulaId) : undefined;
+  const state = useAsync(async () => {
+    const [formulas, math] = await Promise.all([loadFormulas(), loadMath(formulaId)]);
+    return { formula: formulas.find((f) => f.id === formulaId), math };
+  }, [formulaId]);
+  const formula = state.status === 'ready' ? state.data.formula : undefined;
+  const math = state.status === 'ready' ? state.data.math : {};
   useDocumentTitle(formula?.nombre ?? 'Fórmula');
 
   if (state.status === 'loading') return <Skeleton lines={5} />;
@@ -124,7 +59,7 @@ export default function FormulaPage() {
       <div className="grid gap-6 lg:grid-cols-[1.15fr_1fr]">
         <div className="space-y-6">
           <section className="card px-5 py-8" aria-label="Fórmula">
-            <MathFormula latex={formula.latex} label={formula.nombre} />
+            <MathFormula latex={formula.latex} html={math[`D:${formula.latex}`]} label={formula.nombre} />
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               {formula.areas.map((a) => (
                 <AreaBadge key={a} area={a} />
@@ -140,7 +75,7 @@ export default function FormulaPage() {
               {formula.variables.map((v) => (
                 <div key={v.nombre} className="grid grid-cols-[4.5rem_1fr_auto] items-baseline gap-3 py-2.5">
                   <dt className="text-center">
-                    <MathFormula latex={v.simbolo} display={false} />
+                    <MathFormula latex={v.simbolo} html={math[`I:${v.simbolo}`]} display={false} />
                   </dt>
                   <dd className="text-ink-2">{v.significado}</dd>
                   <dd className="text-xs text-muted">{v.unidad}</dd>
@@ -161,7 +96,9 @@ export default function FormulaPage() {
         </div>
 
         <div className="space-y-6">
-          <Calculator formula={formula} />
+          <Suspense fallback={<Skeleton lines={8} />}>
+            <Calculator formula={formula} math={math} />
+          </Suspense>
           <section aria-labelledby="excel" className="card p-5">
             <h2 id="excel" className="mb-3 flex items-center gap-2 font-display text-xl font-semibold">
               <Icon name="lab" className="text-red" /> En Excel

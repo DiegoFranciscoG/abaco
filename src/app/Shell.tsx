@@ -1,17 +1,18 @@
 import { LazyMotion, MotionConfig } from 'motion/react';
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { NavLink, Outlet, ScrollRestoration } from 'react-router';
-import { updateProfile } from '../data/repositories';
 import { LogoMark } from '../ui/art';
+import { setDisplayPrefs } from '../ui/display-prefs';
 import { useApplyPreferences, useEffectiveTheme, useOnline, useReducedMotion } from '../ui/hooks';
 import { Icon, type IconName } from '../ui/icons';
 import { AppLink } from '../ui/primitives';
 import { ToastProvider } from '../ui/toast';
 import { CommandPalette } from './CommandPalette';
-import { Onboarding } from './Onboarding';
 import { UpdatePrompt } from './UpdatePrompt';
 
 const loadMotionFeatures = () => import('./motion-features').then((module) => module.default);
+// IndexedDB (Dexie) stays out of the first download: onboarding and profile sync arrive right after.
+const DeviceLayer = lazy(() => import('./DeviceLayer'));
 
 const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
@@ -23,12 +24,17 @@ const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
 
 function ThemeToggle() {
   const theme = useEffectiveTheme();
+  const toggle = () => {
+    const tema = theme === 'dark' ? 'light' : 'dark';
+    setDisplayPrefs({ tema });
+    void import('../data/repositories').then((data) => data.updateProfile({ tema })).catch(() => undefined);
+  };
   return (
     <button
       type="button"
       className="btn btn-icon btn-ghost border-0"
       aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-      onClick={() => void updateProfile({ tema: theme === 'dark' ? 'light' : 'dark' })}
+      onClick={toggle}
     >
       <Icon name={theme === 'dark' ? 'sun' : 'moon'} />
     </button>
@@ -114,7 +120,7 @@ export function Shell() {
             ) : null}
           </header>
 
-          <main id="contenido" className="mx-auto min-h-[70dvh] max-w-6xl px-4 pt-6 pb-28 md:pt-10 md:pb-16">
+          <main id="contenido" className="mx-auto min-h-[100dvh] max-w-6xl px-4 pt-6 pb-28 md:pt-10 md:pb-16">
             <Outlet />
           </main>
 
@@ -154,7 +160,9 @@ export function Shell() {
           </nav>
 
           <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
-          <Onboarding />
+          <Suspense fallback={null}>
+            <DeviceLayer />
+          </Suspense>
           <UpdatePrompt />
           <ScrollRestoration />
         </ToastProvider>

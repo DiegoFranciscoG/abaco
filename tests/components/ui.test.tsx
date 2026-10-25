@@ -11,7 +11,8 @@ import FormulaPage from '../../src/features/formulas/FormulaPage';
 import { Grid } from '../../src/features/lab/Grid';
 import { NotesPanel } from '../../src/features/me/NotesPanel';
 import SettingsPage from '../../src/features/settings/SettingsPage';
-import { Accordion, CopyButton, StarButton, Tabs } from '../../src/ui/primitives';
+import { Accordion, CopyButton, Tabs } from '../../src/ui/primitives';
+import { StarButton } from '../../src/ui/StarButton';
 import { freshDb, renderRoute, renderWithProviders } from './render';
 
 let db: AbacoDB;
@@ -164,7 +165,7 @@ describe('pages', () => {
     const user = userEvent.setup();
     renderRoute('/formulas/punto-equilibrio-unidades', [{ path: '/formulas/:formulaId', element: <FormulaPage /> }]);
     expect(await screen.findByRole('heading', { name: /Punto de equilibrio en unidades/ })).toBeInTheDocument();
-    const fixed = screen.getByLabelText(/Costos fijos del período/);
+    const fixed = await screen.findByLabelText(/Costos fijos del período/);
     await user.clear(fixed);
     await user.type(fixed, '20000');
     expect(await screen.findByText('2.000')).toBeInTheDocument();

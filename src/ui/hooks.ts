@@ -1,10 +1,8 @@
-import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { getProfile } from '../data/repositories';
-import { DEFAULT_PROFILE, type Perfil } from '../data/types';
+import { getDisplayPrefs, subscribeDisplayPrefs, type DisplayPrefs } from './display-prefs';
 
-export function useProfile(): Perfil {
-  return useLiveQuery(() => getProfile(), [], DEFAULT_PROFILE) ?? DEFAULT_PROFILE;
+export function useDisplayPrefs(): DisplayPrefs {
+  return useSyncExternalStore(subscribeDisplayPrefs, getDisplayPrefs, getDisplayPrefs);
 }
 
 function subscribeMedia(query: string) {
@@ -25,7 +23,7 @@ export function useMediaQuery(query: string): boolean {
 
 /** Effective reduced-motion preference: the student's choice wins over the system setting. */
 export function useReducedMotion(): boolean {
-  const profile = useProfile();
+  const profile = useDisplayPrefs();
   const system = useMediaQuery('(prefers-reduced-motion: reduce)');
   if (profile.movimiento === 'reduce') return true;
   if (profile.movimiento === 'full') return false;
@@ -33,13 +31,13 @@ export function useReducedMotion(): boolean {
 }
 
 export function useEffectiveTheme(): 'light' | 'dark' {
-  const profile = useProfile();
+  const profile = useDisplayPrefs();
   const systemDark = useMediaQuery('(prefers-color-scheme: dark)');
   if (profile.tema === 'system') return systemDark ? 'dark' : 'light';
   return profile.tema;
 }
 
-/** Keeps <html data-theme> and <html data-motion> in sync with the profile. */
+/** Keeps <html data-theme> and <html data-motion> in sync with the display preferences. */
 export function useApplyPreferences(): void {
   const theme = useEffectiveTheme();
   const reduce = useReducedMotion();

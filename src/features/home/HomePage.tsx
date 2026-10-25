@@ -1,9 +1,10 @@
 import { m } from 'motion/react';
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { carreras, getCarrera, universidades } from '../../data/content';
 import { updateProfile } from '../../data/repositories';
 import { AbacusArt, QuestionArt } from '../../ui/art';
-import { useDocumentTitle, useProfile, useReducedMotion } from '../../ui/hooks';
+import { useDocumentTitle, useReducedMotion } from '../../ui/hooks';
+import { useProfile } from '../../ui/use-profile';
 import { Icon, type IconName } from '../../ui/icons';
 import { Accordion, AppLink, TiltCard } from '../../ui/primitives';
 
@@ -21,25 +22,18 @@ function webglAvailable(): boolean {
 function HeroAbacus() {
   const reduce = useReducedMotion();
   const [show3D, setShow3D] = useState(false);
+  const [webgl] = useState(webglAvailable);
+  const can3D = webgl && !reduce;
   const [value, setValue] = useState(2026);
 
-  useEffect(() => {
-    if (reduce || !webglAvailable()) return;
-    // The 3D scene is downloaded only after the page is usable.
-    const w = window as Window & { requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number; cancelIdleCallback?: (id: number) => void };
-    let idle: number | undefined;
-    const timer = window.setTimeout(() => {
-      idle = w.requestIdleCallback ? w.requestIdleCallback(() => setShow3D(true), { timeout: 2500 }) : undefined;
-      if (idle === undefined) setShow3D(true);
-    }, 1200);
-    return () => {
-      window.clearTimeout(timer);
-      if (idle !== undefined) w.cancelIdleCallback?.(idle);
-    };
-  }, [reduce]);
+  // WebGL is loaded only when the student reaches for the abacus (hover, tap or keyboard focus):
+  // the first view stays light on modest phones and the animated SVG is shown meanwhile.
+  const activate = () => {
+    if (can3D) setShow3D(true);
+  };
 
   return (
-    <div className="relative">
+    <div className="relative" onPointerEnter={activate} onPointerDown={activate} onFocus={activate}>
       <div className="relative aspect-[4/3] w-full">
         <AbacusArt value={value} className={`absolute inset-0 h-full w-full transition-opacity duration-500 ${show3D ? 'opacity-0' : 'opacity-100'}`} />
         {show3D ? (
@@ -62,7 +56,13 @@ function HeroAbacus() {
         >
           {value}
         </m.output>
-        <span className="hidden sm:inline">{show3D ? '· toca una cuenta' : ''}</span>
+        {show3D ? (
+          <span className="hidden sm:inline">· toca una cuenta</span>
+        ) : can3D ? (
+          <button type="button" className="link-red min-h-11 px-1 text-sm" onClick={activate}>
+            Ver en 3D
+          </button>
+        ) : null}
       </div>
     </div>
   );
@@ -158,7 +158,7 @@ export default function HomePage() {
   return (
     <div className="space-y-16 md:space-y-24">
       <section className="grid items-center gap-8 md:grid-cols-[1.05fr_1fr] md:gap-12">
-        <div className="rise">
+        <div>
           <p className="eyebrow mb-4">Contabilidad · Finanzas · Economía · Administración</p>
           <h1 className="font-display text-[clamp(2.4rem,7vw,4.4rem)] leading-[0.98] font-semibold tracking-tight">
             Tu malla real.

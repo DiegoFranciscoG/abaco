@@ -10,7 +10,8 @@ import { isClose } from '../../domain/formula';
 import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
-import { AppLink, Notice, PageHeader, Skeleton, SourceNote, StarButton } from '../../ui/primitives';
+import { AppLink, Notice, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import { StarButton } from '../../ui/StarButton';
 import { formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
 

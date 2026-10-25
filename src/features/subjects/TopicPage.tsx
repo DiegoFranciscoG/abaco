@@ -3,7 +3,8 @@ import { findAsignatura, loadFormulas, loadTemario } from '../../data/content';
 import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
-import { Accordion, AppLink, PageHeader, Skeleton, SourceNote, StarButton } from '../../ui/primitives';
+import { Accordion, AppLink, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import { StarButton } from '../../ui/StarButton';
 import { AddToCollectionButton } from '../me/AddToCollection';
 import { NotesPanel } from '../me/NotesPanel';
 

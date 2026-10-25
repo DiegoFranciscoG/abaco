@@ -1,5 +1,6 @@
 import { carreras, universidades } from '../../data/content';
-import { useDocumentTitle, useProfile } from '../../ui/hooks';
+import { useDocumentTitle } from '../../ui/hooks';
+import { useProfile } from '../../ui/use-profile';
 import { Icon } from '../../ui/icons';
 import { AppLink, PageHeader, SourceNote, TiltCard } from '../../ui/primitives';
 

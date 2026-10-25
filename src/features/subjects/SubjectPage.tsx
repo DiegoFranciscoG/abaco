@@ -12,7 +12,8 @@ import {
 import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
-import { AppLink, AreaBadge, AreaTile, Notice, PageHeader, Skeleton, SourceNote, StarButton, TiltCard } from '../../ui/primitives';
+import { AppLink, AreaBadge, AreaTile, Notice, PageHeader, Skeleton, SourceNote, TiltCard } from '../../ui/primitives';
+import { StarButton } from '../../ui/StarButton';
 import { NotesPanel } from '../me/NotesPanel';
 import { AppCard } from '../apps/AppsPage';
 

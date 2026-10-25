@@ -1,68 +1,82 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { m } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { shouldRemindBackup } from '../data/backup-reminder';
 import { getMeta, setMeta } from '../data/repositories';
 import { checkStorage, requestPersistence, type StorageStatus } from '../data/storage-health';
 import { Icon } from '../ui/icons';
-import { AppLink, Dialog, Notice } from '../ui/primitives';
+import { AppLink, Notice } from '../ui/primitives';
 
 /**
- * First visit: explains, honestly, that data lives on this phone. Detects a likely private window or a
- * blocked storage BEFORE the student writes notes they would lose. Every 15 days, reminds to back up.
+ * First visit: explains, honestly, that data lives on this phone. It is a card anchored to the bottom (not a
+ * modal) so the student can keep reading. A likely private window or a blocked storage is announced BEFORE
+ * any note is written. Every 15 days it reminds to back up.
  */
 export function Onboarding() {
   const seen = useLiveQuery(() => getMeta<string>('onboardingAt'), [], 'cargando');
   const remind = useLiveQuery(() => shouldRemindBackup(), [], false);
   const [status, setStatus] = useState<StorageStatus | null>(null);
   const [dismissedReminder, setDismissedReminder] = useState(false);
+  const [closed, setClosed] = useState(false);
 
   useEffect(() => {
     void checkStorage().then(setStatus);
   }, []);
 
-  const open = seen === undefined;
+  const open = seen === undefined && !closed;
   const accept = async () => {
+    setClosed(true);
     try {
       await setMeta('onboardingAt', new Date().toISOString());
     } catch {
-      // Storage blocked: the dialog explains it; nothing else to do.
+      // Storage blocked: the card already explained it.
     }
     void requestPersistence();
   };
 
   return (
     <>
-      <Dialog open={open} onClose={() => void accept()} title="Tus datos viven en este teléfono">
-        <div className="space-y-4 text-[0.98rem] leading-relaxed text-ink-2">
-          <p>
-            ÁBACO no tiene cuentas ni servidores. Tus apuntes, estrellas, colecciones y hojas de cálculo se guardan
-            <strong> solo en este navegador</strong>. Nadie más puede verlos, ni siquiera quien usa el mismo enlace.
-          </p>
-          <ul className="space-y-2">
-            <li className="flex gap-2">
-              <Icon name="download" size={18} className="mt-0.5 text-red" /> Si cambias de teléfono o borras los datos del navegador, se pierden: descarga un
-              respaldo de vez en cuando (Ajustes → Respaldo).
-            </li>
-            <li className="flex gap-2">
-              <Icon name="shield" size={18} className="mt-0.5 text-red" /> Lo único que sale a internet son las búsquedas del buscador académico.
-            </li>
-          </ul>
-          {status?.indexedDb === 'bloqueado' ? (
-            <Notice tone="warn" icon="info">
-              Tu navegador está bloqueando el almacenamiento. Puedes leer todo el contenido, pero lo que escribas no se
-              guardará.
-            </Notice>
-          ) : status?.posibleIncognito ? (
-            <Notice tone="warn" icon="info">
-              Parece que estás en una ventana privada o de incógnito: todo lo que guardes se borrará al cerrarla. Abre
-              ÁBACO en una ventana normal si quieres conservar tus apuntes.
-            </Notice>
-          ) : null}
-          <button type="button" className="btn btn-primary w-full" onClick={() => void accept()}>
-            Entendido, empezar
-          </button>
-        </div>
-      </Dialog>
+      {open ? (
+        <m.section
+          role="dialog"
+          aria-modal="false"
+          aria-labelledby="bienvenida-titulo"
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+          className="fixed inset-x-3 bottom-24 z-50 mx-auto max-w-xl md:bottom-6"
+        >
+          <div className="card space-y-3 p-4">
+            <div className="flex items-start gap-3">
+              <span className="tile shrink-0">
+                <Icon name="shield" />
+              </span>
+              <div className="min-w-0">
+                <h2 id="bienvenida-titulo" className="font-display text-base font-semibold">
+                  Tus datos viven en este teléfono
+                </h2>
+                <p className="mt-0.5 text-xs leading-relaxed text-ink-2">
+                  Sin cuentas ni servidores: si borras el navegador o cambias de teléfono se pierden. Descarga un respaldo de
+                  vez en cuando.
+                </p>
+              </div>
+            </div>
+            {status?.indexedDb === 'bloqueado' ? (
+              <Notice tone="warn">Tu navegador está bloqueando el almacenamiento: puedes leer todo, pero lo que escribas no se guardará.</Notice>
+            ) : status?.posibleIncognito ? (
+              <Notice tone="warn">Parece una ventana privada o de incógnito: lo que guardes se borrará al cerrarla.</Notice>
+            ) : null}
+            <div className="flex flex-wrap justify-end gap-2">
+              <AppLink to="/acerca" className="btn btn-ghost min-h-11 text-sm">
+                Privacidad
+              </AppLink>
+              <button type="button" className="btn btn-primary min-h-11 text-sm" onClick={() => void accept()}>
+                Entendido, empezar
+              </button>
+            </div>
+          </div>
+        </m.section>
+      ) : null}
 
       {remind && !dismissedReminder && !open ? (
         <div className="fixed inset-x-3 top-20 z-30 mx-auto max-w-xl">
