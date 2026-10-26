@@ -412,6 +412,22 @@ function resolveImplementation(name: string): Implementation | null {
   return typeof target === 'function' ? (target as Implementation) : null;
 }
 
+/** Excel compares text criteria without caring about capitals: =SUMIF(A:A,"caja",B:B) also adds "Caja". */
+const CASE_INSENSITIVE_CRITERIA = new Set(['SUMIF', 'COUNTIF', 'AVERAGEIF']);
+
+function lowerText(value: Value | undefined): Value | undefined {
+  if (typeof value === 'string') return value.toLocaleLowerCase('es');
+  if (Array.isArray(value)) {
+    return value.map((row) => row.map((cell) => (typeof cell === 'string' ? cell.toLocaleLowerCase('es') : cell)));
+  }
+  return value;
+}
+
+/** Lowercases the range and the criterion (the first two arguments); the values to add stay as they are. */
+function lowerCriteriaArgs(args: (Value | undefined)[]): (Value | undefined)[] {
+  return args.map((arg, i) => (i < 2 ? lowerText(arg) : arg));
+}
+
 /**
  * Calls a whitelisted function with already-evaluated arguments. Missing arguments arrive as `undefined`:
  * trailing ones are dropped so formulajs applies its defaults, and omitted ones in the middle count as 0,
@@ -429,7 +445,7 @@ export function callFunction(canonicalName: string, args: (Value | undefined)[])
   }
   const impl = resolveImplementation(canonicalName);
   if (!impl) return new FormulaError('#NAME?', canonicalName);
-  const trimmed = [...args];
+  const trimmed = CASE_INSENSITIVE_CRITERIA.has(canonicalName) ? lowerCriteriaArgs(args) : [...args];
   while (trimmed.length > 0 && trimmed[trimmed.length - 1] === undefined) trimmed.pop();
   try {
     return fromNative(impl(...trimmed.map((arg) => (arg === undefined ? 0 : arg))));

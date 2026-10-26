@@ -281,3 +281,13 @@ describe('algebra mode (content expressions)', () => {
     expect(isClose(100.006, 100, 0.005)).toBe(false);
   });
 });
+
+describe('criterios sin distinguir mayúsculas, como Excel', () => {
+  it('SUMIF, COUNTIF and AVERAGEIF match text regardless of capitals', () => {
+    const cells = { A1: 'Caja', A2: 'caja', A3: 'Bancos', B1: 100, B2: 50, B3: 7 };
+    expect(num(evaluateExcel('=SUMIF(A1:A3,"CAJA",B1:B3)', cells))).toBe(150);
+    expect(num(evaluateExcel('=COUNTIF(A1:A3,"caja")', cells))).toBe(2);
+    expect(num(evaluateExcel('=AVERAGEIF(A1:A3,"Caja",B1:B3)', cells))).toBe(75);
+    expect(num(evaluateExcel('=SUMIF(B1:B3,">60")', cells))).toBe(100);
+  });
+});
