@@ -85,6 +85,13 @@ const FEATURES: { to: string; icon: IconName; title: string; text: string; cta: 
     cta: 'Ver materias',
   },
   {
+    to: '/estudiar',
+    icon: 'cards',
+    title: 'Área de estudio',
+    text: 'Estudia una materia con su teoría y ejemplos, con tus propios PDF o con ambos: tarjetas para memorizar y exámenes de práctica.',
+    cta: 'Empezar a estudiar',
+  },
+  {
     to: '/herramientas',
     icon: 'tools',
     title: 'Herramientas',
