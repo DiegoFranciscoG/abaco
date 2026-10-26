@@ -132,6 +132,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Anti-clickjacking: public/boot.js marks the page when another site frames it. */
+html[data-framed] body {
+  display: none !important;
+}
+
+.framed-notice {
+  display: block;
+  margin: 2rem;
+  font: 600 1rem/1.5 var(--font-sans);
+  color: var(--red);
+}
+
 /* Ledger rule lines behind the page: a quiet nod to accounting paper. */
 body::before {
   content: '';
