@@ -1100,7 +1100,7 @@
     "calculo": "UN / Pt",
     "respuesta": 0.15,
     "unidad": "proporción",
-    "tolerancia": 0.00005,
+    "tolerancia": 5e-05,
     "procedimiento": [
       "ROE = UN ÷ Pt",
       "ROE = 54.000 ÷ 360.000 = 0,15 (15 %)"
@@ -1133,8 +1133,8 @@
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
-      "VA de los flujos = 20.000 ÷ 1,12 + 22.000 ÷ 1,12² + 25.000 ÷ 1,12³",
-      "VAN = 17.857,14 + 17.538,27 + 17.794,51 − 50.000 = 3.189,91"
+      "VA de los flujos = 20.000 ÷ 1,12 + 22.000 ÷ 1,12² + 25.000 ÷ 1,12³ = 53.189,91 (17.857,14, 17.538,27 y 17.794,51 sin redondear cada uno)",
+      "VAN = 53.189,91 − 50.000 = 3.189,91"
     ],
     "pistas": [
       "Descuenta cada flujo según el año en que llega.",
@@ -1163,7 +1163,7 @@
     "calculo": "(FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3) / I0",
     "respuesta": 1.0638,
     "unidad": "veces",
-    "tolerancia": 0.00005,
+    "tolerancia": 5e-05,
     "procedimiento": [
       "VA de los flujos = 53.189,91",
       "IR = 53.189,91 ÷ 50.000 = 1,0638"
@@ -1280,7 +1280,7 @@
     "calculo": "s / media",
     "respuesta": 0.15,
     "unidad": "proporción",
-    "tolerancia": 0.00005,
+    "tolerancia": 5e-05,
     "procedimiento": [
       "CV = s ÷ media",
       "CV = 126 ÷ 840 = 0,15 (15 %)"
@@ -1310,7 +1310,7 @@
     "calculo": "((Q2 - Q1) / ((Q2 + Q1) / 2)) / ((P2 - P1) / ((P2 + P1) / 2))",
     "respuesta": -0.8919,
     "unidad": "sin unidad",
-    "tolerancia": 0.00005,
+    "tolerancia": 5e-05,
     "procedimiento": [
       "%ΔQ = (340 − 400) ÷ 370 = −0,1622",
       "%ΔP = (36 − 30) ÷ 33 = 0,1818",
@@ -1403,7 +1403,7 @@
     "calculo": "(IP1 - IP0) / IP0 * 100",
     "respuesta": 3.75,
     "unidad": "%",
-    "tolerancia": 0.00005,
+    "tolerancia": 5e-05,
     "procedimiento": [
       "Cambio = 107,9 − 104,0 = 3,9",
       "π = 3,9 ÷ 104 × 100 = 3,75 %"

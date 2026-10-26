@@ -1,6 +1,7 @@
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { checkArithmetic } from '../../src/domain/content/arithmetic';
 import { TOOLS } from '../../src/domain/tools/catalog';
 import { allContentText, CONTENT_ROOT, loadAllContent } from './load-content';
 
@@ -140,5 +141,24 @@ describe('integridad del contenido', () => {
       .map(({ file, text }) => ({ file, match: forbidden.exec(text)?.[0] }))
       .filter((h) => h.match);
     expect(hits).toEqual([]);
+  });
+
+  it('the arithmetic written in examples, formula steps and exercise procedures adds up', () => {
+    const texts: [string, string][] = [
+      ...content.temarios.flatMap(({ data }) =>
+        data.temas.flatMap((tema) =>
+          tema.subtemas.flatMap((s) => [
+            [`subtema ${s.id} (ejemplo)`, s.ejemplo] as [string, string],
+            [`subtema ${s.id} (teoría)`, s.explicacion] as [string, string],
+          ]),
+        ),
+      ),
+      ...content.formulas.flatMap((f) => f.ejemplo.pasos.map((p) => [`fórmula ${f.id}`, p] as [string, string])),
+      ...content.ejercicios.flatMap((e) => e.procedimiento.map((p) => [`ejercicio ${e.id}`, p] as [string, string])),
+    ];
+    const problems = texts.flatMap(([where, text]) =>
+      checkArithmetic(text).map((i) => `${where}: ${i.expresion} (da ${i.calculado})`),
+    );
+    expect(problems).toEqual([]);
   });
 });

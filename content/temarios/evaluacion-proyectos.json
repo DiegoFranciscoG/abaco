@@ -51,7 +51,7 @@
           "id": "ep-valor-dinero",
           "nombre": "El valor del dinero en el tiempo en los proyectos",
           "explicacion": "Como los flujos de un proyecto ocurren en distintos años, se llevan a una misma fecha descontándolos a la tasa mínima de rendimiento exigida. Sin este paso, un dólar del año 5 valdría lo mismo que uno de hoy.",
-          "ejemplo": "El horno genera USD 20.000 en el año 1, 22.000 en el 2 y 25.000 en el 3. Sumados dan 67.000, pero con una tasa exigida de 12 % valen hoy 17.857,14 + 17.538,27 + 17.794,51 = USD 53.189,91: los flujos lejanos pesan menos.",
+          "ejemplo": "El horno genera USD 20.000 en el año 1, 22.000 en el 2 y 25.000 en el 3. Sumados dan 67.000, pero con una tasa exigida de 12 % valen hoy 17.857,14, 17.538,27 y 17.794,51 (cada uno redondeado); sumados sin redondear dan USD 53.189,91: los flujos lejanos pesan menos.",
           "puntos_clave": [
             "Los flujos se descuentan con la tasa de la empresa o el costo de capital.",
             "Las anualidades simplifican flujos iguales."
