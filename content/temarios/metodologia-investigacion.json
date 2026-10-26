@@ -1,6 +1,6 @@
 {
   "materia": "metodologia-investigacion",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "mi-busqueda",
@@ -13,6 +13,7 @@
           "id": "mt-fuentes-existentes",
           "nombre": "Dónde buscar fuentes",
           "explicacion": "Una investigación empieza revisando lo que ya se sabe: libros, artículos académicos, bases de datos y documentos oficiales. Los buscadores académicos y los repositorios de universidades permiten encontrar trabajos revisados por pares.",
+          "ejemplo": "Para un trabajo sobre la morosidad de las pymes, una estudiante busca primero datos oficiales del país, luego artículos revisados por pares en el buscador académico de ÁBACO o en repositorios universitarios, y libros de finanzas. Descarta un blog sin autor ni fecha y prefiere un estudio con método explicado.",
           "puntos_clave": [
             "Preferir fuentes con autor, fecha y método identificables.",
             "Las fuentes oficiales son las más confiables para datos de un país."
@@ -31,6 +32,7 @@
           "id": "mt-fuentes-propias",
           "nombre": "Crear fuentes: encuestas, entrevistas y observación",
           "explicacion": "Cuando no existe información suficiente, el investigador produce datos propios con encuestas, entrevistas u observación. El instrumento se diseña a partir de las preguntas de investigación y se prueba antes de aplicarlo.",
+          "ejemplo": "Como no encuentra datos sobre cómo financian sus ventas las tiendas de su barrio, diseña una encuesta de 10 preguntas a partir de sus preguntas de investigación, la prueba con 5 dueños de tiendas, corrige dos preguntas confusas y recién entonces la aplica a 60 tiendas, pidiendo el consentimiento de cada participante.",
           "puntos_clave": [
             "Probar el cuestionario con pocas personas.",
             "Pedir consentimiento a los participantes."
@@ -49,6 +51,7 @@
           "id": "mt-evidencia",
           "nombre": "La investigación como evidencia",
           "explicacion": "En un trabajo académico, cada afirmación importante debe apoyarse en evidencia: datos, estudios o testimonios verificables. La evidencia se presenta, se explica y se relaciona con el argumento propio.",
+          "ejemplo": "En lugar de escribir «las pymes no tienen acceso al crédito», el informe dice: «el 62 % de las 60 tiendas encuestadas financia sus compras con proveedores y no con bancos (encuesta propia, 2026)», explica qué significa ese dato y lo conecta con su argumento sobre el costo del financiamiento informal.",
           "puntos_clave": [
             "Evidencia + explicación + conexión con el argumento.",
             "Varias fuentes concordantes dan más solidez."
@@ -76,6 +79,7 @@
           "id": "mt-notas",
           "nombre": "Notas, síntesis y bitácora",
           "explicacion": "Tomar notas ordenadas (qué dice la fuente, dónde lo dice y qué opinas) y llevar una bitácora de búsqueda evita perder referencias y facilita la síntesis, que consiste en relacionar varias fuentes en lugar de resumirlas una por una.",
+          "ejemplo": "Para cada lectura, una estudiante anota en una ficha la referencia completa, la página, la idea del autor con sus palabras y su propio comentario. En su bitácora registra qué buscó, dónde y con qué palabras clave. Al redactar, en vez de resumir autor por autor, escribe: «Tres estudios coinciden en…, mientras que otro encuentra…».",
           "puntos_clave": [
             "Anotar la referencia completa en el momento.",
             "Sintetizar es comparar y conectar fuentes."
@@ -94,6 +98,7 @@
           "id": "mt-bibliografia-anotada",
           "nombre": "Bibliografía anotada",
           "explicacion": "Una bibliografía anotada lista las fuentes con su referencia y un breve comentario sobre su contenido, su calidad y su utilidad para el trabajo. Ayuda a decidir qué fuentes usar y cómo.",
+          "ejemplo": "Entrada de una bibliografía anotada (referencia ficticia): Torres, M. (2023). Crédito de proveedores en pequeños comercios. Revista de Economía Aplicada, 12(2), 45–60. «Analiza 300 comercios y concluye que el crédito de proveedores supera al bancario. Muestra amplia y método claro; útil para el marco teórico, aunque los datos son de otra ciudad».",
           "puntos_clave": [
             "Cada entrada: referencia + resumen + evaluación.",
             "Sigue el estilo de citación pedido."
@@ -112,6 +117,7 @@
           "id": "mt-etica",
           "nombre": "Ética de la investigación",
           "explicacion": "Investigar con ética implica citar siempre las ideas ajenas, no inventar ni alterar datos, proteger a los participantes y declarar las limitaciones del estudio. El plagio es usar ideas o textos ajenos como propios.",
+          "ejemplo": "Un estudiante encuentra un párrafo útil en un artículo y lo reescribe con sus palabras: aun así debe citar al autor, porque la idea no es suya. Si en su encuesta 3 respuestas no le convienen, no puede eliminarlas sin explicarlo; y no publica los nombres de las tiendas que participaron, porque prometió confidencialidad.",
           "puntos_clave": [
             "Citar también lo que se parafrasea.",
             "Los datos personales de participantes se protegen."
@@ -139,6 +145,7 @@
           "id": "mt-citas",
           "nombre": "Citas en el texto",
           "explicacion": "En estilo APA, cada vez que se cita, parafrasea o resume una fuente se indica el apellido del autor, en la frase que introduce la idea o entre paréntesis al final, seguido del año de publicación: Pérez (2024) sostiene… o (Pérez, 2024). Si se copia texto literal, se añade la página. Toda fuente citada en el texto debe estar en la lista de referencias y viceversa.",
+          "ejemplo": "Paráfrasis: Torres (2023) encontró que los comercios pequeños se financian más con sus proveedores que con los bancos. Cita textual: «el crédito de proveedores es la primera fuente de financiamiento» (Torres, 2023, p. 52). Torres (2023) debe aparecer también en la lista de referencias al final (ejemplo con una fuente ficticia).",
           "puntos_clave": [
             "Autor y año en cada cita; página en las citas textuales.",
             "Texto y lista de referencias deben coincidir en ambos sentidos."
@@ -157,6 +164,7 @@
           "id": "mt-referencias",
           "nombre": "Elementos de una referencia",
           "explicacion": "Una referencia APA de un artículo sigue este orden: autor (apellido e iniciales), fecha de publicación entre paréntesis, título del artículo, nombre de la revista con volumen, número y páginas, y el DOI o la URL. Cuando hay varias obras del mismo autor, se ordenan por año, de la más antigua a la más reciente.",
+          "ejemplo": "Referencia de un artículo con DOI en APA 7 (datos ficticios): Andrade, L. P., y Quito, R. (2022). Morosidad en microcréditos urbanos. Revista Andina de Finanzas, 8(1), 15–34. https://doi.org/10.0000/ejemplo. Si hay dos obras de Andrade, de 2019 y de 2022, la de 2019 va primero.",
           "puntos_clave": [
             "Autor, A. A. (Año). Título del artículo. Revista, volumen(número), páginas. DOI o URL.",
             "Usar el DOI cuando exista."
@@ -175,6 +183,7 @@
           "id": "mt-integrar",
           "nombre": "Integrar fuentes y citas",
           "explicacion": "Las citas deben integrarse al texto con una introducción que diga de quién es la idea y una explicación posterior. Las citas textuales se reservan para frases cuya redacción exacta importa; lo demás se parafrasea y se cita.",
+          "ejemplo": "En vez de dejar una cita suelta, se escribe: «Como explica Torres (2023), los proveedores actúan como bancos informales: “el crédito de proveedores es la primera fuente de financiamiento” (p. 52). Esto ayuda a entender por qué las tiendas encuestadas casi no piden préstamos». Se introduce, se cita y se explica.",
           "puntos_clave": [
             "Introducir, citar y explicar.",
             "Parafrasear con palabras y estructura propias."
@@ -202,6 +211,7 @@
           "id": "mt-conceptos",
           "nombre": "Población, muestra, parámetro y estadístico",
           "explicacion": "La población es el conjunto completo que interesa estudiar; la muestra, la parte que se observa. Un parámetro describe a la población y un estadístico, a la muestra; el estadístico se usa para estimar el parámetro.",
+          "ejemplo": "Para un estudio sobre el ahorro de los estudiantes de una universidad en 2026, la población son todos sus estudiantes matriculados ese año; la muestra, 300 estudiantes elegidos al azar. Si en la muestra el ahorro mensual promedio es USD 35 (estadístico), ese valor se usa para estimar el promedio de toda la universidad (parámetro).",
           "puntos_clave": [
             "Definir la población con precisión (quién, dónde, cuándo).",
             "Una muestra representativa permite generalizar."
@@ -220,6 +230,7 @@
           "id": "mt-medicion",
           "nombre": "Niveles de medición",
           "explicacion": "Las variables pueden ser nominales (categorías sin orden), ordinales (con orden), de intervalo (diferencias con sentido, sin cero absoluto) o de razón (con cero absoluto). El nivel define qué estadísticas tienen sentido.",
+          "ejemplo": "En una encuesta, «carrera» es nominal (no tiene sentido promediarla); «nivel de satisfacción» de 1 a 5 es ordinal; la temperatura del aula en grados es de intervalo (0 °C no significa ausencia de temperatura); y el gasto mensual en dólares es de razón (USD 0 significa no gastar nada y 40 es el doble de 20).",
           "puntos_clave": [
             "La media no tiene sentido en variables nominales.",
             "Las escalas de satisfacción suelen ser ordinales."
@@ -238,6 +249,7 @@
           "id": "mt-diseno-experimental",
           "nombre": "Diseño experimental y ética",
           "explicacion": "Un experimento asigna tratamientos al azar para aislar su efecto, con grupos de control y variables controladas. Investigar con personas exige consentimiento informado, evitar daños y proteger la confidencialidad.",
+          "ejemplo": "Para saber si un video tutorial mejora las notas en matemática financiera, se asignan al azar 60 estudiantes: 30 ven el video (tratamiento) y 30 no (control), y ambos grupos rinden la misma prueba. Antes de empezar, cada estudiante firma un consentimiento informado y sus notas se analizan sin nombres.",
           "puntos_clave": [
             "Asignación aleatoria y grupo de control.",
             "Consentimiento informado."

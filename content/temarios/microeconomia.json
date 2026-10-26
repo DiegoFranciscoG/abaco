@@ -1,6 +1,6 @@
 {
   "materia": "microeconomia",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "mi-escasez",
@@ -13,6 +13,7 @@
           "id": "mi-restriccion",
           "nombre": "Restricción presupuestaria y costo de oportunidad",
           "explicacion": "Con un ingreso limitado, comprar más de un bien obliga a comprar menos de otro. El costo de oportunidad de una elección es lo que se deja de obtener de la mejor alternativa; no siempre se mide en dinero.",
+          "ejemplo": "Un estudiante tiene USD 20 a la semana para cine (USD 5 la entrada) y almuerzos fuera (USD 2,50). Puede pagar 4 entradas, 8 almuerzos o combinaciones como 2 entradas y 4 almuerzos. Cada entrada de cine le cuesta 2 almuerzos que deja de comer: ese es su costo de oportunidad, igual al precio relativo 5 ÷ 2,50.",
           "puntos_clave": [
             "La pendiente de la restricción presupuestaria es el precio relativo.",
             "El tiempo también tiene costo de oportunidad."
@@ -31,6 +32,7 @@
           "id": "mi-fpp",
           "nombre": "Frontera de posibilidades de producción",
           "explicacion": "La frontera muestra las combinaciones máximas que una economía puede producir con sus recursos. Es cóncava porque los recursos no son igual de aptos para todo; los puntos dentro de ella indican ineficiencia y los de afuera son inalcanzables hoy.",
+          "ejemplo": "Una economía produce cacao y camarón. Pasar de 100 a 120 toneladas de cacao le obliga a renunciar a 10 de camarón, pero pasar de 120 a 140 le cuesta 25, porque ahora usa tierras y trabajadores menos aptos para el cacao: el costo de oportunidad crece. Con desempleo produciría dentro de la frontera; con mejor tecnología la frontera se desplazaría hacia afuera.",
           "puntos_clave": [
             "Moverse sobre la frontera implica un costo de oportunidad creciente.",
             "El crecimiento económico desplaza la frontera hacia afuera."
@@ -49,6 +51,7 @@
           "id": "mi-enfoque",
           "nombre": "El enfoque económico y sus críticas",
           "explicacion": "La economía supone personas que eligen buscando su propio interés y que responden a incentivos. Las críticas señalan que la gente no siempre calcula así; la respuesta es que el modelo busca explicar tendencias, no cada decisión individual.",
+          "ejemplo": "Si una ciudad cobra por las fundas de basura según su tamaño, muchas familias empiezan a separar y reciclar más. No todas lo hacen ni calculan el ahorro al centavo, pero el comportamiento promedio cambia en la dirección que predice el modelo: la gente responde a incentivos.",
           "puntos_clave": [
             "Un modelo simplifica para explicar.",
             "Los incentivos cambian el comportamiento promedio."
@@ -76,6 +79,7 @@
           "id": "mi-oferta-demanda",
           "nombre": "Demanda, oferta y equilibrio",
           "explicacion": "La demanda relaciona el precio con la cantidad que los compradores desean; la oferta, con la cantidad que los vendedores ofrecen. El equilibrio está donde ambas cantidades coinciden; con un precio mayor hay excedente y con uno menor, escasez.",
+          "ejemplo": "En un mercado de aguacates, al precio de USD 1,20 por unidad se demandan y se ofrecen 500 unidades al día: es el equilibrio. Si los vendedores cobran 1,50, ofrecen 650 pero los compradores solo quieren 400: hay un excedente de 250 que empuja el precio a la baja.",
           "puntos_clave": [
             "Ley de la demanda: más precio, menos cantidad demandada.",
             "Ley de la oferta: más precio, más cantidad ofrecida."
@@ -94,6 +98,7 @@
           "id": "mi-desplazamientos",
           "nombre": "Cambios en la demanda y en la oferta",
           "explicacion": "Un cambio en el precio del propio bien mueve sobre la curva (cambia la cantidad demandada). Cambios en el ingreso, los gustos, los precios de bienes relacionados o las expectativas desplazan toda la curva de demanda; los costos de producción y la tecnología desplazan la oferta.",
+          "ejemplo": "Si sube el precio del café, se demanda menos café (movimiento sobre la curva), más té, que es sustituto (la demanda de té se desplaza a la derecha), y menos azúcar, que es complementario (su demanda se desplaza a la izquierda). Si sube el ingreso de las familias, la demanda de un bien normal como comer en restaurantes también se desplaza a la derecha.",
           "puntos_clave": [
             "Bienes sustitutos y complementarios afectan la demanda en sentidos opuestos.",
             "Un bien normal se demanda más cuando sube el ingreso."
@@ -112,6 +117,7 @@
           "id": "mi-cuatro-pasos",
           "nombre": "Análisis en cuatro pasos",
           "explicacion": "Para analizar un suceso: dibujar el equilibrio inicial, decidir si afecta la oferta o la demanda, decidir hacia dónde se desplaza la curva y comparar el nuevo equilibrio con el anterior.",
+          "ejemplo": "Una helada destruye parte de la cosecha de fresas. Paso 1: equilibrio inicial. Paso 2: afecta a la oferta. Paso 3: la oferta se desplaza a la izquierda. Paso 4: en el nuevo equilibrio el precio de las fresas sube y la cantidad vendida baja.",
           "puntos_clave": [
             "Un mismo suceso puede mover ambas curvas.",
             "Si ambas se mueven, uno de los efectos (precio o cantidad) puede quedar ambiguo."
@@ -130,6 +136,7 @@
           "id": "mi-precios-controlados",
           "nombre": "Precios máximos y mínimos",
           "explicacion": "Un precio máximo por debajo del equilibrio genera escasez; un precio mínimo por encima genera excedente. Los controles benefician a algunos participantes, pero reducen la cantidad intercambiada y crean pérdidas de eficiencia.",
+          "ejemplo": "Si una ciudad fija un arriendo máximo de USD 200 para departamentos cuyo equilibrio es 300, más personas buscan departamento y menos dueños lo ofrecen: hay escasez. El Salario Básico Unificado de USD 482 en 2026 es un precio mínimo del trabajo: solo tiene efecto en los empleos que, sin él, se pagarían menos.",
           "puntos_clave": [
             "El salario mínimo es un ejemplo de precio mínimo.",
             "Un precio máximo solo tiene efecto si está por debajo del equilibrio."
@@ -157,6 +164,7 @@
           "id": "mi-elasticidad-precio",
           "nombre": "Elasticidad precio",
           "explicacion": "La elasticidad precio de la demanda mide cuánto cambia la cantidad demandada, en porcentaje, ante un cambio porcentual en el precio. El método del punto medio da el mismo resultado sin importar la dirección del cambio.",
+          "ejemplo": "Un servicio de streaming sube su suscripción de USD 8 a 10 y sus suscriptores bajan de 1.000 a 700. Con el punto medio: %ΔQ = −300 ÷ 850 = −35,3 %; %ΔP = 2 ÷ 9 = 22,2 %; elasticidad = −1,59. Como |E| > 1 la demanda es elástica: hay muchos sustitutos.",
           "puntos_clave": [
             "|E| > 1: elástica; |E| < 1: inelástica.",
             "Los bienes con muchos sustitutos son más elásticos."
@@ -177,6 +185,7 @@
           "id": "mi-elasticidad-ingreso-total",
           "nombre": "Elasticidad e ingreso total",
           "explicacion": "Si la demanda es elástica, bajar el precio aumenta el ingreso total; si es inelástica, subirlo lo aumenta. Por eso las empresas estudian la elasticidad antes de fijar precios y los gobiernos antes de crear impuestos.",
+          "ejemplo": "Con esa demanda elástica, el ingreso del streaming baja de 1.000 × 8 = USD 8.000 a 700 × 10 = USD 7.000 al subir el precio. En cambio, si la demanda de un medicamento esencial es inelástica, subir su precio aumenta el ingreso del vendedor; un impuesto sobre ese medicamento lo pagarían sobre todo los compradores.",
           "puntos_clave": [
             "Con demanda de elasticidad unitaria, el ingreso total no cambia.",
             "Un impuesto recae más sobre el lado menos elástico."
@@ -195,6 +204,7 @@
           "id": "mi-utilidad-marginal",
           "nombre": "Utilidad marginal y elección del consumidor",
           "explicacion": "El consumidor reparte su presupuesto de modo que la última unidad monetaria gastada en cada bien le dé la misma utilidad marginal. La utilidad marginal suele disminuir a medida que se consume más de un bien.",
+          "ejemplo": "Una pizza (USD 6) le da a una persona 30 unidades de utilidad marginal, 5 por dólar; una gaseosa (USD 2) le da 12, es decir 6 por dólar. Como la gaseosa rinde más por dólar, le conviene pasar dinero de pizza a gaseosa hasta que ambas razones se igualen; al tomar más gaseosas, su utilidad marginal disminuye.",
           "puntos_clave": [
             "Utilidad marginal decreciente.",
             "Regla: UMg₁/P₁ = UMg₂/P₂."
@@ -222,6 +232,7 @@
           "id": "mi-costos-corto-plazo",
           "nombre": "Costos en el corto plazo",
           "explicacion": "En el corto plazo hay costos fijos y variables. El costo marginal es el costo de producir una unidad más; cuando está por debajo del costo medio lo hace bajar y cuando está por encima lo hace subir, por eso cruza al costo medio en su mínimo.",
+          "ejemplo": "Producir 10 unidades cuesta USD 100 en total (costo medio 10) y producir 11 cuesta 112: el costo marginal de la unidad 11 es 12. Como 12 es mayor que el costo medio de 10, el costo medio sube a 112 ÷ 11 = 10,18. Por eso el costo marginal cruza al costo medio en su punto mínimo.",
           "puntos_clave": [
             "CMg = Δ costo total ÷ Δ cantidad.",
             "Rendimientos decrecientes hacen subir el costo marginal."
@@ -242,6 +253,7 @@
           "id": "mi-competencia-perfecta",
           "nombre": "Competencia perfecta",
           "explicacion": "Con muchos vendedores de un producto idéntico, cada empresa toma el precio del mercado y produce la cantidad donde el precio iguala al costo marginal. Si el precio no cubre el costo variable medio, conviene cerrar en el corto plazo.",
+          "ejemplo": "Un productor de maíz vende al precio de mercado de USD 15 por quintal y produce hasta donde su costo marginal llega a 15. Si el precio cayera a 8 y su costo variable medio mínimo fuera 9, le convendría dejar de producir en el corto plazo: cada quintal no cubriría ni sus costos variables.",
           "puntos_clave": [
             "Regla de producción: P = CMg.",
             "Punto de cierre: P < costo variable medio mínimo."
@@ -260,6 +272,7 @@
           "id": "mi-monopolio",
           "nombre": "Monopolio",
           "explicacion": "Un monopolio enfrenta toda la demanda del mercado, así que para vender más debe bajar el precio. Produce donde el ingreso marginal iguala al costo marginal y cobra el precio que la demanda permite para esa cantidad: produce menos y cobra más que en competencia.",
+          "ejemplo": "Un monopolio enfrenta la demanda P = 100 − Q y tiene costo marginal constante de 20. Su ingreso marginal es 100 − 2Q; igualándolo a 20, produce Q = 40 y cobra P = 60. En competencia perfecta el precio sería igual al costo marginal (20) y se venderían 80 unidades: el monopolio produce menos y cobra más.",
           "puntos_clave": [
             "IMg < P para un monopolio.",
             "Las barreras de entrada sostienen el monopolio."
@@ -278,6 +291,7 @@
           "id": "mi-oligopolio",
           "nombre": "Oligopolio",
           "explicacion": "En un oligopolio pocas empresas dominan el mercado y cada decisión depende de lo que hagan las demás. La tentación de coludir choca con el incentivo de cada una a romper el acuerdo, como en el dilema del prisionero.",
+          "ejemplo": "Dos aerolíneas cubren una ruta. Si ambas cobran USD 120, cada una gana 50 mil al mes; si una baja a 100 y la otra no, la que bajó gana 70 mil y la otra 20 mil; si ambas bajan, cada una gana 30 mil. Cada una tiene incentivo a bajar el precio y terminan en la peor combinación conjunta: el dilema del prisionero.",
           "puntos_clave": [
             "La interdependencia estratégica es la clave.",
             "La colusión de precios suele estar prohibida por las leyes de competencia."

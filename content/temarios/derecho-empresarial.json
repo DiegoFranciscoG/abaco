@@ -1,6 +1,6 @@
 {
   "materia": "derecho-empresarial",
-  "actualizado_en": "2026-10-15",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "lm-companias",
@@ -13,6 +13,7 @@
           "id": "lm-companias-contrato",
           "nombre": "Contrato de compañía y acto unilateral",
           "explicacion": "Según el artículo 1 de la Ley de Compañías, una compañía nace por contrato entre dos o más personas naturales o jurídicas que unen capitales, trabajo o conocimiento para hacer negocios y repartir utilidades, o por acto unilateral de una sola persona que aporta capital para emprender de manera individual. Además de esta ley, se aplican el Código de Comercio, el contrato social y el Código Civil.",
+          "ejemplo": "Tres amigos aportan dinero y conocimientos para abrir una distribuidora de repuestos y repartir las utilidades: forman una compañía por contrato. Una sola persona que aporta su capital para emprender un negocio de importación individual puede hacerlo por acto unilateral. En ambos casos rigen la Ley de Compañías, el Código de Comercio, el contrato social y el Código Civil.",
           "puntos_clave": [
             "Dos vías: contrato (dos o más personas) o acto unilateral (una persona).",
             "Normas aplicables: Ley de Compañías, Código de Comercio, contrato social y Código Civil."
@@ -30,6 +31,7 @@
           "id": "lm-companias-especies",
           "nombre": "Las seis especies de compañías",
           "explicacion": "El artículo 2 reconoce seis especies de sociedades mercantiles: en nombre colectivo; en comandita simple y dividida por acciones; de responsabilidad limitada; anónima; de economía mixta; y sociedad por acciones simplificada (S.A.S.). Todas son personas jurídicas, es decir, sujetos distintos de sus socios, con patrimonio, derechos y obligaciones propios.",
+          "ejemplo": "Un grupo de inversionistas crea una compañía anónima para una fábrica de alimentos, dos hermanos forman una compañía limitada para su taller y una emprendedora constituye una S.A.S. para su agencia digital. Las tres son personas jurídicas distintas de sus socios: si la fábrica firma un contrato, quien se obliga es la compañía.",
           "puntos_clave": [
             "Seis especies, todas con personalidad jurídica.",
             "La S.A.S. es la especie más reciente."
@@ -47,6 +49,7 @@
           "id": "lm-companias-objeto",
           "nombre": "Objeto social y domicilio",
           "explicacion": "El artículo 3 prohíbe compañías contrarias a la Constitución y la ley, las que no tengan un objeto real y lícito y las que carezcan de esencia económica. El objeto social puede abarcar una o varias actividades lícitas y debe constar con claridad en el contrato o documento de constitución. El domicilio es el que fija el contrato, y toda compañía constituida en Ecuador tiene su domicilio principal dentro del país (artículos 4 y 5).",
+          "ejemplo": "Una compañía declara como objeto social «la importación, distribución y venta de equipos médicos y su mantenimiento»: actividades lícitas, reales y con fines económicos, descritas con claridad. Su contrato fija su domicilio principal en Cuenca; una compañía cuyo objeto fuera una actividad ilícita no podría constituirse.",
           "puntos_clave": [
             "Objeto real, lícito y con esencia económica.",
             "Domicilio principal en el territorio nacional."
@@ -73,6 +76,7 @@
           "id": "lm-personas-colectivo",
           "nombre": "Compañía en nombre colectivo",
           "explicacion": "Se constituye por una persona natural o entre dos o más personas naturales que hacen el comercio bajo una razón social formada por los nombres de todos o algunos socios, más las palabras «y compañía» (artículo 36). El contrato se celebra por escritura pública (artículo 37). Los socios colectivos responden de forma solidaria e ilimitada por los actos realizados bajo la razón social por quien está autorizado (artículo 74).",
+          "ejemplo": "Pedro Sánchez y Luis Mora (nombres ficticios) forman una compañía en nombre colectivo con la razón social «Sánchez, Mora y compañía», mediante escritura pública. Si la compañía deja deudas por los actos de quien está autorizado, cada socio puede ser obligado a pagar la totalidad con sus bienes personales: responsabilidad solidaria e ilimitada.",
           "puntos_clave": [
             "Solo personas naturales.",
             "Razón social con nombres de socios + «y compañía».",
@@ -91,6 +95,7 @@
           "id": "lm-personas-comandita",
           "nombre": "Compañía en comandita simple",
           "explicacion": "Combina dos clases de socios: uno o varios solidaria e ilimitadamente responsables y otros, los comanditarios, que solo aportan fondos y responden hasta el monto de sus aportes (artículo 59). La razón social lleva el nombre de uno o varios socios solidarios y las palabras «compañía en comandita». Los socios comanditados responden de forma solidaria e ilimitada, igual que en la colectiva (artículo 74).",
+          "ejemplo": "En «Rivas y compañía en comandita» (nombre ficticio), el socio Rivas administra y responde de forma solidaria e ilimitada, mientras dos inversionistas comanditarios solo aportaron USD 10.000 cada uno. Si la compañía quiebra con deudas, los comanditarios pierden como máximo esos 10.000; Rivas puede tener que responder con su patrimonio.",
           "puntos_clave": [
             "Socios comanditados: responsabilidad ilimitada.",
             "Socios comanditarios: responsabilidad hasta su aporte."
@@ -108,6 +113,7 @@
           "id": "lm-personas-mixta",
           "nombre": "Compañía de economía mixta",
           "explicacion": "Permite que el Estado, las municipalidades, los consejos provinciales y las entidades del sector público participen junto con el capital privado en el capital y en la gestión de la compañía (artículo 308). Está sujeta a la vigilancia y control de la Superintendencia de Compañías (artículo 431).",
+          "ejemplo": "Un municipio y un grupo de empresarios privados crean una compañía de economía mixta para administrar una terminal de transporte: el municipio aporta el terreno y participa en el directorio, y los privados aportan capital y experiencia. La compañía está bajo la vigilancia y el control de la Superintendencia de Compañías.",
           "puntos_clave": [
             "Capital público y privado en la misma compañía.",
             "Controlada por la Superintendencia de Compañías."
@@ -134,6 +140,7 @@
           "id": "lm-limitada-naturaleza",
           "nombre": "Naturaleza y responsabilidad de los socios",
           "explicacion": "Se constituye por contrato o por acto unilateral, y los socios responden por las obligaciones sociales solo hasta el monto de sus aportaciones. Su nombre debe incluir «Compañía Limitada» o su abreviatura (artículo 92). Es siempre mercantil, pero sus socios no adquieren por eso la calidad de comerciantes (artículo 93). No puede realizar operaciones de banco, seguros, capitalización y ahorro (artículo 94).",
+          "ejemplo": "Cuatro socios aportan USD 2.500 cada uno a «Transportes del Austro Cía. Ltda.» (nombre ficticio). Si la compañía no puede pagar una deuda de USD 50.000, cada socio pierde como máximo su aporte de 2.500 y no responde con su casa. Esa compañía no podría captar ahorros del público como si fuera un banco.",
           "puntos_clave": [
             "Responsabilidad limitada al aporte.",
             "Siempre mercantil.",
@@ -152,6 +159,7 @@
           "id": "lm-limitada-socios",
           "nombre": "Número de socios y nacimiento de la compañía",
           "explicacion": "La compañía limitada no puede funcionar si sus socios exceden de quince; si supera ese número debe transformarse en otra especie o disolverse (artículo 95). Su existencia comienza en la fecha de inscripción del contrato social en el Registro Mercantil (artículo 96), no en la fecha de la escritura.",
+          "ejemplo": "Una compañía limitada tiene 15 socios y uno quiere vender parte de sus participaciones a dos personas nuevas: con 17 socios superaría el límite, así que tendría que transformarse en otra especie, por ejemplo en anónima. Además, aunque la escritura de una limitada se firmó el 5 de marzo, la compañía existe desde que el contrato se inscribe en el Registro Mercantil.",
           "puntos_clave": [
             "Máximo 15 socios.",
             "Existe desde la inscripción en el Registro Mercantil."
@@ -169,6 +177,7 @@
           "id": "lm-limitada-capital",
           "nombre": "Capital y participaciones",
           "explicacion": "El capital está formado por las aportaciones de los socios, no puede ser inferior al mínimo fijado por el Superintendente de Compañías y se divide en participaciones. Al constituirse debe estar suscrito por completo y pagado al menos en el cincuenta por ciento de cada participación; el saldo se integra en un plazo no mayor de doce meses. Los aportes pueden ser en dinero o en especie (artículo 102).",
+          "ejemplo": "Tres socios constituyen una limitada con un capital de USD 3.000 dividido en 3.000 participaciones de USD 1. Todo el capital debe quedar suscrito y cada socio paga al menos el 50 % de sus participaciones al constituirla: en total, USD 1.500 o más. El saldo se paga en un plazo máximo de 12 meses; uno de los socios puede aportar un vehículo en lugar de dinero.",
           "puntos_clave": [
             "Capital íntegramente suscrito.",
             "Al menos 50 % pagado de cada participación al constituirse.",
@@ -188,6 +197,7 @@
           "id": "lm-limitada-junta",
           "nombre": "La junta general de socios",
           "explicacion": "La junta general, formada por los socios legalmente convocados y reunidos, es el órgano supremo. En primera convocatoria necesita socios que representen más de la mitad del capital; en segunda, se reúne con los presentes (artículo 116). Salvo disposición distinta, resuelve por mayoría absoluta de los presentes y los votos en blanco y abstenciones se suman a la mayoría (artículo 117). Entre sus atribuciones está designar y remover administradores y gerentes (artículo 118).",
+          "ejemplo": "Una limitada con capital de USD 10.000 convoca a junta general para nombrar gerente. En primera convocatoria necesita socios que representen más de USD 5.000 de capital; asisten socios con 6.000, así que hay quórum. Votan a favor del candidato socios con 3.200, en contra 1.800 y se abstienen 1.000: la abstención se suma a la mayoría y el gerente queda designado.",
           "puntos_clave": [
             "Órgano supremo de la compañía.",
             "Quórum en primera convocatoria: más de la mitad del capital.",
@@ -215,6 +225,7 @@
           "id": "lm-capitales-anonima",
           "nombre": "Compañía anónima: naturaleza y administración",
           "explicacion": "Su capital se divide en acciones negociables y los accionistas responden únicamente por el monto de sus acciones; puede constituirse por contrato o por acto unilateral (artículo 143). Se administra por mandatarios amovibles, socios o no, y su denominación debe incluir «compañía anónima», «sociedad anónima» o sus siglas; puede añadir «Sociedad de Beneficio e Interés Colectivo» (B.I.C.) si adopta esa categoría (artículo 144).",
+          "ejemplo": "«Alimentos Andinos S.A.» (nombre ficticio) divide su capital en 100.000 acciones; un accionista que compró 1.000 acciones solo arriesga lo que pagó por ellas y puede venderlas a otra persona. La compañía nombra un gerente general que no es accionista y que la junta puede remover cuando lo decida.",
           "puntos_clave": [
             "Capital en acciones negociables.",
             "Administradores amovibles, socios o no."
@@ -232,6 +243,7 @@
           "id": "lm-capitales-capital",
           "nombre": "Capital de la compañía anónima",
           "explicacion": "Ninguna compañía anónima puede constituirse sin que su capital esté totalmente suscrito, y debe pagarse al menos una cuarta parte una vez inscrita en el Registro Mercantil (artículo 147). Puede establecer un capital autorizado hasta el cual emite acciones; los mínimos de capital suscrito y pagado los fija la Superintendencia por resolución (artículo 160). Las acciones son nominativas (artículo 168).",
+          "ejemplo": "Una anónima se constituye con un capital suscrito de USD 20.000: todo debe quedar suscrito y, una vez inscrita en el Registro Mercantil, debe pagarse al menos la cuarta parte, USD 5.000. Puede fijar además un capital autorizado de USD 40.000 como techo para emitir más acciones nominativas sin reformar ese límite cada vez.",
           "puntos_clave": [
             "Capital totalmente suscrito; al menos 25 % pagado.",
             "Capital autorizado como techo de emisión.",
@@ -250,6 +262,7 @@
           "id": "lm-capitales-sas",
           "nombre": "Sociedad por acciones simplificada (S.A.S.)",
           "explicacion": "Es una sociedad de capitales de naturaleza siempre mercantil, que pueden constituir una o varias personas naturales o jurídicas, responsables solo hasta el monto de sus aportes. Se crea por contrato o acto unilateral en documento privado inscrito en el Registro de Sociedades de la Superintendencia, momento desde el cual adquiere vida jurídica. Sus acciones no pueden inscribirse en el Catastro Público de Mercado de Valores ni negociarse en bolsa, y no puede realizar actividades financieras, de mercado de valores ni de seguros.",
+          "ejemplo": "Una diseñadora constituye sola «Estudio Gráfico S.A.S.» (nombre ficticio) mediante un documento privado que se inscribe en el Registro de Sociedades de la Superintendencia; desde ese momento la compañía existe. Responde solo hasta su aporte. Si más adelante quisiera vender acciones en bolsa, tendría que transformarse en otra especie, porque las acciones de una S.A.S. no se negocian en bolsa.",
           "puntos_clave": [
             "Uno o varios accionistas, responsabilidad limitada.",
             "Documento privado inscrito en el Registro de Sociedades.",
@@ -277,6 +290,7 @@
           "id": "lm-control-sujetos",
           "nombre": "Compañías sujetas a vigilancia y control",
           "explicacion": "La Superintendencia de Compañías, Valores y Seguros ejerce la vigilancia y control de las compañías anónimas, en comandita por acciones y de economía mixta; de las empresas extranjeras que operan en Ecuador; de las compañías de responsabilidad limitada; de las sociedades por acciones simplificadas; y de las bolsas de valores y otros entes del mercado de valores (artículo 431).",
+          "ejemplo": "Una compañía anónima de alimentos, una limitada de transporte y una S.A.S. de tecnología están bajo la vigilancia y el control de la Superintendencia de Compañías, Valores y Seguros, al igual que una empresa extranjera con sucursal en Ecuador. La Superintendencia puede pedirles información y revisar que cumplan la ley.",
           "puntos_clave": [
             "Controla anónimas, limitadas, S.A.S., mixtas y extranjeras.",
             "También promueve el buen gobierno corporativo."
@@ -294,6 +308,7 @@
           "id": "lm-control-informacion",
           "nombre": "Información anual que se envía",
           "explicacion": "Las compañías sujetas a control envían a la Superintendencia, en el primer cuatrimestre de cada año o en los períodos que esta apruebe, copias del juego completo de estados financieros preparados con la normativa contable vigente, las memorias e informes de los administradores y de los órganos de fiscalización, y la nómina de administradores, representantes legales y socios o accionistas, incluidos los beneficiarios finales (artículo 20).",
+          "ejemplo": "Antes de terminar abril de 2026, una compañía limitada envía a la Superintendencia su juego completo de estados financieros de 2025, el informe del gerente sobre el año, el informe del comisario si lo tiene y la nómina de administradores, socios y beneficiarios finales.",
           "puntos_clave": [
             "Plazo general: primer cuatrimestre del año.",
             "Estados financieros completos + informes + nómina de socios y beneficiarios."
@@ -311,6 +326,7 @@
           "id": "lm-control-normativa",
           "nombre": "Facultad normativa del Superintendente",
           "explicacion": "El Superintendente expide las regulaciones, reglamentos y resoluciones necesarios para el buen gobierno, vigilancia y control de las compañías y resuelve los casos de duda que surjan en la práctica (artículo 433). Por eso muchos detalles operativos, como montos mínimos de capital o formularios, están en resoluciones y no en la ley: conviene revisar el portal de la Superintendencia.",
+          "ejemplo": "La Ley de Compañías no dice cuál es el capital mínimo exacto de una compañía anónima: ese monto lo fija el Superintendente por resolución. Por eso, antes de constituir una compañía, un abogado revisa la resolución vigente en el portal de la Superintendencia y no solo el texto de la ley.",
           "puntos_clave": [
             "Las resoluciones de la Superintendencia complementan la ley.",
             "Los montos mínimos de capital se fijan por resolución."

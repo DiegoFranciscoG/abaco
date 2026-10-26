@@ -140,7 +140,7 @@ export function buildSearchDocuments(content: SearchContent): SearchDoc[] {
           id: `subtema:${s.id}`,
           tipo: 'subtema',
           titulo: s.nombre,
-          texto: `${s.explicacion} ${s.puntos_clave.join(' ')}`,
+          texto: `${s.explicacion} ${s.ejemplo} ${s.puntos_clave.join(' ')}`,
           claves: `${tema.nombre} ${materia?.nombre ?? ''}`,
           ruta: `/materia/${temario.materia}/tema/${tema.id}?s=${s.id}`,
           extracto: excerpt(s.explicacion),

@@ -1,6 +1,6 @@
 {
   "materia": "contabilidad-general",
-  "actualizado_en": "2026-10-14",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "cg-fundamentos",
@@ -13,6 +13,7 @@
           "id": "cg-fundamentos-usuarios",
           "nombre": "La contabilidad como sistema de información",
           "explicacion": "La contabilidad identifica, registra y comunica los hechos económicos de una organización para que otros tomen decisiones. Los usuarios internos (gerencia, jefes de área) la usan para planificar y controlar; los externos (inversionistas, bancos, el SRI, proveedores) la usan para decidir si invierten, prestan, cobran impuestos o venden a crédito. Por eso la información debe ser útil, comparable y confiable.",
+          "ejemplo": "Una ferretería pide un préstamo de USD 20.000. El gerente (usuario interno) revisa las ventas por línea para decidir qué productos reponer; el banco (usuario externo) revisa el estado de situación financiera y el de resultados para decidir si presta y a qué plazo; el SRI conoce esa misma información a través de las declaraciones de impuestos.",
           "puntos_clave": [
             "Usuarios internos: deciden dentro de la empresa.",
             "Usuarios externos: deciden desde afuera (bancos, inversionistas, Estado).",
@@ -33,6 +34,7 @@
           "id": "cg-fundamentos-financiera-gestion",
           "nombre": "Contabilidad financiera y contabilidad de gestión",
           "explicacion": "La contabilidad financiera prepara estados para usuarios externos siguiendo normas contables comunes. La contabilidad de gestión produce informes internos a la medida de cada decisión: costos por producto, presupuestos, márgenes por línea. La primera mira sobre todo el pasado y se publica; la segunda mira también al futuro y no tiene un formato obligatorio.",
+          "ejemplo": "Una compañía que fabrica pan prepara dos informes. Para el banco y los socios, el estado de resultados anual con normas comunes (contabilidad financiera). Para el dueño, un cuadro semanal del costo y el margen de cada tipo de pan con el formato que él prefiera, para decidir cuál dejar de producir (contabilidad de gestión).",
           "puntos_clave": [
             "Financiera: normas comunes, usuarios externos, periodicidad fija.",
             "De gestión: formato libre, usuarios internos, orientada a decisiones."
@@ -51,6 +53,7 @@
           "id": "cg-fundamentos-supuestos",
           "nombre": "Principios y supuestos básicos",
           "explicacion": "Los estados financieros se apoyan en supuestos que conviene tener presentes: la entidad es distinta de sus dueños (no se mezclan gastos personales), se asume que seguirá funcionando (negocio en marcha), todo se mide en una unidad monetaria estable y los ingresos y gastos se reconocen cuando ocurren, no cuando se cobra o paga (base de acumulación o devengado). Estos supuestos explican muchas reglas que parecen arbitrarias.",
+          "ejemplo": "La dueña de una papelería paga con la cuenta del negocio la pensión escolar de su hijo: por el supuesto de entidad separada no es un gasto del negocio sino un retiro. Y si en diciembre la papelería vende a crédito por USD 900 y cobra en enero, el ingreso se registra en diciembre, cuando se ganó (devengado).",
           "puntos_clave": [
             "Entidad separada de los dueños.",
             "Negocio en marcha.",
@@ -80,6 +83,7 @@
           "id": "cg-ecuacion-elementos",
           "nombre": "Activo, pasivo y patrimonio",
           "explicacion": "Un activo es un recurso que la empresa controla y del que espera beneficios (efectivo, mercadería, equipos, cuentas por cobrar). Un pasivo es una obligación presente que se cancelará entregando recursos (proveedores, préstamos, impuestos por pagar). El patrimonio es la parte de los activos que pertenece a los dueños. Se clasifican en corrientes (se realizan o vencen en el ciclo normal, por lo general un año) y no corrientes.",
+          "ejemplo": "Una tienda tiene USD 4.000 en caja, mercadería por USD 9.500 y una vitrina de USD 2.500 (activo total USD 16.000); debe USD 3.200 a proveedores y USD 4.800 de un préstamo (pasivo total USD 8.000). Su patrimonio es 16.000 − 8.000 = USD 8.000. Si USD 1.200 del préstamo vencen este año, solo esa parte es pasivo corriente.",
           "puntos_clave": [
             "Activo = recursos controlados.",
             "Pasivo = obligaciones con terceros.",
@@ -103,6 +107,7 @@
           "id": "cg-ecuacion-ampliada",
           "nombre": "Ecuación contable ampliada",
           "explicacion": "La ecuación ampliada separa el patrimonio en sus piezas: capital aportado, ingresos, gastos y retiros (o dividendos). Así se ve que los ingresos aumentan el patrimonio, los gastos lo disminuyen y los retiros de los dueños también lo reducen, aunque no son gastos. Es el puente entre el estado de resultados y el estado de situación financiera.",
+          "ejemplo": "Un estudio contable empezó el mes con capital de USD 10.000, cobró honorarios por USD 3.500, pagó gastos por USD 2.100 y el dueño retiró USD 400. El patrimonio final es 10.000 + 3.500 − 2.100 − 400 = USD 11.000. Los USD 400 bajan el patrimonio pero no aparecen como gasto en el estado de resultados.",
           "puntos_clave": [
             "Ingresos ↑ patrimonio; gastos ↓ patrimonio.",
             "Los retiros reducen el patrimonio pero no son gastos del negocio."
@@ -123,6 +128,7 @@
           "id": "cg-ecuacion-transacciones",
           "nombre": "Efecto de las transacciones en la ecuación",
           "explicacion": "Cada transacción mueve al menos dos elementos y la ecuación siempre sigue cuadrando. Comprar mercadería al contado cambia un activo por otro; comprarla a crédito sube un activo y un pasivo; pagar al proveedor baja un activo y un pasivo; prestar un servicio al contado sube el efectivo y el patrimonio (vía ingresos). Analizar así antes de registrar evita la mayoría de los errores.",
+          "ejemplo": "Una cafetería con activo de USD 12.000, pasivo de 5.000 y patrimonio de 7.000 compra a crédito una cafetera de USD 800: el activo sube a 12.800 y el pasivo a 5.800, y la igualdad se mantiene (12.800 = 5.800 + 7.000). Luego paga USD 300 al proveedor: activo 12.500, pasivo 5.500 y la ecuación sigue cuadrando.",
           "puntos_clave": [
             "Toda transacción tiene al menos dos efectos.",
             "Después de cada transacción: A = P + Pt."
@@ -153,6 +159,7 @@
           "id": "cg-partida-doble-reglas",
           "nombre": "Débito y crédito: reglas de cargo y abono",
           "explicacion": "Debe (débito) es el lado izquierdo de una cuenta y Haber (crédito) el derecho. Activos y gastos aumentan por el Debe; pasivos, patrimonio e ingresos aumentan por el Haber. En cada asiento la suma de débitos es igual a la suma de créditos: por eso se llama partida doble. «Débito» no significa algo malo ni «crédito» algo bueno; solo indican el lado.",
+          "ejemplo": "Una empresa compra muebles por USD 600 en efectivo: carga (Debe) Muebles y enseres 600 porque ese activo aumenta y abona (Haber) Caja 600 porque otro activo disminuye. Si presta un servicio por USD 250 al contado, carga Caja 250 y abona Ingresos por servicios 250, porque los ingresos aumentan por el Haber.",
           "puntos_clave": [
             "Activos y gastos: saldo normal deudor.",
             "Pasivos, patrimonio e ingresos: saldo normal acreedor.",
@@ -173,6 +180,7 @@
           "id": "cg-partida-doble-diario",
           "nombre": "Libro diario y asientos contables",
           "explicacion": "El libro diario registra las transacciones en orden cronológico. Cada asiento indica la fecha, las cuentas que se cargan (primero) y las que se abonan (después, con sangría), los valores y una breve explicación. Un buen asiento se puede entender sin el documento de respaldo y siempre cuadra.",
+          "ejemplo": "Asiento del 5 de marzo: Debe Inventario de mercaderías 1.500; Haber Proveedores 1.500. Glosa: «Compra a crédito de 30 cajas de cuadernos, factura 001-002-000000123, pago a 30 días». Quien lo lea entiende qué pasó sin abrir la factura, y el asiento cuadra: 1.500 en el Debe y 1.500 en el Haber.",
           "puntos_clave": [
             "Orden cronológico.",
             "Cuentas deudoras primero, acreedoras después.",
@@ -193,6 +201,7 @@
           "id": "cg-partida-doble-mayor",
           "nombre": "Libro mayor y cuentas T",
           "explicacion": "El mayor agrupa los movimientos por cuenta. Pasar del diario al mayor (mayorizar) permite conocer el saldo de cada cuenta. La cuenta T es una forma rápida de hacerlo a mano: cargos a la izquierda, abonos a la derecha y saldo al final, del lado que sea mayor.",
+          "ejemplo": "La cuenta Caja empieza con USD 2.000 en el Debe; en el mes recibe cargos de 1.200 y 800 y abonos de 1.500 y 600. Total Debe = 4.000; total Haber = 2.100. El saldo es deudor de USD 1.900, del lado del Debe, que es el mayor.",
           "puntos_clave": [
             "El mayor muestra el saldo de cada cuenta.",
             "Saldo = diferencia entre Debe y Haber, del lado mayor."
@@ -214,6 +223,7 @@
           "id": "cg-partida-doble-comprobacion",
           "nombre": "Balance de comprobación",
           "explicacion": "Es una lista de todas las cuentas del mayor con sus saldos. Si la suma de saldos deudores es igual a la de saldos acreedores, los registros están aritméticamente cuadrados. Que cuadre no prueba que todo esté bien: un asiento omitido, duplicado o cargado a la cuenta equivocada no rompe la igualdad.",
+          "ejemplo": "Un balance de comprobación suma USD 48.300 en saldos deudores y USD 48.300 en acreedores: está cuadrado. Pero si una compra de USD 500 se registró dos veces, los dos totales suben 500 y siguen iguales; por eso el balance no detecta ese error.",
           "puntos_clave": [
             "Total de saldos deudores = total de saldos acreedores.",
             "Detecta errores aritméticos, no todos los errores."
@@ -244,6 +254,7 @@
           "id": "cg-estados-ajustes",
           "nombre": "Asientos de ajuste",
           "explicacion": "Al cierre del período se ajustan las cuentas para que los ingresos y gastos queden en el período al que pertenecen: gastos pagados por adelantado que ya se consumieron, ingresos cobrados por anticipado que ya se ganaron, gastos ocurridos que aún no se pagan (sueldos, intereses) y la depreciación de los activos fijos. Sin ajustes, la utilidad queda distorsionada.",
+          "ejemplo": "El 1 de octubre una empresa paga USD 1.200 por un seguro de 12 meses y lo registra como seguro pagado por anticipado. Al 31 de diciembre ya consumió 3 meses, así que ajusta: Debe Gasto de seguros 300; Haber Seguros pagados por anticipado 300. Sin ese ajuste, el gasto del año quedaría USD 300 por debajo.",
           "puntos_clave": [
             "Los ajustes aplican la base de acumulación.",
             "Casi siempre afectan una cuenta de resultados y una de balance."
@@ -265,6 +276,7 @@
           "id": "cg-estados-resultados",
           "nombre": "Estado de resultados",
           "explicacion": "Resume los ingresos y gastos de un período y muestra la utilidad o pérdida. Responde a la pregunta «¿cuánto ganó la empresa en este período?». Se prepara antes que los demás estados porque la utilidad neta alimenta el patrimonio.",
+          "ejemplo": "En el primer trimestre, una academia de inglés cobró pensiones por USD 18.000 y tuvo gastos de sueldos (9.500), arriendo (2.400), servicios básicos (600) y depreciación (500), en total USD 13.000. Su utilidad del período, antes de participaciones e impuestos, es 18.000 − 13.000 = USD 5.000.",
           "puntos_clave": [
             "Cubre un período (un mes, un año).",
             "Utilidad neta = ingresos − gastos."
@@ -286,6 +298,7 @@
           "id": "cg-estados-situacion",
           "nombre": "Estado de situación financiera y relación entre estados",
           "explicacion": "El estado de situación financiera (balance general) muestra activos, pasivos y patrimonio en una fecha. Se conecta con los demás estados: la utilidad del estado de resultados pasa al estado de cambios en el patrimonio, y el patrimonio final aparece en el balance. El estado de flujos de efectivo explica por qué cambió el saldo de efectivo.",
+          "ejemplo": "Si esa academia empezó el trimestre con patrimonio de USD 20.000 y no hubo retiros, la utilidad de USD 5.000 lleva el patrimonio a USD 25.000. Ese es el valor que aparece en el estado de situación financiera al 31 de marzo, junto a los activos y pasivos de esa fecha.",
           "puntos_clave": [
             "Balance: una fecha. Resultados: un período.",
             "La utilidad neta une resultados y balance."
@@ -306,6 +319,7 @@
           "id": "cg-estados-cierre",
           "nombre": "Cierre del ciclo contable",
           "explicacion": "Los asientos de cierre llevan a cero las cuentas temporales (ingresos, gastos y retiros) y trasladan su efecto al patrimonio. Las cuentas permanentes (activos, pasivos y patrimonio) pasan con su saldo al período siguiente. Después del cierre se prepara un balance de comprobación posterior al cierre, que solo contiene cuentas permanentes.",
+          "ejemplo": "Al 31 de diciembre, una tienda tiene Ventas por USD 60.000 (saldo acreedor) y Gastos por USD 52.000 (saldo deudor). Al cerrar, lleva ambas cuentas a cero y traslada la diferencia, USD 8.000 de utilidad, al patrimonio. El 1 de enero Ventas y Gastos empiezan en cero, mientras Caja y Proveedores continúan con su saldo.",
           "puntos_clave": [
             "Cuentas temporales: se cierran.",
             "Cuentas permanentes: continúan."
@@ -334,6 +348,7 @@
           "id": "cg-mercaderias-sistemas",
           "nombre": "Sistema periódico y sistema permanente",
           "explicacion": "En el sistema permanente (perpetuo) cada compra y venta actualiza el inventario y el costo de ventas al momento, normalmente con un software. En el periódico las compras se acumulan en una cuenta propia y el costo de ventas se calcula al final, después de contar físicamente el inventario. El permanente da información continua; el periódico es más simple pero solo informa al cierre.",
+          "ejemplo": "Un supermercado con lector de código de barras usa el sistema permanente: al vender una botella de aceite el sistema baja el inventario y registra su costo en ese momento. Una bodega de barrio usa el periódico: anota las compras del mes y el último día cuenta la mercadería que queda para calcular el costo de ventas.",
           "puntos_clave": [
             "Permanente: costo de ventas en cada venta.",
             "Periódico: costo de ventas al cierre, con conteo físico."
@@ -353,6 +368,7 @@
           "id": "cg-mercaderias-netas",
           "nombre": "Ventas netas y compras netas",
           "explicacion": "Las ventas netas restan a las ventas brutas las devoluciones y los descuentos concedidos a clientes. Las compras netas parten de las compras, suman los fletes pagados para traer la mercadería y restan las devoluciones y descuentos obtenidos de proveedores. Llevar estos conceptos en cuentas separadas permite controlar cuánto se devuelve y cuánto se descuenta.",
+          "ejemplo": "Una tienda vendió USD 25.000, le devolvieron mercadería por USD 800 y concedió descuentos por USD 450: ventas netas = USD 23.750. Compró USD 14.000, pagó fletes por USD 350, devolvió USD 600 y obtuvo descuentos por USD 250: compras netas = USD 13.500.",
           "puntos_clave": [
             "Ventas netas = ventas − devoluciones − descuentos.",
             "Compras netas = compras + fletes − devoluciones − descuentos."
@@ -375,6 +391,7 @@
           "id": "cg-mercaderias-costo",
           "nombre": "Costo de ventas y utilidad bruta",
           "explicacion": "El costo de ventas es lo que costó la mercadería que se vendió. En el sistema periódico se obtiene con inventario inicial más compras netas menos inventario final. La utilidad bruta es ventas netas menos costo de ventas, y el margen bruto la expresa como porcentaje de las ventas: muestra si los precios cubren con holgura el costo de lo vendido.",
+          "ejemplo": "Con inventario inicial de USD 5.000, compras netas de 13.500 e inventario final de 4.200, el costo de ventas es 5.000 + 13.500 − 4.200 = USD 14.300. Si las ventas netas fueron USD 23.750, la utilidad bruta es 9.450 y el margen bruto 9.450 ÷ 23.750 = 39,79 %.",
           "puntos_clave": [
             "CV = II + CN − IF.",
             "Utilidad bruta = ventas netas − costo de ventas."
@@ -398,6 +415,7 @@
           "id": "cg-mercaderias-valoracion",
           "nombre": "Valoración de inventarios: PEPS y promedio ponderado",
           "explicacion": "Cuando la mercadería se compra a precios distintos hay que decidir qué costo asignar a lo vendido. PEPS asume que salen primero las unidades más antiguas; el promedio ponderado usa un costo único que mezcla todos los lotes. Con precios en alza, PEPS da un costo de ventas menor y un inventario final más alto que el promedio. La NIC 2 no permite el método UEPS.",
+          "ejemplo": "Se compran 100 unidades a USD 10 y luego 100 a USD 12, y se venden 150. Con PEPS, el costo de ventas es 100 × 10 + 50 × 12 = USD 1.600 y quedan 50 unidades a 12 (USD 600). Con promedio ponderado (USD 11 por unidad), el costo de ventas es USD 1.650 y el inventario final USD 550.",
           "puntos_clave": [
             "PEPS: el inventario final queda a precios recientes.",
             "Promedio: un solo costo unitario para todos los lotes.",

@@ -1,6 +1,6 @@
 {
   "materia": "matematica-financiera",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "mf-interes",
@@ -13,6 +13,7 @@
           "id": "mf-simple",
           "nombre": "Interés simple",
           "explicacion": "En el interés simple los intereses se calculan siempre sobre el capital inicial: I = P·i·t. El monto al final es el capital más los intereses. Se usa en operaciones de corto plazo y en algunos créditos comerciales.",
+          "ejemplo": "Un comerciante presta USD 1.500 a 10 % anual de interés simple durante 9 meses. Como la tasa es anual, el tiempo es 9 ÷ 12 = 0,75 años: I = 1.500 × 0,10 × 0,75 = USD 112,50 y el monto a cobrar es 1.500 + 112,50 = USD 1.612,50.",
           "puntos_clave": [
             "La tasa y el tiempo deben estar en la misma unidad (anual con años, mensual con meses).",
             "El monto crece en línea recta."
@@ -34,6 +35,7 @@
           "id": "mf-compuesto",
           "nombre": "Interés compuesto",
           "explicacion": "En el interés compuesto los intereses de cada período se suman al capital y también ganan intereses. El valor futuro es VF = VA·(1 + i)^n, donde i es la tasa por período y n el número de períodos.",
+          "ejemplo": "Depositas USD 2.000 a 12 % nominal anual con capitalización mensual durante 2 años. La tasa por período es 0,12 ÷ 12 = 1 % y hay 24 meses: VF = 2.000 × 1,01^24 = USD 2.539,47. Con interés simple habrías obtenido 2.000 × (1 + 0,12 × 2) = USD 2.480.",
           "puntos_clave": [
             "Con capitalización mensual, i es la tasa anual dividida para 12 y n son los meses.",
             "A mayor frecuencia de capitalización, mayor monto."
@@ -55,6 +57,7 @@
           "id": "mf-tasas",
           "nombre": "Tasa nominal y tasa efectiva",
           "explicacion": "La tasa nominal anual no considera la capitalización dentro del año; la tasa efectiva anual sí. Para comparar préstamos o inversiones con distintas frecuencias de capitalización se convierten todas a tasa efectiva.",
+          "ejemplo": "El banco A ofrece 12 % nominal anual capitalizable mensualmente, que equivale a (1 + 0,12 ÷ 12)^12 − 1 = 12,68 % efectivo; el banco B ofrece 12,40 % efectivo anual. Para un depósito conviene A (paga más en términos efectivos); para un préstamo conviene B (cuesta menos).",
           "puntos_clave": [
             "Efectiva = (1 + nominal/m)^m − 1.",
             "Un 12 % nominal capitalizable mensualmente equivale a un 12,68 % efectivo."
@@ -86,6 +89,7 @@
           "id": "mf-vtm",
           "nombre": "Valor presente y valor futuro",
           "explicacion": "Un dólar hoy vale más que un dólar mañana porque puede invertirse. Llevar un valor al futuro es capitalizar; traerlo al presente es descontar. Con tres de los cuatro datos (VA, VF, tasa, períodos) se despeja el cuarto.",
+          "ejemplo": "¿Cuántos meses tarda USD 5.000 en convertirse en USD 6.000 al 1 % mensual? n = ln(6.000 ÷ 5.000) ÷ ln(1,01) = 18,32 meses, es decir, se llega en el mes 19. Y si USD 5.000 se convierten en 6.500 en 3 años, la tasa implícita es (6.500 ÷ 5.000)^(1/3) − 1 = 9,14 % anual.",
           "puntos_clave": [
             "n = ln(VF/VA) ÷ ln(1 + i).",
             "La tasa implícita es i = (VF/VA)^(1/n) − 1."
@@ -107,6 +111,7 @@
           "id": "mf-flujos-desiguales",
           "nombre": "Flujos desiguales",
           "explicacion": "Cuando los flujos no son iguales cada período, el valor presente es la suma de cada flujo descontado según la fecha en que ocurre. El momento exacto de cada flujo cambia el resultado.",
+          "ejemplo": "Un proyecto paga USD 1.000 en un año, 1.500 en dos años y 2.000 en tres años. Con una tasa de 10 %, su valor presente es 1.000 ÷ 1,1 + 1.500 ÷ 1,1² + 2.000 ÷ 1,1³ = 909,09 + 1.239,67 + 1.502,63 = USD 3.651,39. Si el pago de 2.000 llegara primero, el valor presente sería mayor.",
           "puntos_clave": [
             "Cada flujo se divide para (1 + i)^t con su propio t.",
             "Un flujo en t = 0 no se descuenta."
@@ -125,6 +130,7 @@
           "id": "mf-excel",
           "nombre": "Funciones financieras de la hoja de cálculo",
           "explicacion": "Las funciones VA, VF, PAGO, TASA y NPER resuelven los problemas de valor del dinero. Siguen una convención de signos: el dinero que sale se escribe negativo y el que entra positivo; si se ignora, los resultados salen con signo contrario o con error.",
+          "ejemplo": "=VA(1%;12;-500) da 5.627,54: es lo que hoy vale recibir USD 500 al final de cada mes durante un año al 1 % mensual. =PAGO(1%;12;5000) da −444,24: el signo negativo indica que es dinero que sale para pagar un préstamo de USD 5.000 que entró. En Excel en inglés serían =PV(1%,12,-500) y =PMT(1%,12,5000).",
           "puntos_clave": [
             "En Excel en inglés son PV, FV, PMT, RATE y NPER.",
             "El argumento \"tipo\" indica si los pagos son al inicio (1) o al final (0)."
@@ -152,6 +158,7 @@
           "id": "mf-anualidad-vencida",
           "nombre": "Anualidad vencida",
           "explicacion": "Una anualidad vencida es una serie de pagos iguales al final de cada período. Su valor presente es la suma de los pagos descontados y su valor futuro la suma de los pagos capitalizados hasta el último período.",
+          "ejemplo": "Ahorras USD 200 al final de cada mes durante 24 meses en una cuenta que paga 0,8 % mensual. Valor futuro = 200 × (1,008^24 − 1) ÷ 0,008 = USD 5.268,63, aunque solo depositaste 4.800: la diferencia, 468,63, son intereses.",
           "puntos_clave": [
             "VA = R·[1 − (1 + i)^−n] ÷ i.",
             "VF = R·[(1 + i)^n − 1] ÷ i."
@@ -173,6 +180,7 @@
           "id": "mf-anualidad-anticipada",
           "nombre": "Anualidad anticipada",
           "explicacion": "En la anualidad anticipada los pagos se hacen al inicio de cada período, como un arriendo. Cada pago gana un período más de interés, así que su valor es el de la anualidad vencida multiplicado por (1 + i).",
+          "ejemplo": "Un local se arrienda por USD 400 pagados al inicio de cada mes durante un año, con una tasa de 1 % mensual. Como anualidad vencida valdría 400 × (1 − 1,01^−12) ÷ 0,01 = 4.502,03; al ser anticipada se multiplica por 1,01: VA = USD 4.547,05.",
           "puntos_clave": [
             "VA anticipada = VA vencida × (1 + i).",
             "Los arriendos y las cuotas de colegiatura suelen ser anticipados."
@@ -194,6 +202,7 @@
           "id": "mf-perpetuidades",
           "nombre": "Perpetuidades",
           "explicacion": "Una perpetuidad paga una cantidad fija para siempre; su valor presente es el pago dividido para la tasa. Si el pago crece a una tasa constante g menor que la de descuento, el valor es el primer pago dividido para (i − g).",
+          "ejemplo": "Una fundación quiere entregar una beca de USD 1.200 cada año para siempre y puede invertir al 6 % anual: necesita 1.200 ÷ 0,06 = USD 20.000 hoy. Si la beca debe crecer 3 % cada año para mantener su poder de compra, necesita 1.200 ÷ (0,06 − 0,03) = USD 40.000.",
           "puntos_clave": [
             "VA = R ÷ i.",
             "Con crecimiento: VA = R₁ ÷ (i − g), solo si i > g."
@@ -224,6 +233,7 @@
           "id": "mf-cuota",
           "nombre": "Cuota fija (sistema francés)",
           "explicacion": "En el sistema francés todas las cuotas son iguales; al inicio la mayor parte de la cuota es interés y con el tiempo crece la parte de capital. La cuota se calcula como una anualidad cuyo valor presente es el monto prestado.",
+          "ejemplo": "Un préstamo de USD 10.000 a 12 meses con tasa de 1,5 % mensual tiene una cuota fija de USD 916,80. En la primera cuota, el interés es 10.000 × 0,015 = 150 y el capital amortizado 916,80 − 150 = 766,80; en las siguientes el interés baja y el capital sube.",
           "puntos_clave": [
             "Interés de la cuota = saldo anterior × tasa del período.",
             "Capital amortizado = cuota − interés."
@@ -246,6 +256,7 @@
           "id": "mf-saldo",
           "nombre": "Saldo pendiente",
           "explicacion": "El saldo después de k cuotas es el valor presente de las cuotas que faltan. Sirve para saber cuánto se debe si se quiere precancelar o refinanciar el préstamo.",
+          "ejemplo": "Después de pagar 6 de las 12 cuotas de USD 916,80 (préstamo de 10.000 al 1,5 % mensual), el saldo es el valor presente de las 6 que faltan: 916,80 × (1 − 1,015^−6) ÷ 0,015 = USD 5.223,18. Esa es la cifra para precancelar, no la mitad del préstamo.",
           "puntos_clave": [
             "Saldo = cuota × [1 − (1 + i)^−(n − k)] ÷ i.",
             "La tabla de amortización debe terminar con saldo cero."
@@ -266,6 +277,7 @@
           "id": "mf-capital-constante",
           "nombre": "Amortización de capital constante",
           "explicacion": "En este sistema cada cuota paga la misma porción de capital y el interés sobre el saldo; por eso las cuotas empiezan altas y van bajando. Paga menos interés total que el sistema francés para el mismo préstamo y tasa.",
+          "ejemplo": "Un préstamo de USD 12.000 en 4 cuotas al 2 % por período amortiza 3.000 de capital en cada una. Cuota 1 = 3.000 + 12.000 × 0,02 = 3.240; cuota 2 = 3.000 + 9.000 × 0,02 = 3.180; cuota 3 = 3.120; cuota 4 = 3.060. El interés total es USD 600, frente a unos USD 605,94 con cuota fija.",
           "puntos_clave": [
             "Capital por cuota = préstamo ÷ n.",
             "Cuota k = capital + saldo anterior × tasa."

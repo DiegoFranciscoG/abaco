@@ -1,6 +1,6 @@
 {
   "materia": "calculo-diferencial",
-  "actualizado_en": "2026-10-15",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "cd-funciones",
@@ -13,6 +13,7 @@
           "id": "cd-funciones-concepto",
           "nombre": "Funciones y su representación",
           "explicacion": "Una función asigna a cada valor de entrada (dominio) exactamente un valor de salida (rango). Se puede expresar con una fórmula, una tabla, un gráfico o una descripción en palabras. En negocios es común modelar el costo, el ingreso o la utilidad como funciones de la cantidad producida.",
+          "ejemplo": "El ingreso de una feria que vende entradas a USD 5 es I(q) = 5q, donde q es el número de entradas. A cada cantidad le corresponde un solo ingreso: I(200) = 1.000. La misma función puede darse como tabla (q = 100 → 500; q = 200 → 1.000) o como gráfica, una recta que sale del origen.",
           "puntos_clave": [
             "Cada entrada tiene una sola salida.",
             "Dominio: valores permitidos de la variable independiente."
@@ -32,6 +33,7 @@
           "id": "cd-funciones-clases",
           "nombre": "Funciones lineales, cuadráticas y polinómicas",
           "explicacion": "Una función lineal tiene pendiente constante: cada unidad adicional cambia la salida en la misma cantidad. Una cuadrática describe una curva con un máximo o un mínimo (vértice), útil para ingresos que primero suben y luego bajan. Las polinómicas generalizan ambas y aparecen en funciones de costo con economías y deseconomías de escala.",
+          "ejemplo": "Costo lineal: C(q) = 300 + 4q (cada unidad cuesta siempre 4 más). Ingreso cuadrático: I(q) = 60q − 0,5q², que sube hasta q = 60 y luego baja. Costo polinómico: C(q) = 500 + 10q − 0,2q² + 0,001q³, cuyo costo por unidad primero baja (economías de escala) y luego sube.",
           "puntos_clave": [
             "Lineal: pendiente constante.",
             "Cuadrática: tiene un vértice (máximo o mínimo)."
@@ -50,6 +52,7 @@
           "id": "cd-funciones-exponenciales",
           "nombre": "Funciones exponenciales y logarítmicas",
           "explicacion": "Las funciones exponenciales describen crecimientos proporcionales al valor actual, como el interés compuesto. El número e aparece cuando la capitalización se vuelve continua. El logaritmo es la función inversa de la exponencial y sirve para despejar el tiempo, por ejemplo, cuántos años tarda en duplicarse una inversión.",
+          "ejemplo": "USD 1.000 al 5 % anual con capitalización continua valen 1.000 × e^(0,05 × 3) = USD 1.161,83 a los 3 años. ¿Cuándo se duplica? Se despeja con logaritmo natural: 2 = e^(0,05t), así que t = ln 2 ÷ 0,05 = 13,86 años.",
           "puntos_clave": [
             "Crecimiento exponencial: porcentaje constante por período.",
             "ln despeja exponentes."
@@ -80,6 +83,7 @@
           "id": "cd-limites-idea",
           "nombre": "Idea intuitiva de límite",
           "explicacion": "El límite de f(x) cuando x se acerca a a es el valor al que se aproxima la función, aunque en x = a no esté definida o valga otra cosa. Se puede estimar con tablas de valores que se acercan por la izquierda y por la derecha: si ambos lados tienden al mismo número, el límite existe.",
+          "ejemplo": "f(x) = (x² − 9) ÷ (x − 3) no está definida en x = 3. Con una tabla: f(2,9) = 5,9; f(2,99) = 5,99; f(3,01) = 6,01; f(3,1) = 6,1. Por la izquierda y por la derecha los valores se acercan a 6, así que el límite cuando x tiende a 3 es 6.",
           "puntos_clave": [
             "El límite describe el comportamiento cerca de a, no en a.",
             "Límites laterales iguales → el límite existe."
@@ -99,6 +103,7 @@
           "id": "cd-limites-leyes",
           "nombre": "Leyes de los límites",
           "explicacion": "Los límites respetan las operaciones: el límite de una suma es la suma de los límites, y lo mismo para productos, cocientes (si el denominador no tiende a cero) y potencias. Cuando la sustitución directa da 0/0 se simplifica la expresión, por ejemplo factorizando, antes de evaluar.",
+          "ejemplo": "Al sustituir x = 3 en (x² − 9) ÷ (x − 3) se obtiene 0/0, una forma indeterminada. Se factoriza: (x − 3)(x + 3) ÷ (x − 3) = x + 3 para x ≠ 3, y ahora la sustitución directa da 3 + 3 = 6. En cambio, el límite de 2x² + 5 cuando x tiende a 1 se obtiene directo: 2 + 5 = 7.",
           "puntos_clave": [
             "Sustitución directa cuando la función es «bien portada».",
             "0/0 es una forma indeterminada: hay que simplificar."
@@ -117,6 +122,7 @@
           "id": "cd-limites-continuidad",
           "nombre": "Continuidad",
           "explicacion": "Una función es continua en a si está definida en a, el límite existe y ambos coinciden. Gráficamente, se puede dibujar sin levantar el lápiz. Las tarifas por tramos, como la tabla del impuesto a la renta, son ejemplos donde conviene revisar la continuidad en los puntos de cambio.",
+          "ejemplo": "En la tabla 2026 del impuesto a la renta, al final del segundo tramo (USD 15.549) el impuesto calculado es 0,05 × (15.549 − 12.208) = 167,05, y el tercer tramo empieza con un impuesto de 167 sobre su fracción básica: la función salta 5 centavos por el redondeo de la tabla. En cambio, C(q) = 300 + 4q, un polinomio, es continua en todos sus puntos.",
           "puntos_clave": [
             "Tres condiciones: f(a) existe, el límite existe, son iguales.",
             "Los polinomios son continuos en todos los reales."
@@ -144,6 +150,7 @@
           "id": "cd-derivada-secante",
           "nombre": "Tasa de cambio promedio y recta secante",
           "explicacion": "La tasa de cambio promedio entre a y b es el cociente (f(b) − f(a)) ÷ (b − a), que coincide con la pendiente de la recta secante que une ambos puntos de la gráfica. Si el intervalo se hace cada vez más pequeño, la secante se acerca a la recta tangente y su pendiente se acerca a la derivada.",
+          "ejemplo": "Para C(q) = 200 + 1,5q + 0,02q², el costo pasa de C(50) = 325 a C(60) = 362. La tasa promedio entre 50 y 60 es (362 − 325) ÷ 10 = 3,7 dólares por unidad: es la pendiente de la secante. Si el intervalo se achica hacia 50, esa pendiente se acerca a 3,5, la derivada en q = 50.",
           "puntos_clave": [
             "Promedio: cambio en f ÷ cambio en x.",
             "La derivada es el límite de las pendientes de las secantes."
@@ -164,6 +171,7 @@
           "id": "cd-derivada-definicion",
           "nombre": "Definición de derivada",
           "explicacion": "La derivada de f en a es el límite, cuando h tiende a cero, de (f(a + h) − f(a)) ÷ h. Representa la pendiente de la tangente y la tasa de cambio instantánea. Si ese límite existe en cada punto de un intervalo, la derivada es una nueva función f′(x).",
+          "ejemplo": "Para f(x) = x² en a = 3: [f(3 + h) − f(3)] ÷ h = (9 + 6h + h² − 9) ÷ h = 6 + h. Cuando h tiende a cero, el cociente tiende a 6: f′(3) = 6, la pendiente de la tangente a la parábola en el punto (3, 9).",
           "puntos_clave": [
             "f′(a) = lím (f(a+h) − f(a)) / h cuando h → 0.",
             "Derivada = pendiente de la tangente."
@@ -182,6 +190,7 @@
           "id": "cd-derivada-reglas",
           "nombre": "Reglas de derivación",
           "explicacion": "En la práctica no se usa la definición cada vez, sino reglas: la derivada de una constante es cero, la de xⁿ es n·xⁿ⁻¹, y la derivada de una suma es la suma de derivadas. Para productos y cocientes hay reglas propias. Con ellas, derivar una función de costo polinómica toma segundos.",
+          "ejemplo": "Para C(q) = 200 + 1,5q + 0,02q²: la derivada de 200 es 0, la de 1,5q es 1,5 y la de 0,02q² es 0,04q. Entonces C′(q) = 1,5 + 0,04q y, en q = 50, C′(50) = 3,5 dólares por unidad, sin usar la definición de límite.",
           "puntos_clave": [
             "d/dx (xⁿ) = n·xⁿ⁻¹.",
             "La derivada de una constante es 0."
@@ -202,6 +211,7 @@
           "id": "cd-derivada-cadena",
           "nombre": "Regla de la cadena",
           "explicacion": "Sirve para derivar funciones compuestas, es decir, una función dentro de otra: la derivada es la derivada de la función externa evaluada en la interna, multiplicada por la derivada de la interna. Aparece, por ejemplo, al derivar (1 + i)ⁿ respecto a i o una exponencial con exponente variable.",
+          "ejemplo": "Para derivar el monto M(i) = 1.000 × (1 + i)^12 respecto a la tasa, la función externa es u^12 y la interna 1 + i: M′(i) = 1.000 × 12 × (1 + i)^11 × 1. En i = 1 % mensual, M′ = 12.000 × 1,01^11 ≈ 13.388: por cada punto adicional de tasa (0,01) el monto sube unos USD 133,88.",
           "puntos_clave": [
             "(f(g(x)))′ = f′(g(x)) · g′(x)."
           ],
@@ -228,6 +238,7 @@
           "id": "cd-aplicaciones-marginal",
           "nombre": "Costo e ingreso marginal",
           "explicacion": "La derivada del costo total respecto a la cantidad aproxima cuánto cuesta producir una unidad más; la del ingreso, cuánto ingreso adicional trae esa unidad. Comparar ingreso marginal con costo marginal ayuda a decidir si conviene ampliar la producción.",
+          "ejemplo": "Con C(q) = 200 + 1,5q + 0,02q², el costo marginal en q = 50 es C′(50) = 3,5; el cambio real de producir la unidad 51 es C(51) − C(50) = 3,52, muy cercano. Si el ingreso marginal en esa cantidad es 20 y el costo marginal 3,5, conviene producir más.",
           "puntos_clave": [
             "Costo marginal ≈ C(q + 1) − C(q) ≈ C′(q).",
             "Producir más conviene mientras el ingreso marginal supere al costo marginal."
@@ -248,6 +259,7 @@
           "id": "cd-aplicaciones-extremos",
           "nombre": "Máximos y mínimos",
           "explicacion": "Los valores extremos de una función derivable en un intervalo abierto ocurren en puntos críticos, donde la derivada es cero o no existe. En un intervalo cerrado también se revisan los extremos del intervalo. Comparar los valores de la función en esos puntos indica cuál es el máximo o el mínimo absoluto.",
+          "ejemplo": "La utilidad de un negocio es U(q) = −q² + 40q − 300 en el intervalo [0, 30]. U′(q) = −2q + 40 = 0 da el punto crítico q = 20, con U(20) = 100. En los extremos: U(0) = −300 y U(30) = 0. El máximo absoluto es USD 100, en q = 20.",
           "puntos_clave": [
             "Punto crítico: f′(x) = 0 o no existe.",
             "En intervalos cerrados se evalúan también los extremos."
@@ -266,6 +278,7 @@
           "id": "cd-aplicaciones-optimizacion",
           "nombre": "Problemas de optimización",
           "explicacion": "Un problema de optimización se resuelve en pasos: identificar la cantidad a maximizar o minimizar, expresarla como función de una sola variable, fijar el dominio con sentido económico, derivar e igualar a cero, y comprobar que el punto encontrado es realmente el máximo o el mínimo buscado.",
+          "ejemplo": "Una empresa vende q = 1.000 − 20p unidades a precio p. Ingreso: I(p) = p(1.000 − 20p) = 1.000p − 20p², con dominio 0 ≤ p ≤ 50. I′(p) = 1.000 − 40p = 0 da p = USD 25; la segunda derivada (−40) confirma que es un máximo: se venden 500 unidades y el ingreso es USD 12.500.",
           "puntos_clave": [
             "Una función, una variable, un dominio.",
             "Verificar con la segunda derivada o comparando valores."
@@ -286,6 +299,7 @@
           "id": "cd-aplicaciones-elasticidad",
           "nombre": "Elasticidad precio de la demanda",
           "explicacion": "La elasticidad compara el cambio porcentual de la cantidad con el cambio porcentual del precio. Si su valor absoluto es mayor que 1 la demanda es elástica (una subida de precio reduce el ingreso); si es menor que 1, inelástica (el ingreso sube). El método del punto medio usa promedios para que el resultado no dependa de si el precio sube o baja.",
+          "ejemplo": "El pasaje de un bus sube de USD 0,30 a 0,35 y los viajes diarios bajan de 10.000 a 9.500. Con el punto medio: %ΔQ = −500 ÷ 9.750 = −5,13 %; %ΔP = 0,05 ÷ 0,325 = 15,38 %; elasticidad = −0,33. Como |E| < 1 la demanda es inelástica y el ingreso sube de 3.000 a 3.325 dólares al día.",
           "puntos_clave": [
             "|E| > 1: elástica; |E| < 1: inelástica.",
             "Punto medio: cambios relativos sobre el promedio."

@@ -13,6 +13,7 @@
           "id": "fi-mercado-divisas",
           "nombre": "El mercado de divisas",
           "explicacion": "En el mercado de divisas se compran y venden monedas. Demandan una moneda quienes exportan hacia ese país, los turistas que lo visitan y los inversionistas que compran sus activos; la ofrecen quienes hacen lo contrario.",
+          "ejemplo": "Un exportador colombiano de flores que vende en Estados Unidos recibe dólares y los cambia por pesos: ofrece dólares y demanda pesos. Un turista colombiano que viaja a Miami hace lo contrario: ofrece pesos y demanda dólares. Si más personas quieren pesos, el peso se aprecia: con cada peso se compran más dólares.",
           "puntos_clave": [
             "El tipo de cambio es el precio de una moneda en términos de otra.",
             "Apreciación: la moneda compra más moneda extranjera."
@@ -31,6 +32,7 @@
           "id": "fi-oferta-demanda-divisas",
           "nombre": "Qué mueve el tipo de cambio",
           "explicacion": "Los cambios en las tasas de interés relativas, en la inflación esperada y en la confianza de los inversionistas desplazan la oferta y la demanda de una moneda. Por ejemplo, si un país sube sus tasas, su moneda suele atraer capital y apreciarse.",
+          "ejemplo": "Si el banco central de un país sube sus tasas de interés mientras las de otros países no cambian, los inversionistas extranjeros compran sus bonos y para eso demandan su moneda, que tiende a apreciarse. Si en cambio se espera más inflación en ese país, su moneda pierde atractivo y tiende a depreciarse.",
           "puntos_clave": [
             "Más inflación esperada tiende a depreciar la moneda.",
             "La paridad de poder adquisitivo orienta el largo plazo."
@@ -49,6 +51,7 @@
           "id": "fi-cotizaciones",
           "nombre": "Leer cotizaciones",
           "explicacion": "Una cotización puede expresarse como unidades de moneda local por una extranjera o al revés. Para convertir montos se multiplica o divide según cómo esté expresada; confundir el sentido produce errores de varios órdenes de magnitud.",
+          "ejemplo": "La cotización EUR/USD = 1,10 significa que 1 euro cuesta 1,10 dólares. Para pagar una factura de 5.000 euros se necesitan 5.000 × 1,10 = USD 5.500; la cotización inversa es 1 ÷ 1,10 = 0,9091 euros por dólar. Dividir en vez de multiplicar daría 4.545 dólares, un error típico.",
           "puntos_clave": [
             "EUR/USD = 1,10 significa que 1 euro cuesta 1,10 dólares.",
             "Una cotización y su inversa describen el mismo precio."
@@ -79,6 +82,7 @@
           "id": "fi-efectos",
           "nombre": "Efectos macroeconómicos del tipo de cambio",
           "explicacion": "Una moneda que se deprecia abarata las exportaciones y encarece las importaciones; también aumenta el peso de las deudas contraídas en moneda extranjera. Por eso los movimientos bruscos afectan a exportadores, importadores y bancos.",
+          "ejemplo": "Si el peso colombiano se deprecia frente al dólar, un exportador colombiano recibe más pesos por cada dólar vendido y puede bajar sus precios en dólares; en cambio, una empresa colombiana con una deuda de USD 1 millón necesita más pesos para pagarla. Para Ecuador, esa depreciación vuelve más baratos los productos colombianos frente a los ecuatorianos.",
           "puntos_clave": [
             "Depreciación: favorece al exportador.",
             "Las deudas en moneda extranjera crecen al depreciarse la moneda local."
@@ -97,6 +101,7 @@
           "id": "fi-politicas",
           "nombre": "Políticas cambiarias",
           "explicacion": "Un país puede dejar flotar su moneda, intervenir de forma moderada, fijar su valor frente a otra moneda o renunciar a una moneda propia y usar la de otro país. Cada opción equilibra de forma distinta la estabilidad y la capacidad de hacer política monetaria propia.",
+          "ejemplo": "Un país con moneda flotante deja que el mercado fije su tipo de cambio y usa su tasa de interés para controlar la inflación. Un país con tipo de cambio fijo compra o vende reservas para mantener el valor. Ecuador, al usar el dólar como moneda, no tiene tipo de cambio propio ni puede devaluar para ganar competitividad.",
           "puntos_clave": [
             "Flotante: el mercado fija el precio.",
             "Moneda fusionada o adoptada: no hay tipo de cambio propio."
@@ -115,6 +120,7 @@
           "id": "fi-dolarizacion",
           "nombre": "La dolarización en Ecuador",
           "explicacion": "El Código Orgánico Monetario y Financiero (art. 94) dispone que todas las transacciones, operaciones monetarias y financieras y sus registros contables en Ecuador se expresen en dólares de los Estados Unidos, y que su circulación corresponda al Banco Central del Ecuador. Al no tener moneda propia, el país no fija un tipo de cambio: el valor de sus precios frente al exterior depende de cómo se mueva el dólar frente a otras monedas.",
+          "ejemplo": "Una empresa ecuatoriana lleva su contabilidad, sus precios y sus contratos en dólares, como dispone el art. 94 del Código Orgánico Monetario y Financiero. Si el dólar se fortalece frente al euro, una rosa ecuatoriana vendida en Europa resulta más cara en euros, aunque su precio en dólares no haya cambiado.",
           "puntos_clave": [
             "Un dólar fuerte encarece las exportaciones ecuatorianas en mercados con otras monedas.",
             "Las cuentas de las empresas ecuatorianas se llevan en dólares."
@@ -141,6 +147,7 @@
           "id": "fi-riesgo-cambiario",
           "nombre": "Riesgo cambiario",
           "explicacion": "Una empresa enfrenta riesgo cambiario cuando cobra o paga en una moneda distinta a la de su contabilidad: entre la venta y el cobro, el tipo de cambio puede moverse y cambiar el valor recibido.",
+          "ejemplo": "Un importador ecuatoriano compra maquinaria en Alemania por 10.000 euros pagaderos en 90 días. Con EUR/USD = 1,10 pagaría USD 11.000; si al momento de pagar el euro sube a 1,15, pagará USD 11.500: pierde 500 dólares solo por el movimiento del tipo de cambio.",
           "puntos_clave": [
             "El riesgo de transacción aparece en cuentas por cobrar y por pagar en moneda extranjera.",
             "Un importador ecuatoriano que paga en euros pierde si el euro se aprecia."
@@ -159,6 +166,7 @@
           "id": "fi-coberturas",
           "nombre": "Coberturas con contratos a plazo",
           "explicacion": "Un contrato a plazo (forward) fija hoy el tipo de cambio de una operación futura. Elimina la incertidumbre, aunque también renuncia a la ganancia si el tipo de cambio se mueve a favor.",
+          "ejemplo": "Para evitar esa incertidumbre, el importador firma hoy un contrato a plazo a EUR/USD = 1,12 para dentro de 90 días: pagará USD 11.200 pase lo que pase. Si el euro sube a 1,15 se ahorra 300; si baja a 1,05 deja de ahorrar 700, pero desde el primer día sabe exactamente cuánto pagará.",
           "puntos_clave": [
             "Cubrir no busca ganar, busca saber cuánto se recibirá o pagará.",
             "Las opciones protegen sin renunciar a la ganancia, a cambio de una prima."
@@ -177,6 +185,7 @@
           "id": "fi-riesgo-tasa",
           "nombre": "Riesgo de tasa de interés",
           "explicacion": "Cuando suben las tasas de interés, baja el valor de los bonos y sube el costo de las deudas con tasa variable. Las empresas lo gestionan combinando deuda a tasa fija y variable o con instrumentos derivados.",
+          "ejemplo": "Una empresa tiene un préstamo de USD 100.000 a tasa variable de 8 % anual. Si la tasa sube a 10 %, sus intereses anuales pasan de 8.000 a 10.000. Con una deuda a tasa fija, ese aumento lo habría asumido el banco.",
           "puntos_clave": [
             "Los bonos de largo plazo son más sensibles a las tasas.",
             "Una deuda a tasa variable traslada el riesgo al deudor."
@@ -204,6 +213,7 @@
           "id": "fi-balanza",
           "nombre": "Medir la balanza comercial y la cuenta corriente",
           "explicacion": "La balanza comercial compara exportaciones e importaciones de bienes y servicios; la cuenta corriente añade ingresos por inversiones y transferencias como las remesas. Un déficit significa que el país gasta en el exterior más de lo que recibe por esos conceptos.",
+          "ejemplo": "Un país exporta bienes por 30.000 y servicios por 4.000, e importa bienes por 29.000 y servicios por 6.000 (millones de USD): su balanza de bienes y servicios es −1.000. Si además paga rentas netas por 1.800 al exterior y recibe remesas netas por 3.500, su cuenta corriente es −1.000 − 1.800 + 3.500 = +700.",
           "puntos_clave": [
             "Las remesas de migrantes entran en la cuenta corriente.",
             "Un déficit en cuenta corriente se financia con entradas de capital."
@@ -224,6 +234,7 @@
           "id": "fi-flujos",
           "nombre": "Balanza comercial y flujos de capital financiero",
           "explicacion": "Si un país importa más de lo que exporta, el resto del mundo le está prestando o invirtiendo la diferencia. Por eso un déficit comercial va acompañado de una entrada neta de capital financiero.",
+          "ejemplo": "Si un país importa 2.000 millones de dólares más de lo que exporta en un año, el resto del mundo le financia esa diferencia: empresas extranjeras invierten, bancos prestan o se compran sus bonos. Esa entrada neta de capital financiero es la otra cara del déficit comercial.",
           "puntos_clave": [
             "Déficit comercial ≈ entrada neta de capital.",
             "Superávit comercial ≈ salida neta de capital."
@@ -242,6 +253,7 @@
           "id": "fi-ahorro-inversion",
           "nombre": "Identidad ahorro–inversión",
           "explicacion": "La oferta de capital financiero de un país (ahorro privado, ahorro público y entradas de capital extranjero) debe igualar su demanda (inversión). Un gobierno con déficit o un ahorro privado bajo se compensan con más capital externo.",
+          "ejemplo": "En un país, el ahorro privado es 20.000 y el gobierno gasta 1.500 más de lo que recauda (ahorro público −1.500), mientras la inversión interna es 21.000 (millones de USD). Para financiar esa inversión hacen falta 21.000 − 20.000 + 1.500 = 2.500 de capital extranjero, que corresponde a un déficit comercial de 2.500.",
           "puntos_clave": [
             "Ahorro privado + ahorro público + entradas de capital = inversión.",
             "Explica por qué los déficits fiscales se relacionan con los comerciales."

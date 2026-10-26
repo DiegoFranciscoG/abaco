@@ -1,6 +1,6 @@
 {
   "materia": "finanzas-corporativas",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "fc-informacion",
@@ -13,6 +13,7 @@
           "id": "fc-relacion-estados",
           "nombre": "Relación entre estado de situación y de resultados",
           "explicacion": "El estado de resultados resume un período y el estado de situación muestra una fecha; la utilidad retenida los conecta. Para analizar una empresa se leen juntos: ventas frente a activos, utilidad frente a patrimonio.",
+          "ejemplo": "Una empresa vendió USD 400.000 en el año y sus activos pasaron de 230.000 a 270.000. Para medir cuántas ventas genera cada dólar de activos se usa el promedio: 400.000 ÷ 250.000 = 1,6 veces. Usar solo el saldo final (270.000) daría 1,48 y subestimaría la eficiencia.",
           "puntos_clave": [
             "Muchas razones combinan un dato de cada estado.",
             "Conviene promediar saldos inicial y final cuando se divide un flujo para un saldo."
@@ -31,6 +32,7 @@
           "id": "fc-flujo-libre",
           "nombre": "Flujo de caja operativo y flujo libre",
           "explicacion": "El flujo de caja operativo mide el efectivo que genera el giro del negocio; el flujo de caja libre de la empresa resta además las inversiones en activos fijos y en capital de trabajo. Es el efectivo que queda disponible para acreedores y accionistas.",
+          "ejemplo": "Una empresa genera USD 80.000 de flujo de caja operativo, invierte 50.000 en una nueva línea de producción y su capital de trabajo aumenta 20.000 porque vende más a crédito. Flujo de caja libre = 80.000 − 50.000 − 20.000 = USD 10.000. Aunque tuvo utilidad, en un año con más inversión ese flujo podría ser negativo.",
           "puntos_clave": [
             "FCLE = flujo operativo − inversión en activos − aumento del capital de trabajo.",
             "Una empresa con utilidad puede tener flujo libre negativo."
@@ -49,6 +51,7 @@
           "id": "fc-razones",
           "nombre": "Para qué sirven las razones",
           "explicacion": "Una razón condensa dos cifras en una sola medida comparable. Por sí sola dice poco: se interpreta frente a la misma empresa en otros años, frente a empresas del mismo sector o frente a una meta.",
+          "ejemplo": "Una razón corriente de 1,1 puede ser normal para un supermercado, que cobra al contado y rota rápido su inventario, pero preocupante para una constructora, que espera meses para cobrar. Por eso la misma cifra se compara con el sector, con los años anteriores de la empresa o con una meta.",
           "puntos_clave": [
             "Se agrupan en eficiencia, liquidez, solvencia, mercado y rentabilidad.",
             "El sector cambia lo que se considera \"normal\"."
@@ -76,6 +79,7 @@
           "id": "fc-liquidez",
           "nombre": "Liquidez",
           "explicacion": "La liquidez mide la capacidad de pagar las obligaciones de corto plazo. La razón corriente compara activos y pasivos corrientes; la prueba ácida excluye los inventarios porque son los menos líquidos.",
+          "ejemplo": "Una distribuidora tiene activo corriente de USD 150.000 (de los cuales 60.000 son inventario) y pasivo corriente de 100.000. Razón corriente = 1,5; prueba ácida = (150.000 − 60.000) ÷ 100.000 = 0,9; capital de trabajo = USD 50.000. Sin vender inventario, no alcanzaría a cubrir todas sus deudas de corto plazo.",
           "puntos_clave": [
             "Razón corriente = activo corriente ÷ pasivo corriente.",
             "Capital de trabajo = activo corriente − pasivo corriente."
@@ -98,6 +102,7 @@
           "id": "fc-solvencia",
           "nombre": "Solvencia y endeudamiento",
           "explicacion": "Las razones de solvencia muestran cuánto de los activos se financia con deuda y la capacidad de cumplir con ella en el largo plazo. Más deuda aumenta el riesgo, pero también puede aumentar la rentabilidad del patrimonio.",
+          "ejemplo": "Una empresa tiene activos por USD 500.000, pasivos por 300.000 y patrimonio de 200.000. Deuda a activos = 300.000 ÷ 500.000 = 60 %; deuda a patrimonio = 300.000 ÷ 200.000 = 1,5. Por cada dólar de los dueños, la empresa debe USD 1,50 a terceros.",
           "puntos_clave": [
             "Deuda a activos = pasivo total ÷ activo total.",
             "Deuda a patrimonio = pasivo total ÷ patrimonio."
@@ -119,6 +124,7 @@
           "id": "fc-eficiencia",
           "nombre": "Eficiencia operativa",
           "explicacion": "Las razones de eficiencia miden qué tan rápido la empresa convierte inventarios y cuentas por cobrar en ventas y efectivo, y cuántas ventas genera con sus activos.",
+          "ejemplo": "Con ventas a crédito de USD 360.000 y cuentas por cobrar de 40.000 al inicio y 50.000 al final, la rotación es 360.000 ÷ 45.000 = 8 veces y el período de cobro 365 ÷ 8 = 45,6 días. Con costo de ventas de 240.000 e inventario promedio de 60.000, el inventario rota 4 veces: unos 91 días en bodega.",
           "puntos_clave": [
             "Período de cobro = 365 ÷ rotación de cuentas por cobrar.",
             "Días de inventario = 365 ÷ rotación de inventarios."
@@ -143,6 +149,7 @@
           "id": "fc-rentabilidad",
           "nombre": "Rentabilidad y análisis DuPont",
           "explicacion": "El ROA mide la utilidad por cada dólar de activos y el ROE la utilidad por cada dólar de patrimonio. El análisis DuPont descompone el ROE en margen neto, rotación de activos y multiplicador del capital para saber de dónde viene la rentabilidad.",
+          "ejemplo": "Una empresa tiene utilidad neta de USD 30.000, ventas de 400.000, activos de 250.000 y patrimonio de 125.000. DuPont: margen neto 7,5 % × rotación de activos 1,6 × multiplicador 2,0 = ROE de 24 %; el ROA es 30.000 ÷ 250.000 = 12 %. La mitad de su ROE se explica por el uso de deuda (multiplicador de 2).",
           "puntos_clave": [
             "ROE = margen neto × rotación de activos × (activo ÷ patrimonio).",
             "Dos empresas con el mismo ROE pueden tener estrategias opuestas."
@@ -175,6 +182,7 @@
           "id": "fc-riesgo-rendimiento",
           "nombre": "Riesgo y rendimiento",
           "explicacion": "El rendimiento de un activo combina la ganancia de capital y los dividendos o intereses recibidos. El riesgo se mide con la variabilidad de esos rendimientos; los inversionistas exigen más rendimiento por asumir más riesgo.",
+          "ejemplo": "Compras una acción a USD 50, recibes un dividendo de 2 y al año la vendes en 55. Rendimiento = (55 − 50 + 2) ÷ 50 = 14 %. Si los rendimientos de esa acción varían mucho de un año a otro, su desviación estándar será alta y su riesgo total también.",
           "puntos_clave": [
             "La desviación estándar de los rendimientos mide el riesgo total.",
             "La diversificación reduce el riesgo propio de cada empresa."
@@ -193,6 +201,7 @@
           "id": "fc-capm",
           "nombre": "Modelo de valoración de activos de capital (CAPM)",
           "explicacion": "El CAPM estima el rendimiento exigido a una acción: tasa libre de riesgo más beta por la prima de riesgo del mercado. Beta mide cuánto se mueve la acción frente al mercado.",
+          "ejemplo": "Con una tasa libre de riesgo de 4 %, un rendimiento esperado del mercado de 10 % y una beta de 1,3, el rendimiento exigido es 4 % + 1,3 × (10 % − 4 %) = 11,8 %. Como la beta es mayor que 1, la acción tiende a moverse más que el mercado y se le exige más.",
           "puntos_clave": [
             "Rendimiento exigido = rf + β·(rm − rf).",
             "β > 1: más volátil que el mercado."
@@ -211,6 +220,7 @@
           "id": "fc-wacc",
           "nombre": "Costo promedio ponderado de capital (WACC)",
           "explicacion": "El WACC pondera el costo de cada fuente de financiamiento por su peso en la estructura de capital. La deuda se toma después de impuestos porque los intereses son deducibles. Es la tasa mínima que deben rendir los proyectos de riesgo similar.",
+          "ejemplo": "Una empresa vale USD 600.000 en patrimonio (costo de 14 %) y tiene 400.000 de deuda (costo de 8 %), con tasa de impuesto de 25 %. WACC = 0,6 × 14 % + 0,4 × 8 % × (1 − 0,25) = 8,4 % + 2,4 % = 10,8 %. Un proyecto de riesgo similar debe rendir al menos 10,8 %.",
           "puntos_clave": [
             "WACC = (E/V)·re + (D/V)·rd·(1 − t).",
             "Los pesos deben usar valores de mercado cuando existen."
@@ -238,6 +248,7 @@
           "id": "fc-capital-trabajo",
           "nombre": "Capital de trabajo",
           "explicacion": "El capital de trabajo financia la operación diaria: inventarios, cuentas por cobrar y efectivo menos lo que se debe a proveedores. Gestionarlo bien libera efectivo sin necesidad de pedir préstamos.",
+          "ejemplo": "Un comercio cobra a sus clientes en 60 días y paga a sus proveedores en 30. Si negocia cobrar en 45 días y pagar en 45, el efectivo inmovilizado en la operación se reduce sin pedir un préstamo. Mantener inventario para seis meses de ventas, en cambio, deja efectivo detenido en bodega.",
           "puntos_clave": [
             "Cobrar antes y pagar después mejora el ciclo de conversión del efectivo.",
             "Demasiado inventario inmoviliza efectivo."
@@ -258,6 +269,7 @@
           "id": "fc-bonos",
           "nombre": "Valoración de bonos",
           "explicacion": "El precio de un bono es el valor presente de sus cupones más el valor presente del valor nominal, descontados al rendimiento que exige el mercado. Si las tasas de mercado suben, el precio del bono baja.",
+          "ejemplo": "Un bono de valor nominal USD 1.000 paga un cupón anual de 8 % (USD 80) durante 3 años. Si el mercado exige 10 %, su precio es 80 ÷ 1,1 + 80 ÷ 1,1² + 1.080 ÷ 1,1³ = USD 950,26: se vende bajo la par porque su cupón paga menos que lo que exige el mercado.",
           "puntos_clave": [
             "Cupón = valor nominal × tasa cupón.",
             "Si la tasa de mercado es mayor que la tasa cupón, el bono se vende bajo la par."
@@ -276,6 +288,7 @@
           "id": "fc-acciones",
           "nombre": "Valoración de acciones: modelo de dividendos",
           "explicacion": "El modelo de crecimiento constante (Gordon) valora una acción como el próximo dividendo dividido para la diferencia entre el rendimiento exigido y la tasa de crecimiento de los dividendos. Funciona para empresas maduras con crecimiento estable.",
+          "ejemplo": "Una empresa madura pagó un dividendo de USD 1,00, espera que crezca 4 % cada año y los inversionistas exigen 12 %. El próximo dividendo es D₁ = 1,04, así que el precio es 1,04 ÷ (0,12 − 0,04) = USD 13,00. Usar el dividendo ya pagado (1,00) daría 12,50, un error frecuente.",
           "puntos_clave": [
             "P₀ = D₁ ÷ (r − g), con r > g.",
             "D₁ es el dividendo del próximo año, no el último pagado."

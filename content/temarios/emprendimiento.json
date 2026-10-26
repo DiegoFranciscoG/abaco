@@ -1,6 +1,6 @@
 {
   "materia": "emprendimiento",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "em-perspectiva",
@@ -13,6 +13,7 @@
           "id": "em-hoy",
           "nombre": "El emprendimiento hoy",
           "explicacion": "Emprender es reconocer una oportunidad y organizar recursos para aprovecharla asumiendo riesgos. Incluye negocios propios, emprendimientos sociales y el intraemprendimiento dentro de empresas existentes.",
+          "ejemplo": "Una estudiante crea una tienda en línea de accesorios tejidos (negocio propio); un grupo de jóvenes organiza un taller de reparación de computadoras que capacita a personas con discapacidad (emprendimiento social); un analista de un banco propone y lidera una app interna para aprobar créditos más rápido (intraemprendimiento). En los tres casos alguien vio una oportunidad y asumió un riesgo.",
           "puntos_clave": [
             "Emprender no es solo crear una empresa grande.",
             "El riesgo se gestiona, no se elimina."
@@ -31,6 +32,7 @@
           "id": "em-mentalidad",
           "nombre": "Mentalidad emprendedora",
           "explicacion": "La mentalidad emprendedora combina tolerancia a la incertidumbre, aprendizaje de los errores, persistencia y orientación a resolver problemas reales de clientes.",
+          "ejemplo": "Antes de alquilar un local, una persona que quiere vender almuerzos saludables los ofrece durante dos semanas por pedido en una oficina. Solo 8 de los 40 interesados compran más de una vez: en lugar de rendirse, pregunta por qué, ajusta el precio y el menú y vuelve a probar. El primer intento fallido le dio información barata.",
           "puntos_clave": [
             "Probar en pequeño antes de invertir mucho.",
             "El fracaso temprano es información."
@@ -49,6 +51,7 @@
           "id": "em-creatividad-innovacion",
           "nombre": "Creatividad, innovación e invención",
           "explicacion": "La creatividad genera ideas; la invención crea algo nuevo; la innovación convierte una idea o invención en valor que alguien paga o usa. Una idea sin aplicación en el mercado todavía no es innovación.",
+          "ejemplo": "Un grupo tiene la idea de usar cáscaras de cacao como empaque (creatividad); desarrolla un material resistente en un laboratorio universitario (invención); cuando una chocolatera lo compra para sus barras y sus clientes lo valoran, se convierte en innovación. Reorganizar la entrega de pedidos para hacerla en la mitad del tiempo también es innovar.",
           "puntos_clave": [
             "Innovar puede ser mejorar un proceso, no solo crear un producto.",
             "La innovación se valida con usuarios."
@@ -76,6 +79,7 @@
           "id": "em-oportunidad-que-es",
           "nombre": "Qué es una oportunidad",
           "explicacion": "Una oportunidad es una necesidad o problema no resuelto que alguien está dispuesto a pagar por resolver. Se distingue de una simple idea porque tiene clientes, momento oportuno y posibilidad de generar valor.",
+          "ejemplo": "Muchos dueños de pequeñas tiendas no tienen tiempo de llevar su contabilidad y temen las multas del SRI: es un problema real. Si están dispuestos a pagar USD 25 al mes por un servicio sencillo que les prepare las declaraciones y les avise los plazos, la idea se vuelve una oportunidad.",
           "puntos_clave": [
             "Problema real + clientes dispuestos a pagar.",
             "Las tendencias crean oportunidades."
@@ -94,6 +98,7 @@
           "id": "em-investigar",
           "nombre": "Investigar la oportunidad",
           "explicacion": "Antes de invertir se investiga el mercado con fuentes secundarias (estadísticas, informes sectoriales) y primarias (entrevistas, encuestas, pruebas con prototipos) para estimar demanda y requisitos.",
+          "ejemplo": "Para ese servicio contable, el emprendedor revisa en fuentes oficiales cuántos negocios de su tipo hay en su ciudad (fuente secundaria) y luego entrevista a 20 dueños de tiendas sobre cuánto pagan hoy y qué les preocupa (fuente primaria). Con 5 de ellos prueba un prototipo durante un mes antes de invertir en un software propio.",
           "puntos_clave": [
             "Hablar con clientes potenciales cuesta poco.",
             "Datos oficiales ayudan a dimensionar el mercado."
@@ -112,6 +117,7 @@
           "id": "em-competencia",
           "nombre": "Análisis competitivo",
           "explicacion": "El análisis competitivo identifica competidores directos e indirectos, compara sus precios, fortalezas y debilidades y busca un espacio donde el emprendimiento pueda diferenciarse.",
+          "ejemplo": "Los competidores directos son otros estudios contables del barrio; los indirectos, el familiar que «ayuda» gratis y la opción de no declarar a tiempo. Una matriz compara precio, horario, rapidez y confianza: los estudios cobran más y atienden solo en horario de oficina, así que el emprendimiento se diferencia con atención por mensajería y precio fijo.",
           "puntos_clave": [
             "Siempre hay competencia, aunque sea la forma actual de resolver el problema.",
             "Una matriz comparativa ordena el análisis."
@@ -139,6 +145,7 @@
           "id": "em-modelo",
           "nombre": "Diseñar el modelo de negocio",
           "explicacion": "El modelo de negocio describe cómo la empresa crea, entrega y captura valor: para quién, qué propuesta, por qué canales, con qué recursos y socios, cuáles son sus costos y cómo obtiene ingresos.",
+          "ejemplo": "Modelo de negocio del servicio contable: clientes, dueños de pequeñas tiendas; propuesta, declaraciones a tiempo sin papeleo; canales, mensajería y visitas mensuales; recursos, un contador y un software; socios, una asociación de comerciantes; costos, sueldo, software y transporte; ingresos, suscripción mensual de USD 25. Si con 60 clientes no cubre sus costos, el modelo debe ajustarse.",
           "puntos_clave": [
             "Un modelo se prueba y se ajusta.",
             "Los ingresos deben cubrir los costos de forma sostenible."
@@ -157,6 +164,7 @@
           "id": "em-factibilidad",
           "nombre": "Análisis de factibilidad",
           "explicacion": "La factibilidad revisa si la idea es viable en el mercado, en lo técnico, en lo organizacional y en lo financiero. Es más rápida y barata que un plan completo y evita invertir en ideas sin futuro.",
+          "ejemplo": "Antes de escribir un plan de 40 páginas, el emprendedor responde cuatro preguntas: ¿hay clientes que pagarían? (sí, según sus entrevistas); ¿puede hacerlo técnicamente? (sí, con un software contable); ¿tiene equipo? (un socio contador); ¿cierran los números? (con 60 clientes cubre costos). Si una respuesta fuera «no», detenerse a tiempo también sería un buen resultado.",
           "puntos_clave": [
             "Se hace antes del plan de negocios.",
             "Puede concluir \"no seguir\", y eso también es un buen resultado."
@@ -175,6 +183,7 @@
           "id": "em-plan",
           "nombre": "El plan de negocios",
           "explicacion": "El plan de negocios documenta la oportunidad, el modelo, el mercado, la operación, el equipo y las proyecciones financieras. Sirve para ordenar las ideas y para presentarlas a socios o financiadores.",
+          "ejemplo": "El plan del servicio contable empieza con un resumen ejecutivo de una página: problema, solución, mercado de 2.000 tiendas en la ciudad, meta de 150 clientes en dos años e inversión necesaria de USD 6.000. Después detalla la operación, el equipo y las proyecciones, con los supuestos explícitos (por ejemplo, que 1 de cada 10 tiendas visitadas se suscribe).",
           "puntos_clave": [
             "Resumen ejecutivo claro al inicio.",
             "Supuestos financieros explícitos."
@@ -202,6 +211,7 @@
           "id": "em-proyecciones",
           "nombre": "Estados financieros proyectados",
           "explicacion": "Las proyecciones de ventas, costos y flujo de caja muestran cuánto dinero necesita el emprendimiento y cuándo podría ser rentable. El flujo de caja es clave: muchos negocios rentables cierran por falta de liquidez.",
+          "ejemplo": "La proyección mes a mes muestra que el servicio será rentable desde el mes 7, pero en los primeros cuatro meses el efectivo cae por la compra del software y el sueldo del contador antes de tener suficientes clientes: necesita USD 6.000 de capital inicial. En un escenario pesimista, con la mitad de clientes, necesitaría 9.000.",
           "puntos_clave": [
             "Proyectar el flujo de caja mes a mes el primer año.",
             "Incluir un escenario pesimista."
@@ -220,6 +230,7 @@
           "id": "em-estructuras",
           "nombre": "Estructuras legales y su efecto tributario",
           "explicacion": "La forma legal (persona natural, sociedad de personas, compañía de capital) define la responsabilidad de los dueños, la forma de tributar y los trámites. Elegirla bien protege el patrimonio personal.",
+          "ejemplo": "Si el emprendedor trabaja como persona natural, responde con sus bienes personales por las deudas del negocio y tributa como persona natural. Si constituye una compañía de responsabilidad limitada o una S.A.S., su responsabilidad se limita a su aporte, pero la compañía lleva contabilidad y cumple obligaciones ante la Superintendencia de Compañías.",
           "puntos_clave": [
             "Responsabilidad limitada protege los bienes personales.",
             "Cada forma tiene obligaciones contables distintas."
@@ -238,6 +249,7 @@
           "id": "em-sas-ecuador",
           "nombre": "La S.A.S. en Ecuador",
           "explicacion": "La Ley de Compañías incorpora la sociedad por acciones simplificada (S.A.S.), una sociedad de capitales que puede constituirse por una o varias personas naturales o jurídicas, responsables solo hasta el monto de sus aportes (reforma publicada en el R.O. 151-S, 28-II-2020). Sus accionistas pueden renunciar por escrito a esa limitación.",
+          "ejemplo": "Una sola persona puede constituir una S.A.S. para su servicio contable, con su aporte como capital: si el negocio acumula deudas, en principio responde hasta el monto de ese aporte y no con su casa o su auto. Si por escrito renuncia a esa limitación, por ejemplo para obtener un crédito, pierde esa protección.",
           "puntos_clave": [
             "Responsabilidad limitada al aporte.",
             "Puede tener un solo accionista."

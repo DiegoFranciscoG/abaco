@@ -90,6 +90,21 @@ describe('integridad del contenido', () => {
     }
   });
 
+  it('every subject, topic and subtopic has theory, and every subtopic a worked example', () => {
+    for (const m of content.materias) expect(m.descripcion.length, m.id).toBeGreaterThan(20);
+    for (const { data } of content.temarios) {
+      for (const tema of data.temas) {
+        expect(tema.descripcion.length, tema.id).toBeGreaterThan(20);
+        expect(tema.subtemas.length, tema.id).toBeGreaterThan(0);
+        for (const s of tema.subtemas) {
+          expect(s.explicacion.length, `${s.id} teoría`).toBeGreaterThanOrEqual(80);
+          expect(s.ejemplo.length, `${s.id} ejemplo`).toBeGreaterThanOrEqual(60);
+          expect(s.ejemplo, `${s.id}: el ejemplo no repite la teoría`).not.toBe(s.explicacion);
+        }
+      }
+    }
+  });
+
   it('every subject offers at least one in-app tool and one verified external technology', () => {
     for (const m of content.materias) {
       expect(m.herramientas.length, m.id).toBeGreaterThan(0);

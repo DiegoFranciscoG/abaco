@@ -1,6 +1,6 @@
 {
   "materia": "contabilidad-costos",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "cc-comportamiento",
@@ -13,6 +13,7 @@
           "id": "cc-tipos-empresa",
           "nombre": "Empresas comerciales, de servicios y manufactureras",
           "explicacion": "Una empresa comercial compra y revende; una de servicios vende trabajo; una manufacturera transforma materiales y por eso maneja tres inventarios: materia prima, productos en proceso y productos terminados.",
+          "ejemplo": "Una librería (comercial) compra libros y los revende; un estudio contable (servicios) vende horas de trabajo; una fábrica de calzado (manufacturera) tiene cuero en bodega (materia prima), zapatos a medio coser (productos en proceso) y pares listos para vender (productos terminados). El costo de cada par reúne el cuero, el sueldo de los operarios y costos indirectos como la energía de la planta.",
           "puntos_clave": [
             "El costo de un producto fabricado reúne materia prima, mano de obra directa y costos indirectos.",
             "Cada tipo de empresa necesita información de costos distinta."
@@ -31,6 +32,7 @@
           "id": "cc-fijos-variables",
           "nombre": "Costos fijos, variables y mixtos",
           "explicacion": "El costo variable total cambia en proporción al volumen y es constante por unidad; el costo fijo total no cambia dentro del rango relevante, pero por unidad baja cuando se produce más. Un costo mixto tiene una parte de cada uno.",
+          "ejemplo": "Una fábrica de mermelada paga USD 1.500 de arriendo al mes (fijo) y USD 0,80 de fruta y frasco por unidad (variable). Si produce 1.000 frascos, el arriendo por frasco es USD 1,50; si produce 3.000, baja a USD 0,50, mientras el costo variable por frasco sigue en 0,80. La luz, con un cargo básico más el consumo, es un costo mixto.",
           "puntos_clave": [
             "El rango relevante es el intervalo de actividad donde el comportamiento se mantiene.",
             "Arriendo de planta: fijo; materia prima: variable; servicio eléctrico con cargo base: mixto."
@@ -49,6 +51,7 @@
           "id": "cc-alto-bajo",
           "nombre": "Separar un costo mixto: punto alto y punto bajo",
           "explicacion": "Se toman los meses con la actividad más alta y más baja. El costo variable unitario es la diferencia de costos dividida para la diferencia de actividad; el costo fijo es el costo total menos la parte variable en cualquiera de esos dos puntos.",
+          "ejemplo": "Mes de mayor actividad: 5.000 horas máquina y USD 13.000 de mantenimiento; mes de menor actividad: 2.000 horas y USD 7.000. Variable = (13.000 − 7.000) ÷ (5.000 − 2.000) = USD 2 por hora; fijo = 13.000 − 2 × 5.000 = USD 3.000. Para 4.000 horas se predice 3.000 + 2 × 4.000 = USD 11.000.",
           "puntos_clave": [
             "Los puntos se eligen por nivel de actividad, no por nivel de costo.",
             "Luego se predice: costo = fijo + variable unitario × actividad."
@@ -76,6 +79,7 @@
           "id": "cc-margen-contribucion",
           "nombre": "Margen de contribución",
           "explicacion": "El margen de contribución es lo que queda de cada venta después de cubrir los costos variables; primero cubre los costos fijos y el resto es utilidad. Puede expresarse por unidad, en total o como razón sobre las ventas.",
+          "ejemplo": "Una heladería vende cada cono a USD 2,50 y su costo variable (helado, cono y servilleta) es USD 1,00. Margen unitario = USD 1,50; razón de margen = 1,50 ÷ 2,50 = 60 %. Si vende 4.000 conos al mes, aporta USD 6.000 para cubrir los costos fijos y generar utilidad.",
           "puntos_clave": [
             "Margen unitario = precio − costo variable unitario.",
             "Razón de margen = margen unitario ÷ precio."
@@ -97,6 +101,7 @@
           "id": "cc-punto-equilibrio",
           "nombre": "Punto de equilibrio",
           "explicacion": "Es el volumen de ventas en que la utilidad es cero: los ingresos cubren exactamente los costos fijos y variables. En unidades se obtiene dividiendo los costos fijos para el margen de contribución unitario.",
+          "ejemplo": "Con costos fijos de USD 4.500 al mes, la heladería necesita 4.500 ÷ 1,50 = 3.000 conos para no ganar ni perder, que equivalen a 4.500 ÷ 0,60 = USD 7.500 en ventas. Para ganar USD 1.500 necesita (4.500 + 1.500) ÷ 1,50 = 4.000 conos.",
           "puntos_clave": [
             "En dólares: costos fijos ÷ razón de margen de contribución.",
             "Para una utilidad objetivo se suma esa utilidad a los costos fijos."
@@ -119,6 +124,7 @@
           "id": "cc-margen-seguridad",
           "nombre": "Margen de seguridad y apalancamiento operativo",
           "explicacion": "El margen de seguridad indica cuánto pueden caer las ventas antes de llegar a pérdidas. El grado de apalancamiento operativo mide cuánto cambia la utilidad ante un cambio porcentual en ventas: empresas con más costos fijos tienen más apalancamiento.",
+          "ejemplo": "Si la heladería vende USD 10.000 (4.000 conos) y su equilibrio es USD 7.500, el margen de seguridad es USD 2.500, el 25 % de las ventas. Su margen de contribución total es 6.000 y su utilidad operativa 1.500: apalancamiento operativo = 6.000 ÷ 1.500 = 4. Si las ventas suben 10 %, la utilidad sube 40 %.",
           "puntos_clave": [
             "Margen de seguridad = ventas reales − ventas de equilibrio.",
             "Apalancamiento operativo = margen de contribución total ÷ utilidad operativa."
@@ -149,6 +155,7 @@
           "id": "cc-ordenes-procesos",
           "nombre": "Costeo por órdenes y por procesos",
           "explicacion": "El costeo por órdenes acumula costos para cada trabajo distinto (un mueble a medida, una auditoría). El costeo por procesos acumula costos por departamento y los reparte entre unidades iguales producidas en masa.",
+          "ejemplo": "Una carpintería que fabrica un clóset a medida abre una orden de trabajo y le carga la madera, las horas del carpintero y una parte de los costos indirectos (costeo por órdenes). Una embotelladora de agua acumula los costos del mes en el departamento de llenado y los divide para todas las botellas iguales que produjo (costeo por procesos).",
           "puntos_clave": [
             "Órdenes: productos diferenciados; procesos: productos homogéneos.",
             "Ambos usan materia prima, mano de obra y costos indirectos."
@@ -167,6 +174,7 @@
           "id": "cc-tasa-predeterminada",
           "nombre": "Tasa predeterminada de costos indirectos",
           "explicacion": "Como los costos indirectos reales se conocen al final del período, se aplican con una tasa estimada al inicio: costos indirectos presupuestados divididos para la base de asignación presupuestada (horas máquina, horas de mano de obra). La diferencia al cierre se llama sub o sobreaplicación.",
+          "ejemplo": "Una fábrica presupuesta USD 60.000 de costos indirectos y 12.000 horas máquina: tasa = USD 5 por hora. Una orden que usa 30 horas recibe USD 150 de costos indirectos aplicados. Si en el año se aplicaron 62.500 y los costos indirectos reales fueron 61.000, hay una sobreaplicación de USD 1.500.",
           "puntos_clave": [
             "Costos indirectos aplicados = tasa × base real usada.",
             "La base debe tener relación de causa con los costos indirectos."
@@ -185,6 +193,7 @@
           "id": "cc-unidades-equivalentes",
           "nombre": "Unidades equivalentes",
           "explicacion": "En el costeo por procesos las unidades que quedan a medio terminar se convierten a unidades completas equivalentes según su grado de avance, por separado para materiales y para costos de conversión. Así se calcula un costo por unidad justo.",
+          "ejemplo": "Una planta termina 4.000 unidades en el mes y deja 1.000 en proceso con todos los materiales y 40 % de conversión. Unidades equivalentes de materiales: 4.000 + 1.000 = 5.000; de conversión: 4.000 + 400 = 4.400. Si los costos de conversión del mes fueron USD 8.800, el costo de conversión por unidad equivalente es USD 2.",
           "puntos_clave": [
             "1 000 unidades al 40 % de conversión equivalen a 400 unidades completas en conversión.",
             "Los materiales suelen agregarse al inicio y estar al 100 %."
@@ -203,6 +212,7 @@
           "id": "cc-abc",
           "nombre": "Costeo basado en actividades (ABC)",
           "explicacion": "El ABC agrupa los costos indirectos por actividades (preparar máquinas, inspeccionar, despachar) y los asigna a los productos según los inductores de costo que cada producto consume. Da costos más precisos cuando los productos usan los recursos de forma muy distinta.",
+          "ejemplo": "Una empresa fabrica un modelo estándar (10.000 unidades, 2 preparaciones de máquina al año) y uno especial (500 unidades, 18 preparaciones). Si las preparaciones cuestan USD 20.000, cada una cuesta 1.000: el especial absorbe USD 18.000 (36 por unidad) y el estándar 2.000 (0,20 por unidad). Con una tasa única por unidad producida, el especial habría quedado subcosteado.",
           "puntos_clave": [
             "Un inductor de costo es la causa del costo de una actividad.",
             "Productos de bajo volumen y alta complejidad suelen quedar subcosteados con una tasa única."
@@ -230,6 +240,7 @@
           "id": "cc-presupuesto-operativo",
           "nombre": "Presupuestos operativos",
           "explicacion": "El presupuesto maestro empieza por las ventas; de ahí salen el presupuesto de producción (ventas + inventario final deseado − inventario inicial), el de materiales, el de mano de obra y el de costos indirectos.",
+          "ejemplo": "Una fábrica espera vender 10.000 unidades en el trimestre, quiere terminar con 1.500 en bodega y empieza con 1.000. Producción presupuestada = 10.000 + 1.500 − 1.000 = 10.500 unidades. Si cada unidad usa 2 kg de materia prima, el presupuesto de materiales parte de 21.000 kg.",
           "puntos_clave": [
             "El pronóstico de ventas es la base de todo el presupuesto.",
             "Los presupuestos se encadenan: un error en ventas se propaga."
@@ -248,6 +259,7 @@
           "id": "cc-presupuesto-flexible",
           "nombre": "Presupuesto flexible",
           "explicacion": "Un presupuesto flexible recalcula los costos para el nivel de actividad que realmente ocurrió. Comparar lo real con un presupuesto flexible separa el efecto del volumen del efecto de la eficiencia y los precios.",
+          "ejemplo": "Se presupuestó producir 1.000 unidades con costo variable de USD 4 por unidad (4.000) y costos fijos de 3.000. Se produjeron 1.200 y el costo variable real fue 4.700. Frente al presupuesto original parece un exceso de USD 700, pero el presupuesto flexible para 1.200 unidades es 4.800: en realidad hubo un ahorro de USD 100.",
           "puntos_clave": [
             "Los costos variables se ajustan al volumen real; los fijos no cambian.",
             "Es la base correcta para evaluar a un responsable de costos."
@@ -266,6 +278,7 @@
           "id": "cc-variaciones",
           "nombre": "Costos estándar y variaciones de materiales",
           "explicacion": "Un costo estándar es lo que debería costar una unidad. La variación de precio compara el precio real con el estándar para la cantidad real comprada; la variación de cantidad compara la cantidad real usada con la estándar permitida, valorada al precio estándar.",
+          "ejemplo": "Estándar: 2 kg por unidad a USD 3 el kg. Para producir 1.000 unidades se compraron y usaron 2.100 kg a USD 3,20. Variación de precio = (3,20 − 3,00) × 2.100 = USD 420 desfavorable (responde compras); variación de cantidad = (2.100 − 2.000) × 3,00 = USD 300 desfavorable (responde producción).",
           "puntos_clave": [
             "Una variación es favorable si el costo real es menor que el estándar.",
             "Cada variación tiene un responsable distinto: compras o producción."

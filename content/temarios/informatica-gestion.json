@@ -1,6 +1,6 @@
 {
   "materia": "informatica-gestion",
-  "actualizado_en": "2026-10-15",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "ii-formulas",
@@ -13,6 +13,7 @@
           "id": "ii-formulas-estructura",
           "nombre": "Estructura de una fórmula y operadores",
           "explicacion": "Toda fórmula empieza con el signo igual y puede combinar constantes, referencias a celdas, operadores y funciones. Excel respeta un orden de operaciones: primero lo que está entre paréntesis, luego potencias, multiplicaciones y divisiones, y al final sumas y restas. En Excel en español los argumentos de las funciones se separan con punto y coma y los decimales se escriben con coma.",
+          "ejemplo": "=2+3*4 da 14, porque primero se multiplica; =(2+3)*4 da 20. En Excel en español, el promedio de las celdas B2 a B10 redondeado a dos decimales se escribe =REDONDEAR(PROMEDIO(B2:B10);2), y un IVA de 15 % sobre la celda C2 se puede escribir =C2*0,15.",
           "puntos_clave": [
             "Siempre empieza con =.",
             "Los paréntesis cambian el orden de cálculo.",
@@ -32,6 +33,7 @@
           "id": "ii-formulas-referencias",
           "nombre": "Referencias relativas, absolutas y mixtas",
           "explicacion": "Al copiar una fórmula, las referencias relativas (A1) se ajustan a la nueva posición; las absolutas ($A$1) se quedan fijas; las mixtas fijan solo la columna ($A1) o solo la fila (A$1). Fijar con $ la celda de una tasa o de un porcentaje es clave para que una tabla de cálculo funcione al arrastrar. En Windows, la tecla F4 alterna entre los tipos de referencia.",
+          "ejemplo": "La tasa del IVA está en la celda F1 y los precios en B2:B20. En C2 se escribe =B2*$F$1 y se arrastra hacia abajo: B2 cambia a B3, B4… pero $F$1 queda fija. Si se hubiera escrito =B2*F1, al copiar la fórmula a C3 apuntaría a F2, que está vacía, y el IVA saldría en cero.",
           "puntos_clave": [
             "Relativa: cambia al copiar.",
             "Absoluta: $columna$fila, no cambia.",
@@ -51,6 +53,7 @@
           "id": "ii-formulas-errores",
           "nombre": "Controlar errores con SI.ERROR",
           "explicacion": "Cuando una fórmula puede fallar (por ejemplo, una división cuyo divisor aún está vacío), SI.ERROR devuelve un valor alternativo en lugar del error. Es útil para presentar reportes limpios, pero no debe ocultar errores que indican datos mal ingresados: primero hay que entender por qué aparece el error.",
+          "ejemplo": "En una hoja de márgenes, =C2/B2 muestra #¡DIV/0! en los productos sin ventas todavía. =SI.ERROR(C2/B2;\"Sin ventas\") muestra un texto claro en esos casos. Pero si el error aparece en un producto que sí vendió, hay que revisar los datos antes de taparlo con SI.ERROR.",
           "puntos_clave": [
             "SI.ERROR(valor; valor_si_error).",
             "Útil para presentación, no para esconder problemas."
@@ -77,6 +80,7 @@
           "id": "ii-funciones-basicas",
           "nombre": "SUMA, PROMEDIO, CONTAR y CONTARA",
           "explicacion": "SUMA agrega los números de un rango y PROMEDIO calcula su media. CONTAR cuenta las celdas que contienen números, mientras CONTARA cuenta todas las celdas no vacías, incluidas las de texto. Saber cuál usar evita errores al contar facturas, clientes o registros.",
+          "ejemplo": "En una lista de 50 facturas, la columna de montos tiene 47 números y 3 celdas con la palabra «anulada». =CONTAR(C2:C51) da 47 y =CONTARA(C2:C51) da 50. =SUMA(C2:C51) suma solo los números y =PROMEDIO(C2:C51) calcula la media de esas 47 facturas.",
           "puntos_clave": [
             "CONTAR: solo números. CONTARA: cualquier dato.",
             "Las celdas vacías no entran en PROMEDIO."
@@ -96,6 +100,7 @@
           "id": "ii-funciones-si",
           "nombre": "La función SI y las funciones lógicas",
           "explicacion": "SI evalúa una condición y devuelve un valor si es verdadera y otro si es falsa: SI(prueba_lógica; valor_si_verdadero; [valor_si_falso]). Con Y y O se combinan varias condiciones. Sirve, por ejemplo, para marcar facturas vencidas o decidir si un proyecto se acepta según su VAN.",
+          "ejemplo": "=SI(D2<HOY();\"Vencida\";\"Al día\") marca si una factura venció. =SI(Y(E2>0;F2>G2);\"Aceptar\";\"Rechazar\") acepta un proyecto solo si su VAN es positivo y su TIR supera la tasa exigida. Con O bastaría que se cumpla una de las dos condiciones.",
           "puntos_clave": [
             "SI(prueba; si_verdadero; si_falso).",
             "Y exige todas las condiciones; O, al menos una."
@@ -114,6 +119,7 @@
           "id": "ii-funciones-sumarsi",
           "nombre": "SUMAR.SI: sumar con un criterio",
           "explicacion": "SUMAR.SI suma solo las celdas que cumplen una condición: SUMAR.SI(rango; criterio; [rango_suma]). Por ejemplo, el total de ventas de una sucursal o de las facturas mayores a cierto valor. Es la base de muchos reportes contables antes de pasar a tablas dinámicas.",
+          "ejemplo": "Con las sucursales en la columna A y las ventas en la C, =SUMAR.SI(A2:A500;\"Cuenca\";C2:C500) da el total vendido en Cuenca. =SUMAR.SI(C2:C500;\">1000\") suma solo las facturas mayores a USD 1.000; en ese caso no hace falta el rango_suma porque se suma el mismo rango evaluado.",
           "puntos_clave": [
             "El criterio puede ser texto, número o una comparación como \">1000\".",
             "rango_suma es opcional."
@@ -132,6 +138,7 @@
           "id": "ii-funciones-buscar",
           "nombre": "BUSCARX y BUSCARV",
           "explicacion": "Las funciones de búsqueda traen un dato de una tabla a partir de una clave, como el nombre de una cuenta a partir de su código. BUSCARV busca en la primera columna de la tabla y devuelve un valor de otra columna; BUSCARX, disponible en versiones recientes de Excel, busca en cualquier columna y devuelve un resultado más claro cuando no encuentra el dato.",
+          "ejemplo": "Un plan de cuentas tiene el código en la columna A y el nombre en la B. Para traer el nombre de la cuenta 1.1.01: =BUSCARV(\"1.1.01\";A:B;2;FALSO), donde FALSO pide coincidencia exacta. Con BUSCARX: =BUSCARX(\"1.1.01\";A:A;B:B;\"No existe\"), que además muestra un mensaje claro si el código no está.",
           "puntos_clave": [
             "Usar coincidencia exacta para códigos de cuentas.",
             "BUSCARX no exige que la clave esté en la primera columna."
@@ -159,6 +166,7 @@
           "id": "ii-financieras-va-vf",
           "nombre": "VA y VF",
           "explicacion": "VA calcula el valor actual y VF el valor futuro de una inversión o préstamo con tasa constante. Excel usa una convención de signos de flujo de caja: el dinero que sale se escribe negativo y el que entra, positivo. Por eso =VA(1%;12;-100) devuelve un valor positivo: pagas 100 cada mes y eso equivale a recibir hoy el resultado.",
+          "ejemplo": "=VF(1%;12;-100) da 1.268,25: si ahorras USD 100 al final de cada mes durante un año al 1 % mensual, acumulas ese monto. =VA(1%;12;-100) da 1.125,51: es lo que hoy equivale a pagar 100 al mes durante un año. Escribir la tasa anual (12 %) con 12 meses daría un resultado equivocado.",
           "puntos_clave": [
             "La tasa y el número de períodos deben estar en la misma unidad.",
             "Salidas negativas, entradas positivas."
@@ -182,6 +190,7 @@
           "id": "ii-financieras-pago",
           "nombre": "PAGO y tablas de amortización",
           "explicacion": "PAGO devuelve la cuota fija de un préstamo. Con PAGOINT y PAGOPRIN se separa cada cuota en interés y capital, y con referencias absolutas a la tasa y al plazo se arma una tabla de amortización que se arrastra hasta la última cuota. La última fila debe dejar el saldo en cero, lo que sirve como comprobación.",
+          "ejemplo": "Para un préstamo de USD 10.000 a 12 meses al 1,5 % mensual: =PAGO(1,5%;12;-10000) da 916,80. En la tabla, =PAGOINT($B$1;A5;$B$2;-$B$3) da el interés de la cuota de la fila 5 y =PAGOPRIN($B$1;A5;$B$2;-$B$3) su capital; al arrastrar hasta la cuota 12, el saldo final debe quedar en cero.",
           "puntos_clave": [
             "PAGO = interés + capital de cada período.",
             "El saldo final debe ser cero."
@@ -205,6 +214,7 @@
           "id": "ii-financieras-vna-tir",
           "nombre": "VNA y TIR",
           "explicacion": "VNA descuenta una serie de flujos que empiezan al final del primer período; por eso la inversión inicial, que ocurre en el período cero, se suma fuera de la función. TIR busca la tasa que hace cero el valor neto de todos los flujos, incluida la inversión inicial, y usa un método iterativo.",
+          "ejemplo": "Con la tasa en B1 (12 %), la inversión en B2 (−50.000) y los flujos de los años 1 a 3 en B3:B5 (20.000, 22.000 y 25.000): =VNA(B1;B3:B5)+B2 da un VAN de 3.189,91, y =TIR(B2:B5) da 15,54 %. Si se metiera B2 dentro de VNA, la inversión quedaría descontada un año y el VAN saldría inflado.",
           "puntos_clave": [
             "=VNA(tasa; flujos 1..n) + inversión inicial (negativa).",
             "TIR incluye el flujo del período cero."
@@ -235,6 +245,7 @@
           "id": "ii-datos-validacion",
           "nombre": "Validación de datos",
           "explicacion": "La validación limita lo que se puede escribir en una celda: una lista desplegable de cuentas, fechas dentro de un rango o números positivos. Reduce errores de digitación desde el origen y permite mostrar un mensaje que explica qué dato se espera.",
+          "ejemplo": "En la columna «Cuenta» de un libro diario se configura una lista desplegable con las cuentas del plan, y en «Fecha» se permite solo fechas del mes en curso. Si alguien escribe «caja chica» con otra ortografía o una fecha del año pasado, Excel muestra un mensaje de error que explica qué dato se espera.",
           "puntos_clave": [
             "Listas desplegables para datos repetidos.",
             "Mensajes de entrada y de error."
@@ -253,6 +264,7 @@
           "id": "ii-datos-formato-condicional",
           "nombre": "Formato condicional",
           "explicacion": "El formato condicional cambia el color o el estilo de una celda según su valor: resaltar saldos negativos en rojo, facturas vencidas o los diez mayores clientes. Ayuda a ver patrones sin leer cada número.",
+          "ejemplo": "En un reporte de cartera, una regla pinta de rojo los saldos con más de 60 días de vencidos y otra resalta en verde los 10 clientes con mayor saldo. Al abrir el archivo, el jefe de cobranzas ve de inmediato dónde está el riesgo sin leer las 300 filas.",
           "puntos_clave": [
             "Reglas basadas en valores o en fórmulas.",
             "Pocas reglas y colores con significado."
@@ -271,6 +283,7 @@
           "id": "ii-datos-tablas-dinamicas",
           "nombre": "Tablas dinámicas",
           "explicacion": "Una tabla dinámica resume miles de filas en segundos: ventas por mes y vendedor, gastos por centro de costo o saldos por cuenta. Se construye arrastrando campos a filas, columnas, valores y filtros, y se actualiza cuando cambian los datos de origen.",
+          "ejemplo": "Una hoja tiene 8.000 filas de ventas con fecha, vendedor, producto y monto. En una tabla dinámica se arrastra «Vendedor» a filas, «Mes» a columnas y «Monto» a valores: en segundos aparece cuánto vendió cada vendedor cada mes. Si se agregan las ventas de diciembre, basta con actualizar la tabla.",
           "puntos_clave": [
             "Los datos de origen deben tener encabezados y no tener filas vacías.",
             "Actualizar después de modificar los datos."
@@ -289,6 +302,7 @@
           "id": "ii-datos-graficos",
           "nombre": "Gráficos",
           "explicacion": "El gráfico adecuado depende de la pregunta: columnas para comparar categorías, líneas para ver tendencias en el tiempo y dispersión para la relación entre dos variables. Un buen gráfico tiene título, ejes rotulados y solo los elementos necesarios.",
+          "ejemplo": "Para comparar las ventas de cinco sucursales se usa un gráfico de columnas; para ver la evolución de las ventas mes a mes durante dos años, uno de líneas; para ver si el gasto en publicidad se relaciona con las ventas, uno de dispersión. Cada gráfico lleva un título que dice qué muestra y ejes con sus unidades.",
           "puntos_clave": [
             "Elegir el gráfico según la pregunta.",
             "Títulos y ejes claros."

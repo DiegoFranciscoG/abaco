@@ -273,6 +273,8 @@ describe('pages', () => {
     expect(await screen.findByRole('heading', { name: /Impuesto a la renta/ })).toBeInTheDocument();
     expect(screen.getByText(/USD 12 208 en 2026/)).toBeVisible();
     expect(screen.getAllByText(/Fuente:/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Teoría').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Ejemplo').length).toBeGreaterThan(0);
   });
 
   it('an unknown subject shows the not-found page', async () => {

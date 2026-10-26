@@ -1,6 +1,6 @@
 {
   "materia": "etica-profesional",
-  "actualizado_en": "2026-10-15",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "et-codigo",
@@ -13,6 +13,7 @@
           "id": "et-codigo-que-es",
           "nombre": "Qué es el Código y para qué sirve",
           "explicacion": "El Consejo de Normas Internacionales de Ética para Contadores (IESBA), que opera con el apoyo de la IFAC, emite el Código Internacional de Ética para Profesionales de la Contabilidad, que incluye las Normas Internacionales de Independencia. Establece requisitos basados en principios para guiar la conducta profesional y ayudar a los contadores a actuar en interés público. Cada país puede adoptarlo por ley o regulación, o mediante sus organismos nacionales de normas.",
+          "ejemplo": "Una contadora encuentra que su cliente quiere registrar ventas del próximo año en el actual para obtener un crédito. El Código no tiene una regla con ese caso exacto, pero sus principios (integridad, objetividad) y su enfoque en el interés público le permiten razonar la respuesta: el banco y otros terceros confiarán en esas cifras.",
           "puntos_clave": [
             "Basado en principios, no en una lista cerrada de prohibiciones.",
             "Incluye las Normas Internacionales de Independencia.",
@@ -31,6 +32,7 @@
           "id": "et-codigo-estructura",
           "nombre": "Estructura y alcance",
           "explicacion": "La edición 2025 del Código se publica en dos volúmenes. El primero reúne las partes que aplican a todos los profesionales (cumplimiento del Código, principios fundamentales y marco conceptual), a los contadores en la empresa, a los contadores en ejercicio público y las normas de independencia; el segundo incorpora normas de ética e independencia para el aseguramiento de información de sostenibilidad. Conviene ubicar primero en qué parte se encuentra una situación antes de buscar la respuesta.",
+          "ejemplo": "Un contador que trabaja en el área financiera de una empresa busca orientación sobre la presión de su jefe en la parte para contadores en la empresa; un auditor externo que va a revisar a un cliente busca en las normas de independencia si puede tener acciones de esa compañía. Ubicar la parte correcta del Código ahorra tiempo y evita respuestas equivocadas.",
           "puntos_clave": [
             "Dos volúmenes en la edición 2025.",
             "Partes distintas para contadores en la empresa y en ejercicio público."
@@ -48,6 +50,7 @@
           "id": "et-codigo-interes-publico",
           "nombre": "Interés público y escepticismo profesional",
           "explicacion": "La profesión contable tiene una responsabilidad con el interés público: inversionistas, bancos, el Estado y la sociedad confían en la información que los contadores preparan o revisan. Por eso el Código pide una actitud de mente inquisitiva y juicio profesional, y advierte que relaciones cercanas o prolongadas pueden reducir el escepticismo profesional.",
+          "ejemplo": "Un auditor revisa por octava vez a la misma compañía y ya es amigo del gerente financiero: acepta sus explicaciones sin pedir respaldo. El Código advierte que esa cercanía puede reducir su escepticismo profesional; los inversionistas y el banco que leen el informe esperan una mente inquisitiva, no confianza automática.",
           "puntos_clave": [
             "La información contable sostiene decisiones de terceros.",
             "El juicio profesional exige una mente inquisitiva."
@@ -74,6 +77,7 @@
           "id": "et-principios-integridad-objetividad",
           "nombre": "Integridad y objetividad",
           "explicacion": "Integridad es ser franco y honesto en todas las relaciones profesionales y de negocios: no asociarse a información que se sabe falsa o engañosa. Objetividad es no permitir que sesgos, conflictos de interés o influencias indebidas comprometan el juicio profesional. Ambos principios se ponen a prueba cuando hay presión para «mejorar» unas cifras.",
+          "ejemplo": "El gerente pide a un contador que no registre una provisión por un juicio probable para que la utilidad del año no baje. Si el contador accede, se asocia a información que sabe engañosa (falta a la integridad) y deja que una presión influya en su juicio (falta a la objetividad). Lo correcto es registrar la provisión y explicar por qué.",
           "puntos_clave": [
             "Integridad: franqueza y honestidad.",
             "Objetividad: juicio libre de sesgos e influencias indebidas."
@@ -91,6 +95,7 @@
           "id": "et-principios-competencia",
           "nombre": "Competencia profesional y diligencia debida",
           "explicacion": "Exige mantener los conocimientos y habilidades al nivel que requiere el trabajo y actuar con diligencia, es decir, con cuidado, a tiempo y conforme a las normas técnicas aplicables. Aceptar un encargo para el que no se está preparado, o hacerlo sin la atención necesaria, incumple este principio aunque no exista mala intención.",
+          "ejemplo": "A un contador que solo ha llevado contabilidad de pequeños comercios le ofrecen preparar los estados financieros consolidados de un grupo de compañías. Si acepta sin conocer las normas de consolidación, incumple el principio de competencia aunque actúe de buena fe: debe capacitarse, buscar apoyo de un especialista o declinar el encargo.",
           "puntos_clave": [
             "Actualización permanente (normas, leyes tributarias, tecnología).",
             "Diligencia: cuidado y oportunidad."
@@ -108,6 +113,7 @@
           "id": "et-principios-confidencialidad",
           "nombre": "Confidencialidad",
           "explicacion": "La información obtenida en relaciones profesionales y de negocios debe protegerse: no se revela sin autorización ni se usa para beneficio propio o de terceros. Este deber continúa incluso después de terminar la relación con el cliente o el empleador. El Código contempla circunstancias en las que revelar información es obligatorio o está permitido, por ejemplo cuando lo exige la ley.",
+          "ejemplo": "Una analista contable sabe, por su trabajo, que la empresa va a cerrar una sucursal. No puede contárselo a un amigo que alquila el local ni usar ese dato para su beneficio, y ese deber sigue aunque cambie de empleo. Si un juez le ordena entregar información en un proceso, la ley sí puede obligarla a revelarla.",
           "puntos_clave": [
             "No revelar ni aprovechar información confidencial.",
             "El deber continúa después de la relación."
@@ -125,6 +131,7 @@
           "id": "et-principios-comportamiento",
           "nombre": "Comportamiento profesional",
           "explicacion": "Pide cumplir las leyes y regulaciones y evitar cualquier conducta que desacredite a la profesión. Incluye, por ejemplo, no exagerar los servicios que se ofrecen ni hacer comparaciones despectivas con el trabajo de otros profesionales.",
+          "ejemplo": "Un estudio contable publica en redes sociales «somos los únicos contadores honestos de la ciudad; los demás te harán perder dinero». El anuncio exagera sus servicios y desacredita a otros profesionales, así que va contra el principio de comportamiento profesional, además de lo que puedan decir las normas de publicidad.",
           "puntos_clave": [
             "Cumplir leyes y regulaciones.",
             "Evitar conductas que desacrediten a la profesión."
@@ -151,6 +158,7 @@
           "id": "et-marco-amenazas",
           "nombre": "Identificar amenazas",
           "explicacion": "El primer paso es reconocer circunstancias que amenazan el cumplimiento de los principios. El Código las agrupa en cinco categorías: interés propio (un interés financiero o personal influye indebidamente), autorrevisión (evaluar trabajo hecho por uno mismo o por la propia firma), abogacía o promoción (defender la posición del cliente o empleador), familiaridad (relaciones cercanas o largas) e intimidación (presiones reales o percibidas).",
+          "ejemplo": "Un auditor tiene acciones de la empresa que audita (interés propio); el año pasado diseñó el sistema contable que ahora debe auditar (autorrevisión); su hermana es la contadora general del cliente (familiaridad); y el gerente amenaza con cambiar de firma si el informe no es favorable (intimidación). Una sola relación de trabajo puede generar varias amenazas a la vez.",
           "puntos_clave": [
             "Cinco amenazas: interés propio, autorrevisión, abogacía, familiaridad, intimidación.",
             "Una misma situación puede generar varias amenazas."
@@ -168,6 +176,7 @@
           "id": "et-marco-evaluar",
           "nombre": "Evaluar: la prueba del tercero razonable e informado",
           "explicacion": "Una vez identificada la amenaza se evalúa si su nivel es aceptable. La referencia es un tercero razonable e informado: alguien con conocimiento y objetividad que, conociendo los hechos, concluiría si el cumplimiento de los principios sigue garantizado. Lo que importa no es lo que piensa el propio contador, sino cómo vería la situación esa persona.",
+          "ejemplo": "Un contador cree que aceptar unas vacaciones pagadas por un proveedor no afectará su decisión de compra. Pero la pregunta es otra: ¿un tercero razonable e informado, conociendo el valor del viaje y que el contador decide qué proveedor se elige, concluiría que su objetividad sigue intacta? Probablemente no.",
           "puntos_clave": [
             "Nivel aceptable desde la mirada de un tercero informado.",
             "Se consideran factores cualitativos y cuantitativos."
@@ -185,6 +194,7 @@
           "id": "et-marco-responder",
           "nombre": "Responder a las amenazas",
           "explicacion": "Si la amenaza no está en un nivel aceptable, el profesional tiene tres caminos: eliminar la circunstancia que la crea (deshacerse del interés o salir del rol), aplicar salvaguardas que la reduzcan a un nivel aceptable (por ejemplo, una revisión adicional o redistribuir responsabilidades) o declinar o terminar la actividad cuando ninguna salvaguarda basta.",
+          "ejemplo": "Ante la amenaza de autorrevisión del auditor que diseñó el sistema contable, la firma puede eliminarla asignando la auditoría a otro equipo que no participó en el diseño, o aplicar una salvaguarda como una revisión adicional por un socio independiente. Si ninguna medida reduce la amenaza a un nivel aceptable, debe declinar el encargo.",
           "puntos_clave": [
             "Eliminar, salvaguardar o declinar.",
             "Una salvaguarda debe reducir de verdad la amenaza."
@@ -211,6 +221,7 @@
           "id": "et-situaciones-incentivos",
           "nombre": "Regalos, invitaciones y otros incentivos",
           "explicacion": "Ofrecer o aceptar regalos, invitaciones u otros incentivos puede generar amenazas de interés propio, familiaridad o intimidación. El Código dedica secciones específicas a este tema tanto para contadores en la empresa como en ejercicio público. La pregunta clave es si el incentivo busca influir de forma indebida en una decisión, o si un tercero informado podría pensarlo.",
+          "ejemplo": "Un proveedor regala una taza con su logo a todos sus clientes en diciembre: valor bajo, sin relación con una decisión pendiente. El mismo proveedor ofrece al jefe de compras una tablet una semana antes de adjudicar un contrato grande: el valor, el momento y la intención aparente hacen que un tercero informado vea un intento de influir.",
           "puntos_clave": [
             "Evaluar la intención y la apariencia.",
             "Valor, frecuencia y momento importan."
@@ -228,6 +239,7 @@
           "id": "et-situaciones-presion",
           "nombre": "Presión para incumplir los principios",
           "explicacion": "Un superior, un cliente o un compañero puede presionar para registrar una operación de forma indebida, ocultar información o cumplir una meta a cualquier costo. El Código pide no ceder ante esa presión y no ejercerla sobre otros. Consultar con colegas de confianza, con instancias internas o con un asesor legal ayuda a decidir cómo actuar.",
+          "ejemplo": "La jefa pide a un asistente contable que cambie la fecha de unas facturas para cumplir la meta de ventas del trimestre. El asistente no cede: documenta la solicitud, la consulta con el área de cumplimiento de la empresa y, si es necesario, con un asesor. Tampoco debería trasladar esa presión a sus propios colaboradores.",
           "puntos_clave": [
             "No ceder ni presionar a otros.",
             "Documentar y consultar antes de decidir."
@@ -245,6 +257,7 @@
           "id": "et-situaciones-noclar",
           "nombre": "Incumplimiento de leyes y regulaciones (NOCLAR)",
           "explicacion": "Cuando un contador detecta que el cliente o el empleador podría estar incumpliendo leyes o regulaciones, el Código establece cómo responder: entender el asunto, tratarlo con el nivel adecuado de la organización y evaluar si se requieren más acciones, incluida la comunicación a una autoridad cuando corresponde. Mirar hacia otro lado no es una opción compatible con el interés público.",
+          "ejemplo": "Un contador detecta que la empresa paga en efectivo a trabajadores sin afiliarlos al IESS. Primero entiende los hechos, luego lo comunica a su jefe y, si no se corrige, al directorio o al comité correspondiente; finalmente evalúa si debe informar a una autoridad. Ignorarlo no es compatible con el interés público.",
           "puntos_clave": [
             "Entender, escalar internamente y evaluar acciones adicionales.",
             "El interés público guía la decisión."

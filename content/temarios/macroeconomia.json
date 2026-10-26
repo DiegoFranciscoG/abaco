@@ -13,6 +13,7 @@
           "id": "ma-pib",
           "nombre": "Producto interno bruto",
           "explicacion": "El PIB es el valor de mercado de todos los bienes y servicios finales producidos en un país durante un período. Por el lado del gasto se suma consumo, inversión, gasto público y exportaciones netas (exportaciones menos importaciones).",
+          "ejemplo": "Un panadero compra harina por USD 40 y vende pan por USD 100. En el PIB se cuentan los 100 del pan, que es el bien final; sumar también los 40 de harina contaría dos veces lo mismo. Con consumo de 54.300, inversión de 18.900, gasto público de 13.200 y exportaciones netas de 1.600 (millones de USD), el PIB es 88.000.",
           "puntos_clave": [
             "Solo se cuentan bienes finales para no contar dos veces.",
             "PIB = C + I + G + (X − M)."
@@ -33,6 +34,7 @@
           "id": "ma-real-nominal",
           "nombre": "PIB nominal y PIB real",
           "explicacion": "El PIB nominal usa precios de cada año; el real usa precios de un año base y elimina el efecto de la inflación. Para comparar la producción entre años se usa el PIB real.",
+          "ejemplo": "Si el PIB nominal pasa de 100.000 a 110.000 millones de USD y el deflactor sube de 100 a 105, el PIB real del segundo año es 110.000 ÷ 105 × 100 = 104.761,90. La producción real creció 4,76 %, no 10 %: la diferencia se explica por el alza de precios.",
           "puntos_clave": [
             "PIB real = PIB nominal ÷ deflactor × 100.",
             "El crecimiento económico se mide con el PIB real."
@@ -53,6 +55,7 @@
           "id": "ma-comparar",
           "nombre": "Comparar el PIB entre países",
           "explicacion": "Para comparar países se divide el PIB para la población (PIB per cápita) y se convierte a una moneda común con tipos de cambio o con paridad de poder adquisitivo, que corrige las diferencias de precios entre países.",
+          "ejemplo": "El país A tiene un PIB de 120.000 millones de USD y 18 millones de habitantes: PIB per cápita de USD 6.667. El país B tiene un PIB mayor, 150.000 millones, pero 40 millones de habitantes: USD 3.750 por persona. Si en B los precios son mucho más bajos, la comparación con paridad de poder adquisitivo acerca las dos cifras.",
           "puntos_clave": [
             "PIB per cápita = PIB ÷ población.",
             "La PPA es mejor para comparar niveles de vida."
@@ -80,6 +83,7 @@
           "id": "ma-crecimiento",
           "nombre": "Productividad y crecimiento",
           "explicacion": "El crecimiento sostenido del nivel de vida depende de la productividad laboral: cuánto produce, en promedio, una hora de trabajo. Aumenta con capital físico, capital humano (educación y salud) y mejor tecnología.",
+          "ejemplo": "Una fábrica produce 1.200 unidades con 400 horas de trabajo: productividad de 3 unidades por hora. Con una máquina nueva y capacitación produce 1.500 en las mismas 400 horas: 3,75 por hora, un 25 % más. A escala de un país, crecer 2 % al año en vez de 1 % casi duplica la diferencia de nivel de vida en 35 años.",
           "puntos_clave": [
             "Productividad = producción ÷ horas trabajadas.",
             "Pequeñas diferencias de crecimiento se acumulan mucho en décadas."
@@ -98,6 +102,7 @@
           "id": "ma-desempleo",
           "nombre": "Tasa de desempleo",
           "explicacion": "La tasa de desempleo es el número de personas desempleadas dividido para la fuerza laboral (ocupados más desempleados que buscan trabajo). Quien no busca empleo no forma parte de la fuerza laboral.",
+          "ejemplo": "En una ciudad hay 312.000 personas en la fuerza laboral y 14.040 buscan trabajo sin tenerlo: tasa de desempleo de 4,5 %. Si 2.000 de esas personas se cansan de buscar y dejan de hacerlo, salen de la fuerza laboral y la tasa baja, aunque no hayan conseguido empleo: son trabajadores desalentados.",
           "puntos_clave": [
             "Tasa = desempleados ÷ fuerza laboral × 100.",
             "Los trabajadores desalentados no se cuentan como desempleados."
@@ -118,6 +123,7 @@
           "id": "ma-inflacion",
           "nombre": "Inflación e índice de precios",
           "explicacion": "La inflación es el aumento sostenido del nivel general de precios. Se mide con un índice de precios al consumidor, que compara el costo de una canasta fija de bienes entre dos fechas.",
+          "ejemplo": "Una canasta de bienes cuesta USD 800 en el año base (índice 100) y USD 830 un año después (índice 103,75): la inflación del año es 3,75 %. Una persona con un ingreso fijo de USD 800 ahora compra solo 800 ÷ 830 = 96,4 % de la misma canasta.",
           "puntos_clave": [
             "Inflación = (índice final − índice inicial) ÷ índice inicial × 100.",
             "La inflación reduce el poder de compra de los ingresos fijos."
@@ -147,6 +153,7 @@
           "id": "ma-modelo",
           "nombre": "El modelo DA/OA",
           "explicacion": "La demanda agregada muestra el gasto total en bienes y servicios a cada nivel de precios; la oferta agregada, lo que las empresas producen. Su cruce determina el nivel de precios y el PIB real de equilibrio.",
+          "ejemplo": "En el modelo DA/OA, la demanda agregada y la oferta agregada de corto plazo se cruzan en un nivel de precios de 110 y un PIB real de 95.000 millones de USD. Si el PIB potencial es 100.000, la economía produce por debajo del pleno empleo y hay desempleo cíclico.",
           "puntos_clave": [
             "La OA de corto plazo tiene pendiente positiva.",
             "El PIB potencial es el nivel de pleno empleo."
@@ -165,6 +172,7 @@
           "id": "ma-desplaza-oa",
           "nombre": "Desplazamientos de la oferta agregada",
           "explicacion": "Un aumento de la productividad desplaza la oferta agregada a la derecha: más producción y precios más bajos. Un alza de insumos clave, como el petróleo, la desplaza a la izquierda y puede causar estanflación.",
+          "ejemplo": "Si el precio internacional del petróleo sube mucho, producir y transportar cuesta más en casi todas las industrias: la oferta agregada se desplaza a la izquierda, el PIB real baja y el nivel de precios sube a la vez, una estanflación. Una mejora tecnológica que abarata la producción tiene el efecto contrario.",
           "puntos_clave": [
             "Estanflación: menos producción y más inflación a la vez.",
             "La productividad es el motor de largo plazo."
@@ -183,6 +191,7 @@
           "id": "ma-desplaza-da",
           "nombre": "Desplazamientos de la demanda agregada",
           "explicacion": "Cambios en el consumo, la inversión, el gasto público o las exportaciones netas desplazan la demanda agregada. Más confianza o más gasto público la mueven a la derecha: más producción y presión sobre los precios.",
+          "ejemplo": "Si los hogares temen perder su empleo y recortan su consumo, la demanda agregada se desplaza a la izquierda: baja la producción y aumenta el desempleo. Si el gobierno aumenta su gasto en obras públicas, la demanda agregada se desplaza a la derecha: sube la producción y aparece presión sobre los precios.",
           "puntos_clave": [
             "La política fiscal actúa sobre la demanda agregada.",
             "Una recesión suele empezar por una caída de la demanda."
@@ -210,6 +219,7 @@
           "id": "ma-funciones-dinero",
           "nombre": "Funciones del dinero",
           "explicacion": "El dinero cumple tres funciones: medio de cambio (evita el trueque), unidad de cuenta (expresa precios) y depósito de valor (permite ahorrar). Cualquier activo que las cumpla bien puede funcionar como dinero.",
+          "ejemplo": "Pagar el almuerzo con dólares en vez de intercambiar un servicio por comida usa el dinero como medio de cambio; ver los precios del menú en dólares es usarlo como unidad de cuenta; guardar USD 50 para el próximo mes es usarlo como depósito de valor, que se debilita si hay inflación.",
           "puntos_clave": [
             "La inflación debilita la función de depósito de valor.",
             "El dinero no es lo mismo que la riqueza."
@@ -228,6 +238,7 @@
           "id": "ma-creacion-dinero",
           "nombre": "Cómo los bancos crean dinero",
           "explicacion": "Los bancos guardan una fracción de los depósitos como reserva y prestan el resto; ese préstamo se convierte en nuevos depósitos en otros bancos, que también prestan una parte. Así el sistema multiplica los depósitos iniciales.",
+          "ejemplo": "Con un encaje supuesto de 10 %, un depósito de USD 1.000 permite al banco prestar 900; ese dinero se deposita en otro banco, que presta 810, y así sucesivamente. Con el multiplicador simple, 1 ÷ 0,10 = 10, el depósito inicial puede convertirse en hasta USD 10.000 de depósitos; si el público guarda parte en efectivo, el efecto es menor.",
           "puntos_clave": [
             "Multiplicador simple = 1 ÷ coeficiente de reservas.",
             "En la práctica el efecto es menor por el efectivo que retiene el público."
@@ -248,6 +259,7 @@
           "id": "ma-politica-fiscal",
           "nombre": "Política fiscal contra recesión e inflación",
           "explicacion": "En una recesión, el gobierno puede aumentar el gasto o bajar impuestos para estimular la demanda agregada; con inflación, puede hacer lo contrario. La política fiscal enfrenta rezagos y límites de endeudamiento.",
+          "ejemplo": "En una recesión, un gobierno decide invertir en carreteras y reducir temporalmente un impuesto para estimular la demanda agregada; la obra tarda meses en contratarse (rezago) y se financia con deuda. Cuando la economía se recupera, la recaudación sube sola con las ventas: es un estabilizador automático.",
           "puntos_clave": [
             "Política expansiva: más gasto o menos impuestos.",
             "Los estabilizadores automáticos actúan sin decisiones nuevas."
@@ -266,6 +278,7 @@
           "id": "ma-dolarizacion",
           "nombre": "Política económica en una economía dolarizada",
           "explicacion": "En Ecuador todas las transacciones se expresan en dólares de los Estados Unidos (COMF, art. 94). Sin moneda propia, el país no emite dinero ni fija un tipo de cambio; su política económica descansa sobre todo en la política fiscal y en la regulación del sistema financiero.",
+          "ejemplo": "Ecuador no puede imprimir dólares ni devaluar para abaratar sus exportaciones, porque usa el dólar como moneda (COMF, art. 94). Si las exportaciones y las remesas caen, entran menos dólares y la liquidez de la economía se reduce; el Estado responde sobre todo con su presupuesto y con la regulación del sistema financiero.",
           "puntos_clave": [
             "El Banco Central del Ecuador gestiona la circulación de dólares en el país.",
             "La liquidez depende de las exportaciones, las remesas, la inversión y el endeudamiento."

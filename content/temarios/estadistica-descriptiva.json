@@ -1,6 +1,6 @@
 {
   "materia": "estadistica-descriptiva",
-  "actualizado_en": "2026-10-15",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "ed-datos",
@@ -13,6 +13,7 @@
           "id": "ed-datos-conceptos",
           "nombre": "Población, muestra, parámetro y estadístico",
           "explicacion": "La población es el conjunto completo que interesa estudiar (todas las facturas del año); la muestra es la parte que se observa (200 facturas elegidas). Un parámetro describe a la población y casi nunca se conoce con exactitud; un estadístico describe a la muestra y se usa para estimar el parámetro. La estadística descriptiva resume datos; la inferencial saca conclusiones sobre la población.",
+          "ejemplo": "Una cadena de farmacias quiere conocer el tiempo promedio de atención de todos sus clientes del año (población). Mide a 200 clientes elegidos al azar (muestra) y obtiene un promedio de 6,4 minutos: ese es un estadístico. El verdadero promedio de todos los clientes, que no conoce, es el parámetro que intenta estimar.",
           "puntos_clave": [
             "Parámetro → población; estadístico → muestra.",
             "La muestra sirve para estimar lo que no se puede medir completo."
@@ -32,6 +33,7 @@
           "id": "ed-datos-tipos",
           "nombre": "Tipos de datos y niveles de medición",
           "explicacion": "Los datos cualitativos describen categorías (sector económico, ciudad); los cuantitativos son números que se pueden operar, discretos si se cuentan (número de clientes) o continuos si se miden (ventas en dólares). Los niveles de medición, de menor a mayor información, son nominal, ordinal, de intervalo y de razón. El nivel determina qué medidas tienen sentido: no se promedia una categoría.",
+          "ejemplo": "En una encuesta a clientes: la ciudad es un dato cualitativo nominal; el nivel de satisfacción (malo, regular, bueno) es ordinal; el número de compras al mes es cuantitativo discreto; el gasto en dólares es cuantitativo continuo de razón. Tiene sentido promediar el gasto, pero no promediar las ciudades.",
           "puntos_clave": [
             "Cualitativos vs. cuantitativos (discretos o continuos).",
             "Niveles: nominal, ordinal, intervalo, razón."
@@ -51,6 +53,7 @@
           "id": "ed-datos-muestreo",
           "nombre": "Métodos de muestreo",
           "explicacion": "En el muestreo aleatorio simple cada elemento tiene la misma probabilidad de ser elegido. El estratificado divide la población en grupos (por ejemplo, por tamaño de cliente) y toma una muestra de cada uno; el de conglomerados elige grupos completos al azar; el sistemático toma uno de cada k elementos. La muestra de conveniencia (los que están a la mano) suele estar sesgada.",
+          "ejemplo": "Una cooperativa con 8.000 socios quiere encuestar a 400. Aleatorio simple: sortea 400 números de socio. Estratificado: toma proporcionalmente socios de cada agencia. Sistemático: elige uno de cada 20 de la lista ordenada. Encuestar solo a quienes visitan la agencia matriz un lunes sería una muestra de conveniencia, probablemente sesgada.",
           "puntos_clave": [
             "Aleatorio simple, estratificado, por conglomerados y sistemático.",
             "La conveniencia no garantiza representatividad."
@@ -79,6 +82,7 @@
           "id": "ed-graficos-frecuencias",
           "nombre": "Tablas de frecuencia",
           "explicacion": "Una tabla de frecuencias cuenta cuántas veces aparece cada valor o cada intervalo. La frecuencia relativa divide ese conteo para el total y la frecuencia acumulada va sumando las anteriores. Con datos continuos se agrupan en clases del mismo ancho que no se superponen.",
+          "ejemplo": "De 20 ventas diarias, 6 están entre USD 0 y 100, 10 entre 100 y 200 y 4 entre 200 y 300. Las frecuencias relativas son 0,30, 0,50 y 0,20, que suman 1; las acumuladas son 6, 16 y 20: el 80 % de los días se vendió menos de USD 200.",
           "puntos_clave": [
             "Frecuencia relativa = frecuencia ÷ total.",
             "Las frecuencias relativas suman 1 (100 %)."
@@ -98,6 +102,7 @@
           "id": "ed-graficos-histogramas",
           "nombre": "Histogramas y polígonos de frecuencia",
           "explicacion": "El histograma muestra datos cuantitativos agrupados en barras contiguas cuya altura es la frecuencia de cada clase. Sirve para ver la forma de la distribución: simétrica, sesgada a la derecha o a la izquierda, con uno o varios picos. El polígono de frecuencias une los puntos medios de las barras y facilita comparar dos distribuciones en un mismo gráfico.",
+          "ejemplo": "El histograma de los ingresos mensuales de 500 hogares muestra muchas barras altas entre USD 400 y 900 y una cola larga hacia la derecha con pocos hogares de más de USD 3.000: la distribución está sesgada a la derecha, así que la media será mayor que la mediana.",
           "puntos_clave": [
             "Barras contiguas: los datos son continuos.",
             "La forma del histograma anticipa la relación entre media y mediana."
@@ -117,6 +122,7 @@
           "id": "ed-graficos-caja",
           "nombre": "Diagramas de caja",
           "explicacion": "El diagrama de caja resume los datos con cinco números: mínimo, primer cuartil, mediana, tercer cuartil y máximo. La caja contiene el 50 % central de los datos y su ancho es el rango intercuartílico. Permite comparar grupos rápidamente y detectar valores atípicos.",
+          "ejemplo": "Para los datos 2, 4, 4, 5, 7, 8, 9, 10, 12, 15 (días de entrega), con el método de las mitades: mínimo 2, Q1 = 4, mediana 7,5, Q3 = 10 y máximo 15. La caja va de 4 a 10, su rango intercuartílico es 6 y contiene el 50 % central de las entregas.",
           "puntos_clave": [
             "Cinco números: mínimo, Q1, mediana, Q3, máximo.",
             "La caja cubre el 50 % central."
@@ -144,6 +150,7 @@
           "id": "ed-centro-media",
           "nombre": "Media aritmética y media ponderada",
           "explicacion": "La media suma todos los datos y divide para su cantidad. Es útil cuando los datos son simétricos, pero un solo valor extremo la mueve mucho. La media ponderada asigna a cada dato un peso según su importancia, como en una nota final con porcentajes o un costo promedio con distintas cantidades compradas.",
+          "ejemplo": "Las ventas de seis días fueron 420, 380, 450, 400, 350 y 800 dólares: la media es 2.800 ÷ 6 = 466,67, arrastrada hacia arriba por el día de 800. Una nota con tres partes que pesan 30 %, 30 % y 40 %, con calificaciones de 8, 7 y 9, tiene una media ponderada de 8 × 0,3 + 7 × 0,3 + 9 × 0,4 = 8,1.",
           "puntos_clave": [
             "Media simple: todos los datos pesan igual.",
             "Media ponderada: Σwx ÷ Σw."
@@ -166,6 +173,7 @@
           "id": "ed-centro-mediana-moda",
           "nombre": "Mediana y moda",
           "explicacion": "La mediana es el valor que queda en la mitad cuando los datos se ordenan; si hay un número par de datos, se promedian los dos centrales. No le afectan los valores extremos, por eso se prefiere para ingresos o precios de vivienda. La moda es el valor más frecuente y es la única medida de centro que sirve también para datos cualitativos.",
+          "ejemplo": "Con las ventas 350, 380, 400, 420, 450 y 800 (ordenadas), como hay seis datos la mediana es el promedio de los dos centrales: (400 + 420) ÷ 2 = 410, que representa mejor un día típico que la media de 466,67. En una encuesta sobre la red social preferida, la moda (la más elegida) es la única medida de centro posible.",
           "puntos_clave": [
             "Ordenar antes de buscar la mediana.",
             "La moda puede no existir o haber más de una."
@@ -187,6 +195,7 @@
           "id": "ed-centro-asimetria",
           "nombre": "Asimetría: media frente a mediana",
           "explicacion": "Si la distribución es simétrica, media y mediana son parecidas. Cuando hay una cola larga a la derecha (pocos valores muy altos, como en ventas o salarios), la media queda por encima de la mediana; con una cola a la izquierda ocurre lo contrario. Comparar ambas medidas es una forma rápida de detectar sesgo.",
+          "ejemplo": "En las ventas anteriores, la media (466,67) supera a la mediana (410) porque un solo día alto alarga la cola derecha: la distribución está sesgada a la derecha. En las notas de un examen fácil, con casi todos entre 9 y 10 y pocos aplazados, la media queda por debajo de la mediana.",
           "puntos_clave": [
             "Sesgo a la derecha: media > mediana.",
             "Sesgo a la izquierda: media < mediana."
@@ -217,6 +226,7 @@
           "id": "ed-dispersion-varianza",
           "nombre": "Varianza y desviación estándar",
           "explicacion": "La varianza promedia los cuadrados de las distancias de cada dato a la media; en una muestra se divide para n − 1 para no subestimar la dispersión de la población. La desviación estándar es su raíz cuadrada y se expresa en las mismas unidades que los datos, por eso es más fácil de interpretar: indica la distancia típica de un dato a la media.",
+          "ejemplo": "Los tiempos de entrega de una muestra son 12, 15, 11, 14 y 13 días; la media es 13. Las distancias al cuadrado suman 1 + 4 + 4 + 1 + 0 = 10; la varianza muestral es 10 ÷ (5 − 1) = 2,5 y la desviación estándar √2,5 = 1,58 días: una entrega típica se aleja unos 1,6 días del promedio.",
           "puntos_clave": [
             "Muestra: dividir para n − 1; población: para N.",
             "La desviación estándar tiene las unidades de los datos."
@@ -239,6 +249,7 @@
           "id": "ed-dispersion-cv",
           "nombre": "Coeficiente de variación",
           "explicacion": "El coeficiente de variación divide la desviación estándar para la media. Como no tiene unidades, permite comparar la variabilidad de conjuntos con escalas distintas: por ejemplo, las ventas diarias de una tienda pequeña frente a las de una cadena. Solo tiene sentido con datos de razón y medias positivas.",
+          "ejemplo": "Una tienda pequeña vende en promedio USD 150 diarios con desviación estándar de 30 (CV = 20 %); una cadena vende 24.000 con desviación de 1.200 (CV = 5 %). Aunque la desviación de la cadena es 40 veces mayor, en términos relativos sus ventas son mucho más estables.",
           "puntos_clave": [
             "CV = s ÷ x̄, sin unidades.",
             "Sirve para comparar dispersión relativa."
@@ -259,6 +270,7 @@
           "id": "ed-dispersion-posicion",
           "nombre": "Percentiles, cuartiles y puntuación z",
           "explicacion": "El percentil k es el valor que deja por debajo al k % de los datos; los cuartiles son los percentiles 25, 50 y 75. La puntuación z mide cuántas desviaciones estándar está un dato por encima o por debajo de la media, lo que permite comparar resultados de escalas distintas, como dos exámenes con promedios diferentes.",
+          "ejemplo": "En Contabilidad, Ana sacó 82 en un examen con media 70 y desviación estándar 8 (z = 1,5); en Estadística sacó 75 con media 60 y desviación 12 (z = 1,25). Aunque la nota de Estadística es más baja, comparada con su curso le fue relativamente mejor en Contabilidad.",
           "puntos_clave": [
             "Q1 = percentil 25; mediana = percentil 50; Q3 = percentil 75.",
             "z > 0: por encima de la media; z < 0: por debajo."
@@ -288,6 +300,7 @@
           "id": "ed-relacion-dispersion",
           "nombre": "Diagramas de dispersión",
           "explicacion": "Un diagrama de dispersión ubica cada observación como un punto con dos coordenadas (por ejemplo, gasto en publicidad y ventas). Permite ver si existe una tendencia lineal, si es positiva o negativa, qué tan fuerte es y si hay puntos atípicos, antes de calcular cualquier coeficiente.",
+          "ejemplo": "Una tienda grafica, para cada mes, su gasto en publicidad (eje x) y sus ventas (eje y). Los puntos forman una franja que sube de izquierda a derecha: relación positiva y aproximadamente lineal. Un mes con ventas altísimas por una feria aparece separado de la nube: es un punto atípico que conviene explicar antes de calcular nada.",
           "puntos_clave": [
             "Graficar antes de calcular.",
             "Buscar dirección, forma y fuerza de la relación."
@@ -306,6 +319,7 @@
           "id": "ed-relacion-correlacion",
           "nombre": "Coeficiente de correlación de Pearson",
           "explicacion": "El coeficiente r mide la fuerza de la relación lineal entre dos variables y va de −1 a 1. Valores cercanos a 1 indican relación lineal positiva fuerte; cercanos a −1, negativa fuerte; cercanos a 0, poca relación lineal. El signo indica la dirección y el valor absoluto, la fuerza.",
+          "ejemplo": "Con gastos en publicidad de 1, 2, 3, 4 y 5 (miles de USD) y ventas de 12, 15, 19, 21 y 26 (miles de USD), el coeficiente de correlación es r = 0,99: una relación lineal positiva muy fuerte. Si r hubiera salido −0,1, casi no habría relación lineal.",
           "puntos_clave": [
             "−1 ≤ r ≤ 1.",
             "Solo mide relaciones lineales."
@@ -326,6 +340,7 @@
           "id": "ed-relacion-causalidad",
           "nombre": "Correlación no implica causalidad",
           "explicacion": "Que dos variables se muevan juntas no prueba que una cause a la otra. Puede existir una tercera variable que influye en ambas (por ejemplo, la temporada navideña sube tanto la publicidad como las ventas) o la relación puede ser casual. Para hablar de causa se necesitan diseños de estudio que controlen esas otras variables.",
+          "ejemplo": "En un año, las ventas de helados y los casos de quemaduras de sol suben y bajan juntos (r alto), pero los helados no causan quemaduras: una tercera variable, el calor de la temporada, influye en ambas. Del mismo modo, la publicidad y las ventas suben en diciembre por la temporada navideña.",
           "puntos_clave": [
             "Buscar variables omitidas antes de interpretar.",
             "La correlación describe, no explica."

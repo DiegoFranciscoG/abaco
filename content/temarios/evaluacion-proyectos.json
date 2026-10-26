@@ -1,6 +1,6 @@
 {
   "materia": "evaluacion-proyectos",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "ep-fundamentos",
@@ -13,6 +13,7 @@
           "id": "ep-inversion-capital",
           "nombre": "Qué es una decisión de inversión de capital",
           "explicacion": "Es una decisión de gastar hoy en activos de largo plazo (una planta, maquinaria, un local) esperando beneficios durante varios años. Por su monto y duración, es difícil de revertir y conviene evaluarla con métodos formales.",
+          "ejemplo": "Una panadería evalúa comprar un horno industrial de USD 50.000 que le permitirá vender más durante los próximos 3 años. Es una decisión de expansión: compromete mucho dinero, por varios años y es difícil de revertir, porque un horno usado se revende con descuento. Por eso se evalúa con VAN y TIR antes de comprarlo.",
           "puntos_clave": [
             "Se evalúan proyectos de expansión, reemplazo y mejora.",
             "La decisión compromete recursos por varios períodos."
@@ -31,6 +32,7 @@
           "id": "ep-informacion-relevante",
           "nombre": "Información relevante y costos hundidos",
           "explicacion": "Solo importan los flujos futuros que cambian según la decisión. Un costo hundido, ya gastado y no recuperable, no debe influir; tampoco los costos que serán iguales en todas las alternativas.",
+          "ejemplo": "La panadería ya pagó USD 2.000 por un estudio de mercado: ese gasto es hundido y no cambia aunque decida no comprar el horno, así que no entra en la evaluación. En cambio, si para instalarlo debe dejar de arrendar un espacio que hoy le deja USD 300 al mes, esos ingresos perdidos son un costo de oportunidad y sí cuentan.",
           "puntos_clave": [
             "El costo de oportunidad sí es relevante aunque no implique un pago.",
             "Un estudio de mercado ya pagado es un costo hundido."
@@ -49,6 +51,7 @@
           "id": "ep-valor-dinero",
           "nombre": "El valor del dinero en el tiempo en los proyectos",
           "explicacion": "Como los flujos de un proyecto ocurren en distintos años, se llevan a una misma fecha descontándolos a la tasa mínima de rendimiento exigida. Sin este paso, un dólar del año 5 valdría lo mismo que uno de hoy.",
+          "ejemplo": "El horno genera USD 20.000 en el año 1, 22.000 en el 2 y 25.000 en el 3. Sumados dan 67.000, pero con una tasa exigida de 12 % valen hoy 17.857,14 + 17.538,27 + 17.794,51 = USD 53.189,91: los flujos lejanos pesan menos.",
           "puntos_clave": [
             "Los flujos se descuentan con la tasa de la empresa o el costo de capital.",
             "Las anualidades simplifican flujos iguales."
@@ -76,6 +79,7 @@
           "id": "ep-van",
           "nombre": "Valor actual neto (VAN)",
           "explicacion": "El VAN es el valor presente de los flujos futuros menos la inversión inicial. Si es positivo, el proyecto rinde más que la tasa exigida y crea valor; si es negativo, lo destruye.",
+          "ejemplo": "Con la inversión de USD 50.000 y los flujos de 20.000, 22.000 y 25.000 descontados al 12 %, el VAN es 53.189,91 − 50.000 = USD 3.189,91. Es positivo: el horno rinde más que el 12 % exigido y crea valor para la panadería.",
           "puntos_clave": [
             "Regla: aceptar si VAN > 0.",
             "El VAN depende de la tasa de descuento elegida."
@@ -96,6 +100,7 @@
           "id": "ep-tir",
           "nombre": "Tasa interna de retorno (TIR)",
           "explicacion": "La TIR es la tasa de descuento que hace cero el VAN. Se compara con la tasa mínima exigida: si es mayor, el proyecto se acepta. Se calcula por aproximaciones sucesivas o con la función TIR.",
+          "ejemplo": "Para el mismo horno, la tasa que hace cero el VAN es aproximadamente 15,54 %: es su TIR. Como supera el 12 % exigido, la decisión coincide con la del VAN y el proyecto se acepta. En una hoja de cálculo: =TIR(rango con −50.000, 20.000, 22.000 y 25.000).",
           "puntos_clave": [
             "Con flujos no convencionales puede haber más de una TIR.",
             "Para proyectos independientes, VAN y TIR suelen coincidir en la decisión."
@@ -116,6 +121,7 @@
           "id": "ep-indice-rentabilidad",
           "nombre": "Índice de rentabilidad",
           "explicacion": "El índice de rentabilidad divide el valor presente de los flujos futuros para la inversión inicial. Mayor a 1 significa VAN positivo; es útil para ordenar proyectos cuando el capital disponible es limitado.",
+          "ejemplo": "El valor presente de los flujos del horno es USD 53.189,91 y la inversión 50.000: índice de rentabilidad = 1,0638. Por cada dólar invertido se recuperan 1,06 en valor presente. Si la panadería tuviera que elegir entre varios proyectos con capital limitado, empezaría por los de índice más alto.",
           "puntos_clave": [
             "IR = VA de flujos ÷ inversión.",
             "IR > 1 equivale a VAN > 0."
@@ -145,6 +151,7 @@
           "id": "ep-payback",
           "nombre": "Período de recuperación",
           "explicacion": "Indica cuánto tiempo tarda el proyecto en devolver la inversión con sus flujos. Es fácil de entender y mide liquidez, pero ignora el valor del dinero y los flujos posteriores a la recuperación.",
+          "ejemplo": "Con flujos de 20.000 y 22.000, la panadería recupera 42.000 en dos años; del tercer año (25.000) necesita 8.000 más: período de recuperación = 2 + 8.000 ÷ 25.000 = 2,32 años. Si el flujo fuera igual cada año, por ejemplo USD 8.000 para una inversión de 30.000, sería 30.000 ÷ 8.000 = 3,75 años.",
           "puntos_clave": [
             "Con flujos iguales: inversión ÷ flujo anual.",
             "Con flujos desiguales se acumulan hasta cubrir la inversión."
@@ -165,6 +172,7 @@
           "id": "ep-tasa-contable",
           "nombre": "Tasa de rendimiento contable",
           "explicacion": "Divide la utilidad contable promedio del proyecto para la inversión. Usa cifras contables que ya conoce la gerencia, pero no considera el valor del dinero en el tiempo ni los flujos de efectivo.",
+          "ejemplo": "Una máquina de USD 40.000 genera una utilidad contable promedio de USD 6.000 al año: tasa de rendimiento contable = 6.000 ÷ 40.000 = 15 %. La cifra es fácil de explicar a la gerencia, pero no dice en qué año llega cada dólar ni usa flujos de efectivo.",
           "puntos_clave": [
             "Usa utilidad, no flujo de efectivo.",
             "Sirve como medida complementaria."
@@ -183,6 +191,7 @@
           "id": "ep-elegir",
           "nombre": "Elegir entre proyectos",
           "explicacion": "Cuando los proyectos son mutuamente excluyentes y sus criterios no coinciden, se prefiere el de mayor VAN, porque mide directamente cuánto valor crea. Las diferencias de tamaño y de calendario de flujos explican los conflictos entre VAN y TIR.",
+          "ejemplo": "Con una tasa de 10 %, el proyecto A invierte USD 10.000 y recibe 12.500 en un año (TIR 25 %, VAN 1.363,64); el proyecto B invierte 50.000 y recibe 59.000 (TIR 18 %, VAN 3.636,36). Si solo se puede hacer uno, se elige B: crea más valor en dólares aunque su TIR sea menor.",
           "puntos_clave": [
             "Proyectos excluyentes: solo se puede hacer uno.",
             "El VAN suma valor en dólares; la TIR es un porcentaje."
@@ -210,6 +219,7 @@
           "id": "ep-hoja-calculo",
           "nombre": "Evaluar proyectos en la hoja de cálculo",
           "explicacion": "Con VNA, TIR y celdas bien organizadas (flujos por año, tasa en una celda aparte) se puede cambiar un supuesto y ver al instante el nuevo VAN. Hay que recordar que VNA descuenta desde el período 1, así que la inversión inicial se suma aparte.",
+          "ejemplo": "En la hoja, la celda B1 tiene la tasa (12 %), B2 la inversión (−50.000) y B3:B5 los flujos de los años 1 a 3. El VAN es =VNA(B1;B3:B5)+B2 = 3.189,91. Si se cambia la tasa a 15 %, el VAN se recalcula al instante. Poner B2 dentro de VNA sería un error: lo descontaría un año.",
           "puntos_clave": [
             "VAN = VNA(tasa; flujos 1..n) + flujo 0.",
             "Separar supuestos y resultados facilita el análisis."
@@ -228,6 +238,7 @@
           "id": "ep-comparar-metodos",
           "nombre": "Métodos con y sin valor del dinero",
           "explicacion": "Los métodos que descuentan (VAN, TIR) reconocen que el dinero tiene costo; los que no (recuperación, tasa contable) son más simples pero pueden recomendar proyectos que destruyen valor. En la práctica se presentan juntos, dando prioridad al VAN.",
+          "ejemplo": "Un proyecto recupera su inversión en 2 años (buen período de recuperación), pero casi todos sus flujos llegan en esos dos años y es muy pequeño; otro tarda 4 años y tiene un VAN mucho mayor. El informe muestra los dos criterios, pero la recomendación se apoya en el VAN.",
           "puntos_clave": [
             "Un buen informe muestra varios criterios.",
             "Los métodos sin descuento sirven como filtro inicial."
@@ -246,6 +257,7 @@
           "id": "ep-factibilidad",
           "nombre": "Análisis de factibilidad",
           "explicacion": "Antes de invertir se revisa si el proyecto es viable en cuatro frentes: mercado (hay clientes), técnico (se puede producir), organizacional (hay equipo) y financiero (los números cierran). Un VAN positivo no basta si falla alguno de los otros.",
+          "ejemplo": "Antes de abrir una cafetería, un emprendedor revisa: mercado (encuesta a 300 personas de la zona y conteo de flujo peatonal), técnico (local con instalación de gas y permisos), organizacional (quién atenderá y en qué horario) y financiero (flujo de caja con VAN positivo). Si el local no obtiene el permiso de funcionamiento, el VAN positivo no basta.",
           "puntos_clave": [
             "La factibilidad reduce el riesgo de invertir en una idea sin demanda.",
             "Sus conclusiones alimentan el flujo de caja del proyecto."

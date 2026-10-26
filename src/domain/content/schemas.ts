@@ -122,6 +122,8 @@ export const subtemaSchema = z.object({
   id,
   nombre: nonEmpty,
   explicacion: z.string().trim().min(80, 'La explicación debe tener al menos 80 caracteres'),
+  /** A concrete, worked case of the theory above (own writing; numbers are checked when the example is written). */
+  ejemplo: z.string().trim().min(60, 'Cada subtema necesita un ejemplo concreto'),
   puntos_clave: z.array(nonEmpty).min(1),
   errores_frecuentes: z.array(nonEmpty).min(1),
   formulas: z.array(id),

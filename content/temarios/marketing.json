@@ -1,6 +1,6 @@
 {
   "materia": "marketing",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "mk-fundamentos",
@@ -13,6 +13,7 @@
           "id": "mk-proceso",
           "nombre": "Marketing y proceso de marketing",
           "explicacion": "El marketing busca crear valor para los clientes y construir relaciones duraderas a cambio de valor para la empresa. El proceso empieza por entender el mercado y sus necesidades y termina en la fidelización.",
+          "ejemplo": "Una tienda de bicicletas entrevista a sus clientes y descubre que muchos las usan para ir al trabajo. Crea un servicio de mantenimiento mensual a bajo costo, ofrece accesorios para lluvia y envía recordatorios de revisión. Los clientes vuelven cada mes y recomiendan la tienda: el valor creado para ellos regresa como ventas recurrentes.",
           "puntos_clave": [
             "El cliente está en el centro.",
             "Valor = beneficios percibidos frente a costos."
@@ -31,6 +32,7 @@
           "id": "mk-4p",
           "nombre": "La mezcla de marketing: las 4 P",
           "explicacion": "Producto, precio, plaza (distribución) y promoción son las variables que la empresa controla para llegar a su mercado meta. Deben ser coherentes entre sí: un producto premium no se vende con precio de liquidación.",
+          "ejemplo": "Una marca de café de especialidad de altura: producto, café tostado en pequeños lotes con trazabilidad de la finca; precio, por encima del café común; plaza, cafeterías especializadas y su tienda en línea; promoción, catas y contenido sobre los productores. Venderlo en ofertas de 2 × 1 en un supermercado contradiría su posicionamiento.",
           "puntos_clave": [
             "Las 4 P se deciden después de elegir el mercado meta.",
             "Coherencia entre las cuatro variables."
@@ -49,6 +51,7 @@
           "id": "mk-necesidades",
           "nombre": "Necesidades y deseos del consumidor",
           "explicacion": "Las necesidades son carencias básicas; los deseos son la forma que toman según la cultura y la persona; la demanda aparece cuando hay deseo y capacidad de compra. Investigar al cliente evita lanzar productos que nadie pidió.",
+          "ejemplo": "Una estudiante tiene sed (necesidad); según sus gustos desea un jugo natural (deseo); si tiene USD 2 para pagarlo, se convierte en demanda. Una juguería que preguntó antes a los estudiantes descubrió que preferían porciones pequeñas a menor precio y diseñó su menú con esa información.",
           "puntos_clave": [
             "Necesidad ≠ deseo ≠ demanda.",
             "Escuchar al cliente antes de diseñar."
@@ -76,6 +79,7 @@
           "id": "mk-decision-compra",
           "nombre": "Proceso de decisión de compra",
           "explicacion": "El consumidor reconoce una necesidad, busca información, evalúa alternativas, compra y luego evalúa su experiencia. El marketing puede intervenir en cada etapa, y la satisfacción posterior influye en la siguiente compra.",
+          "ejemplo": "Un estudiante que necesita una laptop (reconoce la necesidad) compara modelos en internet y pregunta a compañeros (búsqueda), evalúa precio, peso y batería (evaluación), compra en una tienda que ofrece cuotas (compra) y, al ver que la batería dura menos de lo prometido, duda de su decisión: un buen servicio posventa reduce esa disonancia.",
           "puntos_clave": [
             "Las compras de bajo involucramiento saltan etapas.",
             "La disonancia poscompra se reduce con buen servicio."
@@ -94,6 +98,7 @@
           "id": "mk-segmentacion",
           "nombre": "Segmentación de mercados",
           "explicacion": "Segmentar es dividir un mercado en grupos con necesidades o comportamientos parecidos, usando variables geográficas, demográficas, psicográficas o conductuales. Un buen segmento es medible, accesible y suficientemente grande.",
+          "ejemplo": "Un gimnasio segmenta su mercado: por geografía (barrios a menos de 3 km), demografía (estudiantes de 18 a 24 años y profesionales de 25 a 40), psicografía (personas que buscan salud frente a quienes buscan competir) y conducta (usuarios frecuentes frente a quienes vienen solo en enero). A cada grupo le ofrece horarios y planes distintos.",
           "puntos_clave": [
             "Variables conductuales: frecuencia de uso, lealtad, beneficios buscados.",
             "Cada segmento puede requerir una mezcla distinta."
@@ -112,6 +117,7 @@
           "id": "mk-mercado-meta",
           "nombre": "Selección del mercado meta",
           "explicacion": "Después de segmentar, la empresa elige a qué segmentos atender según su atractivo y la capacidad de la empresa: un mercado masivo, varios segmentos, un nicho o incluso el marketing personalizado.",
+          "ejemplo": "Una pastelería decide no competir con los supermercados en pasteles baratos. Elige un nicho: pasteles sin gluten para personas con celiaquía en su ciudad, un segmento medible, accesible por redes y grupos de pacientes, y que aprecia la especialización por la que está dispuesto a pagar más.",
           "puntos_clave": [
             "Atractivo del segmento + capacidad de la empresa.",
             "Un nicho permite especializarse."
@@ -130,6 +136,7 @@
           "id": "mk-posicionamiento",
           "nombre": "Posicionamiento",
           "explicacion": "Posicionar es lograr un lugar claro y distinto en la mente del cliente frente a la competencia. Se expresa en una propuesta de valor y se comunica de forma consistente en todas las acciones de marketing.",
+          "ejemplo": "En un mapa con precio (eje vertical) y rapidez de entrega (eje horizontal), una librería en línea encuentra que nadie ofrece entrega en 24 horas a precio medio. Se posiciona como «tus libros mañana, sin pagar de más» y lo cumple en cada punto de contacto: su web, sus empaques y su atención al cliente.",
           "puntos_clave": [
             "Mapa de posicionamiento: dos atributos clave.",
             "La diferenciación debe ser relevante para el cliente."
@@ -157,6 +164,7 @@
           "id": "mk-ciclo-vida",
           "nombre": "Ciclo de vida del producto",
           "explicacion": "Un producto pasa por introducción, crecimiento, madurez y declive. En cada etapa cambian las ventas, la competencia y las utilidades, por lo que cambian también las estrategias de precio, promoción y distribución.",
+          "ejemplo": "Un nuevo snack de chifles con sabores se lanza con degustaciones y pocos competidores (introducción); las ventas se disparan y aparecen imitadores (crecimiento); luego el mercado se llena y la competencia es por precio y presentación (madurez); años después las ventas caen y la empresa decide si renueva el producto o lo retira (declive).",
           "puntos_clave": [
             "Madurez: la etapa más larga y competida.",
             "En el declive se decide mantener, cosechar o retirar."
@@ -175,6 +183,7 @@
           "id": "mk-marca",
           "nombre": "Marca",
           "explicacion": "Una marca es un nombre, símbolo o diseño que identifica a un vendedor y lo diferencia. Su valor (capital de marca) se construye con experiencias consistentes y se refleja en la lealtad y en la disposición a pagar.",
+          "ejemplo": "Una marca de chocolate ecuatoriano construye su capital de marca con calidad constante, empaques reconocibles y una historia sobre el origen del cacao. Sus clientes la prefieren aunque cueste más que otras opciones. Para proteger su nombre y su logo, la empresa los registra como marca ante la autoridad competente.",
           "puntos_clave": [
             "La marca es una promesa al cliente.",
             "Las marcas pueden registrarse para proteger su uso."
@@ -193,6 +202,7 @@
           "id": "mk-fijacion-precios",
           "nombre": "Fijación de precios",
           "explicacion": "El precio se fija considerando costos, demanda, competencia y objetivos de la empresa. Un procedimiento ordenado define objetivos, estima demanda y costos, analiza a la competencia y elige el método y el precio final.",
+          "ejemplo": "Una tienda de mochilas produce cada una a USD 18 (piso del precio), sus clientes la valoran en hasta 45 (techo) y la competencia vende modelos parecidos entre 30 y 38. Con el objetivo de ganar participación sin parecer barata, fija el precio en USD 34,90.",
           "puntos_clave": [
             "El costo marca el piso; el valor percibido, el techo.",
             "Un precio también comunica calidad."
@@ -211,6 +221,7 @@
           "id": "mk-precios-nuevos",
           "nombre": "Precios para productos nuevos",
           "explicacion": "El descremado fija un precio inicial alto para captar a quienes valoran más la novedad y luego lo baja; la penetración entra con precio bajo para ganar participación rápidamente. La elección depende de la competencia y de la elasticidad.",
+          "ejemplo": "Un fabricante lanza unos audífonos con una tecnología que nadie más tiene y los vende a USD 150 para captar a quienes quieren la novedad (descremado); un año después los baja a 99. Una nueva marca de agua embotellada, en cambio, entra con un precio menor al de las marcas conocidas para ganar participación rápido (penetración).",
           "puntos_clave": [
             "Descremado: innovaciones con poca competencia.",
             "Penetración: mercados sensibles al precio."
@@ -238,6 +249,7 @@
           "id": "mk-canales",
           "nombre": "Canales de distribución",
           "explicacion": "Un canal puede ser directo (del productor al consumidor) o indirecto, con mayoristas y minoristas. Los intermediarios agregan valor con logística, crédito e información, a cambio de un margen.",
+          "ejemplo": "Un productor de miel vende directo en su finca y en su página web (canal directo: más margen y control) y también a una distribuidora que la coloca en tiendas de tres provincias (canal indirecto: más cobertura a cambio del margen del intermediario). El cliente puede comprar en línea y retirar en tienda: omnicanalidad.",
           "puntos_clave": [
             "Canal directo: más control y menos cobertura.",
             "Omnicanalidad: combinar tienda física y digital."
@@ -256,6 +268,7 @@
           "id": "mk-mezcla-promocional",
           "nombre": "Mezcla promocional",
           "explicacion": "La mezcla promocional combina publicidad, relaciones públicas, venta personal, promoción de ventas y marketing directo y digital. La comunicación integrada busca que todos los mensajes digan lo mismo.",
+          "ejemplo": "Para su aniversario, una cadena de ópticas usa publicidad en radio, una nota de prensa sobre sus campañas de salud visual (relaciones públicas), asesoras en tienda (venta personal), un 20 % de descuento por una semana (promoción de ventas) y correos a sus clientes registrados con su autorización (marketing directo). Todos los mensajes repiten el mismo lema.",
           "puntos_clave": [
             "Cada herramienta tiene costos y alcances distintos.",
             "La promoción debe ser veraz: sin afirmaciones que no se puedan respaldar."
@@ -274,6 +287,7 @@
           "id": "mk-metricas-digitales",
           "nombre": "Métricas del marketing digital",
           "explicacion": "Las métricas digitales (alcance, interacción, tasa de clics, conversión, costo por adquisición) permiten medir qué acciones funcionan y ajustar la inversión. Importa más la conversión que los \"me gusta\".",
+          "ejemplo": "Una campaña de una tienda en línea logra 50.000 personas alcanzadas, 2.000 clics hacia la web y 80 compras. La tasa de conversión es 80 ÷ 2.000 = 4 %; si la campaña costó USD 400, el costo por adquisición es 400 ÷ 80 = USD 5 por cliente. Una publicación con miles de «me gusta» y ninguna venta rindió menos.",
           "puntos_clave": [
             "Tasa de conversión = conversiones ÷ visitas.",
             "Definir la métrica antes de lanzar la campaña."

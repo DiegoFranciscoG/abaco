@@ -62,7 +62,16 @@ export default function TopicPage() {
             }
           >
             <div className="space-y-5">
-              <p className="text-[1.02rem] leading-relaxed text-ink-2">{s.explicacion}</p>
+              <div>
+                <h3 className="eyebrow mb-2">Teoría</h3>
+                <p className="text-[1.02rem] leading-relaxed text-ink-2">{s.explicacion}</p>
+              </div>
+              <div className="rounded-2xl border border-line bg-surface-2 p-4">
+                <h3 className="mb-2 flex items-center gap-2 text-xs font-bold tracking-[0.12em] text-red uppercase">
+                  <Icon name="sparkle" size={16} /> Ejemplo
+                </h3>
+                <p className="leading-relaxed text-ink-2">{s.ejemplo}</p>
+              </div>
               <div>
                 <h3 className="eyebrow mb-2">Puntos clave</h3>
                 <ul className="space-y-1.5">

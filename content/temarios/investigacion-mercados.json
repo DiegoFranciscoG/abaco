@@ -1,6 +1,6 @@
 {
   "materia": "investigacion-mercados",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "im-proceso",
@@ -13,6 +13,7 @@
           "id": "im-big-data",
           "nombre": "Investigación de mercados y datos",
           "explicacion": "La investigación de mercados recoge y analiza información para tomar decisiones de marketing. Hoy combina estudios tradicionales con grandes volúmenes de datos de transacciones y canales digitales.",
+          "ejemplo": "Un supermercado debe decidir si amplía su sección de productos orgánicos. Revisa los datos de su programa de fidelidad (qué compran y con qué frecuencia) y los combina con una encuesta breve a 400 clientes. La pregunta es concreta y la investigación busca reducir la incertidumbre de esa decisión, no acumular datos.",
           "puntos_clave": [
             "Su fin es reducir la incertidumbre de una decisión.",
             "Más datos no siempre significan mejores respuestas."
@@ -31,6 +32,7 @@
           "id": "im-fuentes",
           "nombre": "Fuentes primarias y secundarias",
           "explicacion": "Los datos secundarios ya existen (estadísticas oficiales, estudios publicados, registros de la empresa); los primarios se recogen para el estudio (encuestas, entrevistas, observación). Se empieza por los secundarios porque son más baratos.",
+          "ejemplo": "Para estimar cuántos hogares podrían comprar su producto en una provincia, una empresa empieza por datos secundarios: estadísticas oficiales del INEC sobre población y hogares, revisando su fecha y su método. Luego hace una encuesta propia (dato primario) para saber cuántos de esos hogares comprarían a su precio.",
           "puntos_clave": [
             "Verificar fecha, autor y método de un dato secundario.",
             "Los primarios responden exactamente a la pregunta, a mayor costo."
@@ -49,6 +51,7 @@
           "id": "im-pasos",
           "nombre": "Pasos de un plan de investigación",
           "explicacion": "Un estudio sigue pasos: definir el problema y los objetivos, diseñar la investigación, elegir el método de recolección y la muestra, recoger los datos, analizarlos e informar los resultados con recomendaciones.",
+          "ejemplo": "Problema: ¿por qué bajaron 15 % las ventas de una cafetería? Objetivo: conocer las razones de los clientes que dejaron de venir. Diseño: descriptivo con encuesta. Muestra: 300 clientes del programa de puntos sin compras en tres meses. Recolección por correo y llamada; análisis de las respuestas; informe con tres recomendaciones concretas para el gerente.",
           "puntos_clave": [
             "Un problema mal definido arruina el estudio.",
             "El informe debe responder a la decisión inicial."
@@ -76,6 +79,7 @@
           "id": "im-muestreo",
           "nombre": "Muestreo",
           "explicacion": "Para generalizar resultados la muestra debe ser probabilística (aleatoria simple, estratificada, por conglomerados o sistemática). Las muestras por conveniencia sirven para explorar, no para estimar porcentajes del mercado.",
+          "ejemplo": "Una universidad privada quiere estimar el porcentaje de estudiantes que usaría un servicio de comida a domicilio. Su marco muestral es la lista de matriculados: elige 400 al azar (aleatorio simple). Encuestar solo a quienes pasan por la cafetería a mediodía sería conveniencia y sobrerrepresentaría a quienes ya compran comida en el campus.",
           "puntos_clave": [
             "El marco muestral es la lista de la que se elige.",
             "El sesgo no se corrige con más encuestas."
@@ -94,6 +98,7 @@
           "id": "im-tamano",
           "nombre": "Tamaño de la muestra",
           "explicacion": "El tamaño depende del margen de error aceptado, del nivel de confianza y de la variabilidad. Para porcentajes sin información previa se usa p = 0,5, y el resultado se redondea hacia arriba.",
+          "ejemplo": "Para estimar un porcentaje con 95 % de confianza y un margen de error de 4 puntos, sin información previa: n = 1,96² × 0,5 × 0,5 ÷ 0,04² = 600,25, así que se necesitan 601 encuestas. Con un margen de 5 puntos bastarían 385.",
           "puntos_clave": [
             "n = z²·p·q ÷ E².",
             "Con 95 % de confianza y 5 % de error, n ≈ 385."
@@ -112,6 +117,7 @@
           "id": "im-etica-diseno",
           "nombre": "Diseño y ética de la investigación",
           "explicacion": "Un buen diseño controla variables que podrían confundir los resultados. La ética exige consentimiento informado, confidencialidad y no presionar a los participantes; en Ecuador además se aplica la protección de datos personales.",
+          "ejemplo": "Antes de una encuesta sobre hábitos de consumo, el encuestador explica para qué es, quién la realiza, que es voluntaria y que las respuestas serán confidenciales, y pide el consentimiento. No pregunta la cédula ni el teléfono si no hacen falta para el estudio, como exige la protección de datos personales.",
           "puntos_clave": [
             "Consentimiento informado antes de recoger datos.",
             "Recoger solo los datos necesarios."
@@ -139,6 +145,7 @@
           "id": "im-mercados-consumo",
           "nombre": "Mercados de consumo y conducta de compra",
           "explicacion": "Los consumidores compran para uso personal o del hogar. Estudiar su conducta implica entender qué compran, por qué, cuándo, dónde y con qué frecuencia, y cómo cambia según el tipo de producto.",
+          "ejemplo": "La compra de pasta dental es habitual: la persona toma su marca de siempre sin pensarlo mucho. La compra de galletas puede ser de búsqueda de variedad: prueba sabores nuevos por curiosidad. La compra de un auto es compleja: compara durante semanas, pide opiniones y revisa el financiamiento.",
           "puntos_clave": [
             "Compras habituales, de búsqueda de variedad y complejas.",
             "El involucramiento cambia el proceso."
@@ -157,6 +164,7 @@
           "id": "im-factores",
           "nombre": "Factores que influyen en la compra",
           "explicacion": "Influyen factores culturales (cultura, subcultura, clase social), sociales (familia, grupos de referencia), personales (edad, ocupación, estilo de vida) y psicológicos (motivación, percepción, aprendizaje, creencias).",
+          "ejemplo": "Un joven que compra zapatillas deportivas recibe la influencia de su cultura y clase social, de sus amigos y de los deportistas que sigue (grupos de referencia), de su edad y estilo de vida, y de su percepción de que cierta marca representa éxito. Como las zapatillas se ven, la opinión del grupo pesa mucho más que en la compra de detergente.",
           "puntos_clave": [
             "Los grupos de referencia influyen mucho en productos visibles.",
             "Las actitudes cambian despacio."
@@ -175,6 +183,7 @@
           "id": "im-b2b",
           "nombre": "Compras entre empresas",
           "explicacion": "En los mercados entre empresas compran equipos formados por varias personas, con procesos formales: reconocimiento del problema, especificaciones, búsqueda de proveedores, propuestas, selección y evaluación del desempeño.",
+          "ejemplo": "Una cadena hotelera necesita nuevas lavadoras industriales. Un comité de compras (mantenimiento, finanzas y gerencia) define especificaciones técnicas, invita a tres proveedores, compara sus propuestas, elige uno y firma un contrato de mantenimiento por tres años; al final de cada año evalúa su desempeño.",
           "puntos_clave": [
             "Pocos compradores, montos grandes.",
             "Relaciones de largo plazo con proveedores."
@@ -202,6 +211,7 @@
           "id": "im-proporcion",
           "nombre": "Estimar un porcentaje del mercado",
           "explicacion": "Para estimar qué porcentaje de clientes prefiere una opción se calcula un intervalo de confianza para la proporción. Informar el margen de error evita sobreinterpretar diferencias pequeñas.",
+          "ejemplo": "En una encuesta a 500 personas, el 42 % prefiere la marca A (intervalo de 95 %: 37,7 % a 46,3 %) y el 38 % la marca B (33,7 % a 42,3 %). Los intervalos se solapan, así que no se puede afirmar con confianza que A sea la preferida en todo el mercado: la diferencia de 4 puntos podría deberse al azar de la muestra.",
           "puntos_clave": [
             "p̂ ± z·√(p̂·q̂/n).",
             "Dos porcentajes cuyos intervalos se solapan pueden no ser distintos."
@@ -220,6 +230,7 @@
           "id": "im-tablas-cruzadas",
           "nombre": "Tablas cruzadas y chi-cuadrado",
           "explicacion": "Una tabla cruzada muestra cómo se combinan dos variables categóricas (por ejemplo, edad y marca preferida). La prueba chi-cuadrado de independencia indica si la relación observada es más que azar.",
+          "ejemplo": "En una tabla cruzada de 300 encuestados, 120 tienen menos de 30 años y 90 prefieren comprar en línea. Si edad y canal fueran independientes, se esperarían 120 × 90 ÷ 300 = 36 jóvenes que prefieren comprar en línea; si se observan 60, la prueba chi-cuadrado indica si esa diferencia es más que azar.",
           "puntos_clave": [
             "Se comparan frecuencias observadas y esperadas.",
             "Una relación no prueba causa."
@@ -238,6 +249,7 @@
           "id": "im-etica",
           "nombre": "Ética en la investigación de mercados",
           "explicacion": "La investigación debe ser honesta con los participantes y con quien la contrata: no disfrazar ventas de encuestas, proteger la privacidad y no manipular resultados para obtener una conclusión deseada.",
+          "ejemplo": "Una empresa llama a personas diciendo que hace una encuesta, pero en realidad intenta venderles un plan de telefonía: eso no es investigación de mercados y engaña al participante. En un estudio real se informa quién lo patrocina, se protegen los datos y se presentan los resultados aunque no favorezcan al cliente que lo contrató.",
           "puntos_clave": [
             "Transparencia sobre quién patrocina el estudio.",
             "Protección de los datos de los participantes."

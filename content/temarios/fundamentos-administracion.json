@@ -1,6 +1,6 @@
 {
   "materia": "fundamentos-administracion",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "fa-directivo",
@@ -13,6 +13,7 @@
           "id": "fa-funciones",
           "nombre": "Funciones de la administración",
           "explicacion": "Administrar es lograr objetivos con y por medio de otras personas. Las funciones clásicas son planear (fijar metas y caminos), organizar (repartir tareas y recursos), dirigir (motivar y coordinar) y controlar (comparar lo logrado con lo planeado y corregir).",
+          "ejemplo": "La gerente de una cafetería planea vender 20 % más en diciembre, organiza turnos y asigna a una persona para los pedidos a domicilio, dirige al equipo con una reunión semanal y, a mitad de mes, controla: las ventas van 8 % arriba, así que refuerza la promoción en redes. Al terminar el mes, ese resultado alimenta la planeación de enero.",
           "puntos_clave": [
             "Las funciones forman un ciclo continuo.",
             "Todos los niveles directivos las cumplen en distinta proporción."
@@ -31,6 +32,7 @@
           "id": "fa-roles",
           "nombre": "Roles del gerente",
           "explicacion": "Según Mintzberg, los gerentes cumplen roles interpersonales (representante, líder, enlace), informativos (monitor, difusor, portavoz) y de decisión (emprendedor, gestor de problemas, asignador de recursos, negociador).",
+          "ejemplo": "En una misma mañana, el gerente de una agencia bancaria preside la inauguración de un cajero (representante), revisa los reportes de morosidad (monitor), explica al equipo una nueva norma (difusor), resuelve la queja de un cliente importante (gestor de problemas) y negocia con su jefe más personal para la temporada alta (negociador).",
           "puntos_clave": [
             "Los roles se cumplen a la vez, no por turnos.",
             "El peso de cada rol cambia con el nivel jerárquico."
@@ -49,6 +51,7 @@
           "id": "fa-caracteristicas",
           "nombre": "Características del trabajo directivo",
           "explicacion": "El trabajo directivo es fragmentado, con muchas interrupciones y decisiones rápidas. Los gerentes dedican gran parte de su tiempo a comunicarse y deben manejar demandas que compiten entre sí.",
+          "ejemplo": "La jefa de ventas de una distribuidora empieza el día con un plan de cinco tareas, pero entre llamadas de clientes, un reclamo urgente y una reunión imprevista solo termina dos. Por eso decide bloquear una hora diaria sin interrupciones y delegar las respuestas de rutina: priorizar es parte de su trabajo.",
           "puntos_clave": [
             "La comunicación ocupa buena parte de la jornada.",
             "Priorizar es una habilidad central."
@@ -76,6 +79,7 @@
           "id": "fa-cientifica",
           "nombre": "Administración científica",
           "explicacion": "Frederick Taylor propuso estudiar científicamente cada tarea para encontrar la mejor manera de hacerla, seleccionar y capacitar a los trabajadores y pagar según la productividad. Aumentó la eficiencia, pero fue criticada por tratar al trabajador como una pieza.",
+          "ejemplo": "Una lavandería cronometra cómo se doblan las camisas y descubre que hacerlo sobre una mesa a la altura de la cintura, con los pasos en un orden fijo, reduce el tiempo de 90 a 60 segundos. Capacita a todos con ese método y paga un bono por camisa adicional. La crítica: si solo se mide la velocidad, el trabajo se vuelve monótono.",
           "puntos_clave": [
             "Estudios de tiempos y movimientos.",
             "Incentivos ligados a la producción."
@@ -94,6 +98,7 @@
           "id": "fa-administrativa",
           "nombre": "Administración clásica y burocracia",
           "explicacion": "Henri Fayol describió funciones y principios de la administración (como la unidad de mando y la división del trabajo). Max Weber describió la burocracia: reglas escritas, jerarquía clara y selección por méritos, buscando organizaciones impersonales y predecibles.",
+          "ejemplo": "En una empresa organizada al estilo de Fayol, cada vendedor responde a un solo supervisor (unidad de mando) y cada área tiene funciones distintas (división del trabajo). Una institución pública organizada al estilo de Weber contrata por concurso de méritos y resuelve cada trámite según un reglamento escrito, sin importar quién lo pida.",
           "puntos_clave": [
             "Fayol: visión desde la dirección general.",
             "Weber: autoridad basada en reglas, no en personas."
@@ -112,6 +117,7 @@
           "id": "fa-relaciones-humanas",
           "nombre": "Movimiento de relaciones humanas",
           "explicacion": "Los estudios Hawthorne mostraron que la atención, el reconocimiento y las normas del grupo influyen en la productividad tanto como las condiciones físicas. Desde entonces la administración incorpora la motivación y el clima laboral.",
+          "ejemplo": "Un centro de llamadas mejora la iluminación y la productividad sube; luego la reduce y la productividad sigue alta. La explicación de los estudios Hawthorne: el equipo se sintió observado y valorado. Si además el grupo acuerda informalmente no superar cierta cantidad de llamadas, esa norma pesa más que el bono individual.",
           "puntos_clave": [
             "El grupo informal influye en el desempeño.",
             "Base de la teoría moderna de la motivación."
@@ -130,6 +136,7 @@
           "id": "fa-sistemas",
           "nombre": "Enfoques de sistemas y de contingencias",
           "explicacion": "El enfoque de sistemas ve la organización como un conjunto de partes que interactúan con su entorno. El de contingencias sostiene que no hay una única mejor manera de administrar: la respuesta depende de la situación.",
+          "ejemplo": "Una panadería es un sistema: recibe harina, trabajo y energía (entradas), hornea (proceso), vende pan (salidas) y escucha los comentarios de los clientes (retroalimentación). Desde el enfoque de contingencias, si sus clientes empiezan a pedir pan integral, la mejor forma de organizarse depende de esa nueva situación.",
           "puntos_clave": [
             "Entradas, procesos, salidas y retroalimentación.",
             "\"Depende\" es una respuesta válida si se explica de qué depende."
@@ -157,6 +164,7 @@
           "id": "fa-planeacion",
           "nombre": "El proceso de planeación",
           "explicacion": "Planear es decidir hoy qué se hará mañana: analizar la situación, fijar objetivos, definir alternativas, elegir y preparar planes de acción con responsables, plazos y recursos.",
+          "ejemplo": "Una librería analiza que sus ventas en línea crecen. Objetivo: vender USD 5.000 al mes por internet antes de diciembre. Alternativas: tienda propia o vender en un marketplace; elige el marketplace por menor costo. Plan de acción: responsable, fotografiar 300 títulos hasta agosto con un presupuesto de USD 600.",
           "puntos_clave": [
             "Los planes estratégicos orientan; los operativos ejecutan.",
             "Un objetivo debe ser medible y tener plazo."
@@ -175,6 +183,7 @@
           "id": "fa-foda",
           "nombre": "Análisis FODA",
           "explicacion": "El FODA ordena las fortalezas y debilidades internas de la organización y las oportunidades y amenazas de su entorno. Su utilidad está en cruzarlas para formular estrategias, no solo en listarlas.",
+          "ejemplo": "Una heladería artesanal: fortaleza, recetas con frutas locales; debilidad, un solo local; oportunidad, crece la demanda de postres saludables; amenaza, llegan cadenas grandes. Estrategia FO: lanzar una línea sin azúcar con fruta local. Estrategia DA: aliarse con cafeterías para vender en más puntos sin abrir locales propios.",
           "puntos_clave": [
             "Interno: fortalezas y debilidades; externo: oportunidades y amenazas.",
             "Estrategias FO, DO, FA y DA."
@@ -193,6 +202,7 @@
           "id": "fa-pestel",
           "nombre": "Entorno general: PESTEL",
           "explicacion": "El análisis PESTEL revisa factores políticos, económicos, sociales, tecnológicos, ecológicos y legales que afectan a todas las empresas de un sector. Ayuda a identificar oportunidades y amenazas antes de que lleguen.",
+          "ejemplo": "Para una empresa de transporte de carga: político, cambios en peajes; económico, precio del combustible; social, más compras por internet; tecnológico, rastreo satelital; ecológico, exigencias de emisiones; legal, nuevas normas de seguridad vial. Las compras por internet son una oportunidad; el alza del combustible, una amenaza.",
           "puntos_clave": [
             "Se enfoca en el macroentorno.",
             "Alimenta el lado externo del FODA."
@@ -211,6 +221,7 @@
           "id": "fa-porter",
           "nombre": "Las cinco fuerzas de Porter",
           "explicacion": "La rentabilidad de un sector depende de cinco fuerzas: rivalidad entre competidores, amenaza de nuevos entrantes, amenaza de sustitutos, poder de negociación de los proveedores y poder de negociación de los clientes.",
+          "ejemplo": "En el sector de cafeterías de una ciudad universitaria: alta rivalidad (muchos locales), baja barrera de entrada (abrir uno cuesta poco), sustitutos (café de máquina y bebidas energéticas), proveedores de café con poco poder (hay muchos) y clientes con mucho poder (pueden cambiar de local sin costo). Con fuerzas tan intensas, la rentabilidad del sector tiende a ser baja.",
           "puntos_clave": [
             "Fuerzas intensas reducen la rentabilidad del sector.",
             "Se analiza el sector, no solo la empresa."
@@ -238,6 +249,7 @@
           "id": "fa-decisiones",
           "nombre": "Decisiones programadas y no programadas",
           "explicacion": "Las decisiones programadas son repetitivas y se resuelven con reglas (reordenar inventario). Las no programadas son nuevas y poco estructuradas (entrar a un mercado) y requieren análisis y juicio.",
+          "ejemplo": "Reponer papel de impresora cuando quedan 5 resmas es una decisión programada: hay una regla y la toma un asistente. Decidir si la empresa abre una sucursal en otra provincia es no programada: no hay una regla, requiere estudiar el mercado y la toma la gerencia general.",
           "puntos_clave": [
             "Programar decisiones rutinarias libera tiempo directivo.",
             "Las no programadas suelen tomarse en niveles altos."
@@ -256,6 +268,7 @@
           "id": "fa-estructura",
           "nombre": "Estructura organizacional",
           "explicacion": "La estructura define quién reporta a quién y cómo se agrupan las tareas: por funciones, por productos, por regiones o en forma matricial. La estructura debe seguir a la estrategia de la empresa.",
+          "ejemplo": "Una empresa pequeña se organiza por funciones: ventas, producción y finanzas, cada una con un jefe que reporta a la gerencia. Cuando lanza tres líneas de productos muy distintas, pasa a una estructura por productos para que cada línea responda rápido a su mercado: la estructura sigue a la nueva estrategia.",
           "puntos_clave": [
             "El organigrama muestra la estructura formal.",
             "Más niveles jerárquicos hacen más lenta la comunicación."
@@ -274,6 +287,7 @@
           "id": "fa-apo",
           "nombre": "Administración por objetivos",
           "explicacion": "En la administración por objetivos el jefe y el colaborador acuerdan metas concretas, revisan el avance de forma periódica y evalúan el desempeño por resultados. Une la planeación con el control.",
+          "ejemplo": "El jefe de cobranzas y un analista acuerdan en enero bajar la cartera vencida de 12 % a 8 % hasta junio. Revisan el avance cada mes: en marzo va en 10 % y ajustan las llamadas de cobro. En julio, el desempeño del analista se evalúa con ese resultado y no solo con las horas trabajadas.",
           "puntos_clave": [
             "Metas acordadas, no impuestas.",
             "Revisión periódica del avance."

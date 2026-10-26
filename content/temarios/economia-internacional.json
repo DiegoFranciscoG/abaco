@@ -13,6 +13,7 @@
           "id": "ec-ventaja",
           "nombre": "Ventaja absoluta y comparativa",
           "explicacion": "Un país tiene ventaja absoluta si produce un bien con menos recursos; tiene ventaja comparativa si su costo de oportunidad es menor. El comercio beneficia a ambos países cuando cada uno se especializa según su ventaja comparativa.",
+          "ejemplo": "El país A necesita 10 horas para producir una tonelada de banano y 20 para un lote de textiles; el país B, 15 y 18 horas. A tiene ventaja absoluta en banano y B en textiles. En costo de oportunidad, una tonelada de banano le cuesta a A 0,5 lotes de textiles y a B 0,83: A se especializa en banano, B en textiles, y ambos ganan al intercambiar.",
           "puntos_clave": [
             "La ventaja comparativa se calcula con costos de oportunidad.",
             "Incluso un país menos productivo en todo gana comerciando."
@@ -31,6 +32,7 @@
           "id": "ec-sin-ventaja",
           "nombre": "Comercio con ventaja absoluta en todo",
           "explicacion": "Aunque un país sea más productivo en todos los bienes, sus costos de oportunidad difieren entre bienes. Especializarse en lo que relativamente hace mejor e importar el resto permite a ambos consumir más de lo que producirían solos.",
+          "ejemplo": "Ahora A necesita 10 horas por tonelada de banano y 15 por lote de textiles, y B 20 y 20: A es más productivo en todo. Aun así, a A el banano le cuesta 0,67 lotes de textiles y a B le cuesta 1; los textiles le cuestan a A 1,5 toneladas de banano y a B solo 1. Conviene que A produzca banano y B textiles.",
           "puntos_clave": [
             "Lo que importa son los costos relativos.",
             "Las ganancias dependen de los términos de intercambio."
@@ -49,6 +51,7 @@
           "id": "ec-intraindustrial",
           "nombre": "Comercio intraindustrial",
           "explicacion": "Países parecidos comercian mucho entre sí productos de la misma industria (autos por autos). Lo explican la especialización en variedades, las economías de escala y la preferencia de los consumidores por la variedad.",
+          "ejemplo": "Alemania exporta autos a Francia y Francia exporta autos a Alemania. Cada fabricante se especializa en ciertos modelos, produce en gran escala para bajar costos y los consumidores de ambos países disfrutan de más variedad de la que ofrecería un solo productor nacional.",
           "puntos_clave": [
             "Las economías de escala bajan el costo al producir más.",
             "Explica gran parte del comercio entre economías desarrolladas."
@@ -76,6 +79,7 @@
           "id": "ec-proteccionismo",
           "nombre": "Proteccionismo",
           "explicacion": "Aranceles, cuotas y barreras no arancelarias protegen a los productores nacionales al encarecer o limitar las importaciones. En la práctica funcionan como un subsidio indirecto que pagan los consumidores con precios más altos.",
+          "ejemplo": "Un país pone un arancel de 30 % a las importaciones de calzado: un par importado de USD 40 llega a costar 52. Los fabricantes nacionales pueden subir sus precios hasta cerca de ese nivel y venden más, pero los consumidores pagan más por cada par: en la práctica financian a la industria protegida.",
           "puntos_clave": [
             "Arancel: impuesto a la importación.",
             "Cuota: límite a la cantidad importada."
@@ -94,6 +98,7 @@
           "id": "ec-argumentos",
           "nombre": "Argumentos para restringir importaciones",
           "explicacion": "Se invocan la industria naciente, la seguridad nacional, el dumping, los estándares ambientales y laborales. La economía evalúa cada argumento por separado: algunos tienen casos válidos, pero muchos protegen intereses particulares a costa de todos.",
+          "ejemplo": "Una industria naciente de paneles solares pide protección por cinco años mientras aprende a producir de forma competitiva; el argumento puede tener sentido si la protección termina en una fecha cierta. Si una empresa extranjera vende en el país a un precio menor que en su propio mercado, se habla de dumping y existen reglas para responder.",
           "puntos_clave": [
             "Dumping: vender en el exterior por debajo del costo o del precio interno.",
             "La protección temporal debería tener fecha de término."
@@ -112,6 +117,7 @@
           "id": "ec-acuerdos",
           "nombre": "Cómo se hace la política comercial",
           "explicacion": "La política comercial se negocia en tres niveles: global (Organización Mundial del Comercio), regional (bloques y acuerdos de libre comercio) y nacional (las leyes de cada país). Los acuerdos reducen barreras de forma recíproca.",
+          "ejemplo": "Un exportador de cacao enfrenta reglas en tres niveles: las de la Organización Mundial del Comercio, que aplican a todos sus miembros; las de un acuerdo comercial entre su país y otro bloque, que puede reducir aranceles; y las leyes aduaneras de su propio país, que regulan cómo exporta.",
           "puntos_clave": [
             "La OMC administra reglas multilaterales.",
             "Los acuerdos regionales pueden desviar comercio."
@@ -139,6 +145,7 @@
           "id": "ec-medir",
           "nombre": "Medir el comercio de un país",
           "explicacion": "La balanza comercial resta importaciones de exportaciones de bienes y servicios. La cuenta corriente agrega ingresos por inversiones y transferencias. Ambas se publican de forma periódica en las estadísticas de cada país.",
+          "ejemplo": "Un país exporta bienes por 18.600 e importa bienes por 20.350 (millones de USD): su balanza de mercancías es −1.750, un déficit. Si exporta servicios por 3.000 e importa servicios por 2.200, la balanza de bienes y servicios es −950; las remesas que reciben sus familias se suman después, en la cuenta corriente.",
           "puntos_clave": [
             "Superávit: exportaciones mayores que importaciones.",
             "Las remesas son transferencias de la cuenta corriente."
@@ -159,6 +166,7 @@
           "id": "ec-deficit",
           "nombre": "Ventajas y desventajas de los déficits",
           "explicacion": "Un déficit comercial puede financiar inversión productiva que luego se paga sola, o puede financiar consumo con deuda que se vuelve difícil de pagar. Lo importante es para qué se usa la entrada de capital y si es sostenible.",
+          "ejemplo": "El país A tiene un déficit comercial porque importa maquinaria con la que sus fábricas producirán y exportarán más en el futuro: ese financiamiento puede pagarse solo. El país B tiene un déficit del mismo tamaño porque importa bienes de consumo con deuda cara: si no crece, pagarla será cada vez más difícil.",
           "puntos_clave": [
             "Un déficit no es bueno ni malo por sí mismo.",
             "La sostenibilidad depende del crecimiento y del costo del financiamiento."
@@ -177,6 +185,7 @@
           "id": "ec-nivel-vs-saldo",
           "nombre": "Nivel de comercio y saldo comercial",
           "explicacion": "Un país puede comerciar mucho (importaciones y exportaciones altas) y tener saldo cercano a cero, o comerciar poco y tener un gran déficit. El nivel de comercio se relaciona con el tamaño y la apertura; el saldo, con el ahorro y la inversión.",
+          "ejemplo": "Un país con exportaciones de 30.000, importaciones de 33.000 y PIB de 120.000 (millones de USD) tiene una apertura de (30.000 + 33.000) ÷ 120.000 = 52,5 % y un déficit de 3.000. Otro país con exportaciones de 5.000 e importaciones de 5.100 casi no tiene déficit, pero comercia mucho menos en relación con su tamaño.",
           "puntos_clave": [
             "Apertura = (exportaciones + importaciones) ÷ PIB.",
             "Países pequeños suelen ser más abiertos."
@@ -204,6 +213,7 @@
           "id": "ec-evaluar-mercados",
           "nombre": "Evaluar mercados extranjeros",
           "explicacion": "Antes de exportar se analizan el entorno económico, político, legal y cultural del país destino, el tamaño del mercado y la competencia. Un mercado grande puede no ser atractivo si sus barreras o riesgos son altos.",
+          "ejemplo": "Una empresa ecuatoriana de chocolate compara dos destinos: uno con un mercado grande pero aranceles altos y trámites sanitarios largos, y otro más pequeño con un acuerdo comercial vigente y consumidores que ya pagan por chocolate premium. Usa datos comparables del Banco Mundial y de WITS antes de decidir.",
           "puntos_clave": [
             "Fuentes como el Banco Mundial ofrecen datos comparables por país.",
             "La distancia cultural también es un costo."
@@ -222,6 +232,7 @@
           "id": "ec-formas-entrada",
           "nombre": "Formas de entrada",
           "explicacion": "Una empresa puede entrar a otro país exportando, licenciando su marca o tecnología, con franquicias, con una empresa conjunta (joint venture) o con inversión extranjera directa. Cada forma combina distinto nivel de control, riesgo e inversión.",
+          "ejemplo": "Una marca de café puede exportar sus sacos a un distribuidor (bajo riesgo y poco control), dar una franquicia de sus cafeterías a un empresario local, formar una empresa conjunta con un socio del país destino o abrir su propia tostadora allí (inversión extranjera directa: máximo control y máximo riesgo).",
           "puntos_clave": [
             "Exportar: bajo riesgo y bajo control.",
             "Inversión directa: alto control y alto riesgo."
@@ -240,6 +251,7 @@
           "id": "ec-adaptacion",
           "nombre": "Estandarizar o adaptar",
           "explicacion": "Una estrategia estandarizada vende el mismo producto y mensaje en todos los países para ahorrar costos; una adaptada cambia producto, precio o comunicación según cada cultura. La mayoría de empresas combina ambas.",
+          "ejemplo": "Una cadena de comida rápida mantiene su marca, su logo y su forma de servicio en todos los países (estandarización), pero cambia el menú y el tamaño de las porciones según los gustos locales y ajusta el etiquetado a las normas sanitarias de cada país (adaptación).",
           "puntos_clave": [
             "Las normas técnicas y legales obligan a adaptar.",
             "La marca suele estandarizarse más que el empaque."

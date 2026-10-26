@@ -1,6 +1,6 @@
 {
   "materia": "matematica-gestion",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "mg-funciones",
@@ -13,6 +13,7 @@
           "id": "mg-funcion-notacion",
           "nombre": "Funciones y notación",
           "explicacion": "Una función asigna a cada entrada un único resultado. En gestión se escribe, por ejemplo, C(q) para el costo de producir q unidades; evaluar C(100) es reemplazar q por 100.",
+          "ejemplo": "Un taller de costura tiene un costo C(q) = 800 + 12q dólares por producir q camisas al mes. Evaluar C(100) es reemplazar q por 100: C(100) = 800 + 12 × 100 = USD 2.000. A cada cantidad le corresponde un único costo, por eso C es una función.",
           "puntos_clave": [
             "Una tabla, una gráfica o una fórmula pueden representar la misma función.",
             "Prueba de la recta vertical: cada x tiene un solo y."
@@ -31,6 +32,7 @@
           "id": "mg-dominio",
           "nombre": "Dominio y rango",
           "explicacion": "El dominio son los valores de entrada que tienen sentido; el rango, los resultados posibles. En un problema de producción el dominio suele ser las cantidades no negativas y, a veces, solo enteros.",
+          "ejemplo": "En C(q) = 800 + 12q, matemáticamente q podría ser cualquier número real, pero en el problema q son camisas: el dominio es 0, 1, 2, …, hasta la capacidad del taller, por ejemplo 500 camisas al mes. Producir −3 o 2,5 camisas no tiene sentido. El rango son los costos de 800 a 6.800 dólares.",
           "puntos_clave": [
             "No se divide para cero ni se saca raíz par de un negativo.",
             "El contexto restringe el dominio matemático."
@@ -49,6 +51,7 @@
           "id": "mg-tasa-variacion",
           "nombre": "Tasa de variación promedio",
           "explicacion": "La tasa de variación promedio entre dos puntos es el cambio de la salida dividido para el cambio de la entrada. Responde preguntas como \"¿cuánto aumentó el costo, en promedio, por cada unidad adicional?\".",
+          "ejemplo": "Con C(q) = 800 + 12q, producir 75 camisas cuesta 1.700 y producir 150 cuesta 2.600. La tasa de variación promedio es (2.600 − 1.700) ÷ (150 − 75) = USD 12 por camisa adicional: es la pendiente de la recta que une esos dos puntos.",
           "puntos_clave": [
             "Tasa promedio = [f(b) − f(a)] ÷ (b − a).",
             "Es la pendiente de la recta que une los dos puntos."
@@ -78,6 +81,7 @@
           "id": "mg-pendiente",
           "nombre": "Pendiente e intersección",
           "explicacion": "Una función lineal f(x) = mx + b tiene una tasa de cambio constante m (la pendiente) y un valor inicial b (la intersección con el eje y). En un modelo de costos, b es el costo fijo y m el costo variable por unidad.",
+          "ejemplo": "En C(q) = 800 + 12q, la intersección b = 800 es el costo fijo (lo que se paga aunque no se produzca nada) y la pendiente m = 12 es el costo variable por camisa. Si el precio de la tela sube y el costo variable pasa a 14, la recta se vuelve más empinada.",
           "puntos_clave": [
             "Pendiente positiva: la función crece.",
             "La intersección es el valor cuando x = 0."
@@ -96,6 +100,7 @@
           "id": "mg-modelado",
           "nombre": "Modelado con funciones lineales",
           "explicacion": "Con un costo fijo, un costo variable unitario y un precio se arman tres funciones: costo C(q) = CF + cv·q, ingreso I(q) = p·q y utilidad U(q) = I(q) − C(q). Igualar ingreso y costo da el punto de equilibrio.",
+          "ejemplo": "Si cada camisa se vende a USD 20: I(q) = 20q, C(q) = 1.200 + 12q (con un costo fijo de 1.200) y U(q) = 20q − (1.200 + 12q) = 8q − 1.200. Igualando ingreso y costo, el equilibrio está en q = 1.200 ÷ 8 = 150 camisas; con 300 camisas la utilidad es USD 1.200.",
           "puntos_clave": [
             "Las unidades de cada término deben coincidir.",
             "El modelo vale dentro del rango en que los supuestos se cumplen."
@@ -116,6 +121,7 @@
           "id": "mg-ajuste",
           "nombre": "Ajustar una recta a datos",
           "explicacion": "Cuando los datos reales forman aproximadamente una línea, se puede ajustar una recta (regresión lineal) y usarla para estimar valores. El coeficiente de correlación indica qué tan bien se ajusta.",
+          "ejemplo": "Con datos de 12 meses de gasto en publicidad (P) y ventas (V), una tienda ajusta la recta V = 5.000 + 3,2P con una correlación de 0,91. Si el próximo mes invierte USD 1.500 en publicidad, estima ventas de 5.000 + 3,2 × 1.500 = USD 9.800. Aun así, el ajuste no prueba que la publicidad cause las ventas.",
           "puntos_clave": [
             "Un buen ajuste no prueba causalidad.",
             "Interpolar es más confiable que extrapolar."
@@ -145,6 +151,7 @@
           "id": "mg-cuadraticas",
           "nombre": "Funciones cuadráticas",
           "explicacion": "Una función cuadrática f(x) = ax² + bx + c dibuja una parábola. Si a es negativo, tiene un máximo en el vértice, x = −b ÷ (2a); por eso sirve para hallar el precio o la cantidad que maximiza un ingreso.",
+          "ejemplo": "Una agencia de viajes estima que si cobra p dólares vende q = 120 − 2p paquetes; expresado en q, el ingreso es I(q) = q × (60 − 0,5q). Como el coeficiente de q² es negativo, hay un máximo en el vértice q = 60 ÷ (2 × 0,5) = 60 paquetes, con un precio de USD 30 e ingreso máximo de USD 1.800.",
           "puntos_clave": [
             "El vértice es el punto máximo o mínimo.",
             "Un ingreso I(q) = q·(a − bq) es cuadrático."
@@ -165,6 +172,7 @@
           "id": "mg-exponenciales",
           "nombre": "Funciones exponenciales",
           "explicacion": "En una función exponencial la variable está en el exponente: crece (o decrece) en un porcentaje constante por período. Es el modelo del interés compuesto, del crecimiento de ventas a tasa fija y de la depreciación porcentual.",
+          "ejemplo": "Las ventas anuales de una tienda en línea son USD 50.000 y crecen 8 % cada año: V(t) = 50.000 × 1,08^t. En 5 años serían 50.000 × 1,08^5 = USD 73.466,40. Un equipo que pierde 20 % de su valor cada año sigue el mismo modelo con tasa negativa: V(t) = V₀ × 0,8^t.",
           "puntos_clave": [
             "A(t) = P·(1 + r)^t.",
             "Tasa negativa: decrecimiento."
@@ -185,6 +193,7 @@
           "id": "mg-logaritmos",
           "nombre": "Ecuaciones exponenciales y logaritmos",
           "explicacion": "Para despejar el tiempo en una ecuación exponencial se aplican logaritmos a ambos lados. Así se responde cuánto tarda un capital en duplicarse o en alcanzar una meta.",
+          "ejemplo": "¿Cuánto tarda en duplicarse una inversión al 6 % anual compuesto? Se plantea 2 = 1,06^t y se aplican logaritmos: t = ln 2 ÷ ln 1,06 = 11,9 años. Con logaritmos en base 10 se obtiene el mismo resultado: log 2 ÷ log 1,06.",
           "puntos_clave": [
             "t = ln(A/P) ÷ ln(1 + r).",
             "ln y log en base 10 dan el mismo t si se usa la misma base en ambos lados."
@@ -214,6 +223,7 @@
           "id": "mg-sistemas-2",
           "nombre": "Sistemas de dos ecuaciones",
           "explicacion": "Un sistema de dos ecuaciones lineales se resuelve por sustitución, eliminación o gráficamente; la solución es el punto donde se cruzan las rectas. Así se encuentra el precio y la cantidad de equilibrio entre oferta y demanda.",
+          "ejemplo": "La demanda de un producto es Qd = 100 − 2p y la oferta Qs = 20 + 3p. Igualando: 100 − 2p = 20 + 3p, entonces 5p = 80 y p = USD 16; reemplazando, Q = 100 − 2 × 16 = 68 unidades. Ese punto de cruce de las dos rectas es el equilibrio del mercado.",
           "puntos_clave": [
             "Rectas paralelas: sin solución.",
             "Rectas iguales: infinitas soluciones."
@@ -232,6 +242,7 @@
           "id": "mg-matrices",
           "nombre": "Matrices y operaciones",
           "explicacion": "Una matriz organiza datos en filas y columnas, como las cantidades vendidas por producto y por mes. Se suman elemento a elemento y se multiplican fila por columna, lo que permite calcular, por ejemplo, ingresos totales con una sola operación.",
+          "ejemplo": "Una tienda vende 10 cuadernos y 5 carpetas en enero y 8 cuadernos y 6 carpetas en febrero; los precios son USD 3 y 4. Multiplicando la matriz de cantidades [[10, 5], [8, 6]] por el vector de precios [3, 4] se obtienen los ingresos de cada mes: 10 × 3 + 5 × 4 = USD 50 y 8 × 3 + 6 × 4 = USD 48.",
           "puntos_clave": [
             "Para multiplicar A·B, las columnas de A deben igualar las filas de B.",
             "El producto de matrices no es conmutativo."
@@ -250,6 +261,7 @@
           "id": "mg-gauss",
           "nombre": "Eliminación de Gauss-Jordan",
           "explicacion": "El método de Gauss-Jordan transforma la matriz aumentada de un sistema con operaciones de fila hasta obtener la solución. Sirve para sistemas de tres o más ecuaciones, como mezclas de producción o asignación de recursos.",
+          "ejemplo": "Una fábrica produce tres productos y reparte sus recursos así: x + y + z = 100 unidades en total, 2x + y + 3z = 230 horas de máquina y x + 2y + z = 130 horas de mano de obra. Con Gauss-Jordan la matriz aumentada se reduce hasta obtener x = 10, y = 30 y z = 60; reemplazando se comprueba que cumple las tres ecuaciones.",
           "puntos_clave": [
             "Operaciones válidas: intercambiar filas, multiplicar una fila por un número distinto de cero y sumar múltiplos de filas.",
             "Una fila 0 = c (con c ≠ 0) indica que no hay solución."

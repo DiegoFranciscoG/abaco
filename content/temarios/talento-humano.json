@@ -1,6 +1,6 @@
 {
   "materia": "talento-humano",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "th-incorporacion",
@@ -13,6 +13,7 @@
           "id": "th-planeacion",
           "nombre": "Gestión del talento humano y planeación",
           "explicacion": "La gestión del talento humano asegura que la organización tenga las personas adecuadas, en los puestos adecuados y en el momento adecuado. Empieza con el análisis de puestos y la proyección de cuántas personas y con qué perfil se necesitarán.",
+          "ejemplo": "Una cadena de farmacias planea abrir dos locales en 2027. Con el análisis de puestos sabe que cada local necesita un químico farmacéutico, tres auxiliares y un cajero, con funciones y perfiles definidos. Proyecta entonces contratar 10 personas y empieza a reclutar con cuatro meses de anticipación.",
           "puntos_clave": [
             "Análisis de puesto: descripción de funciones y especificación del perfil.",
             "La planeación se alinea con la estrategia."
@@ -31,6 +32,7 @@
           "id": "th-reclutamiento",
           "nombre": "Reclutamiento",
           "explicacion": "Reclutar es atraer candidatos idóneos, desde dentro de la empresa (promociones, transferencias) o desde fuera (bolsas de empleo, referidos, redes). Cada fuente tiene costos y efectos distintos en la motivación interna.",
+          "ejemplo": "Para el puesto de jefe de bodega, una empresa primero publica la vacante internamente y promueve a un auxiliar con cinco años de experiencia, que ya conoce los procesos. Para el auxiliar que queda vacante recluta afuera, en una bolsa de empleo y con referidos, buscando a alguien que traiga prácticas nuevas.",
           "puntos_clave": [
             "El reclutamiento interno motiva y reduce el tiempo de adaptación.",
             "El externo trae ideas nuevas."
@@ -49,6 +51,7 @@
           "id": "th-seleccion",
           "nombre": "Selección",
           "explicacion": "La selección elige entre los candidatos con herramientas como entrevistas estructuradas, pruebas de conocimiento y verificación de referencias. Las decisiones deben basarse en criterios relacionados con el puesto, sin discriminación.",
+          "ejemplo": "Antes de entrevistar a candidatos para analista contable, la empresa define cinco criterios ligados al puesto (conciliaciones, NIIF, manejo de hojas de cálculo, atención al detalle y trabajo en equipo) y hace a todos las mismas preguntas con una escala de calificación. No pregunta por estado civil ni planes de tener hijos, porque no se relacionan con el puesto.",
           "puntos_clave": [
             "Una entrevista estructurada es más confiable que una conversación libre.",
             "Los criterios se fijan antes de entrevistar."
@@ -76,6 +79,7 @@
           "id": "th-capacitacion",
           "nombre": "Capacitación y desarrollo",
           "explicacion": "La capacitación mejora habilidades para el puesto actual; el desarrollo prepara para responsabilidades futuras. Ambas parten de un diagnóstico de necesidades y se evalúan por sus resultados en el trabajo.",
+          "ejemplo": "Un banco detecta que sus cajeros tardan en atender transferencias. Diseña un taller de dos días sobre el nuevo sistema y, un mes después, mide el tiempo promedio por transacción: bajó de 6 a 4 minutos. Además, a una cajera con potencial la prepara con un programa de desarrollo para ser supervisora el próximo año.",
           "puntos_clave": [
             "Inducción para quienes ingresan.",
             "Medir la transferencia al puesto, no solo la asistencia."
@@ -94,6 +98,7 @@
           "id": "th-evaluacion",
           "nombre": "Planeación y evaluación del desempeño",
           "explicacion": "Se acuerdan expectativas al inicio del período, se da retroalimentación durante el año y se evalúan los resultados al final. La evaluación sirve para decisiones de pago, promoción y desarrollo.",
+          "ejemplo": "En enero, la jefa de ventas y cada vendedor acuerdan metas: 15 clientes nuevos por trimestre y 90 % de satisfacción. En junio conversan sobre el avance. En diciembre evalúan con evidencias (reporte del sistema y encuestas de clientes), no con impresiones, y ese resultado se usa para el bono y para elegir capacitaciones.",
           "puntos_clave": [
             "Expectativas claras desde el inicio.",
             "Evidencias concretas, no impresiones."
@@ -112,6 +117,7 @@
           "id": "th-sucesion",
           "nombre": "Desarrollo del talento y planes de sucesión",
           "explicacion": "La planificación de la sucesión identifica puestos críticos y prepara con anticipación a quienes podrían ocuparlos. Así la organización no depende de una sola persona.",
+          "ejemplo": "Una empresa identifica que solo su contadora general sabe preparar los estados financieros anuales: es un puesto crítico. Elige a dos analistas, les asigna partes del cierre con la contadora como mentora y les paga un curso de NIIF. Si ella se jubila o cambia de empleo, el cierre no se detiene.",
           "puntos_clave": [
             "Identificar puestos críticos y candidatos internos.",
             "Combinar experiencias, mentoría y formación."
@@ -139,6 +145,7 @@
           "id": "th-compensacion-beneficios",
           "nombre": "Compensación y beneficios",
           "explicacion": "La compensación incluye el sueldo fijo, los pagos variables (comisiones, bonos) y los beneficios. Un sistema de compensación busca ser competitivo con el mercado, justo internamente y sostenible para la empresa.",
+          "ejemplo": "Un vendedor gana un sueldo fijo de USD 700, comisiones de 2 % sobre ventas y un seguro médico privado. La empresa compara ese paquete con el de otras distribuidoras de la ciudad (equidad externa) y revisa que un vendedor con más responsabilidad no gane menos que uno nuevo (equidad interna).",
           "puntos_clave": [
             "Equidad externa: frente al mercado.",
             "Equidad interna: entre puestos de la empresa."
@@ -157,6 +164,7 @@
           "id": "th-salario-basico",
           "nombre": "Salario básico y sueldos en Ecuador",
           "explicacion": "El Código del Trabajo (art. 81) dispone que los sueldos se estipulan libremente pero nunca por debajo de los mínimos legales; el salario básico unificado lo fija el Consejo Nacional de Trabajo y Salarios o, sin acuerdo, el Ministerio del ramo. Para 2026 el SBU es de USD 482.",
+          "ejemplo": "En 2026, ningún trabajador a tiempo completo en Ecuador puede ganar menos del SBU de USD 482. Si una empresa ofrece 600, cumple; si además paga horas extra y comisiones, esos valores se suman aparte y no forman parte del salario básico. La décima cuarta remuneración se calcula sobre el SBU: 482 ÷ 12 = USD 40,17 por cada mes trabajado.",
           "puntos_clave": [
             "El SBU es la base de varios beneficios, como la décima cuarta remuneración.",
             "Horas extra y comisiones no forman parte del salario básico."
@@ -174,6 +182,7 @@
           "id": "th-aportes-iess",
           "nombre": "Aportes al IESS",
           "explicacion": "Para los trabajadores del sector privado en relación de dependencia, la tabla oficial del IESS fija un aporte personal de 9,45 % (que se descuenta del sueldo) y un aporte patronal de 11,15 % (que paga el empleador), en total 20,60 %.",
+          "ejemplo": "Con un sueldo de USD 800, el aporte personal al IESS es 800 × 9,45 % = USD 75,60, que se descuenta del rol de pagos (el trabajador recibe 724,40 antes de otros descuentos). El aporte patronal es 800 × 11,15 % = USD 89,20, que el empleador paga además del sueldo: en total se aportan USD 164,80.",
           "puntos_clave": [
             "El aporte personal se descuenta en el rol de pagos.",
             "El aporte patronal es un costo adicional para el empleador."
@@ -200,6 +209,7 @@
           "id": "th-relaciones-laborales",
           "nombre": "El proceso de relaciones laborales",
           "explicacion": "Las relaciones laborales abarcan la organización de los trabajadores, la negociación colectiva y la aplicación de los acuerdos. Un buen clima de relaciones reduce conflictos y costos para ambas partes.",
+          "ejemplo": "El comité de trabajadores de una fábrica negocia con la gerencia un contrato colectivo que fija para todo el grupo el horario de turnos, un uniforme anual y un procedimiento de ascensos. Ambas partes nombran una comisión que revisa cada trimestre si se está cumpliendo lo acordado.",
           "puntos_clave": [
             "La negociación colectiva fija condiciones para un grupo.",
             "Los acuerdos deben cumplirse y vigilarse."
@@ -218,6 +228,7 @@
           "id": "th-quejas",
           "nombre": "Quejas y conflictos",
           "explicacion": "Un procedimiento de quejas claro permite que los trabajadores planteen problemas sin temor a represalias y que se resuelvan por pasos antes de llegar a instancias externas.",
+          "ejemplo": "Una empresa publica un procedimiento: la queja se presenta por escrito al jefe inmediato, que responde en 5 días hábiles; si no se resuelve, pasa a talento humano, que responde en 10 días. Al revisar el registro anual, descubre que la mitad de las quejas vienen del mismo turno por la asignación de horas extra, y corrige ese problema de fondo.",
           "puntos_clave": [
             "Pasos definidos y plazos de respuesta.",
             "Registrar los casos ayuda a detectar problemas de fondo."
@@ -236,6 +247,7 @@
           "id": "th-obligaciones-empleador",
           "nombre": "Obligaciones del empleador en Ecuador",
           "explicacion": "El Código del Trabajo (art. 42) enumera las obligaciones del empleador: pagar lo que corresponde según el contrato y la ley, ofrecer lugares de trabajo con medidas de prevención, seguridad e higiene, e indemnizar los accidentes de trabajo y enfermedades profesionales, entre otras.",
+          "ejemplo": "Un taller metalmecánico paga a tiempo los sueldos según el contrato y la ley, entrega gafas, guantes y protectores auditivos, señala las zonas de riesgo y capacita a su personal en seguridad, como exige el art. 42 del Código del Trabajo. Si un trabajador sufre un accidente de trabajo, el empleador debe responder según la ley.",
           "puntos_clave": [
             "El pago puntual es la primera obligación.",
             "La seguridad y salud en el trabajo es un deber legal."

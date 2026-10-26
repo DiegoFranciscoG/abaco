@@ -1,6 +1,6 @@
 {
   "materia": "contabilidad-financiera",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "cf-estados",
@@ -13,6 +13,7 @@
           "id": "cf-estados-conjunto",
           "nombre": "El juego completo de estados financieros",
           "explicacion": "El estado de resultados mide la utilidad del período; esa utilidad pasa al estado de cambios en el patrimonio; el patrimonio final aparece en el estado de situación financiera, y el estado de flujos de efectivo explica por qué cambió el efectivo. Se elaboran en ese orden porque cada uno usa un dato del anterior.",
+          "ejemplo": "Una empresa gana USD 12.000 en el año (estado de resultados); sin otros movimientos, su patrimonio pasa de 50.000 a 62.000 (estado de cambios en el patrimonio); esos USD 62.000 aparecen en el estado de situación al 31 de diciembre, y el flujo de efectivo explica por qué el efectivo subió de 8.000 a 11.500, el mismo saldo que muestra el balance.",
           "puntos_clave": [
             "La utilidad neta une el estado de resultados con el patrimonio.",
             "El efectivo final del flujo debe coincidir con el efectivo del estado de situación."
@@ -31,6 +32,7 @@
           "id": "cf-corriente",
           "nombre": "Partidas corrientes y no corrientes",
           "explicacion": "Un activo es corriente si se espera convertir en efectivo o consumir dentro de un año o del ciclo normal de operación; un pasivo es corriente si vence en ese mismo plazo. Esta clasificación permite medir la liquidez de la empresa.",
+          "ejemplo": "Una empresa tiene un préstamo de USD 30.000 a cinco años que amortiza USD 6.000 de capital cada año. En su estado de situación presenta 6.000 como pasivo corriente (vencen en los próximos 12 meses) y 24.000 como no corriente. Su inventario y sus cuentas por cobrar a 60 días son activos corrientes.",
           "puntos_clave": [
             "Inventarios y cuentas por cobrar suelen ser corrientes.",
             "La porción de una deuda de largo plazo que vence en los próximos 12 meses se presenta como corriente."
@@ -49,6 +51,7 @@
           "id": "cf-tamano-comun",
           "nombre": "Estados de tamaño común",
           "explicacion": "Expresar cada partida como porcentaje de una base (las ventas en el estado de resultados, el activo total en el estado de situación) permite comparar empresas de distinto tamaño y detectar cambios de estructura entre años.",
+          "ejemplo": "La tienda A vende USD 200.000 con utilidad bruta de 60.000; la tienda B vende USD 50.000 con utilidad bruta de 20.000. En tamaño común, A tiene un margen bruto de 30 % y B de 40 %: aunque A gana más dólares, B retiene más de cada dólar vendido.",
           "puntos_clave": [
             "En el estado de resultados la base es 100 % de las ventas.",
             "En el estado de situación la base es 100 % del activo total."
@@ -79,6 +82,7 @@
           "id": "cf-inv-metodos",
           "nombre": "Métodos de costeo: PEPS y promedio ponderado",
           "explicacion": "PEPS supone que salen primero las unidades más antiguas, así que el inventario final queda valorado a los costos más recientes. El promedio ponderado asigna a cada unidad el costo medio del período. Las NIIF no permiten UEPS.",
+          "ejemplo": "Inventario inicial: 50 unidades a USD 20; compra: 50 unidades a USD 24; venta: 60 unidades. PEPS: costo de ventas = 50 × 20 + 10 × 24 = USD 1.240 e inventario final 40 × 24 = USD 960. Promedio ponderado (USD 22): costo de ventas USD 1.320 e inventario final USD 880. Con precios en alza, PEPS muestra más utilidad.",
           "puntos_clave": [
             "Con precios en alza, PEPS da menor costo de ventas y mayor utilidad que el promedio.",
             "El método elegido debe aplicarse de forma consistente."
@@ -100,6 +104,7 @@
           "id": "cf-inv-sistemas",
           "nombre": "Sistema periódico y sistema permanente",
           "explicacion": "En el sistema periódico el costo de ventas se calcula al cierre por diferencia (inventario inicial + compras netas − inventario final). En el permanente cada venta registra al momento su costo y el saldo de inventario está siempre actualizado.",
+          "ejemplo": "Con el sistema permanente, el kárdex de una distribuidora indica que deberían quedar 120 cajas, pero el conteo físico encuentra 115: las 5 cajas faltantes se registran como pérdida de inventario y se investiga la causa. Con el sistema periódico, esas 5 cajas quedarían mezcladas dentro del costo de ventas sin que nadie lo note.",
           "puntos_clave": [
             "El periódico necesita un conteo físico para conocer el inventario final.",
             "El permanente facilita el control, pero también requiere conteos para detectar faltantes."
@@ -121,6 +126,7 @@
           "id": "cf-inv-errores",
           "nombre": "Efecto de los errores de inventario",
           "explicacion": "Si el inventario final se sobrevalora, el costo de ventas queda subvalorado y la utilidad del período aparece mayor. Como ese inventario final es el inicial del período siguiente, el error se invierte el año próximo.",
+          "ejemplo": "Al cierre de 2025 una empresa registra un inventario final de USD 15.000 cuando en realidad era de 13.000. La utilidad de 2025 aparece USD 2.000 más alta. En 2026 ese inventario es el inicial, el costo de ventas sube 2.000 y la utilidad de 2026 aparece USD 2.000 más baja: sumando los dos años, el error se compensa.",
           "puntos_clave": [
             "Un error de inventario afecta dos períodos y luego se compensa.",
             "También altera el activo y el patrimonio del primer año."
@@ -148,6 +154,7 @@
           "id": "cf-capitalizar",
           "nombre": "Qué se suma al costo del activo",
           "explicacion": "Al costo de un activo de largo plazo se suman los desembolsos necesarios para dejarlo listo para usar: precio, transporte, instalación y pruebas. Las reparaciones y el mantenimiento ordinario son gastos del período.",
+          "ejemplo": "Una imprenta compra una máquina en USD 18.000 y paga 700 de transporte, 1.100 de instalación y 200 de pruebas: registra el activo en USD 20.000. El cambio de rodillos que hace cada tres meses (USD 150) es mantenimiento ordinario y va al gasto del período.",
           "puntos_clave": [
             "Capitalizar es registrar como activo; luego se reparte como gasto mediante depreciación.",
             "Una mejora que alarga la vida útil se capitaliza."
@@ -166,6 +173,7 @@
           "id": "cf-depreciacion",
           "nombre": "Métodos de depreciación",
           "explicacion": "La depreciación reparte el costo menos el valor residual durante la vida útil. La línea recta da el mismo gasto cada año; el doble saldo decreciente concentra más gasto al inicio; el de unidades producidas sigue el uso real del activo.",
+          "ejemplo": "Un vehículo cuesta USD 25.000, con valor residual de 5.000 y vida útil de 4 años. En línea recta: 20.000 ÷ 4 = USD 5.000 por año. Con doble saldo decreciente (tasa de 50 %): año 1 = 25.000 × 0,5 = 12.500; año 2 = 12.500 × 0,5 = 6.250; después el gasto se limita para que el valor en libros no baje de los USD 5.000 residuales.",
           "puntos_clave": [
             "Valor en libros = costo − depreciación acumulada.",
             "El doble saldo decreciente no deprecia por debajo del valor residual."
@@ -189,6 +197,7 @@
           "id": "cf-intangibles",
           "nombre": "Activos intangibles",
           "explicacion": "Patentes, marcas, derechos de autor, licencias y software son activos sin forma física. Los que tienen vida útil definida se amortizan durante esa vida. La plusvalía comprada tiene reglas propias que dependen del marco contable que aplica la empresa.",
+          "ejemplo": "Una empresa compra una licencia de software por USD 6.000 que puede usar 3 años: la registra como activo intangible y la amortiza USD 2.000 por año. En cambio, el valor de la marca que la propia empresa construyó con publicidad no se registra como activo, porque no fue adquirida ni cumple los criterios de reconocimiento.",
           "puntos_clave": [
             "Solo se registran intangibles adquiridos o que cumplen los criterios de reconocimiento.",
             "La amortización de intangibles es el equivalente de la depreciación."
@@ -216,6 +225,7 @@
           "id": "cf-contingencias",
           "nombre": "Pasivos contingentes",
           "explicacion": "Un pasivo contingente depende de un hecho futuro incierto, como un juicio. Si la salida de recursos es probable y se puede estimar, se registra; si solo es posible, se revela en notas; si es remota, no se hace nada.",
+          "ejemplo": "Un cliente demanda a una empresa por USD 40.000. Si los abogados consideran probable perder y estiman pagar 25.000, la empresa registra una provisión por USD 25.000. Si perder solo es posible, lo explica en las notas sin registrar nada; si es remoto, no registra ni revela.",
           "puntos_clave": [
             "La clave es la probabilidad y la posibilidad de estimar el monto.",
             "Revelar no es lo mismo que registrar."
@@ -234,6 +244,7 @@
           "id": "cf-patrimonio",
           "nombre": "Capital aportado y utilidades retenidas",
           "explicacion": "El patrimonio tiene dos fuentes: lo que aportan los dueños y las utilidades que la empresa acumula sin repartir. Las utilidades retenidas crecen con la utilidad neta y disminuyen con las pérdidas y los dividendos declarados.",
+          "ejemplo": "Una compañía tiene capital de USD 100.000 y utilidades retenidas de 30.000. En el año gana 18.000 y declara dividendos por 8.000: las utilidades retenidas terminan en 30.000 + 18.000 − 8.000 = USD 40.000. Los dividendos no aparecen como gasto en el estado de resultados.",
           "puntos_clave": [
             "Los dividendos no son un gasto: reducen directamente las utilidades retenidas.",
             "Utilidades retenidas no significa efectivo disponible."
@@ -252,6 +263,7 @@
           "id": "cf-flujo-actividades",
           "nombre": "Actividades de operación, inversión y financiamiento",
           "explicacion": "El flujo de efectivo clasifica los cobros y pagos en tres grupos: operación (el giro del negocio), inversión (compra y venta de activos de largo plazo) y financiamiento (préstamos, aportes y dividendos).",
+          "ejemplo": "En un año, una empresa cobra a clientes USD 90.000 y paga a proveedores y empleados 72.000 (operación: +18.000), compra una máquina por 15.000 (inversión: −15.000) y paga 5.000 de capital de un préstamo (financiamiento: −5.000). El efectivo baja USD 2.000 aunque la operación generó efectivo.",
           "puntos_clave": [
             "Comprar una máquina es inversión; pagar un préstamo es financiamiento.",
             "Un flujo operativo negativo y persistente es una alerta."
@@ -270,6 +282,7 @@
           "id": "cf-metodo-indirecto",
           "nombre": "Método indirecto",
           "explicacion": "El método indirecto parte de la utilidad neta, suma los gastos que no usan efectivo (como la depreciación) y ajusta los cambios del capital de trabajo: un aumento de cuentas por cobrar resta y un aumento de cuentas por pagar suma.",
+          "ejemplo": "Utilidad neta de USD 20.000, depreciación de 4.000, aumento de cuentas por cobrar de 3.000 y aumento de cuentas por pagar de 1.500. Flujo de efectivo de operación = 20.000 + 4.000 − 3.000 + 1.500 = USD 22.500.",
           "puntos_clave": [
             "La depreciación se suma porque redujo la utilidad sin salida de efectivo.",
             "Los aumentos de activos corrientes restan; los de pasivos corrientes suman."
