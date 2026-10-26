@@ -45,7 +45,6 @@ function ResultCard({ result }: { result: AcademicResult }) {
       </h3>
       {authors ? <p className="mt-1 text-sm text-ink-2">{authors}</p> : null}
       {result.container ? <p className="text-sm text-muted italic">{result.container}</p> : null}
-      {result.abstract ? <p className="mt-3 line-clamp-4 text-sm leading-relaxed text-muted">{result.abstract}</p> : null}
       <div className="mt-4 rounded-xl bg-surface-2 p-3 text-sm leading-relaxed">
         <span className="mb-1 block text-xs font-bold tracking-[0.1em] text-red uppercase">Cita APA 7</span>
         {citation.parts.before}
@@ -167,8 +166,8 @@ export default function AcademicSearchPage() {
             </EmptyState>
           ) : null}
           {!response && !loading ? (
-            <EmptyState icon="book" title="Busca un tema de tu asignatura">
-              Los resultados traen autor, año, revista, resumen y acceso abierto cuando existe.
+            <EmptyState icon="book" title="Busca un tema de tu materia">
+              Los resultados traen autor, año, revista o editorial, enlace al original y si es de acceso abierto.
             </EmptyState>
           ) : null}
           {visible.map((r) => (

@@ -45,7 +45,7 @@ export default function AppsPage() {
       <PageHeader
         eyebrow="Herramientas"
         title="Apps que sirven de verdad"
-        subtitle="Qué hace cada una, para qué asignatura sirve y si es gratis. Solo enlaces a sitios oficiales."
+        subtitle="Qué hace cada una, para qué materia sirve y si es gratis. Solo enlaces a sitios oficiales."
       />
       {apps.status !== 'ready' ? (
         <Skeleton lines={4} />
