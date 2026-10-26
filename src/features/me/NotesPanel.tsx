@@ -184,7 +184,7 @@ export function NotesPanel({
       </div>
       {notes === undefined ? null : notes.length === 0 ? (
         <EmptyState icon="note" title="Aún no tienes apuntes aquí">
-          Lo que escribas se queda en tu teléfono y entra en tu respaldo.
+          Lo que escribas se queda en este dispositivo y entra en tu respaldo.
         </EmptyState>
       ) : (
         <div className="space-y-3">

@@ -210,7 +210,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
             Para estudiantes de carreras económicas y administrativas en Ecuador. Sin registrarte, sin
-            servidores y sin costo: lo que escribes se queda en tu teléfono.
+            servidores y sin costo: lo que escribes se queda en tu dispositivo.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <AppLink to="/materias" className="btn btn-primary">

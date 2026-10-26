@@ -12,7 +12,7 @@ export default function ToolsPage() {
       <PageHeader
         eyebrow="Herramientas"
         title="Practica cada materia con su propia herramienta"
-        subtitle="Editor con fórmulas, libro diario, estadística, gráficas, simuladores y calculadoras con su base legal. Todo corre en tu teléfono; solo dos herramientas consultan datos abiertos en internet."
+        subtitle="Editor con fórmulas, libro diario, estadística, gráficas, simuladores y calculadoras con su base legal. Todo corre en tu dispositivo; solo dos herramientas consultan datos abiertos en internet."
       />
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {TOOLS.map((tool, i) => (

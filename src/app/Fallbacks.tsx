@@ -36,7 +36,7 @@ export function ErrorPage() {
     <div className="mx-auto max-w-lg px-4 py-16 text-center">
       <p className="eyebrow mb-3">{notFound ? 'No encontrado' : 'Algo salió mal'}</p>
       <h1 className="font-display text-3xl font-semibold">
-        {offline ? 'Esta sección aún no está guardada en tu teléfono' : 'No pudimos abrir esta sección'}
+        {offline ? 'Esta sección aún no está guardada en este dispositivo' : 'No pudimos abrir esta sección'}
       </h1>
       <p className="mt-3 text-muted">
         {offline

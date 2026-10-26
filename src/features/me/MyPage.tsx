@@ -395,7 +395,7 @@ export default function MyPage() {
       <PageHeader
         eyebrow="Solo en este dispositivo"
         title="Mi espacio"
-        subtitle="Tus apuntes, lo marcado con estrella, tus colecciones, recordatorios y avance. Nada de esto sale de tu teléfono."
+        subtitle="Tus apuntes, lo marcado con estrella, tus colecciones, recordatorios y avance. Nada de esto sale de tu dispositivo."
       />
       <Tabs<Tab>
         label="Secciones de mi espacio"

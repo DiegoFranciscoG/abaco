@@ -53,11 +53,11 @@ export function Onboarding() {
               </span>
               <div className="min-w-0">
                 <h2 id="bienvenida-titulo" className="font-display text-base font-semibold">
-                  Tus datos viven en este teléfono
+                  Tus datos viven en este dispositivo
                 </h2>
                 <p className="mt-0.5 text-xs leading-relaxed text-ink-2">
-                  Sin cuentas ni servidores: si borras el navegador o cambias de teléfono se pierden. Descarga
-                  un respaldo de vez en cuando.
+                  Sin cuentas ni servidores: si borras el navegador o cambias de dispositivo se pierden.
+                  Descarga un respaldo de vez en cuando.
                 </p>
               </div>
             </div>

@@ -126,7 +126,7 @@ export default function AcademicSearchPage() {
       <PageHeader
         eyebrow="Buscador académico"
         title="Artículos y tesis, con la cita lista"
-        subtitle="Consulta en paralelo Crossref, OpenAlex, DOAJ y LA Referencia. Solo se envía el texto que buscas; tus apuntes nunca salen del teléfono."
+        subtitle="Consulta en paralelo Crossref, OpenAlex, DOAJ, LA Referencia y Open Library. Solo se envía el texto que buscas; tus apuntes nunca salen de tu dispositivo."
       />
       <form
         className="mb-6 flex gap-2"
