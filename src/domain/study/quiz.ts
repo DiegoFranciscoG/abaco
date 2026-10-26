@@ -18,6 +18,8 @@ interface BaseQuestion {
   origen: 'abaco' | 'pdf';
   /** Route to study the answer in ÁBACO, when it comes from the catalog. */
   ruta?: string;
+  /** Subtopic the question practises (to show which ones the student finds hard). */
+  subtema?: { id: string; nombre: string };
 }
 
 export interface ChoiceQuestion extends BaseQuestion {
@@ -106,6 +108,7 @@ export function abacoQuestions(
         explicacion: `Es «${s.nombre}». ${shorten(s.explicacion, 220)}`,
         origen: 'abaco',
         ruta: route(s.tema.id, s.id),
+        subtema: { id: s.id, nombre: s.nombre },
       },
       s.nombre,
       others,
@@ -123,6 +126,7 @@ export function abacoQuestions(
           explicacion: `El error frecuente es: «${error}». Las otras opciones son ideas correctas de la materia.`,
           origen: 'abaco',
           ruta: route(s.tema.id, s.id),
+          subtema: { id: s.id, nombre: s.nombre },
         },
         error,
         truths,
@@ -140,6 +144,7 @@ export function abacoQuestions(
           explicacion: `«${point}» es un punto clave de ${s.nombre}.`,
           origen: 'abaco',
           ruta: route(s.tema.id, s.id),
+          subtema: { id: s.id, nombre: s.nombre },
         },
         point,
         allPoints
@@ -152,6 +157,7 @@ export function abacoQuestions(
   }
 
   for (const e of ejercicios.filter((x) => x.materia === materia.id)) {
+    const practised = e.subtema ? subtemas.find((s) => s.id === e.subtema) : undefined;
     out.push({
       id: `num:${e.id}`,
       tipo: 'numero',
@@ -162,6 +168,7 @@ export function abacoQuestions(
       explicacion: e.procedimiento.join(' → '),
       origen: 'abaco',
       ruta: `/practica/${e.id}`,
+      ...(practised ? { subtema: { id: practised.id, nombre: practised.nombre } } : {}),
     });
   }
   return out;

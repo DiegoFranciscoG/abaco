@@ -213,6 +213,78 @@ const examenSchema = z.object({
   fecha: isoDateTime,
 });
 
+const calificacionSchema = z.object({
+  id: shortText,
+  materiaId: contentId,
+  periodo: z.string().min(1).max(30),
+  notaMaxima: z.number().positive().max(1000),
+  objetivo: z.number().min(0).max(1000),
+  componentes: z
+    .array(
+      z.object({
+        id: shortText,
+        nombre: z.string().min(1).max(60),
+        peso: z.number().min(0).max(100),
+        nota: z.number().min(0).max(1000).nullable(),
+      }),
+    )
+    .max(30),
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
+const preguntaBase = {
+  id: shortText,
+  enunciado: z.string().min(1).max(2000),
+  contexto: z.string().max(3000).optional(),
+  explicacion: z.string().max(3000),
+  origen: z.enum(['abaco', 'pdf']),
+  ruta: shortText.optional(),
+  subtema: z.object({ id: contentId, nombre: z.string().max(200) }).optional(),
+};
+const preguntaSchema = z.discriminatedUnion('tipo', [
+  z.object({
+    ...preguntaBase,
+    tipo: z.literal('opcion'),
+    opciones: z.array(z.string().max(1000)).min(2).max(8),
+    correcta: z.number().int().min(0).max(7),
+  }),
+  z.object({
+    ...preguntaBase,
+    tipo: z.literal('numero'),
+    respuesta: z.number(),
+    tolerancia: z.number().nonnegative(),
+    unidad: z.string().max(40),
+  }),
+]);
+const errorSchema = z.object({
+  id: shortText,
+  materiaId: contentId,
+  subtemaId: contentId.nullable(),
+  subtemaNombre: z.string().max(200).nullable(),
+  pregunta: preguntaSchema,
+  fallos: z.number().int().min(0).max(100_000),
+  aciertos: z.number().int().min(0).max(100_000),
+  ef: z.number().min(1.3).max(5),
+  intervalo: z.number().int().min(0).max(36500),
+  repeticiones: z.number().int().min(0).max(10_000),
+  proximaRevision: isoDateTime,
+  dominada: z.boolean(),
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
+const entregableSchema = z.object({
+  id: shortText,
+  tipo: contentId,
+  titulo: z.string().min(1).max(120),
+  entradas: z.record(z.string().max(60), z.unknown()),
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
+const usoSchema = z.object({
+  dia: z.iso.date(),
+  eventos: z.record(z.string().max(40), z.number().int().min(0).max(1_000_000)),
+});
+
 const datosV3 = z.object({
   perfil: z.array(perfilSchema).max(1),
   apuntes: z.array(apunteSchema),
@@ -231,7 +303,13 @@ const datosV4 = datosV3.extend({
   pdfs: z.array(pdfSchema).max(50),
   examenes: z.array(examenSchema).max(2000),
 });
-export type BackupData = z.infer<typeof datosV4>;
+const datosV5 = datosV4.extend({
+  calificaciones: z.array(calificacionSchema).max(500),
+  errores: z.array(errorSchema).max(5000),
+  entregables: z.array(entregableSchema).max(500),
+  uso: z.array(usoSchema).max(3700),
+});
+export type BackupData = z.infer<typeof datosV5>;
 
 /** Version 3 files: the study area (PDF texts and exams) did not exist yet. */
 const backupV3Schema = z.object({
@@ -242,6 +320,7 @@ const backupV3Schema = z.object({
   datos: datosV3,
 });
 
+/** Version 4 files: the everyday tools (grades, failed questions, deliverables, usage) did not exist yet. */
 const backupV4Schema = z.object({
   formato: z.literal(BACKUP_FORMAT),
   version: z.literal(4),
@@ -249,7 +328,15 @@ const backupV4Schema = z.object({
   dispositivo: z.string().max(100),
   datos: datosV4,
 });
-export type Backup = z.infer<typeof backupV4Schema>;
+
+const backupV5Schema = z.object({
+  formato: z.literal(BACKUP_FORMAT),
+  version: z.literal(5),
+  exportadoEn: isoDateTime,
+  dispositivo: z.string().max(100),
+  datos: datosV5,
+});
+export type Backup = z.infer<typeof backupV5Schema>;
 
 /** Version 2 files: subjects pointed to university curricula and the study tools did not exist yet. */
 const backupV2Schema = z.object({
@@ -298,7 +385,7 @@ export async function createBackup(db: AbacoDB = getDb(), nowDate = new Date()):
   ) as BackupData;
   return {
     formato: BACKUP_FORMAT,
-    version: SCHEMA_VERSION as 4,
+    version: SCHEMA_VERSION as 5,
     exportadoEn: nowDate.toISOString(),
     dispositivo: await getDeviceId(db),
     datos,
@@ -379,7 +466,20 @@ export function parseBackup(text: string): Backup {
     }
     raw = { ...v3.data, version: 4, datos: { ...v3.data.datos, pdfs: [], examenes: [] } };
   }
-  const parsed = backupV4Schema.safeParse(raw);
+  if ((raw as { version?: unknown }).version === 4) {
+    const v4 = backupV4Schema.safeParse(raw);
+    if (!v4.success) {
+      const first = v4.error.issues[0];
+      const where = first ? ` (${first.path.join('.')})` : '';
+      throw new BackupError(`El archivo no es un respaldo válido de ÁBACO${where}.`);
+    }
+    raw = {
+      ...v4.data,
+      version: 5,
+      datos: { ...v4.data.datos, calificaciones: [], errores: [], entregables: [], uso: [] },
+    };
+  }
+  const parsed = backupV5Schema.safeParse(raw);
   if (!parsed.success) {
     const first = parsed.error.issues[0];
     const where = first ? ` (${first.path.join('.')})` : '';

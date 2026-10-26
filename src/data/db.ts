@@ -4,10 +4,13 @@ import type {
   Apunte,
   Busqueda,
   CacheApi,
+  Calificacion,
   Coleccion,
   Diario,
   Documento,
   DocumentoPdf,
+  Entregable,
+  ErrorRepaso,
   Estrella,
   Examen,
   Hoja,
@@ -17,10 +20,11 @@ import type {
   Recordatorio,
   Tablero,
   Tarjeta,
+  UsoDia,
 } from './types';
 
 export const DB_NAME = 'abaco';
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
 
 /** Version 1 (development release): notes could only be attached to a subject. */
 export const SCHEMA_V1 = {
@@ -60,6 +64,18 @@ export const SCHEMA_V4 = {
   ...SCHEMA_V3,
   pdfs: 'id, materiaId, creadoEn',
   examenes: 'id, materiaId, fecha',
+};
+
+/**
+ * Version 5: everyday tools. Grades per subject and period, failed questions under spaced repetition, saved
+ * deliverables and local usage counters (one row per day).
+ */
+export const SCHEMA_V5 = {
+  ...SCHEMA_V4,
+  calificaciones: 'id, [materiaId+periodo], actualizadoEn',
+  errores: 'id, materiaId, proximaRevision',
+  entregables: 'id, tipo, actualizadoEn',
+  uso: 'dia',
 };
 
 type Row = Record<string, unknown>;
@@ -162,6 +178,10 @@ export class AbacoDB extends Dexie {
   tableros!: Table<Tablero, string>;
   pdfs!: Table<DocumentoPdf, string>;
   examenes!: Table<Examen, string>;
+  calificaciones!: Table<Calificacion, string>;
+  errores!: Table<ErrorRepaso, string>;
+  entregables!: Table<Entregable, string>;
+  uso!: Table<UsoDia, string>;
 
   constructor(name: string = DB_NAME) {
     super(name);
@@ -169,6 +189,7 @@ export class AbacoDB extends Dexie {
     this.version(2).stores(SCHEMA_V2).upgrade(upgradeToV2);
     this.version(3).stores(SCHEMA_V3).upgrade(upgradeToV3);
     this.version(4).stores(SCHEMA_V4);
+    this.version(5).stores(SCHEMA_V5);
   }
 }
 
@@ -188,6 +209,10 @@ export const BACKUP_TABLES = [
   'tableros',
   'pdfs',
   'examenes',
+  'calificaciones',
+  'errores',
+  'entregables',
+  'uso',
 ] as const;
 export type BackupTable = (typeof BACKUP_TABLES)[number];
 

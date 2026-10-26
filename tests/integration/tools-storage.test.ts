@@ -183,7 +183,7 @@ describe('tool data travels in backups and is erased with everything else', () =
       db,
     );
     const before = await createBackup(db);
-    expect(before.version).toBe(4);
+    expect(before.version).toBe(5);
     await wipeAllData(db);
     expect(Object.values(await countUserData(db)).every((n) => n === 0)).toBe(true);
     await restoreBackup(parseBackup(serializeBackup(before)), 'reemplazar', db);

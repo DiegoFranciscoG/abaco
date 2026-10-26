@@ -44,7 +44,7 @@ describe('versión 4: área de estudio', () => {
     const db = new AbacoDB(name);
     opened.push(db);
     await db.open();
-    expect(db.verno).toBe(4);
+    expect(db.verno).toBe(5);
     expect(await db.apuntes.get('n1')).toMatchObject({ titulo: 'IVA' });
     expect(await db.pdfs.count()).toBe(0);
     expect(await db.examenes.count()).toBe(0);
@@ -87,7 +87,7 @@ describe('versión 4: área de estudio', () => {
       source,
     );
     const backup = await createBackup(source);
-    expect(backup.version).toBe(4);
+    expect(backup.version).toBe(5);
     const target = fresh();
     await restoreBackup(parseBackup(serializeBackup(backup)), 'reemplazar', target);
     expect(await target.pdfs.count()).toBe(1);
@@ -97,7 +97,7 @@ describe('versión 4: área de estudio', () => {
     delete (v3.datos as Record<string, unknown>).pdfs;
     delete (v3.datos as Record<string, unknown>).examenes;
     const migrated = parseBackup(JSON.stringify(v3));
-    expect(migrated.version).toBe(4);
+    expect(migrated.version).toBe(5);
     expect(migrated.datos.pdfs).toEqual([]);
   });
 

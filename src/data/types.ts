@@ -1,5 +1,6 @@
 import type { CellFormat } from '../domain/content/schemas';
 import type { Locale } from '../domain/formula/tokenizer';
+import type { Question } from '../domain/study/quiz';
 
 export type RefTipo = 'materia' | 'tema' | 'subtema' | 'formula' | 'libre';
 export type EstrellaTipo = 'formula' | 'subtema' | 'ejercicio' | 'articulo' | 'materia';
@@ -195,6 +196,66 @@ export interface Examen {
   correctas: number;
   segundos: number;
   fecha: string;
+}
+
+/** One graded part of a subject (an exam, homework, a project) with the weight its teacher set. */
+export interface ComponenteNota {
+  id: string;
+  nombre: string;
+  /** Percentage of the final grade. */
+  peso: number;
+  /** Grade already obtained, or null while it is pending. */
+  nota: number | null;
+}
+
+/** Grades of a subject in an academic period. Components, weights and scale are the student's, never preset. */
+export interface Calificacion {
+  id: string;
+  materiaId: string;
+  /** Free label of the academic period, e.g. "2026-2". */
+  periodo: string;
+  /** Highest grade of the scale (10, 20, 100…). */
+  notaMaxima: number;
+  /** Final grade the student wants to reach (usually the passing grade). */
+  objetivo: number;
+  componentes: ComponenteNota[];
+  creadoEn: string;
+  actualizadoEn: string;
+}
+
+/** A question failed in a practice exam, reviewed with spaced repetition until it is answered well 3 times. */
+export interface ErrorRepaso {
+  /** Same id as the question, so failing it again updates the same row. */
+  id: string;
+  materiaId: string;
+  subtemaId: string | null;
+  subtemaNombre: string | null;
+  pregunta: Question;
+  fallos: number;
+  aciertos: number;
+  ef: number;
+  intervalo: number;
+  repeticiones: number;
+  proximaRevision: string;
+  dominada: boolean;
+  creadoEn: string;
+  actualizadoEn: string;
+}
+
+/** A deliverable (payroll, amortization table…) saved to be resumed later. Only its inputs are stored. */
+export interface Entregable {
+  id: string;
+  tipo: string;
+  titulo: string;
+  entradas: Record<string, unknown>;
+  creadoEn: string;
+  actualizadoEn: string;
+}
+
+/** Usage counters of one day (YYYY-MM-DD). They stay on the device unless the student shares a summary. */
+export interface UsoDia {
+  dia: string;
+  eventos: Record<string, number>;
 }
 
 export interface CacheApi {
