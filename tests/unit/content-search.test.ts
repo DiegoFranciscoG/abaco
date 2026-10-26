@@ -6,6 +6,7 @@ import { loadAllContent } from '../content/load-content';
 
 const content = loadAllContent();
 const docs = buildSearchDocuments({
+  carreras: content.carreras,
   materias: content.materias,
   temarios: content.temarios.map((t) => t.data),
   formulas: content.formulas,
@@ -17,12 +18,18 @@ const docs = buildSearchDocuments({
 const index = indexFromDocuments(docs);
 
 describe('content search', () => {
+  it('finds a career by name without accents and links to its cycles', () => {
+    const hit = searchContent(index, 'contabilidad y auditoria').find((h) => h.tipo === 'carrera');
+    expect(hit?.ruta).toBe('/materias?carrera=contabilidad-auditoria');
+  });
+
   it('indexes every kind of content once', () => {
     const ids = docs.map((d) => d.id);
     expect(new Set(ids).size).toBe(ids.length);
     const kinds = new Set(docs.map((d) => d.tipo));
     expect([...kinds].sort()).toEqual([
       'app',
+      'carrera',
       'ejercicio',
       'formula',
       'herramienta',

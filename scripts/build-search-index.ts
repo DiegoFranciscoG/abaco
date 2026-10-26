@@ -15,6 +15,7 @@ const read = <T>(file: string): T => JSON.parse(readFileSync(join(contentDir, fi
 const list = (dir: string): string[] => readdirSync(join(contentDir, dir)).filter((f) => f.endsWith('.json'));
 
 const content: SearchContent = {
+  carreras: read('carreras.json'),
   materias: read('materias.json'),
   temarios: list('temarios').map((f) => read(`temarios/${f}`)),
   formulas: read('formulas.json'),

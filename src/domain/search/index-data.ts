@@ -2,10 +2,10 @@
  * Shared by the build script (Node, type stripping) and the app: it must stay free of runtime imports so
  * `node scripts/build-search-index.ts` can load it directly. Only type imports are allowed here.
  */
-import type { App, Ejercicio, Formula, Materia, Temario, Termino } from '../content/schemas';
+import type { App, Carrera, Ejercicio, Formula, Materia, Temario, Termino } from '../content/schemas';
 
 export type SearchDocType =
-  'materia' | 'tema' | 'subtema' | 'formula' | 'herramienta' | 'termino' | 'app' | 'ejercicio';
+  'carrera' | 'materia' | 'tema' | 'subtema' | 'formula' | 'herramienta' | 'termino' | 'app' | 'ejercicio';
 
 export interface SearchDoc {
   id: string;
@@ -81,6 +81,7 @@ export interface SearchTool {
 }
 
 export interface SearchContent {
+  carreras: Carrera[];
   materias: Materia[];
   temarios: Temario[];
   formulas: Formula[];
@@ -93,6 +94,20 @@ export interface SearchContent {
 export function buildSearchDocuments(content: SearchContent): SearchDoc[] {
   const docs: SearchDoc[] = [];
   const materiaById = new Map(content.materias.map((m) => [m.id, m]));
+
+  for (const c of content.carreras) {
+    const nombres = c.materias.map((e) => materiaById.get(e.materia)?.nombre ?? '').filter(Boolean);
+    docs.push({
+      id: `carrera:${c.id}`,
+      tipo: 'carrera',
+      titulo: c.nombre,
+      texto: `${c.descripcion} ${nombres.join(' ')}`,
+      claves: 'carrera ciclo materias',
+      ruta: `/materias?carrera=${c.id}`,
+      extracto: `${c.ciclos} ciclos · ${c.materias.length} materias del catálogo`,
+      area: 'formacion',
+    });
+  }
 
   for (const m of content.materias) {
     docs.push({

@@ -6,6 +6,7 @@ import { Icon, type IconName } from '../ui/icons';
 import { AreaTile } from '../ui/primitives';
 
 const TYPE_LABEL: Record<SearchDocType, string> = {
+  carrera: 'Carrera',
   materia: 'Materia',
   tema: 'Tema',
   subtema: 'Subtema',
@@ -17,10 +18,12 @@ const TYPE_LABEL: Record<SearchDocType, string> = {
 };
 
 const QUICK: { label: string; to: string; icon: IconName }[] = [
+  { label: 'Materias por carrera y ciclo', to: '/materias', icon: 'materias' },
   { label: 'Buscador académico (artículos y tesis)', to: '/buscar', icon: 'book' },
   { label: 'Herramientas de estudio', to: '/herramientas', icon: 'tools' },
   { label: 'Practicar ejercicios', to: '/practica', icon: 'target' },
   { label: 'Glosario', to: '/glosario', icon: 'note' },
+  { label: 'Buzón de sugerencias', to: '/sugerencias', icon: 'sparkle' },
 ];
 
 /** Instant search over the build-time index: formulas, subjects, topics, glossary, apps, exercises. */
