@@ -5,6 +5,7 @@ import { Icon } from '../../ui/icons';
 import { AppLink, Notice, PageHeader } from '../../ui/primitives';
 import { formatDate } from '../../ui/utils';
 import { LEGAL_DOCS } from '../legal/documents';
+import { AuthorPanel } from './AuthorPanel';
 
 const TIPO: Record<string, string> = {
   norma: 'Norma',
@@ -105,6 +106,18 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section aria-labelledby="autor" className="space-y-6">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <h2 id="autor" className="font-display text-2xl font-semibold">
+            Quién hace ÁBACO
+          </h2>
+          <AppLink to="/sugerencias" className="btn btn-ghost">
+            <Icon name="sparkle" size={18} /> Buzón de sugerencias
+          </AppLink>
+        </div>
+        <AuthorPanel headingLevel={3} />
       </section>
 
       <section aria-labelledby="fuentes">

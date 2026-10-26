@@ -1,6 +1,7 @@
 import { LazyMotion, MotionConfig } from 'motion/react';
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { NavLink, Outlet, ScrollRestoration } from 'react-router';
+import { AUTHOR } from '../config/author';
 import { LogoMark } from '../ui/art';
 import { setDisplayPrefs } from '../ui/display-prefs';
 import { useApplyPreferences, useEffectiveTheme, useOnline, useReducedMotion } from '../ui/hooks';
@@ -125,6 +126,16 @@ export function Shell() {
           </main>
 
           <footer className="mx-auto max-w-6xl px-4 pb-28 text-xs leading-relaxed text-muted md:pb-10">
+            <AppLink to="/sugerencias" className="card card-lift mb-6 flex items-center gap-4 p-4 text-sm">
+              <span className="tile tile-sm shrink-0">
+                <Icon name="sparkle" size={20} />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block font-semibold text-ink">¿Falta una materia, un tema o una herramienta?</span>
+                <span className="text-muted">Escríbelo en el buzón de sugerencias: llega directo al autor.</span>
+              </span>
+              <Icon name="arrow-right" size={18} className="text-red" />
+            </AppLink>
             <div className="border-t border-line pt-6">
               <p>
                 <strong className="text-ink-2">ÁBACO no está afiliado a ninguna universidad.</strong> No reproduce planes de
@@ -140,8 +151,20 @@ export function Shell() {
                   <li><AppLink to="/legal/licencias" className="link-red">Licencias</AppLink></li>
                   <li><AppLink to="/legal/accesibilidad" className="link-red">Accesibilidad</AppLink></li>
                   <li><AppLink to="/legal/aviso" className="link-red">Aviso legal</AppLink></li>
+                  <li><AppLink to="/sugerencias" className="link-red">Buzón de sugerencias</AppLink></li>
                 </ul>
               </nav>
+              <p className="mt-3">
+                Hecho por {AUTHOR.nombre} ·{' '}
+                {AUTHOR.redes.map((red, i) => (
+                  <span key={red.id}>
+                    {i > 0 ? ' · ' : ''}
+                    <a href={red.url} target="_blank" rel="noopener noreferrer" className="link-red">
+                      {red.nombre}
+                    </a>
+                  </span>
+                ))}
+              </p>
             </div>
           </footer>
 
