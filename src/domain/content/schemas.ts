@@ -378,6 +378,30 @@ export const plantillaSchema = z.object({
 });
 export type Plantilla = z.infer<typeof plantillaSchema>;
 
+/**
+ * "Pega tu enunciado": a concept the student names in their own words ("tabla de pagos del préstamo"), linked to the
+ * subtopics, formulas, tools and deliverables that solve it. Phrases are matched in order; a trailing * in a word
+ * accepts any ending ("amortiz*" → amortización, amortizar).
+ */
+export const conceptoSchema = z.object({
+  id,
+  nombre: nonEmpty,
+  frases: z
+    .array(
+      z
+        .string()
+        .trim()
+        .min(2)
+        .regex(/^[a-z0-9ñ* ]+$/i, 'Solo letras, números, espacios y * al final de una palabra'),
+    )
+    .min(1),
+  subtemas: z.array(id).min(1),
+  formulas: z.array(id),
+  herramientas: z.array(z.enum(TOOL_IDS)),
+  entregables: z.array(id),
+});
+export type Concepto = z.infer<typeof conceptoSchema>;
+
 export const fuentesFileSchema = z.array(fuenteSchema);
 export const materiasFileSchema = z.array(materiaSchema);
 export const carrerasFileSchema = z.array(carreraSchema);
@@ -387,3 +411,4 @@ export const appsFileSchema = z.array(appSchema);
 export const glosarioFileSchema = z.array(terminoSchema);
 export const plantillasFileSchema = z.array(plantillaSchema);
 export const normativaFileSchema = z.array(cifraSchema);
+export const enunciadosFileSchema = z.array(conceptoSchema);

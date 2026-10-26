@@ -7,6 +7,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import MiniSearch from 'minisearch';
 import { buildSearchDocuments, SEARCH_OPTIONS, type SearchContent } from '../src/domain/search/index-data.ts';
+import { buildStatementCatalog } from '../src/domain/statement/catalog.ts';
 import { TOOLS } from '../src/domain/tools/catalog.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -54,4 +55,12 @@ const stats = {
   ),
 };
 writeFileSync(join(outDir, 'stats.json'), JSON.stringify(stats));
+
+// "Pega tu enunciado" only needs the dictionary and the names of what it points to, not the 26 syllabi.
+const statementCatalog = buildStatementCatalog({
+  conceptos: read('enunciados.json'),
+  temarios: content.temarios,
+  formulas: content.formulas,
+});
+writeFileSync(join(outDir, 'enunciados.json'), JSON.stringify(statementCatalog));
 console.log(`Índice de búsqueda: ${docs.length} documentos · cifras: ${JSON.stringify(stats)}`);

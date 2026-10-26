@@ -1,0 +1,282 @@
+{
+  "nota": "Enunciados de deberes de primer a cuarto ciclo, redactados al estilo de las tareas de las carreras económicas y administrativas, con nombres y cifras ficticios. Se escribieron y etiquetaron a mano antes de crear el diccionario de content/enunciados.json, para no ajustar el diccionario a la prueba. «esperado» lista los subtemas que un docente aceptaría como respuesta.",
+  "dentro": [
+    {
+      "texto": "La empresa Comercial Andes compró mercadería a crédito por $3.500. Registre la transacción en el libro diario.",
+      "esperado": ["cg-partida-doble-diario", "cg-partida-doble-reglas"]
+    },
+    {
+      "texto": "Elabore la tabla de amortización de un préstamo de $10.000 a 12 meses con una tasa del 15% anual y cuotas fijas.",
+      "esperado": ["mf-cuota", "mf-saldo", "ii-financieras-pago"]
+    },
+    {
+      "texto": "Calcule el rol de pagos de un trabajador que gana $650 mensuales y que este mes hizo 10 horas extras.",
+      "esperado": ["ll-aportes", "th-aportes-iess", "ll-horas-extra", "th-compensacion-beneficios"]
+    },
+    {
+      "texto": "¿Cuánto le corresponde de décimo tercer sueldo a un empleado que ganó $9.600 en el año?",
+      "esperado": ["ll-decimo-tercero"]
+    },
+    {
+      "texto": "Una máquina costó $25.000, tiene una vida útil de 5 años y un valor residual de $5.000. Calcule la depreciación anual por el método de línea recta.",
+      "esperado": ["cf-depreciacion"]
+    },
+    {
+      "texto": "Determine cuántas unidades debe vender la empresa para no ganar ni perder si sus costos fijos son $8.000, el precio de venta $20 y el costo variable unitario $12.",
+      "esperado": ["cc-punto-equilibrio", "cc-margen-contribucion"]
+    },
+    {
+      "texto": "Un proyecto requiere una inversión inicial de $40.000 y genera flujos de $12.000 durante 5 años. Con una tasa de descuento del 10 %, ¿conviene realizarlo?",
+      "esperado": ["ep-van", "ep-tir", "ep-indice-rentabilidad"]
+    },
+    {
+      "texto": "Con el método promedio ponderado, valore las salidas de inventario del mes en la tarjeta kárdex.",
+      "esperado": ["cg-mercaderias-valoracion", "cf-inv-metodos"]
+    },
+    {
+      "texto": "Calcule la razón corriente y la prueba ácida de la empresa con los siguientes datos del balance general.",
+      "esperado": ["fc-liquidez"]
+    },
+    {
+      "texto": "Si deposito $500 hoy al 6% anual capitalizable mensualmente, ¿cuánto tendré dentro de 3 años?",
+      "esperado": ["mf-compuesto", "mf-vtm", "mf-tasas"]
+    },
+    {
+      "texto": "Una tienda vende un televisor en $575 con el impuesto incluido. ¿Cuál es el precio antes del IVA?",
+      "esperado": ["tr-iva-tarifas"]
+    },
+    {
+      "texto": "Calcule el impuesto a la renta que debe pagar una persona natural con una base imponible de $28.000 en el año.",
+      "esperado": ["tr-renta-personas"]
+    },
+    {
+      "texto": "Explique la diferencia entre una compañía limitada y una sociedad anónima según la Ley de Compañías.",
+      "esperado": ["lm-limitada-naturaleza", "lm-capitales-anonima", "lm-companias-especies"]
+    },
+    {
+      "texto": "Con las siguientes notas de 10 estudiantes, calcule la media, la mediana y la moda.",
+      "esperado": ["ed-centro-media", "ed-centro-mediana-moda"]
+    },
+    {
+      "texto": "Determine la desviación estándar y el coeficiente de variación de las ventas mensuales de la tienda.",
+      "esperado": ["ed-dispersion-varianza", "ed-dispersion-cv"]
+    },
+    {
+      "texto": "Realice un análisis FODA de una cafetería ubicada cerca de la universidad.",
+      "esperado": ["fa-foda"]
+    },
+    {
+      "texto": "Si el precio de la entrada al cine sube de $4 a $5 y la cantidad demandada baja de 1.000 a 800 boletos, calcule la elasticidad precio de la demanda.",
+      "esperado": ["mi-elasticidad-precio", "cd-aplicaciones-elasticidad"]
+    },
+    {
+      "texto": "Un trabajador avisó por escrito que deja la empresa después de 6 años. ¿Cuánto le corresponde por desahucio?",
+      "esperado": ["ll-desahucio"]
+    },
+    {
+      "texto": "¿Cuánto me tienen que pagar si me despiden sin causa después de 4 años de trabajo con un sueldo de $800?",
+      "esperado": ["ll-despido"]
+    },
+    {
+      "texto": "Elabore el estado de resultados de la empresa a partir del balance de comprobación ajustado.",
+      "esperado": ["cg-estados-resultados"]
+    },
+    {
+      "texto": "Encuentre la derivada de la función de costo total C(x) = 0,5x² + 20x + 300 e interprete el costo marginal cuando x = 50.",
+      "esperado": ["cd-aplicaciones-marginal", "cd-derivada-reglas"]
+    },
+    {
+      "texto": "Construya un intervalo de confianza del 95 % para el gasto mensual promedio de los estudiantes con una muestra de 40.",
+      "esperado": ["ei-ic-z", "ei-ic-t"]
+    },
+    {
+      "texto": "¿A cuántas personas debo encuestar para estimar la proporción de clientes satisfechos con un margen de error del 5 %?",
+      "esperado": ["ei-tamano-muestra", "im-tamano"]
+    },
+    {
+      "texto": "Plantee la hipótesis nula y la alternativa, y concluya con un nivel de significancia del 5 %.",
+      "esperado": ["ei-h0-ha", "ei-valor-p"]
+    },
+    {
+      "texto": "Calcule el PIB por el método del gasto con los datos de consumo, inversión, gasto público y exportaciones netas.",
+      "esperado": ["ma-pib"]
+    },
+    {
+      "texto": "Si el índice de precios al consumidor pasó de 108 a 112, ¿cuál fue la tasa de inflación del año?",
+      "esperado": ["ma-inflacion"]
+    },
+    {
+      "texto": "Usando BUSCARV, traiga el precio de cada producto desde la hoja de inventario.",
+      "esperado": ["ii-funciones-buscar"]
+    },
+    {
+      "texto": "Elabore la referencia en formato APA 7 de un artículo de revista científica con tres autores.",
+      "esperado": ["mt-referencias", "mt-citas"]
+    },
+    {
+      "texto": "Un negocio tuvo ingresos brutos de $250.000 el año pasado. ¿Puede estar en el RIMPE como emprendedor y cuánto impuesto pagaría?",
+      "esperado": ["tr-rimpe-emprendedores", "tr-regimenes"]
+    },
+    {
+      "texto": "Calcule el costo promedio ponderado de capital si la deuda cuesta 9 %, el patrimonio 14 % y la tasa de impuestos es 25 %.",
+      "esperado": ["fc-wacc"]
+    },
+    {
+      "texto": "Determine el valor actual de una renta de $200 mensuales durante 2 años al 1 % mensual, pagadera al final de cada mes.",
+      "esperado": ["mf-anualidad-vencida"]
+    },
+    {
+      "texto": "Segmente el mercado de una marca de ropa deportiva y defina su mercado meta.",
+      "esperado": ["mk-segmentacion", "mk-mercado-meta"]
+    },
+    {
+      "texto": "¿Cuántos días de vacaciones le tocan a una empleada que lleva 8 años en la misma empresa?",
+      "esperado": ["ll-vacaciones"]
+    },
+    {
+      "texto": "Calcule el aporte personal y el aporte patronal al seguro social de un sueldo de $1.200.",
+      "esperado": ["ll-aportes", "th-aportes-iess"]
+    }
+  ],
+  "fuera": [
+    "Escribe un poema sobre la primavera para la clase de literatura.",
+    "Dibuja el ciclo del agua y explica cómo se forma la lluvia.",
+    "Resume el tercer capítulo de la novela que leímos en clase.",
+    "¿Cuál es la capital de Australia y cuántos habitantes tiene?",
+    "Explica el proceso de la fotosíntesis en las plantas."
+  ],
+  "nota_control": "Enunciados de control escritos después del diccionario y medidos una sola vez antes de ajustarlo (resultado en docs/investigacion.md, sección 16). Sirven para estimar el acierto con frases que el diccionario no conocía.",
+  "control": [
+    {
+      "texto": "Prepare la nómina de marzo de tres empleados de una ferretería, con sus descuentos de ley.",
+      "esperado": ["ll-aportes", "th-aportes-iess", "th-compensacion-beneficios", "ll-horas-extra"]
+    },
+    {
+      "texto": "Un banco ofrece un crédito de consumo de $5.000 a 24 meses. Determine el valor de cada pago mensual.",
+      "esperado": ["mf-cuota", "ii-financieras-pago"]
+    },
+    {
+      "texto": "Halle cuánto debe ahorrar hoy una persona para tener $8.000 dentro de 4 años si el banco paga 5 % anual.",
+      "esperado": ["mf-vtm", "mf-compuesto"]
+    },
+    {
+      "texto": "¿Qué parte de las utilidades le toca a cada trabajador si la empresa ganó $60.000 y tiene 12 empleados?",
+      "esperado": ["ll-utilidades"]
+    },
+    {
+      "texto": "Clasifique las cuentas en activo, pasivo y patrimonio y verifique que se cumpla la igualdad contable.",
+      "esperado": ["cg-ecuacion-elementos", "cg-ecuacion-transacciones"]
+    },
+    {
+      "texto": "Prepare el balance de comprobación al 31 de diciembre.",
+      "esperado": ["cg-partida-doble-comprobacion"]
+    },
+    {
+      "texto": "Calcule el ROE y el ROA de la compañía e interprete los resultados.",
+      "esperado": ["fc-rentabilidad"]
+    },
+    {
+      "texto": "Un camión de reparto se compró en $36.000 y se estima que recorrerá 200.000 km. Calcule el gasto del año si recorrió 45.000 km.",
+      "esperado": ["cf-depreciacion"]
+    },
+    {
+      "texto": "Grafique la oferta y la demanda de arroz y encuentre el precio al que se igualan.",
+      "esperado": ["mi-oferta-demanda"]
+    },
+    {
+      "texto": "Determine si existe relación entre las horas de estudio y la nota final usando el coeficiente r.",
+      "esperado": ["ed-relacion-correlacion", "ei-significancia-r"]
+    },
+    {
+      "texto": "Presente un ejemplo de factura electrónica y explique qué requisitos debe tener.",
+      "esperado": ["tr-comprobantes"]
+    },
+    {
+      "texto": "Explique qué es la dolarización y cómo afecta a la política económica del Ecuador.",
+      "esperado": ["ma-dolarizacion", "fi-dolarizacion"]
+    },
+    {
+      "texto": "¿Cuánto se paga de impuesto si una mujer trabaja en relación de dependencia y gana $2.500 al mes?",
+      "esperado": ["tr-renta-personas", "tr-renta-base"]
+    },
+    {
+      "texto": "Elabore un organigrama para una pyme de 20 personas.",
+      "esperado": ["fa-estructura"]
+    },
+    {
+      "texto": "Diseñe una encuesta de 10 preguntas para conocer la satisfacción de los clientes.",
+      "esperado": ["im-pasos", "mt-fuentes-propias"]
+    },
+    {
+      "texto": "Convierta 1.500 euros a dólares con la cotización del día.",
+      "esperado": ["fi-cotizaciones"]
+    }
+  ],
+  "nota_ciego": "Enunciados ciegos: escritos después de todos los ajustes del diccionario y medidos una sola vez, sin cambiar nada después. Su acierto es la estimación honesta de cómo le irá con enunciados nuevos (docs/investigacion.md, sección 16).",
+  "ciego": [
+    {
+      "texto": "Registre en el diario el pago de la luz del local por $85 en efectivo.",
+      "esperado": ["cg-partida-doble-diario", "cg-partida-doble-reglas"]
+    },
+    {
+      "texto": "Calcule el valor futuro de $2.000 invertidos durante 5 años al 8 % anual compuesto.",
+      "esperado": ["mf-compuesto", "mf-vtm"]
+    },
+    {
+      "texto": "Determine la cuota mensual de un préstamo de $15.000 a 3 años al 12 % anual.",
+      "esperado": ["mf-cuota", "ii-financieras-pago"]
+    },
+    {
+      "texto": "¿Cuánto recibe de décimo cuarto un trabajador de la Sierra que laboró todo el período?",
+      "esperado": ["ll-decimo-cuarto"]
+    },
+    {
+      "texto": "Prepare el estado de flujo de efectivo por el método indirecto.",
+      "esperado": ["cf-metodo-indirecto", "cf-flujo-actividades"]
+    },
+    {
+      "texto": "Calcule cuánto IVA debe declarar la empresa si vendió $12.000 y compró $7.000 con IVA.",
+      "esperado": ["tr-iva-liquidacion", "tr-iva-tarifas"]
+    },
+    {
+      "texto": "Una compañía tiene activos corrientes de $45.000 y pasivos corrientes de $30.000. Calcule su liquidez.",
+      "esperado": ["fc-liquidez"]
+    },
+    {
+      "texto": "Encuentre el punto donde el ingreso total es máximo para la función I(q) = 100q − 2q².",
+      "esperado": ["cd-aplicaciones-optimizacion", "cd-aplicaciones-extremos", "cd-aplicaciones-marginal"]
+    },
+    {
+      "texto": "Explique las cinco fuerzas de Porter aplicadas a una empresa de transporte.",
+      "esperado": ["fa-porter"]
+    },
+    {
+      "texto": "Elabore el presupuesto de ventas del próximo trimestre de una panadería.",
+      "esperado": ["cc-presupuesto-operativo"]
+    },
+    {
+      "texto": "Con una muestra de 25 empresas, pruebe si el promedio de ventas es mayor a $10.000 con alfa de 0,05.",
+      "esperado": ["ei-h0-ha", "ei-valor-p"]
+    },
+    {
+      "texto": "Explique qué es la ventaja comparativa con un ejemplo de dos países.",
+      "esperado": ["ec-ventaja"]
+    },
+    {
+      "texto": "¿Qué contratos de trabajo deben celebrarse por escrito según el Código del Trabajo?",
+      "esperado": ["ll-escrito", "ll-clases"]
+    },
+    {
+      "texto": "Calcule cuánto pierde una empresa importadora si el euro sube de 1,08 a 1,12 dólares.",
+      "esperado": ["fi-riesgo-cambiario", "fi-cotizaciones"]
+    },
+    {
+      "texto": "Proponga la mezcla de marketing para lanzar una bebida energética.",
+      "esperado": ["mk-4p", "mk-precios-nuevos"]
+    },
+    {
+      "texto": "Explique la diferencia entre costeo por órdenes de producción y costeo por procesos.",
+      "esperado": ["cc-ordenes-procesos"]
+    }
+  ]
+}

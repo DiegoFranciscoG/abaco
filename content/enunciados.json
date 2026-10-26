@@ -1,0 +1,2231 @@
+[
+  {
+    "id": "libro-diario",
+    "nombre": "Asientos en el libro diario",
+    "frases": [
+      "libro diario",
+      "registr* asiento*",
+      "asiento* contable*",
+      "jornaliz*",
+      "registr* transaccion*",
+      "registr* operacion*",
+      "partida doble",
+      "debe y haber",
+      "cargo y abono",
+      "compr* a credito",
+      "vend* a credito",
+      "registr* contab*"
+    ],
+    "subtemas": [
+      "cg-partida-doble-diario",
+      "cg-partida-doble-reglas"
+    ],
+    "formulas": [
+      "comprobacion-partida-doble"
+    ],
+    "herramientas": [
+      "diario"
+    ],
+    "entregables": [
+      "libro-diario"
+    ]
+  },
+  {
+    "id": "mayor-comprobacion",
+    "nombre": "Libro mayor y balance de comprobación",
+    "frases": [
+      "libro mayor",
+      "cuentas t",
+      "mayoriz*",
+      "balance de comprobacion",
+      "balance de sumas y saldos",
+      "saldo de la cuenta",
+      "saldos deudores y acreedores"
+    ],
+    "subtemas": [
+      "cg-partida-doble-mayor",
+      "cg-partida-doble-comprobacion"
+    ],
+    "formulas": [
+      "saldo-cuenta-deudora",
+      "comprobacion-partida-doble"
+    ],
+    "herramientas": [
+      "diario"
+    ],
+    "entregables": [
+      "libro-diario"
+    ]
+  },
+  {
+    "id": "ecuacion-contable",
+    "nombre": "Ecuación contable",
+    "frases": [
+      "ecuacion contable",
+      "activo pasivo y patrimonio",
+      "activo igual a pasivo mas patrimonio",
+      "efecto de las transacciones"
+    ],
+    "subtemas": [
+      "cg-ecuacion-elementos",
+      "cg-ecuacion-transacciones",
+      "cg-ecuacion-ampliada"
+    ],
+    "formulas": [
+      "ecuacion-contable",
+      "patrimonio",
+      "ecuacion-contable-ampliada"
+    ],
+    "herramientas": [
+      "diario"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "ajustes-cierre",
+    "nombre": "Ajustes y cierre del ciclo contable",
+    "frases": [
+      "asiento* de ajuste",
+      "ajustes contables",
+      "hoja de trabajo",
+      "devengad*",
+      "asiento* de cierre",
+      "cierre del ejercicio",
+      "cierre contable"
+    ],
+    "subtemas": [
+      "cg-estados-ajustes",
+      "cg-estados-cierre"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "diario"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "estado-resultados",
+    "nombre": "Estado de resultados",
+    "frases": [
+      "estado de resultados",
+      "estado de perdidas y ganancias",
+      "perdidas y ganancias",
+      "utilidad neta",
+      "utilidad del ejercicio",
+      "margen neto"
+    ],
+    "subtemas": [
+      "cg-estados-resultados",
+      "cf-estados-conjunto"
+    ],
+    "formulas": [
+      "utilidad-neta",
+      "margen-neto"
+    ],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "estado-situacion",
+    "nombre": "Estado de situación financiera",
+    "frases": [
+      "estado de situacion financiera",
+      "balance general",
+      "estado de situacion",
+      "estados financieros",
+      "activo corriente y no corriente",
+      "tamano comun",
+      "analisis vertical"
+    ],
+    "subtemas": [
+      "cg-estados-situacion",
+      "cf-estados-conjunto",
+      "cf-corriente",
+      "cf-tamano-comun"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "flujo-efectivo",
+    "nombre": "Estado de flujo de efectivo",
+    "frases": [
+      "flujo de efectivo",
+      "estado de flujo*",
+      "metodo indirecto",
+      "actividades de operacion",
+      "actividades de inversion",
+      "actividades de financiamiento"
+    ],
+    "subtemas": [
+      "cf-flujo-actividades",
+      "cf-metodo-indirecto",
+      "fc-flujo-libre"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "kardex",
+    "nombre": "Kardex y valoración de inventarios",
+    "frases": [
+      "kardex",
+      "karde*",
+      "tarjeta* de control de inventario*",
+      "promedio ponderado",
+      "peps",
+      "fifo",
+      "primeras entradas primeras salidas",
+      "valor* el inventario",
+      "valor* las salidas",
+      "salidas de inventario",
+      "valoracion de inventario*",
+      "control de existencias"
+    ],
+    "subtemas": [
+      "cg-mercaderias-valoracion",
+      "cf-inv-metodos",
+      "cf-inv-sistemas"
+    ],
+    "formulas": [
+      "costo-promedio-ponderado",
+      "costo-ventas-promedio",
+      "costo-ventas-peps",
+      "inventario-final"
+    ],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": [
+      "kardex"
+    ]
+  },
+  {
+    "id": "costo-ventas",
+    "nombre": "Costo de ventas y utilidad bruta",
+    "frases": [
+      "costo de ventas",
+      "costo de lo vendido",
+      "utilidad bruta",
+      "ventas netas",
+      "compras netas",
+      "margen bruto",
+      "inventario inicial",
+      "devoluciones en ventas",
+      "sistema periodico",
+      "sistema permanente"
+    ],
+    "subtemas": [
+      "cg-mercaderias-costo",
+      "cg-mercaderias-netas",
+      "cg-mercaderias-sistemas"
+    ],
+    "formulas": [
+      "costo-ventas-periodico",
+      "utilidad-bruta",
+      "ventas-netas",
+      "compras-netas",
+      "margen-bruto"
+    ],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "rotacion-inventarios",
+    "nombre": "Rotación de inventarios",
+    "frases": [
+      "rotacion de inventario*",
+      "dias de inventario",
+      "veces que rota el inventario"
+    ],
+    "subtemas": [
+      "fc-eficiencia"
+    ],
+    "formulas": [
+      "rotacion-inventarios",
+      "dias-inventario"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "razones-financieras"
+    ]
+  },
+  {
+    "id": "depreciacion",
+    "nombre": "Depreciación de activos fijos",
+    "frases": [
+      "depreciac*",
+      "deprecie*",
+      "depreci*",
+      "vida util",
+      "valor residual",
+      "linea recta",
+      "suma de digitos",
+      "doble saldo decreciente",
+      "unidades de produccion",
+      "valor en libros",
+      "activo fijo",
+      "propiedad planta y equipo",
+      "kilometr*",
+      "recorr* km",
+      "km recorrido*",
+      "horas maquina",
+      "desgaste del activo",
+      "gasto por depreciacion"
+    ],
+    "subtemas": [
+      "cf-depreciacion",
+      "cf-capitalizar"
+    ],
+    "formulas": [
+      "depreciacion-linea-recta",
+      "depreciacion-suma-digitos",
+      "depreciacion-unidades-produccion",
+      "depreciacion-doble-saldo",
+      "valor-en-libros"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "depreciacion"
+    ]
+  },
+  {
+    "id": "rol-pagos",
+    "nombre": "Rol de pagos",
+    "frases": [
+      "rol de pago*",
+      "nomina",
+      "planilla de sueldo*",
+      "liquido a recibir",
+      "liquido a pagar",
+      "sueldo neto",
+      "cuanto me descuentan",
+      "descuento* del sueldo",
+      "ingresos y descuentos del trabajador"
+    ],
+    "subtemas": [
+      "ll-aportes",
+      "th-aportes-iess",
+      "th-compensacion-beneficios",
+      "ll-horas-extra"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": [
+      "rol-pagos"
+    ]
+  },
+  {
+    "id": "aportes-iess",
+    "nombre": "Aportes al IESS",
+    "frases": [
+      "aporte personal",
+      "aporte patronal",
+      "aporte* al iess",
+      "aporte* al seguro social",
+      "seguro social",
+      "afiliac*",
+      "iess"
+    ],
+    "subtemas": [
+      "ll-aportes",
+      "th-aportes-iess"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": [
+      "rol-pagos"
+    ]
+  },
+  {
+    "id": "horas-extra",
+    "nombre": "Horas suplementarias y extraordinarias",
+    "frases": [
+      "horas extra*",
+      "hora* suplementaria*",
+      "hora* extraordinaria*",
+      "recargo del 50",
+      "recargo del 100",
+      "trabajo nocturno",
+      "trabaj* el sabado",
+      "trabaj* el domingo"
+    ],
+    "subtemas": [
+      "ll-horas-extra",
+      "ll-jornada-maxima"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": [
+      "rol-pagos"
+    ]
+  },
+  {
+    "id": "jornada",
+    "nombre": "Jornada de trabajo",
+    "frases": [
+      "jornada maxima",
+      "jornada de trabajo",
+      "horas a la semana",
+      "horas semanales",
+      "jornada laboral"
+    ],
+    "subtemas": [
+      "ll-jornada-maxima"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "decimo-tercero",
+    "nombre": "Décima tercera remuneración",
+    "frases": [
+      "decimo tercer*",
+      "decima tercera",
+      "decimotercer*",
+      "bono navideno",
+      "aguinaldo"
+    ],
+    "subtemas": [
+      "ll-decimo-tercero"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": [
+      "rol-pagos"
+    ]
+  },
+  {
+    "id": "decimo-cuarto",
+    "nombre": "Décima cuarta remuneración",
+    "frases": [
+      "decimo cuarto",
+      "decima cuarta",
+      "decimocuart*",
+      "bono escolar"
+    ],
+    "subtemas": [
+      "ll-decimo-cuarto"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": [
+      "rol-pagos"
+    ]
+  },
+  {
+    "id": "fondo-reserva",
+    "nombre": "Fondo de reserva",
+    "frases": [
+      "fondo* de reserva"
+    ],
+    "subtemas": [
+      "ll-fondo-reserva"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": [
+      "rol-pagos"
+    ]
+  },
+  {
+    "id": "vacaciones",
+    "nombre": "Vacaciones anuales",
+    "frases": [
+      "vacaciones",
+      "dias de vacaciones",
+      "dias de descanso al ano"
+    ],
+    "subtemas": [
+      "ll-vacaciones"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "utilidades-trabajadores",
+    "nombre": "Participación de los trabajadores en las utilidades",
+    "frases": [
+      "participacion de utilidades",
+      "participacion de los trabajadores",
+      "reparto de utilidades",
+      "utilidades a los trabajadores",
+      "cargas familiares",
+      "participacion laboral",
+      "utilidade* trabajador*",
+      "utilidades le toca",
+      "15 de las utilidades"
+    ],
+    "subtemas": [
+      "ll-utilidades",
+      "tr-renta-sociedades"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "desahucio",
+    "nombre": "Desahucio",
+    "frases": [
+      "desahucio",
+      "renunci*",
+      "deja la empresa",
+      "dejar el trabajo",
+      "terminacion por acuerdo",
+      "terminar el contrato"
+    ],
+    "subtemas": [
+      "ll-desahucio",
+      "ll-terminacion"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "despido",
+    "nombre": "Despido intempestivo y liquidación",
+    "frases": [
+      "despido intempestivo",
+      "despid*",
+      "despedid*",
+      "sin causa",
+      "indemnizac*",
+      "liquidacion de haberes",
+      "cuanto me queda si me",
+      "botaron del trabajo"
+    ],
+    "subtemas": [
+      "ll-despido",
+      "ll-terminacion"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "salario-basico",
+    "nombre": "Salario básico unificado",
+    "frases": [
+      "salario basico",
+      "sueldo basico",
+      "salario minimo",
+      "sueldo minimo",
+      "sbu"
+    ],
+    "subtemas": [
+      "ll-sbu",
+      "th-salario-basico"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "rol-pagos"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "contrato-trabajo",
+    "nombre": "Contrato de trabajo",
+    "frases": [
+      "contrato de trabajo",
+      "contrato individual",
+      "periodo de prueba",
+      "plazo fijo",
+      "contrato indefinido",
+      "tipos de contrato*",
+      "clases de contrato*"
+    ],
+    "subtemas": [
+      "ll-definicion",
+      "ll-clases",
+      "ll-prueba",
+      "ll-escrito"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "amortizacion",
+    "nombre": "Tabla de amortización de un préstamo",
+    "frases": [
+      "tabla de amortizac*",
+      "amortiz*",
+      "tabla de pagos del prestamo",
+      "cuota fija",
+      "cuota* mensual* del prestamo",
+      "cuota del credito",
+      "cuota del prestamo",
+      "sistema frances",
+      "sistema aleman",
+      "capital constante",
+      "saldo pendiente",
+      "saldo insoluto",
+      "interes y capital de cada cuota",
+      "credito de consumo",
+      "credito hipotecario",
+      "prestamo bancario",
+      "pago mensual del credito",
+      "valor de cada pago",
+      "valor de la cuota",
+      "cuota de un credito",
+      "cuanto pago cada mes"
+    ],
+    "subtemas": [
+      "mf-cuota",
+      "mf-saldo",
+      "mf-capital-constante",
+      "ii-financieras-pago"
+    ],
+    "formulas": [
+      "cuota-prestamo",
+      "interes-cuota",
+      "capital-cuota",
+      "saldo-insoluto",
+      "cuota-capital-constante"
+    ],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": [
+      "amortizacion"
+    ]
+  },
+  {
+    "id": "interes-simple",
+    "nombre": "Interés simple",
+    "frases": [
+      "interes simple",
+      "intereses simples",
+      "monto con interes simple"
+    ],
+    "subtemas": [
+      "mf-simple"
+    ],
+    "formulas": [
+      "interes-simple",
+      "monto-interes-simple"
+    ],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "interes-compuesto",
+    "nombre": "Interés compuesto y valor futuro",
+    "frases": [
+      "interes compuesto",
+      "intereses compuestos",
+      "capitalizable",
+      "capitaliz* mensual*",
+      "capitaliz* trimestral*",
+      "cuanto tendre",
+      "cuanto tendra",
+      "valor futuro",
+      "monto compuesto",
+      "deposito a plazo",
+      "cuanto acumul*"
+    ],
+    "subtemas": [
+      "mf-compuesto",
+      "mf-vtm",
+      "mf-tasas"
+    ],
+    "formulas": [
+      "monto-compuesto",
+      "numero-periodos",
+      "tasa-implicita"
+    ],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "valor-actual",
+    "nombre": "Valor actual",
+    "frases": [
+      "valor actual",
+      "valor presente",
+      "cuanto debo depositar hoy",
+      "descont* al presente",
+      "traer a valor presente",
+      "ahorrar hoy",
+      "cuanto debe ahorrar",
+      "deposit* hoy para",
+      "invertir hoy para tener",
+      "hoy para tener",
+      "cuanto vale hoy"
+    ],
+    "subtemas": [
+      "mf-vtm",
+      "mf-flujos-desiguales"
+    ],
+    "formulas": [
+      "valor-actual"
+    ],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "tasas-interes",
+    "nombre": "Tasa nominal y efectiva",
+    "frases": [
+      "tasa efectiva",
+      "tasa nominal",
+      "tasa equivalente",
+      "tasa periodica",
+      "convertir la tasa"
+    ],
+    "subtemas": [
+      "mf-tasas"
+    ],
+    "formulas": [
+      "tasa-efectiva-anual",
+      "tasa-periodica",
+      "tasa-nominal-desde-efectiva",
+      "interes-continuo"
+    ],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "anualidades",
+    "nombre": "Anualidades y perpetuidades",
+    "frases": [
+      "anualidad*",
+      "renta* mensual*",
+      "pagos iguales",
+      "pagos periodicos",
+      "depositos iguales",
+      "pagadera al final",
+      "al final de cada mes",
+      "al inicio de cada mes",
+      "anualidad anticipada",
+      "perpetuidad*"
+    ],
+    "subtemas": [
+      "mf-anualidad-vencida",
+      "mf-anualidad-anticipada",
+      "mf-perpetuidades"
+    ],
+    "formulas": [
+      "va-anualidad-vencida",
+      "vf-anualidad-vencida",
+      "va-anualidad-anticipada",
+      "vf-anualidad-anticipada",
+      "perpetuidad",
+      "perpetuidad-creciente"
+    ],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "evaluacion-proyectos",
+    "nombre": "VAN, TIR e índice de rentabilidad",
+    "frases": [
+      "valor actual neto",
+      "van del proyecto",
+      "van y tir",
+      "tir",
+      "tasa interna de retorno",
+      "conviene realizar*",
+      "conviene el proyecto",
+      "evalu* el proyecto",
+      "flujos de caja del proyecto",
+      "flujo* del proyecto",
+      "inversion inicial",
+      "tasa de descuento",
+      "indice de rentabilidad",
+      "relacion beneficio costo",
+      "beneficio costo"
+    ],
+    "subtemas": [
+      "ep-van",
+      "ep-tir",
+      "ep-indice-rentabilidad",
+      "ep-elegir"
+    ],
+    "formulas": [
+      "van",
+      "tir",
+      "indice-rentabilidad"
+    ],
+    "herramientas": [
+      "proyectos"
+    ],
+    "entregables": [
+      "evaluacion-proyecto"
+    ]
+  },
+  {
+    "id": "periodo-recuperacion",
+    "nombre": "Período de recuperación",
+    "frases": [
+      "periodo de recuperacion",
+      "payback",
+      "en cuanto tiempo se recupera",
+      "recuperar la inversion"
+    ],
+    "subtemas": [
+      "ep-payback"
+    ],
+    "formulas": [
+      "periodo-recuperacion"
+    ],
+    "herramientas": [
+      "proyectos"
+    ],
+    "entregables": [
+      "evaluacion-proyecto"
+    ]
+  },
+  {
+    "id": "punto-equilibrio",
+    "nombre": "Punto de equilibrio",
+    "frases": [
+      "punto de equilibrio",
+      "no ganar ni perder",
+      "ni gane ni pierda",
+      "cuantas unidades debe vender",
+      "unidades para cubrir",
+      "margen de contribucion",
+      "costo* fijo* y variable*",
+      "utilidad objetivo",
+      "utilidad deseada",
+      "margen de seguridad",
+      "apalancamiento operativo"
+    ],
+    "subtemas": [
+      "cc-punto-equilibrio",
+      "cc-margen-contribucion",
+      "cc-margen-seguridad"
+    ],
+    "formulas": [
+      "punto-equilibrio-unidades",
+      "punto-equilibrio-dolares",
+      "margen-contribucion-unitario",
+      "razon-margen-contribucion",
+      "unidades-utilidad-objetivo",
+      "margen-seguridad",
+      "apalancamiento-operativo"
+    ],
+    "herramientas": [
+      "equilibrio"
+    ],
+    "entregables": [
+      "punto-equilibrio"
+    ]
+  },
+  {
+    "id": "comportamiento-costos",
+    "nombre": "Costos fijos, variables y mixtos",
+    "frases": [
+      "costo* mixto*",
+      "punto alto y punto bajo",
+      "punto alto punto bajo",
+      "separar el costo",
+      "costo* fijo*",
+      "costo* variable*"
+    ],
+    "subtemas": [
+      "cc-fijos-variables",
+      "cc-alto-bajo"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "equilibrio"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "sistemas-costeo",
+    "nombre": "Costeo por órdenes, por procesos y ABC",
+    "frases": [
+      "costeo por ordenes",
+      "orden* de produccion",
+      "costeo por procesos",
+      "unidades equivalentes",
+      "costos indirectos de fabricacion",
+      "tasa predeterminada",
+      "costeo abc",
+      "basado en actividades",
+      "materia prima directa",
+      "mano de obra directa"
+    ],
+    "subtemas": [
+      "cc-ordenes-procesos",
+      "cc-unidades-equivalentes",
+      "cc-tasa-predeterminada",
+      "cc-abc"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "presupuestos",
+    "nombre": "Presupuestos y costos estándar",
+    "frases": [
+      "presupuesto maestro",
+      "presupuesto de ventas",
+      "presupuesto de produccion",
+      "presupuesto flexible",
+      "variacion* de materiales",
+      "costo* estandar",
+      "presupuesto operativo"
+    ],
+    "subtemas": [
+      "cc-presupuesto-operativo",
+      "cc-presupuesto-flexible",
+      "cc-variaciones"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "razones-financieras",
+    "nombre": "Razones financieras",
+    "frases": [
+      "razon* financiera*",
+      "indicador* financiero*",
+      "analisis financiero",
+      "analisis de estados financieros",
+      "interpret* los indicadores"
+    ],
+    "subtemas": [
+      "fc-razones",
+      "fc-liquidez",
+      "fc-solvencia",
+      "fc-eficiencia",
+      "fc-rentabilidad"
+    ],
+    "formulas": [
+      "razon-corriente",
+      "prueba-acida",
+      "razon-endeudamiento",
+      "roa",
+      "roe"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "razones-financieras"
+    ]
+  },
+  {
+    "id": "liquidez",
+    "nombre": "Liquidez y capital de trabajo",
+    "frases": [
+      "razon corriente",
+      "liquidez corriente",
+      "liquidez",
+      "prueba acida",
+      "capital de trabajo",
+      "capital de trabajo neto",
+      "capacidad de pago a corto plazo"
+    ],
+    "subtemas": [
+      "fc-liquidez",
+      "fc-capital-trabajo"
+    ],
+    "formulas": [
+      "razon-corriente",
+      "prueba-acida",
+      "capital-trabajo"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "razones-financieras"
+    ]
+  },
+  {
+    "id": "endeudamiento",
+    "nombre": "Solvencia y endeudamiento",
+    "frases": [
+      "endeudamiento",
+      "razon de deuda",
+      "deuda a activo*",
+      "deuda a patrimonio",
+      "solvencia",
+      "apalancamiento financiero"
+    ],
+    "subtemas": [
+      "fc-solvencia"
+    ],
+    "formulas": [
+      "razon-endeudamiento",
+      "deuda-patrimonio"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "razones-financieras"
+    ]
+  },
+  {
+    "id": "rentabilidad",
+    "nombre": "Rentabilidad y DuPont",
+    "frases": [
+      "roa",
+      "roe",
+      "rentabilidad sobre activo*",
+      "rentabilidad sobre patrimonio",
+      "rentabilidad del patrimonio",
+      "dupont",
+      "rendimiento sobre activo*",
+      "rendimiento sobre el patrimonio"
+    ],
+    "subtemas": [
+      "fc-rentabilidad"
+    ],
+    "formulas": [
+      "roa",
+      "roe",
+      "dupont",
+      "margen-neto"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "razones-financieras"
+    ]
+  },
+  {
+    "id": "eficiencia",
+    "nombre": "Eficiencia operativa",
+    "frases": [
+      "rotacion de cuentas por cobrar",
+      "periodo de cobro",
+      "periodo promedio de cobro",
+      "rotacion de activo*",
+      "rotacion de cartera",
+      "dias de cobro"
+    ],
+    "subtemas": [
+      "fc-eficiencia"
+    ],
+    "formulas": [
+      "rotacion-cuentas-cobrar",
+      "periodo-cobro",
+      "rotacion-activos"
+    ],
+    "herramientas": [],
+    "entregables": [
+      "razones-financieras"
+    ]
+  },
+  {
+    "id": "costo-capital",
+    "nombre": "Costo de capital (WACC y CAPM)",
+    "frases": [
+      "costo promedio ponderado de capital",
+      "wacc",
+      "capm",
+      "costo de capital",
+      "costo de la deuda",
+      "costo del patrimonio",
+      "beta de la accion",
+      "prima de riesgo"
+    ],
+    "subtemas": [
+      "fc-wacc",
+      "fc-capm",
+      "fc-riesgo-rendimiento"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "valoracion",
+    "nombre": "Valoración de bonos y acciones",
+    "frases": [
+      "valor de un bono",
+      "precio del bono",
+      "bono* con cupon",
+      "valor de una accion",
+      "precio de la accion",
+      "modelo de dividendos",
+      "gordon",
+      "dividendo* crec*"
+    ],
+    "subtemas": [
+      "fc-bonos",
+      "fc-acciones"
+    ],
+    "formulas": [
+      "perpetuidad-creciente"
+    ],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "iva",
+    "nombre": "IVA",
+    "frases": [
+      "iva",
+      "impuesto al valor agregado",
+      "precio sin iva",
+      "precio con iva",
+      "iva incluido",
+      "impuesto incluido",
+      "credito tributario",
+      "iva a pagar",
+      "iva cobrado",
+      "iva pagado",
+      "antes del iva",
+      "antes de impuestos"
+    ],
+    "subtemas": [
+      "tr-iva-tarifas",
+      "tr-iva-liquidacion"
+    ],
+    "formulas": [
+      "iva-causado",
+      "precio-con-iva",
+      "base-desde-pvp",
+      "iva-a-pagar"
+    ],
+    "herramientas": [
+      "impuestos"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "renta-personas",
+    "nombre": "Impuesto a la renta de personas naturales",
+    "frases": [
+      "impuesto a la renta",
+      "tabla del impuesto a la renta",
+      "fraccion basica",
+      "base imponible",
+      "persona natural",
+      "gastos personales",
+      "impuesto causado",
+      "declaracion de renta",
+      "relacion de dependencia",
+      "cuanto se paga de impuesto",
+      "impuesto sobre el sueldo",
+      "impuesto por su sueldo",
+      "declarar el impuesto"
+    ],
+    "subtemas": [
+      "tr-renta-personas",
+      "tr-renta-base",
+      "tr-renta-plazos"
+    ],
+    "formulas": [
+      "impuesto-renta-personas"
+    ],
+    "herramientas": [
+      "impuestos"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "renta-sociedades",
+    "nombre": "Impuesto a la renta de sociedades",
+    "frases": [
+      "renta de sociedades",
+      "impuesto de la compania",
+      "impuesto de la empresa",
+      "tarifa de sociedades",
+      "renta de la compania"
+    ],
+    "subtemas": [
+      "tr-renta-sociedades"
+    ],
+    "formulas": [
+      "impuesto-renta-sociedades"
+    ],
+    "herramientas": [
+      "impuestos"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "rimpe",
+    "nombre": "RIMPE",
+    "frases": [
+      "rimpe",
+      "negocio* popular*",
+      "regimen simplificado",
+      "regimen general",
+      "emprendedor del rimpe",
+      "ingresos brutos"
+    ],
+    "subtemas": [
+      "tr-rimpe-emprendedores",
+      "tr-rimpe-populares",
+      "tr-regimenes",
+      "tr-iva-rimpe"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "impuestos"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "ruc",
+    "nombre": "RUC y obligaciones del contribuyente",
+    "frases": [
+      "ruc",
+      "sacar el ruc",
+      "registro unico de contribuyente*",
+      "inscribir* en el sri",
+      "obligaciones tributarias",
+      "actualizar el ruc"
+    ],
+    "subtemas": [
+      "tr-ruc"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "comprobantes",
+    "nombre": "Comprobantes de venta electrónicos",
+    "frases": [
+      "factura*",
+      "factura* electronica*",
+      "comprobante* electronico*",
+      "comprobante* de venta",
+      "nota de venta",
+      "nota* de credito",
+      "comprobante de retencion",
+      "guia de remision",
+      "facturacion",
+      "firma electronica",
+      "requisitos de la factura"
+    ],
+    "subtemas": [
+      "tr-comprobantes",
+      "tr-rimpe-comprobantes"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "companias",
+    "nombre": "Tipos de compañías",
+    "frases": [
+      "compania* limitada*",
+      "cia ltda",
+      "responsabilidad limitada",
+      "sociedad anonima",
+      "compania anonima",
+      "sociedad por acciones simplificada",
+      "sas",
+      "ley de companias",
+      "constituir una compania",
+      "constituir una empresa",
+      "tipos de companias",
+      "especies de companias",
+      "socios y accionistas",
+      "junta general de socios",
+      "capital suscrito"
+    ],
+    "subtemas": [
+      "lm-companias-especies",
+      "lm-limitada-naturaleza",
+      "lm-capitales-anonima",
+      "lm-capitales-sas",
+      "lm-limitada-capital"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "superintendencia",
+    "nombre": "Control de la Superintendencia de Compañías",
+    "frases": [
+      "superintendencia de companias",
+      "informacion anual",
+      "control societario",
+      "supercias"
+    ],
+    "subtemas": [
+      "lm-control-sujetos",
+      "lm-control-informacion",
+      "lm-control-normativa"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "tendencia-central",
+    "nombre": "Media, mediana y moda",
+    "frases": [
+      "media aritmetica",
+      "media ponderada",
+      "la media",
+      "mediana",
+      "moda",
+      "promedio de los datos",
+      "medidas de tendencia central",
+      "tendencia central"
+    ],
+    "subtemas": [
+      "ed-centro-media",
+      "ed-centro-mediana-moda",
+      "ed-centro-asimetria"
+    ],
+    "formulas": [
+      "media-aritmetica",
+      "media-ponderada",
+      "mediana"
+    ],
+    "herramientas": [
+      "estadistica"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "dispersion",
+    "nombre": "Varianza, desviación estándar y posición",
+    "frases": [
+      "desviacion estandar",
+      "desviacion tipica",
+      "varianza",
+      "coeficiente de variacion",
+      "dispersion de los datos",
+      "medidas de dispersion",
+      "rango intercuartil",
+      "cuartil*",
+      "percentil*",
+      "puntuacion z"
+    ],
+    "subtemas": [
+      "ed-dispersion-varianza",
+      "ed-dispersion-cv",
+      "ed-dispersion-posicion"
+    ],
+    "formulas": [
+      "varianza-muestral",
+      "desviacion-estandar-muestral",
+      "coeficiente-variacion",
+      "puntuacion-z"
+    ],
+    "herramientas": [
+      "estadistica"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "graficos-frecuencias",
+    "nombre": "Tablas de frecuencia y gráficos",
+    "frases": [
+      "tabla de frecuencia*",
+      "distribucion de frecuencia*",
+      "histograma",
+      "diagrama de caja",
+      "grafico de barras",
+      "poligono de frecuencia*",
+      "frecuencia relativa",
+      "frecuencia acumulada"
+    ],
+    "subtemas": [
+      "ed-graficos-frecuencias",
+      "ed-graficos-histogramas",
+      "ed-graficos-caja"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "estadistica"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "correlacion-regresion",
+    "nombre": "Correlación y regresión",
+    "frases": [
+      "correlacion",
+      "coeficiente de correlacion",
+      "regresion lineal",
+      "regresion",
+      "diagrama de dispersion",
+      "recta de regresion",
+      "minimos cuadrados",
+      "pronostic* con regresion",
+      "existe relacion",
+      "grado de relacion",
+      "coeficiente r",
+      "coeficiente de pearson",
+      "relacion lineal",
+      "asociacion entre las variables"
+    ],
+    "subtemas": [
+      "ed-relacion-correlacion",
+      "ei-regresion",
+      "ed-relacion-dispersion",
+      "ei-prediccion"
+    ],
+    "formulas": [
+      "correlacion-pearson"
+    ],
+    "herramientas": [
+      "estadistica",
+      "graficador"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "intervalos-confianza",
+    "nombre": "Intervalos de confianza",
+    "frases": [
+      "intervalo* de confianza",
+      "nivel de confianza",
+      "estimar la media",
+      "media poblacional",
+      "t de student",
+      "estimacion por intervalo"
+    ],
+    "subtemas": [
+      "ei-ic-z",
+      "ei-ic-t",
+      "ei-ic-proporcion"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "estadistica"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "tamano-muestra",
+    "nombre": "Tamaño de la muestra",
+    "frases": [
+      "tamano de la muestra",
+      "tamano de muestra",
+      "cuantas personas",
+      "cuantas encuestas",
+      "margen de error",
+      "encuestar"
+    ],
+    "subtemas": [
+      "ei-tamano-muestra",
+      "im-tamano",
+      "ei-tipos-muestreo"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "hipotesis",
+    "nombre": "Pruebas de hipótesis",
+    "frases": [
+      "prueba de hipotesis",
+      "hipotesis nula",
+      "hipotesis alternativa",
+      "nivel de significancia",
+      "valor p",
+      "chi cuadrado",
+      "error tipo i",
+      "error de tipo i",
+      "comparar dos medias"
+    ],
+    "subtemas": [
+      "ei-h0-ha",
+      "ei-valor-p",
+      "ei-errores",
+      "ei-chi-independencia",
+      "ei-dos-medias"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "estadistica"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "muestreo-tlc",
+    "nombre": "Muestreo y teorema del límite central",
+    "frases": [
+      "teorema del limite central",
+      "distribucion muestral",
+      "muestreo aleatorio",
+      "muestreo estratificado",
+      "tipos de muestreo",
+      "poblacion y muestra"
+    ],
+    "subtemas": [
+      "ei-tlc",
+      "ei-tipos-muestreo",
+      "ed-datos-muestreo",
+      "ed-datos-conceptos"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "elasticidad",
+    "nombre": "Elasticidad",
+    "frases": [
+      "elasticidad*",
+      "elastic*",
+      "inelastic*",
+      "sensibilidad de la demanda",
+      "elasticidad precio de la demanda"
+    ],
+    "subtemas": [
+      "mi-elasticidad-precio",
+      "mi-elasticidad-ingreso-total",
+      "cd-aplicaciones-elasticidad"
+    ],
+    "formulas": [
+      "elasticidad-precio"
+    ],
+    "herramientas": [
+      "mercado"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "oferta-demanda",
+    "nombre": "Oferta, demanda y equilibrio de mercado",
+    "frases": [
+      "oferta y demanda",
+      "precio de equilibrio",
+      "cantidad de equilibrio",
+      "equilibrio de mercado",
+      "curva de demanda",
+      "curva de oferta",
+      "exceso de demanda",
+      "exceso de oferta",
+      "precio maximo",
+      "precio minimo",
+      "desplazamiento de la demanda"
+    ],
+    "subtemas": [
+      "mi-oferta-demanda",
+      "mi-desplazamientos",
+      "mi-precios-controlados",
+      "mi-cuatro-pasos"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "mercado"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "marginal-optimizacion",
+    "nombre": "Costo marginal y optimización",
+    "frases": [
+      "costo marginal",
+      "ingreso marginal",
+      "utilidad marginal",
+      "maximiz* la utilidad",
+      "maximiz* el ingreso",
+      "minimiz* el costo",
+      "optimizac*",
+      "maximos y minimos",
+      "funcion de costo total"
+    ],
+    "subtemas": [
+      "cd-aplicaciones-marginal",
+      "cd-aplicaciones-optimizacion",
+      "cd-aplicaciones-extremos",
+      "mi-costos-corto-plazo"
+    ],
+    "formulas": [
+      "costo-marginal",
+      "maximo-ingreso"
+    ],
+    "herramientas": [
+      "graficador"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "derivadas-limites",
+    "nombre": "Derivadas y límites",
+    "frases": [
+      "derivada*",
+      "deriv*",
+      "regla de la cadena",
+      "limite de la funcion",
+      "limite* de",
+      "continuidad",
+      "recta tangente",
+      "tasa de cambio"
+    ],
+    "subtemas": [
+      "cd-derivada-reglas",
+      "cd-derivada-definicion",
+      "cd-derivada-cadena",
+      "cd-limites-idea",
+      "cd-limites-continuidad"
+    ],
+    "formulas": [
+      "tasa-cambio-promedio"
+    ],
+    "herramientas": [
+      "graficador"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "pib",
+    "nombre": "Producto interno bruto",
+    "frases": [
+      "pib",
+      "producto interno bruto",
+      "metodo del gasto",
+      "pib real",
+      "pib nominal",
+      "deflactor",
+      "crecimiento economico"
+    ],
+    "subtemas": [
+      "ma-pib",
+      "ma-real-nominal",
+      "ma-crecimiento"
+    ],
+    "formulas": [
+      "pib-gasto",
+      "pib-real"
+    ],
+    "herramientas": [
+      "macro"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "inflacion-desempleo",
+    "nombre": "Inflación y desempleo",
+    "frases": [
+      "inflacion",
+      "ipc",
+      "indice de precios",
+      "tasa de desempleo",
+      "desempleo",
+      "poblacion economicamente activa",
+      "fuerza laboral"
+    ],
+    "subtemas": [
+      "ma-inflacion",
+      "ma-desempleo"
+    ],
+    "formulas": [
+      "tasa-inflacion",
+      "tasa-desempleo"
+    ],
+    "herramientas": [
+      "macro"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "dinero-politica",
+    "nombre": "Dinero y política económica",
+    "frases": [
+      "multiplicador del dinero",
+      "multiplicador monetario",
+      "creacion de dinero",
+      "encaje",
+      "politica fiscal",
+      "politica monetaria",
+      "demanda agregada",
+      "oferta agregada",
+      "funciones del dinero"
+    ],
+    "subtemas": [
+      "ma-creacion-dinero",
+      "ma-politica-fiscal",
+      "ma-modelo",
+      "ma-funciones-dinero"
+    ],
+    "formulas": [
+      "dinero-multiplicador"
+    ],
+    "herramientas": [
+      "macro"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "dolarizacion",
+    "nombre": "Dolarización en Ecuador",
+    "frases": [
+      "dolarizacion",
+      "economia dolarizada",
+      "sin moneda propia",
+      "pais dolarizado"
+    ],
+    "subtemas": [
+      "ma-dolarizacion",
+      "fi-dolarizacion"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "macro"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "comercio-exterior",
+    "nombre": "Comercio exterior y balanza comercial",
+    "frases": [
+      "balanza comercial",
+      "exportaciones e importaciones",
+      "exportaciones netas",
+      "ventaja comparativa",
+      "ventaja absoluta",
+      "arancel*",
+      "proteccionismo",
+      "cuenta corriente",
+      "balanza de pagos",
+      "ahorro e inversion"
+    ],
+    "subtemas": [
+      "ec-medir",
+      "ec-ventaja",
+      "ec-proteccionismo",
+      "fi-balanza",
+      "fi-ahorro-inversion"
+    ],
+    "formulas": [
+      "balanza-mercancias",
+      "identidad-ahorro-inversion"
+    ],
+    "herramientas": [
+      "macro"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "divisas",
+    "nombre": "Tipo de cambio y divisas",
+    "frases": [
+      "tipo de cambio",
+      "divisa*",
+      "convertir dolares",
+      "dolares a euros",
+      "euros a dolares",
+      "cotizacion de la moneda",
+      "riesgo cambiario",
+      "contrato a plazo",
+      "cobertura cambiaria"
+    ],
+    "subtemas": [
+      "fi-cotizaciones",
+      "fi-mercado-divisas",
+      "fi-riesgo-cambiario",
+      "fi-coberturas"
+    ],
+    "formulas": [
+      "conversion-divisas",
+      "tipo-cambio-inverso"
+    ],
+    "herramientas": [
+      "divisas"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "foda",
+    "nombre": "Análisis FODA",
+    "frases": [
+      "foda",
+      "dafo",
+      "swot",
+      "fortalezas oportunidades debilidades amenazas",
+      "fortalezas y debilidades",
+      "matriz foda",
+      "analisis interno y externo"
+    ],
+    "subtemas": [
+      "fa-foda"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "foda"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "entorno-competencia",
+    "nombre": "Cinco fuerzas de Porter y PESTEL",
+    "frases": [
+      "cinco fuerzas",
+      "fuerzas de porter",
+      "pestel",
+      "pest",
+      "analisis del entorno",
+      "poder de negociacion",
+      "amenaza de nuevos competidores",
+      "analisis competitivo"
+    ],
+    "subtemas": [
+      "fa-porter",
+      "fa-pestel",
+      "em-competencia"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "foda"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "proceso-administrativo",
+    "nombre": "Proceso administrativo",
+    "frases": [
+      "funciones de la administracion",
+      "proceso administrativo",
+      "planeacion organizacion direccion y control",
+      "administracion por objetivos",
+      "toma de decisiones",
+      "mision y vision",
+      "roles del gerente",
+      "administracion cientifica",
+      "taylor",
+      "fayol",
+      "planificacion estrategica"
+    ],
+    "subtemas": [
+      "fa-funciones",
+      "fa-apo",
+      "fa-planeacion",
+      "fa-decisiones",
+      "fa-cientifica",
+      "fa-administrativa"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "estructura-organizacional",
+    "nombre": "Estructura organizacional",
+    "frases": [
+      "organigrama",
+      "estructura organizacional",
+      "estructura de la empresa",
+      "departamentos",
+      "tramo de control",
+      "cadena de mando",
+      "departamentalizacion"
+    ],
+    "subtemas": [
+      "fa-estructura"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "mezcla-marketing",
+    "nombre": "Mezcla de marketing (4 P)",
+    "frases": [
+      "4p",
+      "4 p",
+      "cuatro p",
+      "marketing mix",
+      "mezcla de marketing",
+      "producto precio plaza y promocion",
+      "canales de distribucion",
+      "mezcla promocional",
+      "marca"
+    ],
+    "subtemas": [
+      "mk-4p",
+      "mk-canales",
+      "mk-mezcla-promocional",
+      "mk-marca"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "segmentacion",
+    "nombre": "Segmentación, mercado meta y posicionamiento",
+    "frases": [
+      "segment*",
+      "mercado meta",
+      "mercado objetivo",
+      "publico objetivo",
+      "posicionamiento",
+      "buyer persona",
+      "nicho de mercado"
+    ],
+    "subtemas": [
+      "mk-segmentacion",
+      "mk-mercado-meta",
+      "mk-posicionamiento"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "precios-marketing",
+    "nombre": "Fijación de precios y ciclo de vida",
+    "frases": [
+      "fijacion de precio*",
+      "estrategia* de precio*",
+      "precio de penetracion",
+      "descremado",
+      "ciclo de vida del producto",
+      "lanzamiento de un producto"
+    ],
+    "subtemas": [
+      "mk-fijacion-precios",
+      "mk-precios-nuevos",
+      "mk-ciclo-vida"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "marketing-digital",
+    "nombre": "Métricas del marketing digital",
+    "frases": [
+      "marketing digital",
+      "tasa de conversion",
+      "costo por clic",
+      "redes sociales de la marca",
+      "metricas digitales"
+    ],
+    "subtemas": [
+      "mk-metricas-digitales"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "investigacion-mercados",
+    "nombre": "Investigación de mercados",
+    "frases": [
+      "investigacion de mercado*",
+      "estudio de mercado",
+      "cuestionario",
+      "fuentes primarias",
+      "fuentes secundarias",
+      "tablas cruzadas",
+      "conducta del consumidor",
+      "comportamiento del consumidor",
+      "proceso de compra",
+      "encuesta*",
+      "disen* una encuesta",
+      "satisfaccion de los cliente*",
+      "preguntas para conocer",
+      "grupo focal"
+    ],
+    "subtemas": [
+      "im-pasos",
+      "im-fuentes",
+      "im-tablas-cruzadas",
+      "im-factores",
+      "mk-decision-compra"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "estadistica"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "excel-funciones",
+    "nombre": "Funciones de Excel",
+    "frases": [
+      "buscarv",
+      "buscarx",
+      "vlookup",
+      "funcion si",
+      "sumar si",
+      "contar si",
+      "tabla* dinamica*",
+      "formato condicional",
+      "referencia* absoluta*",
+      "referencia* relativa*",
+      "funcion si error",
+      "validacion de datos",
+      "excel",
+      "hoja de calculo"
+    ],
+    "subtemas": [
+      "ii-funciones-buscar",
+      "ii-funciones-si",
+      "ii-funciones-sumarsi",
+      "ii-datos-tablas-dinamicas",
+      "ii-datos-formato-condicional",
+      "ii-formulas-referencias",
+      "ii-formulas-errores",
+      "ii-datos-validacion"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "excel-financiero",
+    "nombre": "Funciones financieras de Excel",
+    "frases": [
+      "funcion pago",
+      "funcion vna",
+      "funcion tir",
+      "funcion va",
+      "funcion vf"
+    ],
+    "subtemas": [
+      "ii-financieras-pago",
+      "ii-financieras-vna-tir",
+      "ii-financieras-va-vf",
+      "mf-excel"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "laboratorio"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "citas-apa",
+    "nombre": "Citas y referencias APA",
+    "frases": [
+      "apa",
+      "normas apa",
+      "formato apa",
+      "referencia* bibliografica*",
+      "lista de referencias",
+      "cit*",
+      "cita textual",
+      "bibliografia",
+      "parafrase*"
+    ],
+    "subtemas": [
+      "mt-referencias",
+      "mt-citas",
+      "mt-integrar",
+      "mt-bibliografia-anotada"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "citas"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "metodologia",
+    "nombre": "Metodología de la investigación",
+    "frases": [
+      "marco teorico",
+      "pregunta de investigacion",
+      "planteamiento del problema",
+      "variables de investigacion",
+      "niveles de medicion",
+      "escala nominal",
+      "escala ordinal",
+      "diseno experimental",
+      "entrevista",
+      "observacion directa"
+    ],
+    "subtemas": [
+      "mt-evidencia",
+      "mt-medicion",
+      "mt-fuentes-propias",
+      "mt-diseno-experimental",
+      "mt-fuentes-existentes"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "citas"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "comportamiento-organizacional",
+    "nombre": "Motivación, liderazgo y grupos",
+    "frases": [
+      "motivacion",
+      "maslow",
+      "herzberg",
+      "teoria de las expectativas",
+      "liderazgo",
+      "estilos de liderazgo",
+      "trabajo en equipo",
+      "conflicto* laboral*",
+      "comunicacion organizacional",
+      "cambio organizacional",
+      "clima laboral"
+    ],
+    "subtemas": [
+      "co-contenido",
+      "co-proceso",
+      "co-liderazgo-situacional",
+      "co-liderazgo-conductual",
+      "co-grupos-trabajo",
+      "co-conflicto",
+      "co-cambio"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "talento-humano",
+    "nombre": "Gestión del talento humano",
+    "frases": [
+      "reclutamiento",
+      "seleccion de personal",
+      "capacitacion",
+      "evaluacion del desempeno",
+      "plan de sucesion",
+      "perfil del puesto",
+      "descripcion de puestos"
+    ],
+    "subtemas": [
+      "th-reclutamiento",
+      "th-seleccion",
+      "th-capacitacion",
+      "th-evaluacion",
+      "th-sucesion",
+      "th-planeacion"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "emprendimiento",
+    "nombre": "Emprendimiento y plan de negocios",
+    "frases": [
+      "plan de negocio*",
+      "modelo de negocio*",
+      "canvas",
+      "idea de negocio",
+      "estudio de factibilidad",
+      "factibilidad",
+      "emprendimiento",
+      "propuesta de valor",
+      "oportunidad de negocio"
+    ],
+    "subtemas": [
+      "em-plan",
+      "em-modelo",
+      "em-factibilidad",
+      "em-oportunidad-que-es",
+      "ep-factibilidad"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "foda"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "etica-profesional",
+    "nombre": "Ética profesional del contador",
+    "frases": [
+      "codigo de etica",
+      "etica profesional",
+      "confidencialidad",
+      "conflicto de interes*",
+      "soborno",
+      "independencia del auditor",
+      "amenaza* a la independencia",
+      "escepticismo profesional"
+    ],
+    "subtemas": [
+      "et-codigo-que-es",
+      "et-principios-confidencialidad",
+      "et-situaciones-incentivos",
+      "et-marco-amenazas",
+      "et-codigo-interes-publico"
+    ],
+    "formulas": [],
+    "herramientas": [],
+    "entregables": []
+  },
+  {
+    "id": "algebra-gestion",
+    "nombre": "Funciones, ecuaciones y matrices",
+    "frases": [
+      "sistema de ecuaciones",
+      "sistema* de dos ecuaciones",
+      "matriz",
+      "matrices",
+      "gauss jordan",
+      "pendiente de la recta",
+      "funcion lineal",
+      "funcion cuadratica",
+      "funcion exponencial",
+      "logaritmo*",
+      "dominio y rango"
+    ],
+    "subtemas": [
+      "mg-sistemas-2",
+      "mg-matrices",
+      "mg-gauss",
+      "mg-pendiente",
+      "mg-modelado",
+      "mg-cuadraticas",
+      "mg-exponenciales",
+      "mg-logaritmos",
+      "mg-dominio"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "graficador"
+    ],
+    "entregables": []
+  },
+  {
+    "id": "estructuras-mercado",
+    "nombre": "Escasez y estructuras de mercado",
+    "frases": [
+      "competencia perfecta",
+      "monopolio",
+      "oligopolio",
+      "costo de oportunidad",
+      "frontera de posibilidades de produccion",
+      "restriccion presupuestaria",
+      "teoria de juegos"
+    ],
+    "subtemas": [
+      "mi-competencia-perfecta",
+      "mi-monopolio",
+      "mi-oligopolio",
+      "mi-restriccion",
+      "mi-fpp"
+    ],
+    "formulas": [],
+    "herramientas": [
+      "mercado"
+    ],
+    "entregables": []
+  }
+]
