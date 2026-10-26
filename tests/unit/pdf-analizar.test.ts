@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 
 const root = join(__dirname, '..', '..');
 
-/** The review tool reads a real PDF (generated with Chromium) with pdf.js in Node and breaks it down. */
+/** The review tool reads a real PDF (printed to PDF by Chromium) with pdf.js in Node and breaks it down. */
 describe('herramienta pdf:analizar', () => {
   it('identifies the subject, its definitions and figures of a real PDF', () => {
     const report = execFileSync(

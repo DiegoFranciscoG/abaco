@@ -5,7 +5,7 @@ import type { Definition } from './analyze';
 /**
  * Practice exams and flashcards built from ÁBACO's own content (theory, examples, key points, common mistakes and
  * exercises of a subject) and, optionally, from the definitions found in the student's PDF. Questions are
- * generated with plain rules, so every correct answer comes from a verified text, never from guessing.
+ * built from plain rules, so every correct answer comes from a verified text, never from guessing.
  */
 export type ExamSource = 'abaco' | 'pdf' | 'mixto';
 
