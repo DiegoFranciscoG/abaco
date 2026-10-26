@@ -18,6 +18,7 @@ import { useToast } from '../../ui/use-toast';
 import { AuthorPanel } from '../about/AuthorPanel';
 import { limitReason, recordSuggestion } from './limits';
 import { openMailApp } from './open-mail';
+import { copyText } from '../../ui/clipboard';
 
 const MATERIA_IDS = new Set(materias.map((m) => m.id));
 const FIELD_ORDER = ['tipo', 'materia', 'mensaje', 'fuente', 'consentimiento'] as const;
@@ -51,7 +52,7 @@ function Sent({ mail, onAgain }: { mail: SuggestionMail; onAgain: () => void }) 
   useEffect(() => heading.current?.focus(), []);
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(`Para: ${address}\nAsunto: ${mail.subject}\n\n${mail.body}`);
+      await copyText(`Para: ${address}\nAsunto: ${mail.subject}\n\n${mail.body}`);
       toast.show('Mensaje copiado');
     } catch {
       toast.show('Tu navegador no permitió copiar. Selecciona el texto y cópialo a mano.', 'error');

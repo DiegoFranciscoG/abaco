@@ -9,6 +9,7 @@ import { Icon } from '../../../ui/icons';
 import { useProfile } from '../../../ui/use-profile';
 import { NumberField, ToolLayout } from '../ToolLayout';
 import { num, readNumber } from '../format';
+import { newId } from '../../../domain/id';
 
 interface Row {
   id: string;
@@ -30,7 +31,7 @@ function defaultPeriod(date = new Date()): string {
   return `${date.getFullYear()}-${date.getMonth() < 6 ? 1 : 2}`;
 }
 
-const emptyRow = (): Row => ({ id: crypto.randomUUID(), nombre: '', peso: '', nota: '' });
+const emptyRow = (): Row => ({ id: newId(), nombre: '', peso: '', nota: '' });
 
 function toForm(saved: Calificacion | null): Form {
   if (!saved) return { notaMaxima: '10', objetivo: '7', rows: [emptyRow(), emptyRow()] };

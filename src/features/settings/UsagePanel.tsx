@@ -8,6 +8,7 @@ import { Icon } from '../../ui/icons';
 import { AppLink } from '../../ui/primitives';
 import { useToday } from '../../ui/use-vigencia';
 import { useToast } from '../../ui/use-toast';
+import { copyText } from '../../ui/clipboard';
 
 /** «Tu uso»: what ÁBACO counts on this device, shown to the student, who alone decides whether to share it. */
 export function UsagePanel() {
@@ -21,7 +22,7 @@ export function UsagePanel() {
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(anonymousSummary(metrics));
+      await copyText(anonymousSummary(metrics));
       toast.show('Resumen copiado: solo tiene números, sin fechas ni datos tuyos.');
     } catch {
       toast.show('Tu navegador no permitió copiar el resumen.', 'error');

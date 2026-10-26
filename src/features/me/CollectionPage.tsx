@@ -16,6 +16,7 @@ import { AppLink, EmptyState, PageHeader, Skeleton } from '../../ui/primitives';
 import { downloadFile } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
 import { COLOR_HEX } from './colors';
+import { copyText } from '../../ui/clipboard';
 
 export default function CollectionPage() {
   const { coleccionId = '' } = useParams();
@@ -65,7 +66,7 @@ export default function CollectionPage() {
     }
     const url = `${location.origin}${location.pathname}#/coleccion-compartida?d=${encoded}`;
     try {
-      await navigator.clipboard.writeText(url);
+      await copyText(url);
       void countUsage('coleccion-compartida');
       toast.show('Enlace copiado: lleva la lista de la colección, sin tus apuntes.');
     } catch {

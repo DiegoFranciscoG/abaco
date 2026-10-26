@@ -9,6 +9,7 @@ import { Icon } from '../../ui/icons';
 import { AppLink, EmptyState, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
 import { useToast } from '../../ui/use-toast';
 import { SelectInput, TextInput } from '../deliverables/fields';
+import { copyText } from '../../ui/clipboard';
 
 type Sheet = 'estudiante' | 'solucionario';
 const LEVEL = { 1: 'Básico', 2: 'Intermedio', 3: 'Avanzado' } as const;
@@ -48,7 +49,7 @@ export default function TeacherPage() {
 
   const copyLink = async () => {
     try {
-      await navigator.clipboard.writeText(`${location.origin}${location.pathname}#${path}`);
+      await copyText(`${location.origin}${location.pathname}#${path}`);
       void countUsage('taller');
       toast.show('Enlace copiado: tus estudiantes abren el taller y se corrigen solos.');
     } catch {

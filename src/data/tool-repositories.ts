@@ -3,6 +3,7 @@ import { INITIAL_SM2, nextReview, review, type Quality } from '../domain/tools/s
 import { getDb, type AbacoDB } from './db';
 import { ValidationError } from './repositories';
 import type { Asiento, Diario, Documento, LineaAsiento, Tablero, Tarjeta } from './types';
+import { newId } from '../domain/id';
 
 export const TOOL_LIMITS = {
   documentTitle: 120,
@@ -20,7 +21,6 @@ export const TOOL_LIMITS = {
 } as const;
 
 const now = (): string => new Date().toISOString();
-const newId = (): string => crypto.randomUUID();
 
 function text(value: string, field: string, max: number, allowEmpty = false): string {
   const trimmed = value.trim();

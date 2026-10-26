@@ -4,6 +4,7 @@ import { isoDay } from '../domain/content/vigencia';
 import { getDb, type AbacoDB } from './db';
 import { ValidationError } from './repositories';
 import type { Calificacion, ComponenteNota, Entregable, ErrorRepaso, UsoDia } from './types';
+import { newId } from '../domain/id';
 
 /** Everyday tools: grades per subject, failed questions under review, saved deliverables and usage counters. */
 export const EVERYDAY_LIMITS = {
@@ -49,7 +50,7 @@ export async function saveCalificacion(
   }
   const clamp = (n: number) => Math.min(input.notaMaxima, Math.max(0, n));
   const componentes: ComponenteNota[] = input.componentes.map((c, i) => ({
-    id: c.id || crypto.randomUUID(),
+    id: c.id || newId(),
     nombre: c.nombre.trim().slice(0, EVERYDAY_LIMITS.componentName) || `Componente ${i + 1}`,
     peso: Number.isFinite(c.peso) ? Math.min(100, Math.max(0, c.peso)) : 0,
     nota: c.nota === null || !Number.isFinite(c.nota) ? null : clamp(c.nota),
@@ -59,7 +60,7 @@ export async function saveCalificacion(
     throw new ValidationError('Llegaste al máximo de materias guardadas. Borra un período antiguo.');
   }
   const row: Calificacion = {
-    id: existing?.id ?? crypto.randomUUID(),
+    id: existing?.id ?? newId(),
     materiaId: input.materiaId,
     periodo,
     notaMaxima: input.notaMaxima,
@@ -203,7 +204,7 @@ export async function saveEntregable(
     );
   }
   const row: Entregable = {
-    id: existing?.id ?? crypto.randomUUID(),
+    id: existing?.id ?? newId(),
     tipo: input.tipo,
     titulo,
     entradas: input.entradas,

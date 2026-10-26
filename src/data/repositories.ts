@@ -17,6 +17,7 @@ import {
   type Recordatorio,
   type RefTipo,
 } from './types';
+import { newId } from '../domain/id';
 
 export class ValidationError extends Error {
   constructor(message: string) {
@@ -39,7 +40,6 @@ export const LIMITS = {
 } as const;
 
 const now = (): string => new Date().toISOString();
-const newId = (): string => crypto.randomUUID();
 
 function requireText(value: string, field: string, max: number, allowEmpty = false): string {
   const trimmed = value.trim();
@@ -78,7 +78,7 @@ export async function setMeta(clave: string, valor: unknown, db: AbacoDB = getDb
 export async function getDeviceId(db: AbacoDB = getDb()): Promise<string> {
   const existing = await getMeta<string>('deviceId', db);
   if (existing) return existing;
-  const created = crypto.randomUUID();
+  const created = newId();
   await setMeta('deviceId', created, db);
   return created;
 }

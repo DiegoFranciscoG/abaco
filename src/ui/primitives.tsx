@@ -8,6 +8,7 @@ import { useReducedMotion } from './hooks';
 import { Icon, type IconName } from './icons';
 import { useToast } from './use-toast';
 import { formatDate } from './utils';
+import { copyText } from './clipboard';
 
 /** Router link with a cross-fade view transition (disabled when motion is reduced). */
 export function AppLink({ viewTransition, ...props }: LinkProps) {
@@ -219,7 +220,7 @@ export function CopyButton({
   const [done, setDone] = useState(false);
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(text);
+      await copyText(text);
       setDone(true);
       toast.show('Copiado al portapapeles');
       window.setTimeout(() => setDone(false), 1600);

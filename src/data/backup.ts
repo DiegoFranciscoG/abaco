@@ -10,6 +10,7 @@ import {
 } from './db';
 import { getDeviceId } from './repositories';
 import { ACCOUNT_KINDS, COLLECTION_COLORS } from './types';
+import { newId } from '../domain/id';
 
 export {
   BACKUP_REMINDER_DAYS,
@@ -617,7 +618,7 @@ export async function saveSharedCollection(
   data: SharedCollection['coleccion'],
   db: AbacoDB = getDb(),
 ): Promise<string> {
-  const id = crypto.randomUUID();
+  const id = newId();
   const timestamp = new Date().toISOString();
   await db.colecciones.put({
     ...data,

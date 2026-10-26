@@ -2,6 +2,7 @@ import { PDF_TEXT_MAX } from './backup';
 import { getDb, type AbacoDB } from './db';
 import { ValidationError } from './repositories';
 import type { DocumentoPdf, Examen } from './types';
+import { newId } from '../domain/id';
 
 /** Study area: text of the student's PDFs (never the file) and practice exam results, only on this device. */
 export const STUDY_LIMITS = { pdfs: 30, pdfName: 200, exams: 2000 } as const;
@@ -19,7 +20,7 @@ export async function savePdf(
   }
   const nombre = input.nombre.trim().slice(0, STUDY_LIMITS.pdfName) || 'documento.pdf';
   const row: DocumentoPdf = {
-    id: crypto.randomUUID(),
+    id: newId(),
     nombre,
     materiaId: input.materiaId,
     paginas: Math.max(1, Math.floor(input.paginas)),
@@ -44,7 +45,7 @@ export async function deletePdf(id: string, db: AbacoDB = getDb()): Promise<void
 export async function saveExam(input: Omit<Examen, 'id' | 'fecha'>, db: AbacoDB = getDb()): Promise<Examen> {
   if (input.total < 1 || input.correctas < 0 || input.correctas > input.total)
     throw new ValidationError('Resultado de examen inválido.');
-  const row: Examen = { ...input, id: crypto.randomUUID(), fecha: now() };
+  const row: Examen = { ...input, id: newId(), fecha: now() };
   await db.examenes.put(row);
   const count = await db.examenes.count();
   if (count > STUDY_LIMITS.exams) {

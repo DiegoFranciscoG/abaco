@@ -9,6 +9,7 @@ import { AppLink, Dialog, Notice } from '../../ui/primitives';
 import { AuthorPanel } from '../about/AuthorPanel';
 import { limitReason, recordSuggestion } from '../suggestions/limits';
 import { openMailApp } from '../suggestions/open-mail';
+import { copyText } from '../../ui/clipboard';
 
 type Sent = { how: 'share' | 'mail'; nombre: string };
 
@@ -68,7 +69,7 @@ export function SharePdfDialog({
       file !== undefined && typeof navigator.canShare === 'function' && navigator.canShare({ files: [file] });
     if (canShareFile && file) {
       try {
-        await navigator.clipboard?.writeText(address).catch(() => undefined);
+        await copyText(address).catch(() => undefined);
         await navigator.share({
           files: [file],
           title: mail.subject,

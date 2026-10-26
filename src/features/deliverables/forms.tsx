@@ -10,6 +10,7 @@ import type { RazonesInput } from '../../domain/deliverables/razones-financieras
 import { MAX_TRABAJADORES, type RolPagosInput } from '../../domain/deliverables/rol-pagos';
 import { KIND_LABEL, SUGGESTED_ACCOUNTS } from '../../domain/tools/journal';
 import { AddButton, CheckInput, NumInput, RowCard, SelectInput, TextInput } from './fields';
+import { newId } from '../../domain/id';
 
 export interface FormProps<I> {
   value: I;
@@ -23,10 +24,10 @@ const grid = 'grid gap-3 sm:grid-cols-2 lg:grid-cols-3';
  * show the values of the row that moved up.
  */
 function useRowKeys(length: number) {
-  const [keys, setKeys] = useState(() => Array.from({ length }, () => crypto.randomUUID()));
+  const [keys, setKeys] = useState(() => Array.from({ length }, () => newId()));
   return {
     keys,
-    add: () => setKeys((k) => [...k, crypto.randomUUID()]),
+    add: () => setKeys((k) => [...k, newId()]),
     remove: (i: number) => setKeys((k) => k.filter((_, j) => j !== i)),
   };
 }
