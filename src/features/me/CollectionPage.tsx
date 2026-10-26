@@ -1,7 +1,8 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { exportCollection } from '../../data/backup';
+import { encodeCollectionLink, exportCollection } from '../../data/backup';
+import { countUsage } from '../../data/everyday-repositories';
 import { getDb } from '../../data/db';
 import {
   deleteCollection,
@@ -52,7 +53,24 @@ export default function CollectionPage() {
       }
     }
     downloadFile(fileName, text, 'application/json');
+    void countUsage('coleccion-compartida');
     toast.show('Colección descargada: envíala a tu grupo y la pueden importar en Mi espacio');
+  };
+
+  const copyLink = async () => {
+    const encoded = encodeCollectionLink(collection);
+    if (!encoded) {
+      toast.show('La colección es muy grande para un enlace: compártela como archivo.', 'info');
+      return;
+    }
+    const url = `${location.origin}${location.pathname}#/coleccion-compartida?d=${encoded}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      void countUsage('coleccion-compartida');
+      toast.show('Enlace copiado: lleva la lista de la colección, sin tus apuntes.');
+    } catch {
+      toast.show('Tu navegador no permitió copiar el enlace.', 'error');
+    }
   };
 
   return (
@@ -81,7 +99,10 @@ export default function CollectionPage() {
               <Icon name="note" size={18} /> Editar
             </button>
             <button type="button" className="btn btn-soft" onClick={() => void share()}>
-              <Icon name="upload" size={18} /> Compartir
+              <Icon name="upload" size={18} /> Compartir archivo
+            </button>
+            <button type="button" className="btn btn-ghost" onClick={() => void copyLink()}>
+              <Icon name="copy" size={18} /> Copiar enlace
             </button>
             <button
               type="button"

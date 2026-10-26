@@ -33,6 +33,7 @@ export const routes: RouteObject[] = [
       { path: 'practica/:ejercicioId', ...page(() => import('../features/practice/ExercisePage')) },
       { path: 'mi-espacio', ...page(() => import('../features/me/MyPage')) },
       { path: 'coleccion/:coleccionId', ...page(() => import('../features/me/CollectionPage')) },
+      { path: 'coleccion-compartida', ...page(() => import('../features/me/SharedCollectionPage')) },
       { path: 'apps', ...page(() => import('../features/apps/AppsPage')) },
       { path: 'glosario', ...page(() => import('../features/glossary/GlossaryPage')) },
       { path: 'ajustes', ...page(() => import('../features/settings/SettingsPage')) },

@@ -506,22 +506,64 @@ export async function restoreBackup(backup: Backup, mode: RestoreMode, db: Abaco
 // ---------------------------------------------------------------- shared collections
 
 export const COLLECTION_FORMAT = 'abaco-coleccion';
+/** A link carries the collection itself (after the #, never sent to a server); longer ones go as a file. */
+export const COLLECTION_LINK_MAX = 6000;
 
-const sharedCollectionSchema = z.object({
+/** Only routes inside ÁBACO ("/formulas/van"): a shared link must never carry an outside address. */
+const internalRoute = z
+  .string()
+  .max(500)
+  .regex(/^\/(?![/\\])[^\s]*$/, 'Ruta interna no válida');
+const sharedItemSchema = z.object({
+  tipo: starKind,
+  refId: shortText,
+  titulo: z.string().max(1000),
+  ruta: internalRoute.optional(),
+  snapshot: snapshotSchema.optional(),
+});
+const sharedV2Schema = z.object({
+  formato: z.literal(COLLECTION_FORMAT),
+  version: z.literal(2),
+  coleccion: z.object({
+    nombre: z.string().min(1).max(60),
+    descripcion: z.string().max(280),
+    color: z.enum(COLLECTION_COLORS),
+    items: z.array(sharedItemSchema).max(500),
+  }),
+});
+/** Version 1 files also carried the collection dates; they are still accepted and the dates are dropped. */
+const sharedV1Schema = z.object({
   formato: z.literal(COLLECTION_FORMAT),
   version: z.literal(1),
   coleccion: coleccionSchema.omit({ id: true }),
 });
-export type SharedCollection = z.infer<typeof sharedCollectionSchema>;
+export type SharedCollection = z.infer<typeof sharedV2Schema>;
 
-/** A collection exported for a study group. It contains no notes and no device identifier. */
+/**
+ * A collection exported for a study group: its name, description, color and the items the student put in it.
+ * No notes, no dates, no internal or device identifier (test T-18).
+ */
+export function sharedCollection(collection: z.infer<typeof coleccionSchema>): SharedCollection {
+  return {
+    formato: COLLECTION_FORMAT,
+    version: 2,
+    coleccion: {
+      nombre: collection.nombre,
+      descripcion: collection.descripcion,
+      color: collection.color,
+      items: collection.items.map((item) => ({
+        tipo: item.tipo,
+        refId: item.refId,
+        titulo: item.titulo,
+        ...(item.ruta ? { ruta: item.ruta } : {}),
+        ...(item.snapshot ? { snapshot: item.snapshot } : {}),
+      })),
+    },
+  };
+}
+
 export function exportCollection(collection: z.infer<typeof coleccionSchema>): string {
-  const { id: _id, ...rest } = collection;
-  return JSON.stringify(
-    { formato: COLLECTION_FORMAT, version: 1, coleccion: rest } satisfies SharedCollection,
-    null,
-    1,
-  );
+  return JSON.stringify(sharedCollection(collection), null, 1);
 }
 
 export function parseSharedCollection(text: string): SharedCollection['coleccion'] {
@@ -532,21 +574,61 @@ export function parseSharedCollection(text: string): SharedCollection['coleccion
   } catch {
     throw new BackupError('El archivo no es una colección de ÁBACO.');
   }
-  const parsed = sharedCollectionSchema.safeParse(raw);
-  if (!parsed.success) throw new BackupError('El archivo no es una colección válida de ÁBACO.');
-  return parsed.data.coleccion;
+  const v2 = sharedV2Schema.safeParse(raw);
+  if (v2.success) return v2.data.coleccion;
+  const v1 = sharedV1Schema.safeParse(raw);
+  if (v1.success) {
+    const { nombre, descripcion, color, items } = v1.data.coleccion;
+    return { nombre, descripcion, color, items: items.map(({ agregadoEn: _a, ...item }) => item) };
+  }
+  throw new BackupError('El archivo no es una colección válida de ÁBACO.');
 }
 
-export async function importSharedCollection(text: string, db: AbacoDB = getDb()): Promise<string> {
-  const data = parseSharedCollection(text);
+const toBase64Url = (bytes: Uint8Array): string => {
+  let bin = '';
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+};
+const fromBase64Url = (text: string): Uint8Array => {
+  const bin = atob(text.replace(/-/g, '+').replace(/_/g, '/'));
+  return Uint8Array.from(bin, (c) => c.charCodeAt(0));
+};
+
+/** The collection packed for a link (base64url of its JSON), or null when it is too long for one. */
+export function encodeCollectionLink(collection: z.infer<typeof coleccionSchema>): string | null {
+  const encoded = toBase64Url(new TextEncoder().encode(JSON.stringify(sharedCollection(collection))));
+  return encoded.length <= COLLECTION_LINK_MAX ? encoded : null;
+}
+
+export function decodeCollectionLink(param: string): SharedCollection['coleccion'] {
+  if (param.length > COLLECTION_LINK_MAX || !/^[A-Za-z0-9_-]+$/.test(param)) {
+    throw new BackupError('El enlace de la colección está incompleto o dañado.');
+  }
+  let text: string;
+  try {
+    text = new TextDecoder('utf-8', { fatal: true }).decode(fromBase64Url(param));
+  } catch {
+    throw new BackupError('El enlace de la colección está incompleto o dañado.');
+  }
+  return parseSharedCollection(text);
+}
+
+export async function saveSharedCollection(
+  data: SharedCollection['coleccion'],
+  db: AbacoDB = getDb(),
+): Promise<string> {
   const id = crypto.randomUUID();
   const timestamp = new Date().toISOString();
   await db.colecciones.put({
     ...data,
     id,
-    nombre: data.nombre,
+    items: data.items.map((item) => ({ ...item, agregadoEn: timestamp })),
     creadoEn: timestamp,
     actualizadoEn: timestamp,
   });
   return id;
+}
+
+export async function importSharedCollection(text: string, db: AbacoDB = getDb()): Promise<string> {
+  return saveSharedCollection(parseSharedCollection(text), db);
 }
