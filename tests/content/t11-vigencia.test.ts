@@ -114,3 +114,17 @@ describe('T-11: ninguna cifra normativa vencida', () => {
     }
   });
 });
+
+/** Monthly statistics do not expire, but the author hears about it when a newer value is probably out. */
+describe('indicadores mensuales', () => {
+  it('each indicator says which month it describes and when to look for a newer value', () => {
+    for (const i of content.indicadores) {
+      expect(i.actualizar_desde > `${i.periodo}-01`, i.id).toBe(true);
+      if (TODAY >= i.actualizar_desde) {
+        const message = `El indicador «${i.id}» (${i.periodo}) puede tener un dato más reciente desde el ${i.actualizar_desde}`;
+        console.warn(process.env.GITHUB_ACTIONS ? `::warning title=Indicador por actualizar::${message}` : message);
+      }
+    }
+    expect(content.indicadores.length).toBeGreaterThanOrEqual(8);
+  });
+});

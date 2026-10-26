@@ -1,0 +1,152 @@
+[
+  {
+    "id": "inflacion-anual",
+    "nombre": "Inflación anual",
+    "descripcion": "Variación del índice de precios al consumidor de septiembre de 2026 respecto de septiembre de 2025.",
+    "grupo": "precios",
+    "valor": 1.34,
+    "unidad": "%",
+    "texto": "1,34 %",
+    "periodo": "2026-09",
+    "actualizar_desde": "2026-11-10",
+    "fuente": {
+      "ref": "inec-ipc-2026-09"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "inflacion-mensual",
+    "nombre": "Inflación mensual",
+    "descripcion": "Variación del índice de precios al consumidor de septiembre de 2026 respecto de agosto de 2026.",
+    "grupo": "precios",
+    "valor": 0.3,
+    "unidad": "%",
+    "texto": "0,30 %",
+    "periodo": "2026-09",
+    "actualizar_desde": "2026-11-10",
+    "fuente": {
+      "ref": "inec-ipc-2026-09"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "inflacion-acumulada",
+    "nombre": "Inflación acumulada en el año",
+    "descripcion": "Variación del índice de precios al consumidor de septiembre de 2026 respecto de diciembre de 2025.",
+    "grupo": "precios",
+    "valor": 1.65,
+    "unidad": "%",
+    "texto": "1,65 %",
+    "periodo": "2026-09",
+    "actualizar_desde": "2026-11-10",
+    "fuente": {
+      "ref": "inec-ipc-2026-09"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "canasta-familiar-basica",
+    "nombre": "Canasta familiar básica",
+    "descripcion": "Costo de la canasta familiar básica de consumo de septiembre de 2026, indicador complementario del IPC.",
+    "grupo": "precios",
+    "valor": 833.82,
+    "unidad": "USD",
+    "texto": "USD 833,82",
+    "periodo": "2026-09",
+    "actualizar_desde": "2026-11-10",
+    "fuente": {
+      "ref": "inec-ipc-2026-09"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-pasiva-referencial",
+    "nombre": "Tasa pasiva referencial",
+    "descripcion": "Promedio ponderado de las tasas que pagan las instituciones financieras por los depósitos, publicado por el Banco Central para octubre de 2026.",
+    "grupo": "tasas",
+    "valor": 4.93,
+    "unidad": "%",
+    "texto": "4,93 % anual",
+    "periodo": "2026-10",
+    "actualizar_desde": "2026-11-01",
+    "fuente": {
+      "ref": "bce-tasas-2026-10"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-consumo-referencial",
+    "nombre": "Crédito de consumo: tasa referencial",
+    "descripcion": "Tasa activa efectiva referencial del segmento consumo para octubre de 2026.",
+    "grupo": "tasas",
+    "valor": 15.75,
+    "unidad": "%",
+    "texto": "15,75 % anual",
+    "periodo": "2026-10",
+    "actualizar_desde": "2026-11-01",
+    "fuente": {
+      "ref": "bce-tasas-2026-10"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-consumo-maxima",
+    "nombre": "Crédito de consumo: tasa máxima",
+    "descripcion": "Tasa activa efectiva máxima del segmento consumo vigente en octubre de 2026, fijada por la Junta de Política y Regulación Financiera y Monetaria.",
+    "grupo": "tasas",
+    "valor": 16.77,
+    "unidad": "%",
+    "texto": "16,77 % anual",
+    "periodo": "2026-10",
+    "actualizar_desde": "2026-11-01",
+    "fuente": {
+      "ref": "bce-tasas-2026-10"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-pymes-referencial",
+    "nombre": "Crédito productivo PYMES: tasa referencial",
+    "descripcion": "Tasa activa efectiva referencial del segmento productivo PYMES para octubre de 2026.",
+    "grupo": "tasas",
+    "valor": 8.99,
+    "unidad": "%",
+    "texto": "8,99 % anual",
+    "periodo": "2026-10",
+    "actualizar_desde": "2026-11-01",
+    "fuente": {
+      "ref": "bce-tasas-2026-10"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-microcredito-minorista-maxima",
+    "nombre": "Microcrédito minorista: tasa máxima",
+    "descripcion": "Tasa activa efectiva máxima del segmento microcrédito minorista vigente en octubre de 2026.",
+    "grupo": "tasas",
+    "valor": 28.23,
+    "unidad": "%",
+    "texto": "28,23 % anual",
+    "periodo": "2026-10",
+    "actualizar_desde": "2026-11-01",
+    "fuente": {
+      "ref": "bce-tasas-2026-10"
+    },
+    "verificado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-inmobiliario-referencial",
+    "nombre": "Crédito inmobiliario: tasa referencial",
+    "descripcion": "Tasa activa efectiva referencial del segmento inmobiliario para octubre de 2026.",
+    "grupo": "tasas",
+    "valor": 8.37,
+    "unidad": "%",
+    "texto": "8,37 % anual",
+    "periodo": "2026-10",
+    "actualizar_desde": "2026-11-01",
+    "fuente": {
+      "ref": "bce-tasas-2026-10"
+    },
+    "verificado_en": "2026-10-26"
+  }
+]

@@ -471,6 +471,58 @@
     ]
   },
   {
+    "id": "retenciones-renta",
+    "nombre": "Retenciones en la fuente del impuesto a la renta",
+    "categoria": "tributario",
+    "descripcion": "Porcentaje que el agente de retención descuenta del pago a su proveedor y entrega al SRI como anticipo del impuesto a la renta. Estos son los conceptos más frecuentes; la resolución tiene la lista completa.",
+    "texto": "Del 1 % al 10 % según lo que se paga (3 % si no hay un porcentaje específico)",
+    "filas": [
+      {
+        "valor": 0,
+        "concepto": "Compras a negocios populares del RIMPE con comprobante preimpreso; intereses pagados a bancos"
+      },
+      {
+        "valor": 1,
+        "concepto": "Transporte privado de pasajeros y de carga; compras a emprendedores del RIMPE; productos agrícolas y pecuarios en estado natural comprados al productor"
+      },
+      {
+        "valor": 1.75,
+        "concepto": "Los mismos productos agrícolas y pecuarios comprados a comercializadores"
+      },
+      {
+        "valor": 2,
+        "concepto": "Compra de bienes muebles; energía eléctrica; construcción de obra material; primas de seguros; arrendamiento mercantil"
+      },
+      {
+        "valor": 3,
+        "concepto": "Servicios de personas naturales donde predomina la mano de obra; medios de comunicación y agencias de publicidad; rendimientos financieros; todo pago sin un porcentaje específico"
+      },
+      {
+        "valor": 5,
+        "concepto": "Servicios profesionales y comisiones pagados a sociedades residentes"
+      },
+      {
+        "valor": 10,
+        "concepto": "Honorarios a personas naturales donde predomina el intelecto; docencia; arriendo de inmuebles; regalías; notarios"
+      }
+    ],
+    "vigencia": {
+      "desde": "2026-03-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Resolución del SRI NAC-DGERCGC26-00000009, de 27-02-2026, aplicable desde el 01-03-2026; deroga la NAC-DGERCGC24-00000008. Ley de Régimen Tributario Interno, art. 45: el porcentaje no puede superar el 10 % del pago.",
+    "fuente": {
+      "ref": "sri-retenciones-renta-2026"
+    },
+    "cambia": "El SRI la reemplaza por resolución cuando lo considera necesario (la anterior rigió desde 2024 hasta febrero de 2026); se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "retenci[oó]n[^.]{0,40}\\d+(,\\d+)? ?%",
+      "\\d+(,\\d+)? ?% de retenci[oó]n"
+    ]
+  },
+  {
     "id": "rimpe-limites",
     "nombre": "Límites de ingresos del RIMPE",
     "categoria": "tributario",

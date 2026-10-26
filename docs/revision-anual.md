@@ -60,6 +60,7 @@ Fuente para revisar si hubo reformas: la cabecera del PDF indica la fecha de la 
 | `iva-tarifa-general` | 15 %. Revisar si hay un decreto ejecutivo nuevo: la ley permite fijarla entre 13 % y 15 %, y sin decreto sigue la última | Circular del SRI NAC-DGECCGC25-00000006: https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar?id=236482f4-6125-42fd-b073-62c99d08233d&nombre=NAC-DGECCGC25-00000006.pdf — página del IVA: https://www.sri.gob.ec/impuesto-al-valor-agregado-iva | Por decreto, en cualquier momento | 2026-10-26 |
 | `iva-tarifa-construccion` | 5 % para materiales de construcción | SRI, página del IVA: https://www.sri.gob.ec/impuesto-al-valor-agregado-iva | Por reforma de la LRTI | 2026-10-26 |
 | `ir-personas-tabla` | Tabla completa de 10 tramos; en 2026 la fracción básica desgravada es USD 12 208 | SRI, «Tablas de cálculo de Impuesto a la Renta»: https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/58a7f4f6-ab51-48b6-b9ff-a8e97e1a28ef/Tablas%20de%20c%c3%a1lculo%20de%20Impuesto%20a%20la%20Renta.pdf | Cada diciembre: resolución del SRI para el ejercicio siguiente | 2026-10-26 |
+| `retenciones-renta` | Porcentajes de retención en la fuente de renta (0 %, 1 %, 1,75 %, 2 %, 3 %, 5 % y 10 %) desde el 01-03-2026 | SRI, Res. NAC-DGERCGC26-00000009: https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/272ca6a9-d679-4b4e-8da0-fb4671cf5f8f/NAC-DGERCGC26-00000009_Ret_IR.pdf | Por resolución del SRI, sin fecha fija | 2026-10-26 |
 | `ir-sociedades` | Tarifa general de 25 % | SRI, impuesto a la renta: https://www.sri.gob.ec/impuesto-renta | Por reforma de la LRTI | 2026-10-26 |
 | `rimpe-limites` | Hasta USD 300 000 (emprendedores) y USD 20 000 (negocios populares) | SRI, RIMPE: https://www.sri.gob.ec/rimpe | Por reforma de la LRTI | 2026-10-26 |
 | `rimpe-negocios-populares` | Cuotas de USD 0, 5, 15, 35 y 60 | SRI, RIMPE: https://www.sri.gob.ec/rimpe | Por reforma o resolución del SRI | 2026-10-26 |
@@ -71,6 +72,15 @@ Fuente para revisar si hubo reformas: la cabecera del PDF indica la fecha de la 
 |---|---|---|---|---|
 | `capital-pagado-limitada` | 50 % de cada participación al constituirse (art. 102) | Ley de Compañías, texto vigente publicado por el SERCOP: https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf | Solo por reforma legal | 2026-10-26 |
 | `capital-pagado-anonima` | 25 % del capital, una vez inscrita (art. 147) | Ley de Compañías (mismo enlace) | Solo por reforma legal | 2026-10-26 |
+
+## Indicadores mensuales (`content/indicadores.json`)
+
+No son normas: son datos que el INEC y el Banco Central publican cada mes. No vencen, pero desde la fecha de `actualizar_desde` la pantalla «Ecuador en cifras» avisa que puede haber un dato más reciente, y la prueba de indicadores lo anuncia sin fallar. Para actualizarlos:
+
+| Indicadores | Fuente oficial | Cuándo se publica |
+|---|---|---|
+| `inflacion-anual`, `inflacion-mensual`, `inflacion-acumulada`, `canasta-familiar-basica` | INEC, boletín técnico del IPC del mes (por ejemplo https://www.ecuadorencifras.gob.ec/documentos/web-inec/Inflacion/2026/septiembre/BOLETIN_TECNICO_IPC_2026_09.pdf) | Primeros días del mes siguiente |
+| `tasa-pasiva-referencial` y tasas de crédito | Banco Central del Ecuador, tasas de interés vigentes: https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm | Antes de empezar cada mes |
 
 ## Reglas con fecha que no son cifras
 
@@ -84,7 +94,7 @@ No llevan etiqueta de vigencia, pero se releen en la misma revisión:
 
 Si se agregan, entran primero a `content/normativa.json`, con vigencia, y después al contenido:
 
-- La tabla de porcentajes de retención en la fuente del impuesto a la renta y del IVA.
+- Los porcentajes de retención del IVA (30 %, 70 %, 100 % y los de contribuyentes especiales). La resolución base es la NAC-DGERCGC20-00000061, reformada en 2023 por la NAC-DGERCGC23-00000026. No se pudo confirmar que no tenga reformas posteriores, así que queda pendiente de verificar antes de publicarla.
 - Los gastos personales deducibles y su límite, basado en la canasta familiar básica.
 - Las tarifas temporales de IVA para turismo en feriados.
 

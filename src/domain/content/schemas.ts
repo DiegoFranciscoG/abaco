@@ -104,6 +104,12 @@ const cuotaSchema = z.object({
   cuota: z.number().nonnegative(),
 });
 
+/** A rate per concept, as in the withholding tables ("2 %: bienes muebles…"). */
+const filaSchema = z.object({
+  valor: z.number().min(0).max(100),
+  concepto: nonEmpty,
+});
+
 /**
  * A figure of Ecuadorian law or regulation (wage, contribution rate, tax rate or table) that can change with a new
  * norm. It is written once here, with its validity, and every record that uses it declares it in `cifras`.
@@ -120,6 +126,7 @@ export const cifraSchema = z
     unidad: z.enum(['USD', '%', 'horas', 'días', 'meses']).optional(),
     tramos: z.array(tramoSchema).min(2).optional(),
     cuotas: z.array(cuotaSchema).min(2).optional(),
+    filas: z.array(filaSchema).min(2).optional(),
     vigencia: vigenciaSchema,
     base_legal: nonEmpty,
     fuente: fuenteRefSchema,
@@ -130,9 +137,14 @@ export const cifraSchema = z
     detectar: z.array(regexSource).min(1),
   })
   .superRefine((cifra, ctx) => {
-    const forms = [cifra.valor !== undefined, cifra.tramos !== undefined, cifra.cuotas !== undefined];
+    const forms = [
+      cifra.valor !== undefined,
+      cifra.tramos !== undefined,
+      cifra.cuotas !== undefined,
+      cifra.filas !== undefined,
+    ];
     if (forms.filter(Boolean).length !== 1) {
-      ctx.addIssue({ code: 'custom', message: 'Una cifra tiene exactamente uno de: valor, tramos o cuotas' });
+      ctx.addIssue({ code: 'custom', message: 'Una cifra tiene exactamente uno de: valor, tramos, cuotas o filas' });
     }
     if (cifra.valor !== undefined && !cifra.unidad) {
       ctx.addIssue({ code: 'custom', message: 'Un valor necesita su unidad' });
@@ -383,6 +395,31 @@ export type Plantilla = z.infer<typeof plantillaSchema>;
  * subtopics, formulas, tools and deliverables that solve it. Phrases are matched in order; a trailing * in a word
  * accepts any ending ("amortiz*" → amortización, amortizar).
  */
+/**
+ * A statistic published every month (inflation, interest rates). Unlike a normative figure it does not expire: it
+ * is shown with the month it describes, and after `actualizar_desde` the page says a newer value may exist.
+ */
+export const indicadorSchema = z
+  .object({
+    id,
+    nombre: nonEmpty,
+    descripcion: nonEmpty,
+    grupo: z.enum(['precios', 'tasas']),
+    valor: z.number(),
+    unidad: z.enum(['%', 'USD']),
+    texto: nonEmpty,
+    /** Month the value describes (YYYY-MM). */
+    periodo: z.string().regex(/^\d{4}-(0[1-9]|1[0-2])$/),
+    /** From this day the source has probably published a newer value. */
+    actualizar_desde: isoDate,
+    fuente: fuenteRefSchema,
+    verificado_en: isoDate,
+  })
+  .refine((i) => i.actualizar_desde > `${i.periodo}-01`, {
+    message: 'La fecha de actualización tiene que ser posterior al período del dato',
+  });
+export type Indicador = z.infer<typeof indicadorSchema>;
+
 export const conceptoSchema = z.object({
   id,
   nombre: nonEmpty,
@@ -412,3 +449,4 @@ export const glosarioFileSchema = z.array(terminoSchema);
 export const plantillasFileSchema = z.array(plantillaSchema);
 export const normativaFileSchema = z.array(cifraSchema);
 export const enunciadosFileSchema = z.array(conceptoSchema);
+export const indicadoresFileSchema = z.array(indicadorSchema);

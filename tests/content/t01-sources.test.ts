@@ -43,7 +43,10 @@ describe('T-01: toda ficha tiene fuente', () => {
   });
 
   it('every normative figure cites an official source', () => {
-    const problems = content.normativa.map((c) => checkRef(`cifra ${c.id}`, c.fuente)).filter(Boolean);
+    const problems = [
+      ...content.normativa.map((c) => checkRef(`cifra ${c.id}`, c.fuente)),
+      ...content.indicadores.map((i) => checkRef(`indicador ${i.id}`, i.fuente)),
+    ].filter(Boolean);
     expect(problems).toEqual([]);
   });
 
@@ -69,6 +72,7 @@ describe('T-01: toda ficha tiene fuente', () => {
     content.glosario.forEach((t) => collect(t.fuente));
     content.plantillas.forEach((p) => collect(p.fuente));
     content.normativa.forEach((c) => collect(c.fuente));
+    content.indicadores.forEach((i) => collect(i.fuente));
     const orphans = content.fuentes.map((f) => f.id).filter((id) => !used.has(id));
     expect(orphans).toEqual([]);
   });

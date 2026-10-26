@@ -7,6 +7,7 @@ import {
   formulasFileSchema,
   fuentesFileSchema,
   glosarioFileSchema,
+  indicadoresFileSchema,
   materiasFileSchema,
   normativaFileSchema,
   plantillasFileSchema,
@@ -32,7 +33,20 @@ export function loadAllContent() {
   const glosario = glosarioFileSchema.parse(read('glosario.json'));
   const plantillas = plantillasFileSchema.parse(read('plantillas.json'));
   const normativa = normativaFileSchema.parse(read('normativa.json'));
-  return { fuentes, materias, carreras, temarios, formulas, ejercicios, apps, glosario, plantillas, normativa };
+  const indicadores = indicadoresFileSchema.parse(read('indicadores.json'));
+  return {
+    fuentes,
+    materias,
+    carreras,
+    temarios,
+    formulas,
+    ejercicios,
+    apps,
+    glosario,
+    plantillas,
+    normativa,
+    indicadores,
+  };
 }
 
 /** Every content file as raw text (used to look for forbidden material such as university curricula). */

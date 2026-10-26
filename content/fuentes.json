@@ -135,6 +135,15 @@
     "fecha_consulta": "2026-10-26"
   },
   {
+    "id": "sri-retenciones-renta-2026",
+    "titulo": "Resolución NAC-DGERCGC26-00000009: porcentajes de retención en la fuente de impuesto a la renta",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "norma",
+    "url": "https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/272ca6a9-d679-4b4e-8da0-fb4671cf5f8f/NAC-DGERCGC26-00000009_Ret_IR.pdf",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
     "id": "mdt-sbu-2026",
     "titulo": "Salario Básico Unificado 2026: USD 482",
     "autor_editor": "Ministerio del Trabajo del Ecuador",
@@ -385,5 +394,23 @@
     "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
     "licencia": "Uso libre citando al BCE como fuente",
     "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "inec-ipc-2026-09",
+    "titulo": "Boletín técnico del Índice de Precios al Consumidor, septiembre de 2026",
+    "autor_editor": "Instituto Nacional de Estadística y Censos (INEC)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ecuadorencifras.gob.ec/documentos/web-inec/Inflacion/2026/septiembre/BOLETIN_TECNICO_IPC_2026_09.pdf",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "bce-tasas-2026-10",
+    "titulo": "Tasas de interés activas efectivas vigentes y referenciales, octubre de 2026",
+    "autor_editor": "Banco Central del Ecuador (BCE)",
+    "tipo": "pagina_oficial",
+    "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-26"
   }
 ]

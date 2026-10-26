@@ -1,8 +1,9 @@
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it } from 'vitest';
 import type { AbacoDB } from '../../src/data/db';
 import { getTool } from '../../src/domain/tools/catalog';
+import FiguresPage from '../../src/features/figures/FiguresPage';
 import StatementPage from '../../src/features/statement/StatementPage';
 import GradesTool from '../../src/features/tools/grades/GradesTool';
 import { freshDb, renderRoute } from './render';
@@ -60,5 +61,25 @@ describe('everyday tools', () => {
     await user.click(screen.getByRole('button', { name: /¿Qué tema es\?/ }));
     expect(await screen.findByText('No estoy seguro de qué tema es')).toBeInTheDocument();
     await waitFor(async () => expect((await db.uso.toArray())[0]?.eventos.enunciado).toBe(2));
+  }, 30_000);
+
+  it('Ecuador en cifras shows each figure with its validity and source, and monthly data with its month', async () => {
+    const user = userEvent.setup();
+    renderRoute('/cifras', [{ path: '/cifras', element: <FiguresPage /> }]);
+    const sbu = await screen.findByRole('article', { name: 'Salario básico unificado' });
+    expect(within(sbu).getByText('USD 482 al mes')).toBeInTheDocument();
+    expect(within(sbu).getByText(/vigente 2026/)).toBeInTheDocument();
+    expect(within(sbu).getByRole('link', { name: /Salario Básico Unificado 2026/ })).toHaveAttribute(
+      'href',
+      expect.stringContaining('trabajo.gob.ec'),
+    );
+    const ret = screen.getByRole('article', { name: 'Retenciones en la fuente del impuesto a la renta' });
+    expect(within(ret).getByText(/Honorarios a personas naturales/)).toBeInTheDocument();
+    const inflation = screen.getByRole('article', { name: 'Inflación anual' });
+    expect(within(inflation).getByText('Dato de septiembre de 2026')).toBeInTheDocument();
+    expect(within(inflation).getByText('1,34 %')).toBeInTheDocument();
+    // jsdom has no canvas: the page explains it instead of failing silently.
+    await user.click(within(sbu).getByRole('button', { name: /Compartir como imagen/ }));
+    expect(await screen.findByText(/no puede crear la imagen/)).toBeInTheDocument();
   }, 30_000);
 });
