@@ -1,6 +1,6 @@
 # ÁBACO
 
-Estudia las materias de las carreras económicas y administrativas de Ecuador **por carrera, ciclo, tema y subtema**, con fórmulas verificadas, 16 herramientas de estudio y fuentes oficiales citadas en cada explicación. Gratis, sin cuentas y funciona sin internet.
+Estudia las materias de las carreras económicas y administrativas de Ecuador **por carrera, ciclo, tema y subtema**, con teoría y un ejemplo en cada subtema, fórmulas verificadas, 16 herramientas, un área de estudio con tus propios PDF y exámenes de práctica, y fuentes oficiales citadas en cada explicación. Gratis, sin cuentas y funciona sin internet.
 
 [![CI](https://github.com/DiegoFranciscoG/abaco/actions/workflows/ci.yml/badge.svg)](https://github.com/DiegoFranciscoG/abaco/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-19-149eca) ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6) ![Vite](https://img.shields.io/badge/Vite-8-646cff) ![PWA](https://img.shields.io/badge/PWA-offline-b3122e)
@@ -22,11 +22,14 @@ Quien estudia Contabilidad, Economía, Administración o Finanzas en Ecuador jun
 ## Funcionalidades
 
 - **Carrera → ciclo → materia → tema → subtema**: 7 carreras genéricas, 26 materias, 107 temas y 349 subtemas, sin nombres de universidades. El ciclo habitual sale de 13 planes públicos (método en [docs/investigacion.md](docs/investigacion.md#1b-carrera--ciclo--materia-sin-universidades)).
-- **84 fórmulas verificadas**: calculadora en vivo, sintaxis de Excel en español e inglés y un ejemplo que se recalcula en cada build.
+- **Teoría y ejemplo en cada subtema**: los 349 subtemas tienen explicación con fuente, un ejemplo concreto con cifras de Ecuador, puntos clave y errores frecuentes.
+- **Área de estudio**: elige una materia y estudia con el contenido de ÁBACO, con tus propios PDF (se leen en tu dispositivo, no se suben) o con ambos: repaso, tarjetas para memorizar con repetición espaciada y exámenes de práctica calificados con su explicación.
+- **Enviar un PDF al autor**: si un PDF puede servir a otros, ÁBACO revisa que tenga texto, que sea de la materia y que no tenga datos personales, y prepara el correo; lo verificado se redacta de nuevo y se agrega con su fuente.
+- **93 fórmulas verificadas**: calculadora en vivo, sintaxis de Excel en español e inglés y un ejemplo que se recalcula en cada build.
 - **16 herramientas propias**: editor de informes con fórmulas, libro diario y mayor, calculadora estadística, graficador, oferta y demanda, datos macro del Banco Mundial, tipos de cambio del BCE, punto de equilibrio, evaluador de proyectos (VAN, TIR), rol de pagos (IESS 2026), IVA e impuesto a la renta (tabla 2026), FODA y matriz de decisión, tarjetas con repetición espaciada (SM-2), referencias APA, laboratorio de hoja de cálculo y buscador académico.
 - **Tecnología real en cada materia**: 25 aplicaciones externas verificadas en su sitio oficial (GnuCash, GanttProject, draw.io, SRI en línea, IESS, Ministerio del Trabajo, BCE, INEC, WITS, LimeSurvey y más).
 - **Buscador académico** en 5 fuentes abiertas (Crossref, OpenAlex, DOAJ, LA Referencia, Open Library) con la cita APA lista.
-- **Práctica**: 24 ejercicios con respuesta verificable, pistas e historial.
+- **Práctica**: 48 ejercicios con respuesta verificable en las materias de cálculo, pistas e historial; las materias teóricas se practican con tarjetas y exámenes.
 - **Mi espacio**: apuntes, estrellas, colecciones, recordatorios y respaldo en JSON; nada sale del dispositivo.
 - **Buzón de sugerencias**: rechaza insultos, mensajes sin sentido y datos personales, y prepara un correo en la aplicación de quien escribe; al terminar invita a conocer las redes y proyectos del autor ([captura](docs/img/buzon.png)).
 - **PWA**: instalable, funciona sin conexión, tema claro y oscuro, respeta «reducir movimiento».
@@ -62,6 +65,7 @@ flowchart LR
 | Matemática | KaTeX, analizador de fórmulas propio, formulajs | Fórmulas sin `eval`; resultados iguales a Excel |
 | Búsqueda | MiniSearch con índice generado al compilar | Búsqueda instantánea sin servidor |
 | PWA | vite-plugin-pwa / Workbox | Instalable y sin conexión |
+| PDF | pdf.js 6 (Mozilla, Apache-2.0) en un Web Worker | Lee el texto de los PDF en el navegador, sin subirlos ni ejecutar su contenido |
 | 3D | Three.js (carga diferida) | Ábaco decorativo que no penaliza la primera carga |
 | Pruebas | Vitest, Testing Library, Playwright, axe-core | Unitarias, integración, contenido, extremo a extremo y accesibilidad |
 | DevOps | Docker (nginx sin privilegios), GitHub Actions, GitHub Pages | Despliegue gratis y reproducible |
@@ -127,12 +131,12 @@ Peticiones de ejemplo en [docs/http/](docs/http/).
 
 ```bash
 npm run lint && npm run format:check   # estilo
-npm run test:coverage                  # 686 pruebas unitarias, de integración, de componentes y de contenido
+npm run test:coverage                  # 773 pruebas unitarias, de integración, de componentes y de contenido
 npx playwright install chromium
-npm run build && npx playwright test   # 76 pruebas de extremo a extremo, accesibilidad y seguridad
+npm run build && npx playwright test   # 80 pruebas de extremo a extremo, accesibilidad y seguridad
 ```
 
-Cobertura de la lógica de negocio (`src/domain` y `src/data`): **93,5 % de líneas**, 79,7 % de ramas (umbral mínimo 70 %). Las pruebas de contenido recalculan cada ejemplo y ejercicio, comprueban fuentes, carreras y que ninguna materia quede sin herramienta ni tecnología externa. Las e2e recorren la app como estudiante en escritorio y móvil, pasan axe en 26 vistas en tema claro y oscuro, comprueban que nada personal salga a la red (T-04), que funcione sin internet (T-08), y que la app no se deje enmarcar ni ejecute código inyectado.
+Cobertura de la lógica de negocio (`src/domain` y `src/data`): **93,9 % de líneas**, 79,7 % de ramas (umbral mínimo 70 %). Las pruebas de contenido recalculan cada ejemplo y ejercicio, comprueban fuentes, carreras y que ninguna materia quede sin herramienta ni tecnología externa. Las e2e recorren la app como estudiante en escritorio y móvil, pasan axe en 27 vistas en tema claro y oscuro, leen un PDF real en el área de estudio, comprueban que nada personal salga a la red (T-04), que funcione sin internet (T-08), y que la app no se deje enmarcar ni ejecute código inyectado.
 
 ## Despliegue
 
@@ -151,6 +155,8 @@ Modelo de amenazas y correspondencia con OWASP ASVS 5.0 en [docs/seguridad.md](d
 
 ## Decisiones técnicas
 
+- **PDF leídos en el dispositivo:** pdf.js extrae el texto dentro de un Web Worker; el archivo nunca se sube y solo su texto se guarda en IndexedDB. Las preguntas y tarjetas salen de reglas comprobables (definiciones «X es…», subtemas, ejemplos), no de un modelo que pueda inventar respuestas.
+
 - **Sin backend:** elimina cuentas, contraseñas y bases centrales que proteger; el costo es que los datos viven en cada dispositivo, por eso hay respaldo en JSON con migraciones probadas.
 - **Contenido como datos versionados:** JSON validado con Zod y pruebas que recalculan cada número; un error de contenido rompe la build en vez de llegar al estudiante.
 - **Carreras genéricas y ciclo habitual:** se agregan 13 planes públicos y se publica solo el resultado (mediana del primer ciclo, umbral de la mitad de los planes), sin reproducir ningún plan ni nombrar universidades.
@@ -159,6 +165,8 @@ Modelo de amenazas y correspondencia con OWASP ASVS 5.0 en [docs/seguridad.md](d
 - **Normas cambiantes como parámetros:** IVA, SBU y divisor de horas son editables y muestran su fuente y fecha.
 
 ## Roadmap
+
+- Revisar los PDF que envíen los estudiantes con `npm run pdf:analizar` y agregar lo verificado como subtemas, ejemplos o ejercicios con su fuente.
 
 - Más ejercicios por materia y tarjetas generadas desde cada subtema.
 - Materias optativas frecuentes (auditoría, presupuestos, mercado de valores) cuando haya fuentes abiertas verificables.

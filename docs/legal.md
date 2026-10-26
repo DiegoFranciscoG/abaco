@@ -24,6 +24,7 @@ Fecha de la revisión: 2026-10-26. Fuentes primarias en [investigacion.md](inves
 | Resúmenes de artículos científicos | Retirados: solo se muestran metadatos (título, autores, año, DOI, enlace) | Los *abstracts* pueden tener derechos del editor |
 | Business Model Canvas (Strategyzer) | Se enlaza la plantilla oficial; no se reproduce | Investigación, sección 9, L7 |
 | Bibliotecas de software | Lista y texto de cada licencia en `/licencias-terceros.txt`; la compilación falla si aparece una licencia fuera de la lista permitida | `scripts/licenses.ts`, `tests/unit/licenses.test.ts` |
+| PDF enviados por estudiantes | No se publican tal cual: quien envía declara ser autor o tener permiso; lo que se use se verifica con una fuente oficial y se redacta de nuevo | Código Ingenios, arts. 102 (ideas) y 211–212 (citas) |
 | Archivos del repositorio | Licencia y autoría declaradas por archivo (REUSE 3.3, `reuse lint` en la CI) | `REUSE.toml`, `LICENSES/MIT.txt` |
 | Ilustraciones e íconos | Originales del proyecto (los íconos de la app se generan desde el logotipo propio con `scripts/build-icons.ts`) | Titularidad del autor |
 
@@ -34,6 +35,8 @@ Las marcas de terceros (Excel, Google, Trello, OpenStax, etc.) solo se nombran p
 | Tema | Decisión | Artículo verificado |
 |---|---|---|
 | Datos dentro de la app | No se tratan: todo queda en el dispositivo y la prueba T-04 lo comprueba con el tráfico de red real | Art. 39 (privacidad desde el diseño y por defecto) |
+| Área de estudio | Los PDF se leen en el navegador; solo su texto queda en el dispositivo y se borra con un botón o con «Empezar de cero» | Art. 39 |
+| PDF enviados al autor | Consentimiento expreso y declaración de derechos; ÁBACO revisa antes que no haya cédulas, teléfonos, correos ni insultos; se conservan como máximo 12 meses | Arts. 7.1, 8, 10 e) e i) |
 | Buzón de sugerencias | La app no envía nada: abre la aplicación de correo de quien escribe con el mensaje listo. Si se envía, el titular recibe el mensaje y la dirección de correo | — |
 | Base legal del buzón | Consentimiento expreso: casilla obligatoria, informada y específica, y el acto de enviar el correo; revocable en cualquier momento | Art. 7.1 y art. 8 |
 | Minimización | El formulario no pide nombre, cédula ni teléfono y **rechaza** mensajes que contengan cédulas, RUC, teléfonos o correos | Art. 10 e) |

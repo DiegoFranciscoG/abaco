@@ -214,3 +214,12 @@ Cada fórmula se comprobó contra el texto de la sección citada (copia descarga
 | Conversión de divisas y tipo de cambio inverso | *Principles of Finance 2e*, 3.5 | precio de una moneda en otra y su inverso (1 ÷ cotización) |
 
 Se agregaron 24 ejercicios con respuesta verificable para las materias cuantitativas que no tenían práctica: contabilidad financiera, contabilidad de costos, tributación (con la tabla 2026 del SRI), matemática financiera, finanzas corporativas, evaluación de proyectos, matemática para la gestión, estadística inferencial, microeconomía, macroeconomía, economía internacional y finanzas internacionales. Las materias sin cálculo se practican con tarjetas armadas desde sus subtemas.
+
+## 14. Área de estudio y PDF (verificado 2026-10-26)
+
+| # | Fuente | URL | Qué se tomó |
+|---|---|---|---|
+| A5 | pdf.js (Mozilla), paquete `pdfjs-dist` 6.4.299 | https://www.npmjs.com/package/pdfjs-dist | Licencia Apache-2.0 en el registro oficial; publicado el 2026-10-03. Extrae el texto de cada página (`getTextContent`) sin renderizar; la versión 6 no evalúa código (se buscó `eval` y `new Function` en el worker) |
+| — | Ejemplos de los 349 subtemas | `content/temarios/*.json` | Redacción propia a partir de la teoría ya verificada de cada subtema; las cifras de cada ejemplo se calcularon antes de escribirlo y las normas usadas (IVA 15 %, SBU 2026, IESS 9,45 % y 11,15 %, tabla de renta 2026, RIMPE) son las mismas de las secciones 2 y 9 |
+
+**Lo que no se puede automatizar:** que un PDF sea «verídico». La app solo comprueba que tenga texto, que trate de la materia y que no tenga datos personales ni insultos; la verificación del contenido la hace el autor contra fuentes oficiales (CONTRIBUTING.md).

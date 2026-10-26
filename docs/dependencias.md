@@ -18,6 +18,7 @@ Versiones verificadas en el registro oficial de npm (y en el CDN oficial de Shee
 | minisearch | 7.2.0 | MIT | Búsqueda instantánea de fórmulas y temas | Índice generado al compilar (`scripts/build-search-index.ts`) |
 | zod | 4.6.7 | MIT | Esquemas del contenido, del respaldo y de las respuestas de las APIs | Una sola definición para tipos y validación |
 | workbox-window | 7.4.1 | MIT | Registro del service worker | — |
+| pdfjs-dist | 6.4.299 | Apache-2.0 | Leer el texto de los PDF del área de estudio | Versión estable publicada el 2026-10-03 en el registro de npm (Mozilla). Se carga solo al agregar un PDF y no usa `eval`; su dependencia opcional `@napi-rs/canvas` es para Node y no llega al navegador |
 | @fontsource-variable/inter, fraunces, jetbrains-mono | 5.3.0 | OFL-1.1 | Tipografías autoalojadas | Cero peticiones a terceros (privacidad y modo sin conexión) |
 
 ## Desarrollo y pruebas

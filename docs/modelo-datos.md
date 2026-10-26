@@ -57,7 +57,8 @@ erDiagram
   SUBTEMA {
     string id PK
     string nombre
-    string explicacion "redacción propia, >= 80 caracteres"
+    string explicacion "teoría, redacción propia, >= 80 caracteres"
+    string ejemplo "caso concreto, >= 60 caracteres"
     string_list puntos_clave
     string_list errores_frecuentes
     string_list formulas FK
@@ -102,6 +103,7 @@ erDiagram
 | Identificadores únicos y referencias existentes (materia, fórmula, subtema, fuente) | esquemas + integridad | `tests/content/integrity.test.ts` |
 | Carreras: materias existentes, ciclo habitual dentro de los ciclos de la carrera y entre los ciclos en que aparece, solo materias presentes en al menos la mitad de los planes, ninguna materia sin carrera | `carreraSchema` | integridad |
 | Cada materia tiene al menos una herramienta propia y una tecnología externa verificada | `materiaSchema` + `apps.json` | integridad |
+| Cada materia, tema y subtema tiene teoría, y cada subtema un ejemplo | `subtemaSchema` (`ejemplo` obligatorio) | integridad |
 | Ningún contenido publica mallas, nombres ni marcas de universidades | expresión regular de términos prohibidos | integridad |
 | Cada subtema cita una sección que existe y contiene lo que afirma | descarga del texto de cada sección citada y búsqueda de la evidencia | resultado en [verificacion-contenido.md](verificacion-contenido.md) |
 
@@ -193,6 +195,21 @@ erDiagram
     int expiraEn
     json datos
   }
+  DOCUMENTO_PDF {
+    string id PK
+    string nombre
+    string materiaId
+    int paginas
+    string texto "solo el texto, <= 400 000; el archivo no se guarda"
+  }
+  EXAMEN {
+    string id PK
+    string materiaId
+    enum fuentes "abaco|pdf|mixto"
+    int total
+    int correctas
+    int segundos
+  }
   META {
     string clave PK "deviceId | lastBackupAt | onboardingAt"
     any valor
@@ -208,6 +225,7 @@ Fuera de IndexedDB, el navegador guarda en `localStorage` dos claves pequeñas: 
 |---|---|---|
 | 1 | Apuntes ligados a una asignatura de una malla | — |
 | 2 | Apuntes ligados a cualquier nivel (`refTipo` + `refId`) con etiquetas; tablas `hojas`, `busquedas`, `cacheApi`, `meta` | `upgradeToV2` (T-05) |
+| 4 | Área de estudio: tablas `pdfs` (texto de los PDF del estudiante) y `examenes` | Sin transformación de datos; los respaldos v3 se aceptan con listas vacías (`tests/integration/study-storage.test.ts`) |
 | 3 | Catálogo de materias en lugar de mallas; tablas de herramientas `documentos`, `diarios`, `tarjetas`, `tableros`; perfil con `materias`, `carrera` y `ciclo` genéricos | `upgradeToV3`: cada id antiguo de asignatura pasa a su materia con `legacyMateria`; la carrera y el ciclo antiguos (ligados a una universidad) se descartan (`tests/integration/storage.test.ts`) |
 
 El respaldo (`abaco-respaldo-<id-local>-<fecha>.json`) declara `formato` y `version`; al restaurar se comprueba primero el formato, después el esquema Zod, y los respaldos v1 y v2 pasan por las mismas migraciones (T-06).

@@ -24,3 +24,11 @@ npx playwright test
 ```
 
 Commits con Conventional Commits (`feat`, `fix`, `docs`, `test`, `refactor`, `chore`, `ci`, `build`, `perf`, `style`). Al contribuir aceptas publicar tu aporte con la licencia MIT del proyecto.
+
+## Proceso para los PDF que llegan por el área de estudio
+
+1. Revisar que el remitente declaró ser autor o tener permiso (viene en el correo).
+2. Descomponer el PDF por materia y subtema: `npm run pdf:analizar -- archivo.pdf informe.md`. El informe indica qué materias y subtemas cubre, sus definiciones y cifras, y si tiene datos personales.
+3. Verificar cada dato que se quiera usar en una fuente oficial o abierta y registrarla en `docs/investigacion.md`; lo que no se pueda verificar no se publica.
+4. Redactar de nuevo (nunca copiar) el subtema, el ejemplo o el ejercicio, con su fuente, y correr `npm run content:check`.
+5. Responder al remitente si pidió saber si se usará, y borrar el PDF y el correo al terminar (máximo 12 meses).
