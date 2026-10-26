@@ -15,6 +15,10 @@ Estudia y resuelve los deberes de las carreras económicas y administrativas de 
 |---|---|---|---|---|
 | ![Materias por carrera y ciclo](docs/img/carrera-ciclo.png) | ![Subtema con teoría, ejemplo y fuente](docs/img/subtema.png) | ![Examen de práctica del área de estudio](docs/img/area-estudio.png) | ![Herramienta de rol de pagos](docs/img/rol-de-pagos.png) | ![Vista móvil en tema oscuro](docs/img/movil-oscuro.png) |
 
+| Entregable paso a paso | Pega tu enunciado | Ecuador en cifras | Modo profesor |
+|---|---|---|---|
+| ![Rol de pagos resuelto paso a paso con Excel y PDF](docs/img/entregable.png) | ![Pega tu enunciado: tema, fórmulas y entregable que aplican](docs/img/enunciado.png) | ![Cifras normativas con su vigencia y fuente](docs/img/cifras.png) | ![Modo profesor con el solucionario](docs/img/modo-profesor.png) |
+
 ## Problema que resuelve
 
 Quien estudia Contabilidad, Economía, Administración o Finanzas en Ecuador junta apuntes sueltos, PDF de dudosa procedencia y calculadoras con tablas tributarias o laborales desactualizadas. ÁBACO ordena las 26 materias más frecuentes de esas carreras por **carrera y ciclo habitual**, explica cada subtema con redacción propia y cita la sección exacta de la norma o del libro abierto que lo respalda, y trae herramientas que aplican la norma vigente (SRI, IESS, Código del Trabajo) con su fuente a la vista.

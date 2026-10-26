@@ -203,7 +203,7 @@ export default function TeacherPage() {
                       <p>
                         <span className="font-semibold">Respuesta:</span>{' '}
                         {formatAnswer(e.respuesta, e.unidad)}
-                        {e.tolerancia > 0 ? (
+                        {e.tolerancia >= 0.01 ? (
                           <span className="text-muted">
                             {' '}
                             (se acepta ± {formatAnswer(e.tolerancia, e.unidad)})
