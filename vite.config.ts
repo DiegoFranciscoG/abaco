@@ -79,12 +79,12 @@ export default defineConfig(({ mode }) => {
           name: 'ÁBACO — estudio para carreras económicas',
           short_name: 'ÁBACO',
           description:
-            'Mallas reales, fórmulas verificadas, laboratorio de hoja de cálculo y buscador académico. Tus apuntes viven en tu teléfono.',
+            'Materias por carrera y ciclo, tema por tema, con fórmulas verificadas, herramientas de estudio y buscador académico. Tus apuntes viven en tu dispositivo.',
           lang: 'es-EC',
+          id: '.',
           start_url: '.',
           scope: '.',
           display: 'standalone',
-          orientation: 'portrait',
           background_color: '#fbf6ef',
           theme_color: '#b3122e',
           categories: ['education', 'productivity'],
@@ -93,10 +93,15 @@ export default defineConfig(({ mode }) => {
             { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
             { src: 'icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
           ],
+          shortcuts: [
+            { name: 'Materias por carrera y ciclo', short_name: 'Materias', url: './#/materias', icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }] },
+            { name: 'Herramientas de estudio', short_name: 'Herramientas', url: './#/herramientas', icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }] },
+            { name: 'Buzón de sugerencias', short_name: 'Sugerencias', url: './#/sugerencias', icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }] },
+          ],
         },
         workbox: {
           // App shell, content chunks, fonts and the 3D chunk are precached: after the first visit
-          // the whole app (mallas, notes, lab) works offline.
+          // the whole app (subjects, notes, lab, tools) works offline.
           globPatterns: ['**/*.{js,css,html,woff2,svg,png,webmanifest,json}'],
           maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
           navigateFallback: 'index.html',
