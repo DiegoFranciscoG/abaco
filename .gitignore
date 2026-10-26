@@ -17,6 +17,7 @@ npm-debug.log*
 
 # ---- Archivos generados en el build
 src/generated/
+public/licencias-terceros.txt
 
 # ---- Pruebas
 playwright-report/

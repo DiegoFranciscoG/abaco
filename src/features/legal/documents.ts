@@ -255,7 +255,7 @@ export const LEGAL_DOCS: LegalDoc[] = [
         titulo: 'ÁBACO',
         parrafos: [
           `Código y textos propios con licencia MIT, © ${SITE.titular}. Las ilustraciones (ábaco, íconos y gráficos) son originales del proyecto.`,
-          'La lista completa de bibliotecas de terceros incluidas en la app, con sus licencias y avisos, se genera en cada compilación y se publica en /licencias-terceros.txt.',
+          'La lista completa de bibliotecas de terceros incluidas en la app, con el texto de sus licencias y avisos, se genera en cada compilación: descárgala con el botón al final de esta página. La compilación falla si alguna biblioteca tiene una licencia fuera de la lista permitida (MIT, ISC, BSD, Apache-2.0, 0BSD, OFL-1.1, CC0, Unlicense).',
         ],
       },
       {

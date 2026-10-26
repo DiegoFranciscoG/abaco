@@ -5,6 +5,7 @@ import { useDocumentTitle } from '../../ui/hooks';
 import { AppLink, PageHeader } from '../../ui/primitives';
 import { formatDate } from '../../ui/utils';
 import { getLegalDoc, LEGAL_DOCS, SERVICIOS_EXTERNOS } from './documents';
+import { Icon } from '../../ui/icons';
 
 /** Turns bare https URLs inside a legal paragraph into links (the texts are our own, not user input). */
 function Linked({ text }: { text: string }) {
@@ -80,6 +81,11 @@ export default function LegalPage() {
               </table>
             </div>
           </section>
+        ) : null}
+        {doc.id === 'licencias' ? (
+          <a href={`${import.meta.env.BASE_URL}licencias-terceros.txt`} className="btn btn-ghost" download>
+            <Icon name="download" size={18} /> Avisos de licencias de terceros (.txt)
+          </a>
         ) : null}
       </article>
       <nav aria-label="Documentos legales" className="lg:sticky lg:top-24 lg:self-start">

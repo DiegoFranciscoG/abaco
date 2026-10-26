@@ -2,7 +2,7 @@
   "name": "abaco",
   "version": "1.0.0",
   "private": true,
-  "description": "Plataforma de estudio para carreras económicas y administrativas de Cuenca: mallas reales, fórmulas verificadas, laboratorio de hoja de cálculo y buscador académico. Sin registro y sin servidores.",
+  "description": "Plataforma de estudio para carreras económicas y administrativas: materias por carrera y ciclo, tema por tema, fórmulas verificadas, herramientas de estudio y buscador académico. Sin registro y sin servidores.",
   "license": "MIT",
   "author": "Diego Francisco Granda Zhingre",
   "type": "module",
@@ -21,7 +21,8 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "e2e": "playwright test",
-    "generate": "node scripts/build-search-index.ts && node scripts/build-math.ts"
+    "generate": "node scripts/build-search-index.ts && node scripts/build-math.ts && node scripts/build-licenses.ts",
+    "icons": "node scripts/build-icons.ts"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "5.3.0",
