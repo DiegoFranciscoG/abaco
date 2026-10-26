@@ -7,6 +7,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import MiniSearch from 'minisearch';
 import { buildSearchDocuments, SEARCH_OPTIONS, type SearchContent } from '../src/domain/search/index-data.ts';
+import { DELIVERABLES } from '../src/domain/deliverables/catalog.ts';
 import { buildStatementCatalog } from '../src/domain/statement/catalog.ts';
 import { TOOLS } from '../src/domain/tools/catalog.ts';
 
@@ -25,6 +26,38 @@ const content: SearchContent = {
   ejercicios: read('ejercicios.json'),
   herramientas: TOOLS,
 };
+
+// Deliverables and the everyday pages are found like tools: «rol de pagos» leads to the step-by-step deliverable.
+const areaOf = (materiaId: string | undefined): string =>
+  content.materias.find((m) => m.id === materiaId)?.areas[0] ?? 'formacion';
+content.herramientas = [
+  ...TOOLS,
+  ...DELIVERABLES.map((d) => ({
+    id: `entregable-${d.id}`,
+    nombre: `${d.nombre} (entregable paso a paso)`,
+    descripcion: d.descripcion,
+    claves: 'entregable deber tarea procedimiento excel pdf',
+    ruta: `/entregables/${d.id}`,
+    area: areaOf(d.materias[0]),
+  })),
+  {
+    id: 'pagina-enunciado',
+    nombre: 'Pega tu enunciado',
+    descripcion: 'Pega el texto de tu deber y ÁBACO te dice qué tema, fórmula y herramienta aplican.',
+    claves: 'deber tarea enunciado ejercicio que tema es ayuda',
+    ruta: '/enunciado',
+    area: 'formacion',
+  },
+  {
+    id: 'pagina-cifras',
+    nombre: 'Ecuador en cifras',
+    descripcion:
+      'SBU, IESS, IVA, tabla del impuesto a la renta, retenciones, inflación y tasas, con su fuente y vigencia.',
+    claves: 'sbu salario basico iess iva renta retenciones inflacion tasas interes canasta',
+    ruta: '/cifras',
+    area: 'tributario',
+  },
+];
 
 const docs = buildSearchDocuments(content);
 const index = new MiniSearch(SEARCH_OPTIONS);

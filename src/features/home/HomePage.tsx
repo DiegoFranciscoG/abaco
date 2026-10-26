@@ -78,6 +78,34 @@ function HeroAbacus() {
 
 const FEATURES: { to: string; icon: IconName; title: string; text: string; cta: string }[] = [
   {
+    to: '/entregables',
+    icon: 'ledger',
+    title: 'Entregables',
+    text: 'Rol de pagos, kardex, amortización, VAN y más: escribe tus datos y llévate el procedimiento paso a paso, en Excel o PDF.',
+    cta: 'Resolver mi deber',
+  },
+  {
+    to: '/enunciado',
+    icon: 'search',
+    title: 'Pega tu enunciado',
+    text: 'Pega el texto de tu tarea y ÁBACO te dice qué tema, qué fórmula y qué herramienta aplican.',
+    cta: '¿Qué tema es?',
+  },
+  {
+    to: '/herramientas/notas',
+    icon: 'target',
+    title: '¿Cuánto necesito?',
+    text: 'Con tus notas y los pesos de tu docente, cuánto necesitas en lo que falta para pasar.',
+    cta: 'Calcular',
+  },
+  {
+    to: '/cifras',
+    icon: 'receipt',
+    title: 'Ecuador en cifras',
+    text: 'SBU, IESS, IVA, renta, retenciones, inflación y tasas, con su fuente oficial y su vigencia.',
+    cta: 'Ver cifras',
+  },
+  {
     to: '/materias',
     icon: 'materias',
     title: 'Materias',
@@ -220,8 +248,11 @@ export default function HomePage() {
             servidores y sin costo: lo que escribes se queda en tu dispositivo.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <AppLink to="/materias" className="btn btn-primary">
-              Ver materias <Icon name="arrow-right" size={18} />
+            <AppLink to="/entregables" className="btn btn-primary">
+              Resolver mi deber <Icon name="arrow-right" size={18} />
+            </AppLink>
+            <AppLink to="/materias" className="btn btn-ghost">
+              <Icon name="materias" size={18} /> Ver materias
             </AppLink>
             <AppLink to="/herramientas" className="btn btn-ghost">
               <Icon name="tools" size={18} /> Herramientas

@@ -15,13 +15,17 @@ const loadMotionFeatures = () => import('./motion-features').then((module) => mo
 // IndexedDB (Dexie) stays out of the first download: onboarding and profile sync arrive right after.
 const DeviceLayer = lazy(() => import('./DeviceLayer'));
 
-/** Main navigation. The bottom bar on phones has room for five items; formulas stay one tap away from home. */
+/**
+ * Main navigation. The bottom bar on phones has room for five items: the weekly deliverables go there, and the tools
+ * and formulas stay one tap away from home.
+ */
 const NAV: { to: string; label: string; icon: IconName; end?: boolean; mobile?: false }[] = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
   { to: '/materias', label: 'Materias', icon: 'materias' },
+  { to: '/entregables', label: 'Entregables', icon: 'ledger' },
   { to: '/estudiar', label: 'Estudiar', icon: 'book' },
   { to: '/formulas', label: 'Fórmulas', icon: 'formula', mobile: false },
-  { to: '/herramientas', label: 'Herramientas', icon: 'tools' },
+  { to: '/herramientas', label: 'Herramientas', icon: 'tools', mobile: false },
   { to: '/mi-espacio', label: 'Mi espacio', icon: 'me' },
 ];
 

@@ -18,6 +18,10 @@ const TYPE_LABEL: Record<SearchDocType, string> = {
 };
 
 const QUICK: { label: string; to: string; icon: IconName }[] = [
+  { label: 'Entregables paso a paso', to: '/entregables', icon: 'ledger' },
+  { label: 'Pega tu enunciado', to: '/enunciado', icon: 'search' },
+  { label: '¿Cuánto necesito para pasar?', to: '/herramientas/notas', icon: 'target' },
+  { label: 'Ecuador en cifras', to: '/cifras', icon: 'receipt' },
   { label: 'Materias por carrera y ciclo', to: '/materias', icon: 'materias' },
   { label: 'Buscador académico (artículos y tesis)', to: '/buscar', icon: 'book' },
   { label: 'Herramientas de estudio', to: '/herramientas', icon: 'tools' },
