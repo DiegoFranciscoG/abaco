@@ -36,12 +36,24 @@ function NewSheet() {
     started.current = true;
     void (async () => {
       const locale = profile.sintaxisExcel;
-      let draft: Omit<Hoja, 'id' | 'creadoEn' | 'actualizadoEn'> = { nombre: 'Hoja sin título', celdas: {}, formatos: {}, sintaxis: locale };
+      let draft: Omit<Hoja, 'id' | 'creadoEn' | 'actualizadoEn'> = {
+        nombre: 'Hoja sin título',
+        celdas: {},
+        formatos: {},
+        sintaxis: locale,
+      };
       const templateId = params.get('plantilla');
       const formulaId = params.get('formula');
       if (templateId) {
         const template = (await loadPlantillas()).find((p) => p.id === templateId);
-        if (template) draft = { nombre: template.nombre, plantillaId: template.id, celdas: templateToCells(template, locale), formatos: template.formatos, sintaxis: locale };
+        if (template)
+          draft = {
+            nombre: template.nombre,
+            plantillaId: template.id,
+            celdas: templateToCells(template, locale),
+            formatos: template.formatos,
+            sintaxis: locale,
+          };
       } else if (formulaId) {
         const formula = (await loadFormulas()).find((f) => f.id === formulaId);
         if (formula) {
@@ -61,7 +73,13 @@ function NewSheet() {
   return <Skeleton lines={4} />;
 }
 
-function TemplateCheck({ template, results }: { template: Plantilla; results: ReturnType<typeof computeSheet> }) {
+function TemplateCheck({
+  template,
+  results,
+}: {
+  template: Plantilla;
+  results: ReturnType<typeof computeSheet>;
+}) {
   const checks = template.verificacion.map((c) => {
     const v = results[c.celda]?.value;
     return { ...c, ok: typeof v === 'number' && isClose(v, c.esperado, c.tolerancia), actual: v };
@@ -70,14 +88,17 @@ function TemplateCheck({ template, results }: { template: Plantilla; results: Re
   return (
     <div className={`card p-4 ${allOk ? 'border-ok' : ''}`}>
       <h3 className="mb-2 flex items-center gap-2 font-semibold">
-        <Icon name={allOk ? 'check' : 'target'} className={allOk ? 'text-ok' : 'text-red'} /> Comprobación de la plantilla
+        <Icon name={allOk ? 'check' : 'target'} className={allOk ? 'text-ok' : 'text-red'} /> Comprobación de
+        la plantilla
       </h3>
       <ul className="space-y-1 text-sm">
         {checks.map((c) => (
           <li key={c.celda} className="flex items-center gap-2">
             <span className={`h-2 w-2 rounded-full ${c.ok ? 'bg-ok' : 'bg-red'}`} />
             <span className="font-mono">{c.celda}</span>
-            <span className="text-muted">debe dar {c.esperado.toLocaleString('es-EC', { maximumFractionDigits: 2 })}</span>
+            <span className="text-muted">
+              debe dar {c.esperado.toLocaleString('es-EC', { maximumFractionDigits: 2 })}
+            </span>
             <span className="ml-auto font-semibold">{c.ok ? 'Correcto' : 'Revisa'}</span>
           </li>
         ))}
@@ -86,7 +107,13 @@ function TemplateCheck({ template, results }: { template: Plantilla; results: Re
   );
 }
 
-function ExerciseCheck({ results, selected }: { results: ReturnType<typeof computeSheet>; selected: string }) {
+function ExerciseCheck({
+  results,
+  selected,
+}: {
+  results: ReturnType<typeof computeSheet>;
+  selected: string;
+}) {
   const [exercises, setExercises] = useState<Ejercicio[]>([]);
   const [exerciseId, setExerciseId] = useState('');
   const [outcome, setOutcome] = useState<null | boolean>(null);
@@ -99,7 +126,15 @@ function ExerciseCheck({ results, selected }: { results: ReturnType<typeof compu
       <h3 className="flex items-center gap-2 font-semibold">
         <Icon name="target" className="text-red" /> Comprobar un ejercicio
       </h3>
-      <select className="field" value={exerciseId} onChange={(e) => { setExerciseId(e.target.value); setOutcome(null); }} aria-label="Ejercicio a comprobar">
+      <select
+        className="field"
+        value={exerciseId}
+        onChange={(e) => {
+          setExerciseId(e.target.value);
+          setOutcome(null);
+        }}
+        aria-label="Ejercicio a comprobar"
+      >
         <option value="">Elige el ejercicio que estás resolviendo…</option>
         {exercises.map((e) => (
           <option key={e.id} value={e.id}>
@@ -114,14 +149,18 @@ function ExerciseCheck({ results, selected }: { results: ReturnType<typeof compu
         disabled={!exercise}
         onClick={() => {
           const v = results[selected]?.value;
-          setOutcome(Boolean(exercise && typeof v === 'number' && isClose(v, exercise.respuesta, exercise.tolerancia)));
+          setOutcome(
+            Boolean(exercise && typeof v === 'number' && isClose(v, exercise.respuesta, exercise.tolerancia)),
+          );
         }}
       >
         Comprobar la celda {selected}
       </button>
       {outcome !== null ? (
         <Notice tone={outcome ? 'ok' : 'warn'} icon={outcome ? 'check' : 'info'}>
-          {outcome ? '¡Correcto! Tu hoja da la respuesta esperada.' : 'Todavía no: revisa tus fórmulas o elige la celda del resultado.'}
+          {outcome
+            ? '¡Correcto! Tu hoja da la respuesta esperada.'
+            : 'Todavía no: revisa tus fórmulas o elige la celda del resultado.'}
         </Notice>
       ) : null}
     </div>
@@ -139,7 +178,11 @@ function SheetEditor({ initial }: { initial: Hoja }) {
   const snapshot = JSON.stringify({ name, cells, formats, locale });
   const [savedSnapshot, setSavedSnapshot] = useState(snapshot);
   const [saveError, setSaveError] = useState(false);
-  const saving: 'saved' | 'saving' | 'error' = saveError ? 'error' : snapshot === savedSnapshot ? 'saved' : 'saving';
+  const saving: 'saved' | 'saving' | 'error' = saveError
+    ? 'error'
+    : snapshot === savedSnapshot
+      ? 'saved'
+      : 'saving';
   const fileInput = useRef<HTMLInputElement>(null);
   useDocumentTitle(name);
 
@@ -149,13 +192,23 @@ function SheetEditor({ initial }: { initial: Hoja }) {
   }, [initial.plantillaId]);
 
   const results = useMemo(() => computeSheet(cells, locale), [cells, locale]);
-  const templateResults = useMemo(() => (template ? computeSheet(convertCells(cells, locale, 'en'), 'en') : null), [template, cells, locale]);
+  const templateResults = useMemo(
+    () => (template ? computeSheet(convertCells(cells, locale, 'en'), 'en') : null),
+    [template, cells, locale],
+  );
 
   // Auto-save (debounced) to IndexedDB on this device.
   useEffect(() => {
     const timer = window.setTimeout(async () => {
       try {
-        await saveSheet({ id: initial.id, nombre: name.trim() || 'Hoja sin título', celdas: cells, formatos: formats, sintaxis: locale, ...(initial.plantillaId ? { plantillaId: initial.plantillaId } : {}) });
+        await saveSheet({
+          id: initial.id,
+          nombre: name.trim() || 'Hoja sin título',
+          celdas: cells,
+          formatos: formats,
+          sintaxis: locale,
+          ...(initial.plantillaId ? { plantillaId: initial.plantillaId } : {}),
+        });
         setSaveError(false);
         setSavedSnapshot(JSON.stringify({ name, cells, formats, locale }));
       } catch (error) {
@@ -184,7 +237,9 @@ function SheetEditor({ initial }: { initial: Hoja }) {
     if (to === locale) return;
     setCells((prev) => convertCells(prev, locale, to));
     setLocale(to);
-    toast.show(to === 'es' ? 'Fórmulas convertidas a Excel en español' : 'Fórmulas convertidas a Excel en inglés');
+    toast.show(
+      to === 'es' ? 'Fórmulas convertidas a Excel en español' : 'Fórmulas convertidas a Excel en inglés',
+    );
   };
 
   const exportFile = async () => {
@@ -192,7 +247,11 @@ function SheetEditor({ initial }: { initial: Hoja }) {
       const { exportXlsx } = await import('../../domain/sheet/xlsx');
       const bytes = exportXlsx(cells, formats, locale, name);
       const safe = (name.trim() || 'hoja').replace(/[^\p{L}\p{N} _-]/gu, '').slice(0, 50);
-      downloadFile(`${safe}.xlsx`, bytes as BlobPart, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+      downloadFile(
+        `${safe}.xlsx`,
+        bytes as BlobPart,
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      );
       toast.show('Archivo .xlsx descargado');
     } catch {
       toast.show('No se pudo generar el archivo.', 'error');
@@ -227,14 +286,28 @@ function SheetEditor({ initial }: { initial: Hoja }) {
           aria-label="Nombre de la hoja"
         />
         <span className="text-xs text-muted" role="status">
-          {saving === 'saving' ? 'Guardando…' : saving === 'saved' ? 'Guardado en este dispositivo' : 'No se pudo guardar'}
+          {saving === 'saving'
+            ? 'Guardando…'
+            : saving === 'saved'
+              ? 'Guardado en este dispositivo'
+              : 'No se pudo guardar'}
         </span>
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <div role="group" aria-label="Sintaxis de Excel" className="flex rounded-xl border border-line bg-surface p-1">
+        <div
+          role="group"
+          aria-label="Sintaxis de Excel"
+          className="flex rounded-xl border border-line bg-surface p-1"
+        >
           {(['es', 'en'] as const).map((l) => (
-            <button key={l} type="button" aria-pressed={locale === l} onClick={() => switchLocale(l)} className={`min-h-9 rounded-lg px-3 text-sm font-semibold ${locale === l ? 'bg-ink text-paper' : 'text-muted'}`}>
+            <button
+              key={l}
+              type="button"
+              aria-pressed={locale === l}
+              onClick={() => switchLocale(l)}
+              className={`min-h-9 rounded-lg px-3 text-sm font-semibold ${locale === l ? 'bg-ink text-paper' : 'text-muted'}`}
+            >
               {l === 'es' ? 'Español ( ; )' : 'Inglés ( , )'}
             </button>
           ))}
@@ -262,7 +335,18 @@ function SheetEditor({ initial }: { initial: Hoja }) {
           </select>
         </label>
         <div className="ml-auto flex gap-2">
-          <input ref={fileInput} type="file" accept=".xlsx,.xls,.ods,.csv" className="sr-only" onChange={(e) => { const f = e.target.files?.[0]; if (f) void importFile(f); e.target.value = ''; }} aria-label="Importar archivo de hoja de cálculo" />
+          <input
+            ref={fileInput}
+            type="file"
+            accept=".xlsx,.xls,.ods,.csv"
+            className="sr-only"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) void importFile(f);
+              e.target.value = '';
+            }}
+            aria-label="Importar archivo de hoja de cálculo"
+          />
           <button type="button" className="btn btn-ghost" onClick={() => fileInput.current?.click()}>
             <Icon name="upload" size={18} /> Importar
           </button>
@@ -273,17 +357,35 @@ function SheetEditor({ initial }: { initial: Hoja }) {
       </div>
 
       <div className="grid gap-4 lg:grid-cols-[1fr_20rem]">
-        <Grid cells={cells} results={results} formats={formats} locale={locale} selected={selected} onSelect={setSelected} onCommit={commit} />
+        <Grid
+          cells={cells}
+          results={results}
+          formats={formats}
+          locale={locale}
+          selected={selected}
+          onSelect={setSelected}
+          onCommit={commit}
+        />
         <aside className="space-y-4">
-          {template && templateResults ? <TemplateCheck template={template} results={templateResults} /> : null}
+          {template && templateResults ? (
+            <TemplateCheck template={template} results={templateResults} />
+          ) : null}
           <ExerciseCheck results={results} selected={selected} />
           <div className="card p-4 text-sm text-muted">
             <p className="mb-2 font-semibold text-ink">Atajos</p>
             <ul className="space-y-1">
-              <li><span className="kbd">Enter</span> editar / confirmar</li>
-              <li><span className="kbd">Tab</span> insertar la función sugerida</li>
-              <li><span className="kbd">Supr</span> borrar celda</li>
-              <li><span className="kbd">$</span> fija filas o columnas: $B$1</li>
+              <li>
+                <span className="kbd">Enter</span> editar / confirmar
+              </li>
+              <li>
+                <span className="kbd">Tab</span> insertar la función sugerida
+              </li>
+              <li>
+                <span className="kbd">Supr</span> borrar celda
+              </li>
+              <li>
+                <span className="kbd">$</span> fija filas o columnas: $B$1
+              </li>
             </ul>
           </div>
         </aside>
@@ -297,14 +399,19 @@ export default function LabSheetPage() {
   const [sheet, setSheet] = useState<Hoja | null | undefined>(undefined);
   useEffect(() => {
     if (hojaId === 'nueva') return;
-    void getDb().hojas.get(hojaId).then((h) => setSheet(h ?? null));
+    void getDb()
+      .hojas.get(hojaId)
+      .then((h) => setSheet(h ?? null));
   }, [hojaId]);
   if (hojaId === 'nueva') return <NewSheet />;
   if (sheet === undefined) return <Skeleton lines={4} />;
   if (sheet === null)
     return (
       <Notice tone="warn">
-        Esta hoja no existe en este dispositivo. <AppLink to="/laboratorio" className="link-red">Volver al laboratorio</AppLink>
+        Esta hoja no existe en este dispositivo.{' '}
+        <AppLink to="/laboratorio" className="link-red">
+          Volver al laboratorio
+        </AppLink>
       </Notice>
     );
   return <SheetEditor key={sheet.id} initial={sheet} />;

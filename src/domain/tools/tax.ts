@@ -49,7 +49,8 @@ export const IVA_TARIFA_GENERAL = 0.15;
 const round2 = (value: number): number => Math.round((value + Number.EPSILON) * 100) / 100;
 
 function assertAmount(value: number, label: string): void {
-  if (!Number.isFinite(value) || value < 0) throw new RangeError(`${label} debe ser un número mayor o igual a cero.`);
+  if (!Number.isFinite(value) || value < 0)
+    throw new RangeError(`${label} debe ser un número mayor o igual a cero.`);
 }
 
 export interface IvaResult {
@@ -84,11 +85,18 @@ function applyBrackets(base: number, table: readonly IncomeBracket[]): BracketRe
   const tramo = [...table].reverse().find((b) => base >= b.desde) ?? table[0];
   if (!tramo) throw new RangeError('Tabla vacía.');
   const excedente = Math.max(0, base - tramo.desde);
-  return { impuesto: round2(tramo.impuestoFraccion + excedente * tramo.porcentaje), tramo, excedente: round2(excedente) };
+  return {
+    impuesto: round2(tramo.impuestoFraccion + excedente * tramo.porcentaje),
+    tramo,
+    excedente: round2(excedente),
+  };
 }
 
 /** Income tax of individuals with the 2026 table (before the personal expenses rebate). */
-export function incomeTaxPersonas(baseImponible: number, table: readonly IncomeBracket[] = IR_PERSONAS_2026): BracketResult {
+export function incomeTaxPersonas(
+  baseImponible: number,
+  table: readonly IncomeBracket[] = IR_PERSONAS_2026,
+): BracketResult {
   assertAmount(baseImponible, 'La base imponible');
   return applyBrackets(baseImponible, table);
 }
@@ -114,7 +122,8 @@ export function rimpeTax(ingresosBrutos: number, esNegocioPopular: boolean): Rim
   assertAmount(ingresosBrutos, 'Los ingresos brutos');
   if (ingresosBrutos > 300_000) return { regimen: 'fuera', impuesto: null };
   if (esNegocioPopular && ingresosBrutos <= 20_000) {
-    const tramo = RIMPE_POPULARES.find((b) => ingresosBrutos <= b.hasta) ?? RIMPE_POPULARES[RIMPE_POPULARES.length - 1];
+    const tramo =
+      RIMPE_POPULARES.find((b) => ingresosBrutos <= b.hasta) ?? RIMPE_POPULARES[RIMPE_POPULARES.length - 1];
     return { regimen: 'negocio-popular', impuesto: tramo?.cuota ?? 0 };
   }
   if (ingresosBrutos < 20_000) return { regimen: 'sin-tramo', impuesto: null };

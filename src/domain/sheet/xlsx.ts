@@ -131,7 +131,9 @@ export function importSpreadsheet(data: ArrayBuffer | Uint8Array, locale: Locale
     }
   }
   if (skipped > 0) {
-    warnings.push(`Se omitieron ${skipped} celdas fuera del área A1:Z${SHEET_LIMITS.rows} o del límite de ${SHEET_LIMITS.cells} celdas.`);
+    warnings.push(
+      `Se omitieron ${skipped} celdas fuera del área A1:Z${SHEET_LIMITS.rows} o del límite de ${SHEET_LIMITS.cells} celdas.`,
+    );
   }
   return { cells, formats, sheetName, warnings };
 }

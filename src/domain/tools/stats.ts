@@ -16,7 +16,8 @@ const fn = (path: string): Fn => {
   return target as Fn;
 };
 const num = (value: unknown): number => {
-  if (typeof value !== 'number' || !Number.isFinite(value)) throw new RangeError('Cálculo estadístico no definido para estos datos.');
+  if (typeof value !== 'number' || !Number.isFinite(value))
+    throw new RangeError('Cálculo estadístico no definido para estos datos.');
   return value;
 };
 
@@ -42,7 +43,8 @@ export function describe(values: readonly number[]): Descriptive {
   const sorted = [...values].sort((a, b) => a - b);
   const n = sorted.length;
   const media = sorted.reduce((s, v) => s + v, 0) / n;
-  const mediana = n % 2 ? (sorted[(n - 1) / 2] as number) : ((sorted[n / 2 - 1] as number) + (sorted[n / 2] as number)) / 2;
+  const mediana =
+    n % 2 ? (sorted[(n - 1) / 2] as number) : ((sorted[n / 2 - 1] as number) + (sorted[n / 2] as number)) / 2;
   const counts = new Map<number, number>();
   for (const v of sorted) counts.set(v, (counts.get(v) ?? 0) + 1);
   const maxCount = Math.max(...counts.values());
@@ -84,7 +86,11 @@ export function histogram(values: readonly number[]): HistogramBin[] {
   const k = Math.max(1, Math.ceil(1 + Math.log2(values.length)));
   if (max === min) return [{ desde: min, hasta: max, frecuencia: values.length }];
   const width = (max - min) / k;
-  const bins = Array.from({ length: k }, (_, i) => ({ desde: min + i * width, hasta: min + (i + 1) * width, frecuencia: 0 }));
+  const bins = Array.from({ length: k }, (_, i) => ({
+    desde: min + i * width,
+    hasta: min + (i + 1) * width,
+    frecuencia: 0,
+  }));
   for (const v of values) {
     const index = Math.min(k - 1, Math.floor((v - min) / width));
     const bin = bins[index];
@@ -153,7 +159,12 @@ export interface TTest {
 }
 
 /** One-sample t test of H0: μ = μ0 against the chosen alternative. */
-export function oneSampleT(values: readonly number[], mu0: number, alpha: number, alternativa: 'distinta' | 'mayor' | 'menor'): TTest {
+export function oneSampleT(
+  values: readonly number[],
+  mu0: number,
+  alpha: number,
+  alternativa: 'distinta' | 'mayor' | 'menor',
+): TTest {
   const d = describe(values);
   const gl = d.n - 1;
   const t = (d.media - mu0) / (d.desviacion / Math.sqrt(d.n));
@@ -166,10 +177,15 @@ export function oneSampleT(values: readonly number[], mu0: number, alpha: number
 }
 
 /** Sample size: for a mean n = (z·σ/E)², for a proportion n = z²·p·q/E², rounded up. */
-export function sampleSize(confianza: number, margen: number, opts: { sigma: number } | { p: number }): number {
+export function sampleSize(
+  confianza: number,
+  margen: number,
+  opts: { sigma: number } | { p: number },
+): number {
   if (!(margen > 0)) throw new RangeError('El margen de error debe ser mayor que cero.');
   const z = num(fn('NORM.S.INV')(1 - (1 - confianza) / 2));
-  const n = 'sigma' in opts ? ((z * opts.sigma) / margen) ** 2 : (z ** 2 * opts.p * (1 - opts.p)) / margen ** 2;
+  const n =
+    'sigma' in opts ? ((z * opts.sigma) / margen) ** 2 : (z ** 2 * opts.p * (1 - opts.p)) / margen ** 2;
   return Math.ceil(n - 1e-9);
 }
 

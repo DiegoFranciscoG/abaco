@@ -89,7 +89,10 @@ export function tokenize(input: string, locale: Locale = 'en'): Token[] {
       // A number immediately followed by letters is a cell-like identifier only when it starts with letters,
       // so here letters after digits are a syntax error (e.g. "12abc").
       if (IDENT_START.test(source.charAt(i)) && !/[eE]/.test(source.charAt(i))) {
-        throw new FormulaSyntaxError(`Número mal escrito cerca de la posición ${start + offset + 1}`, start + offset);
+        throw new FormulaSyntaxError(
+          `Número mal escrito cerca de la posición ${start + offset + 1}`,
+          start + offset,
+        );
       }
       const text = source.slice(start, i);
       const normalized = syntax.decimalSeparator === ',' ? text.replace(',', '.') : text;

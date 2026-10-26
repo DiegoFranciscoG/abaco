@@ -23,7 +23,12 @@ export function StarButton({ star, compact = false }: { star: StarInput; compact
       aria-label={starred ? `Quitar estrella de ${star.titulo}` : `Marcar con estrella ${star.titulo}`}
       className={`btn ${compact ? 'btn-icon' : ''} ${starred ? 'btn-soft' : 'btn-ghost'}`}
     >
-      <m.span key={String(starred)} initial={{ scale: 0.6, rotate: -20 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: 'spring', stiffness: 600, damping: 18 }}>
+      <m.span
+        key={String(starred)}
+        initial={{ scale: 0.6, rotate: -20 }}
+        animate={{ scale: 1, rotate: 0 }}
+        transition={{ type: 'spring', stiffness: 600, damping: 18 }}
+      >
         <Icon name={starred ? 'star-filled' : 'star'} size={19} className={starred ? 'text-gold' : ''} />
       </m.span>
       {compact ? null : <span>{starred ? 'Importante' : 'Marcar'}</span>}

@@ -12,25 +12,44 @@ describe('carrera → ciclo → materia', () => {
 
   it('reads the selection from the URL first and from the profile otherwise', () => {
     const profile = { ...DEFAULT_PROFILE, carrera: 'economia', ciclo: 3 };
-    expect(readSelection(new URLSearchParams(''), profile)).toMatchObject({ carrera: { id: 'economia' }, ciclo: 3 });
-    expect(readSelection(new URLSearchParams('carrera=finanzas'), profile)).toMatchObject({ carrera: { id: 'finanzas' }, ciclo: null });
-    expect(readSelection(new URLSearchParams('carrera=finanzas&ciclo=2'), profile)).toMatchObject({ ciclo: 2 });
+    expect(readSelection(new URLSearchParams(''), profile)).toMatchObject({
+      carrera: { id: 'economia' },
+      ciclo: 3,
+    });
+    expect(readSelection(new URLSearchParams('carrera=finanzas'), profile)).toMatchObject({
+      carrera: { id: 'finanzas' },
+      ciclo: null,
+    });
+    expect(readSelection(new URLSearchParams('carrera=finanzas&ciclo=2'), profile)).toMatchObject({
+      ciclo: 2,
+    });
   });
 
   it('ignores unknown careers and impossible cycles', () => {
     expect(readSelection(new URLSearchParams('carrera=no-existe'), DEFAULT_PROFILE).carrera).toBeUndefined();
     expect(readSelection(new URLSearchParams('carrera=economia&ciclo=99'), DEFAULT_PROFILE).ciclo).toBeNull();
-    expect(readSelection(new URLSearchParams('carrera=economia&ciclo=2.5'), DEFAULT_PROFILE).ciclo).toBeNull();
+    expect(
+      readSelection(new URLSearchParams('carrera=economia&ciclo=2.5'), DEFAULT_PROFILE).ciclo,
+    ).toBeNull();
     expect(readSelection(new URLSearchParams('carrera=economia&ciclo=-1'), DEFAULT_PROFILE).ciclo).toBeNull();
   });
 
   it('lists the subjects of a cycle and the careers of a subject', () => {
     const economia = getCarrera('economia')!;
-    expect(materiasDeCiclo(economia, 3).map((r) => r.materia.id).sort()).toEqual(
+    expect(
+      materiasDeCiclo(economia, 3)
+        .map((r) => r.materia.id)
+        .sort(),
+    ).toEqual(
       ['estadistica-inferencial', 'investigacion-mercados', 'macroeconomia', 'matematica-financiera'].sort(),
     );
     const all = materiasDeCiclo(economia);
-    expect(all.map((r) => r.entrada.ciclo)).toEqual([...all.map((r) => r.entrada.ciclo)].sort((a, b) => a - b));
-    expect(carrerasDeMateria('tributacion').map((c) => c.carrera.id)).toEqual(['contabilidad-auditoria', 'emprendimiento-innovacion']);
+    expect(all.map((r) => r.entrada.ciclo)).toEqual(
+      [...all.map((r) => r.entrada.ciclo)].sort((a, b) => a - b),
+    );
+    expect(carrerasDeMateria('tributacion').map((c) => c.carrera.id)).toEqual([
+      'contabilidad-auditoria',
+      'emprendimiento-innovacion',
+    ]);
   });
 });

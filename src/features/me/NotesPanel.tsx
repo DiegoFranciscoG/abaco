@@ -27,7 +27,14 @@ function NoteForm({
         e.preventDefault();
         setBusy(true);
         try {
-          await onSave({ titulo, contenido, etiquetas: etiquetas.split(',').map((t) => t.trim()).filter(Boolean) });
+          await onSave({
+            titulo,
+            contenido,
+            etiquetas: etiquetas
+              .split(',')
+              .map((t) => t.trim())
+              .filter(Boolean),
+          });
           if (!initial) {
             setTitulo('');
             setContenido('');
@@ -38,7 +45,14 @@ function NoteForm({
         }
       }}
     >
-      <input className="field" placeholder="Título (opcional)" value={titulo} maxLength={LIMITS.noteTitle} onChange={(e) => setTitulo(e.target.value)} aria-label="Título del apunte" />
+      <input
+        className="field"
+        placeholder="Título (opcional)"
+        value={titulo}
+        maxLength={LIMITS.noteTitle}
+        onChange={(e) => setTitulo(e.target.value)}
+        aria-label="Título del apunte"
+      />
       <textarea
         className="field min-h-28 resize-y"
         placeholder="Escribe tu apunte: lo que el profesor recalcó, un truco, una duda…"
@@ -48,7 +62,13 @@ function NoteForm({
         aria-label="Contenido del apunte"
         required
       />
-      <input className="field" placeholder="Etiquetas separadas por coma: examen, parcial 1" value={etiquetas} onChange={(e) => setEtiquetas(e.target.value)} aria-label="Etiquetas" />
+      <input
+        className="field"
+        placeholder="Etiquetas separadas por coma: examen, parcial 1"
+        value={etiquetas}
+        onChange={(e) => setEtiquetas(e.target.value)}
+        aria-label="Etiquetas"
+      />
       <div className="flex gap-2">
         <button type="submit" className="btn btn-primary" disabled={busy || contenido.trim().length === 0}>
           <Icon name="check" size={18} /> {initial ? 'Guardar cambios' : 'Guardar apunte'}
@@ -93,7 +113,12 @@ export function NoteCard({ note }: { note: Apunte }) {
           <p className="text-xs text-muted">{formatDate(note.actualizadoEn)}</p>
         </div>
         <div className="flex shrink-0 gap-1">
-          <button type="button" className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0" onClick={() => setEditing(true)} aria-label="Editar apunte">
+          <button
+            type="button"
+            className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0"
+            onClick={() => setEditing(true)}
+            aria-label="Editar apunte"
+          >
             <Icon name="note" size={18} />
           </button>
           <button
@@ -125,7 +150,15 @@ export function NoteCard({ note }: { note: Apunte }) {
 }
 
 /** Notes attached to any level (subject, topic, subtopic, formula). Stored only on this device. */
-export function NotesPanel({ refTipo, refId, title = 'Mis apuntes' }: { refTipo: RefTipo; refId: string; title?: string }) {
+export function NotesPanel({
+  refTipo,
+  refId,
+  title = 'Mis apuntes',
+}: {
+  refTipo: RefTipo;
+  refId: string;
+  title?: string;
+}) {
   const toast = useToast();
   const notes = useLiveQuery(() => listNotes({ refTipo, refId }), [refTipo, refId]);
   return (

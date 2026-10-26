@@ -6,10 +6,27 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-export const ALLOWED_LICENSES = new Set(['MIT', 'ISC', 'BSD-2-Clause', 'BSD-3-Clause', 'Apache-2.0', '0BSD', 'OFL-1.1', 'CC0-1.0', 'Unlicense']);
+export const ALLOWED_LICENSES = new Set([
+  'MIT',
+  'ISC',
+  'BSD-2-Clause',
+  'BSD-3-Clause',
+  'Apache-2.0',
+  '0BSD',
+  'OFL-1.1',
+  'CC0-1.0',
+  'Unlicense',
+]);
 
 /** Modules of Workbox that generateSW copies into the published service worker. */
-const SERVICE_WORKER_RUNTIME = ['workbox-core', 'workbox-precaching', 'workbox-routing', 'workbox-strategies', 'workbox-expiration', 'workbox-cacheable-response'];
+const SERVICE_WORKER_RUNTIME = [
+  'workbox-core',
+  'workbox-precaching',
+  'workbox-routing',
+  'workbox-strategies',
+  'workbox-expiration',
+  'workbox-cacheable-response',
+];
 
 export interface ThirdPartyPackage {
   name: string;
@@ -63,7 +80,9 @@ export function isAllowed(expression: string): boolean {
 }
 
 export function collectThirdParty(root: string): ThirdPartyPackage[] {
-  const lock = JSON.parse(readFileSync(join(root, 'package-lock.json'), 'utf8')) as { packages: Record<string, LockEntry> };
+  const lock = JSON.parse(readFileSync(join(root, 'package-lock.json'), 'utf8')) as {
+    packages: Record<string, LockEntry>;
+  };
   const names = new Set<string>();
   for (const [path, entry] of Object.entries(lock.packages)) {
     if (!path.startsWith('node_modules/') || entry.dev || entry.devOptional) continue;
@@ -75,7 +94,8 @@ export function collectThirdParty(root: string): ThirdPartyPackage[] {
 
   return [...names].sort().map((name) => {
     const dir = join(root, 'node_modules', name);
-    if (!existsSync(join(dir, 'package.json'))) throw new Error(`No se encontró ${name} en node_modules: ejecuta npm ci.`);
+    if (!existsSync(join(dir, 'package.json')))
+      throw new Error(`No se encontró ${name} en node_modules: ejecuta npm ci.`);
     const pkg = JSON.parse(readFileSync(join(dir, 'package.json'), 'utf8')) as PackageJson;
     return {
       name,
@@ -98,7 +118,15 @@ export function renderNotices(packages: ThirdPartyPackage[]): string {
     '',
   ];
   const blocks = packages.map((p) =>
-    [`${'='.repeat(78)}`, `${p.name} ${p.version}`, `Licencia: ${p.license}`, p.homepage ? `Origen: ${p.homepage}` : '', '', p.noticeText || '(El paquete no incluye un archivo de licencia; rige la licencia declarada arriba.)', '']
+    [
+      `${'='.repeat(78)}`,
+      `${p.name} ${p.version}`,
+      `Licencia: ${p.license}`,
+      p.homepage ? `Origen: ${p.homepage}` : '',
+      '',
+      p.noticeText || '(El paquete no incluye un archivo de licencia; rige la licencia declarada arriba.)',
+      '',
+    ]
       .filter((line, i) => line !== '' || i !== 3)
       .join('\n'),
   );

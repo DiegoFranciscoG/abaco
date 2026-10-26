@@ -28,13 +28,19 @@ import { NoteCard } from './NotesPanel';
 
 type Tab = 'apuntes' | 'estrellas' | 'colecciones' | 'recordatorios' | 'avance';
 
-
 function NotesTab() {
   const [query, setQuery] = useState('');
   const notes = useLiveQuery(() => searchNotes(query), [query]);
   return (
     <div className="space-y-4">
-      <input type="search" className="field" placeholder="Buscar en mis apuntes…" value={query} onChange={(e) => setQuery(e.target.value)} aria-label="Buscar en mis apuntes" />
+      <input
+        type="search"
+        className="field"
+        placeholder="Buscar en mis apuntes…"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        aria-label="Buscar en mis apuntes"
+      />
       {notes && notes.length === 0 ? (
         <EmptyState icon="note" title={query ? 'Sin coincidencias' : 'Aún no tienes apuntes'}>
           Escribe apuntes desde cualquier materia, tema o fórmula.
@@ -69,7 +75,12 @@ function StarsTab() {
                 {s.titulo}
               </AppLink>
             ) : s.snapshot ? (
-              <a href={s.snapshot.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-red">
+              <a
+                href={s.snapshot.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold hover:text-red"
+              >
                 {s.titulo}
               </a>
             ) : (
@@ -118,11 +129,25 @@ function CollectionsTab() {
       >
         <label className="min-w-48 flex-1">
           <span className="mb-1 block text-sm font-semibold">Nueva colección</span>
-          <input className="field" value={name} onChange={(e) => setName(e.target.value)} placeholder="Examen de Costos, Fórmulas que siempre olvido…" maxLength={60} />
+          <input
+            className="field"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Examen de Costos, Fórmulas que siempre olvido…"
+            maxLength={60}
+          />
         </label>
         <fieldset className="flex gap-1.5" aria-label="Color">
           {COLLECTION_COLORS.map((c) => (
-            <button key={c} type="button" aria-pressed={color === c} aria-label={`Color ${c}`} onClick={() => setColor(c)} className={`h-9 w-9 rounded-full border-2 ${color === c ? 'border-ink' : 'border-transparent'}`} style={{ background: COLOR_HEX[c] }} />
+            <button
+              key={c}
+              type="button"
+              aria-pressed={color === c}
+              aria-label={`Color ${c}`}
+              onClick={() => setColor(c)}
+              className={`h-9 w-9 rounded-full border-2 ${color === c ? 'border-ink' : 'border-transparent'}`}
+              style={{ background: COLOR_HEX[c] }}
+            />
           ))}
         </fieldset>
         <button type="submit" className="btn btn-primary" disabled={!name.trim()}>
@@ -156,7 +181,10 @@ function CollectionsTab() {
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {collections?.map((c) => (
           <li key={c.id}>
-            <AppLink to={`/coleccion/${c.id}`} className="card card-lift flex h-full flex-col gap-2 overflow-hidden p-0">
+            <AppLink
+              to={`/coleccion/${c.id}`}
+              className="card card-lift flex h-full flex-col gap-2 overflow-hidden p-0"
+            >
               <span className="h-2" style={{ background: COLOR_HEX[c.color] }} />
               <span className="px-4 pt-2 text-lg font-semibold">{c.nombre}</span>
               {c.descripcion ? <span className="px-4 text-sm text-muted">{c.descripcion}</span> : null}
@@ -196,11 +224,24 @@ function RemindersTab() {
       >
         <label>
           <span className="mb-1 block text-sm font-semibold">Qué</span>
-          <input className="field" value={titulo} onChange={(e) => setTitulo(e.target.value)} placeholder="Entregar taller de Costos" maxLength={120} required />
+          <input
+            className="field"
+            value={titulo}
+            onChange={(e) => setTitulo(e.target.value)}
+            placeholder="Entregar taller de Costos"
+            maxLength={120}
+            required
+          />
         </label>
         <label>
           <span className="mb-1 block text-sm font-semibold">Cuándo</span>
-          <input className="field" type="datetime-local" value={fecha} onChange={(e) => setFecha(e.target.value)} required />
+          <input
+            className="field"
+            type="datetime-local"
+            value={fecha}
+            onChange={(e) => setFecha(e.target.value)}
+            required
+          />
         </label>
         <label>
           <span className="mb-1 block text-sm font-semibold">Aviso</span>
@@ -224,19 +265,43 @@ function RemindersTab() {
         {reminders?.map((r) => {
           const overdue = r.estado === 'pendiente' && new Date(r.fecha).getTime() < now;
           return (
-            <li key={r.id} className={`card flex flex-wrap items-center gap-3 p-3 ${overdue ? 'border-red' : ''}`}>
-              <input type="checkbox" className="h-5 w-5 accent-[var(--red)]" checked={r.estado === 'hecho'} onChange={(e) => void setReminderDone(r.id, e.target.checked)} aria-label={`Marcar «${r.titulo}» como hecho`} />
+            <li
+              key={r.id}
+              className={`card flex flex-wrap items-center gap-3 p-3 ${overdue ? 'border-red' : ''}`}
+            >
+              <input
+                type="checkbox"
+                className="h-5 w-5 accent-[var(--red)]"
+                checked={r.estado === 'hecho'}
+                onChange={(e) => void setReminderDone(r.id, e.target.checked)}
+                aria-label={`Marcar «${r.titulo}» como hecho`}
+              />
               <span className="min-w-0 flex-1">
-                <span className={`block font-semibold ${r.estado === 'hecho' ? 'text-muted line-through' : ''}`}>{r.titulo}</span>
+                <span
+                  className={`block font-semibold ${r.estado === 'hecho' ? 'text-muted line-through' : ''}`}
+                >
+                  {r.titulo}
+                </span>
                 <span className={`tnum text-xs ${overdue ? 'font-semibold text-red' : 'text-muted'}`}>
                   {new Date(r.fecha).toLocaleString('es-EC', { dateStyle: 'medium', timeStyle: 'short' })}
                   {overdue ? ' · vencido' : ''}
                 </span>
               </span>
-              <button type="button" className="btn btn-ghost min-h-10 text-sm" onClick={() => downloadFile(`recordatorio-${r.id.slice(0, 8)}.ics`, reminderToIcs(r), 'text/calendar')}>
+              <button
+                type="button"
+                className="btn btn-ghost min-h-10 text-sm"
+                onClick={() =>
+                  downloadFile(`recordatorio-${r.id.slice(0, 8)}.ics`, reminderToIcs(r), 'text/calendar')
+                }
+              >
                 <Icon name="download" size={16} /> Al calendario
               </button>
-              <button type="button" className="btn btn-icon btn-ghost border-0" aria-label={`Eliminar «${r.titulo}»`} onClick={() => void deleteReminder(r.id)}>
+              <button
+                type="button"
+                className="btn btn-icon btn-ghost border-0"
+                aria-label={`Eliminar «${r.titulo}»`}
+                onClick={() => void deleteReminder(r.id)}
+              >
                 <Icon name="trash" size={18} />
               </button>
             </li>
@@ -251,7 +316,9 @@ function ProgressTab() {
   const attempts = useLiveQuery(() => listAttempts(), [], []);
   const data = useAsync(async () => {
     const exercises = await loadEjercicios();
-    const names = new Map(exercises.map((e) => [e.materia, getMateria(e.materia)?.nombre ?? e.materia] as const));
+    const names = new Map(
+      exercises.map((e) => [e.materia, getMateria(e.materia)?.nombre ?? e.materia] as const),
+    );
     return { exercises, names };
   }, []);
   const rows = useMemo(() => {
@@ -266,13 +333,22 @@ function ProgressTab() {
       if (solved.get(e.id)?.solved) current.solved += 1;
       bySubject.set(e.materia, current);
     }
-    return [...bySubject.entries()].map(([id, s]) => ({ id, name: data.data.names.get(id) ?? id, ...s, ...(acc.get(id) ?? { attempts: 0, correct: 0 }) }));
+    return [...bySubject.entries()].map(([id, s]) => ({
+      id,
+      name: data.data.names.get(id) ?? id,
+      ...s,
+      ...(acc.get(id) ?? { attempts: 0, correct: 0 }),
+    }));
   }, [data, attempts]);
 
   if ((attempts ?? []).length === 0)
     return (
       <EmptyState icon="target" title="Aún no hay intentos">
-        Resuelve ejercicios en <AppLink to="/practica" className="link-red">Práctica</AppLink> y aquí verás en qué temas fallas más.
+        Resuelve ejercicios en{' '}
+        <AppLink to="/practica" className="link-red">
+          Práctica
+        </AppLink>{' '}
+        y aquí verás en qué temas fallas más.
       </EmptyState>
     );
   return (
@@ -290,8 +366,18 @@ function ProgressTab() {
                 {r.solved}/{r.total} resueltos{accuracy !== null ? ` · ${accuracy} % de aciertos` : ''}
               </span>
             </div>
-            <div className="h-2.5 overflow-hidden rounded-full bg-line" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100} aria-label={`Avance en ${r.name}`}>
-              <div className="h-full rounded-full bg-red transition-[width] duration-500" style={{ width: `${pct}%` }} />
+            <div
+              className="h-2.5 overflow-hidden rounded-full bg-line"
+              role="progressbar"
+              aria-valuenow={pct}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-label={`Avance en ${r.name}`}
+            >
+              <div
+                className="h-full rounded-full bg-red transition-[width] duration-500"
+                style={{ width: `${pct}%` }}
+              />
             </div>
           </li>
         );
@@ -306,7 +392,11 @@ export default function MyPage() {
   const tab = (params.get('tab') ?? 'apuntes') as Tab;
   return (
     <div>
-      <PageHeader eyebrow="Solo en este dispositivo" title="Mi espacio" subtitle="Tus apuntes, lo marcado con estrella, tus colecciones, recordatorios y avance. Nada de esto sale de tu teléfono." />
+      <PageHeader
+        eyebrow="Solo en este dispositivo"
+        title="Mi espacio"
+        subtitle="Tus apuntes, lo marcado con estrella, tus colecciones, recordatorios y avance. Nada de esto sale de tu teléfono."
+      />
       <Tabs<Tab>
         label="Secciones de mi espacio"
         value={tab}

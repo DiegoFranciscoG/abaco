@@ -20,13 +20,17 @@ afterEach(() => {
   setDbForTesting(null);
 });
 
-const route = (path = '/sugerencias') => renderRoute(path, [{ path: '/sugerencias', element: <SuggestionsPage /> }]);
+const route = (path = '/sugerencias') =>
+  renderRoute(path, [{ path: '/sugerencias', element: <SuggestionsPage /> }]);
 
 describe('buzón de sugerencias', () => {
   it('explains every problem next to its field and opens nothing', async () => {
     const user = userEvent.setup();
     route();
-    await user.type(await screen.findByLabelText('Tu sugerencia *'), 'asdf qwer zxcv asdf qwer zxcv asdf qwer zxcv');
+    await user.type(
+      await screen.findByLabelText('Tu sugerencia *'),
+      'asdf qwer zxcv asdf qwer zxcv asdf qwer zxcv',
+    );
     await user.click(screen.getByRole('button', { name: 'Enviar sugerencia' }));
     expect(screen.getByText('Elige de qué trata tu sugerencia.')).toBeInTheDocument();
     expect(screen.getByText(/No logro entender el mensaje/)).toBeInTheDocument();
@@ -39,7 +43,10 @@ describe('buzón de sugerencias', () => {
     const user = userEvent.setup();
     route();
     await user.click(await screen.findByLabelText('Algo no funciona'));
-    await user.type(screen.getByLabelText('Tu sugerencia *'), 'La calculadora de impuestos es una mierda y no sirve para nada en la materia');
+    await user.type(
+      screen.getByLabelText('Tu sugerencia *'),
+      'La calculadora de impuestos es una mierda y no sirve para nada en la materia',
+    );
     await user.click(screen.getByRole('checkbox'));
     await user.click(screen.getByRole('button', { name: 'Enviar sugerencia' }));
     expect(screen.getByText(/palabras ofensivas/)).toBeInTheDocument();
@@ -51,7 +58,10 @@ describe('buzón de sugerencias', () => {
     route('/sugerencias?tipo=materia&materia=contabilidad-costos');
     expect(await screen.findByLabelText('Materia (opcional)')).toHaveValue('contabilidad-costos');
     expect(screen.getByLabelText('Agregar una materia, tema o subtema')).toBeChecked();
-    await user.type(screen.getByLabelText('Tu sugerencia *'), 'Faltan ejercicios de costeo por procesos con producción equivalente en esta materia.');
+    await user.type(
+      screen.getByLabelText('Tu sugerencia *'),
+      'Faltan ejercicios de costeo por procesos con producción equivalente en esta materia.',
+    );
     await user.click(screen.getByRole('checkbox'));
     await user.click(screen.getByRole('button', { name: 'Enviar sugerencia' }));
 
@@ -61,10 +71,21 @@ describe('buzón de sugerencias', () => {
     expect(decodeURIComponent(href)).toContain('Materia: Contabilidad de costos');
 
     expect(screen.getByRole('heading', { name: '¡Gracias por ayudar a mejorar ÁBACO!' })).toHaveFocus();
-    expect(screen.getByRole('heading', { name: 'Visita mis otras redes y mis otros trabajos' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Instagram/ })).toHaveAttribute('href', 'https://www.instagram.com/diego.granda.z/');
-    expect(screen.getByRole('link', { name: /LinkedIn/ })).toHaveAttribute('href', 'https://www.linkedin.com/in/diego-francisco-g-61b793254/');
-    expect(screen.getByRole('link', { name: /^GitHub/ })).toHaveAttribute('href', 'https://github.com/DiegoFranciscoG');
+    expect(
+      screen.getByRole('heading', { name: 'Visita mis otras redes y mis otros trabajos' }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Instagram/ })).toHaveAttribute(
+      'href',
+      'https://www.instagram.com/diego.granda.z/',
+    );
+    expect(screen.getByRole('link', { name: /LinkedIn/ })).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/diego-francisco-g-61b793254/',
+    );
+    expect(screen.getByRole('link', { name: /^GitHub/ })).toHaveAttribute(
+      'href',
+      'https://github.com/DiegoFranciscoG',
+    );
     const projects = screen.getByRole('region', { name: 'Estos son mis proyectos' });
     expect(within(projects).getAllByRole('link', { name: /Ver el código/ }).length).toBeGreaterThanOrEqual(5);
     for (const link of within(projects).getAllByRole('link')) {

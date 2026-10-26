@@ -1,11 +1,23 @@
 import { describe, expect, it } from 'vitest';
 import { buildSuggestionMail, MAILTO_MAX } from '../../src/domain/suggestions/mail';
 import { findOffensive } from '../../src/domain/suggestions/profanity';
-import { nonsenseReason, personalDataReason, validateSuggestion, type SuggestionInput } from '../../src/domain/suggestions/validate';
-import { clearSuggestionLedger, fingerprint, limitReason, recordSuggestion, SUGGESTION_STORAGE_KEY } from '../../src/features/suggestions/limits';
+import {
+  nonsenseReason,
+  personalDataReason,
+  validateSuggestion,
+  type SuggestionInput,
+} from '../../src/domain/suggestions/validate';
+import {
+  clearSuggestionLedger,
+  fingerprint,
+  limitReason,
+  recordSuggestion,
+  SUGGESTION_STORAGE_KEY,
+} from '../../src/features/suggestions/limits';
 
 const IDS = new Set(['tributacion', 'contabilidad-costos']);
-const GOOD = 'En Contabilidad de costos faltan ejercicios de costeo por procesos con producción equivalente y su informe de costos.';
+const GOOD =
+  'En Contabilidad de costos faltan ejercicios de costeo por procesos con producción equivalente y su informe de costos.';
 
 const input = (over: Partial<SuggestionInput> = {}): SuggestionInput => ({
   tipo: 'materia',
@@ -105,7 +117,11 @@ describe('datos personales', () => {
     expect(personalDataReason(text)).not.toBeNull();
   });
 
-  it.each(['La fracción básica es USD 12 208 en 2026', 'Un capital de 1.000.000.000 al 8 %', 'Los años 2019 2020 2021 y 2022'])('allows «%s»', (text) => {
+  it.each([
+    'La fracción básica es USD 12 208 en 2026',
+    'Un capital de 1.000.000.000 al 8 %',
+    'Los años 2019 2020 2021 y 2022',
+  ])('allows «%s»', (text) => {
     expect(personalDataReason(text)).toBeNull();
   });
 });
@@ -113,7 +129,10 @@ describe('datos personales', () => {
 describe('validación del buzón', () => {
   it('accepts a clear, respectful suggestion', () => {
     const result = validateSuggestion(input(), IDS);
-    expect(result).toEqual({ ok: true, value: { tipo: 'materia', materia: 'contabilidad-costos', mensaje: GOOD, fuente: null } });
+    expect(result).toEqual({
+      ok: true,
+      value: { tipo: 'materia', materia: 'contabilidad-costos', mensaje: GOOD, fuente: null },
+    });
   });
 
   it('requires a kind, enough text and consent', () => {
@@ -129,26 +148,47 @@ describe('validación del buzón', () => {
       expect(result.errors.materia).toMatch(/materia/);
       expect(result.errors.fuente).toMatch(/norma, el libro o la página oficial/);
     }
-    const ok = validateSuggestion(input({ tipo: 'correccion', materia: 'tributacion', fuente: 'https://www.sri.gob.ec/impuesto-renta' }), IDS);
+    const ok = validateSuggestion(
+      input({ tipo: 'correccion', materia: 'tributacion', fuente: 'https://www.sri.gob.ec/impuesto-renta' }),
+      IDS,
+    );
     expect(ok.ok).toBe(true);
   });
 
   it('rejects unknown subjects, links in the message, insecure sources and the honeypot', () => {
-    expect(validateSuggestion(input({ materia: 'no-existe' }), IDS)).toMatchObject({ ok: false, errors: { materia: expect.any(String) } });
-    expect(validateSuggestion(input({ mensaje: `${GOOD} https://spam.example` }), IDS)).toMatchObject({ ok: false, errors: { mensaje: expect.stringMatching(/Fuente/) } });
-    expect(validateSuggestion(input({ fuente: 'http://inseguro.example' }), IDS)).toMatchObject({ ok: false, errors: { fuente: expect.stringMatching(/https/) } });
-    expect(validateSuggestion(input({ trampa: 'https://bot.example' }), IDS)).toMatchObject({ ok: false, errors: { form: expect.any(String) } });
+    expect(validateSuggestion(input({ materia: 'no-existe' }), IDS)).toMatchObject({
+      ok: false,
+      errors: { materia: expect.any(String) },
+    });
+    expect(validateSuggestion(input({ mensaje: `${GOOD} https://spam.example` }), IDS)).toMatchObject({
+      ok: false,
+      errors: { mensaje: expect.stringMatching(/Fuente/) },
+    });
+    expect(validateSuggestion(input({ fuente: 'http://inseguro.example' }), IDS)).toMatchObject({
+      ok: false,
+      errors: { fuente: expect.stringMatching(/https/) },
+    });
+    expect(validateSuggestion(input({ trampa: 'https://bot.example' }), IDS)).toMatchObject({
+      ok: false,
+      errors: { form: expect.any(String) },
+    });
   });
 
   it('rejects insults with a respectful message', () => {
-    const result = validateSuggestion(input({ mensaje: 'Esta materia de costos está hecha una mierda, arreglen los ejercicios ya' }), IDS);
+    const result = validateSuggestion(
+      input({ mensaje: 'Esta materia de costos está hecha una mierda, arreglen los ejercicios ya' }),
+      IDS,
+    );
     expect(result).toMatchObject({ ok: false, errors: { mensaje: expect.stringMatching(/ofensivas/) } });
   });
 });
 
 describe('correo preparado', () => {
   it('builds a mailto link with subject, body and CRLF line breaks', () => {
-    const mail = buildSuggestionMail({ tipo: 'materia', materia: 'contabilidad-costos', mensaje: GOOD, fuente: null }, { address: 'buzon@example.com', materiaNombre: 'Contabilidad de costos' });
+    const mail = buildSuggestionMail(
+      { tipo: 'materia', materia: 'contabilidad-costos', mensaje: GOOD, fuente: null },
+      { address: 'buzon@example.com', materiaNombre: 'Contabilidad de costos' },
+    );
     expect(mail.subject).toBe('[ÁBACO] Agregar una materia, tema o subtema · Contabilidad de costos');
     expect(mail.href.startsWith('mailto:buzon@example.com?subject=')).toBe(true);
     expect(mail.href).toContain('%0D%0A');
@@ -159,7 +199,10 @@ describe('correo preparado', () => {
 
   it('flags messages too long for a mailto link', () => {
     const long = 'á'.repeat(900);
-    const mail = buildSuggestionMail({ tipo: 'otra', materia: null, mensaje: long, fuente: null }, { address: 'buzon@example.com' });
+    const mail = buildSuggestionMail(
+      { tipo: 'otra', materia: null, mensaje: long, fuente: null },
+      { address: 'buzon@example.com' },
+    );
     expect(mail.href.length).toBeGreaterThan(MAILTO_MAX);
     expect(mail.tooLong).toBe(true);
   });

@@ -1,6 +1,15 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState } from 'react';
-import { backupFileName, BackupError, createBackup, markBackupDone, parseBackup, restoreBackup, serializeBackup, type RestoreMode } from '../../data/backup';
+import {
+  backupFileName,
+  BackupError,
+  createBackup,
+  markBackupDone,
+  parseBackup,
+  restoreBackup,
+  serializeBackup,
+  type RestoreMode,
+} from '../../data/backup';
 import { getCarrera, getMateria } from '../../data/content';
 import { countUserData, getDeviceId, getMeta, updateProfile, wipeAllData } from '../../data/repositories';
 import { checkStorage, formatBytes, requestPersistence, type StorageStatus } from '../../data/storage-health';
@@ -15,13 +24,29 @@ import { useToast } from '../../ui/use-toast';
 import { clearSuggestionLedger } from '../suggestions/limits';
 import { InstallCard } from './InstallCard';
 
-function Segmented<T extends string>({ label, value, options, onChange }: { label: string; value: T; options: { id: T; label: string }[]; onChange: (v: T) => void }) {
+function Segmented<T extends string>({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: T;
+  options: { id: T; label: string }[];
+  onChange: (v: T) => void;
+}) {
   return (
     <fieldset>
       <legend className="mb-2 text-sm font-semibold text-ink-2">{label}</legend>
       <div className="inline-flex flex-wrap rounded-xl border border-line bg-surface p-1">
         {options.map((o) => (
-          <button key={o.id} type="button" aria-pressed={value === o.id} onClick={() => onChange(o.id)} className={`min-h-10 rounded-lg px-3 text-sm font-semibold ${value === o.id ? 'bg-ink text-paper' : 'text-muted'}`}>
+          <button
+            key={o.id}
+            type="button"
+            aria-pressed={value === o.id}
+            onClick={() => onChange(o.id)}
+            className={`min-h-10 rounded-lg px-3 text-sm font-semibold ${value === o.id ? 'bg-ink text-paper' : 'text-muted'}`}
+          >
             {o.label}
           </button>
         ))}
@@ -82,7 +107,11 @@ export default function SettingsPage() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8">
-      <PageHeader eyebrow="Ajustes" title="Tu ÁBACO" subtitle="Preferencias, respaldo y estado del almacenamiento de este dispositivo." />
+      <PageHeader
+        eyebrow="Ajustes"
+        title="Tu ÁBACO"
+        subtitle="Preferencias, respaldo y estado del almacenamiento de este dispositivo."
+      />
 
       <section className="card space-y-5 p-5" aria-labelledby="perfil">
         <h2 id="perfil" className="font-display text-xl font-semibold">
@@ -115,14 +144,47 @@ export default function SettingsPage() {
                 ? `${getCarrera(profile.carrera)?.nombre ?? ''}${profile.ciclo ? ` · ${profile.ciclo}.º ciclo` : ''}`
                 : 'Sin elegir'}
             </p>
-            <AppLink to={profile.carrera ? `/materias?carrera=${profile.carrera}${profile.ciclo ? `&ciclo=${profile.ciclo}` : ''}` : '/materias'} className="link-red mt-2 inline-block text-sm">
+            <AppLink
+              to={
+                profile.carrera
+                  ? `/materias?carrera=${profile.carrera}${profile.ciclo ? `&ciclo=${profile.ciclo}` : ''}`
+                  : '/materias'
+              }
+              className="link-red mt-2 inline-block text-sm"
+            >
               {profile.carrera ? 'Cambiar →' : 'Elegir carrera y ciclo →'}
             </AppLink>
           </div>
         </div>
-        <Segmented<ThemePreference> label="Tema" value={profile.tema} onChange={(v) => void updateProfile({ tema: v })} options={[{ id: 'system', label: 'Como el sistema' }, { id: 'light', label: 'Claro' }, { id: 'dark', label: 'Oscuro' }]} />
-        <Segmented<MotionPreference> label="Animaciones y 3D" value={profile.movimiento} onChange={(v) => void updateProfile({ movimiento: v })} options={[{ id: 'system', label: 'Como el sistema' }, { id: 'full', label: 'Completas' }, { id: 'reduce', label: 'Reducidas (sin 3D)' }]} />
-        <Segmented<'es' | 'en'> label="Sintaxis de Excel por defecto" value={profile.sintaxisExcel} onChange={(v) => void updateProfile({ sintaxisExcel: v })} options={[{ id: 'es', label: 'Español: =VA(1%;12;-100)' }, { id: 'en', label: 'Inglés: =PV(1%,12,-100)' }]} />
+        <Segmented<ThemePreference>
+          label="Tema"
+          value={profile.tema}
+          onChange={(v) => void updateProfile({ tema: v })}
+          options={[
+            { id: 'system', label: 'Como el sistema' },
+            { id: 'light', label: 'Claro' },
+            { id: 'dark', label: 'Oscuro' },
+          ]}
+        />
+        <Segmented<MotionPreference>
+          label="Animaciones y 3D"
+          value={profile.movimiento}
+          onChange={(v) => void updateProfile({ movimiento: v })}
+          options={[
+            { id: 'system', label: 'Como el sistema' },
+            { id: 'full', label: 'Completas' },
+            { id: 'reduce', label: 'Reducidas (sin 3D)' },
+          ]}
+        />
+        <Segmented<'es' | 'en'>
+          label="Sintaxis de Excel por defecto"
+          value={profile.sintaxisExcel}
+          onChange={(v) => void updateProfile({ sintaxisExcel: v })}
+          options={[
+            { id: 'es', label: 'Español: =VA(1%;12;-100)' },
+            { id: 'en', label: 'Inglés: =PV(1%,12,-100)' },
+          ]}
+        />
       </section>
 
       <InstallCard />
@@ -133,7 +195,10 @@ export default function SettingsPage() {
         </h2>
         <p className="text-sm text-muted">
           Tienes {total} elementos guardados
-          {counts ? ` (${counts.apuntes} apuntes, ${counts.colecciones} colecciones, ${counts.hojas} hojas, ${counts.estrellas} estrellas, ${counts.recordatorios} recordatorios, ${counts.intentos} intentos)` : ''}. Último respaldo:{' '}
+          {counts
+            ? ` (${counts.apuntes} apuntes, ${counts.colecciones} colecciones, ${counts.hojas} hojas, ${counts.estrellas} estrellas, ${counts.recordatorios} recordatorios, ${counts.intentos} intentos)`
+            : ''}
+          . Último respaldo:{' '}
           <strong className="text-ink-2">{lastBackup ? formatDate(lastBackup) : 'nunca'}</strong>.
         </p>
         <div className="flex flex-wrap gap-2">
@@ -142,15 +207,34 @@ export default function SettingsPage() {
           </button>
           <label className="btn btn-ghost cursor-pointer">
             <Icon name="upload" size={18} /> Restaurar desde archivo
-            <input type="file" accept=".json,application/json" className="sr-only" onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ''; if (f) void onFile(f); }} />
+            <input
+              type="file"
+              accept=".json,application/json"
+              className="sr-only"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                e.target.value = '';
+                if (f) void onFile(f);
+              }}
+            />
           </label>
         </div>
         {pending ? (
           <div className="space-y-3 rounded-2xl border border-line p-4">
             <p className="text-sm">
-              Respaldo del <strong>{formatDate(pending.exportadoEn)}</strong> con {pending.datos.apuntes.length} apuntes, {pending.datos.colecciones.length} colecciones y {pending.datos.hojas.length} hojas.
+              Respaldo del <strong>{formatDate(pending.exportadoEn)}</strong> con{' '}
+              {pending.datos.apuntes.length} apuntes, {pending.datos.colecciones.length} colecciones y{' '}
+              {pending.datos.hojas.length} hojas.
             </p>
-            <Segmented<RestoreMode> label="¿Cómo restaurar?" value={mode} onChange={setMode} options={[{ id: 'reemplazar', label: 'Reemplazar todo' }, { id: 'combinar', label: 'Combinar con lo actual' }]} />
+            <Segmented<RestoreMode>
+              label="¿Cómo restaurar?"
+              value={mode}
+              onChange={setMode}
+              options={[
+                { id: 'reemplazar', label: 'Reemplazar todo' },
+                { id: 'combinar', label: 'Combinar con lo actual' },
+              ]}
+            />
             <div className="flex gap-2">
               <button type="button" className="btn btn-primary" onClick={() => void confirmRestore()}>
                 Restaurar
@@ -163,7 +247,8 @@ export default function SettingsPage() {
         ) : null}
         {deviceId ? (
           <p className="text-xs text-muted">
-            Identificador local de este dispositivo: <code className="font-mono">{deviceId.slice(0, 8)}</code>. Se genera aquí, no se envía a ningún lado y solo sirve para nombrar tus respaldos.
+            Identificador local de este dispositivo: <code className="font-mono">{deviceId.slice(0, 8)}</code>
+            . Se genera aquí, no se envía a ningún lado y solo sirve para nombrar tus respaldos.
           </p>
         ) : null}
       </section>
@@ -175,14 +260,43 @@ export default function SettingsPage() {
         {status ? (
           <>
             <dl className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
-              <div><dt className="text-muted">Estado</dt><dd className="font-semibold">{status.indexedDb === 'ok' ? 'Disponible' : 'Bloqueado'}</dd></div>
-              <div><dt className="text-muted">Usado</dt><dd className="tnum font-semibold">{formatBytes(status.usoBytes)}</dd></div>
-              <div><dt className="text-muted">Cuota</dt><dd className="tnum font-semibold">{formatBytes(status.cuotaBytes)}</dd></div>
-              <div><dt className="text-muted">Protegido</dt><dd className="font-semibold">{status.persistente === null ? 'Desconocido' : status.persistente ? 'Sí' : 'No'}</dd></div>
+              <div>
+                <dt className="text-muted">Estado</dt>
+                <dd className="font-semibold">{status.indexedDb === 'ok' ? 'Disponible' : 'Bloqueado'}</dd>
+              </div>
+              <div>
+                <dt className="text-muted">Usado</dt>
+                <dd className="tnum font-semibold">{formatBytes(status.usoBytes)}</dd>
+              </div>
+              <div>
+                <dt className="text-muted">Cuota</dt>
+                <dd className="tnum font-semibold">{formatBytes(status.cuotaBytes)}</dd>
+              </div>
+              <div>
+                <dt className="text-muted">Protegido</dt>
+                <dd className="font-semibold">
+                  {status.persistente === null ? 'Desconocido' : status.persistente ? 'Sí' : 'No'}
+                </dd>
+              </div>
             </dl>
-            {status.posibleIncognito ? <Notice tone="warn">Parece una ventana privada: lo guardado se borrará al cerrarla.</Notice> : null}
+            {status.posibleIncognito ? (
+              <Notice tone="warn">Parece una ventana privada: lo guardado se borrará al cerrarla.</Notice>
+            ) : null}
             {status.persistente === false ? (
-              <button type="button" className="btn btn-soft" onClick={async () => { const ok = await requestPersistence(); toast.show(ok ? 'El navegador protegerá tus datos' : 'El navegador no aceptó la solicitud; haz respaldos.', ok ? 'ok' : 'info'); setStatus(await checkStorage()); }}>
+              <button
+                type="button"
+                className="btn btn-soft"
+                onClick={async () => {
+                  const ok = await requestPersistence();
+                  toast.show(
+                    ok
+                      ? 'El navegador protegerá tus datos'
+                      : 'El navegador no aceptó la solicitud; haz respaldos.',
+                    ok ? 'ok' : 'info',
+                  );
+                  setStatus(await checkStorage());
+                }}
+              >
                 <Icon name="shield" size={18} /> Pedir al navegador que no borre mis datos
               </button>
             ) : null}
@@ -194,10 +308,18 @@ export default function SettingsPage() {
         <h2 id="borrar" className="font-display text-xl font-semibold text-red">
           Empezar de cero
         </h2>
-        <p className="text-sm text-muted">Borra apuntes, colecciones, hojas, recordatorios, intentos y preferencias de este dispositivo. No se puede deshacer: descarga un respaldo antes.</p>
+        <p className="text-sm text-muted">
+          Borra apuntes, colecciones, hojas, recordatorios, intentos y preferencias de este dispositivo. No se
+          puede deshacer: descarga un respaldo antes.
+        </p>
         <label className="block">
           <span className="mb-1 block text-sm font-semibold">Escribe BORRAR para confirmar</span>
-          <input className="field max-w-xs" value={confirmText} onChange={(e) => setConfirmText(e.target.value)} autoComplete="off" />
+          <input
+            className="field max-w-xs"
+            value={confirmText}
+            onChange={(e) => setConfirmText(e.target.value)}
+            autoComplete="off"
+          />
         </label>
         <div className="flex flex-wrap gap-2">
           <button type="button" className="btn btn-ghost" onClick={() => void doBackup()}>

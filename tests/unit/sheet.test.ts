@@ -165,7 +165,16 @@ describe('xlsx files', () => {
 /** T-07: a sheet with 30 formulas survives a download/re-open round trip and matches hand calculations. */
 describe('T-07: spreadsheet fidelity', () => {
   const cells: Record<string, string> = {
-    A1: '1000', A2: '0,01', A3: '12', A4: '0,1', A5: '5', A6: '-1000', A7: '300', A8: '400', A9: '500', A10: 'Caja',
+    A1: '1000',
+    A2: '0,01',
+    A3: '12',
+    A4: '0,1',
+    A5: '5',
+    A6: '-1000',
+    A7: '300',
+    A8: '400',
+    A9: '500',
+    A10: 'Caja',
     B1: '=A1*(1+A2)^A3',
     B2: '=VA(A2;A3;-100)',
     B3: '=PAGO(A2;A3;-A1)',

@@ -56,21 +56,30 @@ export function Onboarding() {
                   Tus datos viven en este teléfono
                 </h2>
                 <p className="mt-0.5 text-xs leading-relaxed text-ink-2">
-                  Sin cuentas ni servidores: si borras el navegador o cambias de teléfono se pierden. Descarga un respaldo de
-                  vez en cuando.
+                  Sin cuentas ni servidores: si borras el navegador o cambias de teléfono se pierden. Descarga
+                  un respaldo de vez en cuando.
                 </p>
               </div>
             </div>
             {status?.indexedDb === 'bloqueado' ? (
-              <Notice tone="warn">Tu navegador está bloqueando el almacenamiento: puedes leer todo, pero lo que escribas no se guardará.</Notice>
+              <Notice tone="warn">
+                Tu navegador está bloqueando el almacenamiento: puedes leer todo, pero lo que escribas no se
+                guardará.
+              </Notice>
             ) : status?.posibleIncognito ? (
-              <Notice tone="warn">Parece una ventana privada o de incógnito: lo que guardes se borrará al cerrarla.</Notice>
+              <Notice tone="warn">
+                Parece una ventana privada o de incógnito: lo que guardes se borrará al cerrarla.
+              </Notice>
             ) : null}
             <div className="flex flex-wrap justify-end gap-2">
               <AppLink to="/legal/privacidad" className="btn btn-ghost min-h-11 text-sm">
                 Privacidad
               </AppLink>
-              <button type="button" className="btn btn-primary min-h-11 text-sm" onClick={() => void accept()}>
+              <button
+                type="button"
+                className="btn btn-primary min-h-11 text-sm"
+                onClick={() => void accept()}
+              >
                 Entendido, empezar
               </button>
             </div>
@@ -83,10 +92,19 @@ export function Onboarding() {
           <div className="card flex items-center gap-3 px-4 py-3 text-sm">
             <Icon name="download" className="shrink-0 text-red" />
             <p className="flex-1">Hace más de 15 días que no descargas un respaldo de tus apuntes.</p>
-            <AppLink to="/ajustes#respaldo" className="btn btn-soft min-h-10 px-3 text-sm" onClick={() => setDismissedReminder(true)}>
+            <AppLink
+              to="/ajustes#respaldo"
+              className="btn btn-soft min-h-10 px-3 text-sm"
+              onClick={() => setDismissedReminder(true)}
+            >
               Respaldar
             </AppLink>
-            <button type="button" className="btn btn-icon border-0" aria-label="Recordar más tarde" onClick={() => setDismissedReminder(true)}>
+            <button
+              type="button"
+              className="btn btn-icon border-0"
+              aria-label="Recordar más tarde"
+              onClick={() => setDismissedReminder(true)}
+            >
               <Icon name="close" size={18} />
             </button>
           </div>

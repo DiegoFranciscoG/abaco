@@ -25,7 +25,10 @@
     }
   };
   const prefs = readPrefs();
-  const dark = prefs.tema === 'dark' || prefs.tema === 'light' ? prefs.tema === 'dark' : media('(prefers-color-scheme: dark)');
+  const dark =
+    prefs.tema === 'dark' || prefs.tema === 'light'
+      ? prefs.tema === 'dark'
+      : media('(prefers-color-scheme: dark)');
   const reduce =
     prefs.movimiento === 'reduce' || prefs.movimiento === 'full'
       ? prefs.movimiento === 'reduce'

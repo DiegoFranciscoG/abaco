@@ -20,7 +20,8 @@
   font-style: normal;
   font-display: swap;
   font-weight: 100 800;
-  src: url('@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2') format('woff2-variations');
+  src: url('@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2')
+    format('woff2-variations');
 }
 
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
@@ -123,7 +124,11 @@ body {
   margin: 0;
   min-height: 100dvh;
   background:
-    radial-gradient(1200px 600px at 85% -10%, color-mix(in oklab, var(--red) 7%, transparent), transparent 60%),
+    radial-gradient(
+      1200px 600px at 85% -10%,
+      color-mix(in oklab, var(--red) 7%, transparent),
+      transparent 60%
+    ),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%) fixed;
   color: var(--ink);
   font-family: var(--font-sans);
@@ -177,7 +182,9 @@ body::before {
 .font-display {
   font-family: var(--font-display);
   font-optical-sizing: auto;
-  font-variation-settings: 'SOFT' 50, 'WONK' 0;
+  font-variation-settings:
+    'SOFT' 50,
+    'WONK' 0;
   letter-spacing: -0.015em;
 }
 

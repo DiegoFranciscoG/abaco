@@ -36,14 +36,20 @@ writeFileSync(join(outDir, 'search-index.json'), JSON.stringify(index));
 const stats = {
   materias: content.materias.length,
   temas: content.temarios.reduce((n, t) => n + t.temas.length, 0),
-  subtemas: content.temarios.reduce((n, t) => n + t.temas.reduce((m, tema) => m + tema.subtemas.length, 0), 0),
+  subtemas: content.temarios.reduce(
+    (n, t) => n + t.temas.reduce((m, tema) => m + tema.subtemas.length, 0),
+    0,
+  ),
   formulas: content.formulas.filter((f) => f.estado !== 'pendiente').length,
   ejercicios: content.ejercicios.length,
   terminos: content.glosario.length,
   herramientas: TOOLS.length,
   fuentes: read<unknown[]>('fuentes.json').length,
   porMateria: Object.fromEntries(
-    content.temarios.map((t) => [t.materia, { temas: t.temas.length, subtemas: t.temas.reduce((m, tema) => m + tema.subtemas.length, 0) }]),
+    content.temarios.map((t) => [
+      t.materia,
+      { temas: t.temas.length, subtemas: t.temas.reduce((m, tema) => m + tema.subtemas.length, 0) },
+    ]),
   ),
 };
 writeFileSync(join(outDir, 'stats.json'), JSON.stringify(stats));

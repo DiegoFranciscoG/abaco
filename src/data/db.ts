@@ -77,7 +77,9 @@ export function migrateRowV2toV3(table: string, row: Row): Row {
     case 'apuntes': {
       if (row.refTipo !== 'asignatura') return row;
       const materia = typeof row.refId === 'string' ? legacyMateria(row.refId) : undefined;
-      return materia ? { ...row, refTipo: 'materia', refId: materia } : { ...row, refTipo: 'libre', refId: 'general' };
+      return materia
+        ? { ...row, refTipo: 'materia', refId: materia }
+        : { ...row, refTipo: 'libre', refId: 'general' };
     }
     case 'estrellas':
       return migrateStarLike(row);

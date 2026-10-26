@@ -1,16 +1,51 @@
 import { describe, expect, it, vi } from 'vitest';
 import { legacyMateria } from '../../src/data/legacy';
 import { rankOptions, normalizedWeights } from '../../src/domain/tools/decision';
-import { cvp, irr, npv, npvProfile, payback, profitabilityIndex, signChanges } from '../../src/domain/tools/finance';
+import {
+  cvp,
+  irr,
+  npv,
+  npvProfile,
+  payback,
+  profitabilityIndex,
+  signChanges,
+} from '../../src/domain/tools/finance';
 import { checkEntry, postToLedger, statements, trialBalance } from '../../src/domain/tools/journal';
 import { equilibrium, priceControl, taxEffect } from '../../src/domain/tools/market';
 import { isSafeUrl, parseInline, parseMarkdown, wordCount } from '../../src/domain/tools/markdown';
-import { COUNTRIES, convert, fetchIndicator, fetchLatestUsd, fetchUsdSeries, OpenDataError, parseWorldBank, worldBankUrl, INDICATORS } from '../../src/domain/tools/opendata';
+import {
+  COUNTRIES,
+  convert,
+  fetchIndicator,
+  fetchLatestUsd,
+  fetchUsdSeries,
+  OpenDataError,
+  parseWorldBank,
+  worldBankUrl,
+  INDICATORS,
+} from '../../src/domain/tools/opendata';
 import { computePayroll, DEFAULT_PAYROLL } from '../../src/domain/tools/payroll';
 import { compile, derivative, extrema, normalizeExpression, roots } from '../../src/domain/tools/plot';
 import { INITIAL_SM2, nextReview, review } from '../../src/domain/tools/sm2';
-import { boxPlot, describe as describeData, histogram, meanInterval, oneSampleT, parseData, proportionInterval, regression, sampleSize } from '../../src/domain/tools/stats';
-import { incomeTaxPersonas, incomeTaxSociedades, IR_PERSONAS_2026, ivaFromBase, ivaFromTotal, rimpeTax } from '../../src/domain/tools/tax';
+import {
+  boxPlot,
+  describe as describeData,
+  histogram,
+  meanInterval,
+  oneSampleT,
+  parseData,
+  proportionInterval,
+  regression,
+  sampleSize,
+} from '../../src/domain/tools/stats';
+import {
+  incomeTaxPersonas,
+  incomeTaxSociedades,
+  IR_PERSONAS_2026,
+  ivaFromBase,
+  ivaFromTotal,
+  rimpeTax,
+} from '../../src/domain/tools/tax';
 import type { Asiento } from '../../src/data/types';
 
 describe('tax (SRI tables verified 2026-10-25)', () => {
@@ -34,7 +69,11 @@ describe('tax (SRI tables verified 2026-10-25)', () => {
       const prev = IR_PERSONAS_2026[i - 1]!;
       const cur = IR_PERSONAS_2026[i]!;
       expect(cur.desde).toBe(prev.hasta);
-      expect(Math.abs(prev.impuestoFraccion + ((prev.hasta ?? 0) - prev.desde) * prev.porcentaje - cur.impuestoFraccion)).toBeLessThan(1);
+      expect(
+        Math.abs(
+          prev.impuestoFraccion + ((prev.hasta ?? 0) - prev.desde) * prev.porcentaje - cur.impuestoFraccion,
+        ),
+      ).toBeLessThan(1);
     }
   });
 
@@ -64,7 +103,14 @@ describe('payroll (IESS table and Código del Trabajo)', () => {
   });
 
   it('overtime surcharges, monthly 13th/14th and the reserve fund after the first year', () => {
-    const r = computePayroll({ ...DEFAULT_PAYROLL, sueldo: 960, horasSuplementarias: 10, horasNocturnas: 2, mesesAntiguedad: 12, decimosMensualizados: true });
+    const r = computePayroll({
+      ...DEFAULT_PAYROLL,
+      sueldo: 960,
+      horasSuplementarias: 10,
+      horasNocturnas: 2,
+      mesesAntiguedad: 12,
+      decimosMensualizados: true,
+    });
     // hour = 960 / 240 = 4; 10 h × 6 = 60; 2 h × 8 = 16
     expect(r.ingresos.find((l) => l.concepto.startsWith('Horas suplementarias'))?.valor).toBe(60);
     expect(r.ingresos.find((l) => l.concepto.startsWith('Horas entre'))?.valor).toBe(16);
@@ -74,7 +120,9 @@ describe('payroll (IESS table and Código del Trabajo)', () => {
   });
 
   it('warns below the minimum wage and rejects invalid input', () => {
-    expect(computePayroll({ ...DEFAULT_PAYROLL, sueldo: 300 }).advertencias.join(' ')).toMatch(/salario básico/);
+    expect(computePayroll({ ...DEFAULT_PAYROLL, sueldo: 300 }).advertencias.join(' ')).toMatch(
+      /salario básico/,
+    );
     expect(() => computePayroll({ ...DEFAULT_PAYROLL, sueldo: -1 })).toThrow(RangeError);
     expect(() => computePayroll({ ...DEFAULT_PAYROLL, horasMes: 0 })).toThrow(RangeError);
   });
@@ -88,14 +136,19 @@ describe('finance: CVP and capital budgeting', () => {
     expect(r.utilidad).toBe(4000);
     expect(r.margenSeguridadPct).toBeCloseTo(200 / 700, 10);
     expect(r.apalancamientoOperativo).toBeCloseTo(14_000 / 4000, 10);
-    expect(() => cvp({ precio: 10, costoVariable: 10, costosFijos: 1, ventasUnidades: 1 })).toThrow(/mayor que el costo variable/);
+    expect(() => cvp({ precio: 10, costoVariable: 10, costosFijos: 1, ventasUnidades: 1 })).toThrow(
+      /mayor que el costo variable/,
+    );
   });
 
   it('NPV, IRR, profitability index and payback agree with each other', () => {
     const flows = [-10_000, 3000, 4000, 4000, 3500];
     const tir = irr(flows)!;
     expect(npv(tir, flows)).toBeCloseTo(0, 6);
-    expect(npv(0.12, flows)).toBeCloseTo(-10_000 + 3000 / 1.12 + 4000 / 1.12 ** 2 + 4000 / 1.12 ** 3 + 3500 / 1.12 ** 4, 8);
+    expect(npv(0.12, flows)).toBeCloseTo(
+      -10_000 + 3000 / 1.12 + 4000 / 1.12 ** 2 + 4000 / 1.12 ** 3 + 3500 / 1.12 ** 4,
+      8,
+    );
     expect(profitabilityIndex(0.12, flows)! - 1).toBeCloseTo(npv(0.12, flows) / 10_000, 10);
     expect(payback(flows)).toBeCloseTo(2 + 3000 / 4000, 10);
     expect(payback(flows, 0.12)!).toBeGreaterThan(payback(flows)!);
@@ -158,28 +211,84 @@ describe('SM-2 spaced repetition', () => {
 
 describe('decision matrix', () => {
   it('normalizes weights and ranks options', () => {
-    expect(normalizedWeights([{ nombre: 'a', peso: 30 }, { nombre: 'b', peso: 10 }])).toEqual([0.75, 0.25]);
+    expect(
+      normalizedWeights([
+        { nombre: 'a', peso: 30 },
+        { nombre: 'b', peso: 10 },
+      ]),
+    ).toEqual([0.75, 0.25]);
     const ranking = rankOptions({
-      criterios: [{ nombre: 'Costo', peso: 50 }, { nombre: 'Calidad', peso: 50 }],
+      criterios: [
+        { nombre: 'Costo', peso: 50 },
+        { nombre: 'Calidad', peso: 50 },
+      ],
       opciones: ['A', 'B'],
-      puntajes: [[10, 2], [6, 8]],
+      puntajes: [
+        [10, 2],
+        [6, 8],
+      ],
     });
-    expect(ranking.map((r) => [r.opcion, r.total, r.posicion])).toEqual([['B', 7, 1], ['A', 6, 2]]);
-    expect(rankOptions({ criterios: [{ nombre: 'x', peso: 1 }], opciones: ['A'], puntajes: [[99]] })[0]?.total).toBe(10);
+    expect(ranking.map((r) => [r.opcion, r.total, r.posicion])).toEqual([
+      ['B', 7, 1],
+      ['A', 6, 2],
+    ]);
+    expect(
+      rankOptions({ criterios: [{ nombre: 'x', peso: 1 }], opciones: ['A'], puntajes: [[99]] })[0]?.total,
+    ).toBe(10);
   });
 });
 
 describe('journal, ledger and trial balance', () => {
   const asientos: Asiento[] = [
-    { id: '1', fecha: '2026-01-02', glosa: 'Aporte', lineas: [{ cuenta: 'Caja', tipo: 'activo', debe: 1000, haber: 0 }, { cuenta: 'Capital', tipo: 'patrimonio', debe: 0, haber: 1000 }] },
-    { id: '2', fecha: '2026-01-03', glosa: 'Venta', lineas: [{ cuenta: 'caja', tipo: 'activo', debe: 300.1, haber: 0 }, { cuenta: 'Ventas', tipo: 'ingreso', debe: 0, haber: 300.1 }] },
-    { id: '3', fecha: '2026-01-04', glosa: 'Arriendo', lineas: [{ cuenta: 'Arriendo', tipo: 'gasto', debe: 200.2, haber: 0 }, { cuenta: 'Caja', tipo: 'activo', debe: 0, haber: 200.2 }] },
+    {
+      id: '1',
+      fecha: '2026-01-02',
+      glosa: 'Aporte',
+      lineas: [
+        { cuenta: 'Caja', tipo: 'activo', debe: 1000, haber: 0 },
+        { cuenta: 'Capital', tipo: 'patrimonio', debe: 0, haber: 1000 },
+      ],
+    },
+    {
+      id: '2',
+      fecha: '2026-01-03',
+      glosa: 'Venta',
+      lineas: [
+        { cuenta: 'caja', tipo: 'activo', debe: 300.1, haber: 0 },
+        { cuenta: 'Ventas', tipo: 'ingreso', debe: 0, haber: 300.1 },
+      ],
+    },
+    {
+      id: '3',
+      fecha: '2026-01-04',
+      glosa: 'Arriendo',
+      lineas: [
+        { cuenta: 'Arriendo', tipo: 'gasto', debe: 200.2, haber: 0 },
+        { cuenta: 'Caja', tipo: 'activo', debe: 0, haber: 200.2 },
+      ],
+    },
   ];
 
   it('rejects unbalanced or malformed entries', () => {
-    expect(checkEntry([{ cuenta: 'Caja', tipo: 'activo', debe: 10, haber: 0 }, { cuenta: 'Capital', tipo: 'patrimonio', debe: 0, haber: 9 }]).ok).toBe(false);
-    expect(checkEntry([{ cuenta: 'Caja', tipo: 'activo', debe: 10, haber: 10 }, { cuenta: 'X', tipo: 'activo', debe: 0, haber: 0 }]).errores.length).toBeGreaterThan(0);
-    expect(checkEntry([{ cuenta: 'Caja', tipo: 'activo', debe: 0.1, haber: 0 }, { cuenta: 'Bancos', tipo: 'activo', debe: 0.2, haber: 0 }, { cuenta: 'Capital', tipo: 'patrimonio', debe: 0, haber: 0.3 }]).ok).toBe(true);
+    expect(
+      checkEntry([
+        { cuenta: 'Caja', tipo: 'activo', debe: 10, haber: 0 },
+        { cuenta: 'Capital', tipo: 'patrimonio', debe: 0, haber: 9 },
+      ]).ok,
+    ).toBe(false);
+    expect(
+      checkEntry([
+        { cuenta: 'Caja', tipo: 'activo', debe: 10, haber: 10 },
+        { cuenta: 'X', tipo: 'activo', debe: 0, haber: 0 },
+      ]).errores.length,
+    ).toBeGreaterThan(0);
+    expect(
+      checkEntry([
+        { cuenta: 'Caja', tipo: 'activo', debe: 0.1, haber: 0 },
+        { cuenta: 'Bancos', tipo: 'activo', debe: 0.2, haber: 0 },
+        { cuenta: 'Capital', tipo: 'patrimonio', debe: 0, haber: 0.3 },
+      ]).ok,
+    ).toBe(true);
   });
 
   it('posts to T accounts (case-insensitive names), balances and closes the accounting equation', () => {
@@ -197,7 +306,10 @@ describe('journal, ledger and trial balance', () => {
 
 describe('statistics', () => {
   it('parses data written with decimal comma or pasted from a sheet', () => {
-    expect(parseData('1,5\n2.5; 3\t1.234,5 abc')).toEqual({ values: [1.5, 2.5, 3, 1234.5], ignored: ['abc'] });
+    expect(parseData('1,5\n2.5; 3\t1.234,5 abc')).toEqual({
+      values: [1.5, 2.5, 3, 1234.5],
+      ignored: ['abc'],
+    });
   });
 
   it('describes a sample (n − 1 variance, inclusive quartiles)', () => {
@@ -266,7 +378,13 @@ describe('function plotter (safe parser, no eval)', () => {
   });
 
   it('rejects code and unknown names instead of running them', () => {
-    for (const evil of ['alert(1)', 'constructor.constructor("x")()', 'window.location', 'fetch("https://x")', 'y']) {
+    for (const evil of [
+      'alert(1)',
+      'constructor.constructor("x")()',
+      'window.location',
+      'fetch("https://x")',
+      'y',
+    ]) {
       expect(compile(evil).ok, evil).toBe(false);
     }
     expect(() => normalizeExpression('x+'.repeat(150))).toThrow(RangeError);
@@ -275,24 +393,36 @@ describe('function plotter (safe parser, no eval)', () => {
 
 describe('safe Markdown', () => {
   it('parses headings, lists, tables, code and math blocks', () => {
-    const blocks = parseMarkdown('# Título\n\nTexto con **negrita** y $x^2$.\n\n- a\n- b\n\n| A | B |\n|---|---:|\n| 1 | 2 |\n\n$$\nVF = VA(1+i)^n\n$$\n\n```\ncodigo\n```');
+    const blocks = parseMarkdown(
+      '# Título\n\nTexto con **negrita** y $x^2$.\n\n- a\n- b\n\n| A | B |\n|---|---:|\n| 1 | 2 |\n\n$$\nVF = VA(1+i)^n\n$$\n\n```\ncodigo\n```',
+    );
     expect(blocks.map((b) => b.type)).toEqual(['heading', 'paragraph', 'list', 'table', 'math', 'code']);
     const table = blocks[3];
     expect(table?.type === 'table' && table.align).toEqual([null, 'right']);
   });
 
   it('keeps dollar amounts as text and math only between proper delimiters', () => {
-    expect(parseInline('Cuesta $5 y $10 en total')).toEqual([{ type: 'text', text: 'Cuesta $5 y $10 en total' }]);
+    expect(parseInline('Cuesta $5 y $10 en total')).toEqual([
+      { type: 'text', text: 'Cuesta $5 y $10 en total' },
+    ]);
     expect(parseInline('$a+b$')).toEqual([{ type: 'math', tex: 'a+b' }]);
   });
 
   it('links only accept http(s); HTML stays text', () => {
     expect(isSafeUrl('https://sri.gob.ec')).toBe(true);
-    for (const bad of ['javascript:alert(1)', 'data:text/html,x', 'vbscript:x', ' https://x', 'https://x"onmouseover=']) {
+    for (const bad of [
+      'javascript:alert(1)',
+      'data:text/html,x',
+      'vbscript:x',
+      ' https://x',
+      'https://x"onmouseover=',
+    ]) {
       expect(isSafeUrl(bad), bad).toBe(false);
     }
     expect(parseInline('[x](javascript:alert(1))').some((n) => n.type === 'link')).toBe(false);
-    expect(parseInline('<script>alert(1)</script>')).toEqual([{ type: 'text', text: '<script>alert(1)</script>' }]);
+    expect(parseInline('<script>alert(1)</script>')).toEqual([
+      { type: 'text', text: '<script>alert(1)</script>' },
+    ]);
   });
 
   it('counts words without counting formulas', () => {
@@ -301,7 +431,8 @@ describe('safe Markdown', () => {
 });
 
 describe('open data clients (World Bank, Frankfurter/ECB)', () => {
-  const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
+  const json = (body: unknown, status = 200) =>
+    new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
   const wbAnswer = [
     { page: 1, pages: 1, total: 3, lastupdated: '2026-10-08' },
     [
@@ -321,14 +452,20 @@ describe('open data clients (World Bank, Frankfurter/ECB)', () => {
 
   it('parses series sorted by year and skips missing values', () => {
     const data = parseWorldBank(wbAnswer, INDICATORS[2]!, ['COL', 'ECU']);
-    expect(data.series.find((s) => s.country === 'ECU')?.points).toEqual([{ year: 2023, value: 2.2 }, { year: 2024, value: 1.5 }]);
+    expect(data.series.find((s) => s.country === 'ECU')?.points).toEqual([
+      { year: 2023, value: 2.2 },
+      { year: 2024, value: 1.5 },
+    ]);
     expect(data.series.find((s) => s.country === 'COL')?.points).toEqual([]);
     expect(() => parseWorldBank({ nada: 1 }, INDICATORS[2]!, ['ECU'])).toThrow();
   });
 
   it('caches answers, sends no credentials and reports HTTP errors', async () => {
     const store = new Map<string, unknown>();
-    const cache = { get: async (k: string) => store.get(k), set: async (k: string, v: unknown) => void store.set(k, v) };
+    const cache = {
+      get: async (k: string) => store.get(k),
+      set: async (k: string, v: unknown) => void store.set(k, v),
+    };
     const fetchFn = vi.fn(async (_url: RequestInfo | URL, init?: RequestInit) => {
       expect(init?.credentials).toBe('omit');
       return json(wbAnswer);
@@ -336,8 +473,16 @@ describe('open data clients (World Bank, Frankfurter/ECB)', () => {
     await fetchIndicator('FP.CPI.TOTL.ZG', ['ECU'], 2000, 2025, { fetchFn, cache });
     await fetchIndicator('FP.CPI.TOTL.ZG', ['ECU'], 2000, 2025, { fetchFn, cache });
     expect(fetchFn).toHaveBeenCalledTimes(1);
-    await expect(fetchIndicator('FP.CPI.TOTL.ZG', ['COL'], 2000, 2025, { fetchFn: (async () => json({}, 500)) as unknown as typeof fetch })).rejects.toThrow(/error \(500\)/);
-    await expect(fetchIndicator('FP.CPI.TOTL.ZG', ['COL'], 2000, 2025, { fetchFn: (async () => json({}, 429)) as unknown as typeof fetch })).rejects.toThrow(/demasiadas/);
+    await expect(
+      fetchIndicator('FP.CPI.TOTL.ZG', ['COL'], 2000, 2025, {
+        fetchFn: (async () => json({}, 500)) as unknown as typeof fetch,
+      }),
+    ).rejects.toThrow(/error \(500\)/);
+    await expect(
+      fetchIndicator('FP.CPI.TOTL.ZG', ['COL'], 2000, 2025, {
+        fetchFn: (async () => json({}, 429)) as unknown as typeof fetch,
+      }),
+    ).rejects.toThrow(/demasiadas/);
   });
 
   it('Frankfurter: ECB provider only, validated rates and conversion', async () => {
@@ -347,17 +492,28 @@ describe('open data clients (World Bank, Frankfurter/ECB)', () => {
     }) as unknown as typeof fetch;
     const rates = await fetchLatestUsd(['EUR', 'COP'], { fetchFn });
     expect(rates).toEqual([{ date: '2026-10-23', quote: 'EUR', rate: 0.89342 }]);
-    expect(String((fetchFn as unknown as { mock: { calls: unknown[][] } }).mock.calls[0]?.[0])).not.toContain('COP');
+    expect(String((fetchFn as unknown as { mock: { calls: unknown[][] } }).mock.calls[0]?.[0])).not.toContain(
+      'COP',
+    );
     expect(convert(100, 0.89342)).toBeCloseTo(89.342, 10);
-    await expect(fetchUsdSeries('XYZ', '2026-01-01', '2026-02-01', { fetchFn })).rejects.toThrow(OpenDataError);
+    await expect(fetchUsdSeries('XYZ', '2026-01-01', '2026-02-01', { fetchFn })).rejects.toThrow(
+      OpenDataError,
+    );
     await expect(fetchUsdSeries('EUR', '2026-02-01', '2026-01-01', { fetchFn })).rejects.toThrow(/fechas/);
-    await expect(fetchLatestUsd(['EUR'], { fetchFn: (async () => json([{ date: 'x', base: 'USD', quote: 'EUR', rate: -1 }])) as unknown as typeof fetch })).rejects.toThrow();
+    await expect(
+      fetchLatestUsd(['EUR'], {
+        fetchFn: (async () =>
+          json([{ date: 'x', base: 'USD', quote: 'EUR', rate: -1 }])) as unknown as typeof fetch,
+      }),
+    ).rejects.toThrow();
   });
 });
 
 describe('legacy curriculum ids map to the catalog', () => {
   it('maps known subjects and leaves unknown ones undefined', () => {
-    expect(legacyMateria('ucuenca-contabilidad-auditoria--c1-contabilidad-general')).toBe('contabilidad-general');
+    expect(legacyMateria('ucuenca-contabilidad-auditoria--c1-contabilidad-general')).toBe(
+      'contabilidad-general',
+    );
     expect(legacyMateria('ucacue-economia--c2-microeconomia-i')).toBe('microeconomia');
     expect(legacyMateria('x--c3-matematicas-financieras')).toBe('matematica-financiera');
     expect(legacyMateria('x--c5-legislacion-mercantil-y-societaria')).toBe('derecho-empresarial');

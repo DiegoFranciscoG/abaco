@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import { getCached, setCached } from '../../../data/repositories';
 import type { ToolInfo } from '../../../domain/tools/catalog';
-import { convert, ECB_CURRENCIES, fetchLatestUsd, fetchUsdSeries, type DataCache } from '../../../domain/tools/opendata';
+import {
+  convert,
+  ECB_CURRENCIES,
+  fetchLatestUsd,
+  fetchUsdSeries,
+  type DataCache,
+} from '../../../domain/tools/opendata';
 import { LineChart } from '../../../ui/charts';
 import { useAsync, useOnline } from '../../../ui/hooks';
 import { Notice, Skeleton } from '../../../ui/primitives';
@@ -9,7 +15,10 @@ import { formatDate } from '../../../ui/utils';
 import { NumberField, ToolLayout } from '../ToolLayout';
 import { num, readNumber } from '../format';
 
-const cache: DataCache = { get: (key) => getCached(key), set: (key, value, ttl) => setCached(key, value, ttl) };
+const cache: DataCache = {
+  get: (key) => getCached(key),
+  set: (key, value, ttl) => setCached(key, value, ttl),
+};
 const iso = (d: Date) => d.toISOString().slice(0, 10);
 const PERIODS = [
   { id: '1m', label: '1 mes', days: 31 },
@@ -28,7 +37,14 @@ export default function FxTool({ tool }: { tool: ToolInfo }) {
   const from = iso(new Date(today.getTime() - days * 86_400_000));
   const to = iso(today);
 
-  const latest = useAsync(() => fetchLatestUsd(ECB_CURRENCIES.map((c) => c.code), { cache }), []);
+  const latest = useAsync(
+    () =>
+      fetchLatestUsd(
+        ECB_CURRENCIES.map((c) => c.code),
+        { cache },
+      ),
+    [],
+  );
   const series = useAsync(() => fetchUsdSeries(quote, from, to, { cache }), [quote, from, to]);
   const a = readNumber(amount);
   const rate = latest.status === 'ready' ? latest.data.find((r) => r.quote === quote) : undefined;
@@ -40,14 +56,23 @@ export default function FxTool({ tool }: { tool: ToolInfo }) {
       metodo={
         <>
           <p>
-            Tipos de referencia del Banco Central Europeo, publicados cada día hábil, obtenidos con la API de Frankfurter (código abierto, licencia MIT) usando solo el
-            proveedor BCE. Como el BCE publica cada moneda frente al euro, el valor frente al dólar es un tipo cruzado calculado por Frankfurter. Fuente: BCE.
+            Tipos de referencia del Banco Central Europeo, publicados cada día hábil, obtenidos con la API de
+            Frankfurter (código abierto, licencia MIT) usando solo el proveedor BCE. Como el BCE publica cada
+            moneda frente al euro, el valor frente al dólar es un tipo cruzado calculado por Frankfurter.
+            Fuente: BCE.
           </p>
-          <p>Son tipos de referencia, no precios de compra o venta de un banco o casa de cambio. Ecuador usa el dólar como moneda (COMF, art. 94), por eso todo se expresa por cada dólar.</p>
+          <p>
+            Son tipos de referencia, no precios de compra o venta de un banco o casa de cambio. Ecuador usa el
+            dólar como moneda (COMF, art. 94), por eso todo se expresa por cada dólar.
+          </p>
         </>
       }
     >
-      {!online ? <Notice tone="warn">Sin conexión: esta herramienta necesita internet. Los datos que ya consultaste siguen disponibles.</Notice> : null}
+      {!online ? (
+        <Notice tone="warn">
+          Sin conexión: esta herramienta necesita internet. Los datos que ya consultaste siguen disponibles.
+        </Notice>
+      ) : null}
       <div className="grid gap-6 lg:grid-cols-[1fr_2fr]">
         <div className="card space-y-4 p-5">
           <NumberField id="fx-monto" label="Monto" value={amount} onChange={setAmount} suffix="USD" />
@@ -75,12 +100,20 @@ export default function FxTool({ tool }: { tool: ToolInfo }) {
               </div>
             ) : null}
           </div>
-          <p className="text-xs text-muted">El peso colombiano y el sol peruano no forman parte de los tipos de referencia del BCE.</p>
+          <p className="text-xs text-muted">
+            El peso colombiano y el sol peruano no forman parte de los tipos de referencia del BCE.
+          </p>
         </div>
         <div className="space-y-3">
           <div role="group" aria-label="Período" className="flex flex-wrap gap-2">
             {PERIODS.map((p) => (
-              <button key={p.id} type="button" aria-pressed={period === p.id} onClick={() => setPeriod(p.id)} className={`chip min-h-10 ${period === p.id ? 'border-red bg-red-soft text-red' : ''}`}>
+              <button
+                key={p.id}
+                type="button"
+                aria-pressed={period === p.id}
+                onClick={() => setPeriod(p.id)}
+                className={`chip min-h-10 ${period === p.id ? 'border-red bg-red-soft text-red' : ''}`}
+              >
                 {p.label}
               </button>
             ))}
@@ -98,11 +131,20 @@ export default function FxTool({ tool }: { tool: ToolInfo }) {
                 }
                 xLabel="Fecha"
                 formatX={(x) => formatDate(new Date(x).toISOString().slice(0, 10))}
-                series={[{ name: quote, points: series.data.map((r) => ({ x: Date.parse(r.date), y: r.rate })) }]}
-                table={{ columns: ['Fecha', `${quote} por USD`], rows: series.data.filter((_, i, arr) => arr.length < 40 || i % Math.ceil(arr.length / 40) === 0).map((r) => [formatDate(r.date), r.rate]) }}
+                series={[
+                  { name: quote, points: series.data.map((r) => ({ x: Date.parse(r.date), y: r.rate })) },
+                ]}
+                table={{
+                  columns: ['Fecha', `${quote} por USD`],
+                  rows: series.data
+                    .filter((_, i, arr) => arr.length < 40 || i % Math.ceil(arr.length / 40) === 0)
+                    .map((r) => [formatDate(r.date), r.rate]),
+                }}
               />
             ) : null}
-            <p className="mt-2 text-xs text-muted">Fuente: Banco Central Europeo (tipos de referencia), vía Frankfurter.</p>
+            <p className="mt-2 text-xs text-muted">
+              Fuente: Banco Central Europeo (tipos de referencia), vía Frankfurter.
+            </p>
           </div>
         </div>
       </div>

@@ -33,7 +33,9 @@ for (const [file, svg, size] of [
   ['apple-touch-icon.png', apple, 180],
 ] as const) {
   await page.setViewportSize({ width: size, height: size });
-  await page.setContent(`<html><body style="margin:0;background:transparent">${svg.replace('<svg ', `<svg width="${size}" height="${size}" `)}</body></html>`);
+  await page.setContent(
+    `<html><body style="margin:0;background:transparent">${svg.replace('<svg ', `<svg width="${size}" height="${size}" `)}</body></html>`,
+  );
   await page.locator('svg').screenshot({ path: join(outDir, file), omitBackground: true });
   console.log(`${file} (${size}×${size})`);
 }

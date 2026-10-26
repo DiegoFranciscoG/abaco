@@ -185,7 +185,10 @@ export function parse(input: string, options: ParseOptions = {}): Node {
     }
     const width = rows[0]?.length ?? 0;
     if (rows.some((row) => row.length !== width)) {
-      throw new FormulaSyntaxError('Todas las filas de la matriz deben tener el mismo número de elementos', open.pos);
+      throw new FormulaSyntaxError(
+        'Todas las filas de la matriz deben tener el mismo número de elementos',
+        open.pos,
+      );
     }
     return { type: 'array', rows };
   }

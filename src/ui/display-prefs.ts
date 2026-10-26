@@ -19,7 +19,8 @@ export function parseDisplayPrefs(raw: string | null): DisplayPrefs {
     const value = JSON.parse(raw) as Partial<Record<keyof DisplayPrefs, unknown>> | null;
     return {
       tema: value?.tema === 'light' || value?.tema === 'dark' ? value.tema : 'system',
-      movimiento: value?.movimiento === 'reduce' || value?.movimiento === 'full' ? value.movimiento : 'system',
+      movimiento:
+        value?.movimiento === 'reduce' || value?.movimiento === 'full' ? value.movimiento : 'system',
     };
   } catch {
     return DEFAULT_PREFS;

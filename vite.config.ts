@@ -94,9 +94,24 @@ export default defineConfig(({ mode }) => {
             { src: 'icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
           ],
           shortcuts: [
-            { name: 'Materias por carrera y ciclo', short_name: 'Materias', url: './#/materias', icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }] },
-            { name: 'Herramientas de estudio', short_name: 'Herramientas', url: './#/herramientas', icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }] },
-            { name: 'Buzón de sugerencias', short_name: 'Sugerencias', url: './#/sugerencias', icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }] },
+            {
+              name: 'Materias por carrera y ciclo',
+              short_name: 'Materias',
+              url: './#/materias',
+              icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
+            },
+            {
+              name: 'Herramientas de estudio',
+              short_name: 'Herramientas',
+              url: './#/herramientas',
+              icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
+            },
+            {
+              name: 'Buzón de sugerencias',
+              short_name: 'Sugerencias',
+              url: './#/sugerencias',
+              icons: [{ src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
+            },
           ],
         },
         workbox: {

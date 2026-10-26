@@ -11,7 +11,10 @@ export interface SuggestionMail {
   tooLong: boolean;
 }
 
-export function buildSuggestionMail(suggestion: Suggestion, options: { address: string; materiaNombre?: string }): SuggestionMail {
+export function buildSuggestionMail(
+  suggestion: Suggestion,
+  options: { address: string; materiaNombre?: string },
+): SuggestionMail {
   const kind = SUGGESTION_KINDS.find((k) => k.id === suggestion.tipo)?.label ?? 'Sugerencia';
   const subject = `[ÁBACO] ${kind}${options.materiaNombre ? ` · ${options.materiaNombre}` : ''}`;
   const lines = [

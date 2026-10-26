@@ -32,7 +32,11 @@ export type InstallState = 'available' | 'installed' | 'ios' | 'unsupported';
 export function installState(): InstallState {
   if (installed) return 'installed';
   try {
-    if (window.matchMedia('(display-mode: standalone)').matches || (navigator as Navigator & { standalone?: boolean }).standalone === true) return 'installed';
+    if (
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (navigator as Navigator & { standalone?: boolean }).standalone === true
+    )
+      return 'installed';
   } catch {
     // matchMedia unavailable: keep checking the other signals.
   }

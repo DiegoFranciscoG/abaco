@@ -17,7 +17,12 @@ const QUADRANTS: { id: Quadrant; label: string; hint: string; tone: string }[] =
   { id: 'oportunidades', label: 'Oportunidades', hint: 'Externas, a favor', tone: 'bg-ok-soft' },
   { id: 'amenazas', label: 'Amenazas', hint: 'Externas, en contra', tone: 'bg-warn-soft' },
 ];
-const EMPTY_SWOT = { fortalezas: [] as string[], oportunidades: [] as string[], debilidades: [] as string[], amenazas: [] as string[] };
+const EMPTY_SWOT = {
+  fortalezas: [] as string[],
+  oportunidades: [] as string[],
+  debilidades: [] as string[],
+  amenazas: [] as string[],
+};
 
 function SwotBoard() {
   const toast = useToast();
@@ -26,7 +31,12 @@ function SwotBoard() {
   const [titulo, setTitulo] = useState('FODA de mi emprendimiento');
   const [foda, setFoda] = useState(EMPTY_SWOT);
   const [id, setId] = useState<string | undefined>();
-  const [drafts, setDrafts] = useState<Record<Quadrant, string>>({ fortalezas: '', debilidades: '', oportunidades: '', amenazas: '' });
+  const [drafts, setDrafts] = useState<Record<Quadrant, string>>({
+    fortalezas: '',
+    debilidades: '',
+    oportunidades: '',
+    amenazas: '',
+  });
 
   const add = (q: Quadrant) => {
     const value = drafts[q].trim();
@@ -34,7 +44,8 @@ function SwotBoard() {
     setFoda((prev) => ({ ...prev, [q]: [...prev[q], value.slice(0, 200)] }));
     setDrafts((d) => ({ ...d, [q]: '' }));
   };
-  const remove = (q: Quadrant, i: number) => setFoda((prev) => ({ ...prev, [q]: prev[q].filter((_, j) => j !== i) }));
+  const remove = (q: Quadrant, i: number) =>
+    setFoda((prev) => ({ ...prev, [q]: prev[q].filter((_, j) => j !== i) }));
   const save = async () => {
     try {
       const b = await saveBoard({ id, tipo: 'foda', titulo, foda });
@@ -51,8 +62,18 @@ function SwotBoard() {
   };
 
   const strategies = [
-    { k: 'FO', t: 'Usar fortalezas para aprovechar oportunidades', a: foda.fortalezas, b: foda.oportunidades },
-    { k: 'DO', t: 'Superar debilidades aprovechando oportunidades', a: foda.debilidades, b: foda.oportunidades },
+    {
+      k: 'FO',
+      t: 'Usar fortalezas para aprovechar oportunidades',
+      a: foda.fortalezas,
+      b: foda.oportunidades,
+    },
+    {
+      k: 'DO',
+      t: 'Superar debilidades aprovechando oportunidades',
+      a: foda.debilidades,
+      b: foda.oportunidades,
+    },
     { k: 'FA', t: 'Usar fortalezas para reducir amenazas', a: foda.fortalezas, b: foda.amenazas },
     { k: 'DA', t: 'Reducir debilidades y evitar amenazas', a: foda.debilidades, b: foda.amenazas },
   ];
@@ -62,7 +83,12 @@ function SwotBoard() {
       <div className="flex flex-wrap items-end gap-3">
         <label className="block min-w-56 flex-1">
           <span className="mb-1 block text-sm font-semibold text-ink-2">Título</span>
-          <input className="field" value={titulo} onChange={(e) => setTitulo(e.target.value)} maxLength={80} />
+          <input
+            className="field"
+            value={titulo}
+            onChange={(e) => setTitulo(e.target.value)}
+            maxLength={80}
+          />
         </label>
         <button type="button" className="btn btn-primary" onClick={() => void save()}>
           <Icon name="check" size={18} /> Guardar
@@ -83,10 +109,19 @@ function SwotBoard() {
         <ul className="flex flex-wrap gap-2" aria-label="FODA guardados">
           {saved.map((b) => (
             <li key={b.id} className="flex items-center gap-1">
-              <button type="button" className={`chip min-h-9 ${b.id === id ? 'border-red text-red' : ''}`} onClick={() => load(b)}>
+              <button
+                type="button"
+                className={`chip min-h-9 ${b.id === id ? 'border-red text-red' : ''}`}
+                onClick={() => load(b)}
+              >
                 {b.titulo}
               </button>
-              <button type="button" className="btn btn-icon btn-ghost border-0" aria-label={`Borrar ${b.titulo}`} onClick={() => void deleteBoard(b.id)}>
+              <button
+                type="button"
+                className="btn btn-icon btn-ghost border-0"
+                aria-label={`Borrar ${b.titulo}`}
+                onClick={() => void deleteBoard(b.id)}
+              >
                 <Icon name="trash" size={16} />
               </button>
             </li>
@@ -101,9 +136,17 @@ function SwotBoard() {
             </h3>
             <ul className="mt-2 space-y-1.5">
               {foda[q.id].map((item, i) => (
-                <li key={`${item}-${i}`} className="flex items-start justify-between gap-2 rounded-lg bg-surface px-3 py-2 text-sm">
+                <li
+                  key={`${item}-${i}`}
+                  className="flex items-start justify-between gap-2 rounded-lg bg-surface px-3 py-2 text-sm"
+                >
                   <span>{item}</span>
-                  <button type="button" className="text-muted hover:text-red" aria-label={`Quitar «${item}»`} onClick={() => remove(q.id, i)}>
+                  <button
+                    type="button"
+                    className="text-muted hover:text-red"
+                    aria-label={`Quitar «${item}»`}
+                    onClick={() => remove(q.id, i)}
+                  >
                     <Icon name="close" size={16} />
                   </button>
                 </li>
@@ -118,7 +161,13 @@ function SwotBoard() {
             >
               <label className="flex-1">
                 <span className="sr-only">Agregar a {q.label}</span>
-                <input className="field" value={drafts[q.id]} onChange={(e) => setDrafts((d) => ({ ...d, [q.id]: e.target.value }))} placeholder="Escribe y presiona Enter" maxLength={200} />
+                <input
+                  className="field"
+                  value={drafts[q.id]}
+                  onChange={(e) => setDrafts((d) => ({ ...d, [q.id]: e.target.value }))}
+                  placeholder="Escribe y presiona Enter"
+                  maxLength={200}
+                />
               </label>
               <button type="submit" className="btn btn-icon btn-ghost" aria-label={`Agregar a ${q.label}`}>
                 <Icon name="plus" size={18} />
@@ -131,14 +180,20 @@ function SwotBoard() {
         <h3 id="estrategias" className="font-semibold">
           Estrategias cruzadas
         </h3>
-        <p className="text-sm text-muted">Cruza cada factor interno con uno externo y escribe la estrategia en tu informe.</p>
+        <p className="text-sm text-muted">
+          Cruza cada factor interno con uno externo y escribe la estrategia en tu informe.
+        </p>
         <ul className="grid gap-3 sm:grid-cols-2">
           {strategies.map((s) => (
             <li key={s.k} className="rounded-xl border border-line p-3 text-sm">
               <p className="font-semibold">
                 {s.k} · {s.t}
               </p>
-              <p className="mt-1 text-muted">{s.a.length && s.b.length ? `${s.a.length} × ${s.b.length} combinaciones posibles, por ejemplo: «${s.a[0]}» con «${s.b[0]}».` : 'Completa ambos cuadrantes para ver combinaciones.'}</p>
+              <p className="mt-1 text-muted">
+                {s.a.length && s.b.length
+                  ? `${s.a.length} × ${s.b.length} combinaciones posibles, por ejemplo: «${s.a[0]}» con «${s.b[0]}».`
+                  : 'Completa ambos cuadrantes para ver combinaciones.'}
+              </p>
             </li>
           ))}
         </ul>
@@ -165,7 +220,8 @@ function DecisionBoard() {
     puntajes: puntajes.map((row) => row.map((v) => readNumber(v) ?? 0)),
   });
   const totalPeso = criterios.reduce((s, c) => s + (readNumber(c.peso) ?? 0), 0);
-  const setScore = (i: number, j: number, v: string) => setPuntajes((prev) => prev.map((row, a) => (a === i ? row.map((x, b) => (b === j ? v : x)) : row)));
+  const setScore = (i: number, j: number, v: string) =>
+    setPuntajes((prev) => prev.map((row, a) => (a === i ? row.map((x, b) => (b === j ? v : x)) : row)));
 
   return (
     <div className="space-y-4">
@@ -174,11 +230,30 @@ function DecisionBoard() {
           <caption className="sr-only">Matriz de decisión ponderada: puntajes de 0 a 10</caption>
           <thead className="border-b border-line">
             <tr>
-              <th scope="col" className="px-3 py-2 text-left text-xs text-muted uppercase">Opción</th>
+              <th scope="col" className="px-3 py-2 text-left text-xs text-muted uppercase">
+                Opción
+              </th>
               {criterios.map((c, j) => (
                 <th key={j} scope="col" className="px-2 py-2">
-                  <input aria-label={`Nombre del criterio ${j + 1}`} className="field mb-1 min-w-28" value={c.nombre} maxLength={60} onChange={(e) => setCriterios((p) => p.map((x, k) => (k === j ? { ...x, nombre: e.target.value } : x)))} />
-                  <input aria-label={`Peso de ${c.nombre} (%)`} className="field tnum" inputMode="decimal" value={c.peso} maxLength={5} onChange={(e) => setCriterios((p) => p.map((x, k) => (k === j ? { ...x, peso: e.target.value } : x)))} />
+                  <input
+                    aria-label={`Nombre del criterio ${j + 1}`}
+                    className="field mb-1 min-w-28"
+                    value={c.nombre}
+                    maxLength={60}
+                    onChange={(e) =>
+                      setCriterios((p) => p.map((x, k) => (k === j ? { ...x, nombre: e.target.value } : x)))
+                    }
+                  />
+                  <input
+                    aria-label={`Peso de ${c.nombre} (%)`}
+                    className="field tnum"
+                    inputMode="decimal"
+                    value={c.peso}
+                    maxLength={5}
+                    onChange={(e) =>
+                      setCriterios((p) => p.map((x, k) => (k === j ? { ...x, peso: e.target.value } : x)))
+                    }
+                  />
                 </th>
               ))}
             </tr>
@@ -187,11 +262,24 @@ function DecisionBoard() {
             {opciones.map((o, i) => (
               <tr key={i} className="border-b border-line last:border-0">
                 <th scope="row" className="px-2 py-2">
-                  <input aria-label={`Nombre de la opción ${i + 1}`} className="field min-w-32" value={o} maxLength={60} onChange={(e) => setOpciones((p) => p.map((x, k) => (k === i ? e.target.value : x)))} />
+                  <input
+                    aria-label={`Nombre de la opción ${i + 1}`}
+                    className="field min-w-32"
+                    value={o}
+                    maxLength={60}
+                    onChange={(e) => setOpciones((p) => p.map((x, k) => (k === i ? e.target.value : x)))}
+                  />
                 </th>
                 {criterios.map((c, j) => (
                   <td key={j} className="px-2 py-2">
-                    <input aria-label={`Puntaje de ${o} en ${c.nombre} (0 a 10)`} className="field tnum" inputMode="decimal" value={puntajes[i]?.[j] ?? ''} maxLength={4} onChange={(e) => setScore(i, j, e.target.value)} />
+                    <input
+                      aria-label={`Puntaje de ${o} en ${c.nombre} (0 a 10)`}
+                      className="field tnum"
+                      inputMode="decimal"
+                      value={puntajes[i]?.[j] ?? ''}
+                      maxLength={4}
+                      onChange={(e) => setScore(i, j, e.target.value)}
+                    />
                   </td>
                 ))}
               </tr>
@@ -223,10 +311,17 @@ function DecisionBoard() {
           <Icon name="plus" size={18} /> Opción
         </button>
       </div>
-      {totalPeso !== 100 ? <p className="text-sm text-muted">Los pesos suman {num(totalPeso)}; se normalizan a 100 % automáticamente.</p> : null}
+      {totalPeso !== 100 ? (
+        <p className="text-sm text-muted">
+          Los pesos suman {num(totalPeso)}; se normalizan a 100 % automáticamente.
+        </p>
+      ) : null}
       <ol className="space-y-2" aria-live="polite" aria-label="Ranking">
         {ranking.map((r) => (
-          <li key={r.opcion} className={`card flex items-center justify-between p-4 ${r.posicion === 1 ? 'border-red' : ''}`}>
+          <li
+            key={r.opcion}
+            className={`card flex items-center justify-between p-4 ${r.posicion === 1 ? 'border-red' : ''}`}
+          >
             <span className="font-semibold">
               {r.posicion}. {r.opcion}
             </span>
@@ -245,8 +340,15 @@ export default function SwotTool({ tool }: { tool: ToolInfo }) {
       tool={tool}
       metodo={
         <>
-          <p>FODA: fortalezas y debilidades son internas; oportunidades y amenazas, externas. Su valor está en cruzarlas para formular estrategias (OpenStax, Principles of Management, 8.2).</p>
-          <p>Matriz de decisión: cada opción recibe un puntaje de 0 a 10 por criterio; el total es la suma de puntaje × peso, con los pesos llevados a 100 %. El resultado ordena las opciones según tus criterios: revisa que los pesos reflejen lo que de verdad importa.</p>
+          <p>
+            FODA: fortalezas y debilidades son internas; oportunidades y amenazas, externas. Su valor está en
+            cruzarlas para formular estrategias (OpenStax, Principles of Management, 8.2).
+          </p>
+          <p>
+            Matriz de decisión: cada opción recibe un puntaje de 0 a 10 por criterio; el total es la suma de
+            puntaje × peso, con los pesos llevados a 100 %. El resultado ordena las opciones según tus
+            criterios: revisa que los pesos reflejen lo que de verdad importa.
+          </p>
         </>
       }
     >

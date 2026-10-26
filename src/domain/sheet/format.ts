@@ -6,14 +6,24 @@ const numberFormat = (locale: Locale, options: Intl.NumberFormatOptions) =>
 
 const FORMATTERS = {
   es: {
-    moneda: numberFormat('es', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 }),
+    moneda: numberFormat('es', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }),
     porcentaje: numberFormat('es', { style: 'percent', minimumFractionDigits: 2, maximumFractionDigits: 2 }),
     numero: numberFormat('es', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
     entero: numberFormat('es', { maximumFractionDigits: 0 }),
     general: numberFormat('es', { maximumSignificantDigits: 12, useGrouping: false }),
   },
   en: {
-    moneda: numberFormat('en', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 }),
+    moneda: numberFormat('en', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }),
     porcentaje: numberFormat('en', { style: 'percent', minimumFractionDigits: 2, maximumFractionDigits: 2 }),
     numero: numberFormat('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
     entero: numberFormat('en', { maximumFractionDigits: 0 }),

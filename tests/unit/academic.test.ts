@@ -21,10 +21,20 @@ import {
   safeUrl,
 } from '../../src/domain/academic/sources';
 import type { AcademicResult } from '../../src/domain/academic/types';
-import { crossrefFixture, doajFixture, laReferenciaFixture, openAlexFixture, openLibraryFixture } from '../fixtures/academic';
+import {
+  crossrefFixture,
+  doajFixture,
+  laReferenciaFixture,
+  openAlexFixture,
+  openLibraryFixture,
+} from '../fixtures/academic';
 
 const jsonResponse = (body: unknown, init: ResponseInit = {}) =>
-  new Response(JSON.stringify(body), { status: 200, headers: { 'Content-Type': 'application/json' }, ...init });
+  new Response(JSON.stringify(body), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' },
+    ...init,
+  });
 
 function fakeFetch(map: Record<string, () => Response | Promise<Response>>): typeof fetch {
   return vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
@@ -89,7 +99,11 @@ describe('source adapters', () => {
     const { total, results } = crossref.parse(crossrefFixture);
     expect(total).toBe(2);
     expect(results).toHaveLength(1);
-    expect(results[0]).toMatchObject({ title: 'Costos indirectos de fabricación en pymes', year: 2024, doi: '10.1234/abaco.2024.001' });
+    expect(results[0]).toMatchObject({
+      title: 'Costos indirectos de fabricación en pymes',
+      year: 2024,
+      doi: '10.1234/abaco.2024.001',
+    });
     expect(results[0]).not.toHaveProperty('abstract');
     expect(crossref.buildUrl('van tir', 10)).toContain('query=van%20tir');
     // Abstracts may be copyrighted by publishers: they are never requested.
@@ -107,7 +121,11 @@ describe('source adapters', () => {
   });
 
   it('DOAJ and LA Referencia', () => {
-    expect(doaj.parse(doajFixture).results[0]).toMatchObject({ url: 'https://revista.example.org/articulo/1', openAccess: true, pages: '10-22' });
+    expect(doaj.parse(doajFixture).results[0]).toMatchObject({
+      url: 'https://revista.example.org/articulo/1',
+      openAccess: true,
+      pages: '10-22',
+    });
     const lr = lareferencia.parse(laReferenciaFixture).results[0];
     expect(lr).toMatchObject({ year: 2022, authors: [{ family: 'Ríos Vega', given: 'Daniela' }] });
     expect(lareferencia.buildUrl('niif', 5)).toContain('field%5B%5D=primaryAuthors');
@@ -117,13 +135,22 @@ describe('source adapters', () => {
     const { results, total } = openlibrary.parse(openLibraryFixture);
     expect(total).toBe(3);
     expect(results).toHaveLength(1);
-    expect(results[0]).toMatchObject({ type: 'book', publisher: 'Editorial Ejemplo', url: 'https://openlibrary.org/works/OL123W', year: 2019, language: 'es' });
+    expect(results[0]).toMatchObject({
+      type: 'book',
+      publisher: 'Editorial Ejemplo',
+      url: 'https://openlibrary.org/works/OL123W',
+      year: 2019,
+      language: 'es',
+    });
     expect(openlibrary.buildUrl('costos', 10)).toContain('fields=key,title');
   });
 
   it('Crossref work by DOI for the APA tool', () => {
     const work = parseCrossrefWork({ message: crossrefFixture.message.items[0] });
-    expect(work).toMatchObject({ doi: '10.1234/abaco.2024.001', url: 'https://doi.org/10.1234/abaco.2024.001' });
+    expect(work).toMatchObject({
+      doi: '10.1234/abaco.2024.001',
+      url: 'https://doi.org/10.1234/abaco.2024.001',
+    });
   });
 
   it('rejects answers with an unexpected shape', () => {
@@ -142,7 +169,12 @@ describe('APA 7 citations', () => {
   });
 
   it('lists authors with & and abbreviates beyond 20', () => {
-    expect(formatAuthorList([{ given: 'Ana', family: 'Quito' }, { given: 'Luis', family: 'Andrade' }])).toBe('Quito, A., & Andrade, L.');
+    expect(
+      formatAuthorList([
+        { given: 'Ana', family: 'Quito' },
+        { given: 'Luis', family: 'Andrade' },
+      ]),
+    ).toBe('Quito, A., & Andrade, L.');
     const many = Array.from({ length: 22 }, (_, i) => ({ given: 'X', family: `A${i}` }));
     const list = formatAuthorList(many);
     expect(list).toContain('A18, X., … A21, X.');
@@ -159,7 +191,13 @@ describe('APA 7 citations', () => {
   });
 
   it('uses (s. f.) without year and works without authors or journal', () => {
-    const citation = formatApa({ id: 'x', source: 'doaj', title: '¿Qué es el VAN?', authors: [], url: 'https://example.org' });
+    const citation = formatApa({
+      id: 'x',
+      source: 'doaj',
+      title: '¿Qué es el VAN?',
+      authors: [],
+      url: 'https://example.org',
+    });
     expect(citation.text).toBe('¿Qué es el VAN? (s. f.). https://example.org');
   });
 });
@@ -224,7 +262,10 @@ describe('searchAcademic (parallel, cached, fault tolerant)', () => {
       }),
     });
     expect(response.bySource.crossref.status.state).toBe('error');
-    expect(response.bySource.openalex.status).toEqual({ state: 'error', message: 'La fuente respondió en un formato inesperado.' });
+    expect(response.bySource.openalex.status).toEqual({
+      state: 'error',
+      message: 'La fuente respondió en un formato inesperado.',
+    });
   });
 
   it('T-08: offline → no request is attempted and the UI is told why', async () => {
@@ -260,7 +301,9 @@ describe('merge and deep links', () => {
 
   it('builds deep links with the query encoded, including Google Scholar and Scribd', () => {
     const links = deepLinks('punto de equilibrio & costos');
-    expect(links.map((l) => l.id)).toEqual(expect.arrayContaining(['scholar', 'scribd', 'redalyc', 'dialnet', 'scielo']));
+    expect(links.map((l) => l.id)).toEqual(
+      expect.arrayContaining(['scholar', 'scribd', 'redalyc', 'dialnet', 'scielo']),
+    );
     for (const link of links) {
       expect(link.url).toMatch(/^https:\/\//);
       expect(link.url).toContain('punto%20de%20equilibrio%20%26%20costos');

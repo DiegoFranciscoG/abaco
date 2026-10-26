@@ -19,15 +19,32 @@ export function AuthorPanel({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
             Visita mis otras redes y mis otros trabajos
           </H>
           <p className="mt-1 text-sm text-muted">
-            Soy {AUTHOR.nombre}, {AUTHOR.rol.toLowerCase()}. Hice ÁBACO para que estudiar estas carreras sea más fácil.
+            Soy {AUTHOR.nombre}, {AUTHOR.rol.toLowerCase()}. Hice ÁBACO para que estudiar estas carreras sea
+            más fácil.
           </p>
         </div>
         <ul className="grid gap-3 sm:grid-cols-2">
           {AUTHOR.redes.map((red) => (
             <li key={red.id}>
-              <a href={red.url} target="_blank" rel="noopener noreferrer" className="card card-lift flex items-center gap-3 p-4">
+              <a
+                href={red.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card card-lift flex items-center gap-3 p-4"
+              >
                 <span className="tile tile-sm shrink-0">
-                  <Icon name={red.id === 'portafolio' ? 'globe' : red.id === 'github' ? 'lab' : red.id === 'linkedin' ? 'me' : 'sparkle'} size={20} />
+                  <Icon
+                    name={
+                      red.id === 'portafolio'
+                        ? 'globe'
+                        : red.id === 'github'
+                          ? 'lab'
+                          : red.id === 'linkedin'
+                            ? 'me'
+                            : 'sparkle'
+                    }
+                    size={20}
+                  />
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="block font-semibold">

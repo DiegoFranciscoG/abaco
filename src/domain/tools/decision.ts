@@ -25,8 +25,15 @@ export function rankOptions(matrix: DecisionMatrix): RankedOption[] {
   const weights = normalizedWeights(matrix.criterios);
   const totals = matrix.opciones.map((opcion, i) => ({
     opcion,
-    total: weights.reduce((sum, w, j) => sum + w * Math.min(10, Math.max(0, matrix.puntajes[i]?.[j] ?? 0)), 0),
+    total: weights.reduce(
+      (sum, w, j) => sum + w * Math.min(10, Math.max(0, matrix.puntajes[i]?.[j] ?? 0)),
+      0,
+    ),
   }));
   const sorted = [...totals].sort((a, b) => b.total - a.total);
-  return sorted.map((r) => ({ ...r, total: Math.round(r.total * 100) / 100, posicion: sorted.findIndex((s) => s.total === r.total) + 1 }));
+  return sorted.map((r) => ({
+    ...r,
+    total: Math.round(r.total * 100) / 100,
+    posicion: sorted.findIndex((s) => s.total === r.total) + 1,
+  }));
 }

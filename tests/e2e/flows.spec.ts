@@ -6,7 +6,10 @@ test.describe('recorridos reales de un estudiante', () => {
     await open(page, '/');
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Tus materias, tema por tema');
     await page.getByRole('link', { name: /Elige tu carrera y tu ciclo/ }).click();
-    await page.getByRole('group', { name: 'Carrera' }).getByRole('button', { name: 'Contabilidad y auditoría' }).click();
+    await page
+      .getByRole('group', { name: 'Carrera' })
+      .getByRole('button', { name: 'Contabilidad y auditoría' })
+      .click();
     await page.getByRole('button', { name: '1.º ciclo' }).click();
     await expect(page).toHaveURL(/carrera=contabilidad-auditoria&ciclo=1/);
     const cycle = page.getByRole('region', { name: '1.º ciclo' });
@@ -18,12 +21,16 @@ test.describe('recorridos reales de un estudiante', () => {
     await subtopic.click();
     await expect(subtopic).toHaveAttribute('aria-expanded', 'true');
     await expect(page.getByText('Errores frecuentes').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: /Principles of Accounting, Volume 1/ }).first()).toBeVisible();
+    await expect(
+      page.getByRole('link', { name: /Principles of Accounting, Volume 1/ }).first(),
+    ).toBeVisible();
   });
 
   test('la carrera y el ciclo elegidos se recuerdan en la portada', async ({ page }) => {
     await open(page, '/materias?carrera=economia&ciclo=3');
-    await expect(page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Macroeconomía/ })).toBeVisible();
+    await expect(
+      page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Macroeconomía/ }),
+    ).toBeVisible();
     await page.getByRole('button', { name: /Agregar las de este ciclo/ }).click();
     await open(page, '/');
     await expect(page.getByRole('link', { name: /Economía · 3\.º ciclo/ })).toBeVisible();
@@ -53,7 +60,9 @@ test.describe('recorridos reales de un estudiante', () => {
     await page.keyboard.press('Control+k');
     const box = page.getByRole('combobox', { name: 'Escribe lo que buscas' });
     await box.fill('punto de equilibrio');
-    await expect(page.getByRole('listbox', { name: 'Resultados' }).getByRole('option').first()).toContainText(/Punto de equilibrio/);
+    await expect(page.getByRole('listbox', { name: 'Resultados' }).getByRole('option').first()).toContainText(
+      /Punto de equilibrio/,
+    );
     await page.keyboard.press('Enter');
     // The first result may be the formula or the break-even tool: both are the right answer.
     await expect(page).toHaveURL(/formulas\/punto-equilibrio|herramientas\/equilibrio/);
@@ -94,26 +103,45 @@ test.describe('herramientas', () => {
     await open(page, '/materia/talento-humano');
     await expect(page.getByRole('heading', { name: 'Herramientas para esta materia' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Apps externas recomendadas' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Sitio oficial de Ministerio del Trabajo — servicios en línea' })).toHaveAttribute('href', 'https://sut.trabajo.gob.ec/');
+    await expect(
+      page.getByRole('link', { name: 'Sitio oficial de Ministerio del Trabajo — servicios en línea' }),
+    ).toHaveAttribute('href', 'https://sut.trabajo.gob.ec/');
   });
 });
 
 test.describe('buzón de sugerencias', () => {
-  test('rechaza groserías y, con un mensaje válido, prepara el correo y muestra las redes del autor', async ({ page }) => {
+  test('rechaza groserías y, con un mensaje válido, prepara el correo y muestra las redes del autor', async ({
+    page,
+  }) => {
     await open(page, '/sugerencias?tipo=materia&materia=contabilidad-costos');
-    await page.getByLabel('Tu sugerencia *').fill('Esta materia es una mierda, pongan más ejercicios de costos por procesos');
+    await page
+      .getByLabel('Tu sugerencia *')
+      .fill('Esta materia es una mierda, pongan más ejercicios de costos por procesos');
     await page.getByRole('checkbox').check();
     await page.getByRole('button', { name: 'Enviar sugerencia' }).click();
     await expect(page.getByText(/palabras ofensivas/)).toBeVisible();
 
-    await page.getByLabel('Tu sugerencia *').fill('Faltan ejercicios de costeo por procesos con producción equivalente en Contabilidad de costos.');
+    await page
+      .getByLabel('Tu sugerencia *')
+      .fill('Faltan ejercicios de costeo por procesos con producción equivalente en Contabilidad de costos.');
     await page.getByRole('button', { name: 'Enviar sugerencia' }).click();
     await expect(page.getByRole('heading', { name: '¡Gracias por ayudar a mejorar ÁBACO!' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Abrir mi correo otra vez' })).toHaveAttribute('href', /^mailto:diegofgz2004@gmail\.com\?subject=/);
-    await expect(page.getByRole('heading', { name: 'Visita mis otras redes y mis otros trabajos' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Abrir mi correo otra vez' })).toHaveAttribute(
+      'href',
+      /^mailto:diegofgz2004@gmail\.com\?subject=/,
+    );
+    await expect(
+      page.getByRole('heading', { name: 'Visita mis otras redes y mis otros trabajos' }),
+    ).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Estos son mis proyectos' })).toBeVisible();
-    await expect(page.locator('main').getByRole('link', { name: /Instagram/ })).toHaveAttribute('href', 'https://www.instagram.com/diego.granda.z/');
-    await expect(page.locator('main').getByRole('link', { name: /LinkedIn/ })).toHaveAttribute('href', /linkedin\.com\/in\/diego-francisco-g/);
+    await expect(page.locator('main').getByRole('link', { name: /Instagram/ })).toHaveAttribute(
+      'href',
+      'https://www.instagram.com/diego.granda.z/',
+    );
+    await expect(page.locator('main').getByRole('link', { name: /LinkedIn/ })).toHaveAttribute(
+      'href',
+      /linkedin\.com\/in\/diego-francisco-g/,
+    );
   });
 });
 
@@ -164,7 +192,9 @@ test('móvil: navegación inferior, materias por carrera y buzón @movil', async
   await nav.getByRole('link', { name: 'Materias' }).click();
   await page.getByRole('group', { name: 'Carrera' }).getByRole('button', { name: 'Finanzas' }).click();
   await page.getByRole('button', { name: '3.º ciclo' }).click();
-  await expect(page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Finanzas corporativas/ })).toBeVisible();
+  await expect(
+    page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Finanzas corporativas/ }),
+  ).toBeVisible();
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
   expect(overflow).toBeLessThanOrEqual(0);
   await open(page, '/sugerencias');

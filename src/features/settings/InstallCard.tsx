@@ -24,7 +24,9 @@ export function InstallCard() {
         </p>
       ) : state === 'available' ? (
         <>
-          <p className="text-sm text-ink-2">Instálala en tu teléfono o computadora: se abre en su propia ventana y funciona sin internet.</p>
+          <p className="text-sm text-ink-2">
+            Instálala en tu teléfono o computadora: se abre en su propia ventana y funciona sin internet.
+          </p>
           <button type="button" className="btn btn-primary" onClick={() => void install()}>
             <Icon name="download" size={18} /> Instalar ÁBACO
           </button>
@@ -37,8 +39,9 @@ export function InstallCard() {
         </ol>
       ) : (
         <p className="text-sm text-ink-2">
-          En Chrome o Edge, usa el ícono de instalar de la barra de direcciones o el menú «Instalar ÁBACO». En el teléfono, el menú del navegador
-          ofrece «Agregar a la pantalla principal». No ocupa espacio extra: es la misma web, guardada para usarla sin conexión.
+          En Chrome o Edge, usa el ícono de instalar de la barra de direcciones o el menú «Instalar ÁBACO». En
+          el teléfono, el menú del navegador ofrece «Agregar a la pantalla principal». No ocupa espacio extra:
+          es la misma web, guardada para usarla sin conexión.
         </p>
       )}
     </section>

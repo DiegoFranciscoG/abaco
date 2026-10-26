@@ -29,10 +29,14 @@ export function cvp({ precio, costoVariable, costosFijos, ventasUnidades }: CvpI
     [costosFijos, 'Los costos fijos'],
     [ventasUnidades, 'Las ventas'],
   ] as const) {
-    if (!Number.isFinite(v) || v < 0) throw new RangeError(`${label} debe ser un número mayor o igual a cero.`);
+    if (!Number.isFinite(v) || v < 0)
+      throw new RangeError(`${label} debe ser un número mayor o igual a cero.`);
   }
   const margenUnitario = precio - costoVariable;
-  if (margenUnitario <= 0) throw new RangeError('El precio debe ser mayor que el costo variable unitario: si no, nunca hay equilibrio.');
+  if (margenUnitario <= 0)
+    throw new RangeError(
+      'El precio debe ser mayor que el costo variable unitario: si no, nunca hay equilibrio.',
+    );
   const razonMargen = margenUnitario / precio;
   const equilibrioUnidades = costosFijos / margenUnitario;
   const utilidad = margenUnitario * ventasUnidades - costosFijos;
@@ -110,7 +114,12 @@ export function payback(flujos: readonly number[], tasa?: number): number | null
 }
 
 /** NPV profile: (rate, NPV) points used to draw how the NPV falls as the rate rises. */
-export function npvProfile(flujos: readonly number[], desde = 0, hasta = 0.5, pasos = 50): { tasa: number; van: number }[] {
+export function npvProfile(
+  flujos: readonly number[],
+  desde = 0,
+  hasta = 0.5,
+  pasos = 50,
+): { tasa: number; van: number }[] {
   return Array.from({ length: pasos + 1 }, (_, i) => {
     const tasa = desde + ((hasta - desde) * i) / pasos;
     return { tasa, van: npv(tasa, flujos) };

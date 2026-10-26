@@ -2,11 +2,25 @@ import { cellKey, rangeKeys, type CellRef } from './address';
 import { evaluate } from './evaluator';
 import { parse } from './parser';
 import { FormulaSyntaxError, type Locale } from './tokenizer';
-import { firstScalar, FormulaError, isMatrix, toNumber, type Matrix, type Scalar, type Value } from './values';
+import {
+  firstScalar,
+  FormulaError,
+  isMatrix,
+  toNumber,
+  type Matrix,
+  type Scalar,
+  type Value,
+} from './values';
 
 export { parse, collectReferences, type Node } from './parser';
 export { FormulaSyntaxError, tokenize, type Locale } from './tokenizer';
-export { translateFormula, canonicalFunctionName, compactFormula, SPANISH_TO_ENGLISH, ENGLISH_TO_SPANISH } from './locale';
+export {
+  translateFormula,
+  canonicalFunctionName,
+  compactFormula,
+  SPANISH_TO_ENGLISH,
+  ENGLISH_TO_SPANISH,
+} from './locale';
 export { FUNCTION_CATALOG, type FunctionInfo } from './functions';
 export * from './values';
 export * from './address';

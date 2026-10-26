@@ -44,11 +44,15 @@ export async function saveDocument(
   db: AbacoDB = getDb(),
 ): Promise<Documento> {
   if (input.contenido.length > TOOL_LIMITS.documentBody) {
-    throw new ValidationError(`El documento admite hasta ${TOOL_LIMITS.documentBody.toLocaleString('es-EC')} caracteres.`);
+    throw new ValidationError(
+      `El documento admite hasta ${TOOL_LIMITS.documentBody.toLocaleString('es-EC')} caracteres.`,
+    );
   }
   const existing = input.id ? await db.documentos.get(input.id) : undefined;
   if (!existing && (await db.documentos.count()) >= TOOL_LIMITS.documents) {
-    throw new ValidationError(`Puedes guardar hasta ${TOOL_LIMITS.documents} documentos. Borra alguno que ya no uses.`);
+    throw new ValidationError(
+      `Puedes guardar hasta ${TOOL_LIMITS.documents} documentos. Borra alguno que ya no uses.`,
+    );
   }
   const doc: Documento = {
     id: existing?.id ?? newId(),
@@ -73,7 +77,13 @@ export async function listJournals(db: AbacoDB = getDb()): Promise<Diario[]> {
 }
 
 export async function createJournal(nombre: string, db: AbacoDB = getDb()): Promise<Diario> {
-  const diario: Diario = { id: newId(), nombre: text(nombre, 'el nombre', TOOL_LIMITS.journalName), asientos: [], creadoEn: now(), actualizadoEn: now() };
+  const diario: Diario = {
+    id: newId(),
+    nombre: text(nombre, 'el nombre', TOOL_LIMITS.journalName),
+    asientos: [],
+    creadoEn: now(),
+    actualizadoEn: now(),
+  };
   await db.diarios.put(diario);
   return diario;
 }
@@ -85,14 +95,25 @@ export async function addEntry(
 ): Promise<Diario> {
   const diario = await db.diarios.get(diarioId);
   if (!diario) throw new ValidationError('El libro diario ya no existe.');
-  if (diario.asientos.length >= TOOL_LIMITS.entries) throw new ValidationError(`Un libro admite hasta ${TOOL_LIMITS.entries} asientos.`);
+  if (diario.asientos.length >= TOOL_LIMITS.entries)
+    throw new ValidationError(`Un libro admite hasta ${TOOL_LIMITS.entries} asientos.`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(input.fecha)) throw new ValidationError('Elige la fecha del asiento.');
-  if (input.lineas.length > TOOL_LIMITS.linesPerEntry) throw new ValidationError(`Un asiento admite hasta ${TOOL_LIMITS.linesPerEntry} líneas.`);
+  if (input.lineas.length > TOOL_LIMITS.linesPerEntry)
+    throw new ValidationError(`Un asiento admite hasta ${TOOL_LIMITS.linesPerEntry} líneas.`);
   const lineas = input.lineas.map((l) => ({ ...l, cuenta: text(l.cuenta, 'la cuenta', 80) }));
   const check = checkEntry(lineas);
   if (!check.ok) throw new ValidationError(check.errores[0] ?? 'El asiento no es válido.');
-  const asiento: Asiento = { id: newId(), fecha: input.fecha, glosa: text(input.glosa, 'la glosa', 200, true), lineas };
-  const next: Diario = { ...diario, asientos: [...diario.asientos, asiento].sort((a, b) => a.fecha.localeCompare(b.fecha)), actualizadoEn: now() };
+  const asiento: Asiento = {
+    id: newId(),
+    fecha: input.fecha,
+    glosa: text(input.glosa, 'la glosa', 200, true),
+    lineas,
+  };
+  const next: Diario = {
+    ...diario,
+    asientos: [...diario.asientos, asiento].sort((a, b) => a.fecha.localeCompare(b.fecha)),
+    actualizadoEn: now(),
+  };
   await db.diarios.put(next);
   return next;
 }
@@ -100,7 +121,11 @@ export async function addEntry(
 export async function deleteEntry(diarioId: string, asientoId: string, db: AbacoDB = getDb()): Promise<void> {
   const diario = await db.diarios.get(diarioId);
   if (!diario) return;
-  await db.diarios.put({ ...diario, asientos: diario.asientos.filter((a) => a.id !== asientoId), actualizadoEn: now() });
+  await db.diarios.put({
+    ...diario,
+    asientos: diario.asientos.filter((a) => a.id !== asientoId),
+    actualizadoEn: now(),
+  });
 }
 
 export async function deleteJournal(id: string, db: AbacoDB = getDb()): Promise<void> {
@@ -109,7 +134,9 @@ export async function deleteJournal(id: string, db: AbacoDB = getDb()): Promise<
 
 // ---------------------------------------------------------------- flashcards (SM-2)
 
-export async function listDecks(db: AbacoDB = getDb()): Promise<{ mazo: string; total: number; pendientes: number }[]> {
+export async function listDecks(
+  db: AbacoDB = getDb(),
+): Promise<{ mazo: string; total: number; pendientes: number }[]> {
   const cards = await db.tarjetas.toArray();
   const at = now();
   const decks = new Map<string, { total: number; pendientes: number }>();
@@ -119,10 +146,16 @@ export async function listDecks(db: AbacoDB = getDb()): Promise<{ mazo: string; 
     if (c.proximaRevision <= at) d.pendientes += 1;
     decks.set(c.mazo, d);
   }
-  return [...decks.entries()].map(([mazo, d]) => ({ mazo, ...d })).sort((a, b) => a.mazo.localeCompare(b.mazo, 'es'));
+  return [...decks.entries()]
+    .map(([mazo, d]) => ({ mazo, ...d }))
+    .sort((a, b) => a.mazo.localeCompare(b.mazo, 'es'));
 }
 
-export async function dueCards(mazo: string, at: Date = new Date(), db: AbacoDB = getDb()): Promise<Tarjeta[]> {
+export async function dueCards(
+  mazo: string,
+  at: Date = new Date(),
+  db: AbacoDB = getDb(),
+): Promise<Tarjeta[]> {
   const iso = at.toISOString();
   return (await db.tarjetas.where('mazo').equals(mazo).toArray())
     .filter((c) => c.proximaRevision <= iso)
@@ -138,7 +171,8 @@ export async function addCards(
   db: AbacoDB = getDb(),
 ): Promise<number> {
   const total = await db.tarjetas.count();
-  if (total + cards.length > TOOL_LIMITS.cards) throw new ValidationError(`Puedes guardar hasta ${TOOL_LIMITS.cards} tarjetas.`);
+  if (total + cards.length > TOOL_LIMITS.cards)
+    throw new ValidationError(`Puedes guardar hasta ${TOOL_LIMITS.cards} tarjetas.`);
   let added = 0;
   await db.transaction('rw', db.tarjetas, async () => {
     for (const c of cards) {
@@ -162,11 +196,21 @@ export async function addCards(
   return added;
 }
 
-export async function reviewCard(id: string, q: Quality, at: Date = new Date(), db: AbacoDB = getDb()): Promise<Tarjeta> {
+export async function reviewCard(
+  id: string,
+  q: Quality,
+  at: Date = new Date(),
+  db: AbacoDB = getDb(),
+): Promise<Tarjeta> {
   const card = await db.tarjetas.get(id);
   if (!card) throw new ValidationError('La tarjeta ya no existe.');
   const state = review(card, q);
-  const next: Tarjeta = { ...card, ...state, proximaRevision: nextReview(at, state.intervalo), actualizadoEn: at.toISOString() };
+  const next: Tarjeta = {
+    ...card,
+    ...state,
+    proximaRevision: nextReview(at, state.intervalo),
+    actualizadoEn: at.toISOString(),
+  };
   await db.tarjetas.put(next);
   return next;
 }
@@ -181,15 +225,26 @@ export async function listBoards(db: AbacoDB = getDb()): Promise<Tablero[]> {
   return db.tableros.orderBy('actualizadoEn').reverse().toArray();
 }
 
-export async function saveBoard(board: Omit<Tablero, 'creadoEn' | 'actualizadoEn' | 'id'> & { id?: string }, db: AbacoDB = getDb()): Promise<Tablero> {
+export async function saveBoard(
+  board: Omit<Tablero, 'creadoEn' | 'actualizadoEn' | 'id'> & { id?: string },
+  db: AbacoDB = getDb(),
+): Promise<Tablero> {
   const existing = board.id ? await db.tableros.get(board.id) : undefined;
-  const list = (items: string[]) => items.map((i) => text(i, 'el elemento', 200)).slice(0, TOOL_LIMITS.boardItems);
+  const list = (items: string[]) =>
+    items.map((i) => text(i, 'el elemento', 200)).slice(0, TOOL_LIMITS.boardItems);
   const next: Tablero = {
     ...board,
     id: existing?.id ?? newId(),
     titulo: text(board.titulo, 'el título', TOOL_LIMITS.boardTitle),
     ...(board.foda
-      ? { foda: { fortalezas: list(board.foda.fortalezas), oportunidades: list(board.foda.oportunidades), debilidades: list(board.foda.debilidades), amenazas: list(board.foda.amenazas) } }
+      ? {
+          foda: {
+            fortalezas: list(board.foda.fortalezas),
+            oportunidades: list(board.foda.oportunidades),
+            debilidades: list(board.foda.debilidades),
+            amenazas: list(board.foda.amenazas),
+          },
+        }
       : {}),
     creadoEn: existing?.creadoEn ?? now(),
     actualizadoEn: now(),

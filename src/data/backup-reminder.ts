@@ -9,7 +9,11 @@ export async function markBackupDone(db: AbacoDB = getDb(), nowDate = new Date()
 }
 
 /** True when the student has data and no backup in the last 15 days. */
-export function needsBackupReminder(lastBackupAt: string | undefined, hasData: boolean, nowDate = new Date()): boolean {
+export function needsBackupReminder(
+  lastBackupAt: string | undefined,
+  hasData: boolean,
+  nowDate = new Date(),
+): boolean {
   if (!hasData) return false;
   if (!lastBackupAt) return true;
   const last = new Date(lastBackupAt).getTime();
@@ -18,6 +22,15 @@ export function needsBackupReminder(lastBackupAt: string | undefined, hasData: b
 }
 
 export async function shouldRemindBackup(db: AbacoDB = getDb(), nowDate = new Date()): Promise<boolean> {
-  const counts = await Promise.all([db.apuntes.count(), db.colecciones.count(), db.hojas.count(), db.estrellas.count()]);
-  return needsBackupReminder(await getMeta<string>('lastBackupAt', db), counts.some((c) => c > 0), nowDate);
+  const counts = await Promise.all([
+    db.apuntes.count(),
+    db.colecciones.count(),
+    db.hojas.count(),
+    db.estrellas.count(),
+  ]);
+  return needsBackupReminder(
+    await getMeta<string>('lastBackupAt', db),
+    counts.some((c) => c > 0),
+    nowDate,
+  );
 }

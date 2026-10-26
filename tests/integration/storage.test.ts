@@ -74,23 +74,55 @@ afterEach(async () => {
 
 async function seed(): Promise<void> {
   await updateProfile({ materias: ['contabilidad-general', 'microeconomia'], tema: 'dark' }, db);
-  await saveNote({ refTipo: 'materia', refId: 'contabilidad-general', titulo: 'Partida doble', contenido: 'Debe = Haber', etiquetas: ['examen'] }, db);
-  await saveNote({ refTipo: 'formula', refId: 'van', titulo: '', contenido: 'El VAN descuenta desde t = 1' }, db);
+  await saveNote(
+    {
+      refTipo: 'materia',
+      refId: 'contabilidad-general',
+      titulo: 'Partida doble',
+      contenido: 'Debe = Haber',
+      etiquetas: ['examen'],
+    },
+    db,
+  );
+  await saveNote(
+    { refTipo: 'formula', refId: 'van', titulo: '', contenido: 'El VAN descuenta desde t = 1' },
+    db,
+  );
   await toggleStar({ tipo: 'formula', refId: 'van', titulo: 'VAN', ruta: '/formulas/van' }, db);
-  const col = await createCollection({ nombre: 'Examen de Costos', descripcion: 'Antes del parcial', color: 'jade' }, db);
+  const col = await createCollection(
+    { nombre: 'Examen de Costos', descripcion: 'Antes del parcial', color: 'jade' },
+    db,
+  );
   await addToCollection(col.id, { tipo: 'formula', refId: 'van', titulo: 'VAN' }, db);
-  await createReminder({ titulo: 'Entregar taller', fecha: '2026-11-03T15:00:00.000Z', avisoMinutos: 120 }, db);
+  await createReminder(
+    { titulo: 'Entregar taller', fecha: '2026-11-03T15:00:00.000Z', avisoMinutos: 120 },
+    db,
+  );
   await recordAttempt({ ejercicioId: 'e1', respuesta: 12.5, correcto: true, segundos: 40 }, db);
-  await saveSheet({ nombre: 'Amortización', celdas: { A1: '1000', B1: '=A1*2' }, formatos: { A1: 'moneda' }, sintaxis: 'es' }, db);
+  await saveSheet(
+    {
+      nombre: 'Amortización',
+      celdas: { A1: '1000', B1: '=A1*2' },
+      formatos: { A1: 'moneda' },
+      sintaxis: 'es',
+    },
+    db,
+  );
   await recordSearch('contabilidad de costos', 120, db);
 }
 
 describe('notes', () => {
   it('saves, updates, lists by reference and deletes', async () => {
-    const note = await saveNote({ refTipo: 'subtema', refId: 's1', titulo: ' Hola ', contenido: 'Texto', etiquetas: ['A', 'a', ' b '] }, db);
+    const note = await saveNote(
+      { refTipo: 'subtema', refId: 's1', titulo: ' Hola ', contenido: 'Texto', etiquetas: ['A', 'a', ' b '] },
+      db,
+    );
     expect(note.titulo).toBe('Hola');
     expect(note.etiquetas).toEqual(['a', 'b']);
-    const updated = await saveNote({ id: note.id, refTipo: 'subtema', refId: 's1', titulo: 'Hola', contenido: 'Texto nuevo' }, db);
+    const updated = await saveNote(
+      { id: note.id, refTipo: 'subtema', refId: 's1', titulo: 'Hola', contenido: 'Texto nuevo' },
+      db,
+    );
     expect(updated.creadoEn).toBe(note.creadoEn);
     expect(await listNotes({ refTipo: 'subtema', refId: 's1' }, db)).toHaveLength(1);
     expect(await listNotes({ refTipo: 'subtema', refId: 'otro' }, db)).toHaveLength(0);
@@ -99,12 +131,23 @@ describe('notes', () => {
   });
 
   it('rejects empty or oversized notes', async () => {
-    await expect(saveNote({ refTipo: 'libre', refId: 'x', titulo: '', contenido: '   ' }, db)).rejects.toThrow(ValidationError);
+    await expect(
+      saveNote({ refTipo: 'libre', refId: 'x', titulo: '', contenido: '   ' }, db),
+    ).rejects.toThrow(ValidationError);
     await expect(
       saveNote({ refTipo: 'libre', refId: 'x', titulo: 'x'.repeat(121), contenido: 'ok' }, db),
     ).rejects.toThrow(/120/);
     await expect(
-      saveNote({ refTipo: 'libre', refId: 'x', titulo: 't', contenido: 'ok', etiquetas: Array.from({ length: 11 }, (_, i) => `e${i}`) }, db),
+      saveNote(
+        {
+          refTipo: 'libre',
+          refId: 'x',
+          titulo: 't',
+          contenido: 'ok',
+          etiquetas: Array.from({ length: 11 }, (_, i) => `e${i}`),
+        },
+        db,
+      ),
     ).rejects.toThrow(/etiquetas/);
   });
 
@@ -147,7 +190,9 @@ describe('stars and collections', () => {
   it('validates collection names and colors', async () => {
     await expect(createCollection({ nombre: '  ' }, db)).rejects.toThrow(ValidationError);
     await expect(createCollection({ nombre: 'x', color: 'neon' as never }, db)).rejects.toThrow(/Color/);
-    await expect(addToCollection('no-existe', { tipo: 'formula', refId: 'a', titulo: 'A' }, db)).rejects.toThrow(/ya no existe/);
+    await expect(
+      addToCollection('no-existe', { tipo: 'formula', refId: 'a', titulo: 'A' }, db),
+    ).rejects.toThrow(/ya no existe/);
   });
 
   it('shares a collection as a file without notes or device id, and imports it', async () => {
@@ -167,14 +212,19 @@ describe('stars and collections', () => {
 describe('reminders, attempts, sheets, searches and cache', () => {
   it('creates reminders ordered by date and marks them done', async () => {
     await createReminder({ titulo: 'B', fecha: '2026-12-01T10:00:00Z' }, db);
-    const a = await createReminder({ titulo: 'A', fecha: '2026-11-01T10:00:00Z', materiaId: 'tributacion' }, db);
+    const a = await createReminder(
+      { titulo: 'A', fecha: '2026-11-01T10:00:00Z', materiaId: 'tributacion' },
+      db,
+    );
     expect((await listReminders(db)).map((r) => r.titulo)).toEqual(['A', 'B']);
     await setReminderDone(a.id, true, db);
     expect((await listReminders(db))[0]?.estado).toBe('hecho');
     await deleteReminder(a.id, db);
     expect(await listReminders(db)).toHaveLength(1);
     await expect(createReminder({ titulo: 'x', fecha: 'no es fecha' }, db)).rejects.toThrow(/fecha/);
-    await expect(createReminder({ titulo: 'x', fecha: '2026-11-01', avisoMinutos: -5 }, db)).rejects.toThrow(/aviso/);
+    await expect(createReminder({ titulo: 'x', fecha: '2026-11-01', avisoMinutos: -5 }, db)).rejects.toThrow(
+      /aviso/,
+    );
   });
 
   it('records practice attempts', async () => {
@@ -183,11 +233,16 @@ describe('reminders, attempts, sheets, searches and cache', () => {
     await recordAttempt({ ejercicioId: 'e2', respuesta: 2, correcto: true, segundos: 5 }, db);
     expect(await listAttempts('e1', db)).toHaveLength(2);
     expect(await listAttempts(undefined, db)).toHaveLength(3);
-    await expect(recordAttempt({ ejercicioId: 'e1', respuesta: Number.NaN, correcto: false, segundos: 1 }, db)).rejects.toThrow();
+    await expect(
+      recordAttempt({ ejercicioId: 'e1', respuesta: Number.NaN, correcto: false, segundos: 1 }, db),
+    ).rejects.toThrow();
   });
 
   it('saves sheets', async () => {
-    const sheet = await saveSheet({ nombre: 'Diario', celdas: { A1: '1' }, formatos: {}, sintaxis: 'es' }, db);
+    const sheet = await saveSheet(
+      { nombre: 'Diario', celdas: { A1: '1' }, formatos: {}, sintaxis: 'es' },
+      db,
+    );
     const again = await saveSheet({ ...sheet, nombre: 'Diario 2' }, db);
     expect(again.id).toBe(sheet.id);
     expect(await listSheets(db)).toHaveLength(1);
@@ -243,11 +298,39 @@ describe('T-05: schema migrations keep every note', () => {
     legacy.version(1).stores(SCHEMA_V1);
     await legacy.open();
     await legacy.table('apuntes').bulkPut([
-      { id: 'n1', asignaturaId: 'ucuenca-contabilidad-auditoria--c1-contabilidad-general', titulo: 'Cuentas', contenido: 'Activo = Pasivo + Patrimonio', creadoEn: '2026-01-01T00:00:00.000Z', actualizadoEn: '2026-01-02T00:00:00.000Z' },
-      { id: 'n2', asignaturaId: 'otra', titulo: 'Segunda', contenido: 'Texto', creadoEn: '2026-01-01T00:00:00.000Z', actualizadoEn: '2026-01-03T00:00:00.000Z' },
+      {
+        id: 'n1',
+        asignaturaId: 'ucuenca-contabilidad-auditoria--c1-contabilidad-general',
+        titulo: 'Cuentas',
+        contenido: 'Activo = Pasivo + Patrimonio',
+        creadoEn: '2026-01-01T00:00:00.000Z',
+        actualizadoEn: '2026-01-02T00:00:00.000Z',
+      },
+      {
+        id: 'n2',
+        asignaturaId: 'otra',
+        titulo: 'Segunda',
+        contenido: 'Texto',
+        creadoEn: '2026-01-01T00:00:00.000Z',
+        actualizadoEn: '2026-01-03T00:00:00.000Z',
+      },
     ]);
-    await legacy.table('estrellas').put({ id: 'formula:van', tipo: 'formula', refId: 'van', titulo: 'VAN', creadoEn: '2026-01-01T00:00:00.000Z' });
-    await legacy.table('colecciones').put({ id: 'c1', nombre: 'Examen', descripcion: '', color: 'carmin', items: [], creadoEn: '2026-01-01T00:00:00.000Z', actualizadoEn: '2026-01-01T00:00:00.000Z' });
+    await legacy.table('estrellas').put({
+      id: 'formula:van',
+      tipo: 'formula',
+      refId: 'van',
+      titulo: 'VAN',
+      creadoEn: '2026-01-01T00:00:00.000Z',
+    });
+    await legacy.table('colecciones').put({
+      id: 'c1',
+      nombre: 'Examen',
+      descripcion: '',
+      color: 'carmin',
+      items: [],
+      creadoEn: '2026-01-01T00:00:00.000Z',
+      actualizadoEn: '2026-01-01T00:00:00.000Z',
+    });
     legacy.close();
 
     const upgraded = new AbacoDB(legacyName);
@@ -262,7 +345,11 @@ describe('T-05: schema migrations keep every note', () => {
       contenido: 'Activo = Pasivo + Patrimonio',
       etiquetas: [],
     });
-    expect(notes.find((n) => n.id === 'n2')).toMatchObject({ refTipo: 'libre', refId: 'general', contenido: 'Texto' });
+    expect(notes.find((n) => n.id === 'n2')).toMatchObject({
+      refTipo: 'libre',
+      refId: 'general',
+      contenido: 'Texto',
+    });
     expect(notes.every((n) => !('asignaturaId' in n))).toBe(true);
     expect(await listStars(upgraded)).toHaveLength(1);
     expect(await listCollections(upgraded)).toHaveLength(1);
@@ -279,17 +366,63 @@ describe('version 3: subject catalog instead of curricula', () => {
     legacy.version(2).stores(SCHEMA_V2);
     await legacy.open();
     const t = '2026-09-01T00:00:00.000Z';
-    await legacy.table('perfil').put({ id: 'yo', universidad: 'u', carrera: 'c', ciclo: 3, tema: 'dark', movimiento: 'system', sintaxisExcel: 'es' });
+    await legacy.table('perfil').put({
+      id: 'yo',
+      universidad: 'u',
+      carrera: 'c',
+      ciclo: 3,
+      tema: 'dark',
+      movimiento: 'system',
+      sintaxisExcel: 'es',
+    });
     await legacy.table('apuntes').bulkPut([
-      { id: 'n1', refTipo: 'asignatura', refId: 'ucacue-economia--c2-microeconomia-i', titulo: 'Oferta', contenido: 'x', etiquetas: [], creadoEn: t, actualizadoEn: t },
-      { id: 'n2', refTipo: 'subtema', refId: 'cg-ecuacion-elementos', titulo: '', contenido: 'y', etiquetas: [], creadoEn: t, actualizadoEn: t },
+      {
+        id: 'n1',
+        refTipo: 'asignatura',
+        refId: 'ucacue-economia--c2-microeconomia-i',
+        titulo: 'Oferta',
+        contenido: 'x',
+        etiquetas: [],
+        creadoEn: t,
+        actualizadoEn: t,
+      },
+      {
+        id: 'n2',
+        refTipo: 'subtema',
+        refId: 'cg-ecuacion-elementos',
+        titulo: '',
+        contenido: 'y',
+        etiquetas: [],
+        creadoEn: t,
+        actualizadoEn: t,
+      },
     ]);
-    await legacy.table('estrellas').put({ id: 'asignatura:x', tipo: 'asignatura', refId: 'ucuenca-economia--c4-macroeconomia-ii', titulo: 'Macro', ruta: '/asignatura/x', creadoEn: t });
+    await legacy.table('estrellas').put({
+      id: 'asignatura:x',
+      tipo: 'asignatura',
+      refId: 'ucuenca-economia--c4-macroeconomia-ii',
+      titulo: 'Macro',
+      ruta: '/asignatura/x',
+      creadoEn: t,
+    });
     await legacy.table('colecciones').put({
-      id: 'c1', nombre: 'Parcial', descripcion: '', color: 'jade', creadoEn: t, actualizadoEn: t,
+      id: 'c1',
+      nombre: 'Parcial',
+      descripcion: '',
+      color: 'jade',
+      creadoEn: t,
+      actualizadoEn: t,
       items: [{ tipo: 'asignatura', refId: 'algo-sin-equivalente', titulo: 'Rara', agregadoEn: t }],
     });
-    await legacy.table('recordatorios').put({ id: 'r1', titulo: 'Examen', asignaturaId: 'ucuenca-contabilidad-auditoria--c1-contabilidad-general', fecha: t, avisoMinutos: 60, estado: 'pendiente', creadoEn: t });
+    await legacy.table('recordatorios').put({
+      id: 'r1',
+      titulo: 'Examen',
+      asignaturaId: 'ucuenca-contabilidad-auditoria--c1-contabilidad-general',
+      fecha: t,
+      avisoMinutos: 60,
+      estado: 'pendiente',
+      creadoEn: t,
+    });
     legacy.close();
 
     const upgraded = new AbacoDB(legacyName);
@@ -301,10 +434,23 @@ describe('version 3: subject catalog instead of curricula', () => {
     expect('universidad' in profile).toBe(false);
     const stored = (await upgraded.table('perfil').get('yo')) as Record<string, unknown>;
     expect('carrera' in stored || 'universidad' in stored || 'ciclo' in stored).toBe(false);
-    expect((await listNotes({}, upgraded)).find((n) => n.id === 'n1')).toMatchObject({ refTipo: 'materia', refId: 'microeconomia' });
-    expect((await listNotes({}, upgraded)).find((n) => n.id === 'n2')).toMatchObject({ refTipo: 'subtema', refId: 'cg-ecuacion-elementos' });
-    expect((await listStars(upgraded))[0]).toMatchObject({ tipo: 'materia', refId: 'macroeconomia', ruta: '/materia/macroeconomia' });
-    expect((await listCollections(upgraded))[0]?.items[0]).toMatchObject({ tipo: 'materia', ruta: '/materias' });
+    expect((await listNotes({}, upgraded)).find((n) => n.id === 'n1')).toMatchObject({
+      refTipo: 'materia',
+      refId: 'microeconomia',
+    });
+    expect((await listNotes({}, upgraded)).find((n) => n.id === 'n2')).toMatchObject({
+      refTipo: 'subtema',
+      refId: 'cg-ecuacion-elementos',
+    });
+    expect((await listStars(upgraded))[0]).toMatchObject({
+      tipo: 'materia',
+      refId: 'macroeconomia',
+      ruta: '/materia/macroeconomia',
+    });
+    expect((await listCollections(upgraded))[0]?.items[0]).toMatchObject({
+      tipo: 'materia',
+      ruta: '/materias',
+    });
     expect((await listReminders(upgraded))[0]).toMatchObject({ materiaId: 'contabilidad-general' });
     expect(await upgraded.documentos.count()).toBe(0);
     upgraded.close();
@@ -319,8 +465,21 @@ describe('version 3: subject catalog instead of curricula', () => {
       exportadoEn: t,
       dispositivo: 'abc',
       datos: {
-        perfil: [{ id: 'yo', carrera: 'c', ciclo: 2, tema: 'light', movimiento: 'reduce', sintaxisExcel: 'en' }],
-        apuntes: [{ id: 'n1', refTipo: 'asignatura', refId: 'x--c1-estadistica-descriptiva', titulo: 'T', contenido: 'C', etiquetas: [], creadoEn: t, actualizadoEn: t }],
+        perfil: [
+          { id: 'yo', carrera: 'c', ciclo: 2, tema: 'light', movimiento: 'reduce', sintaxisExcel: 'en' },
+        ],
+        apuntes: [
+          {
+            id: 'n1',
+            refTipo: 'asignatura',
+            refId: 'x--c1-estadistica-descriptiva',
+            titulo: 'T',
+            contenido: 'C',
+            etiquetas: [],
+            creadoEn: t,
+            actualizadoEn: t,
+          },
+        ],
         estrellas: [],
         colecciones: [],
         recordatorios: [],
@@ -352,7 +511,10 @@ describe('T-06: backup and restore leave an identical state', () => {
   it('merging keeps existing data and adds the restored rows', async () => {
     await seed();
     const backup = await createBackup(db);
-    await saveNote({ refTipo: 'libre', refId: 'nuevo', titulo: 'Nueva', contenido: 'Después del respaldo' }, db);
+    await saveNote(
+      { refTipo: 'libre', refId: 'nuevo', titulo: 'Nueva', contenido: 'Después del respaldo' },
+      db,
+    );
     await restoreBackup(backup, 'combinar', db);
     expect(await listNotes({}, db)).toHaveLength(3);
   });
@@ -365,7 +527,16 @@ describe('T-06: backup and restore leave an identical state', () => {
       dispositivo: 'abc',
       datos: {
         perfil: [{ id: 'yo', tema: 'light', movimiento: 'reduce' }],
-        apuntes: [{ id: 'n1', asignaturaId: 'a1', titulo: 'T', contenido: 'C', creadoEn: '2026-05-01T12:00:00.000Z', actualizadoEn: '2026-05-01T12:00:00.000Z' }],
+        apuntes: [
+          {
+            id: 'n1',
+            asignaturaId: 'a1',
+            titulo: 'T',
+            contenido: 'C',
+            creadoEn: '2026-05-01T12:00:00.000Z',
+            actualizadoEn: '2026-05-01T12:00:00.000Z',
+          },
+        ],
       },
     };
     const parsed = parseBackup(JSON.stringify(v1));
@@ -380,7 +551,15 @@ describe('T-06: backup and restore leave an identical state', () => {
     expect(() => parseBackup('{')).toThrow(BackupError);
     expect(() => parseBackup('{"formato":"otro","version":2}')).toThrow(/respaldo válido/);
     expect(() =>
-      parseBackup(JSON.stringify({ formato: 'abaco-respaldo', version: 2, exportadoEn: '2026-01-01T00:00:00Z', dispositivo: 'x', datos: { apuntes: 'mal' } })),
+      parseBackup(
+        JSON.stringify({
+          formato: 'abaco-respaldo',
+          version: 2,
+          exportadoEn: '2026-01-01T00:00:00Z',
+          dispositivo: 'x',
+          datos: { apuntes: 'mal' },
+        }),
+      ),
     ).toThrow(BackupError);
   });
 
@@ -393,9 +572,9 @@ describe('T-06: backup and restore leave an identical state', () => {
   });
 
   it('names backup files with the short local id and the date', async () => {
-    expect(backupFileName({ dispositivo: '1b9d6bcd-bbfd-4b2d', exportadoEn: '2026-10-14T03:00:00.000Z' })).toBe(
-      'abaco-respaldo-1b9d6bcd-2026-10-14.json',
-    );
+    expect(
+      backupFileName({ dispositivo: '1b9d6bcd-bbfd-4b2d', exportadoEn: '2026-10-14T03:00:00.000Z' }),
+    ).toBe('abaco-respaldo-1b9d6bcd-2026-10-14.json');
   });
 });
 
@@ -435,7 +614,12 @@ describe('storage health', () => {
       },
     } as unknown as Navigator;
     const status = await checkStorage(nav, indexedDB);
-    expect(status).toMatchObject({ indexedDb: 'ok', usoBytes: 2048, persistente: true, posibleIncognito: false });
+    expect(status).toMatchObject({
+      indexedDb: 'ok',
+      usoBytes: 2048,
+      persistente: true,
+      posibleIncognito: false,
+    });
     expect(await requestPersistence(nav)).toBe(true);
     expect(await requestPersistence(null)).toBe(false);
   });
@@ -448,7 +632,9 @@ describe('storage health', () => {
 
   it('turns storage exceptions into actionable messages', () => {
     expect(describeStorageError({ name: 'QuotaExceededError' })).toMatch(/lleno/);
-    expect(describeStorageError({ name: 'AbortError', inner: { name: 'QuotaExceededError' } })).toMatch(/lleno/);
+    expect(describeStorageError({ name: 'AbortError', inner: { name: 'QuotaExceededError' } })).toMatch(
+      /lleno/,
+    );
     expect(describeStorageError({ name: 'InvalidStateError' })).toMatch(/incógnito/);
     expect(describeStorageError(new ValidationError('Escribe algo.'))).toBe('Escribe algo.');
     expect(describeStorageError(new Error('x'))).toMatch(/No se pudo guardar/);

@@ -39,10 +39,18 @@ for (const scheme of ['light', 'dark'] as const) {
         await open(page, view);
         await page.waitForLoadState('networkidle');
         await page.waitForTimeout(400);
-        const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']).analyze();
+        const results = await new AxeBuilder({ page })
+          .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'])
+          .analyze();
         const serious = results.violations
           .filter((v) => v.impact === 'serious' || v.impact === 'critical')
-          .map((v) => `${v.id}: ${v.nodes.slice(0, 3).map((n) => n.target.join(' ')).join(' | ')}`);
+          .map(
+            (v) =>
+              `${v.id}: ${v.nodes
+                .slice(0, 3)
+                .map((n) => n.target.join(' '))
+                .join(' | ')}`,
+          );
         expect(serious).toEqual([]);
       });
     }

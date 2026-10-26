@@ -11,7 +11,12 @@ export interface ExerciseProgress {
 export function summarizeAttempts(attempts: Intento[]): Map<string, ExerciseProgress> {
   const map = new Map<string, ExerciseProgress>();
   for (const a of attempts) {
-    const current = map.get(a.ejercicioId) ?? { attempts: 0, solved: false, correctAttempts: 0, lastAt: a.fecha };
+    const current = map.get(a.ejercicioId) ?? {
+      attempts: 0,
+      solved: false,
+      correctAttempts: 0,
+      lastAt: a.fecha,
+    };
     current.attempts += 1;
     if (a.correcto) {
       current.solved = true;

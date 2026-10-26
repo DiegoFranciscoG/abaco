@@ -53,7 +53,16 @@ const OFFENSIVE = [
 
 const OFFENSIVE_RE = new RegExp(`^(?:${OFFENSIVE.join('|')})$`);
 
-const LEET: Record<string, string> = { '0': 'o', '1': 'i', '3': 'e', '4': 'a', '5': 's', '7': 't', '@': 'a', $: 's' };
+const LEET: Record<string, string> = {
+  '0': 'o',
+  '1': 'i',
+  '3': 'e',
+  '4': 'a',
+  '5': 's',
+  '7': 't',
+  '@': 'a',
+  $: 's',
+};
 
 /** Lowercase, no accents, leetspeak undone; letters spelled with separators ("p.u.t.a") are joined. */
 function profanityTokens(text: string): string[] {

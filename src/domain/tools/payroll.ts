@@ -53,7 +53,8 @@ export interface PayrollResult {
 const round2 = (value: number): number => Math.round((value + Number.EPSILON) * 100) / 100;
 
 function nonNegative(value: number, label: string): number {
-  if (!Number.isFinite(value) || value < 0) throw new RangeError(`${label} debe ser un número mayor o igual a cero.`);
+  if (!Number.isFinite(value) || value < 0)
+    throw new RangeError(`${label} debe ser un número mayor o igual a cero.`);
   return value;
 }
 
@@ -82,9 +83,14 @@ export function computePayroll(input: PayrollInput): PayrollResult {
 
   const advertencias: string[] = [];
   if (sueldo < sbu) {
-    advertencias.push('El sueldo es menor que el salario básico unificado: solo es válido en jornadas parciales (art. 81, mínimos legales).');
+    advertencias.push(
+      'El sueldo es menor que el salario básico unificado: solo es válido en jornadas parciales (art. 81, mínimos legales).',
+    );
   }
-  if (suplementarias > 48) advertencias.push('El art. 55 limita las horas suplementarias a 4 por día y 12 por semana (unas 48 al mes).');
+  if (suplementarias > 48)
+    advertencias.push(
+      'El art. 55 limita las horas suplementarias a 4 por día y 12 por semana (unas 48 al mes).',
+    );
 
   const valorHora = sueldo / horasMes;
   const pagoSuplementarias = round2(valorHora * 1.5 * suplementarias);
@@ -92,42 +98,87 @@ export function computePayroll(input: PayrollInput): PayrollResult {
   const materiaGravadaIess = round2(sueldo + pagoSuplementarias + pagoNocturnas + comisiones);
 
   const ingresos: PayrollLine[] = [
-    { concepto: 'Sueldo', valor: round2(sueldo), base: 'Contrato (art. 81: nunca menor a los mínimos legales)' },
+    {
+      concepto: 'Sueldo',
+      valor: round2(sueldo),
+      base: 'Contrato (art. 81: nunca menor a los mínimos legales)',
+    },
   ];
   if (pagoSuplementarias > 0) {
-    ingresos.push({ concepto: `Horas suplementarias (${suplementarias} h al 50 %)`, valor: pagoSuplementarias, base: 'Código del Trabajo, art. 55' });
+    ingresos.push({
+      concepto: `Horas suplementarias (${suplementarias} h al 50 %)`,
+      valor: pagoSuplementarias,
+      base: 'Código del Trabajo, art. 55',
+    });
   }
   if (pagoNocturnas > 0) {
-    ingresos.push({ concepto: `Horas entre 24:00 y 06:00 (${nocturnas} h al 100 %)`, valor: pagoNocturnas, base: 'Código del Trabajo, art. 55' });
+    ingresos.push({
+      concepto: `Horas entre 24:00 y 06:00 (${nocturnas} h al 100 %)`,
+      valor: pagoNocturnas,
+      base: 'Código del Trabajo, art. 55',
+    });
   }
-  if (comisiones > 0) ingresos.push({ concepto: 'Comisiones', valor: round2(comisiones), base: 'Remuneración variable' });
+  if (comisiones > 0)
+    ingresos.push({ concepto: 'Comisiones', valor: round2(comisiones), base: 'Remuneración variable' });
 
   const decimoTercero = round2(materiaGravadaIess / 12);
   const decimoCuarto = round2(sbu / 12);
   const fondoReserva = antiguedad >= 12 ? round2(materiaGravadaIess / 12) : 0;
   if (input.decimosMensualizados) {
-    ingresos.push({ concepto: 'Décima tercera remuneración (mensual)', valor: decimoTercero, base: 'Código del Trabajo, art. 111' });
-    ingresos.push({ concepto: 'Décima cuarta remuneración (mensual)', valor: decimoCuarto, base: 'Código del Trabajo, art. 113' });
+    ingresos.push({
+      concepto: 'Décima tercera remuneración (mensual)',
+      valor: decimoTercero,
+      base: 'Código del Trabajo, art. 111',
+    });
+    ingresos.push({
+      concepto: 'Décima cuarta remuneración (mensual)',
+      valor: decimoCuarto,
+      base: 'Código del Trabajo, art. 113',
+    });
   }
   if (fondoReserva > 0) {
-    ingresos.push({ concepto: 'Fondo de reserva (8,33 %)', valor: fondoReserva, base: 'Código del Trabajo, art. 196: desde el segundo año' });
+    ingresos.push({
+      concepto: 'Fondo de reserva (8,33 %)',
+      valor: fondoReserva,
+      base: 'Código del Trabajo, art. 196: desde el segundo año',
+    });
   }
 
   const aportePersonal = round2(materiaGravadaIess * IESS_PERSONAL);
   const descuentos: PayrollLine[] = [
-    { concepto: 'Aporte personal al IESS (9,45 %)', valor: aportePersonal, base: 'Tabla oficial de tasas del IESS' },
+    {
+      concepto: 'Aporte personal al IESS (9,45 %)',
+      valor: aportePersonal,
+      base: 'Tabla oficial de tasas del IESS',
+    },
   ];
 
   const aportePatronal = round2(materiaGravadaIess * IESS_PATRONAL);
   const costosEmpleador: PayrollLine[] = [
-    { concepto: 'Aporte patronal al IESS (11,15 %)', valor: aportePatronal, base: 'Tabla oficial de tasas del IESS' },
+    {
+      concepto: 'Aporte patronal al IESS (11,15 %)',
+      valor: aportePatronal,
+      base: 'Tabla oficial de tasas del IESS',
+    },
   ];
   if (otras > 0) {
-    costosEmpleador.push({ concepto: `Otras contribuciones (${otras} %)`, valor: round2(materiaGravadaIess * (otras / 100)), base: 'Valor ingresado por el estudiante' });
+    costosEmpleador.push({
+      concepto: `Otras contribuciones (${otras} %)`,
+      valor: round2(materiaGravadaIess * (otras / 100)),
+      base: 'Valor ingresado por el estudiante',
+    });
   }
   if (!input.decimosMensualizados) {
-    costosEmpleador.push({ concepto: 'Provisión décima tercera', valor: decimoTercero, base: 'Código del Trabajo, art. 111 (se paga acumulada en diciembre)' });
-    costosEmpleador.push({ concepto: 'Provisión décima cuarta', valor: decimoCuarto, base: 'Código del Trabajo, art. 113 (se paga acumulada en marzo o agosto)' });
+    costosEmpleador.push({
+      concepto: 'Provisión décima tercera',
+      valor: decimoTercero,
+      base: 'Código del Trabajo, art. 111 (se paga acumulada en diciembre)',
+    });
+    costosEmpleador.push({
+      concepto: 'Provisión décima cuarta',
+      valor: decimoCuarto,
+      base: 'Código del Trabajo, art. 113 (se paga acumulada en marzo o agosto)',
+    });
   }
 
   const totalIngresos = round2(ingresos.reduce((sum, l) => sum + l.valor, 0));

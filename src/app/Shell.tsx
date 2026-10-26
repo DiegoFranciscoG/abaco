@@ -63,7 +63,10 @@ export function Shell() {
     <LazyMotion features={loadMotionFeatures} strict>
       <MotionConfig reducedMotion={reduce ? 'always' : 'never'}>
         <ToastProvider>
-          <a href="#contenido" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:rounded-xl focus:bg-surface focus:px-4 focus:py-3">
+          <a
+            href="#contenido"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:rounded-xl focus:bg-surface focus:px-4 focus:py-3"
+          >
             Saltar al contenido
           </a>
           <header className="sticky top-0 z-40 border-b border-line/70 bg-paper/80 backdrop-blur-xl supports-[backdrop-filter]:bg-paper/70">
@@ -88,7 +91,9 @@ export function Shell() {
                     {({ isActive }) => (
                       <>
                         {item.label}
-                        {isActive ? <span className="absolute inset-x-3 -bottom-[13px] h-0.5 rounded-full bg-red" /> : null}
+                        {isActive ? (
+                          <span className="absolute inset-x-3 -bottom-[13px] h-0.5 rounded-full bg-red" />
+                        ) : null}
                       </>
                     )}
                   </NavLink>
@@ -105,18 +110,31 @@ export function Shell() {
                   <span className="truncate text-sm font-medium">Buscar…</span>
                   <span className="kbd ml-auto">Ctrl K</span>
                 </button>
-                <button type="button" onClick={() => setPaletteOpen(true)} className="btn btn-icon btn-ghost border-0 sm:hidden" aria-label="Buscar">
+                <button
+                  type="button"
+                  onClick={() => setPaletteOpen(true)}
+                  className="btn btn-icon btn-ghost border-0 sm:hidden"
+                  aria-label="Buscar"
+                >
                   <Icon name="search" />
                 </button>
                 <ThemeToggle />
-                <AppLink to="/ajustes" className="btn btn-icon btn-ghost border-0" aria-label="Ajustes y respaldo">
+                <AppLink
+                  to="/ajustes"
+                  className="btn btn-icon btn-ghost border-0"
+                  aria-label="Ajustes y respaldo"
+                >
                   <Icon name="settings" />
                 </AppLink>
               </div>
             </div>
             {!online ? (
-              <div className="border-t border-line bg-warn-soft px-4 py-1.5 text-center text-xs font-semibold text-warn" role="status">
-                Sin conexión: tus apuntes, las materias, el laboratorio y casi todas las herramientas siguen funcionando.
+              <div
+                className="border-t border-line bg-warn-soft px-4 py-1.5 text-center text-xs font-semibold text-warn"
+                role="status"
+              >
+                Sin conexión: tus apuntes, las materias, el laboratorio y casi todas las herramientas siguen
+                funcionando.
               </div>
             ) : null}
           </header>
@@ -131,27 +149,64 @@ export function Shell() {
                 <Icon name="sparkle" size={20} />
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block font-semibold text-ink">¿Falta una materia, un tema o una herramienta?</span>
-                <span className="text-muted">Escríbelo en el buzón de sugerencias: llega directo al autor.</span>
+                <span className="block font-semibold text-ink">
+                  ¿Falta una materia, un tema o una herramienta?
+                </span>
+                <span className="text-muted">
+                  Escríbelo en el buzón de sugerencias: llega directo al autor.
+                </span>
               </span>
               <Icon name="arrow-right" size={18} className="text-red" />
             </AppLink>
             <div className="border-t border-line pt-6">
               <p>
-                <strong className="text-ink-2">ÁBACO no está afiliado a ninguna universidad.</strong> No reproduce planes de
-                estudio; el contenido es redacción propia y cada ficha cita su fuente. Es gratis, sin cuentas, sin publicidad y
-                sin cookies: tus apuntes viven solo en este dispositivo. Contenido educativo, no asesoría profesional.
+                <strong className="text-ink-2">ÁBACO no está afiliado a ninguna universidad.</strong> No
+                reproduce planes de estudio; el contenido es redacción propia y cada ficha cita su fuente. Es
+                gratis, sin cuentas, sin publicidad y sin cookies: tus apuntes viven solo en este dispositivo.
+                Contenido educativo, no asesoría profesional.
               </p>
               <nav aria-label="Legal" className="mt-3">
                 <ul className="flex flex-wrap gap-x-4 gap-y-1">
-                  <li><AppLink to="/acerca" className="link-red">Fuentes</AppLink></li>
-                  <li><AppLink to="/legal/privacidad" className="link-red">Privacidad</AppLink></li>
-                  <li><AppLink to="/legal/terminos" className="link-red">Términos</AppLink></li>
-                  <li><AppLink to="/legal/almacenamiento" className="link-red">Cookies y almacenamiento</AppLink></li>
-                  <li><AppLink to="/legal/licencias" className="link-red">Licencias</AppLink></li>
-                  <li><AppLink to="/legal/accesibilidad" className="link-red">Accesibilidad</AppLink></li>
-                  <li><AppLink to="/legal/aviso" className="link-red">Aviso legal</AppLink></li>
-                  <li><AppLink to="/sugerencias" className="link-red">Buzón de sugerencias</AppLink></li>
+                  <li>
+                    <AppLink to="/acerca" className="link-red">
+                      Fuentes
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/legal/privacidad" className="link-red">
+                      Privacidad
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/legal/terminos" className="link-red">
+                      Términos
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/legal/almacenamiento" className="link-red">
+                      Cookies y almacenamiento
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/legal/licencias" className="link-red">
+                      Licencias
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/legal/accesibilidad" className="link-red">
+                      Accesibilidad
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/legal/aviso" className="link-red">
+                      Aviso legal
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink to="/sugerencias" className="link-red">
+                      Buzón de sugerencias
+                    </AppLink>
+                  </li>
                 </ul>
               </nav>
               <p className="mt-3">

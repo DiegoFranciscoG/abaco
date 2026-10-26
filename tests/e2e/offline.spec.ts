@@ -14,12 +14,16 @@ test('T-08: la app funciona sin internet', async ({ page, context }) => {
   });
   // The service worker controls the page after a reload.
   await page.reload();
-  await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller)), { timeout: 20_000 }).toBe(true);
+  await expect
+    .poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller)), { timeout: 20_000 })
+    .toBe(true);
 
   await context.setOffline(true);
 
   await page.goto('/#/materias?carrera=economia&ciclo=3');
-  await expect(page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Macroeconomía/ })).toBeVisible();
+  await expect(
+    page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Macroeconomía/ }),
+  ).toBeVisible();
   await expect(page.getByText(/Sin conexión/).first()).toBeVisible();
 
   await open(page, '/herramientas/rol-pagos');

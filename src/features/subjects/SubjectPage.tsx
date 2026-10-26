@@ -97,7 +97,11 @@ export default function SubjectPage() {
               <span className="flex flex-wrap items-center gap-2 text-sm">
                 <span className="text-muted">Se suele cursar en:</span>
                 {careers.map(({ carrera, ciclo }) => (
-                  <AppLink key={carrera.id} to={`/materias?carrera=${carrera.id}&ciclo=${ciclo}`} className="chip min-h-9">
+                  <AppLink
+                    key={carrera.id}
+                    to={`/materias?carrera=${carrera.id}&ciclo=${ciclo}`}
+                    className="chip min-h-9"
+                  >
                     {carrera.nombre} · {ordinal(ciclo)} ciclo
                   </AppLink>
                 ))}
@@ -107,10 +111,22 @@ export default function SubjectPage() {
         }
         actions={
           <span className="flex flex-wrap gap-2">
-            <button type="button" className={`btn ${mine ? 'btn-soft' : 'btn-ghost'}`} aria-pressed={mine} onClick={() => void toggleMine()}>
+            <button
+              type="button"
+              className={`btn ${mine ? 'btn-soft' : 'btn-ghost'}`}
+              aria-pressed={mine}
+              onClick={() => void toggleMine()}
+            >
               <Icon name={mine ? 'check' : 'plus'} size={18} /> {mine ? 'En mis materias' : 'La llevo'}
             </button>
-            <StarButton star={{ tipo: 'materia', refId: materia.id, titulo: materia.nombre, ruta: `/materia/${materia.id}` }} />
+            <StarButton
+              star={{
+                tipo: 'materia',
+                refId: materia.id,
+                titulo: materia.nombre,
+                ruta: `/materia/${materia.id}`,
+              }}
+            />
           </span>
         }
       />
@@ -125,10 +141,15 @@ export default function SubjectPage() {
               <AppLink to={`/materia/${materia.id}/tema/${tema.id}`} className="block h-full">
                 <TiltCard className="flex h-full flex-col gap-2 p-5">
                   <span className="flex items-center justify-between">
-                    <span className="tnum font-display text-3xl font-semibold text-red/80">{String(tema.orden).padStart(2, '0')}</span>
+                    <span className="tnum font-display text-3xl font-semibold text-red/80">
+                      {String(tema.orden).padStart(2, '0')}
+                    </span>
                     <span className="flex gap-1" role="img" aria-label={`Dificultad ${tema.dificultad} de 3`}>
                       {[1, 2, 3].map((d) => (
-                        <span key={d} className={`h-1.5 w-5 rounded-full ${d <= tema.dificultad ? 'bg-red' : 'bg-line'}`} />
+                        <span
+                          key={d}
+                          className={`h-1.5 w-5 rounded-full ${d <= tema.dificultad ? 'bg-red' : 'bg-line'}`}
+                        />
                       ))}
                     </span>
                   </span>
@@ -183,7 +204,10 @@ export default function SubjectPage() {
           <ul className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
             {relatedFormulas.slice(0, 12).map((f) => (
               <li key={f.id}>
-                <AppLink to={`/formulas/${f.id}`} className="card card-lift flex h-full items-center gap-3 p-3.5">
+                <AppLink
+                  to={`/formulas/${f.id}`}
+                  className="card card-lift flex h-full items-center gap-3 p-3.5"
+                >
                   <AreaTile area={f.areas[0] ?? 'finanzas'} size="sm" />
                   <span className="min-w-0 flex-1 text-sm leading-snug font-semibold">{f.nombre}</span>
                   <Icon name="chevron-right" size={18} className="text-muted" />
@@ -200,7 +224,10 @@ export default function SubjectPage() {
             Practicar
           </h2>
           {exercises.length > 0 ? (
-            <AppLink to={`/practica?materia=${materia.id}`} className="card card-lift flex items-center gap-4 p-5">
+            <AppLink
+              to={`/practica?materia=${materia.id}`}
+              className="card card-lift flex items-center gap-4 p-5"
+            >
               <span className="tile">
                 <Icon name="target" />
               </span>
@@ -212,7 +239,11 @@ export default function SubjectPage() {
             </AppLink>
           ) : null}
           {relatedTemplates.map((p) => (
-            <AppLink key={p.id} to={`/laboratorio/nueva?plantilla=${p.id}`} className="card card-lift flex items-center gap-4 p-5">
+            <AppLink
+              key={p.id}
+              to={`/laboratorio/nueva?plantilla=${p.id}`}
+              className="card card-lift flex items-center gap-4 p-5"
+            >
               <span className="tile">
                 <Icon name="lab" />
               </span>
@@ -231,7 +262,9 @@ export default function SubjectPage() {
           <h2 id="apps-rel" className="mb-1 font-display text-2xl font-semibold">
             Apps externas recomendadas
           </h2>
-          <p className="mb-4 text-sm text-muted">Sitios de terceros; ÁBACO no está afiliado a ellos y cada uno tiene sus propias condiciones.</p>
+          <p className="mb-4 text-sm text-muted">
+            Sitios de terceros; ÁBACO no está afiliado a ellos y cada uno tiene sus propias condiciones.
+          </p>
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {relatedApps.map((app) => (
               <li key={app.id}>
@@ -244,13 +277,20 @@ export default function SubjectPage() {
 
       <NotesPanel refTipo="materia" refId={materia.id} title="Mis apuntes de la materia" />
 
-      <AppLink to={`/sugerencias?tipo=materia&materia=${materia.id}`} className="card card-lift flex items-center gap-4 p-5">
+      <AppLink
+        to={`/sugerencias?tipo=materia&materia=${materia.id}`}
+        className="card card-lift flex items-center gap-4 p-5"
+      >
         <span className="tile tile-sm shrink-0">
           <Icon name="sparkle" size={20} />
         </span>
         <span className="min-w-0 flex-1">
-          <span className="block font-semibold">¿Falta un tema o encontraste un error en {materia.nombre}?</span>
-          <span className="text-sm text-muted">Cuéntalo en el buzón de sugerencias, con la fuente si la tienes.</span>
+          <span className="block font-semibold">
+            ¿Falta un tema o encontraste un error en {materia.nombre}?
+          </span>
+          <span className="text-sm text-muted">
+            Cuéntalo en el buzón de sugerencias, con la fuente si la tienes.
+          </span>
         </span>
         <Icon name="arrow-right" className="text-red" />
       </AppLink>
@@ -260,12 +300,18 @@ export default function SubjectPage() {
           <Icon name="book" size={18} className="text-red" /> Fuentes de este temario
         </h2>
         <p className="mb-3 text-sm text-muted">
-          Las explicaciones son redacción propia de ÁBACO. Cada subtema enlaza a la sección exacta que lo respalda.
+          Las explicaciones son redacción propia de ÁBACO. Cada subtema enlaza a la sección exacta que lo
+          respalda.
         </p>
         <ul className="space-y-1.5 text-sm">
           {[...sources.values()].map((s) => (
             <li key={s.url}>
-              <a href={s.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-ink-2 underline decoration-line-strong underline-offset-2 hover:text-red">
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-ink-2 underline decoration-line-strong underline-offset-2 hover:text-red"
+              >
                 {s.titulo}
               </a>{' '}
               <span className="text-muted">· {s.autor}</span>

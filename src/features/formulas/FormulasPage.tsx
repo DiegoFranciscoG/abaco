@@ -2,7 +2,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import { loadFormulas } from '../../data/content';
 import type { FormulaCategory } from '../../domain/content/schemas';
-import { loadContentIndex, searchContent, suggest, type ContentIndex } from '../../domain/search/content-search';
+import {
+  loadContentIndex,
+  searchContent,
+  suggest,
+  type ContentIndex,
+} from '../../domain/search/content-search';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { useProfile } from '../../ui/use-profile';
 import { Icon } from '../../ui/icons';
@@ -26,7 +31,9 @@ export default function FormulasPage() {
     if (formulas.status !== 'ready') return [];
     let list = formulas.data;
     if (query.trim().length >= 2 && index) {
-      const order = searchContent(index, query, { types: ['formula'], limit: 100 }).map((h) => h.id.replace('formula:', ''));
+      const order = searchContent(index, query, { types: ['formula'], limit: 100 }).map((h) =>
+        h.id.replace('formula:', ''),
+      );
       const byId = new Map(list.map((f) => [f.id, f]));
       list = order.map((id) => byId.get(id)).filter((f): f is NonNullable<typeof f> => Boolean(f));
     }
@@ -52,11 +59,14 @@ export default function FormulasPage() {
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              setParams((p) => {
-                if (e.target.value) p.set('q', e.target.value);
-                else p.delete('q');
-                return p;
-              }, { replace: true });
+              setParams(
+                (p) => {
+                  if (e.target.value) p.set('q', e.target.value);
+                  else p.delete('q');
+                  return p;
+                },
+                { replace: true },
+              );
             }}
             className="field h-14 pl-12 text-lg"
             placeholder="Valor actual, VAN, PAGO, depreciación, IVA…"
@@ -71,11 +81,14 @@ export default function FormulasPage() {
               aria-pressed={category === c}
               className="chip shrink-0"
               onClick={() =>
-                setParams((p) => {
-                  if (c === 'todas') p.delete('c');
-                  else p.set('c', c);
-                  return p;
-                }, { replace: true })
+                setParams(
+                  (p) => {
+                    if (c === 'todas') p.delete('c');
+                    else p.set('c', c);
+                    return p;
+                  },
+                  { replace: true },
+                )
               }
             >
               {c === 'todas' ? 'Todas' : CATEGORY_LABELS[c]}
@@ -114,7 +127,9 @@ export default function FormulasPage() {
                 </span>
               </span>
               <span className="line-clamp-2 text-sm text-muted">{f.descripcion}</span>
-              <code className="code-excel mt-auto block truncate overflow-hidden text-[0.8rem]">{profile.sintaxisExcel === 'es' ? f.excel.es : f.excel.en}</code>
+              <code className="code-excel mt-auto block truncate overflow-hidden text-[0.8rem]">
+                {profile.sintaxisExcel === 'es' ? f.excel.es : f.excel.en}
+              </code>
             </AppLink>
           </li>
         ))}

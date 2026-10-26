@@ -15,8 +15,14 @@ describe('display preferences cache', () => {
 
   it('parses only known values and falls back to the system setting', () => {
     expect(parseDisplayPrefs(null)).toEqual({ tema: 'system', movimiento: 'system' });
-    expect(parseDisplayPrefs('{"tema":"dark","movimiento":"reduce"}')).toEqual({ tema: 'dark', movimiento: 'reduce' });
-    expect(parseDisplayPrefs('{"tema":"<script>","movimiento":42}')).toEqual({ tema: 'system', movimiento: 'system' });
+    expect(parseDisplayPrefs('{"tema":"dark","movimiento":"reduce"}')).toEqual({
+      tema: 'dark',
+      movimiento: 'reduce',
+    });
+    expect(parseDisplayPrefs('{"tema":"<script>","movimiento":42}')).toEqual({
+      tema: 'system',
+      movimiento: 'system',
+    });
     expect(parseDisplayPrefs('no es json')).toEqual({ tema: 'system', movimiento: 'system' });
     expect(parseDisplayPrefs('null')).toEqual({ tema: 'system', movimiento: 'system' });
   });
@@ -28,7 +34,10 @@ describe('display preferences cache', () => {
     setDisplayPrefs({ tema: 'dark' });
     expect(listener).toHaveBeenCalledTimes(1);
     expect(getDisplayPrefs()).toEqual({ tema: 'dark', movimiento: 'system' });
-    expect(JSON.parse(localStorage.getItem(DISPLAY_PREFS_KEY) ?? '{}')).toEqual({ tema: 'dark', movimiento: 'system' });
+    expect(JSON.parse(localStorage.getItem(DISPLAY_PREFS_KEY) ?? '{}')).toEqual({
+      tema: 'dark',
+      movimiento: 'system',
+    });
     resetDisplayPrefs();
     expect(localStorage.getItem(DISPLAY_PREFS_KEY)).toBeNull();
     expect(getDisplayPrefs().tema).toBe('system');

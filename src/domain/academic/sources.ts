@@ -27,7 +27,10 @@ export function plainText(value: string | undefined | null, max = MAX_TEXT): str
 
 export function normalizeDoi(value: string | undefined | null): string | undefined {
   if (!value) return undefined;
-  const doi = value.trim().replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:/i, '');
+  const doi = value
+    .trim()
+    .replace(/^https?:\/\/(dx\.)?doi\.org\//i, '')
+    .replace(/^doi:/i, '');
   return /^10\.\d{4,9}\/\S+$/.test(doi) ? doi.toLowerCase() : undefined;
 }
 
@@ -52,7 +55,11 @@ const year = (value: unknown): number | undefined => {
 const crossrefItemSchema = z.object({
   DOI: z.string(),
   title: z.array(z.string()).optional(),
-  author: z.array(z.object({ given: z.string().optional(), family: z.string().optional(), name: z.string().optional() })).optional(),
+  author: z
+    .array(
+      z.object({ given: z.string().optional(), family: z.string().optional(), name: z.string().optional() }),
+    )
+    .optional(),
   issued: z.object({ 'date-parts': z.array(z.array(z.number().nullable())).optional() }).optional(),
   'container-title': z.array(z.string()).optional(),
   volume: z.string().optional(),
@@ -80,7 +87,9 @@ function crossrefResult(item: CrossrefItem): AcademicResult | undefined {
     id: `crossref:${doi}`,
     source: 'crossref',
     title,
-    authors: (item.author ?? []).map((a): Author => (a.family ? { given: a.given, family: a.family } : { full: a.name ?? a.given ?? '' })),
+    authors: (item.author ?? []).map((a): Author =>
+      a.family ? { given: a.given, family: a.family } : { full: a.name ?? a.given ?? '' },
+    ),
     year: year(item.issued?.['date-parts']?.[0]?.[0] ?? undefined),
     container: plainText(item['container-title']?.[0], 300),
     volume: item.volume,
@@ -138,7 +147,9 @@ const openAlexSchema = z.object({
           })
           .nullable()
           .optional(),
-        open_access: z.object({ is_oa: z.boolean().optional(), oa_url: z.string().nullable().optional() }).optional(),
+        open_access: z
+          .object({ is_oa: z.boolean().optional(), oa_url: z.string().nullable().optional() })
+          .optional(),
         biblio: z
           .object({
             volume: z.string().nullable().optional(),
@@ -205,7 +216,9 @@ const doajSchema = z.object({
           title: z.string().optional(),
           year: z.string().optional(),
           author: z.array(z.object({ name: z.string().optional() })).optional(),
-          identifier: z.array(z.object({ id: z.string().optional(), type: z.string().optional() })).optional(),
+          identifier: z
+            .array(z.object({ id: z.string().optional(), type: z.string().optional() }))
+            .optional(),
           journal: z
             .object({
               title: z.string().optional(),
@@ -225,7 +238,8 @@ const doajSchema = z.object({
 
 export const doaj: SourceAdapter = {
   id: 'doaj',
-  buildUrl: (query, limit) => `https://doaj.org/api/search/articles/${encodeURIComponent(query)}?pageSize=${limit}`,
+  buildUrl: (query, limit) =>
+    `https://doaj.org/api/search/articles/${encodeURIComponent(query)}?pageSize=${limit}`,
   parse(json) {
     const data = doajSchema.parse(json);
     const results: AcademicResult[] = [];
@@ -246,7 +260,9 @@ export const doaj: SourceAdapter = {
         issue: b.journal?.number,
         pages: b.start_page ? (b.end_page ? `${b.start_page}-${b.end_page}` : b.start_page) : undefined,
         doi,
-        url: doi ? `https://doi.org/${doi}` : (fulltext ?? `https://doaj.org/article/${encodeURIComponent(item.id)}`),
+        url: doi
+          ? `https://doi.org/${doi}`
+          : (fulltext ?? `https://doaj.org/article/${encodeURIComponent(item.id)}`),
         openAccess: true,
         type: 'journal-article',
         language: b.journal?.language?.[0]?.toLowerCase(),
@@ -342,7 +358,8 @@ export const openlibrary: SourceAdapter = {
     for (const item of data.docs) {
       const title = plainText(item.title, 400);
       if (!title || !/^\/works\/OL\d+W$/.test(item.key)) continue;
-      const language = item.language?.[0] === 'spa' ? 'es' : item.language?.[0] === 'eng' ? 'en' : item.language?.[0];
+      const language =
+        item.language?.[0] === 'spa' ? 'es' : item.language?.[0] === 'eng' ? 'en' : item.language?.[0];
       results.push({
         id: `openlibrary:${item.key}`,
         source: 'openlibrary',
@@ -359,4 +376,10 @@ export const openlibrary: SourceAdapter = {
   },
 };
 
-export const ADAPTERS: Record<string, SourceAdapter> = { crossref, openalex, doaj, lareferencia, openlibrary };
+export const ADAPTERS: Record<string, SourceAdapter> = {
+  crossref,
+  openalex,
+  doaj,
+  lareferencia,
+  openlibrary,
+};

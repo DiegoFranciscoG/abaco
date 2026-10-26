@@ -38,7 +38,9 @@ export function normalizeExpression(input: string): string {
 export type Evaluator = (x: number) => number | null;
 
 /** Compiles once; returns null values where the function is undefined (e.g. LN of a negative number). */
-export function compile(input: string): { ok: true; f: Evaluator; expression: string } | { ok: false; message: string } {
+export function compile(
+  input: string,
+): { ok: true; f: Evaluator; expression: string } | { ok: false; message: string } {
   let expression: string;
   try {
     expression = normalizeExpression(input);
@@ -48,7 +50,12 @@ export function compile(input: string): { ok: true; f: Evaluator; expression: st
   if (!expression) return { ok: false, message: 'Escribe una función de x, por ejemplo 2x^2 - 3x + 1.' };
   const probe = tryEvaluateAlgebra(expression, { x: 1.2345 });
   if (!probe.ok && !/^#(DIV|NUM|VALUE)/.test(probe.message)) {
-    return { ok: false, message: probe.message.startsWith('#NAME') ? 'Usa solo la variable x y funciones conocidas (raiz, ln, log, exp, abs).' : probe.message };
+    return {
+      ok: false,
+      message: probe.message.startsWith('#NAME')
+        ? 'Usa solo la variable x y funciones conocidas (raiz, ln, log, exp, abs).'
+        : probe.message,
+    };
   }
   const f: Evaluator = (x) => {
     const r = tryEvaluateAlgebra(expression, { x });
@@ -129,7 +136,8 @@ export function extrema(f: Evaluator, xmin: number, xmax: number, n = 600): Extr
     if (!p || !q || p.y === null || q.y === null || Math.sign(p.y) === Math.sign(q.y)) continue;
     const x = bisect(d, p.x, q.x);
     const y = x === null ? null : f(x);
-    if (x !== null && y !== null) out.push({ x: roundNice(x), y: roundNice(y), tipo: p.y > 0 ? 'maximo' : 'minimo' });
+    if (x !== null && y !== null)
+      out.push({ x: roundNice(x), y: roundNice(y), tipo: p.y > 0 ? 'maximo' : 'minimo' });
   }
   return out;
 }

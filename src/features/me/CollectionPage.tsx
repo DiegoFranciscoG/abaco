@@ -3,7 +3,12 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { exportCollection } from '../../data/backup';
 import { getDb } from '../../data/db';
-import { deleteCollection, moveInCollection, removeFromCollection, updateCollection } from '../../data/repositories';
+import {
+  deleteCollection,
+  moveInCollection,
+  removeFromCollection,
+  updateCollection,
+} from '../../data/repositories';
 import { useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
 import { AppLink, EmptyState, PageHeader, Skeleton } from '../../ui/primitives';
@@ -33,7 +38,10 @@ export default function CollectionPage() {
 
   const share = async () => {
     const text = exportCollection(collection);
-    const fileName = `coleccion-${collection.nombre.replace(/[^\p{L}\p{N}]+/gu, '-').toLowerCase().slice(0, 40)}.json`;
+    const fileName = `coleccion-${collection.nombre
+      .replace(/[^\p{L}\p{N}]+/gu, '-')
+      .toLowerCase()
+      .slice(0, 40)}.json`;
     const file = new File([text], fileName, { type: 'application/json' });
     if (navigator.canShare?.({ files: [file] })) {
       try {
@@ -61,7 +69,15 @@ export default function CollectionPage() {
         subtitle={collection.descripcion || undefined}
         actions={
           <>
-            <button type="button" className="btn btn-ghost" onClick={() => { setName(collection.nombre); setDescription(collection.descripcion); setEditing((v) => !v); }}>
+            <button
+              type="button"
+              className="btn btn-ghost"
+              onClick={() => {
+                setName(collection.nombre);
+                setDescription(collection.descripcion);
+                setEditing((v) => !v);
+              }}
+            >
               <Icon name="note" size={18} /> Editar
             </button>
             <button type="button" className="btn btn-soft" onClick={() => void share()}>
@@ -71,7 +87,12 @@ export default function CollectionPage() {
               type="button"
               className="btn btn-ghost"
               onClick={async () => {
-                if (!window.confirm(`¿Eliminar la colección «${collection.nombre}»? Los elementos no se borran de ÁBACO.`)) return;
+                if (
+                  !window.confirm(
+                    `¿Eliminar la colección «${collection.nombre}»? Los elementos no se borran de ÁBACO.`,
+                  )
+                )
+                  return;
                 await deleteCollection(collection.id);
                 toast.show('Colección eliminada');
                 navigate('/mi-espacio?tab=colecciones');
@@ -96,8 +117,21 @@ export default function CollectionPage() {
             }
           }}
         >
-          <input className="field" value={name} onChange={(e) => setName(e.target.value)} maxLength={60} aria-label="Nombre" />
-          <textarea className="field min-h-20" value={description} onChange={(e) => setDescription(e.target.value)} maxLength={280} aria-label="Descripción" placeholder="Para qué es esta colección" />
+          <input
+            className="field"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            maxLength={60}
+            aria-label="Nombre"
+          />
+          <textarea
+            className="field min-h-20"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            maxLength={280}
+            aria-label="Descripción"
+            placeholder="Para qué es esta colección"
+          />
           <button type="submit" className="btn btn-primary">
             Guardar
           </button>
@@ -111,28 +145,54 @@ export default function CollectionPage() {
         <ol className="space-y-2">
           {collection.items.map((item, index) => (
             <li key={`${item.tipo}:${item.refId}`} className="card flex items-center gap-2 p-3">
-              <span className="tnum w-7 text-center font-display text-lg font-semibold text-red">{index + 1}</span>
+              <span className="tnum w-7 text-center font-display text-lg font-semibold text-red">
+                {index + 1}
+              </span>
               <span className="min-w-0 flex-1">
                 {item.ruta ? (
                   <AppLink to={item.ruta} className="font-semibold hover:text-red">
                     {item.titulo}
                   </AppLink>
                 ) : item.snapshot ? (
-                  <a href={item.snapshot.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-red">
+                  <a
+                    href={item.snapshot.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold hover:text-red"
+                  >
                     {item.titulo}
                   </a>
                 ) : (
                   <span className="font-semibold">{item.titulo}</span>
                 )}
-                <span className="block text-xs text-muted">{item.snapshot ? item.snapshot.cita : item.tipo}</span>
+                <span className="block text-xs text-muted">
+                  {item.snapshot ? item.snapshot.cita : item.tipo}
+                </span>
               </span>
-              <button type="button" className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0" aria-label="Subir" disabled={index === 0} onClick={() => void moveInCollection(collection.id, index, index - 1)}>
+              <button
+                type="button"
+                className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0"
+                aria-label="Subir"
+                disabled={index === 0}
+                onClick={() => void moveInCollection(collection.id, index, index - 1)}
+              >
                 <Icon name="up" size={18} />
               </button>
-              <button type="button" className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0" aria-label="Bajar" disabled={index === collection.items.length - 1} onClick={() => void moveInCollection(collection.id, index, index + 1)}>
+              <button
+                type="button"
+                className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0"
+                aria-label="Bajar"
+                disabled={index === collection.items.length - 1}
+                onClick={() => void moveInCollection(collection.id, index, index + 1)}
+              >
                 <Icon name="down" size={18} />
               </button>
-              <button type="button" className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0" aria-label={`Quitar «${item.titulo}»`} onClick={() => void removeFromCollection(collection.id, item.tipo, item.refId)}>
+              <button
+                type="button"
+                className="btn btn-icon btn-ghost min-h-10 min-w-10 border-0"
+                aria-label={`Quitar «${item.titulo}»`}
+                onClick={() => void removeFromCollection(collection.id, item.tipo, item.refId)}
+              >
                 <Icon name="close" size={18} />
               </button>
             </li>

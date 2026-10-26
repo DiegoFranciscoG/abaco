@@ -14,7 +14,9 @@ export default function PracticePage() {
   const only = params.get('materia');
   const data = useAsync(async () => {
     const exercises = await loadEjercicios();
-    const names = new Map(exercises.map((e) => [e.materia, getMateria(e.materia)?.nombre ?? e.materia] as const));
+    const names = new Map(
+      exercises.map((e) => [e.materia, getMateria(e.materia)?.nombre ?? e.materia] as const),
+    );
     return { exercises, names };
   }, []);
   const attempts = useLiveQuery(() => listAttempts(), [], []);
@@ -59,10 +61,17 @@ export default function PracticePage() {
                 const s = summary.get(e.id);
                 return (
                   <li key={e.id}>
-                    <AppLink to={`/practica/${e.id}`} className="card card-lift flex h-full items-start gap-3 p-4">
+                    <AppLink
+                      to={`/practica/${e.id}`}
+                      className="card card-lift flex h-full items-start gap-3 p-4"
+                    >
                       <span
                         className={`tnum grid h-9 w-9 shrink-0 place-items-center rounded-xl text-sm font-bold ${
-                          s?.solved ? 'bg-ok-soft text-ok' : s ? 'bg-warn-soft text-warn' : 'bg-red-soft text-red'
+                          s?.solved
+                            ? 'bg-ok-soft text-ok'
+                            : s
+                              ? 'bg-warn-soft text-warn'
+                              : 'bg-red-soft text-red'
                         }`}
                         aria-label={s?.solved ? 'Resuelto' : s ? 'Intentado' : 'Sin intentar'}
                       >
@@ -71,8 +80,15 @@ export default function PracticePage() {
                       <span className="min-w-0 flex-1">
                         <span className="line-clamp-2 text-sm text-ink">{e.enunciado}</span>
                         <span className="mt-1 flex gap-3 text-xs text-muted">
-                          <span>{'●'.repeat(e.dificultad)}{'○'.repeat(3 - e.dificultad)}</span>
-                          {s ? <span className="tnum">{s.attempts} intento{s.attempts === 1 ? '' : 's'}</span> : null}
+                          <span>
+                            {'●'.repeat(e.dificultad)}
+                            {'○'.repeat(3 - e.dificultad)}
+                          </span>
+                          {s ? (
+                            <span className="tnum">
+                              {s.attempts} intento{s.attempts === 1 ? '' : 's'}
+                            </span>
+                          ) : null}
                         </span>
                       </span>
                     </AppLink>

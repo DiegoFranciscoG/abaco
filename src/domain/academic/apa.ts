@@ -39,7 +39,9 @@ export function initials(given: string): string {
 }
 
 export function formatAuthor(author: Author, language?: string): string {
-  const parts = author.family ? { given: author.given ?? '', family: author.family } : splitName(author.full ?? '', language);
+  const parts = author.family
+    ? { given: author.given ?? '', family: author.family }
+    : splitName(author.full ?? '', language);
   if (!parts.family) return '';
   const init = initials(parts.given);
   return init ? `${parts.family}, ${init}` : parts.family;
@@ -70,16 +72,23 @@ export function formatApa(result: AcademicResult): Citation {
     // APA 7 web page: Author, A. A. (Year). *Title*. Site Name. URL (site omitted when it is the author)
     const before = authors ? `${endWithPeriod(authors)} ${year} ` : '';
     const italic = endWithPeriod(result.title.trim());
-    const site = result.container && result.container !== authors ? ` ${endWithPeriod(result.container)}` : '';
+    const site =
+      result.container && result.container !== authors ? ` ${endWithPeriod(result.container)}` : '';
     const after = `${authors ? '' : ` ${year}`}${site} ${result.url}`;
-    return { text: `${before}${italic}${after}`.replace(/\s+/g, ' ').trim(), parts: { before, italic, after } };
+    return {
+      text: `${before}${italic}${after}`.replace(/\s+/g, ' ').trim(),
+      parts: { before, italic, after },
+    };
   }
   if (result.type === 'book') {
     // APA 7 book: Author, A. A. (Year). *Title*. Publisher. URL
     const before = authors ? `${endWithPeriod(authors)} ${year} ` : '';
     const italic = endWithPeriod(result.title.trim());
     const after = `${result.publisher ? ` ${endWithPeriod(result.publisher)}` : ''}${authors ? '' : ` ${year}`} ${result.url}`;
-    return { text: `${before}${italic}${after}`.replace(/\s+/g, ' ').trim(), parts: { before, italic, after } };
+    return {
+      text: `${before}${italic}${after}`.replace(/\s+/g, ' ').trim(),
+      parts: { before, italic, after },
+    };
   }
   const title = endWithPeriod(result.title.trim());
   const head = authors ? `${endWithPeriod(authors)} ${year} ${title}` : `${title} ${year}`;

@@ -35,7 +35,9 @@ export interface Suggestion {
   fuente: string | null;
 }
 
-export type SuggestionErrors = Partial<Record<'tipo' | 'materia' | 'mensaje' | 'fuente' | 'consentimiento' | 'form', string>>;
+export type SuggestionErrors = Partial<
+  Record<'tipo' | 'materia' | 'mensaje' | 'fuente' | 'consentimiento' | 'form', string>
+>;
 
 export type ValidationResult = { ok: true; value: Suggestion } | { ok: false; errors: SuggestionErrors };
 
@@ -60,12 +62,7 @@ const KEYBOARD_RUNS = KEYBOARD_ROWS.flatMap((row) => {
   return runs;
 });
 
-const fold = (text: string) =>
-  text
-    .normalize('NFD')
-    .replace(/[̀-̂̄-ͯ]/g, '')
-    .normalize('NFC')
-    .toLowerCase();
+const fold = (text: string) => text.normalize('NFD').replace(/[̀-̂̄-ͯ]/g, '').normalize('NFC').toLowerCase();
 
 const words = (text: string) => fold(text).match(/[a-zñ]+/g) ?? [];
 
@@ -82,33 +79,42 @@ export function nonsenseReason(text: string): string | null {
   const all = words(text);
   if (all.length < 6) return 'Escribe al menos una frase completa (seis palabras o más).';
   const long = all.filter((w) => w.length >= 4);
-  if (long.length > 0 && long.filter(badWord).length / long.length > 0.3) return 'No logro entender el mensaje. Escríbelo con frases completas en español.';
+  if (long.length > 0 && long.filter(badWord).length / long.length > 0.3)
+    return 'No logro entender el mensaje. Escríbelo con frases completas en español.';
   if (/([a-zñ])\1{3,}/.test(fold(text))) return 'Hay letras repetidas muchas veces seguidas.';
   const counts = new Map<string, number>();
   for (const w of all) counts.set(w, (counts.get(w) ?? 0) + 1);
   const top = Math.max(...counts.values());
   if (all.length >= 8 && top / all.length > 0.35) return 'El mensaje repite demasiado la misma palabra.';
-  if (all.length >= 10 && counts.size / all.length < 0.4) return 'El mensaje repite demasiado las mismas palabras.';
+  if (all.length >= 10 && counts.size / all.length < 0.4)
+    return 'El mensaje repite demasiado las mismas palabras.';
   const stop = all.filter((w) => STOPWORDS.has(w)).length;
-  if (stop === 0 || (all.length >= 15 && stop / all.length < 0.1)) return 'Escribe tu sugerencia con frases completas en español.';
+  if (stop === 0 || (all.length >= 15 && stop / all.length < 0.1))
+    return 'Escribe tu sugerencia con frases completas en español.';
   const letters = fold(text).replace(/[^a-zñ]/g, '');
   const vowels = letters.replace(/[^aeiou]/g, '').length;
-  if (letters.length >= 30 && (vowels / letters.length < 0.28 || vowels / letters.length > 0.7)) return 'No logro entender el mensaje. Escríbelo con frases completas en español.';
+  if (letters.length >= 30 && (vowels / letters.length < 0.28 || vowels / letters.length > 0.7))
+    return 'No logro entender el mensaje. Escríbelo con frases completas en español.';
   return null;
 }
 
 /** Personal data that a suggestion never needs (LOPDP art. 10 e). */
 export function personalDataReason(text: string): string | null {
-  if (/[^\s@]+@[^\s@]+\.[a-z]{2,}/i.test(text)) return 'No incluyas correos electrónicos: no hacen falta para la sugerencia.';
+  if (/[^\s@]+@[^\s@]+\.[a-z]{2,}/i.test(text))
+    return 'No incluyas correos electrónicos: no hacen falta para la sugerencia.';
   const phone = /(?:\+593[\s-]?|\b0)9\d[\s-]?\d{3}[\s-]?\d{4}\b|\b0[2-7][\s-]?\d{3}[\s-]?\d{4}\b/;
   const id = /\b\d{10}(?:001)?\b|\b\d{9}-\d\b/;
-  if (phone.test(text) || id.test(text)) return 'No incluyas cédulas, RUC ni teléfonos: no hacen falta para la sugerencia.';
+  if (phone.test(text) || id.test(text))
+    return 'No incluyas cédulas, RUC ni teléfonos: no hacen falta para la sugerencia.';
   return null;
 }
 
 const URL_RE = /\b(?:https?:\/\/|www\.)\S+/i;
 
-export function validateSuggestion(input: SuggestionInput, materiaIds: ReadonlySet<string>): ValidationResult {
+export function validateSuggestion(
+  input: SuggestionInput,
+  materiaIds: ReadonlySet<string>,
+): ValidationResult {
   const errors: SuggestionErrors = {};
   if (input.trampa.trim() !== '') return { ok: false, errors: { form: 'No se pudo preparar el mensaje.' } };
 
@@ -117,7 +123,8 @@ export function validateSuggestion(input: SuggestionInput, materiaIds: ReadonlyS
 
   const materia = input.materia.trim();
   if (materia && !materiaIds.has(materia)) errors.materia = 'Elige una materia de la lista.';
-  if (kind?.id === 'correccion' && !materia) errors.materia = 'Indica en qué materia está el contenido que hay que corregir.';
+  if (kind?.id === 'correccion' && !materia)
+    errors.materia = 'Indica en qué materia está el contenido que hay que corregir.';
 
   const mensaje = input.mensaje.trim().replace(/[ \t]+/g, ' ');
   const mensajeError =
@@ -147,7 +154,8 @@ export function validateSuggestion(input: SuggestionInput, materiaIds: ReadonlyS
               : null;
   if (fuenteError) errors.fuente = fuenteError;
 
-  if (!input.consentimiento) errors.consentimiento = 'Para enviar, acepta que el titular reciba tu mensaje y tu correo.';
+  if (!input.consentimiento)
+    errors.consentimiento = 'Para enviar, acepta que el titular reciba tu mensaje y tu correo.';
 
   if (Object.keys(errors).length > 0 || !kind) return { ok: false, errors };
   return { ok: true, value: { tipo: kind.id, materia: materia || null, mensaje, fuente: fuente || null } };

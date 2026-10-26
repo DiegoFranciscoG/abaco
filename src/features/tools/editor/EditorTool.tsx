@@ -21,7 +21,15 @@ const SNIPPETS: { label: string; aria: string; before: string; after?: string }[
   { label: '▦', aria: 'Tabla', before: '\n| Columna | Valor |\n|---|---:|\n| | |\n' },
 ];
 
-const fileName = (title: string) => `${title.normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '').toLowerCase() || 'documento'}.md`;
+const fileName = (title: string) =>
+  `${
+    title
+      .normalize('NFD')
+      .replace(/\p{Diacritic}/gu, '')
+      .replace(/[^a-zA-Z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')
+      .toLowerCase() || 'documento'
+  }.md`;
 
 function Editor({ doc }: { doc: Documento }) {
   const toast = useToast();
@@ -35,7 +43,12 @@ function Editor({ doc }: { doc: Documento }) {
   useEffect(() => {
     if (saved) return;
     const timer = setTimeout(() => {
-      saveDocument({ id: doc.id, titulo, contenido, ...(doc.materiaId ? { materiaId: doc.materiaId } : {}) }).then(
+      saveDocument({
+        id: doc.id,
+        titulo,
+        contenido,
+        ...(doc.materiaId ? { materiaId: doc.materiaId } : {}),
+      }).then(
         () => setSaved(true),
         (e: unknown) => toast.error(e),
       );
@@ -75,7 +88,11 @@ function Editor({ doc }: { doc: Documento }) {
         <span className="text-xs text-muted" aria-live="polite">
           {saved ? 'Guardado en este dispositivo' : 'Guardando…'} · {wordCount(contenido)} palabras
         </span>
-        <button type="button" className="btn btn-ghost" onClick={() => downloadFile(fileName(titulo), contenido, 'text/markdown;charset=utf-8')}>
+        <button
+          type="button"
+          className="btn btn-ghost"
+          onClick={() => downloadFile(fileName(titulo), contenido, 'text/markdown;charset=utf-8')}
+        >
           <Icon name="download" size={18} /> .md
         </button>
         <button type="button" className="btn btn-ghost" onClick={() => window.print()}>
@@ -97,7 +114,14 @@ function Editor({ doc }: { doc: Documento }) {
         <div className={`${pane === 'vista' ? 'hidden lg:block' : ''} space-y-2`}>
           <div className="flex flex-wrap gap-1.5" role="toolbar" aria-label="Formato">
             {SNIPPETS.map((s) => (
-              <button key={s.aria} type="button" className="btn btn-icon btn-ghost min-w-11 font-semibold" aria-label={s.aria} title={s.aria} onClick={() => insert(s.before, s.after)}>
+              <button
+                key={s.aria}
+                type="button"
+                className="btn btn-icon btn-ghost min-w-11 font-semibold"
+                aria-label={s.aria}
+                title={s.aria}
+                onClick={() => insert(s.before, s.after)}
+              >
                 {s.label}
               </button>
             ))}
@@ -117,7 +141,10 @@ function Editor({ doc }: { doc: Documento }) {
             />
           </label>
         </div>
-        <article className={`${pane === 'escribir' ? 'hidden lg:block' : ''} card print-doc min-h-[60dvh] p-6`} aria-label="Vista previa">
+        <article
+          className={`${pane === 'escribir' ? 'hidden lg:block' : ''} card print-doc min-h-[60dvh] p-6`}
+          aria-label="Vista previa"
+        >
           <h1 className="mb-4 font-display text-3xl font-semibold">{titulo}</h1>
           <MarkdownView blocks={blocks} />
         </article>
@@ -135,7 +162,10 @@ export default function EditorTool({ tool }: { tool: ToolInfo }) {
   const create = async (templateId: string) => {
     const template = TEMPLATES.find((t) => t.id === templateId);
     try {
-      const d = await saveDocument({ titulo: template?.nombre ?? 'Documento sin título', contenido: template?.contenido ?? '' });
+      const d = await saveDocument({
+        titulo: template?.nombre ?? 'Documento sin título',
+        contenido: template?.contenido ?? '',
+      });
       setSelected(d.id);
     } catch (e) {
       toast.error(e);
@@ -148,10 +178,15 @@ export default function EditorTool({ tool }: { tool: ToolInfo }) {
       metodo={
         <>
           <p>
-            Escribes en Markdown (# para títulos, **negrita**, *cursiva*, - para listas, tablas con |) y las fórmulas con la notación de LaTeX entre signos de dólar:
-            $x^2$ en línea o $$…$$ en bloque, como en los editores de LaTeX. La vista previa usa KaTeX con las funciones peligrosas desactivadas.
+            Escribes en Markdown (# para títulos, **negrita**, *cursiva*, - para listas, tablas con |) y las
+            fórmulas con la notación de LaTeX entre signos de dólar: $x^2$ en línea o $$…$$ en bloque, como en
+            los editores de LaTeX. La vista previa usa KaTeX con las funciones peligrosas desactivadas.
           </p>
-          <p>Lo que escribes nunca se interpreta como código: el texto se muestra tal cual y los enlaces solo aceptan direcciones http o https. Los documentos se guardan solo en este dispositivo y entran en tu respaldo.</p>
+          <p>
+            Lo que escribes nunca se interpreta como código: el texto se muestra tal cual y los enlaces solo
+            aceptan direcciones http o https. Los documentos se guardan solo en este dispositivo y entran en
+            tu respaldo.
+          </p>
         </>
       }
     >
@@ -200,7 +235,9 @@ export default function EditorTool({ tool }: { tool: ToolInfo }) {
       ) : docs ? (
         <div className="card space-y-3 p-6 text-center">
           <p className="font-display text-xl font-semibold">Empieza un documento</p>
-          <p className="text-sm text-muted">Elige una plantilla: informe académico, resolución de un ejercicio o ensayo breve.</p>
+          <p className="text-sm text-muted">
+            Elige una plantilla: informe académico, resolución de un ejercicio o ensayo breve.
+          </p>
           <div className="flex flex-wrap justify-center gap-2">
             {TEMPLATES.map((t) => (
               <button key={t.id} type="button" className="btn btn-soft" onClick={() => void create(t.id)}>

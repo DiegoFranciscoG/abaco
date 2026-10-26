@@ -1,4 +1,13 @@
-export const ERROR_CODES = ['#DIV/0!', '#VALUE!', '#REF!', '#NAME?', '#NUM!', '#N/A', '#NULL!', '#CIRC!'] as const;
+export const ERROR_CODES = [
+  '#DIV/0!',
+  '#VALUE!',
+  '#REF!',
+  '#NAME?',
+  '#NUM!',
+  '#N/A',
+  '#NULL!',
+  '#CIRC!',
+] as const;
 export type ErrorCode = (typeof ERROR_CODES)[number];
 
 /** Spanish Excel spelling of each error, shown to students. #CIRC! is ÁBACO's explicit circular-reference error. */

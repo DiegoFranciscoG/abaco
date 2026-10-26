@@ -80,7 +80,12 @@ export function describeStorageError(error: unknown): string {
   if (name === 'QuotaExceededError' || inner === 'QuotaExceededError') {
     return 'El almacenamiento de tu navegador está lleno. Descarga un respaldo y libera espacio borrando hojas o apuntes antiguos.';
   }
-  if (name === 'InvalidStateError' || name === 'SecurityError' || name === 'MissingAPIError' || name === 'OpenFailedError') {
+  if (
+    name === 'InvalidStateError' ||
+    name === 'SecurityError' ||
+    name === 'MissingAPIError' ||
+    name === 'OpenFailedError'
+  ) {
     return 'Tu navegador está bloqueando el almacenamiento (¿modo incógnito o datos de sitios desactivados?). Lo que escribas no se guardará.';
   }
   if (name === 'ValidationError' || name === 'BackupError') {

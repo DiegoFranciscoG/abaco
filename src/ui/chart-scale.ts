@@ -19,7 +19,8 @@ export function niceTicks(min: number, max: number, count = 5): number[] {
 
 export function formatTick(value: number): string {
   const abs = Math.abs(value);
-  if (abs >= 1_000_000) return `${(value / 1_000_000).toLocaleString('es-EC', { maximumFractionDigits: 1 })} M`;
+  if (abs >= 1_000_000)
+    return `${(value / 1_000_000).toLocaleString('es-EC', { maximumFractionDigits: 1 })} M`;
   if (abs >= 10_000) return `${(value / 1000).toLocaleString('es-EC', { maximumFractionDigits: 1 })} k`;
   return value.toLocaleString('es-EC', { maximumFractionDigits: abs < 1 ? 3 : 2 });
 }

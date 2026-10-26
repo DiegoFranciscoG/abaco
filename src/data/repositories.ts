@@ -54,7 +54,10 @@ export async function getProfile(db: AbacoDB = getDb()): Promise<Perfil> {
   return { ...DEFAULT_PROFILE, ...((await db.perfil.get('yo')) ?? {}) };
 }
 
-export async function updateProfile(changes: Partial<Omit<Perfil, 'id'>>, db: AbacoDB = getDb()): Promise<Perfil> {
+export async function updateProfile(
+  changes: Partial<Omit<Perfil, 'id'>>,
+  db: AbacoDB = getDb(),
+): Promise<Perfil> {
   const next: Perfil = { ...(await getProfile(db)), ...changes, id: 'yo' };
   await db.perfil.put(next);
   return next;
@@ -137,7 +140,9 @@ export async function searchNotes(query: string, db: AbacoDB = getDb()): Promise
   const needle = normalizeText(query);
   if (!needle) return listNotes({}, db);
   const notes = await listNotes({}, db);
-  return notes.filter((n) => normalizeText(`${n.titulo} ${n.contenido} ${n.etiquetas.join(' ')}`).includes(needle));
+  return notes.filter((n) =>
+    normalizeText(`${n.titulo} ${n.contenido} ${n.etiquetas.join(' ')}`).includes(needle),
+  );
 }
 
 export async function deleteNote(id: string, db: AbacoDB = getDb()): Promise<void> {
@@ -229,7 +234,12 @@ export async function updateCollection(
     (c) => ({
       ...c,
       nombre: requireText(input.nombre, 'el nombre', LIMITS.collectionName),
-      descripcion: requireText(input.descripcion ?? c.descripcion, 'la descripción', LIMITS.collectionDescription, true),
+      descripcion: requireText(
+        input.descripcion ?? c.descripcion,
+        'la descripción',
+        LIMITS.collectionDescription,
+        true,
+      ),
       color: checkColor(input.color ?? c.color),
     }),
     db,
@@ -264,11 +274,20 @@ export async function removeFromCollection(
   refId: string,
   db: AbacoDB = getDb(),
 ): Promise<Coleccion> {
-  return mutateCollection(id, (c) => ({ ...c, items: c.items.filter((i) => !(i.tipo === tipo && i.refId === refId)) }), db);
+  return mutateCollection(
+    id,
+    (c) => ({ ...c, items: c.items.filter((i) => !(i.tipo === tipo && i.refId === refId)) }),
+    db,
+  );
 }
 
 /** Moves an item inside a collection (the student decides the order). */
-export async function moveInCollection(id: string, from: number, to: number, db: AbacoDB = getDb()): Promise<Coleccion> {
+export async function moveInCollection(
+  id: string,
+  from: number,
+  to: number,
+  db: AbacoDB = getDb(),
+): Promise<Coleccion> {
   return mutateCollection(
     id,
     (c) => {
@@ -334,7 +353,12 @@ export async function recordAttempt(
   db: AbacoDB = getDb(),
 ): Promise<Intento> {
   if (!Number.isFinite(attempt.respuesta)) throw new ValidationError('La respuesta debe ser un número.');
-  const row: Intento = { ...attempt, id: newId(), fecha: now(), segundos: Math.max(0, Math.round(attempt.segundos)) };
+  const row: Intento = {
+    ...attempt,
+    id: newId(),
+    fecha: now(),
+    segundos: Math.max(0, Math.round(attempt.segundos)),
+  };
   await db.intentos.put(row);
   return row;
 }
@@ -379,7 +403,9 @@ export async function recordSearch(consulta: string, total: number, db: AbacoDB 
   const text = consulta.trim();
   if (!text) return;
   await db.transaction('rw', db.busquedas, async () => {
-    const same = await db.busquedas.filter((b) => normalizeText(b.consulta) === normalizeText(text)).toArray();
+    const same = await db.busquedas
+      .filter((b) => normalizeText(b.consulta) === normalizeText(text))
+      .toArray();
     await db.busquedas.bulkDelete(same.map((b) => b.id));
     await db.busquedas.put({ id: newId(), consulta: text, fecha: now(), total } satisfies Busqueda);
     const all = await db.busquedas.orderBy('fecha').toArray();
@@ -396,7 +422,11 @@ export async function clearSearches(db: AbacoDB = getDb()): Promise<void> {
   await db.busquedas.clear();
 }
 
-export async function getCached<T>(clave: string, nowMs = Date.now(), db: AbacoDB = getDb()): Promise<T | undefined> {
+export async function getCached<T>(
+  clave: string,
+  nowMs = Date.now(),
+  db: AbacoDB = getDb(),
+): Promise<T | undefined> {
   const row = await db.cacheApi.get(clave);
   if (!row) return undefined;
   if (row.expiraEn <= nowMs) {
@@ -424,20 +454,41 @@ export async function purgeExpiredCache(nowMs = Date.now(), db: AbacoDB = getDb(
 
 /** Counts what the student has saved (used for the backup reminder and the settings page). */
 export async function countUserData(db: AbacoDB = getDb()): Promise<Record<string, number>> {
-  const [apuntes, estrellas, colecciones, recordatorios, intentos, hojas, documentos, diarios, tarjetas, tableros] =
-    await Promise.all([
-      db.apuntes.count(),
-      db.estrellas.count(),
-      db.colecciones.count(),
-      db.recordatorios.count(),
-      db.intentos.count(),
-      db.hojas.count(),
-      db.documentos.count(),
-      db.diarios.count(),
-      db.tarjetas.count(),
-      db.tableros.count(),
-    ]);
-  return { apuntes, estrellas, colecciones, recordatorios, intentos, hojas, documentos, diarios, tarjetas, tableros };
+  const [
+    apuntes,
+    estrellas,
+    colecciones,
+    recordatorios,
+    intentos,
+    hojas,
+    documentos,
+    diarios,
+    tarjetas,
+    tableros,
+  ] = await Promise.all([
+    db.apuntes.count(),
+    db.estrellas.count(),
+    db.colecciones.count(),
+    db.recordatorios.count(),
+    db.intentos.count(),
+    db.hojas.count(),
+    db.documentos.count(),
+    db.diarios.count(),
+    db.tarjetas.count(),
+    db.tableros.count(),
+  ]);
+  return {
+    apuntes,
+    estrellas,
+    colecciones,
+    recordatorios,
+    intentos,
+    hojas,
+    documentos,
+    diarios,
+    tarjetas,
+    tableros,
+  };
 }
 
 /** Deletes every table, including the local identifier: the next visit starts from zero. */

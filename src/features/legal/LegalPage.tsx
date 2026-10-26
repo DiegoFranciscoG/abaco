@@ -34,7 +34,11 @@ export default function LegalPage() {
   return (
     <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[1fr_16rem]">
       <article className="min-w-0 space-y-8">
-        <PageHeader eyebrow="Legal" title={doc.titulo} subtitle={`${doc.resumen} Vigente desde el ${formatDate(SITE.vigencia)}.`} />
+        <PageHeader
+          eyebrow="Legal"
+          title={doc.titulo}
+          subtitle={`${doc.resumen} Vigente desde el ${formatDate(SITE.vigencia)}.`}
+        />
         {doc.secciones.map((s) => (
           <section key={s.titulo} className="space-y-3">
             <h2 className="font-display text-xl font-semibold">{s.titulo}</h2>
@@ -56,21 +60,32 @@ export default function LegalPage() {
         ))}
         {doc.id === 'privacidad' ? (
           <section className="space-y-3">
-            <h2 className="font-display text-xl font-semibold">Servicios con los que se conecta tu navegador</h2>
+            <h2 className="font-display text-xl font-semibold">
+              Servicios con los que se conecta tu navegador
+            </h2>
             <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="Servicios externos">
               <table className="w-full text-left text-sm">
                 <caption className="sr-only">Servicios externos y para qué se usan</caption>
                 <thead className="border-b border-line bg-surface-2 text-xs text-muted uppercase">
                   <tr>
-                    <th scope="col" className="px-4 py-3">Servicio</th>
-                    <th scope="col" className="px-4 py-3">Cuándo y qué recibe</th>
+                    <th scope="col" className="px-4 py-3">
+                      Servicio
+                    </th>
+                    <th scope="col" className="px-4 py-3">
+                      Cuándo y qué recibe
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   {SERVICIOS_EXTERNOS.map((s) => (
                     <tr key={s.nombre} className="border-b border-line align-top last:border-0">
                       <td className="px-4 py-2.5">
-                        <a href={s.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-red">
+                        <a
+                          href={s.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold hover:text-red"
+                        >
                           {s.nombre}
                         </a>
                       </td>

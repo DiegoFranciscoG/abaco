@@ -19,13 +19,19 @@ function CycleSubjects({ carrera, ciclo }: { carrera: Carrera; ciclo: number }) 
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {rows.map(({ materia, entrada }) => (
             <li key={materia.id}>
-              <AppLink to={`/materia/${materia.id}`} className="card card-lift flex h-full items-start gap-3 p-4">
+              <AppLink
+                to={`/materia/${materia.id}`}
+                className="card card-lift flex h-full items-start gap-3 p-4"
+              >
                 <AreaTile area={materia.areas[0] ?? 'gestion'} size="sm" />
                 <span className="min-w-0 flex-1">
                   <span className="block leading-snug font-semibold">{materia.nombre}</span>
                   <span className="mt-1 block text-xs text-muted">
-                    En {entrada.planes} de {carrera.planes} {carrera.planes === 1 ? 'plan revisado' : 'planes revisados'}
-                    {otherCycles(entrada.ciclos, entrada.ciclo) ? ` · ${otherCycles(entrada.ciclos, entrada.ciclo)}` : ''}
+                    En {entrada.planes} de {carrera.planes}{' '}
+                    {carrera.planes === 1 ? 'plan revisado' : 'planes revisados'}
+                    {otherCycles(entrada.ciclos, entrada.ciclo)
+                      ? ` · ${otherCycles(entrada.ciclos, entrada.ciclo)}`
+                      : ''}
                   </span>
                 </span>
                 <Icon name="chevron-right" size={18} className="mt-0.5 text-muted" />
@@ -34,7 +40,9 @@ function CycleSubjects({ carrera, ciclo }: { carrera: Carrera; ciclo: number }) 
           ))}
         </ul>
       ) : (
-        <p className="text-sm text-muted">Ninguna materia del catálogo suele cursarse en este ciclo. Revisa el ciclo anterior o el siguiente.</p>
+        <p className="text-sm text-muted">
+          Ninguna materia del catálogo suele cursarse en este ciclo. Revisa el ciclo anterior o el siguiente.
+        </p>
       )}
     </section>
   );
@@ -61,7 +69,9 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
 
   const chooseCycle = (value: number | null) => {
     if (!carrera) return;
-    setParams(value ? { carrera: carrera.id, ciclo: String(value) } : { carrera: carrera.id }, { replace: true });
+    setParams(value ? { carrera: carrera.id, ciclo: String(value) } : { carrera: carrera.id }, {
+      replace: true,
+    });
     save({ carrera: carrera.id, ciclo: value });
   };
 
@@ -78,7 +88,10 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
   };
 
   const cycles = carrera ? Array.from({ length: carrera.ciclos }, (_, i) => i + 1) : [];
-  const pending = carrera && ciclo ? materiasDeCiclo(carrera, ciclo).filter((r) => !profile.materias.includes(r.materia.id)).length : 0;
+  const pending =
+    carrera && ciclo
+      ? materiasDeCiclo(carrera, ciclo).filter((r) => !profile.materias.includes(r.materia.id)).length
+      : 0;
 
   return (
     <section aria-labelledby="por-carrera" className="space-y-5">
@@ -86,7 +99,9 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
         <h2 id="por-carrera" className="font-display text-2xl font-semibold">
           Por carrera y ciclo
         </h2>
-        <p className="mt-1 text-sm text-muted">Elige tu carrera y tu ciclo para ver las materias que se suelen cursar en él.</p>
+        <p className="mt-1 text-sm text-muted">
+          Elige tu carrera y tu ciclo para ver las materias que se suelen cursar en él.
+        </p>
       </div>
       <div className="flex flex-wrap gap-2" role="group" aria-label="Carrera">
         {carreras.map((c) => (
@@ -107,7 +122,12 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
           <div className="space-y-3">
             <p className="text-sm text-ink-2">{carrera.descripcion}</p>
             <div className="flex flex-wrap gap-2" role="group" aria-label="Ciclo">
-              <button type="button" aria-pressed={ciclo === null} onClick={() => chooseCycle(null)} className={`chip min-h-10 ${ciclo === null ? 'border-red bg-red-soft text-red' : ''}`}>
+              <button
+                type="button"
+                aria-pressed={ciclo === null}
+                onClick={() => chooseCycle(null)}
+                className={`chip min-h-10 ${ciclo === null ? 'border-red bg-red-soft text-red' : ''}`}
+              >
                 Todos
               </button>
               {cycles.map((c) => (
@@ -125,7 +145,11 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
             </div>
           </div>
 
-          {ciclo ? <CycleSubjects carrera={carrera} ciclo={ciclo} /> : cycles.map((c) => <CycleSubjects key={c} carrera={carrera} ciclo={c} />)}
+          {ciclo ? (
+            <CycleSubjects carrera={carrera} ciclo={ciclo} />
+          ) : (
+            cycles.map((c) => <CycleSubjects key={c} carrera={carrera} ciclo={c} />)
+          )}
 
           {ciclo && pending > 0 ? (
             <button type="button" className="btn btn-soft" onClick={() => void addCycle()}>
@@ -134,9 +158,10 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
           ) : null}
 
           <p className="border-t border-line pt-4 text-xs text-muted">
-            Ciclo habitual calculado con {carrera.planes} {carrera.planes === 1 ? 'plan de estudios público' : 'planes de estudio públicos'} de
-            carreras de Cuenca revisados el 14 de octubre de 2026 (la mediana del primer ciclo en que aparece la materia). Tu universidad
-            puede ubicarla en otro ciclo o con otro nombre; los planes no se publican aquí.
+            Ciclo habitual calculado con {carrera.planes}{' '}
+            {carrera.planes === 1 ? 'plan de estudios público' : 'planes de estudio públicos'} de carreras de
+            Cuenca revisados el 14 de octubre de 2026 (la mediana del primer ciclo en que aparece la materia).
+            Tu universidad puede ubicarla en otro ciclo o con otro nombre; los planes no se publican aquí.
           </p>
         </div>
       ) : null}

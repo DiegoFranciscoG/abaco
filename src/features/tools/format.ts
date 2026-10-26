@@ -8,6 +8,14 @@ export function readNumber(text: string): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-export const money = (n: number): string => n.toLocaleString('es-EC', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
-export const num = (n: number, digits = 2): string => n.toLocaleString('es-EC', { maximumFractionDigits: digits });
-export const pct = (n: number, digits = 2): string => `${(n * 100).toLocaleString('es-EC', { maximumFractionDigits: digits })} %`;
+export const money = (n: number): string =>
+  n.toLocaleString('es-EC', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+export const num = (n: number, digits = 2): string =>
+  n.toLocaleString('es-EC', { maximumFractionDigits: digits });
+export const pct = (n: number, digits = 2): string =>
+  `${(n * 100).toLocaleString('es-EC', { maximumFractionDigits: digits })} %`;

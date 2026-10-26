@@ -1,9 +1,22 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useState } from 'react';
-import { addEntry, createJournal, deleteEntry, deleteJournal, listJournals } from '../../../data/tool-repositories';
+import {
+  addEntry,
+  createJournal,
+  deleteEntry,
+  deleteJournal,
+  listJournals,
+} from '../../../data/tool-repositories';
 import { ACCOUNT_KINDS, type AccountKind, type Diario, type LineaAsiento } from '../../../data/types';
 import type { ToolInfo } from '../../../domain/tools/catalog';
-import { checkEntry, KIND_LABEL, postToLedger, statements, SUGGESTED_ACCOUNTS, trialBalance } from '../../../domain/tools/journal';
+import {
+  checkEntry,
+  KIND_LABEL,
+  postToLedger,
+  statements,
+  SUGGESTED_ACCOUNTS,
+  trialBalance,
+} from '../../../domain/tools/journal';
 import { Icon } from '../../../ui/icons';
 import { EmptyState, Tabs } from '../../../ui/primitives';
 import { useToast } from '../../../ui/use-toast';
@@ -19,11 +32,17 @@ function EntryForm({ diario }: { diario: Diario }) {
   const [fecha, setFecha] = useState(today);
   const [glosa, setGlosa] = useState('');
   const [lines, setLines] = useState<Draft[]>([emptyLine(), emptyLine()]);
-  const parsed: LineaAsiento[] = lines.map((l) => ({ cuenta: l.cuenta, tipo: l.tipo, debe: readNumber(l.debe) ?? 0, haber: readNumber(l.haber) ?? 0 }));
+  const parsed: LineaAsiento[] = lines.map((l) => ({
+    cuenta: l.cuenta,
+    tipo: l.tipo,
+    debe: readNumber(l.debe) ?? 0,
+    haber: readNumber(l.haber) ?? 0,
+  }));
   const check = checkEntry(parsed);
   const touched = lines.some((l) => l.cuenta || l.debe || l.haber);
 
-  const update = (i: number, patch: Partial<Draft>) => setLines((prev) => prev.map((l, j) => (j === i ? { ...l, ...patch } : l)));
+  const update = (i: number, patch: Partial<Draft>) =>
+    setLines((prev) => prev.map((l, j) => (j === i ? { ...l, ...patch } : l)));
   const pickAccount = (i: number, cuenta: string) => {
     const known = SUGGESTED_ACCOUNTS.find((a) => a.cuenta.toLowerCase() === cuenta.trim().toLowerCase());
     update(i, known ? { cuenta, tipo: known.tipo } : { cuenta });
@@ -52,7 +71,13 @@ function EntryForm({ diario }: { diario: Diario }) {
         </label>
         <label className="block">
           <span className="mb-1 block text-sm font-semibold text-ink-2">Glosa (detalle)</span>
-          <input className="field" value={glosa} onChange={(e) => setGlosa(e.target.value)} maxLength={200} placeholder="Ej.: Compra de mercadería a crédito" />
+          <input
+            className="field"
+            value={glosa}
+            onChange={(e) => setGlosa(e.target.value)}
+            maxLength={200}
+            placeholder="Ej.: Compra de mercadería a crédito"
+          />
         </label>
       </div>
       <datalist id="cuentas-sugeridas">
@@ -62,15 +87,29 @@ function EntryForm({ diario }: { diario: Diario }) {
       </datalist>
       <div className="space-y-2">
         {lines.map((l, i) => (
-          <fieldset key={i} className="grid grid-cols-2 gap-2 rounded-xl border border-line p-2 sm:grid-cols-[1.6fr_1fr_0.8fr_0.8fr_auto]">
+          <fieldset
+            key={i}
+            className="grid grid-cols-2 gap-2 rounded-xl border border-line p-2 sm:grid-cols-[1.6fr_1fr_0.8fr_0.8fr_auto]"
+          >
             <legend className="sr-only">Línea {i + 1}</legend>
             <label className="col-span-2 sm:col-span-1">
               <span className="sr-only">Cuenta de la línea {i + 1}</span>
-              <input className="field" list="cuentas-sugeridas" value={l.cuenta} onChange={(e) => pickAccount(i, e.target.value)} placeholder="Cuenta" maxLength={80} />
+              <input
+                className="field"
+                list="cuentas-sugeridas"
+                value={l.cuenta}
+                onChange={(e) => pickAccount(i, e.target.value)}
+                placeholder="Cuenta"
+                maxLength={80}
+              />
             </label>
             <label>
               <span className="sr-only">Tipo de cuenta de la línea {i + 1}</span>
-              <select className="field" value={l.tipo} onChange={(e) => update(i, { tipo: e.target.value as AccountKind })}>
+              <select
+                className="field"
+                value={l.tipo}
+                onChange={(e) => update(i, { tipo: e.target.value as AccountKind })}
+              >
                 {ACCOUNT_KINDS.map((k) => (
                   <option key={k} value={k}>
                     {KIND_LABEL[k]}
@@ -80,11 +119,25 @@ function EntryForm({ diario }: { diario: Diario }) {
             </label>
             <label>
               <span className="sr-only">Debe de la línea {i + 1}</span>
-              <input className="field tnum" inputMode="decimal" value={l.debe} onChange={(e) => update(i, { debe: e.target.value, haber: e.target.value ? '' : l.haber })} placeholder="Debe" maxLength={16} />
+              <input
+                className="field tnum"
+                inputMode="decimal"
+                value={l.debe}
+                onChange={(e) => update(i, { debe: e.target.value, haber: e.target.value ? '' : l.haber })}
+                placeholder="Debe"
+                maxLength={16}
+              />
             </label>
             <label>
               <span className="sr-only">Haber de la línea {i + 1}</span>
-              <input className="field tnum" inputMode="decimal" value={l.haber} onChange={(e) => update(i, { haber: e.target.value, debe: e.target.value ? '' : l.debe })} placeholder="Haber" maxLength={16} />
+              <input
+                className="field tnum"
+                inputMode="decimal"
+                value={l.haber}
+                onChange={(e) => update(i, { haber: e.target.value, debe: e.target.value ? '' : l.debe })}
+                placeholder="Haber"
+                maxLength={16}
+              />
             </label>
             <button
               type="button"
@@ -99,7 +152,11 @@ function EntryForm({ diario }: { diario: Diario }) {
         ))}
       </div>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <button type="button" className="btn btn-ghost" onClick={() => setLines((prev) => (prev.length < 40 ? [...prev, emptyLine()] : prev))}>
+        <button
+          type="button"
+          className="btn btn-ghost"
+          onClick={() => setLines((prev) => (prev.length < 40 ? [...prev, emptyLine()] : prev))}
+        >
           <Icon name="plus" size={18} /> Agregar línea
         </button>
         <p className={`tnum text-sm font-semibold ${check.ok ? 'text-ok' : 'text-muted'}`} aria-live="polite">
@@ -150,11 +207,21 @@ function Books({ diario }: { diario: Diario }) {
             <caption className="sr-only">Libro diario</caption>
             <thead className="border-b border-line text-xs text-muted uppercase">
               <tr>
-                <th scope="col" className="px-3 py-2">N.º</th>
-                <th scope="col" className="px-3 py-2">Fecha</th>
-                <th scope="col" className="px-3 py-2">Cuenta y glosa</th>
-                <th scope="col" className="px-3 py-2 text-right">Debe</th>
-                <th scope="col" className="px-3 py-2 text-right">Haber</th>
+                <th scope="col" className="px-3 py-2">
+                  N.º
+                </th>
+                <th scope="col" className="px-3 py-2">
+                  Fecha
+                </th>
+                <th scope="col" className="px-3 py-2">
+                  Cuenta y glosa
+                </th>
+                <th scope="col" className="px-3 py-2 text-right">
+                  Debe
+                </th>
+                <th scope="col" className="px-3 py-2 text-right">
+                  Haber
+                </th>
                 <th scope="col" className="px-3 py-2">
                   <span className="sr-only">Acciones</span>
                 </th>
@@ -184,7 +251,12 @@ function Books({ diario }: { diario: Diario }) {
                     ))}
                   </td>
                   <td className="px-3 py-2">
-                    <button type="button" className="btn btn-icon btn-ghost border-0" aria-label={`Borrar el asiento ${n + 1}`} onClick={() => void deleteEntry(diario.id, a.id)}>
+                    <button
+                      type="button"
+                      className="btn btn-icon btn-ghost border-0"
+                      aria-label={`Borrar el asiento ${n + 1}`}
+                      onClick={() => void deleteEntry(diario.id, a.id)}
+                    >
                       <Icon name="trash" size={17} />
                     </button>
                   </td>
@@ -214,8 +286,16 @@ function Books({ diario }: { diario: Diario }) {
                   ))}
                 </div>
               </div>
-              <p className={`tnum mt-2 border-t border-line pt-2 text-center text-sm font-semibold ${acc.saldo < 0 ? 'text-warn' : ''}`}>
-                Saldo {acc.saldo < 0 ? 'contrario a su naturaleza' : acc.ladoSaldo === 'debe' ? 'deudor' : 'acreedor'}: {money(Math.abs(acc.saldo))}
+              <p
+                className={`tnum mt-2 border-t border-line pt-2 text-center text-sm font-semibold ${acc.saldo < 0 ? 'text-warn' : ''}`}
+              >
+                Saldo{' '}
+                {acc.saldo < 0
+                  ? 'contrario a su naturaleza'
+                  : acc.ladoSaldo === 'debe'
+                    ? 'deudor'
+                    : 'acreedor'}
+                : {money(Math.abs(acc.saldo))}
               </p>
             </li>
           ))}
@@ -223,14 +303,25 @@ function Books({ diario }: { diario: Diario }) {
       ) : null}
       {view === 'balance' ? (
         <div className="space-y-4">
-          <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="Balance de comprobación">
+          <div
+            className="card overflow-x-auto"
+            tabIndex={0}
+            role="region"
+            aria-label="Balance de comprobación"
+          >
             <table className="tnum w-full text-left text-sm">
               <caption className="sr-only">Balance de comprobación de saldos</caption>
               <thead className="border-b border-line text-xs text-muted uppercase">
                 <tr>
-                  <th scope="col" className="px-3 py-2">Cuenta</th>
-                  <th scope="col" className="px-3 py-2 text-right">Saldo deudor</th>
-                  <th scope="col" className="px-3 py-2 text-right">Saldo acreedor</th>
+                  <th scope="col" className="px-3 py-2">
+                    Cuenta
+                  </th>
+                  <th scope="col" className="px-3 py-2 text-right">
+                    Saldo deudor
+                  </th>
+                  <th scope="col" className="px-3 py-2 text-right">
+                    Saldo acreedor
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -252,19 +343,25 @@ function Books({ diario }: { diario: Diario }) {
             </table>
           </div>
           <p className={`text-sm font-semibold ${tb.cuadra ? 'text-ok' : 'text-warn'}`}>
-            {tb.cuadra ? 'El balance cuadra: la suma de saldos deudores es igual a la de saldos acreedores.' : 'El balance no cuadra: revisa los asientos.'}
+            {tb.cuadra
+              ? 'El balance cuadra: la suma de saldos deudores es igual a la de saldos acreedores.'
+              : 'El balance no cuadra: revisa los asientos.'}
           </p>
           <dl className="grid gap-3 sm:grid-cols-3">
             <div className="card p-4">
-              <dt className="text-xs font-semibold tracking-wide text-muted uppercase">Estado de resultados</dt>
+              <dt className="text-xs font-semibold tracking-wide text-muted uppercase">
+                Estado de resultados
+              </dt>
               <dd className="tnum mt-1 text-sm">
-                Ingresos {money(st.ingresos)} − Gastos {money(st.gastos)} = <strong>{money(st.utilidad)}</strong>
+                Ingresos {money(st.ingresos)} − Gastos {money(st.gastos)} ={' '}
+                <strong>{money(st.utilidad)}</strong>
               </dd>
             </div>
             <div className="card p-4 sm:col-span-2">
               <dt className="text-xs font-semibold tracking-wide text-muted uppercase">Ecuación contable</dt>
               <dd className="tnum mt-1 text-sm">
-                Activo {money(st.activo)} = Pasivo {money(st.pasivo)} + Patrimonio {money(st.patrimonio)} + Utilidad del período {money(st.utilidad)}
+                Activo {money(st.activo)} = Pasivo {money(st.pasivo)} + Patrimonio {money(st.patrimonio)} +
+                Utilidad del período {money(st.utilidad)}
                 {Math.abs(st.diferencia) < 0.005 ? ' ✓' : ` (diferencia ${money(st.diferencia)})`}
               </dd>
             </div>
@@ -297,9 +394,11 @@ export default function JournalTool({ tool }: { tool: ToolInfo }) {
       tool={tool}
       metodo={
         <p>
-          Partida doble: cada asiento debe tener débitos y créditos iguales; activos y gastos aumentan por el debe, pasivos, patrimonio e ingresos por el haber (OpenStax,
-          Principles of Financial Accounting, capítulo 3). Los asientos se trasladan al mayor y el balance de comprobación compara saldos deudores y acreedores. Los
-          cálculos se hacen en centavos para evitar errores de redondeo. Tus libros se guardan solo en este dispositivo.
+          Partida doble: cada asiento debe tener débitos y créditos iguales; activos y gastos aumentan por el
+          debe, pasivos, patrimonio e ingresos por el haber (OpenStax, Principles of Financial Accounting,
+          capítulo 3). Los asientos se trasladan al mayor y el balance de comprobación compara saldos deudores
+          y acreedores. Los cálculos se hacen en centavos para evitar errores de redondeo. Tus libros se
+          guardan solo en este dispositivo.
         </p>
       }
     >
@@ -318,13 +417,23 @@ export default function JournalTool({ tool }: { tool: ToolInfo }) {
         ) : null}
         <label className="block min-w-48 flex-1">
           <span className="mb-1 block text-sm font-semibold text-ink-2">Nuevo libro</span>
-          <input className="field" value={name} onChange={(e) => setName(e.target.value)} placeholder="Ej.: Ejercicio 3 — Comercial XYZ" maxLength={60} />
+          <input
+            className="field"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Ej.: Ejercicio 3 — Comercial XYZ"
+            maxLength={60}
+          />
         </label>
         <button type="button" className="btn btn-ghost" onClick={() => void create()}>
           <Icon name="plus" size={18} /> Crear libro
         </button>
         {current ? (
-          <button type="button" className="btn btn-ghost" onClick={() => void deleteJournal(current.id).then(() => setSelected(null))}>
+          <button
+            type="button"
+            className="btn btn-ghost"
+            onClick={() => void deleteJournal(current.id).then(() => setSelected(null))}
+          >
             <Icon name="trash" size={18} /> Borrar este libro
           </button>
         ) : null}

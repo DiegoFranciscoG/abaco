@@ -6,7 +6,13 @@ import { Icon } from '../../ui/icons';
 import { Dialog } from '../../ui/primitives';
 import { useToast } from '../../ui/use-toast';
 
-export function AddToCollectionButton({ item, compact = false }: { item: Omit<ItemColeccion, 'agregadoEn'>; compact?: boolean }) {
+export function AddToCollectionButton({
+  item,
+  compact = false,
+}: {
+  item: Omit<ItemColeccion, 'agregadoEn'>;
+  compact?: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
   const collections = useLiveQuery(() => listCollections(), []);
@@ -24,7 +30,12 @@ export function AddToCollectionButton({ item, compact = false }: { item: Omit<It
 
   return (
     <>
-      <button type="button" className={`btn btn-ghost ${compact ? 'btn-icon' : ''}`} onClick={() => setOpen(true)} aria-label={`Agregar «${item.titulo}» a una colección`}>
+      <button
+        type="button"
+        className={`btn btn-ghost ${compact ? 'btn-icon' : ''}`}
+        onClick={() => setOpen(true)}
+        aria-label={`Agregar «${item.titulo}» a una colección`}
+      >
         <Icon name="folder" size={19} />
         {compact ? null : <span>Colección</span>}
       </button>
@@ -43,7 +54,9 @@ export function AddToCollectionButton({ item, compact = false }: { item: Omit<It
                     className="flex min-h-12 w-full items-center justify-between rounded-xl border border-line px-4 text-left hover:border-red disabled:opacity-60"
                   >
                     <span className="font-semibold">{c.nombre}</span>
-                    <span className="text-xs text-muted">{already ? 'Ya está aquí' : `${c.items.length} elementos`}</span>
+                    <span className="text-xs text-muted">
+                      {already ? 'Ya está aquí' : `${c.items.length} elementos`}
+                    </span>
                   </button>
                 </li>
               );
@@ -65,7 +78,14 @@ export function AddToCollectionButton({ item, compact = false }: { item: Omit<It
             }
           }}
         >
-          <input className="field" placeholder="Nueva colección, p. ej. «Examen de Costos»" value={name} onChange={(e) => setName(e.target.value)} aria-label="Nombre de la nueva colección" maxLength={60} />
+          <input
+            className="field"
+            placeholder="Nueva colección, p. ej. «Examen de Costos»"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            aria-label="Nombre de la nueva colección"
+            maxLength={60}
+          />
           <button type="submit" className="btn btn-primary shrink-0" disabled={!name.trim()}>
             Crear
           </button>

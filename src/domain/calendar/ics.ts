@@ -14,7 +14,10 @@ function escapeText(value: string): string {
 }
 
 function toUtcStamp(date: Date): string {
-  return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  return date
+    .toISOString()
+    .replace(/[-:]/g, '')
+    .replace(/\.\d{3}/, '');
 }
 
 /** Lines longer than 75 octets are folded with CRLF + space (RFC 5545 §3.1). */

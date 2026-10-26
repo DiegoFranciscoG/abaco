@@ -16,18 +16,30 @@ const COST_LABEL: Record<App['costo'], { label: string; className: string }> = {
 export function AppCard({ app, highlight = false }: { app: App; highlight?: boolean }) {
   const cost = COST_LABEL[app.costo];
   return (
-    <article id={app.id} className={`card flex h-full flex-col gap-3 p-5 ${highlight ? 'border-red ring-1 ring-red/30' : ''}`}>
+    <article
+      id={app.id}
+      className={`card flex h-full flex-col gap-3 p-5 ${highlight ? 'border-red ring-1 ring-red/30' : ''}`}
+    >
       <div className="flex items-start gap-3">
         <AreaTile area={app.areas[0] ?? 'tecnologia'} />
         <div className="min-w-0">
           <h3 className="font-semibold">{app.nombre}</h3>
-          <span className={`mt-1 inline-block rounded-full px-2 py-0.5 text-[0.72rem] font-semibold ${cost.className}`}>{cost.label}</span>
+          <span
+            className={`mt-1 inline-block rounded-full px-2 py-0.5 text-[0.72rem] font-semibold ${cost.className}`}
+          >
+            {cost.label}
+          </span>
         </div>
       </div>
       <p className="text-sm leading-relaxed text-ink-2">{app.para_que}</p>
       {app.nota ? <p className="text-xs text-muted">{app.nota}</p> : null}
       <p className="text-xs text-muted">{app.plataformas.join(' · ')}</p>
-      <a href={app.url_oficial} target="_blank" rel="noopener noreferrer" className="link-red mt-auto inline-flex items-center gap-1 text-sm">
+      <a
+        href={app.url_oficial}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-red mt-auto inline-flex items-center gap-1 text-sm"
+      >
         Sitio oficial<span className="sr-only"> de {app.nombre}</span> <Icon name="external" size={15} />
       </a>
       <p className="text-[0.7rem] text-muted">Verificado el {formatDate(app.fecha_consulta)}</p>

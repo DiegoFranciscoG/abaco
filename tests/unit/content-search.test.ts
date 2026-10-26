@@ -21,7 +21,16 @@ describe('content search', () => {
     const ids = docs.map((d) => d.id);
     expect(new Set(ids).size).toBe(ids.length);
     const kinds = new Set(docs.map((d) => d.tipo));
-    expect([...kinds].sort()).toEqual(['app', 'ejercicio', 'formula', 'herramienta', 'materia', 'subtema', 'tema', 'termino']);
+    expect([...kinds].sort()).toEqual([
+      'app',
+      'ejercicio',
+      'formula',
+      'herramienta',
+      'materia',
+      'subtema',
+      'tema',
+      'termino',
+    ]);
     expect(docs.filter((d) => d.tipo === 'materia')).toHaveLength(content.materias.length);
     expect(docs.filter((d) => d.tipo === 'herramienta')).toHaveLength(TOOLS.length);
   });
@@ -35,8 +44,12 @@ describe('content search', () => {
   it('finds formulas by name, acronym and Excel function, in Spanish or English', () => {
     expect(searchContent(index, 'valor actual neto', { types: ['formula'] })[0]?.id).toBe('formula:van');
     expect(searchContent(index, 'VAN', { types: ['formula'] })[0]?.id).toBe('formula:van');
-    expect(searchContent(index, 'PAGO', { types: ['formula'] }).map((h) => h.id)).toContain('formula:cuota-prestamo');
-    expect(searchContent(index, 'PMT', { types: ['formula'] }).map((h) => h.id)).toContain('formula:cuota-prestamo');
+    expect(searchContent(index, 'PAGO', { types: ['formula'] }).map((h) => h.id)).toContain(
+      'formula:cuota-prestamo',
+    );
+    expect(searchContent(index, 'PMT', { types: ['formula'] }).map((h) => h.id)).toContain(
+      'formula:cuota-prestamo',
+    );
   });
 
   it('ignores accents and tolerates small typos', () => {
@@ -45,13 +58,21 @@ describe('content search', () => {
   });
 
   it('finds subjects by name or synonym and links to their page', () => {
-    expect(searchContent(index, 'matematica financiera', { types: ['materia'] })[0]?.ruta).toBe('/materia/matematica-financiera');
+    expect(searchContent(index, 'matematica financiera', { types: ['materia'] })[0]?.ruta).toBe(
+      '/materia/matematica-financiera',
+    );
     expect(searchContent(index, 'mercadotecnia', { types: ['materia'] })[0]?.ruta).toBe('/materia/marketing');
   });
 
   it('finds topics, subtopics and tools', () => {
-    expect(searchContent(index, 'punto de equilibrio', { types: ['subtema'] }).every((h) => h.ruta.startsWith('/materia/'))).toBe(true);
-    expect(searchContent(index, 'rol de pagos', { types: ['herramienta'] })[0]?.ruta).toBe('/herramientas/rol-pagos');
+    expect(
+      searchContent(index, 'punto de equilibrio', { types: ['subtema'] }).every((h) =>
+        h.ruta.startsWith('/materia/'),
+      ),
+    ).toBe(true);
+    expect(searchContent(index, 'rol de pagos', { types: ['herramienta'] })[0]?.ruta).toBe(
+      '/herramientas/rol-pagos',
+    );
     expect(searchContent(index, 'latex', { types: ['herramienta'] })[0]?.ruta).toBe('/herramientas/editor');
   });
 

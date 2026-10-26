@@ -7,7 +7,17 @@ import { AppLink, PageHeader } from '../../ui/primitives';
 import { TOOL_ICON } from '../../ui/tool-icons';
 
 /** Common frame of every study tool: what it does, which subjects use it and how its numbers are obtained. */
-export function ToolLayout({ tool, metodo, aviso, children }: { tool: ToolInfo; metodo: ReactNode; aviso?: ReactNode; children: ReactNode }) {
+export function ToolLayout({
+  tool,
+  metodo,
+  aviso,
+  children,
+}: {
+  tool: ToolInfo;
+  metodo: ReactNode;
+  aviso?: ReactNode;
+  children: ReactNode;
+}) {
   useDocumentTitle(tool.nombre);
   const related = materias.filter((m) => m.herramientas.includes(tool.id));
   return (
@@ -26,7 +36,10 @@ export function ToolLayout({ tool, metodo, aviso, children }: { tool: ToolInfo; 
         subtitle={tool.descripcion}
       />
       {aviso ? (
-        <p role="note" className="rounded-2xl border border-warn/40 bg-warn-soft px-4 py-3 text-sm text-ink-2">
+        <p
+          role="note"
+          className="rounded-2xl border border-warn/40 bg-warn-soft px-4 py-3 text-sm text-ink-2"
+        >
           {aviso}
         </p>
       ) : null}
@@ -42,7 +55,12 @@ export function ToolLayout({ tool, metodo, aviso, children }: { tool: ToolInfo; 
               const f = resolveFuente({ ref: id });
               return f ? (
                 <li key={id}>
-                  <a href={f.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-ink-2 underline decoration-line-strong underline-offset-2 hover:text-red">
+                  <a
+                    href={f.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-ink-2 underline decoration-line-strong underline-offset-2 hover:text-red"
+                  >
                     {f.titulo}
                   </a>{' '}
                   · {f.autor_editor} · {f.licencia}
@@ -117,7 +135,17 @@ export function NumberField({
 }
 
 /** Result tile used by the calculators. */
-export function Stat({ label, value, tone = 'default', hint }: { label: string; value: string; tone?: 'default' | 'good' | 'bad'; hint?: string }) {
+export function Stat({
+  label,
+  value,
+  tone = 'default',
+  hint,
+}: {
+  label: string;
+  value: string;
+  tone?: 'default' | 'good' | 'bad';
+  hint?: string;
+}) {
   const color = tone === 'good' ? 'text-ok' : tone === 'bad' ? 'text-warn' : 'text-ink';
   return (
     <div className="card p-4">

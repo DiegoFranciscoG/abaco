@@ -30,9 +30,9 @@ export default function AboutPage() {
       />
 
       <Notice icon="info">
-        <strong>ÁBACO no está afiliado a ninguna universidad</strong> y no reproduce planes de estudio. Las materias se
-        eligieron por lo frecuentes que son en las carreras económicas y administrativas; los temas, subtemas, fórmulas y
-        ejercicios son redacción propia y cada uno cita su fuente.
+        <strong>ÁBACO no está afiliado a ninguna universidad</strong> y no reproduce planes de estudio. Las
+        materias se eligieron por lo frecuentes que son en las carreras económicas y administrativas; los
+        temas, subtemas, fórmulas y ejercicios son redacción propia y cada uno cita su fuente.
       </Notice>
 
       <section aria-labelledby="panel">
@@ -56,14 +56,25 @@ export default function AboutPage() {
             </div>
           ))}
         </dl>
-        <div className="card overflow-x-auto" tabIndex={0} role="region" aria-label="Temas y subtemas por materia">
+        <div
+          className="card overflow-x-auto"
+          tabIndex={0}
+          role="region"
+          aria-label="Temas y subtemas por materia"
+        >
           <table className="tnum w-full text-left text-sm">
             <caption className="sr-only">Temas y subtemas por materia</caption>
             <thead className="border-b border-line bg-surface-2 text-xs text-muted uppercase">
               <tr>
-                <th scope="col" className="px-4 py-3">Materia</th>
-                <th scope="col" className="px-4 py-3">Temas</th>
-                <th scope="col" className="px-4 py-3">Subtemas</th>
+                <th scope="col" className="px-4 py-3">
+                  Materia
+                </th>
+                <th scope="col" className="px-4 py-3">
+                  Temas
+                </th>
+                <th scope="col" className="px-4 py-3">
+                  Subtemas
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -82,8 +93,8 @@ export default function AboutPage() {
           </table>
         </div>
         <p className="mt-3 text-sm text-muted">
-          Antes de publicar, un script descarga el texto de cada sección citada y comprueba que contiene el concepto que
-          explica el subtema. Cada ejemplo numérico se recalcula de forma independiente.
+          Antes de publicar, un script descarga el texto de cada sección citada y comprueba que contiene el
+          concepto que explica el subtema. Cada ejemplo numérico se recalcula de forma independiente.
         </p>
       </section>
 
@@ -94,7 +105,10 @@ export default function AboutPage() {
         <ul className="list-disc space-y-1.5 pl-5 text-ink-2">
           <li>Sin cuentas, sin registro, sin analítica, sin publicidad y sin cookies.</li>
           <li>Tus apuntes, colecciones, hojas, documentos y tarjetas se guardan solo en este navegador.</li>
-          <li>Lo único que sale a internet son las consultas que haces en el buscador académico y en las herramientas de datos, hacia los servicios públicos indicados.</li>
+          <li>
+            Lo único que sale a internet son las consultas que haces en el buscador académico y en las
+            herramientas de datos, hacia los servicios públicos indicados.
+          </li>
           <li>Es gratis: no hay pagos, suscripciones ni cobros ocultos.</li>
         </ul>
         <ul className="grid gap-2 pt-2 sm:grid-cols-2">
@@ -127,11 +141,17 @@ export default function AboutPage() {
         <ul className="space-y-2">
           {fuentes.map((f) => (
             <li key={f.id} className="card p-4 text-sm">
-              <a href={f.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-red">
+              <a
+                href={f.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold hover:text-red"
+              >
                 {f.titulo}
               </a>
               <p className="text-muted">
-                {TIPO[f.tipo]} · {f.autor_editor} · consultado el {formatDate(f.fecha_consulta)} · {f.licencia}
+                {TIPO[f.tipo]} · {f.autor_editor} · consultado el {formatDate(f.fecha_consulta)} ·{' '}
+                {f.licencia}
               </p>
             </li>
           ))}

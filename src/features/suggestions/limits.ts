@@ -28,8 +28,12 @@ function read(storage: Storage | undefined): Ledger {
     const raw = storage?.getItem(SUGGESTION_STORAGE_KEY);
     const parsed = raw ? (JSON.parse(raw) as Partial<Ledger>) : {};
     return {
-      enviados: Array.isArray(parsed.enviados) ? parsed.enviados.filter((n): n is number => typeof n === 'number') : [],
-      huellas: Array.isArray(parsed.huellas) ? parsed.huellas.filter((h): h is string => typeof h === 'string').slice(-20) : [],
+      enviados: Array.isArray(parsed.enviados)
+        ? parsed.enviados.filter((n): n is number => typeof n === 'number')
+        : [],
+      huellas: Array.isArray(parsed.huellas)
+        ? parsed.huellas.filter((h): h is string => typeof h === 'string').slice(-20)
+        : [],
     };
   } catch {
     return { enviados: [], huellas: [] };
@@ -48,10 +52,13 @@ const defaultStorage = (): Storage | undefined => {
 export function limitReason(text: string, now = Date.now(), storage = defaultStorage()): string | null {
   const ledger = read(storage);
   const recent = ledger.enviados.filter((t) => now - t < DAY && t <= now);
-  if (ledger.huellas.includes(fingerprint(text))) return 'Ya enviaste este mismo mensaje. Gracias: no hace falta repetirlo.';
-  if (recent.length >= SUGGESTION_LIMITS.porDia) return `Puedes enviar hasta ${SUGGESTION_LIMITS.porDia} sugerencias al día. Vuelve mañana con tu próxima idea.`;
+  if (ledger.huellas.includes(fingerprint(text)))
+    return 'Ya enviaste este mismo mensaje. Gracias: no hace falta repetirlo.';
+  if (recent.length >= SUGGESTION_LIMITS.porDia)
+    return `Puedes enviar hasta ${SUGGESTION_LIMITS.porDia} sugerencias al día. Vuelve mañana con tu próxima idea.`;
   const last = Math.max(0, ...recent);
-  if (last && now - last < SUGGESTION_LIMITS.minutosEntreEnvios * 60_000) return 'Espera un par de minutos antes de enviar otra sugerencia.';
+  if (last && now - last < SUGGESTION_LIMITS.minutosEntreEnvios * 60_000)
+    return 'Espera un par de minutos antes de enviar otra sugerencia.';
   return null;
 }
 

@@ -5,7 +5,16 @@ import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { useProfile } from '../../ui/use-profile';
 import { Icon } from '../../ui/icons';
-import { AppLink, AreaBadge, AreaTile, CopyButton, Notice, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import {
+  AppLink,
+  AreaBadge,
+  AreaTile,
+  CopyButton,
+  Notice,
+  PageHeader,
+  Skeleton,
+  SourceNote,
+} from '../../ui/primitives';
 import { StarButton } from '../../ui/StarButton';
 import { AddToCollectionButton } from '../me/AddToCollection';
 import { NotesPanel } from '../me/NotesPanel';
@@ -16,8 +25,6 @@ import { MathFormula } from './MathFormula';
 
 // The calculator brings the formula engine (about 50 KB): it loads after the formula itself is on screen.
 const Calculator = lazy(() => import('./Calculator'));
-
-
 
 export default function FormulaPage() {
   const { formulaId = '' } = useParams();
@@ -51,7 +58,9 @@ export default function FormulaPage() {
         actions={
           <>
             <StarButton star={{ tipo: 'formula', refId: formula.id, titulo: formula.nombre, ruta: route }} />
-            <AddToCollectionButton item={{ tipo: 'formula', refId: formula.id, titulo: formula.nombre, ruta: route }} />
+            <AddToCollectionButton
+              item={{ tipo: 'formula', refId: formula.id, titulo: formula.nombre, ruta: route }}
+            />
           </>
         }
       />
@@ -103,11 +112,21 @@ export default function FormulaPage() {
             <h2 id="excel" className="mb-3 flex items-center gap-2 font-display text-xl font-semibold">
               <Icon name="lab" className="text-red" /> En Excel
             </h2>
-            <p className="mb-2 text-sm text-muted">Forma general ({profile.sintaxisExcel === 'es' ? 'Excel en español' : 'Excel en inglés / Google Sheets'}):</p>
-            <code className="code-excel mb-4 block" tabIndex={0}>{profile.sintaxisExcel === 'es' ? formula.excel.es : formula.excel.en}</code>
-            <p className="mb-2 text-sm text-muted">El ejemplo, listo para pegar{formula.ejemplo.celdas ? ' (con los datos en las celdas indicadas)' : ''}:</p>
+            <p className="mb-2 text-sm text-muted">
+              Forma general (
+              {profile.sintaxisExcel === 'es' ? 'Excel en español' : 'Excel en inglés / Google Sheets'}):
+            </p>
+            <code className="code-excel mb-4 block" tabIndex={0}>
+              {profile.sintaxisExcel === 'es' ? formula.excel.es : formula.excel.en}
+            </code>
+            <p className="mb-2 text-sm text-muted">
+              El ejemplo, listo para pegar
+              {formula.ejemplo.celdas ? ' (con los datos en las celdas indicadas)' : ''}:
+            </p>
             <div className="flex flex-wrap items-center gap-2">
-              <code className="code-excel flex-1" tabIndex={0}>{excelPrimary}</code>
+              <code className="code-excel flex-1" tabIndex={0}>
+                {excelPrimary}
+              </code>
               <CopyButton text={excelPrimary} />
             </div>
             <p className="mt-2 text-xs text-muted">
@@ -129,7 +148,9 @@ export default function FormulaPage() {
         <ol className="space-y-2">
           {formula.ejemplo.pasos.map((paso, i) => (
             <li key={paso} className="flex gap-3">
-              <span className="tnum grid h-7 w-7 shrink-0 place-items-center rounded-full bg-red-soft text-sm font-bold text-red">{i + 1}</span>
+              <span className="tnum grid h-7 w-7 shrink-0 place-items-center rounded-full bg-red-soft text-sm font-bold text-red">
+                {i + 1}
+              </span>
               <span className="tnum pt-0.5 text-ink-2">{paso}</span>
             </li>
           ))}
@@ -137,7 +158,8 @@ export default function FormulaPage() {
         <p className="mt-5 flex items-baseline gap-3 border-t border-line pt-4">
           <span className="text-sm text-muted">Resultado publicado</span>
           <span className="tnum font-display text-2xl font-semibold">
-            {fmt(formula.ejemplo.resultado)} <span className="text-base font-normal text-muted">{formula.ejemplo.unidad}</span>
+            {fmt(formula.ejemplo.resultado)}{' '}
+            <span className="text-base font-normal text-muted">{formula.ejemplo.unidad}</span>
           </span>
           <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok">
             <Icon name="check" size={14} /> Verificado automáticamente

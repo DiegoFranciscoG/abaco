@@ -32,7 +32,13 @@ function evaluateNumber(expression: string, variables: Variables): number | Form
  * Finds the root of an implicit formula (for example the IRR, where NPV(r) = 0). Scans for a sign change and
  * then bisects; returns an error message when there is no root in a sensible range.
  */
-export function solveImplicit(expression: string, variables: Variables, unknown: string, lo = -0.99, hi = 10): CalcResult {
+export function solveImplicit(
+  expression: string,
+  variables: Variables,
+  unknown: string,
+  lo = -0.99,
+  hi = 10,
+): CalcResult {
   const f = (x: number): number | null => {
     const v = evaluateNumber(expression, { ...variables, [unknown]: x });
     return v instanceof FormulaError ? null : v;
@@ -75,7 +81,13 @@ export function calculate(spec: CalculoSpec, variables: Variables): CalcResult {
     }
     const value = evaluateNumber(spec.expresion, variables);
     if (value instanceof FormulaError) {
-      return { ok: false, message: value.code === '#DIV/0!' ? 'Hay una división entre cero con estos datos.' : 'Revisa los datos: el cálculo no tiene resultado válido.' };
+      return {
+        ok: false,
+        message:
+          value.code === '#DIV/0!'
+            ? 'Hay una división entre cero con estos datos.'
+            : 'Revisa los datos: el cálculo no tiene resultado válido.',
+      };
     }
     return { ok: true, value };
   } catch (error) {

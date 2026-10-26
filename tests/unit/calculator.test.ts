@@ -1,6 +1,23 @@
 import { describe, expect, it } from 'vitest';
-import { calculate, parseAnswer, parseNumberInput, parseNumberList, solveImplicit } from '../../src/domain/formula/calculator';
-import { digitFromRod, digitsOf, earthY, heavenY, pushEarth, rodFromDigit, springStep, stepDigit, toggleHeaven, valueOf } from '../../src/ui/three/soroban';
+import {
+  calculate,
+  parseAnswer,
+  parseNumberInput,
+  parseNumberList,
+  solveImplicit,
+} from '../../src/domain/formula/calculator';
+import {
+  digitFromRod,
+  digitsOf,
+  earthY,
+  heavenY,
+  pushEarth,
+  rodFromDigit,
+  springStep,
+  stepDigit,
+  toggleHeaven,
+  valueOf,
+} from '../../src/ui/three/soroban';
 
 describe('formula calculator', () => {
   it('parses single numbers and lists in Spanish or English notation', () => {
@@ -14,19 +31,34 @@ describe('formula calculator', () => {
   });
 
   it('computes direct formulas and explains invalid data', () => {
-    expect(calculate({ tipo: 'directo', expresion: 'VF / (1 + i) ^ n' }, { VF: 1210, i: 0.1, n: 2 })).toEqual({ ok: true, value: expect.closeTo(1000, 9) });
-    expect(calculate({ tipo: 'directo', expresion: 'CF / (P - CVu)' }, { CF: 100, P: 5, CVu: 5 })).toEqual({ ok: false, message: expect.stringMatching(/cero/) });
-    expect(calculate({ tipo: 'directo', expresion: '1 +' }, {})).toEqual({ ok: false, message: expect.stringMatching(/termina/) });
+    expect(calculate({ tipo: 'directo', expresion: 'VF / (1 + i) ^ n' }, { VF: 1210, i: 0.1, n: 2 })).toEqual(
+      { ok: true, value: expect.closeTo(1000, 9) },
+    );
+    expect(calculate({ tipo: 'directo', expresion: 'CF / (P - CVu)' }, { CF: 100, P: 5, CVu: 5 })).toEqual({
+      ok: false,
+      message: expect.stringMatching(/cero/),
+    });
+    expect(calculate({ tipo: 'directo', expresion: '1 +' }, {})).toEqual({
+      ok: false,
+      message: expect.stringMatching(/termina/),
+    });
   });
 
   it('solves implicit formulas such as the IRR', () => {
     const result = calculate(
-      { tipo: 'implicito', expresion: '-I0 + FC1 / (1 + r) + FC2 / (1 + r) ^ 2 + FC3 / (1 + r) ^ 3', incognita: 'r' },
+      {
+        tipo: 'implicito',
+        expresion: '-I0 + FC1 / (1 + r) + FC2 / (1 + r) ^ 2 + FC3 / (1 + r) ^ 3',
+        incognita: 'r',
+      },
       { I0: 10000, FC1: 3000, FC2: 4000, FC3: 5000 },
     );
     expect(result.ok && result.value).toBeCloseTo(0.0889634, 6);
     expect(solveImplicit('x * x + 1', {}, 'x')).toEqual({ ok: false, message: expect.any(String) });
-    expect(calculate({ tipo: 'implicito', expresion: 'r' }, {})).toEqual({ ok: false, message: 'Falta la incógnita' });
+    expect(calculate({ tipo: 'implicito', expresion: 'r' }, {})).toEqual({
+      ok: false,
+      message: 'Falta la incógnita',
+    });
   });
 
   it('reads answers with percent signs and decimal commas', () => {

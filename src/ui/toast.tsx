@@ -10,7 +10,6 @@ interface Toast {
   tone: Tone;
 }
 
-
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const counter = useRef(0);
@@ -19,10 +18,16 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     counter.current += 1;
     const id = counter.current;
     setToasts((list) => [...list.slice(-2), { id, message, tone }]);
-    window.setTimeout(() => setToasts((list) => list.filter((t) => t.id !== id)), tone === 'error' ? 6500 : 3200);
+    window.setTimeout(
+      () => setToasts((list) => list.filter((t) => t.id !== id)),
+      tone === 'error' ? 6500 : 3200,
+    );
   }, []);
 
-  const api = useMemo<ToastApi>(() => ({ show, error: (e) => show(describeStorageError(e), 'error') }), [show]);
+  const api = useMemo<ToastApi>(
+    () => ({ show, error: (e) => show(describeStorageError(e), 'error') }),
+    [show],
+  );
 
   return (
     <ToastContext.Provider value={api}>
@@ -44,7 +49,11 @@ export function ToastProvider({ children }: { children: ReactNode }) {
                 t.tone === 'error' ? 'border-red text-red-ink' : ''
               }`}
             >
-              <Icon name={t.tone === 'error' ? 'info' : 'check'} size={18} className={t.tone === 'error' ? 'text-red' : 'text-ok'} />
+              <Icon
+                name={t.tone === 'error' ? 'info' : 'check'}
+                size={18}
+                className={t.tone === 'error' ? 'text-red' : 'text-ok'}
+              />
               <span>{t.message}</span>
             </m.div>
           ))}

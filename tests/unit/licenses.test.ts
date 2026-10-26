@@ -7,8 +7,25 @@ const root = join(__dirname, '..', '..');
 
 describe('licencias de terceros', () => {
   it('accepts permissive licenses and SPDX expressions, rejects copyleft and unknown', () => {
-    for (const ok of ['MIT', 'Apache-2.0', '0BSD', 'OFL-1.1', '(MIT OR Apache-2.0)', 'MIT AND ISC', '(GPL-3.0 OR MIT)']) expect(isAllowed(ok), ok).toBe(true);
-    for (const bad of ['GPL-3.0', 'AGPL-3.0', 'UNKNOWN', 'CC-BY-NC-4.0', 'MIT AND GPL-2.0', 'SEE LICENSE IN LICENSE']) expect(isAllowed(bad), bad).toBe(false);
+    for (const ok of [
+      'MIT',
+      'Apache-2.0',
+      '0BSD',
+      'OFL-1.1',
+      '(MIT OR Apache-2.0)',
+      'MIT AND ISC',
+      '(GPL-3.0 OR MIT)',
+    ])
+      expect(isAllowed(ok), ok).toBe(true);
+    for (const bad of [
+      'GPL-3.0',
+      'AGPL-3.0',
+      'UNKNOWN',
+      'CC-BY-NC-4.0',
+      'MIT AND GPL-2.0',
+      'SEE LICENSE IN LICENSE',
+    ])
+      expect(isAllowed(bad), bad).toBe(false);
   });
 
   it('every library shipped to the browser has an allowed license and its notice text', () => {

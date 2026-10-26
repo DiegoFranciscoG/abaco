@@ -39,7 +39,10 @@ export const openAlexFixture = {
       language: 'es',
       type: 'article',
       authorships: [{ author: { display_name: 'Ana María Quito Pérez' } }],
-      primary_location: { landing_page_url: 'https://example.org/a', source: { display_name: 'Revista de Contabilidad Aplicada' } },
+      primary_location: {
+        landing_page_url: 'https://example.org/a',
+        source: { display_name: 'Revista de Contabilidad Aplicada' },
+      },
       open_access: { is_oa: true },
       abstract_inverted_index: { costos: [1], Estudio: [0], de: [2], pymes: [3] },
       biblio: { volume: '12', issue: '2', first_page: '45', last_page: '60' },

@@ -60,10 +60,15 @@ function subscribeOnline(callback: () => void) {
 }
 
 export function useOnline(): boolean {
-  return useSyncExternalStore(subscribeOnline, () => navigator.onLine, () => true);
+  return useSyncExternalStore(
+    subscribeOnline,
+    () => navigator.onLine,
+    () => true,
+  );
 }
 
-export type AsyncState<T> = { status: 'loading' } | { status: 'ready'; data: T } | { status: 'error'; error: Error };
+export type AsyncState<T> =
+  { status: 'loading' } | { status: 'ready'; data: T } | { status: 'error'; error: Error };
 
 /** Loads static content on demand (lazy JSON chunks). */
 export function useAsync<T>(load: () => Promise<T>, deps: unknown[]): AsyncState<T> {
@@ -76,7 +81,11 @@ export function useAsync<T>(load: () => Promise<T>, deps: unknown[]): AsyncState
     load().then(
       (data) => alive && setState({ key, value: { status: 'ready', data } }),
       (error: unknown) =>
-        alive && setState({ key, value: { status: 'error', error: error instanceof Error ? error : new Error(String(error)) } }),
+        alive &&
+        setState({
+          key,
+          value: { status: 'error', error: error instanceof Error ? error : new Error(String(error)) },
+        }),
     );
     return () => {
       alive = false;

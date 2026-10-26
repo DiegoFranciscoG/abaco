@@ -25,7 +25,14 @@ export interface ChartMarker {
   label: string;
 }
 
-const PALETTE = ['var(--red)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)', 'var(--chart-5)', 'var(--chart-6)'];
+const PALETTE = [
+  'var(--red)',
+  'var(--chart-2)',
+  'var(--chart-3)',
+  'var(--chart-4)',
+  'var(--chart-5)',
+  'var(--chart-6)',
+];
 
 const W = 640;
 const H = 340;
@@ -55,7 +62,11 @@ export function LineChart({
   const id = useId();
   const all = series.flatMap((s) => s.points.filter((p) => p.y !== null && Number.isFinite(p.y)));
   const xs = all.map((p) => p.x);
-  const ys = [...all.map((p) => p.y as number), ...references.filter((r) => r.axis === 'y').map((r) => r.value), ...markers.map((m) => m.y)];
+  const ys = [
+    ...all.map((p) => p.y as number),
+    ...references.filter((r) => r.axis === 'y').map((r) => r.value),
+    ...markers.map((m) => m.y),
+  ];
   if (xs.length === 0) {
     return (
       <figure className="card p-4">
@@ -99,8 +110,21 @@ export function LineChart({
         </defs>
         {yTicks.map((t) => (
           <g key={`y${t}`}>
-            <line x1={M.left} x2={W - M.right} y1={sy(t)} y2={sy(t)} stroke="var(--line)" strokeWidth={t === 0 ? 1.5 : 1} />
-            <text x={M.left - 8} y={sy(t)} dy="0.32em" textAnchor="end" className="fill-[var(--muted)] text-[11px]">
+            <line
+              x1={M.left}
+              x2={W - M.right}
+              y1={sy(t)}
+              y2={sy(t)}
+              stroke="var(--line)"
+              strokeWidth={t === 0 ? 1.5 : 1}
+            />
+            <text
+              x={M.left - 8}
+              y={sy(t)}
+              dy="0.32em"
+              textAnchor="end"
+              className="fill-[var(--muted)] text-[11px]"
+            >
               {formatTick(t)}
             </text>
           </g>
@@ -109,19 +133,48 @@ export function LineChart({
           .filter((t) => t >= x0 && t <= x1)
           .map((t) => (
             <g key={`x${t}`}>
-              <line x1={sx(t)} x2={sx(t)} y1={H - M.bottom} y2={H - M.bottom + 5} stroke="var(--line-strong)" />
-              <text x={sx(t)} y={H - M.bottom + 18} textAnchor="middle" className="fill-[var(--muted)] text-[11px]">
+              <line
+                x1={sx(t)}
+                x2={sx(t)}
+                y1={H - M.bottom}
+                y2={H - M.bottom + 5}
+                stroke="var(--line-strong)"
+              />
+              <text
+                x={sx(t)}
+                y={H - M.bottom + 18}
+                textAnchor="middle"
+                className="fill-[var(--muted)] text-[11px]"
+              >
                 {formatX(t)}
               </text>
             </g>
           ))}
-        {x0 < 0 && x1 > 0 ? <line x1={sx(0)} x2={sx(0)} y1={M.top} y2={H - M.bottom} stroke="var(--line-strong)" /> : null}
+        {x0 < 0 && x1 > 0 ? (
+          <line x1={sx(0)} x2={sx(0)} y1={M.top} y2={H - M.bottom} stroke="var(--line-strong)" />
+        ) : null}
         <g clipPath={`url(#${id}-clip)`}>
           {references.map((r) =>
             r.axis === 'x' ? (
-              <line key={`rx${r.label}`} x1={sx(r.value)} x2={sx(r.value)} y1={M.top} y2={H - M.bottom} stroke="var(--muted)" strokeDasharray="4 4" />
+              <line
+                key={`rx${r.label}`}
+                x1={sx(r.value)}
+                x2={sx(r.value)}
+                y1={M.top}
+                y2={H - M.bottom}
+                stroke="var(--muted)"
+                strokeDasharray="4 4"
+              />
             ) : (
-              <line key={`ry${r.label}`} x1={M.left} x2={W - M.right} y1={sy(r.value)} y2={sy(r.value)} stroke="var(--muted)" strokeDasharray="4 4" />
+              <line
+                key={`ry${r.label}`}
+                x1={M.left}
+                x2={W - M.right}
+                y1={sy(r.value)}
+                y2={sy(r.value)}
+                stroke="var(--muted)"
+                strokeDasharray="4 4"
+              />
             ),
           )}
           {series.map((s, i) => (
@@ -138,7 +191,14 @@ export function LineChart({
           ))}
           {markers.map((m) => (
             <g key={`m${m.label}`}>
-              <circle cx={sx(m.x)} cy={sy(m.y)} r={5.5} fill="var(--surface)" stroke="var(--ink)" strokeWidth={2} />
+              <circle
+                cx={sx(m.x)}
+                cy={sy(m.y)}
+                r={5.5}
+                fill="var(--surface)"
+                stroke="var(--ink)"
+                strokeWidth={2}
+              />
             </g>
           ))}
         </g>
@@ -154,12 +214,23 @@ export function LineChart({
           </text>
         ))}
         {xLabel ? (
-          <text x={(M.left + W - M.right) / 2} y={H - 4} textAnchor="middle" className="fill-[var(--muted)] text-[11px]">
+          <text
+            x={(M.left + W - M.right) / 2}
+            y={H - 4}
+            textAnchor="middle"
+            className="fill-[var(--muted)] text-[11px]"
+          >
             {xLabel}
           </text>
         ) : null}
         {yLabel ? (
-          <text x={12} y={(M.top + H - M.bottom) / 2} transform={`rotate(-90 12 ${(M.top + H - M.bottom) / 2})`} textAnchor="middle" className="fill-[var(--muted)] text-[11px]">
+          <text
+            x={12}
+            y={(M.top + H - M.bottom) / 2}
+            transform={`rotate(-90 12 ${(M.top + H - M.bottom) / 2})`}
+            textAnchor="middle"
+            className="fill-[var(--muted)] text-[11px]"
+          >
             {yLabel}
           </text>
         ) : null}
@@ -168,7 +239,11 @@ export function LineChart({
         <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 px-1 text-xs text-ink-2">
           {series.map((s, i) => (
             <li key={s.name} className="flex items-center gap-1.5">
-              <span aria-hidden="true" className="inline-block h-0.5 w-5 rounded" style={{ background: s.color ?? PALETTE[i % PALETTE.length], opacity: s.dashed ? 0.7 : 1 }} />
+              <span
+                aria-hidden="true"
+                className="inline-block h-0.5 w-5 rounded"
+                style={{ background: s.color ?? PALETTE[i % PALETTE.length], opacity: s.dashed ? 0.7 : 1 }}
+              />
               {s.name}
             </li>
           ))}
@@ -208,39 +283,80 @@ export function BarChart({
         {ticks.map((t) => (
           <g key={t}>
             <line x1={M.left} x2={W - M.right} y1={sy(t)} y2={sy(t)} stroke="var(--line)" />
-            <text x={M.left - 8} y={sy(t)} dy="0.32em" textAnchor="end" className="fill-[var(--muted)] text-[11px]">
+            <text
+              x={M.left - 8}
+              y={sy(t)}
+              dy="0.32em"
+              textAnchor="end"
+              className="fill-[var(--muted)] text-[11px]"
+            >
               {formatTick(t)}
             </text>
           </g>
         ))}
         {bars.map((b, i) => (
           <g key={`${b.label}-${i}`}>
-            <rect x={M.left + i * bw + 2} y={sy(b.value)} width={Math.max(1, bw - 4)} height={H - M.bottom - sy(b.value)} rx={4} fill="var(--red)" opacity={0.85} />
+            <rect
+              x={M.left + i * bw + 2}
+              y={sy(b.value)}
+              width={Math.max(1, bw - 4)}
+              height={H - M.bottom - sy(b.value)}
+              rx={4}
+              fill="var(--red)"
+              opacity={0.85}
+            />
             {bars.length <= 12 ? (
-              <text x={M.left + i * bw + bw / 2} y={H - M.bottom + 16} textAnchor="middle" className="fill-[var(--muted)] text-[10px]">
+              <text
+                x={M.left + i * bw + bw / 2}
+                y={H - M.bottom + 16}
+                textAnchor="middle"
+                className="fill-[var(--muted)] text-[10px]"
+              >
                 {b.label}
               </text>
             ) : null}
           </g>
         ))}
         {xLabel ? (
-          <text x={(M.left + W - M.right) / 2} y={H - 4} textAnchor="middle" className="fill-[var(--muted)] text-[11px]">
+          <text
+            x={(M.left + W - M.right) / 2}
+            y={H - 4}
+            textAnchor="middle"
+            className="fill-[var(--muted)] text-[11px]"
+          >
             {xLabel}
           </text>
         ) : null}
       </svg>
       {extra}
       <p className="sr-only">{summary}</p>
-      <DataTable caption={title} columns={['Clase', 'Frecuencia']} rows={bars.map((b) => [b.label, b.value])} />
+      <DataTable
+        caption={title}
+        columns={['Clase', 'Frecuencia']}
+        rows={bars.map((b) => [b.label, b.value])}
+      />
     </figure>
   );
 }
 
-export function DataTable({ caption, columns, rows }: { caption: string; columns: string[]; rows: (string | number)[][] }) {
+export function DataTable({
+  caption,
+  columns,
+  rows,
+}: {
+  caption: string;
+  columns: string[];
+  rows: (string | number)[][];
+}) {
   return (
     <details className="mt-3 px-1">
       <summary className="cursor-pointer text-sm font-semibold text-red">Ver los datos en una tabla</summary>
-      <div className="mt-2 max-h-72 overflow-auto rounded-xl border border-line" tabIndex={0} role="region" aria-label={`Datos: ${caption}`}>
+      <div
+        className="mt-2 max-h-72 overflow-auto rounded-xl border border-line"
+        tabIndex={0}
+        role="region"
+        aria-label={`Datos: ${caption}`}
+      >
         <table className="tnum w-full text-left text-sm">
           <caption className="sr-only">{caption}</caption>
           <thead className="sticky top-0 bg-surface-2 text-xs text-muted uppercase">

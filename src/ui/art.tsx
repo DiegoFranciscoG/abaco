@@ -9,7 +9,10 @@ export function AbacusArt({ value = 2026, className = '' }: { value?: number; cl
   const spacing = 95;
   const beamY = 128;
   const bead = (cx: number, cy: number, heaven: boolean, key: string, order: number) => {
-    const style = { animationDelay: `${120 + order * 28}ms`, '--from': heaven ? '-34px' : '34px' } as React.CSSProperties;
+    const style = {
+      animationDelay: `${120 + order * 28}ms`,
+      '--from': heaven ? '-34px' : '34px',
+    } as React.CSSProperties;
     return (
       <g key={key} transform={`translate(${cx} ${cy})`}>
         <g className="bead-in" style={style}>
@@ -47,7 +50,14 @@ export function AbacusArt({ value = 2026, className = '' }: { value?: number; cl
       <rect x="20" y="20" width="24" height={H - 66} rx="10" fill="url(#wood)" />
       <rect x={W - 44} y="20" width="24" height={H - 66} rx="10" fill="url(#wood)" />
       {Array.from({ length: RODS }, (_, r) => (
-        <rect key={`rod-${r}`} x={left + 20 + r * spacing - 2} y="46" width="4" height={H - 118} fill="#cdb27a" />
+        <rect
+          key={`rod-${r}`}
+          x={left + 20 + r * spacing - 2}
+          y="46"
+          width="4"
+          height={H - 118}
+          fill="#cdb27a"
+        />
       ))}
       <rect x="44" y={beamY - 8} width={W - 88} height="16" rx="4" fill="url(#wood)" />
       {digits.map((digit, r) => {
@@ -98,7 +108,15 @@ export function QuestionArt({ className = '' }: { className?: string }) {
       </g>
       <g filter="url(#qsoft)">
         <circle cx="300" cy="160" r="54" fill="url(#qball)" />
-        <text x="300" y="183" textAnchor="middle" fontSize="70" fontWeight="800" fill="#fff" fontFamily="Inter Variable, sans-serif">
+        <text
+          x="300"
+          y="183"
+          textAnchor="middle"
+          fontSize="70"
+          fontWeight="800"
+          fill="#fff"
+          fontFamily="Inter Variable, sans-serif"
+        >
           ?
         </text>
       </g>

@@ -21,7 +21,8 @@ function Review({ mazo, onExit }: { mazo: string; onExit: () => void }) {
   if (!card) {
     return (
       <EmptyState icon="check" title="¡Listo por hoy!">
-        No quedan tarjetas pendientes en «{mazo}». Vuelve mañana: el repaso espaciado funciona cuando estás a punto de olvidar.
+        No quedan tarjetas pendientes en «{mazo}». Vuelve mañana: el repaso espaciado funciona cuando estás a
+        punto de olvidar.
         <button type="button" className="btn btn-ghost mt-4" onClick={onExit}>
           Volver a los mazos
         </button>
@@ -35,10 +36,16 @@ function Review({ mazo, onExit }: { mazo: string; onExit: () => void }) {
       </p>
       <div className="card min-h-56 space-y-4 p-6 text-center">
         <p className="font-display text-2xl leading-snug font-semibold">{card.frente}</p>
-        {showBack ? <p className="border-t border-line pt-4 text-left leading-relaxed text-ink-2">{card.reverso}</p> : null}
+        {showBack ? (
+          <p className="border-t border-line pt-4 text-left leading-relaxed text-ink-2">{card.reverso}</p>
+        ) : null}
       </div>
       {showBack ? (
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4" role="group" aria-label="¿Qué tan bien la recordaste?">
+        <div
+          className="grid grid-cols-2 gap-2 sm:grid-cols-4"
+          role="group"
+          aria-label="¿Qué tan bien la recordaste?"
+        >
           {ANSWER_BUTTONS.map((b) => (
             <button
               key={b.q}
@@ -84,9 +91,19 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
     try {
       const terms = await loadGlosario();
       const added = await addCards(
-        terms.map((t) => ({ id: `glosario:${t.id}`, mazo: `Glosario · ${areaLabel(t.areas[0] ?? 'gestion')}`, frente: t.termino, reverso: t.definicion, origen: 'glosario' as const })),
+        terms.map((t) => ({
+          id: `glosario:${t.id}`,
+          mazo: `Glosario · ${areaLabel(t.areas[0] ?? 'gestion')}`,
+          frente: t.termino,
+          reverso: t.definicion,
+          origen: 'glosario' as const,
+        })),
       );
-      toast.show(added > 0 ? `${added} tarjetas del glosario listas para repasar` : 'El glosario ya estaba en tus tarjetas');
+      toast.show(
+        added > 0
+          ? `${added} tarjetas del glosario listas para repasar`
+          : 'El glosario ya estaba en tus tarjetas',
+      );
     } catch (e) {
       toast.error(e);
     } finally {
@@ -101,10 +118,18 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
     try {
       const temario = await loadTemario(materia.id);
       const cards = (temario?.temas ?? []).flatMap((t) =>
-        t.subtemas.map((s) => ({ id: `subtema:${s.id}`, mazo: materia.nombre, frente: s.nombre, reverso: s.puntos_clave.join(' · '), origen: 'subtema' as const })),
+        t.subtemas.map((s) => ({
+          id: `subtema:${s.id}`,
+          mazo: materia.nombre,
+          frente: s.nombre,
+          reverso: s.puntos_clave.join(' · '),
+          origen: 'subtema' as const,
+        })),
       );
       const added = await addCards(cards);
-      toast.show(added > 0 ? `${added} tarjetas de ${materia.nombre}` : 'Esas tarjetas ya estaban en tu mazo');
+      toast.show(
+        added > 0 ? `${added} tarjetas de ${materia.nombre}` : 'Esas tarjetas ya estaban en tu mazo',
+      );
     } catch (e) {
       toast.error(e);
     } finally {
@@ -128,9 +153,10 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
       tool={tool}
       metodo={
         <p>
-          Repetición espaciada con el algoritmo SM-2 (P. Woźniak, 1990): una tarjeta bien recordada vuelve en 1 día, luego en 6 y después en intervalos que crecen
-          según qué tan fácil te resultó; si no la recordaste, vuelve a empezar. Las tarjetas del glosario y de las materias se arman con el contenido de ÁBACO; tu
-          progreso se guarda solo en este dispositivo.
+          Repetición espaciada con el algoritmo SM-2 (P. Woźniak, 1990): una tarjeta bien recordada vuelve en
+          1 día, luego en 6 y después en intervalos que crecen según qué tan fácil te resultó; si no la
+          recordaste, vuelve a empezar. Las tarjetas del glosario y de las materias se arman con el contenido
+          de ÁBACO; tu progreso se guarda solo en este dispositivo.
         </p>
       }
     >
@@ -152,10 +178,20 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
                         {d.total} tarjetas · {d.pendientes} para hoy
                       </span>
                     </span>
-                    <button type="button" className="btn btn-primary" disabled={d.pendientes === 0} onClick={() => setActive(d.mazo)}>
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      disabled={d.pendientes === 0}
+                      onClick={() => setActive(d.mazo)}
+                    >
                       Repasar
                     </button>
-                    <button type="button" className="btn btn-icon btn-ghost border-0" aria-label={`Borrar el mazo ${d.mazo}`} onClick={() => void deleteDeck(d.mazo)}>
+                    <button
+                      type="button"
+                      className="btn btn-icon btn-ghost border-0"
+                      aria-label={`Borrar el mazo ${d.mazo}`}
+                      onClick={() => void deleteDeck(d.mazo)}
+                    >
                       <Icon name="trash" size={18} />
                     </button>
                   </li>
@@ -170,12 +206,22 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
           <div className="space-y-4">
             <section className="card space-y-3 p-5">
               <h2 className="font-semibold">Importar de ÁBACO</h2>
-              <button type="button" className="btn btn-ghost w-full" disabled={busy} onClick={() => void importGlossary()}>
+              <button
+                type="button"
+                className="btn btn-ghost w-full"
+                disabled={busy}
+                onClick={() => void importGlossary()}
+              >
                 <Icon name="download" size={18} /> Glosario completo
               </button>
               <label className="block" htmlFor="tj-materia">
                 <span className="mb-1 block text-sm font-semibold text-ink-2">Subtemas de una materia</span>
-                <select id="tj-materia" className="field" value={materiaId} onChange={(e) => setMateriaId(e.target.value)}>
+                <select
+                  id="tj-materia"
+                  className="field"
+                  value={materiaId}
+                  onChange={(e) => setMateriaId(e.target.value)}
+                >
                   {materias.map((m) => (
                     <option key={m.id} value={m.id}>
                       {m.nombre}
@@ -183,7 +229,12 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
                   ))}
                 </select>
               </label>
-              <button type="button" className="btn btn-ghost w-full" disabled={busy} onClick={() => void importSubject()}>
+              <button
+                type="button"
+                className="btn btn-ghost w-full"
+                disabled={busy}
+                onClick={() => void importSubject()}
+              >
                 <Icon name="download" size={18} /> Importar subtemas
               </button>
             </section>
@@ -197,15 +248,32 @@ export default function CardsTool({ tool }: { tool: ToolInfo }) {
               <h2 className="font-semibold">Escribir una tarjeta</h2>
               <label className="block">
                 <span className="mb-1 block text-sm font-semibold text-ink-2">Mazo</span>
-                <input className="field" value={mazoPropio} onChange={(e) => setMazoPropio(e.target.value)} maxLength={80} />
+                <input
+                  className="field"
+                  value={mazoPropio}
+                  onChange={(e) => setMazoPropio(e.target.value)}
+                  maxLength={80}
+                />
               </label>
               <label className="block">
                 <span className="mb-1 block text-sm font-semibold text-ink-2">Pregunta (frente)</span>
-                <input className="field" value={frente} onChange={(e) => setFrente(e.target.value)} maxLength={500} required />
+                <input
+                  className="field"
+                  value={frente}
+                  onChange={(e) => setFrente(e.target.value)}
+                  maxLength={500}
+                  required
+                />
               </label>
               <label className="block">
                 <span className="mb-1 block text-sm font-semibold text-ink-2">Respuesta (reverso)</span>
-                <textarea className="field min-h-24" value={reverso} onChange={(e) => setReverso(e.target.value)} maxLength={2000} required />
+                <textarea
+                  className="field min-h-24"
+                  value={reverso}
+                  onChange={(e) => setReverso(e.target.value)}
+                  maxLength={2000}
+                  required
+                />
               </label>
               <button type="submit" className="btn btn-primary w-full">
                 <Icon name="plus" size={18} /> Agregar

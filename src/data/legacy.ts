@@ -16,16 +16,19 @@ const MATERIAS = materiasJson as MateriaLike[];
 
 const ROMAN_OR_NUMBER = /\b(i|ii|iii|iv|v|vi|[0-9]+)\b/g;
 
-const keyOf = (value: string): string => subjectKey(value).replace(ROMAN_OR_NUMBER, ' ').replace(/\s+/g, ' ').trim();
+const keyOf = (value: string): string =>
+  subjectKey(value).replace(ROMAN_OR_NUMBER, ' ').replace(/\s+/g, ' ').trim();
 
 const NAME_INDEX: Map<string, string> = new Map(
-  MATERIAS.flatMap((m) => [m.nombre, ...m.sinonimos, m.id.replace(/-/g, ' ')].map((name) => [keyOf(name), m.id] as const)),
+  MATERIAS.flatMap((m) =>
+    [m.nombre, ...m.sinonimos, m.id.replace(/-/g, ' ')].map((name) => [keyOf(name), m.id] as const),
+  ),
 );
 
 /** Current subject id for an id saved by an earlier release, or undefined when it has no equivalent. */
 export function legacyMateria(oldId: string): string | undefined {
   if (MATERIAS.some((m) => m.id === oldId)) return oldId;
-  const slug = oldId.includes('--') ? oldId.split('--').pop() ?? '' : oldId;
+  const slug = oldId.includes('--') ? (oldId.split('--').pop() ?? '') : oldId;
   const name = slug.replace(/^c[0-9]+-/, '').replace(/-/g, ' ');
   return NAME_INDEX.get(keyOf(name));
 }

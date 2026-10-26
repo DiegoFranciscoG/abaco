@@ -112,7 +112,11 @@ export function computeSheet(cells: Record<string, string>, locale: Locale): Rec
           compiled.set(key, { key, ast, deps: [...deps] });
         } catch (error) {
           const message = error instanceof FormulaSyntaxError ? error.message : 'Fórmula no válida';
-          results[key] = { value: new FormulaError('#VALUE!', message), isFormula: true, syntaxError: message };
+          results[key] = {
+            value: new FormulaError('#VALUE!', message),
+            isFormula: true,
+            syntaxError: message,
+          };
         }
         break;
     }
@@ -172,7 +176,8 @@ export function computeSheet(cells: Record<string, string>, locale: Locale): Rec
 export function validateCells(cells: Record<string, string>): string[] {
   const problems: string[] = [];
   const keys = Object.keys(cells);
-  if (keys.length > SHEET_LIMITS.cells) problems.push(`La hoja admite hasta ${SHEET_LIMITS.cells} celdas con datos.`);
+  if (keys.length > SHEET_LIMITS.cells)
+    problems.push(`La hoja admite hasta ${SHEET_LIMITS.cells} celdas con datos.`);
   for (const key of keys) {
     const ref = parseCellRef(key);
     if (!ref || ref.absCol || ref.absRow) {

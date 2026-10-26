@@ -35,12 +35,20 @@ function Math({ tex, display, katex }: { tex: string; display: boolean; katex: K
   }, [katex, tex, display]);
   if (html === null) return <code className="font-mono text-sm text-muted">{tex}</code>;
   // KaTeX output from KaTeX itself (escaped input, trust disabled): never raw user HTML.
-  return display ? <div className="my-3 overflow-x-auto" dangerouslySetInnerHTML={{ __html: html }} /> : <span dangerouslySetInnerHTML={{ __html: html }} />;
+  return display ? (
+    <div className="my-3 overflow-x-auto" dangerouslySetInnerHTML={{ __html: html }} />
+  ) : (
+    <span dangerouslySetInnerHTML={{ __html: html }} />
+  );
 }
 
 function hasMath(blocks: Block[]): boolean {
   const inline = (nodes: Inline[]): boolean =>
-    nodes.some((n) => n.type === 'math' || ((n.type === 'strong' || n.type === 'em' || n.type === 'link') && inline(n.children)));
+    nodes.some(
+      (n) =>
+        n.type === 'math' ||
+        ((n.type === 'strong' || n.type === 'em' || n.type === 'link') && inline(n.children)),
+    );
   return blocks.some((b) => {
     if (b.type === 'math') return true;
     if (b.type === 'paragraph' || b.type === 'heading' || b.type === 'quote') return inline(b.children);
@@ -89,8 +97,13 @@ export function MarkdownView({ blocks }: { blocks: Block[] }) {
       {blocks.map((b, i) => {
         switch (b.type) {
           case 'heading': {
-            const cls = b.level === 1 ? 'font-display text-3xl font-semibold' : b.level === 2 ? 'font-display text-2xl font-semibold mt-6' : 'text-lg font-semibold mt-4';
-            const Tag = (`h${b.level + 1}` as 'h2' | 'h3' | 'h4');
+            const cls =
+              b.level === 1
+                ? 'font-display text-3xl font-semibold'
+                : b.level === 2
+                  ? 'font-display text-2xl font-semibold mt-6'
+                  : 'text-lg font-semibold mt-4';
+            const Tag = `h${b.level + 1}` as 'h2' | 'h3' | 'h4';
             return (
               <Tag key={i} className={cls}>
                 {renderInline(b.children, katex)}
@@ -119,7 +132,11 @@ export function MarkdownView({ blocks }: { blocks: Block[] }) {
             );
           case 'code':
             return (
-              <pre key={i} className="overflow-x-auto rounded-xl bg-surface-2 p-3 font-mono text-sm" tabIndex={0}>
+              <pre
+                key={i}
+                className="overflow-x-auto rounded-xl bg-surface-2 p-3 font-mono text-sm"
+                tabIndex={0}
+              >
                 <code>{b.text}</code>
               </pre>
             );
@@ -129,12 +146,23 @@ export function MarkdownView({ blocks }: { blocks: Block[] }) {
             return <hr key={i} className="border-line" />;
           case 'table':
             return (
-              <div key={i} className="overflow-x-auto" tabIndex={0} role="region" aria-label="Tabla del documento">
+              <div
+                key={i}
+                className="overflow-x-auto"
+                tabIndex={0}
+                role="region"
+                aria-label="Tabla del documento"
+              >
                 <table className="tnum w-full border-collapse text-sm">
                   <thead>
                     <tr>
                       {b.header.map((h, j) => (
-                        <th key={j} scope="col" className="border border-line bg-surface-2 px-3 py-1.5" style={{ textAlign: b.align[j] ?? 'left' }}>
+                        <th
+                          key={j}
+                          scope="col"
+                          className="border border-line bg-surface-2 px-3 py-1.5"
+                          style={{ textAlign: b.align[j] ?? 'left' }}
+                        >
                           {renderInline(h, katex)}
                         </th>
                       ))}
@@ -144,7 +172,11 @@ export function MarkdownView({ blocks }: { blocks: Block[] }) {
                     {b.rows.map((row, r) => (
                       <tr key={r}>
                         {row.map((cell, j) => (
-                          <td key={j} className="border border-line px-3 py-1.5" style={{ textAlign: b.align[j] ?? 'left' }}>
+                          <td
+                            key={j}
+                            className="border border-line px-3 py-1.5"
+                            style={{ textAlign: b.align[j] ?? 'left' }}
+                          >
                             {renderInline(cell, katex)}
                           </td>
                         ))}

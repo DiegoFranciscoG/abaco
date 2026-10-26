@@ -1,10 +1,22 @@
 import { z } from 'zod';
 import { CELL_FORMATS } from '../domain/content/schemas';
-import { BACKUP_TABLES, getDb, migrateNoteV1toV2, migrateRowV2toV3, SCHEMA_VERSION, type AbacoDB } from './db';
+import {
+  BACKUP_TABLES,
+  getDb,
+  migrateNoteV1toV2,
+  migrateRowV2toV3,
+  SCHEMA_VERSION,
+  type AbacoDB,
+} from './db';
 import { getDeviceId } from './repositories';
 import { ACCOUNT_KINDS, COLLECTION_COLORS } from './types';
 
-export { BACKUP_REMINDER_DAYS, markBackupDone, needsBackupReminder, shouldRemindBackup } from './backup-reminder';
+export {
+  BACKUP_REMINDER_DAYS,
+  markBackupDone,
+  needsBackupReminder,
+  shouldRemindBackup,
+} from './backup-reminder';
 
 export const BACKUP_FORMAT = 'abaco-respaldo';
 export const MAX_BACKUP_BYTES = 25 * 1024 * 1024;
@@ -22,7 +34,10 @@ const snapshotSchema = z.object({
   cita: z.string().max(5000),
 });
 const starKind = z.enum(['formula', 'subtema', 'ejercicio', 'articulo', 'materia']);
-const contentId = z.string().regex(/^[a-z0-9]+(?:-{1,2}[a-z0-9]+)*$/).max(120);
+const contentId = z
+  .string()
+  .regex(/^[a-z0-9]+(?:-{1,2}[a-z0-9]+)*$/)
+  .max(120);
 
 const perfilSchema = z.object({
   id: z.literal('yo'),
@@ -99,7 +114,12 @@ const hojaSchema = z.object({
   creadoEn: isoDateTime,
   actualizadoEn: isoDateTime,
 });
-const busquedaSchema = z.object({ id: shortText, consulta: shortText, fecha: isoDateTime, total: z.number().int().min(0) });
+const busquedaSchema = z.object({
+  id: shortText,
+  consulta: shortText,
+  fecha: isoDateTime,
+  total: z.number().int().min(0),
+});
 const documentoSchema = z.object({
   id: shortText,
   titulo: z.string().min(1).max(120),
@@ -119,7 +139,14 @@ const diarioSchema = z.object({
         fecha: z.iso.date(),
         glosa: z.string().max(200),
         lineas: z
-          .array(z.object({ cuenta: z.string().min(1).max(80), tipo: z.enum(ACCOUNT_KINDS), debe: money, haber: money }))
+          .array(
+            z.object({
+              cuenta: z.string().min(1).max(80),
+              tipo: z.enum(ACCOUNT_KINDS),
+              debe: money,
+              haber: money,
+            }),
+          )
           .min(2)
           .max(40),
       }),
@@ -146,10 +173,19 @@ const tableroSchema = z.object({
   id: shortText,
   tipo: z.enum(['foda', 'decision']),
   titulo: z.string().min(1).max(80),
-  foda: z.object({ fortalezas: listOfText, oportunidades: listOfText, debilidades: listOfText, amenazas: listOfText }).optional(),
+  foda: z
+    .object({
+      fortalezas: listOfText,
+      oportunidades: listOfText,
+      debilidades: listOfText,
+      amenazas: listOfText,
+    })
+    .optional(),
   decision: z
     .object({
-      criterios: z.array(z.object({ nombre: z.string().min(1).max(60), peso: z.number().min(0).max(100) })).max(12),
+      criterios: z
+        .array(z.object({ nombre: z.string().min(1).max(60), peso: z.number().min(0).max(100) }))
+        .max(12),
       opciones: z.array(z.string().min(1).max(60)).max(12),
       puntajes: z.array(z.array(z.number().min(0).max(10)).max(12)).max(12),
     })
@@ -283,7 +319,8 @@ export function parseBackup(text: string): Backup {
   if (version === 2) {
     const v2 = backupV2Schema.safeParse(raw);
     if (!v2.success) throw new BackupError('El respaldo versión 2 está dañado o incompleto.');
-    const migrate = (table: string, rows: Record<string, unknown>[]) => rows.map((row) => migrateRowV2toV3(table, row));
+    const migrate = (table: string, rows: Record<string, unknown>[]) =>
+      rows.map((row) => migrateRowV2toV3(table, row));
     raw = {
       ...v2.data,
       version: 3,
@@ -339,7 +376,11 @@ export type SharedCollection = z.infer<typeof sharedCollectionSchema>;
 /** A collection exported for a study group. It contains no notes and no device identifier. */
 export function exportCollection(collection: z.infer<typeof coleccionSchema>): string {
   const { id: _id, ...rest } = collection;
-  return JSON.stringify({ formato: COLLECTION_FORMAT, version: 1, coleccion: rest } satisfies SharedCollection, null, 1);
+  return JSON.stringify(
+    { formato: COLLECTION_FORMAT, version: 1, coleccion: rest } satisfies SharedCollection,
+    null,
+    1,
+  );
 }
 
 export function parseSharedCollection(text: string): SharedCollection['coleccion'] {
@@ -359,6 +400,12 @@ export async function importSharedCollection(text: string, db: AbacoDB = getDb()
   const data = parseSharedCollection(text);
   const id = crypto.randomUUID();
   const timestamp = new Date().toISOString();
-  await db.colecciones.put({ ...data, id, nombre: data.nombre, creadoEn: timestamp, actualizadoEn: timestamp });
+  await db.colecciones.put({
+    ...data,
+    id,
+    nombre: data.nombre,
+    creadoEn: timestamp,
+    actualizadoEn: timestamp,
+  });
   return id;
 }

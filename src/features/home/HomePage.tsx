@@ -35,10 +35,18 @@ function HeroAbacus() {
   return (
     <div className="relative" onPointerEnter={activate} onPointerDown={activate} onFocus={activate}>
       <div className="relative aspect-[4/3] w-full">
-        <AbacusArt value={value} className={`absolute inset-0 h-full w-full transition-opacity duration-500 ${show3D ? 'opacity-0' : 'opacity-100'}`} />
+        <AbacusArt
+          value={value}
+          className={`absolute inset-0 h-full w-full transition-opacity duration-500 ${show3D ? 'opacity-0' : 'opacity-100'}`}
+        />
         {show3D ? (
           <Suspense fallback={null}>
-            <m.div className="absolute inset-0" initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+            <m.div
+              className="absolute inset-0"
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               <Abacus3D initialValue={value} onValueChange={setValue} />
             </m.div>
           </Suspense>
@@ -69,12 +77,48 @@ function HeroAbacus() {
 }
 
 const FEATURES: { to: string; icon: IconName; title: string; text: string; cta: string }[] = [
-  { to: '/materias', icon: 'materias', title: 'Materias', text: `${stats.materias} materias con ${stats.subtemas} subtemas explicados; cada uno cita la sección exacta de su fuente.`, cta: 'Ver materias' },
-  { to: '/herramientas', icon: 'tools', title: 'Herramientas', text: 'Editor con fórmulas, libro diario, estadística, graficador, oferta y demanda, rol de pagos y más.', cta: 'Abrir herramientas' },
-  { to: '/formulas', icon: 'formula', title: 'Fórmulas verificadas', text: `${stats.formulas} fórmulas con variables explicadas, ejemplo recalculado y sintaxis de Excel en español.`, cta: 'Buscar fórmula' },
-  { to: '/laboratorio', icon: 'lab', title: 'Laboratorio', text: 'Una hoja de cálculo en tu teléfono: practica, comprueba y descarga el .xlsx.', cta: 'Abrir hoja' },
-  { to: '/buscar', icon: 'book', title: 'Buscador académico', text: 'Artículos, tesis y libros de fuentes abiertas, con la referencia APA lista para copiar.', cta: 'Buscar artículos' },
-  { to: '/practica', icon: 'target', title: 'Práctica', text: `${stats.ejercicios} ejercicios con respuesta verificable, pistas y tu historial de intentos.`, cta: 'Practicar' },
+  {
+    to: '/materias',
+    icon: 'materias',
+    title: 'Materias',
+    text: `${stats.materias} materias con ${stats.subtemas} subtemas explicados; cada uno cita la sección exacta de su fuente.`,
+    cta: 'Ver materias',
+  },
+  {
+    to: '/herramientas',
+    icon: 'tools',
+    title: 'Herramientas',
+    text: 'Editor con fórmulas, libro diario, estadística, graficador, oferta y demanda, rol de pagos y más.',
+    cta: 'Abrir herramientas',
+  },
+  {
+    to: '/formulas',
+    icon: 'formula',
+    title: 'Fórmulas verificadas',
+    text: `${stats.formulas} fórmulas con variables explicadas, ejemplo recalculado y sintaxis de Excel en español.`,
+    cta: 'Buscar fórmula',
+  },
+  {
+    to: '/laboratorio',
+    icon: 'lab',
+    title: 'Laboratorio',
+    text: 'Una hoja de cálculo en tu teléfono: practica, comprueba y descarga el .xlsx.',
+    cta: 'Abrir hoja',
+  },
+  {
+    to: '/buscar',
+    icon: 'book',
+    title: 'Buscador académico',
+    text: 'Artículos, tesis y libros de fuentes abiertas, con la referencia APA lista para copiar.',
+    cta: 'Buscar artículos',
+  },
+  {
+    to: '/practica',
+    icon: 'target',
+    title: 'Práctica',
+    text: `${stats.ejercicios} ejercicios con respuesta verificable, pistas y tu historial de intentos.`,
+    cta: 'Practicar',
+  },
 ];
 
 const FAQ = [
@@ -104,7 +148,9 @@ function MySubjects() {
   const profile = useProfile();
   const mine = profile.materias.map(getMateria).filter((m) => m !== undefined);
   const carrera = profile.carrera ? getCarrera(profile.carrera) : undefined;
-  const cycleLink = carrera ? `/materias?carrera=${carrera.id}${profile.ciclo ? `&ciclo=${profile.ciclo}` : ''}` : '/materias';
+  const cycleLink = carrera
+    ? `/materias?carrera=${carrera.id}${profile.ciclo ? `&ciclo=${profile.ciclo}` : ''}`
+    : '/materias';
   if (mine.length > 0) {
     return (
       <div className="card p-5">
@@ -139,7 +185,9 @@ function MySubjects() {
         <span className="block font-display text-xl font-semibold">
           {carrera ? `Tus materias de ${carrera.nombre}` : 'Elige tu carrera y tu ciclo'}
         </span>
-        <span className="text-sm text-muted">Marca las materias que llevas; se guardan solo en este dispositivo.</span>
+        <span className="text-sm text-muted">
+          Marca las materias que llevas; se guardan solo en este dispositivo.
+        </span>
       </span>
       <Icon name="arrow-right" className="text-red" />
     </AppLink>
@@ -161,8 +209,8 @@ export default function HomePage() {
             Tus apuntes, en tu bolsillo.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-            Para estudiantes de carreras económicas y administrativas en Ecuador. Sin registrarte, sin servidores y sin
-            costo: lo que escribes se queda en tu teléfono.
+            Para estudiantes de carreras económicas y administrativas en Ecuador. Sin registrarte, sin
+            servidores y sin costo: lo que escribes se queda en tu teléfono.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <AppLink to="/materias" className="btn btn-primary">
@@ -196,8 +244,8 @@ export default function HomePage() {
         <div className="mb-6 grid gap-4 md:grid-cols-[1fr_1.4fr] md:items-end">
           <MySubjects />
           <p className="text-muted md:text-right">
-            Todo está ordenado de lo general a lo particular: materia → tema → subtema, con herramientas para practicar
-            cada uno.
+            Todo está ordenado de lo general a lo particular: materia → tema → subtema, con herramientas para
+            practicar cada uno.
           </p>
         </div>
         <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
@@ -210,9 +258,7 @@ export default function HomePage() {
                   </span>
                   <span className="mt-1 font-semibold text-ink md:text-lg">{f.title}</span>
                   <span className="hidden text-sm leading-relaxed text-muted md:block">{f.text}</span>
-                  <span className="link-red mt-auto text-sm">
-                    {f.cta} →
-                  </span>
+                  <span className="link-red mt-auto text-sm">{f.cta} →</span>
                 </TiltCard>
               </AppLink>
             </li>
@@ -231,7 +277,12 @@ export default function HomePage() {
           </div>
           <div className="space-y-3">
             {FAQ.map((item, i) => (
-              <Accordion key={item.q} title={item.q} defaultOpen={false} id={i === 0 ? 'faq-datos' : undefined}>
+              <Accordion
+                key={item.q}
+                title={item.q}
+                defaultOpen={false}
+                id={i === 0 ? 'faq-datos' : undefined}
+              >
                 <p className="leading-relaxed text-muted">{item.a}</p>
               </Accordion>
             ))}

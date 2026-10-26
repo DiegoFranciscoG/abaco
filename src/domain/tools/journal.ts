@@ -50,7 +50,9 @@ export function checkEntry(lineas: readonly LineaAsiento[]): EntryCheck {
     haber += cents(l.haber);
   });
   if (debe !== haber) {
-    errores.push(`No cuadra: el debe suma ${fromCents(debe).toFixed(2)} y el haber ${fromCents(haber).toFixed(2)}. La partida doble exige que sean iguales.`);
+    errores.push(
+      `No cuadra: el debe suma ${fromCents(debe).toFixed(2)} y el haber ${fromCents(haber).toFixed(2)}. La partida doble exige que sean iguales.`,
+    );
   }
   return { ok: errores.length === 0, totalDebe: fromCents(debe), totalHaber: fromCents(haber), errores };
 }
@@ -77,7 +79,18 @@ export function postToLedger(asientos: readonly Asiento[]): LedgerAccount[] {
       const key = accountKey(l.cuenta);
       let acc = accounts.get(key);
       if (!acc) {
-        acc = { cuenta: l.cuenta.trim(), tipo: l.tipo, debe: [], haber: [], totalDebe: 0, totalHaber: 0, saldo: 0, ladoSaldo: NORMAL_SIDE[l.tipo], debeC: 0, haberC: 0 };
+        acc = {
+          cuenta: l.cuenta.trim(),
+          tipo: l.tipo,
+          debe: [],
+          haber: [],
+          totalDebe: 0,
+          totalHaber: 0,
+          saldo: 0,
+          ladoSaldo: NORMAL_SIDE[l.tipo],
+          debeC: 0,
+          haberC: 0,
+        };
         accounts.set(key, acc);
       }
       if (l.debe > 0) {
@@ -93,7 +106,13 @@ export function postToLedger(asientos: readonly Asiento[]): LedgerAccount[] {
   return [...accounts.values()].map(({ debeC, haberC, ...acc }) => {
     const normal = NORMAL_SIDE[acc.tipo];
     const saldoC = normal === 'debe' ? debeC - haberC : haberC - debeC;
-    return { ...acc, totalDebe: fromCents(debeC), totalHaber: fromCents(haberC), saldo: fromCents(saldoC), ladoSaldo: normal };
+    return {
+      ...acc,
+      totalDebe: fromCents(debeC),
+      totalHaber: fromCents(haberC),
+      saldo: fromCents(saldoC),
+      ladoSaldo: normal,
+    };
   });
 }
 
@@ -110,12 +129,22 @@ export function trialBalance(ledger: readonly LedgerAccount[]): TrialBalance {
   let acreedor = 0;
   const filas = ledger.map((acc) => {
     const diff = cents(acc.totalDebe) - cents(acc.totalHaber);
-    const fila = { cuenta: acc.cuenta, tipo: acc.tipo, deudor: diff > 0 ? fromCents(diff) : 0, acreedor: diff < 0 ? fromCents(-diff) : 0 };
+    const fila = {
+      cuenta: acc.cuenta,
+      tipo: acc.tipo,
+      deudor: diff > 0 ? fromCents(diff) : 0,
+      acreedor: diff < 0 ? fromCents(-diff) : 0,
+    };
     deudor += Math.max(diff, 0);
     acreedor += Math.max(-diff, 0);
     return fila;
   });
-  return { filas, totalDeudor: fromCents(deudor), totalAcreedor: fromCents(acreedor), cuadra: deudor === acreedor };
+  return {
+    filas,
+    totalDeudor: fromCents(deudor),
+    totalAcreedor: fromCents(acreedor),
+    cuadra: deudor === acreedor,
+  };
 }
 
 export interface Statements {
@@ -131,7 +160,8 @@ export interface Statements {
 
 /** Simple income statement and balance sheet from the ledger (before closing entries). */
 export function statements(ledger: readonly LedgerAccount[]): Statements {
-  const sum = (kind: AccountKind) => ledger.filter((a) => a.tipo === kind).reduce((s, a) => s + cents(a.saldo), 0);
+  const sum = (kind: AccountKind) =>
+    ledger.filter((a) => a.tipo === kind).reduce((s, a) => s + cents(a.saldo), 0);
   const ingresos = sum('ingreso');
   const gastos = sum('gasto');
   const activo = sum('activo');

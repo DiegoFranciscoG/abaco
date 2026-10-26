@@ -20,7 +20,11 @@ export const materias = (materiasJson as unknown as Materia[]).slice().sort((a, 
 export const fuentes = fuentesJson as unknown as Fuente[];
 
 const temarioLoaders = import.meta.glob<Temario>('../../content/temarios/*.json', { import: 'default' });
-const fileId = (path: string): string => path.split('/').pop()?.replace(/\.json$/, '') ?? path;
+const fileId = (path: string): string =>
+  path
+    .split('/')
+    .pop()
+    ?.replace(/\.json$/, '') ?? path;
 const temarioPaths = new Map(Object.keys(temarioLoaders).map((path) => [fileId(path), path]));
 
 export function getMateria(id: string): Materia | undefined {
@@ -38,7 +42,10 @@ export function getCarrera(id: string): Carrera | undefined {
 }
 
 /** Subjects of a career in its usual cycle `ciclo` (all cycles when omitted), in catalog order. */
-export function materiasDeCiclo(carrera: Carrera, ciclo?: number): { materia: Materia; entrada: Carrera['materias'][number] }[] {
+export function materiasDeCiclo(
+  carrera: Carrera,
+  ciclo?: number,
+): { materia: Materia; entrada: Carrera['materias'][number] }[] {
   return carrera.materias
     .filter((e) => ciclo === undefined || e.ciclo === ciclo)
     .map((entrada) => ({ materia: getMateria(entrada.materia), entrada }))
@@ -68,8 +75,8 @@ export async function loadTemario(materiaId: string): Promise<Temario | undefine
 
 let formulasCache: Promise<Formula[]> | null = null;
 export function loadFormulas(): Promise<Formula[]> {
-  formulasCache ??= import('../../content/formulas.json').then(
-    (m) => (m.default as unknown as Formula[]).filter((f) => f.estado !== 'pendiente'),
+  formulasCache ??= import('../../content/formulas.json').then((m) =>
+    (m.default as unknown as Formula[]).filter((f) => f.estado !== 'pendiente'),
   );
   return formulasCache;
 }

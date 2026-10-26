@@ -4,7 +4,8 @@
  */
 import type { App, Ejercicio, Formula, Materia, Temario, Termino } from '../content/schemas';
 
-export type SearchDocType = 'materia' | 'tema' | 'subtema' | 'formula' | 'herramienta' | 'termino' | 'app' | 'ejercicio';
+export type SearchDocType =
+  'materia' | 'tema' | 'subtema' | 'formula' | 'herramienta' | 'termino' | 'app' | 'ejercicio';
 
 export interface SearchDoc {
   id: string;
@@ -18,7 +19,27 @@ export interface SearchDoc {
 }
 
 const STOPWORDS = new Set([
-  'a', 'al', 'con', 'de', 'del', 'el', 'en', 'es', 'la', 'las', 'lo', 'los', 'o', 'para', 'por', 'que', 'se', 'su', 'un', 'una', 'y',
+  'a',
+  'al',
+  'con',
+  'de',
+  'del',
+  'el',
+  'en',
+  'es',
+  'la',
+  'las',
+  'lo',
+  'los',
+  'o',
+  'para',
+  'por',
+  'que',
+  'se',
+  'su',
+  'un',
+  'una',
+  'y',
 ]);
 
 export function normalizeTerm(term: string): string | null {
@@ -44,8 +65,10 @@ export const SEARCH_OPTIONS = {
   },
 };
 
-const excerpt = (text: string, max = 140): string => (text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text);
-const functionNames = (formula: string): string[] => formula.match(/[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ0-9.]*(?=\()/g) ?? [];
+const excerpt = (text: string, max = 140): string =>
+  text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text;
+const functionNames = (formula: string): string[] =>
+  formula.match(/[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ0-9.]*(?=\()/g) ?? [];
 
 /** Study tool as listed in the search (the tool catalog lives in src/domain/tools/catalog.ts). */
 export interface SearchTool {

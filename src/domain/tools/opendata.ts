@@ -26,19 +26,28 @@ export class OpenDataError extends Error {
 
 const DAY = 24 * 60 * 60 * 1000;
 
-async function getJson(url: string, { fetchFn = fetch, timeoutMs = 10_000, signal }: FetchOptions): Promise<unknown> {
+async function getJson(
+  url: string,
+  { fetchFn = fetch, timeoutMs = 10_000, signal }: FetchOptions,
+): Promise<unknown> {
   const controller = new AbortController();
   const onAbort = () => controller.abort();
   signal?.addEventListener('abort', onAbort, { once: true });
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetchFn(url, { signal: controller.signal, credentials: 'omit', referrerPolicy: 'no-referrer' });
-    if (response.status === 429) throw new OpenDataError('El servicio recibió demasiadas consultas. Intenta en unos minutos.');
+    const response = await fetchFn(url, {
+      signal: controller.signal,
+      credentials: 'omit',
+      referrerPolicy: 'no-referrer',
+    });
+    if (response.status === 429)
+      throw new OpenDataError('El servicio recibió demasiadas consultas. Intenta en unos minutos.');
     if (!response.ok) throw new OpenDataError(`El servicio respondió con un error (${response.status}).`);
     return await response.json();
   } catch (error) {
     if (error instanceof OpenDataError) throw error;
-    if (controller.signal.aborted && !signal?.aborted) throw new OpenDataError('El servicio tardó demasiado en responder.');
+    if (controller.signal.aborted && !signal?.aborted)
+      throw new OpenDataError('El servicio tardó demasiado en responder.');
     throw new OpenDataError('No se pudo conectar con el servicio. Revisa tu conexión.');
   } finally {
     clearTimeout(timer);
@@ -46,7 +55,13 @@ async function getJson(url: string, { fetchFn = fetch, timeoutMs = 10_000, signa
   }
 }
 
-async function cachedJson<T>(key: string, url: string, parse: (json: unknown) => T, ttlMs: number, options: FetchOptions): Promise<T> {
+async function cachedJson<T>(
+  key: string,
+  url: string,
+  parse: (json: unknown) => T,
+  ttlMs: number,
+  options: FetchOptions,
+): Promise<T> {
   const hit = await options.cache?.get(key).catch(() => undefined);
   if (hit !== undefined) {
     try {
@@ -72,13 +87,48 @@ export interface Indicator {
 
 /** Curated indicators (Spanish names and original sources as published by the World Bank API, language "es"). */
 export const INDICATORS: Indicator[] = [
-  { code: 'NY.GDP.MKTP.KD.ZG', nombre: 'Crecimiento del PIB', unidad: '% anual', fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE' },
-  { code: 'NY.GDP.PCAP.CD', nombre: 'PIB per cápita', unidad: 'US$ a precios actuales', fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE' },
-  { code: 'FP.CPI.TOTL.ZG', nombre: 'Inflación, precios al consumidor', unidad: '% anual', fuenteOriginal: 'Fondo Monetario Internacional, Estadísticas Financieras Internacionales' },
-  { code: 'SL.UEM.TOTL.ZS', nombre: 'Desempleo (estimación modelada de la OIT)', unidad: '% de la fuerza laboral', fuenteOriginal: 'Organización Internacional del Trabajo, ILOSTAT' },
-  { code: 'NE.EXP.GNFS.ZS', nombre: 'Exportaciones de bienes y servicios', unidad: '% del PIB', fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE' },
-  { code: 'NE.IMP.GNFS.ZS', nombre: 'Importaciones de bienes y servicios', unidad: '% del PIB', fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE' },
-  { code: 'BX.TRF.PWKR.DT.GD.ZS', nombre: 'Remesas recibidas', unidad: '% del PIB', fuenteOriginal: 'Estimaciones del Banco Mundial con datos de balanza de pagos del FMI' },
+  {
+    code: 'NY.GDP.MKTP.KD.ZG',
+    nombre: 'Crecimiento del PIB',
+    unidad: '% anual',
+    fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE',
+  },
+  {
+    code: 'NY.GDP.PCAP.CD',
+    nombre: 'PIB per cápita',
+    unidad: 'US$ a precios actuales',
+    fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE',
+  },
+  {
+    code: 'FP.CPI.TOTL.ZG',
+    nombre: 'Inflación, precios al consumidor',
+    unidad: '% anual',
+    fuenteOriginal: 'Fondo Monetario Internacional, Estadísticas Financieras Internacionales',
+  },
+  {
+    code: 'SL.UEM.TOTL.ZS',
+    nombre: 'Desempleo (estimación modelada de la OIT)',
+    unidad: '% de la fuerza laboral',
+    fuenteOriginal: 'Organización Internacional del Trabajo, ILOSTAT',
+  },
+  {
+    code: 'NE.EXP.GNFS.ZS',
+    nombre: 'Exportaciones de bienes y servicios',
+    unidad: '% del PIB',
+    fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE',
+  },
+  {
+    code: 'NE.IMP.GNFS.ZS',
+    nombre: 'Importaciones de bienes y servicios',
+    unidad: '% del PIB',
+    fuenteOriginal: 'Datos de cuentas nacionales del Banco Mundial y de la OCDE',
+  },
+  {
+    code: 'BX.TRF.PWKR.DT.GD.ZS',
+    nombre: 'Remesas recibidas',
+    unidad: '% del PIB',
+    fuenteOriginal: 'Estimaciones del Banco Mundial con datos de balanza de pagos del FMI',
+  },
 ];
 
 export const COUNTRIES: { code: string; nombre: string }[] = [
@@ -128,7 +178,11 @@ export function worldBankUrl(code: string, countries: readonly string[], from: n
   return `https://api.worldbank.org/v2/country/${valid.join(';')}/indicator/${code}?format=json&date=${from}:${to}&per_page=1000`;
 }
 
-export function parseWorldBank(json: unknown, indicator: Indicator, countries: readonly string[]): IndicatorData {
+export function parseWorldBank(
+  json: unknown,
+  indicator: Indicator,
+  countries: readonly string[],
+): IndicatorData {
   const [meta, rows] = wbSchema.parse(json);
   const series = countries.map((country) => ({
     country,
@@ -151,7 +205,13 @@ export async function fetchIndicator(
   if (!indicator) throw new OpenDataError('Indicador no disponible.');
   const sorted = [...countries].sort();
   const url = worldBankUrl(code, sorted, from, to);
-  return cachedJson(`wb:${code}:${sorted.join(',')}:${from}:${to}`, url, (json) => parseWorldBank(json, indicator, sorted), DAY, options);
+  return cachedJson(
+    `wb:${code}:${sorted.join(',')}:${from}:${to}`,
+    url,
+    (json) => parseWorldBank(json, indicator, sorted),
+    DAY,
+    options,
+  );
 }
 
 // ---------------------------------------------------------------- Frankfurter (ECB reference rates)
@@ -189,7 +249,9 @@ export const ECB_CURRENCIES: { code: string; nombre: string }[] = [
   { code: 'ISK', nombre: 'Corona islandesa' },
 ];
 
-const fxSchema = z.array(z.object({ date: z.string(), base: z.string(), quote: z.string(), rate: z.number().positive() }));
+const fxSchema = z.array(
+  z.object({ date: z.string(), base: z.string(), quote: z.string(), rate: z.number().positive() }),
+);
 
 export interface FxRate {
   date: string;
@@ -201,22 +263,44 @@ const isEcbCurrency = (code: string): boolean => ECB_CURRENCIES.some((c) => c.co
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 
 /** Latest USD rates (units of each currency per 1 USD), computed by Frankfurter from ECB reference rates. */
-export async function fetchLatestUsd(quotes: readonly string[], options: FetchOptions = {}): Promise<FxRate[]> {
+export async function fetchLatestUsd(
+  quotes: readonly string[],
+  options: FetchOptions = {},
+): Promise<FxRate[]> {
   const valid = quotes.filter(isEcbCurrency);
   if (valid.length === 0) throw new OpenDataError('Elige al menos una moneda.');
   const url = `https://api.frankfurter.dev/v2/rates?providers=ECB&base=USD&quotes=${valid.join(',')}`;
-  return cachedJson(`fx:latest:${[...valid].sort().join(',')}`, url, (json) => fxSchema.parse(json).map(({ date, quote, rate }) => ({ date, quote, rate })), 6 * 60 * 60 * 1000, options);
+  return cachedJson(
+    `fx:latest:${[...valid].sort().join(',')}`,
+    url,
+    (json) => fxSchema.parse(json).map(({ date, quote, rate }) => ({ date, quote, rate })),
+    6 * 60 * 60 * 1000,
+    options,
+  );
 }
 
 /** Daily USD series of one currency between two dates. */
-export async function fetchUsdSeries(quote: string, from: string, to: string, options: FetchOptions = {}): Promise<FxRate[]> {
-  if (!isEcbCurrency(quote)) throw new OpenDataError('Moneda no disponible en los tipos de referencia del BCE.');
+export async function fetchUsdSeries(
+  quote: string,
+  from: string,
+  to: string,
+  options: FetchOptions = {},
+): Promise<FxRate[]> {
+  if (!isEcbCurrency(quote))
+    throw new OpenDataError('Moneda no disponible en los tipos de referencia del BCE.');
   if (!isoDate.test(from) || !isoDate.test(to) || from > to) throw new OpenDataError('Revisa las fechas.');
   const url = `https://api.frankfurter.dev/v2/rates?providers=ECB&base=USD&quotes=${quote}&from=${from}&to=${to}`;
-  return cachedJson(`fx:series:${quote}:${from}:${to}`, url, (json) => fxSchema.parse(json).map(({ date, quote: q, rate }) => ({ date, quote: q, rate })), DAY, options);
+  return cachedJson(
+    `fx:series:${quote}:${from}:${to}`,
+    url,
+    (json) => fxSchema.parse(json).map(({ date, quote: q, rate }) => ({ date, quote: q, rate })),
+    DAY,
+    options,
+  );
 }
 
 export function convert(amountUsd: number, rate: number): number {
-  if (!Number.isFinite(amountUsd) || amountUsd < 0) throw new OpenDataError('El monto debe ser un número positivo.');
+  if (!Number.isFinite(amountUsd) || amountUsd < 0)
+    throw new OpenDataError('El monto debe ser un número positivo.');
   return amountUsd * rate;
 }

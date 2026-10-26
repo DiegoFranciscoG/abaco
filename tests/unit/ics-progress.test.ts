@@ -4,7 +4,12 @@ import { accuracyBySubject, summarizeAttempts } from '../../src/features/practic
 
 describe('reminder to iCalendar', () => {
   const ics = reminderToIcs(
-    { id: 'abc', titulo: 'Entregar taller; Costos, grupo 2', fecha: '2026-11-03T15:00:00.000Z', avisoMinutos: 120 },
+    {
+      id: 'abc',
+      titulo: 'Entregar taller; Costos, grupo 2',
+      fecha: '2026-11-03T15:00:00.000Z',
+      avisoMinutos: 120,
+    },
     new Date('2026-10-15T12:00:00Z'),
   );
 
@@ -19,7 +24,12 @@ describe('reminder to iCalendar', () => {
 
   it('escapes special characters and folds long lines', () => {
     expect(ics).toContain('SUMMARY:Entregar taller\\; Costos\\, grupo 2');
-    const long = reminderToIcs({ id: 'x', titulo: 'x'.repeat(200), fecha: '2026-11-03T15:00:00Z', avisoMinutos: 0 });
+    const long = reminderToIcs({
+      id: 'x',
+      titulo: 'x'.repeat(200),
+      fecha: '2026-11-03T15:00:00Z',
+      avisoMinutos: 0,
+    });
     expect(long.split('\r\n').every((line) => new TextEncoder().encode(line).length <= 75)).toBe(true);
   });
 
@@ -37,12 +47,19 @@ describe('practice progress', () => {
 
   it('summarizes attempts per exercise', () => {
     const s = summarizeAttempts(attempts);
-    expect(s.get('a')).toEqual({ attempts: 2, solved: true, correctAttempts: 1, lastAt: '2026-10-02T10:00:00Z' });
+    expect(s.get('a')).toEqual({
+      attempts: 2,
+      solved: true,
+      correctAttempts: 1,
+      lastAt: '2026-10-02T10:00:00Z',
+    });
     expect(s.get('b')?.solved).toBe(false);
   });
 
   it('computes accuracy per subject', () => {
-    const acc = accuracyBySubject(attempts, (id) => (id === 'a' ? 'contabilidad' : id === 'b' ? 'estadistica' : undefined));
+    const acc = accuracyBySubject(attempts, (id) =>
+      id === 'a' ? 'contabilidad' : id === 'b' ? 'estadistica' : undefined,
+    );
     expect(acc.get('contabilidad')).toEqual({ attempts: 2, correct: 1 });
     expect(acc.get('estadistica')).toEqual({ attempts: 1, correct: 0 });
   });

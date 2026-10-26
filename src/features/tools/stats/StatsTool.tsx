@@ -1,6 +1,16 @@
 import { useState } from 'react';
 import type { ToolInfo } from '../../../domain/tools/catalog';
-import { boxPlot, describe, histogram, meanInterval, oneSampleT, parseData, proportionInterval, regression, sampleSize } from '../../../domain/tools/stats';
+import {
+  boxPlot,
+  describe,
+  histogram,
+  meanInterval,
+  oneSampleT,
+  parseData,
+  proportionInterval,
+  regression,
+  sampleSize,
+} from '../../../domain/tools/stats';
 import { formatTick } from '../../../ui/chart-scale';
 import { BarChart, LineChart } from '../../../ui/charts';
 import { Tabs } from '../../../ui/primitives';
@@ -11,12 +21,30 @@ type Mode = 'describir' | 'inferir' | 'regresion' | 'muestra';
 
 const SAMPLE = '12\n15\n11\n18\n14\n16\n13\n22\n15\n17\n14\n19';
 
-function DataInput({ id, label, value, onChange }: { id: string; label: string; value: string; onChange: (v: string) => void }) {
+function DataInput({
+  id,
+  label,
+  value,
+  onChange,
+}: {
+  id: string;
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+}) {
   return (
     <label className="block" htmlFor={id}>
       <span className="mb-1 block text-sm font-semibold text-ink-2">{label}</span>
-      <textarea id={id} className="field tnum min-h-40" value={value} onChange={(e) => onChange(e.target.value)} maxLength={20_000} />
-      <span className="mt-1 block text-xs text-muted">Un dato por línea, o separados por punto y coma. Coma o punto decimal.</span>
+      <textarea
+        id={id}
+        className="field tnum min-h-40"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        maxLength={20_000}
+      />
+      <span className="mt-1 block text-xs text-muted">
+        Un dato por línea, o separados por punto y coma. Coma o punto decimal.
+      </span>
     </label>
   );
 }
@@ -30,15 +58,51 @@ function BoxPlotSvg({ values }: { values: number[] }) {
   return (
     <figure className="card p-4">
       <figcaption className="mb-2 text-sm font-semibold">Diagrama de caja</figcaption>
-      <svg viewBox="0 0 640 110" className="h-auto w-full" role="img" aria-label={`Diagrama de caja: Q1 ${formatTick(b.q1)}, mediana ${formatTick(b.mediana)}, Q3 ${formatTick(b.q3)}, bigotes de ${formatTick(b.bigoteInferior)} a ${formatTick(b.bigoteSuperior)}, ${b.atipicos.length} valores atípicos.`}>
+      <svg
+        viewBox="0 0 640 110"
+        className="h-auto w-full"
+        role="img"
+        aria-label={`Diagrama de caja: Q1 ${formatTick(b.q1)}, mediana ${formatTick(b.mediana)}, Q3 ${formatTick(b.q3)}, bigotes de ${formatTick(b.bigoteInferior)} a ${formatTick(b.bigoteSuperior)}, ${b.atipicos.length} valores atípicos.`}
+      >
         <line x1={sx(b.bigoteInferior)} x2={sx(b.q1)} y1={50} y2={50} stroke="var(--ink-2)" strokeWidth={2} />
         <line x1={sx(b.q3)} x2={sx(b.bigoteSuperior)} y1={50} y2={50} stroke="var(--ink-2)" strokeWidth={2} />
-        <line x1={sx(b.bigoteInferior)} x2={sx(b.bigoteInferior)} y1={38} y2={62} stroke="var(--ink-2)" strokeWidth={2} />
-        <line x1={sx(b.bigoteSuperior)} x2={sx(b.bigoteSuperior)} y1={38} y2={62} stroke="var(--ink-2)" strokeWidth={2} />
-        <rect x={sx(b.q1)} y={28} width={Math.max(2, sx(b.q3) - sx(b.q1))} height={44} rx={6} fill="var(--red-soft)" stroke="var(--red)" strokeWidth={2} />
+        <line
+          x1={sx(b.bigoteInferior)}
+          x2={sx(b.bigoteInferior)}
+          y1={38}
+          y2={62}
+          stroke="var(--ink-2)"
+          strokeWidth={2}
+        />
+        <line
+          x1={sx(b.bigoteSuperior)}
+          x2={sx(b.bigoteSuperior)}
+          y1={38}
+          y2={62}
+          stroke="var(--ink-2)"
+          strokeWidth={2}
+        />
+        <rect
+          x={sx(b.q1)}
+          y={28}
+          width={Math.max(2, sx(b.q3) - sx(b.q1))}
+          height={44}
+          rx={6}
+          fill="var(--red-soft)"
+          stroke="var(--red)"
+          strokeWidth={2}
+        />
         <line x1={sx(b.mediana)} x2={sx(b.mediana)} y1={28} y2={72} stroke="var(--red)" strokeWidth={3} />
         {b.atipicos.map((v, i) => (
-          <circle key={`${v}-${i}`} cx={sx(v)} cy={50} r={5} fill="var(--surface)" stroke="var(--warn)" strokeWidth={2} />
+          <circle
+            key={`${v}-${i}`}
+            cx={sx(v)}
+            cy={50}
+            r={5}
+            fill="var(--surface)"
+            stroke="var(--warn)"
+            strokeWidth={2}
+          />
         ))}
         {[b.bigoteInferior, b.q1, b.mediana, b.q3, b.bigoteSuperior].map((v, i) => (
           <text key={i} x={sx(v)} y={96} textAnchor="middle" className="fill-[var(--muted)] text-[11px]">
@@ -46,7 +110,11 @@ function BoxPlotSvg({ values }: { values: number[] }) {
           </text>
         ))}
       </svg>
-      {b.atipicos.length > 0 ? <p className="mt-1 text-xs text-muted">Atípicos (fuera de 1,5 × RIC): {b.atipicos.map((v) => formatTick(v)).join('; ')}</p> : null}
+      {b.atipicos.length > 0 ? (
+        <p className="mt-1 text-xs text-muted">
+          Atípicos (fuera de 1,5 × RIC): {b.atipicos.map((v) => formatTick(v)).join('; ')}
+        </p>
+      ) : null}
     </figure>
   );
 }
@@ -79,7 +147,10 @@ function Describe() {
               <Stat label="Moda" value={d.moda.length ? d.moda.map((m) => num(m)).join('; ') : 'Sin moda'} />
               <Stat label="Desviación (s)" value={num(d.desviacion, 4)} />
               <Stat label="Varianza (s²)" value={num(d.varianza, 4)} />
-              <Stat label="Coef. de variación" value={d.coeficienteVariacion === null ? '—' : pct(d.coeficienteVariacion)} />
+              <Stat
+                label="Coef. de variación"
+                value={d.coeficienteVariacion === null ? '—' : pct(d.coeficienteVariacion)}
+              />
               <Stat label="Asimetría" value={d.asimetria === null ? '—' : num(d.asimetria, 3)} />
               <Stat label="Mínimo" value={num(d.minimo)} />
               <Stat label="Q1" value={num(d.q1, 4)} />
@@ -90,7 +161,10 @@ function Describe() {
               title="Histograma (clases por regla de Sturges)"
               summary={`${bins.length} clases; la más frecuente tiene ${Math.max(...bins.map((b) => b.frecuencia))} datos.`}
               xLabel="Clases"
-              bars={bins.map((b, i) => ({ label: `${formatTick(b.desde)}–${formatTick(b.hasta)}${i === bins.length - 1 ? ']' : ')'}`, value: b.frecuencia }))}
+              bars={bins.map((b, i) => ({
+                label: `${formatTick(b.desde)}–${formatTick(b.hasta)}${i === bins.length - 1 ? ']' : ')'}`,
+                value: b.frecuencia,
+              }))}
             />
             <BoxPlotSvg values={values} />
           </>
@@ -132,7 +206,13 @@ function Infer() {
       <div className="grid gap-6 lg:grid-cols-[1fr_1.7fr]">
         <div className="space-y-4">
           <DataInput id="inf-datos" label="Datos de la muestra" value={text} onChange={setText} />
-          <NumberField id="inf-conf" label="Nivel de confianza" value={confianza} onChange={setConfianza} suffix="%" />
+          <NumberField
+            id="inf-conf"
+            label="Nivel de confianza"
+            value={confianza}
+            onChange={setConfianza}
+            suffix="%"
+          />
         </div>
         <div className="space-y-4" aria-live="polite">
           {errors.map((e) => (
@@ -147,7 +227,8 @@ function Infer() {
                 [{num(meanCi.inferior, 4)} ; {num(meanCi.superior, 4)}]
               </p>
               <p className="text-sm text-muted">
-                x̄ ± t·s/√n con t = {num(meanCi.critico, 4)} y {values.length - 1} grados de libertad; margen de error {num(meanCi.margen, 4)}.
+                x̄ ± t·s/√n con t = {num(meanCi.critico, 4)} y {values.length - 1} grados de libertad; margen
+                de error {num(meanCi.margen, 4)}.
               </p>
             </section>
           ) : null}
@@ -158,7 +239,12 @@ function Infer() {
                 <NumberField id="inf-mu0" label="Valor de H₀ (μ₀)" value={mu0} onChange={setMu0} />
                 <label className="block" htmlFor="inf-alt">
                   <span className="mb-1 block text-sm font-semibold text-ink-2">Hipótesis alternativa</span>
-                  <select id="inf-alt" className="field" value={alt} onChange={(e) => setAlt(e.target.value as typeof alt)}>
+                  <select
+                    id="inf-alt"
+                    className="field"
+                    value={alt}
+                    onChange={(e) => setAlt(e.target.value as typeof alt)}
+                  >
                     <option value="distinta">μ ≠ μ₀ (dos colas)</option>
                     <option value="mayor">μ &gt; μ₀</option>
                     <option value="menor">μ &lt; μ₀</option>
@@ -166,11 +252,13 @@ function Infer() {
                 </label>
               </div>
               <p className="text-sm">
-                t = <strong className="tnum">{num(test.t, 4)}</strong> · valor p = <strong className="tnum">{num(test.valorP, 4)}</strong> · α ={' '}
-                {num(1 - (c ?? 95) / 100, 3)}
+                t = <strong className="tnum">{num(test.t, 4)}</strong> · valor p ={' '}
+                <strong className="tnum">{num(test.valorP, 4)}</strong> · α = {num(1 - (c ?? 95) / 100, 3)}
               </p>
               <p className={`text-sm font-semibold ${test.rechaza ? 'text-red' : 'text-ink-2'}`}>
-                {test.rechaza ? 'Se rechaza H₀: hay evidencia a favor de la alternativa.' : 'No se rechaza H₀: los datos no dan evidencia suficiente.'}
+                {test.rechaza
+                  ? 'Se rechaza H₀: hay evidencia a favor de la alternativa.'
+                  : 'No se rechaza H₀: los datos no dan evidencia suficiente.'}
               </p>
             </section>
           ) : null}
@@ -184,7 +272,8 @@ function Infer() {
         </div>
         {prop ? (
           <p className="tnum text-lg" aria-live="polite">
-            p̂ = {pct(prop.p)} · intervalo [{pct(prop.inferior)} ; {pct(prop.superior)}] · margen ±{pct(prop.margen)}
+            p̂ = {pct(prop.p)} · intervalo [{pct(prop.inferior)} ; {pct(prop.superior)}] · margen ±
+            {pct(prop.margen)}
           </p>
         ) : null}
       </section>
@@ -230,11 +319,30 @@ function Regression() {
               summary={`La recta ŷ = ${num(r.a, 3)} + ${num(r.b, 3)}x explica el ${pct(r.r2, 1)} de la variación de Y.`}
               xLabel="X"
               yLabel="Y"
-              series={[{ name: 'Recta de regresión', points: [{ x: minX, y: r.a + r.b * minX }, { x: maxX, y: r.a + r.b * maxX }] }]}
+              series={[
+                {
+                  name: 'Recta de regresión',
+                  points: [
+                    { x: minX, y: r.a + r.b * minX },
+                    { x: maxX, y: r.a + r.b * maxX },
+                  ],
+                },
+              ]}
               markers={x.map((xi, i) => ({ x: xi, y: y[i] as number, label: `p${i}` }))}
-              table={{ columns: ['X', 'Y', 'ŷ', 'Residuo'], rows: x.map((xi, i) => [xi, y[i] as number, r.a + r.b * xi, (y[i] as number) - (r.a + r.b * xi)]) }}
+              table={{
+                columns: ['X', 'Y', 'ŷ', 'Residuo'],
+                rows: x.map((xi, i) => [
+                  xi,
+                  y[i] as number,
+                  r.a + r.b * xi,
+                  (y[i] as number) - (r.a + r.b * xi),
+                ]),
+              }}
             />
-            <p className="text-xs text-muted">Una correlación alta no prueba que X cause Y. Predecir fuera del rango de X (extrapolar) no es confiable.</p>
+            <p className="text-xs text-muted">
+              Una correlación alta no prueba que X cause Y. Predecir fuera del rango de X (extrapolar) no es
+              confiable.
+            </p>
           </>
         ) : null}
       </div>
@@ -260,12 +368,31 @@ function SampleSize() {
     <div className="grid gap-6 md:grid-cols-[1fr_1.2fr]">
       <div className="card space-y-4 p-5">
         <NumberField id="mu-conf" label="Nivel de confianza" value={conf} onChange={setConf} suffix="%" />
-        <NumberField id="mu-e" label="Margen de error" value={margin} onChange={setMargin} suffix="puntos %" />
-        <NumberField id="mu-p" label="Proporción esperada" value={p} onChange={setP} suffix="%" hint="Sin información previa usa 50 %: da el tamaño más conservador." />
+        <NumberField
+          id="mu-e"
+          label="Margen de error"
+          value={margin}
+          onChange={setMargin}
+          suffix="puntos %"
+        />
+        <NumberField
+          id="mu-p"
+          label="Proporción esperada"
+          value={p}
+          onChange={setP}
+          suffix="%"
+          hint="Sin información previa usa 50 %: da el tamaño más conservador."
+        />
       </div>
       <div aria-live="polite">
         {error ? <p className="text-sm font-semibold text-warn">{error}</p> : null}
-        {n !== null ? <Stat label="Tamaño de muestra necesario" value={`${n.toLocaleString('es-EC')} personas`} hint="n = z²·p·q ÷ E², redondeado hacia arriba (población grande)." /> : null}
+        {n !== null ? (
+          <Stat
+            label="Tamaño de muestra necesario"
+            value={`${n.toLocaleString('es-EC')} personas`}
+            hint="n = z²·p·q ÷ E², redondeado hacia arriba (población grande)."
+          />
+        ) : null}
       </div>
     </div>
   );
@@ -278,8 +405,17 @@ export default function StatsTool({ tool }: { tool: ToolInfo }) {
       tool={tool}
       metodo={
         <>
-          <p>Varianza y desviación muestrales con n − 1; cuartiles con el método inclusivo de las hojas de cálculo (CUARTIL.INC), así que coinciden con Excel; histograma con la regla de Sturges; atípicos fuera de 1,5 veces el rango intercuartil.</p>
-          <p>Intervalos y pruebas según OpenStax, Introducción a la estadística (capítulos 8, 9 y 12): t de Student con n − 1 grados de libertad cuando σ es desconocida, intervalo de proporción con la normal, regresión por mínimos cuadrados. Los valores críticos se calculan con Formula.js, la misma biblioteca del laboratorio.</p>
+          <p>
+            Varianza y desviación muestrales con n − 1; cuartiles con el método inclusivo de las hojas de
+            cálculo (CUARTIL.INC), así que coinciden con Excel; histograma con la regla de Sturges; atípicos
+            fuera de 1,5 veces el rango intercuartil.
+          </p>
+          <p>
+            Intervalos y pruebas según OpenStax, Introducción a la estadística (capítulos 8, 9 y 12): t de
+            Student con n − 1 grados de libertad cuando σ es desconocida, intervalo de proporción con la
+            normal, regresión por mínimos cuadrados. Los valores críticos se calculan con Formula.js, la misma
+            biblioteca del laboratorio.
+          </p>
         </>
       }
     >
@@ -294,7 +430,15 @@ export default function StatsTool({ tool }: { tool: ToolInfo }) {
           { id: 'muestra', label: 'Tamaño de muestra' },
         ]}
       />
-      {mode === 'describir' ? <Describe /> : mode === 'inferir' ? <Infer /> : mode === 'regresion' ? <Regression /> : <SampleSize />}
+      {mode === 'describir' ? (
+        <Describe />
+      ) : mode === 'inferir' ? (
+        <Infer />
+      ) : mode === 'regresion' ? (
+        <Regression />
+      ) : (
+        <SampleSize />
+      )}
     </ToolLayout>
   );
 }

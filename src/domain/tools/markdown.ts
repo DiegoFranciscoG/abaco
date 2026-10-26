@@ -141,7 +141,8 @@ function parseAlign(cell: string): Align {
   return null;
 }
 
-const isTableSeparator = (line: string): boolean => /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(line);
+const isTableSeparator = (line: string): boolean =>
+  /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(line);
 
 export function parseMarkdown(source: string): Block[] {
   const text = source.length > MAX_DOCUMENT_LENGTH ? source.slice(0, MAX_DOCUMENT_LENGTH) : source;
@@ -194,7 +195,11 @@ export function parseMarkdown(source: string): Block[] {
     const heading = /^(#{1,3})\s+(.*)$/.exec(trimmed);
     if (heading) {
       flush();
-      blocks.push({ type: 'heading', level: (heading[1] as string).length as 1 | 2 | 3, children: parseInline((heading[2] as string).replace(/\s+#+\s*$/, '')) });
+      blocks.push({
+        type: 'heading',
+        level: (heading[1] as string).length as 1 | 2 | 3,
+        children: parseInline((heading[2] as string).replace(/\s+#+\s*$/, '')),
+      });
       continue;
     }
     if (/^(-{3,}|\*{3,}|_{3,})$/.test(trimmed)) {
@@ -214,7 +219,12 @@ export function parseMarkdown(source: string): Block[] {
         i += 1;
       }
       i -= 1;
-      blocks.push({ type: 'table', align: header.map((_, c) => align[c] ?? null), header: header.map((h) => parseInline(h)), rows });
+      blocks.push({
+        type: 'table',
+        align: header.map((_, c) => align[c] ?? null),
+        header: header.map((h) => parseInline(h)),
+        rows,
+      });
       continue;
     }
     const bullet = /^[-*+]\s+(.*)$/.exec(trimmed);

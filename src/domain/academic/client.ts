@@ -37,7 +37,11 @@ export interface SearchResponse {
 }
 
 export function cleanQuery(query: string): string {
-  return query.replace(/\p{Cc}/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, MAX_QUERY_LENGTH);
+  return query
+    .replace(/\p{Cc}/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, MAX_QUERY_LENGTH);
 }
 
 export const cacheKey = (source: SourceId, query: string): string => `${source}:${normalizeText(query)}`;
@@ -67,7 +71,8 @@ async function fetchJson(
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return { json: await response.json(), headers: response.headers };
   } catch (error) {
-    if (controller.signal.aborted && controller.signal.reason instanceof TimeoutError) throw new TimeoutError();
+    if (controller.signal.aborted && controller.signal.reason instanceof TimeoutError)
+      throw new TimeoutError();
     throw error;
   } finally {
     clearTimeout(timer);
@@ -95,10 +100,12 @@ export function mergeResults(lists: AcademicResult[][]): AcademicResult[] {
 
 async function searchSource(source: SourceId, query: string, options: SearchOptions): Promise<SourceOutcome> {
   const adapter = ADAPTERS[source];
-  if (!adapter) return { status: { state: 'error', message: 'Fuente desconocida' }, results: [], fromCache: false };
+  if (!adapter)
+    return { status: { state: 'error', message: 'Fuente desconocida' }, results: [], fromCache: false };
   const key = cacheKey(source, query);
   const cached = (await options.cache?.get(key)) as { total: number; results: AcademicResult[] } | undefined;
-  if (cached) return { status: { state: 'ok', total: cached.total }, results: cached.results, fromCache: true };
+  if (cached)
+    return { status: { state: 'ok', total: cached.total }, results: cached.results, fromCache: true };
   if (options.isOnline && !options.isOnline()) {
     return { status: { state: 'offline' }, results: [], fromCache: false };
   }
@@ -120,7 +127,8 @@ async function searchSource(source: SourceId, query: string, options: SearchOpti
     };
   } catch (error) {
     if (error instanceof TimeoutError) return { status: { state: 'timeout' }, results: [], fromCache: false };
-    if (error instanceof QuotaError) return { status: { state: 'quota', message: error.message }, results: [], fromCache: false };
+    if (error instanceof QuotaError)
+      return { status: { state: 'quota', message: error.message }, results: [], fromCache: false };
     const message =
       error instanceof Error && error.name === 'ZodError'
         ? 'La fuente respondió en un formato inesperado.'
@@ -138,7 +146,8 @@ export async function searchAcademic(rawQuery: string, options: SearchOptions = 
   const sources = options.sources ?? DIRECT_SOURCES;
   const bySource = {} as Record<SourceId, SourceOutcome>;
   if (query.length < 2) {
-    for (const source of sources) bySource[source] = { status: { state: 'ok', total: 0 }, results: [], fromCache: false };
+    for (const source of sources)
+      bySource[source] = { status: { state: 'ok', total: 0 }, results: [], fromCache: false };
     return { query, results: [], bySource };
   }
   await Promise.all(

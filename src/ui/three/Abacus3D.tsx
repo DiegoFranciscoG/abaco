@@ -145,7 +145,12 @@ export default function Abacus3D({ initialValue = 2026, onValueChange, className
     const disposables: { dispose: () => void }[] = [envTexture, pmrem];
 
     const wood = woodTexture();
-    const woodMat = new MeshStandardMaterial({ map: wood, roughness: 0.48, metalness: 0.05, color: new Color('#ffffff') });
+    const woodMat = new MeshStandardMaterial({
+      map: wood,
+      roughness: 0.48,
+      metalness: 0.05,
+      color: new Color('#ffffff'),
+    });
     disposables.push(wood, woodMat);
     const spacing = 0.86;
     const width = RODS * spacing + 0.7;
@@ -163,7 +168,11 @@ export default function Abacus3D({ initialValue = 2026, onValueChange, className
     frame(width, LAYOUT.beamTop - LAYOUT.beamBottom, 0.44, 0, (LAYOUT.beamTop + LAYOUT.beamBottom) / 2);
 
     const rodGeometry = new CylinderGeometry(0.032, 0.032, 3.1, 16);
-    const rodMat = new MeshStandardMaterial({ color: new Color('#cdb27a'), metalness: 0.85, roughness: 0.28 });
+    const rodMat = new MeshStandardMaterial({
+      color: new Color('#cdb27a'),
+      metalness: 0.85,
+      roughness: 0.28,
+    });
     disposables.push(rodGeometry, rodMat);
 
     // Bicone bead profile (rotated around Y by LatheGeometry).
@@ -179,9 +188,25 @@ export default function Abacus3D({ initialValue = 2026, onValueChange, className
       [0.0, 0.17],
     ].map(([x, y]) => new Vector2(x, y));
     const beadGeometry = new LatheGeometry(profile, 40);
-    const heavenMat = new MeshPhysicalMaterial({ color: new Color('#b3122e'), roughness: 0.32, clearcoat: 0.8, clearcoatRoughness: 0.18 });
-    const earthMat = new MeshPhysicalMaterial({ color: new Color('#f1e6d4'), roughness: 0.38, clearcoat: 0.6, clearcoatRoughness: 0.25 });
-    const selectedMat = new MeshPhysicalMaterial({ color: new Color('#f6d9a8'), roughness: 0.3, clearcoat: 0.7, emissive: new Color('#7a4a00'), emissiveIntensity: 0.25 });
+    const heavenMat = new MeshPhysicalMaterial({
+      color: new Color('#b3122e'),
+      roughness: 0.32,
+      clearcoat: 0.8,
+      clearcoatRoughness: 0.18,
+    });
+    const earthMat = new MeshPhysicalMaterial({
+      color: new Color('#f1e6d4'),
+      roughness: 0.38,
+      clearcoat: 0.6,
+      clearcoatRoughness: 0.25,
+    });
+    const selectedMat = new MeshPhysicalMaterial({
+      color: new Color('#f6d9a8'),
+      roughness: 0.3,
+      clearcoat: 0.7,
+      emissive: new Color('#7a4a00'),
+      emissiveIntensity: 0.25,
+    });
     disposables.push(beadGeometry, heavenMat, earthMat, selectedMat);
 
     const beads: BeadInfo[] = [];
@@ -252,9 +277,15 @@ export default function Abacus3D({ initialValue = 2026, onValueChange, className
 
     const pick = (event: PointerEvent): BeadInfo | null => {
       const rect = renderer.domElement.getBoundingClientRect();
-      pointer.set(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1);
+      pointer.set(
+        ((event.clientX - rect.left) / rect.width) * 2 - 1,
+        -((event.clientY - rect.top) / rect.height) * 2 + 1,
+      );
       raycaster.setFromCamera(pointer, camera);
-      const hit = raycaster.intersectObjects(beads.map((b) => b.mesh as Object3D), false)[0];
+      const hit = raycaster.intersectObjects(
+        beads.map((b) => b.mesh as Object3D),
+        false,
+      )[0];
       const index = hit?.object.userData.bead as number | undefined;
       return index === undefined ? null : (beads[index] ?? null);
     };
@@ -374,7 +405,6 @@ export default function Abacus3D({ initialValue = 2026, onValueChange, className
     apiRef.current?.highlight(rod);
     notify.current?.(valueOf(digits));
   };
-
 
   return (
     <div

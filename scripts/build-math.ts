@@ -20,7 +20,13 @@ rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 
 const render = (latex: string, displayMode: boolean) =>
-  katex.renderToString(latex, { displayMode, throwOnError: true, output: 'html', strict: 'error', trust: false });
+  katex.renderToString(latex, {
+    displayMode,
+    throwOnError: true,
+    output: 'html',
+    strict: 'error',
+    trust: false,
+  });
 
 for (const formula of formulas) {
   const map: Record<string, string> = { [`D:${formula.latex}`]: render(formula.latex, true) };

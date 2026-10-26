@@ -129,7 +129,12 @@ describe('primitives', () => {
     renderWithProviders(<StarButton star={{ tipo: 'formula', refId: 'tir', titulo: 'TIR' }} />);
     const button = await screen.findByRole('button', { name: 'Marcar con estrella TIR' });
     await user.click(button);
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Quitar estrella de TIR' })).toHaveAttribute('aria-pressed', 'true'));
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: 'Quitar estrella de TIR' })).toHaveAttribute(
+        'aria-pressed',
+        'true',
+      ),
+    );
     expect(await listStars(db)).toHaveLength(1);
   });
 
@@ -147,7 +152,17 @@ describe('primitives', () => {
   it('Tabs report the selected tab', async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
-    renderWithProviders(<Tabs label="Secciones" value="a" onChange={onChange} tabs={[{ id: 'a', label: 'Uno' }, { id: 'b', label: 'Dos', count: 3 }]} />);
+    renderWithProviders(
+      <Tabs
+        label="Secciones"
+        value="a"
+        onChange={onChange}
+        tabs={[
+          { id: 'a', label: 'Uno' },
+          { id: 'b', label: 'Dos', count: 3 },
+        ]}
+      />,
+    );
     expect(screen.getByRole('tab', { name: 'Uno' })).toHaveAttribute('aria-selected', 'true');
     await user.click(screen.getByRole('tab', { name: /Dos/ }));
     expect(onChange).toHaveBeenCalledWith('b');
@@ -174,8 +189,12 @@ describe('pages', () => {
 
   it('FormulaPage recalculates with the student data', async () => {
     const user = userEvent.setup();
-    renderRoute('/formulas/punto-equilibrio-unidades', [{ path: '/formulas/:formulaId', element: <FormulaPage /> }]);
-    expect(await screen.findByRole('heading', { name: /Punto de equilibrio en unidades/ })).toBeInTheDocument();
+    renderRoute('/formulas/punto-equilibrio-unidades', [
+      { path: '/formulas/:formulaId', element: <FormulaPage /> },
+    ]);
+    expect(
+      await screen.findByRole('heading', { name: /Punto de equilibrio en unidades/ }),
+    ).toBeInTheDocument();
     const fixed = await screen.findByLabelText(/Costos fijos del período/);
     await user.clear(fixed);
     await user.type(fixed, '20000');
@@ -196,10 +215,15 @@ describe('pages', () => {
   it('MateriasPage organizes subjects by career and cycle and remembers the choice on this device', async () => {
     const user = userEvent.setup();
     renderRoute('/materias', [{ path: '/materias', element: <MateriasPage /> }]);
-    await user.click(within(await screen.findByRole('group', { name: 'Carrera' })).getByRole('button', { name: 'Economía' }));
+    await user.click(
+      within(await screen.findByRole('group', { name: 'Carrera' })).getByRole('button', { name: 'Economía' }),
+    );
     await user.click(screen.getByRole('button', { name: '3.º ciclo' }));
     const cycle = screen.getByRole('region', { name: '3.º ciclo' });
-    expect(within(cycle).getByRole('link', { name: /^Macroeconomía/ })).toHaveAttribute('href', '/materia/macroeconomia');
+    expect(within(cycle).getByRole('link', { name: /^Macroeconomía/ })).toHaveAttribute(
+      'href',
+      '/materia/macroeconomia',
+    );
     expect(within(cycle).getByRole('link', { name: /^Matemática financiera/ })).toBeInTheDocument();
     expect(within(cycle).queryByRole('link', { name: /^Microeconomía/ })).not.toBeInTheDocument();
     expect(screen.getByText(/Ciclo habitual calculado con 2 planes/)).toBeInTheDocument();
@@ -209,24 +233,43 @@ describe('pages', () => {
   });
 
   it('a shared link opens a career and cycle directly', async () => {
-    renderRoute('/materias?carrera=contabilidad-auditoria&ciclo=2', [{ path: '/materias', element: <MateriasPage /> }]);
+    renderRoute('/materias?carrera=contabilidad-auditoria&ciclo=2', [
+      { path: '/materias', element: <MateriasPage /> },
+    ]);
     const cycle = await screen.findByRole('region', { name: '2.º ciclo' });
     expect(within(cycle).getByRole('link', { name: /^Tributación/ })).toBeInTheDocument();
     expect(within(cycle).getByRole('link', { name: /^Legislación laboral/ })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Contabilidad y auditoría' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'Contabilidad y auditoría' })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    );
   });
 
   it('SubjectPage shows the syllabus, the tools and the sources of the subject', async () => {
     renderRoute('/materia/legislacion-laboral', [{ path: '/materia/:materiaId', element: <SubjectPage /> }]);
     expect(await screen.findByRole('heading', { name: /Legislación laboral/ })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /El contrato de trabajo/ })).toHaveAttribute('href', '/materia/legislacion-laboral/tema/ll-contrato');
-    expect(screen.getByRole('link', { name: /Rol de pagos/ })).toHaveAttribute('href', '/herramientas/rol-pagos');
-    expect(screen.getByRole('link', { name: /Codificación 2005-017/ })).toHaveAttribute('href', expect.stringMatching(/^https:\/\//));
-    expect(screen.getByRole('link', { name: 'Contabilidad y auditoría · 2.º ciclo' })).toHaveAttribute('href', '/materias?carrera=contabilidad-auditoria&ciclo=2');
+    expect(screen.getByRole('link', { name: /El contrato de trabajo/ })).toHaveAttribute(
+      'href',
+      '/materia/legislacion-laboral/tema/ll-contrato',
+    );
+    expect(screen.getByRole('link', { name: /Rol de pagos/ })).toHaveAttribute(
+      'href',
+      '/herramientas/rol-pagos',
+    );
+    expect(screen.getByRole('link', { name: /Codificación 2005-017/ })).toHaveAttribute(
+      'href',
+      expect.stringMatching(/^https:\/\//),
+    );
+    expect(screen.getByRole('link', { name: 'Contabilidad y auditoría · 2.º ciclo' })).toHaveAttribute(
+      'href',
+      '/materias?carrera=contabilidad-auditoria&ciclo=2',
+    );
   });
 
   it('TopicPage opens the requested subtopic and cites its source', async () => {
-    renderRoute('/materia/tributacion/tema/tr-renta?s=tr-renta-personas', [{ path: '/materia/:materiaId/tema/:temaId', element: <TopicPage /> }]);
+    renderRoute('/materia/tributacion/tema/tr-renta?s=tr-renta-personas', [
+      { path: '/materia/:materiaId/tema/:temaId', element: <TopicPage /> },
+    ]);
     expect(await screen.findByRole('heading', { name: /Impuesto a la renta/ })).toBeInTheDocument();
     expect(screen.getByText(/USD 12 208 en 2026/)).toBeVisible();
     expect(screen.getAllByText(/Fuente:/).length).toBeGreaterThan(0);
@@ -239,9 +282,14 @@ describe('pages', () => {
 
   it('LegalPage renders the privacy policy with the external services table', async () => {
     renderRoute('/legal/privacidad', [{ path: '/legal/:docId', element: <LegalPage /> }]);
-    expect(await screen.findByRole('heading', { name: 'Política de privacidad', level: 1 })).toBeInTheDocument();
+    expect(
+      await screen.findByRole('heading', { name: 'Política de privacidad', level: 1 }),
+    ).toBeInTheDocument();
     expect(screen.getByRole('table', { name: /Servicios externos/ })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'www.spdp.gob.ec/' })).toHaveAttribute('href', 'https://www.spdp.gob.ec/');
+    expect(screen.getByRole('link', { name: 'www.spdp.gob.ec/' })).toHaveAttribute(
+      'href',
+      'https://www.spdp.gob.ec/',
+    );
   });
 
   it('SettingsPage only allows wiping after typing BORRAR', async () => {
@@ -257,7 +305,9 @@ describe('pages', () => {
 describe('study tools', () => {
   it('TaxTool computes IVA from a base and splits a final price', async () => {
     const user = userEvent.setup();
-    renderRoute('/herramientas/impuestos', [{ path: '/herramientas/:toolId', element: <TaxTool tool={getTool('impuestos')!} /> }]);
+    renderRoute('/herramientas/impuestos', [
+      { path: '/herramientas/:toolId', element: <TaxTool tool={getTool('impuestos')!} /> },
+    ]);
     const amount = await screen.findByLabelText(/Precio sin IVA/);
     await user.clear(amount);
     await user.type(amount, '200');
@@ -271,7 +321,9 @@ describe('study tools', () => {
 
   it('PayrollTool shows net pay with the IESS personal contribution', async () => {
     const user = userEvent.setup();
-    renderRoute('/herramientas/rol-pagos', [{ path: '/herramientas/:toolId', element: <PayrollTool tool={getTool('rol-pagos')!} /> }]);
+    renderRoute('/herramientas/rol-pagos', [
+      { path: '/herramientas/:toolId', element: <PayrollTool tool={getTool('rol-pagos')!} /> },
+    ]);
     const salary = await screen.findByLabelText(/Sueldo mensual/);
     await user.clear(salary);
     await user.type(salary, '1000');
@@ -282,7 +334,9 @@ describe('study tools', () => {
 
   it('JournalTool only records balanced entries and builds the trial balance', async () => {
     const user = userEvent.setup();
-    renderRoute('/herramientas/diario', [{ path: '/herramientas/:toolId', element: <JournalTool tool={getTool('diario')!} /> }]);
+    renderRoute('/herramientas/diario', [
+      { path: '/herramientas/:toolId', element: <JournalTool tool={getTool('diario')!} /> },
+    ]);
     await user.click(await screen.findByRole('button', { name: /Crear libro/ }));
     await waitFor(async () => expect(await listJournals(db)).toHaveLength(1));
     await user.type(await screen.findByLabelText('Cuenta de la línea 1'), 'Caja');
@@ -301,7 +355,9 @@ describe('study tools', () => {
 
   it('EditorTool creates a document from a template and autosaves it', async () => {
     const user = userEvent.setup();
-    renderRoute('/herramientas/editor', [{ path: '/herramientas/:toolId', element: <EditorTool tool={getTool('editor')!} /> }]);
+    renderRoute('/herramientas/editor', [
+      { path: '/herramientas/:toolId', element: <EditorTool tool={getTool('editor')!} /> },
+    ]);
     await user.click(await screen.findByRole('button', { name: 'Informe académico' }));
     await waitFor(async () => expect(await listDocuments(db)).toHaveLength(1));
     expect(await screen.findByRole('heading', { name: '1. Introducción' })).toBeInTheDocument();
@@ -317,7 +373,9 @@ describe('study tools', () => {
     ].join('\n\n');
     const { container } = renderWithProviders(<MarkdownView blocks={parseMarkdown(payload)} />);
     expect(container.querySelector('script, img, b[onmouseover]')).toBeNull();
-    expect([...container.querySelectorAll('a')].every((a) => /^https?:/.test(a.getAttribute('href') ?? ''))).toBe(true);
+    expect(
+      [...container.querySelectorAll('a')].every((a) => /^https?:/.test(a.getAttribute('href') ?? '')),
+    ).toBe(true);
     expect(container.textContent).toContain('<script>window.__xss=1</script>');
     expect((window as unknown as { __xss?: number }).__xss).toBeUndefined();
   });

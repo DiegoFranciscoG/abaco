@@ -27,7 +27,9 @@ export default function ToolsPage() {
                 </span>
                 <span className="font-display text-xl leading-tight font-semibold">{tool.nombre}</span>
                 <span className="text-sm text-muted">{tool.descripcion}</span>
-                <span className="mt-auto text-xs font-semibold tracking-wide text-muted uppercase">{areaLabel(tool.area)}</span>
+                <span className="mt-auto text-xs font-semibold tracking-wide text-muted uppercase">
+                  {areaLabel(tool.area)}
+                </span>
               </TiltCard>
             </AppLink>
           </li>

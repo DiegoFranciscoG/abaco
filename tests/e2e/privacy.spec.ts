@@ -83,10 +83,15 @@ test('T-04: nada personal sale del dispositivo', async ({ page }) => {
   for (const request of requests) {
     const url = new URL(request.url());
     const payload = `${request.url()} ${request.postData() ?? ''} ${JSON.stringify(request.headers())}`;
-    const allowed = url.origin === origin || ALLOWED_HOSTS.includes(url.host) || url.protocol === 'data:' || url.protocol === 'blob:';
+    const allowed =
+      url.origin === origin ||
+      ALLOWED_HOSTS.includes(url.host) ||
+      url.protocol === 'data:' ||
+      url.protocol === 'blob:';
     if (!allowed) offenders.push(`origen no permitido: ${url.origin}`);
     for (const secret of [NOTE_TEXT, 'Apunte secreto', COLLECTION_NAME, deviceId, deviceId.slice(0, 8)]) {
-      if (payload.includes(secret) || payload.includes(encodeURIComponent(secret))) offenders.push(`${secret} en ${url.host}`);
+      if (payload.includes(secret) || payload.includes(encodeURIComponent(secret)))
+        offenders.push(`${secret} en ${url.host}`);
     }
   }
   expect(offenders).toEqual([]);
@@ -103,19 +108,28 @@ test('T-09: fuentes caídas o lentas no rompen el buscador', async ({ page }) =>
   await mockAcademicApis(page, {
     'api.crossref.org': (route) => route.abort('failed'),
     'api.openalex.org': (route) => route.abort('timedout'),
-    'doaj.org': (route) => route.fulfill({ status: 500, body: 'error', headers: { 'Access-Control-Allow-Origin': '*' } }),
+    'doaj.org': (route) =>
+      route.fulfill({ status: 500, body: 'error', headers: { 'Access-Control-Allow-Origin': '*' } }),
   });
   await open(page, '/buscar');
   await page.getByLabel('Tema a buscar').fill('niif pymes');
   const started = Date.now();
   await page.getByRole('button', { name: 'Buscar', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Aplicación de la NIIF para las PYMES en comercios de Cuenca' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Aplicación de la NIIF para las PYMES en comercios de Cuenca' }),
+  ).toBeVisible();
   expect(Date.now() - started).toBeLessThan(10_000);
   const status = page.getByRole('list', { name: 'Estado de cada fuente' });
   await expect(status).toContainText('Crossref');
   await expect(status).toContainText('DOAJ');
-  await expect(page.getByRole('link', { name: /Google Académico/ })).toHaveAttribute('href', /scholar\.google\.com\/scholar\?hl=es&q=niif%20pymes/);
-  await expect(page.getByRole('link', { name: /Scribd/ })).toHaveAttribute('href', /scribd\.com\/search\?query=niif%20pymes/);
+  await expect(page.getByRole('link', { name: /Google Académico/ })).toHaveAttribute(
+    'href',
+    /scholar\.google\.com\/scholar\?hl=es&q=niif%20pymes/,
+  );
+  await expect(page.getByRole('link', { name: /Scribd/ })).toHaveAttribute(
+    'href',
+    /scribd\.com\/search\?query=niif%20pymes/,
+  );
 });
 
 /** T-06 through the interface: download a backup, wipe everything, restore it. */

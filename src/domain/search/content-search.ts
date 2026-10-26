@@ -36,10 +36,13 @@ export function searchContent(
 ): SearchHit[] {
   const text = query.trim();
   if (text.length < 2) return [];
-  const filter = options.types ? (r: { tipo: SearchDocType }) => options.types?.includes(r.tipo) ?? true : undefined;
+  const filter = options.types
+    ? (r: { tipo: SearchDocType }) => options.types?.includes(r.tipo) ?? true
+    : undefined;
   let results = index.search(text, filter ? { filter: filter as never } : {});
   // If every word is required and nothing matches, fall back to "any word".
-  if (results.length === 0) results = index.search(text, { combineWith: 'OR', ...(filter ? { filter: filter as never } : {}) });
+  if (results.length === 0)
+    results = index.search(text, { combineWith: 'OR', ...(filter ? { filter: filter as never } : {}) });
   return results.slice(0, options.limit ?? 30).map((r) => ({
     id: String(r.id),
     tipo: r.tipo as SearchDocType,

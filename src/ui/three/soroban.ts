@@ -66,7 +66,14 @@ export function earthY(bead: number, active: boolean): number {
 }
 
 /** Critically-damped-ish spring step used by every bead (slight overshoot feels like a real "clack"). */
-export function springStep(position: number, velocity: number, target: number, dt: number, stiffness = 320, damping = 24) {
+export function springStep(
+  position: number,
+  velocity: number,
+  target: number,
+  dt: number,
+  stiffness = 320,
+  damping = 24,
+) {
   const force = -stiffness * (position - target) - damping * velocity;
   const v = velocity + force * dt;
   return { position: position + v * dt, velocity: v };

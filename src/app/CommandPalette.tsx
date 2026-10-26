@@ -47,8 +47,14 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
     if (!open && d.open) d.close();
   }, [open]);
 
-  const hits: SearchHit[] = useMemo(() => (index && search ? search.searchContent(index, query, { limit: 12 }) : []), [index, search, query]);
-  const suggestions = useMemo(() => (index && search && hits.length === 0 ? search.suggest(index, query) : []), [index, search, hits.length, query]);
+  const hits: SearchHit[] = useMemo(
+    () => (index && search ? search.searchContent(index, query, { limit: 12 }) : []),
+    [index, search, query],
+  );
+  const suggestions = useMemo(
+    () => (index && search && hits.length === 0 ? search.suggest(index, query) : []),
+    [index, search, hits.length, query],
+  );
 
   const go = (to: string) => {
     onClose();
@@ -94,7 +100,12 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
           aria-activedescendant={hits[active] ? `hit-${active}` : undefined}
           aria-label="Escribe lo que buscas"
         />
-        <button type="button" className="btn btn-icon border-0" onClick={onClose} aria-label="Cerrar búsqueda">
+        <button
+          type="button"
+          className="btn btn-icon border-0"
+          onClick={onClose}
+          aria-label="Cerrar búsqueda"
+        >
           <Icon name="close" />
         </button>
       </div>
@@ -103,7 +114,11 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
           <ul className="space-y-1" aria-label="Accesos rápidos">
             {QUICK.map((q) => (
               <li key={q.to}>
-                <button type="button" onClick={() => go(q.to)} className="flex min-h-12 w-full items-center gap-3 rounded-xl px-3 text-left hover:bg-surface-2">
+                <button
+                  type="button"
+                  onClick={() => go(q.to)}
+                  className="flex min-h-12 w-full items-center gap-3 rounded-xl px-3 text-left hover:bg-surface-2"
+                >
                   <span className="tile h-9 w-9 rounded-xl">
                     <Icon name={q.icon} size={18} />
                   </span>
@@ -119,7 +134,15 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
               <div className="mt-3 flex flex-wrap justify-center gap-2">
                 <span>¿Quisiste decir?</span>
                 {suggestions.map((s) => (
-                  <button key={s} type="button" className="chip" onClick={() => { setQuery(s); setActive(0); }}>
+                  <button
+                    key={s}
+                    type="button"
+                    className="chip"
+                    onClick={() => {
+                      setQuery(s);
+                      setActive(0);
+                    }}
+                  >
                     {s}
                   </button>
                 ))}

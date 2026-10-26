@@ -1,5 +1,10 @@
 import { describe, expect, it, vi } from 'vitest';
-import { installState, listenForInstallPrompt, promptInstall, subscribeInstall } from '../../src/app/install-prompt';
+import {
+  installState,
+  listenForInstallPrompt,
+  promptInstall,
+  subscribeInstall,
+} from '../../src/app/install-prompt';
 
 describe('instalar como app', () => {
   it('keeps the browser prompt and opens it on demand', async () => {
@@ -8,7 +13,10 @@ describe('instalar como app', () => {
     const listener = vi.fn();
     const unsubscribe = subscribeInstall(listener);
 
-    const event = new Event('beforeinstallprompt', { cancelable: true }) as Event & { prompt: () => Promise<void>; userChoice: Promise<{ outcome: string }> };
+    const event = new Event('beforeinstallprompt', { cancelable: true }) as Event & {
+      prompt: () => Promise<void>;
+      userChoice: Promise<{ outcome: string }>;
+    };
     const prompt = vi.fn(async () => undefined);
     Object.assign(event, { prompt, userChoice: Promise.resolve({ outcome: 'accepted' }) });
     window.dispatchEvent(event);

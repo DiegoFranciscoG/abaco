@@ -26,7 +26,8 @@ function validate({ g, h, e, f }: MarketInput): void {
   if (![g, h, e, f].every(Number.isFinite)) throw new RangeError('Todos los valores deben ser números.');
   if (h <= 0 || f <= 0) throw new RangeError('Las pendientes deben ser mayores que cero.');
   if (e < 0) throw new RangeError('El precio mínimo de la oferta no puede ser negativo.');
-  if (g <= e) throw new RangeError('El precio máximo de la demanda debe superar el precio mínimo de la oferta.');
+  if (g <= e)
+    throw new RangeError('El precio máximo de la demanda debe superar el precio mínimo de la oferta.');
 }
 
 export function equilibrium(input: MarketInput): Equilibrium {
@@ -54,7 +55,8 @@ export interface TaxEffect {
 /** Per-unit tax paid by sellers: supply shifts up by `t`. */
 export function taxEffect(input: MarketInput, t: number): TaxEffect {
   validate(input);
-  if (!Number.isFinite(t) || t < 0) throw new RangeError('El impuesto debe ser un número mayor o igual a cero.');
+  if (!Number.isFinite(t) || t < 0)
+    throw new RangeError('El impuesto debe ser un número mayor o igual a cero.');
   const base = equilibrium(input);
   const { g, h, e, f } = input;
   const cantidad = Math.max(0, (g - e - t) / (h + f));
@@ -80,10 +82,20 @@ export function priceControl(input: MarketInput, precio: number, tipo: 'maximo' 
   const demandada = Math.max(0, (g - precio) / h);
   const ofrecida = Math.max(0, (precio - e) / f);
   if (tipo === 'maximo' && precio < eq.precio) {
-    return { tipo: 'escasez', cantidadDemandada: demandada, cantidadOfrecida: ofrecida, faltante: demandada - ofrecida };
+    return {
+      tipo: 'escasez',
+      cantidadDemandada: demandada,
+      cantidadOfrecida: ofrecida,
+      faltante: demandada - ofrecida,
+    };
   }
   if (tipo === 'minimo' && precio > eq.precio) {
-    return { tipo: 'excedente', cantidadDemandada: demandada, cantidadOfrecida: ofrecida, sobrante: ofrecida - demandada };
+    return {
+      tipo: 'excedente',
+      cantidadDemandada: demandada,
+      cantidadOfrecida: ofrecida,
+      sobrante: ofrecida - demandada,
+    };
   }
   return { tipo: 'sin-efecto' };
 }

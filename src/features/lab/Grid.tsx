@@ -1,6 +1,13 @@
 import { useMemo, useRef, useState } from 'react';
 import type { CellFormat } from '../../domain/content/schemas';
-import { cellKey, ERROR_HINTS_ES, FormulaError, indexToColumn, parseCellRef, type Locale } from '../../domain/formula';
+import {
+  cellKey,
+  ERROR_HINTS_ES,
+  FormulaError,
+  indexToColumn,
+  parseCellRef,
+  type Locale,
+} from '../../domain/formula';
 import { formatValue } from '../../domain/sheet/format';
 import { SHEET_LIMITS, type CellResult } from '../../domain/sheet/sheet';
 import { applySuggestion, suggestFunctions } from '../../domain/sheet/suggest';
@@ -54,7 +61,9 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
     if (row >= rows) setExtraRows((n) => n + 10);
     onSelect(cellKey(col, row));
     window.requestAnimationFrame(() => {
-      document.getElementById(`cell-${cellKey(col, row)}`)?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      document
+        .getElementById(`cell-${cellKey(col, row)}`)
+        ?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
     });
   };
 
@@ -67,7 +76,12 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
 
   const onGridKey = (event: React.KeyboardEvent) => {
     if (editing) return;
-    const keys: Record<string, [number, number]> = { ArrowUp: [0, -1], ArrowDown: [0, 1], ArrowLeft: [-1, 0], ArrowRight: [1, 0] };
+    const keys: Record<string, [number, number]> = {
+      ArrowUp: [0, -1],
+      ArrowDown: [0, 1],
+      ArrowLeft: [-1, 0],
+      ArrowRight: [1, 0],
+    };
     const delta = keys[event.key];
     if (delta) {
       event.preventDefault();
@@ -92,7 +106,9 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
   const onBarKey = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (suggestions.length > 0 && (event.key === 'ArrowDown' || event.key === 'ArrowUp')) {
       event.preventDefault();
-      setSuggestIndex((i) => (event.key === 'ArrowDown' ? Math.min(i + 1, suggestions.length - 1) : Math.max(i - 1, 0)));
+      setSuggestIndex((i) =>
+        event.key === 'ArrowDown' ? Math.min(i + 1, suggestions.length - 1) : Math.max(i - 1, 0),
+      );
       return;
     }
     if (suggestions.length > 0 && event.key === 'Tab') {
@@ -117,7 +133,10 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
   return (
     <div className="card overflow-hidden">
       <div className="relative flex items-center gap-2 border-b border-line bg-surface-2 px-3 py-2">
-        <span className="tnum w-14 shrink-0 rounded-lg bg-surface px-2 py-1.5 text-center font-mono text-sm font-semibold" aria-label="Celda seleccionada">
+        <span
+          className="tnum w-14 shrink-0 rounded-lg bg-surface px-2 py-1.5 text-center font-mono text-sm font-semibold"
+          aria-label="Celda seleccionada"
+        >
           {selected}
         </span>
         <span className="font-mono text-muted italic" aria-hidden="true">
@@ -126,7 +145,9 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
         <input
           ref={formulaBar}
           value={value}
-          onFocus={() => setDraftState((prev) => (prev && prev.key === selected ? prev : { key: selected, value: raw }))}
+          onFocus={() =>
+            setDraftState((prev) => (prev && prev.key === selected ? prev : { key: selected, value: raw }))
+          }
           onChange={(e) => {
             setDraft(e.target.value);
             setSuggestIndex(0);
@@ -144,7 +165,11 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
           placeholder={locale === 'es' ? '=PAGO(1%;12;-1000)' : '=PMT(1%,12,-1000)'}
         />
         {suggestions.length > 0 ? (
-          <ul role="listbox" aria-label="Funciones sugeridas" className="card absolute top-full right-3 left-20 z-30 mt-1 max-h-72 overflow-auto p-1">
+          <ul
+            role="listbox"
+            aria-label="Funciones sugeridas"
+            className="card absolute top-full right-3 left-20 z-30 mt-1 max-h-72 overflow-auto p-1"
+          >
             {suggestions.map((s, i) => (
               <li key={s.info.name} role="option" aria-selected={i === suggestIndex}>
                 <button
@@ -169,12 +194,17 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
         ) : null}
       </div>
       {error ? (
-        <p className="flex items-start gap-2 border-b border-line bg-red-tint px-3 py-2 text-sm text-ink-2" role="status">
+        <p
+          className="flex items-start gap-2 border-b border-line bg-red-tint px-3 py-2 text-sm text-ink-2"
+          role="status"
+        >
           <Icon name="info" size={16} className="mt-0.5 text-red" />
           {result?.syntaxError ?? ERROR_HINTS_ES[error.code]}
         </p>
       ) : result?.spilled ? (
-        <p className="border-b border-line bg-surface-2 px-3 py-2 text-xs text-muted">Esta fórmula produce varios valores; se muestra el primero.</p>
+        <p className="border-b border-line bg-surface-2 px-3 py-2 text-xs text-muted">
+          Esta fórmula produce varios valores; se muestra el primero.
+        </p>
       ) : null}
 
       <div
@@ -190,7 +220,10 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
         <table className="tnum border-separate border-spacing-0 text-sm">
           <thead className="sticky top-0 z-10">
             <tr role="row">
-              <th className="sticky left-0 z-20 w-11 border-r border-b border-line bg-surface-2" aria-hidden="true" />
+              <th
+                className="sticky left-0 z-20 w-11 border-r border-b border-line bg-surface-2"
+                aria-hidden="true"
+              />
               {Array.from({ length: cols }, (_, c) => (
                 <th
                   key={c}
@@ -223,7 +256,9 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
                   const isSelected = key === selected;
                   const isError = cellResult?.value instanceof FormulaError;
                   const isNumber = typeof cellResult?.value === 'number';
-                  const shown = cellResult ? formatValue(cellResult.value, formats[key] ?? 'general', locale) : '';
+                  const shown = cellResult
+                    ? formatValue(cellResult.value, formats[key] ?? 'general', locale)
+                    : '';
                   return (
                     <td
                       key={key}
@@ -254,7 +289,11 @@ export function Grid({ cells, results, formats, locale, selected, onSelect, onCo
       </div>
       {rows < SHEET_LIMITS.rows ? (
         <div className="border-t border-line px-3 py-2">
-          <button type="button" className="btn btn-ghost min-h-10 text-sm" onClick={() => setExtraRows((n) => n + 20)}>
+          <button
+            type="button"
+            className="btn btn-ghost min-h-10 text-sm"
+            onClick={() => setExtraRows((n) => n + 20)}
+          >
             <Icon name="plus" size={16} /> 20 filas más
           </button>
         </div>

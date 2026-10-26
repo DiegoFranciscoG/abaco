@@ -234,7 +234,9 @@ function evaluateSpecialForm(name: string, args: Node[], ctx: EvalContext): Valu
       const flags: boolean[] = [];
       for (let i = 0; i < args.length; i += 1) {
         const value = arg(i);
-        const cells = isMatrix(value) ? value.flat().filter((c) => c !== null && typeof c !== 'string') : [value];
+        const cells = isMatrix(value)
+          ? value.flat().filter((c) => c !== null && typeof c !== 'string')
+          : [value];
         for (const cell of cells) {
           const flag = toBoolean(cell);
           if (flag instanceof FormulaError) return flag;

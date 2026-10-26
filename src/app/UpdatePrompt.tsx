@@ -29,9 +29,15 @@ export function UpdatePrompt() {
     <div className="fixed inset-x-3 bottom-24 z-50 mx-auto max-w-md md:bottom-6" role="status">
       <div className="card flex items-center gap-3 px-4 py-3 text-sm">
         <Icon name={update ? 'sparkle' : 'check'} className="shrink-0 text-red" />
-        <p className="flex-1">{update ? 'Hay una versión nueva de ÁBACO.' : 'Listo: ÁBACO ya funciona sin conexión.'}</p>
+        <p className="flex-1">
+          {update ? 'Hay una versión nueva de ÁBACO.' : 'Listo: ÁBACO ya funciona sin conexión.'}
+        </p>
         {update ? (
-          <button type="button" className="btn btn-primary min-h-10 px-3 text-sm" onClick={() => void update()}>
+          <button
+            type="button"
+            className="btn btn-primary min-h-10 px-3 text-sm"
+            onClick={() => void update()}
+          >
             Actualizar
           </button>
         ) : null}

@@ -63,17 +63,23 @@ function Sent({ mail, onAgain }: { mail: SuggestionMail; onAgain: () => void }) 
         <span className="tile">
           <Icon name="check" />
         </span>
-        <h2 ref={heading} id="gracias" className="font-display text-3xl font-semibold outline-none" tabIndex={-1}>
+        <h2
+          ref={heading}
+          id="gracias"
+          className="font-display text-3xl font-semibold outline-none"
+          tabIndex={-1}
+        >
           ¡Gracias por ayudar a mejorar ÁBACO!
         </h2>
         {mail.tooLong ? (
           <p className="text-ink-2">
-            Tu mensaje es largo para abrirlo directo en el correo. Cópialo y envíalo a <strong>{address}</strong>.
+            Tu mensaje es largo para abrirlo directo en el correo. Cópialo y envíalo a{' '}
+            <strong>{address}</strong>.
           </p>
         ) : (
           <p className="text-ink-2">
-            Se abrió tu aplicación de correo con el mensaje listo: solo pulsa <strong>Enviar</strong>. Si no se abrió, cópialo y
-            envíalo a <strong>{address}</strong>.
+            Se abrió tu aplicación de correo con el mensaje listo: solo pulsa <strong>Enviar</strong>. Si no
+            se abrió, cópialo y envíalo a <strong>{address}</strong>.
           </p>
         )}
         <details className="rounded-2xl border border-line p-4">
@@ -107,7 +113,10 @@ export default function SuggestionsPage() {
   const [sent, setSent] = useState<SuggestionMail | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const id = useId();
-  const ids = Object.fromEntries(FIELD_ORDER.map((f) => [f, `${id}-${f}`])) as Record<(typeof FIELD_ORDER)[number], string>;
+  const ids = Object.fromEntries(FIELD_ORDER.map((f) => [f, `${id}-${f}`])) as Record<
+    (typeof FIELD_ORDER)[number],
+    string
+  >;
 
   const set = <K extends keyof SuggestionInput>(key: K, value: SuggestionInput[K]) => {
     setInput((prev) => ({ ...prev, [key]: value }));
@@ -134,7 +143,10 @@ export default function SuggestionsPage() {
       return;
     }
     const materiaNombre = result.value.materia ? getMateria(result.value.materia)?.nombre : undefined;
-    const mail = buildSuggestionMail(result.value, { address: suggestionAddress(), ...(materiaNombre ? { materiaNombre } : {}) });
+    const mail = buildSuggestionMail(result.value, {
+      address: suggestionAddress(),
+      ...(materiaNombre ? { materiaNombre } : {}),
+    });
     recordSuggestion(result.value.mensaje);
     setSent(mail);
     if (!mail.tooLong) openMailApp(mail.href);
@@ -162,12 +174,21 @@ export default function SuggestionsPage() {
         <Sent mail={sent} onAgain={again} />
       ) : (
         <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-          <form ref={formRef} noValidate onSubmit={submit} className="card space-y-6 p-5 sm:p-7" aria-label="Enviar una sugerencia">
+          <form
+            ref={formRef}
+            noValidate
+            onSubmit={submit}
+            className="card space-y-6 p-5 sm:p-7"
+            aria-label="Enviar una sugerencia"
+          >
             <fieldset>
               <legend className="mb-2 text-sm font-semibold text-ink-2">¿De qué trata? *</legend>
               <div className="flex flex-wrap gap-2" aria-describedby={described('tipo')}>
                 {SUGGESTION_KINDS.map((k, i) => (
-                  <label key={k.id} className={`chip min-h-10 cursor-pointer ${input.tipo === k.id ? 'border-red bg-red-soft text-red' : ''}`}>
+                  <label
+                    key={k.id}
+                    className={`chip min-h-10 cursor-pointer ${input.tipo === k.id ? 'border-red bg-red-soft text-red' : ''}`}
+                  >
                     <input
                       type="radio"
                       name="tipo"
@@ -223,7 +244,9 @@ export default function SuggestionsPage() {
                 aria-describedby={described('mensaje', `${ids.mensaje}-hint`)}
               />
               <p id={`${ids.mensaje}-hint`} className="mt-1 flex justify-between gap-3 text-xs text-muted">
-                <span>Sé concreto: qué falta o qué está mal, y dónde. Sin cédulas, teléfonos ni correos.</span>
+                <span>
+                  Sé concreto: qué falta o qué está mal, y dónde. Sin cédulas, teléfonos ni correos.
+                </span>
                 <span className="tnum shrink-0">
                   {input.mensaje.length}/{MESSAGE_MAX}
                 </span>
@@ -247,7 +270,9 @@ export default function SuggestionsPage() {
                 aria-describedby={described('fuente', `${ids.fuente}-hint`)}
               />
               <p id={`${ids.fuente}-hint`} className="mt-1 text-xs text-muted">
-                {correction ? 'Obligatoria para correcciones: así puedo comprobar el cambio.' : 'Ayuda a verificar tu propuesta más rápido.'}
+                {correction
+                  ? 'Obligatoria para correcciones: así puedo comprobar el cambio.'
+                  : 'Ayuda a verificar tu propuesta más rápido.'}
               </p>
               <FieldError id={`${ids.fuente}-error`} message={errors.fuente} />
             </div>
@@ -256,7 +281,13 @@ export default function SuggestionsPage() {
             <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
               <label>
                 No llenes este campo
-                <input tabIndex={-1} autoComplete="off" value={input.trampa} onChange={(e) => set('trampa', e.target.value)} name="sitio-web" />
+                <input
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={input.trampa}
+                  onChange={(e) => set('trampa', e.target.value)}
+                  name="sitio-web"
+                />
               </label>
             </div>
 
@@ -272,8 +303,8 @@ export default function SuggestionsPage() {
                   aria-describedby={described('consentimiento')}
                 />
                 <span>
-                  Acepto que {SITE.titular} reciba mi mensaje y la dirección de correo desde la que lo envíe, solo para atender esta
-                  sugerencia y responderme, como explica la{' '}
+                  Acepto que {SITE.titular} reciba mi mensaje y la dirección de correo desde la que lo envíe,
+                  solo para atender esta sugerencia y responderme, como explica la{' '}
                   <AppLink to="/legal/privacidad" className="link-red">
                     política de privacidad
                   </AppLink>
@@ -289,7 +320,9 @@ export default function SuggestionsPage() {
               <button type="submit" className="btn btn-primary">
                 <Icon name="arrow-right" size={18} /> Enviar sugerencia
               </button>
-              <span className="text-xs text-muted">* Obligatorio. Se abrirá tu aplicación de correo con el mensaje listo.</span>
+              <span className="text-xs text-muted">
+                * Obligatorio. Se abrirá tu aplicación de correo con el mensaje listo.
+              </span>
             </div>
           </form>
 
@@ -299,8 +332,14 @@ export default function SuggestionsPage() {
               <ol className="list-decimal space-y-2 pl-5">
                 <li>Escribes tu idea y, si es una corrección, la fuente que la respalda.</li>
                 <li>ÁBACO revisa que el mensaje se entienda, sea respetuoso y no tenga datos personales.</li>
-                <li>Se abre tu correo con el mensaje listo para {suggestionAddress()}. ÁBACO no lo envía por ti ni lo guarda.</li>
-                <li>Leo cada sugerencia; las que se verifican con una fuente oficial se publican en la siguiente versión.</li>
+                <li>
+                  Se abre tu correo con el mensaje listo para {suggestionAddress()}. ÁBACO no lo envía por ti
+                  ni lo guarda.
+                </li>
+                <li>
+                  Leo cada sugerencia; las que se verifican con una fuente oficial se publican en la siguiente
+                  versión.
+                </li>
               </ol>
               <p className="text-xs text-muted">Límite por dispositivo: tres sugerencias al día.</p>
             </div>

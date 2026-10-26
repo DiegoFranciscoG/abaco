@@ -49,7 +49,17 @@ export default function TopicPage() {
             id={s.id}
             title={s.nombre}
             defaultOpen={openSubtopic === s.id}
-            aside={<StarButton compact star={{ tipo: 'subtema', refId: s.id, titulo: s.nombre, ruta: `${base}/tema/${tema.id}?s=${s.id}` }} />}
+            aside={
+              <StarButton
+                compact
+                star={{
+                  tipo: 'subtema',
+                  refId: s.id,
+                  titulo: s.nombre,
+                  ruta: `${base}/tema/${tema.id}?s=${s.id}`,
+                }}
+              />
+            }
           >
             <div className="space-y-5">
               <p className="text-[1.02rem] leading-relaxed text-ink-2">{s.explicacion}</p>
@@ -65,7 +75,9 @@ export default function TopicPage() {
                 </ul>
               </div>
               <div className="rounded-2xl bg-warn-soft p-4">
-                <h3 className="mb-2 text-xs font-bold tracking-[0.12em] text-warn uppercase">Errores frecuentes</h3>
+                <h3 className="mb-2 text-xs font-bold tracking-[0.12em] text-warn uppercase">
+                  Errores frecuentes
+                </h3>
                 <ul className="space-y-1.5">
                   {s.errores_frecuentes.map((e) => (
                     <li key={e} className="flex gap-2 text-sm text-ink-2">
@@ -80,7 +92,11 @@ export default function TopicPage() {
                   <h3 className="eyebrow mb-2">Fórmulas</h3>
                   <div className="flex flex-wrap gap-2">
                     {s.formulas.map((id) => (
-                      <AppLink key={id} to={`/formulas/${id}`} className="chip hover:border-red hover:text-red">
+                      <AppLink
+                        key={id}
+                        to={`/formulas/${id}`}
+                        className="chip hover:border-red hover:text-red"
+                      >
                         <Icon name="formula" size={15} /> {formulaName.get(id) ?? id}
                       </AppLink>
                     ))}
@@ -89,7 +105,14 @@ export default function TopicPage() {
               ) : null}
               <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
                 <SourceNote fuente={s.fuente} />
-                <AddToCollectionButton item={{ tipo: 'subtema', refId: s.id, titulo: s.nombre, ruta: `${base}/tema/${tema.id}?s=${s.id}` }} />
+                <AddToCollectionButton
+                  item={{
+                    tipo: 'subtema',
+                    refId: s.id,
+                    titulo: s.nombre,
+                    ruta: `${base}/tema/${tema.id}?s=${s.id}`,
+                  }}
+                />
               </div>
             </div>
           </Accordion>
@@ -109,7 +132,10 @@ export default function TopicPage() {
           <span />
         )}
         {next ? (
-          <AppLink to={`${base}/tema/${next.id}`} className="card card-lift flex items-center justify-end gap-3 p-4 text-right">
+          <AppLink
+            to={`${base}/tema/${next.id}`}
+            className="card card-lift flex items-center justify-end gap-3 p-4 text-right"
+          >
             <span>
               <span className="block text-xs text-muted">Siguiente tema</span>
               <span className="font-semibold">{next.nombre}</span>

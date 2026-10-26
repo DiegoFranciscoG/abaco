@@ -21,14 +21,42 @@ const CONTACTO = `escribe a ${suggestionAddress()} (también desde el buzón de 
 
 /** Third-party services the browser talks to, and only when the student uses the feature. */
 export const SERVICIOS_EXTERNOS = [
-  { nombre: 'GitHub Pages (GitHub, Inc.)', uso: 'Aloja los archivos de la app. Registra la dirección IP de cada visita por seguridad, según su propia documentación.', url: 'https://docs.github.com/es/pages/getting-started-with-github-pages/about-github-pages' },
-  { nombre: 'Crossref', uso: 'Buscador académico: recibe el texto que buscas.', url: 'https://www.crossref.org/' },
-  { nombre: 'OpenAlex (OurResearch)', uso: 'Buscador académico: recibe el texto que buscas.', url: 'https://openalex.org/' },
+  {
+    nombre: 'GitHub Pages (GitHub, Inc.)',
+    uso: 'Aloja los archivos de la app. Registra la dirección IP de cada visita por seguridad, según su propia documentación.',
+    url: 'https://docs.github.com/es/pages/getting-started-with-github-pages/about-github-pages',
+  },
+  {
+    nombre: 'Crossref',
+    uso: 'Buscador académico: recibe el texto que buscas.',
+    url: 'https://www.crossref.org/',
+  },
+  {
+    nombre: 'OpenAlex (OurResearch)',
+    uso: 'Buscador académico: recibe el texto que buscas.',
+    url: 'https://openalex.org/',
+  },
   { nombre: 'DOAJ', uso: 'Buscador académico: recibe el texto que buscas.', url: 'https://doaj.org/' },
-  { nombre: 'LA Referencia', uso: 'Buscador académico: recibe el texto que buscas.', url: 'https://www.lareferencia.info/' },
-  { nombre: 'Open Library (Internet Archive)', uso: 'Buscador académico (libros): recibe el texto que buscas.', url: 'https://openlibrary.org/' },
-  { nombre: 'Banco Mundial', uso: 'Herramienta de datos macro: recibe el país y el indicador elegidos.', url: 'https://data.worldbank.org/' },
-  { nombre: 'Frankfurter (datos del Banco Central Europeo)', uso: 'Herramienta de tipos de cambio: recibe las monedas y fechas elegidas.', url: 'https://frankfurter.dev/' },
+  {
+    nombre: 'LA Referencia',
+    uso: 'Buscador académico: recibe el texto que buscas.',
+    url: 'https://www.lareferencia.info/',
+  },
+  {
+    nombre: 'Open Library (Internet Archive)',
+    uso: 'Buscador académico (libros): recibe el texto que buscas.',
+    url: 'https://openlibrary.org/',
+  },
+  {
+    nombre: 'Banco Mundial',
+    uso: 'Herramienta de datos macro: recibe el país y el indicador elegidos.',
+    url: 'https://data.worldbank.org/',
+  },
+  {
+    nombre: 'Frankfurter (datos del Banco Central Europeo)',
+    uso: 'Herramienta de tipos de cambio: recibe las monedas y fechas elegidas.',
+    url: 'https://frankfurter.dev/',
+  },
 ] as const;
 
 export const LEGAL_DOCS: LegalDoc[] = [
@@ -129,7 +157,9 @@ export const LEGAL_DOCS: LegalDoc[] = [
       },
       {
         titulo: '8. Ley aplicable y contacto',
-        parrafos: [`Estos términos se rigen por las leyes de la República del Ecuador. Para dudas o reclamos, ${CONTACTO}.`],
+        parrafos: [
+          `Estos términos se rigen por las leyes de la República del Ecuador. Para dudas o reclamos, ${CONTACTO}.`,
+        ],
       },
     ],
   },
@@ -207,7 +237,9 @@ export const LEGAL_DOCS: LegalDoc[] = [
       },
       {
         titulo: 'Cambios',
-        parrafos: [`Vigente desde el ${SITE.vigencia}. Si cambia, se actualizará esta fecha y el cambio se explicará en esta página.`],
+        parrafos: [
+          `Vigente desde el ${SITE.vigencia}. Si cambia, se actualizará esta fecha y el cambio se explicará en esta página.`,
+        ],
       },
     ],
   },
@@ -321,7 +353,9 @@ export const LEGAL_DOCS: LegalDoc[] = [
       },
       {
         titulo: 'Reportar una barrera',
-        parrafos: [`Si algo te impide usar ÁBACO, ${CONTACTO}. Indica la página y qué tecnología de apoyo usas.`],
+        parrafos: [
+          `Si algo te impide usar ÁBACO, ${CONTACTO}. Indica la página y qué tecnología de apoyo usas.`,
+        ],
       },
     ],
   },
