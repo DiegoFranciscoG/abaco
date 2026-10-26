@@ -143,6 +143,14 @@ export default defineConfig(({ mode }) => {
       target: 'es2022',
       sourcemap: false,
       chunkSizeWarningLimit: 700,
+      rolldownOptions: {
+        output: {
+          // The pdf.js worker ships as .mjs; some static servers send that extension as text/plain and browsers
+          // then refuse to run it. Published as .js it gets a JavaScript MIME type on every host.
+          assetFileNames: (asset) =>
+            asset.names.some((name) => name.endsWith('.mjs')) ? 'assets/[name]-[hash].js' : 'assets/[name]-[hash][extname]',
+        },
+      },
     },
     server: { port: 5173 },
   };
