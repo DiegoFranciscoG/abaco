@@ -2,29 +2,42 @@
 
 Todo se consultó el **2026-10-14** salvo que se indique otra fecha. Regla aplicada: si dos fuentes se contradicen, gana la oficial y más reciente. Lo que no se pudo verificar queda marcado como **SUPUESTO** o **PENDIENTE** y no se publica en la app.
 
-## 1. Mallas curriculares (fuente oficial de cada carrera)
+## 1. Catálogo de materias (sin mallas universitarias)
 
-Método: descarga de la página oficial de cada carrera (los `robots.txt` de ambas universidades permiten esas rutas), extracción de la lista de asignaturas por ciclo y comparación del conteo contra lo que la propia página declara. El texto de cada asignatura se guarda **tal como lo publica la universidad** (`nombre_oficial`) y se agrega un `nombre` normalizado solo para lectura (mayúsculas y minúsculas, sin punto final).
+**Decisión (2026-10-25):** ÁBACO **no publica mallas ni planes de estudio** de ninguna universidad, ni usa sus nombres o marcas. Solo ofrece un catálogo de **materias → temas → subtemas** con redacción propia y una fuente citada en cada subtema.
 
-| # | Carrera | URL oficial | Ciclos | Asignaturas listadas | Declaradas por la página | Observación |
-|---|---|---|---|---|---|---|
-| M1 | UCuenca · Administración de Empresas | https://www.ucuenca.edu.ec/carreras/administracion-de-empresas/ | 8 | 50 | — | Presencial · Licenciado/a en Administración de Empresas |
-| M2 | UCuenca · Administración de Empresas (Modalidad Dual) | https://www.ucuenca.edu.ec/carreras/administracion-de-empresas-modalidad-dual/ | 8 | 51 | — | La página repite algunas asignaturas en el mismo ciclo y divide "Práctica Preprofesional III" en dos ítems; se reproduce tal cual con nota visible |
-| M3 | UCuenca · Contabilidad y Auditoría | https://www.ucuenca.edu.ec/carreras/contabilidad-y-auditoria/ | 8 | 51 | — | Presencial · PASLE B1 en 8.º ciclo |
-| M4 | UCuenca · Economía | https://www.ucuenca.edu.ec/carreras/economia/ | 8 | 50 | — | Título: Economista |
-| M5 | UCuenca · Emprendimiento e Innovación | https://www.ucuenca.edu.ec/carreras/emprendimiento-e-innovacion/ | 8 | 57 | — | — |
-| M6 | UCuenca · Mercadotecnia | https://www.ucuenca.edu.ec/carreras/mercadotecnia/ | 8 | 50 | — | — |
-| M7 | UCACUE · Administración de Empresas | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-administracion-de-empresas/ | 8 | 40 | 42 | Diferencia mostrada en la app |
-| M8 | UCACUE · Administración de Empresas (Dual) | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-administracin-de-empresas-dual/ | 8 | 46 | 42 | Incluye 6 "Prácticas en entornos laborales" como ítems de malla |
-| M9 | UCACUE · Contabilidad y Auditoría | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-contabilidad-y-auditoria/ | 8 | 38 | 40 | 5 760 h · 120 créditos · presencial y en línea |
-| M10 | UCACUE · Economía | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-economia/ | 8 | 39 | 40 | — |
-| M11 | UCACUE · Finanzas, Banca y Seguros | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-finanzas-banca-y-seguros/ | 8 | 39 | 40 | Solo en línea |
-| M12 | UCACUE · Marketing e Inteligencia de Mercados | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-marketing-e-inteligencia-de-mercado/ | 8 | 40 | 40 | Coincide |
-| M13 | UCACUE · Negocios Internacionales | https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-negocios-internacionales/ | 8 | 37 | 37 | 6 144 h · 128 créditos |
+**Cómo se eligieron las materias (método reproducible):** el 2026-10-14 se revisaron 13 planes de estudio públicos de carreras del área económica y administrativa de universidades de Cuenca (390 nombres de asignatura distintos). Se normalizaron los nombres (minúsculas, sin tildes ni numeración I/II) y se contó en cuántos planes aparece cada materia. Entraron al catálogo las materias que aparecen en **3 o más planes**, agrupando sinónimos, más cálculo diferencial (2 planes), que las fórmulas de marginalidad y optimización necesitan. Quedaron fuera las prácticas preprofesionales, la vinculación con la sociedad y las unidades de titulación, porque no tienen un temario disciplinar común. Los planes no se guardan en el repositorio: solo queda este conteo.
 
-Facultades: [FCEA — Universidad de Cuenca](https://www.ucuenca.edu.ec/facultad/ciencias-economicas-y-administrativas/) (Sociología se excluye: no es del área) · [Unidad Académica de Ciencias Económicas y Empresariales — UCACUE](https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/). Para la UCACUE se toma la oferta de la matriz Cuenca.
+| Materia del catálogo | Planes en los que aparece (de 13) | Nombres agrupados (normalizados) |
+|---|---|---|
+| Microeconomía | 12 | microeconomía, microeconomía I/II/III, introducción a la microeconomía, microeconomía aplicada (a la empresa / al emprendimiento) |
+| Matemática financiera | 11 | matemática(s) financiera(s) |
+| Macroeconomía | 10 | macroeconomía, macroeconomía I/II/III |
+| Estadística descriptiva | 10 | estadística, estadística descriptiva, estadística I/II |
+| Matemática para la gestión | 9 | matemática(s), matemática(s) I/II, básica, aplicada, empresarial, para el análisis de los negocios |
+| Metodología de la investigación | 9 | metodología de (la) investigación (científica) |
+| Contabilidad general | 8 | contabilidad general |
+| Estadística inferencial | 8 | estadística inferencial |
+| Economía internacional y comercio exterior | 8 | economía internacional, comercio exterior (exportaciones / importaciones / y negocios internacionales) |
+| Fundamentos de administración | 8 | administración, (teorías y) fundamentos de (la) administración |
+| Investigación de mercados | 7 | investigación de mercados (aplicada / internacionales), comportamiento del consumidor |
+| Derecho empresarial y societario | 7 | derecho empresarial (y financiero), legislación mercantil y societaria |
+| Finanzas corporativas | 6 | finanzas corporativas (I/II, a corto y a largo plazo) |
+| Contabilidad de costos | 6 | contabilidad de costos (para la gestión) |
+| Formulación y evaluación de proyectos | 6 | (formulación y) evaluación de proyectos |
+| Gestión del talento humano | 6 | gestión (estratégica) del talento humano, organización y gestión del talento humano |
+| Marketing | 6 | fundamentos de marketing, marketing estratégico |
+| Emprendimiento | 6 | emprendimiento (e innovación / social / organizacional) |
+| Ética profesional | 6 | ética del IFAC, ética y responsabilidad social empresarial, ética financiera |
+| Finanzas internacionales | 4 | finanzas internacionales |
+| Comportamiento organizacional | 4 | (diseño y) comportamiento organizacional |
+| Tributación | 4 | legislación, administración, planificación, aplicación y práctica tributaria |
+| Legislación laboral | 4 | derecho laboral (y seguridad social), legislación laboral y seguridad social |
+| Informática para la gestión | 4 | herramientas informáticas, informática aplicada, informática intermedia |
+| Contabilidad financiera (NIIF) | 3 | contabilidad financiera (I/II) |
+| Cálculo diferencial | 2 | cálculo diferencial, cálculo integral — entra porque las fórmulas de marginalidad y optimización lo necesitan |
 
-**Derechos:** la lista de asignaturas es información factual publicada; se reproduce citando y enlazando la fuente. No se copian sílabos ni material de clase. Aviso visible en toda la app: *ÁBACO no está afiliado a ninguna universidad.*
+**Derechos:** los nombres de materias y de temas son datos e ideas (Código Ingenios, art. 102: no se protegen las ideas ni los métodos). La explicación de cada subtema es redacción propia y cita su fuente. Aviso visible en toda la app: *ÁBACO no está afiliado a ninguna universidad.*
 
 ## 2. Normativa ecuatoriana
 
@@ -40,9 +53,14 @@ Facultades: [FCEA — Universidad de Cuenca](https://www.ucuenca.edu.ec/facultad
 
 **Tarifa de IVA 2026 — verificación parcial.** La página oficial del SRI muestra el 15 % por Decreto 198 (desde 01-04-2024) pero no menciona 2026 de forma expresa, y su texto general aún cita el 13 % de la ley base. La continuidad del 15 % en 2026 la confirman El Universo, Expreso y Bloomberg Tax citando la Circular NAC-DGECCGC25-00000006 (26-12-2025), cuyo texto oficial no pude abrir. Decisión: la fórmula del IVA trata la tarifa como **variable**; el ejemplo usa 15 % y la ficha muestra la advertencia "confirma la tarifa vigente en sri.gob.ec".
 
-**SUPUESTO / PENDIENTE (no se publican):**
-- Porcentajes de aportación al IESS (9,45 % personal y 11,15 % patronal): solo los encontré en fuentes secundarias; la página del IESS no los mostró. Quedan fuera del día 1.
-- Décimo tercero, décimo cuarto y utilidades (Código del Trabajo arts. 97, 111, 113): el PDF oficial enlazado por el Ministerio del Trabajo respondió 404. Quedan fuera del día 1.
+**Verificado el 2026-10-25 (antes PENDIENTE):**
+
+| # | Fuente (oficial) | URL | Qué se tomó |
+|---|---|---|---|
+| N8 | IESS — "Tasas de aportación" (tabla oficial, sector privado en relación de dependencia) | https://www.iess.gob.ec/documents/13718/54965/Tasasdeaportacion.pdf | **9,45 % personal y 11,15 % patronal (20,60 % total)**, con el desglose por seguro (IVM 6,64/3,10; LOD 0,10/0; salud 0/5,71; riesgos 0/0,55; cesantía 2/1; SSC 0,35/0,35; administración 0,36/0,44) |
+| N9 | Código del Trabajo (Codificación 2005-017, R.O. Supl. 167, 16-12-2005; última reforma 09-04-2026), copia íntegra publicada en el portal del SERCOP | https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf | Art. 69 vacaciones (15 días; +1 por año después del 5.º, tope 15 adicionales; pago por adelantado); art. 97 utilidades 15 % (10 % por igual + 5 % por cargas); art. 111 décima tercera (doceava parte de lo percibido en el año, mensual o acumulada hasta el 24-dic); art. 113 décima cuarta (doceava parte del SBU, acumulada hasta 15-mar Costa/Insular o 15-ago Sierra/Amazonía); art. 196 fondo de reserva (un mes de sueldo por cada año completo después del primero) |
+
+**SUPUESTO (no se aplica por defecto):** las contribuciones patronales de 0,5 % al IECE y 0,5 % al SECAP aparecen en guías privadas pero no en la tabla oficial del IESS consultada. El rol de pagos de ÁBACO no las suma; ofrece un campo "otras contribuciones patronales (%)" en 0 para que el estudiante lo ajuste.
 
 ## 3. Bibliografía abierta para fórmulas y temas
 
@@ -88,7 +106,7 @@ Detalle con versión, licencia y fecha en [docs/dependencias.md](dependencias.md
 | W1 | W3C — WCAG 2.2 | https://www.w3.org/TR/WCAG22/ | Contraste AA, foco visible, objetivo táctil mínimo, `prefers-reduced-motion` |
 | W2 | MDN — Storage quotas and eviction criteria | https://developer.mozilla.org/en-US/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria | Aislamiento por origen, cuotas, `navigator.storage.persist()` y `estimate()` |
 | W3 | OWASP Top 10 (2021) | https://owasp.org/Top10/ | Revisión de inyección (evaluador de fórmulas sin `eval`), componentes vulnerables (SheetJS desde su CDN oficial), integridad |
-| W4 | Ley Orgánica de Protección de Datos Personales (Ecuador) | https://www.asambleanacional.gob.ec/ | Minimización: la app no recolecta datos personales; todo queda en el dispositivo |
+| W4 | Ley Orgánica de Protección de Datos Personales (Ecuador) | ver sección 9 (L1) | Minimización: la app no recolecta datos personales; todo queda en el dispositivo |
 
 ## 8. Verificación de contenido por sección (2026-10-15)
 
@@ -98,3 +116,38 @@ Antes de citar una sección de OpenStax se comprobó, descargando la página, qu
 - La **media ponderada** no aparece en *Introductory Statistics* 2.5 → se cita *Principles of Finance* 13.1, donde sí está.
 
 Los artículos de la Ley de Compañías usados en Legislación Mercantil (1, 2, 3, 4, 5, 20, 36, 37, 59, 74, 92–96, 102, 116–118, 143, 144, 147, 160, 168, 308, 431, 433 y la sección de las S.A.S.) se leyeron en el texto vigente compilado; la redacción de ÁBACO es propia.
+
+## 9. Marco legal aplicado (consultado 2026-10-25)
+
+Lectura hecha sobre los textos oficiales o sus copias íntegras publicadas por entidades públicas. Las conclusiones están en [docs/legal.md](legal.md).
+
+| # | Norma o fuente | URL | Qué se tomó |
+|---|---|---|---|
+| L1 | Ley Orgánica de Protección de Datos Personales (LOPDP), 5.º Supl. R.O. 459, 26-05-2021 | https://faolex.fao.org/docs/pdf/ecu213345.pdf (copia íntegra del R.O.) · ficha oficial: https://www.gob.ec/regulaciones/ley-organica-proteccion-datos-personales | Art. 2: ámbito y exclusiones (a: actividades familiares o domésticas de personas naturales). Art. 12: los 17 contenidos del derecho a ser informado. Art. 21: los adolescentes **desde los 15 años** pueden consentir por sí mismos. Art. 24: los menores de 15 ejercen sus derechos con su representante. Art. 39: protección desde el diseño y por defecto |
+| L2 | Reglamento General a la LOPDP, Decreto Ejecutivo 904, R.O. Supl. 435, 13-11-2023 | https://www.gob.ec/regulaciones/ley-organica-proteccion-datos-personales | Vigencia del régimen y de la Superintendencia de Protección de Datos Personales (SPDP) |
+| L3 | Código Orgánico de la Economía Social de los Conocimientos, Creatividad e Innovación (Código Ingenios), R.O. Supl. 899, 09-12-2016 | https://www.wipo.int/wipolex/en/text/439750 | **Art. 102**: no se protegen las ideas, los procedimientos, los métodos de operación ni los conceptos matemáticos. **Art. 107**: no se protegen las leyes, reglamentos, resoluciones y demás textos oficiales. **Arts. 211–212.1**: se permite incluir fragmentos breves de obras ajenas a título de cita, con fines docentes, indicando fuente y autor |
+| L4 | Ley Orgánica de Defensa del Consumidor (2000) | https://derechoecuador.com/analisis-de-la-ley-organica-de-la-defensa-del-consumidor/ | Prohibición de la publicidad engañosa (arts. 2, 6 y 7 según la doctrina). **SUPUESTO** en la numeración exacta: no se abrió el texto oficial. Consecuencia práctica: ninguna afirmación de la app sin respaldo comprobable |
+| L5 | NTE INEN-ISO/IEC 40500 y RTE INEN 288 "Accesibilidad para el contenido web" | https://scielo.senescyt.gob.ec/pdf/catedra/v2n2/2631-2875-catedra-2-02-00055.pdf | Ecuador adopta WCAG 2.0 (A y AA) para sitios que prestan servicios públicos. ÁBACO apunta más alto: WCAG 2.2 AA. **SUPUESTO** sobre la vigencia actual del reglamento (fuente académica) |
+| L6 | OpenStax — información de licencias | https://help.openstax.org/s/article/Licensing-information-of-OpenStax-textbooks | Los libros vigentes son CC BY-NC-SA 4.0 y las marcas OpenStax/Rice no se licencian. Decisión: **solo se citan y enlazan**; no se copia texto ni figuras |
+| L7 | Business Model Canvas (Strategyzer AG) | https://www.strategyzer.com/canvas/business-model-canvas | CC BY-SA 3.0: reproducirlo obligaría a licenciar la herramienta igual. Decisión: no se reproduce; se enlaza como app externa. ÁBACO implementa FODA y matriz de decisión ponderada (métodos sin titular) |
+| L8 | SuperMemo — Algorithm SM-2 (P. Woźniak, 1990) | https://super-memory.com/english/ol/sm2.htm | Repetición espaciada de las tarjetas: I(1)=1, I(2)=6, I(n)=I(n−1)·EF, EF inicial 2,5, mínimo 1,3, reinicio si q<3. Se implementa desde la descripción publicada (art. 102: los métodos no se protegen) |
+| L9 | SRI — página del IVA y Circular NAC-DGECCGC25-00000006 (26-12-2025) | https://www.sri.gob.ec/impuesto-al-valor-agregado-iva | La página oficial muestra a la vez "0 % y 13 %" (texto de la ley) y la tabla del Decreto 198 con **15 %** desde 01-04-2024; la circular mantiene el 15 % mientras no haya otro decreto. Decisión: la tarifa es un dato editable con 15 % por defecto y advertencia visible |
+
+## 10. Repositorios y estándares para cumplimiento (consultado 2026-10-25)
+
+| # | Repositorio / estándar | URL | Licencia verificada | Uso en ÁBACO |
+|---|---|---|---|---|
+| R1 | REUSE Specification 3.3 (FSFE) | https://reuse.software/spec-3.3/ | Especificación pública | `REUSE.toml` + `LICENSES/` declaran la licencia y autoría de cada archivo; `reuse lint` (paquete `reuse` 6.2.0 en PyPI) corre en la CI |
+| R2 | github/site-policy | https://github.com/github/site-policy | CC0-1.0 | Estructura de referencia para términos y privacidad (sin copiar texto) |
+| R3 | LINCnil/GDPR-Developer-Guide (CNIL) | https://github.com/LINCnil/GDPR-Developer-Guide | GPL-3.0 | Lista de comprobación de privacidad por diseño (se sigue, no se copia) |
+| R4 | OWASP ASVS 5.0.0 (publicado el 30-05-2025) | https://asvs.owasp.org/ | CC BY-SA 4.0 | Requisitos de verificación usados en [docs/seguridad.md](seguridad.md) |
+| R5 | public-apis/public-apis | https://github.com/public-apis/public-apis | MIT | Punto de partida para elegir APIs; cada API elegida se verificó en su sitio oficial (sección 11) |
+
+## 11. APIs públicas nuevas (verificadas 2026-10-25 con peticiones reales)
+
+| # | API | URL base | Licencia / términos | CORS | Uso |
+|---|---|---|---|---|---|
+| A1 | Banco Mundial — Indicators API v2 (World Development Indicators) | https://api.worldbank.org/v2/ | WDI: **CC BY 4.0** (https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators); condiciones: https://datacatalog.worldbank.org/public-licenses | `Access-Control-Allow-Origin: *` | Herramienta "Datos macro": PIB, inflación, desempleo y comercio de Ecuador y países de comparación, con "Fuente: Banco Mundial, WDI (CC BY 4.0)" |
+| A2 | Frankfurter v2 (código MIT) con proveedor **ECB** | https://api.frankfurter.dev/v2/ | Código MIT (https://github.com/lineofflight/frankfurter). Datos del BCE: uso libre citando al BCE (https://www.ecb.europa.eu/services/disclaimer/html/index.en.html). Se fuerza `providers=ECB` para no mezclar datos de otros bancos con otras condiciones | `access-control-allow-origin: *` | Herramienta "Divisas": tipos de referencia diarios del BCE (unas 30 monedas; COP y PEN no están en el BCE) |
+| A3 | Open Library Search API | https://openlibrary.org/search.json | El Internet Archive no reclama derechos nuevos sobre la base (https://openlibrary.org/developers/licensing); pide no descargar en masa; 1 petición/s sin identificar (https://openlibrary.org/developers/api) | `access-control-allow-origin: *` | Quinta fuente del buscador académico (solo metadatos de libros), con límite de 1 petición por segundo en el cliente |
+| A4 | OpenAlex (ya usada) | https://api.openalex.org | Datos CC0 | `*` | **Cambio detectado:** sin clave, las peticiones comparten un presupuesto diario por IP. Cada estudiante consulta desde su propia IP, así que sigue funcionando; no se incrusta ninguna clave en el navegador (regla de seguridad) |
