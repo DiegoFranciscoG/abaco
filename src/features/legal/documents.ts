@@ -1,4 +1,4 @@
-import { SITE } from '../../config/site';
+import { SITE, suggestionAddress } from '../../config/site';
 
 /**
  * Legal texts of the site. Plain, short Spanish; each claim matches what the app actually does (the e2e privacy
@@ -17,7 +17,7 @@ export interface LegalDoc {
   secciones: LegalSection[];
 }
 
-const CONTACTO = `abre un reporte en ${SITE.contacto} (no hace falta compartir datos personales)`;
+const CONTACTO = `escribe a ${suggestionAddress()} (también desde el buzón de sugerencias) o abre un reporte en ${SITE.contacto}`;
 
 /** Third-party services the browser talks to, and only when the student uses the feature. */
 export const SERVICIOS_EXTERNOS = [
@@ -108,6 +108,14 @@ export const LEGAL_DOCS: LegalDoc[] = [
         ],
       },
       {
+        titulo: '5 bis. Sugerencias',
+        lista: [
+          'El buzón de sugerencias prepara un correo en tu propia aplicación de correo; tú decides si lo envías.',
+          'Al enviar una sugerencia permites que el titular use la idea para mejorar ÁBACO, sin pago ni obligación de publicarla. Si se publica, el texto se redacta de nuevo y se verifica con una fuente oficial.',
+          'No envíes textos copiados de libros u otras obras, ni datos personales tuyos o de otras personas. El buzón rechaza insultos, mensajes sin sentido y datos como cédulas o teléfonos.',
+        ],
+      },
+      {
         titulo: '6. Servicios externos',
         parrafos: [
           'Algunas funciones consultan servicios públicos de terceros (ver la política de privacidad). Su disponibilidad y sus condiciones dependen de ellos, no de ÁBACO.',
@@ -134,23 +142,36 @@ export const LEGAL_DOCS: LegalDoc[] = [
         titulo: 'En resumen',
         lista: [
           'ÁBACO no tiene cuentas, ni servidores propios, ni analítica, ni publicidad, ni cookies.',
-          'El titular no recibe, no ve y no guarda ningún dato personal tuyo.',
+          'El titular no recibe, no ve y no guarda ningún dato personal tuyo, salvo que tú le escribas por el buzón de sugerencias: entonces recibe tu mensaje y tu dirección de correo, solo para atenderte.',
           'Lo que escribes (apuntes, colecciones, hojas, documentos, tarjetas, recordatorios) queda solo en tu navegador.',
         ],
       },
       {
         titulo: 'Responsable',
         parrafos: [
-          `${SITE.titular}, ${SITE.naturaleza}, ${SITE.pais}. Contacto: ${CONTACTO}. No se designa delegado de protección de datos porque no hay tratamiento de datos personales por parte del titular.`,
+          `${SITE.titular}, ${SITE.naturaleza}, ${SITE.pais}. Contacto: ${CONTACTO}. El único tratamiento que hace el titular es el de los correos del buzón de sugerencias, sin datos sensibles. No hay un delegado de protección de datos designado; para cualquier asunto sobre tus datos, escribe directamente al titular.`,
         ],
       },
       {
         titulo: 'Qué datos existen y para qué',
         lista: [
-          'Lo que tú escribes o eliges en la app, para que puedas usarlo después. Se guarda en tu propio navegador (IndexedDB) y nunca se envía al titular.',
+          'Lo que tú escribes o eliges en la app, para que puedas usarlo después. Se guarda en tu propio navegador (IndexedDB) y nunca se envía al titular. La única excepción es lo que tú mismo envíes por correo desde el buzón de sugerencias.',
           'Tu preferencia de tema claro u oscuro y de animaciones, en el almacenamiento local del navegador, para aplicarla antes de mostrar la página.',
           'Un identificador aleatorio generado en tu dispositivo que solo sirve para nombrar tus archivos de respaldo. No sale del dispositivo.',
           'No hay otras finalidades: no se crean perfiles, no hay decisiones automatizadas y nada se vende ni se comparte.',
+        ],
+      },
+      {
+        titulo: 'Buzón de sugerencias',
+        lista: [
+          'Qué se trata: el tipo de sugerencia, la materia, tu mensaje, la fuente que indiques y la dirección de correo desde la que envíes. Nada más: el formulario no pide nombre, cédula ni teléfono, y rechaza mensajes que los contengan (minimización, LOPDP art. 10 e).',
+          'Cómo llega: ÁBACO no envía nada. Prepara el mensaje y abre tu aplicación de correo; el correo sale desde tu cuenta, con tu proveedor, cuando tú pulsas Enviar.',
+          'Para qué: leer la sugerencia, verificarla, responderte si hace falta y mejorar ÁBACO. No se usa para publicidad ni se comparte con nadie.',
+          'Base legal: tu consentimiento, que das al marcar la casilla del formulario y al enviar el correo (LOPDP arts. 7.1 y 8). Puedes retirarlo cuando quieras escribiendo al mismo correo; lo tratado antes sigue siendo lícito.',
+          'Cuánto tiempo: el correo se conserva mientras se atiende la sugerencia y como máximo 12 meses; después se elimina (LOPDP art. 10 i).',
+          'Dónde: en el buzón del titular, en el servicio de correo Gmail (Google), que también conoce la dirección desde la que escribes, según sus propias condiciones.',
+          `Tus derechos: puedes pedir acceso, rectificación, eliminación, oposición o portabilidad de tus correos escribiendo a ${suggestionAddress()}; la respuesta llega en un máximo de 15 días (LOPDP arts. 13 a 17).`,
+          'En este dispositivo, el buzón guarda solo la hora de tus envíos y una huella corta de cada texto para limitar a tres sugerencias al día; no guarda el texto.',
         ],
       },
       {
@@ -168,14 +189,14 @@ export const LEGAL_DOCS: LegalDoc[] = [
       {
         titulo: 'Tus derechos',
         parrafos: [
-          'Como los datos están solo en tu dispositivo, ejerces tus derechos directamente, sin pedir nada a nadie: acceso (Mi espacio), rectificación y actualización (editar), eliminación (borrar o «Empezar de cero»), portabilidad (descargar el respaldo en formato JSON) y oposición o suspensión (dejar de usar la función). No hace falta entregar datos para usar ÁBACO, así que no hay consecuencias por no hacerlo.',
+          'Como los datos de la app están solo en tu dispositivo, ejerces tus derechos directamente, sin pedir nada a nadie: acceso (Mi espacio), rectificación y actualización (editar), eliminación (borrar o «Empezar de cero»), portabilidad (descargar el respaldo en formato JSON) y oposición o suspensión (dejar de usar la función). No hace falta entregar datos para usar ÁBACO, así que no hay consecuencias por no hacerlo. Para los correos del buzón, mira la sección «Buzón de sugerencias».',
           'Si consideras que se vulneraron tus derechos, puedes escribir al titular y presentar una denuncia ante la Superintendencia de Protección de Datos Personales (https://www.spdp.gob.ec/).',
         ],
       },
       {
         titulo: 'Menores de edad',
         parrafos: [
-          'ÁBACO no recoge datos de nadie, tampoco de menores. Según la LOPDP (art. 21), los adolescentes desde los 15 años pueden consentir por sí mismos el tratamiento de sus datos; los menores de 15 ejercen sus derechos con su representante legal (art. 24).',
+          'La app no recoge datos de nadie, tampoco de menores. Si tienes menos de 15 años, usa el buzón de sugerencias con tu representante legal. Según la LOPDP (art. 21), los adolescentes desde los 15 años pueden consentir por sí mismos el tratamiento de sus datos; los menores de 15 ejercen sus derechos con su representante legal (art. 24).',
         ],
       },
       {
@@ -206,19 +227,20 @@ export const LEGAL_DOCS: LegalDoc[] = [
         lista: [
           'Base de datos local «abaco» (IndexedDB): tus apuntes, estrellas, colecciones, recordatorios, intentos de práctica, hojas, búsquedas recientes, documentos, libros diarios, tarjetas y tableros, y una caché temporal de respuestas del buscador académico.',
           'Almacenamiento local «abaco:pantalla»: tu preferencia de tema y animaciones.',
+          'Almacenamiento local «abaco:buzon»: la hora de tus últimas sugerencias y una huella corta de cada texto (no el texto), para limitar los envíos a tres por día.',
           'Caché de la app (service worker): los archivos de ÁBACO, para que funcione sin internet.',
         ],
       },
       {
         titulo: 'Por qué no se pide consentimiento',
         parrafos: [
-          'Todo lo anterior es estrictamente necesario para la función que tú pides (guardar tus apuntes, recordar tu tema, funcionar sin conexión), no se usa para seguirte ni para conocerte, y no sale de tu dispositivo. Al entrar por primera vez, un aviso te explica dónde viven tus datos.',
+          'Todo lo anterior es estrictamente necesario para la función que tú pides (guardar tus apuntes, recordar tu tema, funcionar sin conexión, evitar envíos repetidos), no se usa para seguirte ni para conocerte, y no sale de tu dispositivo. Al entrar por primera vez, un aviso te explica dónde viven tus datos.',
         ],
       },
       {
         titulo: 'Cómo borrarlo',
         lista: [
-          'Dentro de ÁBACO: Ajustes → «Empezar de cero» borra la base local y tus preferencias.',
+          'Dentro de ÁBACO: Ajustes → «Empezar de cero» borra la base local, tus preferencias y el registro del buzón.',
           'En el navegador: configuración del sitio → borrar datos. Esto también elimina la caché de la app.',
         ],
       },

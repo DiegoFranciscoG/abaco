@@ -296,8 +296,11 @@ describe('version 3: subject catalog instead of curricula', () => {
     await upgraded.open();
     expect(upgraded.verno).toBe(3);
     const profile = await getProfile(upgraded);
-    expect(profile).toMatchObject({ materias: [], tema: 'dark' });
-    expect('carrera' in profile || 'universidad' in profile || 'ciclo' in profile).toBe(false);
+    // The old university-specific career and cycle are dropped; the new generic ones start empty.
+    expect(profile).toMatchObject({ materias: [], carrera: null, ciclo: null, tema: 'dark' });
+    expect('universidad' in profile).toBe(false);
+    const stored = (await upgraded.table('perfil').get('yo')) as Record<string, unknown>;
+    expect('carrera' in stored || 'universidad' in stored || 'ciclo' in stored).toBe(false);
     expect((await listNotes({}, upgraded)).find((n) => n.id === 'n1')).toMatchObject({ refTipo: 'materia', refId: 'microeconomia' });
     expect((await listNotes({}, upgraded)).find((n) => n.id === 'n2')).toMatchObject({ refTipo: 'subtema', refId: 'cg-ecuacion-elementos' });
     expect((await listStars(upgraded))[0]).toMatchObject({ tipo: 'materia', refId: 'macroeconomia', ruta: '/materia/macroeconomia' });

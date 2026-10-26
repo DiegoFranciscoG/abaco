@@ -244,6 +244,17 @@ export default function SubjectPage() {
 
       <NotesPanel refTipo="materia" refId={materia.id} title="Mis apuntes de la materia" />
 
+      <AppLink to={`/sugerencias?tipo=materia&materia=${materia.id}`} className="card card-lift flex items-center gap-4 p-5">
+        <span className="tile tile-sm shrink-0">
+          <Icon name="sparkle" size={20} />
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block font-semibold">¿Falta un tema o encontraste un error en {materia.nombre}?</span>
+          <span className="text-sm text-muted">Cuéntalo en el buzón de sugerencias, con la fuente si la tienes.</span>
+        </span>
+        <Icon name="arrow-right" className="text-red" />
+      </AppLink>
+
       <section aria-labelledby="fuentes-temario" className="card p-5">
         <h2 id="fuentes-temario" className="mb-3 flex items-center gap-2 text-base font-semibold">
           <Icon name="book" size={18} className="text-red" /> Fuentes de este temario

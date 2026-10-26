@@ -12,6 +12,7 @@ import { Icon } from '../../ui/icons';
 import { AppLink, Notice, PageHeader } from '../../ui/primitives';
 import { downloadFile, formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
+import { clearSuggestionLedger } from '../suggestions/limits';
 
 function Segmented<T extends string>({ label, value, options, onChange }: { label: string; value: T; options: { id: T; label: string }[]; onChange: (v: T) => void }) {
   return (
@@ -195,6 +196,7 @@ export default function SettingsPage() {
             onClick={async () => {
               await wipeAllData();
               resetDisplayPrefs();
+              clearSuggestionLedger();
               setConfirmText('');
               toast.show('Todo se borró de este dispositivo');
             }}
