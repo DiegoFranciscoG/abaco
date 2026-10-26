@@ -15,12 +15,13 @@ import {
   lareferencia,
   normalizeDoi,
   openalex,
+  openlibrary,
+  parseCrossrefWork,
   plainText,
-  rebuildAbstract,
   safeUrl,
 } from '../../src/domain/academic/sources';
 import type { AcademicResult } from '../../src/domain/academic/types';
-import { crossrefFixture, doajFixture, laReferenciaFixture, openAlexFixture } from '../fixtures/academic';
+import { crossrefFixture, doajFixture, laReferenciaFixture, openAlexFixture, openLibraryFixture } from '../fixtures/academic';
 
 const jsonResponse = (body: unknown, init: ResponseInit = {}) =>
   new Response(JSON.stringify(body), { status: 200, headers: { 'Content-Type': 'application/json' }, ...init });
@@ -43,6 +44,7 @@ const allOk = {
   'api.openalex.org': () => jsonResponse(openAlexFixture, { headers: { 'X-RateLimit-Remaining': '930' } }),
   'doaj.org': () => jsonResponse(doajFixture),
   'buscador.lareferencia.info': () => jsonResponse(laReferenciaFixture),
+  'openlibrary.org': () => jsonResponse(openLibraryFixture),
 };
 
 function memoryCache(): SearchCache & { store: Map<string, unknown> } {
@@ -75,11 +77,6 @@ describe('helpers', () => {
     expect(safeUrl('no es url')).toBeUndefined();
   });
 
-  it('rebuilds OpenAlex abstracts', () => {
-    expect(rebuildAbstract({ mundo: [1], Hola: [0] })).toBe('Hola mundo');
-    expect(rebuildAbstract(null)).toBeUndefined();
-  });
-
   it('cleans queries and builds cache keys without accents', () => {
     expect(cleanQuery('  costos\n de   producción ')).toBe('costos de producción');
     expect(cleanQuery('a'.repeat(300))).toHaveLength(200);
@@ -92,15 +89,20 @@ describe('source adapters', () => {
     const { total, results } = crossref.parse(crossrefFixture);
     expect(total).toBe(2);
     expect(results).toHaveLength(1);
-    expect(results[0]).toMatchObject({ title: 'Costos indirectos de fabricación en pymes', year: 2024, doi: '10.1234/abaco.2024.001', abstract: 'Estudio de & costos.' });
+    expect(results[0]).toMatchObject({ title: 'Costos indirectos de fabricación en pymes', year: 2024, doi: '10.1234/abaco.2024.001' });
+    expect(results[0]).not.toHaveProperty('abstract');
     expect(crossref.buildUrl('van tir', 10)).toContain('query=van%20tir');
+    // Abstracts may be copyrighted by publishers: they are never requested.
+    expect(crossref.buildUrl('x', 10)).not.toContain('abstract');
     expect(crossref.buildUrl('x', 10)).not.toContain('mailto');
   });
 
-  it('OpenAlex: rebuilds abstracts, drops unsafe links and untitled works', () => {
+  it('OpenAlex: bibliographic data only, drops unsafe links and untitled works', () => {
     const { results } = openalex.parse(openAlexFixture);
     expect(results).toHaveLength(2);
-    expect(results[0]).toMatchObject({ abstract: 'Estudio costos de pymes', pages: '45-60', openAccess: true });
+    expect(results[0]).toMatchObject({ pages: '45-60', openAccess: true });
+    expect(results[0]).not.toHaveProperty('abstract');
+    expect(openalex.buildUrl('x', 5)).not.toContain('abstract');
     expect(results[1]?.url).toBe('https://openalex.org/W2');
   });
 
@@ -109,6 +111,19 @@ describe('source adapters', () => {
     const lr = lareferencia.parse(laReferenciaFixture).results[0];
     expect(lr).toMatchObject({ year: 2022, authors: [{ family: 'Ríos Vega', given: 'Daniela' }] });
     expect(lareferencia.buildUrl('niif', 5)).toContain('field%5B%5D=primaryAuthors');
+  });
+
+  it('Open Library: books with publisher and a canonical link; unexpected keys are dropped', () => {
+    const { results, total } = openlibrary.parse(openLibraryFixture);
+    expect(total).toBe(3);
+    expect(results).toHaveLength(1);
+    expect(results[0]).toMatchObject({ type: 'book', publisher: 'Editorial Ejemplo', url: 'https://openlibrary.org/works/OL123W', year: 2019, language: 'es' });
+    expect(openlibrary.buildUrl('costos', 10)).toContain('fields=key,title');
+  });
+
+  it('Crossref work by DOI for the APA tool', () => {
+    const work = parseCrossrefWork({ message: crossrefFixture.message.items[0] });
+    expect(work).toMatchObject({ doi: '10.1234/abaco.2024.001', url: 'https://doi.org/10.1234/abaco.2024.001' });
   });
 
   it('rejects answers with an unexpected shape', () => {
@@ -154,7 +169,9 @@ describe('searchAcademic (parallel, cached, fault tolerant)', () => {
     const response = await searchAcademic('costos', { fetchFn: fakeFetch(allOk) });
     const dois = response.results.filter((r) => r.doi === '10.1234/abaco.2024.001');
     expect(dois).toHaveLength(1);
-    expect(response.results).toHaveLength(4);
+    // 4 articles (one duplicate DOI removed) + 1 book from Open Library.
+    expect(response.results).toHaveLength(5);
+    expect(response.results.some((r) => r.type === 'book')).toBe(true);
     expect(response.bySource.openalex.quotaRemaining).toBe(930);
   });
 
@@ -185,15 +202,16 @@ describe('searchAcademic (parallel, cached, fault tolerant)', () => {
         'api.crossref.org': () => jsonResponse(crossrefFixture),
         'api.openalex.org': () => new Promise<Response>(() => undefined),
         'doaj.org': () => new Response('{}', { status: 429 }),
-        // lareferencia missing → network error
+        // lareferencia and openlibrary missing → network error
       }),
     });
     expect(response.bySource.crossref.status.state).toBe('ok');
     expect(response.bySource.openalex.status.state).toBe('timeout');
     expect(response.bySource.doaj.status.state).toBe('quota');
     expect(response.bySource.lareferencia.status.state).toBe('error');
+    expect(response.bySource.openlibrary.status.state).toBe('error');
     expect(response.results.length).toBeGreaterThan(0);
-    expect(onSource).toHaveBeenCalledTimes(4);
+    expect(onSource).toHaveBeenCalledTimes(5);
   });
 
   it('reports bad answers (HTTP 500 or wrong shape) as errors', async () => {

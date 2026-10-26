@@ -1,10 +1,15 @@
 import { z } from 'zod';
 import type { AcademicResult, Author, SourceAdapter } from './types';
 
-const MAX_ABSTRACT = 1200;
+/**
+ * Only bibliographic data is requested and shown (title, authors, year, source, DOI or link): facts that are not
+ * protected by copyright (Código Ingenios, art. 102). Abstracts are never requested because publishers or authors may
+ * hold rights over them (Crossref REST API documentation).
+ */
+const MAX_TEXT = 400;
 
-/** Removes markup (Crossref abstracts use JATS XML) and collapses spaces. Output is plain text, never HTML. */
-export function plainText(value: string | undefined | null, max = MAX_ABSTRACT): string | undefined {
+/** Removes markup (some titles carry JATS/HTML tags) and collapses spaces. Output is plain text, never HTML. */
+export function plainText(value: string | undefined | null, max = MAX_TEXT): string | undefined {
   if (!value) return undefined;
   const text = value
     .replace(/<[^>]*>/g, ' ')
@@ -37,18 +42,6 @@ export function safeUrl(value: string | undefined | null): string | undefined {
   }
 }
 
-/** Rebuilds an OpenAlex abstract from its inverted index ({ word: [positions] }). */
-export function rebuildAbstract(index: Record<string, number[]> | null | undefined): string | undefined {
-  if (!index) return undefined;
-  const words: string[] = [];
-  for (const [word, positions] of Object.entries(index)) {
-    for (const position of positions) {
-      if (Number.isInteger(position) && position >= 0 && position < 5000) words[position] = word;
-    }
-  }
-  return plainText(words.filter(Boolean).join(' '));
-}
-
 const year = (value: unknown): number | undefined => {
   const n = typeof value === 'string' ? Number.parseInt(value, 10) : typeof value === 'number' ? value : NaN;
   return Number.isInteger(n) && n > 1500 && n < 2200 ? n : undefined;
@@ -56,63 +49,68 @@ const year = (value: unknown): number | undefined => {
 
 // ---------------------------------------------------------------- Crossref
 
+const crossrefItemSchema = z.object({
+  DOI: z.string(),
+  title: z.array(z.string()).optional(),
+  author: z.array(z.object({ given: z.string().optional(), family: z.string().optional(), name: z.string().optional() })).optional(),
+  issued: z.object({ 'date-parts': z.array(z.array(z.number().nullable())).optional() }).optional(),
+  'container-title': z.array(z.string()).optional(),
+  volume: z.string().optional(),
+  issue: z.string().optional(),
+  page: z.string().optional(),
+  type: z.string().optional(),
+  URL: z.string().optional(),
+  language: z.string().optional(),
+});
+
 const crossrefSchema = z.object({
   message: z.object({
     'total-results': z.number().default(0),
-    items: z
-      .array(
-        z.object({
-          DOI: z.string(),
-          title: z.array(z.string()).optional(),
-          author: z
-            .array(z.object({ given: z.string().optional(), family: z.string().optional(), name: z.string().optional() }))
-            .optional(),
-          issued: z.object({ 'date-parts': z.array(z.array(z.number().nullable())).optional() }).optional(),
-          'container-title': z.array(z.string()).optional(),
-          volume: z.string().optional(),
-          issue: z.string().optional(),
-          page: z.string().optional(),
-          type: z.string().optional(),
-          URL: z.string().optional(),
-          abstract: z.string().optional(),
-          language: z.string().optional(),
-        }),
-      )
-      .default([]),
+    items: z.array(crossrefItemSchema).default([]),
   }),
 });
+
+type CrossrefItem = z.infer<typeof crossrefItemSchema>;
+
+function crossrefResult(item: CrossrefItem): AcademicResult | undefined {
+  const title = plainText(item.title?.[0], 400);
+  const doi = normalizeDoi(item.DOI);
+  if (!title || !doi) return undefined;
+  return {
+    id: `crossref:${doi}`,
+    source: 'crossref',
+    title,
+    authors: (item.author ?? []).map((a): Author => (a.family ? { given: a.given, family: a.family } : { full: a.name ?? a.given ?? '' })),
+    year: year(item.issued?.['date-parts']?.[0]?.[0] ?? undefined),
+    container: plainText(item['container-title']?.[0], 300),
+    volume: item.volume,
+    issue: item.issue,
+    pages: item.page,
+    doi,
+    url: `https://doi.org/${doi}`,
+    type: item.type,
+    language: item.language,
+  };
+}
+
+/** One work by DOI (used by the APA reference tool). */
+export function crossrefWorkUrl(doi: string): string {
+  return `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
+}
+
+export function parseCrossrefWork(json: unknown): AcademicResult | undefined {
+  const item = crossrefItemSchema.parse((json as { message?: unknown } | null)?.message);
+  return crossrefResult(item);
+}
 
 export const crossref: SourceAdapter = {
   id: 'crossref',
   buildUrl: (query, limit) =>
     `https://api.crossref.org/works?query=${encodeURIComponent(query)}&rows=${limit}` +
-    '&select=DOI,title,author,issued,container-title,volume,issue,page,type,URL,abstract',
+    '&select=DOI,title,author,issued,container-title,volume,issue,page,type,URL',
   parse(json) {
     const data = crossrefSchema.parse(json).message;
-    const results: AcademicResult[] = [];
-    for (const item of data.items) {
-      const title = plainText(item.title?.[0], 400);
-      const doi = normalizeDoi(item.DOI);
-      if (!title || !doi) continue;
-      results.push({
-        id: `crossref:${doi}`,
-        source: 'crossref',
-        title,
-        authors: (item.author ?? []).map((a): Author =>
-          a.family ? { given: a.given, family: a.family } : { full: a.name ?? a.given ?? '' },
-        ),
-        year: year(item.issued?.['date-parts']?.[0]?.[0] ?? undefined),
-        container: plainText(item['container-title']?.[0], 300),
-        volume: item.volume,
-        issue: item.issue,
-        pages: item.page,
-        abstract: plainText(item.abstract),
-        doi,
-        url: `https://doi.org/${doi}`,
-        type: item.type,
-        language: item.language,
-      });
-    }
+    const results = data.items.map(crossrefResult).filter((r): r is AcademicResult => r !== undefined);
     return { total: data['total-results'], results };
   },
 };
@@ -141,7 +139,6 @@ const openAlexSchema = z.object({
           .nullable()
           .optional(),
         open_access: z.object({ is_oa: z.boolean().optional(), oa_url: z.string().nullable().optional() }).optional(),
-        abstract_inverted_index: z.record(z.string(), z.array(z.number())).nullable().optional(),
         biblio: z
           .object({
             volume: z.string().nullable().optional(),
@@ -159,7 +156,7 @@ export const openalex: SourceAdapter = {
   id: 'openalex',
   buildUrl: (query, limit) =>
     `https://api.openalex.org/works?search=${encodeURIComponent(query)}&per-page=${limit}` +
-    '&select=id,doi,title,publication_year,language,type,authorships,primary_location,open_access,abstract_inverted_index,biblio',
+    '&select=id,doi,title,publication_year,language,type,authorships,primary_location,open_access,biblio',
   parse(json) {
     const data = openAlexSchema.parse(json);
     const results: AcademicResult[] = [];
@@ -185,7 +182,6 @@ export const openalex: SourceAdapter = {
         volume: item.biblio?.volume ?? undefined,
         issue: item.biblio?.issue ?? undefined,
         pages: first ? (last && last !== first ? `${first}-${last}` : first) : undefined,
-        abstract: rebuildAbstract(item.abstract_inverted_index),
         doi,
         url,
         openAccess: item.open_access?.is_oa,
@@ -208,7 +204,6 @@ const doajSchema = z.object({
         bibjson: z.object({
           title: z.string().optional(),
           year: z.string().optional(),
-          abstract: z.string().optional(),
           author: z.array(z.object({ name: z.string().optional() })).optional(),
           identifier: z.array(z.object({ id: z.string().optional(), type: z.string().optional() })).optional(),
           journal: z
@@ -250,7 +245,6 @@ export const doaj: SourceAdapter = {
         volume: b.journal?.volume,
         issue: b.journal?.number,
         pages: b.start_page ? (b.end_page ? `${b.start_page}-${b.end_page}` : b.start_page) : undefined,
-        abstract: plainText(b.abstract),
         doi,
         url: doi ? `https://doi.org/${doi}` : (fulltext ?? `https://doaj.org/article/${encodeURIComponent(item.id)}`),
         openAccess: true,
@@ -275,14 +269,13 @@ const laReferenciaSchema = z.object({
         publicationDates: z.array(z.string()).optional(),
         urls: z.array(z.object({ url: z.string().optional() })).optional(),
         formats: z.array(z.string()).optional(),
-        summary: z.array(z.string()).optional(),
         languages: z.array(z.string()).optional(),
       }),
     )
     .default([]),
 });
 
-const LR_FIELDS = ['id', 'title', 'primaryAuthors', 'publicationDates', 'urls', 'formats', 'summary', 'languages'];
+const LR_FIELDS = ['id', 'title', 'primaryAuthors', 'publicationDates', 'urls', 'formats', 'languages'];
 
 export const lareferencia: SourceAdapter = {
   id: 'lareferencia',
@@ -309,7 +302,6 @@ export const lareferencia: SourceAdapter = {
           return given ? { family, given } : { full: name };
         }),
         year: year(item.publicationDates?.[0]),
-        abstract: plainText(item.summary?.[0]),
         doi,
         url,
         type: item.formats?.[0],
@@ -320,4 +312,51 @@ export const lareferencia: SourceAdapter = {
   },
 };
 
-export const ADAPTERS: Record<string, SourceAdapter> = { crossref, openalex, doaj, lareferencia };
+// ---------------------------------------------------------------- Open Library (books)
+
+const openLibrarySchema = z.object({
+  numFound: z.number().default(0),
+  docs: z
+    .array(
+      z.object({
+        key: z.string(),
+        title: z.string().optional(),
+        author_name: z.array(z.string()).optional(),
+        first_publish_year: z.number().optional(),
+        publisher: z.array(z.string()).optional(),
+        language: z.array(z.string()).optional(),
+      }),
+    )
+    .default([]),
+});
+
+/** Open Library asks for at most one unidentified request per second; one search makes a single request. */
+export const openlibrary: SourceAdapter = {
+  id: 'openlibrary',
+  buildUrl: (query, limit) =>
+    `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=${limit}` +
+    '&fields=key,title,author_name,first_publish_year,publisher,language',
+  parse(json) {
+    const data = openLibrarySchema.parse(json);
+    const results: AcademicResult[] = [];
+    for (const item of data.docs) {
+      const title = plainText(item.title, 400);
+      if (!title || !/^\/works\/OL\d+W$/.test(item.key)) continue;
+      const language = item.language?.[0] === 'spa' ? 'es' : item.language?.[0] === 'eng' ? 'en' : item.language?.[0];
+      results.push({
+        id: `openlibrary:${item.key}`,
+        source: 'openlibrary',
+        title,
+        authors: (item.author_name ?? []).slice(0, 20).map((full) => ({ full })),
+        year: year(item.first_publish_year),
+        publisher: plainText(item.publisher?.[0], 200),
+        url: `https://openlibrary.org${item.key}`,
+        type: 'book',
+        language,
+      });
+    }
+    return { total: data.numFound, results };
+  },
+};
+
+export const ADAPTERS: Record<string, SourceAdapter> = { crossref, openalex, doaj, lareferencia, openlibrary };

@@ -95,3 +95,20 @@ export const laReferenciaFixture = {
     },
   ],
 };
+
+/** Open Library search answer: one valid book, one with an unexpected key and one without title. */
+export const openLibraryFixture = {
+  numFound: 3,
+  docs: [
+    {
+      key: '/works/OL123W',
+      title: 'Contabilidad de costos para pymes',
+      author_name: ['Ana María Quito Pérez'],
+      first_publish_year: 2019,
+      publisher: ['Editorial Ejemplo'],
+      language: ['spa'],
+    },
+    { key: 'javascript:alert(1)', title: 'Clave no válida' },
+    { key: '/works/OL999W' },
+  ],
+};

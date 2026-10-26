@@ -1,4 +1,4 @@
-export const DIRECT_SOURCES = ['crossref', 'openalex', 'doaj', 'lareferencia'] as const;
+export const DIRECT_SOURCES = ['crossref', 'openalex', 'doaj', 'lareferencia', 'openlibrary'] as const;
 export type SourceId = (typeof DIRECT_SOURCES)[number];
 
 export const SOURCE_LABELS: Record<SourceId, string> = {
@@ -6,6 +6,7 @@ export const SOURCE_LABELS: Record<SourceId, string> = {
   openalex: 'OpenAlex',
   doaj: 'DOAJ',
   lareferencia: 'LA Referencia',
+  openlibrary: 'Open Library',
 };
 
 export interface Author {
@@ -25,7 +26,8 @@ export interface AcademicResult {
   volume?: string;
   issue?: string;
   pages?: string;
-  abstract?: string;
+  /** Books only: publisher shown in the APA reference. */
+  publisher?: string;
   doi?: string;
   url: string;
   openAccess?: boolean;

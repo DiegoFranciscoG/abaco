@@ -3,7 +3,7 @@ import type { OutputBundle } from 'rolldown';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
-import { ACADEMIC_API_ORIGINS, CSP_META } from './csp.config';
+import { CSP_META, EXTERNAL_API_ORIGINS } from './csp.config';
 
 /** Injects the Content-Security-Policy only in production builds (the dev server needs inline HMR scripts). */
 function contentSecurityPolicy(): Plugin {
@@ -101,8 +101,8 @@ export default defineConfig(({ mode }) => {
           maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
           navigateFallback: 'index.html',
           cleanupOutdatedCaches: true,
-          // Academic API answers are cached by the app in IndexedDB (with expiry), never by the service worker.
-          runtimeCaching: ACADEMIC_API_ORIGINS.map((origin) => ({
+          // API answers are cached by the app in IndexedDB (with expiry), never by the service worker.
+          runtimeCaching: EXTERNAL_API_ORIGINS.map((origin) => ({
             urlPattern: ({ url }: { url: URL }) => url.origin === origin,
             handler: 'NetworkOnly' as const,
           })),

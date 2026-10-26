@@ -66,6 +66,21 @@ export interface Citation {
 export function formatApa(result: AcademicResult): Citation {
   const authors = formatAuthorList(result.authors, result.language);
   const year = result.year ? `(${result.year}).` : '(s. f.).';
+  if (result.type === 'webpage') {
+    // APA 7 web page: Author, A. A. (Year). *Title*. Site Name. URL (site omitted when it is the author)
+    const before = authors ? `${endWithPeriod(authors)} ${year} ` : '';
+    const italic = endWithPeriod(result.title.trim());
+    const site = result.container && result.container !== authors ? ` ${endWithPeriod(result.container)}` : '';
+    const after = `${authors ? '' : ` ${year}`}${site} ${result.url}`;
+    return { text: `${before}${italic}${after}`.replace(/\s+/g, ' ').trim(), parts: { before, italic, after } };
+  }
+  if (result.type === 'book') {
+    // APA 7 book: Author, A. A. (Year). *Title*. Publisher. URL
+    const before = authors ? `${endWithPeriod(authors)} ${year} ` : '';
+    const italic = endWithPeriod(result.title.trim());
+    const after = `${result.publisher ? ` ${endWithPeriod(result.publisher)}` : ''}${authors ? '' : ` ${year}`} ${result.url}`;
+    return { text: `${before}${italic}${after}`.replace(/\s+/g, ' ').trim(), parts: { before, italic, after } };
+  }
   const title = endWithPeriod(result.title.trim());
   const head = authors ? `${endWithPeriod(authors)} ${year} ${title}` : `${title} ${year}`;
   let italic = '';
