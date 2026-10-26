@@ -240,3 +240,35 @@ Cada cifra que depende de la normativa ecuatoriana se movió a `content/normativ
 | V8 | Ley de Compañías, texto vigente | sección 2, N5 | Art. 102 (limitada: 50 % de cada participación) y art. 147 (anónima: una cuarta parte), sin cambios |
 
 **Regla para el futuro:** ninguna cifra normativa entra al contenido sin pasar antes por `normativa.json`. La prueba T-11 lo hace cumplir: detecta la cifra en el texto y exige que la ficha la declare. La lista de qué revisar cada enero está en [revision-anual.md](revision-anual.md).
+
+## 16. ÁBACO v2: herramientas de todos los días (verificado 2026-10-26)
+
+### Fuentes nuevas
+
+| # | Fuente | URL | Qué regla o dato sale de ahí |
+|---|---|---|---|
+| W1 | SRI, Res. NAC-DGERCGC26-00000009 | https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/272ca6a9-d679-4b4e-8da0-fb4671cf5f8f/NAC-DGERCGC26-00000009_Ret_IR.pdf | Porcentajes de retención en la fuente de renta desde el 01-03-2026: 0 %, 1 %, 1,75 %, 2 %, 3 %, 5 % y 10 % (`retenciones-renta` en `normativa.json`) |
+| W2 | INEC, boletín técnico del IPC de septiembre de 2026 | https://www.ecuadorencifras.gob.ec/documentos/web-inec/Inflacion/2026/septiembre/BOLETIN_TECNICO_IPC_2026_09.pdf | Inflación anual 1,34 %, mensual 0,30 %, acumulada 1,65 % y canasta familiar básica USD 833,82 (`indicadores.json`) |
+| W3 | BCE, tasas de interés de octubre de 2026 | https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm | Pasiva referencial 4,93 %; consumo 15,75 % referencial y 16,77 % máxima; PYMES 8,99 %; microcrédito minorista máxima 28,23 %; inmobiliario 8,37 % |
+| W4 | IASB, *Overview of the 2018 Conceptual Framework* (WSS, octubre de 2018), diapositiva 11 | https://www.ifrs.org/content/dam/ifrs/meetings/2018/october/wss/wss4-conceptual-framework-overview.pdf | Características cualitativas (relevancia, representación fiel y las de mejora) para el subtema `cg-fundamentos-cualidades` |
+| W5 | OpenStax, *Principles of Accounting 1*, 3.2 | https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions | Ecuación contable ampliada y plan de cuentas para el subtema `cg-ecuacion-plan-cuentas`. Las secciones 3.1, 3.3 y 3.4 no tratan esos temas y se descartaron |
+| W6 | Fundación IFRS, *Taxonomía NIIF Ilustrada 2020: una visión de la Norma NIIF para las PYMES* (traducción oficial al español) | https://www.ifrs.org/content/dam/ifrs/standards/taxonomy/translations/spanish/2020/spanish-ifrs-taxonomy-2020-iti-smes.pdf | Nombre oficial en español y párrafo de 31 términos NIIF del glosario (propiedades, planta y equipo, 17.31; plusvalía; ingresos de actividades ordinarias, 23.30; impuesto diferido, 29.40; costo amortizado, 11.41…) |
+| W7 | Fundación IFRS, estados financieros ilustrativos para PYMES (taxonomía 2020) | https://www.ifrs.org/content/dam/ifrs/standards/taxonomy/2020/illustrative-examples/ixbrl-example1-2020-03-16.xhtml | Equivalentes en inglés de las mismas partidas (*Property, plant and equipment*, *Trade and other receivables*, *Revenue*, *Gross profit*, *Carrying amount*, *Amortised cost*…) |
+| W8 | Fundación IFRS, página de la NIIF para las PYMES | https://www.ifrs.org/issued-standards/ifrs-for-smes/ | La edición 2025 se publicó en febrero de 2025 y rige para periodos desde el 01-01-2027; hasta entonces se puede seguir con la edición 2015 o adoptar la nueva antes |
+| W9 | OpenStax, *Introductory Statistics 2e*, 8.1 y 8.3 | https://openstax.org/books/introductory-statistics-2e/pages/8-1-a-single-population-mean-using-the-normal-distribution | Intervalo de confianza con σ conocida (EBM = z·σ/√n) y tamaño de muestra para una proporción (n = z²·p′q′/EBP², con p′ = 0,5 sin estudio previo) para las plantillas `intervalo-confianza` y `tamano-muestra` |
+
+Las demás plantillas nuevas de Excel citan secciones que el contenido ya usaba y que se verificaron antes: elasticidad por el punto medio (*Principles of Microeconomics 3e*, 5.1), inflación con el IPC (*Principles of Macroeconomics 3e*, 9.1), tipo de cambio (*Principles of Finance 2e*, 3.5), costo marginal (*Calculus Volume 1*, 3.4), regresión (*Introductory Statistics 2e*, 12.3) y SUMAR.SI (referencia de funciones de Microsoft). Sus valores esperados se calcularon aparte con Python antes de que la prueba T-02 los compare con el motor de fórmulas.
+
+### Mediciones propias
+
+- **T-16, «Pega tu enunciado»:** 34 de 34 en el conjunto guía, 16 de 16 en el de control y 13 de 16 (81,3 %) en el ciego, que no se usó para ajustar reglas. El objetivo del plan era más de 70 %. El conjunto de 5 enunciados fuera del catálogo verifica que la app diga «no estoy seguro» en vez de adivinar.
+- **Mapa de repetición:** los 588 nombres de materia de los 13 planes públicos revisados forman 329 grupos; 26 grupos aparecen en tres carreras o más y 23 de ellos ya están en el catálogo (los otros tres son prácticas y unidades de titulación). Resultado en `content/repeticion.json` y `docs/cobertura.md`.
+- **Verificador aritmético:** recalcula 212 de las 833 igualdades escritas en el contenido (las que tienen la forma «a operación b = c» con números completos); las demás son fórmulas simbólicas o resultados redondeados que no se pueden comprobar sin contexto.
+
+### SUPUESTOS y pendientes
+
+- **SUPUESTO:** los enunciados de la prueba T-16 los redacté yo imitando deberes reales; no se recogieron de estudiantes. La precisión real con estudiantes puede ser menor.
+- **SUPUESTO:** 6 unidades por materia (`unidades_objetivo`) y «al menos 2 ejercicios por subtema de cálculo» son metas de ÁBACO para el estándar de profundidad, no una regla académica.
+- **SUPUESTO:** «materia dominada» en el avance por malla (examen de práctica de 70 % o más y 80 % de los ejercicios resueltos) es un criterio propio de la app y la pantalla lo dice así.
+- **Pendiente:** los porcentajes de retención del IVA no se publican hasta confirmar que la NAC-DGERCGC20-00000061 no tiene reformas posteriores a 2023 (ver [revision-anual.md](revision-anual.md)).
+- **No se encontró** en la taxonomía oficial el término «importe recuperable»; el glosario lo usa dentro de la definición de deterioro porque aparece en el texto en español de la Sección 27 publicado por la Fundación IFRS (proyecto de norma de 2013), pero no tiene ficha propia.

@@ -1,6 +1,6 @@
 # ÁBACO
 
-Estudia las materias de las carreras económicas y administrativas de Ecuador **por carrera, ciclo, tema y subtema**, con teoría y un ejemplo en cada subtema, fórmulas verificadas, 16 herramientas, un área de estudio con tus propios PDF y exámenes de práctica, y fuentes oficiales citadas en cada explicación. Gratis, sin cuentas y funciona sin internet.
+Estudia y resuelve los deberes de las carreras económicas y administrativas de Ecuador: **teoría por carrera, ciclo, tema y subtema**, **entregables paso a paso** con Excel de fórmulas vivas, **cifras normativas con vigencia** que avisan cuando caducan, un área de estudio con tus propios PDF y un modo profesor. Fuentes oficiales citadas en cada explicación. Gratis, sin cuentas y funciona sin internet.
 
 [![CI](https://github.com/DiegoFranciscoG/abaco/actions/workflows/ci.yml/badge.svg)](https://github.com/DiegoFranciscoG/abaco/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-19-149eca) ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6) ![Vite](https://img.shields.io/badge/Vite-8-646cff) ![PWA](https://img.shields.io/badge/PWA-offline-b3122e)
@@ -21,16 +21,27 @@ Quien estudia Contabilidad, Economía, Administración o Finanzas en Ecuador jun
 
 ## Funcionalidades
 
-- **Carrera → ciclo → materia → tema → subtema**: 7 carreras genéricas, 26 materias, 107 temas y 349 subtemas, sin nombres de universidades. El ciclo habitual sale de 13 planes públicos (método en [docs/investigacion.md](docs/investigacion.md#1b-carrera--ciclo--materia-sin-universidades)).
-- **Teoría y ejemplo en cada subtema**: los 349 subtemas tienen explicación con fuente, un ejemplo concreto con cifras de Ecuador, puntos clave y errores frecuentes.
+- **Entregables paso a paso (8)**: rol de pagos, tabla de amortización, kardex, depreciación, punto de equilibrio, VAN y TIR, razones financieras y libro diario. Cada uno muestra el procedimiento con la expresión y el cálculo de cada paso, descarga un Excel con fórmulas vivas, se imprime como PDF y se guarda para seguir después.
+- **Pega tu enunciado**: pegas el texto del deber y ÁBACO dice qué tema, fórmula, herramienta o entregable aplica (88 conceptos, 714 frases). Si no está seguro, lo dice en vez de adivinar.
+- **Cifras con vigencia**: las 22 cifras normativas (SBU, IESS, IVA, tabla de renta, retenciones, RIMPE, Código del Trabajo, Ley de Compañías) viven en un solo catálogo con base legal y fechas; cada pantalla que las usa dice «vigente 2026» y avisa si una caducó. La prueba T-11 falla al día siguiente de su vencimiento y un flujo mensual la corre sola.
+- **Ecuador en cifras hoy**: SBU, aportes, IVA, renta, retenciones, inflación del INEC y tasas del BCE con su fuente; se copian o se comparten como imagen.
+- **¿Cuánto necesito para pasar?**: con los pesos y notas que puso tu docente calcula la nota que falta, con el procedimiento.
+- **Repaso de errores**: las preguntas que fallas vuelven con repetición espaciada hasta acertarlas tres veces; búsqueda dentro de tus PDF.
+- **Carrera → ciclo → materia → tema → subtema**: 7 carreras genéricas, 26 materias, 107 temas y 351 subtemas, sin nombres de universidades. El ciclo habitual sale de 13 planes públicos (método en [docs/investigacion.md](docs/investigacion.md#1b-carrera--ciclo--materia-sin-universidades)).
+- **Cobertura honesta**: cada materia dice cuántas unidades tiene frente al estándar de profundidad (5 a 7 unidades, 2 ejercicios por subtema de cálculo); el panel «Cobertura» de la app y [docs/cobertura.md](docs/cobertura.md) muestran lo que falta por carrera y ciclo.
+- **Teoría y ejemplo en cada subtema**: los 351 subtemas tienen explicación con fuente, un ejemplo concreto con cifras de Ecuador, puntos clave y errores frecuentes.
 - **Área de estudio**: elige una materia y estudia con el contenido de ÁBACO, con tus propios PDF (se leen en tu dispositivo, no se suben) o con ambos: repaso, tarjetas para memorizar con repetición espaciada y exámenes de práctica calificados con su explicación.
 - **Enviar un PDF al autor**: si un PDF puede servir a otros, ÁBACO revisa que tenga texto, que sea de la materia y que no tenga datos personales, y prepara el correo; lo verificado se redacta de nuevo y se agrega con su fuente.
 - **93 fórmulas verificadas**: calculadora en vivo, sintaxis de Excel en español e inglés y un ejemplo que se recalcula en cada build.
-- **16 herramientas propias**: editor de informes con fórmulas, libro diario y mayor, calculadora estadística, graficador, oferta y demanda, datos macro del Banco Mundial, tipos de cambio del BCE, punto de equilibrio, evaluador de proyectos (VAN, TIR), rol de pagos (IESS 2026), IVA e impuesto a la renta (tabla 2026), FODA y matriz de decisión, tarjetas con repetición espaciada (SM-2), referencias APA, laboratorio de hoja de cálculo y buscador académico.
+- **17 herramientas propias**: calculadora de notas, editor de informes con fórmulas, libro diario y mayor, calculadora estadística, graficador, oferta y demanda, datos macro del Banco Mundial, tipos de cambio del BCE, punto de equilibrio, evaluador de proyectos (VAN, TIR), rol de pagos (IESS 2026), IVA e impuesto a la renta (tabla 2026), FODA y matriz de decisión, tarjetas con repetición espaciada (SM-2), referencias APA, laboratorio de hoja de cálculo y buscador académico.
 - **Tecnología real en cada materia**: 25 aplicaciones externas verificadas en su sitio oficial (GnuCash, GanttProject, draw.io, SRI en línea, IESS, Ministerio del Trabajo, BCE, INEC, WITS, LimeSurvey y más).
 - **Buscador académico** en 5 fuentes abiertas (Crossref, OpenAlex, DOAJ, LA Referencia, Open Library) con la cita APA lista.
-- **Práctica**: 48 ejercicios con respuesta verificable en las materias de cálculo, pistas e historial; las materias teóricas se practican con tarjetas y exámenes.
-- **Mi espacio**: apuntes, estrellas, colecciones, recordatorios y respaldo en JSON; nada sale del dispositivo.
+- **Práctica**: 60 ejercicios con respuesta verificable en las materias de cálculo, pistas e historial; las materias teóricas se practican con tarjetas y exámenes.
+- **15 plantillas de Excel por materia**: liquidación de IVA, estadística descriptiva, intervalo de confianza, tamaño de muestra, regresión, elasticidad, inflación con el IPC, tipo de cambio, costo marginal, SUMAR.SI y más; se abren en el laboratorio o se descargan directo como .xlsx.
+- **Glosario español-inglés**: 85 términos; los 31 de NIIF usan el nombre de la traducción oficial de la Fundación IFRS. Se busca en los dos idiomas y se descarga en Excel.
+- **Modo profesor**: el docente elige ejercicios, imprime la hoja del estudiante y el solucionario por separado y comparte un enlace para que cada estudiante los resuelva con corrección automática.
+- **Mi espacio**: apuntes, estrellas, colecciones (compartibles por enlace, sin tus apuntes), recordatorios, respaldo en JSON y **avance por malla**: tu carrera ciclo por ciclo, con cada materia dominada, en curso o sin empezar.
+- **Tu uso**: la app cuenta solo en tu dispositivo cuántos días la usaste, cuántos entregables resolviste y si volviste; tú decides si copias y envías un resumen anónimo.
 - **Buzón de sugerencias**: rechaza insultos, mensajes sin sentido y datos personales, y prepara un correo en la aplicación de quien escribe; al terminar invita a conocer las redes y proyectos del autor ([captura](docs/img/buzon.png)).
 - **PWA**: instalable, funciona sin conexión, tema claro y oscuro, respeta «reducir movimiento».
 
@@ -85,6 +96,10 @@ erDiagram
   SUBTEMA }o--o{ FORMULA : usa
   MATERIA }o--o{ APP : "tecnología externa"
   MATERIA }o--o{ HERRAMIENTA : "herramienta propia"
+  CIFRA }o--o{ SUBTEMA : "vigencia controlada"
+  CONCEPTO }o--o{ SUBTEMA : "pega tu enunciado"
+  PERFIL ||--o{ ENTREGABLE : "en el dispositivo"
+  PERFIL ||--o{ CALIFICACION : "en el dispositivo"
   PERFIL ||--o{ APUNTE : "en el dispositivo"
   PERFIL ||--o{ DOCUMENTO : "en el dispositivo"
   PERFIL ||--o{ TARJETA : "en el dispositivo"
@@ -131,12 +146,12 @@ Peticiones de ejemplo en [docs/http/](docs/http/).
 
 ```bash
 npm run lint && npm run format:check   # estilo
-npm run test:coverage                  # 773 pruebas unitarias, de integración, de componentes y de contenido
+npm run test:coverage                  # 971 pruebas unitarias, de integración, de componentes y de contenido
 npx playwright install chromium
-npm run build && npx playwright test   # 80 pruebas de extremo a extremo, accesibilidad y seguridad
+npm run build && npx playwright test   # 100 pruebas de extremo a extremo, accesibilidad y seguridad
 ```
 
-Cobertura de la lógica de negocio (`src/domain` y `src/data`): **93,9 % de líneas**, 79,7 % de ramas (umbral mínimo 70 %). Las pruebas de contenido recalculan cada ejemplo y ejercicio, comprueban fuentes, carreras y que ninguna materia quede sin herramienta ni tecnología externa. Las e2e recorren la app como estudiante en escritorio y móvil, pasan axe en 27 vistas en tema claro y oscuro, leen un PDF real en el área de estudio, comprueban que nada personal salga a la red (T-04), que funcione sin internet (T-08), y que la app no se deje enmarcar ni ejecute código inyectado.
+Cobertura de la lógica de negocio (`src/domain` y `src/data`): **95,0 % de líneas**, 80,8 % de ramas (umbral mínimo 70 %). Las pruebas de contenido recalculan cada ejemplo y ejercicio, comprueban fuentes, carreras y que ninguna materia quede sin herramienta ni tecnología externa. Las pruebas con nombre del plan v2: **T-11** (ninguna cifra vencida y toda cifra declarada), **T-12** (casos resueltos a mano de los 8 entregables), **T-13** (el Excel exportado, reabierto, da los mismos números), **T-14** (cada paso del procedimiento se evalúa con el motor de Excel), **T-16** (enunciados: 81 % en un conjunto ciego), **T-17** (cobertura declarada = medida) y **T-18** (compartir una colección no filtra apuntes ni fechas). Las e2e recorren la app como estudiante en escritorio y móvil, pasan axe en 37 vistas en tema claro y oscuro, leen un PDF real en el área de estudio, comprueban que nada personal salga a la red (T-04), que funcione sin internet (T-08), y que la app no se deje enmarcar ni ejecute código inyectado.
 
 ## Despliegue
 
@@ -162,15 +177,19 @@ Modelo de amenazas y correspondencia con OWASP ASVS 5.0 en [docs/seguridad.md](d
 - **Carreras genéricas y ciclo habitual:** se agregan 13 planes públicos y se publica solo el resultado (mediana del primer ciclo, umbral de la mitad de los planes), sin reproducir ningún plan ni nombrar universidades.
 - **Primero el contenido:** un *shell* estático se pinta antes del JavaScript y React monta después del primer cuadro; las fórmulas se componen al compilar.
 - **Buzón sin servidor:** `mailto:` con validación previa evita guardar datos de terceros y contratar un servicio con transferencia internacional.
-- **Normas cambiantes como parámetros:** IVA, SBU y divisor de horas son editables y muestran su fuente y fecha.
+- **Normas cambiantes como datos con fecha de caducidad:** cada cifra vive una sola vez en `content/normativa.json` con su vigencia; las calculadoras la leen de ahí y una prueba la detecta en cualquier texto. Actualizar el SBU en enero es cambiar un JSON y ver qué fichas rompen.
+- **Entregables como funciones puras:** cada entregable es `parse → compute → toSheet`; los pasos llevan la fórmula de Excel que se evalúa con el mismo motor de la app, así el procedimiento en pantalla, el Excel y el PDF no pueden contradecirse.
+- **Enunciados con reglas explicables, no con un modelo:** frases en orden con tolerancia a palabras intermedias y una capa léxica débil; cuando la evidencia no alcanza, la app dice «no estoy seguro». Se mide con un conjunto ciego que no se usó para ajustar.
+- **Compartir sin servidor:** colecciones y talleres viajan en el enlace después del `#`, con una lista blanca de campos y rutas solo internas.
+- **Medir sin rastrear:** contadores por día en el propio dispositivo y un resumen anónimo que solo sale si el estudiante lo copia.
 
 ## Roadmap
 
+- Llevar al estándar de profundidad las 25 materias que siguen parciales, empezando por el primer ciclo de las cuatro carreras más grandes ([docs/cobertura.md](docs/cobertura.md)).
+- Publicar los porcentajes de retención del IVA cuando se confirme que no tienen reformas posteriores a 2023.
+- Pasar el glosario y los subtemas NIIF a la edición 2025 de la NIIF para las PYMES, que rige desde el 01-01-2027.
 - Revisar los PDF que envíen los estudiantes con `npm run pdf:analizar` y agregar lo verificado como subtemas, ejemplos o ejercicios con su fuente.
-
-- Más ejercicios por materia y tarjetas generadas desde cada subtema.
 - Materias optativas frecuentes (auditoría, presupuestos, mercado de valores) cuando haya fuentes abiertas verificables.
-- Revisión anual de tablas del SRI, IESS y SBU con fecha visible.
 - Formulario del buzón con un servicio propio si el volumen lo justifica (requiere actualizar la política de privacidad y la CSP).
 
 ## Fuentes de datos y licencias

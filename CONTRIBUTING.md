@@ -12,6 +12,16 @@ Gracias por ayudar a mejorar ÁBACO. Hay dos caminos:
 - No se publican mallas, nombres ni marcas de universidades.
 - Los ejemplos numéricos deben recalcularse con las pruebas de contenido (`npm run content:check`).
 - Nada de datos personales reales en ejemplos, pruebas ni capturas.
+- Toda cifra que depende de la normativa (SBU, IESS, IVA, tabla de renta…) se toma de `content/normativa.json` y se declara en `cifras`; la prueba T-11 lo exige. Para cambiar una cifra, sigue [docs/revision-anual.md](docs/revision-anual.md).
+
+## Escribir o completar una materia
+
+El flujo rápido está en [docs/plantilla-ficha.md](docs/plantilla-ficha.md):
+
+1. `npm run ficha -- -t <id-de-la-materia>` muestra qué unidades, subtemas y ejercicios faltan para el estándar de profundidad.
+2. Escribe cada subtema y sus ejercicios con la plantilla, citando la sección exacta de la fuente.
+3. Repite `npm run ficha -- -t <materia>` hasta que no haya errores (esquema, fuente, cifras no declaradas y aritmética de los ejemplos).
+4. `npm run cobertura` actualiza `docs/cobertura.md`; si la materia ya cumple, cambia `cobertura.estado` a `"completa"` (la prueba T-17 no deja hacerlo antes).
 
 ## Antes de enviar un pull request
 

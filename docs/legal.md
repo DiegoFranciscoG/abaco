@@ -36,6 +36,8 @@ Las marcas de terceros (Excel, Google, Trello, OpenStax, etc.) solo se nombran p
 |---|---|---|
 | Datos dentro de la app | No se tratan: todo queda en el dispositivo y la prueba T-04 lo comprueba con el tráfico de red real | Art. 39 (privacidad desde el diseño y por defecto) |
 | Área de estudio | Los PDF se leen en el navegador; solo su texto queda en el dispositivo y se borra con un botón o con «Empezar de cero» | Art. 39 |
+| Contadores de uso | Solo cuántas veces se hizo cada cosa por día (abrir la app, exportar, compartir), sin contenido. No salen del dispositivo: el estudiante los ve en Ajustes → «Tu uso» y decide si copia y envía un resumen anónimo (números y mes, sin fechas ni identificadores) | Arts. 10 e) y 39 |
+| Enlaces compartidos | Colección: nombre, descripción, color y lista de elementos, sin apuntes ni fechas (T-18). Taller del modo profesor: título e ids públicos de ejercicios. No llevan datos del estudiante ni del docente | Art. 10 e) |
 | PDF enviados al autor | Consentimiento expreso y declaración de derechos; ÁBACO revisa antes que no haya cédulas, teléfonos, correos ni insultos; se conservan como máximo 12 meses | Arts. 7.1, 8, 10 e) e i) |
 | Buzón de sugerencias | La app no envía nada: abre la aplicación de correo de quien escribe con el mensaje listo. Si se envía, el titular recibe el mensaje y la dirección de correo | — |
 | Base legal del buzón | Consentimiento expreso: casilla obligatoria, informada y específica, y el acto de enviar el correo; revocable en cualquier momento | Art. 7.1 y art. 8 |
