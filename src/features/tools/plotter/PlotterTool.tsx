@@ -60,8 +60,8 @@ export default function PlotterTool({ tool }: { tool: ToolInfo }) {
           <p>
             La derivada se aproxima con la diferencia central [f(x + h) − f(x − h)] ÷ 2h, la idea de la
             derivada como límite del cociente de diferencias (OpenStax, Cálculo volumen 1, 3.1). Raíces y
-            extremos se buscan con cambios de signo de f y de f′ en una malla fina, refinados por bisección:
-            una raíz doble que solo toca el eje puede no detectarse.
+            extremos se buscan con cambios de signo de f y de f′ en una cuadrícula fina de puntos, refinados
+            por bisección: una raíz doble que solo toca el eje puede no detectarse.
           </p>
         </>
       }
