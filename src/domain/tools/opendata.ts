@@ -3,7 +3,7 @@
  * Both APIs were checked on 2026-10-25 (docs/investigacion.md, section 11): no key, CORS open, data reusable with
  * attribution. Requests carry no cookies, no custom headers and no referrer; answers are validated and cached.
  */
-import { z } from 'zod';
+import { z } from '../zod';
 
 export interface DataCache {
   get(key: string): Promise<unknown | undefined>;
