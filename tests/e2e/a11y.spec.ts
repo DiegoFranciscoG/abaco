@@ -30,6 +30,16 @@ const VIEWS = [
   '/estudiar?materia=contabilidad-costos',
   '/legal/privacidad',
   '/legal/licencias',
+  '/entregables',
+  '/entregables/rol-pagos',
+  '/enunciado',
+  '/cifras',
+  '/cobertura',
+  '/herramientas/notas',
+  '/glosario?idioma=en&area=finanzas',
+  '/profesor?materia=contabilidad-general',
+  '/practica?titulo=Taller+1&ejercicios=ej-cg-patrimonio,ej-cg-pasivo',
+  '/mi-espacio?tab=avance',
 ];
 
 for (const scheme of ['light', 'dark'] as const) {

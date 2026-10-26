@@ -76,7 +76,7 @@ export default function GlossaryPage() {
         <div className="flex flex-wrap items-center gap-3">
           <input
             type="search"
-            className="field h-12 min-w-0 flex-1"
+            className="field h-12 w-full min-w-0 sm:w-auto sm:flex-1"
             placeholder={
               language === 'es'
                 ? 'Buscar término, sinónimo o palabra en inglés…'
