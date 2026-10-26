@@ -1,0 +1,11 @@
+version = 1
+SPDX-PackageName = "ÁBACO"
+SPDX-PackageSupplier = "Diego Francisco Granda Zhingre"
+SPDX-PackageDownloadLocation = "https://github.com/DiegoFranciscoG/abaco"
+
+# Code, original texts, content and illustrations of the project.
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Diego Francisco Granda Zhingre"
+SPDX-License-Identifier = "MIT"
