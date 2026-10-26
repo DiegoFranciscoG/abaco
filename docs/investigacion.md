@@ -223,3 +223,20 @@ Se agregaron 24 ejercicios con respuesta verificable para las materias cuantitat
 | — | Ejemplos de los 349 subtemas | `content/temarios/*.json` | Redacción propia a partir de la teoría ya verificada de cada subtema; las cifras de cada ejemplo se calcularon antes de escribirlo y las normas usadas (IVA 15 %, SBU 2026, IESS 9,45 % y 11,15 %, tabla de renta 2026, RIMPE) son las mismas de las secciones 2 y 9 |
 
 **Lo que no se puede automatizar:** que un PDF sea «verídico». La app solo comprueba que tenga texto, que trate de la materia y que no tenga datos personales ni insultos; la verificación del contenido la hace el autor contra fuentes oficiales (CONTRIBUTING.md).
+
+## 15. Vigencia de las cifras normativas (verificado 2026-10-26)
+
+Cada cifra que depende de la normativa ecuatoriana se movió a `content/normativa.json` con su vigencia. Antes de fecharlas se volvió a abrir cada fuente oficial:
+
+| # | Fuente | URL | Qué se comprobó |
+|---|---|---|---|
+| V1 | Ministerio del Trabajo, boletín del SBU 2026, y Registro Oficial, Suplemento 187 (18-12-2025) | https://www.registroficial.gob.ec/suplemento-no-187/ | Acuerdo MDT-2025-195: SBU 2026 de **USD 482** |
+| V2 | SRI, «Tablas de cálculo de Impuesto a la Renta» (PDF oficial) | sección 2, N3 | La tabla 2026 de `normativa.json` coincide tramo por tramo con la Res. NAC-DGERCGC25-00000043 |
+| V3 | SRI, Circular NAC-DGECCGC25-00000006 (26-12-2025) | https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar?id=236482f4-6125-42fd-b073-62c99d08233d&nombre=NAC-DGECCGC25-00000006.pdf | **Corrección.** La LRTI (art. 65) fija el IVA en 13 % y permite al Presidente fijarlo entre 13 % y 15 %. El Decreto 198 lo subió a 15 % «durante el año 2024» y el Decreto 470 (R.O. 700, 10-12-2024) lo mantuvo en 2025. El art. 141 del Reglamento, reformado por el Decreto 213 (R.O. 166, 18-11-2025), dispone que sin nuevo decreto se mantiene la última tarifa. Por eso el 15 % sigue vigente en 2026. La página del IVA del SRI muestra «0 % y 13 %» porque cita el texto de la ley. Se corrigieron la teoría del subtema `tr-iva-tarifas`, las notas de 4 fórmulas y la calculadora de impuestos. |
+| V4 | IESS, «Tasas de aportación» (PDF oficial) | sección 2, N8 | 9,45 % personal y 11,15 % patronal, sin cambios |
+| V5 | SRI, página del RIMPE | https://www.sri.gob.ec/rimpe | Cuotas de negocios populares (ejercicios desde 2024), tabla de emprendedores y límites de USD 20 000 y USD 300 000, sin cambios |
+| V6 | SRI, página del impuesto a la renta | https://www.sri.gob.ec/impuesto-renta | Tarifa de sociedades de 25 % y plazos por noveno dígito, sin cambios |
+| V7 | Código del Trabajo, texto vigente (última reforma 09-04-2026) | sección 2, N9 | Arts. 47, 55, 69, 97, 185, 188 y 196 leídos en el PDF: coinciden con el contenido |
+| V8 | Ley de Compañías, texto vigente | sección 2, N5 | Art. 102 (limitada: 50 % de cada participación) y art. 147 (anónima: una cuarta parte), sin cambios |
+
+**Regla para el futuro:** ninguna cifra normativa entra al contenido sin pasar antes por `normativa.json`. La prueba T-11 lo hace cumplir: detecta la cifra en el texto y exige que la ficha la declare. La lista de qué revisar cada enero está en [revision-anual.md](revision-anual.md).

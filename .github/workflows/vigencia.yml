@@ -1,0 +1,28 @@
+name: Vigencia de cifras
+
+# Runs T-11 every month even when nothing is pushed: the day a normative figure (SBU, income tax table, IESS rates,
+# IVA) is about to expire or has expired, the run warns or fails and GitHub notifies the owner of the repository.
+on:
+  schedule:
+    - cron: '0 13 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vigencia:
+    name: T-11 · ninguna cifra normativa vencida
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.22.0
+          cache: npm
+      - name: Dependencias exactas del lockfile (sin scripts de instalación)
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Cifras vigentes y fichas que las declaran
+        run: npx vitest run tests/content/t11-vigencia.test.ts

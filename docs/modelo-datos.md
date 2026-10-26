@@ -24,6 +24,12 @@ erDiagram
   HERRAMIENTA }o--o{ MATERIA : "herramienta propia"
   PLANTILLA }o--o{ MATERIA : "hoja de cálculo"
   TERMINO }o--|| FUENTE : "cita"
+  CIFRA }o--|| FUENTE : "base legal oficial"
+  SUBTEMA }o--o{ CIFRA : "usa (cifras)"
+  FORMULA }o--o{ CIFRA : "usa (cifras)"
+  EJERCICIO }o--o{ CIFRA : "usa (cifras)"
+  TERMINO }o--o{ CIFRA : "usa (cifras)"
+  HERRAMIENTA }o--o{ CIFRA : "calcula con"
 
   CARRERA {
     string id PK "slug genérico, sin universidad"
@@ -82,6 +88,18 @@ erDiagram
     string excel_en
     string_list materias FK
   }
+  CIFRA {
+    string id PK "sbu, iess-aporte-personal, ir-personas-tabla..."
+    enum categoria "laboral|seguridad-social|tributario|societario"
+    string texto "la cifra como la lee el estudiante"
+    number valor "o tramos, o cuotas (exactamente uno)"
+    json vigencia "desde, hasta, ejercicio_fiscal"
+    string base_legal
+    json fuente "ref + seccion"
+    string cambia "quién la cambia y cuándo"
+    date verificado_en
+    string_list detectar "patrones que la revelan en el texto"
+  }
   APP {
     string id PK
     string nombre
@@ -104,6 +122,10 @@ erDiagram
 | Carreras: materias existentes, ciclo habitual dentro de los ciclos de la carrera y entre los ciclos en que aparece, solo materias presentes en al menos la mitad de los planes, ninguna materia sin carrera | `carreraSchema` | integridad |
 | Cada materia tiene al menos una herramienta propia y una tecnología externa verificada | `materiaSchema` + `apps.json` | integridad |
 | Cada materia, tema y subtema tiene teoría, y cada subtema un ejemplo | `subtemaSchema` (`ejemplo` obligatorio) | integridad |
+| Toda cifra normativa tiene vigencia dentro de su ejercicio fiscal, base legal y fuente oficial; las tablas por tramos encadenan | `cifraSchema` | `tests/content/t11-vigencia.test.ts` (T-11) |
+| Ninguna cifra se muestra vencida: T-11 falla desde el día siguiente a su `hasta` y avisa 60 días antes; un flujo mensual la corre sin cambios en el código | `vigenciaStatus` + `.github/workflows/vigencia.yml` | T-11 |
+| Toda ficha que menciona una cifra la declara, y solo declara cifras que menciona con su valor actual | `detectCifras` (`src/domain/content/vigencia.ts`) | T-11 |
+| Rol de pagos e impuestos calculan con las cifras del catálogo, nunca con números escritos en el código | `src/domain/content/normativa.ts` | `tests/unit/vigencia.test.ts` |
 | Ningún contenido publica mallas, nombres ni marcas de universidades | expresión regular de términos prohibidos | integridad |
 | Cada subtema cita una sección que existe y contiene lo que afirma | descarga del texto de cada sección citada y búsqueda de la evidencia | resultado en [verificacion-contenido.md](verificacion-contenido.md) |
 
