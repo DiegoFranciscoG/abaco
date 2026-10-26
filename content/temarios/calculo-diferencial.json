@@ -131,6 +131,9 @@
             "Afirmar que una función por tramos es continua sin revisar los extremos de cada tramo."
           ],
           "formulas": [],
+          "cifras": [
+            "ir-personas-tabla"
+          ],
           "fuente": {
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/2-4-continuity",

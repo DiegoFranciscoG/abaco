@@ -1,0 +1,657 @@
+[
+  {
+    "id": "sbu",
+    "nombre": "Salario básico unificado",
+    "categoria": "laboral",
+    "descripcion": "Remuneración mínima mensual del trabajador en general a tiempo completo. También es la base de la décima cuarta remuneración.",
+    "texto": "USD 482 al mes",
+    "valor": 482,
+    "unidad": "USD",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Acuerdo Ministerial MDT-2025-195 (Suplemento del Registro Oficial 187, 18-12-2025); Código del Trabajo, arts. 81 y 113.",
+    "fuente": {
+      "ref": "mdt-sbu-2026",
+      "seccion": "SBU 2026"
+    },
+    "cambia": "Cada diciembre el Consejo Nacional de Trabajo y Salarios, o el Ministerio del Trabajo si no hay consenso, fija el SBU del año siguiente.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "(?<![\\d.,])482(?!\\d|,\\d)"
+    ]
+  },
+  {
+    "id": "jornada-maxima",
+    "nombre": "Jornada máxima de trabajo",
+    "categoria": "laboral",
+    "descripcion": "Ocho horas diarias, sin exceder cuarenta a la semana, salvo disposición de la ley en contrario.",
+    "texto": "8 horas diarias y 40 semanales",
+    "valor": 40,
+    "unidad": "horas",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 47 (codificación 2005-017, última reforma 09-04-2026).",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 47"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "40 (horas )?semanales",
+      "8 horas diarias",
+      "ocho horas diarias"
+    ]
+  },
+  {
+    "id": "recargo-suplementarias",
+    "nombre": "Recargo de horas suplementarias",
+    "categoria": "laboral",
+    "descripcion": "Las horas que exceden la jornada, trabajadas durante el día o hasta las 24:00, se pagan con un recargo sobre el valor de la hora diurna.",
+    "texto": "50 % de recargo",
+    "valor": 50,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 55, numeral 2.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 55"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "50 ?% de recargo",
+      "recargo[^.]{0,40}50 ?%",
+      "× ?1,5\\b"
+    ]
+  },
+  {
+    "id": "recargo-extraordinarias",
+    "nombre": "Recargo de horas extraordinarias",
+    "categoria": "laboral",
+    "descripcion": "Las horas entre las 24:00 y las 06:00, y el trabajo en sábado o domingo, se pagan con el doble del valor de la hora diurna.",
+    "texto": "100 % de recargo",
+    "valor": 100,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 55, numerales 2 y 4.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 55"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "100 ?% de recargo",
+      "con 100 ?%",
+      "recargo[^.]{0,40}100 ?%"
+    ]
+  },
+  {
+    "id": "limite-horas-suplementarias",
+    "nombre": "Límite de horas suplementarias",
+    "categoria": "laboral",
+    "descripcion": "Con convenio escrito y autorización del inspector de trabajo, las horas suplementarias no pueden pasar de cuatro en un día ni de doce en la semana.",
+    "texto": "4 al día y 12 a la semana",
+    "valor": 12,
+    "unidad": "horas",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 55, numeral 1.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 55"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "4 horas suplementarias",
+      "12 (horas )?(a|por) (la )?semana"
+    ]
+  },
+  {
+    "id": "vacaciones-anuales",
+    "nombre": "Vacaciones anuales",
+    "categoria": "laboral",
+    "descripcion": "Quince días ininterrumpidos de descanso al año; después del quinto año con el mismo empleador se suma un día por cada año excedente, hasta quince adicionales.",
+    "texto": "15 días al año, más 1 por año después del quinto",
+    "valor": 15,
+    "unidad": "días",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 69.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 69"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "15 días (de vacaciones|anuales)",
+      "vacaciones[^.]{0,60}15 días"
+    ]
+  },
+  {
+    "id": "participacion-utilidades",
+    "nombre": "Participación de los trabajadores en las utilidades",
+    "categoria": "laboral",
+    "descripcion": "El empleador reconoce a sus trabajadores el 15 % de las utilidades líquidas: 10 % por igual entre todos y 5 % en proporción a sus cargas familiares.",
+    "texto": "15 % de las utilidades (10 % + 5 %)",
+    "valor": 15,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 97.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 97"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "15 ?% de las utilidades",
+      "participación laboral (de|del) 15",
+      "15 ?% para los trabajadores"
+    ]
+  },
+  {
+    "id": "fondo-reserva",
+    "nombre": "Fondo de reserva",
+    "categoria": "laboral",
+    "descripcion": "Desde el segundo año de trabajo, un mes de sueldo por cada año completo; pagado mes a mes equivale a la doceava parte (8,33 %) de lo percibido.",
+    "texto": "8,33 % mensual desde el mes 13",
+    "valor": 8.33,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, arts. 196 y 197.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 196"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo o la Ley de Seguridad Social; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "8,33 ?%"
+    ]
+  },
+  {
+    "id": "bonificacion-desahucio",
+    "nombre": "Bonificación por desahucio",
+    "categoria": "laboral",
+    "descripcion": "Si la relación laboral termina por desahucio o por acuerdo entre las partes, el empleador paga el 25 % de la última remuneración mensual por cada año de servicio.",
+    "texto": "25 % de la última remuneración por año de servicio",
+    "valor": 25,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 185.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 185"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "25 ?% (de la|×) última remuneración",
+      "desahucio[\\s\\S]{0,240}?25 ?%"
+    ]
+  },
+  {
+    "id": "indemnizacion-despido",
+    "nombre": "Indemnización por despido intempestivo",
+    "categoria": "laboral",
+    "descripcion": "Hasta tres años de servicio, tres meses de remuneración; con más de tres años, un mes por cada año, sin pasar de veinticinco. La fracción de año cuenta como año completo.",
+    "texto": "3 meses hasta 3 años; luego 1 mes por año (máximo 25)",
+    "valor": 3,
+    "unidad": "meses",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Código del Trabajo, art. 188.",
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "seccion": "Art. 188"
+    },
+    "cambia": "Solo cambia si se reforma el Código del Trabajo; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "\\d+ meses de remuneración",
+      "25 meses"
+    ]
+  },
+  {
+    "id": "iess-aporte-personal",
+    "nombre": "Aporte personal al IESS",
+    "categoria": "seguridad-social",
+    "descripcion": "Lo que aporta el trabajador del sector privado en relación de dependencia; se descuenta en el rol de pagos.",
+    "texto": "9,45 % de la remuneración",
+    "valor": 9.45,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Tabla oficial «Tasas de aportación» del IESS, sector privado en relación de dependencia: 6,64 % invalidez, vejez y muerte; 0,10 % Ley Orgánica de Discapacidades; 2 % cesantía; 0,35 % seguro campesino; 0,36 % gastos de administración.",
+    "fuente": {
+      "ref": "iess-tasas",
+      "seccion": "Sector privado en relación de dependencia"
+    },
+    "cambia": "Cambia por resolución del IESS o por reforma de la Ley de Seguridad Social, sin fecha fija; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "9,45 ?%",
+      "20,60 ?%"
+    ]
+  },
+  {
+    "id": "iess-aporte-patronal",
+    "nombre": "Aporte patronal al IESS",
+    "categoria": "seguridad-social",
+    "descripcion": "Lo que paga el empleador del sector privado además del sueldo, sobre la misma remuneración.",
+    "texto": "11,15 % de la remuneración",
+    "valor": 11.15,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Tabla oficial «Tasas de aportación» del IESS, sector privado en relación de dependencia: 3,10 % invalidez, vejez y muerte; 5,71 % salud; 0,55 % riesgos del trabajo; 1 % cesantía; 0,35 % seguro campesino; 0,44 % gastos de administración.",
+    "fuente": {
+      "ref": "iess-tasas",
+      "seccion": "Sector privado en relación de dependencia"
+    },
+    "cambia": "Cambia por resolución del IESS o por reforma de la Ley de Seguridad Social, sin fecha fija; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "11,15 ?%",
+      "20,60 ?%"
+    ]
+  },
+  {
+    "id": "iva-tarifa-general",
+    "nombre": "Tarifa general del IVA",
+    "categoria": "tributario",
+    "descripcion": "Tarifa que se aplica a los bienes y servicios gravados que no tienen tarifa 0 % ni 5 %.",
+    "texto": "15 %",
+    "valor": 15,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Régimen Tributario Interno, art. 65 (13 %, que el Presidente puede fijar entre 13 % y 15 %); Decreto Ejecutivo 198 (15 % desde el 01-04-2024); Decreto Ejecutivo 470 (R.O. 700, 10-12-2024, la mantuvo en 2025); Reglamento a la LRTI, art. 141 (sin un nuevo decreto rige la última); Circular del SRI NAC-DGECCGC25-00000006 (26-12-2025): 15 % vigente.",
+    "fuente": {
+      "ref": "sri-circular-iva-2026"
+    },
+    "cambia": "Puede cambiar en cualquier momento por decreto ejecutivo, entre 13 % y 15 %, y hay rebajas temporales para turismo en feriados; se revisa cada enero y ante cualquier decreto.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "\\bIVA\\b[\\s\\S]{0,80}?(?<![\\d,])15 ?%",
+      "(?<![\\d,])15 ?%[^.]{0,40}\\bIVA\\b",
+      "tarifa general (de|es|del) 15",
+      "(×|÷) ?1,15\\b"
+    ]
+  },
+  {
+    "id": "iva-tarifa-construccion",
+    "nombre": "IVA de materiales de construcción",
+    "categoria": "tributario",
+    "descripcion": "Tarifa reducida para la transferencia de materiales de construcción.",
+    "texto": "5 %",
+    "valor": 5,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Régimen Tributario Interno, art. 65, reformado por la Ley Orgánica para Enfrentar el Conflicto Armado Interno, la Crisis Social y Económica (R.O. 516), desde el 01-04-2024.",
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Tarifas del IVA"
+    },
+    "cambia": "Solo cambia por reforma de la Ley de Régimen Tributario Interno; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "5 ?% (para|en) (los )?materiales de construcción",
+      "materiales de construcción[^.]{0,40}5 ?%"
+    ]
+  },
+  {
+    "id": "ir-personas-tabla",
+    "nombre": "Tabla del impuesto a la renta de personas naturales",
+    "categoria": "tributario",
+    "descripcion": "Tabla progresiva del ejercicio fiscal para personas naturales y sucesiones indivisas: impuesto de la fracción básica más un porcentaje sobre el excedente.",
+    "texto": "Fracción básica desgravada de USD 12 208; tarifas de 0 % a 37 %",
+    "tramos": [
+      {
+        "desde": 0,
+        "hasta": 12208,
+        "impuesto_fraccion": 0,
+        "porcentaje": 0
+      },
+      {
+        "desde": 12208,
+        "hasta": 15549,
+        "impuesto_fraccion": 0,
+        "porcentaje": 5
+      },
+      {
+        "desde": 15549,
+        "hasta": 20188,
+        "impuesto_fraccion": 167,
+        "porcentaje": 10
+      },
+      {
+        "desde": 20188,
+        "hasta": 26700,
+        "impuesto_fraccion": 631,
+        "porcentaje": 12
+      },
+      {
+        "desde": 26700,
+        "hasta": 35136,
+        "impuesto_fraccion": 1412,
+        "porcentaje": 15
+      },
+      {
+        "desde": 35136,
+        "hasta": 46575,
+        "impuesto_fraccion": 2678,
+        "porcentaje": 20
+      },
+      {
+        "desde": 46575,
+        "hasta": 62005,
+        "impuesto_fraccion": 4965,
+        "porcentaje": 25
+      },
+      {
+        "desde": 62005,
+        "hasta": 82679,
+        "impuesto_fraccion": 8823,
+        "porcentaje": 30
+      },
+      {
+        "desde": 82679,
+        "hasta": 109956,
+        "impuesto_fraccion": 15025,
+        "porcentaje": 35
+      },
+      {
+        "desde": 109956,
+        "hasta": null,
+        "impuesto_fraccion": 24572,
+        "porcentaje": 37
+      }
+    ],
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Resolución del SRI NAC-DGERCGC25-00000043 (2.º Suplemento del Registro Oficial 194, 30-12-2025).",
+    "fuente": {
+      "ref": "sri-tablas-ir",
+      "seccion": "Año 2026"
+    },
+    "cambia": "El SRI publica la tabla de cada ejercicio fiscal en diciembre, ajustada por la variación de precios.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "12[\\s.]?208",
+      "15[\\s.]?549",
+      "20[\\s.]?188",
+      "26[\\s.]?700",
+      "35[\\s.]?136",
+      "46[\\s.]?575",
+      "62[\\s.]?005",
+      "82[\\s.]?679",
+      "109[\\s.]?956",
+      "tabla 2026"
+    ]
+  },
+  {
+    "id": "ir-sociedades",
+    "nombre": "Tarifa general del impuesto a la renta de sociedades",
+    "categoria": "tributario",
+    "descripcion": "Tarifa sobre la base imponible de las sociedades, con incrementos y reducciones previstos en la ley para casos específicos.",
+    "texto": "25 %",
+    "valor": 25,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Régimen Tributario Interno, art. 37.",
+    "fuente": {
+      "ref": "sri-renta",
+      "seccion": "Tarifa para sociedades"
+    },
+    "cambia": "Solo cambia por reforma de la Ley de Régimen Tributario Interno; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "tarifa general (de|del|es) 25",
+      "25 ?% sobre su base imponible"
+    ]
+  },
+  {
+    "id": "rimpe-limites",
+    "nombre": "Límites de ingresos del RIMPE",
+    "categoria": "tributario",
+    "descripcion": "Ingresos brutos del año anterior, al 31 de diciembre, que permiten estar en el régimen: hasta USD 300 000 para emprendedores y hasta USD 20 000 para negocios populares (solo personas naturales).",
+    "texto": "Hasta USD 300 000 (emprendedores) y USD 20 000 (negocios populares)",
+    "valor": 300000,
+    "unidad": "USD",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Régimen Tributario Interno, título del RIMPE (Ley Orgánica para el Desarrollo Económico y Sostenibilidad Fiscal tras la Pandemia COVID-19, 3.er Suplemento del R.O. 587, 29-11-2021).",
+    "fuente": {
+      "ref": "sri-rimpe",
+      "seccion": "RIMPE: sujetos y exclusiones"
+    },
+    "cambia": "Solo cambia por reforma de la Ley de Régimen Tributario Interno; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "(RIMPE|emprendedor)[\\s\\S]{0,200}?300[\\s.]?000",
+      "300[\\s.]?000[^.]{0,60}(RIMPE|emprendedor)",
+      "(negocios? populares?|personas naturales con ingresos)[^.]{0,60}20[\\s.]?000",
+      "20[\\s.]?000[^.]{0,30}(negocio|popular)"
+    ]
+  },
+  {
+    "id": "rimpe-negocios-populares",
+    "nombre": "Cuota del RIMPE para negocios populares",
+    "categoria": "tributario",
+    "descripcion": "Cuota fija anual de impuesto a la renta según los ingresos brutos; incluye el IVA y no admite rebajas.",
+    "texto": "De USD 0 a USD 60 al año según los ingresos brutos",
+    "cuotas": [
+      {
+        "desde": 0,
+        "hasta": 2500,
+        "cuota": 0
+      },
+      {
+        "desde": 2500,
+        "hasta": 5000,
+        "cuota": 5
+      },
+      {
+        "desde": 5000,
+        "hasta": 10000,
+        "cuota": 15
+      },
+      {
+        "desde": 10000,
+        "hasta": 15000,
+        "cuota": 35
+      },
+      {
+        "desde": 15000,
+        "hasta": 20000,
+        "cuota": 60
+      }
+    ],
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Régimen Tributario Interno (RIMPE) y Resolución del SRI NAC-DGERCGC24-00000027; tabla publicada por el SRI para los ejercicios fiscales desde 2024.",
+    "fuente": {
+      "ref": "sri-rimpe",
+      "seccion": "Impuesto a la renta de negocios populares"
+    },
+    "cambia": "Cambia por reforma de la ley o resolución del SRI; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "cuota (fija )?anual de USD",
+      "2[\\s.]500,01",
+      "cuota sería 0"
+    ]
+  },
+  {
+    "id": "rimpe-emprendedores",
+    "nombre": "Tabla del RIMPE para emprendedores",
+    "categoria": "tributario",
+    "descripcion": "Impuesto a la renta sobre los ingresos brutos: impuesto de la fracción básica más un porcentaje sobre el excedente; no admite rebajas.",
+    "texto": "Del 1 % al 2 % sobre el excedente, desde USD 20 000 de ingresos brutos",
+    "tramos": [
+      {
+        "desde": 20000,
+        "hasta": 50000,
+        "impuesto_fraccion": 60,
+        "porcentaje": 1
+      },
+      {
+        "desde": 50000,
+        "hasta": 75000,
+        "impuesto_fraccion": 360,
+        "porcentaje": 1.25
+      },
+      {
+        "desde": 75000,
+        "hasta": 100000,
+        "impuesto_fraccion": 672.5,
+        "porcentaje": 1.5
+      },
+      {
+        "desde": 100000,
+        "hasta": 200000,
+        "impuesto_fraccion": 1047.5,
+        "porcentaje": 1.75
+      },
+      {
+        "desde": 200000,
+        "hasta": 300000,
+        "impuesto_fraccion": 2797.52,
+        "porcentaje": 2
+      }
+    ],
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Régimen Tributario Interno (RIMPE); tabla publicada por el SRI.",
+    "fuente": {
+      "ref": "sri-rimpe",
+      "seccion": "Impuesto a la renta de emprendedores"
+    },
+    "cambia": "Cambia por reforma de la ley o resolución del SRI; se revisa cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "2[\\s.]797,52",
+      "fracción (básica )?es 60",
+      "60 \\+ \\("
+    ]
+  },
+  {
+    "id": "capital-pagado-limitada",
+    "nombre": "Capital pagado al constituir una compañía limitada",
+    "categoria": "societario",
+    "descripcion": "Al constituirse, el capital debe estar suscrito por completo y pagado al menos en la mitad de cada participación; el saldo se integra en doce meses como máximo.",
+    "texto": "50 % de cada participación",
+    "valor": 50,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Compañías, art. 102.",
+    "fuente": {
+      "ref": "ley-companias",
+      "seccion": "Art. 102"
+    },
+    "cambia": "Solo cambia si se reforma la Ley de Compañías; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "50 ?% (pagado|de (sus|cada|las) participaci)",
+      "pagado (al menos )?en el cincuenta"
+    ]
+  },
+  {
+    "id": "capital-pagado-anonima",
+    "nombre": "Capital pagado de una compañía anónima",
+    "categoria": "societario",
+    "descripcion": "El capital debe estar suscrito por completo y pagarse al menos en una cuarta parte una vez inscrita la compañía en el Registro Mercantil.",
+    "texto": "25 % (una cuarta parte)",
+    "valor": 25,
+    "unidad": "%",
+    "vigencia": {
+      "desde": "2026-01-01",
+      "hasta": "2026-12-31",
+      "ejercicio_fiscal": 2026
+    },
+    "base_legal": "Ley de Compañías, art. 147.",
+    "fuente": {
+      "ref": "ley-companias",
+      "seccion": "Art. 147"
+    },
+    "cambia": "Solo cambia si se reforma la Ley de Compañías; se relee el texto vigente cada enero.",
+    "verificado_en": "2026-10-26",
+    "detectar": [
+      "25 ?% pagado",
+      "(al menos|por lo menos) (la|una) cuarta parte"
+    ]
+  }
+]

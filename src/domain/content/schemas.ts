@@ -58,6 +58,104 @@ export const fuenteRefSchema = z.object({
 });
 export type FuenteRef = z.infer<typeof fuenteRefSchema>;
 
+/**
+ * Period for which ÁBACO states that a normative figure is in force, checked against its official source. It never
+ * goes past the fiscal year that was verified: in January the figure is checked again (docs/revision-anual.md).
+ */
+export const vigenciaSchema = z
+  .object({
+    desde: isoDate,
+    hasta: isoDate,
+    ejercicio_fiscal: z.number().int().min(2020).max(2100),
+  })
+  .refine((v) => v.desde <= v.hasta, { message: 'La vigencia debe empezar antes de terminar' })
+  .refine(
+    (v) => v.desde.startsWith(`${v.ejercicio_fiscal}-`) && v.hasta.startsWith(`${v.ejercicio_fiscal}-`),
+    { message: 'La vigencia debe caer dentro de su ejercicio fiscal' },
+  );
+export type Vigencia = z.infer<typeof vigenciaSchema>;
+
+export const CIFRA_CATEGORIES = ['laboral', 'seguridad-social', 'tributario', 'societario'] as const;
+
+const regexSource = z
+  .string()
+  .min(2)
+  .refine((source) => {
+    try {
+      new RegExp(source, 'iu');
+      return true;
+    } catch {
+      return false;
+    }
+  }, 'Expresión regular inválida');
+
+const tramoSchema = z.object({
+  desde: z.number().nonnegative(),
+  /** null only in the last bracket ("en adelante"). */
+  hasta: z.number().positive().nullable(),
+  impuesto_fraccion: z.number().nonnegative(),
+  /** Marginal rate in percent, as the official table prints it (5 means 5 %). */
+  porcentaje: z.number().min(0).max(100),
+});
+
+const cuotaSchema = z.object({
+  desde: z.number().nonnegative(),
+  hasta: z.number().positive(),
+  cuota: z.number().nonnegative(),
+});
+
+/**
+ * A figure of Ecuadorian law or regulation (wage, contribution rate, tax rate or table) that can change with a new
+ * norm. It is written once here, with its validity, and every record that uses it declares it in `cifras`.
+ */
+export const cifraSchema = z
+  .object({
+    id,
+    nombre: nonEmpty,
+    categoria: z.enum(CIFRA_CATEGORIES),
+    descripcion: nonEmpty,
+    /** The figure as students read it ("USD 482 al mes"). */
+    texto: nonEmpty,
+    valor: z.number().nonnegative().optional(),
+    unidad: z.enum(['USD', '%', 'horas', 'días', 'meses']).optional(),
+    tramos: z.array(tramoSchema).min(2).optional(),
+    cuotas: z.array(cuotaSchema).min(2).optional(),
+    vigencia: vigenciaSchema,
+    base_legal: nonEmpty,
+    fuente: fuenteRefSchema,
+    /** Who changes it and when, so the yearly review knows where to look. */
+    cambia: nonEmpty,
+    verificado_en: isoDate,
+    /** Patterns that reveal the figure inside any record; a match obliges the record to declare it. */
+    detectar: z.array(regexSource).min(1),
+  })
+  .superRefine((cifra, ctx) => {
+    const forms = [cifra.valor !== undefined, cifra.tramos !== undefined, cifra.cuotas !== undefined];
+    if (forms.filter(Boolean).length !== 1) {
+      ctx.addIssue({ code: 'custom', message: 'Una cifra tiene exactamente uno de: valor, tramos o cuotas' });
+    }
+    if (cifra.valor !== undefined && !cifra.unidad) {
+      ctx.addIssue({ code: 'custom', message: 'Un valor necesita su unidad' });
+    }
+    const rows = cifra.tramos ?? cifra.cuotas ?? [];
+    rows.forEach((row, i) => {
+      const next = rows[i + 1];
+      if (row.hasta === null && next) {
+        ctx.addIssue({ code: 'custom', message: 'Solo el último tramo puede no tener límite' });
+      }
+      if (next && row.hasta !== null && Math.abs(next.desde - row.hasta) > 0.011) {
+        ctx.addIssue({ code: 'custom', message: `El tramo ${i + 2} no empieza donde termina el anterior` });
+      }
+    });
+    if (cifra.verificado_en > cifra.vigencia.hasta) {
+      ctx.addIssue({ code: 'custom', message: 'No se puede verificar una cifra después de su vigencia' });
+    }
+  });
+export type Cifra = z.infer<typeof cifraSchema>;
+
+/** Ids of content/normativa.json used by a record (optional: most records do not depend on any norm). */
+const cifrasRef = z.array(id).min(1).optional();
+
 /** In-house study tools a subject can link to (see src/features/tools). */
 export const TOOL_IDS = [
   'editor',
@@ -127,6 +225,7 @@ export const subtemaSchema = z.object({
   puntos_clave: z.array(nonEmpty).min(1),
   errores_frecuentes: z.array(nonEmpty).min(1),
   formulas: z.array(id),
+  cifras: cifrasRef,
   fuente: fuenteRefSchema,
 });
 export type Subtema = z.infer<typeof subtemaSchema>;
@@ -187,6 +286,7 @@ export const formulaSchema = z
     materias: z.array(id).min(1),
     notas: z.array(nonEmpty).default([]),
     estado: z.enum(['verificada', 'pendiente']).default('verificada'),
+    cifras: cifrasRef,
     fuente: fuenteRefSchema,
     actualizado_en: isoDate,
   })
@@ -223,6 +323,7 @@ export const ejercicioSchema = z
     procedimiento: z.array(nonEmpty).min(1),
     pistas: z.array(nonEmpty).min(1),
     dificultad: z.number().int().min(1).max(3),
+    cifras: cifrasRef,
     fuente: fuenteRefSchema,
     actualizado_en: isoDate,
   })
@@ -252,6 +353,7 @@ export const terminoSchema = z.object({
   sinonimos: z.array(nonEmpty),
   equivalente_ingles: nonEmpty,
   areas: z.array(area).min(1),
+  cifras: cifrasRef,
   fuente: fuenteRefSchema,
   actualizado_en: isoDate,
 });
@@ -283,3 +385,4 @@ export const ejerciciosFileSchema = z.array(ejercicioSchema);
 export const appsFileSchema = z.array(appSchema);
 export const glosarioFileSchema = z.array(terminoSchema);
 export const plantillasFileSchema = z.array(plantillaSchema);
+export const normativaFileSchema = z.array(cifraSchema);

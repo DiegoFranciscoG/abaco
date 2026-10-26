@@ -103,6 +103,9 @@
             "Considerar normal una jornada de 48 horas semanales sin recargo."
           ],
           "formulas": [],
+          "cifras": [
+            "jornada-maxima"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 47"
@@ -121,6 +124,11 @@
             "Pagar las horas nocturnas con el mismo 50 % que las diurnas."
           ],
           "formulas": [],
+          "cifras": [
+            "recargo-suplementarias",
+            "recargo-extraordinarias",
+            "limite-horas-suplementarias"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 55"
@@ -139,6 +147,9 @@
             "Contar las comisiones para alcanzar el salario básico."
           ],
           "formulas": [],
+          "cifras": [
+            "sbu"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 81"
@@ -184,6 +195,9 @@
             "Calcularlo sobre el sueldo del trabajador en lugar del SBU."
           ],
           "formulas": [],
+          "cifras": [
+            "sbu"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 113"
@@ -202,6 +216,9 @@
             "Pagarlo desde el primer mes de trabajo."
           ],
           "formulas": [],
+          "cifras": [
+            "fondo-reserva"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 196"
@@ -220,6 +237,9 @@
             "Fraccionar las vacaciones de forma que el trabajador nunca descanse quince días seguidos."
           ],
           "formulas": [],
+          "cifras": [
+            "vacaciones-anuales"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 69"
@@ -238,6 +258,9 @@
             "Repartir el 15 % en proporción a los sueldos."
           ],
           "formulas": [],
+          "cifras": [
+            "participacion-utilidades"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 97"
@@ -265,6 +288,10 @@
             "Incluir el décimo tercero en la base de aportes: el art. 112 del Código del Trabajo lo excluye."
           ],
           "formulas": [],
+          "cifras": [
+            "iess-aporte-personal",
+            "iess-aporte-patronal"
+          ],
           "fuente": {
             "ref": "iess-tasas",
             "seccion": "Tasas de aportación, sector privado"
@@ -301,6 +328,9 @@
             "Confundir el desahucio con el despido intempestivo."
           ],
           "formulas": [],
+          "cifras": [
+            "bonificacion-desahucio"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Arts. 184 y 185"
@@ -319,6 +349,9 @@
             "Contar solo los años completos y despreciar la fracción."
           ],
           "formulas": [],
+          "cifras": [
+            "indemnizacion-despido"
+          ],
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 188"

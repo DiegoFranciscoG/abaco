@@ -8,7 +8,7 @@
       "P": 19300
     },
     "calculo": "A - P",
-    "respuesta": 32700.0,
+    "respuesta": 32700,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -41,7 +41,7 @@
       "R": 1000
     },
     "calculo": "P + C + I - G - R",
-    "respuesta": 36750.0,
+    "respuesta": 36750,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -71,7 +71,7 @@
       "compra": 3500
     },
     "calculo": "A0 + compra",
-    "respuesta": 43500.0,
+    "respuesta": 43500,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -110,7 +110,7 @@
       ]
     },
     "calculo": "SUM(debe) - SUM(haber)",
-    "respuesta": 2765.0,
+    "respuesta": 2765,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -149,7 +149,7 @@
       ]
     },
     "calculo": "SUM(debe) - SUM(haber)",
-    "respuesta": 90.0,
+    "respuesta": 90,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -185,7 +185,7 @@
       ]
     },
     "calculo": "I - SUM(g)",
-    "respuesta": 11150.0,
+    "respuesta": 11150,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -218,7 +218,7 @@
       "IF": 7200
     },
     "calculo": "II + (Co + Fl - Dc) - IF",
-    "respuesta": 27800.0,
+    "respuesta": 27800,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -280,7 +280,7 @@
       "c2": 11
     },
     "calculo": "q1 * c1 + q2 * c2",
-    "respuesta": 1050.0,
+    "respuesta": 1050,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -561,7 +561,7 @@
       "b": 4
     },
     "calculo": "((3 * b ^ 2 + 2 * b) - (3 * a ^ 2 + 2 * a)) / (b - a)",
-    "respuesta": 17.0,
+    "respuesta": 17,
     "unidad": "unidades de f por unidad de x",
     "tolerancia": 0.0001,
     "procedimiento": [
@@ -593,7 +593,7 @@
       "q": 40
     },
     "calculo": "b + 2 * c * q",
-    "respuesta": 12.0,
+    "respuesta": 12,
     "unidad": "USD por unidad",
     "tolerancia": 0.0001,
     "procedimiento": [
@@ -623,7 +623,7 @@
       "d": 0.6
     },
     "calculo": "p / (2 * d)",
-    "respuesta": 100.0,
+    "respuesta": 100,
     "unidad": "unidades",
     "tolerancia": 0.0001,
     "procedimiento": [
@@ -733,7 +733,7 @@
       ]
     },
     "calculo": "SUMPRODUCT(v, f)",
-    "respuesta": 2550.0,
+    "respuesta": 2550,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -828,7 +828,7 @@
       "n": 5
     },
     "calculo": "(C - VR) / n",
-    "respuesta": 4800.0,
+    "respuesta": 4800,
     "unidad": "USD/año",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -859,7 +859,7 @@
       "k": 2
     },
     "calculo": "(C - VR) * (n - k + 1) / (n * (n + 1) / 2)",
-    "respuesta": 3600.0,
+    "respuesta": 3600,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -890,7 +890,7 @@
       "CVu": 50
     },
     "calculo": "CF / (P - CVu)",
-    "respuesta": 180.0,
+    "respuesta": 180,
     "unidad": "unidades",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -979,7 +979,7 @@
       "t": 0.15
     },
     "calculo": "IFB + (BI - FB) * t",
-    "respuesta": 1907.0,
+    "respuesta": 1907,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -991,6 +991,9 @@
       "El porcentaje solo se aplica a lo que excede la fracción básica."
     ],
     "dificultad": 2,
+    "cifras": [
+      "ir-personas-tabla"
+    ],
     "fuente": {
       "ref": "sri-tablas-ir",
       "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
@@ -1097,7 +1100,7 @@
     "calculo": "UN / Pt",
     "respuesta": 0.15,
     "unidad": "proporción",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "ROE = UN ÷ Pt",
       "ROE = 54.000 ÷ 360.000 = 0,15 (15 %)"
@@ -1160,7 +1163,7 @@
     "calculo": "(FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3) / I0",
     "respuesta": 1.0638,
     "unidad": "veces",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "VA de los flujos = 53.189,91",
       "IR = 53.189,91 ÷ 50.000 = 1,0638"
@@ -1188,7 +1191,7 @@
       "t": 0.6666666666666666
     },
     "calculo": "P * i * t",
-    "respuesta": 144.0,
+    "respuesta": 144,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -1218,7 +1221,7 @@
       "b": 6
     },
     "calculo": "(fb - fa) / (b - a)",
-    "respuesta": 900.0,
+    "respuesta": 900,
     "unidad": "USD por mes",
     "tolerancia": 0.005,
     "procedimiento": [
@@ -1277,7 +1280,7 @@
     "calculo": "s / media",
     "respuesta": 0.15,
     "unidad": "proporción",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "CV = s ÷ media",
       "CV = 126 ÷ 840 = 0,15 (15 %)"
@@ -1307,7 +1310,7 @@
     "calculo": "((Q2 - Q1) / ((Q2 + Q1) / 2)) / ((P2 - P1) / ((P2 + P1) / 2))",
     "respuesta": -0.8919,
     "unidad": "sin unidad",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "%ΔQ = (340 − 400) ÷ 370 = −0,1622",
       "%ΔP = (36 − 30) ÷ 33 = 0,1818",
@@ -1400,7 +1403,7 @@
     "calculo": "(IP1 - IP0) / IP0 * 100",
     "respuesta": 3.75,
     "unidad": "%",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "Cambio = 107,9 − 104,0 = 3,9",
       "π = 3,9 ÷ 104 × 100 = 3,75 %"
@@ -1486,7 +1489,7 @@
       "TC": 1.12
     },
     "calculo": "Monto * TC",
-    "respuesta": 3584.0,
+    "respuesta": 3584,
     "unidad": "USD",
     "tolerancia": 0.005,
     "procedimiento": [

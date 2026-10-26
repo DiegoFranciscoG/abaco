@@ -40,6 +40,9 @@
             "Suponer que un profesional independiente con pocos ingresos puede ser negocio popular."
           ],
           "formulas": [],
+          "cifras": [
+            "rimpe-limites"
+          ],
           "fuente": {
             "ref": "sri-rimpe",
             "seccion": "RIMPE: sujetos y exclusiones"
@@ -75,7 +78,7 @@
         {
           "id": "tr-iva-tarifas",
           "nombre": "Tarifas del IVA",
-          "explicacion": "Según la tabla publicada por el SRI, la tarifa general es 15 % desde el 1 de abril de 2024 (Decreto Ejecutivo 198), con 5 % para materiales de construcción y 0 % para los bienes y servicios de la lista oficial. La tarifa general puede cambiar por decreto, así que conviene confirmarla antes de cada cálculo.",
+          "explicacion": "La Ley de Régimen Tributario Interno (art. 65) fija el IVA en 13 % y permite que el Presidente, por decreto, lo ubique entre 13 % y 15 %. Desde el 1 de abril de 2024 rige 15 % (Decreto Ejecutivo 198); se mantuvo en 2025 y sigue en 2026 porque, sin un nuevo decreto, se mantiene la última tarifa fijada (circular del SRI de diciembre de 2025). Los materiales de construcción pagan 5 % y los bienes y servicios de la lista oficial, 0 %.",
           "ejemplo": "Una laptop cuesta USD 800 sin IVA: con la tarifa general de 15 %, el IVA es 120 y el precio final 920. Si una mochila cuesta USD 46 con IVA incluido, su base es 46 ÷ 1,15 = USD 40 y el IVA USD 6. Antes de calcular, confirma en el SRI que la tarifa general siga en 15 %.",
           "puntos_clave": [
             "Precio con IVA = base × (1 + tarifa).",
@@ -89,9 +92,13 @@
             "precio-con-iva",
             "base-desde-pvp"
           ],
+          "cifras": [
+            "iva-tarifa-general",
+            "iva-tarifa-construccion"
+          ],
           "fuente": {
             "ref": "sri-iva",
-            "seccion": "Tarifas del IVA (Decreto Ejecutivo 198)"
+            "seccion": "Tarifas del IVA"
           }
         },
         {
@@ -154,6 +161,9 @@
             "Restar gastos que no se relacionan con la generación del ingreso."
           ],
           "formulas": [],
+          "cifras": [
+            "iess-aporte-personal"
+          ],
           "fuente": {
             "ref": "sri-renta",
             "seccion": "Impuesto a la renta: ejercicio y base imponible"
@@ -174,6 +184,9 @@
           "formulas": [
             "impuesto-renta-personas"
           ],
+          "cifras": [
+            "ir-personas-tabla"
+          ],
           "fuente": {
             "ref": "sri-tablas-ir",
             "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
@@ -193,6 +206,10 @@
           ],
           "formulas": [
             "impuesto-renta-sociedades"
+          ],
+          "cifras": [
+            "participacion-utilidades",
+            "ir-sociedades"
           ],
           "fuente": {
             "ref": "sri-renta",
@@ -239,6 +256,9 @@
             "Pensar que sin ingresos no hay que declarar."
           ],
           "formulas": [],
+          "cifras": [
+            "rimpe-negocios-populares"
+          ],
           "fuente": {
             "ref": "sri-rimpe",
             "seccion": "Impuesto a la renta de negocios populares"
@@ -257,6 +277,10 @@
             "Calcular el impuesto de un emprendedor sobre la utilidad contable."
           ],
           "formulas": [],
+          "cifras": [
+            "rimpe-limites",
+            "rimpe-emprendedores"
+          ],
           "fuente": {
             "ref": "sri-rimpe",
             "seccion": "Impuesto a la renta de emprendedores"

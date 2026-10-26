@@ -188,6 +188,9 @@
             "Llamar «acciones» a las participaciones de una limitada."
           ],
           "formulas": [],
+          "cifras": [
+            "capital-pagado-limitada"
+          ],
           "fuente": {
             "ref": "ley-companias",
             "seccion": "Art. 102"
@@ -253,6 +256,9 @@
             "Aplicar a la anónima el 50 % de pago inicial que corresponde a la limitada."
           ],
           "formulas": [],
+          "cifras": [
+            "capital-pagado-anonima"
+          ],
           "fuente": {
             "ref": "ley-companias",
             "seccion": "Arts. 147, 160 y 168"

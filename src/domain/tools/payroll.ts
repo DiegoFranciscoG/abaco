@@ -1,24 +1,31 @@
+import { cifraValor, percentLabel } from '../content/normativa';
+
 /**
  * Monthly payslip ("rol de pagos") for a private-sector worker in Ecuador. Educational: every line carries its legal
  * basis, and anything that is not a fixed rule of the law is an input the student can change.
  *
- * Verified sources (docs/investigacion.md, N4, N8, N9):
- * - IESS official table: 9.45 % personal and 11.15 % employer contribution (private sector, dependent work).
- * - Código del Trabajo: art. 55 (overtime surcharges 50 % / 100 %), art. 111 and 112 (13th salary, excluded from the
- *   IESS base), art. 113 (14th salary = one twelfth of the SBU), art. 196 (reserve fund after the first year).
- * - SBU 2026: USD 482 (Ministerio del Trabajo).
+ * Rates and the SBU come from content/normativa.json (verified, with validity dates; see docs/revision-anual.md):
+ * - IESS official table: personal and employer contribution (private sector, dependent work).
+ * - Código del Trabajo: art. 55 (overtime surcharges), art. 111 and 112 (13th salary, excluded from the IESS base),
+ *   art. 113 (14th salary = one twelfth of the SBU), art. 196 (reserve fund after the first year).
  */
-export const IESS_PERSONAL = 0.0945;
-export const IESS_PATRONAL = 0.1115;
-export const SBU_2026 = 482;
+const IESS_PERSONAL_PCT = cifraValor('iess-aporte-personal');
+const IESS_PATRONAL_PCT = cifraValor('iess-aporte-patronal');
+const RECARGO_SUPLEMENTARIAS_PCT = cifraValor('recargo-suplementarias');
+const RECARGO_EXTRAORDINARIAS_PCT = cifraValor('recargo-extraordinarias');
+const FONDO_RESERVA_PCT = cifraValor('fondo-reserva');
+export const IESS_PERSONAL = IESS_PERSONAL_PCT / 100;
+export const IESS_PATRONAL = IESS_PATRONAL_PCT / 100;
+/** SBU of the fiscal year in force in content/normativa.json. */
+export const SBU_VIGENTE = cifraValor('sbu');
 /** Usual divisor (30 days × 8 hours). The Labour Code sets it expressly only for public-sector collective contracts. */
 export const HORAS_MES_HABITUAL = 240;
 
 export interface PayrollInput {
   sueldo: number;
-  /** Hours paid with 50 % surcharge (daytime, until 24:00). */
+  /** Hours paid with the daytime surcharge (until 24:00). */
   horasSuplementarias: number;
-  /** Hours paid with 100 % surcharge (between 24:00 and 06:00). */
+  /** Hours paid with the night surcharge (between 24:00 and 06:00). */
   horasNocturnas: number;
   comisiones: number;
   /** Months worked with the same employer before this month. */
@@ -65,7 +72,7 @@ export const DEFAULT_PAYROLL: PayrollInput = {
   comisiones: 0,
   mesesAntiguedad: 0,
   decimosMensualizados: false,
-  sbu: SBU_2026,
+  sbu: SBU_VIGENTE,
   horasMes: HORAS_MES_HABITUAL,
   otrasPatronales: 0,
 };
@@ -93,8 +100,8 @@ export function computePayroll(input: PayrollInput): PayrollResult {
     );
 
   const valorHora = sueldo / horasMes;
-  const pagoSuplementarias = round2(valorHora * 1.5 * suplementarias);
-  const pagoNocturnas = round2(valorHora * 2 * nocturnas);
+  const pagoSuplementarias = round2(valorHora * (1 + RECARGO_SUPLEMENTARIAS_PCT / 100) * suplementarias);
+  const pagoNocturnas = round2(valorHora * (1 + RECARGO_EXTRAORDINARIAS_PCT / 100) * nocturnas);
   const materiaGravadaIess = round2(sueldo + pagoSuplementarias + pagoNocturnas + comisiones);
 
   const ingresos: PayrollLine[] = [
@@ -106,14 +113,14 @@ export function computePayroll(input: PayrollInput): PayrollResult {
   ];
   if (pagoSuplementarias > 0) {
     ingresos.push({
-      concepto: `Horas suplementarias (${suplementarias} h al 50 %)`,
+      concepto: `Horas suplementarias (${suplementarias} h al ${percentLabel(RECARGO_SUPLEMENTARIAS_PCT)})`,
       valor: pagoSuplementarias,
       base: 'Código del Trabajo, art. 55',
     });
   }
   if (pagoNocturnas > 0) {
     ingresos.push({
-      concepto: `Horas entre 24:00 y 06:00 (${nocturnas} h al 100 %)`,
+      concepto: `Horas entre 24:00 y 06:00 (${nocturnas} h al ${percentLabel(RECARGO_EXTRAORDINARIAS_PCT)})`,
       valor: pagoNocturnas,
       base: 'Código del Trabajo, art. 55',
     });
@@ -138,7 +145,7 @@ export function computePayroll(input: PayrollInput): PayrollResult {
   }
   if (fondoReserva > 0) {
     ingresos.push({
-      concepto: 'Fondo de reserva (8,33 %)',
+      concepto: `Fondo de reserva (${percentLabel(FONDO_RESERVA_PCT)})`,
       valor: fondoReserva,
       base: 'Código del Trabajo, art. 196: desde el segundo año',
     });
@@ -147,7 +154,7 @@ export function computePayroll(input: PayrollInput): PayrollResult {
   const aportePersonal = round2(materiaGravadaIess * IESS_PERSONAL);
   const descuentos: PayrollLine[] = [
     {
-      concepto: 'Aporte personal al IESS (9,45 %)',
+      concepto: `Aporte personal al IESS (${percentLabel(IESS_PERSONAL_PCT)})`,
       valor: aportePersonal,
       base: 'Tabla oficial de tasas del IESS',
     },
@@ -156,7 +163,7 @@ export function computePayroll(input: PayrollInput): PayrollResult {
   const aportePatronal = round2(materiaGravadaIess * IESS_PATRONAL);
   const costosEmpleador: PayrollLine[] = [
     {
-      concepto: 'Aporte patronal al IESS (11,15 %)',
+      concepto: `Aporte patronal al IESS (${percentLabel(IESS_PATRONAL_PCT)})`,
       valor: aportePatronal,
       base: 'Tabla oficial de tasas del IESS',
     },

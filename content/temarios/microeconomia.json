@@ -145,6 +145,9 @@
             "Suponer que un precio máximo por encima del equilibrio cambia algo."
           ],
           "formulas": [],
+          "cifras": [
+            "sbu"
+          ],
           "fuente": {
             "ref": "os-micro3",
             "url": "https://openstax.org/books/principles-microeconomics-3e/pages/3-4-price-ceilings-and-price-floors",

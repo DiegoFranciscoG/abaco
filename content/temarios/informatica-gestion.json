@@ -24,6 +24,9 @@
             "Copiar una fórmula de un tutorial en inglés con comas y obtener un error de sintaxis."
           ],
           "formulas": [],
+          "cifras": [
+            "iva-tarifa-general"
+          ],
           "fuente": {
             "ref": "ms-excel-formulas",
             "seccion": "Información general sobre fórmulas"

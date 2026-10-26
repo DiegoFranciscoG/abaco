@@ -1,9 +1,11 @@
+import { cifraValor, requireCifra } from '../content/normativa';
+
 /**
- * Ecuadorian tax calculations used by the "IVA e impuesto a la renta" tool.
- * Sources (verified 2026-10-25, see docs/investigacion.md):
- * - Income tax table 2026: SRI, Res. NAC-DGERCGC25-00000043 (2.º Supl. R.O. 194, 30-12-2025).
- * - RIMPE tables: SRI, "Régimen Simplificado para Emprendedores y Negocios Populares".
- * - IVA: general rate 15 % since 01-04-2024 (Decreto Ejecutivo 198); kept as an input because it can change by decree.
+ * Ecuadorian tax calculations used by the "IVA e impuesto a la renta" tool. Every rate and table comes from
+ * content/normativa.json, where each one carries its legal basis, official source and validity:
+ * - Income tax table of the fiscal year (SRI resolution published every December).
+ * - RIMPE tables and limits (SRI, "Régimen Simplificado para Emprendedores y Negocios Populares").
+ * - IVA general rate, kept as an input because it can change by decree.
  */
 
 export interface IncomeBracket {
@@ -13,38 +15,33 @@ export interface IncomeBracket {
   porcentaje: number;
 }
 
-export const IR_PERSONAS_2026: readonly IncomeBracket[] = [
-  { desde: 0, hasta: 12_208, impuestoFraccion: 0, porcentaje: 0 },
-  { desde: 12_208, hasta: 15_549, impuestoFraccion: 0, porcentaje: 0.05 },
-  { desde: 15_549, hasta: 20_188, impuestoFraccion: 167, porcentaje: 0.1 },
-  { desde: 20_188, hasta: 26_700, impuestoFraccion: 631, porcentaje: 0.12 },
-  { desde: 26_700, hasta: 35_136, impuestoFraccion: 1_412, porcentaje: 0.15 },
-  { desde: 35_136, hasta: 46_575, impuestoFraccion: 2_678, porcentaje: 0.2 },
-  { desde: 46_575, hasta: 62_005, impuestoFraccion: 4_965, porcentaje: 0.25 },
-  { desde: 62_005, hasta: 82_679, impuestoFraccion: 8_823, porcentaje: 0.3 },
-  { desde: 82_679, hasta: 109_956, impuestoFraccion: 15_025, porcentaje: 0.35 },
-  { desde: 109_956, hasta: null, impuestoFraccion: 24_572, porcentaje: 0.37 },
-];
+function brackets(id: string): IncomeBracket[] {
+  const { tramos } = requireCifra(id);
+  if (!tramos) throw new Error(`La cifra «${id}» no es una tabla de tramos`);
+  return tramos.map((t) => ({
+    desde: t.desde,
+    hasta: t.hasta,
+    impuestoFraccion: t.impuesto_fraccion,
+    porcentaje: t.porcentaje / 100,
+  }));
+}
 
-export const IR_SOCIEDADES_TARIFA = 0.25;
+/** Income tax table of individuals for the fiscal year in force. */
+export const IR_PERSONAS: readonly IncomeBracket[] = brackets('ir-personas-tabla');
+export const IR_PERSONAS_EJERCICIO = requireCifra('ir-personas-tabla').vigencia.ejercicio_fiscal;
 
-export const RIMPE_POPULARES: readonly { desde: number; hasta: number; cuota: number }[] = [
-  { desde: 0, hasta: 2_500, cuota: 0 },
-  { desde: 2_500, hasta: 5_000, cuota: 5 },
-  { desde: 5_000, hasta: 10_000, cuota: 15 },
-  { desde: 10_000, hasta: 15_000, cuota: 35 },
-  { desde: 15_000, hasta: 20_000, cuota: 60 },
-];
+export const IR_SOCIEDADES_TARIFA = cifraValor('ir-sociedades') / 100;
 
-export const RIMPE_EMPRENDEDORES: readonly IncomeBracket[] = [
-  { desde: 20_000, hasta: 50_000, impuestoFraccion: 60, porcentaje: 0.01 },
-  { desde: 50_000, hasta: 75_000, impuestoFraccion: 360, porcentaje: 0.0125 },
-  { desde: 75_000, hasta: 100_000, impuestoFraccion: 672.5, porcentaje: 0.015 },
-  { desde: 100_000, hasta: 200_000, impuestoFraccion: 1_047.5, porcentaje: 0.0175 },
-  { desde: 200_000, hasta: 300_000, impuestoFraccion: 2_797.52, porcentaje: 0.02 },
-];
+export const RIMPE_POPULARES: readonly { desde: number; hasta: number; cuota: number }[] =
+  requireCifra('rimpe-negocios-populares').cuotas ?? [];
 
-export const IVA_TARIFA_GENERAL = 0.15;
+export const RIMPE_EMPRENDEDORES: readonly IncomeBracket[] = brackets('rimpe-emprendedores');
+
+/** Gross income limit of the RIMPE (entrepreneurs) and of popular businesses (last row of their table). */
+export const RIMPE_LIMITE = cifraValor('rimpe-limites');
+export const RIMPE_LIMITE_POPULARES = RIMPE_POPULARES[RIMPE_POPULARES.length - 1]?.hasta ?? 0;
+
+export const IVA_TARIFA_GENERAL = cifraValor('iva-tarifa-general') / 100;
 
 const round2 = (value: number): number => Math.round((value + Number.EPSILON) * 100) / 100;
 
@@ -92,10 +89,10 @@ function applyBrackets(base: number, table: readonly IncomeBracket[]): BracketRe
   };
 }
 
-/** Income tax of individuals with the 2026 table (before the personal expenses rebate). */
+/** Income tax of individuals with the table in force (before the personal expenses rebate). */
 export function incomeTaxPersonas(
   baseImponible: number,
-  table: readonly IncomeBracket[] = IR_PERSONAS_2026,
+  table: readonly IncomeBracket[] = IR_PERSONAS,
 ): BracketResult {
   assertAmount(baseImponible, 'La base imponible');
   return applyBrackets(baseImponible, table);
@@ -120,13 +117,13 @@ export type RimpeResult =
  */
 export function rimpeTax(ingresosBrutos: number, esNegocioPopular: boolean): RimpeResult {
   assertAmount(ingresosBrutos, 'Los ingresos brutos');
-  if (ingresosBrutos > 300_000) return { regimen: 'fuera', impuesto: null };
-  if (esNegocioPopular && ingresosBrutos <= 20_000) {
+  if (ingresosBrutos > RIMPE_LIMITE) return { regimen: 'fuera', impuesto: null };
+  if (esNegocioPopular && ingresosBrutos <= RIMPE_LIMITE_POPULARES) {
     const tramo =
       RIMPE_POPULARES.find((b) => ingresosBrutos <= b.hasta) ?? RIMPE_POPULARES[RIMPE_POPULARES.length - 1];
     return { regimen: 'negocio-popular', impuesto: tramo?.cuota ?? 0 };
   }
-  if (ingresosBrutos < 20_000) return { regimen: 'sin-tramo', impuesto: null };
+  if (ingresosBrutos < (RIMPE_EMPRENDEDORES[0]?.desde ?? 0)) return { regimen: 'sin-tramo', impuesto: null };
   const { impuesto, tramo } = applyBrackets(ingresosBrutos, RIMPE_EMPRENDEDORES);
   return { regimen: 'emprendedor', impuesto, tramo };
 }

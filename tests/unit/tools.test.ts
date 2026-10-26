@@ -41,7 +41,7 @@ import {
 import {
   incomeTaxPersonas,
   incomeTaxSociedades,
-  IR_PERSONAS_2026,
+  IR_PERSONAS,
   ivaFromBase,
   ivaFromTotal,
   rimpeTax,
@@ -65,9 +65,9 @@ describe('tax (SRI tables verified 2026-10-25)', () => {
   });
 
   it('the published table is internally consistent (each basic tax = previous + rate × width)', () => {
-    for (let i = 1; i < IR_PERSONAS_2026.length; i += 1) {
-      const prev = IR_PERSONAS_2026[i - 1]!;
-      const cur = IR_PERSONAS_2026[i]!;
+    for (let i = 1; i < IR_PERSONAS.length; i += 1) {
+      const prev = IR_PERSONAS[i - 1]!;
+      const cur = IR_PERSONAS[i]!;
       expect(cur.desde).toBe(prev.hasta);
       expect(
         Math.abs(

@@ -511,6 +511,9 @@
     "areas": [
       "tributario"
     ],
+    "cifras": [
+      "ir-personas-tabla"
+    ],
     "fuente": {
       "ref": "sri-tablas-ir",
       "seccion": "Tabla 2026"
@@ -573,6 +576,9 @@
     "areas": [
       "derecho",
       "economia"
+    ],
+    "cifras": [
+      "sbu"
     ],
     "fuente": {
       "ref": "mdt-sbu-2026",

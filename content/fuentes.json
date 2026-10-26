@@ -105,7 +105,16 @@
     "tipo": "pagina_oficial",
     "url": "https://www.sri.gob.ec/impuesto-al-valor-agregado-iva",
     "licencia": "Información pública oficial",
-    "fecha_consulta": "2026-10-14"
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "sri-circular-iva-2026",
+    "titulo": "Circular NAC-DGECCGC25-00000006: vigencia de la tarifa general del IVA (15 %)",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "norma",
+    "url": "https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar?id=236482f4-6125-42fd-b073-62c99d08233d&nombre=NAC-DGECCGC25-00000006.pdf",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "sri-renta",
@@ -114,7 +123,7 @@
     "tipo": "pagina_oficial",
     "url": "https://www.sri.gob.ec/impuesto-renta",
     "licencia": "Información pública oficial",
-    "fecha_consulta": "2026-10-14"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "sri-tablas-ir",
@@ -123,7 +132,7 @@
     "tipo": "norma",
     "url": "https://www.sri.gob.ec/o/sri-portlet-biblioteca-alfresco-internet/descargar/58a7f4f6-ab51-48b6-b9ff-a8e97e1a28ef/Tablas%20de%20c%c3%a1lculo%20de%20Impuesto%20a%20la%20Renta.pdf",
     "licencia": "Información pública oficial",
-    "fecha_consulta": "2026-10-14"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "mdt-sbu-2026",
@@ -132,7 +141,7 @@
     "tipo": "pagina_oficial",
     "url": "https://www.trabajo.gob.ec/despues-de-casi-una-decada-hay-consenso-gobierno-empleadores-y-trabajadores-acuerdan-fijar-el-salario-basico-unificado-de-2026-en-usd-482-no-hay-imposicion-hay-union/",
     "licencia": "Información pública oficial",
-    "fecha_consulta": "2026-10-14"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "ley-companias",
@@ -141,7 +150,7 @@
     "tipo": "ley",
     "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
     "licencia": "Norma pública",
-    "fecha_consulta": "2026-10-14"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "supercias",
@@ -312,7 +321,7 @@
     "tipo": "ley",
     "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
     "licencia": "Norma pública (Código Ingenios, art. 107)",
-    "fecha_consulta": "2026-10-25"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "iess-tasas",
@@ -321,7 +330,7 @@
     "tipo": "pagina_oficial",
     "url": "https://www.iess.gob.ec/documents/13718/54965/Tasasdeaportacion.pdf",
     "licencia": "Información pública oficial",
-    "fecha_consulta": "2026-10-25"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "comf",
@@ -348,7 +357,7 @@
     "tipo": "pagina_oficial",
     "url": "https://www.sri.gob.ec/rimpe",
     "licencia": "Información pública oficial",
-    "fecha_consulta": "2026-10-25"
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "sri-facturacion",

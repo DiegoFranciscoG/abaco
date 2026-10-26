@@ -16,6 +16,8 @@ export interface ToolInfo {
   enLinea: boolean;
   /** Ids of content/fuentes.json behind its rules or data (shown on the tool page). */
   fuentes: string[];
+  /** Ids of content/normativa.json the tool calculates with (their validity is shown on the tool page). */
+  cifras?: string[];
 }
 
 export const TOOLS: ToolInfo[] = [
@@ -128,6 +130,14 @@ export const TOOLS: ToolInfo[] = [
     area: 'derecho',
     enLinea: false,
     fuentes: ['codigo-trabajo', 'iess-tasas', 'mdt-sbu-2026'],
+    cifras: [
+      'sbu',
+      'iess-aporte-personal',
+      'iess-aporte-patronal',
+      'recargo-suplementarias',
+      'recargo-extraordinarias',
+      'fondo-reserva',
+    ],
   },
   {
     id: 'impuestos',
@@ -138,7 +148,15 @@ export const TOOLS: ToolInfo[] = [
     ruta: '/herramientas/impuestos',
     area: 'tributario',
     enLinea: false,
-    fuentes: ['sri-iva', 'sri-renta', 'sri-tablas-ir', 'sri-rimpe'],
+    fuentes: ['sri-iva', 'sri-circular-iva-2026', 'sri-renta', 'sri-tablas-ir', 'sri-rimpe'],
+    cifras: [
+      'iva-tarifa-general',
+      'ir-personas-tabla',
+      'ir-sociedades',
+      'rimpe-limites',
+      'rimpe-negocios-populares',
+      'rimpe-emprendedores',
+    ],
   },
   {
     id: 'foda',
