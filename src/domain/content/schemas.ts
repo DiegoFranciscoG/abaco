@@ -174,6 +174,7 @@ export const TOOL_IDS = [
   'citas',
   'laboratorio',
   'buscador',
+  'notas',
 ] as const;
 export type ToolId = (typeof TOOL_IDS)[number];
 

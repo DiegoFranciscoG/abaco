@@ -18,4 +18,5 @@ export const TOOL_ICON: Record<ToolId, IconName> = {
   citas: 'quote',
   laboratorio: 'lab',
   buscador: 'book',
+  notas: 'target',
 };

@@ -23,6 +23,7 @@ const COMPONENTS: Partial<Record<ToolId, ToolComponent>> = {
   foda: lazy(() => import('./swot/SwotTool')),
   tarjetas: lazy(() => import('./cards/CardsTool')),
   citas: lazy(() => import('./citations/CitationsTool')),
+  notas: lazy(() => import('./grades/GradesTool')),
 };
 
 export default function ToolPage() {

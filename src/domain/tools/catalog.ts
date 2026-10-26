@@ -192,6 +192,17 @@ export const TOOLS: ToolInfo[] = [
     fuentes: ['os-writing'],
   },
   {
+    id: 'notas',
+    nombre: '¿Cuánto necesito?',
+    descripcion:
+      'Con tus notas y los pesos que puso tu docente, calcula cuánto necesitas en lo que falta para pasar la materia, y te dice si ya pasaste o si ya no alcanza.',
+    claves: 'nota final examen supletorio promedio ponderado pesos calificaciones aprobar pasar',
+    ruta: '/herramientas/notas',
+    area: 'formacion',
+    enLinea: false,
+    fuentes: [],
+  },
+  {
     id: 'laboratorio',
     nombre: 'Laboratorio de hoja de cálculo',
     descripcion:
