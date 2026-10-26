@@ -16,6 +16,8 @@ import {
   SourceNote,
 } from '../../ui/primitives';
 import { StarButton } from '../../ui/StarButton';
+import { useCifrasVencidas } from '../../ui/use-vigencia';
+import { VigenciaNote } from '../../ui/Vigencia';
 import { AddToCollectionButton } from '../me/AddToCollection';
 import { NotesPanel } from '../me/NotesPanel';
 import { CATEGORY_LABELS } from './categories';
@@ -36,6 +38,7 @@ export default function FormulaPage() {
   const formula = state.status === 'ready' ? state.data.formula : undefined;
   const math = state.status === 'ready' ? state.data.math : {};
   useDocumentTitle(formula?.nombre ?? 'Fórmula');
+  const vencidas = useCifrasVencidas(formula?.cifras);
 
   if (state.status === 'loading') return <Skeleton lines={5} />;
   if (!formula) return <NotFoundPage />;
@@ -161,9 +164,15 @@ export default function FormulaPage() {
             {fmt(formula.ejemplo.resultado)}{' '}
             <span className="text-base font-normal text-muted">{formula.ejemplo.unidad}</span>
           </span>
-          <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok">
-            <Icon name="check" size={14} /> Verificado automáticamente
-          </span>
+          {vencidas.length > 0 ? (
+            <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-warn-soft px-2.5 py-1 text-xs font-semibold text-warn">
+              <Icon name="info" size={14} /> Cifra por verificar
+            </span>
+          ) : (
+            <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-ok-soft px-2.5 py-1 text-xs font-semibold text-ok">
+              <Icon name="check" size={14} /> Verificado automáticamente
+            </span>
+          )}
         </p>
       </section>
 
@@ -177,6 +186,7 @@ export default function FormulaPage() {
         </div>
       ) : null}
 
+      <VigenciaNote cifras={formula.cifras} />
       <SourceNote fuente={formula.fuente} />
       <NotesPanel refTipo="formula" refId={formula.id} title="Mis apuntes de esta fórmula" />
     </div>

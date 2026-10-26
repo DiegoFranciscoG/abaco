@@ -5,6 +5,7 @@ import { useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
 import { AppLink, PageHeader } from '../../ui/primitives';
 import { TOOL_ICON } from '../../ui/tool-icons';
+import { VigenciaNote } from '../../ui/Vigencia';
 
 /** Common frame of every study tool: what it does, which subjects use it and how its numbers are obtained. */
 export function ToolLayout({
@@ -43,6 +44,7 @@ export function ToolLayout({
           {aviso}
         </p>
       ) : null}
+      <VigenciaNote cifras={tool.cifras} />
       {children}
       <section aria-labelledby="metodo" className="card space-y-2 p-5 text-sm text-ink-2">
         <h2 id="metodo" className="flex items-center gap-2 text-base font-semibold text-ink">

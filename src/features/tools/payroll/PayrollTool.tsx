@@ -1,8 +1,16 @@
 import { useState } from 'react';
+import { requireCifra } from '../../../domain/content/normativa';
 import type { ToolInfo } from '../../../domain/tools/catalog';
 import { computePayroll, DEFAULT_PAYROLL, type PayrollLine } from '../../../domain/tools/payroll';
 import { NumberField, Stat, ToolLayout } from '../ToolLayout';
 import { money, readNumber } from '../format';
+
+const PERSONAL = requireCifra('iess-aporte-personal');
+const PATRONAL = requireCifra('iess-aporte-patronal');
+const SUPLEMENTARIAS = requireCifra('recargo-suplementarias');
+const EXTRAORDINARIAS = requireCifra('recargo-extraordinarias');
+const SBU = requireCifra('sbu');
+const FONDO = requireCifra('fondo-reserva');
 
 function Lines({ title, lines }: { title: string; lines: PayrollLine[] }) {
   return (
@@ -75,19 +83,20 @@ export default function PayrollTool({ tool }: { tool: ToolInfo }) {
       metodo={
         <>
           <p>
-            Aportes: tabla oficial de tasas del IESS para el sector privado, 9,45 % personal y 11,15 %
-            patronal sobre la materia gravada (sueldo, horas extra y comisiones). La décima tercera no forma
-            parte de esa base (Código del Trabajo, art. 112).
+            Aportes: tabla oficial de tasas del IESS para el sector privado, {PERSONAL.texto} personal y{' '}
+            {PATRONAL.texto} patronal sobre la materia gravada (sueldo, horas extra y comisiones). La décima
+            tercera no forma parte de esa base (Código del Trabajo, art. 112).
           </p>
           <p>
-            Horas extra: art. 55, con 50 % de recargo hasta las 24:00 y 100 % entre las 24:00 y las 06:00,
-            sobre el valor de la hora. El divisor de 240 horas al mes (30 días × 8 horas) es el habitual y el
-            que el Código fija para la contratación colectiva del sector público; puedes cambiarlo.
+            Horas extra: art. 55, con {SUPLEMENTARIAS.texto} hasta las 24:00 y {EXTRAORDINARIAS.texto} entre
+            las 24:00 y las 06:00, sobre el valor de la hora. El divisor de 240 horas al mes (30 días × 8
+            horas) es el habitual y el que el Código fija para la contratación colectiva del sector público;
+            puedes cambiarlo.
           </p>
           <p>
             Décimos y fondo de reserva: art. 111 (doceava parte de lo percibido), art. 113 (doceava parte del
-            salario básico unificado, USD 482 en 2026) y art. 196 (un mes por cada año completo después del
-            primero, es decir 8,33 % mensual desde el mes 13).
+            salario básico unificado, {SBU.texto} en {SBU.vigencia.ejercicio_fiscal}) y art. 196 (un mes por
+            cada año completo después del primero, es decir {FONDO.texto}).
           </p>
           <p>
             Las contribuciones de 0,5 % al IECE y 0,5 % al SECAP que citan algunas guías no constan en la

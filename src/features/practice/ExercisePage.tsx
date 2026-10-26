@@ -11,6 +11,7 @@ import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
 import { AppLink, Notice, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import { VigenciaNote } from '../../ui/Vigencia';
 import { StarButton } from '../../ui/StarButton';
 import { formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
@@ -234,6 +235,7 @@ function ExerciseView({
         </section>
       ) : null}
 
+      <VigenciaNote cifras={exercise.cifras} />
       <SourceNote fuente={exercise.fuente} />
     </div>
   );

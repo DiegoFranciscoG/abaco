@@ -4,6 +4,7 @@ import { loadGlosario } from '../../data/content';
 import { normalizeText } from '../../domain/text/normalize';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { AreaBadge, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import { VigenciaNote } from '../../ui/Vigencia';
 
 export default function GlossaryPage() {
   useDocumentTitle('Glosario');
@@ -69,7 +70,8 @@ export default function GlossaryPage() {
                   <AreaBadge key={a} area={a} />
                 ))}
               </dd>
-              <dd className="mt-3">
+              <dd className="mt-3 space-y-3">
+                <VigenciaNote cifras={t.cifras} />
                 <SourceNote fuente={t.fuente} />
               </dd>
             </div>

@@ -4,6 +4,7 @@ import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
 import { Accordion, AppLink, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
+import { VigenciaNote } from '../../ui/Vigencia';
 import { StarButton } from '../../ui/StarButton';
 import { AddToCollectionButton } from '../me/AddToCollection';
 import { NotesPanel } from '../me/NotesPanel';
@@ -112,6 +113,7 @@ export default function TopicPage() {
                   </div>
                 </div>
               ) : null}
+              <VigenciaNote cifras={s.cifras} />
               <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
                 <SourceNote fuente={s.fuente} />
                 <AddToCollectionButton

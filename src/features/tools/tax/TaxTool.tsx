@@ -1,12 +1,16 @@
 import { useState } from 'react';
+import { requireCifra } from '../../../domain/content/normativa';
 import type { ToolInfo } from '../../../domain/tools/catalog';
 import {
   incomeTaxPersonas,
   incomeTaxSociedades,
-  IR_PERSONAS_2026,
+  IR_PERSONAS,
+  IR_PERSONAS_EJERCICIO,
   ivaFromBase,
   ivaFromTotal,
   IVA_TARIFA_GENERAL,
+  RIMPE_EMPRENDEDORES,
+  RIMPE_LIMITE,
   rimpeTax,
 } from '../../../domain/tools/tax';
 import { Tabs } from '../../../ui/primitives';
@@ -14,6 +18,10 @@ import { NumberField, Stat, ToolLayout } from '../ToolLayout';
 import { money, num, pct, readNumber } from '../format';
 
 type Mode = 'iva' | 'renta' | 'rimpe';
+
+const IVA = requireCifra('iva-tarifa-general');
+const TABLA_IR = requireCifra('ir-personas-tabla');
+const SOCIEDADES = requireCifra('ir-sociedades');
 
 function IvaPanel() {
   const [monto, setMonto] = useState('100');
@@ -44,7 +52,7 @@ function IvaPanel() {
           value={tarifa}
           onChange={setTarifa}
           suffix="%"
-          hint="15 % es la tarifa general desde el 1 de abril de 2024 (Decreto Ejecutivo 198). Confírmala en sri.gob.ec."
+          hint={`Tarifa general vigente en ${IVA.vigencia.ejercicio_fiscal}: ${IVA.texto}. Puede cambiar por decreto; confírmala en sri.gob.ec.`}
         />
         <label className="flex items-center gap-3 text-sm font-semibold text-ink-2">
           <input
@@ -154,11 +162,11 @@ function RentaPanel() {
           className="card overflow-x-auto"
           tabIndex={0}
           role="region"
-          aria-label="Tabla 2026 del impuesto a la renta"
+          aria-label={`Tabla ${IR_PERSONAS_EJERCICIO} del impuesto a la renta`}
         >
           <table className="tnum w-full text-left text-sm">
             <caption className="px-4 pt-3 text-left text-sm font-semibold">
-              Tabla 2026, personas naturales (Res. NAC-DGERCGC25-00000043)
+              Tabla {IR_PERSONAS_EJERCICIO}, personas naturales
             </caption>
             <thead className="border-b border-line text-xs text-muted uppercase">
               <tr>
@@ -177,7 +185,7 @@ function RentaPanel() {
               </tr>
             </thead>
             <tbody>
-              {IR_PERSONAS_2026.map((r) => (
+              {IR_PERSONAS.map((r) => (
                 <tr
                   key={r.desde}
                   className={`border-b border-line last:border-0 ${persona?.tramo === r ? 'bg-red-tint font-semibold' : ''}`}
@@ -249,13 +257,13 @@ function RimpePanel() {
         ) : null}
         {result?.regimen === 'fuera' ? (
           <p className="text-sm font-semibold text-warn">
-            Con más de USD 300 000 de ingresos no se aplica el RIMPE.
+            Con más de USD {num(RIMPE_LIMITE, 0)} de ingresos no se aplica el RIMPE.
           </p>
         ) : null}
         {result?.regimen === 'sin-tramo' ? (
           <p className="text-sm font-semibold text-warn">
-            La tabla publicada para emprendedores empieza en USD 20 000; para un monto menor consulta
-            directamente al SRI.
+            La tabla publicada para emprendedores empieza en USD {num(RIMPE_EMPRENDEDORES[0]?.desde ?? 0, 0)};
+            para un monto menor consulta directamente al SRI.
           </p>
         ) : null}
       </div>
@@ -268,17 +276,17 @@ export default function TaxTool({ tool }: { tool: ToolInfo }) {
   return (
     <ToolLayout
       tool={tool}
-      aviso="Cálculo educativo con la normativa vigente al 25 de octubre de 2026. No reemplaza la información oficial del SRI ni la asesoría de un profesional; las tarifas y tablas cambian."
+      aviso={`Cálculo educativo con la normativa del ejercicio ${IR_PERSONAS_EJERCICIO}, verificada en sus fuentes oficiales. No reemplaza la información oficial del SRI ni la asesoría de un profesional; las tarifas y tablas cambian.`}
       metodo={
         <>
           <p>
-            IVA: base × tarifa; para separar un precio final se divide para (1 + tarifa). La tarifa general de
-            15 % rige desde el 1 de abril de 2024 (Decreto Ejecutivo 198, página del IVA del SRI).
+            IVA: base × tarifa; para separar un precio final se divide para (1 + tarifa). Tarifa general:{' '}
+            {IVA.texto}. {IVA.base_legal}
           </p>
           <p>
             Renta de personas naturales: impuesto de la fracción básica + porcentaje del tramo sobre el
-            excedente, con la tabla 2026 del SRI (Res. NAC-DGERCGC25-00000043, 2.º Supl. R.O. 194,
-            30-12-2025). Sociedades: tarifa general de 25 %.
+            excedente, con la tabla {IR_PERSONAS_EJERCICIO} del SRI ({TABLA_IR.base_legal.replace(/\.$/, '')}
+            ). Sociedades: tarifa general de {SOCIEDADES.texto}.
           </p>
           <p>
             RIMPE: cuota fija para negocios populares y fracción básica más tipo marginal sobre ingresos
