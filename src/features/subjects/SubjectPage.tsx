@@ -12,6 +12,7 @@ import {
 } from '../../data/content';
 import { NotFoundPage } from '../../app/Fallbacks';
 import { ESTANDAR, materiaCoverage } from '../../domain/content/coverage';
+import { DELIVERABLES } from '../../domain/deliverables/catalog';
 import { getTool } from '../../domain/tools/catalog';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
@@ -21,6 +22,7 @@ import { TOOL_ICON } from '../../ui/tool-icons';
 import { useProfile } from '../../ui/use-profile';
 import { useToast } from '../../ui/use-toast';
 import { AppCard } from '../apps/AppsPage';
+import { TemplateDownloadButton } from '../lab/TemplateDownload';
 import { NotesPanel } from '../me/NotesPanel';
 import { ordinal } from './career-selection';
 import { toggleMySubject } from './my-subjects';
@@ -51,6 +53,7 @@ export default function SubjectPage() {
   const relatedFormulas = relatedTo(formulas, materia.id);
   const relatedApps = relatedTo(apps, materia.id).sort((a, b) => COST_ORDER[a.costo] - COST_ORDER[b.costo]);
   const relatedTemplates = relatedTo(plantillas, materia.id);
+  const deliverables = DELIVERABLES.filter((d) => d.materias.includes(materia.id));
   const exercises = ejercicios.filter((e) => e.materia === materia.id);
   const tools = materia.herramientas.map(getTool).filter((t) => t !== undefined);
   const area = materia.areas[0] ?? 'gestion';
@@ -245,7 +248,7 @@ export default function SubjectPage() {
         </section>
       ) : null}
 
-      {exercises.length > 0 || relatedTemplates.length > 0 ? (
+      {exercises.length > 0 || relatedTemplates.length > 0 || deliverables.length > 0 ? (
         <section aria-labelledby="practicar" className="grid gap-4 md:grid-cols-2">
           <h2 id="practicar" className="sr-only">
             Practicar
@@ -265,21 +268,35 @@ export default function SubjectPage() {
               <Icon name="arrow-right" className="text-red" />
             </AppLink>
           ) : null}
-          {relatedTemplates.map((p) => (
+          {deliverables.map((d) => (
             <AppLink
-              key={p.id}
-              to={`/laboratorio/nueva?plantilla=${p.id}`}
+              key={d.id}
+              to={`/entregables/${d.id}`}
               className="card card-lift flex items-center gap-4 p-5"
             >
               <span className="tile">
-                <Icon name="lab" />
+                <Icon name="ledger" />
               </span>
               <span className="flex-1">
-                <span className="block font-semibold">Plantilla: {p.nombre}</span>
-                <span className="text-sm text-muted">{p.descripcion}</span>
+                <span className="block font-semibold">Entregable: {d.nombre}</span>
+                <span className="text-sm text-muted">Paso a paso, con Excel de fórmulas vivas y PDF</span>
               </span>
               <Icon name="arrow-right" className="text-red" />
             </AppLink>
+          ))}
+          {relatedTemplates.map((p) => (
+            <div key={p.id} className="card card-lift flex items-center gap-4 p-5">
+              <AppLink to={`/laboratorio/nueva?plantilla=${p.id}`} className="flex flex-1 items-center gap-4">
+                <span className="tile">
+                  <Icon name="lab" />
+                </span>
+                <span className="flex-1">
+                  <span className="block font-semibold">Plantilla: {p.nombre}</span>
+                  <span className="text-sm text-muted">{p.descripcion}</span>
+                </span>
+              </AppLink>
+              <TemplateDownloadButton plantilla={p} compact />
+            </div>
           ))}
         </section>
       ) : null}

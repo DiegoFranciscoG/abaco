@@ -414,6 +414,8 @@ export const plantillaSchema = z.object({
   materias: z.array(id).min(1),
   celdas: z.record(cellAddress, z.union([z.number(), z.string()])),
   formatos: z.record(cellAddress, z.enum(CELL_FORMATS)).default({}),
+  /** Normative figures typed into the cells (the IVA rate…), checked every year like any other record (T-11). */
+  cifras: cifrasRef,
   verificacion: z
     .array(z.object({ celda: cellAddress, esperado: z.number(), tolerancia: z.number().nonnegative() }))
     .min(1),

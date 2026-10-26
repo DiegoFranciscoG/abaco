@@ -252,9 +252,9 @@ describe('pages', () => {
       'href',
       '/materia/legislacion-laboral/tema/ll-contrato',
     );
-    expect(screen.getByRole('link', { name: /Rol de pagos/ })).toHaveAttribute(
-      'href',
-      '/herramientas/rol-pagos',
+    // The calculator and the step-by-step deliverable of the same assignment.
+    expect(screen.getAllByRole('link', { name: /Rol de pagos/ }).map((a) => a.getAttribute('href'))).toEqual(
+      expect.arrayContaining(['/herramientas/rol-pagos', '/entregables/rol-pagos']),
     );
     expect(screen.getByRole('link', { name: /Codificación 2005-017/ })).toHaveAttribute(
       'href',
@@ -275,6 +275,16 @@ describe('pages', () => {
     expect(screen.getAllByText(/Fuente:/).length).toBeGreaterThan(0);
     expect(screen.getAllByText('Teoría').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Ejemplo').length).toBeGreaterThan(0);
+  });
+
+  it('a subject offers its Excel templates to open in the lab or download directly', async () => {
+    renderRoute('/materia/tributacion', [{ path: '/materia/:materiaId', element: <SubjectPage /> }]);
+    expect(
+      await screen.findByRole('link', { name: /Plantilla: Liquidación mensual de IVA/ }),
+    ).toHaveAttribute('href', '/laboratorio/nueva?plantilla=liquidacion-iva');
+    expect(
+      screen.getByRole('button', { name: 'Descargar en Excel: Liquidación mensual de IVA' }),
+    ).toBeEnabled();
   });
 
   it('an unknown subject shows the not-found page', async () => {

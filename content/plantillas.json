@@ -585,5 +585,686 @@
       "seccion": "11.3 Métodos de depreciación"
     },
     "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "liquidacion-iva",
+    "nombre": "Liquidación mensual de IVA",
+    "descripcion": "IVA cobrado menos crédito tributario de un contribuyente que solo vende con tarifa general; si el crédito es mayor, el saldo pasa al mes siguiente.",
+    "materias": [
+      "tributacion"
+    ],
+    "cifras": [
+      "iva-tarifa-general"
+    ],
+    "celdas": {
+      "A1": "Liquidación de IVA del mes (tarifa general de IVA 15 %)",
+      "A3": "Tarifa general de IVA",
+      "B3": 0.15,
+      "A4": "Ventas gravadas con tarifa general",
+      "B4": 12000,
+      "A5": "Compras gravadas con tarifa general, con factura",
+      "B5": 7500,
+      "A6": "Crédito tributario que viene del mes anterior",
+      "B6": 250,
+      "A8": "IVA cobrado en ventas",
+      "B8": "=B4*B3",
+      "A9": "IVA pagado en compras (crédito tributario del mes)",
+      "B9": "=B5*B3",
+      "A10": "Diferencia del mes",
+      "B10": "=B8-B9-B6",
+      "A11": "IVA a pagar",
+      "B11": "=MAX(0,B10)",
+      "A12": "Crédito tributario para el mes siguiente",
+      "B12": "=MAX(0,-B10)"
+    },
+    "formatos": {
+      "B3": "porcentaje",
+      "B4": "moneda",
+      "B5": "moneda",
+      "B6": "moneda",
+      "B8": "moneda",
+      "B9": "moneda",
+      "B10": "moneda",
+      "B11": "moneda",
+      "B12": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B11",
+        "esperado": 425,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "B12",
+        "esperado": 0,
+        "tolerancia": 0.005
+      }
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Tarifas y crédito tributario de IVA"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "estadistica-descriptiva",
+    "nombre": "Medidas de tendencia central y dispersión",
+    "descripcion": "Media, mediana, rango, varianza, desviación estándar, coeficiente de variación y cuartiles de 12 datos. Los cuartiles usan el método de Excel (CUARTIL.INC), que puede diferir un poco del método del libro.",
+    "materias": [
+      "estadistica-descriptiva"
+    ],
+    "celdas": {
+      "A1": "Día",
+      "B1": "Ventas (USD)",
+      "A2": 1,
+      "B2": 420,
+      "A3": 2,
+      "B3": 380,
+      "A4": 3,
+      "B4": 515,
+      "A5": 4,
+      "B5": 460,
+      "A6": 5,
+      "B6": 390,
+      "A7": 6,
+      "B7": 610,
+      "A8": 7,
+      "B8": 445,
+      "A9": 8,
+      "B9": 480,
+      "A10": 9,
+      "B10": 520,
+      "A11": 10,
+      "B11": 395,
+      "A12": 11,
+      "B12": 470,
+      "A13": 12,
+      "B13": 455,
+      "D1": "Medida",
+      "E1": "Valor",
+      "D2": "Media",
+      "E2": "=AVERAGE(B2:B13)",
+      "D3": "Mediana",
+      "E3": "=MEDIAN(B2:B13)",
+      "D4": "Mínimo",
+      "E4": "=MIN(B2:B13)",
+      "D5": "Máximo",
+      "E5": "=MAX(B2:B13)",
+      "D6": "Rango",
+      "E6": "=E5-E4",
+      "D7": "Varianza muestral",
+      "E7": "=VAR.S(B2:B13)",
+      "D8": "Desviación estándar muestral",
+      "E8": "=STDEV.S(B2:B13)",
+      "D9": "Coeficiente de variación",
+      "E9": "=E8/E2",
+      "D10": "Primer cuartil",
+      "E10": "=QUARTILE.INC(B2:B13,1)",
+      "D11": "Tercer cuartil",
+      "E11": "=QUARTILE.INC(B2:B13,3)",
+      "D12": "Rango intercuartílico",
+      "E12": "=E11-E10"
+    },
+    "formatos": {
+      "E2": "numero",
+      "E3": "numero",
+      "E4": "numero",
+      "E5": "numero",
+      "E6": "numero",
+      "E7": "numero",
+      "E8": "numero",
+      "E9": "porcentaje",
+      "E10": "numero",
+      "E11": "numero",
+      "E12": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "E2",
+        "esperado": 461.666667,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E3",
+        "esperado": 457.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E8",
+        "esperado": 65.342918,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E10",
+        "esperado": 413.75,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E12",
+        "esperado": 75,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Medidas de dispersión"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "intervalo-confianza",
+    "nombre": "Intervalo de confianza para la media (σ conocida)",
+    "descripcion": "Valor z, error estándar, margen de error y límites del intervalo cuando se conoce la desviación estándar de la población.",
+    "materias": [
+      "estadistica-inferencial"
+    ],
+    "celdas": {
+      "A1": "Intervalo de confianza para la media con σ conocida",
+      "A3": "Media de la muestra",
+      "B3": 68,
+      "A4": "Desviación estándar de la población (σ)",
+      "B4": 3,
+      "A5": "Tamaño de la muestra (n)",
+      "B5": 36,
+      "A6": "Nivel de confianza",
+      "B6": 0.95,
+      "A8": "Valor z",
+      "B8": "=NORM.S.INV(1-(1-B6)/2)",
+      "A9": "Error estándar",
+      "B9": "=B4/SQRT(B5)",
+      "A10": "Margen de error",
+      "B10": "=B8*B9",
+      "A11": "Límite inferior",
+      "B11": "=B3-B10",
+      "A12": "Límite superior",
+      "B12": "=B3+B10"
+    },
+    "formatos": {
+      "B6": "porcentaje",
+      "B8": "numero",
+      "B9": "numero",
+      "B10": "numero",
+      "B11": "numero",
+      "B12": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B8",
+        "esperado": 1.959964,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B11",
+        "esperado": 67.020018,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B12",
+        "esperado": 68.979982,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/8-1-a-single-population-mean-using-the-normal-distribution",
+      "seccion": "8.1 Media poblacional con la distribución normal"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "tamano-muestra",
+    "nombre": "Tamaño de muestra para una proporción",
+    "descripcion": "Cuántas encuestas hacen falta para estimar una proporción con el nivel de confianza y el margen de error elegidos. Sin estudio previo se usa p = 0,5, que da la muestra más grande.",
+    "materias": [
+      "investigacion-mercados",
+      "metodologia-investigacion",
+      "estadistica-inferencial"
+    ],
+    "celdas": {
+      "A1": "Tamaño de muestra para estimar una proporción",
+      "A3": "Nivel de confianza",
+      "B3": 0.95,
+      "A4": "Margen de error",
+      "B4": 0.05,
+      "A5": "Proporción estimada (p)",
+      "B5": 0.5,
+      "A7": "Valor z",
+      "B7": "=NORM.S.INV(1-(1-B3)/2)",
+      "A8": "Muestra calculada",
+      "B8": "=POWER(B7,2)*B5*(1-B5)/POWER(B4,2)",
+      "A9": "Encuestas necesarias (se redondea hacia arriba)",
+      "B9": "=ROUNDUP(B8,0)"
+    },
+    "formatos": {
+      "B3": "porcentaje",
+      "B4": "porcentaje",
+      "B5": "numero",
+      "B7": "numero",
+      "B8": "numero",
+      "B9": "entero"
+    },
+    "verificacion": [
+      {
+        "celda": "B9",
+        "esperado": 385,
+        "tolerancia": 0
+      }
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/8-3-a-population-proportion",
+      "seccion": "8.3 Proporción poblacional (tamaño de muestra)"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "elasticidad-precio",
+    "nombre": "Elasticidad precio de la demanda (método del punto medio)",
+    "descripcion": "Variaciones porcentuales con el punto medio, la elasticidad en valor absoluto y si la demanda es elástica, inelástica o unitaria.",
+    "materias": [
+      "microeconomia"
+    ],
+    "celdas": {
+      "A1": "Elasticidad precio de la demanda",
+      "A3": "Precio inicial",
+      "B3": 60,
+      "A4": "Precio final",
+      "B4": 70,
+      "A5": "Cantidad inicial",
+      "B5": 3000,
+      "A6": "Cantidad final",
+      "B6": 2800,
+      "A8": "Variación porcentual de la cantidad",
+      "B8": "=(B6-B5)/((B6+B5)/2)",
+      "A9": "Variación porcentual del precio",
+      "B9": "=(B4-B3)/((B4+B3)/2)",
+      "A10": "Elasticidad (valor absoluto)",
+      "B10": "=ABS(B8/B9)",
+      "A11": "Tipo de demanda",
+      "B11": "=IF(B10>1,\"Elástica\",IF(B10<1,\"Inelástica\",\"Unitaria\"))"
+    },
+    "formatos": {
+      "B3": "moneda",
+      "B4": "moneda",
+      "B8": "porcentaje",
+      "B9": "porcentaje",
+      "B10": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B10",
+        "esperado": 0.448276,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-micro3",
+      "url": "https://openstax.org/books/principles-microeconomics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+      "seccion": "5.1 Elasticidad precio de la demanda y de la oferta"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "inflacion-ipc",
+    "nombre": "Inflación mensual, acumulada y anual con el IPC",
+    "descripcion": "Las tres tasas de inflación a partir del índice de precios. Los índices son de ejemplo: con los del boletín del INEC obtienes las tasas oficiales.",
+    "materias": [
+      "macroeconomia"
+    ],
+    "celdas": {
+      "A1": "Mes",
+      "B1": "IPC (índice de ejemplo)",
+      "A2": "Diciembre del año anterior",
+      "B2": 112.4,
+      "A3": "Mes anterior",
+      "B3": 113.6,
+      "A4": "Mes actual",
+      "B4": 113.95,
+      "A5": "Mismo mes del año anterior",
+      "B5": 112.1,
+      "D1": "Tasa",
+      "E1": "Valor",
+      "D2": "Inflación mensual",
+      "E2": "=B4/B3-1",
+      "D3": "Inflación acumulada en el año",
+      "E3": "=B4/B2-1",
+      "D4": "Inflación anual",
+      "E4": "=B4/B5-1"
+    },
+    "formatos": {
+      "B2": "numero",
+      "B3": "numero",
+      "B4": "numero",
+      "B5": "numero",
+      "E2": "porcentaje",
+      "E3": "porcentaje",
+      "E4": "porcentaje"
+    },
+    "verificacion": [
+      {
+        "celda": "E2",
+        "esperado": 0.003081,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E3",
+        "esperado": 0.01379,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E4",
+        "esperado": 0.016503,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-1-tracking-inflation",
+      "seccion": "9.1 Medición de la inflación"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "tipo-cambio",
+    "nombre": "Conversión de monedas y tipo de cambio cruzado",
+    "descripcion": "Convierte un monto entre euros, dólares y pesos colombianos y calcula el tipo cruzado. Las cotizaciones son de ejemplo: cámbialas por las del día.",
+    "materias": [
+      "finanzas-internacionales",
+      "economia-internacional"
+    ],
+    "celdas": {
+      "A1": "Conversión de monedas (cotizaciones de ejemplo)",
+      "A3": "Dólares por 1 euro",
+      "B3": 1.08,
+      "A4": "Pesos colombianos por 1 dólar",
+      "B4": 4000,
+      "A5": "Monto en euros",
+      "B5": 2500,
+      "A7": "Monto en dólares",
+      "B7": "=B5*B3",
+      "A8": "Euros por 1 dólar",
+      "B8": "=1/B3",
+      "A9": "Pesos colombianos por 1 euro (tipo cruzado)",
+      "B9": "=B3*B4",
+      "A10": "Monto en pesos colombianos",
+      "B10": "=B5*B9"
+    },
+    "formatos": {
+      "B3": "numero",
+      "B4": "numero",
+      "B5": "numero",
+      "B7": "moneda",
+      "B8": "numero",
+      "B9": "numero",
+      "B10": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B7",
+        "esperado": 2700,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "B10",
+        "esperado": 10800000,
+        "tolerancia": 0.5
+      }
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+      "seccion": "3.5 Tipos de cambio"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "costo-marginal",
+    "nombre": "Costo total, costo marginal y costo promedio",
+    "descripcion": "Para C(q) = costo fijo + a·q + b·q², compara el costo marginal (la derivada) con el costo real de producir una unidad más.",
+    "materias": [
+      "calculo-diferencial",
+      "matematica-gestion"
+    ],
+    "celdas": {
+      "A1": "Función de costo C(q) = CF + a·q + b·q²",
+      "A3": "Costo fijo (CF)",
+      "B3": 5000,
+      "A4": "Coeficiente a",
+      "B4": 12,
+      "A5": "Coeficiente b",
+      "B5": 0.02,
+      "A6": "Unidades producidas (q)",
+      "B6": 100,
+      "A8": "Costo total C(q)",
+      "B8": "=B3+B4*B6+B5*B6^2",
+      "A9": "Costo marginal C'(q) = a + 2·b·q",
+      "B9": "=B4+2*B5*B6",
+      "A10": "Costo real de la unidad q + 1",
+      "B10": "=(B3+B4*(B6+1)+B5*(B6+1)^2)-B8",
+      "A11": "Costo promedio C(q) ÷ q",
+      "B11": "=B8/B6"
+    },
+    "formatos": {
+      "B3": "moneda",
+      "B8": "moneda",
+      "B9": "moneda",
+      "B10": "moneda",
+      "B11": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B8",
+        "esperado": 6400,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "B9",
+        "esperado": 16,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "B10",
+        "esperado": 16.02,
+        "tolerancia": 0.005
+      }
+    ],
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
+      "seccion": "3.4 Derivadas como razones de cambio (costo marginal)"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "resumen-ventas",
+    "nombre": "Resumen de ventas con SUMAR.SI y CONTAR.SI",
+    "descripcion": "Totales, número de ventas y promedio por vendedor y por región a partir de una tabla de ventas, con una fila de control que debe dar cero.",
+    "materias": [
+      "informatica-gestion"
+    ],
+    "celdas": {
+      "A1": "Vendedor",
+      "B1": "Región",
+      "C1": "Monto",
+      "A2": "Ana",
+      "B2": "Sierra",
+      "C2": 1200,
+      "A3": "Luis",
+      "B3": "Costa",
+      "C3": 800,
+      "A4": "Ana",
+      "B4": "Costa",
+      "C4": 950,
+      "A5": "Rosa",
+      "B5": "Sierra",
+      "C5": 1500,
+      "A6": "Luis",
+      "B6": "Sierra",
+      "C6": 700,
+      "A7": "Rosa",
+      "B7": "Amazonía",
+      "C7": 1100,
+      "A8": "Ana",
+      "B8": "Sierra",
+      "C8": 650,
+      "A9": "Luis",
+      "B9": "Costa",
+      "C9": 1300,
+      "A10": "Rosa",
+      "B10": "Costa",
+      "C10": 900,
+      "A11": "Ana",
+      "B11": "Amazonía",
+      "C11": 400,
+      "E1": "Vendedor",
+      "F1": "Total vendido",
+      "G1": "Ventas",
+      "H1": "Promedio",
+      "E2": "Ana",
+      "F2": "=SUMIF(A2:A11,E2,C2:C11)",
+      "G2": "=COUNTIF(A2:A11,E2)",
+      "H2": "=AVERAGEIF(A2:A11,E2,C2:C11)",
+      "E3": "Luis",
+      "F3": "=SUMIF(A2:A11,E3,C2:C11)",
+      "G3": "=COUNTIF(A2:A11,E3)",
+      "H3": "=AVERAGEIF(A2:A11,E3,C2:C11)",
+      "E4": "Rosa",
+      "F4": "=SUMIF(A2:A11,E4,C2:C11)",
+      "G4": "=COUNTIF(A2:A11,E4)",
+      "H4": "=AVERAGEIF(A2:A11,E4,C2:C11)",
+      "E6": "Total general",
+      "F6": "=SUM(C2:C11)",
+      "E7": "Control (debe ser 0)",
+      "F7": "=F2+F3+F4-F6",
+      "E9": "Ventas de la Sierra",
+      "F9": "=SUMIF(B2:B11,\"Sierra\",C2:C11)"
+    },
+    "formatos": {
+      "C2": "moneda",
+      "C3": "moneda",
+      "C4": "moneda",
+      "C5": "moneda",
+      "C6": "moneda",
+      "C7": "moneda",
+      "C8": "moneda",
+      "C9": "moneda",
+      "C10": "moneda",
+      "C11": "moneda",
+      "F2": "moneda",
+      "F3": "moneda",
+      "F4": "moneda",
+      "H2": "moneda",
+      "H3": "moneda",
+      "H4": "moneda",
+      "F6": "moneda",
+      "F7": "moneda",
+      "F9": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "F2",
+        "esperado": 3200,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "F6",
+        "esperado": 9500,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "F7",
+        "esperado": 0,
+        "tolerancia": 0.005
+      },
+      {
+        "celda": "F9",
+        "esperado": 4050,
+        "tolerancia": 0.005
+      }
+    ],
+    "fuente": {
+      "ref": "ms-excel-alfa",
+      "seccion": "SUMAR.SI, CONTAR.SI y PROMEDIO.SI"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "regresion-lineal",
+    "nombre": "Regresión lineal simple y pronóstico",
+    "descripcion": "Pendiente, intersección, correlación y R² entre gasto en publicidad y ventas, y el pronóstico de ventas para un nuevo gasto.",
+    "materias": [
+      "estadistica-inferencial",
+      "estadistica-descriptiva"
+    ],
+    "celdas": {
+      "A1": "Publicidad (miles USD)",
+      "B1": "Ventas (miles USD)",
+      "A2": 2,
+      "B2": 30,
+      "A3": 3,
+      "B3": 34,
+      "A4": 5,
+      "B4": 41,
+      "A5": 6,
+      "B5": 45,
+      "A6": 8,
+      "B6": 52,
+      "A7": 9,
+      "B7": 54,
+      "A8": 11,
+      "B8": 62,
+      "A9": 12,
+      "B9": 66,
+      "D1": "Medida",
+      "E1": "Valor",
+      "D2": "Pendiente (b)",
+      "E2": "=SLOPE(B2:B9,A2:A9)",
+      "D3": "Intersección (a)",
+      "E3": "=INTERCEPT(B2:B9,A2:A9)",
+      "D4": "Correlación (r)",
+      "E4": "=CORREL(A2:A9,B2:B9)",
+      "D5": "Coeficiente de determinación (R²)",
+      "E5": "=RSQ(B2:B9,A2:A9)",
+      "D7": "Publicidad para el pronóstico",
+      "E7": 10,
+      "D8": "Ventas pronosticadas (a + b·x)",
+      "E8": "=E3+E2*E7"
+    },
+    "formatos": {
+      "E2": "numero",
+      "E3": "numero",
+      "E4": "numero",
+      "E5": "numero",
+      "E8": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "E2",
+        "esperado": 3.532609,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E3",
+        "esperado": 23.271739,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E5",
+        "esperado": 0.998346,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E8",
+        "esperado": 58.597826,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+      "seccion": "12.3 La ecuación de regresión"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

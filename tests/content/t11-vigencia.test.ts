@@ -7,6 +7,7 @@ import {
   ejercicioText,
   formulaText,
   isoDay,
+  plantillaText,
   subtemaText,
   terminoText,
   vigenciaStatus,
@@ -31,6 +32,7 @@ function records(): { where: string; text: string; cifras: string[] }[] {
     ...content.formulas.map((f) => ({ where: `fórmula ${f.id}`, text: formulaText(f), cifras: f.cifras ?? [] })),
     ...content.ejercicios.map((e) => ({ where: `ejercicio ${e.id}`, text: ejercicioText(e), cifras: e.cifras ?? [] })),
     ...content.glosario.map((t) => ({ where: `término ${t.id}`, text: terminoText(t), cifras: t.cifras ?? [] })),
+    ...content.plantillas.map((p) => ({ where: `plantilla ${p.id}`, text: plantillaText(p), cifras: p.cifras ?? [] })),
   ];
 }
 
@@ -83,6 +85,20 @@ describe('T-11: ninguna cifra normativa vencida', () => {
     );
     expect(unknown).toEqual([]);
     expect(records().filter((r) => r.cifras.length > 0).length).toBeGreaterThanOrEqual(30);
+  });
+
+  it('a template that declares a single-value figure types its current value in a cell', () => {
+    // The label says «IVA 15 %», and the cell the formulas use has to hold the same rate, or a new rate would
+    // leave the template computing with the old one.
+    for (const p of content.plantillas) {
+      const numbers = Object.values(p.celdas).filter((c): c is number => typeof c === 'number');
+      for (const id of p.cifras ?? []) {
+        const cifra = catalog.find((c) => c.id === id);
+        if (cifra?.valor === undefined) continue;
+        const expected = cifra.unidad === '%' ? cifra.valor / 100 : cifra.valor;
+        expect(numbers.some((n) => Math.abs(n - expected) < 1e-9), `${p.id} → ${id} = ${expected}`).toBe(true);
+      }
+    }
   });
 
   it('the calculators declare the figures they compute with', () => {

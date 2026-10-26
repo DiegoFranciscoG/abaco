@@ -6,6 +6,7 @@ import { Icon } from '../../ui/icons';
 import { AppLink, EmptyState, PageHeader, TiltCard } from '../../ui/primitives';
 import { formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
+import { TemplateDownloadButton } from './TemplateDownload';
 
 export default function LabHome() {
   useDocumentTitle('Laboratorio');
@@ -34,18 +35,24 @@ export default function LabHome() {
           {templates.status === 'ready'
             ? templates.data.map((p) => (
                 <li key={p.id}>
-                  <AppLink to={`/laboratorio/nueva?plantilla=${p.id}`} className="block h-full">
-                    <TiltCard className="flex h-full flex-col gap-2 p-5">
+                  <TiltCard className="flex h-full flex-col gap-2 p-5">
+                    <AppLink
+                      to={`/laboratorio/nueva?plantilla=${p.id}`}
+                      className="flex flex-1 flex-col gap-2"
+                    >
                       <span className="tile">
                         <Icon name="lab" />
                       </span>
                       <span className="text-lg font-semibold">{p.nombre}</span>
                       <span className="text-sm text-muted">{p.descripcion}</span>
-                      <span className="mt-auto inline-flex items-center gap-1.5 pt-2 text-xs font-semibold text-ok">
+                    </AppLink>
+                    <span className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-2">
+                      <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-ok">
                         <Icon name="check" size={14} /> Con comprobación automática
                       </span>
-                    </TiltCard>
-                  </AppLink>
+                      <TemplateDownloadButton plantilla={p} compact />
+                    </span>
+                  </TiltCard>
                 </li>
               ))
             : null}

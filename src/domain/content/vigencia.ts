@@ -2,7 +2,7 @@
  * Validity of the normative figures (content/normativa.json): whether a figure is still in force on a given day and
  * which figures a record mentions. Type-only imports so that Node scripts and tests can load it directly.
  */
-import type { Cifra, Ejercicio, Formula, Subtema, Termino, Vigencia } from './schemas';
+import type { Cifra, Ejercicio, Formula, Plantilla, Subtema, Termino, Vigencia } from './schemas';
 
 /** A figure that ends its validity in fewer days than this is announced to the author (test T-11). */
 export const DIAS_AVISO = 60;
@@ -48,6 +48,11 @@ export function ejercicioText(e: Ejercicio): string {
 
 export function terminoText(t: Termino): string {
   return [t.termino, t.definicion].join('\n');
+}
+
+/** A spreadsheet template: its name, description and every text cell (labels such as «Tarifa de IVA 15 %»). */
+export function plantillaText(p: Plantilla): string {
+  return [p.nombre, p.descripcion, ...Object.values(p.celdas).filter((c) => typeof c === 'string')].join('\n');
 }
 
 /** Ids of the figures whose patterns appear in `text`, in catalog order. */
