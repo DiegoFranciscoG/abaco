@@ -1,5 +1,6 @@
 import { useParams } from 'react-router';
 import {
+  carrerasDeMateria,
   getMateria,
   loadApps,
   loadEjercicios,
@@ -20,6 +21,7 @@ import { useProfile } from '../../ui/use-profile';
 import { useToast } from '../../ui/use-toast';
 import { AppCard } from '../apps/AppsPage';
 import { NotesPanel } from '../me/NotesPanel';
+import { ordinal } from './career-selection';
 import { toggleMySubject } from './my-subjects';
 
 const COST_ORDER = { gratis: 0, 'gratis-con-cuenta': 1, freemium: 2, pago: 3 } as const;
@@ -53,6 +55,7 @@ export default function SubjectPage() {
   const area = materia.areas[0] ?? 'gestion';
   const mine = profile.materias.includes(materia.id);
   const subtopicCount = temario.temas.reduce((sum, t) => sum + t.subtemas.length, 0);
+  const careers = carrerasDeMateria(materia.id);
 
   const sources = new Map<string, { titulo: string; autor: string; url: string }>();
   for (const tema of temario.temas) {
@@ -90,6 +93,16 @@ export default function SubjectPage() {
                 <AreaBadge key={a} area={a} />
               ))}
             </span>
+            {careers.length > 0 ? (
+              <span className="flex flex-wrap items-center gap-2 text-sm">
+                <span className="text-muted">Se suele cursar en:</span>
+                {careers.map(({ carrera, ciclo }) => (
+                  <AppLink key={carrera.id} to={`/materias?carrera=${carrera.id}&ciclo=${ciclo}`} className="chip min-h-9">
+                    {carrera.nombre} · {ordinal(ciclo)} ciclo
+                  </AppLink>
+                ))}
+              </span>
+            ) : null}
           </span>
         }
         actions={

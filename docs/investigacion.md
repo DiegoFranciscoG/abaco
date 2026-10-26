@@ -16,28 +16,54 @@ Todo se consultó el **2026-10-14** salvo que se indique otra fecha. Regla aplic
 | Estadística descriptiva | 10 | estadística, estadística descriptiva, estadística I/II |
 | Matemática para la gestión | 9 | matemática(s), matemática(s) I/II, básica, aplicada, empresarial, para el análisis de los negocios |
 | Metodología de la investigación | 9 | metodología de (la) investigación (científica) |
+| Formulación y evaluación de proyectos | 9 | (formulación / formación y) evaluación (financiera / económica y social) de proyectos |
 | Contabilidad general | 8 | contabilidad general |
 | Estadística inferencial | 8 | estadística inferencial |
-| Economía internacional y comercio exterior | 8 | economía internacional, comercio exterior (exportaciones / importaciones / y negocios internacionales) |
+| Economía internacional y comercio exterior | 8 | economía internacional, comercio exterior (exportaciones / importaciones / y negocios internacionales), negocios internacionales y comercio exterior |
 | Fundamentos de administración | 8 | administración, (teorías y) fundamentos de (la) administración |
-| Investigación de mercados | 7 | investigación de mercados (aplicada / internacionales), comportamiento del consumidor |
+| Investigación de mercados | 7 | investigación de mercado(s) (aplicada / internacionales), marketing e investigación de mercados, comportamiento del consumidor |
 | Derecho empresarial y societario | 7 | derecho empresarial (y financiero), legislación mercantil y societaria |
 | Finanzas corporativas | 6 | finanzas corporativas (I/II, a corto y a largo plazo) |
 | Contabilidad de costos | 6 | contabilidad de costos (para la gestión) |
-| Formulación y evaluación de proyectos | 6 | (formulación y) evaluación de proyectos |
-| Gestión del talento humano | 6 | gestión (estratégica) del talento humano, organización y gestión del talento humano |
+| Gestión del talento humano | 6 | gestión (estratégica) de(l) talento humano, organización y gestión del talento humano, administración y planificación de talento humano |
 | Marketing | 6 | fundamentos de marketing, marketing estratégico |
 | Emprendimiento | 6 | emprendimiento (e innovación / social / organizacional) |
-| Ética profesional | 6 | ética del IFAC, ética y responsabilidad social empresarial, ética financiera |
+| Ética profesional | 6 | ética del IFAC, ética y responsabilidad social (empresarial / corporativa), filosofía empresarial y ética financiera, habilidades blandas: ética y toma de decisiones |
 | Finanzas internacionales | 4 | finanzas internacionales |
 | Comportamiento organizacional | 4 | (diseño y) comportamiento organizacional |
-| Tributación | 4 | legislación, administración, planificación, aplicación y práctica tributaria |
+| Tributación | 4 | legislación, administración, planificación, aplicación y práctica tributaria, gestión contable y tributaria |
 | Legislación laboral | 4 | derecho laboral (y seguridad social), legislación laboral y seguridad social |
-| Informática para la gestión | 4 | herramientas informáticas, informática aplicada, informática intermedia |
+| Informática para la gestión | 4 | herramientas informáticas (y sistemas de información gerencial), informática aplicada, intermedia, informática, redes y programación |
 | Contabilidad financiera (NIIF) | 3 | contabilidad financiera (I/II) |
 | Cálculo diferencial | 2 | cálculo diferencial, cálculo integral — entra porque las fórmulas de marginalidad y optimización lo necesitan |
 
 **Derechos:** los nombres de materias y de temas son datos e ideas (Código Ingenios, art. 102: no se protegen las ideas ni los métodos). La explicación de cada subtema es redacción propia y cita su fuente. Aviso visible en toda la app: *ÁBACO no está afiliado a ninguna universidad.*
+
+## 1b. Carrera → ciclo → materia (sin universidades)
+
+**Decisión (2026-10-25):** las materias se organizan por **carrera genérica** y **ciclo habitual**, sin nombres de universidades. El archivo `content/carreras.json` guarda solo el resultado agregado; los planes no se publican ni se versionan.
+
+**Método (reproducible con los 13 planes revisados el 2026-10-14):**
+
+1. Cada plan se asigna a una carrera genérica según su disciplina: Administración de empresas (4 planes, incluye la modalidad dual), Contabilidad y auditoría (2), Economía (2), Mercadotecnia (2: mercadotecnia y marketing e inteligencia de mercados), Finanzas (1: finanzas, banca y seguros), Negocios internacionales (1) y Emprendimiento e innovación (1).
+2. Cada asignatura del plan se asigna a una materia del catálogo con la misma agrupación de nombres de la tabla de la sección 1.
+3. Para cada carrera y materia: *planes* = cuántos planes de esa carrera la incluyen; *ciclo habitual* = mediana inferior del primer ciclo en que aparece en cada plan; *ciclos* = todos los ciclos en que aparece (materias divididas en I, II, III).
+4. Se muestra una materia en una carrera solo si aparece en **al menos la mitad** de sus planes. La app indica siempre «en X de N planes revisados» y advierte que cada universidad puede ubicarla en otro ciclo.
+5. Las carreras con un solo plan muestran el dato de ese plan; la app lo dice expresamente («1 plan de estudios público»).
+
+**Resultado** (también verificado por `tests/content/integrity.test.ts`: materias existentes, ciclos coherentes, umbral de la mitad y ninguna materia sin carrera):
+
+| Carrera | Planes | Materias del catálogo por ciclo habitual |
+|---|---|---|
+| Administración de empresas | 4 | **1.º** Contabilidad general, Fundamentos de administración, Matemática para la gestión, Metodología de la investigación; **2.º** Contabilidad de costos, Derecho empresarial y societario, Estadística descriptiva, Legislación laboral; **3.º** Estadística inferencial, Marketing, Matemática financiera, Microeconomía; **4.º** Comportamiento organizacional, Investigación de mercados, Macroeconomía, Gestión del talento humano; **5.º** Emprendimiento, Informática para la gestión; **6.º** Economía internacional y comercio exterior; **7.º** Ética profesional, Formulación y evaluación de proyectos |
+| Contabilidad y auditoría | 2 | **1.º** Cálculo diferencial, Contabilidad general, Derecho empresarial y societario, Estadística descriptiva, Ética profesional, Informática para la gestión, Matemática para la gestión, Metodología de la investigación; **2.º** Estadística inferencial, Legislación laboral, Microeconomía, Tributación; **3.º** Contabilidad de costos, Macroeconomía, Matemática financiera; **4.º** Contabilidad financiera (NIIF), Economía internacional y comercio exterior, Finanzas corporativas, Fundamentos de administración; **5.º** Emprendimiento, Gestión del talento humano; **7.º** Formulación y evaluación de proyectos |
+| Economía | 2 | **1.º** Contabilidad financiera (NIIF), Contabilidad general, Estadística descriptiva, Informática para la gestión, Matemática para la gestión; **2.º** Contabilidad de costos, Microeconomía; **3.º** Estadística inferencial, Investigación de mercados, Macroeconomía, Matemática financiera; **5.º** Emprendimiento, Finanzas corporativas; **6.º** Economía internacional y comercio exterior; **7.º** Formulación y evaluación de proyectos, Finanzas internacionales, Metodología de la investigación; **8.º** Fundamentos de administración |
+| Mercadotecnia | 2 | **1.º** Contabilidad general, Fundamentos de administración, Marketing, Matemática para la gestión; **2.º** Estadística descriptiva, Investigación de mercados; **3.º** Comportamiento organizacional, Emprendimiento, Matemática financiera, Microeconomía; **5.º** Metodología de la investigación |
+| Finanzas | 1 | **1.º** Contabilidad financiera (NIIF), Fundamentos de administración, Metodología de la investigación; **2.º** Derecho empresarial y societario, Estadística descriptiva; **3.º** Estadística inferencial, Finanzas corporativas, Microeconomía; **4.º** Macroeconomía |
+| Negocios internacionales | 1 | **1.º** Contabilidad general, Derecho empresarial y societario, Matemática para la gestión; **2.º** Contabilidad de costos, Microeconomía; **3.º** Estadística descriptiva, Macroeconomía, Matemática financiera; **4.º** Economía internacional y comercio exterior, Estadística inferencial, Investigación de mercados; **5.º** Finanzas corporativas; **6.º** Finanzas internacionales, Metodología de la investigación; **7.º** Formulación y evaluación de proyectos |
+| Emprendimiento e innovación | 1 | **1.º** Tributación; **2.º** Matemática financiera, Microeconomía; **5.º** Emprendimiento, Ética profesional, Marketing, Gestión del talento humano |
+
+**Derechos:** que una materia se curse en cierto ciclo es un dato (Código Ingenios, art. 102); no se reproduce la estructura completa de ningún plan ni se usa la marca de ninguna institución.
 
 ## 2. Normativa ecuatoriana
 

@@ -91,6 +91,33 @@ export const materiaSchema = z.object({
 });
 export type Materia = z.infer<typeof materiaSchema>;
 
+/**
+ * Generic career (no institution): which catalog subjects it usually includes and in which cycle. Aggregated from
+ * public study plans (docs/investigacion.md, section 1b); the plans themselves are not published.
+ */
+export const carreraSchema = z.object({
+  id,
+  nombre: nonEmpty,
+  descripcion: nonEmpty,
+  /** Number of public plans the figures come from. */
+  planes: z.number().int().min(1),
+  ciclos: z.number().int().min(1).max(12),
+  materias: z
+    .array(
+      z.object({
+        materia: id,
+        /** Usual cycle: median (lower) of the first cycle in which the subject appears in each plan. */
+        ciclo: z.number().int().min(1).max(12),
+        /** Every cycle in which it appears in some plan (subjects split in I, II, III). */
+        ciclos: z.array(z.number().int().min(1).max(12)).min(1),
+        /** Plans of this career that include it. */
+        planes: z.number().int().min(1),
+      }),
+    )
+    .min(1),
+});
+export type Carrera = z.infer<typeof carreraSchema>;
+
 export const subtemaSchema = z.object({
   id,
   nombre: nonEmpty,
@@ -248,6 +275,7 @@ export type Plantilla = z.infer<typeof plantillaSchema>;
 
 export const fuentesFileSchema = z.array(fuenteSchema);
 export const materiasFileSchema = z.array(materiaSchema);
+export const carrerasFileSchema = z.array(carreraSchema);
 export const formulasFileSchema = z.array(formulaSchema);
 export const ejerciciosFileSchema = z.array(ejercicioSchema);
 export const appsFileSchema = z.array(appSchema);

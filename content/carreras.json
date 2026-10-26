@@ -1,0 +1,944 @@
+[
+  {
+    "id": "administracion-empresas",
+    "nombre": "Administración de empresas",
+    "descripcion": "Planificación, organización, dirección y control de organizaciones; incluye la modalidad dual.",
+    "planes": 4,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "contabilidad-general",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "contabilidad-costos",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          3
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "derecho-empresarial",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          5
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 2,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "legislacion-laboral",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          4
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "estadistica-inferencial",
+        "ciclo": 3,
+        "ciclos": [
+          2,
+          3
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "marketing",
+        "ciclo": 3,
+        "ciclos": [
+          2,
+          3,
+          4
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "matematica-financiera",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          5
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 3,
+        "ciclos": [
+          2,
+          3,
+          4
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "comportamiento-organizacional",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "investigacion-mercados",
+        "ciclo": 4,
+        "ciclos": [
+          3,
+          4
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "macroeconomia",
+        "ciclo": 4,
+        "ciclos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "talento-humano",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "emprendimiento",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "informatica-gestion",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "economia-internacional",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          7
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "etica-profesional",
+        "ciclo": 7,
+        "ciclos": [
+          5,
+          7,
+          8
+        ],
+        "planes": 3
+      },
+      {
+        "materia": "evaluacion-proyectos",
+        "ciclo": 7,
+        "ciclos": [
+          6,
+          7,
+          8
+        ],
+        "planes": 4
+      }
+    ]
+  },
+  {
+    "id": "contabilidad-auditoria",
+    "nombre": "Contabilidad y auditoría",
+    "descripcion": "Registro contable con NIIF, costos, tributación y revisión independiente de la información financiera.",
+    "planes": 2,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "calculo-diferencial",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "contabilidad-general",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "derecho-empresarial",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "etica-profesional",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "informatica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          8
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          7
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "estadistica-inferencial",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          3
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "legislacion-laboral",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "tributacion",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "contabilidad-costos",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "macroeconomia",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "matematica-financiera",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "contabilidad-financiera",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "economia-internacional",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "finanzas-corporativas",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "emprendimiento",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "talento-humano",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "evaluacion-proyectos",
+        "ciclo": 7,
+        "ciclos": [
+          7,
+          8
+        ],
+        "planes": 2
+      }
+    ]
+  },
+  {
+    "id": "economia",
+    "nombre": "Economía",
+    "descripcion": "Análisis de mercados, del crecimiento y de la política económica con herramientas cuantitativas.",
+    "planes": 2,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "contabilidad-financiera",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "contabilidad-general",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "informatica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "contabilidad-costos",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "estadistica-inferencial",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "investigacion-mercados",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "macroeconomia",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "matematica-financiera",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "emprendimiento",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "finanzas-corporativas",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "economia-internacional",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "evaluacion-proyectos",
+        "ciclo": 7,
+        "ciclos": [
+          7,
+          8
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "finanzas-internacionales",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 8,
+        "ciclos": [
+          8
+        ],
+        "planes": 1
+      }
+    ]
+  },
+  {
+    "id": "mercadotecnia",
+    "nombre": "Mercadotecnia",
+    "descripcion": "Investigación de mercados, comportamiento del consumidor y estrategia comercial.",
+    "planes": 2,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "contabilidad-general",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "marketing",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          4,
+          7
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "investigacion-mercados",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          4,
+          5
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "comportamiento-organizacional",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "emprendimiento",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-financiera",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          7
+        ],
+        "planes": 2
+      }
+    ]
+  },
+  {
+    "id": "finanzas",
+    "nombre": "Finanzas",
+    "descripcion": "Decisiones de inversión y financiamiento, mercados financieros, banca y seguros.",
+    "planes": 1,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "contabilidad-financiera",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "derecho-empresarial",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-inferencial",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "finanzas-corporativas",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "macroeconomia",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      }
+    ]
+  },
+  {
+    "id": "negocios-internacionales",
+    "nombre": "Negocios internacionales",
+    "descripcion": "Comercio exterior, finanzas internacionales y gestión de empresas que operan entre países.",
+    "planes": 1,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "contabilidad-general",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "derecho-empresarial",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "contabilidad-costos",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "macroeconomia",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-financiera",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "economia-internacional",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-inferencial",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "investigacion-mercados",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "finanzas-corporativas",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "finanzas-internacionales",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "evaluacion-proyectos",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      }
+    ]
+  },
+  {
+    "id": "emprendimiento-innovacion",
+    "nombre": "Emprendimiento e innovación",
+    "descripcion": "Creación y validación de negocios, innovación y gestión de nuevas empresas.",
+    "planes": 1,
+    "ciclos": 8,
+    "materias": [
+      {
+        "materia": "tributacion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-financiera",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "emprendimiento",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          6
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "etica-profesional",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "marketing",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "talento-humano",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      }
+    ]
+  }
+]

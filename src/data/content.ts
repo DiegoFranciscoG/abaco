@@ -1,8 +1,10 @@
+import carrerasJson from '../../content/carreras.json';
 import fuentesJson from '../../content/fuentes.json';
 import materiasJson from '../../content/materias.json';
 import type {
   App,
   Area,
+  Carrera,
   Ejercicio,
   Formula,
   Fuente,
@@ -27,6 +29,29 @@ export function getMateria(id: string): Materia | undefined {
 
 export function materiasByArea(area: Area): Materia[] {
   return materias.filter((m) => m.areas[0] === area);
+}
+
+export const carreras = carrerasJson as unknown as Carrera[];
+
+export function getCarrera(id: string): Carrera | undefined {
+  return carreras.find((c) => c.id === id);
+}
+
+/** Subjects of a career in its usual cycle `ciclo` (all cycles when omitted), in catalog order. */
+export function materiasDeCiclo(carrera: Carrera, ciclo?: number): { materia: Materia; entrada: Carrera['materias'][number] }[] {
+  return carrera.materias
+    .filter((e) => ciclo === undefined || e.ciclo === ciclo)
+    .map((entrada) => ({ materia: getMateria(entrada.materia), entrada }))
+    .filter((r): r is { materia: Materia; entrada: Carrera['materias'][number] } => r.materia !== undefined)
+    .sort((a, b) => a.entrada.ciclo - b.entrada.ciclo || a.materia.orden - b.materia.orden);
+}
+
+/** Careers that include a subject, with its usual cycle in each. */
+export function carrerasDeMateria(materiaId: string): { carrera: Carrera; ciclo: number; planes: number }[] {
+  return carreras.flatMap((carrera) => {
+    const entrada = carrera.materias.find((e) => e.materia === materiaId);
+    return entrada ? [{ carrera, ciclo: entrada.ciclo, planes: entrada.planes }] : [];
+  });
 }
 
 export function resolveFuente(ref: FuenteRef): (Fuente & { seccion?: string }) | undefined {

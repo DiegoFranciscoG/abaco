@@ -90,6 +90,28 @@ describe('integridad del contenido', () => {
     }
   });
 
+  it('careers reference catalog subjects with coherent cycles and plan counts', () => {
+    expect(duplicates(content.carreras.map((c) => c.id))).toEqual([]);
+    expect(content.carreras.length).toBeGreaterThanOrEqual(7);
+    for (const c of content.carreras) {
+      expect(duplicates(c.materias.map((e) => e.materia)), c.id).toEqual([]);
+      for (const e of c.materias) {
+        const where = `${c.id}/${e.materia}`;
+        expect(materiaIds.has(e.materia), where).toBe(true);
+        expect(e.ciclo, where).toBeLessThanOrEqual(c.ciclos);
+        expect(e.ciclos.includes(e.ciclo), where).toBe(true);
+        expect(e.ciclos.every((x) => x >= 1 && x <= c.ciclos), where).toBe(true);
+        expect([...e.ciclos].sort((a, b) => a - b), where).toEqual(e.ciclos);
+        // Only subjects present in at least half of the career's plans are listed.
+        expect(e.planes * 2, where).toBeGreaterThanOrEqual(c.planes);
+        expect(e.planes, where).toBeLessThanOrEqual(c.planes);
+      }
+    }
+    // Every subject of the catalog belongs to at least one career.
+    const used = new Set(content.carreras.flatMap((c) => c.materias.map((e) => e.materia)));
+    expect([...materiaIds].filter((id) => !used.has(id))).toEqual([]);
+  });
+
   it('no university curricula, names or brands are published in the content', () => {
     const forbidden = /\bmallas?\b|universidad de cuenca|\bucuenca\b|\bucacue\b|cat[oó]lica de cuenca|plan(?:es)? de estudios? de la/i;
     const hits = allContentText()

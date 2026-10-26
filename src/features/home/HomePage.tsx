@@ -1,6 +1,6 @@
 import { m } from 'motion/react';
 import { lazy, Suspense, useState } from 'react';
-import { getMateria } from '../../data/content';
+import { getCarrera, getMateria } from '../../data/content';
 import stats from '../../generated/stats.json';
 import { AbacusArt, QuestionArt } from '../../ui/art';
 import { useDocumentTitle, useReducedMotion } from '../../ui/hooks';
@@ -103,10 +103,20 @@ const FAQ = [
 function MySubjects() {
   const profile = useProfile();
   const mine = profile.materias.map(getMateria).filter((m) => m !== undefined);
+  const carrera = profile.carrera ? getCarrera(profile.carrera) : undefined;
+  const cycleLink = carrera ? `/materias?carrera=${carrera.id}${profile.ciclo ? `&ciclo=${profile.ciclo}` : ''}` : '/materias';
   if (mine.length > 0) {
     return (
       <div className="card p-5">
-        <span className="eyebrow block">Mis materias</span>
+        <span className="flex flex-wrap items-baseline justify-between gap-2">
+          <span className="eyebrow block">Mis materias</span>
+          {carrera ? (
+            <AppLink to={cycleLink} className="link-red text-sm">
+              {carrera.nombre}
+              {profile.ciclo ? ` · ${profile.ciclo}.º ciclo` : ''} →
+            </AppLink>
+          ) : null}
+        </span>
         <ul className="mt-3 flex flex-wrap gap-2">
           {mine.map((m) => (
             <li key={m.id}>
@@ -120,14 +130,16 @@ function MySubjects() {
     );
   }
   return (
-    <AppLink to="/materias" className="card card-lift flex items-center gap-4 p-5">
+    <AppLink to={cycleLink} className="card card-lift flex items-center gap-4 p-5">
       <span className="tile">
         <Icon name="materias" />
       </span>
       <span className="min-w-0 flex-1">
         <span className="eyebrow block">Empieza aquí</span>
-        <span className="block font-display text-xl font-semibold">Marca las materias que llevas</span>
-        <span className="text-sm text-muted">Se guardan solo en este dispositivo.</span>
+        <span className="block font-display text-xl font-semibold">
+          {carrera ? `Tus materias de ${carrera.nombre}` : 'Elige tu carrera y tu ciclo'}
+        </span>
+        <span className="text-sm text-muted">Marca las materias que llevas; se guardan solo en este dispositivo.</span>
       </span>
       <Icon name="arrow-right" className="text-red" />
     </AppLink>

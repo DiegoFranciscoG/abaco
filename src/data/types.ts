@@ -13,6 +13,9 @@ export interface Perfil {
   id: 'yo';
   /** Subjects the student is taking (ids of content/materias.json). */
   materias: string[];
+  /** Career and cycle the student chose (content/carreras.json), or null. */
+  carrera: string | null;
+  ciclo: number | null;
   tema: ThemePreference;
   movimiento: MotionPreference;
   sintaxisExcel: Locale;
@@ -187,6 +190,8 @@ export interface MetaRow {
 export const DEFAULT_PROFILE: Perfil = {
   id: 'yo',
   materias: [],
+  carrera: null,
+  ciclo: null,
   tema: 'system',
   movimiento: 'system',
   sintaxisExcel: 'es',

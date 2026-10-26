@@ -27,6 +27,8 @@ const contentId = z.string().regex(/^[a-z0-9]+(?:-{1,2}[a-z0-9]+)*$/).max(120);
 const perfilSchema = z.object({
   id: z.literal('yo'),
   materias: z.array(contentId).max(60).default([]),
+  carrera: contentId.nullable().default(null),
+  ciclo: z.number().int().min(1).max(12).nullable().default(null),
   tema: z.enum(['system', 'light', 'dark']),
   movimiento: z.enum(['system', 'reduce', 'full']),
   sintaxisExcel: z.enum(['es', 'en']).default('es'),

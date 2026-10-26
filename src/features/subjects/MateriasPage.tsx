@@ -8,6 +8,7 @@ import { Icon } from '../../ui/icons';
 import { AppLink, AreaTile, EmptyState, PageHeader, TiltCard } from '../../ui/primitives';
 import { useProfile } from '../../ui/use-profile';
 import { useToast } from '../../ui/use-toast';
+import { CareerCycle } from './CareerCycle';
 import { toggleMySubject } from './my-subjects';
 
 function matches(m: Materia, query: string): boolean {
@@ -69,8 +70,10 @@ export default function MateriasPage() {
       <PageHeader
         eyebrow="Materias"
         title="Todas las materias, tema por tema"
-        subtitle={`${materias.length} materias del área económica y administrativa, cada una con temas y subtemas explicados y una fuente citada en cada subtema. Marca las que llevas para tenerlas a mano.`}
+        subtitle={`${materias.length} materias del área económica y administrativa, ordenadas por carrera y ciclo, cada una con temas y subtemas explicados y una fuente citada en cada subtema. Marca las que llevas para tenerlas a mano.`}
       />
+
+      <CareerCycle profile={profile} />
 
       {mine.length > 0 ? (
         <section aria-labelledby="mis-materias">
@@ -89,7 +92,7 @@ export default function MateriasPage() {
 
       <section aria-labelledby="catalogo" className="space-y-5">
         <h2 id="catalogo" className="font-display text-2xl font-semibold">
-          Catálogo
+          Todas las materias
         </h2>
         <div className="flex flex-col gap-3 md:flex-row md:items-center">
           <label className="relative flex-1">

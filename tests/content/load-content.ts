@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   appsFileSchema,
+  carrerasFileSchema,
   ejerciciosFileSchema,
   formulasFileSchema,
   fuentesFileSchema,
@@ -22,13 +23,14 @@ const listJson = (dir: string): string[] =>
 export function loadAllContent() {
   const fuentes = fuentesFileSchema.parse(read('fuentes.json'));
   const materias = materiasFileSchema.parse(read('materias.json'));
+  const carreras = carrerasFileSchema.parse(read('carreras.json'));
   const temarios = listJson('temarios').map((file) => ({ file, data: temarioSchema.parse(read(`temarios/${file}`)) }));
   const formulas = formulasFileSchema.parse(read('formulas.json'));
   const ejercicios = ejerciciosFileSchema.parse(read('ejercicios.json'));
   const apps = appsFileSchema.parse(read('apps.json'));
   const glosario = glosarioFileSchema.parse(read('glosario.json'));
   const plantillas = plantillasFileSchema.parse(read('plantillas.json'));
-  return { fuentes, materias, temarios, formulas, ejercicios, apps, glosario, plantillas };
+  return { fuentes, materias, carreras, temarios, formulas, ejercicios, apps, glosario, plantillas };
 }
 
 /** Every content file as raw text (used to look for forbidden material such as university curricula). */
