@@ -90,6 +90,13 @@ describe('integridad del contenido', () => {
     }
   });
 
+  it('every subject offers at least one in-app tool and one verified external technology', () => {
+    for (const m of content.materias) {
+      expect(m.herramientas.length, m.id).toBeGreaterThan(0);
+      expect(content.apps.some((a) => a.materias.includes(m.id)), `${m.id} sin app externa`).toBe(true);
+    }
+  });
+
   it('careers reference catalog subjects with coherent cycles and plan counts', () => {
     expect(duplicates(content.carreras.map((c) => c.id))).toEqual([]);
     expect(content.carreras.length).toBeGreaterThanOrEqual(7);

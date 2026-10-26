@@ -6,7 +6,10 @@
     "materias": [
       "informatica-gestion",
       "contabilidad-general",
-      "matematica-financiera"
+      "matematica-financiera",
+      "contabilidad-costos",
+      "evaluacion-proyectos",
+      "finanzas-corporativas"
     ],
     "areas": [
       "tecnologia",
@@ -27,7 +30,10 @@
     "para_que": "Versión en línea de Excel. Sirve para practicar las mismas funciones en español (VA, PAGO, TIR) desde el navegador.",
     "materias": [
       "informatica-gestion",
-      "matematica-financiera"
+      "matematica-financiera",
+      "contabilidad-costos",
+      "evaluacion-proyectos",
+      "finanzas-corporativas"
     ],
     "areas": [
       "tecnologia",
@@ -48,7 +54,9 @@
     "materias": [
       "informatica-gestion",
       "estadistica-descriptiva",
-      "estadistica-inferencial"
+      "estadistica-inferencial",
+      "contabilidad-costos",
+      "evaluacion-proyectos"
     ],
     "areas": [
       "tecnologia"
@@ -200,7 +208,8 @@
     "para_que": "Buscar una compañía ecuatoriana y revisar su información pública: especie, situación legal y documentos presentados.",
     "materias": [
       "derecho-empresarial",
-      "contabilidad-financiera"
+      "contabilidad-financiera",
+      "emprendimiento"
     ],
     "areas": [
       "derecho",
@@ -216,9 +225,10 @@
   {
     "id": "sri-en-linea",
     "nombre": "SRI en Línea",
-    "para_que": "Portal oficial del Servicio de Rentas Internas para trámites y declaraciones; útil para conocer los formularios reales que se ven en Legislación y Práctica Tributaria.",
+    "para_que": "Portal oficial del Servicio de Rentas Internas para trámites y declaraciones; útil para conocer los formularios reales que se ven en Tributación y los trámites de un negocio nuevo (RUC, RIMPE).",
     "materias": [
-      "tributacion"
+      "tributacion",
+      "emprendimiento"
     ],
     "areas": [
       "tributario"
@@ -296,5 +306,230 @@
     "url_oficial": "https://www.overleaf.com/",
     "fecha_consulta": "2026-10-25",
     "nota": "Requiere crear una cuenta; ÁBACO no está afiliado a Overleaf. Su editor de informes ofrece una alternativa sin cuenta y sin conexión."
+  },
+  {
+    "id": "gnucash",
+    "nombre": "GnuCash",
+    "para_que": "Programa de contabilidad por partida doble, libre (licencia GNU GPL). Sirve para practicar cuentas, asientos y reportes con un software contable real.",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-financiera"
+    ],
+    "areas": [
+      "contabilidad",
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.gnucash.org/",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "ganttproject",
+    "nombre": "GanttProject",
+    "para_que": "Cronogramas de Gantt con tareas, recursos y costos del proyecto; abre y exporta archivos de Microsoft Project. Gratis y de código abierto (GPL-3.0).",
+    "materias": [
+      "evaluacion-proyectos",
+      "emprendimiento"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.ganttproject.biz/",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "drawio",
+    "nombre": "draw.io",
+    "para_que": "Diagramas en el navegador o en el escritorio, sin crear cuenta: por ejemplo, procesos BPMN con un carril por cada área de la empresa. Código abierto (Apache 2.0).",
+    "materias": [
+      "fundamentos-administracion",
+      "comportamiento-organizacional",
+      "informatica-gestion"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.drawio.com/",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "trello",
+    "nombre": "Trello",
+    "para_que": "Tableros kanban para repartir y seguir el trabajo de un equipo: útil para proyectos de aula y para aplicar la coordinación de equipos que se ve en comportamiento organizacional.",
+    "materias": [
+      "comportamiento-organizacional",
+      "emprendimiento",
+      "fundamentos-administracion"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "costo": "freemium",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://trello.com/",
+    "fecha_consulta": "2026-10-26",
+    "nota": "Requiere cuenta. El plan gratuito admite hasta 10 colaboradores y 10 tableros por espacio de trabajo."
+  },
+  {
+    "id": "sut-trabajo",
+    "nombre": "Ministerio del Trabajo — servicios en línea",
+    "para_que": "Portal oficial del Ministerio del Trabajo: calculadoras de décima tercera, décima cuarta, liquidaciones y compensaciones, y el sistema donde personas naturales y jurídicas registran los contratos de trabajo.",
+    "materias": [
+      "talento-humano",
+      "legislacion-laboral"
+    ],
+    "areas": [
+      "derecho",
+      "gestion"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://sut.trabajo.gob.ec/",
+    "fecha_consulta": "2026-10-26",
+    "nota": "El registro de contratos pide usuario del Ministerio del Trabajo: practica solo con las calculadoras."
+  },
+  {
+    "id": "iess-en-linea",
+    "nombre": "IESS — aplicaciones en línea",
+    "para_que": "Portal oficial del Instituto Ecuatoriano de Seguridad Social, con aplicaciones en línea para empleadores y para afiliados, y trámites virtuales: es donde se gestiona en la práctica la seguridad social que estudias.",
+    "materias": [
+      "talento-humano",
+      "legislacion-laboral"
+    ],
+    "areas": [
+      "derecho",
+      "gestion"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://www.iess.gob.ec/",
+    "fecha_consulta": "2026-10-26",
+    "nota": "Las aplicaciones piden usuario y clave del IESS: nunca uses datos de otra persona."
+  },
+  {
+    "id": "bce-estadisticas",
+    "nombre": "Banco Central del Ecuador — estadísticas",
+    "para_que": "Series estadísticas oficiales del Ecuador (portal BCEData) y su calendario de publicaciones; en la sección de la Junta de Política y Regulación Financiera y Monetaria se publican las tasas de interés vigentes.",
+    "materias": [
+      "macroeconomia",
+      "finanzas-corporativas",
+      "finanzas-internacionales",
+      "matematica-financiera"
+    ],
+    "areas": [
+      "economia",
+      "finanzas"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://www.bce.fin.ec/estadisticas-economicas/",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "inec-ecuador-en-cifras",
+    "nombre": "INEC — Ecuador en cifras",
+    "para_que": "Estadísticas oficiales del Instituto Nacional de Estadística y Censos: índice de precios al consumidor (IPC), empleo y desempleo, y el Registro Estadístico de Empresas para dimensionar un mercado.",
+    "materias": [
+      "macroeconomia",
+      "investigacion-mercados",
+      "estadistica-descriptiva",
+      "emprendimiento"
+    ],
+    "areas": [
+      "economia",
+      "cuantitativo"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://www.ecuadorencifras.gob.ec/",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "wits",
+    "nombre": "WITS — World Integrated Trade Solution",
+    "para_que": "Datos de comercio internacional del Banco Mundial y sus socios: exportaciones e importaciones por país y producto, aranceles y medidas no arancelarias. El perfil de Ecuador se consulta sin cuenta.",
+    "materias": [
+      "economia-internacional",
+      "finanzas-internacionales"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://wits.worldbank.org/",
+    "fecha_consulta": "2026-10-26",
+    "nota": "Las consultas personalizadas requieren registrarse. Sitio en inglés y español."
+  },
+  {
+    "id": "limesurvey",
+    "nombre": "LimeSurvey",
+    "para_que": "Encuestas en línea para investigación de mercados y trabajos de investigación: tiene un plan gratuito en la nube y una versión de código abierto que se instala en un servidor propio.",
+    "materias": [
+      "investigacion-mercados",
+      "metodologia-investigacion"
+    ],
+    "areas": [
+      "cuantitativo",
+      "tecnologia"
+    ],
+    "costo": "freemium",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://www.limesurvey.org/",
+    "fecha_consulta": "2026-10-26",
+    "nota": "Si encuestas a personas, pide su consentimiento y no recojas datos que no necesitas (LOPDP)."
+  },
+  {
+    "id": "business-model-canvas",
+    "nombre": "Business Model Canvas (Strategyzer)",
+    "para_que": "Plantilla oficial del lienzo del modelo de negocio, gratuita para descargar y compartir. ÁBACO la enlaza y no la reproduce.",
+    "materias": [
+      "emprendimiento",
+      "marketing"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Navegador"
+    ],
+    "url_oficial": "https://www.strategyzer.com/library/the-business-model-canvas",
+    "fecha_consulta": "2026-10-26"
   }
 ]

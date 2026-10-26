@@ -177,3 +177,23 @@ Lectura hecha sobre los textos oficiales o sus copias íntegras publicadas por e
 | A2 | Frankfurter v2 (código MIT) con proveedor **ECB** | https://api.frankfurter.dev/v2/ | Código MIT (https://github.com/lineofflight/frankfurter). Datos del BCE: uso libre citando al BCE (https://www.ecb.europa.eu/services/disclaimer/html/index.en.html). Se fuerza `providers=ECB` para no mezclar datos de otros bancos con otras condiciones | `access-control-allow-origin: *` | Herramienta "Divisas": tipos de referencia diarios del BCE (unas 30 monedas; COP y PEN no están en el BCE) |
 | A3 | Open Library Search API | https://openlibrary.org/search.json | El Internet Archive no reclama derechos nuevos sobre la base (https://openlibrary.org/developers/licensing); pide no descargar en masa; 1 petición/s sin identificar (https://openlibrary.org/developers/api) | `access-control-allow-origin: *` | Quinta fuente del buscador académico (solo metadatos de libros), con límite de 1 petición por segundo en el cliente |
 | A4 | OpenAlex (ya usada) | https://api.openalex.org | Datos CC0 | `*` | **Cambio detectado:** sin clave, las peticiones comparten un presupuesto diario por IP. Cada estudiante consulta desde su propia IP, así que sigue funcionando; no se incrusta ninguna clave en el navegador (regla de seguridad) |
+
+## 12. Tecnología externa por materia (verificada 2026-10-26)
+
+Cada materia tiene al menos una herramienta propia de ÁBACO (`materias.json → herramientas`) y al menos una aplicación externa real (`apps.json`); `tests/content/integrity.test.ts` lo comprueba. Las nuevas se verificaron en su sitio oficial:
+
+| App | URL oficial | Qué se verificó | Materias |
+|---|---|---|---|
+| GnuCash | https://www.gnucash.org/ | «freely licensed under the GNU GPL»; Linux, BSD, macOS, Windows; contabilidad por partida doble | Contabilidad general, Contabilidad financiera |
+| GanttProject | https://www.ganttproject.biz/ | «free to use», Windows/macOS/Linux, recursos y costos, archivos de Microsoft Project; licencia GPL-3.0 en https://github.com/bardsoftware/ganttproject | Evaluación de proyectos, Emprendimiento |
+| draw.io | https://www.drawio.com/ | «Free forever», «No sign-up required», código Apache 2.0, editor web y de escritorio, diagramas BPMN con carriles | Fundamentos de administración, Comportamiento organizacional, Informática |
+| Trello | https://trello.com/pricing | Plan gratuito: hasta 10 colaboradores y 10 tableros por espacio de trabajo | Comportamiento organizacional, Emprendimiento, Fundamentos de administración |
+| Ministerio del Trabajo (SUT) | https://sut.trabajo.gob.ec/ | Calculadoras de décimos, liquidaciones y compensaciones; sistema de contratos con usuario | Talento humano, Legislación laboral |
+| IESS | https://www.iess.gob.ec/ | Aplicaciones en línea para empleadores y afiliados, trámites virtuales | Talento humano, Legislación laboral |
+| BCE — estadísticas | https://www.bce.fin.ec/estadisticas-economicas/ | «Series Estadísticas y Datos» (BCEData), calendario; tasas de interés 2025–2026 en la sección de la Junta | Macroeconomía, Finanzas, Matemática financiera |
+| INEC | https://www.ecuadorencifras.gob.ec/ | Páginas oficiales del IPC, empleo y desempleo, y Registro Estadístico de Empresas | Macroeconomía, Investigación de mercados, Estadística, Emprendimiento |
+| WITS (Banco Mundial) | https://wits.worldbank.org/ | Perfil de Ecuador visible sin cuenta (exportaciones, importaciones, aranceles); las consultas personalizadas requieren registro | Economía internacional, Finanzas internacionales |
+| LimeSurvey | https://www.limesurvey.org/ | «Get started - free»; «self-hosted, open source survey tool» | Investigación de mercados, Metodología |
+| Business Model Canvas | https://www.strategyzer.com/library/the-business-model-canvas | «Free to download and to share»; se enlaza, no se reproduce (sección 9, L7) | Emprendimiento, Marketing |
+
+**Descartadas por no poder verificarse hoy:** Canva (el sitio bloquea la consulta automática), Google Trends (error 429 al probar la consulta), UN Comtrade (la página solo carga con sesión de JavaScript) y FRED (la portada no indica condiciones de uso). Se pueden agregar cuando se verifiquen.
