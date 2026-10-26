@@ -28,12 +28,11 @@ function SubjectCard({ materia, mine, onToggle }: { materia: Materia; mine: bool
           type="button"
           onClick={onToggle}
           aria-pressed={mine}
-          aria-label={
-            mine ? `Quitar ${materia.nombre} de mis materias` : `Agregar ${materia.nombre} a mis materias`
-          }
           className={`chip relative z-10 min-h-9 ${mine ? 'border-red text-red' : ''}`}
         >
-          <Icon name={mine ? 'check' : 'plus'} size={15} /> {mine ? 'Mía' : 'La llevo'}
+          {/* Constant visible label (WCAG 2.5.3); the state is aria-pressed, the icon and the color. */}
+          <Icon name={mine ? 'check' : 'plus'} size={15} /> La llevo
+          <span className="sr-only">: {materia.nombre}</span>
         </button>
       </div>
       <AppLink

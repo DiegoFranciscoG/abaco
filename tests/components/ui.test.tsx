@@ -208,7 +208,7 @@ describe('pages', () => {
     await user.type(screen.getByLabelText('Filtrar materias'), 'tributacion');
     expect(screen.getByRole('link', { name: /^Tributación/ })).toBeInTheDocument();
     expect(screen.queryByRole('link', { name: /Microeconomía/ })).not.toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: 'Agregar Tributación a mis materias' }));
+    await user.click(screen.getByRole('button', { name: 'La llevo: Tributación' }));
     await waitFor(async () => expect((await getProfile(db)).materias).toEqual(['tributacion']));
   });
 

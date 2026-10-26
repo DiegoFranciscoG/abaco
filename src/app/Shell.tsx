@@ -166,44 +166,44 @@ export function Shell() {
                 Contenido educativo, no asesoría profesional.
               </p>
               <nav aria-label="Legal" className="mt-3">
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                <ul className="flex flex-wrap gap-x-4 gap-y-2">
                   <li>
-                    <AppLink to="/acerca" className="link-red">
+                    <AppLink to="/acerca" className="link-red inline-flex min-h-6 items-center">
                       Fuentes
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/legal/privacidad" className="link-red">
+                    <AppLink to="/legal/privacidad" className="link-red inline-flex min-h-6 items-center">
                       Privacidad
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/legal/terminos" className="link-red">
+                    <AppLink to="/legal/terminos" className="link-red inline-flex min-h-6 items-center">
                       Términos
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/legal/almacenamiento" className="link-red">
+                    <AppLink to="/legal/almacenamiento" className="link-red inline-flex min-h-6 items-center">
                       Cookies y almacenamiento
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/legal/licencias" className="link-red">
+                    <AppLink to="/legal/licencias" className="link-red inline-flex min-h-6 items-center">
                       Licencias
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/legal/accesibilidad" className="link-red">
+                    <AppLink to="/legal/accesibilidad" className="link-red inline-flex min-h-6 items-center">
                       Accesibilidad
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/legal/aviso" className="link-red">
+                    <AppLink to="/legal/aviso" className="link-red inline-flex min-h-6 items-center">
                       Aviso legal
                     </AppLink>
                   </li>
                   <li>
-                    <AppLink to="/sugerencias" className="link-red">
+                    <AppLink to="/sugerencias" className="link-red inline-flex min-h-6 items-center">
                       Buzón de sugerencias
                     </AppLink>
                   </li>
@@ -214,7 +214,12 @@ export function Shell() {
                 {AUTHOR.redes.map((red, i) => (
                   <span key={red.id}>
                     {i > 0 ? ' · ' : ''}
-                    <a href={red.url} target="_blank" rel="noopener noreferrer" className="link-red">
+                    <a
+                      href={red.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-red inline-flex min-h-6 items-center"
+                    >
                       {red.nombre}
                     </a>
                   </span>
