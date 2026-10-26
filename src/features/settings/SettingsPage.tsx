@@ -1,7 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState } from 'react';
 import { backupFileName, BackupError, createBackup, markBackupDone, parseBackup, restoreBackup, serializeBackup, type RestoreMode } from '../../data/backup';
-import { getMateria } from '../../data/content';
+import { getCarrera, getMateria } from '../../data/content';
 import { countUserData, getDeviceId, getMeta, updateProfile, wipeAllData } from '../../data/repositories';
 import { checkStorage, formatBytes, requestPersistence, type StorageStatus } from '../../data/storage-health';
 import type { MotionPreference, ThemePreference } from '../../data/types';
@@ -13,6 +13,7 @@ import { AppLink, Notice, PageHeader } from '../../ui/primitives';
 import { downloadFile, formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
 import { clearSuggestionLedger } from '../suggestions/limits';
+import { InstallCard } from './InstallCard';
 
 function Segmented<T extends string>({ label, value, options, onChange }: { label: string; value: T; options: { id: T; label: string }[]; onChange: (v: T) => void }) {
   return (
@@ -107,11 +108,24 @@ export default function SettingsPage() {
               Elegir materias →
             </AppLink>
           </div>
+          <div>
+            <span className="mb-1 block text-sm font-semibold text-ink-2">Carrera y ciclo</span>
+            <p className="text-sm text-ink-2">
+              {profile.carrera && getCarrera(profile.carrera)
+                ? `${getCarrera(profile.carrera)?.nombre ?? ''}${profile.ciclo ? ` · ${profile.ciclo}.º ciclo` : ''}`
+                : 'Sin elegir'}
+            </p>
+            <AppLink to={profile.carrera ? `/materias?carrera=${profile.carrera}${profile.ciclo ? `&ciclo=${profile.ciclo}` : ''}` : '/materias'} className="link-red mt-2 inline-block text-sm">
+              {profile.carrera ? 'Cambiar →' : 'Elegir carrera y ciclo →'}
+            </AppLink>
+          </div>
         </div>
         <Segmented<ThemePreference> label="Tema" value={profile.tema} onChange={(v) => void updateProfile({ tema: v })} options={[{ id: 'system', label: 'Como el sistema' }, { id: 'light', label: 'Claro' }, { id: 'dark', label: 'Oscuro' }]} />
         <Segmented<MotionPreference> label="Animaciones y 3D" value={profile.movimiento} onChange={(v) => void updateProfile({ movimiento: v })} options={[{ id: 'system', label: 'Como el sistema' }, { id: 'full', label: 'Completas' }, { id: 'reduce', label: 'Reducidas (sin 3D)' }]} />
         <Segmented<'es' | 'en'> label="Sintaxis de Excel por defecto" value={profile.sintaxisExcel} onChange={(v) => void updateProfile({ sintaxisExcel: v })} options={[{ id: 'es', label: 'Español: =VA(1%;12;-100)' }, { id: 'en', label: 'Inglés: =PV(1%,12,-100)' }]} />
       </section>
+
+      <InstallCard />
 
       <section id="respaldo" className="card space-y-4 p-5" aria-labelledby="respaldo-titulo">
         <h2 id="respaldo-titulo" className="font-display text-xl font-semibold">

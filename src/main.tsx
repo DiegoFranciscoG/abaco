@@ -1,4 +1,5 @@
 import './styles/index.css';
+import { listenForInstallPrompt } from './app/install-prompt';
 
 /**
  * index.html carries a static shell (brand bar and, on the home page, the hero copy). It is painted first;
@@ -8,6 +9,8 @@ import './styles/index.css';
  */
 const root = document.getElementById('root');
 if (!root) throw new Error('No se encontró el contenedor #root');
+
+listenForInstallPrompt();
 
 requestAnimationFrame(() => {
   setTimeout(() => {
