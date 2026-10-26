@@ -6,6 +6,7 @@ import { Icon } from '../../ui/icons';
 import { Notice } from '../../ui/primitives';
 import { useToast } from '../../ui/use-toast';
 import { describePdf } from './describe';
+import { PdfSearch } from './PdfSearch';
 import { extractPdfText, PDF_LIMITS, PdfError } from './pdf-extract';
 
 export function PdfPanel({
@@ -142,6 +143,7 @@ export function PdfPanel({
           Todavía no agregas PDF a esta materia. Puedes estudiar solo con el contenido de ÁBACO.
         </p>
       )}
+      <PdfSearch />
     </section>
   );
 }

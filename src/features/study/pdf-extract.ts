@@ -1,4 +1,5 @@
 import { PDF_TEXT_MAX } from '../../data/backup';
+import { PAGE_BREAK } from '../../domain/study/pdf-search';
 
 /**
  * Reads the text of a PDF inside the browser with pdf.js (Mozilla, Apache-2.0), in a Web Worker served from this
@@ -55,7 +56,8 @@ export async function extractPdfText(
       for (const item of content.items) {
         if ('str' in item) texto += item.str + (item.hasEOL ? '\n' : ' ');
       }
-      texto += '\n';
+      // Pages are marked with a form feed so a search can say on which page a word appears.
+      texto += i < doc.numPages ? `\n${PAGE_BREAK}` : '\n';
       page.cleanup();
       onProgress?.(i / doc.numPages);
     }

@@ -9,17 +9,19 @@ import {
   materias,
   materiasDeCiclo,
 } from '../../data/content';
+import { dueMistakes, listMistakes } from '../../data/everyday-repositories';
 import { listPdfs } from '../../data/study-repositories';
 import type { DocumentoPdf } from '../../data/types';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { PageHeader, Skeleton, Tabs } from '../../ui/primitives';
 import { useProfile } from '../../ui/use-profile';
+import { ErrorsPanel } from './ErrorsPanel';
 import { ExamPanel } from './ExamPanel';
 import { PdfPanel } from './PdfPanel';
 import { MemoryPanel, ReviewPanel } from './ReviewPanels';
 import { SharePdfDialog } from './SharePdfDialog';
 
-type Pane = 'pdf' | 'repasar' | 'memoria' | 'examen';
+type Pane = 'pdf' | 'repasar' | 'memoria' | 'examen' | 'errores';
 
 /**
  * Study area: one subject at a time, with ÁBACO's verified content, the student's own PDFs (read on the device)
@@ -46,6 +48,7 @@ export default function StudyPage() {
     return { temario, ejercicios };
   }, [materiaId]);
   const pdfs = useLiveQuery(() => listPdfs(materiaId), [materiaId], []);
+  const mistakes = useLiveQuery(() => listMistakes(materiaId), [materiaId], []);
 
   const mine = materias.filter((m) => profile.materias.includes(m.id));
   const others = materias.filter((m) => !profile.materias.includes(m.id));
@@ -93,6 +96,7 @@ export default function StudyPage() {
           { id: 'repasar', label: 'Repasar' },
           { id: 'memoria', label: 'Memorizar' },
           { id: 'examen', label: 'Examen' },
+          { id: 'errores', label: 'Errores', count: dueMistakes(mistakes).length },
           { id: 'pdf', label: 'Mis PDF', count: pdfs.length },
         ]}
       />
@@ -112,6 +116,8 @@ export default function StudyPage() {
         <ReviewPanel materia={materia} temario={state.data.temario} pdfs={pdfs} />
       ) : pane === 'memoria' ? (
         <MemoryPanel materia={materia} temario={state.data.temario} pdfs={pdfs} />
+      ) : pane === 'errores' ? (
+        <ErrorsPanel materia={materia} />
       ) : (
         <ExamPanel
           materia={materia}

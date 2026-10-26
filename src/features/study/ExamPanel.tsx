@@ -1,5 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useId, useRef, useState, type MouseEvent } from 'react';
+import { countUsage, recordFailedQuestions } from '../../data/everyday-repositories';
 import { listExams, saveExam } from '../../data/study-repositories';
 import type { DocumentoPdf } from '../../data/types';
 import type { Ejercicio, Materia, Temario } from '../../domain/content/schemas';
@@ -23,7 +24,7 @@ const SOURCE_LABEL: Record<ExamSource, string> = {
   mixto: 'Mezclado',
 };
 
-function QuestionView({
+export function QuestionView({
   q,
   index,
   answer,
@@ -124,6 +125,7 @@ export function ExamPanel({
   const [questions, setQuestions] = useState<Question[] | null>(null);
   const [answers, setAnswers] = useState<Record<string, number | string | null>>({});
   const [result, setResult] = useState<ExamResult | null>(null);
+  const [failed, setFailed] = useState<Question[]>([]);
   const started = useRef(0);
   const history = useLiveQuery(() => listExams(materia.id), [materia.id], []);
 
@@ -142,6 +144,16 @@ export function ExamPanel({
     setQuestions(qs);
     setAnswers({});
     setResult(null);
+    setFailed([]);
+    started.current = event.timeStamp;
+  };
+
+  /** A new short exam with only the questions failed in the last one. */
+  const retryFailed = (event: MouseEvent<HTMLButtonElement>) => {
+    setQuestions(failed);
+    setAnswers({});
+    setResult(null);
+    setFailed([]);
     started.current = event.timeStamp;
   };
 
@@ -149,7 +161,12 @@ export function ExamPanel({
     if (!questions) return;
     const r = gradeExam(questions, answers);
     setResult(r);
+    const wrong = questions.filter((_, i) => !r.detalle[i]?.correcta);
+    setFailed(wrong);
     try {
+      // Failed questions enter the spaced-repetition queue of the «Errores» tab.
+      if (wrong.length > 0) await recordFailedQuestions(materia.id, wrong);
+      void countUsage('examen');
       await saveExam({
         materiaId: materia.id,
         fuentes: chosenPdf ? fuente : 'abaco',
@@ -256,7 +273,15 @@ export function ExamPanel({
               <span className="tnum font-display text-4xl font-semibold text-red">{result.porcentaje} %</span>
               <span className="text-ink-2">
                 {result.correctas} de {result.total} correctas. Revisa abajo cada respuesta y su explicación.
+                {failed.length > 0
+                  ? ` ${failed.length === 1 ? 'La pregunta que fallaste quedó' : `Las ${failed.length} preguntas que fallaste quedaron`} en tu repaso de errores.`
+                  : ''}
               </span>
+              {failed.length > 0 ? (
+                <button type="button" className="btn btn-ghost" onClick={retryFailed}>
+                  <Icon name="target" size={18} /> Repasar solo lo que fallé
+                </button>
+              ) : null}
             </div>
           ) : null}
           {questions.map((q, i) => (

@@ -99,7 +99,7 @@ describe('área de estudio', () => {
     await user.click(screen.getByRole('button', { name: /Calificar/ }));
     expect(await screen.findByText(/de 5 correctas/)).toBeInTheDocument();
     await waitFor(async () => expect(await db.examenes.count()).toBe(1));
-    expect(screen.getByText(/Tus últimos exámenes/)).toBeInTheDocument();
+    expect(await screen.findByText(/Tus últimos exámenes/)).toBeInTheDocument();
   }, 45_000);
 
   it('creates flashcards from the subject and from the PDF definitions', async () => {
@@ -162,5 +162,67 @@ describe('área de estudio', () => {
     await user.click(dialog.getByRole('button', { name: /Enviar al autor/ }));
     expect(await dialog.findByText(/parece contener datos personales/)).toBeInTheDocument();
     expect(openMailApp).not.toHaveBeenCalled();
+  }, 45_000);
+
+  it('failed exam questions go to the error review, can be retried and are reviewed with spaced repetition', async () => {
+    const user = userEvent.setup();
+    route();
+    await user.click(await screen.findByRole('tab', { name: 'Examen' }));
+    await user.click(await screen.findByText('5'));
+    await user.click(screen.getByRole('button', { name: /Empezar examen/ }));
+    await user.click(await screen.findByRole('button', { name: /Calificar/ }));
+    expect(
+      await screen.findByText(/Las 5 preguntas que fallaste quedaron en tu repaso de errores/),
+    ).toBeInTheDocument();
+    await waitFor(async () => expect(await db.errores.count()).toBe(5));
+    expect(await db.uso.count()).toBe(1);
+
+    // «Repasar solo lo que fallé» starts a short exam with the same five questions.
+    await user.click(screen.getByRole('button', { name: /Repasar solo lo que fallé/ }));
+    expect(await screen.findAllByRole('group', { name: /Pregunta \d/ })).toHaveLength(5);
+
+    await user.click(screen.getByRole('tab', { name: /Errores/ }));
+    expect(await screen.findByRole('button', { name: 'Repasar ahora (5)' })).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Repasar ahora (5)' }));
+    expect(await screen.findByText('Pregunta 1 de 5')).toBeInTheDocument();
+    // Answer the first question right: the row moves to its next review in 1 day.
+    const legend = screen.getByRole('group', { name: 'Pregunta 1' });
+    const row = (await db.errores.toArray()).find((e) =>
+      e.pregunta.tipo === 'opcion'
+        ? e.pregunta.opciones.every((o) => within(legend).queryByLabelText(o) !== null)
+        : within(legend).queryByText(e.pregunta.enunciado) !== null,
+    );
+    expect(row).toBeDefined();
+    if (row!.pregunta.tipo === 'opcion') {
+      await user.click(within(legend).getByLabelText(row!.pregunta.opciones[row!.pregunta.correcta]!));
+    } else {
+      await user.type(within(legend).getByRole('textbox'), String(row!.pregunta.respuesta).replace('.', ','));
+    }
+    await user.click(screen.getByRole('button', { name: /Comprobar/ }));
+    expect(await within(legend).findByText('Correcto')).toBeInTheDocument();
+    await waitFor(async () =>
+      expect(await db.errores.get(row!.id)).toMatchObject({ aciertos: 1, repeticiones: 1 }),
+    );
+    expect(screen.getByRole('button', { name: /Siguiente pregunta/ })).toBeInTheDocument();
+  }, 60_000);
+
+  it('searches every saved PDF without caring about accents and opens the match in its context', async () => {
+    const user = userEvent.setup();
+    extract.mockResolvedValue({
+      paginas: 2,
+      texto: `${PDF_TEXT}\n\fSegunda página: el MARGEN DE CONTRIBUCIÓN unitario.`,
+    });
+    route();
+    await uploadPdf(user);
+    await user.type(screen.getByRole('searchbox'), 'margen de contribucion');
+    const results = await screen.findAllByRole('button', { name: /apuntes-costos\.pdf/ });
+    expect(results.length).toBeGreaterThan(1);
+    expect(screen.getByText(/coincidencias en tus PDF/)).toBeInTheDocument();
+    const last = results[results.length - 1]!;
+    expect(last).toHaveTextContent('página 2');
+    await user.click(last);
+    const reader = await screen.findByRole('region', { name: 'Texto de «apuntes-costos.pdf»' });
+    expect(within(reader).getByText('MARGEN DE CONTRIBUCIÓN')).toBeInTheDocument();
+    expect(within(reader).getByText(/página 2/)).toBeInTheDocument();
   }, 45_000);
 });
