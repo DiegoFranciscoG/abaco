@@ -42,6 +42,11 @@ await open(page, '/herramientas/rol-pagos');
 await page.screenshot({ path: join(out, 'rol-de-pagos.png') });
 await open(page, '/sugerencias');
 await page.screenshot({ path: join(out, 'buzon.png') });
+await open(page, '/estudiar?materia=contabilidad-costos');
+await page.getByRole('tab', { name: 'Examen' }).click();
+await page.getByRole('button', { name: /Empezar examen/ }).click();
+await page.getByRole('group', { name: 'Pregunta 1', exact: true }).scrollIntoViewIfNeeded();
+await page.screenshot({ path: join(out, 'area-estudio.png') });
 
 const phone = await browser.newContext({
   ...devices['Pixel 7'],

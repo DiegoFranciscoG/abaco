@@ -11,9 +11,9 @@ Estudia las materias de las carreras económicas y administrativas de Ecuador **
 
 ![Portada de ÁBACO](docs/img/portada.png)
 
-| Carrera y ciclo | Subtema con su fuente | Rol de pagos | Móvil, tema oscuro |
-|---|---|---|---|
-| ![Materias por carrera y ciclo](docs/img/carrera-ciclo.png) | ![Subtema con fuente citada](docs/img/subtema.png) | ![Herramienta de rol de pagos](docs/img/rol-de-pagos.png) | ![Vista móvil en tema oscuro](docs/img/movil-oscuro.png) |
+| Carrera y ciclo | Subtema: teoría y ejemplo | Área de estudio: examen | Rol de pagos | Móvil, tema oscuro |
+|---|---|---|---|---|
+| ![Materias por carrera y ciclo](docs/img/carrera-ciclo.png) | ![Subtema con teoría, ejemplo y fuente](docs/img/subtema.png) | ![Examen de práctica del área de estudio](docs/img/area-estudio.png) | ![Herramienta de rol de pagos](docs/img/rol-de-pagos.png) | ![Vista móvil en tema oscuro](docs/img/movil-oscuro.png) |
 
 ## Problema que resuelve
 
