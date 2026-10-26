@@ -418,7 +418,9 @@ const CASE_INSENSITIVE_CRITERIA = new Set(['SUMIF', 'COUNTIF', 'AVERAGEIF']);
 function lowerText(value: Value | undefined): Value | undefined {
   if (typeof value === 'string') return value.toLocaleLowerCase('es');
   if (Array.isArray(value)) {
-    return value.map((row) => row.map((cell) => (typeof cell === 'string' ? cell.toLocaleLowerCase('es') : cell)));
+    return value.map((row) =>
+      row.map((cell) => (typeof cell === 'string' ? cell.toLocaleLowerCase('es') : cell)),
+    );
   }
   return value;
 }

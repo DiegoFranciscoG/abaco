@@ -3,6 +3,8 @@ export function formatDate(iso: string): string {
   return date.toLocaleDateString('es-EC', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
+export const XLSX_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+
 /** Downloads text or bytes as a file without any server. */
 export function downloadFile(name: string, content: BlobPart, type: string): void {
   const blob = new Blob([content], { type });

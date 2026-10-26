@@ -538,7 +538,7 @@
   {
     "id": "niif-pymes",
     "termino": "NIIF para las PYMES",
-    "definicion": "Versión simplificada de las NIIF pensada para entidades que no tienen obligación pública de rendir cuentas.",
+    "definicion": "Versión simplificada de las NIIF pensada para entidades que no tienen obligación pública de rendir cuentas. La edición 2025 rige para los periodos que empiezan desde el 1 de enero de 2027; hasta entonces se aplica la edición 2015, salvo que la entidad adopte antes la nueva.",
     "sinonimos": [],
     "equivalente_ingles": "IFRS for SMEs",
     "areas": [
@@ -548,7 +548,7 @@
       "ref": "ifrs-pymes",
       "seccion": "NIIF para las PYMES"
     },
-    "actualizado_en": "2026-10-15"
+    "actualizado_en": "2026-10-26"
   },
   {
     "id": "supercias",
@@ -711,5 +711,730 @@
       "seccion": "Five fundamental principles"
     },
     "actualizado_en": "2026-10-15"
+  },
+  {
+    "id": "propiedades-planta-equipo",
+    "termino": "Propiedades, planta y equipo",
+    "definicion": "Activos tangibles que la entidad usa para producir, vender, alquilar a terceros o administrar, y que espera usar durante más de un periodo: terrenos, edificios, maquinaria, vehículos, muebles.",
+    "sinonimos": [
+      "Activo fijo",
+      "PPE"
+    ],
+    "equivalente_ingles": "Property, plant and equipment",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 17 (párr. 17.31) · taxonomía [210000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "propiedades-inversion",
+    "termino": "Propiedades de inversión",
+    "definicion": "Terrenos o edificios que la entidad mantiene para cobrar arriendos o para que ganen valor, y no para usarlos en su operación ni para venderlos en el curso normal del negocio.",
+    "sinonimos": [],
+    "equivalente_ingles": "Investment property",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 16 (párr. 16.10) · taxonomía [825100]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "plusvalia",
+    "termino": "Plusvalía",
+    "definicion": "Valor que se paga al comprar un negocio por encima del valor razonable neto de sus activos y pasivos identificables; representa beneficios futuros que no pueden separarse en activos individuales.",
+    "sinonimos": [
+      "Fondo de comercio",
+      "Crédito mercantil"
+    ],
+    "equivalente_ingles": "Goodwill",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 19 (párr. 19.26) · taxonomía [817000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "activos-intangibles",
+    "termino": "Activos intangibles distintos de la plusvalía",
+    "definicion": "Activos identificables, no monetarios y sin apariencia física, como un software comprado, una licencia o una marca adquirida. Los que la entidad genera internamente, como su propia marca, en general no se reconocen.",
+    "sinonimos": [
+      "Activos intangibles"
+    ],
+    "equivalente_ingles": "Intangible assets other than goodwill",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 18 (párr. 18.27) · taxonomía [823180]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "inventarios",
+    "termino": "Inventarios",
+    "definicion": "Bienes que la entidad tiene para vender, que están en proceso de producción para venderse, o materiales y suministros que se consumirán en la producción o en la prestación de servicios.",
+    "sinonimos": [
+      "Existencias",
+      "Mercaderías"
+    ],
+    "equivalente_ingles": "Inventories",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 13 (párr. 13.22) · taxonomía [826380]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "cuentas-por-cobrar",
+    "termino": "Cuentas comerciales por cobrar y otras cuentas por cobrar",
+    "definicion": "Valores que clientes y otros terceros le deben a la entidad, por ventas a crédito o por otros conceptos. Se presentan netos de la estimación de lo que no se podrá cobrar.",
+    "sinonimos": [
+      "Clientes",
+      "Deudores comerciales"
+    ],
+    "equivalente_ingles": "Trade and other receivables",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 4.2 b · taxonomía [210000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "cuentas-por-pagar",
+    "termino": "Cuentas comerciales por pagar y otras cuentas por pagar",
+    "definicion": "Obligaciones con proveedores y otros acreedores por bienes o servicios recibidos que todavía no se pagan.",
+    "sinonimos": [
+      "Proveedores",
+      "Acreedores comerciales"
+    ],
+    "equivalente_ingles": "Trade and other payables",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 4.2 l · taxonomía [210000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "efectivo-equivalentes",
+    "termino": "Efectivo y equivalentes al efectivo",
+    "definicion": "Dinero en caja y en bancos, más las inversiones de corto plazo y gran liquidez que se convierten fácilmente en una cantidad conocida de efectivo y cuyo valor casi no cambia.",
+    "sinonimos": [
+      "Caja y bancos",
+      "Disponible"
+    ],
+    "equivalente_ingles": "Cash and cash equivalents",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 7 (párr. 7.20) y párr. 4.2 a · taxonomía [210000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "capital-emitido",
+    "termino": "Capital emitido",
+    "definicion": "Aportes de los socios o accionistas representados en participaciones o acciones emitidas por la entidad. En los estatutos de las compañías ecuatorianas se lo llama capital social o capital suscrito.",
+    "sinonimos": [
+      "Capital social",
+      "Capital suscrito"
+    ],
+    "equivalente_ingles": "Issued capital",
+    "areas": [
+      "contabilidad",
+      "derecho"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 4.11 f · taxonomía [210000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "prima-emision",
+    "termino": "Prima de emisión",
+    "definicion": "Lo que los accionistas pagan por las acciones por encima de su valor nominal; forma parte del patrimonio, no de los ingresos.",
+    "sinonimos": [],
+    "equivalente_ingles": "Share premium",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 4.11 f · taxonomía [210000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ganancias-acumuladas",
+    "termino": "Ganancias acumuladas",
+    "definicion": "Utilidades de periodos anteriores y del actual que la entidad no ha repartido como dividendos; si hubo pérdidas, el saldo las descuenta.",
+    "sinonimos": [
+      "Resultados acumulados",
+      "Utilidades retenidas"
+    ],
+    "equivalente_ingles": "Retained earnings",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 4.11 f y 6.5 · taxonomía [210000] y [650000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ingresos-actividades-ordinarias",
+    "termino": "Ingresos de actividades ordinarias",
+    "definicion": "Ingresos que surgen de la actividad normal de la entidad: venta de bienes, prestación de servicios, intereses, regalías o dividendos. No incluye, por ejemplo, la ganancia por vender un activo fijo.",
+    "sinonimos": [
+      "Ventas",
+      "Ingresos operacionales"
+    ],
+    "equivalente_ingles": "Revenue",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 23 (párr. 23.30) y párr. 5.5 a · taxonomía [310000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ganancia-bruta",
+    "termino": "Ganancia bruta",
+    "definicion": "Resultado de restar el costo de ventas a los ingresos de actividades ordinarias, antes de los gastos de distribución, de administración y financieros.",
+    "sinonimos": [
+      "Utilidad bruta",
+      "Margen bruto"
+    ],
+    "equivalente_ingles": "Gross profit",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 5.11 b · taxonomía [310000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "costos-financieros",
+    "termino": "Costos financieros",
+    "definicion": "Intereses y demás costos que la entidad paga por el dinero que le prestan; en el estado de resultados se muestran aparte de los gastos de operación.",
+    "sinonimos": [
+      "Gastos financieros"
+    ],
+    "equivalente_ingles": "Finance costs",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 5.5 b · taxonomía [310000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "otro-resultado-integral",
+    "termino": "Otro resultado integral (ORI)",
+    "definicion": "Ingresos y gastos que la norma manda reconocer fuera de la utilidad del periodo, como ciertas ganancias y pérdidas actuariales, las diferencias de cambio de un negocio en el extranjero o el superávit por revaluación.",
+    "sinonimos": [],
+    "equivalente_ingles": "Other comprehensive income (OCI)",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 5 · taxonomía [410000] y [420000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "estado-resultado-integral",
+    "termino": "Estado del resultado integral",
+    "definicion": "Estado financiero que presenta la utilidad o pérdida del periodo junto con el otro resultado integral; puede prepararse como un solo estado o separando el estado de resultados.",
+    "sinonimos": [],
+    "equivalente_ingles": "Statement of comprehensive income",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 5 · taxonomía [410000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "estado-cambios-patrimonio",
+    "termino": "Estado de cambios en el patrimonio",
+    "definicion": "Estado financiero que explica cómo variaron en el periodo el capital, las reservas y las ganancias acumuladas: utilidad, dividendos, aportes y otros movimientos.",
+    "sinonimos": [],
+    "equivalente_ingles": "Statement of changes in equity",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 6 · taxonomía [610000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "estado-flujos-efectivo",
+    "termino": "Estado de flujos de efectivo",
+    "definicion": "Estado financiero que muestra de dónde vino y en qué se usó el efectivo del periodo, separado en actividades de operación, de inversión y de financiación. Puede presentarse por el método directo o el indirecto.",
+    "sinonimos": [
+      "Flujo de efectivo",
+      "Flujo de caja"
+    ],
+    "equivalente_ingles": "Statement of cash flows",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 7 · taxonomía [510000] y [520000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "actividades-operacion",
+    "termino": "Actividades de operación",
+    "definicion": "Las que producen los ingresos principales de la entidad: cobros a clientes, pagos a proveedores y empleados, impuestos. Son la parte del flujo de efectivo que dice si el negocio genera caja por sí mismo.",
+    "sinonimos": [],
+    "equivalente_ingles": "Operating activities",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 7 · taxonomía [510000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "actividades-inversion",
+    "termino": "Actividades de inversión",
+    "definicion": "Compras y ventas de activos de largo plazo y de inversiones que no son equivalentes al efectivo, como maquinaria, terrenos o acciones de otras empresas.",
+    "sinonimos": [],
+    "equivalente_ingles": "Investing activities",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 7 · taxonomía [510000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "actividades-financiacion",
+    "termino": "Actividades de financiación",
+    "definicion": "Movimientos que cambian el capital aportado y los préstamos de la entidad: emisión de acciones, préstamos recibidos, sus pagos y los dividendos pagados.",
+    "sinonimos": [
+      "Actividades de financiamiento"
+    ],
+    "equivalente_ingles": "Financing activities",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 7 · taxonomía [510000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "importe-en-libros",
+    "termino": "Importe en libros",
+    "definicion": "Valor por el que un activo aparece en el estado de situación financiera: su costo menos la depreciación (o amortización) acumulada y las pérdidas por deterioro.",
+    "sinonimos": [
+      "Valor en libros",
+      "Valor neto contable"
+    ],
+    "equivalente_ingles": "Carrying amount",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, párr. 17.31 d · taxonomía [822100]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "deterioro-valor",
+    "termino": "Deterioro del valor de los activos",
+    "definicion": "Pérdida que se reconoce cuando el importe en libros de un activo es mayor que su importe recuperable, es decir, que lo que se espera obtener de él vendiéndolo o usándolo.",
+    "sinonimos": [
+      "Deterioro"
+    ],
+    "equivalente_ingles": "Impairment of assets",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 27 · taxonomía [832410]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "valor-razonable",
+    "termino": "Valor razonable",
+    "definicion": "Precio al que partes informadas e independientes, que actúan libremente, intercambiarían un activo o liquidarían un pasivo. Es la base para medir, por ejemplo, las propiedades de inversión.",
+    "sinonimos": [],
+    "equivalente_ingles": "Fair value",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 2 y párr. 16.10 · taxonomía [825100]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "costo-amortizado",
+    "termino": "Costo amortizado",
+    "definicion": "Medición de un préstamo o cuenta por cobrar o por pagar que parte del importe inicial, resta lo pagado de capital y reparte los intereses en el tiempo con el método del interés efectivo; se descuenta además el deterioro.",
+    "sinonimos": [],
+    "equivalente_ingles": "Amortised cost",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 11 (párr. 11.41 b) · taxonomía [822390]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "arrendamiento-financiero",
+    "termino": "Arrendamiento financiero",
+    "definicion": "Arrendamiento que transfiere al arrendatario casi todos los riesgos y beneficios de ser dueño del bien; el arrendatario registra el activo y la deuda. Los demás arrendamientos se llaman operativos.",
+    "sinonimos": [
+      "Leasing financiero"
+    ],
+    "equivalente_ingles": "Finance lease",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 20 (párr. 20.13 y 20.16) · taxonomía [832600]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "provision",
+    "termino": "Provisión",
+    "definicion": "Pasivo de monto o fecha de pago inciertos, como una garantía a clientes o un juicio que probablemente se pierda. Se reconoce si hay una obligación presente, la salida de dinero es probable y el monto puede estimarse con fiabilidad.",
+    "sinonimos": [],
+    "equivalente_ingles": "Provision",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 21 · taxonomía [827570]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "pasivo-contingente",
+    "termino": "Pasivo contingente",
+    "definicion": "Obligación posible que depende de hechos futuros que la entidad no controla, o una obligación presente cuyo pago no es probable o no puede medirse. No se registra como pasivo: se explica en las notas.",
+    "sinonimos": [],
+    "equivalente_ingles": "Contingent liability",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 21 · taxonomía [827570]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "beneficios-empleados",
+    "termino": "Beneficios a los empleados",
+    "definicion": "Todo lo que la entidad entrega a sus trabajadores a cambio de sus servicios: sueldos y beneficios de corto plazo, beneficios posteriores al empleo como la jubilación patronal, y beneficios por terminación.",
+    "sinonimos": [],
+    "equivalente_ingles": "Employee benefits",
+    "areas": [
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 28 · taxonomía [834480]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "impuesto-diferido",
+    "termino": "Impuesto diferido",
+    "definicion": "Impuesto a las ganancias que se pagará o recuperará en periodos futuros por las diferencias temporarias entre el importe en libros de un activo o pasivo y su base fiscal, y por pérdidas tributarias por compensar.",
+    "sinonimos": [
+      "Activo por impuesto diferido",
+      "Pasivo por impuesto diferido"
+    ],
+    "equivalente_ingles": "Deferred tax",
+    "areas": [
+      "contabilidad",
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 29 (párr. 29.40) · taxonomía [835110]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "partes-relacionadas",
+    "termino": "Partes relacionadas",
+    "definicion": "Personas o entidades vinculadas con la que informa, por ejemplo por control, influencia significativa o por ser personal clave de la gerencia o su familia cercana. Las transacciones con ellas se revelan en las notas.",
+    "sinonimos": [
+      "Partes vinculadas"
+    ],
+    "equivalente_ingles": "Related parties",
+    "areas": [
+      "contabilidad",
+      "tributario"
+    ],
+    "fuente": {
+      "ref": "ifrs-taxonomia-pymes-es",
+      "seccion": "NIIF para las PYMES, Sección 33 · taxonomía [818000]"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "periodo-recuperacion",
+    "termino": "Periodo de recuperación",
+    "definicion": "Tiempo que tarda un proyecto en devolver con sus flujos de caja la inversión inicial. Es fácil de calcular, pero ignora el valor del dinero en el tiempo y lo que el proyecto genera después.",
+    "sinonimos": [
+      "Payback",
+      "Plazo de recuperación"
+    ],
+    "equivalente_ingles": "Payback period",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-1-payback-period-method",
+      "seccion": "16.1"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "perpetuidad",
+    "termino": "Perpetuidad",
+    "definicion": "Serie de pagos iguales que no termina nunca. Su valor actual es el pago dividido para la tasa de descuento del periodo.",
+    "sinonimos": [],
+    "equivalente_ingles": "Perpetuity",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-1-perpetuities",
+      "seccion": "8.1"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-nominal",
+    "termino": "Tasa nominal anual",
+    "definicion": "Tasa de interés anual declarada que no considera la capitalización dentro del año. Si los intereses se capitalizan cada mes, la tasa efectiva anual resulta mayor que la nominal.",
+    "sinonimos": [
+      "Tasa declarada"
+    ],
+    "equivalente_ingles": "Stated (nominal) annual rate",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
+      "seccion": "8.4"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "razon-corriente",
+    "termino": "Razón corriente",
+    "definicion": "Activo corriente dividido para pasivo corriente. Indica cuántos dólares de activos de corto plazo tiene la empresa por cada dólar de deudas de corto plazo.",
+    "sinonimos": [
+      "Índice de liquidez corriente"
+    ],
+    "equivalente_ingles": "Current ratio",
+    "areas": [
+      "finanzas",
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-3-liquidity-ratios",
+      "seccion": "6.3"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "rentabilidad-patrimonio",
+    "termino": "Rentabilidad sobre el patrimonio (ROE)",
+    "definicion": "Utilidad neta dividida para el patrimonio. Mide cuánto gana la empresa por cada dólar que pusieron los dueños; el análisis DuPont lo separa en margen, rotación de activos y apalancamiento.",
+    "sinonimos": [
+      "Rendimiento sobre el patrimonio"
+    ],
+    "equivalente_ingles": "Return on equity (ROE)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
+      "seccion": "6.6"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "analisis-vertical",
+    "termino": "Análisis vertical",
+    "definicion": "Presentación de cada cuenta como porcentaje de una cifra base del mismo estado: de las ventas en el estado de resultados o del activo total en el estado de situación financiera. Permite comparar empresas de distinto tamaño.",
+    "sinonimos": [
+      "Estados de tamaño común"
+    ],
+    "equivalente_ingles": "Common-size statements",
+    "areas": [
+      "finanzas",
+      "contabilidad"
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/5-7-common-size-statements",
+      "seccion": "5.7"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "flujo-caja-libre",
+    "termino": "Flujo de caja libre de la empresa",
+    "definicion": "Efectivo que genera la operación después de pagar las inversiones en activos fijos y en capital de trabajo; es lo que queda disponible para todos los que financian la empresa, acreedores y dueños.",
+    "sinonimos": [
+      "Flujo de caja libre"
+    ],
+    "equivalente_ingles": "Free cash flow to the firm (FCFF)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/5-6-operating-cash-flow-and-free-cash-flow-to-the-firm-fcff",
+      "seccion": "5.6"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-cupon",
+    "termino": "Tasa cupón",
+    "definicion": "Tasa con la que se calculan los intereses que paga un bono sobre su valor nominal. El precio del bono es el valor actual de esos intereses y del valor nominal, descontados al rendimiento que exige el mercado.",
+    "sinonimos": [
+      "Cupón"
+    ],
+    "equivalente_ingles": "Coupon rate",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/10-2-bond-valuation",
+      "seccion": "10.2"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "capm",
+    "termino": "Modelo de valoración de activos de capital (CAPM)",
+    "definicion": "Modelo que estima el rendimiento que se exige a una inversión: la tasa libre de riesgo más la beta del activo multiplicada por la prima de riesgo del mercado.",
+    "sinonimos": [
+      "CAPM"
+    ],
+    "equivalente_ingles": "Capital asset pricing model (CAPM)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-3-the-capital-asset-pricing-model-capm",
+      "seccion": "15.3"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "wacc",
+    "termino": "Costo promedio ponderado de capital (CPPC)",
+    "definicion": "Costo de financiarse que tiene la empresa: el promedio de lo que cuesta su deuda (después de impuestos) y su patrimonio, ponderado por la proporción de cada fuente. Suele usarse como tasa de descuento de los proyectos.",
+    "sinonimos": [
+      "WACC"
+    ],
+    "equivalente_ingles": "Weighted average cost of capital (WACC)",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/17-3-calculating-the-weighted-average-cost-of-capital",
+      "seccion": "17.3"
+    },
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "riesgo-tasa-interes",
+    "termino": "Riesgo de tasa de interés",
+    "definicion": "Riesgo de que cambie el valor de una inversión o el costo de una deuda porque suben o bajan las tasas de interés; por ejemplo, el precio de un bono cae cuando las tasas del mercado suben.",
+    "sinonimos": [],
+    "equivalente_ingles": "Interest rate risk",
+    "areas": [
+      "finanzas"
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
+      "seccion": "20.4"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

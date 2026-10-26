@@ -16,13 +16,11 @@ import { useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
 import { CopyButton, Notice, PageHeader, Skeleton, SourceNote } from '../../ui/primitives';
 import { useToast } from '../../ui/use-toast';
-import { downloadFile } from '../../ui/utils';
+import { downloadFile, XLSX_TYPE } from '../../ui/utils';
 import { VigenciaNote } from '../../ui/Vigencia';
 import { FORMS } from './form-registry';
 import { procedureText } from './result-format';
 import { ResultView } from './ResultView';
-
-const XLSX_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
 
 /** The name the student gave to this work (each deliverable has a title-like first field). */
 function titleOf(input: unknown, fallback: string): string {

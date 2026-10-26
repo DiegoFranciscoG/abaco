@@ -29,6 +29,15 @@ describe('integridad del contenido', () => {
     expect(duplicates(content.temarios.flatMap((t) => t.data.temas.flatMap((tema) => tema.subtemas.map((s) => s.id))))).toEqual([]);
   });
 
+  it('the glossary has one entry per term in each language, and IFRS names follow the official Spanish translation', () => {
+    const lower = (s: string) => s.toLowerCase();
+    expect(duplicates(content.glosario.map((t) => lower(t.termino)))).toEqual([]);
+    expect(duplicates(content.glosario.map((t) => lower(t.equivalente_ingles)))).toEqual([]);
+    const official = content.glosario.filter((t) => t.fuente.ref === 'ifrs-taxonomia-pymes-es');
+    expect(official.length).toBeGreaterThanOrEqual(25);
+    for (const t of official) expect(t.fuente.seccion, t.id).toMatch(/NIIF para las PYMES/);
+  });
+
   it('every subject of the catalog has exactly one syllabus and every syllabus belongs to a subject', () => {
     expect(content.materias.length).toBe(26);
     expect(content.temarios.length).toBe(content.materias.length);

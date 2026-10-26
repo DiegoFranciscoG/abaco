@@ -40,7 +40,9 @@ export default function CoveragePage() {
         </div>
         <div className="card p-4">
           <dt className="text-xs font-semibold tracking-wide text-muted uppercase">Subtemas publicados</dt>
-          <dd className="tnum mt-1 font-display text-3xl font-semibold">{all.reduce((n, r) => n + r.subtemas, 0)}</dd>
+          <dd className="tnum mt-1 font-display text-3xl font-semibold">
+            {all.reduce((n, r) => n + r.subtemas, 0)}
+          </dd>
         </div>
         <div className="card p-4">
           <dt className="text-xs font-semibold tracking-wide text-muted uppercase">Avance promedio</dt>
@@ -52,7 +54,11 @@ export default function CoveragePage() {
 
       <label className="block max-w-md">
         <span className="mb-1 block text-sm font-semibold text-ink-2">Carrera</span>
-        <select className="field" value={carrera.id} onChange={(e) => setParams({ carrera: e.target.value }, { replace: true })}>
+        <select
+          className="field"
+          value={carrera.id}
+          onChange={(e) => setParams({ carrera: e.target.value }, { replace: true })}
+        >
           {carreras.map((c) => (
             <option key={c.id} value={c.id}>
               {c.nombre}
@@ -73,7 +79,10 @@ export default function CoveragePage() {
                   return (
                     <li key={r.materiaId} className="rounded-xl border border-line p-3">
                       <span className="flex flex-wrap items-baseline justify-between gap-2">
-                        <AppLink to={`/materia/${r.materiaId}`} className="font-semibold text-ink hover:text-red">
+                        <AppLink
+                          to={`/materia/${r.materiaId}`}
+                          className="font-semibold text-ink hover:text-red"
+                        >
                           {r.nombre}
                         </AppLink>
                         <span
@@ -83,8 +92,9 @@ export default function CoveragePage() {
                         </span>
                       </span>
                       <span className="tnum mt-1 block text-xs text-muted">
-                        {r.unidades} de {r.unidadesObjetivo} unidades · {r.subtemas} subtemas · {r.subtemasCalculoConPractica}{' '}
-                        de {r.subtemasCalculo} subtemas de cálculo con 2 ejercicios
+                        {r.unidades} de {r.unidadesObjetivo} unidades · {r.subtemas} subtemas ·{' '}
+                        {r.subtemasCalculoConPractica} de {r.subtemasCalculo} subtemas de cálculo con 2
+                        ejercicios
                       </span>
                       <span className="mt-2 block">
                         <Bar value={r.avance} />
@@ -106,8 +116,9 @@ export default function CoveragePage() {
         ))}
       </ol>
       <p className="text-sm text-muted">
-        Los datos salen de {carrera.planes} {carrera.planes === 1 ? 'plan de estudios público' : 'planes de estudio públicos'}{' '}
-        de esta carrera, sin nombres de universidades: cada una puede ubicar las materias en otro ciclo.{' '}
+        Los datos salen de {carrera.planes}{' '}
+        {carrera.planes === 1 ? 'plan de estudios público' : 'planes de estudio públicos'} de esta carrera,
+        sin nombres de universidades: cada una puede ubicar las materias en otro ciclo.{' '}
         <AppLink to="/sugerencias" className="link-red">
           ¿Quieres aportar contenido?
         </AppLink>

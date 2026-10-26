@@ -96,7 +96,16 @@
     "tipo": "norma",
     "url": "https://www.ifrs.org/issued-standards/ifrs-for-smes/",
     "licencia": "Consulta pública",
-    "fecha_consulta": "2026-10-14"
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "ifrs-taxonomia-pymes-es",
+    "titulo": "Taxonomía NIIF Ilustrada 2020: una visión de la Norma NIIF para las PYMES (traducción oficial al español)",
+    "autor_editor": "IFRS Foundation",
+    "tipo": "norma",
+    "url": "https://www.ifrs.org/content/dam/ifrs/standards/taxonomy/translations/spanish/2020/spanish-ifrs-taxonomy-2020-iti-smes.pdf",
+    "licencia": "Material de la Fundación IFRS: se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-26"
   },
   {
     "id": "iasb-marco-conceptual",
