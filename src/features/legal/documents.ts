@@ -136,7 +136,7 @@ export const LEGAL_DOCS: LegalDoc[] = [
         ],
       },
       {
-        titulo: '5 bis. Sugerencias',
+        titulo: '6. Sugerencias',
         lista: [
           'El buzón de sugerencias prepara un correo en tu propia aplicación de correo; tú decides si lo envías.',
           'Al enviar una sugerencia permites que el titular use la idea para mejorar ÁBACO, sin pago ni obligación de publicarla. Si se publica, el texto se redacta de nuevo y se verifica con una fuente oficial.',
@@ -144,19 +144,19 @@ export const LEGAL_DOCS: LegalDoc[] = [
         ],
       },
       {
-        titulo: '6. Servicios externos',
+        titulo: '7. Servicios externos',
         parrafos: [
           'Algunas funciones consultan servicios públicos de terceros (ver la política de privacidad). Su disponibilidad y sus condiciones dependen de ellos, no de ÁBACO.',
         ],
       },
       {
-        titulo: '7. Menores de edad',
+        titulo: '8. Menores de edad',
         parrafos: [
           'ÁBACO está pensado para estudiantes de educación superior. No recoge datos de nadie; aun así, recomendamos que los menores de 15 años lo usen con su representante legal.',
         ],
       },
       {
-        titulo: '8. Ley aplicable y contacto',
+        titulo: '9. Ley aplicable y contacto',
         parrafos: [
           `Estos términos se rigen por las leyes de la República del Ecuador. Para dudas o reclamos, ${CONTACTO}.`,
         ],
