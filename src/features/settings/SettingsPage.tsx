@@ -23,6 +23,7 @@ import { downloadFile, formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
 import { clearSuggestionLedger } from '../suggestions/limits';
 import { InstallCard } from './InstallCard';
+import { UsagePanel } from './UsagePanel';
 
 function Segmented<T extends string>({
   label,
@@ -303,6 +304,8 @@ export default function SettingsPage() {
           </>
         ) : null}
       </section>
+
+      <UsagePanel />
 
       <section className="card space-y-3 border-red/40 p-5" aria-labelledby="borrar">
         <h2 id="borrar" className="font-display text-xl font-semibold text-red">

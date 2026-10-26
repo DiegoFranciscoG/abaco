@@ -12,7 +12,7 @@ export const SITE = {
   contacto: 'https://github.com/DiegoFranciscoG/abaco/issues',
   buzon: { usuario: 'diegofgz2004', dominio: 'gmail.com' },
   /** Date the current legal texts took effect (ISO). */
-  vigencia: '2026-10-25',
+  vigencia: '2026-10-26',
 } as const;
 
 /** Address of the suggestion box, assembled only when it is needed. */

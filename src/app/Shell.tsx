@@ -56,6 +56,11 @@ export function Shell() {
   const [paletteOpen, setPaletteOpen] = useState(false);
 
   useEffect(() => {
+    // Local usage counter (Ajustes → Tu uso): one mark per day, kept on this device.
+    void import('../data/everyday-repositories').then((data) => data.recordOpening()).catch(() => undefined);
+  }, []);
+
+  useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
         event.preventDefault();

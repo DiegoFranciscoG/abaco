@@ -191,6 +191,8 @@ export const LEGAL_DOCS: LegalDoc[] = [
           'Los PDF que agregas al área de estudio se leen dentro de tu navegador: el archivo no se sube a ningún servidor y solo se guarda su texto, en este dispositivo, para preparar repasos, tarjetas y exámenes. Los borras con el botón «Borrar» o con «Empezar de cero».',
           'Tu preferencia de tema claro u oscuro y de animaciones, en el almacenamiento local del navegador, para aplicarla antes de mostrar la página.',
           'Un identificador aleatorio generado en tu dispositivo que solo sirve para nombrar tus archivos de respaldo. No sale del dispositivo.',
+          'Contadores de uso por día (por ejemplo, que hoy abriste la app y exportaste dos Excel), sin nada de lo que escribiste. Solo los ves tú, en Ajustes → «Tu uso». Salen del dispositivo únicamente si copias el resumen anónimo y decides enviarlo: ese resumen tiene solo números y el mes, sin fechas, identificadores ni contenido.',
+          'Los enlaces que tú compartes llevan solo lo indispensable: el de una colección, su nombre, descripción, color y la lista de elementos (sin tus apuntes ni fechas); el de un taller del modo profesor, su título y la lista de ejercicios. Viajan después del signo #, que el navegador no envía al servidor.',
           'No hay otras finalidades: no se crean perfiles, no hay decisiones automatizadas y nada se vende ni se comparte.',
         ],
       },
@@ -269,7 +271,7 @@ export const LEGAL_DOCS: LegalDoc[] = [
       {
         titulo: 'Lo que sí se guarda en tu navegador',
         lista: [
-          'Base de datos local «abaco» (IndexedDB): tus apuntes, estrellas, colecciones, recordatorios, intentos de práctica, hojas, búsquedas recientes, documentos, libros diarios, tarjetas, tableros, el texto de los PDF que agregas al área de estudio y tus resultados de exámenes, y una caché temporal de respuestas del buscador académico.',
+          'Base de datos local «abaco» (IndexedDB): tus apuntes, estrellas, colecciones, recordatorios, intentos de práctica, hojas, búsquedas recientes, documentos, libros diarios, tarjetas, tableros, el texto de los PDF que agregas al área de estudio, tus resultados de exámenes, las preguntas que fallaste para repasarlas, tus planes de notas, tus entregables guardados y los contadores de uso por día, y una caché temporal de respuestas del buscador académico.',
           'Almacenamiento local «abaco:pantalla»: tu preferencia de tema y animaciones.',
           'Almacenamiento local «abaco:buzon»: la hora de tus últimas sugerencias y una huella corta de cada texto (no el texto), para limitar los envíos a tres por día.',
           'Caché de la app (service worker): los archivos de ÁBACO, para que funcione sin internet.',

@@ -15,6 +15,7 @@ import {
   listMistakes,
   listUsage,
   recordFailedQuestions,
+  recordOpening,
   reviewMistake,
   saveCalificacion,
   saveEntregable,
@@ -184,7 +185,9 @@ describe('versión 5: herramientas de todos los días', () => {
     expect(await listEntregables('kardex', db)).toEqual([]);
     await countUsage('entregable', db, new Date(2026, 9, 26, 9));
     await countUsage('entregable', db, new Date(2026, 9, 26, 18));
-    await countUsage('apertura', db, new Date(2026, 9, 27, 8));
+    // Opening the app marks the day once, however many times the page reloads.
+    await recordOpening(db, new Date(2026, 9, 27, 8));
+    await recordOpening(db, new Date(2026, 9, 27, 21));
     expect(await listUsage(db)).toEqual([
       { dia: '2026-10-26', eventos: { entregable: 2 } },
       { dia: '2026-10-27', eventos: { apertura: 1 } },

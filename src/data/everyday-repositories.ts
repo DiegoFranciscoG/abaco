@@ -247,6 +247,17 @@ export async function countUsage(
   });
 }
 
+/** Marks today as a day of use, once: reloading the page does not inflate the count. */
+export async function recordOpening(db: AbacoDB = getDb(), nowDate = new Date()): Promise<void> {
+  const dia = isoDay(nowDate);
+  await db.transaction('rw', db.uso, async () => {
+    const row = (await db.uso.get(dia)) ?? { dia, eventos: {} };
+    if (row.eventos.apertura) return;
+    row.eventos.apertura = 1;
+    await db.uso.put(row);
+  });
+}
+
 export async function listUsage(db: AbacoDB = getDb()): Promise<UsoDia[]> {
   return db.uso.orderBy('dia').toArray();
 }

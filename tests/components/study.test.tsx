@@ -45,7 +45,7 @@ const pdfFile = () => new File(['%PDF-1.7 fake'], 'apuntes-costos.pdf', { type: 
 
 async function uploadPdf(user: ReturnType<typeof userEvent.setup>) {
   await user.click(await screen.findByRole('tab', { name: /Mis PDF/ }));
-  await user.upload(screen.getByLabelText('Agregar un PDF'), pdfFile());
+  await user.upload(await screen.findByLabelText('Agregar un PDF'), pdfFile());
   return within(await screen.findByRole('list', { name: 'PDF guardados' }));
 }
 
@@ -81,7 +81,7 @@ describe('área de estudio', () => {
     const user = userEvent.setup();
     route();
     await user.click(await screen.findByRole('tab', { name: /Mis PDF/ }));
-    await user.upload(screen.getByLabelText('Agregar un PDF'), pdfFile());
+    await user.upload(await screen.findByLabelText('Agregar un PDF'), pdfFile());
     expect(await screen.findByText(/casi no tiene texto/)).toBeInTheDocument();
     expect(await db.pdfs.count()).toBe(0);
   });
