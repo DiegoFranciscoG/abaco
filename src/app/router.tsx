@@ -41,6 +41,11 @@ export const routes: RouteObject[] = [
       { path: 'estudiar', ...page(() => import('../features/study/StudyPage')) },
       { path: 'enunciado', ...page(() => import('../features/statement/StatementPage')) },
       { path: 'cifras', ...page(() => import('../features/figures/FiguresPage')) },
+      { path: 'entregables', ...page(() => import('../features/deliverables/DeliverablesPage')) },
+      {
+        path: 'entregables/:entregableId',
+        ...page(() => import('../features/deliverables/DeliverablePage')),
+      },
       { path: 'legal/:docId', ...page(() => import('../features/legal/LegalPage')) },
       { path: '*', Component: NotFoundPage },
     ],

@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { enunciadosFileSchema } from '../../src/domain/content/schemas';
 import { buildStatementCatalog } from '../../src/domain/statement/catalog';
 import { contentWords, createMatcher, findPhrase } from '../../src/domain/statement/match';
+import { getDeliverable } from '../../src/domain/deliverables/catalog';
 import { TOOLS } from '../../src/domain/tools/catalog';
 import { CONTENT_ROOT, loadAllContent } from './load-content';
 
@@ -33,6 +34,7 @@ describe('diccionario de enunciados', () => {
       for (const s of c.subtemas) expect(subtemaIds.has(s), `${c.id} → subtema ${s}`).toBe(true);
       for (const f of c.formulas) expect(formulaIds.has(f), `${c.id} → fórmula ${f}`).toBe(true);
       for (const t of c.herramientas) expect(TOOLS.some((tool) => tool.id === t), `${c.id} → ${t}`).toBe(true);
+      for (const d of c.entregables) expect(getDeliverable(d), `${c.id} → entregable ${d}`).toBeDefined();
       expect(new Set(c.frases).size, `${c.id}: frases repetidas`).toBe(c.frases.length);
     }
   });
