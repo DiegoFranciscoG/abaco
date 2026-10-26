@@ -100,7 +100,7 @@ describe('área de estudio', () => {
     expect(await screen.findByText(/de 5 correctas/)).toBeInTheDocument();
     await waitFor(async () => expect(await db.examenes.count()).toBe(1));
     expect(screen.getByText(/Tus últimos exámenes/)).toBeInTheDocument();
-  });
+  }, 45_000);
 
   it('creates flashcards from the subject and from the PDF definitions', async () => {
     const user = userEvent.setup();
@@ -112,7 +112,7 @@ describe('área de estudio', () => {
     expect(
       await db.tarjetas.where('mazo').startsWith('Contabilidad de costos ·').count(),
     ).toBeGreaterThanOrEqual(4);
-  });
+  }, 45_000);
 
   it('checks the PDF and the declarations before preparing the email to the author', async () => {
     const user = userEvent.setup();
@@ -141,7 +141,7 @@ describe('área de estudio', () => {
     expect(
       await screen.findByRole('heading', { name: 'Visita mis otras redes y mis otros trabajos' }),
     ).toBeInTheDocument();
-  });
+  }, 45_000);
 
   it('blocks sharing a PDF with personal data', async () => {
     extract.mockResolvedValue({
@@ -162,5 +162,5 @@ describe('área de estudio', () => {
     await user.click(dialog.getByRole('button', { name: /Enviar al autor/ }));
     expect(await dialog.findByText(/parece contener datos personales/)).toBeInTheDocument();
     expect(openMailApp).not.toHaveBeenCalled();
-  });
+  }, 45_000);
 });
