@@ -1,13 +1,18 @@
 # Política de seguridad
 
 ## Reportar una vulnerabilidad
-No abras un issue público. Escríbeme por GitHub (perfil DiegoFranciscoG) con los pasos para reproducir el problema. Respondo en un máximo de 7 días.
+No abras un issue público. Escribe a diegofgz2004@gmail.com con el asunto «[ÁBACO] Seguridad» y los pasos para reproducir el problema. Respondo en un máximo de 7 días. No incluyas datos personales de terceros.
 
 ## Prácticas aplicadas en este proyecto
-- **Sin servidor y sin secretos:** ÁBACO es un sitio estático. No hay claves de API en el paquete publicado; las APIs académicas usadas no requieren clave.
-- **Datos del estudiante solo en su dispositivo** (IndexedDB). Una prueba automática (T-04) registra todo el tráfico de red y falla si sale un apunte, una colección o el identificador local.
-- **Evaluador de fórmulas propio, sin `eval` ni `new Function`:** las fórmulas que escribe el estudiante se tokenizan y se interpretan con una lista cerrada de funciones.
-- **Archivos importados** (`.xlsx` y respaldos `.json`) se leen solo en el navegador, con límite de tamaño, tipo verificado y validación de esquema (Zod) antes de tocar la base local.
-- **Content-Security-Policy** estricta: scripts solo del propio origen; conexiones solo a las APIs académicas declaradas.
-- **Enlaces externos** con `rel="noopener noreferrer"`.
-- Escaneo de secretos con gitleaks en cada push y pull request; dependencias con versión fija y revisadas con Dependabot.
+El detalle (modelo de amenazas y correspondencia con OWASP ASVS 5.0) está en [docs/seguridad.md](docs/seguridad.md).
+
+- **Sin servidor y sin secretos:** sitio estático sin claves de API; las APIs usadas son públicas y no requieren clave.
+- **Datos del estudiante solo en su dispositivo** (IndexedDB). La prueba T-04 registra todo el tráfico de red y falla si sale un apunte, un documento, una colección o el identificador local, o si aparece un origen fuera de la lista.
+- **Sin ejecución de código del usuario:** fórmulas con analizador propio y lista cerrada de funciones (sin `eval` ni `new Function`); el Markdown del editor se pinta como elementos de React, sin `innerHTML`.
+- **Content-Security-Policy** estricta (`script-src 'self'`, `connect-src` con la lista exacta de APIs, `object-src 'none'`, `form-action 'none'`), idéntica en `<meta>` y en nginx.
+- **Anti-clickjacking:** `frame-ancestors 'none'` y `X-Frame-Options: DENY` en nginx; en GitHub Pages, `boot.js` oculta la app si otra página la enmarca.
+- **Archivos importados** (`.xlsx` y respaldos `.json`) se leen en el navegador con límite de tamaño, tipo verificado y validación de esquema (Zod).
+- **Buzón de sugerencias:** no envía datos a ningún servidor; valida el contenido, bloquea datos personales y limita los envíos por dispositivo.
+- **Enlaces externos** con `rel="noopener noreferrer"` y `Referrer-Policy: no-referrer`.
+- **CI:** gitleaks sobre todo el historial, `npm audit` de producción, acciones fijadas por SHA con permisos mínimos, licencias de dependencias en lista permitida y Dependabot semanal.
+- **Docker:** nginx sin privilegios, solo lectura, sin capacidades, solo GET/HEAD y *healthcheck*.

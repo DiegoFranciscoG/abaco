@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Buzón de sugerencias
+    url: https://diegofranciscog.github.io/abaco/#/sugerencias
+    about: Si no usas GitHub, escribe tu sugerencia desde la app.
+  - name: Reportar una vulnerabilidad
+    url: https://github.com/DiegoFranciscoG/abaco/blob/main/SECURITY.md
+    about: No abras un issue público; sigue la política de seguridad.

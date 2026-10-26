@@ -1,0 +1,25 @@
+name: Proponer o corregir contenido
+description: Un tema, subtema, fórmula o dato que falta o está mal, con su fuente.
+labels: [contenido]
+body:
+  - type: input
+    id: materia
+    attributes:
+      label: Materia
+      placeholder: Contabilidad de costos
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Qué falta o qué está mal
+      description: Sé concreto. No copies texto de libros con derechos de autor ni incluyas datos personales.
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente oficial o abierta que lo respalda
+      placeholder: https://www.sri.gob.ec/…
+    validations:
+      required: true

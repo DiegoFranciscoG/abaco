@@ -1,5 +1,5 @@
 # docker compose up --build  →  http://localhost:8080
-# ÁBACO is a static site: the image already carries every malla, formula, exercise and template (no database).
+# ÁBACO is a static site: the image already carries every subject, formula, exercise and template (no database).
 services:
   web:
     build:

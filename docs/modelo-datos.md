@@ -2,36 +2,67 @@
 
 ÁBACO tiene dos modelos separados a propósito:
 
-1. **Contenido académico** — archivos JSON versionados en `content/`, validados con Zod en cada build y en CI. Es igual para todos y nunca se modifica desde la app.
-2. **Datos del estudiante** — IndexedDB (Dexie) dentro del navegador. Nunca salen del dispositivo, salvo en el archivo de respaldo que el propio estudiante descarga.
+1. **Contenido académico**: archivos JSON versionados en `content/`, validados con Zod en cada build y en la CI. Es igual para todos y nunca se modifica desde la app.
+2. **Datos del estudiante**: IndexedDB (Dexie) dentro del navegador. Nunca salen del dispositivo, salvo en el archivo de respaldo que se descarga desde Ajustes o en el correo que se envía, por decisión propia, desde el buzón de sugerencias.
 
-## 1. Contenido académico
+## 1. Contenido académico: carrera → ciclo → materia → tema → subtema
 
 ```mermaid
 erDiagram
-  FUENTE ||--o{ UNIVERSIDAD : "cita"
-  FUENTE ||--o{ CARRERA : "cita"
-  FUENTE ||--o{ MALLA : "cita"
-  FUENTE ||--o{ SUBTEMA : "cita"
-  FUENTE ||--o{ FORMULA : "cita"
-  FUENTE ||--o{ EJERCICIO : "cita"
-  FUENTE ||--o{ APP : "cita"
-  FUENTE ||--o{ TERMINO : "cita"
-  FUENTE ||--o{ PLANTILLA : "cita"
-  UNIVERSIDAD ||--o{ CARRERA : "oferta"
-  CARRERA ||--|| MALLA : "publica"
-  MALLA ||--o{ ASIGNATURA : "lista por ciclo"
-  ASIGNATURA ||--o| TEMARIO : "contenido profundo"
+  CARRERA ||--o{ CARRERA_MATERIA : "incluye en su ciclo habitual"
+  MATERIA ||--o{ CARRERA_MATERIA : "se cursa en"
+  MATERIA ||--|| TEMARIO : "tiene"
   TEMARIO ||--o{ TEMA : "agrupa"
   TEMA ||--o{ SUBTEMA : "divide"
+  SUBTEMA }o--|| FUENTE : "cita (sección exacta)"
   SUBTEMA }o--o{ FORMULA : "usa"
-  FORMULA ||--o{ VARIABLE : "define"
   FORMULA ||--|| EJEMPLO : "verifica"
-  SUBTEMA ||--o{ EJERCICIO : "practica"
-  FORMULA ||--o{ EJERCICIO : "aplica"
-  ASIGNATURA }o--o{ APP : "recomienda (por nombre clave)"
-  ASIGNATURA }o--o{ PLANTILLA : "sugiere (por nombre clave)"
+  FORMULA }o--o{ MATERIA : "aparece en"
+  EJERCICIO }o--|| MATERIA : "practica"
+  EJERCICIO }o--o| SUBTEMA : "refuerza"
+  APP }o--o{ MATERIA : "tecnología externa"
+  HERRAMIENTA }o--o{ MATERIA : "herramienta propia"
+  PLANTILLA }o--o{ MATERIA : "hoja de cálculo"
+  TERMINO }o--|| FUENTE : "cita"
 
+  CARRERA {
+    string id PK "slug genérico, sin universidad"
+    string nombre
+    string descripcion
+    int planes "planes públicos agregados"
+    int ciclos "1..12"
+  }
+  CARRERA_MATERIA {
+    string materia FK
+    int ciclo "mediana inferior del primer ciclo"
+    int_list ciclos "todos los ciclos en que aparece"
+    int planes "planes de la carrera que la incluyen (>= mitad)"
+  }
+  MATERIA {
+    string id PK
+    string nombre
+    enum_list areas "1..2"
+    string descripcion
+    string_list sinonimos
+    enum_list herramientas "TOOL_IDS, al menos 1"
+    int orden
+  }
+  TEMA {
+    string id PK
+    string nombre
+    int orden
+    string descripcion
+    int dificultad "1..3"
+  }
+  SUBTEMA {
+    string id PK
+    string nombre
+    string explicacion "redacción propia, >= 80 caracteres"
+    string_list puntos_clave
+    string_list errores_frecuentes
+    string_list formulas FK
+    json fuente "ref + url + seccion"
+  }
   FUENTE {
     string id PK
     string titulo
@@ -41,81 +72,24 @@ erDiagram
     string licencia
     date fecha_consulta
   }
-  UNIVERSIDAD {
-    string id PK "ucuenca | ucacue"
-    string nombre
-    string siglas
-    string ciudad
-    url sitio
-  }
-  CARRERA {
-    string id PK "universidad-slug"
-    string universidad FK
-    string nombre
-    string nombre_oficial
-    string titulo_otorgado
-    int num_ciclos
-    string_list modalidad
-    int creditos "nullable"
-    int horas "nullable"
-    int asignaturas_declaradas "nullable"
-    url url_malla
-    date fecha_consulta
-  }
-  ASIGNATURA {
-    string id PK "carrera-cN-slug"
-    string carrera FK
-    int ciclo "1..10"
-    int orden
-    string nombre
-    string nombre_oficial "texto tal cual"
-    string_list areas
-  }
-  TEMA {
-    string id PK
-    string asignatura FK
-    string nombre
-    int orden
-    string descripcion
-    int dificultad "1..3"
-  }
-  SUBTEMA {
-    string id PK
-    string tema FK
-    string nombre
-    string explicacion "redaccion propia"
-    string_list puntos_clave
-    string_list errores_frecuentes
-    string_list formulas FK
-  }
   FORMULA {
     string id PK
     string nombre
-    string categoria
     string latex
-    string calculo "expresion evaluable"
+    string calculo "expresión evaluable sin eval"
     string excel_es
     string excel_en
-    string_list aparece_en "nombres clave de asignatura"
+    string_list materias FK
   }
-  EJEMPLO {
-    json entradas
-    string_list pasos
-    number resultado
-    number tolerancia
-    string excel_es "con numeros"
-    string excel_en "con numeros"
-  }
-  EJERCICIO {
+  APP {
     string id PK
-    string subtema FK "nullable"
-    string formula FK "nullable"
-    string enunciado
-    json datos
-    string calculo
-    number respuesta
-    number tolerancia
-    string_list pistas
+    string nombre
+    string para_que
+    string_list materias FK
+    enum costo "gratis|gratis-con-cuenta|freemium|pago"
+    string_list plataformas
+    url url_oficial
+    date fecha_consulta
   }
 ```
 
@@ -123,111 +97,124 @@ erDiagram
 
 | Regla | Dónde se valida | Prueba |
 |---|---|---|
-| Toda ficha resuelve a una fuente con URL `https://` y `fecha_consulta` válida | `src/domain/content/schemas.ts` + `tests/content/t01-sources.test.ts` | **T-01** |
-| Cada ejemplo numérico se recalcula con el motor de fórmulas (expresión algebraica **y** sintaxis Excel en inglés **y** en español) y debe coincidir con el resultado publicado dentro de la tolerancia | `tests/content/t02-examples.test.ts` | **T-02** |
-| Cada ejercicio se recalcula y debe dar la respuesta publicada | `tests/content/t02-examples.test.ts` | T-02 |
-| Identificadores únicos en todo el contenido | `tests/content/integrity.test.ts` | integridad |
-| Toda referencia (`formula`, `subtema`, `asignatura`, `aparece_en`, `ref` de fuente) existe | `tests/content/integrity.test.ts` | integridad |
-| El número de asignaturas cargadas por carrera coincide con el conteo extraído de la página oficial | `tests/content/integrity.test.ts` | integridad |
-| Una ficha con `estado: "pendiente"` nunca se muestra | `src/data/content-repository.ts` | unitaria |
+| Toda ficha resuelve a una fuente con URL `https://` y `fecha_consulta` válida | `src/domain/content/schemas.ts` | `tests/content/t01-sources.test.ts` (T-01) |
+| Cada ejemplo y cada ejercicio se recalculan con el motor de fórmulas (expresión y sintaxis de Excel en inglés y en español) | motor de fórmulas | `tests/content/t02-examples.test.ts` (T-02) |
+| Identificadores únicos y referencias existentes (materia, fórmula, subtema, fuente) | esquemas + integridad | `tests/content/integrity.test.ts` |
+| Carreras: materias existentes, ciclo habitual dentro de los ciclos de la carrera y entre los ciclos en que aparece, solo materias presentes en al menos la mitad de los planes, ninguna materia sin carrera | `carreraSchema` | integridad |
+| Cada materia tiene al menos una herramienta propia y una tecnología externa verificada | `materiaSchema` + `apps.json` | integridad |
+| Ningún contenido publica mallas, nombres ni marcas de universidades | expresión regular de términos prohibidos | integridad |
+| Cada subtema cita una sección que existe y contiene lo que afirma | descarga del texto de cada sección citada y búsqueda de la evidencia | resultado en [verificacion-contenido.md](verificacion-contenido.md) |
 
-`fuente` en cada ficha es `{ ref, url?, seccion? }`: `ref` apunta al catálogo `content/fuentes.json` (título, tipo, licencia, fecha) y `url` permite citar la sección exacta (por ejemplo, el capítulo 8.3 de OpenStax).
+El método con el que se obtuvieron `carreras.json` (carrera genérica, ciclo habitual y umbral de la mitad de los planes) está en [investigacion.md](investigacion.md), sección 1b.
 
-### Áreas (identidad visual por área)
+### Áreas (identidad visual)
 
-`contabilidad` · `finanzas` · `tributario` · `cuantitativo` (matemática y estadística) · `derecho` · `gestion` (administración, marketing, talento humano) · `economia` · `tecnologia` · `formacion` (investigación, ética, prácticas, titulación, idiomas). La clasificación de cada asignatura se hace con reglas por palabra clave en el script de importación y se revisa a mano.
+`contabilidad` · `finanzas` · `tributario` · `cuantitativo` · `derecho` · `gestion` · `economia` · `tecnologia` · `formacion`.
 
 ## 2. Datos del estudiante (IndexedDB, solo en el dispositivo)
 
 ```mermaid
 erDiagram
-  META {
-    string clave PK "deviceId | lastBackupAt | onboardingAt"
-    any valor
-  }
   PERFIL {
     string id PK "siempre 'yo'"
-    string universidad "nullable"
-    string carrera "nullable"
+    string_list materias "ids del catálogo"
+    string carrera "nullable, id de carreras.json"
     int ciclo "nullable"
     enum tema "system|light|dark"
     enum movimiento "system|reduce|full"
+    enum sintaxisExcel "es|en"
   }
   APUNTE {
-    string id PK "uuid"
-    enum refTipo "asignatura|tema|subtema|formula|libre"
+    string id PK
+    enum refTipo "materia|tema|subtema|formula|libre"
     string refId
     string titulo
-    string contenido
+    string contenido "<= 20 000"
     string_list etiquetas
-    datetime creadoEn
     datetime actualizadoEn
   }
   ESTRELLA {
     string id PK "tipo:refId"
-    enum tipo "formula|subtema|ejercicio|articulo|asignatura"
+    enum tipo "formula|subtema|ejercicio|articulo|materia"
     string refId
-    string titulo
-    json snapshot "solo articulos externos"
-    datetime creadoEn
+    json snapshot "solo artículos externos"
   }
   COLECCION {
-    string id PK "uuid"
+    string id PK
     string nombre
-    string descripcion
-    string color
-    json items "tipo, refId, titulo, snapshot, orden"
-    datetime actualizadoEn
+    json items
   }
   RECORDATORIO {
     string id PK
     string titulo
-    string asignaturaId "nullable"
+    string materiaId "nullable"
     datetime fecha
-    int avisoMinutos
     enum estado "pendiente|hecho"
   }
   INTENTO {
     string id PK
     string ejercicioId
-    number respuesta
     bool correcto
-    int segundos
-    datetime fecha
   }
   HOJA {
     string id PK
+    json celdas
+  }
+  DOCUMENTO {
+    string id PK
+    string titulo
+    string contenido "Markdown + KaTeX"
+    string materiaId "nullable"
+  }
+  DIARIO {
+    string id PK
     string nombre
-    string plantillaId "nullable"
-    json celdas "A1 -> entrada"
-    json formatos
-    datetime actualizadoEn
+    json asientos "partida doble validada"
+  }
+  TARJETA {
+    string id PK
+    string mazo
+    enum origen "glosario|subtema|propia"
+    number ef "SM-2"
+    int intervalo
+    datetime proximaRevision
+  }
+  TABLERO {
+    string id PK
+    enum tipo "foda|decision"
+    json contenido
   }
   BUSQUEDA {
     string id PK
     string consulta
-    datetime fecha
-    int total
   }
   CACHE_API {
-    string clave PK "fuente + consulta normalizada"
-    datetime expiraEn
+    string clave PK
+    int expiraEn
     json datos
+  }
+  META {
+    string clave PK "deviceId | lastBackupAt | onboardingAt"
+    any valor
   }
   COLECCION ||--o{ ESTRELLA : "puede contener lo marcado"
 ```
 
+Fuera de IndexedDB, el navegador guarda en `localStorage` dos claves pequeñas: `abaco:pantalla` (tema y animaciones, para aplicarlos antes de pintar) y `abaco:buzon` (hora de las últimas sugerencias y una huella FNV-1a de cada texto, nunca el texto).
+
 ### Versiones del esquema y migraciones (Dexie)
 
-| Versión | Cambio | Migración |
+| Versión | Cambio | Migración y prueba |
 |---|---|---|
-| 1 | Apuntes ligados solo a asignatura (`asignaturaId`), sin etiquetas | — |
-| 2 | Apuntes ligados a cualquier nivel (`refTipo` + `refId`), con `etiquetas`; nuevas tablas `hojas`, `busquedas`, `cacheApi`, `meta` | `upgrade()` copia `asignaturaId` → `refTipo='asignatura'`, `refId`; `etiquetas=[]` (prueba **T-05**) |
+| 1 | Apuntes ligados a una asignatura de una malla | — |
+| 2 | Apuntes ligados a cualquier nivel (`refTipo` + `refId`) con etiquetas; tablas `hojas`, `busquedas`, `cacheApi`, `meta` | `upgradeToV2` (T-05) |
+| 3 | Catálogo de materias en lugar de mallas; tablas de herramientas `documentos`, `diarios`, `tarjetas`, `tableros`; perfil con `materias`, `carrera` y `ciclo` genéricos | `upgradeToV3`: cada id antiguo de asignatura pasa a su materia con `legacyMateria`; la carrera y el ciclo antiguos (ligados a una universidad) se descartan (`tests/integration/storage.test.ts`) |
 
-El archivo de respaldo (`abaco-respaldo-<id-local>-<fecha>.json`) declara `formato` y `version`; al restaurar se valida con Zod y, si viene de una versión anterior, pasa por la misma migración (prueba **T-06**).
+El respaldo (`abaco-respaldo-<id-local>-<fecha>.json`) declara `formato` y `version`; al restaurar se comprueba primero el formato, después el esquema Zod, y los respaldos v1 y v2 pasan por las mismas migraciones (T-06).
 
-### Privacidad (LOPDP — minimización)
+### Privacidad (LOPDP, minimización)
 
-- No hay cuentas, ni servidor, ni analítica. No se pide nombre, cédula, correo ni teléfono.
-- El identificador local es aleatorio (`crypto.randomUUID()`), se genera en el dispositivo y **solo** se usa en el nombre del archivo de respaldo. La prueba **T-04** registra todo el tráfico de red y falla si aparece.
-- Lo único que sale a la red son las consultas del buscador académico (el texto buscado) hacia las APIs listadas en `docs/apis.md`.
+- No hay cuentas, servidor ni analítica. La app no pide nombre, cédula, correo ni teléfono.
+- El identificador local es aleatorio (`crypto.randomUUID()`) y solo nombra los respaldos. La prueba T-04 registra todo el tráfico de red y falla si aparece, igual que si sale un apunte, un documento o el nombre de una colección.
+- Las únicas conexiones externas son las APIs de [apis.md](apis.md), y solo reciben lo que se busca o se elige (texto buscado, indicador y países, monedas).
+- El buzón de sugerencias no envía nada por sí mismo: prepara el correo en la aplicación de correo de quien escribe y bloquea cédulas, teléfonos y correos dentro del mensaje.

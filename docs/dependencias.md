@@ -15,7 +15,7 @@ Versiones verificadas en el registro oficial de npm (y en el CDN oficial de Shee
 | @formulajs/formulajs | 4.6.1 | MIT | Funciones de Excel (VA, PAGO, TIR…) | **Elegida sobre HyperFormula (GPLv3)** para mantener todo el proyecto en MIT |
 | xlsx (SheetJS CE) | 0.20.3 | Apache-2.0 | Leer y escribir `.xlsx` | Instalada desde `cdn.sheetjs.com` (distribución oficial). La copia de npm (0.18.5) está desactualizada y tiene vulnerabilidades conocidas |
 | katex | 0.19.0 | MIT | Fórmulas compuestas | Carga diferida |
-| minisearch | 7.2.0 | MIT | Búsqueda instantánea de fórmulas y temas | Índice generado al compilar (`scripts/build-search-index.mjs`) |
+| minisearch | 7.2.0 | MIT | Búsqueda instantánea de fórmulas y temas | Índice generado al compilar (`scripts/build-search-index.ts`) |
 | zod | 4.6.7 | MIT | Esquemas del contenido, del respaldo y de las respuestas de las APIs | Una sola definición para tipos y validación |
 | workbox-window | 7.4.1 | MIT | Registro del service worker | — |
 | @fontsource-variable/inter, fraunces, jetbrains-mono | 5.3.0 | OFL-1.1 | Tipografías autoalojadas | Cero peticiones a terceros (privacidad y modo sin conexión) |

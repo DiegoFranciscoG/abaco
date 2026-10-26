@@ -33,3 +33,15 @@ Un sitio estático no puede guardar claves secretas: toda API que exija clave qu
 ## Peticiones de ejemplo
 
 Ver [docs/http/apis-academicas.http](http/apis-academicas.http) (formato REST Client / IntelliJ HTTP).
+
+## Bloque 2: datos abiertos y libros (2026-10-25)
+
+Verificadas con peticiones reales y con sus condiciones de uso en [investigacion.md](investigacion.md), sección 11:
+
+| Fuente | URL base | Licencia o condiciones | Uso en ÁBACO |
+|---|---|---|---|
+| Banco Mundial, World Development Indicators | `https://api.worldbank.org/v2/` | CC BY 4.0 (se muestra la atribución bajo cada gráfico) | Herramienta «Datos macro» |
+| Frankfurter con proveedor BCE | `https://api.frankfurter.dev/v2/rates?providers=ECB` | Código MIT; datos del Banco Central Europeo citando la fuente | Herramienta «Divisas» |
+| Open Library Search | `https://openlibrary.org/search.json` | Sin derechos nuevos sobre la base; 1 petición por segundo | Quinta fuente del buscador académico (solo libros) |
+
+Todas aceptan llamadas del navegador (`Access-Control-Allow-Origin: *`), están en `connect-src` de la CSP (`csp.config.ts`) y en la política de privacidad, y la prueba T-04 falla si la app contacta cualquier otro origen.
