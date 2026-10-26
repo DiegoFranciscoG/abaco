@@ -197,3 +197,20 @@ Cada materia tiene al menos una herramienta propia de ÁBACO (`materias.json →
 | Business Model Canvas | https://www.strategyzer.com/library/the-business-model-canvas | «Free to download and to share»; se enlaza, no se reproduce (sección 9, L7) | Emprendimiento, Marketing |
 
 **Descartadas por no poder verificarse hoy:** Canva (el sitio bloquea la consulta automática), Google Trends (error 429 al probar la consulta), UN Comtrade (la página solo carga con sesión de JavaScript) y FRED (la portada no indica condiciones de uso). Se pueden agregar cuando se verifiquen.
+
+## 13. Fórmulas y ejercicios agregados (verificados 2026-10-26)
+
+Cada fórmula se comprobó contra el texto de la sección citada (copia descargada del archivo oficial de OpenStax) y su ejemplo se recalcula de tres formas en `tests/content/t02-examples.test.ts`. Las cifras de los ejemplos son ficticias y lo dicen cuando se trata de cotizaciones o tasas.
+
+| Fórmula | Fuente y sección | Evidencia en el texto |
+|---|---|---|
+| PIB por el enfoque del gasto | *Principles of Macroeconomics 3e*, 6.1 | «GDP = C + I + G + (X – M)» |
+| PIB real | ídem, 6.2 | «Real GDP = Nominal GDP / Price Index / 100» |
+| Tasa de desempleo | ídem, 8.1 | «Unemployment rate = Unemployed people / Total labor force × 100» |
+| Tasa de inflación | ídem, 9.1 | cambio porcentual: (nivel nuevo − nivel anterior) / nivel anterior × 100 |
+| Dinero creado con el multiplicador | ídem, 14.4 | multiplicador = 1 / reserva requerida, por el cambio en el exceso de reservas |
+| Balanza de mercancías | ídem, 10.1 | «difference between exports of goods and imports of goods» |
+| Identidad ahorro–inversión | ídem, 10.4 | «(X – M) = S + (T – G) – I» |
+| Conversión de divisas y tipo de cambio inverso | *Principles of Finance 2e*, 3.5 | precio de una moneda en otra y su inverso (1 ÷ cotización) |
+
+Se agregaron 24 ejercicios con respuesta verificable para las materias cuantitativas que no tenían práctica: contabilidad financiera, contabilidad de costos, tributación (con la tabla 2026 del SRI), matemática financiera, finanzas corporativas, evaluación de proyectos, matemática para la gestión, estadística inferencial, microeconomía, macroeconomía, economía internacional y finanzas internacionales. Las materias sin cálculo se practican con tarjetas armadas desde sus subtemas.

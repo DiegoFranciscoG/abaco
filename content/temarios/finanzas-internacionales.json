@@ -1,6 +1,6 @@
 {
   "materia": "finanzas-internacionales",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "fi-tipo-cambio",
@@ -56,7 +56,10 @@
           "errores_frecuentes": [
             "Multiplicar cuando la cotización indica que hay que dividir."
           ],
-          "formulas": [],
+          "formulas": [
+            "conversion-divisas",
+            "tipo-cambio-inverso"
+          ],
           "fuente": {
             "ref": "os-pfin2",
             "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
@@ -208,7 +211,9 @@
           "errores_frecuentes": [
             "Leer un déficit comercial como señal automática de que la economía va mal."
           ],
-          "formulas": [],
+          "formulas": [
+            "balanza-mercancias"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
@@ -244,7 +249,9 @@
           "errores_frecuentes": [
             "Tratar el déficit fiscal y el comercial como problemas sin relación."
           ],
-          "formulas": [],
+          "formulas": [
+            "identidad-ahorro-inversion"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-4-the-national-saving-and-investment-identity",

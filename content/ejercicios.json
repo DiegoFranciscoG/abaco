@@ -817,5 +817,725 @@
     "actualizado_en": "2026-10-15",
     "subtema": "ii-financieras-vna-tir",
     "formula": "van"
+  },
+  {
+    "id": "ej-cf-linea-recta",
+    "materia": "contabilidad-financiera",
+    "enunciado": "Una empresa compra una camioneta de reparto en USD 28.000, estima un valor residual de USD 4.000 y una vida útil de 5 años. ¿Cuánto se deprecia cada año con línea recta?",
+    "datos": {
+      "C": 28000,
+      "VR": 4000,
+      "n": 5
+    },
+    "calculo": "(C - VR) / n",
+    "respuesta": 4800.0,
+    "unidad": "USD/año",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "D = (C − VR) ÷ n",
+      "D = (28.000 − 4.000) ÷ 5 = 4.800,00"
+    ],
+    "pistas": [
+      "Primero resta el valor residual del costo.",
+      "Reparte la base depreciable en partes iguales."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Métodos de depreciación"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "depreciacion-linea-recta"
+  },
+  {
+    "id": "ej-cf-suma-digitos",
+    "materia": "contabilidad-financiera",
+    "enunciado": "Una máquina cuesta USD 15.000, tiene valor residual de USD 1.500 y vida útil de 5 años. ¿Cuánto se deprecia en el segundo año con suma de dígitos?",
+    "datos": {
+      "C": 15000,
+      "VR": 1500,
+      "n": 5,
+      "k": 2
+    },
+    "calculo": "(C - VR) * (n - k + 1) / (n * (n + 1) / 2)",
+    "respuesta": 3600.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Suma de dígitos = 5 × 6 ÷ 2 = 15",
+      "Fracción del año 2 = (5 − 2 + 1) ÷ 15 = 4/15",
+      "D2 = 13.500 × 4 ÷ 15 = 3.600,00"
+    ],
+    "pistas": [
+      "La suma de los dígitos de 5 años es 15.",
+      "En el año 2 quedan 4 años de vida, contando el actual."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+      "seccion": "11.3 Métodos de depreciación"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "depreciacion-suma-digitos"
+  },
+  {
+    "id": "ej-cc-equilibrio",
+    "materia": "contabilidad-costos",
+    "enunciado": "Un taller de muebles tiene costos fijos mensuales de USD 6.300, vende cada silla a USD 85 y su costo variable unitario es USD 50. ¿Cuántas sillas debe vender para no ganar ni perder?",
+    "datos": {
+      "CF": 6300,
+      "P": 85,
+      "CVu": 50
+    },
+    "calculo": "CF / (P - CVu)",
+    "respuesta": 180.0,
+    "unidad": "unidades",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Margen de contribución unitario = 85 − 50 = 35",
+      "Qe = 6.300 ÷ 35 = 180"
+    ],
+    "pistas": [
+      "Calcula primero cuánto aporta cada silla a cubrir los costos fijos.",
+      "Divide los costos fijos para ese margen."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+      "seccion": "3.2 Punto de equilibrio en unidades"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "punto-equilibrio-unidades"
+  },
+  {
+    "id": "ej-cc-costo-ventas",
+    "materia": "contabilidad-costos",
+    "enunciado": "Una ferretería empezó el mes con inventario de USD 12.400, compró mercadería por USD 31.800 y al final contó inventario por USD 10.900. ¿Cuál fue su costo de ventas?",
+    "datos": {
+      "II": 12400,
+      "CN": 31800,
+      "IF": 10900
+    },
+    "calculo": "II + CN - IF",
+    "respuesta": 33300,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "CV = II + CN − IF",
+      "CV = 12.400 + 31.800 − 10.900 = 33.300,00"
+    ],
+    "pistas": [
+      "Lo disponible para la venta es inventario inicial más compras.",
+      "Lo que no está en bodega al final se vendió."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+      "seccion": "10.2 Costo de ventas e inventario final (periódico)"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "costo-ventas-periodico"
+  },
+  {
+    "id": "ej-tr-iva-pagar",
+    "materia": "tributacion",
+    "enunciado": "En un mes, una distribuidora cobró USD 4.650 de IVA en sus ventas y pagó USD 2.970 de IVA en compras con derecho a crédito tributario. ¿Cuánto IVA debe pagar?",
+    "datos": {
+      "IVAv": 4650,
+      "IVAc": 2970
+    },
+    "calculo": "IVAv - IVAc",
+    "respuesta": 1680,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "IVA a pagar = IVA en ventas − crédito tributario",
+      "4.650 − 2.970 = 1.680,00"
+    ],
+    "pistas": [
+      "El IVA pagado en compras se descuenta del cobrado en ventas.",
+      "Si el resultado fuera negativo, sería crédito tributario para el mes siguiente."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "sri-iva",
+      "seccion": "Liquidación del IVA"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "iva-a-pagar"
+  },
+  {
+    "id": "ej-tr-renta-personas",
+    "materia": "tributacion",
+    "enunciado": "Con la tabla 2026 del SRI, una persona natural tiene una base imponible anual de USD 30.000. El tramo va desde USD 26.700, con impuesto de USD 1.412 sobre la fracción básica y 15 % sobre el excedente. ¿Cuál es el impuesto causado?",
+    "datos": {
+      "BI": 30000,
+      "FB": 26700,
+      "IFB": 1412,
+      "t": 0.15
+    },
+    "calculo": "IFB + (BI - FB) * t",
+    "respuesta": 1907.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Excedente = 30.000 − 26.700 = 3.300",
+      "Impuesto = 1.412 + 3.300 × 0,15 = 1.907,00"
+    ],
+    "pistas": [
+      "Ubica el tramo donde cae la base imponible.",
+      "El porcentaje solo se aplica a lo que excede la fracción básica."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "sri-tablas-ir",
+      "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "impuesto-renta-personas"
+  },
+  {
+    "id": "ej-mf-monto-compuesto",
+    "materia": "matematica-financiera",
+    "enunciado": "Depositas USD 3.000 a una tasa de 1 % mensual con capitalización mensual durante 18 meses. ¿Cuánto tendrás al final?",
+    "datos": {
+      "VA": 3000,
+      "i": 0.01,
+      "n": 18
+    },
+    "calculo": "VA * (1 + i) ^ n",
+    "respuesta": 3588.44,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "VF = VA × (1 + i)^n",
+      "VF = 3.000 × 1,01^18 = 3.588,44"
+    ],
+    "pistas": [
+      "La tasa y los periodos deben estar en la misma unidad de tiempo.",
+      "Eleva (1 + i) al número de meses."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/6-4-compound-interest",
+      "seccion": "6.4 Interés compuesto"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "monto-compuesto"
+  },
+  {
+    "id": "ej-mf-cuota",
+    "materia": "matematica-financiera",
+    "enunciado": "Un préstamo de USD 8.000 se paga en 12 cuotas mensuales iguales con una tasa de 1,5 % mensual. ¿De cuánto es cada cuota?",
+    "datos": {
+      "VA": 8000,
+      "i": 0.015,
+      "n": 12
+    },
+    "calculo": "VA * i / (1 - (1 + i) ^ -n)",
+    "respuesta": 733.44,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "A = VA × i ÷ [1 − (1 + i)^−n]",
+      "A = 8.000 × 0,015 ÷ [1 − 1,015^−12] = 733,44"
+    ],
+    "pistas": [
+      "Usa la tasa mensual, no la anual.",
+      "En Excel: =PAGO(1,5%;12;-8000)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "cuota-prestamo"
+  },
+  {
+    "id": "ej-fc-razon-corriente",
+    "materia": "finanzas-corporativas",
+    "enunciado": "Una empresa tiene activos corrientes por USD 96.000 y pasivos corrientes por USD 64.000. ¿Cuál es su razón corriente?",
+    "datos": {
+      "AC": 96000,
+      "PC": 64000
+    },
+    "calculo": "AC / PC",
+    "respuesta": 1.5,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "RC = AC ÷ PC",
+      "RC = 96.000 ÷ 64.000 = 1,50"
+    ],
+    "pistas": [
+      "Compara lo que se convierte en efectivo en un año con lo que se debe pagar en un año."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/5-3-apply-the-results-from-the-adjusted-trial-balance-to-compute-current-ratio-and-working-capital-balance-and-explain-how-these-measures-represent-liquidity",
+      "seccion": "5.3 Razón corriente y capital de trabajo"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "razon-corriente"
+  },
+  {
+    "id": "ej-fc-roe",
+    "materia": "finanzas-corporativas",
+    "enunciado": "Una compañía ganó USD 54.000 de utilidad neta en el año y su patrimonio es de USD 360.000. ¿Cuál es su rentabilidad sobre el patrimonio (ROE)?",
+    "datos": {
+      "UN": 54000,
+      "Pt": 360000
+    },
+    "calculo": "UN / Pt",
+    "respuesta": 0.15,
+    "unidad": "proporción",
+    "tolerancia": 5e-05,
+    "procedimiento": [
+      "ROE = UN ÷ Pt",
+      "ROE = 54.000 ÷ 360.000 = 0,15 (15 %)"
+    ],
+    "pistas": [
+      "El ROE mide la utilidad por cada dólar de los dueños."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
+      "seccion": "6.6 Rentabilidad sobre patrimonio"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "roe"
+  },
+  {
+    "id": "ej-ep-van",
+    "materia": "evaluacion-proyectos",
+    "enunciado": "Un proyecto requiere una inversión de USD 50.000 y genera flujos de USD 20.000, 22.000 y 25.000 en los años 1 a 3. Con una tasa de descuento de 12 %, ¿cuál es su VAN?",
+    "datos": {
+      "I0": 50000,
+      "FC1": 20000,
+      "FC2": 22000,
+      "FC3": 25000,
+      "k": 0.12
+    },
+    "calculo": "-I0 + FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3",
+    "respuesta": 3189.91,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "VA de los flujos = 20.000 ÷ 1,12 + 22.000 ÷ 1,12² + 25.000 ÷ 1,12³",
+      "VAN = 17.857,14 + 17.538,27 + 17.794,51 − 50.000 = 3.189,91"
+    ],
+    "pistas": [
+      "Descuenta cada flujo según el año en que llega.",
+      "Un VAN positivo indica que el proyecto rinde más que la tasa exigida."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+      "seccion": "16.2 Método del VAN"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "van"
+  },
+  {
+    "id": "ej-ep-indice",
+    "materia": "evaluacion-proyectos",
+    "enunciado": "Con los mismos datos (inversión de USD 50.000; flujos de 20.000, 22.000 y 25.000; tasa de 12 %), ¿cuál es el índice de rentabilidad?",
+    "datos": {
+      "I0": 50000,
+      "FC1": 20000,
+      "FC2": 22000,
+      "FC3": 25000,
+      "k": 0.12
+    },
+    "calculo": "(FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3) / I0",
+    "respuesta": 1.0638,
+    "unidad": "veces",
+    "tolerancia": 5e-05,
+    "procedimiento": [
+      "VA de los flujos = 53.189,91",
+      "IR = 53.189,91 ÷ 50.000 = 1,0638"
+    ],
+    "pistas": [
+      "Divide el valor actual de los flujos para la inversión.",
+      "Un IR mayor que 1 equivale a un VAN positivo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin",
+      "url": "https://openstax.org/books/principles-finance/pages/16-4-alternative-methods",
+      "seccion": "16.4 Métodos alternativos: índice de rentabilidad"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "indice-rentabilidad"
+  },
+  {
+    "id": "ej-mg-interes-simple",
+    "materia": "matematica-gestion",
+    "enunciado": "Un préstamo de USD 2.400 cobra 9 % anual de interés simple durante 8 meses. ¿Cuánto interés se paga?",
+    "datos": {
+      "P": 2400,
+      "i": 0.09,
+      "t": 0.6666666666666666
+    },
+    "calculo": "P * i * t",
+    "respuesta": 144.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "t = 8 ÷ 12 años",
+      "I = 2.400 × 0,09 × 8 ÷ 12 = 144,00"
+    ],
+    "pistas": [
+      "Expresa el tiempo en años si la tasa es anual."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/6-3-simple-interest",
+      "seccion": "6.3 Interés simple"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "interes-simple"
+  },
+  {
+    "id": "ej-mg-tasa-promedio",
+    "materia": "matematica-gestion",
+    "enunciado": "Las ventas de una tienda pasaron de USD 12.000 en el mes 2 a USD 15.600 en el mes 6. ¿Cuál fue la tasa de cambio promedio por mes?",
+    "datos": {
+      "fa": 12000,
+      "fb": 15600,
+      "a": 2,
+      "b": 6
+    },
+    "calculo": "(fb - fa) / (b - a)",
+    "respuesta": 900.0,
+    "unidad": "USD por mes",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Tasa = (15.600 − 12.000) ÷ (6 − 2)",
+      "Tasa = 3.600 ÷ 4 = 900,00"
+    ],
+    "pistas": [
+      "Es la pendiente de la recta secante entre los dos puntos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+      "seccion": "3.1 Rectas secantes y tangentes"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "tasa-cambio-promedio"
+  },
+  {
+    "id": "ej-ei-puntuacion-z",
+    "materia": "estadistica-inferencial",
+    "enunciado": "Los tiempos de atención de un banco tienen media de 12 minutos y desviación estándar de 2,5 minutos. ¿Cuál es la puntuación z de un cliente atendido en 16 minutos?",
+    "datos": {
+      "x": 16,
+      "mu": 12,
+      "sigma": 2.5
+    },
+    "calculo": "(x - mu) / sigma",
+    "respuesta": 1.6,
+    "unidad": "desviaciones estándar",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "z = (x − μ) ÷ σ",
+      "z = (16 − 12) ÷ 2,5 = 1,60"
+    ],
+    "pistas": [
+      "Resta la media y divide para la desviación estándar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/6-1-the-standard-normal-distribution",
+      "seccion": "6.1 Puntuación z"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "puntuacion-z"
+  },
+  {
+    "id": "ej-ei-coef-variacion",
+    "materia": "estadistica-inferencial",
+    "enunciado": "Una muestra de ventas diarias tiene media de USD 840 y desviación estándar de USD 126. ¿Cuál es el coeficiente de variación?",
+    "datos": {
+      "s": 126,
+      "media": 840
+    },
+    "calculo": "s / media",
+    "respuesta": 0.15,
+    "unidad": "proporción",
+    "tolerancia": 5e-05,
+    "procedimiento": [
+      "CV = s ÷ media",
+      "CV = 126 ÷ 840 = 0,15 (15 %)"
+    ],
+    "pistas": [
+      "Sirve para comparar la dispersión de datos con medias distintas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
+      "seccion": "2.7 Coeficiente de variación"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "coeficiente-variacion"
+  },
+  {
+    "id": "ej-mi-elasticidad",
+    "materia": "microeconomia",
+    "enunciado": "Un gimnasio sube la mensualidad de USD 30 a USD 36 y sus socios bajan de 400 a 340. ¿Cuál es la elasticidad precio de la demanda con el método del punto medio?",
+    "datos": {
+      "Q1": 400,
+      "Q2": 340,
+      "P1": 30,
+      "P2": 36
+    },
+    "calculo": "((Q2 - Q1) / ((Q2 + Q1) / 2)) / ((P2 - P1) / ((P2 + P1) / 2))",
+    "respuesta": -0.8919,
+    "unidad": "sin unidad",
+    "tolerancia": 5e-05,
+    "procedimiento": [
+      "%ΔQ = (340 − 400) ÷ 370 = −0,1622",
+      "%ΔP = (36 − 30) ÷ 33 = 0,1818",
+      "Ed = −0,1622 ÷ 0,1818 = −0,8919"
+    ],
+    "pistas": [
+      "Usa los promedios de cantidad y de precio como base.",
+      "Si |Ed| < 1 la demanda es inelástica en ese tramo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+      "seccion": "5.1 Método del punto medio"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "elasticidad-precio"
+  },
+  {
+    "id": "ej-mi-costo-marginal",
+    "materia": "microeconomia",
+    "enunciado": "El costo total de una panadería es C(q) = 200 + 1,5q + 0,02q² dólares. ¿Cuál es el costo marginal al producir 50 panes?",
+    "datos": {
+      "b": 1.5,
+      "c": 0.02,
+      "q": 50
+    },
+    "calculo": "b + 2 * c * q",
+    "respuesta": 3.5,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "C′(q) = 1,5 + 2 × 0,02 × q",
+      "C′(50) = 1,5 + 0,04 × 50 = 3,50"
+    ],
+    "pistas": [
+      "El costo marginal es la derivada del costo total.",
+      "El costo fijo no cambia el costo marginal."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
+      "seccion": "3.4 Costo e ingreso marginal"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "costo-marginal"
+  },
+  {
+    "id": "ej-ma-pib",
+    "materia": "macroeconomia",
+    "enunciado": "Una economía tiene consumo de 54.300, inversión de 18.900, gasto del gobierno de 13.200, exportaciones de 22.700 e importaciones de 21.100 (millones de USD). ¿Cuál es su PIB?",
+    "datos": {
+      "C": 54300,
+      "I": 18900,
+      "G": 13200,
+      "X": 22700,
+      "M": 21100
+    },
+    "calculo": "C + I + G + (X - M)",
+    "respuesta": 88000,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Exportaciones netas = 22.700 − 21.100 = 1.600",
+      "PIB = 54.300 + 18.900 + 13.200 + 1.600 = 88.000"
+    ],
+    "pistas": [
+      "Suma los cuatro componentes del gasto.",
+      "Las exportaciones netas pueden ser negativas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-1-measuring-the-size-of-the-economy-gross-domestic-product",
+      "seccion": "6.1 Measuring the Size of the Economy: Gross Domestic Product"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "pib-gasto",
+    "subtema": "ma-pib"
+  },
+  {
+    "id": "ej-ma-inflacion",
+    "materia": "macroeconomia",
+    "enunciado": "Un índice de precios sube de 104,0 a 107,9 en un año. ¿Cuál fue la tasa de inflación anual?",
+    "datos": {
+      "IP0": 104,
+      "IP1": 107.9
+    },
+    "calculo": "(IP1 - IP0) / IP0 * 100",
+    "respuesta": 3.75,
+    "unidad": "%",
+    "tolerancia": 5e-05,
+    "procedimiento": [
+      "Cambio = 107,9 − 104,0 = 3,9",
+      "π = 3,9 ÷ 104 × 100 = 3,75 %"
+    ],
+    "pistas": [
+      "Divide el cambio para el índice del periodo anterior."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-1-tracking-inflation",
+      "seccion": "9.1 Tracking Inflation"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "tasa-inflacion",
+    "subtema": "ma-inflacion"
+  },
+  {
+    "id": "ej-ma-desempleo",
+    "materia": "macroeconomia",
+    "enunciado": "Una ciudad tiene 312.000 personas en la fuerza laboral, de las cuales 14.040 buscan trabajo y no lo tienen. ¿Cuál es la tasa de desempleo?",
+    "datos": {
+      "D": 14040,
+      "FL": 312000
+    },
+    "calculo": "D / FL * 100",
+    "respuesta": 4.5,
+    "unidad": "%",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "TD = 14.040 ÷ 312.000 × 100",
+      "TD = 4,50 %"
+    ],
+    "pistas": [
+      "La base es la fuerza laboral, no toda la población."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/8-1-how-economists-define-and-compute-unemployment-rate",
+      "seccion": "8.1 How Economists Define and Compute Unemployment Rate"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "tasa-desempleo",
+    "subtema": "ma-desempleo"
+  },
+  {
+    "id": "ej-ei-balanza",
+    "materia": "economia-internacional",
+    "enunciado": "Un país exporta bienes por 18.600 e importa bienes por 20.350 (millones de USD). ¿Cuál es su balanza comercial de mercancías y qué indica?",
+    "datos": {
+      "Xb": 18600,
+      "Mb": 20350
+    },
+    "calculo": "Xb - Mb",
+    "respuesta": -1750,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "BC = 18.600 − 20.350 = −1.750",
+      "Negativa: déficit comercial de bienes"
+    ],
+    "pistas": [
+      "Resta importaciones de exportaciones.",
+      "Un resultado negativo es déficit."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+      "seccion": "10.1 Measuring Trade Balances"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "balanza-mercancias",
+    "subtema": "ec-medir"
+  },
+  {
+    "id": "ej-fi-conversion",
+    "materia": "finanzas-internacionales",
+    "enunciado": "Una agencia de viajes debe pagar 3.200 euros y el banco cotiza EUR 1 = USD 1,12 (cotización supuesta). ¿Cuántos dólares necesita?",
+    "datos": {
+      "Monto": 3200,
+      "TC": 1.12
+    },
+    "calculo": "Monto * TC",
+    "respuesta": 3584.0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "USD = 3.200 × 1,12",
+      "USD = 3.584,00"
+    ],
+    "pistas": [
+      "Multiplica el monto en euros por los dólares que cuesta cada euro."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+      "seccion": "3.5 Foreign Exchange Rates"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "conversion-divisas",
+    "subtema": "fi-cotizaciones"
+  },
+  {
+    "id": "ej-fi-ahorro-inversion",
+    "materia": "finanzas-internacionales",
+    "enunciado": "Una economía tiene ahorro privado de 9.800, impuestos de 7.400, gasto del gobierno de 6.900 e inversión de 9.100 (millones de USD). ¿Cuál es su saldo comercial?",
+    "datos": {
+      "S": 9800,
+      "T": 7400,
+      "G": 6900,
+      "I": 9100
+    },
+    "calculo": "S + (T - G) - I",
+    "respuesta": 1200,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Ahorro público = 7.400 − 6.900 = 500",
+      "X − M = 9.800 + 500 − 9.100 = 1.200 (superávit)"
+    ],
+    "pistas": [
+      "El ahorro público es impuestos menos gasto del gobierno.",
+      "Si el ahorro total supera la inversión, hay superávit."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-4-the-national-saving-and-investment-identity",
+      "seccion": "10.4 The National Saving and Investment Identity"
+    },
+    "actualizado_en": "2026-10-26",
+    "formula": "identidad-ahorro-inversion",
+    "subtema": "fi-ahorro-inversion"
   }
 ]

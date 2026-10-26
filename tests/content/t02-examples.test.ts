@@ -57,9 +57,9 @@ function calledFunctions(node: Node, out: string[] = []): string[] {
 describe('T-02: los ejemplos numéricos cuadran', () => {
   const verified = content.formulas.filter((f) => f.estado === 'verificada');
 
-  it('there are between 60 and 90 verified formulas', () => {
+  it('there are between 60 and 100 verified formulas', () => {
     expect(verified.length).toBeGreaterThanOrEqual(60);
-    expect(verified.length).toBeLessThanOrEqual(90);
+    expect(verified.length).toBeLessThanOrEqual(100);
   });
 
   describe.each(verified.map((f) => [f.id, f] as const))('%s', (_id, formula) => {

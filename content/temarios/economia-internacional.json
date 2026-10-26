@@ -1,6 +1,6 @@
 {
   "materia": "economia-internacional",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "ec-comercio",
@@ -146,7 +146,9 @@
           "errores_frecuentes": [
             "Confundir la balanza comercial con la balanza de pagos completa."
           ],
-          "formulas": [],
+          "formulas": [
+            "balanza-mercancias"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",

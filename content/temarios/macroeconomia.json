@@ -1,6 +1,6 @@
 {
   "materia": "macroeconomia",
-  "actualizado_en": "2026-10-25",
+  "actualizado_en": "2026-10-26",
   "temas": [
     {
       "id": "ma-medicion",
@@ -20,7 +20,9 @@
           "errores_frecuentes": [
             "Sumar los bienes intermedios al PIB."
           ],
-          "formulas": [],
+          "formulas": [
+            "pib-gasto"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-1-measuring-the-size-of-the-economy-gross-domestic-product",
@@ -38,7 +40,9 @@
           "errores_frecuentes": [
             "Celebrar un crecimiento del PIB nominal que solo refleja inflación."
           ],
-          "formulas": [],
+          "formulas": [
+            "pib-real"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-2-adjusting-nominal-values-to-real-values",
@@ -101,7 +105,9 @@
           "errores_frecuentes": [
             "Dividir para toda la población en edad de trabajar."
           ],
-          "formulas": [],
+          "formulas": [
+            "tasa-desempleo"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/8-1-how-economists-define-and-compute-unemployment-rate",
@@ -119,7 +125,9 @@
           "errores_frecuentes": [
             "Llamar inflación a la subida del precio de un solo producto."
           ],
-          "formulas": [],
+          "formulas": [
+            "tasa-inflacion"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-1-tracking-inflation",
@@ -227,7 +235,9 @@
           "errores_frecuentes": [
             "Creer que el banco presta todo lo depositado."
           ],
-          "formulas": [],
+          "formulas": [
+            "dinero-multiplicador"
+          ],
           "fuente": {
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",

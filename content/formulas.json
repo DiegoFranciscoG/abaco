@@ -6286,5 +6286,594 @@
     "notas": [],
     "actualizado_en": "2026-10-14",
     "estado": "verificada"
+  },
+  {
+    "id": "pib-gasto",
+    "nombre": "PIB por el enfoque del gasto",
+    "categoria": "economia",
+    "materias": [
+      "macroeconomia"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Suma del consumo de los hogares, la inversión de las empresas, el gasto del gobierno en bienes y servicios y las exportaciones netas (exportaciones menos importaciones).",
+    "latex": "PIB = C + I + G + (X - M)",
+    "variables": [
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Consumo de los hogares",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "I",
+        "nombre": "I",
+        "significado": "Inversión",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "G",
+        "nombre": "G",
+        "significado": "Gasto del gobierno en bienes y servicios",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "X",
+        "nombre": "X",
+        "significado": "Exportaciones",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "M",
+        "nombre": "M",
+        "significado": "Importaciones",
+        "unidad": "millones USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "C + I + G + (X - M)"
+    },
+    "excel": {
+      "es": "=C+I+G+(X-M)",
+      "en": "=C+I+G+(X-M)"
+    },
+    "ejemplo": {
+      "enunciado": "Una economía registra en un año consumo de 72.000, inversión de 24.500, gasto del gobierno de 17.800, exportaciones de 31.200 e importaciones de 33.900 (millones de USD). ¿Cuál es su PIB?",
+      "entradas": {
+        "C": 72000,
+        "I": 24500,
+        "G": 17800,
+        "X": 31200,
+        "M": 33900
+      },
+      "pasos": [
+        "Exportaciones netas = 31.200 − 33.900 = −2.700",
+        "PIB = 72.000 + 24.500 + 17.800 + (−2.700) = 111.600"
+      ],
+      "resultado": 111600.0,
+      "unidad": "millones USD",
+      "tolerancia": 0.005,
+      "excel_es": "=72000+24500+17800+(31200-33900)",
+      "excel_en": "=72000+24500+17800+(31200-33900)"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-1-measuring-the-size-of-the-economy-gross-domestic-product",
+      "seccion": "6.1 Measuring the Size of the Economy: Gross Domestic Product"
+    },
+    "supuestos": [],
+    "notas": [
+      "Si las importaciones superan a las exportaciones, las exportaciones netas restan."
+    ],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "pib-real",
+    "nombre": "PIB real a partir del PIB nominal",
+    "categoria": "economia",
+    "materias": [
+      "macroeconomia"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Quita el efecto de los precios: divide el PIB nominal para el índice de precios (deflactor del PIB) expresado como proporción del año base.",
+    "latex": "PIB_{real} = \\frac{PIB_{nominal}}{IP / 100}",
+    "variables": [
+      {
+        "simbolo": "PIB_{nominal}",
+        "nombre": "PIBn",
+        "significado": "PIB a precios del año",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "IP",
+        "nombre": "IP",
+        "significado": "Índice de precios (deflactor), año base = 100",
+        "unidad": "índice"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PIBn / (IP / 100)"
+    },
+    "excel": {
+      "es": "=PIBn/(IP/100)",
+      "en": "=PIBn/(IP/100)"
+    },
+    "ejemplo": {
+      "enunciado": "El PIB nominal de un año es de 118.400 millones de USD y el deflactor del PIB vale 116 (año base = 100). ¿Cuál es el PIB real?",
+      "entradas": {
+        "PIBn": 118400,
+        "IP": 116
+      },
+      "pasos": [
+        "IP ÷ 100 = 1,16",
+        "PIB real = 118.400 ÷ 1,16 = 102.068,97"
+      ],
+      "resultado": 102068.9655,
+      "unidad": "millones USD del año base",
+      "tolerancia": 0.005,
+      "excel_es": "=118400/(116/100)",
+      "excel_en": "=118400/(116/100)"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-2-adjusting-nominal-values-to-real-values",
+      "seccion": "6.2 Adjusting Nominal Values to Real Values"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-desempleo",
+    "nombre": "Tasa de desempleo",
+    "categoria": "economia",
+    "materias": [
+      "macroeconomia"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Porcentaje de la fuerza laboral (personas que trabajan o buscan trabajo) que no tiene empleo.",
+    "latex": "TD = \\frac{D}{FL} \\times 100",
+    "variables": [
+      {
+        "simbolo": "D",
+        "nombre": "D",
+        "significado": "Personas desempleadas",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "FL",
+        "nombre": "FL",
+        "significado": "Fuerza laboral total",
+        "unidad": "personas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "D / FL * 100"
+    },
+    "excel": {
+      "es": "=D/FL*100",
+      "en": "=D/FL*100"
+    },
+    "ejemplo": {
+      "enunciado": "En una provincia hay 9.450 personas desempleadas y una fuerza laboral de 270.000 personas. ¿Cuál es la tasa de desempleo?",
+      "entradas": {
+        "D": 9450,
+        "FL": 270000
+      },
+      "pasos": [
+        "TD = 9.450 ÷ 270.000 × 100",
+        "TD = 3,5 %"
+      ],
+      "resultado": 3.5,
+      "unidad": "%",
+      "tolerancia": 5e-05,
+      "excel_es": "=9450/270000*100",
+      "excel_en": "=9450/270000*100"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/8-1-how-economists-define-and-compute-unemployment-rate",
+      "seccion": "8.1 How Economists Define and Compute Unemployment Rate"
+    },
+    "supuestos": [],
+    "notas": [
+      "Quien no trabaja ni busca trabajo no forma parte de la fuerza laboral."
+    ],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-inflacion",
+    "nombre": "Tasa de inflación con índices de precios",
+    "categoria": "economia",
+    "materias": [
+      "macroeconomia"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Cambio porcentual del índice de precios entre dos periodos.",
+    "latex": "\\pi = \\frac{IP_1 - IP_0}{IP_0} \\times 100",
+    "variables": [
+      {
+        "simbolo": "IP_0",
+        "nombre": "IP0",
+        "significado": "Índice de precios del periodo anterior",
+        "unidad": "índice"
+      },
+      {
+        "simbolo": "IP_1",
+        "nombre": "IP1",
+        "significado": "Índice de precios del periodo nuevo",
+        "unidad": "índice"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(IP1 - IP0) / IP0 * 100"
+    },
+    "excel": {
+      "es": "=(IP1-IP0)/IP0*100",
+      "en": "=(IP1-IP0)/IP0*100"
+    },
+    "ejemplo": {
+      "enunciado": "Un índice de precios al consumidor pasa de 110,40 a 113,00 en un año. ¿Cuál fue la inflación anual?",
+      "entradas": {
+        "IP0": 110.4,
+        "IP1": 113
+      },
+      "pasos": [
+        "Cambio = 113,00 − 110,40 = 2,60",
+        "π = 2,60 ÷ 110,40 × 100 = 2,3551 %"
+      ],
+      "resultado": 2.3551,
+      "unidad": "%",
+      "tolerancia": 5e-05,
+      "excel_es": "=(113-110,4)/110,4*100",
+      "excel_en": "=(113-110.4)/110.4*100"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-1-tracking-inflation",
+      "seccion": "9.1 Tracking Inflation"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "dinero-multiplicador",
+    "nombre": "Dinero creado con el multiplicador monetario",
+    "categoria": "economia",
+    "materias": [
+      "macroeconomia"
+    ],
+    "areas": [
+      "economia",
+      "finanzas"
+    ],
+    "descripcion": "El multiplicador monetario es 1 dividido para el encaje (reserva requerida); multiplicado por el exceso de reservas da el dinero que el sistema bancario puede crear con préstamos sucesivos.",
+    "latex": "\\Delta M = ER \\times \\frac{1}{r}",
+    "variables": [
+      {
+        "simbolo": "ER",
+        "nombre": "ER",
+        "significado": "Exceso de reservas que se presta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "r",
+        "nombre": "r",
+        "significado": "Encaje o reserva requerida",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "ER * (1 / r)"
+    },
+    "excel": {
+      "es": "=ER*(1/r)",
+      "en": "=ER*(1/r)"
+    },
+    "ejemplo": {
+      "enunciado": "Con un encaje supuesto de 8 %, un banco presta un exceso de reservas de USD 25.000. ¿Cuánto dinero puede crear como máximo el sistema bancario?",
+      "entradas": {
+        "ER": 25000,
+        "r": 0.08
+      },
+      "pasos": [
+        "Multiplicador = 1 ÷ 0,08 = 12,5",
+        "ΔM = 25.000 × 12,5 = 312.500"
+      ],
+      "resultado": 312500.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=25000*(1/0,08)",
+      "excel_en": "=25000*(1/0.08)"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",
+      "seccion": "14.4 How Banks Create Money"
+    },
+    "supuestos": [
+      "Los bancos prestan todo el exceso de reservas y el dinero vuelve a depositarse en el sistema."
+    ],
+    "notas": [
+      "El encaje del ejemplo es un supuesto didáctico; el vigente lo fija la Junta de Política y Regulación Financiera y Monetaria."
+    ],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "balanza-mercancias",
+    "nombre": "Balanza comercial de mercancías",
+    "categoria": "economia",
+    "materias": [
+      "economia-internacional",
+      "finanzas-internacionales",
+      "macroeconomia"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Diferencia entre las exportaciones y las importaciones de bienes. Positiva es superávit; negativa, déficit.",
+    "latex": "BC = X_b - M_b",
+    "variables": [
+      {
+        "simbolo": "X_b",
+        "nombre": "Xb",
+        "significado": "Exportaciones de bienes",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "M_b",
+        "nombre": "Mb",
+        "significado": "Importaciones de bienes",
+        "unidad": "millones USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Xb - Mb"
+    },
+    "excel": {
+      "es": "=Xb-Mb",
+      "en": "=Xb-Mb"
+    },
+    "ejemplo": {
+      "enunciado": "Un país exporta bienes por 32.400 e importa bienes por 30.950 (millones de USD). ¿Cuál es su balanza de mercancías?",
+      "entradas": {
+        "Xb": 32400,
+        "Mb": 30950
+      },
+      "pasos": [
+        "BC = 32.400 − 30.950 = 1.450",
+        "Positiva: superávit comercial de bienes"
+      ],
+      "resultado": 1450.0,
+      "unidad": "millones USD",
+      "tolerancia": 0.005,
+      "excel_es": "=32400-30950",
+      "excel_en": "=32400-30950"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+      "seccion": "10.1 Measuring Trade Balances"
+    },
+    "supuestos": [],
+    "notas": [
+      "La cuenta corriente suma además servicios, rentas y transferencias."
+    ],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "identidad-ahorro-inversion",
+    "nombre": "Saldo comercial con la identidad ahorro–inversión",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-internacionales",
+      "macroeconomia",
+      "economia-internacional"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "El saldo comercial es igual al ahorro privado más el ahorro público (impuestos menos gasto) menos la inversión interna.",
+    "latex": "(X - M) = S + (T - G) - I",
+    "variables": [
+      {
+        "simbolo": "S",
+        "nombre": "S",
+        "significado": "Ahorro privado",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "T",
+        "nombre": "T",
+        "significado": "Impuestos",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "G",
+        "nombre": "G",
+        "significado": "Gasto del gobierno",
+        "unidad": "millones USD"
+      },
+      {
+        "simbolo": "I",
+        "nombre": "I",
+        "significado": "Inversión interna",
+        "unidad": "millones USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "S + (T - G) - I"
+    },
+    "excel": {
+      "es": "=S+(T-G)-I",
+      "en": "=S+(T-G)-I"
+    },
+    "ejemplo": {
+      "enunciado": "Una economía tiene ahorro privado de 21.000, impuestos de 15.500, gasto del gobierno de 17.300 e inversión interna de 22.400 (millones de USD). ¿Cuál es su saldo comercial?",
+      "entradas": {
+        "S": 21000,
+        "T": 15500,
+        "G": 17300,
+        "I": 22400
+      },
+      "pasos": [
+        "Ahorro público = 15.500 − 17.300 = −1.800",
+        "X − M = 21.000 + (−1.800) − 22.400 = −3.200",
+        "Negativo: déficit comercial financiado con capital extranjero"
+      ],
+      "resultado": -3200.0,
+      "unidad": "millones USD",
+      "tolerancia": 0.005,
+      "excel_es": "=21000+(15500-17300)-22400",
+      "excel_en": "=21000+(15500-17300)-22400"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-4-the-national-saving-and-investment-identity",
+      "seccion": "10.4 The National Saving and Investment Identity"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "conversion-divisas",
+    "nombre": "Convertir moneda extranjera a dólares",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-internacionales",
+      "economia-internacional"
+    ],
+    "areas": [
+      "finanzas",
+      "economia"
+    ],
+    "descripcion": "Con un tipo de cambio expresado como dólares por unidad de moneda extranjera, el valor en dólares es el monto por el tipo de cambio.",
+    "latex": "USD = Monto \\times TC",
+    "variables": [
+      {
+        "simbolo": "Monto",
+        "nombre": "Monto",
+        "significado": "Cantidad en moneda extranjera",
+        "unidad": "moneda extranjera"
+      },
+      {
+        "simbolo": "TC",
+        "nombre": "TC",
+        "significado": "Dólares por cada unidad de moneda extranjera",
+        "unidad": "USD por unidad"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Monto * TC"
+    },
+    "excel": {
+      "es": "=Monto*TC",
+      "en": "=Monto*TC"
+    },
+    "ejemplo": {
+      "enunciado": "Un importador debe pagar 40.000 pesos mexicanos y el banco cotiza MXN 1 = USD 0,055 (cotización supuesta). ¿Cuántos dólares necesita?",
+      "entradas": {
+        "Monto": 40000,
+        "TC": 0.055
+      },
+      "pasos": [
+        "USD = 40.000 × 0,055",
+        "USD = 2.200"
+      ],
+      "resultado": 2200.0,
+      "unidad": "USD",
+      "tolerancia": 0.005,
+      "excel_es": "=40000*0,055",
+      "excel_en": "=40000*0.055"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+      "seccion": "3.5 Foreign Exchange Rates"
+    },
+    "supuestos": [],
+    "notas": [
+      "Para cotizaciones reales usa la herramienta «Tipos de cambio» (datos del Banco Central Europeo)."
+    ],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
+  },
+  {
+    "id": "tipo-cambio-inverso",
+    "nombre": "Tipo de cambio inverso",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-internacionales"
+    ],
+    "areas": [
+      "finanzas",
+      "economia"
+    ],
+    "descripcion": "Si una unidad de moneda extranjera cuesta TC dólares, un dólar compra 1 ÷ TC unidades de esa moneda.",
+    "latex": "TC_{inverso} = \\frac{1}{TC}",
+    "variables": [
+      {
+        "simbolo": "TC",
+        "nombre": "TC",
+        "significado": "Dólares por cada unidad de moneda extranjera",
+        "unidad": "USD por unidad"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "1 / TC"
+    },
+    "excel": {
+      "es": "=1/TC",
+      "en": "=1/TC"
+    },
+    "ejemplo": {
+      "enunciado": "Si 1 peso mexicano cuesta USD 0,055 (cotización supuesta), ¿cuántos pesos compra un dólar?",
+      "entradas": {
+        "TC": 0.055
+      },
+      "pasos": [
+        "TC inverso = 1 ÷ 0,055",
+        "TC inverso = 18,1818 pesos por dólar"
+      ],
+      "resultado": 18.1818,
+      "unidad": "unidades por USD",
+      "tolerancia": 5e-05,
+      "excel_es": "=1/0,055",
+      "excel_en": "=1/0.055"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+      "seccion": "3.5 Foreign Exchange Rates"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
   }
 ]
