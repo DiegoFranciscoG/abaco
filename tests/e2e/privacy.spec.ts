@@ -1,6 +1,6 @@
 import { expect, test, type Request } from '@playwright/test';
 import { readFileSync } from 'node:fs';
-import { ACADEMIC_HOSTS, mockAcademicApis, open } from './helpers';
+import { ACADEMIC_HOSTS, ALLOWED_HOSTS, mockAcademicApis, mockDataApis, open } from './helpers';
 
 const NOTE_TEXT = 'Apunte secreto de prueba 7f3a: el VAN descuenta desde t = 1';
 const COLLECTION_NAME = 'Coleccion privada 9c1e';
@@ -11,7 +11,7 @@ test('T-03: aislamiento entre estudiantes con el mismo enlace', async ({ browser
   const studentB = await browser.newContext();
   const pageA = await studentA.newPage();
   const pageB = await studentB.newPage();
-  const subject = '/asignatura/ucuenca-contabilidad-auditoria--c1-contabilidad-general';
+  const subject = '/materia/contabilidad-general';
 
   await open(pageA, subject);
   await pageA.getByLabel('Contenido del apunte').fill(NOTE_TEXT);
@@ -38,8 +38,9 @@ test('T-04: nada personal sale del dispositivo', async ({ page }) => {
   const requests: Request[] = [];
   page.on('request', (r) => requests.push(r));
   await mockAcademicApis(page);
+  await mockDataApis(page);
 
-  await open(page, '/asignatura/ucuenca-contabilidad-auditoria--c1-contabilidad-general');
+  await open(page, '/materia/contabilidad-general');
   await page.getByLabel('Contenido del apunte').fill(NOTE_TEXT);
   await page.getByRole('button', { name: 'Guardar apunte' }).click();
   await expect(page.getByText(NOTE_TEXT)).toBeVisible();
@@ -53,6 +54,16 @@ test('T-04: nada personal sale del dispositivo', async ({ page }) => {
   await page.getByRole('button', { name: /Marcar con estrella/ }).click();
   await open(page, '/laboratorio/nueva?plantilla=libro-diario');
   await expect(page.getByText('Guardado en este dispositivo')).toBeVisible();
+
+  await open(page, '/herramientas/editor');
+  await page.getByRole('button', { name: 'Informe académico' }).click();
+  await page.getByLabel('Contenido del documento').fill(NOTE_TEXT);
+  await expect(page.getByText('Guardado en este dispositivo')).toBeVisible();
+  await open(page, '/herramientas/macro');
+  await expect(page.getByRole('figure').first()).toBeVisible();
+  await open(page, '/herramientas/divisas');
+  await open(page, '/materias?carrera=economia&ciclo=3');
+  await page.getByRole('button', { name: /Agregar las de este ciclo/ }).click();
 
   await open(page, '/buscar');
   await page.getByLabel('Tema a buscar').fill('control interno');
@@ -72,7 +83,7 @@ test('T-04: nada personal sale del dispositivo', async ({ page }) => {
   for (const request of requests) {
     const url = new URL(request.url());
     const payload = `${request.url()} ${request.postData() ?? ''} ${JSON.stringify(request.headers())}`;
-    const allowed = url.origin === origin || ACADEMIC_HOSTS.includes(url.host) || url.protocol === 'data:' || url.protocol === 'blob:';
+    const allowed = url.origin === origin || ALLOWED_HOSTS.includes(url.host) || url.protocol === 'data:' || url.protocol === 'blob:';
     if (!allowed) offenders.push(`origen no permitido: ${url.origin}`);
     for (const secret of [NOTE_TEXT, 'Apunte secreto', COLLECTION_NAME, deviceId, deviceId.slice(0, 8)]) {
       if (payload.includes(secret) || payload.includes(encodeURIComponent(secret))) offenders.push(`${secret} en ${url.host}`);
@@ -109,7 +120,7 @@ test('T-09: fuentes caídas o lentas no rompen el buscador', async ({ page }) =>
 
 /** T-06 through the interface: download a backup, wipe everything, restore it. */
 test('T-06: respaldo, borrado y restauración desde Ajustes', async ({ page }) => {
-  await open(page, '/asignatura/ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva');
+  await open(page, '/materia/estadistica-descriptiva');
   await page.getByLabel('Contenido del apunte').fill('Media: sensible a extremos');
   await page.getByRole('button', { name: 'Guardar apunte' }).click();
 

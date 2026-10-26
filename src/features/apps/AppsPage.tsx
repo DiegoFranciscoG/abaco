@@ -28,7 +28,7 @@ export function AppCard({ app, highlight = false }: { app: App; highlight?: bool
       {app.nota ? <p className="text-xs text-muted">{app.nota}</p> : null}
       <p className="text-xs text-muted">{app.plataformas.join(' · ')}</p>
       <a href={app.url_oficial} target="_blank" rel="noopener noreferrer" className="link-red mt-auto inline-flex items-center gap-1 text-sm">
-        Sitio oficial <Icon name="external" size={15} />
+        Sitio oficial<span className="sr-only"> de {app.nombre}</span> <Icon name="external" size={15} />
       </a>
       <p className="text-[0.7rem] text-muted">Verificado el {formatDate(app.fecha_consulta)}</p>
     </article>

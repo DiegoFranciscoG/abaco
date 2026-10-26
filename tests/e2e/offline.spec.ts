@@ -3,7 +3,8 @@ import { open } from './helpers';
 
 /**
  * T-08: after one visit with connection, the app keeps working without internet thanks to the service
- * worker precache: curricula, notes and the lab work; the academic search explains it is offline.
+ * worker precache: subjects by career and cycle, notes, the lab and the tools work; the academic search and the
+ * open-data tools explain they are offline.
  */
 test('T-08: la app funciona sin internet', async ({ page, context }) => {
   await open(page, '/');
@@ -17,11 +18,15 @@ test('T-08: la app funciona sin internet', async ({ page, context }) => {
 
   await context.setOffline(true);
 
-  await page.goto('/#/carrera/ucuenca-economia');
-  await expect(page.getByRole('heading', { name: 'Economía' })).toBeVisible();
+  await page.goto('/#/materias?carrera=economia&ciclo=3');
+  await expect(page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Macroeconomía/ })).toBeVisible();
   await expect(page.getByText(/Sin conexión/).first()).toBeVisible();
 
-  await open(page, '/asignatura/ucuenca-contabilidad-auditoria--c1-calculo-diferencial');
+  await open(page, '/herramientas/rol-pagos');
+  await page.getByLabel(/Sueldo mensual/).fill('1000');
+  await expect(page.getByText(/905,50/).first()).toBeVisible();
+
+  await open(page, '/materia/calculo-diferencial');
   await page.getByLabel('Contenido del apunte').fill('Apunte escrito sin internet');
   await page.getByRole('button', { name: 'Guardar apunte' }).click();
   await expect(page.getByText('Apunte escrito sin internet')).toBeVisible();

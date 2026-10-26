@@ -70,7 +70,7 @@ export function CareerCycle({ profile }: { profile: Perfil }) {
     const ids = materiasDeCiclo(carrera, ciclo).map((r) => r.materia.id);
     const merged = [...new Set([...profile.materias, ...ids])];
     try {
-      await updateProfile({ materias: merged });
+      await updateProfile({ materias: merged, carrera: carrera.id, ciclo });
       toast.show(`${merged.length - profile.materias.length} materias agregadas a las tuyas`);
     } catch (error) {
       toast.error(error);

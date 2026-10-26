@@ -1,29 +1,33 @@
 import { expect, test } from '@playwright/test';
-import { open } from './helpers';
+import { mockDataApis, open } from './helpers';
 
 test.describe('recorridos reales de un estudiante', () => {
-  test('de la portada a un subtema, pasando por la malla oficial', async ({ page }) => {
+  test('de la portada a un subtema, eligiendo carrera y ciclo', async ({ page }) => {
     await open(page, '/');
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Tu malla real');
-    await page.getByRole('link', { name: /Ver mi malla/ }).click();
-    await expect(page.getByRole('heading', { name: 'Elige una carrera' })).toBeVisible();
-    await page.getByRole('link', { name: /Contabilidad y Auditoría/ }).first().click();
-    await expect(page.getByRole('heading', { name: 'Contabilidad y Auditoría' })).toBeVisible();
-    await expect(page.getByText(/Fuente:/).first()).toBeVisible();
-    await page.getByRole('link', { name: /Contabilidad General/ }).first().click();
-    await expect(page.getByRole('heading', { name: /Temario/ })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Tus materias, tema por tema');
+    await page.getByRole('link', { name: /Elige tu carrera y tu ciclo/ }).click();
+    await page.getByRole('group', { name: 'Carrera' }).getByRole('button', { name: 'Contabilidad y auditoría' }).click();
+    await page.getByRole('button', { name: '1.º ciclo' }).click();
+    await expect(page).toHaveURL(/carrera=contabilidad-auditoria&ciclo=1/);
+    const cycle = page.getByRole('region', { name: '1.º ciclo' });
+    await cycle.getByRole('link', { name: /^Contabilidad general/ }).click();
+    await expect(page.getByRole('heading', { level: 1, name: /Contabilidad general/ })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Contabilidad y auditoría · 1.º ciclo' })).toBeVisible();
     await page.getByRole('link', { name: /La ecuación contable/ }).click();
     const subtopic = page.getByRole('button', { name: 'Activo, pasivo y patrimonio', exact: true });
     await subtopic.click();
     await expect(subtopic).toHaveAttribute('aria-expanded', 'true');
     await expect(page.getByText('Errores frecuentes').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: /OpenStax|Principles of Accounting/ }).first()).toBeVisible();
+    await expect(page.getByRole('link', { name: /Principles of Accounting, Volume 1/ }).first()).toBeVisible();
   });
 
-  test('la malla muestra las diferencias con lo declarado por la universidad', async ({ page }) => {
-    await open(page, '/carrera/ucacue-contabilidad-auditoria');
-    await expect(page.getByText(/declara/)).toContainText('40');
-    await expect(page.getByText(/declara/)).toContainText('38');
+  test('la carrera y el ciclo elegidos se recuerdan en la portada', async ({ page }) => {
+    await open(page, '/materias?carrera=economia&ciclo=3');
+    await expect(page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Macroeconomía/ })).toBeVisible();
+    await page.getByRole('button', { name: /Agregar las de este ciclo/ }).click();
+    await open(page, '/');
+    await expect(page.getByRole('link', { name: /Economía · 3\.º ciclo/ })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Macroeconomía', exact: true })).toBeVisible();
   });
 
   test('ficha de fórmula: calculadora en vivo y sintaxis de Excel en español', async ({ page }) => {
@@ -51,7 +55,8 @@ test.describe('recorridos reales de un estudiante', () => {
     await box.fill('punto de equilibrio');
     await expect(page.getByRole('listbox', { name: 'Resultados' }).getByRole('option').first()).toContainText(/Punto de equilibrio/);
     await page.keyboard.press('Enter');
-    await expect(page).toHaveURL(/formulas\/punto-equilibrio/);
+    // The first result may be the formula or the break-even tool: both are the right answer.
+    await expect(page).toHaveURL(/formulas\/punto-equilibrio|herramientas\/equilibrio/);
   });
 
   test('práctica: responder bien registra el intento', async ({ page }) => {
@@ -61,11 +66,69 @@ test.describe('recorridos reales de un estudiante', () => {
     await expect(page.getByText('¡Correcto!')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Tus intentos' })).toBeVisible();
   });
+});
 
-  test('comparador de mallas entre universidades', async ({ page }) => {
-    await open(page, '/comparar');
-    await expect(page.getByText(/asignaturas con el mismo nombre en ambas mallas/)).toBeVisible();
-    await expect(page.getByText('en ambas').first()).toBeVisible();
+test.describe('herramientas', () => {
+  test('rol de pagos con el aporte personal al IESS', async ({ page }) => {
+    await open(page, '/herramientas/rol-pagos');
+    const salary = page.getByLabel(/Sueldo mensual/);
+    await salary.fill('1000');
+    await expect(page.getByText(/905,50/).first()).toBeVisible();
+    await expect(page.getByText(/Código del Trabajo, art\. 113/).first()).toBeVisible();
+  });
+
+  test('IVA desde la base imponible', async ({ page }) => {
+    await open(page, '/herramientas/impuestos');
+    await page.getByLabel(/Precio sin IVA/).fill('200');
+    await expect(page.getByText(/30,00/).first()).toBeVisible();
+  });
+
+  test('datos macro del Banco Mundial con su fuente y licencia', async ({ page }) => {
+    await mockDataApis(page);
+    await open(page, '/herramientas/macro');
+    await expect(page.getByText(/World Development Indicators \(CC BY 4\.0\)/).first()).toBeVisible();
+    await expect(page.getByRole('figure').first()).toBeVisible();
+  });
+
+  test('cada materia ofrece herramientas propias y tecnología externa', async ({ page }) => {
+    await open(page, '/materia/talento-humano');
+    await expect(page.getByRole('heading', { name: 'Herramientas para esta materia' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Apps externas recomendadas' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Sitio oficial de Ministerio del Trabajo — servicios en línea' })).toHaveAttribute('href', 'https://sut.trabajo.gob.ec/');
+  });
+});
+
+test.describe('buzón de sugerencias', () => {
+  test('rechaza groserías y, con un mensaje válido, prepara el correo y muestra las redes del autor', async ({ page }) => {
+    await open(page, '/sugerencias?tipo=materia&materia=contabilidad-costos');
+    await page.getByLabel('Tu sugerencia *').fill('Esta materia es una mierda, pongan más ejercicios de costos por procesos');
+    await page.getByRole('checkbox').check();
+    await page.getByRole('button', { name: 'Enviar sugerencia' }).click();
+    await expect(page.getByText(/palabras ofensivas/)).toBeVisible();
+
+    await page.getByLabel('Tu sugerencia *').fill('Faltan ejercicios de costeo por procesos con producción equivalente en Contabilidad de costos.');
+    await page.getByRole('button', { name: 'Enviar sugerencia' }).click();
+    await expect(page.getByRole('heading', { name: '¡Gracias por ayudar a mejorar ÁBACO!' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Abrir mi correo otra vez' })).toHaveAttribute('href', /^mailto:diegofgz2004@gmail\.com\?subject=/);
+    await expect(page.getByRole('heading', { name: 'Visita mis otras redes y mis otros trabajos' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Estos son mis proyectos' })).toBeVisible();
+    await expect(page.locator('main').getByRole('link', { name: /Instagram/ })).toHaveAttribute('href', 'https://www.instagram.com/diego.granda.z/');
+    await expect(page.locator('main').getByRole('link', { name: /LinkedIn/ })).toHaveAttribute('href', /linkedin\.com\/in\/diego-francisco-g/);
+  });
+});
+
+test.describe('legal', () => {
+  test('pie de página, privacidad del buzón y avisos de licencias de terceros', async ({ page, request }) => {
+    await open(page, '/');
+    await page.getByRole('navigation', { name: 'Legal' }).getByRole('link', { name: 'Privacidad' }).click();
+    await expect(page.getByRole('heading', { name: 'Buzón de sugerencias' })).toBeVisible();
+    await expect(page.getByText(/LOPDP arts\. 7\.1 y 8/)).toBeVisible();
+    await page.getByRole('link', { name: 'Licencias y créditos' }).click();
+    const link = page.getByRole('link', { name: /Avisos de licencias de terceros/ });
+    const href = await link.getAttribute('href');
+    const response = await request.get(href ?? '');
+    expect(response.status()).toBe(200);
+    expect(await response.text()).toContain('react 19.3.1 — MIT');
   });
 });
 
@@ -94,10 +157,16 @@ test.describe('laboratorio', () => {
   });
 });
 
-test('móvil: navegación inferior y portada @movil', async ({ page }) => {
+test('móvil: navegación inferior, materias por carrera y buzón @movil', async ({ page }) => {
   await open(page, '/');
   const nav = page.getByRole('navigation', { name: 'Principal (móvil)' });
   await expect(nav).toBeVisible();
-  await nav.getByRole('link', { name: 'Fórmulas' }).click();
-  await expect(page.getByRole('heading', { name: 'Fórmulas verificadas' })).toBeVisible();
+  await nav.getByRole('link', { name: 'Materias' }).click();
+  await page.getByRole('group', { name: 'Carrera' }).getByRole('button', { name: 'Finanzas' }).click();
+  await page.getByRole('button', { name: '3.º ciclo' }).click();
+  await expect(page.getByRole('region', { name: '3.º ciclo' }).getByRole('link', { name: /^Finanzas corporativas/ })).toBeVisible();
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+  expect(overflow).toBeLessThanOrEqual(0);
+  await open(page, '/sugerencias');
+  await expect(page.getByRole('button', { name: 'Enviar sugerencia' })).toBeVisible();
 });

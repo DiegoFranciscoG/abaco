@@ -4,11 +4,17 @@ import { open } from './helpers';
 
 const VIEWS = [
   '/',
-  '/carreras',
-  '/carrera/ucuenca-contabilidad-auditoria',
-  '/comparar',
-  '/asignatura/ucuenca-contabilidad-auditoria--c1-contabilidad-general',
-  '/asignatura/ucuenca-contabilidad-auditoria--c1-contabilidad-general/tema/cg-partida-doble?s=cg-partida-doble-reglas',
+  '/materias',
+  '/materias?carrera=contabilidad-auditoria&ciclo=2',
+  '/materia/contabilidad-general',
+  '/materia/contabilidad-general/tema/cg-partida-doble?s=cg-partida-doble-reglas',
+  '/herramientas',
+  '/herramientas/rol-pagos',
+  '/herramientas/impuestos',
+  '/herramientas/editor',
+  '/herramientas/diario',
+  '/herramientas/graficador',
+  '/herramientas/estadistica',
   '/formulas',
   '/formulas/van',
   '/laboratorio',
@@ -20,6 +26,9 @@ const VIEWS = [
   '/glosario',
   '/ajustes',
   '/acerca',
+  '/sugerencias',
+  '/legal/privacidad',
+  '/legal/licencias',
 ];
 
 for (const scheme of ['light', 'dark'] as const) {
