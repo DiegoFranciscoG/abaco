@@ -136,11 +136,13 @@ export const LEGAL_DOCS: LegalDoc[] = [
         ],
       },
       {
-        titulo: '6. Sugerencias',
+        titulo: '6. Sugerencias y PDF enviados',
         lista: [
           'El buzón de sugerencias prepara un correo en tu propia aplicación de correo; tú decides si lo envías.',
           'Al enviar una sugerencia permites que el titular use la idea para mejorar ÁBACO, sin pago ni obligación de publicarla. Si se publica, el texto se redacta de nuevo y se verifica con una fuente oficial.',
           'No envíes textos copiados de libros u otras obras, ni datos personales tuyos o de otras personas. El buzón rechaza insultos, mensajes sin sentido y datos como cédulas o teléfonos.',
+          'Si envías un PDF al autor, declaras que eres su autor o que tienes permiso para compartirlo, y autorizas que sus ideas, una vez verificadas con fuentes oficiales y redactadas de nuevo, se usen en ÁBACO citando la fuente que corresponda. El texto del PDF no se publica tal cual.',
+          'Las frases de tus PDF que se muestran en el área de estudio salen del documento sin verificar; la teoría de ÁBACO sí cita su fuente.',
         ],
       },
       {
@@ -185,7 +187,8 @@ export const LEGAL_DOCS: LegalDoc[] = [
       {
         titulo: 'Qué datos existen y para qué',
         lista: [
-          'Lo que tú escribes o eliges en la app, para que puedas usarlo después. Se guarda en tu propio navegador (IndexedDB) y nunca se envía al titular. La única excepción es lo que tú mismo envíes por correo desde el buzón de sugerencias.',
+          'Lo que tú escribes o eliges en la app, para que puedas usarlo después. Se guarda en tu propio navegador (IndexedDB) y nunca se envía al titular. La única excepción es lo que tú mismo envíes por correo desde el buzón de sugerencias o al compartir un PDF.',
+          'Los PDF que agregas al área de estudio se leen dentro de tu navegador: el archivo no se sube a ningún servidor y solo se guarda su texto, en este dispositivo, para preparar repasos, tarjetas y exámenes. Los borras con el botón «Borrar» o con «Empezar de cero».',
           'Tu preferencia de tema claro u oscuro y de animaciones, en el almacenamiento local del navegador, para aplicarla antes de mostrar la página.',
           'Un identificador aleatorio generado en tu dispositivo que solo sirve para nombrar tus archivos de respaldo. No sale del dispositivo.',
           'No hay otras finalidades: no se crean perfiles, no hay decisiones automatizadas y nada se vende ni se comparte.',
@@ -202,6 +205,15 @@ export const LEGAL_DOCS: LegalDoc[] = [
           'Dónde: en el buzón del titular, en el servicio de correo Gmail (Google), que también conoce la dirección desde la que escribes, según sus propias condiciones.',
           `Tus derechos: puedes pedir acceso, rectificación, eliminación, oposición o portabilidad de tus correos escribiendo a ${suggestionAddress()}; la respuesta llega en un máximo de 15 días (LOPDP arts. 13 a 17).`,
           'En este dispositivo, el buzón guarda solo la hora de tus envíos y una huella corta de cada texto para limitar a tres sugerencias al día; no guarda el texto.',
+        ],
+      },
+      {
+        titulo: 'PDF que envías al autor',
+        lista: [
+          'Antes de prepararlo, ÁBACO revisa en tu dispositivo que el PDF tenga texto legible, trate de la materia elegida y no contenga cédulas, teléfonos, correos ni insultos.',
+          'El PDF viaja por tu aplicación de correo o por el menú «Compartir» de tu teléfono, desde tu cuenta; ÁBACO no lo sube a ningún servidor.',
+          'Para qué: revisar si su información se puede verificar con fuentes oficiales y, si es así, redactarla de nuevo para ÁBACO; responderte si lo pediste.',
+          'Base legal y derechos: tu consentimiento (LOPDP arts. 7.1 y 8), que puedes retirar escribiendo al mismo correo; los PDF y correos se eliminan cuando se terminan de revisar y como máximo a los 12 meses (art. 10 i). Tienes los mismos derechos de acceso, rectificación, eliminación, oposición y portabilidad (arts. 13 a 17).',
         ],
       },
       {
@@ -257,7 +269,7 @@ export const LEGAL_DOCS: LegalDoc[] = [
       {
         titulo: 'Lo que sí se guarda en tu navegador',
         lista: [
-          'Base de datos local «abaco» (IndexedDB): tus apuntes, estrellas, colecciones, recordatorios, intentos de práctica, hojas, búsquedas recientes, documentos, libros diarios, tarjetas y tableros, y una caché temporal de respuestas del buscador académico.',
+          'Base de datos local «abaco» (IndexedDB): tus apuntes, estrellas, colecciones, recordatorios, intentos de práctica, hojas, búsquedas recientes, documentos, libros diarios, tarjetas, tableros, el texto de los PDF que agregas al área de estudio y tus resultados de exámenes, y una caché temporal de respuestas del buscador académico.',
           'Almacenamiento local «abaco:pantalla»: tu preferencia de tema y animaciones.',
           'Almacenamiento local «abaco:buzon»: la hora de tus últimas sugerencias y una huella corta de cada texto (no el texto), para limitar los envíos a tres por día.',
           'Caché de la app (service worker): los archivos de ÁBACO, para que funcione sin internet.',
@@ -294,6 +306,7 @@ export const LEGAL_DOCS: LegalDoc[] = [
         titulo: 'Bibliotecas principales',
         lista: [
           'React, React Router, Motion, Dexie, Zod, MiniSearch, Workbox, Three.js, KaTeX y Formula.js — licencias MIT o Apache-2.0.',
+          'pdf.js (Mozilla) — Apache-2.0. Lee en tu navegador el texto de los PDF que agregas al área de estudio.',
           'SheetJS Community Edition — Apache-2.0.',
           'Tipografías Inter, Fraunces y JetBrains Mono — SIL Open Font License 1.1.',
         ],
@@ -370,7 +383,7 @@ export const LEGAL_DOCS: LegalDoc[] = [
           'Sin servidor propio ni base de datos central: no hay cuentas que robar ni datos de estudiantes que filtrar.',
           'Política de seguridad de contenido estricta: solo código del propio sitio, sin scripts en línea ni evaluación dinámica de código.',
           'El editor y las fórmulas que escribes se interpretan sin ejecutar código: el texto se escapa y las fórmulas pasan por un analizador con una lista cerrada de funciones.',
-          'Los archivos importados se limitan en tamaño y tipo y se validan con un esquema antes de tocar tus datos.',
+          'Los archivos importados se limitan en tamaño y tipo y se validan con un esquema antes de tocar tus datos. Los PDF se leen en un proceso aislado del navegador (Web Worker), sin ejecutar su contenido ni subirlos a ningún sitio.',
           'Protección contra el enmarcado del sitio por páginas ajenas.',
           'Dependencias con versión fija, revisión automática de vulnerabilidades y escaneo de secretos en cada cambio.',
         ],
