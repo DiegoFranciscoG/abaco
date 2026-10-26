@@ -41,6 +41,7 @@ interface LockEntry {
   license?: string;
   dev?: boolean;
   devOptional?: boolean;
+  optional?: boolean;
 }
 
 interface PackageJson {
@@ -85,7 +86,9 @@ export function collectThirdParty(root: string): ThirdPartyPackage[] {
   };
   const names = new Set<string>();
   for (const [path, entry] of Object.entries(lock.packages)) {
-    if (!path.startsWith('node_modules/') || entry.dev || entry.devOptional) continue;
+    // Optional packages are native binaries for Node.js (e.g. @napi-rs/canvas for pdf.js on a server): they are
+    // never part of the files served to the browser.
+    if (!path.startsWith('node_modules/') || entry.dev || entry.devOptional || entry.optional) continue;
     const name = path.slice(path.lastIndexOf('node_modules/') + 'node_modules/'.length);
     // Type-only packages never reach the browser.
     if (!name.startsWith('@types/')) names.add(name);

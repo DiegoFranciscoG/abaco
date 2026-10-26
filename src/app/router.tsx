@@ -38,6 +38,7 @@ export const routes: RouteObject[] = [
       { path: 'ajustes', ...page(() => import('../features/settings/SettingsPage')) },
       { path: 'acerca', ...page(() => import('../features/about/AboutPage')) },
       { path: 'sugerencias', ...page(() => import('../features/suggestions/SuggestionsPage')) },
+      { path: 'estudiar', ...page(() => import('../features/study/StudyPage')) },
       { path: 'legal/:docId', ...page(() => import('../features/legal/LegalPage')) },
       { path: '*', Component: NotFoundPage },
     ],

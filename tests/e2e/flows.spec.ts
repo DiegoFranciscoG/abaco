@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { join } from 'node:path';
 import { mockDataApis, open } from './helpers';
 
 test.describe('recorridos reales de un estudiante', () => {
@@ -150,7 +151,8 @@ test.describe('legal', () => {
     await open(page, '/');
     await page.getByRole('navigation', { name: 'Legal' }).getByRole('link', { name: 'Privacidad' }).click();
     await expect(page.getByRole('heading', { name: 'Buzón de sugerencias' })).toBeVisible();
-    await expect(page.getByText(/LOPDP arts\. 7\.1 y 8/)).toBeVisible();
+    await expect(page.getByText(/LOPDP arts\. 7\.1 y 8/).first()).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'PDF que envías al autor' })).toBeVisible();
     await page.getByRole('link', { name: 'Licencias y créditos' }).click();
     const link = page.getByRole('link', { name: /Avisos de licencias de terceros/ });
     const href = await link.getAttribute('href');
@@ -199,4 +201,49 @@ test('móvil: navegación inferior, materias por carrera y buzón @movil', async
   expect(overflow).toBeLessThanOrEqual(0);
   await open(page, '/sugerencias');
   await expect(page.getByRole('button', { name: 'Enviar sugerencia' })).toBeVisible();
+});
+
+test.describe('área de estudio', () => {
+  const pdf = join(import.meta.dirname, '..', 'fixtures', 'apuntes-costos.pdf');
+
+  test('lee un PDF real en el navegador, arma un examen mezclado y lo califica', async ({ page }) => {
+    await open(page, '/estudiar?materia=contabilidad-costos');
+    await page.getByRole('tab', { name: /Mis PDF/ }).click();
+    await page.getByLabel('Agregar un PDF').setInputFiles(pdf);
+    const list = page.getByRole('list', { name: 'PDF guardados' });
+    await expect(list.getByText('apuntes-costos.pdf')).toBeVisible({ timeout: 20_000 });
+    await expect(list.getByText(/6 definiciones encontradas/)).toBeVisible();
+
+    await page.getByRole('tab', { name: 'Repasar' }).click();
+    await page.getByRole('button', { name: /De tu PDF: apuntes-costos\.pdf/ }).click();
+    await expect(page.locator('dt').getByText('Margen de contribución', { exact: true })).toBeVisible();
+
+    await page.getByRole('tab', { name: 'Examen' }).click();
+    await page.getByText('Mezclado', { exact: true }).click();
+    await page.getByText('5', { exact: true }).click();
+    await page.getByRole('button', { name: /Empezar examen/ }).click();
+    await expect(page.getByRole('group', { name: /Pregunta \d/ })).toHaveCount(5);
+    await page.getByRole('button', { name: /Calificar/ }).click();
+    await expect(page.getByText(/de 5 correctas/)).toBeVisible();
+  });
+
+  test('prepara el envío del PDF al autor después de validarlo', async ({ page }) => {
+    await open(page, '/estudiar?materia=contabilidad-costos');
+    await page.getByRole('tab', { name: /Mis PDF/ }).click();
+    await page.getByLabel('Agregar un PDF').setInputFiles(pdf);
+    await page
+      .getByRole('list', { name: 'PDF guardados' })
+      .getByRole('button', { name: /Enviar al autor/ })
+      .click();
+    const dialog = page.getByRole('dialog', { name: 'Enviar el PDF al autor' });
+    await dialog
+      .getByLabel(/Qué contiene/)
+      .fill('Resumen propio del capítulo de costo volumen utilidad con definiciones para el examen.');
+    await dialog.getByLabel(/Soy autor del documento/).check();
+    await dialog.getByLabel(/Acepto que/).check();
+    await dialog.getByRole('button', { name: /Enviar al autor/ }).click();
+    await expect(page.getByRole('dialog', { name: '¡Gracias por compartir!' })).toBeVisible();
+    await expect(page.getByText(/Adjunta el archivo «apuntes-costos\.pdf»/)).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Estos son mis proyectos' })).toBeVisible();
+  });
 });

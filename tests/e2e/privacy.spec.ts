@@ -1,5 +1,6 @@
 import { expect, test, type Request } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { ACADEMIC_HOSTS, ALLOWED_HOSTS, mockAcademicApis, mockDataApis, open } from './helpers';
 
 const NOTE_TEXT = 'Apunte secreto de prueba 7f3a: el VAN descuenta desde t = 1';
@@ -65,6 +66,15 @@ test('T-04: nada personal sale del dispositivo', async ({ page }) => {
   await open(page, '/materias?carrera=economia&ciclo=3');
   await page.getByRole('button', { name: /Agregar las de este ciclo/ }).click();
 
+  await open(page, '/estudiar?materia=contabilidad-costos');
+  await page.getByRole('tab', { name: /Mis PDF/ }).click();
+  await page
+    .getByLabel('Agregar un PDF')
+    .setInputFiles(join(import.meta.dirname, '..', 'fixtures', 'apuntes-costos.pdf'));
+  await expect(page.getByRole('list', { name: 'PDF guardados' }).getByText('apuntes-costos.pdf')).toBeVisible(
+    { timeout: 20_000 },
+  );
+
   await open(page, '/buscar');
   await page.getByLabel('Tema a buscar').fill('control interno');
   await page.getByRole('button', { name: 'Buscar', exact: true }).click();
@@ -89,7 +99,14 @@ test('T-04: nada personal sale del dispositivo', async ({ page }) => {
       url.protocol === 'data:' ||
       url.protocol === 'blob:';
     if (!allowed) offenders.push(`origen no permitido: ${url.origin}`);
-    for (const secret of [NOTE_TEXT, 'Apunte secreto', COLLECTION_NAME, deviceId, deviceId.slice(0, 8)]) {
+    for (const secret of [
+      NOTE_TEXT,
+      'Apunte secreto',
+      COLLECTION_NAME,
+      deviceId,
+      deviceId.slice(0, 8),
+      'margen de contribución es la diferencia',
+    ]) {
       if (payload.includes(secret) || payload.includes(encodeURIComponent(secret)))
         offenders.push(`${secret} en ${url.host}`);
     }

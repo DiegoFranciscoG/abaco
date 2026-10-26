@@ -118,14 +118,24 @@ export default defineConfig(({ mode }) => {
           // App shell, content chunks, fonts and the 3D chunk are precached: after the first visit
           // the whole app (subjects, notes, lab, tools) works offline.
           globPatterns: ['**/*.{js,css,html,woff2,svg,png,webmanifest,json}'],
+          // pdf.js (about 1.7 MB) is only needed by students who load a PDF: it is cached the first time it is used.
+          globIgnores: ['**/pdf-*.js', '**/pdf.worker*'],
           maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
           navigateFallback: 'index.html',
           cleanupOutdatedCaches: true,
           // API answers are cached by the app in IndexedDB (with expiry), never by the service worker.
-          runtimeCaching: EXTERNAL_API_ORIGINS.map((origin) => ({
-            urlPattern: ({ url }: { url: URL }) => url.origin === origin,
-            handler: 'NetworkOnly' as const,
-          })),
+          runtimeCaching: [
+            ...EXTERNAL_API_ORIGINS.map((origin) => ({
+              urlPattern: ({ url }: { url: URL }) => url.origin === origin,
+              handler: 'NetworkOnly' as const,
+            })),
+            {
+              urlPattern: ({ url }: { url: URL }) =>
+                /\/assets\/pdf(\.worker)?[.-][^/]*\.m?js$/.test(url.pathname),
+              handler: 'CacheFirst' as const,
+              options: { cacheName: 'abaco-pdfjs', expiration: { maxEntries: 6 } },
+            },
+          ],
         },
       }),
     ],

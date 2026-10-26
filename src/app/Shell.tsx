@@ -15,10 +15,12 @@ const loadMotionFeatures = () => import('./motion-features').then((module) => mo
 // IndexedDB (Dexie) stays out of the first download: onboarding and profile sync arrive right after.
 const DeviceLayer = lazy(() => import('./DeviceLayer'));
 
-const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
+/** Main navigation. The bottom bar on phones has room for five items; formulas stay one tap away from home. */
+const NAV: { to: string; label: string; icon: IconName; end?: boolean; mobile?: false }[] = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
   { to: '/materias', label: 'Materias', icon: 'materias' },
-  { to: '/formulas', label: 'Fórmulas', icon: 'formula' },
+  { to: '/estudiar', label: 'Estudiar', icon: 'book' },
+  { to: '/formulas', label: 'Fórmulas', icon: 'formula', mobile: false },
   { to: '/herramientas', label: 'Herramientas', icon: 'tools' },
   { to: '/mi-espacio', label: 'Mi espacio', icon: 'me' },
 ];
@@ -236,7 +238,7 @@ export function Shell() {
             className="fixed inset-x-3 bottom-3 z-40 grid grid-cols-5 rounded-2xl border border-line bg-surface/90 p-1 shadow-[0_18px_40px_-18px_rgb(0_0_0/0.35)] backdrop-blur-xl md:hidden"
             style={{ paddingBottom: 'max(0.25rem, env(safe-area-inset-bottom))' }}
           >
-            {NAV.map((item) => (
+            {NAV.filter((item) => item.mobile !== false).map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}

@@ -27,6 +27,7 @@ const VIEWS = [
   '/ajustes',
   '/acerca',
   '/sugerencias',
+  '/estudiar?materia=contabilidad-costos',
   '/legal/privacidad',
   '/legal/licencias',
 ];
