@@ -26,6 +26,7 @@ const QUICK: { label: string; to: string; icon: IconName }[] = [
   { label: 'Buscador académico (artículos y tesis)', to: '/buscar', icon: 'book' },
   { label: 'Herramientas de estudio', to: '/herramientas', icon: 'tools' },
   { label: 'Practicar ejercicios', to: '/practica', icon: 'target' },
+  { label: 'Modo profesor: armar un taller', to: '/profesor', icon: 'book' },
   { label: 'Glosario', to: '/glosario', icon: 'note' },
   { label: 'Buzón de sugerencias', to: '/sugerencias', icon: 'sparkle' },
 ];

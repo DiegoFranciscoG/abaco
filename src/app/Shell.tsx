@@ -187,6 +187,11 @@ export function Shell() {
                     </AppLink>
                   </li>
                   <li>
+                    <AppLink to="/profesor" className="link-red inline-flex min-h-6 items-center">
+                      Modo profesor
+                    </AppLink>
+                  </li>
+                  <li>
                     <AppLink to="/legal/privacidad" className="link-red inline-flex min-h-6 items-center">
                       Privacidad
                     </AppLink>

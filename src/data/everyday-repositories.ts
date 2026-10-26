@@ -230,6 +230,7 @@ export const USAGE_EVENTS = [
   'calculo-notas',
   'enunciado',
   'coleccion-compartida',
+  'taller',
 ] as const;
 export type UsageEvent = (typeof USAGE_EVENTS)[number];
 

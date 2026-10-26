@@ -58,6 +58,15 @@ content.herramientas = [
     ruta: '/cifras',
     area: 'tributario',
   },
+  {
+    id: 'pagina-profesor',
+    nombre: 'Modo profesor',
+    descripcion:
+      'El docente elige ejercicios verificados, imprime la hoja y el solucionario por separado y comparte un enlace del taller.',
+    claves: 'profesor docente taller deber hoja de ejercicios solucionario examen imprimir',
+    ruta: '/profesor',
+    area: 'formacion',
+  },
 ];
 
 const docs = buildSearchDocuments(content);

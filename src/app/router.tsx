@@ -31,6 +31,7 @@ export const routes: RouteObject[] = [
       { path: 'buscar', ...page(() => import('../features/search/AcademicSearchPage')) },
       { path: 'practica', ...page(() => import('../features/practice/PracticePage')) },
       { path: 'practica/:ejercicioId', ...page(() => import('../features/practice/ExercisePage')) },
+      { path: 'profesor', ...page(() => import('../features/teacher/TeacherPage')) },
       { path: 'mi-espacio', ...page(() => import('../features/me/MyPage')) },
       { path: 'coleccion/:coleccionId', ...page(() => import('../features/me/CollectionPage')) },
       { path: 'coleccion-compartida', ...page(() => import('../features/me/SharedCollectionPage')) },
