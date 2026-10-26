@@ -1,5 +1,5 @@
 {
-  "asignatura": "ucuenca-contabilidad-auditoria--c1-etica-del-ifac",
+  "materia": "etica-profesional",
   "actualizado_en": "2026-10-15",
   "temas": [
     {
@@ -22,7 +22,10 @@
             "Pensar que si una situación no está prohibida de forma expresa, está permitida: el Código pide aplicar los principios."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Presentación del Código" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Presentación del Código"
+          }
         },
         {
           "id": "et-codigo-estructura",
@@ -36,7 +39,10 @@
             "Aplicar a un contador que trabaja en una empresa las reglas pensadas para el auditor externo."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Overview of the 2025 IESBA Code" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Overview of the 2025 IESBA Code"
+          }
         },
         {
           "id": "et-codigo-interes-publico",
@@ -50,7 +56,10 @@
             "Creer que la ética del contador solo importa frente al empleador o al cliente."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Role and mindset; professional skepticism" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Role and mindset; professional skepticism"
+          }
         }
       ]
     },
@@ -73,7 +82,10 @@
             "Firmar un informe con cifras dudosas porque «otro lo preparó»."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Five fundamental principles"
+          }
         },
         {
           "id": "et-principios-competencia",
@@ -87,7 +99,10 @@
             "Asumir que el título universitario basta para siempre."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Five fundamental principles"
+          }
         },
         {
           "id": "et-principios-confidencialidad",
@@ -101,7 +116,10 @@
             "Comentar en redes sociales datos de clientes «sin dar nombres» que permiten identificarlos."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Five fundamental principles"
+          }
         },
         {
           "id": "et-principios-comportamiento",
@@ -115,7 +133,10 @@
             "Publicitar resultados garantizados, como «te aseguro que no pagas impuestos»."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Five fundamental principles" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Five fundamental principles"
+          }
         }
       ]
     },
@@ -138,7 +159,10 @@
             "Confundir la amenaza de familiaridad con la de interés propio: la primera nace de la relación, la segunda de un beneficio."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Conceptual framework — Step 1" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Conceptual framework — Step 1"
+          }
         },
         {
           "id": "et-marco-evaluar",
@@ -152,7 +176,10 @@
             "Decidir que no hay problema porque «yo sé que soy objetivo»."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Conceptual framework — Step 2" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Conceptual framework — Step 2"
+          }
         },
         {
           "id": "et-marco-responder",
@@ -166,7 +193,10 @@
             "Aceptar el encargo y «tenerlo en cuenta» como si eso fuera una salvaguarda."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Conceptual framework — Step 3" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Conceptual framework — Step 3"
+          }
         }
       ]
     },
@@ -189,7 +219,10 @@
             "Aceptar un regalo de un proveedor justo antes de aprobar sus facturas."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Inducements (secciones 250 y 340)" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Inducements (secciones 250 y 340)"
+          }
         },
         {
           "id": "et-situaciones-presion",
@@ -203,7 +236,10 @@
             "Justificar un registro indebido con «me lo pidió el gerente»."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Pressure to breach the fundamental principles" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Pressure to breach the fundamental principles"
+          }
         },
         {
           "id": "et-situaciones-noclar",
@@ -217,7 +253,10 @@
             "Ignorar indicios de evasión porque «no es mi área»."
           ],
           "formulas": [],
-          "fuente": { "ref": "iesba-code", "seccion": "Responding to non-compliance with laws and regulations (NOCLAR)" }
+          "fuente": {
+            "ref": "iesba-code",
+            "seccion": "Responding to non-compliance with laws and regulations (NOCLAR)"
+          }
         }
       ]
     }

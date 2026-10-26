@@ -1,5 +1,5 @@
 import { useParams, useSearchParams } from 'react-router';
-import { findAsignatura, loadFormulas, loadTemario } from '../../data/content';
+import { getMateria, loadFormulas, loadTemario } from '../../data/content';
 import { NotFoundPage } from '../../app/Fallbacks';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
@@ -9,33 +9,34 @@ import { AddToCollectionButton } from '../me/AddToCollection';
 import { NotesPanel } from '../me/NotesPanel';
 
 export default function TopicPage() {
-  const { asignaturaId = '', temaId = '' } = useParams();
+  const { materiaId = '', temaId = '' } = useParams();
+  const materia = getMateria(materiaId);
   const [params] = useSearchParams();
   const openSubtopic = params.get('s');
   const state = useAsync(async () => {
-    const [found, temario, formulas] = await Promise.all([findAsignatura(asignaturaId), loadTemario(asignaturaId), loadFormulas()]);
-    return { found, temario, formulas };
-  }, [asignaturaId]);
+    const [temario, formulas] = await Promise.all([loadTemario(materiaId), loadFormulas()]);
+    return { temario, formulas };
+  }, [materiaId]);
 
   const temaName =
     state.status === 'ready' ? state.data.temario?.temas.find((t) => t.id === temaId)?.nombre : undefined;
   useDocumentTitle(temaName ?? 'Tema');
 
   if (state.status === 'loading') return <Skeleton lines={5} />;
-  if (state.status === 'error' || !state.data.found || !state.data.temario) return <NotFoundPage />;
-  const { found, temario, formulas } = state.data;
+  if (state.status === 'error' || !materia || !state.data.temario) return <NotFoundPage />;
+  const { temario, formulas } = state.data;
   const index = temario.temas.findIndex((t) => t.id === temaId);
   const tema = temario.temas[index];
   if (!tema) return <NotFoundPage />;
   const prev = temario.temas[index - 1];
   const next = temario.temas[index + 1];
   const formulaName = new Map(formulas.map((f) => [f.id, f.nombre]));
-  const base = `/asignatura/${found.asignatura.id}`;
+  const base = `/materia/${materia.id}`;
 
   return (
     <div className="space-y-10">
       <PageHeader
-        back={{ to: base, label: found.asignatura.nombre }}
+        back={{ to: base, label: materia.nombre }}
         eyebrow={`Tema ${tema.orden} de ${temario.temas.length}`}
         title={tema.nombre}
         subtitle={tema.descripcion}

@@ -18,7 +18,7 @@ export function NotFoundPage() {
   return (
     <div className="mx-auto max-w-lg py-16 text-center">
       <p className="eyebrow mb-3">Error 404</p>
-      <h1 className="font-display text-4xl font-semibold">Esta página no está en la malla</h1>
+      <h1 className="font-display text-4xl font-semibold">Esta página no existe</h1>
       <p className="mt-3 text-muted">Revisa el enlace o vuelve al inicio.</p>
       <AppLink to="/" className="btn btn-primary mt-6">
         <Icon name="home" size={18} /> Ir al inicio

@@ -1,12 +1,14 @@
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { matchesSubject } from '../../src/domain/text/normalize';
-import { loadAllContent } from './load-content';
+import { TOOLS } from '../../src/domain/tools/catalog';
+import { allContentText, CONTENT_ROOT, loadAllContent } from './load-content';
 
 const content = loadAllContent();
-const allSubjects = content.mallas.flatMap((m) => m.data.asignaturas.map((a) => ({ ...a, carrera: m.data.carrera })));
-const subjectIds = new Set(allSubjects.map((a) => a.id));
+const materiaIds = new Set(content.materias.map((m) => m.id));
 const formulaIds = new Set(content.formulas.map((f) => f.id));
 const subtemaIds = new Set(content.temarios.flatMap((t) => t.data.temas.flatMap((tema) => tema.subtemas.map((s) => s.id))));
+const toolIds = new Set(TOOLS.map((t) => t.id));
 
 function duplicates(ids: string[]): string[] {
   const seen = new Set<string>();
@@ -16,39 +18,35 @@ function duplicates(ids: string[]): string[] {
 describe('integridad del contenido', () => {
   it('identifiers are unique in every collection', () => {
     expect(duplicates(content.fuentes.map((f) => f.id))).toEqual([]);
-    expect(duplicates(content.carreras.map((c) => c.id))).toEqual([]);
-    expect(duplicates(allSubjects.map((a) => a.id))).toEqual([]);
+    expect(duplicates(content.materias.map((m) => m.id))).toEqual([]);
     expect(duplicates(content.formulas.map((f) => f.id))).toEqual([]);
     expect(duplicates(content.ejercicios.map((e) => e.id))).toEqual([]);
     expect(duplicates(content.apps.map((a) => a.id))).toEqual([]);
     expect(duplicates(content.glosario.map((t) => t.id))).toEqual([]);
     expect(duplicates(content.plantillas.map((p) => p.id))).toEqual([]);
-    const temaIds = content.temarios.flatMap((t) => t.data.temas.map((tema) => tema.id));
-    expect(duplicates(temaIds)).toEqual([]);
+    expect(duplicates(content.temarios.flatMap((t) => t.data.temas.map((tema) => tema.id)))).toEqual([]);
     expect(duplicates(content.temarios.flatMap((t) => t.data.temas.flatMap((tema) => tema.subtemas.map((s) => s.id))))).toEqual([]);
   });
 
-  it('13 careers, each with its curriculum file and the official subject count', () => {
-    expect(content.carreras).toHaveLength(13);
-    for (const carrera of content.carreras) {
-      const malla = content.mallas.find((m) => m.data.carrera === carrera.id);
-      expect(malla, carrera.id).toBeDefined();
-      expect(malla?.file).toBe(`${carrera.id}.json`);
-      expect(malla?.data.asignaturas.length, carrera.id).toBe(carrera.asignaturas_listadas);
-      expect(content.universidades.some((u) => u.id === carrera.universidad), carrera.id).toBe(true);
-      const cycles = new Set(malla?.data.asignaturas.map((a) => a.ciclo));
-      expect(cycles.size, carrera.id).toBe(carrera.num_ciclos);
-      for (const a of malla?.data.asignaturas ?? []) {
-        expect(a.id.startsWith(`${carrera.id}--c${a.ciclo}-`), a.id).toBe(true);
-      }
+  it('every subject of the catalog has exactly one syllabus and every syllabus belongs to a subject', () => {
+    expect(content.materias.length).toBe(26);
+    expect(content.temarios.length).toBe(content.materias.length);
+    for (const { file, data } of content.temarios) {
+      expect(file).toBe(`${data.materia}.json`);
+      expect(materiaIds.has(data.materia), data.materia).toBe(true);
     }
+    for (const m of content.materias) expect(existsSync(join(CONTENT_ROOT, 'temarios', `${m.id}.json`)), m.id).toBe(true);
   });
 
-  it('deep content belongs to real subjects', () => {
-    expect(content.temarios.length).toBeGreaterThanOrEqual(5);
-    for (const { file, data } of content.temarios) {
-      expect(file).toBe(`${data.asignatura}.json`);
-      expect(subjectIds.has(data.asignatura), data.asignatura).toBe(true);
+  it('subjects link only to existing tools and keep a unique order', () => {
+    for (const m of content.materias) {
+      for (const tool of m.herramientas) expect(toolIds.has(tool), `${m.id} → ${tool}`).toBe(true);
+    }
+    expect(duplicates(content.materias.map((m) => String(m.orden)))).toEqual([]);
+  });
+
+  it('subtopics only reference existing formulas', () => {
+    for (const { data } of content.temarios) {
       for (const tema of data.temas) {
         for (const subtema of tema.subtemas) {
           for (const f of subtema.formulas) expect(formulaIds.has(f), `${subtema.id} → ${f}`).toBe(true);
@@ -59,22 +57,21 @@ describe('integridad del contenido', () => {
 
   it('exercises point to existing subjects, subtopics and formulas', () => {
     expect(content.ejercicios.length).toBeGreaterThanOrEqual(20);
-    expect(content.ejercicios.length).toBeLessThanOrEqual(30);
     for (const e of content.ejercicios) {
-      expect(subjectIds.has(e.asignatura), `${e.id} → ${e.asignatura}`).toBe(true);
+      expect(materiaIds.has(e.materia), `${e.id} → ${e.materia}`).toBe(true);
       if (e.subtema) expect(subtemaIds.has(e.subtema), `${e.id} → ${e.subtema}`).toBe(true);
       if (e.formula) expect(formulaIds.has(e.formula), `${e.id} → ${e.formula}`).toBe(true);
     }
   });
 
-  it('every subject key used by formulas, apps and templates matches at least one real subject', () => {
-    const keys = new Set([
-      ...content.formulas.flatMap((f) => f.aparece_en),
-      ...content.apps.flatMap((a) => a.aparece_en),
-      ...content.plantillas.flatMap((p) => p.aparece_en),
-    ]);
-    const unmatched = [...keys].filter((key) => !allSubjects.some((a) => matchesSubject(a.nombre, key)));
-    expect(unmatched).toEqual([]);
+  it('formulas, apps and templates are linked to existing subjects', () => {
+    const links = [
+      ...content.formulas.flatMap((f) => f.materias.map((m) => [f.id, m])),
+      ...content.apps.flatMap((a) => a.materias.map((m) => [a.id, m])),
+      ...content.plantillas.flatMap((p) => p.materias.map((m) => [p.id, m])),
+    ];
+    const broken = links.filter(([, m]) => !materiaIds.has(m as string));
+    expect(broken).toEqual([]);
   });
 
   it('variables used by the examples are declared by the formula', () => {
@@ -91,5 +88,13 @@ describe('integridad del contenido', () => {
       const usedBySubtopic = content.temarios.some((t) => t.data.temas.some((tema) => tema.subtemas.some((s) => s.formulas.includes(f.id))));
       expect(usedBySubtopic, `${f.id} está pendiente pero se usa en un subtema`).toBe(false);
     }
+  });
+
+  it('no university curricula, names or brands are published in the content', () => {
+    const forbidden = /\bmallas?\b|universidad de cuenca|\bucuenca\b|\bucacue\b|cat[oó]lica de cuenca|plan(?:es)? de estudios? de la/i;
+    const hits = allContentText()
+      .map(({ file, text }) => ({ file, match: forbidden.exec(text)?.[0] }))
+      .filter((h) => h.match);
+    expect(hits).toEqual([]);
   });
 });

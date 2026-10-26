@@ -1,0 +1,448 @@
+[
+  {
+    "id": "contabilidad-general",
+    "nombre": "Contabilidad general",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Ecuación contable, partida doble, ciclo contable, estados financieros básicos y mercaderías.",
+    "sinonimos": [
+      "contabilidad básica",
+      "contabilidad comercial"
+    ],
+    "herramientas": [
+      "diario",
+      "laboratorio",
+      "tarjetas"
+    ],
+    "orden": 1
+  },
+  {
+    "id": "contabilidad-financiera",
+    "nombre": "Contabilidad financiera (NIIF)",
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Presentación de estados financieros, inventarios, activos de largo plazo, pasivos, patrimonio y flujo de efectivo.",
+    "sinonimos": [
+      "contabilidad financiera I",
+      "contabilidad intermedia"
+    ],
+    "herramientas": [
+      "diario",
+      "laboratorio"
+    ],
+    "orden": 2
+  },
+  {
+    "id": "contabilidad-costos",
+    "nombre": "Contabilidad de costos",
+    "areas": [
+      "contabilidad",
+      "gestion"
+    ],
+    "descripcion": "Comportamiento de costos, costo–volumen–utilidad, sistemas de costeo y presupuestos.",
+    "sinonimos": [
+      "costos",
+      "contabilidad gerencial",
+      "contabilidad administrativa"
+    ],
+    "herramientas": [
+      "equilibrio",
+      "laboratorio"
+    ],
+    "orden": 3
+  },
+  {
+    "id": "tributacion",
+    "nombre": "Tributación",
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "RUC, regímenes, comprobantes electrónicos, IVA, impuesto a la renta y RIMPE en Ecuador.",
+    "sinonimos": [
+      "legislación tributaria",
+      "planificación tributaria",
+      "práctica tributaria"
+    ],
+    "herramientas": [
+      "impuestos",
+      "tarjetas"
+    ],
+    "orden": 4
+  },
+  {
+    "id": "matematica-financiera",
+    "nombre": "Matemática financiera",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Interés simple y compuesto, valor del dinero en el tiempo, anualidades y amortización.",
+    "sinonimos": [
+      "matemáticas financieras"
+    ],
+    "herramientas": [
+      "proyectos",
+      "laboratorio"
+    ],
+    "orden": 5
+  },
+  {
+    "id": "finanzas-corporativas",
+    "nombre": "Finanzas corporativas",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Análisis de estados financieros, razones, riesgo y rendimiento, costo de capital y valoración.",
+    "sinonimos": [
+      "finanzas empresariales",
+      "administración financiera"
+    ],
+    "herramientas": [
+      "proyectos",
+      "laboratorio"
+    ],
+    "orden": 6
+  },
+  {
+    "id": "evaluacion-proyectos",
+    "nombre": "Formulación y evaluación de proyectos",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Decisiones de inversión, VAN, TIR, período de recuperación y factibilidad.",
+    "sinonimos": [
+      "evaluación de proyectos",
+      "proyectos de inversión"
+    ],
+    "herramientas": [
+      "proyectos",
+      "laboratorio",
+      "equilibrio"
+    ],
+    "orden": 7
+  },
+  {
+    "id": "finanzas-internacionales",
+    "nombre": "Finanzas internacionales",
+    "areas": [
+      "finanzas",
+      "economia"
+    ],
+    "descripcion": "Tipo de cambio, regímenes cambiarios, dolarización, riesgo cambiario y flujos de capital.",
+    "sinonimos": [
+      "finanzas globales"
+    ],
+    "herramientas": [
+      "divisas",
+      "macro"
+    ],
+    "orden": 8
+  },
+  {
+    "id": "matematica-gestion",
+    "nombre": "Matemática para la gestión",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Funciones, modelos lineales, cuadráticos y exponenciales, sistemas de ecuaciones y matrices.",
+    "sinonimos": [
+      "matemáticas",
+      "matemática básica",
+      "matemática aplicada",
+      "matemática empresarial"
+    ],
+    "herramientas": [
+      "graficador"
+    ],
+    "orden": 9
+  },
+  {
+    "id": "calculo-diferencial",
+    "nombre": "Cálculo diferencial",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Funciones, límites, derivadas y sus aplicaciones a costos, ingresos y optimización.",
+    "sinonimos": [
+      "cálculo"
+    ],
+    "herramientas": [
+      "graficador"
+    ],
+    "orden": 10
+  },
+  {
+    "id": "estadistica-descriptiva",
+    "nombre": "Estadística descriptiva",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Datos y muestreo, tablas y gráficos, medidas de centro, dispersión y posición.",
+    "sinonimos": [
+      "estadística",
+      "estadística I"
+    ],
+    "herramientas": [
+      "estadistica",
+      "laboratorio"
+    ],
+    "orden": 11
+  },
+  {
+    "id": "estadistica-inferencial",
+    "nombre": "Estadística inferencial",
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Muestreo, teorema del límite central, intervalos de confianza, pruebas de hipótesis y regresión.",
+    "sinonimos": [
+      "estadística II",
+      "inferencia estadística"
+    ],
+    "herramientas": [
+      "estadistica"
+    ],
+    "orden": 12
+  },
+  {
+    "id": "microeconomia",
+    "nombre": "Microeconomía",
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Escasez, oferta y demanda, elasticidad, consumidor, costos y estructuras de mercado.",
+    "sinonimos": [
+      "introducción a la microeconomía",
+      "microeconomía aplicada"
+    ],
+    "herramientas": [
+      "mercado",
+      "graficador"
+    ],
+    "orden": 13
+  },
+  {
+    "id": "macroeconomia",
+    "nombre": "Macroeconomía",
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "PIB, crecimiento, desempleo, inflación, demanda y oferta agregadas, dinero y política fiscal.",
+    "sinonimos": [
+      "macroeconomía I",
+      "macroeconomía II"
+    ],
+    "herramientas": [
+      "macro"
+    ],
+    "orden": 14
+  },
+  {
+    "id": "economia-internacional",
+    "nombre": "Economía internacional y comercio exterior",
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Ventaja comparativa, proteccionismo, balanza comercial y entrada a mercados globales.",
+    "sinonimos": [
+      "comercio exterior",
+      "negocios internacionales"
+    ],
+    "herramientas": [
+      "macro",
+      "divisas"
+    ],
+    "orden": 15
+  },
+  {
+    "id": "fundamentos-administracion",
+    "nombre": "Fundamentos de administración",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Funciones directivas, escuelas de la administración, planeación, estrategia y control.",
+    "sinonimos": [
+      "administración",
+      "teoría administrativa"
+    ],
+    "herramientas": [
+      "foda",
+      "tarjetas"
+    ],
+    "orden": 16
+  },
+  {
+    "id": "comportamiento-organizacional",
+    "nombre": "Comportamiento organizacional",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Percepción, motivación, grupos, comunicación, liderazgo, conflicto y cambio.",
+    "sinonimos": [
+      "diseño y comportamiento organizacional"
+    ],
+    "herramientas": [
+      "tarjetas",
+      "foda"
+    ],
+    "orden": 17
+  },
+  {
+    "id": "talento-humano",
+    "nombre": "Gestión del talento humano",
+    "areas": [
+      "gestion",
+      "derecho"
+    ],
+    "descripcion": "Reclutamiento, selección, desarrollo, compensación y relaciones laborales.",
+    "sinonimos": [
+      "recursos humanos",
+      "administración de personal"
+    ],
+    "herramientas": [
+      "rol-pagos",
+      "tarjetas"
+    ],
+    "orden": 18
+  },
+  {
+    "id": "marketing",
+    "nombre": "Marketing",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Mezcla de marketing, consumidor, segmentación, posicionamiento, precio, distribución y comunicación.",
+    "sinonimos": [
+      "marketing estratégico",
+      "fundamentos de marketing",
+      "mercadotecnia"
+    ],
+    "herramientas": [
+      "foda",
+      "estadistica"
+    ],
+    "orden": 19
+  },
+  {
+    "id": "investigacion-mercados",
+    "nombre": "Investigación de mercados",
+    "areas": [
+      "gestion",
+      "cuantitativo"
+    ],
+    "descripcion": "Proceso de investigación, muestreo, comportamiento del consumidor y análisis de datos.",
+    "sinonimos": [
+      "comportamiento del consumidor",
+      "investigación comercial"
+    ],
+    "herramientas": [
+      "estadistica",
+      "buscador"
+    ],
+    "orden": 20
+  },
+  {
+    "id": "emprendimiento",
+    "nombre": "Emprendimiento",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Mentalidad emprendedora, oportunidades, modelo y plan de negocios, finanzas y forma legal.",
+    "sinonimos": [
+      "emprendimiento e innovación"
+    ],
+    "herramientas": [
+      "foda",
+      "proyectos",
+      "equilibrio"
+    ],
+    "orden": 21
+  },
+  {
+    "id": "derecho-empresarial",
+    "nombre": "Derecho empresarial y societario",
+    "areas": [
+      "derecho"
+    ],
+    "descripcion": "Comerciantes y actos de comercio, especies de compañías, constitución, administración y control.",
+    "sinonimos": [
+      "legislación mercantil y societaria",
+      "derecho mercantil"
+    ],
+    "herramientas": [
+      "tarjetas"
+    ],
+    "orden": 22
+  },
+  {
+    "id": "legislacion-laboral",
+    "nombre": "Legislación laboral",
+    "areas": [
+      "derecho"
+    ],
+    "descripcion": "Contrato de trabajo, jornada, beneficios de ley, seguridad social y terminación de la relación laboral.",
+    "sinonimos": [
+      "derecho laboral",
+      "legislación laboral y seguridad social"
+    ],
+    "herramientas": [
+      "rol-pagos",
+      "tarjetas"
+    ],
+    "orden": 23
+  },
+  {
+    "id": "etica-profesional",
+    "nombre": "Ética profesional",
+    "areas": [
+      "formacion"
+    ],
+    "descripcion": "Código de ética del IESBA: principios fundamentales, amenazas, salvaguardas e independencia.",
+    "sinonimos": [
+      "ética del IFAC",
+      "ética y responsabilidad social"
+    ],
+    "herramientas": [
+      "tarjetas"
+    ],
+    "orden": 24
+  },
+  {
+    "id": "informatica-gestion",
+    "nombre": "Informática para la gestión",
+    "areas": [
+      "tecnologia"
+    ],
+    "descripcion": "Hoja de cálculo: fórmulas, referencias, funciones, tablas dinámicas, validación y gráficos.",
+    "sinonimos": [
+      "informática intermedia",
+      "herramientas informáticas",
+      "informática aplicada"
+    ],
+    "herramientas": [
+      "laboratorio",
+      "editor"
+    ],
+    "orden": 25
+  },
+  {
+    "id": "metodologia-investigacion",
+    "nombre": "Metodología de la investigación",
+    "areas": [
+      "formacion"
+    ],
+    "descripcion": "Búsqueda y registro de fuentes, ética, citas y referencias APA y diseño de la investigación.",
+    "sinonimos": [
+      "metodología de la investigación científica",
+      "escritura académica"
+    ],
+    "herramientas": [
+      "editor",
+      "citas",
+      "buscador"
+    ],
+    "orden": 26
+  }
+]

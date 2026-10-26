@@ -1,0 +1,270 @@
+{
+  "materia": "matematica-gestion",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "mg-funciones",
+      "nombre": "Funciones",
+      "orden": 1,
+      "descripcion": "El lenguaje con el que se describen costos, ingresos y demanda.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mg-funcion-notacion",
+          "nombre": "Funciones y notación",
+          "explicacion": "Una función asigna a cada entrada un único resultado. En gestión se escribe, por ejemplo, C(q) para el costo de producir q unidades; evaluar C(100) es reemplazar q por 100.",
+          "puntos_clave": [
+            "Una tabla, una gráfica o una fórmula pueden representar la misma función.",
+            "Prueba de la recta vertical: cada x tiene un solo y."
+          ],
+          "errores_frecuentes": [
+            "Leer f(x) como \"f por x\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/1-1-funciones-y-notacion-de-funciones",
+            "seccion": "1.1 Funciones y notación de funciones"
+          }
+        },
+        {
+          "id": "mg-dominio",
+          "nombre": "Dominio y rango",
+          "explicacion": "El dominio son los valores de entrada que tienen sentido; el rango, los resultados posibles. En un problema de producción el dominio suele ser las cantidades no negativas y, a veces, solo enteros.",
+          "puntos_clave": [
+            "No se divide para cero ni se saca raíz par de un negativo.",
+            "El contexto restringe el dominio matemático."
+          ],
+          "errores_frecuentes": [
+            "Aceptar cantidades negativas de producción porque la fórmula las permite."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/1-2-dominio-y-rango",
+            "seccion": "1.2 Dominio y rango"
+          }
+        },
+        {
+          "id": "mg-tasa-variacion",
+          "nombre": "Tasa de variación promedio",
+          "explicacion": "La tasa de variación promedio entre dos puntos es el cambio de la salida dividido para el cambio de la entrada. Responde preguntas como \"¿cuánto aumentó el costo, en promedio, por cada unidad adicional?\".",
+          "puntos_clave": [
+            "Tasa promedio = [f(b) − f(a)] ÷ (b − a).",
+            "Es la pendiente de la recta que une los dos puntos."
+          ],
+          "errores_frecuentes": [
+            "Invertir el orden en el numerador y en el denominador por separado."
+          ],
+          "formulas": [
+            "tasa-cambio-promedio"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/1-3-tasas-de-variacion-y-comportamiento-de-los-graficos",
+            "seccion": "1.3 Tasas de variación y comportamiento de los gráficos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mg-lineales",
+      "nombre": "Funciones lineales",
+      "orden": 2,
+      "descripcion": "Modelos de costo, ingreso y utilidad.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mg-pendiente",
+          "nombre": "Pendiente e intersección",
+          "explicacion": "Una función lineal f(x) = mx + b tiene una tasa de cambio constante m (la pendiente) y un valor inicial b (la intersección con el eje y). En un modelo de costos, b es el costo fijo y m el costo variable por unidad.",
+          "puntos_clave": [
+            "Pendiente positiva: la función crece.",
+            "La intersección es el valor cuando x = 0."
+          ],
+          "errores_frecuentes": [
+            "Confundir la pendiente con la intersección al interpretar el modelo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/2-1-funciones-lineales",
+            "seccion": "2.1 Funciones lineales"
+          }
+        },
+        {
+          "id": "mg-modelado",
+          "nombre": "Modelado con funciones lineales",
+          "explicacion": "Con un costo fijo, un costo variable unitario y un precio se arman tres funciones: costo C(q) = CF + cv·q, ingreso I(q) = p·q y utilidad U(q) = I(q) − C(q). Igualar ingreso y costo da el punto de equilibrio.",
+          "puntos_clave": [
+            "Las unidades de cada término deben coincidir.",
+            "El modelo vale dentro del rango en que los supuestos se cumplen."
+          ],
+          "errores_frecuentes": [
+            "Extender el modelo a volúmenes donde el costo variable ya no es constante."
+          ],
+          "formulas": [
+            "punto-equilibrio-unidades"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/2-3-modelado-con-funciones-lineales",
+            "seccion": "2.3 Modelado con funciones lineales"
+          }
+        },
+        {
+          "id": "mg-ajuste",
+          "nombre": "Ajustar una recta a datos",
+          "explicacion": "Cuando los datos reales forman aproximadamente una línea, se puede ajustar una recta (regresión lineal) y usarla para estimar valores. El coeficiente de correlación indica qué tan bien se ajusta.",
+          "puntos_clave": [
+            "Un buen ajuste no prueba causalidad.",
+            "Interpolar es más confiable que extrapolar."
+          ],
+          "errores_frecuentes": [
+            "Usar la recta para predecir muy lejos del rango de los datos."
+          ],
+          "formulas": [
+            "correlacion-pearson"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/2-4-ajuste-de-modelos-lineales-a-los-datos",
+            "seccion": "2.4 Ajuste de modelos lineales a los datos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mg-no-lineales",
+      "nombre": "Funciones cuadráticas, exponenciales y logarítmicas",
+      "orden": 3,
+      "descripcion": "Máximos, crecimiento compuesto y tiempos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mg-cuadraticas",
+          "nombre": "Funciones cuadráticas",
+          "explicacion": "Una función cuadrática f(x) = ax² + bx + c dibuja una parábola. Si a es negativo, tiene un máximo en el vértice, x = −b ÷ (2a); por eso sirve para hallar el precio o la cantidad que maximiza un ingreso.",
+          "puntos_clave": [
+            "El vértice es el punto máximo o mínimo.",
+            "Un ingreso I(q) = q·(a − bq) es cuadrático."
+          ],
+          "errores_frecuentes": [
+            "Olvidar el signo negativo en −b ÷ (2a)."
+          ],
+          "formulas": [
+            "maximo-ingreso"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/3-2-funciones-cuadraticas",
+            "seccion": "3.2 Funciones cuadráticas"
+          }
+        },
+        {
+          "id": "mg-exponenciales",
+          "nombre": "Funciones exponenciales",
+          "explicacion": "En una función exponencial la variable está en el exponente: crece (o decrece) en un porcentaje constante por período. Es el modelo del interés compuesto, del crecimiento de ventas a tasa fija y de la depreciación porcentual.",
+          "puntos_clave": [
+            "A(t) = P·(1 + r)^t.",
+            "Tasa negativa: decrecimiento."
+          ],
+          "errores_frecuentes": [
+            "Modelar con una línea algo que crece en porcentaje constante."
+          ],
+          "formulas": [
+            "monto-compuesto"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/4-1-funciones-exponenciales",
+            "seccion": "4.1 Funciones exponenciales"
+          }
+        },
+        {
+          "id": "mg-logaritmos",
+          "nombre": "Ecuaciones exponenciales y logaritmos",
+          "explicacion": "Para despejar el tiempo en una ecuación exponencial se aplican logaritmos a ambos lados. Así se responde cuánto tarda un capital en duplicarse o en alcanzar una meta.",
+          "puntos_clave": [
+            "t = ln(A/P) ÷ ln(1 + r).",
+            "ln y log en base 10 dan el mismo t si se usa la misma base en ambos lados."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el logaritmo solo a uno de los términos de una suma."
+          ],
+          "formulas": [
+            "numero-periodos"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/4-6-ecuaciones-exponenciales-y-logaritmicas",
+            "seccion": "4.6 Ecuaciones exponenciales y logarítmicas"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mg-sistemas",
+      "nombre": "Sistemas de ecuaciones y matrices",
+      "orden": 4,
+      "descripcion": "Equilibrios y problemas con varias incógnitas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mg-sistemas-2",
+          "nombre": "Sistemas de dos ecuaciones",
+          "explicacion": "Un sistema de dos ecuaciones lineales se resuelve por sustitución, eliminación o gráficamente; la solución es el punto donde se cruzan las rectas. Así se encuentra el precio y la cantidad de equilibrio entre oferta y demanda.",
+          "puntos_clave": [
+            "Rectas paralelas: sin solución.",
+            "Rectas iguales: infinitas soluciones."
+          ],
+          "errores_frecuentes": [
+            "Sustituir el valor encontrado en una ecuación distinta sin verificar en ambas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-1-sistemas-de-ecuaciones-lineales-dos-variables",
+            "seccion": "9.1 Sistemas de ecuaciones lineales: dos variables"
+          }
+        },
+        {
+          "id": "mg-matrices",
+          "nombre": "Matrices y operaciones",
+          "explicacion": "Una matriz organiza datos en filas y columnas, como las cantidades vendidas por producto y por mes. Se suman elemento a elemento y se multiplican fila por columna, lo que permite calcular, por ejemplo, ingresos totales con una sola operación.",
+          "puntos_clave": [
+            "Para multiplicar A·B, las columnas de A deben igualar las filas de B.",
+            "El producto de matrices no es conmutativo."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar matrices elemento a elemento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-5-matrices-y-operaciones-con-matrices",
+            "seccion": "9.5 Matrices y operaciones con matrices"
+          }
+        },
+        {
+          "id": "mg-gauss",
+          "nombre": "Eliminación de Gauss-Jordan",
+          "explicacion": "El método de Gauss-Jordan transforma la matriz aumentada de un sistema con operaciones de fila hasta obtener la solución. Sirve para sistemas de tres o más ecuaciones, como mezclas de producción o asignación de recursos.",
+          "puntos_clave": [
+            "Operaciones válidas: intercambiar filas, multiplicar una fila por un número distinto de cero y sumar múltiplos de filas.",
+            "Una fila 0 = c (con c ≠ 0) indica que no hay solución."
+          ],
+          "errores_frecuentes": [
+            "Operar solo sobre los coeficientes y olvidar la columna de resultados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-6-resolver-sistemas-con-eliminacion-de-gauss-jordan",
+            "seccion": "9.6 Resolver sistemas con eliminación de Gauss-Jordan"
+          }
+        }
+      ]
+    }
+  ]
+}

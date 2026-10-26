@@ -1,0 +1,258 @@
+{
+  "materia": "metodologia-investigacion",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "mi-busqueda",
+      "nombre": "Buscar y generar información",
+      "orden": 1,
+      "descripcion": "Fuentes existentes y fuentes propias.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mt-fuentes-existentes",
+          "nombre": "Dónde buscar fuentes",
+          "explicacion": "Una investigación empieza revisando lo que ya se sabe: libros, artículos académicos, bases de datos y documentos oficiales. Los buscadores académicos y los repositorios de universidades permiten encontrar trabajos revisados por pares.",
+          "puntos_clave": [
+            "Preferir fuentes con autor, fecha y método identificables.",
+            "Las fuentes oficiales son las más confiables para datos de un país."
+          ],
+          "errores_frecuentes": [
+            "Citar una página sin autor ni fecha como si fuera evidencia académica."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/13-1-the-research-process-where-to-look-for-existing-sources",
+            "seccion": "13.1 The Research Process: Where to Look for Existing Sources"
+          }
+        },
+        {
+          "id": "mt-fuentes-propias",
+          "nombre": "Crear fuentes: encuestas, entrevistas y observación",
+          "explicacion": "Cuando no existe información suficiente, el investigador produce datos propios con encuestas, entrevistas u observación. El instrumento se diseña a partir de las preguntas de investigación y se prueba antes de aplicarlo.",
+          "puntos_clave": [
+            "Probar el cuestionario con pocas personas.",
+            "Pedir consentimiento a los participantes."
+          ],
+          "errores_frecuentes": [
+            "Hacer preguntas que inducen la respuesta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/13-2-the-research-process-how-to-create-sources",
+            "seccion": "13.2 The Research Process: How to Create Sources"
+          }
+        },
+        {
+          "id": "mt-evidencia",
+          "nombre": "La investigación como evidencia",
+          "explicacion": "En un trabajo académico, cada afirmación importante debe apoyarse en evidencia: datos, estudios o testimonios verificables. La evidencia se presenta, se explica y se relaciona con el argumento propio.",
+          "puntos_clave": [
+            "Evidencia + explicación + conexión con el argumento.",
+            "Varias fuentes concordantes dan más solidez."
+          ],
+          "errores_frecuentes": [
+            "Llenar el texto de citas sin explicar qué aportan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/12-1-introducing-research-and-research-evidence",
+            "seccion": "12.1 Introducing Research and Research Evidence"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mt-registro",
+      "nombre": "Registrar, sintetizar y actuar con ética",
+      "orden": 2,
+      "descripcion": "Notas, bitácora, bibliografía anotada y ética.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mt-notas",
+          "nombre": "Notas, síntesis y bitácora",
+          "explicacion": "Tomar notas ordenadas (qué dice la fuente, dónde lo dice y qué opinas) y llevar una bitácora de búsqueda evita perder referencias y facilita la síntesis, que consiste en relacionar varias fuentes en lugar de resumirlas una por una.",
+          "puntos_clave": [
+            "Anotar la referencia completa en el momento.",
+            "Sintetizar es comparar y conectar fuentes."
+          ],
+          "errores_frecuentes": [
+            "Copiar fragmentos sin anotar de dónde salieron."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/13-5-research-process-making-notes-synthesizing-information-and-keeping-a-research-log",
+            "seccion": "13.5 Research Process: Making Notes, Synthesizing Information, and Keeping a Research Log"
+          }
+        },
+        {
+          "id": "mt-bibliografia-anotada",
+          "nombre": "Bibliografía anotada",
+          "explicacion": "Una bibliografía anotada lista las fuentes con su referencia y un breve comentario sobre su contenido, su calidad y su utilidad para el trabajo. Ayuda a decidir qué fuentes usar y cómo.",
+          "puntos_clave": [
+            "Cada entrada: referencia + resumen + evaluación.",
+            "Sigue el estilo de citación pedido."
+          ],
+          "errores_frecuentes": [
+            "Escribir solo el resumen sin evaluar la fuente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/14-1-compiling-sources-for-an-annotated-bibliography",
+            "seccion": "14.1 Compiling Sources for an Annotated Bibliography"
+          }
+        },
+        {
+          "id": "mt-etica",
+          "nombre": "Ética de la investigación",
+          "explicacion": "Investigar con ética implica citar siempre las ideas ajenas, no inventar ni alterar datos, proteger a los participantes y declarar las limitaciones del estudio. El plagio es usar ideas o textos ajenos como propios.",
+          "puntos_clave": [
+            "Citar también lo que se parafrasea.",
+            "Los datos personales de participantes se protegen."
+          ],
+          "errores_frecuentes": [
+            "Pensar que parafrasear libera de citar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/13-6-spotlight-on-ethical-research",
+            "seccion": "13.6 Spotlight on … Ethical Research"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mt-apa",
+      "nombre": "Citas y referencias en estilo APA 7",
+      "orden": 3,
+      "descripcion": "Cómo citar en el texto y armar la lista de referencias.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mt-citas",
+          "nombre": "Citas en el texto",
+          "explicacion": "En estilo APA, cada vez que se cita, parafrasea o resume una fuente se indica el apellido del autor, en la frase que introduce la idea o entre paréntesis al final, seguido del año de publicación: Pérez (2024) sostiene… o (Pérez, 2024). Si se copia texto literal, se añade la página. Toda fuente citada en el texto debe estar en la lista de referencias y viceversa.",
+          "puntos_clave": [
+            "Autor y año en cada cita; página en las citas textuales.",
+            "Texto y lista de referencias deben coincidir en ambos sentidos."
+          ],
+          "errores_frecuentes": [
+            "Citar en el texto una fuente que no aparece en la lista de referencias."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/handbook",
+            "seccion": "Handbook — APA Documentation and Format (citas en el texto)"
+          }
+        },
+        {
+          "id": "mt-referencias",
+          "nombre": "Elementos de una referencia",
+          "explicacion": "Una referencia APA de un artículo sigue este orden: autor (apellido e iniciales), fecha de publicación entre paréntesis, título del artículo, nombre de la revista con volumen, número y páginas, y el DOI o la URL. Cuando hay varias obras del mismo autor, se ordenan por año, de la más antigua a la más reciente.",
+          "puntos_clave": [
+            "Autor, A. A. (Año). Título del artículo. Revista, volumen(número), páginas. DOI o URL.",
+            "Usar el DOI cuando exista."
+          ],
+          "errores_frecuentes": [
+            "Poner títulos profesionales como \"Dr.\" en el nombre del autor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/handbook",
+            "seccion": "Handbook — APA Documentation and Format (lista de referencias)"
+          }
+        },
+        {
+          "id": "mt-integrar",
+          "nombre": "Integrar fuentes y citas",
+          "explicacion": "Las citas deben integrarse al texto con una introducción que diga de quién es la idea y una explicación posterior. Las citas textuales se reservan para frases cuya redacción exacta importa; lo demás se parafrasea y se cita.",
+          "puntos_clave": [
+            "Introducir, citar y explicar.",
+            "Parafrasear con palabras y estructura propias."
+          ],
+          "errores_frecuentes": [
+            "Dejar citas largas sueltas, sin explicar su relación con el argumento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/12-6-editing-focus-integrating-sources-and-quotations",
+            "seccion": "12.6 Editing Focus: Integrating Sources and Quotations"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mt-diseno",
+      "nombre": "Diseño de la investigación y datos",
+      "orden": 4,
+      "descripcion": "Población, muestra, variables y ética del diseño.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mt-conceptos",
+          "nombre": "Población, muestra, parámetro y estadístico",
+          "explicacion": "La población es el conjunto completo que interesa estudiar; la muestra, la parte que se observa. Un parámetro describe a la población y un estadístico, a la muestra; el estadístico se usa para estimar el parámetro.",
+          "puntos_clave": [
+            "Definir la población con precisión (quién, dónde, cuándo).",
+            "Una muestra representativa permite generalizar."
+          ],
+          "errores_frecuentes": [
+            "Confundir el número de encuestados con la población."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-1-definiciones-de-estadistica-probabilidad-y-terminos-clave",
+            "seccion": "1.1 Definiciones de estadística, probabilidad y términos clave"
+          }
+        },
+        {
+          "id": "mt-medicion",
+          "nombre": "Niveles de medición",
+          "explicacion": "Las variables pueden ser nominales (categorías sin orden), ordinales (con orden), de intervalo (diferencias con sentido, sin cero absoluto) o de razón (con cero absoluto). El nivel define qué estadísticas tienen sentido.",
+          "puntos_clave": [
+            "La media no tiene sentido en variables nominales.",
+            "Las escalas de satisfacción suelen ser ordinales."
+          ],
+          "errores_frecuentes": [
+            "Calcular el promedio del \"código de carrera\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-3-frecuencia-tablas-de-frecuencia-y-niveles-de-medicion",
+            "seccion": "1.3 Frecuencia, tablas de frecuencia y niveles de medición"
+          }
+        },
+        {
+          "id": "mt-diseno-experimental",
+          "nombre": "Diseño experimental y ética",
+          "explicacion": "Un experimento asigna tratamientos al azar para aislar su efecto, con grupos de control y variables controladas. Investigar con personas exige consentimiento informado, evitar daños y proteger la confidencialidad.",
+          "puntos_clave": [
+            "Asignación aleatoria y grupo de control.",
+            "Consentimiento informado."
+          ],
+          "errores_frecuentes": [
+            "Concluir causa a partir de un estudio observacional."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-4-diseno-experimental-y-etica",
+            "seccion": "1.4 Diseño experimental y ética"
+          }
+        }
+      ]
+    }
+  ]
+}

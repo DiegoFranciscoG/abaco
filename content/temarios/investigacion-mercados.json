@@ -1,0 +1,258 @@
+{
+  "materia": "investigacion-mercados",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "im-proceso",
+      "nombre": "El proceso de investigación de mercados",
+      "orden": 1,
+      "descripcion": "Fuentes de información y pasos de un estudio.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "im-big-data",
+          "nombre": "Investigación de mercados y datos",
+          "explicacion": "La investigación de mercados recoge y analiza información para tomar decisiones de marketing. Hoy combina estudios tradicionales con grandes volúmenes de datos de transacciones y canales digitales.",
+          "puntos_clave": [
+            "Su fin es reducir la incertidumbre de una decisión.",
+            "Más datos no siempre significan mejores respuestas."
+          ],
+          "errores_frecuentes": [
+            "Investigar sin una decisión concreta que tomar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/6-1-marketing-research-and-big-data",
+            "seccion": "6.1 Marketing Research and Big Data"
+          }
+        },
+        {
+          "id": "im-fuentes",
+          "nombre": "Fuentes primarias y secundarias",
+          "explicacion": "Los datos secundarios ya existen (estadísticas oficiales, estudios publicados, registros de la empresa); los primarios se recogen para el estudio (encuestas, entrevistas, observación). Se empieza por los secundarios porque son más baratos.",
+          "puntos_clave": [
+            "Verificar fecha, autor y método de un dato secundario.",
+            "Los primarios responden exactamente a la pregunta, a mayor costo."
+          ],
+          "errores_frecuentes": [
+            "Encargar una encuesta para un dato que ya publica una entidad oficial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan",
+            "seccion": "6.3 Steps in a Successful Marketing Research Plan"
+          }
+        },
+        {
+          "id": "im-pasos",
+          "nombre": "Pasos de un plan de investigación",
+          "explicacion": "Un estudio sigue pasos: definir el problema y los objetivos, diseñar la investigación, elegir el método de recolección y la muestra, recoger los datos, analizarlos e informar los resultados con recomendaciones.",
+          "puntos_clave": [
+            "Un problema mal definido arruina el estudio.",
+            "El informe debe responder a la decisión inicial."
+          ],
+          "errores_frecuentes": [
+            "Diseñar el cuestionario antes de definir los objetivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan",
+            "seccion": "6.3 Steps in a Successful Marketing Research Plan"
+          }
+        }
+      ]
+    },
+    {
+      "id": "im-muestras",
+      "nombre": "Muestreo y diseño",
+      "orden": 2,
+      "descripcion": "Elegir a quién preguntar y cuántos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "im-muestreo",
+          "nombre": "Muestreo",
+          "explicacion": "Para generalizar resultados la muestra debe ser probabilística (aleatoria simple, estratificada, por conglomerados o sistemática). Las muestras por conveniencia sirven para explorar, no para estimar porcentajes del mercado.",
+          "puntos_clave": [
+            "El marco muestral es la lista de la que se elige.",
+            "El sesgo no se corrige con más encuestas."
+          ],
+          "errores_frecuentes": [
+            "Encuestar en un solo centro comercial y hablar de \"los consumidores de la ciudad\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-2-datos-muestreo-y-variacion-de-datos-y-muestreo",
+            "seccion": "1.2 Datos, muestreo y variación de datos y muestreo"
+          }
+        },
+        {
+          "id": "im-tamano",
+          "nombre": "Tamaño de la muestra",
+          "explicacion": "El tamaño depende del margen de error aceptado, del nivel de confianza y de la variabilidad. Para porcentajes sin información previa se usa p = 0,5, y el resultado se redondea hacia arriba.",
+          "puntos_clave": [
+            "n = z²·p·q ÷ E².",
+            "Con 95 % de confianza y 5 % de error, n ≈ 385."
+          ],
+          "errores_frecuentes": [
+            "Elegir el tamaño \"porque suena bien\" (100 encuestas) sin calcularlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-estemp-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica-empresarial/pages/8-4-calculo-del-tamano-de-la-muestra-n-variables-aleatorias-continuas-y-binarias",
+            "seccion": "8.4 Cálculo del tamaño de la muestra n: variables aleatorias continuas y binarias"
+          }
+        },
+        {
+          "id": "im-etica-diseno",
+          "nombre": "Diseño y ética de la investigación",
+          "explicacion": "Un buen diseño controla variables que podrían confundir los resultados. La ética exige consentimiento informado, confidencialidad y no presionar a los participantes; en Ecuador además se aplica la protección de datos personales.",
+          "puntos_clave": [
+            "Consentimiento informado antes de recoger datos.",
+            "Recoger solo los datos necesarios."
+          ],
+          "errores_frecuentes": [
+            "Guardar nombres y teléfonos de encuestados sin necesidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-4-diseno-experimental-y-etica",
+            "seccion": "1.4 Diseño experimental y ética"
+          }
+        }
+      ]
+    },
+    {
+      "id": "im-consumidor",
+      "nombre": "Comportamiento del consumidor",
+      "orden": 3,
+      "descripcion": "Factores que influyen en la compra.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "im-mercados-consumo",
+          "nombre": "Mercados de consumo y conducta de compra",
+          "explicacion": "Los consumidores compran para uso personal o del hogar. Estudiar su conducta implica entender qué compran, por qué, cuándo, dónde y con qué frecuencia, y cómo cambia según el tipo de producto.",
+          "puntos_clave": [
+            "Compras habituales, de búsqueda de variedad y complejas.",
+            "El involucramiento cambia el proceso."
+          ],
+          "errores_frecuentes": [
+            "Tratar igual la compra de pan y la de un auto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/3-1-understanding-consumer-markets-and-buying-behavior",
+            "seccion": "3.1 Understanding Consumer Markets and Buying Behavior"
+          }
+        },
+        {
+          "id": "im-factores",
+          "nombre": "Factores que influyen en la compra",
+          "explicacion": "Influyen factores culturales (cultura, subcultura, clase social), sociales (familia, grupos de referencia), personales (edad, ocupación, estilo de vida) y psicológicos (motivación, percepción, aprendizaje, creencias).",
+          "puntos_clave": [
+            "Los grupos de referencia influyen mucho en productos visibles.",
+            "Las actitudes cambian despacio."
+          ],
+          "errores_frecuentes": [
+            "Explicar una compra con un solo factor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/3-2-factors-that-influence-consumer-buying-behavior",
+            "seccion": "3.2 Factors That Influence Consumer Buying Behavior"
+          }
+        },
+        {
+          "id": "im-b2b",
+          "nombre": "Compras entre empresas",
+          "explicacion": "En los mercados entre empresas compran equipos formados por varias personas, con procesos formales: reconocimiento del problema, especificaciones, búsqueda de proveedores, propuestas, selección y evaluación del desempeño.",
+          "puntos_clave": [
+            "Pocos compradores, montos grandes.",
+            "Relaciones de largo plazo con proveedores."
+          ],
+          "errores_frecuentes": [
+            "Venderle a una empresa como si fuera un consumidor individual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process",
+            "seccion": "4.4 Stages in the B2B Buying Process"
+          }
+        }
+      ]
+    },
+    {
+      "id": "im-analisis",
+      "nombre": "Análisis e informe",
+      "orden": 4,
+      "descripcion": "De los datos a la recomendación.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "im-proporcion",
+          "nombre": "Estimar un porcentaje del mercado",
+          "explicacion": "Para estimar qué porcentaje de clientes prefiere una opción se calcula un intervalo de confianza para la proporción. Informar el margen de error evita sobreinterpretar diferencias pequeñas.",
+          "puntos_clave": [
+            "p̂ ± z·√(p̂·q̂/n).",
+            "Dos porcentajes cuyos intervalos se solapan pueden no ser distintos."
+          ],
+          "errores_frecuentes": [
+            "Informar \"el 52 % prefiere A\" sin margen de error."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-estemp-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica-empresarial/pages/8-3-un-intervalo-de-confianza-para-una-proporcion-de-poblacion",
+            "seccion": "8.3 Un intervalo de confianza para una proporción de población"
+          }
+        },
+        {
+          "id": "im-tablas-cruzadas",
+          "nombre": "Tablas cruzadas y chi-cuadrado",
+          "explicacion": "Una tabla cruzada muestra cómo se combinan dos variables categóricas (por ejemplo, edad y marca preferida). La prueba chi-cuadrado de independencia indica si la relación observada es más que azar.",
+          "puntos_clave": [
+            "Se comparan frecuencias observadas y esperadas.",
+            "Una relación no prueba causa."
+          ],
+          "errores_frecuentes": [
+            "Concluir relación a partir de porcentajes con muy pocas observaciones por celda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/11-3-prueba-de-independencia",
+            "seccion": "11.3 Prueba de independencia"
+          }
+        },
+        {
+          "id": "im-etica",
+          "nombre": "Ética en la investigación de mercados",
+          "explicacion": "La investigación debe ser honesta con los participantes y con quien la contrata: no disfrazar ventas de encuestas, proteger la privacidad y no manipular resultados para obtener una conclusión deseada.",
+          "puntos_clave": [
+            "Transparencia sobre quién patrocina el estudio.",
+            "Protección de los datos de los participantes."
+          ],
+          "errores_frecuentes": [
+            "Usar una \"encuesta\" como excusa para vender."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/6-4-ethical-issues-in-marketing-research",
+            "seccion": "6.4 Ethical Issues in Marketing Research"
+          }
+        }
+      ]
+    }
+  ]
+}

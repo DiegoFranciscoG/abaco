@@ -3,9 +3,8 @@
     "id": "libro-diario",
     "nombre": "Libro diario",
     "descripcion": "Asientos con Debe y Haber y una fila de control que debe quedar en cero (partida doble).",
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad comercial"
+    "materias": [
+      "contabilidad-general"
     ],
     "celdas": {
       "A1": "Fecha",
@@ -70,8 +69,8 @@
     "id": "mayor-cuenta-t",
     "nombre": "Libro mayor: cuenta T",
     "descripcion": "Cargos a la izquierda, abonos a la derecha y saldo calculado automáticamente.",
-    "aparece_en": [
-      "contabilidad general"
+    "materias": [
+      "contabilidad-general"
     ],
     "celdas": {
       "A1": "Caja — cuenta T",
@@ -115,9 +114,9 @@
     "id": "flujo-caja",
     "nombre": "Flujo de caja proyectado",
     "descripcion": "Tres meses de cobros y pagos; el saldo final de cada mes es el inicial del siguiente.",
-    "aparece_en": [
-      "presupuesto",
-      "finanza"
+    "materias": [
+      "contabilidad-costos",
+      "finanzas-corporativas"
     ],
     "celdas": {
       "A1": "Concepto",
@@ -180,9 +179,9 @@
     "id": "tabla-amortizacion",
     "nombre": "Tabla de amortización (cuota fija)",
     "descripcion": "Préstamo de 24 cuotas: interés sobre el saldo, capital = cuota − interés y saldo final en cero.",
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
     ],
     "celdas": {
       "A1": "Préstamo",
@@ -497,9 +496,9 @@
     "id": "depreciacion",
     "nombre": "Cuadro de depreciación",
     "descripcion": "Línea recta y suma de dígitos lado a lado; al final el valor en libros iguala al valor residual.",
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad financiera"
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-financiera"
     ],
     "celdas": {
       "A1": "Costo",

@@ -1,0 +1,294 @@
+{
+  "materia": "marketing",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "mk-fundamentos",
+      "nombre": "Fundamentos del marketing",
+      "orden": 1,
+      "descripcion": "Valor para el cliente y mezcla de marketing.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mk-proceso",
+          "nombre": "Marketing y proceso de marketing",
+          "explicacion": "El marketing busca crear valor para los clientes y construir relaciones duraderas a cambio de valor para la empresa. El proceso empieza por entender el mercado y sus necesidades y termina en la fidelización.",
+          "puntos_clave": [
+            "El cliente está en el centro.",
+            "Valor = beneficios percibidos frente a costos."
+          ],
+          "errores_frecuentes": [
+            "Reducir el marketing a publicidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/1-1-marketing-and-the-marketing-process",
+            "seccion": "1.1 Marketing and the Marketing Process"
+          }
+        },
+        {
+          "id": "mk-4p",
+          "nombre": "La mezcla de marketing: las 4 P",
+          "explicacion": "Producto, precio, plaza (distribución) y promoción son las variables que la empresa controla para llegar a su mercado meta. Deben ser coherentes entre sí: un producto premium no se vende con precio de liquidación.",
+          "puntos_clave": [
+            "Las 4 P se deciden después de elegir el mercado meta.",
+            "Coherencia entre las cuatro variables."
+          ],
+          "errores_frecuentes": [
+            "Decidir la promoción antes de definir el producto y el precio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing",
+            "seccion": "1.2 The Marketing Mix and the 4Ps of Marketing"
+          }
+        },
+        {
+          "id": "mk-necesidades",
+          "nombre": "Necesidades y deseos del consumidor",
+          "explicacion": "Las necesidades son carencias básicas; los deseos son la forma que toman según la cultura y la persona; la demanda aparece cuando hay deseo y capacidad de compra. Investigar al cliente evita lanzar productos que nadie pidió.",
+          "puntos_clave": [
+            "Necesidad ≠ deseo ≠ demanda.",
+            "Escuchar al cliente antes de diseñar."
+          ],
+          "errores_frecuentes": [
+            "Suponer que lo que le gusta al dueño le gustará al mercado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants",
+            "seccion": "1.5 Determining Consumer Needs and Wants"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mk-mercado-meta",
+      "nombre": "Consumidor, segmentación y posicionamiento",
+      "orden": 2,
+      "descripcion": "A quién venderle y cómo diferenciarse.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mk-decision-compra",
+          "nombre": "Proceso de decisión de compra",
+          "explicacion": "El consumidor reconoce una necesidad, busca información, evalúa alternativas, compra y luego evalúa su experiencia. El marketing puede intervenir en cada etapa, y la satisfacción posterior influye en la siguiente compra.",
+          "puntos_clave": [
+            "Las compras de bajo involucramiento saltan etapas.",
+            "La disonancia poscompra se reduce con buen servicio."
+          ],
+          "errores_frecuentes": [
+            "Olvidarse del cliente después de la venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/3-3-the-consumer-purchasing-decision-process",
+            "seccion": "3.3 The Consumer Purchasing Decision Process"
+          }
+        },
+        {
+          "id": "mk-segmentacion",
+          "nombre": "Segmentación de mercados",
+          "explicacion": "Segmentar es dividir un mercado en grupos con necesidades o comportamientos parecidos, usando variables geográficas, demográficas, psicográficas o conductuales. Un buen segmento es medible, accesible y suficientemente grande.",
+          "puntos_clave": [
+            "Variables conductuales: frecuencia de uso, lealtad, beneficios buscados.",
+            "Cada segmento puede requerir una mezcla distinta."
+          ],
+          "errores_frecuentes": [
+            "Definir el segmento como \"todas las personas\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/5-1-market-segmentation-and-consumer-markets",
+            "seccion": "5.1 Market Segmentation and Consumer Markets"
+          }
+        },
+        {
+          "id": "mk-mercado-meta",
+          "nombre": "Selección del mercado meta",
+          "explicacion": "Después de segmentar, la empresa elige a qué segmentos atender según su atractivo y la capacidad de la empresa: un mercado masivo, varios segmentos, un nicho o incluso el marketing personalizado.",
+          "puntos_clave": [
+            "Atractivo del segmento + capacidad de la empresa.",
+            "Un nicho permite especializarse."
+          ],
+          "errores_frecuentes": [
+            "Elegir segmentos que la empresa no puede atender bien."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/5-5-selecting-target-markets",
+            "seccion": "5.5 Selecting Target Markets"
+          }
+        },
+        {
+          "id": "mk-posicionamiento",
+          "nombre": "Posicionamiento",
+          "explicacion": "Posicionar es lograr un lugar claro y distinto en la mente del cliente frente a la competencia. Se expresa en una propuesta de valor y se comunica de forma consistente en todas las acciones de marketing.",
+          "puntos_clave": [
+            "Mapa de posicionamiento: dos atributos clave.",
+            "La diferenciación debe ser relevante para el cliente."
+          ],
+          "errores_frecuentes": [
+            "Prometer ser el mejor en todo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/5-6-product-positioning",
+            "seccion": "5.6 Product Positioning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mk-producto-precio",
+      "nombre": "Producto y precio",
+      "orden": 3,
+      "descripcion": "Ciclo de vida, marca y fijación de precios.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mk-ciclo-vida",
+          "nombre": "Ciclo de vida del producto",
+          "explicacion": "Un producto pasa por introducción, crecimiento, madurez y declive. En cada etapa cambian las ventas, la competencia y las utilidades, por lo que cambian también las estrategias de precio, promoción y distribución.",
+          "puntos_clave": [
+            "Madurez: la etapa más larga y competida.",
+            "En el declive se decide mantener, cosechar o retirar."
+          ],
+          "errores_frecuentes": [
+            "Usar la misma estrategia en todas las etapas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-3-the-product-life-cycle",
+            "seccion": "9.3 The Product Life Cycle"
+          }
+        },
+        {
+          "id": "mk-marca",
+          "nombre": "Marca",
+          "explicacion": "Una marca es un nombre, símbolo o diseño que identifica a un vendedor y lo diferencia. Su valor (capital de marca) se construye con experiencias consistentes y se refleja en la lealtad y en la disposición a pagar.",
+          "puntos_clave": [
+            "La marca es una promesa al cliente.",
+            "Las marcas pueden registrarse para proteger su uso."
+          ],
+          "errores_frecuentes": [
+            "Usar en un producto propio el nombre o el logotipo de una marca ajena."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-5-branding-and-brand-development",
+            "seccion": "9.5 Branding and Brand Development"
+          }
+        },
+        {
+          "id": "mk-fijacion-precios",
+          "nombre": "Fijación de precios",
+          "explicacion": "El precio se fija considerando costos, demanda, competencia y objetivos de la empresa. Un procedimiento ordenado define objetivos, estima demanda y costos, analiza a la competencia y elige el método y el precio final.",
+          "puntos_clave": [
+            "El costo marca el piso; el valor percibido, el techo.",
+            "Un precio también comunica calidad."
+          ],
+          "errores_frecuentes": [
+            "Fijar precios solo sumando un porcentaje al costo sin mirar el mercado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/12-3-the-five-step-procedure-for-establishing-pricing-policy",
+            "seccion": "12.3 The Five-Step Procedure for Establishing Pricing Policy"
+          }
+        },
+        {
+          "id": "mk-precios-nuevos",
+          "nombre": "Precios para productos nuevos",
+          "explicacion": "El descremado fija un precio inicial alto para captar a quienes valoran más la novedad y luego lo baja; la penetración entra con precio bajo para ganar participación rápidamente. La elección depende de la competencia y de la elasticidad.",
+          "puntos_clave": [
+            "Descremado: innovaciones con poca competencia.",
+            "Penetración: mercados sensibles al precio."
+          ],
+          "errores_frecuentes": [
+            "Usar descremado en un mercado con muchos sustitutos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/12-4-pricing-strategies-for-new-products",
+            "seccion": "12.4 Pricing Strategies for New Products"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mk-plaza-promocion",
+      "nombre": "Distribución y comunicación",
+      "orden": 4,
+      "descripcion": "Canales, mezcla promocional y métricas digitales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mk-canales",
+          "nombre": "Canales de distribución",
+          "explicacion": "Un canal puede ser directo (del productor al consumidor) o indirecto, con mayoristas y minoristas. Los intermediarios agregan valor con logística, crédito e información, a cambio de un margen.",
+          "puntos_clave": [
+            "Canal directo: más control y menos cobertura.",
+            "Omnicanalidad: combinar tienda física y digital."
+          ],
+          "errores_frecuentes": [
+            "Eliminar intermediarios sin asumir sus funciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-2-types-of-marketing-channels",
+            "seccion": "17.2 Types of Marketing Channels"
+          }
+        },
+        {
+          "id": "mk-mezcla-promocional",
+          "nombre": "Mezcla promocional",
+          "explicacion": "La mezcla promocional combina publicidad, relaciones públicas, venta personal, promoción de ventas y marketing directo y digital. La comunicación integrada busca que todos los mensajes digan lo mismo.",
+          "puntos_clave": [
+            "Cada herramienta tiene costos y alcances distintos.",
+            "La promoción debe ser veraz: sin afirmaciones que no se puedan respaldar."
+          ],
+          "errores_frecuentes": [
+            "Prometer en un anuncio algo que el producto no cumple."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/13-1-the-promotion-mix-and-its-elements",
+            "seccion": "13.1 The Promotion Mix and Its Elements"
+          }
+        },
+        {
+          "id": "mk-metricas-digitales",
+          "nombre": "Métricas del marketing digital",
+          "explicacion": "Las métricas digitales (alcance, interacción, tasa de clics, conversión, costo por adquisición) permiten medir qué acciones funcionan y ajustar la inversión. Importa más la conversión que los \"me gusta\".",
+          "puntos_clave": [
+            "Tasa de conversión = conversiones ÷ visitas.",
+            "Definir la métrica antes de lanzar la campaña."
+          ],
+          "errores_frecuentes": [
+            "Medir el éxito solo por seguidores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing",
+            "seccion": "16.3 Metrics Used to Evaluate the Success of Online Marketing"
+          }
+        }
+      ]
+    }
+  ]
+}

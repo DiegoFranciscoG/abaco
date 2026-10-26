@@ -1,140 +1,5 @@
 [
   {
-    "id": "fac-ucuenca-fcea",
-    "titulo": "Facultad de Ciencias Económicas y Administrativas — Universidad de Cuenca",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/facultad/ciencias-economicas-y-administrativas/",
-    "licencia": "Información institucional pública",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "fac-ucacue-ccee",
-    "titulo": "Unidad Académica de Ciencias Económicas y Empresariales — UCACUE",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/",
-    "licencia": "Información institucional pública",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucuenca-administracion-empresas",
-    "titulo": "Administración de Empresas — página oficial de la carrera",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/carreras/administracion-de-empresas/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucuenca-administracion-empresas-dual",
-    "titulo": "Administración de Empresas (Modalidad Dual) — página oficial de la carrera",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/carreras/administracion-de-empresas-modalidad-dual/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucuenca-contabilidad-auditoria",
-    "titulo": "Contabilidad y Auditoría — página oficial de la carrera",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/carreras/contabilidad-y-auditoria/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucuenca-economia",
-    "titulo": "Economía — página oficial de la carrera",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/carreras/economia/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucuenca-emprendimiento-innovacion",
-    "titulo": "Emprendimiento e Innovación — página oficial de la carrera",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/carreras/emprendimiento-e-innovacion/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucuenca-mercadotecnia",
-    "titulo": "Mercadotecnia — página oficial de la carrera",
-    "autor_editor": "Universidad de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucuenca.edu.ec/carreras/mercadotecnia/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-administracion-empresas",
-    "titulo": "Administración de Empresas — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-administracion-de-empresas/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-administracion-empresas-dual",
-    "titulo": "Administración de Empresas DUAL — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-administracin-de-empresas-dual/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-contabilidad-auditoria",
-    "titulo": "Carrera de Contabilidad y Auditoría — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-contabilidad-y-auditoria/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-economia",
-    "titulo": "Carrera de Economía — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-economia/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-finanzas-banca-seguros",
-    "titulo": "Carrera de Finanzas, Banca y Seguros — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-finanzas-banca-y-seguros/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-marketing-inteligencia-mercados",
-    "titulo": "Carrera de Marketing e Inteligencia de Mercados — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-marketing-e-inteligencia-de-mercado/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
-    "id": "malla-ucacue-negocios-internacionales",
-    "titulo": "Carrera de Negocios Internacionales — página oficial de la carrera",
-    "autor_editor": "Universidad Católica de Cuenca",
-    "tipo": "pagina_oficial",
-    "url": "https://www.ucacue.edu.ec/pregrado/unidad-academica-de-ciencias-economicas-y-empresariales/carrera-de-negocios-internacionales/",
-    "licencia": "Información institucional pública (se reproduce la lista de asignaturas citando la fuente)",
-    "fecha_consulta": "2026-10-14"
-  },
-  {
     "id": "os-pfa",
     "titulo": "Principles of Accounting, Volume 1: Financial Accounting",
     "autor_editor": "Mitchell Franklin, Patty Graybeal, Dixon Cooper · OpenStax (Rice University)",
@@ -331,5 +196,185 @@
     "url": "https://support.microsoft.com/es-es/office/funciones-de-excel-por-orden-alfab%C3%A9tico-b3944572-255d-4efb-bb96-c6d90033e188",
     "licencia": "Documentación de consulta",
     "fecha_consulta": "2026-10-14"
+  },
+  {
+    "id": "os-pfin2",
+    "titulo": "Principles of Finance 2e",
+    "autor_editor": "Julie Dahlquist, Rainford Knight — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-finance-2e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-micro3",
+    "titulo": "Principles of Microeconomics 3e",
+    "autor_editor": "David Shapiro, Daniel MacDonald, Steven A. Greenlaw — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-microeconomics-3e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-macro3",
+    "titulo": "Principles of Macroeconomics 3e",
+    "autor_editor": "David Shapiro, Daniel MacDonald, Steven A. Greenlaw — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-macroeconomics-3e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-pmgmt",
+    "titulo": "Principles of Management",
+    "autor_editor": "David S. Bright, Anastasia H. Cortes, Eva Hartmann et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-management",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-ob",
+    "titulo": "Organizational Behavior",
+    "autor_editor": "J. Stewart Black, David S. Bright, Donald G. Gardner et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/organizational-behavior",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-mkt",
+    "titulo": "Principles of Marketing",
+    "autor_editor": "Maria Gomez Albrecht, Mark Green, Linda Hoffman et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-marketing",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-entre",
+    "titulo": "Entrepreneurship",
+    "autor_editor": "Michael Laverty, Chris Littel et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/entrepreneurship",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-ib2",
+    "titulo": "Introduction to Business 2e",
+    "autor_editor": "Lawrence J. Gitman, Carl McDaniel, Amit Shah, Monique Reece et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introduction-business-2e",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-writing",
+    "titulo": "Writing Guide with Handbook",
+    "autor_editor": "Michelle Bachelor Robinson, Maria Jerskey et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/writing-guide",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-est-es",
+    "titulo": "Introducción a la estadística",
+    "autor_editor": "Barbara Illowsky, Susan Dean — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introducci%C3%B3n-estad%C3%ADstica",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-estemp-es",
+    "titulo": "Introducción a la estadística empresarial",
+    "autor_editor": "Alexander Holmes, Barbara Illowsky, Susan Dean — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introducci%C3%B3n-estad%C3%ADstica-empresarial",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "os-precalc-es",
+    "titulo": "Precálculo 2ed",
+    "autor_editor": "Jay Abramson et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/prec%C3%A1lculo-2ed",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "codigo-trabajo",
+    "titulo": "Código del Trabajo (Codificación 2005-017, R.O. Supl. 167, 16-12-2005; última reforma 09-04-2026)",
+    "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por el SERCOP",
+    "tipo": "ley",
+    "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "iess-tasas",
+    "titulo": "Tasas de aportación",
+    "autor_editor": "Instituto Ecuatoriano de Seguridad Social (IESS)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.iess.gob.ec/documents/13718/54965/Tasasdeaportacion.pdf",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "comf",
+    "titulo": "Código Orgánico Monetario y Financiero (2.º Supl. R.O. 332, 12-09-2014)",
+    "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por la SEPS",
+    "tipo": "ley",
+    "url": "https://www.seps.gob.ec/wp-content/uploads/CODIGO-ORGANICO-MONETARIO-Y-FINANCIERO.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "sri-ruc",
+    "titulo": "RUC personas naturales",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.sri.gob.ec/ruc-personas-naturales",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "sri-rimpe",
+    "titulo": "Régimen Simplificado para Emprendedores y Negocios Populares (RIMPE)",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.sri.gob.ec/rimpe",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "sri-facturacion",
+    "titulo": "Facturación electrónica",
+    "autor_editor": "Servicio de Rentas Internas (SRI)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.sri.gob.ec/facturacion-electronica",
+    "licencia": "Información pública oficial",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "wb-wdi",
+    "titulo": "World Development Indicators (Indicators API v2)",
+    "autor_editor": "Banco Mundial",
+    "tipo": "documentacion",
+    "url": "https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators",
+    "licencia": "CC BY 4.0",
+    "fecha_consulta": "2026-10-25"
+  },
+  {
+    "id": "ecb-tipos",
+    "titulo": "Tipos de cambio de referencia del euro (vía Frankfurter, proveedor ECB)",
+    "autor_editor": "Banco Central Europeo",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "licencia": "Uso libre citando al BCE como fuente",
+    "fecha_consulta": "2026-10-25"
   }
 ]

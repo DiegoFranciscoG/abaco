@@ -1,0 +1,298 @@
+{
+  "materia": "microeconomia",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "mi-escasez",
+      "nombre": "Escasez y elección",
+      "orden": 1,
+      "descripcion": "Costo de oportunidad y frontera de posibilidades.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mi-restriccion",
+          "nombre": "Restricción presupuestaria y costo de oportunidad",
+          "explicacion": "Con un ingreso limitado, comprar más de un bien obliga a comprar menos de otro. El costo de oportunidad de una elección es lo que se deja de obtener de la mejor alternativa; no siempre se mide en dinero.",
+          "puntos_clave": [
+            "La pendiente de la restricción presupuestaria es el precio relativo.",
+            "El tiempo también tiene costo de oportunidad."
+          ],
+          "errores_frecuentes": [
+            "Considerar solo el costo en dinero e ignorar el tiempo o las alternativas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+            "seccion": "2.1 How Individuals Make Choices Based on Their Budget Constraint"
+          }
+        },
+        {
+          "id": "mi-fpp",
+          "nombre": "Frontera de posibilidades de producción",
+          "explicacion": "La frontera muestra las combinaciones máximas que una economía puede producir con sus recursos. Es cóncava porque los recursos no son igual de aptos para todo; los puntos dentro de ella indican ineficiencia y los de afuera son inalcanzables hoy.",
+          "puntos_clave": [
+            "Moverse sobre la frontera implica un costo de oportunidad creciente.",
+            "El crecimiento económico desplaza la frontera hacia afuera."
+          ],
+          "errores_frecuentes": [
+            "Leer un punto dentro de la frontera como \"eficiente pero austero\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/2-2-the-production-possibilities-frontier-and-social-choices",
+            "seccion": "2.2 The Production Possibilities Frontier and Social Choices"
+          }
+        },
+        {
+          "id": "mi-enfoque",
+          "nombre": "El enfoque económico y sus críticas",
+          "explicacion": "La economía supone personas que eligen buscando su propio interés y que responden a incentivos. Las críticas señalan que la gente no siempre calcula así; la respuesta es que el modelo busca explicar tendencias, no cada decisión individual.",
+          "puntos_clave": [
+            "Un modelo simplifica para explicar.",
+            "Los incentivos cambian el comportamiento promedio."
+          ],
+          "errores_frecuentes": [
+            "Rechazar un modelo porque alguien concreto no se comporta como predice."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/2-3-confronting-objections-to-the-economic-approach",
+            "seccion": "2.3 Confronting Objections to the Economic Approach"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mi-mercado",
+      "nombre": "Oferta, demanda y equilibrio",
+      "orden": 2,
+      "descripcion": "Cómo se forman los precios.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mi-oferta-demanda",
+          "nombre": "Demanda, oferta y equilibrio",
+          "explicacion": "La demanda relaciona el precio con la cantidad que los compradores desean; la oferta, con la cantidad que los vendedores ofrecen. El equilibrio está donde ambas cantidades coinciden; con un precio mayor hay excedente y con uno menor, escasez.",
+          "puntos_clave": [
+            "Ley de la demanda: más precio, menos cantidad demandada.",
+            "Ley de la oferta: más precio, más cantidad ofrecida."
+          ],
+          "errores_frecuentes": [
+            "Confundir un excedente con un aumento de la oferta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
+            "seccion": "3.1 Demand, Supply, and Equilibrium in Markets for Goods and Services"
+          }
+        },
+        {
+          "id": "mi-desplazamientos",
+          "nombre": "Cambios en la demanda y en la oferta",
+          "explicacion": "Un cambio en el precio del propio bien mueve sobre la curva (cambia la cantidad demandada). Cambios en el ingreso, los gustos, los precios de bienes relacionados o las expectativas desplazan toda la curva de demanda; los costos de producción y la tecnología desplazan la oferta.",
+          "puntos_clave": [
+            "Bienes sustitutos y complementarios afectan la demanda en sentidos opuestos.",
+            "Un bien normal se demanda más cuando sube el ingreso."
+          ],
+          "errores_frecuentes": [
+            "Decir que \"sube la demanda\" cuando solo bajó el precio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services",
+            "seccion": "3.2 Shifts in Demand and Supply for Goods and Services"
+          }
+        },
+        {
+          "id": "mi-cuatro-pasos",
+          "nombre": "Análisis en cuatro pasos",
+          "explicacion": "Para analizar un suceso: dibujar el equilibrio inicial, decidir si afecta la oferta o la demanda, decidir hacia dónde se desplaza la curva y comparar el nuevo equilibrio con el anterior.",
+          "puntos_clave": [
+            "Un mismo suceso puede mover ambas curvas.",
+            "Si ambas se mueven, uno de los efectos (precio o cantidad) puede quedar ambiguo."
+          ],
+          "errores_frecuentes": [
+            "Mover las dos curvas cuando el suceso solo afecta a una."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/3-3-changes-in-equilibrium-price-and-quantity-the-four-step-process",
+            "seccion": "3.3 Changes in Equilibrium Price and Quantity: The Four-Step Process"
+          }
+        },
+        {
+          "id": "mi-precios-controlados",
+          "nombre": "Precios máximos y mínimos",
+          "explicacion": "Un precio máximo por debajo del equilibrio genera escasez; un precio mínimo por encima genera excedente. Los controles benefician a algunos participantes, pero reducen la cantidad intercambiada y crean pérdidas de eficiencia.",
+          "puntos_clave": [
+            "El salario mínimo es un ejemplo de precio mínimo.",
+            "Un precio máximo solo tiene efecto si está por debajo del equilibrio."
+          ],
+          "errores_frecuentes": [
+            "Suponer que un precio máximo por encima del equilibrio cambia algo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/3-4-price-ceilings-and-price-floors",
+            "seccion": "3.4 Price Ceilings and Price Floors"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mi-elasticidad",
+      "nombre": "Elasticidad y decisiones del consumidor",
+      "orden": 3,
+      "descripcion": "Sensibilidad a los precios y utilidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mi-elasticidad-precio",
+          "nombre": "Elasticidad precio",
+          "explicacion": "La elasticidad precio de la demanda mide cuánto cambia la cantidad demandada, en porcentaje, ante un cambio porcentual en el precio. El método del punto medio da el mismo resultado sin importar la dirección del cambio.",
+          "puntos_clave": [
+            "|E| > 1: elástica; |E| < 1: inelástica.",
+            "Los bienes con muchos sustitutos son más elásticos."
+          ],
+          "errores_frecuentes": [
+            "Calcular con porcentajes sobre el valor inicial y obtener resultados distintos al subir y al bajar el precio."
+          ],
+          "formulas": [
+            "elasticidad-precio"
+          ],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+            "seccion": "5.1 Price Elasticity of Demand and Price Elasticity of Supply"
+          }
+        },
+        {
+          "id": "mi-elasticidad-ingreso-total",
+          "nombre": "Elasticidad e ingreso total",
+          "explicacion": "Si la demanda es elástica, bajar el precio aumenta el ingreso total; si es inelástica, subirlo lo aumenta. Por eso las empresas estudian la elasticidad antes de fijar precios y los gobiernos antes de crear impuestos.",
+          "puntos_clave": [
+            "Con demanda de elasticidad unitaria, el ingreso total no cambia.",
+            "Un impuesto recae más sobre el lado menos elástico."
+          ],
+          "errores_frecuentes": [
+            "Subir el precio de un producto con demanda elástica esperando más ingresos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/5-3-elasticity-and-pricing",
+            "seccion": "5.3 Elasticity and Pricing"
+          }
+        },
+        {
+          "id": "mi-utilidad-marginal",
+          "nombre": "Utilidad marginal y elección del consumidor",
+          "explicacion": "El consumidor reparte su presupuesto de modo que la última unidad monetaria gastada en cada bien le dé la misma utilidad marginal. La utilidad marginal suele disminuir a medida que se consume más de un bien.",
+          "puntos_clave": [
+            "Utilidad marginal decreciente.",
+            "Regla: UMg₁/P₁ = UMg₂/P₂."
+          ],
+          "errores_frecuentes": [
+            "Elegir por utilidad total en lugar de utilidad marginal por dólar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/6-1-consumption-choices",
+            "seccion": "6.1 Consumption Choices"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mi-empresa-mercados",
+      "nombre": "Costos, producción y estructuras de mercado",
+      "orden": 4,
+      "descripcion": "Cómo deciden las empresas en distintos mercados.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mi-costos-corto-plazo",
+          "nombre": "Costos en el corto plazo",
+          "explicacion": "En el corto plazo hay costos fijos y variables. El costo marginal es el costo de producir una unidad más; cuando está por debajo del costo medio lo hace bajar y cuando está por encima lo hace subir, por eso cruza al costo medio en su mínimo.",
+          "puntos_clave": [
+            "CMg = Δ costo total ÷ Δ cantidad.",
+            "Rendimientos decrecientes hacen subir el costo marginal."
+          ],
+          "errores_frecuentes": [
+            "Confundir costo medio con costo marginal."
+          ],
+          "formulas": [
+            "costo-marginal"
+          ],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/7-3-costs-in-the-short-run",
+            "seccion": "7.3 Costs in the Short Run"
+          }
+        },
+        {
+          "id": "mi-competencia-perfecta",
+          "nombre": "Competencia perfecta",
+          "explicacion": "Con muchos vendedores de un producto idéntico, cada empresa toma el precio del mercado y produce la cantidad donde el precio iguala al costo marginal. Si el precio no cubre el costo variable medio, conviene cerrar en el corto plazo.",
+          "puntos_clave": [
+            "Regla de producción: P = CMg.",
+            "Punto de cierre: P < costo variable medio mínimo."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una empresa competitiva puede subir su precio sin perder ventas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions",
+            "seccion": "8.2 How Perfectly Competitive Firms Make Output Decisions"
+          }
+        },
+        {
+          "id": "mi-monopolio",
+          "nombre": "Monopolio",
+          "explicacion": "Un monopolio enfrenta toda la demanda del mercado, así que para vender más debe bajar el precio. Produce donde el ingreso marginal iguala al costo marginal y cobra el precio que la demanda permite para esa cantidad: produce menos y cobra más que en competencia.",
+          "puntos_clave": [
+            "IMg < P para un monopolio.",
+            "Las barreras de entrada sostienen el monopolio."
+          ],
+          "errores_frecuentes": [
+            "Suponer que un monopolio cobra el precio más alto posible."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price",
+            "seccion": "9.2 How a Profit-Maximizing Monopoly Chooses Output and Price"
+          }
+        },
+        {
+          "id": "mi-oligopolio",
+          "nombre": "Oligopolio",
+          "explicacion": "En un oligopolio pocas empresas dominan el mercado y cada decisión depende de lo que hagan las demás. La tentación de coludir choca con el incentivo de cada una a romper el acuerdo, como en el dilema del prisionero.",
+          "puntos_clave": [
+            "La interdependencia estratégica es la clave.",
+            "La colusión de precios suele estar prohibida por las leyes de competencia."
+          ],
+          "errores_frecuentes": [
+            "Analizar un oligopolio como si cada empresa decidiera aislada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/10-2-oligopoly",
+            "seccion": "10.2 Oligopoly"
+          }
+        }
+      ]
+    }
+  ]
+}

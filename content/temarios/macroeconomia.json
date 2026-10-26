@@ -1,0 +1,275 @@
+{
+  "materia": "macroeconomia",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "ma-medicion",
+      "nombre": "Medir la economía",
+      "orden": 1,
+      "descripcion": "PIB nominal, real y comparaciones entre países.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ma-pib",
+          "nombre": "Producto interno bruto",
+          "explicacion": "El PIB es el valor de mercado de todos los bienes y servicios finales producidos en un país durante un período. Por el lado del gasto se suma consumo, inversión, gasto público y exportaciones netas (exportaciones menos importaciones).",
+          "puntos_clave": [
+            "Solo se cuentan bienes finales para no contar dos veces.",
+            "PIB = C + I + G + (X − M)."
+          ],
+          "errores_frecuentes": [
+            "Sumar los bienes intermedios al PIB."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-1-measuring-the-size-of-the-economy-gross-domestic-product",
+            "seccion": "6.1 Measuring the Size of the Economy: Gross Domestic Product"
+          }
+        },
+        {
+          "id": "ma-real-nominal",
+          "nombre": "PIB nominal y PIB real",
+          "explicacion": "El PIB nominal usa precios de cada año; el real usa precios de un año base y elimina el efecto de la inflación. Para comparar la producción entre años se usa el PIB real.",
+          "puntos_clave": [
+            "PIB real = PIB nominal ÷ deflactor × 100.",
+            "El crecimiento económico se mide con el PIB real."
+          ],
+          "errores_frecuentes": [
+            "Celebrar un crecimiento del PIB nominal que solo refleja inflación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-2-adjusting-nominal-values-to-real-values",
+            "seccion": "6.2 Adjusting Nominal Values to Real Values"
+          }
+        },
+        {
+          "id": "ma-comparar",
+          "nombre": "Comparar el PIB entre países",
+          "explicacion": "Para comparar países se divide el PIB para la población (PIB per cápita) y se convierte a una moneda común con tipos de cambio o con paridad de poder adquisitivo, que corrige las diferencias de precios entre países.",
+          "puntos_clave": [
+            "PIB per cápita = PIB ÷ población.",
+            "La PPA es mejor para comparar niveles de vida."
+          ],
+          "errores_frecuentes": [
+            "Comparar el PIB total de un país grande con el de uno pequeño para hablar de bienestar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-4-comparing-gdp-among-countries",
+            "seccion": "6.4 Comparing GDP among Countries"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ma-indicadores",
+      "nombre": "Crecimiento, desempleo e inflación",
+      "orden": 2,
+      "descripcion": "Los tres grandes indicadores.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ma-crecimiento",
+          "nombre": "Productividad y crecimiento",
+          "explicacion": "El crecimiento sostenido del nivel de vida depende de la productividad laboral: cuánto produce, en promedio, una hora de trabajo. Aumenta con capital físico, capital humano (educación y salud) y mejor tecnología.",
+          "puntos_clave": [
+            "Productividad = producción ÷ horas trabajadas.",
+            "Pequeñas diferencias de crecimiento se acumulan mucho en décadas."
+          ],
+          "errores_frecuentes": [
+            "Atribuir el crecimiento de largo plazo solo a trabajar más horas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/7-2-labor-productivity-and-economic-growth",
+            "seccion": "7.2 Labor Productivity and Economic Growth"
+          }
+        },
+        {
+          "id": "ma-desempleo",
+          "nombre": "Tasa de desempleo",
+          "explicacion": "La tasa de desempleo es el número de personas desempleadas dividido para la fuerza laboral (ocupados más desempleados que buscan trabajo). Quien no busca empleo no forma parte de la fuerza laboral.",
+          "puntos_clave": [
+            "Tasa = desempleados ÷ fuerza laboral × 100.",
+            "Los trabajadores desalentados no se cuentan como desempleados."
+          ],
+          "errores_frecuentes": [
+            "Dividir para toda la población en edad de trabajar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/8-1-how-economists-define-and-compute-unemployment-rate",
+            "seccion": "8.1 How Economists Define and Compute Unemployment Rate"
+          }
+        },
+        {
+          "id": "ma-inflacion",
+          "nombre": "Inflación e índice de precios",
+          "explicacion": "La inflación es el aumento sostenido del nivel general de precios. Se mide con un índice de precios al consumidor, que compara el costo de una canasta fija de bienes entre dos fechas.",
+          "puntos_clave": [
+            "Inflación = (índice final − índice inicial) ÷ índice inicial × 100.",
+            "La inflación reduce el poder de compra de los ingresos fijos."
+          ],
+          "errores_frecuentes": [
+            "Llamar inflación a la subida del precio de un solo producto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-1-tracking-inflation",
+            "seccion": "9.1 Tracking Inflation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ma-da-oa",
+      "nombre": "Demanda y oferta agregadas",
+      "orden": 3,
+      "descripcion": "El modelo para explicar ciclos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ma-modelo",
+          "nombre": "El modelo DA/OA",
+          "explicacion": "La demanda agregada muestra el gasto total en bienes y servicios a cada nivel de precios; la oferta agregada, lo que las empresas producen. Su cruce determina el nivel de precios y el PIB real de equilibrio.",
+          "puntos_clave": [
+            "La OA de corto plazo tiene pendiente positiva.",
+            "El PIB potencial es el nivel de pleno empleo."
+          ],
+          "errores_frecuentes": [
+            "Usar el modelo de oferta y demanda de un mercado para explicar la inflación general."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/11-2-building-a-model-of-aggregate-demand-and-aggregate-supply",
+            "seccion": "11.2 Building a Model of Aggregate Demand and Aggregate Supply"
+          }
+        },
+        {
+          "id": "ma-desplaza-oa",
+          "nombre": "Desplazamientos de la oferta agregada",
+          "explicacion": "Un aumento de la productividad desplaza la oferta agregada a la derecha: más producción y precios más bajos. Un alza de insumos clave, como el petróleo, la desplaza a la izquierda y puede causar estanflación.",
+          "puntos_clave": [
+            "Estanflación: menos producción y más inflación a la vez.",
+            "La productividad es el motor de largo plazo."
+          ],
+          "errores_frecuentes": [
+            "Confundir un choque de oferta con uno de demanda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/11-3-shifts-in-aggregate-supply",
+            "seccion": "11.3 Shifts in Aggregate Supply"
+          }
+        },
+        {
+          "id": "ma-desplaza-da",
+          "nombre": "Desplazamientos de la demanda agregada",
+          "explicacion": "Cambios en el consumo, la inversión, el gasto público o las exportaciones netas desplazan la demanda agregada. Más confianza o más gasto público la mueven a la derecha: más producción y presión sobre los precios.",
+          "puntos_clave": [
+            "La política fiscal actúa sobre la demanda agregada.",
+            "Una recesión suele empezar por una caída de la demanda."
+          ],
+          "errores_frecuentes": [
+            "Pensar que más demanda siempre aumenta la producción sin afectar los precios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/11-4-shifts-in-aggregate-demand",
+            "seccion": "11.4 Shifts in Aggregate Demand"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ma-dinero-politica",
+      "nombre": "Dinero, bancos y política económica",
+      "orden": 4,
+      "descripcion": "Funciones del dinero, creación bancaria y política fiscal.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ma-funciones-dinero",
+          "nombre": "Funciones del dinero",
+          "explicacion": "El dinero cumple tres funciones: medio de cambio (evita el trueque), unidad de cuenta (expresa precios) y depósito de valor (permite ahorrar). Cualquier activo que las cumpla bien puede funcionar como dinero.",
+          "puntos_clave": [
+            "La inflación debilita la función de depósito de valor.",
+            "El dinero no es lo mismo que la riqueza."
+          ],
+          "errores_frecuentes": [
+            "Confundir dinero con ingreso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-1-defining-money-by-its-functions",
+            "seccion": "14.1 Defining Money by Its Functions"
+          }
+        },
+        {
+          "id": "ma-creacion-dinero",
+          "nombre": "Cómo los bancos crean dinero",
+          "explicacion": "Los bancos guardan una fracción de los depósitos como reserva y prestan el resto; ese préstamo se convierte en nuevos depósitos en otros bancos, que también prestan una parte. Así el sistema multiplica los depósitos iniciales.",
+          "puntos_clave": [
+            "Multiplicador simple = 1 ÷ coeficiente de reservas.",
+            "En la práctica el efecto es menor por el efectivo que retiene el público."
+          ],
+          "errores_frecuentes": [
+            "Creer que el banco presta todo lo depositado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",
+            "seccion": "14.4 How Banks Create Money"
+          }
+        },
+        {
+          "id": "ma-politica-fiscal",
+          "nombre": "Política fiscal contra recesión e inflación",
+          "explicacion": "En una recesión, el gobierno puede aumentar el gasto o bajar impuestos para estimular la demanda agregada; con inflación, puede hacer lo contrario. La política fiscal enfrenta rezagos y límites de endeudamiento.",
+          "puntos_clave": [
+            "Política expansiva: más gasto o menos impuestos.",
+            "Los estabilizadores automáticos actúan sin decisiones nuevas."
+          ],
+          "errores_frecuentes": [
+            "Suponer que la política fiscal actúa de inmediato."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation",
+            "seccion": "17.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation"
+          }
+        },
+        {
+          "id": "ma-dolarizacion",
+          "nombre": "Política económica en una economía dolarizada",
+          "explicacion": "En Ecuador todas las transacciones se expresan en dólares de los Estados Unidos (COMF, art. 94). Sin moneda propia, el país no emite dinero ni fija un tipo de cambio; su política económica descansa sobre todo en la política fiscal y en la regulación del sistema financiero.",
+          "puntos_clave": [
+            "El Banco Central del Ecuador gestiona la circulación de dólares en el país.",
+            "La liquidez depende de las exportaciones, las remesas, la inversión y el endeudamiento."
+          ],
+          "errores_frecuentes": [
+            "Proponer \"imprimir dinero\" como solución en una economía dolarizada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Art. 94"
+          }
+        }
+      ]
+    }
+  ]
+}

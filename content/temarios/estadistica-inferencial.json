@@ -1,0 +1,316 @@
+{
+  "materia": "estadistica-inferencial",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "ei-muestreo",
+      "nombre": "Muestreo y teorema del límite central",
+      "orden": 1,
+      "descripcion": "De la muestra a la población.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ei-tipos-muestreo",
+          "nombre": "Tipos de muestreo",
+          "explicacion": "Una muestra aleatoria simple da a cada miembro la misma probabilidad de ser elegido. El muestreo estratificado toma muestras dentro de grupos; el de conglomerados elige grupos completos; el sistemático toma uno de cada k. Las muestras por conveniencia no permiten generalizar.",
+          "puntos_clave": [
+            "La forma de elegir la muestra importa más que su tamaño.",
+            "El sesgo de selección no se corrige aumentando n."
+          ],
+          "errores_frecuentes": [
+            "Encuestar solo a los amigos y generalizar a todos los estudiantes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-2-datos-muestreo-y-variacion-de-datos-y-muestreo",
+            "seccion": "1.2 Datos, muestreo y variación de datos y muestreo"
+          }
+        },
+        {
+          "id": "ei-tlc",
+          "nombre": "Teorema del límite central",
+          "explicacion": "Si se toman muchas muestras de tamaño n y se calcula la media de cada una, esas medias se distribuyen aproximadamente normal, centradas en la media poblacional y con desviación σ ÷ √n (error estándar), aunque la población no sea normal, siempre que n sea suficientemente grande.",
+          "puntos_clave": [
+            "El error estándar disminuye al aumentar n.",
+            "Es la base de los intervalos de confianza y de las pruebas de hipótesis."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el teorema vuelve normal a la población."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/7-1-teorema-del-limite-central-de-medias-muestrales-promedios",
+            "seccion": "7.1 Teorema del límite central de medias muestrales (promedios)"
+          }
+        },
+        {
+          "id": "ei-uso-tlc",
+          "nombre": "Usar el teorema del límite central",
+          "explicacion": "Con el teorema se calcula la probabilidad de que una media muestral caiga en un intervalo, estandarizando con z = (x̄ − μ) ÷ (σ/√n). Así se juzga si una media observada es razonable bajo un supuesto.",
+          "puntos_clave": [
+            "Para medias se divide σ para √n.",
+            "Para valores individuales se usa σ sin dividir."
+          ],
+          "errores_frecuentes": [
+            "Usar σ en lugar del error estándar al estandarizar una media."
+          ],
+          "formulas": [
+            "puntuacion-z"
+          ],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/7-3-uso-del-teorema-del-limite-central",
+            "seccion": "7.3 Uso del teorema del límite central"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ei-intervalos",
+      "nombre": "Intervalos de confianza",
+      "orden": 2,
+      "descripcion": "Estimar con un margen de error.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ei-ic-z",
+          "nombre": "Media con desviación poblacional conocida",
+          "explicacion": "Un intervalo de confianza para la media es x̄ ± z·σ/√n. Un nivel de 95 % significa que el procedimiento captura la media real en 95 de cada 100 muestras; no que haya 95 % de probabilidad de que μ esté en un intervalo ya calculado.",
+          "puntos_clave": [
+            "Más confianza: intervalo más ancho.",
+            "Más n: intervalo más angosto."
+          ],
+          "errores_frecuentes": [
+            "Interpretar el 95 % como probabilidad sobre un intervalo ya calculado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/8-1-la-media-de-una-poblacion-utilizando-la-distribucion-normal",
+            "seccion": "8.1 La media de una población utilizando la distribución normal"
+          }
+        },
+        {
+          "id": "ei-ic-t",
+          "nombre": "Media con desviación desconocida: t de Student",
+          "explicacion": "Cuando no se conoce σ se usa la desviación muestral s y la distribución t con n − 1 grados de libertad, que tiene colas más gruesas que la normal. Con muestras grandes, t y z casi coinciden.",
+          "puntos_clave": [
+            "x̄ ± t·s/√n.",
+            "Los grados de libertad son n − 1."
+          ],
+          "errores_frecuentes": [
+            "Usar z con muestras pequeñas y σ desconocida."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/8-2-la-media-de-una-poblacion-utilizando-la-distribucion-t-de-student",
+            "seccion": "8.2 La media de una población utilizando la distribución t de Student"
+          }
+        },
+        {
+          "id": "ei-ic-proporcion",
+          "nombre": "Proporción poblacional",
+          "explicacion": "Para estimar una proporción (por ejemplo, el porcentaje de clientes satisfechos) se usa p̂ ± z·√(p̂·q̂/n), con q̂ = 1 − p̂. Requiere que haya suficientes éxitos y fracasos en la muestra.",
+          "puntos_clave": [
+            "n·p̂ y n·q̂ deben ser mayores que 5.",
+            "El margen de error máximo ocurre con p̂ = 0,5."
+          ],
+          "errores_frecuentes": [
+            "Usar la fórmula de medias para datos de sí o no."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/8-3-una-proporcion-de-la-poblacion",
+            "seccion": "8.3 Una proporción de la población"
+          }
+        },
+        {
+          "id": "ei-tamano-muestra",
+          "nombre": "Tamaño de la muestra",
+          "explicacion": "El tamaño de muestra necesario depende del nivel de confianza, de la variabilidad y del margen de error que se acepta. Para proporciones sin información previa se usa p = 0,5 porque da el tamaño más conservador.",
+          "puntos_clave": [
+            "n = z²·σ² ÷ E² para medias.",
+            "n = z²·p·q ÷ E² para proporciones."
+          ],
+          "errores_frecuentes": [
+            "Redondear n hacia abajo: siempre se redondea hacia arriba."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-estemp-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica-empresarial/pages/8-4-calculo-del-tamano-de-la-muestra-n-variables-aleatorias-continuas-y-binarias",
+            "seccion": "8.4 Cálculo del tamaño de la muestra n: variables aleatorias continuas y binarias"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ei-hipotesis",
+      "nombre": "Pruebas de hipótesis",
+      "orden": 3,
+      "descripcion": "Decidir con datos y controlar errores.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ei-h0-ha",
+          "nombre": "Hipótesis nula y alternativa",
+          "explicacion": "La hipótesis nula (H₀) representa la situación sin cambio o sin efecto y siempre lleva la igualdad; la alternativa (Hₐ) es lo que se quiere demostrar. La prueba busca evidencia contra H₀.",
+          "puntos_clave": [
+            "H₀: μ = 50; Hₐ: μ > 50, μ < 50 o μ ≠ 50.",
+            "La dirección de Hₐ define una o dos colas."
+          ],
+          "errores_frecuentes": [
+            "Poner la afirmación que se quiere probar en H₀."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/9-1-hipotesis-nula-y-alternativa",
+            "seccion": "9.1 Hipótesis nula y alternativa"
+          }
+        },
+        {
+          "id": "ei-errores",
+          "nombre": "Errores de tipo I y tipo II",
+          "explicacion": "Un error tipo I es rechazar H₀ cuando es verdadera; su probabilidad es α, el nivel de significancia. Un error tipo II es no rechazar H₀ cuando es falsa; su probabilidad es β. Reducir uno, sin cambiar n, aumenta el otro.",
+          "puntos_clave": [
+            "α se fija antes de mirar los datos.",
+            "Potencia = 1 − β."
+          ],
+          "errores_frecuentes": [
+            "Decir que se \"acepta\" H₀: solo no se rechaza."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/9-2-resultados-y-errores-de-tipo-i-y-ii",
+            "seccion": "9.2 Resultados y errores de tipo I y II"
+          }
+        },
+        {
+          "id": "ei-valor-p",
+          "nombre": "Valor p y decisión",
+          "explicacion": "El valor p es la probabilidad de obtener un resultado tan extremo como el observado si H₀ fuera cierta. Si el valor p es menor que α, se rechaza H₀; la conclusión se redacta en el contexto del problema.",
+          "puntos_clave": [
+            "Valor p pequeño: evidencia contra H₀.",
+            "Significancia estadística no es lo mismo que importancia práctica."
+          ],
+          "errores_frecuentes": [
+            "Interpretar el valor p como la probabilidad de que H₀ sea verdadera."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/9-4-eventos-poco-comunes-la-muestra-decision-y-conclusion",
+            "seccion": "9.4 Eventos poco comunes, la muestra, decisión y conclusión"
+          }
+        },
+        {
+          "id": "ei-dos-medias",
+          "nombre": "Comparar dos medias",
+          "explicacion": "Para comparar dos grupos independientes (por ejemplo, ventas de dos sucursales) se prueba si la diferencia de sus medias es distinta de cero, usando la distribución t cuando las desviaciones poblacionales son desconocidas.",
+          "puntos_clave": [
+            "Grupos independientes y muestras emparejadas usan pruebas distintas.",
+            "H₀ suele ser μ₁ − μ₂ = 0."
+          ],
+          "errores_frecuentes": [
+            "Usar una prueba para muestras independientes con mediciones antes y después de las mismas personas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/10-1-medias-de-dos-poblaciones-con-desviaciones-tipicas-desconocidas",
+            "seccion": "10.1 Medias de dos poblaciones con desviaciones típicas desconocidas"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ei-relaciones",
+      "nombre": "Chi-cuadrado, correlación y regresión",
+      "orden": 4,
+      "descripcion": "Relaciones entre variables.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ei-chi-independencia",
+          "nombre": "Prueba de independencia",
+          "explicacion": "La prueba chi-cuadrado de independencia usa una tabla de contingencia para decidir si dos variables categóricas están relacionadas, comparando las frecuencias observadas con las que se esperarían si fueran independientes.",
+          "puntos_clave": [
+            "Frecuencia esperada = total de fila × total de columna ÷ total general.",
+            "Cada frecuencia esperada debe ser al menos 5."
+          ],
+          "errores_frecuentes": [
+            "Aplicarla a variables numéricas continuas sin agruparlas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/11-3-prueba-de-independencia",
+            "seccion": "11.3 Prueba de independencia"
+          }
+        },
+        {
+          "id": "ei-regresion",
+          "nombre": "La ecuación de regresión",
+          "explicacion": "La recta de mínimos cuadrados ŷ = a + bx es la que hace mínima la suma de los cuadrados de los errores. La pendiente b indica cuánto cambia, en promedio, y por cada unidad de x.",
+          "puntos_clave": [
+            "r mide la fuerza de la relación lineal; r² la proporción de variación explicada.",
+            "Correlación no implica causalidad."
+          ],
+          "errores_frecuentes": [
+            "Concluir que x causa y solo porque r es alto."
+          ],
+          "formulas": [
+            "correlacion-pearson"
+          ],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/12-3-la-ecuacion-de-regresion",
+            "seccion": "12.3 La ecuación de regresión"
+          }
+        },
+        {
+          "id": "ei-significancia-r",
+          "nombre": "Significancia del coeficiente de correlación",
+          "explicacion": "Antes de usar una recta para predecir se prueba si la correlación poblacional es distinta de cero. Con muestras pequeñas, un r que parece alto puede deberse al azar.",
+          "puntos_clave": [
+            "H₀: ρ = 0.",
+            "La prueba usa n − 2 grados de libertad."
+          ],
+          "errores_frecuentes": [
+            "Predecir con una recta cuya correlación no es significativa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/12-4-comprobacion-de-la-importancia-del-coeficiente-de-correlacion",
+            "seccion": "12.4 Comprobación de la importancia del coeficiente de correlación"
+          }
+        },
+        {
+          "id": "ei-prediccion",
+          "nombre": "Predicción y valores atípicos",
+          "explicacion": "La recta de regresión solo debe usarse para predecir dentro del rango de los datos observados; fuera de él (extrapolación) el resultado puede ser absurdo. Los valores atípicos pueden cambiar mucho la recta y deben revisarse.",
+          "puntos_clave": [
+            "Interpolar: dentro del rango; extrapolar: fuera.",
+            "Un punto influyente cambia la pendiente."
+          ],
+          "errores_frecuentes": [
+            "Eliminar un atípico sin investigar por qué ocurrió."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/12-5-prediccion",
+            "seccion": "12.5 Predicción"
+          }
+        }
+      ]
+    }
+  ]
+}

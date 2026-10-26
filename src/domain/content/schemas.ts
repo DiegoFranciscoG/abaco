@@ -58,55 +58,38 @@ export const fuenteRefSchema = z.object({
 });
 export type FuenteRef = z.infer<typeof fuenteRefSchema>;
 
-export const universidadSchema = z.object({
-  id,
-  nombre: nonEmpty,
-  siglas: nonEmpty,
-  ciudad: nonEmpty,
-  sitio: httpsUrl,
-  unidad_academica: nonEmpty,
-  url_unidad: httpsUrl,
-  fuente: fuenteRefSchema,
-});
-export type Universidad = z.infer<typeof universidadSchema>;
+/** In-house study tools a subject can link to (see src/features/tools). */
+export const TOOL_IDS = [
+  'editor',
+  'diario',
+  'estadistica',
+  'graficador',
+  'mercado',
+  'macro',
+  'divisas',
+  'equilibrio',
+  'proyectos',
+  'rol-pagos',
+  'impuestos',
+  'foda',
+  'tarjetas',
+  'citas',
+  'laboratorio',
+  'buscador',
+] as const;
+export type ToolId = (typeof TOOL_IDS)[number];
 
-export const carreraSchema = z.object({
+/** A subject of the catalog: no university, career or curriculum is attached to it. */
+export const materiaSchema = z.object({
   id,
-  universidad: id,
   nombre: nonEmpty,
-  nombre_oficial: nonEmpty,
-  titulo_otorgado: nonEmpty,
-  num_ciclos: z.number().int().min(1).max(12),
-  modalidad: z.array(nonEmpty).min(1),
-  creditos: z.number().int().positive().nullable(),
-  horas: z.number().int().positive().nullable(),
-  asignaturas_declaradas: z.number().int().positive().nullable(),
-  asignaturas_listadas: z.number().int().positive(),
-  requisito_idioma: nonEmpty.nullable(),
-  url_malla: httpsUrl,
-  fecha_consulta: isoDate,
-  observaciones: z.array(nonEmpty),
-  fuente: fuenteRefSchema,
-});
-export type Carrera = z.infer<typeof carreraSchema>;
-
-export const asignaturaSchema = z.object({
-  id,
-  ciclo: z.number().int().min(1).max(12),
-  orden: z.number().int().min(1),
-  nombre: nonEmpty,
-  nombre_oficial: nonEmpty,
   areas: z.array(area).min(1).max(2),
+  descripcion: nonEmpty,
+  sinonimos: z.array(nonEmpty),
+  herramientas: z.array(z.enum(TOOL_IDS)).min(1),
+  orden: z.number().int().min(1),
 });
-export type Asignatura = z.infer<typeof asignaturaSchema>;
-
-export const mallaSchema = z.object({
-  carrera: id,
-  fuente: fuenteRefSchema,
-  actualizado_en: isoDate,
-  asignaturas: z.array(asignaturaSchema).min(1),
-});
-export type Malla = z.infer<typeof mallaSchema>;
+export type Materia = z.infer<typeof materiaSchema>;
 
 export const subtemaSchema = z.object({
   id,
@@ -130,7 +113,7 @@ export const temaSchema = z.object({
 export type Tema = z.infer<typeof temaSchema>;
 
 export const temarioSchema = z.object({
-  asignatura: id,
+  materia: id,
   actualizado_en: isoDate,
   temas: z.array(temaSchema).min(4).max(6),
 });
@@ -172,7 +155,7 @@ export const formulaSchema = z
       excel_es: z.string().startsWith('='),
       excel_en: z.string().startsWith('='),
     }),
-    aparece_en: z.array(nonEmpty).min(1),
+    materias: z.array(id).min(1),
     notas: z.array(nonEmpty).default([]),
     estado: z.enum(['verificada', 'pendiente']).default('verificada'),
     fuente: fuenteRefSchema,
@@ -199,7 +182,7 @@ export type Formula = z.infer<typeof formulaSchema>;
 export const ejercicioSchema = z
   .object({
     id,
-    asignatura: id,
+    materia: id,
     subtema: id.optional(),
     formula: id.optional(),
     enunciado: nonEmpty,
@@ -223,7 +206,7 @@ export const appSchema = z.object({
   id,
   nombre: nonEmpty,
   para_que: nonEmpty,
-  aparece_en: z.array(nonEmpty).min(1),
+  materias: z.array(id).min(1),
   areas: z.array(area).min(1),
   costo: z.enum(['gratis', 'gratis-con-cuenta', 'freemium', 'pago']),
   plataformas: z.array(nonEmpty).min(1),
@@ -252,7 +235,7 @@ export const plantillaSchema = z.object({
   id,
   nombre: nonEmpty,
   descripcion: nonEmpty,
-  aparece_en: z.array(nonEmpty).min(1),
+  materias: z.array(id).min(1),
   celdas: z.record(cellAddress, z.union([z.number(), z.string()])),
   formatos: z.record(cellAddress, z.enum(CELL_FORMATS)).default({}),
   verificacion: z
@@ -264,8 +247,7 @@ export const plantillaSchema = z.object({
 export type Plantilla = z.infer<typeof plantillaSchema>;
 
 export const fuentesFileSchema = z.array(fuenteSchema);
-export const universidadesFileSchema = z.array(universidadSchema);
-export const carrerasFileSchema = z.array(carreraSchema);
+export const materiasFileSchema = z.array(materiaSchema);
 export const formulasFileSchema = z.array(formulaSchema);
 export const ejerciciosFileSchema = z.array(ejercicioSchema);
 export const appsFileSchema = z.array(appSchema);

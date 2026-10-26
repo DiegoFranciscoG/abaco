@@ -1,0 +1,255 @@
+{
+  "materia": "talento-humano",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "th-incorporacion",
+      "nombre": "Planeación e incorporación",
+      "orden": 1,
+      "descripcion": "Planificar, reclutar y seleccionar personas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "th-planeacion",
+          "nombre": "Gestión del talento humano y planeación",
+          "explicacion": "La gestión del talento humano asegura que la organización tenga las personas adecuadas, en los puestos adecuados y en el momento adecuado. Empieza con el análisis de puestos y la proyección de cuántas personas y con qué perfil se necesitarán.",
+          "puntos_clave": [
+            "Análisis de puesto: descripción de funciones y especificación del perfil.",
+            "La planeación se alinea con la estrategia."
+          ],
+          "errores_frecuentes": [
+            "Contratar sin una descripción clara del puesto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-1-achieving-high-performance-through-human-resources-management",
+            "seccion": "8.1 Achieving High Performance through Human Resources Management"
+          }
+        },
+        {
+          "id": "th-reclutamiento",
+          "nombre": "Reclutamiento",
+          "explicacion": "Reclutar es atraer candidatos idóneos, desde dentro de la empresa (promociones, transferencias) o desde fuera (bolsas de empleo, referidos, redes). Cada fuente tiene costos y efectos distintos en la motivación interna.",
+          "puntos_clave": [
+            "El reclutamiento interno motiva y reduce el tiempo de adaptación.",
+            "El externo trae ideas nuevas."
+          ],
+          "errores_frecuentes": [
+            "Publicar una oferta sin requisitos claros y luego descartar a casi todos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-2-employee-recruitment",
+            "seccion": "8.2 Employee Recruitment"
+          }
+        },
+        {
+          "id": "th-seleccion",
+          "nombre": "Selección",
+          "explicacion": "La selección elige entre los candidatos con herramientas como entrevistas estructuradas, pruebas de conocimiento y verificación de referencias. Las decisiones deben basarse en criterios relacionados con el puesto, sin discriminación.",
+          "puntos_clave": [
+            "Una entrevista estructurada es más confiable que una conversación libre.",
+            "Los criterios se fijan antes de entrevistar."
+          ],
+          "errores_frecuentes": [
+            "Preguntar a un candidato por temas personales que no se relacionan con el puesto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-3-employee-selection",
+            "seccion": "8.3 Employee Selection"
+          }
+        }
+      ]
+    },
+    {
+      "id": "th-desarrollo",
+      "nombre": "Desarrollo y desempeño",
+      "orden": 2,
+      "descripcion": "Capacitar, evaluar y preparar sucesores.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "th-capacitacion",
+          "nombre": "Capacitación y desarrollo",
+          "explicacion": "La capacitación mejora habilidades para el puesto actual; el desarrollo prepara para responsabilidades futuras. Ambas parten de un diagnóstico de necesidades y se evalúan por sus resultados en el trabajo.",
+          "puntos_clave": [
+            "Inducción para quienes ingresan.",
+            "Medir la transferencia al puesto, no solo la asistencia."
+          ],
+          "errores_frecuentes": [
+            "Capacitar sin saber qué brecha se quiere cerrar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-4-employee-training-and-development",
+            "seccion": "8.4 Employee Training and Development"
+          }
+        },
+        {
+          "id": "th-evaluacion",
+          "nombre": "Planeación y evaluación del desempeño",
+          "explicacion": "Se acuerdan expectativas al inicio del período, se da retroalimentación durante el año y se evalúan los resultados al final. La evaluación sirve para decisiones de pago, promoción y desarrollo.",
+          "puntos_clave": [
+            "Expectativas claras desde el inicio.",
+            "Evidencias concretas, no impresiones."
+          ],
+          "errores_frecuentes": [
+            "Usar la evaluación solo para sancionar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-5-performance-planning-and-evaluation",
+            "seccion": "8.5 Performance Planning and Evaluation"
+          }
+        },
+        {
+          "id": "th-sucesion",
+          "nombre": "Desarrollo del talento y planes de sucesión",
+          "explicacion": "La planificación de la sucesión identifica puestos críticos y prepara con anticipación a quienes podrían ocuparlos. Así la organización no depende de una sola persona.",
+          "puntos_clave": [
+            "Identificar puestos críticos y candidatos internos.",
+            "Combinar experiencias, mentoría y formación."
+          ],
+          "errores_frecuentes": [
+            "Pensar en la sucesión solo cuando alguien renuncia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/11-6-talent-development-and-succession-planning",
+            "seccion": "11.6 Talent Development and Succession Planning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "th-compensacion",
+      "nombre": "Compensación",
+      "orden": 3,
+      "descripcion": "Remuneración, beneficios y obligaciones legales en Ecuador.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "th-compensacion-beneficios",
+          "nombre": "Compensación y beneficios",
+          "explicacion": "La compensación incluye el sueldo fijo, los pagos variables (comisiones, bonos) y los beneficios. Un sistema de compensación busca ser competitivo con el mercado, justo internamente y sostenible para la empresa.",
+          "puntos_clave": [
+            "Equidad externa: frente al mercado.",
+            "Equidad interna: entre puestos de la empresa."
+          ],
+          "errores_frecuentes": [
+            "Fijar sueldos sin considerar los mínimos legales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-6-employee-compensation-and-benefits",
+            "seccion": "8.6 Employee Compensation and Benefits"
+          }
+        },
+        {
+          "id": "th-salario-basico",
+          "nombre": "Salario básico y sueldos en Ecuador",
+          "explicacion": "El Código del Trabajo (art. 81) dispone que los sueldos se estipulan libremente pero nunca por debajo de los mínimos legales; el salario básico unificado lo fija el Consejo Nacional de Trabajo y Salarios o, sin acuerdo, el Ministerio del ramo. Para 2026 el SBU es de USD 482.",
+          "puntos_clave": [
+            "El SBU es la base de varios beneficios, como la décima cuarta remuneración.",
+            "Horas extra y comisiones no forman parte del salario básico."
+          ],
+          "errores_frecuentes": [
+            "Pagar menos del SBU a una jornada completa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 81"
+          }
+        },
+        {
+          "id": "th-aportes-iess",
+          "nombre": "Aportes al IESS",
+          "explicacion": "Para los trabajadores del sector privado en relación de dependencia, la tabla oficial del IESS fija un aporte personal de 9,45 % (que se descuenta del sueldo) y un aporte patronal de 11,15 % (que paga el empleador), en total 20,60 %.",
+          "puntos_clave": [
+            "El aporte personal se descuenta en el rol de pagos.",
+            "El aporte patronal es un costo adicional para el empleador."
+          ],
+          "errores_frecuentes": [
+            "Descontar al trabajador el aporte patronal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iess-tasas",
+            "seccion": "Tasas de aportación, sector privado"
+          }
+        }
+      ]
+    },
+    {
+      "id": "th-relaciones",
+      "nombre": "Relaciones laborales",
+      "orden": 4,
+      "descripcion": "Negociación, conflictos y obligaciones del empleador.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "th-relaciones-laborales",
+          "nombre": "El proceso de relaciones laborales",
+          "explicacion": "Las relaciones laborales abarcan la organización de los trabajadores, la negociación colectiva y la aplicación de los acuerdos. Un buen clima de relaciones reduce conflictos y costos para ambas partes.",
+          "puntos_clave": [
+            "La negociación colectiva fija condiciones para un grupo.",
+            "Los acuerdos deben cumplirse y vigilarse."
+          ],
+          "errores_frecuentes": [
+            "Tratar cada reclamo laboral como un ataque personal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-7-the-labor-relations-process",
+            "seccion": "8.7 The Labor Relations Process"
+          }
+        },
+        {
+          "id": "th-quejas",
+          "nombre": "Quejas y conflictos",
+          "explicacion": "Un procedimiento de quejas claro permite que los trabajadores planteen problemas sin temor a represalias y que se resuelvan por pasos antes de llegar a instancias externas.",
+          "puntos_clave": [
+            "Pasos definidos y plazos de respuesta.",
+            "Registrar los casos ayuda a detectar problemas de fondo."
+          ],
+          "errores_frecuentes": [
+            "Dejar sin respuesta las quejas informales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-8-managing-grievances-and-conflicts",
+            "seccion": "8.8 Managing Grievances and Conflicts"
+          }
+        },
+        {
+          "id": "th-obligaciones-empleador",
+          "nombre": "Obligaciones del empleador en Ecuador",
+          "explicacion": "El Código del Trabajo (art. 42) enumera las obligaciones del empleador: pagar lo que corresponde según el contrato y la ley, ofrecer lugares de trabajo con medidas de prevención, seguridad e higiene, e indemnizar los accidentes de trabajo y enfermedades profesionales, entre otras.",
+          "puntos_clave": [
+            "El pago puntual es la primera obligación.",
+            "La seguridad y salud en el trabajo es un deber legal."
+          ],
+          "errores_frecuentes": [
+            "Pensar que las obligaciones se limitan al pago del sueldo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 42"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -3,10 +3,10 @@
     "id": "libreoffice-calc",
     "nombre": "LibreOffice Calc",
     "para_que": "Hoja de cálculo de escritorio, libre y gratuita. Abre y guarda archivos .xlsx, ideal si no tienes licencia de Excel en tu computadora.",
-    "aparece_en": [
-      "informatica",
-      "contabilidad general",
-      "matematica financiera"
+    "materias": [
+      "informatica-gestion",
+      "contabilidad-general",
+      "matematica-financiera"
     ],
     "areas": [
       "tecnologia",
@@ -25,9 +25,9 @@
     "id": "excel-web",
     "nombre": "Excel para la web",
     "para_que": "Versión en línea de Excel. Sirve para practicar las mismas funciones en español (VA, PAGO, TIR) desde el navegador.",
-    "aparece_en": [
-      "informatica",
-      "matematica financiera"
+    "materias": [
+      "informatica-gestion",
+      "matematica-financiera"
     ],
     "areas": [
       "tecnologia",
@@ -45,9 +45,10 @@
     "id": "google-sheets",
     "nombre": "Hojas de cálculo de Google",
     "para_que": "Hoja de cálculo en línea para trabajar en grupo sobre el mismo archivo y ver los cambios de cada integrante.",
-    "aparece_en": [
-      "informatica",
-      "estadistica"
+    "materias": [
+      "informatica-gestion",
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
     ],
     "areas": [
       "tecnologia"
@@ -66,9 +67,9 @@
     "id": "geogebra",
     "nombre": "GeoGebra",
     "para_que": "Graficar funciones, ver rectas secantes y tangentes y comprobar derivadas y máximos de forma visual.",
-    "aparece_en": [
-      "calculo",
-      "matematica"
+    "materias": [
+      "calculo-diferencial",
+      "matematica-gestion"
     ],
     "areas": [
       "cuantitativo"
@@ -88,8 +89,9 @@
     "id": "desmos",
     "nombre": "Calculadora gráfica Desmos",
     "para_que": "Graficar funciones de costo, ingreso y utilidad con deslizadores para ver cómo cambian al mover un parámetro.",
-    "aparece_en": [
-      "calculo",
+    "materias": [
+      "calculo-diferencial",
+      "matematica-gestion",
       "microeconomia"
     ],
     "areas": [
@@ -109,8 +111,9 @@
     "id": "jasp",
     "nombre": "JASP",
     "para_que": "Estadística con menús, sin programar: estadística descriptiva, gráficos y pruebas que luego se ven en Estadística Inferencial.",
-    "aparece_en": [
-      "estadistica"
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
     ],
     "areas": [
       "cuantitativo"
@@ -128,9 +131,9 @@
     "id": "r-project",
     "nombre": "R",
     "para_que": "Lenguaje estadístico para analizar datos con código reproducible; muy usado en econometría y en trabajos de titulación.",
-    "aparece_en": [
-      "estadistica",
-      "econometria"
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
     ],
     "areas": [
       "cuantitativo",
@@ -149,10 +152,8 @@
     "id": "zotero",
     "nombre": "Zotero",
     "para_que": "Guardar artículos y generar citas y bibliografía en formato APA dentro de Word o LibreOffice.",
-    "aparece_en": [
-      "metodologia",
-      "titulacion",
-      "escritura academica"
+    "materias": [
+      "metodologia-investigacion"
     ],
     "areas": [
       "formacion"
@@ -172,10 +173,11 @@
     "id": "anki",
     "nombre": "Anki",
     "para_que": "Tarjetas de repaso espaciado para memorizar cuentas, artículos de ley o fórmulas antes de un examen.",
-    "aparece_en": [
-      "contabilidad general",
-      "legislacion",
-      "etica"
+    "materias": [
+      "contabilidad-general",
+      "derecho-empresarial",
+      "legislacion-laboral",
+      "etica-profesional"
     ],
     "areas": [
       "formacion"
@@ -196,9 +198,9 @@
     "id": "supercias-consulta",
     "nombre": "Consulta de compañías — Superintendencia de Compañías",
     "para_que": "Buscar una compañía ecuatoriana y revisar su información pública: especie, situación legal y documentos presentados.",
-    "aparece_en": [
-      "legislacion mercantil",
-      "contabilidad societaria"
+    "materias": [
+      "derecho-empresarial",
+      "contabilidad-financiera"
     ],
     "areas": [
       "derecho",
@@ -215,8 +217,8 @@
     "id": "sri-en-linea",
     "nombre": "SRI en Línea",
     "para_que": "Portal oficial del Servicio de Rentas Internas para trámites y declaraciones; útil para conocer los formularios reales que se ven en Legislación y Práctica Tributaria.",
-    "aparece_en": [
-      "tributaria"
+    "materias": [
+      "tributacion"
     ],
     "areas": [
       "tributario"
@@ -233,8 +235,8 @@
     "id": "khan-calculo",
     "nombre": "Khan Academy — Cálculo 1",
     "para_que": "Videos y ejercicios con retroalimentación inmediata sobre límites, derivadas y sus aplicaciones.",
-    "aparece_en": [
-      "calculo diferencial"
+    "materias": [
+      "calculo-diferencial"
     ],
     "areas": [
       "cuantitativo"
@@ -252,12 +254,14 @@
     "id": "openstax",
     "nombre": "OpenStax",
     "para_que": "Libros universitarios abiertos de contabilidad, finanzas, estadística, cálculo y economía: las mismas fuentes que cita ÁBACO.",
-    "aparece_en": [
-      "contabilidad general",
-      "estadistica",
-      "calculo",
+    "materias": [
+      "contabilidad-general",
+      "estadistica-descriptiva",
+      "estadistica-inferencial",
+      "calculo-diferencial",
+      "matematica-gestion",
       "microeconomia",
-      "matematica financiera"
+      "matematica-financiera"
     ],
     "areas": [
       "contabilidad",
@@ -271,5 +275,26 @@
     "url_oficial": "https://openstax.org/details/books/principles-financial-accounting",
     "fecha_consulta": "2026-10-14",
     "nota": "Contenido en inglés con licencia CC BY-NC-SA 4.0."
+  },
+  {
+    "id": "overleaf",
+    "nombre": "Overleaf",
+    "para_que": "Editor de LaTeX en el navegador para escribir informes, tesis y artículos con fórmulas y bibliografía. El plan gratuito permite proyectos ilimitados y un colaborador por proyecto.",
+    "materias": [
+      "metodologia-investigacion",
+      "matematica-gestion",
+      "estadistica-inferencial"
+    ],
+    "areas": [
+      "formacion",
+      "cuantitativo"
+    ],
+    "costo": "freemium",
+    "plataformas": [
+      "Web"
+    ],
+    "url_oficial": "https://www.overleaf.com/",
+    "fecha_consulta": "2026-10-25",
+    "nota": "Requiere crear una cuenta; ÁBACO no está afiliado a Overleaf. Su editor de informes ofrece una alternativa sin cuenta y sin conexión."
   }
 ]

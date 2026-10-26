@@ -1,0 +1,276 @@
+{
+  "materia": "comportamiento-organizacional",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "co-percepcion",
+      "nombre": "Percepción y actitudes",
+      "orden": 1,
+      "descripcion": "Cómo interpretamos a los demás y qué sentimos frente al trabajo.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "co-proceso-perceptivo",
+          "nombre": "El proceso perceptivo",
+          "explicacion": "Percibir es seleccionar, organizar e interpretar la información del entorno. Dos personas pueden ver la misma situación de forma distinta según sus experiencias, expectativas y el contexto.",
+          "puntos_clave": [
+            "La percepción guía el comportamiento más que la realidad objetiva.",
+            "Atención selectiva: vemos lo que esperamos."
+          ],
+          "errores_frecuentes": [
+            "Suponer que todos interpretan igual una instrucción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/3-1-the-perceptual-process",
+            "seccion": "3.1 The Perceptual Process"
+          }
+        },
+        {
+          "id": "co-atribucion",
+          "nombre": "Atribuciones",
+          "explicacion": "Al explicar el comportamiento ajeno tendemos a culpar a la persona (causas internas) y a subestimar la situación (causas externas). Con nuestros propios resultados hacemos lo contrario: el éxito es mérito y el fracaso, mala suerte.",
+          "puntos_clave": [
+            "Error fundamental de atribución.",
+            "Sesgo de autoservicio."
+          ],
+          "errores_frecuentes": [
+            "Evaluar a un colaborador sin considerar las condiciones en que trabajó."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/3-3-attributions-interpreting-the-causes-of-behavior",
+            "seccion": "3.3 Attributions: Interpreting the Causes of Behavior"
+          }
+        },
+        {
+          "id": "co-actitudes",
+          "nombre": "Actitudes laborales",
+          "explicacion": "La satisfacción laboral y el compromiso organizacional son actitudes que influyen en el ausentismo, la rotación y el desempeño. Se pueden medir con encuestas y mejorar con prácticas de gestión.",
+          "puntos_clave": [
+            "Satisfacción: cómo se siente la persona con su trabajo.",
+            "Compromiso: cuánto se identifica con la organización."
+          ],
+          "errores_frecuentes": [
+            "Suponer que un buen sueldo basta para asegurar satisfacción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/3-5-work-related-attitudes",
+            "seccion": "3.5 Work-Related Attitudes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-motivacion",
+      "nombre": "Motivación",
+      "orden": 2,
+      "descripcion": "Teorías de contenido y de proceso.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "co-contenido",
+          "nombre": "Teorías de contenido",
+          "explicacion": "Las teorías de contenido explican qué motiva: Maslow propone una jerarquía de necesidades; Herzberg distingue factores higiénicos (evitan la insatisfacción) de motivadores (generan satisfacción); McClelland destaca las necesidades de logro, afiliación y poder.",
+          "puntos_clave": [
+            "Higiénicos: sueldo, condiciones, políticas.",
+            "Motivadores: logro, reconocimiento, responsabilidad."
+          ],
+          "errores_frecuentes": [
+            "Pensar que mejorar factores higiénicos genera motivación por sí solo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/7-2-content-theories-of-motivation",
+            "seccion": "7.2 Content Theories of Motivation"
+          }
+        },
+        {
+          "id": "co-proceso",
+          "nombre": "Teorías de proceso",
+          "explicacion": "Las teorías de proceso explican cómo se motiva una persona: la de expectativas dice que el esfuerzo depende de creer que llevará a un resultado valioso; la de equidad, de sentirse tratado con justicia frente a otros; la de metas, de tener objetivos claros y desafiantes.",
+          "puntos_clave": [
+            "Expectativa × instrumentalidad × valencia.",
+            "Metas específicas superan a \"haz lo mejor que puedas\"."
+          ],
+          "errores_frecuentes": [
+            "Prometer recompensas que el colaborador no valora."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/7-3-process-theories-of-motivation",
+            "seccion": "7.3 Process Theories of Motivation"
+          }
+        },
+        {
+          "id": "co-evaluacion-recompensas",
+          "nombre": "Evaluación del desempeño y recompensas",
+          "explicacion": "La evaluación del desempeño compara el trabajo con estándares conocidos y sirve para dar retroalimentación, decidir recompensas y planificar desarrollo. Las recompensas motivan cuando se perciben ligadas al desempeño y justas.",
+          "puntos_clave": [
+            "Estándares claros antes de evaluar.",
+            "Retroalimentación frecuente, no solo anual."
+          ],
+          "errores_frecuentes": [
+            "Evaluar solo el último mes del año (efecto de recencia)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/8-1-performance-appraisal-systems",
+            "seccion": "8.1 Performance Appraisal Systems"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-grupos",
+      "nombre": "Grupos y comunicación",
+      "orden": 3,
+      "descripcion": "Cómo funcionan los equipos y cómo fluye la información.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "co-grupos-trabajo",
+          "nombre": "Grupos de trabajo",
+          "explicacion": "Un grupo de trabajo es un conjunto de personas que interactúan para lograr objetivos comunes. Los grupos pasan por etapas de desarrollo y desarrollan normas, roles y cohesión que influyen en su desempeño.",
+          "puntos_clave": [
+            "Formales: definidos por la organización; informales: surgen solos.",
+            "La cohesión ayuda si las normas apoyan las metas."
+          ],
+          "errores_frecuentes": [
+            "Suponer que un grupo cohesionado siempre rinde más."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/9-1-work-groups-basic-considerations",
+            "seccion": "9.1 Work Groups: Basic Considerations"
+          }
+        },
+        {
+          "id": "co-comunicacion-proceso",
+          "nombre": "El proceso de comunicación",
+          "explicacion": "Comunicar implica un emisor que codifica un mensaje, un canal, un receptor que lo decodifica y retroalimentación. El ruido (distracciones, jerga, prejuicios) distorsiona el mensaje en cualquier punto.",
+          "puntos_clave": [
+            "La retroalimentación confirma que el mensaje llegó como se quería.",
+            "Elegir el canal según la complejidad del mensaje."
+          ],
+          "errores_frecuentes": [
+            "Dar por entendido un mensaje solo porque se envió."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/11-1-the-process-of-managerial-communication",
+            "seccion": "11.1 The Process of Managerial Communication"
+          }
+        },
+        {
+          "id": "co-tipos-comunicacion",
+          "nombre": "Tipos de comunicación en la organización",
+          "explicacion": "La comunicación puede ser descendente, ascendente u horizontal, formal o informal, verbal o no verbal. Las organizaciones que facilitan la comunicación ascendente detectan problemas antes.",
+          "puntos_clave": [
+            "Rumores: canal informal rápido pero impreciso.",
+            "Lo no verbal puede contradecir lo verbal."
+          ],
+          "errores_frecuentes": [
+            "Ignorar la red informal de comunicación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/11-2-types-of-communications-in-organizations",
+            "seccion": "11.2 Types of Communications in Organizations"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-liderazgo-cambio",
+      "nombre": "Liderazgo, conflicto y cambio",
+      "orden": 4,
+      "descripcion": "Dirigir personas en situaciones cambiantes.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "co-liderazgo-conductual",
+          "nombre": "Enfoques conductuales del liderazgo",
+          "explicacion": "Los enfoques conductuales estudian lo que hacen los líderes eficaces: algunos se orientan a la tarea (organizar, fijar estándares) y otros a las personas (consideración, apoyo). Los mejores combinan ambas conductas según la situación.",
+          "puntos_clave": [
+            "Tarea y relación no se excluyen.",
+            "El liderazgo se puede aprender."
+          ],
+          "errores_frecuentes": [
+            "Creer que el liderazgo es solo un rasgo de nacimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/12-5-behavioral-approaches-to-leadership",
+            "seccion": "12.5 Behavioral Approaches to Leadership"
+          }
+        },
+        {
+          "id": "co-liderazgo-situacional",
+          "nombre": "Liderazgo situacional",
+          "explicacion": "Los enfoques situacionales sostienen que el estilo eficaz depende del contexto: la madurez de los colaboradores, la estructura de la tarea y el poder del líder. Un mismo líder debe ajustar su estilo.",
+          "puntos_clave": [
+            "Con colaboradores nuevos conviene más dirección.",
+            "Con colaboradores expertos conviene delegar."
+          ],
+          "errores_frecuentes": [
+            "Usar el mismo estilo con todo el equipo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/12-6-situational-contingency-approaches-to-leadership",
+            "seccion": "12.6 Situational (Contingency) Approaches to Leadership"
+          }
+        },
+        {
+          "id": "co-conflicto",
+          "nombre": "Resolver conflictos",
+          "explicacion": "Los conflictos pueden manejarse evitando, acomodando, compitiendo, comprometiendo o colaborando. La colaboración busca una solución que satisfaga a ambas partes y conviene cuando el tema es importante y hay tiempo.",
+          "puntos_clave": [
+            "Un conflicto moderado sobre tareas puede mejorar decisiones.",
+            "Los conflictos personales suelen dañar el desempeño."
+          ],
+          "errores_frecuentes": [
+            "Evitar siempre el conflicto hasta que crece."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/14-3-resolving-conflict-in-organizations",
+            "seccion": "14.3 Resolving Conflict in Organizations"
+          }
+        },
+        {
+          "id": "co-cambio",
+          "nombre": "Cambio organizacional",
+          "explicacion": "El cambio organizacional suele describirse en tres etapas: descongelar (crear la necesidad de cambio), cambiar (implementar) y recongelar (consolidar). La resistencia es normal y se reduce con comunicación, participación y apoyo.",
+          "puntos_clave": [
+            "Explicar el porqué antes del qué.",
+            "Consolidar con sistemas y recompensas."
+          ],
+          "errores_frecuentes": [
+            "Anunciar un cambio sin preparar a las personas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/16-2-organizational-change",
+            "seccion": "16.2 Organizational Change"
+          }
+        }
+      ]
+    }
+  ]
+}

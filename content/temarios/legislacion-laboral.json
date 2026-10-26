@@ -1,0 +1,314 @@
+{
+  "materia": "legislacion-laboral",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "ll-contrato",
+      "nombre": "El contrato de trabajo",
+      "orden": 1,
+      "descripcion": "Definición, clases, período de prueba y forma escrita.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ll-definicion",
+          "nombre": "Qué es un contrato individual de trabajo",
+          "explicacion": "El Código del Trabajo (art. 8) define el contrato individual como el convenio por el que una persona se compromete a prestar servicios lícitos y personales a otra, bajo su dependencia, a cambio de una remuneración. La dependencia es el rasgo que lo distingue de un servicio profesional independiente.",
+          "puntos_clave": [
+            "Tres elementos: servicio personal, dependencia y remuneración.",
+            "La realidad de la relación pesa más que el nombre del contrato."
+          ],
+          "errores_frecuentes": [
+            "Llamar \"honorarios\" a una relación con horario, jefe y sueldo fijo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 8"
+          }
+        },
+        {
+          "id": "ll-clases",
+          "nombre": "Clases de contrato",
+          "explicacion": "Según el art. 11, el contrato puede ser expreso o tácito; a sueldo, a jornal, en participación o mixto; por tiempo indefinido, de temporada, eventual u ocasional; por obra cierta, por tarea o a destajo; e individual, de grupo o por equipo.",
+          "puntos_clave": [
+            "El contrato indefinido es la regla general.",
+            "Un contrato tácito existe aunque no haya papel firmado."
+          ],
+          "errores_frecuentes": [
+            "Creer que sin contrato escrito no hay relación laboral."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 11"
+          }
+        },
+        {
+          "id": "ll-prueba",
+          "nombre": "Período de prueba",
+          "explicacion": "En un contrato de plazo indefinido celebrado por primera vez puede pactarse un período de prueba de hasta noventa días (quince en el trabajo del hogar). Solo puede haber uno entre el mismo trabajador y empleador, y durante él cualquiera de las partes puede terminar la relación.",
+          "puntos_clave": [
+            "Máximo 90 días.",
+            "No se encadenan períodos de prueba."
+          ],
+          "errores_frecuentes": [
+            "Pactar un segundo período de prueba con el mismo trabajador."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 15"
+          }
+        },
+        {
+          "id": "ll-escrito",
+          "nombre": "Contratos que deben ser escritos",
+          "explicacion": "El art. 19 exige forma escrita, entre otros, para los contratos que requieren conocimientos técnicos o profesionales, los que tienen período de prueba, los eventuales, ocasionales y de temporada, los de aprendizaje y los celebrados con adolescentes desde los quince años.",
+          "puntos_clave": [
+            "Un contrato con período de prueba siempre es escrito.",
+            "El contrato escrito protege a ambas partes."
+          ],
+          "errores_frecuentes": [
+            "Pactar un período de prueba de palabra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-jornada",
+      "nombre": "Jornada y remuneración",
+      "orden": 2,
+      "descripcion": "Horas, recargos y salario básico.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ll-jornada-maxima",
+          "nombre": "Jornada máxima",
+          "explicacion": "La jornada máxima es de ocho horas diarias sin exceder cuarenta horas semanales, salvo disposición legal en contrario (art. 47). En el subsuelo el máximo de trabajo efectivo es de seis horas diarias.",
+          "puntos_clave": [
+            "8 horas diarias, 40 semanales.",
+            "Lo que excede se paga como hora suplementaria o extraordinaria."
+          ],
+          "errores_frecuentes": [
+            "Considerar normal una jornada de 48 horas semanales sin recargo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 47"
+          }
+        },
+        {
+          "id": "ll-horas-extra",
+          "nombre": "Horas suplementarias y extraordinarias",
+          "explicacion": "Según el art. 55, las horas suplementarias no pueden exceder de cuatro al día ni de doce a la semana. Si ocurren durante el día o hasta las 24:00 se pagan con 50 % de recargo; entre las 24:00 y las 06:00, con 100 %. El recargo se calcula sobre el valor de la hora diurna.",
+          "puntos_clave": [
+            "El recargo se calcula sobre el valor de la hora de trabajo diurno.",
+            "Se requiere convenio escrito y autorización del inspector de trabajo."
+          ],
+          "errores_frecuentes": [
+            "Pagar las horas nocturnas con el mismo 50 % que las diurnas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 55"
+          }
+        },
+        {
+          "id": "ll-sbu",
+          "nombre": "Sueldos y salario básico",
+          "explicacion": "Los sueldos se estipulan libremente pero nunca por debajo de los mínimos legales (art. 81). El salario básico no incluye pagos por horas extra, comisiones, utilidades, fondos de reserva ni remuneraciones adicionales. Para 2026 el SBU es de USD 482.",
+          "puntos_clave": [
+            "El SBU lo fija el Consejo Nacional de Trabajo y Salarios o, sin acuerdo, el Ministerio del ramo.",
+            "Es la base de la décima cuarta remuneración."
+          ],
+          "errores_frecuentes": [
+            "Contar las comisiones para alcanzar el salario básico."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 81"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-beneficios",
+      "nombre": "Beneficios de ley",
+      "orden": 3,
+      "descripcion": "Décimos, fondo de reserva, vacaciones y utilidades.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ll-decimo-tercero",
+          "nombre": "Décima tercera remuneración",
+          "explicacion": "El trabajador tiene derecho a la doceava parte de las remuneraciones percibidas en el año calendario (art. 111). Puede recibirse mensualmente o, a pedido escrito, de forma acumulada hasta el 24 de diciembre.",
+          "puntos_clave": [
+            "Décimo tercero = total ganado en el período ÷ 12.",
+            "No se considera para los aportes al IESS, el fondo de reserva, las indemnizaciones, las vacaciones ni el impuesto a la renta del trabajo (art. 112)."
+          ],
+          "errores_frecuentes": [
+            "Calcularlo sobre el salario básico en lugar de lo realmente percibido."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 111"
+          }
+        },
+        {
+          "id": "ll-decimo-cuarto",
+          "nombre": "Décima cuarta remuneración",
+          "explicacion": "Es una bonificación mensual equivalente a la doceava parte de la remuneración básica unificada (art. 113). Acumulada, se paga hasta el 15 de marzo en la Costa e Insular y hasta el 15 de agosto en la Sierra y la Amazonía.",
+          "puntos_clave": [
+            "Décimo cuarto anual = 1 SBU.",
+            "Quien sale antes recibe la parte proporcional."
+          ],
+          "errores_frecuentes": [
+            "Calcularlo sobre el sueldo del trabajador en lugar del SBU."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 113"
+          }
+        },
+        {
+          "id": "ll-fondo-reserva",
+          "nombre": "Fondo de reserva",
+          "explicacion": "Todo trabajador que preste servicios por más de un año tiene derecho a recibir un mes de sueldo o salario por cada año completo posterior al primero (art. 196). Equivale a la doceava parte de lo ganado (8,33 % mensual) a partir del segundo año.",
+          "puntos_clave": [
+            "Se genera desde el mes 13 de trabajo.",
+            "El trabajador no pierde este derecho por ningún motivo."
+          ],
+          "errores_frecuentes": [
+            "Pagarlo desde el primer mes de trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 196"
+          }
+        },
+        {
+          "id": "ll-vacaciones",
+          "nombre": "Vacaciones anuales",
+          "explicacion": "Todo trabajador tiene derecho a quince días ininterrumpidos de descanso al año, incluidos los no laborables. Después de cinco años con el mismo empleador gana un día adicional por cada año excedente, hasta quince adicionales (art. 69). La remuneración de vacaciones se recibe por adelantado.",
+          "puntos_clave": [
+            "15 días anuales.",
+            "Días adicionales por antigüedad desde el sexto año."
+          ],
+          "errores_frecuentes": [
+            "Fraccionar las vacaciones de forma que el trabajador nunca descanse quince días seguidos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 69"
+          }
+        },
+        {
+          "id": "ll-utilidades",
+          "nombre": "Participación en utilidades",
+          "explicacion": "El empleador reconoce a sus trabajadores el 15 % de las utilidades líquidas (art. 97): el 10 % se reparte por igual entre todos y el 5 % en proporción a sus cargas familiares. Quien no trabajó todo el año recibe la parte proporcional.",
+          "puntos_clave": [
+            "10 % por igual y 5 % por cargas familiares.",
+            "Las cargas son cónyuge o conviviente, hijos menores de 18 e hijos con discapacidad de cualquier edad."
+          ],
+          "errores_frecuentes": [
+            "Repartir el 15 % en proporción a los sueldos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 97"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-seguridad-terminacion",
+      "nombre": "Seguridad social y terminación",
+      "orden": 4,
+      "descripcion": "Aportes al IESS y fin de la relación laboral.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ll-aportes",
+          "nombre": "Aportes al IESS",
+          "explicacion": "La tabla oficial del IESS para el sector privado en relación de dependencia fija 9,45 % de aporte personal y 11,15 % de aporte patronal sobre la remuneración, que financian pensiones, salud, riesgos del trabajo, cesantía, seguro campesino y gastos de administración.",
+          "puntos_clave": [
+            "El 9,45 % se descuenta del rol del trabajador.",
+            "El 11,15 % lo paga el empleador además del sueldo."
+          ],
+          "errores_frecuentes": [
+            "Incluir el décimo tercero en la base de aportes: el art. 112 del Código del Trabajo lo excluye."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iess-tasas",
+            "seccion": "Tasas de aportación, sector privado"
+          }
+        },
+        {
+          "id": "ll-terminacion",
+          "nombre": "Causas de terminación",
+          "explicacion": "El art. 169 enumera las causas de terminación del contrato: las previstas en el contrato, el acuerdo de las partes, la conclusión de la obra o del período de labor, la muerte o incapacidad de alguna de las partes, entre otras. Cada causa tiene efectos distintos en las indemnizaciones.",
+          "puntos_clave": [
+            "Terminar por acuerdo genera la bonificación por desahucio.",
+            "Conviene documentar la causa por escrito."
+          ],
+          "errores_frecuentes": [
+            "Suponer que cualquier terminación se liquida igual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 169"
+          }
+        },
+        {
+          "id": "ll-desahucio",
+          "nombre": "Desahucio y su bonificación",
+          "explicacion": "El desahucio es el aviso escrito con el que el trabajador comunica que quiere terminar el contrato, con al menos quince días de anticipación (art. 184). El empleador paga una bonificación del 25 % de la última remuneración mensual por cada año de servicio; lo mismo si la relación termina por acuerdo (art. 185).",
+          "puntos_clave": [
+            "Bonificación = 25 % × última remuneración × años de servicio.",
+            "La liquidación debe hacerse dentro de quince días del aviso."
+          ],
+          "errores_frecuentes": [
+            "Confundir el desahucio con el despido intempestivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Arts. 184 y 185"
+          }
+        },
+        {
+          "id": "ll-despido",
+          "nombre": "Despido intempestivo",
+          "explicacion": "Si el empleador despide sin causa legal, indemniza según el art. 188: hasta tres años de servicio, tres meses de remuneración; con más de tres años, un mes por cada año, sin superar veinticinco meses. La fracción de año cuenta como año completo.",
+          "puntos_clave": [
+            "Se calcula con la remuneración del momento del despido.",
+            "Se suma a las bonificaciones que correspondan."
+          ],
+          "errores_frecuentes": [
+            "Contar solo los años completos y despreciar la fracción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "seccion": "Art. 188"
+          }
+        }
+      ]
+    }
+  ]
+}

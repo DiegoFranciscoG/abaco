@@ -1,7 +1,7 @@
 [
   {
     "id": "ej-cg-patrimonio",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Una librería tiene activos por USD 52.000 y pasivos por USD 19.300. ¿Cuál es su patrimonio?",
     "datos": {
       "A": 52000,
@@ -31,7 +31,7 @@
   },
   {
     "id": "ej-cg-ampliada",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Un taller tiene pasivos de USD 8.400, capital aportado de USD 25.000, ingresos de USD 14.200, gastos de USD 9.850 y retiros del dueño por USD 1.000. ¿Cuánto suman sus activos?",
     "datos": {
       "P": 8400,
@@ -64,7 +64,7 @@
   },
   {
     "id": "ej-cg-transaccion",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Una empresa tiene activos por USD 40.000. Compra mercadería a crédito por USD 3.500. ¿Cuál es su activo total después de la compra?",
     "datos": {
       "A0": 40000,
@@ -95,7 +95,7 @@
   },
   {
     "id": "ej-cg-saldo-bancos",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "La cuenta Bancos registra cargos por USD 2.500, 1.800 y 640, y abonos por USD 1.200, 900 y 75. ¿Cuál es su saldo?",
     "datos": {
       "debe": [
@@ -134,7 +134,7 @@
   },
   {
     "id": "ej-cg-diferencia-balance",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "En un balance de comprobación los saldos deudores son USD 3.200, 1.450, 870 y 2.480; los acreedores, USD 2.000 y 5.910. ¿Qué diferencia hay que investigar?",
     "datos": {
       "debe": [
@@ -173,7 +173,7 @@
   },
   {
     "id": "ej-cg-utilidad",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Una agencia tuvo ingresos de USD 31.400. Sus gastos fueron sueldos 12.000, arriendo 4.800, servicios básicos 1.350 y depreciación 2.100. ¿Utilidad neta?",
     "datos": {
       "I": 31400,
@@ -208,7 +208,7 @@
   },
   {
     "id": "ej-cg-costo-ventas",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Inventario inicial USD 8.500; compras USD 27.000; fletes en compras USD 600; devoluciones en compras USD 1.100; inventario final USD 7.200. ¿Costo de ventas?",
     "datos": {
       "II": 8500,
@@ -241,7 +241,7 @@
   },
   {
     "id": "ej-cg-margen-bruto",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Con ventas netas de USD 60.000 y costo de ventas de USD 27.800, ¿cuál es el margen bruto? (Escribe 0,5367 o 53,67 %)",
     "datos": {
       "VN": 60000,
@@ -271,7 +271,7 @@
   },
   {
     "id": "ej-cg-peps",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Hay 50 unidades a USD 10 (las más antiguas) y 80 unidades a USD 11. Se venden 100 unidades. ¿Costo de ventas por PEPS?",
     "datos": {
       "q1": 50,
@@ -304,7 +304,7 @@
   },
   {
     "id": "ej-cg-promedio",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+    "materia": "contabilidad-general",
     "enunciado": "Con los mismos lotes (50 u a USD 10 y 80 u a USD 11), ¿cuál es el costo de ventas de 100 unidades con promedio ponderado?",
     "datos": {
       "q1": 50,
@@ -338,7 +338,7 @@
   },
   {
     "id": "ej-ed-media",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "materia": "estadistica-descriptiva",
     "enunciado": "Clientes atendidos por día en una agencia: 18, 22, 25, 19, 21 y 23. ¿Cuál es la media? (redondea a dos decimales)",
     "datos": {
       "x": [
@@ -375,7 +375,7 @@
   },
   {
     "id": "ej-ed-mediana",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "materia": "estadistica-descriptiva",
     "enunciado": "Días de cobro de seis facturas: 7, 3, 9, 5, 11 y 6. ¿Cuál es la mediana?",
     "datos": {
       "x": [
@@ -412,7 +412,7 @@
   },
   {
     "id": "ej-ed-ponderada",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "materia": "estadistica-descriptiva",
     "enunciado": "Notas: deberes 9 (25 %), prueba 6 (35 %) y examen 8 (40 %). ¿Nota final?",
     "datos": {
       "x": [
@@ -451,7 +451,7 @@
   },
   {
     "id": "ej-ed-desviacion",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "materia": "estadistica-descriptiva",
     "enunciado": "Una muestra de ventas semanales (miles USD) es 10, 12, 14, 16 y 18. ¿Desviación estándar muestral? (4 decimales)",
     "datos": {
       "x": [
@@ -488,7 +488,7 @@
   },
   {
     "id": "ej-ed-cv",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "materia": "estadistica-descriptiva",
     "enunciado": "Con la misma muestra (10, 12, 14, 16, 18), ¿cuál es el coeficiente de variación? (4 decimales)",
     "datos": {
       "x": [
@@ -523,7 +523,7 @@
   },
   {
     "id": "ej-ed-z",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+    "materia": "estadistica-descriptiva",
     "enunciado": "En un parcial la media fue 58 y la desviación estándar 5. ¿Cuál es la puntuación z de quien obtuvo 65?",
     "datos": {
       "x": 65,
@@ -554,7 +554,7 @@
   },
   {
     "id": "ej-cd-secante",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "materia": "calculo-diferencial",
     "enunciado": "Para f(x) = 3x² + 2x, calcula la tasa de cambio promedio entre x = 1 y x = 4.",
     "datos": {
       "a": 1,
@@ -585,7 +585,7 @@
   },
   {
     "id": "ej-cd-marginal",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "materia": "calculo-diferencial",
     "enunciado": "El costo total es C(q) = 500 + 8q + 0,05q². ¿Cuál es el costo marginal cuando q = 40?",
     "datos": {
       "b": 8,
@@ -616,7 +616,7 @@
   },
   {
     "id": "ej-cd-optimo",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "materia": "calculo-diferencial",
     "enunciado": "El ingreso de una pequeña empresa es R(q) = 120q − 0,6q². ¿Qué cantidad maximiza el ingreso?",
     "datos": {
       "p": 120,
@@ -647,7 +647,7 @@
   },
   {
     "id": "ej-cd-elasticidad",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+    "materia": "calculo-diferencial",
     "enunciado": "Una heladería sube el precio de USD 4 a 5 y sus ventas pasan de 1.000 a 900 unidades. Calcula la elasticidad por el método del punto medio (4 decimales).",
     "datos": {
       "Q1": 1000,
@@ -680,7 +680,7 @@
   },
   {
     "id": "ej-ii-referencias",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "materia": "informatica-gestion",
     "enunciado": "En B1 está la tarifa 0,15. En A2, A3 y A4 hay 100, 250 y 80. En B2 escribes =A2*$B$1 y la arrastras hasta B4. ¿Cuánto suma B2:B4?",
     "datos": {
       "bases": [
@@ -714,7 +714,7 @@
   },
   {
     "id": "ej-ii-sumarsi",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "materia": "informatica-gestion",
     "enunciado": "Ventas por sucursal: Cuenca 1.200; Azogues 800; Cuenca 950; Loja 600; Cuenca 400. ¿Qué devuelve =SUMAR.SI(A2:A6;\"Cuenca\";B2:B6)?",
     "datos": {
       "v": [
@@ -754,7 +754,7 @@
   },
   {
     "id": "ej-ii-pago",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "materia": "informatica-gestion",
     "enunciado": "Un préstamo de USD 5.000 se paga en 12 cuotas mensuales al 2 % mensual. ¿Qué cuota devuelve =PAGO(2%;12;-5000)?",
     "datos": {
       "VA": 5000,
@@ -785,7 +785,7 @@
   },
   {
     "id": "ej-ii-van",
-    "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+    "materia": "informatica-gestion",
     "enunciado": "Un proyecto cuesta USD 8.000 y genera 3.000, 3.500 y 4.000 en los años 1 a 3. Con 12 % de descuento, ¿cuál es el VAN? (=VNA(12%;B2:B4)+B1)",
     "datos": {
       "I0": 8000,

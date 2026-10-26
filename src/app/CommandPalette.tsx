@@ -6,18 +6,19 @@ import { Icon, type IconName } from '../ui/icons';
 import { AreaTile } from '../ui/primitives';
 
 const TYPE_LABEL: Record<SearchDocType, string> = {
+  materia: 'Materia',
+  tema: 'Tema',
+  subtema: 'Subtema',
   formula: 'Fórmula',
-  subtema: 'Tema',
-  asignatura: 'Asignatura',
-  carrera: 'Carrera',
+  herramienta: 'Herramienta',
   termino: 'Glosario',
-  app: 'App',
+  app: 'App externa',
   ejercicio: 'Ejercicio',
 };
 
 const QUICK: { label: string; to: string; icon: IconName }[] = [
   { label: 'Buscador académico (artículos y tesis)', to: '/buscar', icon: 'book' },
-  { label: 'Comparar mallas entre universidades', to: '/comparar', icon: 'compare' },
+  { label: 'Herramientas de estudio', to: '/herramientas', icon: 'tools' },
   { label: 'Practicar ejercicios', to: '/practica', icon: 'target' },
   { label: 'Glosario', to: '/glosario', icon: 'note' },
 ];

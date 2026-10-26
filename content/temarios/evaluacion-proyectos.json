@@ -1,0 +1,266 @@
+{
+  "materia": "evaluacion-proyectos",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "ep-fundamentos",
+      "nombre": "Decisiones de inversión de capital",
+      "orden": 1,
+      "descripcion": "Qué son y qué información es relevante.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ep-inversion-capital",
+          "nombre": "Qué es una decisión de inversión de capital",
+          "explicacion": "Es una decisión de gastar hoy en activos de largo plazo (una planta, maquinaria, un local) esperando beneficios durante varios años. Por su monto y duración, es difícil de revertir y conviene evaluarla con métodos formales.",
+          "puntos_clave": [
+            "Se evalúan proyectos de expansión, reemplazo y mejora.",
+            "La decisión compromete recursos por varios períodos."
+          ],
+          "errores_frecuentes": [
+            "Decidir por intuición una inversión que compromete la empresa por años."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/11-1-describe-capital-investment-decisions-and-how-they-are-applied",
+            "seccion": "11.1 Describe Capital Investment Decisions and How They Are Applied"
+          }
+        },
+        {
+          "id": "ep-informacion-relevante",
+          "nombre": "Información relevante y costos hundidos",
+          "explicacion": "Solo importan los flujos futuros que cambian según la decisión. Un costo hundido, ya gastado y no recuperable, no debe influir; tampoco los costos que serán iguales en todas las alternativas.",
+          "puntos_clave": [
+            "El costo de oportunidad sí es relevante aunque no implique un pago.",
+            "Un estudio de mercado ya pagado es un costo hundido."
+          ],
+          "errores_frecuentes": [
+            "Seguir con un proyecto malo \"porque ya se invirtió mucho\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/10-1-identify-relevant-information-for-decision-making",
+            "seccion": "10.1 Identify Relevant Information for Decision-Making"
+          }
+        },
+        {
+          "id": "ep-valor-dinero",
+          "nombre": "El valor del dinero en el tiempo en los proyectos",
+          "explicacion": "Como los flujos de un proyecto ocurren en distintos años, se llevan a una misma fecha descontándolos a la tasa mínima de rendimiento exigida. Sin este paso, un dólar del año 5 valdría lo mismo que uno de hoy.",
+          "puntos_clave": [
+            "Los flujos se descuentan con la tasa de la empresa o el costo de capital.",
+            "Las anualidades simplifican flujos iguales."
+          ],
+          "errores_frecuentes": [
+            "Sumar flujos de distintos años sin descontarlos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/11-3-explain-the-time-value-of-money-and-calculate-present-and-future-values-of-lump-sums-and-annuities",
+            "seccion": "11.3 Explain the Time Value of Money and Calculate Present and Future Values of Lump Sums and Annuities"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-criterios-descontados",
+      "nombre": "Criterios con flujos descontados",
+      "orden": 2,
+      "descripcion": "VAN, TIR e índice de rentabilidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ep-van",
+          "nombre": "Valor actual neto (VAN)",
+          "explicacion": "El VAN es el valor presente de los flujos futuros menos la inversión inicial. Si es positivo, el proyecto rinde más que la tasa exigida y crea valor; si es negativo, lo destruye.",
+          "puntos_clave": [
+            "Regla: aceptar si VAN > 0.",
+            "El VAN depende de la tasa de descuento elegida."
+          ],
+          "errores_frecuentes": [
+            "Incluir la inversión inicial dentro de la función VNA de Excel, que descuenta desde el período 1."
+          ],
+          "formulas": [
+            "van"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-2-net-present-value-npv-method",
+            "seccion": "16.2 Net Present Value (NPV) Method"
+          }
+        },
+        {
+          "id": "ep-tir",
+          "nombre": "Tasa interna de retorno (TIR)",
+          "explicacion": "La TIR es la tasa de descuento que hace cero el VAN. Se compara con la tasa mínima exigida: si es mayor, el proyecto se acepta. Se calcula por aproximaciones sucesivas o con la función TIR.",
+          "puntos_clave": [
+            "Con flujos no convencionales puede haber más de una TIR.",
+            "Para proyectos independientes, VAN y TIR suelen coincidir en la decisión."
+          ],
+          "errores_frecuentes": [
+            "Elegir entre proyectos excluyentes solo por la TIR más alta."
+          ],
+          "formulas": [
+            "tir"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-3-internal-rate-of-return-irr-method",
+            "seccion": "16.3 Internal Rate of Return (IRR) Method"
+          }
+        },
+        {
+          "id": "ep-indice-rentabilidad",
+          "nombre": "Índice de rentabilidad",
+          "explicacion": "El índice de rentabilidad divide el valor presente de los flujos futuros para la inversión inicial. Mayor a 1 significa VAN positivo; es útil para ordenar proyectos cuando el capital disponible es limitado.",
+          "puntos_clave": [
+            "IR = VA de flujos ÷ inversión.",
+            "IR > 1 equivale a VAN > 0."
+          ],
+          "errores_frecuentes": [
+            "Usarlo para elegir entre proyectos excluyentes de tamaño muy distinto."
+          ],
+          "formulas": [
+            "indice-rentabilidad"
+          ],
+          "fuente": {
+            "ref": "os-pfin",
+            "url": "https://openstax.org/books/principles-finance/pages/16-4-alternative-methods",
+            "seccion": "16.4 Métodos alternativos: índice de rentabilidad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-otros-criterios",
+      "nombre": "Criterios sin descuento y comparación",
+      "orden": 3,
+      "descripcion": "Período de recuperación, tasa contable y elección entre proyectos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ep-payback",
+          "nombre": "Período de recuperación",
+          "explicacion": "Indica cuánto tiempo tarda el proyecto en devolver la inversión con sus flujos. Es fácil de entender y mide liquidez, pero ignora el valor del dinero y los flujos posteriores a la recuperación.",
+          "puntos_clave": [
+            "Con flujos iguales: inversión ÷ flujo anual.",
+            "Con flujos desiguales se acumulan hasta cubrir la inversión."
+          ],
+          "errores_frecuentes": [
+            "Usarlo como único criterio de aceptación."
+          ],
+          "formulas": [
+            "periodo-recuperacion"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-1-payback-period-method",
+            "seccion": "16.1 Payback Period Method"
+          }
+        },
+        {
+          "id": "ep-tasa-contable",
+          "nombre": "Tasa de rendimiento contable",
+          "explicacion": "Divide la utilidad contable promedio del proyecto para la inversión. Usa cifras contables que ya conoce la gerencia, pero no considera el valor del dinero en el tiempo ni los flujos de efectivo.",
+          "puntos_clave": [
+            "Usa utilidad, no flujo de efectivo.",
+            "Sirve como medida complementaria."
+          ],
+          "errores_frecuentes": [
+            "Compararla directamente con la TIR."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/11-2-evaluate-the-payback-and-accounting-rate-of-return-in-capital-investment-decisions",
+            "seccion": "11.2 Evaluate the Payback and Accounting Rate of Return in Capital Investment Decisions"
+          }
+        },
+        {
+          "id": "ep-elegir",
+          "nombre": "Elegir entre proyectos",
+          "explicacion": "Cuando los proyectos son mutuamente excluyentes y sus criterios no coinciden, se prefiere el de mayor VAN, porque mide directamente cuánto valor crea. Las diferencias de tamaño y de calendario de flujos explican los conflictos entre VAN y TIR.",
+          "puntos_clave": [
+            "Proyectos excluyentes: solo se puede hacer uno.",
+            "El VAN suma valor en dólares; la TIR es un porcentaje."
+          ],
+          "errores_frecuentes": [
+            "Preferir un proyecto pequeño con TIR alta sobre uno grande con más VAN."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-5-choosing-between-projects",
+            "seccion": "16.5 Choosing between Projects"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-practica",
+      "nombre": "Del cálculo a la decisión",
+      "orden": 4,
+      "descripcion": "Hoja de cálculo, comparación de métodos y factibilidad.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ep-hoja-calculo",
+          "nombre": "Evaluar proyectos en la hoja de cálculo",
+          "explicacion": "Con VNA, TIR y celdas bien organizadas (flujos por año, tasa en una celda aparte) se puede cambiar un supuesto y ver al instante el nuevo VAN. Hay que recordar que VNA descuenta desde el período 1, así que la inversión inicial se suma aparte.",
+          "puntos_clave": [
+            "VAN = VNA(tasa; flujos 1..n) + flujo 0.",
+            "Separar supuestos y resultados facilita el análisis."
+          ],
+          "errores_frecuentes": [
+            "Meter el flujo del año 0 dentro del rango de VNA."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-6-using-excel-to-make-company-investment-decisions",
+            "seccion": "16.6 Using Excel to Make Company Investment Decisions"
+          }
+        },
+        {
+          "id": "ep-comparar-metodos",
+          "nombre": "Métodos con y sin valor del dinero",
+          "explicacion": "Los métodos que descuentan (VAN, TIR) reconocen que el dinero tiene costo; los que no (recuperación, tasa contable) son más simples pero pueden recomendar proyectos que destruyen valor. En la práctica se presentan juntos, dando prioridad al VAN.",
+          "puntos_clave": [
+            "Un buen informe muestra varios criterios.",
+            "Los métodos sin descuento sirven como filtro inicial."
+          ],
+          "errores_frecuentes": [
+            "Aprobar un proyecto solo porque se recupera rápido."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/11-5-compare-and-contrast-non-time-value-based-methods-and-time-value-based-methods-in-capital-investment-decisions",
+            "seccion": "11.5 Compare and Contrast Non-Time Value-Based Methods and Time Value-Based Methods in Capital Investment Decisions"
+          }
+        },
+        {
+          "id": "ep-factibilidad",
+          "nombre": "Análisis de factibilidad",
+          "explicacion": "Antes de invertir se revisa si el proyecto es viable en cuatro frentes: mercado (hay clientes), técnico (se puede producir), organizacional (hay equipo) y financiero (los números cierran). Un VAN positivo no basta si falla alguno de los otros.",
+          "puntos_clave": [
+            "La factibilidad reduce el riesgo de invertir en una idea sin demanda.",
+            "Sus conclusiones alimentan el flujo de caja del proyecto."
+          ],
+          "errores_frecuentes": [
+            "Proyectar ventas sin evidencia de mercado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/11-3-conducting-a-feasibility-analysis",
+            "seccion": "11.3 Conducting a Feasibility Analysis"
+          }
+        }
+      ]
+    }
+  ]
+}

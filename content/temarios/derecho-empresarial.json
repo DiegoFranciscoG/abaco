@@ -1,5 +1,5 @@
 {
-  "asignatura": "ucuenca-contabilidad-auditoria--c1-legislacion-mercantil-y-societaria",
+  "materia": "derecho-empresarial",
   "actualizado_en": "2026-10-15",
   "temas": [
     {
@@ -21,7 +21,10 @@
             "Afirmar que toda compañía necesita al menos dos socios: la ley vigente permite el acto unilateral."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Art. 1" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Art. 1"
+          }
         },
         {
           "id": "lm-companias-especies",
@@ -35,7 +38,10 @@
             "Confundir la compañía con sus socios: las deudas de la compañía no son, en principio, deudas de los socios."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Art. 2" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Art. 2"
+          }
         },
         {
           "id": "lm-companias-objeto",
@@ -49,7 +55,10 @@
             "Redactar un objeto social ambiguo que luego impide realizar actividades del negocio."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 3, 4 y 5" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 3, 4 y 5"
+          }
         }
       ]
     },
@@ -73,7 +82,10 @@
             "Creer que el socio colectivo solo arriesga su aporte."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 36, 37 y 74" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 36, 37 y 74"
+          }
         },
         {
           "id": "lm-personas-comandita",
@@ -87,7 +99,10 @@
             "Incluir el nombre de un comanditario en la razón social: la ley la forma con los socios solidarios."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 59 y 74" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 59 y 74"
+          }
         },
         {
           "id": "lm-personas-mixta",
@@ -101,7 +116,10 @@
             "Confundirla con una empresa pública, cuyo capital es íntegramente estatal."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 308 y 431" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 308 y 431"
+          }
         }
       ]
     },
@@ -125,7 +143,10 @@
             "Usar una compañía limitada para captar ahorro del público."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 92, 93 y 94" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 92, 93 y 94"
+          }
         },
         {
           "id": "lm-limitada-socios",
@@ -139,7 +160,10 @@
             "Contar la existencia de la compañía desde la firma de la escritura."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 95 y 96" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 95 y 96"
+          }
         },
         {
           "id": "lm-limitada-capital",
@@ -155,7 +179,10 @@
             "Llamar «acciones» a las participaciones de una limitada."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Art. 102" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Art. 102"
+          }
         },
         {
           "id": "lm-limitada-junta",
@@ -170,7 +197,10 @@
             "Calcular el quórum por número de socios en lugar de por capital representado."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 116, 117 y 118" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 116, 117 y 118"
+          }
         }
       ]
     },
@@ -193,7 +223,10 @@
             "Creer que los administradores deben ser accionistas."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 143 y 144" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 143 y 144"
+          }
         },
         {
           "id": "lm-capitales-capital",
@@ -208,7 +241,10 @@
             "Aplicar a la anónima el 50 % de pago inicial que corresponde a la limitada."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Arts. 147, 160 y 168" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Arts. 147, 160 y 168"
+          }
         },
         {
           "id": "lm-capitales-sas",
@@ -223,7 +259,10 @@
             "Suponer que una S.A.S. puede emitir acciones en la bolsa de valores para financiarse."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Sección de las sociedades por acciones simplificadas" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Sección de las sociedades por acciones simplificadas"
+          }
         }
       ]
     },
@@ -246,7 +285,10 @@
             "Pensar que solo las compañías grandes están bajo control de la Superintendencia."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Art. 431" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Art. 431"
+          }
         },
         {
           "id": "lm-control-informacion",
@@ -260,7 +302,10 @@
             "Enviar solo el balance general sin el juego completo de estados financieros."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Art. 20" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Art. 20"
+          }
         },
         {
           "id": "lm-control-normativa",
@@ -274,7 +319,10 @@
             "Buscar en la ley un monto de capital mínimo que en realidad fija una resolución."
           ],
           "formulas": [],
-          "fuente": { "ref": "ley-companias", "seccion": "Art. 433" }
+          "fuente": {
+            "ref": "ley-companias",
+            "seccion": "Art. 433"
+          }
         }
       ]
     }

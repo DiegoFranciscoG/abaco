@@ -13,7 +13,7 @@ import {
   serializeBackup,
   shouldRemindBackup,
 } from '../../src/data/backup';
-import { AbacoDB, SCHEMA_V1 } from '../../src/data/db';
+import { AbacoDB, SCHEMA_V1, SCHEMA_V2 } from '../../src/data/db';
 import {
   addToCollection,
   clearSearches,
@@ -73,8 +73,8 @@ afterEach(async () => {
 });
 
 async function seed(): Promise<void> {
-  await updateProfile({ carrera: 'ucuenca-contabilidad-auditoria', ciclo: 1, tema: 'dark' }, db);
-  await saveNote({ refTipo: 'asignatura', refId: 'a1', titulo: 'Partida doble', contenido: 'Debe = Haber', etiquetas: ['examen'] }, db);
+  await updateProfile({ materias: ['contabilidad-general', 'microeconomia'], tema: 'dark' }, db);
+  await saveNote({ refTipo: 'materia', refId: 'contabilidad-general', titulo: 'Partida doble', contenido: 'Debe = Haber', etiquetas: ['examen'] }, db);
   await saveNote({ refTipo: 'formula', refId: 'van', titulo: '', contenido: 'El VAN descuenta desde t = 1' }, db);
   await toggleStar({ tipo: 'formula', refId: 'van', titulo: 'VAN', ruta: '/formulas/van' }, db);
   const col = await createCollection({ nombre: 'Examen de Costos', descripcion: 'Antes del parcial', color: 'jade' }, db);
@@ -167,7 +167,7 @@ describe('stars and collections', () => {
 describe('reminders, attempts, sheets, searches and cache', () => {
   it('creates reminders ordered by date and marks them done', async () => {
     await createReminder({ titulo: 'B', fecha: '2026-12-01T10:00:00Z' }, db);
-    const a = await createReminder({ titulo: 'A', fecha: '2026-11-01T10:00:00Z', asignaturaId: 'x' }, db);
+    const a = await createReminder({ titulo: 'A', fecha: '2026-11-01T10:00:00Z', materiaId: 'tributacion' }, db);
     expect((await listReminders(db)).map((r) => r.titulo)).toEqual(['A', 'B']);
     await setReminderDone(a.id, true, db);
     expect((await listReminders(db))[0]?.estado).toBe('hecho');
@@ -252,22 +252,85 @@ describe('T-05: schema migrations keep every note', () => {
 
     const upgraded = new AbacoDB(legacyName);
     await upgraded.open();
-    expect(upgraded.verno).toBe(2);
+    expect(upgraded.verno).toBe(3);
     const notes = await listNotes({}, upgraded);
     expect(notes).toHaveLength(2);
+    // A known curriculum subject becomes a catalog subject; an unknown one becomes a free note (nothing is lost).
     expect(notes.find((n) => n.id === 'n1')).toMatchObject({
-      refTipo: 'asignatura',
-      refId: 'ucuenca-contabilidad-auditoria--c1-contabilidad-general',
+      refTipo: 'materia',
+      refId: 'contabilidad-general',
       contenido: 'Activo = Pasivo + Patrimonio',
       etiquetas: [],
     });
+    expect(notes.find((n) => n.id === 'n2')).toMatchObject({ refTipo: 'libre', refId: 'general', contenido: 'Texto' });
     expect(notes.every((n) => !('asignaturaId' in n))).toBe(true);
-    expect(await listNotes({ refTipo: 'asignatura', refId: 'otra' }, upgraded)).toHaveLength(1);
     expect(await listStars(upgraded)).toHaveLength(1);
     expect(await listCollections(upgraded)).toHaveLength(1);
     expect(await upgraded.hojas.count()).toBe(0);
     upgraded.close();
     await Dexie.delete(legacyName);
+  });
+});
+
+describe('version 3: subject catalog instead of curricula', () => {
+  it('upgrades a version-2 database: profile, notes, stars, collections and reminders follow the catalog', async () => {
+    const legacyName = `abaco-v2-${crypto.randomUUID()}`;
+    const legacy = new Dexie(legacyName);
+    legacy.version(2).stores(SCHEMA_V2);
+    await legacy.open();
+    const t = '2026-09-01T00:00:00.000Z';
+    await legacy.table('perfil').put({ id: 'yo', universidad: 'u', carrera: 'c', ciclo: 3, tema: 'dark', movimiento: 'system', sintaxisExcel: 'es' });
+    await legacy.table('apuntes').bulkPut([
+      { id: 'n1', refTipo: 'asignatura', refId: 'ucacue-economia--c2-microeconomia-i', titulo: 'Oferta', contenido: 'x', etiquetas: [], creadoEn: t, actualizadoEn: t },
+      { id: 'n2', refTipo: 'subtema', refId: 'cg-ecuacion-elementos', titulo: '', contenido: 'y', etiquetas: [], creadoEn: t, actualizadoEn: t },
+    ]);
+    await legacy.table('estrellas').put({ id: 'asignatura:x', tipo: 'asignatura', refId: 'ucuenca-economia--c4-macroeconomia-ii', titulo: 'Macro', ruta: '/asignatura/x', creadoEn: t });
+    await legacy.table('colecciones').put({
+      id: 'c1', nombre: 'Parcial', descripcion: '', color: 'jade', creadoEn: t, actualizadoEn: t,
+      items: [{ tipo: 'asignatura', refId: 'algo-sin-equivalente', titulo: 'Rara', agregadoEn: t }],
+    });
+    await legacy.table('recordatorios').put({ id: 'r1', titulo: 'Examen', asignaturaId: 'ucuenca-contabilidad-auditoria--c1-contabilidad-general', fecha: t, avisoMinutos: 60, estado: 'pendiente', creadoEn: t });
+    legacy.close();
+
+    const upgraded = new AbacoDB(legacyName);
+    await upgraded.open();
+    expect(upgraded.verno).toBe(3);
+    const profile = await getProfile(upgraded);
+    expect(profile).toMatchObject({ materias: [], tema: 'dark' });
+    expect('carrera' in profile || 'universidad' in profile || 'ciclo' in profile).toBe(false);
+    expect((await listNotes({}, upgraded)).find((n) => n.id === 'n1')).toMatchObject({ refTipo: 'materia', refId: 'microeconomia' });
+    expect((await listNotes({}, upgraded)).find((n) => n.id === 'n2')).toMatchObject({ refTipo: 'subtema', refId: 'cg-ecuacion-elementos' });
+    expect((await listStars(upgraded))[0]).toMatchObject({ tipo: 'materia', refId: 'macroeconomia', ruta: '/materia/macroeconomia' });
+    expect((await listCollections(upgraded))[0]?.items[0]).toMatchObject({ tipo: 'materia', ruta: '/materias' });
+    expect((await listReminders(upgraded))[0]).toMatchObject({ materiaId: 'contabilidad-general' });
+    expect(await upgraded.documentos.count()).toBe(0);
+    upgraded.close();
+    await Dexie.delete(legacyName);
+  });
+
+  it('restores a version-2 backup file through the same migration', () => {
+    const t = '2026-09-01T00:00:00.000Z';
+    const v2 = {
+      formato: 'abaco-respaldo',
+      version: 2,
+      exportadoEn: t,
+      dispositivo: 'abc',
+      datos: {
+        perfil: [{ id: 'yo', carrera: 'c', ciclo: 2, tema: 'light', movimiento: 'reduce', sintaxisExcel: 'en' }],
+        apuntes: [{ id: 'n1', refTipo: 'asignatura', refId: 'x--c1-estadistica-descriptiva', titulo: 'T', contenido: 'C', etiquetas: [], creadoEn: t, actualizadoEn: t }],
+        estrellas: [],
+        colecciones: [],
+        recordatorios: [],
+        intentos: [],
+        hojas: [],
+        busquedas: [],
+      },
+    };
+    const parsed = parseBackup(JSON.stringify(v2));
+    expect(parsed.version).toBe(3);
+    expect(parsed.datos.perfil[0]).toMatchObject({ materias: [], sintaxisExcel: 'en' });
+    expect(parsed.datos.apuntes[0]).toMatchObject({ refTipo: 'materia', refId: 'estadistica-descriptiva' });
+    expect(parsed.datos.documentos).toEqual([]);
   });
 });
 
@@ -303,8 +366,9 @@ describe('T-06: backup and restore leave an identical state', () => {
       },
     };
     const parsed = parseBackup(JSON.stringify(v1));
-    expect(parsed.version).toBe(2);
-    expect(parsed.datos.apuntes[0]).toMatchObject({ refTipo: 'asignatura', refId: 'a1', etiquetas: [] });
+    expect(parsed.version).toBe(3);
+    expect(parsed.datos.apuntes[0]).toMatchObject({ refTipo: 'libre', refId: 'general', etiquetas: [] });
+    expect(parsed.datos.perfil[0]).toMatchObject({ materias: [] });
     await restoreBackup(parsed, 'reemplazar', db);
     expect((await getProfile(db)).movimiento).toBe('reduce');
   });

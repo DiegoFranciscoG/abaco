@@ -1,5 +1,5 @@
 {
-  "asignatura": "ucuenca-contabilidad-auditoria--c1-estadistica-descriptiva",
+  "materia": "estadistica-descriptiva",
   "actualizado_en": "2026-10-15",
   "temas": [
     {
@@ -152,7 +152,10 @@
             "Promediar porcentajes de grupos de distinto tamaño sin ponderarlos.",
             "Dividir para el número de datos en vez de dividir para la suma de los pesos."
           ],
-          "formulas": ["media-aritmetica", "media-ponderada"],
+          "formulas": [
+            "media-aritmetica",
+            "media-ponderada"
+          ],
           "fuente": {
             "ref": "os-pfin",
             "url": "https://openstax.org/books/principles-finance/pages/13-1-measures-of-center",
@@ -171,7 +174,9 @@
             "Tomar el dato del centro de la lista sin ordenarla.",
             "Usar la media para describir ingresos muy desiguales."
           ],
-          "formulas": ["mediana"],
+          "formulas": [
+            "mediana"
+          ],
           "fuente": {
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
@@ -189,7 +194,10 @@
           "errores_frecuentes": [
             "Concluir que los datos son simétricos solo porque la media está «en el centro» del rango."
           ],
-          "formulas": ["media-aritmetica", "mediana"],
+          "formulas": [
+            "media-aritmetica",
+            "mediana"
+          ],
           "fuente": {
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode",
@@ -217,7 +225,10 @@
             "Usar DESVEST.P con datos de una muestra.",
             "Interpretar la varianza en dólares cuando está en dólares al cuadrado."
           ],
-          "formulas": ["varianza-muestral", "desviacion-estandar-muestral"],
+          "formulas": [
+            "varianza-muestral",
+            "desviacion-estandar-muestral"
+          ],
           "fuente": {
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
@@ -235,7 +246,9 @@
           "errores_frecuentes": [
             "Comparar desviaciones estándar de datos con medias muy distintas en lugar de usar el CV."
           ],
-          "formulas": ["coeficiente-variacion"],
+          "formulas": [
+            "coeficiente-variacion"
+          ],
           "fuente": {
             "ref": "os-ibs",
             "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
@@ -253,7 +266,9 @@
           "errores_frecuentes": [
             "Confundir el percentil 80 con «sacar 80 sobre 100»."
           ],
-          "formulas": ["puntuacion-z"],
+          "formulas": [
+            "puntuacion-z"
+          ],
           "fuente": {
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-3-measures-of-the-location-of-the-data",
@@ -298,7 +313,9 @@
           "errores_frecuentes": [
             "Interpretar r = 0,9 como «el 90 % de las ventas se explica por la publicidad»."
           ],
-          "formulas": ["correlacion-pearson"],
+          "formulas": [
+            "correlacion-pearson"
+          ],
           "fuente": {
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",

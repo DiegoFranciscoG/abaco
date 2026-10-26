@@ -67,7 +67,7 @@ export function Onboarding() {
               <Notice tone="warn">Parece una ventana privada o de incógnito: lo que guardes se borrará al cerrarla.</Notice>
             ) : null}
             <div className="flex flex-wrap justify-end gap-2">
-              <AppLink to="/acerca" className="btn btn-ghost min-h-11 text-sm">
+              <AppLink to="/legal/privacidad" className="btn btn-ghost min-h-11 text-sm">
                 Privacidad
               </AppLink>
               <button type="button" className="btn btn-primary min-h-11 text-sm" onClick={() => void accept()}>

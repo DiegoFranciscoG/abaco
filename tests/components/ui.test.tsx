@@ -3,9 +3,20 @@ import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { setDbForTesting, type AbacoDB } from '../../src/data/db';
-import { listNotes, listStars } from '../../src/data/repositories';
+import { getProfile, listNotes, listStars } from '../../src/data/repositories';
+import { listDocuments, listJournals } from '../../src/data/tool-repositories';
+import { getTool } from '../../src/domain/tools/catalog';
+import MateriasPage from '../../src/features/subjects/MateriasPage';
+import SubjectPage from '../../src/features/subjects/SubjectPage';
+import TopicPage from '../../src/features/subjects/TopicPage';
+import EditorTool from '../../src/features/tools/editor/EditorTool';
+import { MarkdownView } from '../../src/features/tools/editor/MarkdownView';
+import JournalTool from '../../src/features/tools/journal/JournalTool';
+import PayrollTool from '../../src/features/tools/payroll/PayrollTool';
+import TaxTool from '../../src/features/tools/tax/TaxTool';
+import LegalPage from '../../src/features/legal/LegalPage';
+import { parseMarkdown } from '../../src/domain/tools/markdown';
 import { computeSheet } from '../../src/domain/sheet/sheet';
-import CareerPage from '../../src/features/careers/CareerPage';
 import ExercisePage from '../../src/features/practice/ExercisePage';
 import FormulaPage from '../../src/features/formulas/FormulaPage';
 import { Grid } from '../../src/features/lab/Grid';
@@ -171,11 +182,42 @@ describe('pages', () => {
     expect(await screen.findByText('2.000')).toBeInTheDocument();
   });
 
-  it('CareerPage lists the cycles and flags the published discrepancy', async () => {
-    renderRoute('/carrera/ucacue-contabilidad-auditoria', [{ path: '/carrera/:carreraId', element: <CareerPage /> }]);
-    expect(await screen.findByRole('heading', { name: 'Ciclo 1' })).toBeInTheDocument();
-    expect(screen.getByText(/declara/)).toHaveTextContent('40');
-    expect(screen.getAllByRole('heading', { name: /Ciclo \d/ })).toHaveLength(8);
+  it('MateriasPage filters the catalog and marks subjects as mine', async () => {
+    const user = userEvent.setup();
+    renderRoute('/materias', [{ path: '/materias', element: <MateriasPage /> }]);
+    expect(await screen.findAllByRole('link', { name: /Microeconomía/ })).not.toHaveLength(0);
+    await user.type(screen.getByLabelText('Filtrar materias'), 'tributacion');
+    expect(screen.getByRole('link', { name: /^Tributación/ })).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /Microeconomía/ })).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Agregar Tributación a mis materias' }));
+    await waitFor(async () => expect((await getProfile(db)).materias).toEqual(['tributacion']));
+  });
+
+  it('SubjectPage shows the syllabus, the tools and the sources of the subject', async () => {
+    renderRoute('/materia/legislacion-laboral', [{ path: '/materia/:materiaId', element: <SubjectPage /> }]);
+    expect(await screen.findByRole('heading', { name: /Legislación laboral/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /El contrato de trabajo/ })).toHaveAttribute('href', '/materia/legislacion-laboral/tema/ll-contrato');
+    expect(screen.getByRole('link', { name: /Rol de pagos/ })).toHaveAttribute('href', '/herramientas/rol-pagos');
+    expect(screen.getByRole('link', { name: /Codificación 2005-017/ })).toHaveAttribute('href', expect.stringMatching(/^https:\/\//));
+  });
+
+  it('TopicPage opens the requested subtopic and cites its source', async () => {
+    renderRoute('/materia/tributacion/tema/tr-renta?s=tr-renta-personas', [{ path: '/materia/:materiaId/tema/:temaId', element: <TopicPage /> }]);
+    expect(await screen.findByRole('heading', { name: /Impuesto a la renta/ })).toBeInTheDocument();
+    expect(screen.getByText(/USD 12 208 en 2026/)).toBeVisible();
+    expect(screen.getAllByText(/Fuente:/).length).toBeGreaterThan(0);
+  });
+
+  it('an unknown subject shows the not-found page', async () => {
+    renderRoute('/materia/no-existe', [{ path: '/materia/:materiaId', element: <SubjectPage /> }]);
+    expect(await screen.findByRole('heading', { name: 'Esta página no existe' })).toBeInTheDocument();
+  });
+
+  it('LegalPage renders the privacy policy with the external services table', async () => {
+    renderRoute('/legal/privacidad', [{ path: '/legal/:docId', element: <LegalPage /> }]);
+    expect(await screen.findByRole('heading', { name: 'Política de privacidad', level: 1 })).toBeInTheDocument();
+    expect(screen.getByRole('table', { name: /Servicios externos/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'www.spdp.gob.ec/' })).toHaveAttribute('href', 'https://www.spdp.gob.ec/');
   });
 
   it('SettingsPage only allows wiping after typing BORRAR', async () => {
@@ -185,5 +227,74 @@ describe('pages', () => {
     expect(wipe).toBeDisabled();
     await user.type(screen.getByLabelText('Escribe BORRAR para confirmar'), 'borrar');
     expect(wipe).toBeEnabled();
+  });
+});
+
+describe('study tools', () => {
+  it('TaxTool computes IVA from a base and splits a final price', async () => {
+    const user = userEvent.setup();
+    renderRoute('/herramientas/impuestos', [{ path: '/herramientas/:toolId', element: <TaxTool tool={getTool('impuestos')!} /> }]);
+    const amount = await screen.findByLabelText(/Precio sin IVA/);
+    await user.clear(amount);
+    await user.type(amount, '200');
+    // 15 % of 200 = 30
+    expect(screen.getAllByText(/30[,.]00/).length).toBeGreaterThan(0);
+    await user.click(screen.getByLabelText('El precio ya incluye IVA'));
+    await user.clear(screen.getByLabelText(/Precio final/));
+    await user.type(screen.getByLabelText(/Precio final/), '115');
+    expect(screen.getAllByText(/100[,.]00/).length).toBeGreaterThan(0);
+  });
+
+  it('PayrollTool shows net pay with the IESS personal contribution', async () => {
+    const user = userEvent.setup();
+    renderRoute('/herramientas/rol-pagos', [{ path: '/herramientas/:toolId', element: <PayrollTool tool={getTool('rol-pagos')!} /> }]);
+    const salary = await screen.findByLabelText(/Sueldo mensual/);
+    await user.clear(salary);
+    await user.type(salary, '1000');
+    // 1000 − 9.45 % = 905.50
+    expect(await screen.findAllByText(/905[,.]50/)).not.toHaveLength(0);
+    expect(screen.getAllByText(/Código del Trabajo, art\. 113/).length).toBeGreaterThan(0);
+  });
+
+  it('JournalTool only records balanced entries and builds the trial balance', async () => {
+    const user = userEvent.setup();
+    renderRoute('/herramientas/diario', [{ path: '/herramientas/:toolId', element: <JournalTool tool={getTool('diario')!} /> }]);
+    await user.click(await screen.findByRole('button', { name: /Crear libro/ }));
+    await waitFor(async () => expect(await listJournals(db)).toHaveLength(1));
+    await user.type(await screen.findByLabelText('Cuenta de la línea 1'), 'Caja');
+    await user.type(screen.getByLabelText('Debe de la línea 1'), '500');
+    await user.type(screen.getByLabelText('Cuenta de la línea 2'), 'Capital');
+    await user.selectOptions(screen.getByLabelText('Tipo de cuenta de la línea 2'), 'patrimonio');
+    await user.type(screen.getByLabelText('Haber de la línea 2'), '400');
+    expect(screen.getByRole('button', { name: /Registrar/ })).toBeDisabled();
+    await user.clear(screen.getByLabelText('Haber de la línea 2'));
+    await user.type(screen.getByLabelText('Haber de la línea 2'), '500');
+    await user.click(screen.getByRole('button', { name: /Registrar/ }));
+    await waitFor(async () => expect((await listJournals(db))[0]?.asientos).toHaveLength(1));
+    await user.click(screen.getByRole('tab', { name: /Balance de comprobación/ }));
+    expect(await screen.findByText(/El balance cuadra/)).toBeInTheDocument();
+  });
+
+  it('EditorTool creates a document from a template and autosaves it', async () => {
+    const user = userEvent.setup();
+    renderRoute('/herramientas/editor', [{ path: '/herramientas/:toolId', element: <EditorTool tool={getTool('editor')!} /> }]);
+    await user.click(await screen.findByRole('button', { name: 'Informe académico' }));
+    await waitFor(async () => expect(await listDocuments(db)).toHaveLength(1));
+    expect(await screen.findByRole('heading', { name: '1. Introducción' })).toBeInTheDocument();
+  });
+
+  it('MarkdownView never turns student text into HTML (XSS payloads stay text)', () => {
+    const payload = [
+      '<img src=x onerror="window.__xss=1">',
+      '<script>window.__xss=1</script>',
+      '[clic](javascript:window.__xss=1)',
+      '[clic2](data:text/html,<script>1</script>)',
+      '**<b onmouseover=alert(1)>negrita</b>**',
+    ].join('\n\n');
+    const { container } = renderWithProviders(<MarkdownView blocks={parseMarkdown(payload)} />);
+    expect(container.querySelector('script, img, b[onmouseover]')).toBeNull();
+    expect([...container.querySelectorAll('a')].every((a) => /^https?:/.test(a.getAttribute('href') ?? ''))).toBe(true);
+    expect(container.textContent).toContain('<script>window.__xss=1</script>');
+    expect((window as unknown as { __xss?: number }).__xss).toBeUndefined();
   });
 });

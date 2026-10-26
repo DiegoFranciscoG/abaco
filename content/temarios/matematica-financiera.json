@@ -1,0 +1,288 @@
+{
+  "materia": "matematica-financiera",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "mf-interes",
+      "nombre": "Interés simple y compuesto",
+      "orden": 1,
+      "descripcion": "Cómo crece el dinero y cómo se comparan tasas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mf-simple",
+          "nombre": "Interés simple",
+          "explicacion": "En el interés simple los intereses se calculan siempre sobre el capital inicial: I = P·i·t. El monto al final es el capital más los intereses. Se usa en operaciones de corto plazo y en algunos créditos comerciales.",
+          "puntos_clave": [
+            "La tasa y el tiempo deben estar en la misma unidad (anual con años, mensual con meses).",
+            "El monto crece en línea recta."
+          ],
+          "errores_frecuentes": [
+            "Usar una tasa anual con un plazo expresado en meses sin convertir."
+          ],
+          "formulas": [
+            "interes-simple",
+            "monto-interes-simple"
+          ],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-3-simple-interest",
+            "seccion": "6.3 Simple Interest"
+          }
+        },
+        {
+          "id": "mf-compuesto",
+          "nombre": "Interés compuesto",
+          "explicacion": "En el interés compuesto los intereses de cada período se suman al capital y también ganan intereses. El valor futuro es VF = VA·(1 + i)^n, donde i es la tasa por período y n el número de períodos.",
+          "puntos_clave": [
+            "Con capitalización mensual, i es la tasa anual dividida para 12 y n son los meses.",
+            "A mayor frecuencia de capitalización, mayor monto."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar la tasa por el número de años en lugar de elevar al exponente."
+          ],
+          "formulas": [
+            "monto-compuesto",
+            "valor-actual"
+          ],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-4-compound-interest",
+            "seccion": "6.4 Compound Interest"
+          }
+        },
+        {
+          "id": "mf-tasas",
+          "nombre": "Tasa nominal y tasa efectiva",
+          "explicacion": "La tasa nominal anual no considera la capitalización dentro del año; la tasa efectiva anual sí. Para comparar préstamos o inversiones con distintas frecuencias de capitalización se convierten todas a tasa efectiva.",
+          "puntos_clave": [
+            "Efectiva = (1 + nominal/m)^m − 1.",
+            "Un 12 % nominal capitalizable mensualmente equivale a un 12,68 % efectivo."
+          ],
+          "errores_frecuentes": [
+            "Comparar un 12 % mensual capitalizable con un 12,5 % anual sin convertir."
+          ],
+          "formulas": [
+            "tasa-periodica",
+            "tasa-efectiva-anual",
+            "tasa-nominal-desde-efectiva"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-4-stated-versus-effective-rates",
+            "seccion": "8.4 Stated versus Effective Rates"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mf-valor-dinero",
+      "nombre": "Valor del dinero en el tiempo",
+      "orden": 2,
+      "descripcion": "Traer y llevar valores entre fechas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mf-vtm",
+          "nombre": "Valor presente y valor futuro",
+          "explicacion": "Un dólar hoy vale más que un dólar mañana porque puede invertirse. Llevar un valor al futuro es capitalizar; traerlo al presente es descontar. Con tres de los cuatro datos (VA, VF, tasa, períodos) se despeja el cuarto.",
+          "puntos_clave": [
+            "n = ln(VF/VA) ÷ ln(1 + i).",
+            "La tasa implícita es i = (VF/VA)^(1/n) − 1."
+          ],
+          "errores_frecuentes": [
+            "Descontar con una tasa anual flujos que ocurren cada mes."
+          ],
+          "formulas": [
+            "numero-periodos",
+            "tasa-implicita"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/7-2-time-value-of-money-tvm-basics",
+            "seccion": "7.2 Time Value of Money (TVM) Basics"
+          }
+        },
+        {
+          "id": "mf-flujos-desiguales",
+          "nombre": "Flujos desiguales",
+          "explicacion": "Cuando los flujos no son iguales cada período, el valor presente es la suma de cada flujo descontado según la fecha en que ocurre. El momento exacto de cada flujo cambia el resultado.",
+          "puntos_clave": [
+            "Cada flujo se divide para (1 + i)^t con su propio t.",
+            "Un flujo en t = 0 no se descuenta."
+          ],
+          "errores_frecuentes": [
+            "Descontar el flujo inicial como si ocurriera al final del primer período."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/9-1-timing-of-cash-flows",
+            "seccion": "9.1 Timing of Cash Flows"
+          }
+        },
+        {
+          "id": "mf-excel",
+          "nombre": "Funciones financieras de la hoja de cálculo",
+          "explicacion": "Las funciones VA, VF, PAGO, TASA y NPER resuelven los problemas de valor del dinero. Siguen una convención de signos: el dinero que sale se escribe negativo y el que entra positivo; si se ignora, los resultados salen con signo contrario o con error.",
+          "puntos_clave": [
+            "En Excel en inglés son PV, FV, PMT, RATE y NPER.",
+            "El argumento \"tipo\" indica si los pagos son al inicio (1) o al final (0)."
+          ],
+          "errores_frecuentes": [
+            "Escribir la tasa anual en una función cuyos períodos son mensuales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-5-equal-payments-with-a-financial-calculator-and-excel",
+            "seccion": "8.5 Equal Payments with a Financial Calculator and Excel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mf-anualidades",
+      "nombre": "Anualidades y perpetuidades",
+      "orden": 3,
+      "descripcion": "Series de pagos iguales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mf-anualidad-vencida",
+          "nombre": "Anualidad vencida",
+          "explicacion": "Una anualidad vencida es una serie de pagos iguales al final de cada período. Su valor presente es la suma de los pagos descontados y su valor futuro la suma de los pagos capitalizados hasta el último período.",
+          "puntos_clave": [
+            "VA = R·[1 − (1 + i)^−n] ÷ i.",
+            "VF = R·[(1 + i)^n − 1] ÷ i."
+          ],
+          "errores_frecuentes": [
+            "Usar la fórmula vencida cuando el primer pago se hace hoy."
+          ],
+          "formulas": [
+            "va-anualidad-vencida",
+            "vf-anualidad-vencida"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-2-annuities",
+            "seccion": "8.2 Annuities"
+          }
+        },
+        {
+          "id": "mf-anualidad-anticipada",
+          "nombre": "Anualidad anticipada",
+          "explicacion": "En la anualidad anticipada los pagos se hacen al inicio de cada período, como un arriendo. Cada pago gana un período más de interés, así que su valor es el de la anualidad vencida multiplicado por (1 + i).",
+          "puntos_clave": [
+            "VA anticipada = VA vencida × (1 + i).",
+            "Los arriendos y las cuotas de colegiatura suelen ser anticipados."
+          ],
+          "errores_frecuentes": [
+            "Olvidar multiplicar por (1 + i)."
+          ],
+          "formulas": [
+            "va-anualidad-anticipada",
+            "vf-anualidad-anticipada"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-2-annuities",
+            "seccion": "8.2 Annuities"
+          }
+        },
+        {
+          "id": "mf-perpetuidades",
+          "nombre": "Perpetuidades",
+          "explicacion": "Una perpetuidad paga una cantidad fija para siempre; su valor presente es el pago dividido para la tasa. Si el pago crece a una tasa constante g menor que la de descuento, el valor es el primer pago dividido para (i − g).",
+          "puntos_clave": [
+            "VA = R ÷ i.",
+            "Con crecimiento: VA = R₁ ÷ (i − g), solo si i > g."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la fórmula con crecimiento cuando g es mayor o igual que i."
+          ],
+          "formulas": [
+            "perpetuidad",
+            "perpetuidad-creciente"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-1-perpetuities",
+            "seccion": "8.1 Perpetuities"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mf-amortizacion",
+      "nombre": "Amortización de préstamos",
+      "orden": 4,
+      "descripcion": "Cuotas, intereses y saldos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mf-cuota",
+          "nombre": "Cuota fija (sistema francés)",
+          "explicacion": "En el sistema francés todas las cuotas son iguales; al inicio la mayor parte de la cuota es interés y con el tiempo crece la parte de capital. La cuota se calcula como una anualidad cuyo valor presente es el monto prestado.",
+          "puntos_clave": [
+            "Interés de la cuota = saldo anterior × tasa del período.",
+            "Capital amortizado = cuota − interés."
+          ],
+          "errores_frecuentes": [
+            "Calcular el interés de cada cuota sobre el monto original en lugar del saldo."
+          ],
+          "formulas": [
+            "cuota-prestamo",
+            "interes-cuota",
+            "capital-cuota"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-3-loan-amortization",
+            "seccion": "8.3 Loan Amortization"
+          }
+        },
+        {
+          "id": "mf-saldo",
+          "nombre": "Saldo pendiente",
+          "explicacion": "El saldo después de k cuotas es el valor presente de las cuotas que faltan. Sirve para saber cuánto se debe si se quiere precancelar o refinanciar el préstamo.",
+          "puntos_clave": [
+            "Saldo = cuota × [1 − (1 + i)^−(n − k)] ÷ i.",
+            "La tabla de amortización debe terminar con saldo cero."
+          ],
+          "errores_frecuentes": [
+            "Restar al préstamo la suma de las cuotas pagadas (eso incluye intereses)."
+          ],
+          "formulas": [
+            "saldo-insoluto"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/8-3-loan-amortization",
+            "seccion": "8.3 Loan Amortization"
+          }
+        },
+        {
+          "id": "mf-capital-constante",
+          "nombre": "Amortización de capital constante",
+          "explicacion": "En este sistema cada cuota paga la misma porción de capital y el interés sobre el saldo; por eso las cuotas empiezan altas y van bajando. Paga menos interés total que el sistema francés para el mismo préstamo y tasa.",
+          "puntos_clave": [
+            "Capital por cuota = préstamo ÷ n.",
+            "Cuota k = capital + saldo anterior × tasa."
+          ],
+          "errores_frecuentes": [
+            "Suponer que todas las cuotas son iguales."
+          ],
+          "formulas": [
+            "cuota-capital-constante"
+          ],
+          "fuente": {
+            "ref": "os-pfin",
+            "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
+            "seccion": "8.3 Amortización de préstamos"
+          }
+        }
+      ]
+    }
+  ]
+}

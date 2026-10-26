@@ -2,9 +2,9 @@
  * Shared by the build script (Node, type stripping) and the app: it must stay free of runtime imports so
  * `node scripts/build-search-index.ts` can load it directly. Only type imports are allowed here.
  */
-import type { App, Asignatura, Carrera, Ejercicio, Formula, Temario, Termino, Universidad } from '../content/schemas';
+import type { App, Ejercicio, Formula, Materia, Temario, Termino } from '../content/schemas';
 
-export type SearchDocType = 'formula' | 'subtema' | 'asignatura' | 'carrera' | 'termino' | 'app' | 'ejercicio';
+export type SearchDocType = 'materia' | 'tema' | 'subtema' | 'formula' | 'herramienta' | 'termino' | 'app' | 'ejercicio';
 
 export interface SearchDoc {
   id: string;
@@ -47,69 +47,82 @@ export const SEARCH_OPTIONS = {
 const excerpt = (text: string, max = 140): string => (text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text);
 const functionNames = (formula: string): string[] => formula.match(/[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ0-9.]*(?=\()/g) ?? [];
 
+/** Study tool as listed in the search (the tool catalog lives in src/domain/tools/catalog.ts). */
+export interface SearchTool {
+  id: string;
+  nombre: string;
+  descripcion: string;
+  claves: string;
+  ruta: string;
+  area: string;
+}
+
 export interface SearchContent {
-  universidades: Universidad[];
-  carreras: Carrera[];
-  mallas: { carrera: string; asignaturas: Asignatura[] }[];
+  materias: Materia[];
   temarios: Temario[];
   formulas: Formula[];
   glosario: Termino[];
   apps: App[];
   ejercicios: Ejercicio[];
+  herramientas: SearchTool[];
 }
 
 export function buildSearchDocuments(content: SearchContent): SearchDoc[] {
   const docs: SearchDoc[] = [];
-  const uni = new Map(content.universidades.map((u) => [u.id, u]));
-  const carreraById = new Map(content.carreras.map((c) => [c.id, c]));
-  const subjectById = new Map<string, Asignatura>();
+  const materiaById = new Map(content.materias.map((m) => [m.id, m]));
 
-  for (const carrera of content.carreras) {
+  for (const m of content.materias) {
     docs.push({
-      id: `carrera:${carrera.id}`,
-      tipo: 'carrera',
-      titulo: carrera.nombre,
-      texto: `${uni.get(carrera.universidad)?.nombre ?? ''} ${carrera.titulo_otorgado} ${carrera.modalidad.join(' ')}`,
-      claves: `${uni.get(carrera.universidad)?.siglas ?? ''} carrera malla`,
-      ruta: `/carrera/${carrera.id}`,
-      extracto: `${uni.get(carrera.universidad)?.siglas ?? ''} · ${carrera.num_ciclos} ciclos · ${carrera.titulo_otorgado}`,
-      area: 'gestion',
+      id: `materia:${m.id}`,
+      tipo: 'materia',
+      titulo: m.nombre,
+      texto: m.descripcion,
+      claves: `${m.sinonimos.join(' ')} materia`,
+      ruta: `/materia/${m.id}`,
+      extracto: excerpt(m.descripcion),
+      area: m.areas[0] ?? 'gestion',
     });
   }
 
-  for (const malla of content.mallas) {
-    const carrera = carreraById.get(malla.carrera);
-    for (const a of malla.asignaturas) {
-      subjectById.set(a.id, a);
-      docs.push({
-        id: `asignatura:${a.id}`,
-        tipo: 'asignatura',
-        titulo: a.nombre,
-        texto: `${carrera?.nombre ?? ''} ciclo ${a.ciclo}`,
-        claves: `${a.nombre_oficial} ${uni.get(carrera?.universidad ?? '')?.siglas ?? ''}`,
-        ruta: `/asignatura/${a.id}`,
-        extracto: `${uni.get(carrera?.universidad ?? '')?.siglas ?? ''} · ${carrera?.nombre ?? ''} · ciclo ${a.ciclo}`,
-        area: a.areas[0] ?? 'gestion',
-      });
-    }
-  }
-
   for (const temario of content.temarios) {
-    const subject = subjectById.get(temario.asignatura);
+    const materia = materiaById.get(temario.materia);
     for (const tema of temario.temas) {
+      docs.push({
+        id: `tema:${tema.id}`,
+        tipo: 'tema',
+        titulo: tema.nombre,
+        texto: `${tema.descripcion} ${tema.subtemas.map((s) => s.nombre).join(' ')}`,
+        claves: materia?.nombre ?? '',
+        ruta: `/materia/${temario.materia}/tema/${tema.id}`,
+        extracto: `${materia?.nombre ?? ''} · ${tema.descripcion}`,
+        area: materia?.areas[0] ?? 'gestion',
+      });
       for (const s of tema.subtemas) {
         docs.push({
           id: `subtema:${s.id}`,
           tipo: 'subtema',
           titulo: s.nombre,
           texto: `${s.explicacion} ${s.puntos_clave.join(' ')}`,
-          claves: `${tema.nombre} ${subject?.nombre ?? ''}`,
-          ruta: `/asignatura/${temario.asignatura}/tema/${tema.id}?s=${s.id}`,
+          claves: `${tema.nombre} ${materia?.nombre ?? ''}`,
+          ruta: `/materia/${temario.materia}/tema/${tema.id}?s=${s.id}`,
           extracto: excerpt(s.explicacion),
-          area: subject?.areas[0] ?? 'gestion',
+          area: materia?.areas[0] ?? 'gestion',
         });
       }
     }
+  }
+
+  for (const tool of content.herramientas) {
+    docs.push({
+      id: `herramienta:${tool.id}`,
+      tipo: 'herramienta',
+      titulo: tool.nombre,
+      texto: tool.descripcion,
+      claves: `${tool.claves} herramienta`,
+      ruta: tool.ruta,
+      extracto: excerpt(tool.descripcion),
+      area: tool.area,
+    });
   }
 
   for (const f of content.formulas) {
@@ -162,7 +175,7 @@ export function buildSearchDocuments(content: SearchContent): SearchDoc[] {
       claves: 'ejercicio practica',
       ruta: `/practica/${e.id}`,
       extracto: excerpt(e.enunciado),
-      area: subjectById.get(e.asignatura)?.areas[0] ?? 'contabilidad',
+      area: materiaById.get(e.materia)?.areas[0] ?? 'contabilidad',
     });
   }
 

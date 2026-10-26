@@ -1,0 +1,294 @@
+{
+  "materia": "fundamentos-administracion",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "fa-directivo",
+      "nombre": "El trabajo directivo",
+      "orden": 1,
+      "descripcion": "Qué hacen los gerentes y qué roles cumplen.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "fa-funciones",
+          "nombre": "Funciones de la administración",
+          "explicacion": "Administrar es lograr objetivos con y por medio de otras personas. Las funciones clásicas son planear (fijar metas y caminos), organizar (repartir tareas y recursos), dirigir (motivar y coordinar) y controlar (comparar lo logrado con lo planeado y corregir).",
+          "puntos_clave": [
+            "Las funciones forman un ciclo continuo.",
+            "Todos los niveles directivos las cumplen en distinta proporción."
+          ],
+          "errores_frecuentes": [
+            "Reducir la administración a \"mandar\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/6-1-the-role-of-management",
+            "seccion": "6.1 The Role of Management"
+          }
+        },
+        {
+          "id": "fa-roles",
+          "nombre": "Roles del gerente",
+          "explicacion": "Según Mintzberg, los gerentes cumplen roles interpersonales (representante, líder, enlace), informativos (monitor, difusor, portavoz) y de decisión (emprendedor, gestor de problemas, asignador de recursos, negociador).",
+          "puntos_clave": [
+            "Los roles se cumplen a la vez, no por turnos.",
+            "El peso de cada rol cambia con el nivel jerárquico."
+          ],
+          "errores_frecuentes": [
+            "Pensar que un gerente solo toma decisiones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/1-2-the-roles-managers-play",
+            "seccion": "1.2 The Roles Managers Play"
+          }
+        },
+        {
+          "id": "fa-caracteristicas",
+          "nombre": "Características del trabajo directivo",
+          "explicacion": "El trabajo directivo es fragmentado, con muchas interrupciones y decisiones rápidas. Los gerentes dedican gran parte de su tiempo a comunicarse y deben manejar demandas que compiten entre sí.",
+          "puntos_clave": [
+            "La comunicación ocupa buena parte de la jornada.",
+            "Priorizar es una habilidad central."
+          ],
+          "errores_frecuentes": [
+            "Esperar que el trabajo directivo sea ordenado y predecible."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/1-3-major-characteristics-of-the-managers-job",
+            "seccion": "1.3 Major Characteristics of the Manager's Job"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa-historia",
+      "nombre": "Evolución del pensamiento administrativo",
+      "orden": 2,
+      "descripcion": "De Taylor al enfoque de sistemas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "fa-cientifica",
+          "nombre": "Administración científica",
+          "explicacion": "Frederick Taylor propuso estudiar científicamente cada tarea para encontrar la mejor manera de hacerla, seleccionar y capacitar a los trabajadores y pagar según la productividad. Aumentó la eficiencia, pero fue criticada por tratar al trabajador como una pieza.",
+          "puntos_clave": [
+            "Estudios de tiempos y movimientos.",
+            "Incentivos ligados a la producción."
+          ],
+          "errores_frecuentes": [
+            "Atribuir a Taylor el interés por las relaciones humanas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/3-4-taylor-made-management",
+            "seccion": "3.4 Taylor-Made Management"
+          }
+        },
+        {
+          "id": "fa-administrativa",
+          "nombre": "Administración clásica y burocracia",
+          "explicacion": "Henri Fayol describió funciones y principios de la administración (como la unidad de mando y la división del trabajo). Max Weber describió la burocracia: reglas escritas, jerarquía clara y selección por méritos, buscando organizaciones impersonales y predecibles.",
+          "puntos_clave": [
+            "Fayol: visión desde la dirección general.",
+            "Weber: autoridad basada en reglas, no en personas."
+          ],
+          "errores_frecuentes": [
+            "Usar \"burocracia\" solo como sinónimo de trámites lentos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/3-5-administrative-and-bureaucratic-management",
+            "seccion": "3.5 Administrative and Bureaucratic Management"
+          }
+        },
+        {
+          "id": "fa-relaciones-humanas",
+          "nombre": "Movimiento de relaciones humanas",
+          "explicacion": "Los estudios Hawthorne mostraron que la atención, el reconocimiento y las normas del grupo influyen en la productividad tanto como las condiciones físicas. Desde entonces la administración incorpora la motivación y el clima laboral.",
+          "puntos_clave": [
+            "El grupo informal influye en el desempeño.",
+            "Base de la teoría moderna de la motivación."
+          ],
+          "errores_frecuentes": [
+            "Concluir que solo importan las condiciones físicas del trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/3-6-human-relations-movement",
+            "seccion": "3.6 Human Relations Movement"
+          }
+        },
+        {
+          "id": "fa-sistemas",
+          "nombre": "Enfoques de sistemas y de contingencias",
+          "explicacion": "El enfoque de sistemas ve la organización como un conjunto de partes que interactúan con su entorno. El de contingencias sostiene que no hay una única mejor manera de administrar: la respuesta depende de la situación.",
+          "puntos_clave": [
+            "Entradas, procesos, salidas y retroalimentación.",
+            "\"Depende\" es una respuesta válida si se explica de qué depende."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la misma receta de gestión en cualquier contexto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/3-7-contingency-and-system-management",
+            "seccion": "3.7 Contingency and System Management"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa-estrategia",
+      "nombre": "Planeación y análisis estratégico",
+      "orden": 3,
+      "descripcion": "Planes, FODA, PESTEL y las cinco fuerzas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fa-planeacion",
+          "nombre": "El proceso de planeación",
+          "explicacion": "Planear es decidir hoy qué se hará mañana: analizar la situación, fijar objetivos, definir alternativas, elegir y preparar planes de acción con responsables, plazos y recursos.",
+          "puntos_clave": [
+            "Los planes estratégicos orientan; los operativos ejecutan.",
+            "Un objetivo debe ser medible y tener plazo."
+          ],
+          "errores_frecuentes": [
+            "Confundir un deseo (\"crecer\") con un objetivo (\"aumentar ventas 10 % en 2027\")."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-2-the-planning-process",
+            "seccion": "17.2 The Planning Process"
+          }
+        },
+        {
+          "id": "fa-foda",
+          "nombre": "Análisis FODA",
+          "explicacion": "El FODA ordena las fortalezas y debilidades internas de la organización y las oportunidades y amenazas de su entorno. Su utilidad está en cruzarlas para formular estrategias, no solo en listarlas.",
+          "puntos_clave": [
+            "Interno: fortalezas y debilidades; externo: oportunidades y amenazas.",
+            "Estrategias FO, DO, FA y DA."
+          ],
+          "errores_frecuentes": [
+            "Poner una tendencia del mercado como \"fortaleza\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-2-using-swot-for-strategic-analysis",
+            "seccion": "8.2 Using SWOT for Strategic Analysis"
+          }
+        },
+        {
+          "id": "fa-pestel",
+          "nombre": "Entorno general: PESTEL",
+          "explicacion": "El análisis PESTEL revisa factores políticos, económicos, sociales, tecnológicos, ecológicos y legales que afectan a todas las empresas de un sector. Ayuda a identificar oportunidades y amenazas antes de que lleguen.",
+          "puntos_clave": [
+            "Se enfoca en el macroentorno.",
+            "Alimenta el lado externo del FODA."
+          ],
+          "errores_frecuentes": [
+            "Llenar el PESTEL con datos sin relación con la empresa analizada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-3-a-firms-external-macro-environment-pestel",
+            "seccion": "8.3 A Firm's External Macro Environment: PESTEL"
+          }
+        },
+        {
+          "id": "fa-porter",
+          "nombre": "Las cinco fuerzas de Porter",
+          "explicacion": "La rentabilidad de un sector depende de cinco fuerzas: rivalidad entre competidores, amenaza de nuevos entrantes, amenaza de sustitutos, poder de negociación de los proveedores y poder de negociación de los clientes.",
+          "puntos_clave": [
+            "Fuerzas intensas reducen la rentabilidad del sector.",
+            "Se analiza el sector, no solo la empresa."
+          ],
+          "errores_frecuentes": [
+            "Confundir un producto sustituto con un competidor directo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-4-a-firms-micro-environment-porters-five-forces",
+            "seccion": "8.4 A Firm's Micro Environment: Porter's Five Forces"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa-decision-control",
+      "nombre": "Decisión, estructura y control",
+      "orden": 4,
+      "descripcion": "Tomar decisiones, organizar y dirigir por objetivos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fa-decisiones",
+          "nombre": "Decisiones programadas y no programadas",
+          "explicacion": "Las decisiones programadas son repetitivas y se resuelven con reglas (reordenar inventario). Las no programadas son nuevas y poco estructuradas (entrar a un mercado) y requieren análisis y juicio.",
+          "puntos_clave": [
+            "Programar decisiones rutinarias libera tiempo directivo.",
+            "Las no programadas suelen tomarse en niveles altos."
+          ],
+          "errores_frecuentes": [
+            "Improvisar cada vez una decisión que podría tener una regla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/2-3-programmed-and-nonprogrammed-decisions",
+            "seccion": "2.3 Programmed and Nonprogrammed Decisions"
+          }
+        },
+        {
+          "id": "fa-estructura",
+          "nombre": "Estructura organizacional",
+          "explicacion": "La estructura define quién reporta a quién y cómo se agrupan las tareas: por funciones, por productos, por regiones o en forma matricial. La estructura debe seguir a la estrategia de la empresa.",
+          "puntos_clave": [
+            "El organigrama muestra la estructura formal.",
+            "Más niveles jerárquicos hacen más lenta la comunicación."
+          ],
+          "errores_frecuentes": [
+            "Copiar la estructura de una empresa grande en una pequeña."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/10-1-organizational-structures-and-design",
+            "seccion": "10.1 Organizational Structures and Design"
+          }
+        },
+        {
+          "id": "fa-apo",
+          "nombre": "Administración por objetivos",
+          "explicacion": "En la administración por objetivos el jefe y el colaborador acuerdan metas concretas, revisan el avance de forma periódica y evalúan el desempeño por resultados. Une la planeación con el control.",
+          "puntos_clave": [
+            "Metas acordadas, no impuestas.",
+            "Revisión periódica del avance."
+          ],
+          "errores_frecuentes": [
+            "Fijar metas que el colaborador no puede influir."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-7-management-by-objectives-a-planning-and-control-technique",
+            "seccion": "17.7 Management by Objectives: A Planning and Control Technique"
+          }
+        }
+      ]
+    }
+  ]
+}

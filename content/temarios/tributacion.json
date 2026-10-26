@@ -1,0 +1,273 @@
+{
+  "materia": "tributacion",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "tr-sistema",
+      "nombre": "El contribuyente y sus obligaciones",
+      "orden": 1,
+      "descripcion": "RUC, regímenes y comprobantes electrónicos en Ecuador.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "tr-ruc",
+          "nombre": "El RUC y el ciclo del contribuyente",
+          "explicacion": "El Registro Único de Contribuyentes identifica a cada persona natural o jurídica que realiza actividades económicas en Ecuador. Con el RUC se cumple el ciclo tributario: inscribirse, emitir comprobantes, declarar y pagar. Si una persona deja temporalmente su actividad, debe reportar la suspensión dentro de 30 días hábiles.",
+          "puntos_clave": [
+            "El RUC debe mantenerse actualizado: dirección, establecimientos y actividad.",
+            "La suspensión detiene la generación de obligaciones formales."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el RUC solo se necesita para emitir facturas: también obliga a declarar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-ruc",
+            "seccion": "RUC personas naturales"
+          }
+        },
+        {
+          "id": "tr-regimenes",
+          "nombre": "Régimen general y RIMPE",
+          "explicacion": "El RIMPE agrupa a emprendedores (ingresos brutos de hasta USD 300 000 el año anterior) y negocios populares (personas naturales con ingresos de hasta USD 20 000). Quedan fuera, entre otros, las actividades profesionales, la construcción y los ingresos en relación de dependencia; el resto está en el régimen general.",
+          "puntos_clave": [
+            "Los ingresos brutos se cuentan al 31 de diciembre del año anterior.",
+            "Cada régimen tiene comprobantes y plazos distintos."
+          ],
+          "errores_frecuentes": [
+            "Suponer que un profesional independiente con pocos ingresos puede ser negocio popular."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-rimpe",
+            "seccion": "RIMPE: sujetos y exclusiones"
+          }
+        },
+        {
+          "id": "tr-comprobantes",
+          "nombre": "Comprobantes electrónicos",
+          "explicacion": "Facturas, liquidaciones de compra, notas de crédito y débito, comprobantes de retención y guías de remisión pueden emitirse en forma electrónica. Un comprobante electrónico tiene validez solo si lleva firma electrónica y fue autorizado en el ambiente de producción; los del ambiente de pruebas no tienen validez tributaria.",
+          "puntos_clave": [
+            "El SRI autoriza de oficio a los contribuyentes obligados.",
+            "La firma electrónica garantiza origen e integridad del documento."
+          ],
+          "errores_frecuentes": [
+            "Entregar a un cliente un comprobante emitido en el ambiente de pruebas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-facturacion",
+            "seccion": "Facturación electrónica"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tr-iva",
+      "nombre": "Impuesto al Valor Agregado",
+      "orden": 2,
+      "descripcion": "Tarifas, base imponible y liquidación del IVA.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "tr-iva-tarifas",
+          "nombre": "Tarifas del IVA",
+          "explicacion": "Según la tabla publicada por el SRI, la tarifa general es 15 % desde el 1 de abril de 2024 (Decreto Ejecutivo 198), con 5 % para materiales de construcción y 0 % para los bienes y servicios de la lista oficial. La tarifa general puede cambiar por decreto, así que conviene confirmarla antes de cada cálculo.",
+          "puntos_clave": [
+            "Precio con IVA = base × (1 + tarifa).",
+            "Base a partir del precio final = precio ÷ (1 + tarifa)."
+          ],
+          "errores_frecuentes": [
+            "Calcular el IVA sobre un precio que ya incluye IVA."
+          ],
+          "formulas": [
+            "iva-causado",
+            "precio-con-iva",
+            "base-desde-pvp"
+          ],
+          "fuente": {
+            "ref": "sri-iva",
+            "seccion": "Tarifas del IVA (Decreto Ejecutivo 198)"
+          }
+        },
+        {
+          "id": "tr-iva-liquidacion",
+          "nombre": "IVA en ventas, IVA en compras e IVA a pagar",
+          "explicacion": "El IVA cobrado en las ventas se compensa con el IVA pagado en las compras que dan derecho a crédito tributario; la diferencia es el IVA a pagar del período. Si el crédito supera al IVA de ventas, el saldo pasa al período siguiente.",
+          "puntos_clave": [
+            "Solo las compras relacionadas con la actividad gravada generan crédito tributario.",
+            "Guardar los comprobantes electrónicos es lo que respalda el crédito."
+          ],
+          "errores_frecuentes": [
+            "Restar el IVA de compras personales que no se relacionan con el negocio."
+          ],
+          "formulas": [
+            "iva-a-pagar"
+          ],
+          "fuente": {
+            "ref": "sri-iva",
+            "seccion": "Liquidación del IVA"
+          }
+        },
+        {
+          "id": "tr-iva-rimpe",
+          "nombre": "IVA en el RIMPE",
+          "explicacion": "Los emprendedores del RIMPE declaran el IVA en forma semestral, en julio y enero, según el noveno dígito del RUC. Los negocios populares no presentan declaraciones de IVA ni actúan como agentes de retención: su cuota de renta ya incluye el IVA.",
+          "puntos_clave": [
+            "Emprendedor: IVA semestral; negocio popular: sin declaración de IVA.",
+            "Las retenciones de los emprendedores también se declaran semestralmente."
+          ],
+          "errores_frecuentes": [
+            "Que un negocio popular cobre IVA aparte en sus notas de venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-rimpe",
+            "seccion": "RIMPE: deberes formales"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tr-renta",
+      "nombre": "Impuesto a la renta",
+      "orden": 3,
+      "descripcion": "Base imponible, tablas y plazos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "tr-renta-base",
+          "nombre": "Ejercicio fiscal y base imponible",
+          "explicacion": "El ejercicio fiscal va del 1 de enero al 31 de diciembre. La base imponible son los ingresos gravados menos devoluciones, descuentos, costos, gastos y deducciones; quien trabaja en relación de dependencia resta además su aporte personal al IESS.",
+          "puntos_clave": [
+            "Declarar es obligatorio aunque los ingresos sean exentos, salvo excepciones de la ley.",
+            "Las personas naturales cuyos ingresos no superan la fracción básica no gravada están exceptuadas."
+          ],
+          "errores_frecuentes": [
+            "Restar gastos que no se relacionan con la generación del ingreso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-renta",
+            "seccion": "Impuesto a la renta: ejercicio y base imponible"
+          }
+        },
+        {
+          "id": "tr-renta-personas",
+          "nombre": "Personas naturales: la tabla del ejercicio",
+          "explicacion": "Las personas naturales aplican a su base imponible la tabla del ejercicio fiscal: hasta la fracción básica desgravada (USD 12 208 en 2026) no se paga; sobre el exceso se paga el impuesto de la fracción básica más un porcentaje marginal que sube por tramos del 5 % al 37 %.",
+          "puntos_clave": [
+            "El porcentaje del tramo se aplica solo sobre el excedente de la fracción básica de ese tramo.",
+            "La tabla cambia cada año: usa la del ejercicio que declaras."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el porcentaje del tramo a toda la base imponible."
+          ],
+          "formulas": [
+            "impuesto-renta-personas"
+          ],
+          "fuente": {
+            "ref": "sri-tablas-ir",
+            "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
+          }
+        },
+        {
+          "id": "tr-renta-sociedades",
+          "nombre": "Sociedades: tarifa general",
+          "explicacion": "Las sociedades pagan una tarifa general de 25 % sobre su base imponible, con incrementos o reducciones previstos en la ley para casos específicos (por ejemplo, ciertos vínculos con paraísos fiscales o la reinversión de utilidades).",
+          "puntos_clave": [
+            "La tarifa general es la referencia; los ajustes requieren cumplir condiciones legales.",
+            "Antes del impuesto se calcula la participación laboral del 15 %."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la tabla de personas naturales a una compañía."
+          ],
+          "formulas": [
+            "impuesto-renta-sociedades"
+          ],
+          "fuente": {
+            "ref": "sri-renta",
+            "seccion": "Tarifa para sociedades"
+          }
+        },
+        {
+          "id": "tr-renta-plazos",
+          "nombre": "Plazos según el noveno dígito",
+          "explicacion": "La declaración anual vence según el noveno dígito del RUC o cédula: para personas naturales entre el 10 y el 28 de marzo, y para sociedades entre el 10 y el 28 de abril. Los contribuyentes especiales y los domiciliados en Galápagos tienen fechas propias.",
+          "puntos_clave": [
+            "Dígito 1 vence el día 10; dígito 0, el día 28.",
+            "Declarar tarde genera multas e intereses."
+          ],
+          "errores_frecuentes": [
+            "Usar el último dígito de la cédula en lugar del noveno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-renta",
+            "seccion": "Plazos de declaración"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tr-rimpe",
+      "nombre": "RIMPE en detalle",
+      "orden": 4,
+      "descripcion": "Cuotas, tarifas y leyendas del régimen simplificado.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "tr-rimpe-populares",
+          "nombre": "Negocios populares: cuota fija",
+          "explicacion": "Desde 2024 los negocios populares pagan una cuota fija anual según sus ingresos brutos: USD 0 hasta 2 500, 5 entre 2 500,01 y 5 000, 15 hasta 10 000, 35 hasta 15 000 y 60 hasta 20 000. Declaran el impuesto a la renta una vez al año, aunque no hayan tenido ingresos.",
+          "puntos_clave": [
+            "La cuota incluye el IVA.",
+            "Emiten notas de venta o facturas electrónicas con la leyenda \"Negocio Popular – Régimen RIMPE\"."
+          ],
+          "errores_frecuentes": [
+            "Pensar que sin ingresos no hay que declarar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-rimpe",
+            "seccion": "Impuesto a la renta de negocios populares"
+          }
+        },
+        {
+          "id": "tr-rimpe-emprendedores",
+          "nombre": "Emprendedores: tarifa por tramos",
+          "explicacion": "Los emprendedores pagan una fracción básica más un porcentaje sobre el excedente de cada tramo de ingresos brutos: por ejemplo, entre USD 20 000 y 50 000 la fracción es 60 y el porcentaje 1 %; entre 200 000 y 300 000 la fracción es 2 797,52 y el porcentaje 2 %.",
+          "puntos_clave": [
+            "El impuesto se calcula sobre ingresos brutos, no sobre la utilidad.",
+            "Deben permanecer en el régimen al menos 3 años desde su primera declaración de renta."
+          ],
+          "errores_frecuentes": [
+            "Calcular el impuesto de un emprendedor sobre la utilidad contable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-rimpe",
+            "seccion": "Impuesto a la renta de emprendedores"
+          }
+        },
+        {
+          "id": "tr-rimpe-comprobantes",
+          "nombre": "Comprobantes y leyendas del RIMPE",
+          "explicacion": "Los emprendedores emiten facturas electrónicas, documentos complementarios, liquidaciones de compra y comprobantes de retención cuando corresponda, con la leyenda \"Contribuyente Régimen RIMPE\". Los negocios populares pueden elegir entre notas de venta y facturas electrónicas.",
+          "puntos_clave": [
+            "La leyenda identifica el régimen ante el cliente y ante el SRI.",
+            "Un emprendedor no puede emitir notas de venta."
+          ],
+          "errores_frecuentes": [
+            "Omitir la leyenda del régimen en el comprobante."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-rimpe",
+            "seccion": "Comprobantes de venta en el RIMPE"
+          }
+        }
+      ]
+    }
+  ]
+}

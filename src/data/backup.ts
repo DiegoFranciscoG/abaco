@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import { CELL_FORMATS } from '../domain/content/schemas';
-import { BACKUP_TABLES, getDb, migrateNoteV1toV2, SCHEMA_VERSION, type AbacoDB } from './db';
+import { BACKUP_TABLES, getDb, migrateNoteV1toV2, migrateRowV2toV3, SCHEMA_VERSION, type AbacoDB } from './db';
 import { getDeviceId } from './repositories';
-import { COLLECTION_COLORS } from './types';
+import { ACCOUNT_KINDS, COLLECTION_COLORS } from './types';
 
 export { BACKUP_REMINDER_DAYS, markBackupDone, needsBackupReminder, shouldRemindBackup } from './backup-reminder';
 
@@ -21,20 +21,19 @@ const snapshotSchema = z.object({
   fuente: shortText,
   cita: z.string().max(5000),
 });
-const starKind = z.enum(['formula', 'subtema', 'ejercicio', 'articulo', 'asignatura']);
+const starKind = z.enum(['formula', 'subtema', 'ejercicio', 'articulo', 'materia']);
+const contentId = z.string().regex(/^[a-z0-9]+(?:-{1,2}[a-z0-9]+)*$/).max(120);
 
 const perfilSchema = z.object({
   id: z.literal('yo'),
-  universidad: shortText.optional(),
-  carrera: shortText.optional(),
-  ciclo: z.number().int().min(1).max(12).optional(),
+  materias: z.array(contentId).max(60).default([]),
   tema: z.enum(['system', 'light', 'dark']),
   movimiento: z.enum(['system', 'reduce', 'full']),
   sintaxisExcel: z.enum(['es', 'en']).default('es'),
 });
 const apunteSchema = z.object({
   id: z.string().min(1).max(100),
-  refTipo: z.enum(['asignatura', 'tema', 'subtema', 'formula', 'libre']),
+  refTipo: z.enum(['materia', 'tema', 'subtema', 'formula', 'libre']),
   refId: shortText,
   titulo: z.string().max(120),
   contenido: z.string().max(20_000),
@@ -74,7 +73,7 @@ const coleccionSchema = z.object({
 const recordatorioSchema = z.object({
   id: shortText,
   titulo: z.string().min(1).max(120),
-  asignaturaId: shortText.optional(),
+  materiaId: contentId.optional(),
   fecha: isoDateTime,
   avisoMinutos: z.number().int().min(0),
   estado: z.enum(['pendiente', 'hecho']),
@@ -99,8 +98,65 @@ const hojaSchema = z.object({
   actualizadoEn: isoDateTime,
 });
 const busquedaSchema = z.object({ id: shortText, consulta: shortText, fecha: isoDateTime, total: z.number().int().min(0) });
+const documentoSchema = z.object({
+  id: shortText,
+  titulo: z.string().min(1).max(120),
+  contenido: z.string().max(200_000),
+  materiaId: contentId.optional(),
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
+const money = z.number().finite().min(0).max(1e12);
+const diarioSchema = z.object({
+  id: shortText,
+  nombre: z.string().min(1).max(60),
+  asientos: z
+    .array(
+      z.object({
+        id: shortText,
+        fecha: z.iso.date(),
+        glosa: z.string().max(200),
+        lineas: z
+          .array(z.object({ cuenta: z.string().min(1).max(80), tipo: z.enum(ACCOUNT_KINDS), debe: money, haber: money }))
+          .min(2)
+          .max(40),
+      }),
+    )
+    .max(500),
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
+const tarjetaSchema = z.object({
+  id: shortText,
+  mazo: z.string().min(1).max(80),
+  frente: z.string().min(1).max(500),
+  reverso: z.string().min(1).max(2000),
+  origen: z.enum(['glosario', 'subtema', 'propia']),
+  ef: z.number().min(1.3).max(5),
+  intervalo: z.number().int().min(0).max(36500),
+  repeticiones: z.number().int().min(0).max(10_000),
+  proximaRevision: isoDateTime,
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
+const listOfText = z.array(z.string().min(1).max(200)).max(30);
+const tableroSchema = z.object({
+  id: shortText,
+  tipo: z.enum(['foda', 'decision']),
+  titulo: z.string().min(1).max(80),
+  foda: z.object({ fortalezas: listOfText, oportunidades: listOfText, debilidades: listOfText, amenazas: listOfText }).optional(),
+  decision: z
+    .object({
+      criterios: z.array(z.object({ nombre: z.string().min(1).max(60), peso: z.number().min(0).max(100) })).max(12),
+      opciones: z.array(z.string().min(1).max(60)).max(12),
+      puntajes: z.array(z.array(z.number().min(0).max(10)).max(12)).max(12),
+    })
+    .optional(),
+  creadoEn: isoDateTime,
+  actualizadoEn: isoDateTime,
+});
 
-const datosV2 = z.object({
+const datosV3 = z.object({
   perfil: z.array(perfilSchema).max(1),
   apuntes: z.array(apunteSchema),
   estrellas: z.array(estrellaSchema),
@@ -109,17 +165,39 @@ const datosV2 = z.object({
   intentos: z.array(intentoSchema),
   hojas: z.array(hojaSchema),
   busquedas: z.array(busquedaSchema),
+  documentos: z.array(documentoSchema),
+  diarios: z.array(diarioSchema),
+  tarjetas: z.array(tarjetaSchema),
+  tableros: z.array(tableroSchema),
 });
-export type BackupData = z.infer<typeof datosV2>;
+export type BackupData = z.infer<typeof datosV3>;
 
+const backupV3Schema = z.object({
+  formato: z.literal(BACKUP_FORMAT),
+  version: z.literal(3),
+  exportadoEn: isoDateTime,
+  dispositivo: z.string().max(100),
+  datos: datosV3,
+});
+export type Backup = z.infer<typeof backupV3Schema>;
+
+/** Version 2 files: subjects pointed to university curricula and the study tools did not exist yet. */
 const backupV2Schema = z.object({
   formato: z.literal(BACKUP_FORMAT),
   version: z.literal(2),
   exportadoEn: isoDateTime,
   dispositivo: z.string().max(100),
-  datos: datosV2,
+  datos: z.object({
+    perfil: z.array(z.record(z.string(), z.unknown())).max(1),
+    apuntes: z.array(z.record(z.string(), z.unknown())),
+    estrellas: z.array(z.record(z.string(), z.unknown())),
+    colecciones: z.array(z.record(z.string(), z.unknown())),
+    recordatorios: z.array(z.record(z.string(), z.unknown())),
+    intentos: z.array(z.unknown()),
+    hojas: z.array(z.unknown()),
+    busquedas: z.array(z.unknown()),
+  }),
 });
-export type Backup = z.infer<typeof backupV2Schema>;
 
 /** Version 1 files: notes carried `asignaturaId`, and sheets and searches did not exist yet. */
 const backupV1Schema = z.object({
@@ -150,7 +228,7 @@ export async function createBackup(db: AbacoDB = getDb(), nowDate = new Date()):
   ) as BackupData;
   return {
     formato: BACKUP_FORMAT,
-    version: SCHEMA_VERSION as 2,
+    version: SCHEMA_VERSION as 3,
     exportadoEn: nowDate.toISOString(),
     dispositivo: await getDeviceId(db),
     datos,
@@ -177,7 +255,10 @@ export function parseBackup(text: string): Backup {
   } catch {
     throw new BackupError('El archivo no es un respaldo de ÁBACO (JSON inválido).');
   }
-  const version = (raw as { version?: unknown } | null)?.version;
+  if ((raw as { formato?: unknown } | null)?.formato !== BACKUP_FORMAT) {
+    throw new BackupError('El archivo no es un respaldo válido de ÁBACO.');
+  }
+  let version = (raw as { version?: unknown } | null)?.version;
   if (version === 1) {
     const v1 = backupV1Schema.safeParse(raw);
     if (!v1.success) throw new BackupError('El respaldo versión 1 está dañado o incompleto.');
@@ -195,8 +276,30 @@ export function parseBackup(text: string): Backup {
         busquedas: [],
       },
     };
+    version = 2;
   }
-  const parsed = backupV2Schema.safeParse(raw);
+  if (version === 2) {
+    const v2 = backupV2Schema.safeParse(raw);
+    if (!v2.success) throw new BackupError('El respaldo versión 2 está dañado o incompleto.');
+    const migrate = (table: string, rows: Record<string, unknown>[]) => rows.map((row) => migrateRowV2toV3(table, row));
+    raw = {
+      ...v2.data,
+      version: 3,
+      datos: {
+        ...v2.data.datos,
+        perfil: migrate('perfil', v2.data.datos.perfil),
+        apuntes: migrate('apuntes', v2.data.datos.apuntes),
+        estrellas: migrate('estrellas', v2.data.datos.estrellas),
+        colecciones: migrate('colecciones', v2.data.datos.colecciones),
+        recordatorios: migrate('recordatorios', v2.data.datos.recordatorios),
+        documentos: [],
+        diarios: [],
+        tarjetas: [],
+        tableros: [],
+      },
+    };
+  }
+  const parsed = backupV3Schema.safeParse(raw);
   if (!parsed.success) {
     const first = parsed.error.issues[0];
     const where = first ? ` (${first.path.join('.')})` : '';

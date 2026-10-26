@@ -1,5 +1,5 @@
 {
-  "asignatura": "ucuenca-contabilidad-auditoria--c1-calculo-diferencial",
+  "materia": "calculo-diferencial",
   "actualizado_en": "2026-10-15",
   "temas": [
     {
@@ -57,7 +57,10 @@
           "errores_frecuentes": [
             "Escribir ln(a + b) = ln a + ln b; lo correcto es ln(a·b) = ln a + ln b."
           ],
-          "formulas": ["interes-continuo", "numero-periodos"],
+          "formulas": [
+            "interes-continuo",
+            "numero-periodos"
+          ],
           "fuente": {
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions",
@@ -148,7 +151,9 @@
           "errores_frecuentes": [
             "Dividir para el cambio en f en lugar del cambio en x."
           ],
-          "formulas": ["tasa-cambio-promedio"],
+          "formulas": [
+            "tasa-cambio-promedio"
+          ],
           "fuente": {
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
@@ -184,7 +189,9 @@
           "errores_frecuentes": [
             "Derivar un producto multiplicando las derivadas de cada factor."
           ],
-          "formulas": ["costo-marginal"],
+          "formulas": [
+            "costo-marginal"
+          ],
           "fuente": {
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules",
@@ -228,7 +235,9 @@
           "errores_frecuentes": [
             "Confundir costo marginal con costo promedio por unidad."
           ],
-          "formulas": ["costo-marginal"],
+          "formulas": [
+            "costo-marginal"
+          ],
           "fuente": {
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
@@ -264,7 +273,9 @@
           "errores_frecuentes": [
             "Dar como respuesta la variable óptima cuando se pedía el valor máximo de la función."
           ],
-          "formulas": ["maximo-ingreso"],
+          "formulas": [
+            "maximo-ingreso"
+          ],
           "fuente": {
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems",
@@ -282,7 +293,9 @@
           "errores_frecuentes": [
             "Usar cambios absolutos (dólares, unidades) en lugar de porcentuales."
           ],
-          "formulas": ["elasticidad-precio"],
+          "formulas": [
+            "elasticidad-precio"
+          ],
           "fuente": {
             "ref": "os-econ",
             "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",

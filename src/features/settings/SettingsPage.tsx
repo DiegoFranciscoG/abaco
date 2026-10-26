@@ -1,7 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState } from 'react';
 import { backupFileName, BackupError, createBackup, markBackupDone, parseBackup, restoreBackup, serializeBackup, type RestoreMode } from '../../data/backup';
-import { carreras, universidades } from '../../data/content';
+import { getMateria } from '../../data/content';
 import { countUserData, getDeviceId, getMeta, updateProfile, wipeAllData } from '../../data/repositories';
 import { checkStorage, formatBytes, requestPersistence, type StorageStatus } from '../../data/storage-health';
 import type { MotionPreference, ThemePreference } from '../../data/types';
@@ -9,7 +9,7 @@ import { resetDisplayPrefs } from '../../ui/display-prefs';
 import { useDocumentTitle } from '../../ui/hooks';
 import { useProfile } from '../../ui/use-profile';
 import { Icon } from '../../ui/icons';
-import { Notice, PageHeader } from '../../ui/primitives';
+import { AppLink, Notice, PageHeader } from '../../ui/primitives';
 import { downloadFile, formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
 
@@ -87,32 +87,25 @@ export default function SettingsPage() {
           Perfil (solo en este dispositivo)
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          <label>
-            <span className="mb-1 block text-sm font-semibold text-ink-2">Carrera</span>
-            <select className="field" value={profile.carrera ?? ''} onChange={(e) => { const c = carreras.find((x) => x.id === e.target.value); void updateProfile(c ? { carrera: c.id, universidad: c.universidad } : { carrera: undefined, universidad: undefined, ciclo: undefined }); }}>
-              <option value="">Sin elegir</option>
-              {universidades.map((u) => (
-                <optgroup key={u.id} label={u.nombre}>
-                  {carreras.filter((c) => c.universidad === u.id).map((c) => (
-                    <option key={c.id} value={c.id}>
-                      {c.nombre}
-                    </option>
-                  ))}
-                </optgroup>
-              ))}
-            </select>
-          </label>
-          <label>
-            <span className="mb-1 block text-sm font-semibold text-ink-2">Ciclo actual</span>
-            <select className="field" value={profile.ciclo ?? ''} onChange={(e) => void updateProfile({ ciclo: e.target.value ? Number(e.target.value) : undefined })}>
-              <option value="">Sin elegir</option>
-              {Array.from({ length: 8 }, (_, i) => i + 1).map((n) => (
-                <option key={n} value={n}>
-                  Ciclo {n}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div>
+            <span className="mb-1 block text-sm font-semibold text-ink-2">Mis materias</span>
+            {profile.materias.length > 0 ? (
+              <ul className="flex flex-wrap gap-2">
+                {profile.materias.map((id) => (
+                  <li key={id}>
+                    <AppLink to={`/materia/${id}`} className="chip min-h-9 hover:border-red hover:text-red">
+                      {getMateria(id)?.nombre ?? id}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-muted">Todavía no marcas ninguna.</p>
+            )}
+            <AppLink to="/materias" className="link-red mt-2 inline-block text-sm">
+              Elegir materias →
+            </AppLink>
+          </div>
         </div>
         <Segmented<ThemePreference> label="Tema" value={profile.tema} onChange={(v) => void updateProfile({ tema: v })} options={[{ id: 'system', label: 'Como el sistema' }, { id: 'light', label: 'Claro' }, { id: 'dark', label: 'Oscuro' }]} />
         <Segmented<MotionPreference> label="Animaciones y 3D" value={profile.movimiento} onChange={(v) => void updateProfile({ movimiento: v })} options={[{ id: 'system', label: 'Como el sistema' }, { id: 'full', label: 'Completas' }, { id: 'reduce', label: 'Reducidas (sin 3D)' }]} />

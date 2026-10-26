@@ -1,43 +1,32 @@
-import carrerasJson from '../../content/carreras.json';
 import fuentesJson from '../../content/fuentes.json';
-import universidadesJson from '../../content/universidades.json';
+import materiasJson from '../../content/materias.json';
 import type {
   App,
-  Asignatura,
-  Carrera,
+  Area,
   Ejercicio,
   Formula,
   Fuente,
   FuenteRef,
-  Malla,
+  Materia,
   Plantilla,
   Temario,
   Termino,
-  Universidad,
 } from '../domain/content/schemas';
-import { matchesSubject } from '../domain/text/normalize';
 
-/** Small, always-needed catalogs are bundled; everything else is loaded on demand (one chunk per career/subject). */
-export const universidades = universidadesJson as unknown as Universidad[];
-export const carreras = carrerasJson as unknown as Carrera[];
+/** Small, always-needed catalogs are bundled; syllabi and the rest of the content load on demand. */
+export const materias = (materiasJson as unknown as Materia[]).slice().sort((a, b) => a.orden - b.orden);
 export const fuentes = fuentesJson as unknown as Fuente[];
 
-const mallaLoaders = import.meta.glob<Malla>('../../content/mallas/*.json', { import: 'default' });
 const temarioLoaders = import.meta.glob<Temario>('../../content/temarios/*.json', { import: 'default' });
-
 const fileId = (path: string): string => path.split('/').pop()?.replace(/\.json$/, '') ?? path;
-const mallaPaths = new Map(Object.keys(mallaLoaders).map((path) => [fileId(path), path]));
 const temarioPaths = new Map(Object.keys(temarioLoaders).map((path) => [fileId(path), path]));
 
-/** Subjects that have deep content (topics, subtopics) in this release. */
-export const SUBJECTS_WITH_CONTENT: ReadonlySet<string> = new Set(temarioPaths.keys());
-
-export function getCarrera(id: string): Carrera | undefined {
-  return carreras.find((c) => c.id === id);
+export function getMateria(id: string): Materia | undefined {
+  return materias.find((m) => m.id === id);
 }
 
-export function getUniversidad(id: string): Universidad | undefined {
-  return universidades.find((u) => u.id === id);
+export function materiasByArea(area: Area): Materia[] {
+  return materias.filter((m) => m.areas[0] === area);
 }
 
 export function resolveFuente(ref: FuenteRef): (Fuente & { seccion?: string }) | undefined {
@@ -46,29 +35,10 @@ export function resolveFuente(ref: FuenteRef): (Fuente & { seccion?: string }) |
   return { ...base, url: ref.url ?? base.url, ...(ref.seccion ? { seccion: ref.seccion } : {}) };
 }
 
-export async function loadMalla(carreraId: string): Promise<Malla | undefined> {
-  const path = mallaPaths.get(carreraId);
-  const loader = path ? mallaLoaders[path] : undefined;
-  return loader ? loader() : undefined;
-}
-
-export async function loadTemario(asignaturaId: string): Promise<Temario | undefined> {
-  const path = temarioPaths.get(asignaturaId);
+export async function loadTemario(materiaId: string): Promise<Temario | undefined> {
+  const path = temarioPaths.get(materiaId);
   const loader = path ? temarioLoaders[path] : undefined;
   return loader ? loader() : undefined;
-}
-
-/** Career id is the part of the subject id before "--". */
-export function carreraOfAsignatura(asignaturaId: string): string {
-  return asignaturaId.split('--')[0] ?? asignaturaId;
-}
-
-export async function findAsignatura(asignaturaId: string): Promise<{ asignatura: Asignatura; carrera: Carrera } | undefined> {
-  const carrera = getCarrera(carreraOfAsignatura(asignaturaId));
-  if (!carrera) return undefined;
-  const malla = await loadMalla(carrera.id);
-  const asignatura = malla?.asignaturas.find((a) => a.id === asignaturaId);
-  return asignatura ? { asignatura, carrera } : undefined;
 }
 
 let formulasCache: Promise<Formula[]> | null = null;
@@ -95,7 +65,7 @@ export async function loadPlantillas(): Promise<Plantilla[]> {
   return (await import('../../content/plantillas.json')).default as unknown as Plantilla[];
 }
 
-/** Items whose `aparece_en` keys match a subject name ("Matemáticas Financieras" ↔ "matematica financiera"). */
-export function relatedTo<T extends { aparece_en: string[] }>(items: T[], subjectName: string): T[] {
-  return items.filter((item) => item.aparece_en.some((key) => matchesSubject(subjectName, key)));
+/** Formulas, apps or templates that declare the subject in `materias`. */
+export function relatedTo<T extends { materias: string[] }>(items: T[], materiaId: string): T[] {
+  return items.filter((item) => item.materias.includes(materiaId));
 }

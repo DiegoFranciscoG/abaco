@@ -88,6 +88,6 @@ export function useAsync<T>(load: () => Promise<T>, deps: unknown[]): AsyncState
 
 export function useDocumentTitle(title: string): void {
   useEffect(() => {
-    document.title = title ? `${title} · ÁBACO` : 'ÁBACO — estudia con tu malla real';
+    document.title = title ? `${title} · ÁBACO` : 'ÁBACO — estudia tus materias tema por tema';
   }, [title]);
 }

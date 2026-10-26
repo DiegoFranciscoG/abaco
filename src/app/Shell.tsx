@@ -16,9 +16,9 @@ const DeviceLayer = lazy(() => import('./DeviceLayer'));
 
 const NAV: { to: string; label: string; icon: IconName; end?: boolean }[] = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
-  { to: '/carreras', label: 'Mallas', icon: 'mallas' },
+  { to: '/materias', label: 'Materias', icon: 'materias' },
   { to: '/formulas', label: 'Fórmulas', icon: 'formula' },
-  { to: '/laboratorio', label: 'Laboratorio', icon: 'lab' },
+  { to: '/herramientas', label: 'Herramientas', icon: 'tools' },
   { to: '/mi-espacio', label: 'Mi espacio', icon: 'me' },
 ];
 
@@ -115,7 +115,7 @@ export function Shell() {
             </div>
             {!online ? (
               <div className="border-t border-line bg-warn-soft px-4 py-1.5 text-center text-xs font-semibold text-warn" role="status">
-                Sin conexión: tus apuntes, las mallas y el laboratorio siguen funcionando.
+                Sin conexión: tus apuntes, las materias, el laboratorio y casi todas las herramientas siguen funcionando.
               </div>
             ) : null}
           </header>
@@ -127,12 +127,21 @@ export function Shell() {
           <footer className="mx-auto max-w-6xl px-4 pb-28 text-xs leading-relaxed text-muted md:pb-10">
             <div className="border-t border-line pt-6">
               <p>
-                <strong className="text-ink-2">ÁBACO no está afiliado a ninguna universidad.</strong> Las mallas se reproducen con
-                enlace a su fuente oficial; el contenido académico es redacción propia y cada ficha cita su fuente.
+                <strong className="text-ink-2">ÁBACO no está afiliado a ninguna universidad.</strong> No reproduce planes de
+                estudio; el contenido es redacción propia y cada ficha cita su fuente. Es gratis, sin cuentas, sin publicidad y
+                sin cookies: tus apuntes viven solo en este dispositivo. Contenido educativo, no asesoría profesional.
               </p>
-              <p className="mt-2">
-                Tus apuntes viven solo en este dispositivo. <AppLink to="/acerca" className="link-red">Fuentes, licencias y privacidad</AppLink>
-              </p>
+              <nav aria-label="Legal" className="mt-3">
+                <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                  <li><AppLink to="/acerca" className="link-red">Fuentes</AppLink></li>
+                  <li><AppLink to="/legal/privacidad" className="link-red">Privacidad</AppLink></li>
+                  <li><AppLink to="/legal/terminos" className="link-red">Términos</AppLink></li>
+                  <li><AppLink to="/legal/almacenamiento" className="link-red">Cookies y almacenamiento</AppLink></li>
+                  <li><AppLink to="/legal/licencias" className="link-red">Licencias</AppLink></li>
+                  <li><AppLink to="/legal/accesibilidad" className="link-red">Accesibilidad</AppLink></li>
+                  <li><AppLink to="/legal/aviso" className="link-red">Aviso legal</AppLink></li>
+                </ul>
+              </nav>
             </div>
           </footer>
 

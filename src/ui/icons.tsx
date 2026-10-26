@@ -3,7 +3,23 @@ import type { SVGProps } from 'react';
 /** Hand-drawn icon set (1.75 stroke, rounded joins) so the app does not look like every other template. */
 export type IconName =
   | 'home'
-  | 'mallas'
+  | 'materias'
+  | 'tools'
+  | 'pen'
+  | 'ledger'
+  | 'chart'
+  | 'graph'
+  | 'market'
+  | 'globe'
+  | 'coins'
+  | 'breakeven'
+  | 'flow'
+  | 'payroll'
+  | 'receipt'
+  | 'grid4'
+  | 'cards'
+  | 'quote'
+  | 'scale'
   | 'formula'
   | 'lab'
   | 'me'
@@ -50,7 +66,23 @@ export type IconName =
 
 const PATHS: Record<IconName, string> = {
   home: 'M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z',
-  mallas: 'M4 5h16M4 5v14h16V5M9 5v14M14.5 5v14M4 10h16M4 14.5h16',
+  materias: 'M5 4.5h4v15H5zM10 4.5h4v15h-4zM15.2 5.3l3.8-1 3.4 14.6-3.8.9zM6.5 8h1M11.5 8h1',
+  tools: 'M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 0-2-2ZM4.5 4.5l4 4M3.5 8.5l2 2 3-3-2-2',
+  pen: 'M5 19h3.5L19 8.5a2.5 2.5 0 0 0-3.5-3.5L5 15.5zM13.5 7l3.5 3.5M12 19.5h7.5',
+  ledger: 'M4.5 4.5h15v15h-15zM12 4.5v15M4.5 8.5h15M7 12h3M7 15h3M14 12h3M14 15h3',
+  chart: 'M4.5 19.5h15M7 16v-3M11 16V9M15 16v-5M19 16V6',
+  graph: 'M4.5 4v16h16M6 16c2.5-8 5.5-11 8-6s4 4 6-1',
+  market: 'M4.5 4.5v15h15M7 6.5l11 11M7 17.5l11-11M12.5 12h.01',
+  globe: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM3.5 12h17M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9S9.5 5.5 12 3Z',
+  coins: 'M9.5 10.5c3.3 0 6-1.3 6-3s-2.7-3-6-3-6 1.3-6 3 2.7 3 6 3ZM3.5 7.5v4c0 1.7 2.7 3 6 3M3.5 11.5v4c0 1.7 2.7 3 6 3M14.5 13.5c3.3 0 6-1.3 6-3M14.5 13.5c-3.3 0-6 1.3-6 3s2.7 3 6 3 6-1.3 6-3v-6',
+  breakeven: 'M4.5 4.5v15h15M4.5 15l15-7M4.5 11.5c5 0 8 0 15-2M12 11.7h.01',
+  flow: 'M4.5 12h15M6.5 12V7M10.5 12v5M14.5 12V6M18.5 12v4',
+  payroll: 'M5 4.5h14v15H5zM8.5 8.5h7M8.5 12h7M8.5 15.5h3.5M15.5 15.5h.01',
+  receipt: 'M6.5 3.5h11v17l-2.2-1.5-2 1.5-2-1.5-2.3 1.5-2.5-1.5zM9.5 8h5M9.5 11.5h5M9.5 15h3',
+  grid4: 'M4.5 4.5h15v15h-15zM12 4.5v15M4.5 12h15',
+  cards: 'M7.5 6.5h11a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1ZM4.5 15.5v-10a1 1 0 0 1 1-1h10',
+  quote: 'M5 17.5c0-4 1-7 4-9.5M5 13h4v4.5H5zM14 17.5c0-4 1-7 4-9.5M14 13h4v4.5h-4z',
+  scale: 'M12 4v16M7 20h10M5 7.5h14M7 7.5l-3 6.5a3 3 0 0 0 6 0zM17 7.5 14 14a3 3 0 0 0 6 0z',
   formula: 'M6 5h9M6 5l5 7-5 7h10M17 15.5l3 3.5M20 15.5 17 19',
   lab: 'M4 4h16v16H4zM4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16',
   me: 'M12 12.2a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4.5 20c.9-3.6 3.9-5.6 7.5-5.6s6.6 2 7.5 5.6',

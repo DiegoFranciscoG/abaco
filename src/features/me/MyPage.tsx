@@ -2,7 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import { importSharedCollection } from '../../data/backup';
-import { carreraOfAsignatura, loadEjercicios, loadMalla } from '../../data/content';
+import { getMateria, loadEjercicios } from '../../data/content';
 import {
   createCollection,
   createReminder,
@@ -37,7 +37,7 @@ function NotesTab() {
       <input type="search" className="field" placeholder="Buscar en mis apuntes…" value={query} onChange={(e) => setQuery(e.target.value)} aria-label="Buscar en mis apuntes" />
       {notes && notes.length === 0 ? (
         <EmptyState icon="note" title={query ? 'Sin coincidencias' : 'Aún no tienes apuntes'}>
-          Escribe apuntes desde cualquier asignatura, tema o fórmula.
+          Escribe apuntes desde cualquier materia, tema o fórmula.
         </EmptyState>
       ) : null}
       <div className="grid gap-3 md:grid-cols-2">
@@ -251,23 +251,20 @@ function ProgressTab() {
   const attempts = useLiveQuery(() => listAttempts(), [], []);
   const data = useAsync(async () => {
     const exercises = await loadEjercicios();
-    const names = new Map<string, string>();
-    for (const careerId of new Set(exercises.map((e) => carreraOfAsignatura(e.asignatura)))) {
-      (await loadMalla(careerId))?.asignaturas.forEach((a) => names.set(a.id, a.nombre));
-    }
+    const names = new Map(exercises.map((e) => [e.materia, getMateria(e.materia)?.nombre ?? e.materia] as const));
     return { exercises, names };
   }, []);
   const rows = useMemo(() => {
     if (data.status !== 'ready') return [];
-    const subjectOf = new Map(data.data.exercises.map((e) => [e.id, e.asignatura]));
+    const subjectOf = new Map(data.data.exercises.map((e) => [e.id, e.materia]));
     const acc = accuracyBySubject(attempts ?? [], (id) => subjectOf.get(id));
     const solved = summarizeAttempts(attempts ?? []);
     const bySubject = new Map<string, { total: number; solved: number }>();
     for (const e of data.data.exercises) {
-      const current = bySubject.get(e.asignatura) ?? { total: 0, solved: 0 };
+      const current = bySubject.get(e.materia) ?? { total: 0, solved: 0 };
       current.total += 1;
       if (solved.get(e.id)?.solved) current.solved += 1;
-      bySubject.set(e.asignatura, current);
+      bySubject.set(e.materia, current);
     }
     return [...bySubject.entries()].map(([id, s]) => ({ id, name: data.data.names.get(id) ?? id, ...s, ...(acc.get(id) ?? { attempts: 0, correct: 0 }) }));
   }, [data, attempts]);
@@ -286,7 +283,7 @@ function ProgressTab() {
         return (
           <li key={r.id} className="card p-4">
             <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
-              <AppLink to={`/practica?asignatura=${r.id}`} className="font-semibold hover:text-red">
+              <AppLink to={`/practica?materia=${r.id}`} className="font-semibold hover:text-red">
                 {r.name}
               </AppLink>
               <span className="tnum text-sm text-muted">

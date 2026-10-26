@@ -1,18 +1,18 @@
 import { describe, expect, it } from 'vitest';
 import { indexFromDocuments, searchContent, suggest } from '../../src/domain/search/content-search';
 import { buildSearchDocuments, normalizeTerm } from '../../src/domain/search/index-data';
+import { TOOLS } from '../../src/domain/tools/catalog';
 import { loadAllContent } from '../content/load-content';
 
 const content = loadAllContent();
 const docs = buildSearchDocuments({
-  universidades: content.universidades,
-  carreras: content.carreras,
-  mallas: content.mallas.map((m) => m.data),
+  materias: content.materias,
   temarios: content.temarios.map((t) => t.data),
   formulas: content.formulas,
   glosario: content.glosario,
   apps: content.apps,
   ejercicios: content.ejercicios,
+  herramientas: TOOLS,
 });
 const index = indexFromDocuments(docs);
 
@@ -21,8 +21,9 @@ describe('content search', () => {
     const ids = docs.map((d) => d.id);
     expect(new Set(ids).size).toBe(ids.length);
     const kinds = new Set(docs.map((d) => d.tipo));
-    expect([...kinds].sort()).toEqual(['app', 'asignatura', 'carrera', 'ejercicio', 'formula', 'subtema', 'termino']);
-    expect(docs.filter((d) => d.tipo === 'asignatura')).toHaveLength(588);
+    expect([...kinds].sort()).toEqual(['app', 'ejercicio', 'formula', 'herramienta', 'materia', 'subtema', 'tema', 'termino']);
+    expect(docs.filter((d) => d.tipo === 'materia')).toHaveLength(content.materias.length);
+    expect(docs.filter((d) => d.tipo === 'herramienta')).toHaveLength(TOOLS.length);
   });
 
   it('normalizes terms (accents, case, stopwords)', () => {
@@ -43,10 +44,15 @@ describe('content search', () => {
     expect(searchContent(index, 'amortisacion', { types: ['formula'] }).length).toBeGreaterThan(0);
   });
 
-  it('finds subjects of both universities and links to their page', () => {
-    const hits = searchContent(index, 'matematica financiera', { types: ['asignatura'] });
-    expect(hits.length).toBeGreaterThanOrEqual(5);
-    expect(hits.every((h) => h.ruta.startsWith('/asignatura/'))).toBe(true);
+  it('finds subjects by name or synonym and links to their page', () => {
+    expect(searchContent(index, 'matematica financiera', { types: ['materia'] })[0]?.ruta).toBe('/materia/matematica-financiera');
+    expect(searchContent(index, 'mercadotecnia', { types: ['materia'] })[0]?.ruta).toBe('/materia/marketing');
+  });
+
+  it('finds topics, subtopics and tools', () => {
+    expect(searchContent(index, 'punto de equilibrio', { types: ['subtema'] }).every((h) => h.ruta.startsWith('/materia/'))).toBe(true);
+    expect(searchContent(index, 'rol de pagos', { types: ['herramienta'] })[0]?.ruta).toBe('/herramientas/rol-pagos');
+    expect(searchContent(index, 'latex', { types: ['herramienta'] })[0]?.ruta).toBe('/herramientas/editor');
   });
 
   it('falls back to any-word matching when all words do not match together', () => {

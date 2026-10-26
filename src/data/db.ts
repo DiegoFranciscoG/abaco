@@ -1,19 +1,24 @@
 import Dexie, { type Table, type Transaction } from 'dexie';
+import { legacyMateria, materiaRoute } from './legacy';
 import type {
   Apunte,
   Busqueda,
   CacheApi,
   Coleccion,
+  Diario,
+  Documento,
   Estrella,
   Hoja,
   Intento,
   MetaRow,
   Perfil,
   Recordatorio,
+  Tablero,
+  Tarjeta,
 } from './types';
 
 export const DB_NAME = 'abaco';
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 /** Version 1 (development release): notes could only be attached to a subject. */
 export const SCHEMA_V1 = {
@@ -38,6 +43,69 @@ export const SCHEMA_V2 = {
   busquedas: 'id, fecha',
   cacheApi: 'clave, expiraEn',
 };
+
+/** Version 3: subjects come from the catalog (no curricula) and the study tools keep their own tables. */
+export const SCHEMA_V3 = {
+  ...SCHEMA_V2,
+  documentos: 'id, actualizadoEn',
+  diarios: 'id, actualizadoEn',
+  tarjetas: 'id, mazo, proximaRevision',
+  tableros: 'id, tipo, actualizadoEn',
+};
+
+type Row = Record<string, unknown>;
+
+/** Star or collection item that pointed to a curriculum subject now points to a catalog subject. */
+function migrateStarLike(row: Row): Row {
+  if (row.tipo !== 'asignatura') return row;
+  const materia = typeof row.refId === 'string' ? legacyMateria(row.refId) : undefined;
+  const next: Row = { ...row, tipo: 'materia', refId: materia ?? row.refId };
+  next.ruta = materia ? materiaRoute(materia) : '/materias';
+  return next;
+}
+
+/**
+ * Pure migration of one v2 row to the v3 shape (also used when restoring old backup files).
+ * Nothing the student wrote is discarded: a note about a subject without an equivalent becomes a free note.
+ */
+export function migrateRowV2toV3(table: string, row: Row): Row {
+  switch (table) {
+    case 'perfil': {
+      const { universidad: _u, carrera: _c, ciclo: _ci, ...rest } = row;
+      return { ...rest, materias: Array.isArray(rest.materias) ? rest.materias : [] };
+    }
+    case 'apuntes': {
+      if (row.refTipo !== 'asignatura') return row;
+      const materia = typeof row.refId === 'string' ? legacyMateria(row.refId) : undefined;
+      return materia ? { ...row, refTipo: 'materia', refId: materia } : { ...row, refTipo: 'libre', refId: 'general' };
+    }
+    case 'estrellas':
+      return migrateStarLike(row);
+    case 'colecciones':
+      return { ...row, items: Array.isArray(row.items) ? (row.items as Row[]).map(migrateStarLike) : [] };
+    case 'recordatorios': {
+      const { asignaturaId, ...rest } = row;
+      const materia = typeof asignaturaId === 'string' ? legacyMateria(asignaturaId) : undefined;
+      return materia ? { ...rest, materiaId: materia } : rest;
+    }
+    default:
+      return row;
+  }
+}
+
+async function upgradeToV3(tx: Transaction): Promise<void> {
+  for (const table of ['perfil', 'apuntes', 'estrellas', 'colecciones', 'recordatorios']) {
+    await tx
+      .table(table)
+      .toCollection()
+      .modify((row: Row) => {
+        // Always a copy: the row is emptied below before the migrated fields are written back.
+        const migrated = { ...migrateRowV2toV3(table, { ...row }) };
+        for (const key of Object.keys(row)) delete row[key];
+        Object.assign(row, migrated);
+      });
+  }
+}
 
 /** Pure migration of one v1 note to the v2 shape (also used when restoring old backup files). */
 export function migrateNoteV1toV2(note: Record<string, unknown>): Record<string, unknown> {
@@ -77,11 +145,16 @@ export class AbacoDB extends Dexie {
   hojas!: Table<Hoja, string>;
   busquedas!: Table<Busqueda, string>;
   cacheApi!: Table<CacheApi, string>;
+  documentos!: Table<Documento, string>;
+  diarios!: Table<Diario, string>;
+  tarjetas!: Table<Tarjeta, string>;
+  tableros!: Table<Tablero, string>;
 
   constructor(name: string = DB_NAME) {
     super(name);
     this.version(1).stores(SCHEMA_V1);
     this.version(2).stores(SCHEMA_V2).upgrade(upgradeToV2);
+    this.version(3).stores(SCHEMA_V3).upgrade(upgradeToV3);
   }
 }
 
@@ -95,6 +168,10 @@ export const BACKUP_TABLES = [
   'intentos',
   'hojas',
   'busquedas',
+  'documentos',
+  'diarios',
+  'tarjetas',
+  'tableros',
 ] as const;
 export type BackupTable = (typeof BACKUP_TABLES)[number];
 

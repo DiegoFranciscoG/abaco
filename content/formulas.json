@@ -3,6 +3,9 @@
     "id": "ecuacion-contable",
     "nombre": "Ecuación contable",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -60,10 +63,6 @@
       "excel_es": "=B1+B2",
       "excel_en": "=B1+B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
@@ -77,6 +76,9 @@
     "id": "patrimonio",
     "nombre": "Patrimonio (activo neto)",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -131,9 +133,6 @@
       "excel_es": "=B1-B2",
       "excel_en": "=B1-B2"
     },
-    "aparece_en": [
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
@@ -148,6 +147,9 @@
     "id": "ecuacion-contable-ampliada",
     "nombre": "Ecuación contable ampliada",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -226,9 +228,6 @@
       "excel_es": "=B1+B2+B3-B4-B5",
       "excel_en": "=B1+B2+B3-B4-B5"
     },
-    "aparece_en": [
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
@@ -243,6 +242,9 @@
     "id": "saldo-cuenta-deudora",
     "nombre": "Saldo de una cuenta de naturaleza deudora",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -304,10 +306,6 @@
       "excel_es": "=SUMA(B2:B4)-SUMA(C2:C3)",
       "excel_en": "=SUM(B2:B4)-SUM(C2:C3)"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad comercial"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
@@ -321,6 +319,9 @@
     "id": "comprobacion-partida-doble",
     "nombre": "Comprobación de la partida doble",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -382,9 +383,6 @@
       "excel_es": "=SUMA(B2:B4)-SUMA(C2:C3)",
       "excel_en": "=SUM(B2:B4)-SUM(C2:C3)"
     },
-    "aparece_en": [
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
@@ -398,6 +396,9 @@
     "id": "utilidad-neta",
     "nombre": "Utilidad (o pérdida) neta",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -452,9 +453,6 @@
       "excel_es": "=B1-B2",
       "excel_en": "=B1-B2"
     },
-    "aparece_en": [
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
@@ -469,6 +467,9 @@
     "id": "ventas-netas",
     "nombre": "Ventas netas",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -531,10 +532,6 @@
       "excel_es": "=B1-B2-B3",
       "excel_en": "=B1-B2-B3"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad comercial"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/6-4-analyze-and-record-transactions-for-the-sale-of-merchandise-using-the-perpetual-inventory-system",
@@ -549,6 +546,9 @@
     "id": "compras-netas",
     "nombre": "Compras netas",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -622,10 +622,6 @@
       "excel_es": "=B1+B2-B3-B4",
       "excel_en": "=B1+B2-B3-B4"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad comercial"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/6-7-appendix-analyze-and-record-transactions-for-merchandise-purchases-and-sales-using-the-periodic-inventory-system",
@@ -639,6 +635,10 @@
     "id": "costo-ventas-periodico",
     "nombre": "Costo de ventas (sistema periódico)",
     "categoria": "inventarios",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -704,11 +704,6 @@
       "excel_es": "=B1+B2-B3",
       "excel_en": "=B1+B2-B3"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad comercial",
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
@@ -722,6 +717,9 @@
     "id": "utilidad-bruta",
     "nombre": "Utilidad bruta en ventas",
     "categoria": "contabilidad-basica",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -776,10 +774,6 @@
       "excel_es": "=B1-B2",
       "excel_en": "=B1-B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad comercial"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/6-6-describe-and-prepare-multi-step-and-simple-income-statements-for-merchandising-companies",
@@ -794,6 +788,10 @@
     "id": "margen-bruto",
     "nombre": "Margen bruto",
     "categoria": "razones-financieras",
+    "materias": [
+      "contabilidad-general",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "contabilidad",
       "finanzas"
@@ -845,14 +843,10 @@
       ],
       "resultado": 0.4827,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/6-6-describe-and-prepare-multi-step-and-simple-income-statements-for-merchandising-companies",
@@ -867,6 +861,10 @@
     "id": "margen-neto",
     "nombre": "Margen neto (de utilidad)",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas",
+      "contabilidad-financiera"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -917,14 +915,10 @@
       ],
       "resultado": 0.064,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "finanza",
-      "contabilidad financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
@@ -939,6 +933,10 @@
     "id": "costo-promedio-ponderado",
     "nombre": "Costo unitario promedio ponderado",
     "categoria": "inventarios",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -998,14 +996,10 @@
       ],
       "resultado": 5.6,
       "unidad": "USD/unidad",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=SUMAPRODUCTO(B2:B4;C2:C4)/SUMA(B2:B4)",
       "excel_en": "=SUMPRODUCT(B2:B4,C2:C4)/SUM(B2:B4)"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
@@ -1019,6 +1013,10 @@
     "id": "costo-ventas-promedio",
     "nombre": "Costo de ventas con costo promedio",
     "categoria": "inventarios",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1067,10 +1065,6 @@
       "excel_es": "=B1*B2",
       "excel_en": "=B1*B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
@@ -1085,6 +1079,10 @@
     "id": "costo-ventas-peps",
     "nombre": "Costo de ventas por PEPS",
     "categoria": "inventarios",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1152,10 +1150,6 @@
       "excel_es": "=B2*C2+B3*C3",
       "excel_en": "=B2*C2+B3*C3"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
@@ -1169,6 +1163,10 @@
     "id": "inventario-final",
     "nombre": "Inventario final por diferencia",
     "categoria": "inventarios",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1223,10 +1221,6 @@
       "excel_es": "=B1-B2",
       "excel_en": "=B1-B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
@@ -1241,6 +1235,10 @@
     "id": "rotacion-inventarios",
     "nombre": "Rotación de inventarios",
     "categoria": "razones-financieras",
+    "materias": [
+      "contabilidad-general",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "contabilidad",
       "finanzas"
@@ -1299,14 +1297,10 @@
       ],
       "resultado": 3.844,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/PROMEDIO(B2;B3)",
       "excel_en": "=B1/AVERAGE(B2,B3)"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/10-5-examine-the-efficiency-of-inventory-management-using-financial-ratios",
@@ -1321,6 +1315,10 @@
     "id": "dias-inventario",
     "nombre": "Días de inventario",
     "categoria": "razones-financieras",
+    "materias": [
+      "contabilidad-general",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "contabilidad",
       "finanzas"
@@ -1379,10 +1377,6 @@
       "excel_es": "=365*B1/B2",
       "excel_en": "=365*B1/B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-2-operating-efficiency-ratios",
@@ -1396,6 +1390,10 @@
     "id": "depreciacion-linea-recta",
     "nombre": "Depreciación en línea recta",
     "categoria": "depreciacion",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-financiera"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1455,10 +1453,6 @@
       "excel_es": "=SLN(32000;4000;5)",
       "excel_en": "=SLN(32000,4000,5)"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad financiera"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
@@ -1472,6 +1466,10 @@
     "id": "depreciacion-suma-digitos",
     "nombre": "Depreciación por suma de dígitos de los años",
     "categoria": "depreciacion",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-financiera"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1536,10 +1534,6 @@
       "excel_es": "=SYD(32000;4000;5;2)",
       "excel_en": "=SYD(32000,4000,5,2)"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad financiera"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
@@ -1554,6 +1548,10 @@
     "id": "depreciacion-unidades-produccion",
     "nombre": "Depreciación por unidades producidas",
     "categoria": "depreciacion",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1623,10 +1621,6 @@
       "excel_es": "=(B1-B2)/B3*B4",
       "excel_en": "=(B1-B2)/B3*B4"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
@@ -1641,6 +1635,10 @@
     "id": "depreciacion-doble-saldo",
     "nombre": "Depreciación por doble saldo decreciente",
     "categoria": "depreciacion",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-financiera"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1694,10 +1692,6 @@
       "excel_es": "=DDB(32000;4000;5;2)",
       "excel_en": "=DDB(32000,4000,5,2)"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "contabilidad financiera"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
@@ -1711,6 +1705,9 @@
     "id": "valor-en-libros",
     "nombre": "Valor en libros de un activo",
     "categoria": "depreciacion",
+    "materias": [
+      "contabilidad-general"
+    ],
     "areas": [
       "contabilidad"
     ],
@@ -1765,9 +1762,6 @@
       "excel_es": "=B1-2*B2",
       "excel_en": "=B1-2*B2"
     },
-    "aparece_en": [
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
@@ -1782,6 +1776,10 @@
     "id": "interes-simple",
     "nombre": "Interés simple",
     "categoria": "interes",
+    "materias": [
+      "matematica-financiera",
+      "matematica-gestion"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -1843,10 +1841,6 @@
       "excel_es": "=2500*0,09*8/12",
       "excel_en": "=2500*0.09*8/12"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "matematica"
-    ],
     "fuente": {
       "ref": "os-cmath",
       "url": "https://openstax.org/books/contemporary-mathematics/pages/6-3-simple-interest",
@@ -1860,6 +1854,9 @@
     "id": "monto-interes-simple",
     "nombre": "Monto con interés simple",
     "categoria": "interes",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -1918,9 +1915,6 @@
       "excel_es": "=2500*(1+0,09*8/12)",
       "excel_en": "=2500*(1+0.09*8/12)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-cmath",
       "url": "https://openstax.org/books/contemporary-mathematics/pages/6-3-simple-interest",
@@ -1935,6 +1929,9 @@
     "id": "monto-compuesto",
     "nombre": "Valor futuro con interés compuesto",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -1996,9 +1993,6 @@
       "excel_es": "=VF(0,02;12;0;-5000)",
       "excel_en": "=FV(0.02,12,0,-5000)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-cmath",
       "url": "https://openstax.org/books/contemporary-mathematics/pages/6-4-compound-interest",
@@ -2012,6 +2006,10 @@
     "id": "valor-actual",
     "nombre": "Valor actual de un monto futuro",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2070,10 +2068,6 @@
       "excel_es": "=VA(0,1;4;0;-10000)",
       "excel_en": "=PV(0.1,4,0,-10000)"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/7-2-time-value-of-money-tvm-basics",
@@ -2088,6 +2082,9 @@
     "id": "tasa-periodica",
     "nombre": "Tasa por período a partir de la nominal",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2134,13 +2131,10 @@
       ],
       "resultado": 0.015,
       "unidad": "por período",
-      "tolerancia": 5e-7,
+      "tolerancia": 5e-07,
       "excel_es": "=0,18/12",
       "excel_en": "=0.18/12"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
@@ -2155,6 +2149,10 @@
     "id": "tasa-efectiva-anual",
     "nombre": "Tasa efectiva anual",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2202,14 +2200,10 @@
       ],
       "resultado": 0.195618,
       "unidad": "por año",
-      "tolerancia": 5e-7,
+      "tolerancia": 5e-07,
       "excel_es": "=INT.EFECTIVO(0,18;12)",
       "excel_en": "=EFFECT(0.18,12)"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
@@ -2224,6 +2218,9 @@
     "id": "tasa-nominal-desde-efectiva",
     "nombre": "Tasa nominal equivalente a una efectiva",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2271,13 +2268,10 @@
       ],
       "resultado": 0.113866,
       "unidad": "por año",
-      "tolerancia": 5e-7,
+      "tolerancia": 5e-07,
       "excel_es": "=TASA.NOMINAL(0,12;12)",
       "excel_en": "=NOMINAL(0.12,12)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-4-stated-versus-effective-rates",
@@ -2292,6 +2286,10 @@
     "id": "interes-continuo",
     "nombre": "Capitalización continua",
     "categoria": "valor-dinero",
+    "materias": [
+      "calculo-diferencial",
+      "matematica-financiera"
+    ],
     "areas": [
       "cuantitativo",
       "finanzas"
@@ -2350,10 +2348,6 @@
       "excel_es": "=1000*EXP(0,06*5)",
       "excel_en": "=1000*EXP(0.06*5)"
     },
-    "aparece_en": [
-      "calculo diferencial",
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-calc1",
       "url": "https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions",
@@ -2368,6 +2362,9 @@
     "id": "numero-periodos",
     "nombre": "Número de períodos",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2422,13 +2419,10 @@
       ],
       "resultado": 11.8957,
       "unidad": "períodos",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=NPER(0,06;0;-1000;2000)",
       "excel_en": "=NPER(0.06,0,-1000,2000)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/7-3-methods-for-solving-time-value-of-money-problems",
@@ -2443,6 +2437,9 @@
     "id": "tasa-implicita",
     "nombre": "Tasa de interés implícita",
     "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2497,13 +2494,10 @@
       ],
       "resultado": 0.077217,
       "unidad": "por período",
-      "tolerancia": 5e-7,
+      "tolerancia": 5e-07,
       "excel_es": "=TASA(3;0;-4000;5000)",
       "excel_en": "=RATE(3,0,-4000,5000)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/7-3-methods-for-solving-time-value-of-money-problems",
@@ -2518,6 +2512,9 @@
     "id": "vf-anualidad-vencida",
     "nombre": "Valor futuro de una anualidad vencida",
     "categoria": "anualidades",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2579,9 +2576,6 @@
       "excel_es": "=VF(0,005;24;-150)",
       "excel_en": "=FV(0.005,24,-150)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
@@ -2595,6 +2589,10 @@
     "id": "va-anualidad-vencida",
     "nombre": "Valor actual de una anualidad vencida",
     "categoria": "anualidades",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2653,10 +2651,6 @@
       "excel_es": "=VA(0,01;36;-300)",
       "excel_en": "=PV(0.01,36,-300)"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
@@ -2671,6 +2665,10 @@
     "id": "cuota-prestamo",
     "nombre": "Cuota fija de un préstamo (sistema francés)",
     "categoria": "amortizacion",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2732,10 +2730,6 @@
       "excel_es": "=PAGO(0,0125;24;-12000)",
       "excel_en": "=PMT(0.0125,24,-12000)"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
@@ -2749,6 +2743,9 @@
     "id": "va-anualidad-anticipada",
     "nombre": "Valor actual de una anualidad anticipada",
     "categoria": "anualidades",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2807,9 +2804,6 @@
       "excel_es": "=VA(0,01;36;-300;0;1)",
       "excel_en": "=PV(0.01,36,-300,0,1)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
@@ -2824,6 +2818,9 @@
     "id": "vf-anualidad-anticipada",
     "nombre": "Valor futuro de una anualidad anticipada",
     "categoria": "anualidades",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -2882,9 +2879,6 @@
       "excel_es": "=VF(0,005;24;-150;0;1)",
       "excel_en": "=FV(0.005,24,-150,0,1)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-2-annuities",
@@ -2899,6 +2893,10 @@
     "id": "perpetuidad",
     "nombre": "Valor actual de una perpetuidad",
     "categoria": "anualidades",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -2948,10 +2946,6 @@
       "excel_es": "=1200/0,06",
       "excel_en": "=1200/0.06"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-1-perpetuities",
@@ -2966,6 +2960,10 @@
     "id": "perpetuidad-creciente",
     "nombre": "Valor actual de una perpetuidad creciente",
     "categoria": "anualidades",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3026,10 +3024,6 @@
       "excel_es": "=1200/(0,06-0,02)",
       "excel_en": "=1200/(0.06-0.02)"
     },
-    "aparece_en": [
-      "matematica financiera",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-1-perpetuities",
@@ -3043,6 +3037,9 @@
     "id": "interes-cuota",
     "nombre": "Interés de una cuota (sistema francés)",
     "categoria": "amortizacion",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3093,9 +3090,6 @@
       "excel_es": "=PAGOINT(0,0125;1;24;-12000)",
       "excel_en": "=IPMT(0.0125,1,24,-12000)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
@@ -3110,6 +3104,9 @@
     "id": "capital-cuota",
     "nombre": "Capital amortizado en una cuota",
     "categoria": "amortizacion",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3160,9 +3157,6 @@
       "excel_es": "=PAGOPRIN(0,0125;1;24;-12000)",
       "excel_en": "=PPMT(0.0125,1,24,-12000)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
@@ -3177,6 +3171,9 @@
     "id": "saldo-insoluto",
     "nombre": "Saldo pendiente después de k cuotas",
     "categoria": "amortizacion",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas",
       "cuantitativo"
@@ -3242,9 +3239,6 @@
       "excel_es": "=VF(0,0125;12;PAGO(0,0125;24;-12000);-12000)",
       "excel_en": "=FV(0.0125,12,PMT(0.0125,24,-12000),-12000)"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
@@ -3259,6 +3253,9 @@
     "id": "cuota-capital-constante",
     "nombre": "Cuota con amortización de capital constante",
     "categoria": "amortizacion",
+    "materias": [
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3327,9 +3324,6 @@
       "excel_es": "=12000/24+(12000-12*12000/24)*0,0125",
       "excel_en": "=12000/24+(12000-12*12000/24)*0.0125"
     },
-    "aparece_en": [
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
@@ -3343,6 +3337,11 @@
     "id": "van",
     "nombre": "Valor actual neto (VAN)",
     "categoria": "evaluacion-proyectos",
+    "materias": [
+      "evaluacion-proyectos",
+      "finanzas-corporativas",
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3422,11 +3421,6 @@
       "excel_es": "=VNA(0,1;B2:B4)+B1",
       "excel_en": "=NPV(0.1,B2:B4)+B1"
     },
-    "aparece_en": [
-      "proyecto",
-      "finanza",
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
@@ -3439,6 +3433,11 @@
     "id": "tir",
     "nombre": "Tasa interna de retorno (TIR)",
     "categoria": "evaluacion-proyectos",
+    "materias": [
+      "evaluacion-proyectos",
+      "finanzas-corporativas",
+      "matematica-financiera"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3511,15 +3510,10 @@
       ],
       "resultado": 0.088963,
       "unidad": "por año",
-      "tolerancia": 5e-7,
+      "tolerancia": 5e-07,
       "excel_es": "=TIR(B1:B4)",
       "excel_en": "=IRR(B1:B4)"
     },
-    "aparece_en": [
-      "proyecto",
-      "finanza",
-      "matematica financiera"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/16-3-internal-rate-of-return-irr-method",
@@ -3533,6 +3527,10 @@
     "id": "indice-rentabilidad",
     "nombre": "Índice de rentabilidad",
     "categoria": "evaluacion-proyectos",
+    "materias": [
+      "evaluacion-proyectos",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3600,14 +3598,10 @@
       ],
       "resultado": 0.979,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=VNA(0,1;B2:B4)/-B1",
       "excel_en": "=NPV(0.1,B2:B4)/-B1"
     },
-    "aparece_en": [
-      "proyecto",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/16-4-alternative-methods",
@@ -3622,6 +3616,10 @@
     "id": "periodo-recuperacion",
     "nombre": "Período de recuperación de la inversión",
     "categoria": "evaluacion-proyectos",
+    "materias": [
+      "evaluacion-proyectos",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -3680,14 +3678,10 @@
       ],
       "resultado": 2.6,
       "unidad": "años",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=2+(10000-7000)/5000",
       "excel_en": "=2+(10000-7000)/5000"
     },
-    "aparece_en": [
-      "proyecto",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/16-1-payback-period-method",
@@ -3701,6 +3695,9 @@
     "id": "margen-contribucion-unitario",
     "nombre": "Margen de contribución unitario",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad",
       "gestion"
@@ -3755,10 +3752,6 @@
       "excel_es": "=B1-B2",
       "excel_en": "=B1-B2"
     },
-    "aparece_en": [
-      "costo",
-      "presupuesto"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-1-explain-contribution-margin-and-calculate-contribution-margin-per-unit-contribution-margin-ratio-and-total-contribution-margin",
@@ -3773,6 +3766,9 @@
     "id": "razon-margen-contribucion",
     "nombre": "Razón de margen de contribución",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad",
       "gestion"
@@ -3823,13 +3819,10 @@
       ],
       "resultado": 0.4,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-1-explain-contribution-margin-and-calculate-contribution-margin-per-unit-contribution-margin-ratio-and-total-contribution-margin",
@@ -3844,6 +3837,9 @@
     "id": "punto-equilibrio-unidades",
     "nombre": "Punto de equilibrio en unidades",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad",
       "gestion"
@@ -3906,14 +3902,10 @@
       ],
       "resultado": 1800,
       "unidad": "unidades",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/(B2-B3)",
       "excel_en": "=B1/(B2-B3)"
     },
-    "aparece_en": [
-      "costo",
-      "presupuesto"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
@@ -3927,6 +3919,9 @@
     "id": "punto-equilibrio-dolares",
     "nombre": "Punto de equilibrio en dólares",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad",
       "gestion"
@@ -3977,9 +3972,6 @@
       "excel_es": "=18000/0,4",
       "excel_en": "=18000/0.4"
     },
-    "aparece_en": [
-      "costo"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
@@ -3994,6 +3986,9 @@
     "id": "unidades-utilidad-objetivo",
     "nombre": "Unidades para una utilidad objetivo",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad",
       "gestion"
@@ -4061,14 +4056,10 @@
       ],
       "resultado": 2400,
       "unidad": "unidades",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=(B1+B2)/(B3-B4)",
       "excel_en": "=(B1+B2)/(B3-B4)"
     },
-    "aparece_en": [
-      "costo",
-      "presupuesto"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
@@ -4083,6 +4074,9 @@
     "id": "margen-seguridad",
     "nombre": "Margen de seguridad",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos"
+    ],
     "areas": [
       "contabilidad",
       "gestion"
@@ -4133,14 +4127,10 @@
       ],
       "resultado": 0.25,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=(B1-B2)/B1",
       "excel_en": "=(B1-B2)/B1"
     },
-    "aparece_en": [
-      "costo",
-      "presupuesto"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-5-calculate-and-interpret-a-companys-margin-of-safety-and-operating-leverage",
@@ -4155,6 +4145,10 @@
     "id": "apalancamiento-operativo",
     "nombre": "Grado de apalancamiento operativo",
     "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "contabilidad-costos",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "contabilidad",
       "gestion",
@@ -4206,14 +4200,10 @@
       ],
       "resultado": 4,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "costo",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pma",
       "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-5-calculate-and-interpret-a-companys-margin-of-safety-and-operating-leverage",
@@ -4228,6 +4218,10 @@
     "id": "razon-corriente",
     "nombre": "Razón corriente (liquidez)",
     "categoria": "razones-financieras",
+    "materias": [
+      "contabilidad-general",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas",
       "contabilidad"
@@ -4278,14 +4272,10 @@
       ],
       "resultado": 1.6,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/5-3-apply-the-results-from-the-adjusted-trial-balance-to-compute-current-ratio-and-working-capital-balance-and-explain-how-these-measures-represent-liquidity",
@@ -4300,6 +4290,9 @@
     "id": "prueba-acida",
     "nombre": "Prueba ácida",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4357,13 +4350,10 @@
       ],
       "resultado": 1,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=(B1-B2)/B3",
       "excel_en": "=(B1-B2)/B3"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-3-liquidity-ratios",
@@ -4378,6 +4368,10 @@
     "id": "capital-trabajo",
     "nombre": "Capital de trabajo",
     "categoria": "razones-financieras",
+    "materias": [
+      "contabilidad-general",
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas",
       "contabilidad"
@@ -4432,10 +4426,6 @@
       "excel_es": "=B1-B2",
       "excel_en": "=B1-B2"
     },
-    "aparece_en": [
-      "contabilidad general",
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/5-3-apply-the-results-from-the-adjusted-trial-balance-to-compute-current-ratio-and-working-capital-balance-and-explain-how-these-measures-represent-liquidity",
@@ -4450,6 +4440,9 @@
     "id": "razon-endeudamiento",
     "nombre": "Razón de deuda a activos",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4499,13 +4492,10 @@
       ],
       "resultado": 0.4375,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-4-solvency-ratios",
@@ -4520,6 +4510,9 @@
     "id": "deuda-patrimonio",
     "nombre": "Razón de deuda a patrimonio",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4563,13 +4556,10 @@
       ],
       "resultado": 0.7778,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-4-solvency-ratios",
@@ -4584,6 +4574,9 @@
     "id": "roa",
     "nombre": "Rentabilidad sobre activos (ROA)",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4627,13 +4620,10 @@
       ],
       "resultado": 0.08,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
@@ -4648,6 +4638,9 @@
     "id": "roe",
     "nombre": "Rentabilidad sobre patrimonio (ROE)",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4691,13 +4684,10 @@
       ],
       "resultado": 0.1422,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
@@ -4712,6 +4702,10 @@
     "id": "rotacion-cuentas-cobrar",
     "nombre": "Rotación de cuentas por cobrar",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas",
+      "contabilidad-general"
+    ],
     "areas": [
       "finanzas",
       "contabilidad"
@@ -4764,14 +4758,10 @@
       ],
       "resultado": 10,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/PROMEDIO(B2;B3)",
       "excel_en": "=B1/AVERAGE(B2,B3)"
     },
-    "aparece_en": [
-      "finanza",
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/9-3-determine-the-efficiency-of-receivables-management-using-financial-ratios",
@@ -4786,6 +4776,10 @@
     "id": "periodo-cobro",
     "nombre": "Período promedio de cobro",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas",
+      "contabilidad-general"
+    ],
     "areas": [
       "finanzas",
       "contabilidad"
@@ -4832,10 +4826,6 @@
       "excel_es": "=365/10",
       "excel_en": "=365/10"
     },
-    "aparece_en": [
-      "finanza",
-      "contabilidad general"
-    ],
     "fuente": {
       "ref": "os-pfa",
       "url": "https://openstax.org/books/principles-financial-accounting/pages/9-3-determine-the-efficiency-of-receivables-management-using-financial-ratios",
@@ -4849,6 +4839,9 @@
     "id": "rotacion-activos",
     "nombre": "Rotación de activos totales",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4892,13 +4885,10 @@
       ],
       "resultado": 1.25,
       "unidad": "veces",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=B1/B2",
       "excel_en": "=B1/B2"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-2-operating-efficiency-ratios",
@@ -4913,6 +4903,9 @@
     "id": "dupont",
     "nombre": "Análisis DuPont del ROE",
     "categoria": "razones-financieras",
+    "materias": [
+      "finanzas-corporativas"
+    ],
     "areas": [
       "finanzas"
     ],
@@ -4974,13 +4967,10 @@
       ],
       "resultado": 0.1422,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=(B1/B2)*(B2/B3)*(B3/B4)",
       "excel_en": "=(B1/B2)*(B2/B3)*(B3/B4)"
     },
-    "aparece_en": [
-      "finanza"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/6-6-profitability-ratios-and-the-dupont-method",
@@ -4995,6 +4985,10 @@
     "id": "iva-causado",
     "nombre": "IVA causado en una venta",
     "categoria": "tributario",
+    "materias": [
+      "tributacion",
+      "contabilidad-general"
+    ],
     "areas": [
       "tributario"
     ],
@@ -5045,10 +5039,6 @@
       "excel_es": "=B1*B2",
       "excel_en": "=B1*B2"
     },
-    "aparece_en": [
-      "tributaria",
-      "contabilidad comercial"
-    ],
     "fuente": {
       "ref": "sri-iva",
       "seccion": "Tarifas del IVA (Decreto Ejecutivo 198)"
@@ -5061,6 +5051,9 @@
     "id": "precio-con-iva",
     "nombre": "Precio final con IVA",
     "categoria": "tributario",
+    "materias": [
+      "tributacion"
+    ],
     "areas": [
       "tributario"
     ],
@@ -5117,9 +5110,6 @@
       "excel_es": "=B1*(1+B2)",
       "excel_en": "=B1*(1+B2)"
     },
-    "aparece_en": [
-      "tributaria"
-    ],
     "fuente": {
       "ref": "sri-iva",
       "seccion": "Tarifas del IVA"
@@ -5132,6 +5122,9 @@
     "id": "base-desde-pvp",
     "nombre": "Base imponible a partir del precio con IVA",
     "categoria": "tributario",
+    "materias": [
+      "tributacion"
+    ],
     "areas": [
       "tributario"
     ],
@@ -5189,9 +5182,6 @@
       "excel_es": "=B1/(1+B2)",
       "excel_en": "=B1/(1+B2)"
     },
-    "aparece_en": [
-      "tributaria"
-    ],
     "fuente": {
       "ref": "sri-iva",
       "seccion": "Tarifas del IVA"
@@ -5204,6 +5194,9 @@
     "id": "iva-a-pagar",
     "nombre": "IVA a pagar en el período",
     "categoria": "tributario",
+    "materias": [
+      "tributacion"
+    ],
     "areas": [
       "tributario"
     ],
@@ -5259,9 +5252,6 @@
       "excel_es": "=B1*B3-B2*B3",
       "excel_en": "=B1*B3-B2*B3"
     },
-    "aparece_en": [
-      "tributaria"
-    ],
     "fuente": {
       "ref": "sri-iva",
       "seccion": "Liquidación del IVA"
@@ -5273,6 +5263,9 @@
     "id": "impuesto-renta-personas",
     "nombre": "Impuesto a la renta de personas naturales (tabla 2026)",
     "categoria": "tributario",
+    "materias": [
+      "tributacion"
+    ],
     "areas": [
       "tributario"
     ],
@@ -5338,10 +5331,6 @@
       "excel_es": "=167+(20000-15549)*0,1",
       "excel_en": "=167+(20000-15549)*0.1"
     },
-    "aparece_en": [
-      "tributaria",
-      "renta"
-    ],
     "fuente": {
       "ref": "sri-tablas-ir",
       "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
@@ -5353,6 +5342,9 @@
     "id": "impuesto-renta-sociedades",
     "nombre": "Impuesto a la renta de sociedades (tarifa general)",
     "categoria": "tributario",
+    "materias": [
+      "tributacion"
+    ],
     "areas": [
       "tributario"
     ],
@@ -5403,10 +5395,6 @@
       "excel_es": "=B1*B2",
       "excel_en": "=B1*B2"
     },
-    "aparece_en": [
-      "tributaria",
-      "renta"
-    ],
     "fuente": {
       "ref": "sri-renta",
       "seccion": "¿Cuál es la tarifa? Sociedades"
@@ -5419,6 +5407,10 @@
     "id": "media-aritmetica",
     "nombre": "Media aritmética",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5469,14 +5461,10 @@
       ],
       "resultado": 135.7143,
       "unidad": "USD",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=PROMEDIO(B2:B8)",
       "excel_en": "=AVERAGE(B2:B8)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-stats",
       "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
@@ -5491,6 +5479,10 @@
     "id": "media-ponderada",
     "nombre": "Media ponderada",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5547,14 +5539,10 @@
       ],
       "resultado": 8.1,
       "unidad": "puntos",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=SUMAPRODUCTO(C2:C4;B2:B4)/SUMA(C2:C4)",
       "excel_en": "=SUMPRODUCT(C2:C4,B2:B4)/SUM(C2:C4)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-pfin",
       "url": "https://openstax.org/books/principles-finance/pages/13-1-measures-of-center",
@@ -5569,6 +5557,10 @@
     "id": "mediana",
     "nombre": "Mediana",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5619,14 +5611,10 @@
       ],
       "resultado": 135,
       "unidad": "USD",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=MEDIANA(B2:B8)",
       "excel_en": "=MEDIAN(B2:B8)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-stats",
       "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
@@ -5641,6 +5629,10 @@
     "id": "varianza-muestral",
     "nombre": "Varianza muestral",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5691,14 +5683,10 @@
       ],
       "resultado": 303.5714,
       "unidad": "USD²",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=VAR.S(B2:B8)",
       "excel_en": "=VAR.S(B2:B8)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-stats",
       "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
@@ -5713,6 +5701,10 @@
     "id": "desviacion-estandar-muestral",
     "nombre": "Desviación estándar muestral",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5762,14 +5754,10 @@
       ],
       "resultado": 17.4233,
       "unidad": "USD",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=DESVEST.M(B2:B8)",
       "excel_en": "=STDEV.S(B2:B8)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-stats",
       "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
@@ -5784,6 +5772,10 @@
     "id": "coeficiente-variacion",
     "nombre": "Coeficiente de variación",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5832,14 +5824,10 @@
       ],
       "resultado": 0.1284,
       "unidad": "proporción",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=DESVEST.M(B2:B8)/PROMEDIO(B2:B8)",
       "excel_en": "=STDEV.S(B2:B8)/AVERAGE(B2:B8)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-ibs",
       "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data",
@@ -5854,6 +5842,10 @@
     "id": "puntuacion-z",
     "nombre": "Puntuación z",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5900,14 +5892,10 @@
       ],
       "resultado": 1.5,
       "unidad": "desviaciones estándar",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=NORMALIZACION(82;70;8)",
       "excel_en": "=STANDARDIZE(82,70,8)"
     },
-    "aparece_en": [
-      "estadistica descriptiva",
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-stats",
       "url": "https://openstax.org/books/introductory-statistics-2e/pages/6-1-the-standard-normal-distribution",
@@ -5922,6 +5910,10 @@
     "id": "correlacion-pearson",
     "nombre": "Coeficiente de correlación de Pearson",
     "categoria": "estadistica",
+    "materias": [
+      "estadistica-descriptiva",
+      "estadistica-inferencial"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -5987,13 +5979,10 @@
       ],
       "resultado": 0.9917,
       "unidad": "sin unidad",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=COEF.DE.CORREL(B2:B6;C2:C6)",
       "excel_en": "=CORREL(B2:B6,C2:C6)"
     },
-    "aparece_en": [
-      "estadistica"
-    ],
     "fuente": {
       "ref": "os-stats",
       "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
@@ -6008,6 +5997,10 @@
     "id": "tasa-cambio-promedio",
     "nombre": "Tasa de cambio promedio",
     "categoria": "calculo",
+    "materias": [
+      "calculo-diferencial",
+      "matematica-gestion"
+    ],
     "areas": [
       "cuantitativo"
     ],
@@ -6062,14 +6055,10 @@
       ],
       "resultado": 21,
       "unidad": "USD/unidad",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=((2000+15*200+0,02*200^2)-(2000+15*100+0,02*100^2))/(200-100)",
       "excel_en": "=((2000+15*200+0.02*200^2)-(2000+15*100+0.02*100^2))/(200-100)"
     },
-    "aparece_en": [
-      "calculo diferencial",
-      "calculo"
-    ],
     "fuente": {
       "ref": "os-calc1",
       "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
@@ -6084,6 +6073,10 @@
     "id": "costo-marginal",
     "nombre": "Costo marginal (derivada de una función cuadrática)",
     "categoria": "calculo",
+    "materias": [
+      "calculo-diferencial",
+      "microeconomia"
+    ],
     "areas": [
       "cuantitativo",
       "economia"
@@ -6132,14 +6125,10 @@
       ],
       "resultado": 21,
       "unidad": "USD/unidad",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=15+2*0,02*150",
       "excel_en": "=15+2*0.02*150"
     },
-    "aparece_en": [
-      "calculo diferencial",
-      "microeconomia"
-    ],
     "fuente": {
       "ref": "os-calc1",
       "url": "https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change",
@@ -6154,6 +6143,9 @@
     "id": "maximo-ingreso",
     "nombre": "Cantidad que maximiza el ingreso (función cuadrática)",
     "categoria": "calculo",
+    "materias": [
+      "calculo-diferencial"
+    ],
     "areas": [
       "cuantitativo",
       "economia"
@@ -6198,13 +6190,10 @@
       ],
       "resultado": 100,
       "unidad": "unidades",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=80/(2*0,4)",
       "excel_en": "=80/(2*0.4)"
     },
-    "aparece_en": [
-      "calculo diferencial"
-    ],
     "fuente": {
       "ref": "os-calc1",
       "url": "https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems",
@@ -6218,6 +6207,10 @@
     "id": "elasticidad-precio",
     "nombre": "Elasticidad precio de la demanda (punto medio)",
     "categoria": "economia",
+    "materias": [
+      "microeconomia",
+      "calculo-diferencial"
+    ],
     "areas": [
       "economia",
       "cuantitativo"
@@ -6280,14 +6273,10 @@
       ],
       "resultado": -0.9565,
       "unidad": "sin unidad",
-      "tolerancia": 0.00005,
+      "tolerancia": 5e-05,
       "excel_es": "=((B2-B1)/PROMEDIO(B1;B2))/((C2-C1)/PROMEDIO(C1;C2))",
       "excel_en": "=((B2-B1)/AVERAGE(B1,B2))/((C2-C1)/AVERAGE(C1,C2))"
     },
-    "aparece_en": [
-      "microeconomia",
-      "calculo diferencial"
-    ],
     "fuente": {
       "ref": "os-econ",
       "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",

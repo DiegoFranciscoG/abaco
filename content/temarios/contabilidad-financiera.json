@@ -1,0 +1,290 @@
+{
+  "materia": "contabilidad-financiera",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "cf-estados",
+      "nombre": "Estados financieros y su presentación",
+      "orden": 1,
+      "descripcion": "Cómo se conectan los estados y cómo se clasifican sus partidas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cf-estados-conjunto",
+          "nombre": "El juego completo de estados financieros",
+          "explicacion": "El estado de resultados mide la utilidad del período; esa utilidad pasa al estado de cambios en el patrimonio; el patrimonio final aparece en el estado de situación financiera, y el estado de flujos de efectivo explica por qué cambió el efectivo. Se elaboran en ese orden porque cada uno usa un dato del anterior.",
+          "puntos_clave": [
+            "La utilidad neta une el estado de resultados con el patrimonio.",
+            "El efectivo final del flujo debe coincidir con el efectivo del estado de situación."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una utilidad alta significa que hay mucho efectivo: la utilidad se reconoce por devengado, no por cobro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+            "seccion": "2.1 Describe the Income Statement, Statement of Owner’s Equity, Balance Sheet, and Statement of Cash Flows, and How They Interrelate"
+          }
+        },
+        {
+          "id": "cf-corriente",
+          "nombre": "Partidas corrientes y no corrientes",
+          "explicacion": "Un activo es corriente si se espera convertir en efectivo o consumir dentro de un año o del ciclo normal de operación; un pasivo es corriente si vence en ese mismo plazo. Esta clasificación permite medir la liquidez de la empresa.",
+          "puntos_clave": [
+            "Inventarios y cuentas por cobrar suelen ser corrientes.",
+            "La porción de una deuda de largo plazo que vence en los próximos 12 meses se presenta como corriente."
+          ],
+          "errores_frecuentes": [
+            "Dejar toda una deuda bancaria como no corriente aunque una parte venza este año."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+            "seccion": "2.2 Define, Explain, and Provide Examples of Current and Noncurrent Assets, Current and Noncurrent Liabilities, Equity, Revenues, and Expenses"
+          }
+        },
+        {
+          "id": "cf-tamano-comun",
+          "nombre": "Estados de tamaño común",
+          "explicacion": "Expresar cada partida como porcentaje de una base (las ventas en el estado de resultados, el activo total en el estado de situación) permite comparar empresas de distinto tamaño y detectar cambios de estructura entre años.",
+          "puntos_clave": [
+            "En el estado de resultados la base es 100 % de las ventas.",
+            "En el estado de situación la base es 100 % del activo total."
+          ],
+          "errores_frecuentes": [
+            "Comparar cifras absolutas de una empresa pequeña con una grande sin normalizarlas."
+          ],
+          "formulas": [
+            "margen-bruto",
+            "margen-neto"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/5-7-common-size-statements",
+            "seccion": "5.7 Common-Size Statements"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cf-inventarios",
+      "nombre": "Inventarios",
+      "orden": 2,
+      "descripcion": "Métodos de costeo, sistemas de registro y efectos de los errores.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cf-inv-metodos",
+          "nombre": "Métodos de costeo: PEPS y promedio ponderado",
+          "explicacion": "PEPS supone que salen primero las unidades más antiguas, así que el inventario final queda valorado a los costos más recientes. El promedio ponderado asigna a cada unidad el costo medio del período. Las NIIF no permiten UEPS.",
+          "puntos_clave": [
+            "Con precios en alza, PEPS da menor costo de ventas y mayor utilidad que el promedio.",
+            "El método elegido debe aplicarse de forma consistente."
+          ],
+          "errores_frecuentes": [
+            "Usar UEPS en estados financieros bajo NIIF."
+          ],
+          "formulas": [
+            "costo-ventas-peps",
+            "costo-promedio-ponderado"
+          ],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/10-1-describe-and-demonstrate-the-basic-inventory-valuation-methods-and-their-cost-flow-assumptions",
+            "seccion": "10.1 Describe and Demonstrate the Basic Inventory Valuation Methods and Their Cost Flow Assumptions"
+          }
+        },
+        {
+          "id": "cf-inv-sistemas",
+          "nombre": "Sistema periódico y sistema permanente",
+          "explicacion": "En el sistema periódico el costo de ventas se calcula al cierre por diferencia (inventario inicial + compras netas − inventario final). En el permanente cada venta registra al momento su costo y el saldo de inventario está siempre actualizado.",
+          "puntos_clave": [
+            "El periódico necesita un conteo físico para conocer el inventario final.",
+            "El permanente facilita el control, pero también requiere conteos para detectar faltantes."
+          ],
+          "errores_frecuentes": [
+            "Olvidar restar devoluciones y descuentos al calcular las compras netas."
+          ],
+          "formulas": [
+            "costo-ventas-periodico",
+            "inventario-final"
+          ],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/10-3-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-perpetual-method",
+            "seccion": "10.3 Calculate the Cost of Goods Sold and Ending Inventory Using the Perpetual Method"
+          }
+        },
+        {
+          "id": "cf-inv-errores",
+          "nombre": "Efecto de los errores de inventario",
+          "explicacion": "Si el inventario final se sobrevalora, el costo de ventas queda subvalorado y la utilidad del período aparece mayor. Como ese inventario final es el inicial del período siguiente, el error se invierte el año próximo.",
+          "puntos_clave": [
+            "Un error de inventario afecta dos períodos y luego se compensa.",
+            "También altera el activo y el patrimonio del primer año."
+          ],
+          "errores_frecuentes": [
+            "Creer que el error desaparece solo porque se compensa: los estados de cada año siguen equivocados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/10-4-explain-and-demonstrate-the-impact-of-inventory-valuation-errors-on-the-income-statement-and-balance-sheet",
+            "seccion": "10.4 Explain and Demonstrate the Impact of Inventory Valuation Errors on the Income Statement and Balance Sheet"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cf-activos-largo-plazo",
+      "nombre": "Propiedades, planta y equipo e intangibles",
+      "orden": 3,
+      "descripcion": "Qué se capitaliza, cómo se deprecia y qué pasa con los intangibles.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cf-capitalizar",
+          "nombre": "Qué se suma al costo del activo",
+          "explicacion": "Al costo de un activo de largo plazo se suman los desembolsos necesarios para dejarlo listo para usar: precio, transporte, instalación y pruebas. Las reparaciones y el mantenimiento ordinario son gastos del período.",
+          "puntos_clave": [
+            "Capitalizar es registrar como activo; luego se reparte como gasto mediante depreciación.",
+            "Una mejora que alarga la vida útil se capitaliza."
+          ],
+          "errores_frecuentes": [
+            "Registrar como gasto el flete pagado para traer una máquina nueva."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/11-2-analyze-and-classify-capitalized-costs-versus-expenses",
+            "seccion": "11.2 Analyze and Classify Capitalized Costs versus Expenses"
+          }
+        },
+        {
+          "id": "cf-depreciacion",
+          "nombre": "Métodos de depreciación",
+          "explicacion": "La depreciación reparte el costo menos el valor residual durante la vida útil. La línea recta da el mismo gasto cada año; el doble saldo decreciente concentra más gasto al inicio; el de unidades producidas sigue el uso real del activo.",
+          "puntos_clave": [
+            "Valor en libros = costo − depreciación acumulada.",
+            "El doble saldo decreciente no deprecia por debajo del valor residual."
+          ],
+          "errores_frecuentes": [
+            "Restar el valor residual antes de aplicar la tasa del doble saldo decreciente."
+          ],
+          "formulas": [
+            "depreciacion-linea-recta",
+            "depreciacion-doble-saldo",
+            "depreciacion-unidades-produccion",
+            "valor-en-libros"
+          ],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/11-3-explain-and-apply-depreciation-methods-to-allocate-capitalized-costs",
+            "seccion": "11.3 Explain and Apply Depreciation Methods to Allocate Capitalized Costs"
+          }
+        },
+        {
+          "id": "cf-intangibles",
+          "nombre": "Activos intangibles",
+          "explicacion": "Patentes, marcas, derechos de autor, licencias y software son activos sin forma física. Los que tienen vida útil definida se amortizan durante esa vida. La plusvalía comprada tiene reglas propias que dependen del marco contable que aplica la empresa.",
+          "puntos_clave": [
+            "Solo se registran intangibles adquiridos o que cumplen los criterios de reconocimiento.",
+            "La amortización de intangibles es el equivalente de la depreciación."
+          ],
+          "errores_frecuentes": [
+            "Registrar como activo la \"marca\" creada internamente solo porque es valiosa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/11-4-describe-accounting-for-intangible-assets-and-record-related-transactions",
+            "seccion": "11.4 Describe Accounting for Intangible Assets and Record Related Transactions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cf-pasivos-flujo",
+      "nombre": "Pasivos, patrimonio y flujo de efectivo",
+      "orden": 4,
+      "descripcion": "Contingencias, utilidades retenidas y las tres actividades del flujo.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cf-contingencias",
+          "nombre": "Pasivos contingentes",
+          "explicacion": "Un pasivo contingente depende de un hecho futuro incierto, como un juicio. Si la salida de recursos es probable y se puede estimar, se registra; si solo es posible, se revela en notas; si es remota, no se hace nada.",
+          "puntos_clave": [
+            "La clave es la probabilidad y la posibilidad de estimar el monto.",
+            "Revelar no es lo mismo que registrar."
+          ],
+          "errores_frecuentes": [
+            "Ignorar un juicio probable porque todavía no hay sentencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/12-3-define-and-apply-accounting-treatment-for-contingent-liabilities",
+            "seccion": "12.3 Define and Apply Accounting Treatment for Contingent Liabilities"
+          }
+        },
+        {
+          "id": "cf-patrimonio",
+          "nombre": "Capital aportado y utilidades retenidas",
+          "explicacion": "El patrimonio tiene dos fuentes: lo que aportan los dueños y las utilidades que la empresa acumula sin repartir. Las utilidades retenidas crecen con la utilidad neta y disminuyen con las pérdidas y los dividendos declarados.",
+          "puntos_clave": [
+            "Los dividendos no son un gasto: reducen directamente las utilidades retenidas.",
+            "Utilidades retenidas no significa efectivo disponible."
+          ],
+          "errores_frecuentes": [
+            "Registrar los dividendos en el estado de resultados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/14-4-compare-and-contrast-owners-equity-versus-retained-earnings",
+            "seccion": "14.4 Compare and Contrast Owners’ Equity versus Retained Earnings"
+          }
+        },
+        {
+          "id": "cf-flujo-actividades",
+          "nombre": "Actividades de operación, inversión y financiamiento",
+          "explicacion": "El flujo de efectivo clasifica los cobros y pagos en tres grupos: operación (el giro del negocio), inversión (compra y venta de activos de largo plazo) y financiamiento (préstamos, aportes y dividendos).",
+          "puntos_clave": [
+            "Comprar una máquina es inversión; pagar un préstamo es financiamiento.",
+            "Un flujo operativo negativo y persistente es una alerta."
+          ],
+          "errores_frecuentes": [
+            "Clasificar el pago de capital de un préstamo como actividad de operación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/16-2-differentiate-between-operating-investing-and-financing-activities",
+            "seccion": "16.2 Differentiate between Operating, Investing, and Financing Activities"
+          }
+        },
+        {
+          "id": "cf-metodo-indirecto",
+          "nombre": "Método indirecto",
+          "explicacion": "El método indirecto parte de la utilidad neta, suma los gastos que no usan efectivo (como la depreciación) y ajusta los cambios del capital de trabajo: un aumento de cuentas por cobrar resta y un aumento de cuentas por pagar suma.",
+          "puntos_clave": [
+            "La depreciación se suma porque redujo la utilidad sin salida de efectivo.",
+            "Los aumentos de activos corrientes restan; los de pasivos corrientes suman."
+          ],
+          "errores_frecuentes": [
+            "Sumar un aumento de inventarios en lugar de restarlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/16-3-prepare-the-statement-of-cash-flows-using-the-indirect-method",
+            "seccion": "16.3 Prepare the Statement of Cash Flows Using the Indirect Method"
+          }
+        }
+      ]
+    }
+  ]
+}

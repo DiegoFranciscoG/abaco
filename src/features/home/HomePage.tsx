@@ -1,7 +1,7 @@
 import { m } from 'motion/react';
 import { lazy, Suspense, useState } from 'react';
-import { carreras, getCarrera, universidades } from '../../data/content';
-import { updateProfile } from '../../data/repositories';
+import { getMateria } from '../../data/content';
+import stats from '../../generated/stats.json';
 import { AbacusArt, QuestionArt } from '../../ui/art';
 import { useDocumentTitle, useReducedMotion } from '../../ui/hooks';
 import { useProfile } from '../../ui/use-profile';
@@ -69,12 +69,12 @@ function HeroAbacus() {
 }
 
 const FEATURES: { to: string; icon: IconName; title: string; text: string; cta: string }[] = [
-  { to: '/carreras', icon: 'mallas', title: 'Mallas reales', text: '13 carreras de la UCuenca y la Católica, ciclo por ciclo, con enlace a la fuente oficial.', cta: 'Ver mallas' },
-  { to: '/formulas', icon: 'formula', title: 'Fórmulas verificadas', text: '84 fórmulas con variables explicadas, ejemplo resuelto y sintaxis de Excel en español.', cta: 'Buscar fórmula' },
+  { to: '/materias', icon: 'materias', title: 'Materias', text: `${stats.materias} materias con ${stats.subtemas} subtemas explicados; cada uno cita la sección exacta de su fuente.`, cta: 'Ver materias' },
+  { to: '/herramientas', icon: 'tools', title: 'Herramientas', text: 'Editor con fórmulas, libro diario, estadística, graficador, oferta y demanda, rol de pagos y más.', cta: 'Abrir herramientas' },
+  { to: '/formulas', icon: 'formula', title: 'Fórmulas verificadas', text: `${stats.formulas} fórmulas con variables explicadas, ejemplo recalculado y sintaxis de Excel en español.`, cta: 'Buscar fórmula' },
   { to: '/laboratorio', icon: 'lab', title: 'Laboratorio', text: 'Una hoja de cálculo en tu teléfono: practica, comprueba y descarga el .xlsx.', cta: 'Abrir hoja' },
-  { to: '/buscar', icon: 'book', title: 'Buscador académico', text: 'Artículos y tesis de Crossref, OpenAlex, DOAJ y LA Referencia, con cita APA lista.', cta: 'Buscar artículos' },
-  { to: '/practica', icon: 'target', title: 'Práctica', text: 'Ejercicios con respuesta verificable, pistas y tu historial de intentos.', cta: 'Practicar' },
-  { to: '/comparar', icon: 'compare', title: 'Comparador', text: 'Pon dos mallas lado a lado y mira qué asignaturas comparten.', cta: 'Comparar' },
+  { to: '/buscar', icon: 'book', title: 'Buscador académico', text: 'Artículos, tesis y libros de fuentes abiertas, con la referencia APA lista para copiar.', cta: 'Buscar artículos' },
+  { to: '/practica', icon: 'target', title: 'Práctica', text: `${stats.ejercicios} ejercicios con respuesta verificable, pistas y tu historial de intentos.`, cta: 'Practicar' },
 ];
 
 const FAQ = [
@@ -84,11 +84,15 @@ const FAQ = [
   },
   {
     q: '¿De dónde sale el contenido?',
-    a: 'Las mallas se copiaron de las páginas oficiales de cada carrera (con enlace y fecha). Las fórmulas, temas y ejercicios son redacción propia y cada ficha cita su norma o libro de referencia. Cada ejemplo numérico se recalcula automáticamente antes de publicarse.',
+    a: 'Las materias se eligieron por lo frecuentes que son en las carreras económicas y administrativas; ÁBACO no copia planes de estudio. Los temas, subtemas, fórmulas y ejercicios son redacción propia y cada uno cita su norma o libro de referencia. Cada ejemplo numérico se recalcula automáticamente antes de publicarse.',
   },
   {
     q: '¿Funciona sin internet?',
-    a: 'Sí. Después de abrir ÁBACO una vez con conexión, las mallas, las fórmulas, tus apuntes y el laboratorio funcionan sin internet. Solo el buscador académico necesita conexión.',
+    a: 'Sí. Después de abrir ÁBACO una vez con conexión, las materias, las fórmulas, tus apuntes, el laboratorio y casi todas las herramientas funcionan sin internet. Solo el buscador académico, los datos macro y los tipos de cambio necesitan conexión.',
+  },
+  {
+    q: '¿Cuánto cuesta?',
+    a: 'Nada. No hay pagos, suscripciones, publicidad ni cobros ocultos, y no hace falta crear una cuenta.',
   },
   {
     q: '¿ÁBACO es de mi universidad?',
@@ -96,94 +100,71 @@ const FAQ = [
   },
 ];
 
-function MyCareer() {
+function MySubjects() {
   const profile = useProfile();
-  const carrera = profile.carrera ? getCarrera(profile.carrera) : undefined;
-  if (carrera) {
+  const mine = profile.materias.map(getMateria).filter((m) => m !== undefined);
+  if (mine.length > 0) {
     return (
-      <AppLink to={`/carrera/${carrera.id}`} className="card card-lift flex items-center gap-4 p-5">
-        <span className="tile">
-          <Icon name="mallas" />
-        </span>
-        <span className="min-w-0 flex-1">
-          <span className="eyebrow block">Tu malla</span>
-          <span className="block truncate font-display text-xl font-semibold">{carrera.nombre}</span>
-          <span className="text-sm text-muted">
-            {universidades.find((u) => u.id === carrera.universidad)?.siglas}
-            {profile.ciclo ? ` · ciclo ${profile.ciclo}` : ''}
-          </span>
-        </span>
-        <Icon name="arrow-right" className="text-red" />
-      </AppLink>
+      <div className="card p-5">
+        <span className="eyebrow block">Mis materias</span>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {mine.map((m) => (
+            <li key={m.id}>
+              <AppLink to={`/materia/${m.id}`} className="chip min-h-10 hover:border-red hover:text-red">
+                {m.nombre}
+              </AppLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
   return (
-    <div className="card p-5">
-      <label htmlFor="carrera-rapida" className="eyebrow block">
-        Empieza por tu carrera
-      </label>
-      <select
-        id="carrera-rapida"
-        className="field mt-3"
-        defaultValue=""
-        onChange={(e) => {
-          const id = e.target.value;
-          const c = getCarrera(id);
-          if (c) void updateProfile({ carrera: id, universidad: c.universidad });
-        }}
-      >
-        <option value="" disabled>
-          Elige tu carrera…
-        </option>
-        {universidades.map((u) => (
-          <optgroup key={u.id} label={u.nombre}>
-            {carreras
-              .filter((c) => c.universidad === u.id)
-              .map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.nombre}
-                </option>
-              ))}
-          </optgroup>
-        ))}
-      </select>
-      <p className="mt-2 text-xs text-muted">Se guarda solo en este dispositivo.</p>
-    </div>
+    <AppLink to="/materias" className="card card-lift flex items-center gap-4 p-5">
+      <span className="tile">
+        <Icon name="materias" />
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="eyebrow block">Empieza aquí</span>
+        <span className="block font-display text-xl font-semibold">Marca las materias que llevas</span>
+        <span className="text-sm text-muted">Se guardan solo en este dispositivo.</span>
+      </span>
+      <Icon name="arrow-right" className="text-red" />
+    </AppLink>
   );
 }
 
 export default function HomePage() {
   useDocumentTitle('');
-  const totalSubjects = carreras.reduce((acc, c) => acc + c.asignaturas_listadas, 0);
   return (
     <div className="space-y-16 md:space-y-24">
       <section className="grid items-center gap-8 md:grid-cols-[1.05fr_1fr] md:gap-12">
         <div>
           <p className="eyebrow mb-4">Contabilidad · Finanzas · Economía · Administración</p>
           <h1 className="font-display text-[clamp(2.4rem,7vw,4.4rem)] leading-[0.98] font-semibold tracking-tight">
-            Tu malla real.
+            Tus materias, tema por tema.
             <br />
             <span className="text-red">Tus fórmulas</span> verificadas.
             <br />
             Tus apuntes, en tu bolsillo.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-            Para estudiantes del área económica y administrativa de Cuenca. Sin registrarte, sin servidores y sin costo:
-            lo que escribes se queda en tu teléfono.
+            Para estudiantes de carreras económicas y administrativas en Ecuador. Sin registrarte, sin servidores y sin
+            costo: lo que escribes se queda en tu teléfono.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <AppLink to="/carreras" className="btn btn-primary">
-              Ver mi malla <Icon name="arrow-right" size={18} />
+            <AppLink to="/materias" className="btn btn-primary">
+              Ver materias <Icon name="arrow-right" size={18} />
             </AppLink>
-            <AppLink to="/laboratorio" className="btn btn-ghost">
-              <Icon name="lab" size={18} /> Abrir el laboratorio
+            <AppLink to="/herramientas" className="btn btn-ghost">
+              <Icon name="tools" size={18} /> Herramientas
             </AppLink>
           </div>
           <dl className="mt-9 grid max-w-lg grid-cols-3 gap-3">
             {[
-              [String(carreras.length), 'carreras'],
-              [String(totalSubjects), 'asignaturas'],
-              ['84', 'fórmulas'],
+              [String(stats.materias), 'materias'],
+              [String(stats.subtemas), 'subtemas'],
+              [String(stats.formulas), 'fórmulas'],
             ].map(([n, label]) => (
               <div key={label} className="border-l-2 border-red pl-3">
                 <dt className="sr-only">{label}</dt>
@@ -201,9 +182,10 @@ export default function HomePage() {
           Accesos
         </h2>
         <div className="mb-6 grid gap-4 md:grid-cols-[1fr_1.4fr] md:items-end">
-          <MyCareer />
+          <MySubjects />
           <p className="text-muted md:text-right">
-            Todo está ordenado como en tu universidad: carrera → ciclo → asignatura → tema → subtema.
+            Todo está ordenado de lo general a lo particular: materia → tema → subtema, con herramientas para practicar
+            cada uno.
           </p>
         </div>
         <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">

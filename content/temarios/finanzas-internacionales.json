@@ -1,0 +1,257 @@
+{
+  "materia": "finanzas-internacionales",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "fi-tipo-cambio",
+      "nombre": "Tipo de cambio",
+      "orden": 1,
+      "descripcion": "Cómo funciona el mercado de divisas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "fi-mercado-divisas",
+          "nombre": "El mercado de divisas",
+          "explicacion": "En el mercado de divisas se compran y venden monedas. Demandan una moneda quienes exportan hacia ese país, los turistas que lo visitan y los inversionistas que compran sus activos; la ofrecen quienes hacen lo contrario.",
+          "puntos_clave": [
+            "El tipo de cambio es el precio de una moneda en términos de otra.",
+            "Apreciación: la moneda compra más moneda extranjera."
+          ],
+          "errores_frecuentes": [
+            "Confundir la apreciación de una moneda con su depreciación al leer cotizaciones invertidas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-1-how-the-foreign-exchange-market-works",
+            "seccion": "16.1 How the Foreign Exchange Market Works"
+          }
+        },
+        {
+          "id": "fi-oferta-demanda-divisas",
+          "nombre": "Qué mueve el tipo de cambio",
+          "explicacion": "Los cambios en las tasas de interés relativas, en la inflación esperada y en la confianza de los inversionistas desplazan la oferta y la demanda de una moneda. Por ejemplo, si un país sube sus tasas, su moneda suele atraer capital y apreciarse.",
+          "puntos_clave": [
+            "Más inflación esperada tiende a depreciar la moneda.",
+            "La paridad de poder adquisitivo orienta el largo plazo."
+          ],
+          "errores_frecuentes": [
+            "Explicar cada movimiento diario del tipo de cambio con un solo factor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-2-demand-and-supply-shifts-in-foreign-exchange-markets",
+            "seccion": "16.2 Demand and Supply Shifts in Foreign Exchange Markets"
+          }
+        },
+        {
+          "id": "fi-cotizaciones",
+          "nombre": "Leer cotizaciones",
+          "explicacion": "Una cotización puede expresarse como unidades de moneda local por una extranjera o al revés. Para convertir montos se multiplica o divide según cómo esté expresada; confundir el sentido produce errores de varios órdenes de magnitud.",
+          "puntos_clave": [
+            "EUR/USD = 1,10 significa que 1 euro cuesta 1,10 dólares.",
+            "Una cotización y su inversa describen el mismo precio."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar cuando la cotización indica que hay que dividir."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+            "seccion": "3.5 Foreign Exchange Rates"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fi-regimenes",
+      "nombre": "Regímenes cambiarios y dolarización",
+      "orden": 2,
+      "descripcion": "Flotación, tipos fijos y el caso de Ecuador.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fi-efectos",
+          "nombre": "Efectos macroeconómicos del tipo de cambio",
+          "explicacion": "Una moneda que se deprecia abarata las exportaciones y encarece las importaciones; también aumenta el peso de las deudas contraídas en moneda extranjera. Por eso los movimientos bruscos afectan a exportadores, importadores y bancos.",
+          "puntos_clave": [
+            "Depreciación: favorece al exportador.",
+            "Las deudas en moneda extranjera crecen al depreciarse la moneda local."
+          ],
+          "errores_frecuentes": [
+            "Suponer que una depreciación solo tiene efectos positivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-3-macroeconomic-effects-of-exchange-rates",
+            "seccion": "16.3 Macroeconomic Effects of Exchange Rates"
+          }
+        },
+        {
+          "id": "fi-politicas",
+          "nombre": "Políticas cambiarias",
+          "explicacion": "Un país puede dejar flotar su moneda, intervenir de forma moderada, fijar su valor frente a otra moneda o renunciar a una moneda propia y usar la de otro país. Cada opción equilibra de forma distinta la estabilidad y la capacidad de hacer política monetaria propia.",
+          "puntos_clave": [
+            "Flotante: el mercado fija el precio.",
+            "Moneda fusionada o adoptada: no hay tipo de cambio propio."
+          ],
+          "errores_frecuentes": [
+            "Creer que un tipo de cambio fijo elimina todo riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-4-exchange-rate-policies",
+            "seccion": "16.4 Exchange Rate Policies"
+          }
+        },
+        {
+          "id": "fi-dolarizacion",
+          "nombre": "La dolarización en Ecuador",
+          "explicacion": "El Código Orgánico Monetario y Financiero (art. 94) dispone que todas las transacciones, operaciones monetarias y financieras y sus registros contables en Ecuador se expresen en dólares de los Estados Unidos, y que su circulación corresponda al Banco Central del Ecuador. Al no tener moneda propia, el país no fija un tipo de cambio: el valor de sus precios frente al exterior depende de cómo se mueva el dólar frente a otras monedas.",
+          "puntos_clave": [
+            "Un dólar fuerte encarece las exportaciones ecuatorianas en mercados con otras monedas.",
+            "Las cuentas de las empresas ecuatorianas se llevan en dólares."
+          ],
+          "errores_frecuentes": [
+            "Pensar que Ecuador no tiene riesgo cambiario porque usa dólares: lo tiene frente al euro, al yuan o al peso colombiano."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Art. 94"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fi-riesgos",
+      "nombre": "Riesgo cambiario y de tasa de interés",
+      "orden": 3,
+      "descripcion": "Identificar y cubrir riesgos financieros.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "fi-riesgo-cambiario",
+          "nombre": "Riesgo cambiario",
+          "explicacion": "Una empresa enfrenta riesgo cambiario cuando cobra o paga en una moneda distinta a la de su contabilidad: entre la venta y el cobro, el tipo de cambio puede moverse y cambiar el valor recibido.",
+          "puntos_clave": [
+            "El riesgo de transacción aparece en cuentas por cobrar y por pagar en moneda extranjera.",
+            "Un importador ecuatoriano que paga en euros pierde si el euro se aprecia."
+          ],
+          "errores_frecuentes": [
+            "Ignorar el riesgo porque la operación es \"de corto plazo\"."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-3-exchange-rates-and-risk",
+            "seccion": "20.3 Exchange Rates and Risk"
+          }
+        },
+        {
+          "id": "fi-coberturas",
+          "nombre": "Coberturas con contratos a plazo",
+          "explicacion": "Un contrato a plazo (forward) fija hoy el tipo de cambio de una operación futura. Elimina la incertidumbre, aunque también renuncia a la ganancia si el tipo de cambio se mueve a favor.",
+          "puntos_clave": [
+            "Cubrir no busca ganar, busca saber cuánto se recibirá o pagará.",
+            "Las opciones protegen sin renunciar a la ganancia, a cambio de una prima."
+          ],
+          "errores_frecuentes": [
+            "Llamar especulación a una cobertura bien diseñada, o al revés."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-3-exchange-rates-and-risk",
+            "seccion": "20.3 Exchange Rates and Risk"
+          }
+        },
+        {
+          "id": "fi-riesgo-tasa",
+          "nombre": "Riesgo de tasa de interés",
+          "explicacion": "Cuando suben las tasas de interés, baja el valor de los bonos y sube el costo de las deudas con tasa variable. Las empresas lo gestionan combinando deuda a tasa fija y variable o con instrumentos derivados.",
+          "puntos_clave": [
+            "Los bonos de largo plazo son más sensibles a las tasas.",
+            "Una deuda a tasa variable traslada el riesgo al deudor."
+          ],
+          "errores_frecuentes": [
+            "Suponer que una deuda a tasa variable siempre es más barata."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
+            "seccion": "20.4 Interest Rate Risk"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fi-flujos-capital",
+      "nombre": "Balanza comercial y flujos de capital",
+      "orden": 4,
+      "descripcion": "El comercio y el financiamiento entre países.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fi-balanza",
+          "nombre": "Medir la balanza comercial y la cuenta corriente",
+          "explicacion": "La balanza comercial compara exportaciones e importaciones de bienes y servicios; la cuenta corriente añade ingresos por inversiones y transferencias como las remesas. Un déficit significa que el país gasta en el exterior más de lo que recibe por esos conceptos.",
+          "puntos_clave": [
+            "Las remesas de migrantes entran en la cuenta corriente.",
+            "Un déficit en cuenta corriente se financia con entradas de capital."
+          ],
+          "errores_frecuentes": [
+            "Leer un déficit comercial como señal automática de que la economía va mal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+            "seccion": "10.1 Measuring Trade Balances"
+          }
+        },
+        {
+          "id": "fi-flujos",
+          "nombre": "Balanza comercial y flujos de capital financiero",
+          "explicacion": "Si un país importa más de lo que exporta, el resto del mundo le está prestando o invirtiendo la diferencia. Por eso un déficit comercial va acompañado de una entrada neta de capital financiero.",
+          "puntos_clave": [
+            "Déficit comercial ≈ entrada neta de capital.",
+            "Superávit comercial ≈ salida neta de capital."
+          ],
+          "errores_frecuentes": [
+            "Analizar el comercio sin mirar el lado del financiamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-3-trade-balances-and-flows-of-financial-capital",
+            "seccion": "10.3 Trade Balances and Flows of Financial Capital"
+          }
+        },
+        {
+          "id": "fi-ahorro-inversion",
+          "nombre": "Identidad ahorro–inversión",
+          "explicacion": "La oferta de capital financiero de un país (ahorro privado, ahorro público y entradas de capital extranjero) debe igualar su demanda (inversión). Un gobierno con déficit o un ahorro privado bajo se compensan con más capital externo.",
+          "puntos_clave": [
+            "Ahorro privado + ahorro público + entradas de capital = inversión.",
+            "Explica por qué los déficits fiscales se relacionan con los comerciales."
+          ],
+          "errores_frecuentes": [
+            "Tratar el déficit fiscal y el comercial como problemas sin relación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-4-the-national-saving-and-investment-identity",
+            "seccion": "10.4 The National Saving and Investment Identity"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "materia": "economia-internacional",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "ec-comercio",
+      "nombre": "Por qué comercian los países",
+      "orden": 1,
+      "descripcion": "Ventaja absoluta, comparativa y comercio intraindustrial.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ec-ventaja",
+          "nombre": "Ventaja absoluta y comparativa",
+          "explicacion": "Un país tiene ventaja absoluta si produce un bien con menos recursos; tiene ventaja comparativa si su costo de oportunidad es menor. El comercio beneficia a ambos países cuando cada uno se especializa según su ventaja comparativa.",
+          "puntos_clave": [
+            "La ventaja comparativa se calcula con costos de oportunidad.",
+            "Incluso un país menos productivo en todo gana comerciando."
+          ],
+          "errores_frecuentes": [
+            "Pensar que sin ventaja absoluta no hay ganancia del comercio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/20-1-absolute-and-comparative-advantage",
+            "seccion": "20.1 Absolute and Comparative Advantage"
+          }
+        },
+        {
+          "id": "ec-sin-ventaja",
+          "nombre": "Comercio con ventaja absoluta en todo",
+          "explicacion": "Aunque un país sea más productivo en todos los bienes, sus costos de oportunidad difieren entre bienes. Especializarse en lo que relativamente hace mejor e importar el resto permite a ambos consumir más de lo que producirían solos.",
+          "puntos_clave": [
+            "Lo que importa son los costos relativos.",
+            "Las ganancias dependen de los términos de intercambio."
+          ],
+          "errores_frecuentes": [
+            "Concluir que el país más productivo no debería importar nada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/20-2-what-happens-when-a-country-has-an-absolute-advantage-in-all-goods",
+            "seccion": "20.2 What Happens When a Country Has an Absolute Advantage in All Goods"
+          }
+        },
+        {
+          "id": "ec-intraindustrial",
+          "nombre": "Comercio intraindustrial",
+          "explicacion": "Países parecidos comercian mucho entre sí productos de la misma industria (autos por autos). Lo explican la especialización en variedades, las economías de escala y la preferencia de los consumidores por la variedad.",
+          "puntos_clave": [
+            "Las economías de escala bajan el costo al producir más.",
+            "Explica gran parte del comercio entre economías desarrolladas."
+          ],
+          "errores_frecuentes": [
+            "Explicar todo el comercio solo con diferencias de recursos naturales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/20-3-intra-industry-trade-between-similar-economies",
+            "seccion": "20.3 Intra-Industry Trade between Similar Economies"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-politica-comercial",
+      "nombre": "Proteccionismo y política comercial",
+      "orden": 2,
+      "descripcion": "Aranceles, cuotas y acuerdos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ec-proteccionismo",
+          "nombre": "Proteccionismo",
+          "explicacion": "Aranceles, cuotas y barreras no arancelarias protegen a los productores nacionales al encarecer o limitar las importaciones. En la práctica funcionan como un subsidio indirecto que pagan los consumidores con precios más altos.",
+          "puntos_clave": [
+            "Arancel: impuesto a la importación.",
+            "Cuota: límite a la cantidad importada."
+          ],
+          "errores_frecuentes": [
+            "Pensar que un arancel lo pagan solo los exportadores extranjeros."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/21-1-protectionism-an-indirect-subsidy-from-consumers-to-producers",
+            "seccion": "21.1 Protectionism: An Indirect Subsidy from Consumers to Producers"
+          }
+        },
+        {
+          "id": "ec-argumentos",
+          "nombre": "Argumentos para restringir importaciones",
+          "explicacion": "Se invocan la industria naciente, la seguridad nacional, el dumping, los estándares ambientales y laborales. La economía evalúa cada argumento por separado: algunos tienen casos válidos, pero muchos protegen intereses particulares a costa de todos.",
+          "puntos_clave": [
+            "Dumping: vender en el exterior por debajo del costo o del precio interno.",
+            "La protección temporal debería tener fecha de término."
+          ],
+          "errores_frecuentes": [
+            "Aceptar cualquier argumento de protección sin medir quién paga el costo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/21-3-arguments-in-support-of-restricting-imports",
+            "seccion": "21.3 Arguments in Support of Restricting Imports"
+          }
+        },
+        {
+          "id": "ec-acuerdos",
+          "nombre": "Cómo se hace la política comercial",
+          "explicacion": "La política comercial se negocia en tres niveles: global (Organización Mundial del Comercio), regional (bloques y acuerdos de libre comercio) y nacional (las leyes de cada país). Los acuerdos reducen barreras de forma recíproca.",
+          "puntos_clave": [
+            "La OMC administra reglas multilaterales.",
+            "Los acuerdos regionales pueden desviar comercio."
+          ],
+          "errores_frecuentes": [
+            "Suponer que un acuerdo de libre comercio elimina todas las reglas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/21-4-how-governments-enact-trade-policy-globally-regionally-and-nationally",
+            "seccion": "21.4 How Governments Enact Trade Policy: Globally, Regionally, and Nationally"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-balanza",
+      "nombre": "Balanza comercial y capitales",
+      "orden": 3,
+      "descripcion": "Déficits, superávits y su financiamiento.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ec-medir",
+          "nombre": "Medir el comercio de un país",
+          "explicacion": "La balanza comercial resta importaciones de exportaciones de bienes y servicios. La cuenta corriente agrega ingresos por inversiones y transferencias. Ambas se publican de forma periódica en las estadísticas de cada país.",
+          "puntos_clave": [
+            "Superávit: exportaciones mayores que importaciones.",
+            "Las remesas son transferencias de la cuenta corriente."
+          ],
+          "errores_frecuentes": [
+            "Confundir la balanza comercial con la balanza de pagos completa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+            "seccion": "10.1 Measuring Trade Balances"
+          }
+        },
+        {
+          "id": "ec-deficit",
+          "nombre": "Ventajas y desventajas de los déficits",
+          "explicacion": "Un déficit comercial puede financiar inversión productiva que luego se paga sola, o puede financiar consumo con deuda que se vuelve difícil de pagar. Lo importante es para qué se usa la entrada de capital y si es sostenible.",
+          "puntos_clave": [
+            "Un déficit no es bueno ni malo por sí mismo.",
+            "La sostenibilidad depende del crecimiento y del costo del financiamiento."
+          ],
+          "errores_frecuentes": [
+            "Juzgar un déficit sin mirar cómo se financia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-5-the-pros-and-cons-of-trade-deficits-and-surpluses",
+            "seccion": "10.5 The Pros and Cons of Trade Deficits and Surpluses"
+          }
+        },
+        {
+          "id": "ec-nivel-vs-saldo",
+          "nombre": "Nivel de comercio y saldo comercial",
+          "explicacion": "Un país puede comerciar mucho (importaciones y exportaciones altas) y tener saldo cercano a cero, o comerciar poco y tener un gran déficit. El nivel de comercio se relaciona con el tamaño y la apertura; el saldo, con el ahorro y la inversión.",
+          "puntos_clave": [
+            "Apertura = (exportaciones + importaciones) ÷ PIB.",
+            "Países pequeños suelen ser más abiertos."
+          ],
+          "errores_frecuentes": [
+            "Usar el saldo comercial como medida de apertura."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-6-the-difference-between-level-of-trade-and-the-trade-balance",
+            "seccion": "10.6 The Difference between Level of Trade and the Trade Balance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-mercados-globales",
+      "nombre": "Entrar a mercados globales",
+      "orden": 4,
+      "descripcion": "Evaluar países, formas de entrada y adaptación.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ec-evaluar-mercados",
+          "nombre": "Evaluar mercados extranjeros",
+          "explicacion": "Antes de exportar se analizan el entorno económico, político, legal y cultural del país destino, el tamaño del mercado y la competencia. Un mercado grande puede no ser atractivo si sus barreras o riesgos son altos.",
+          "puntos_clave": [
+            "Fuentes como el Banco Mundial ofrecen datos comparables por país.",
+            "La distancia cultural también es un costo."
+          ],
+          "errores_frecuentes": [
+            "Elegir el país destino solo por el tamaño de su población."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/7-2-assessment-of-global-markets-for-opportunities",
+            "seccion": "7.2 Assessment of Global Markets for Opportunities"
+          }
+        },
+        {
+          "id": "ec-formas-entrada",
+          "nombre": "Formas de entrada",
+          "explicacion": "Una empresa puede entrar a otro país exportando, licenciando su marca o tecnología, con franquicias, con una empresa conjunta (joint venture) o con inversión extranjera directa. Cada forma combina distinto nivel de control, riesgo e inversión.",
+          "puntos_clave": [
+            "Exportar: bajo riesgo y bajo control.",
+            "Inversión directa: alto control y alto riesgo."
+          ],
+          "errores_frecuentes": [
+            "Empezar con inversión directa sin conocer el mercado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/7-3-entering-the-global-arena",
+            "seccion": "7.3 Entering the Global Arena"
+          }
+        },
+        {
+          "id": "ec-adaptacion",
+          "nombre": "Estandarizar o adaptar",
+          "explicacion": "Una estrategia estandarizada vende el mismo producto y mensaje en todos los países para ahorrar costos; una adaptada cambia producto, precio o comunicación según cada cultura. La mayoría de empresas combina ambas.",
+          "puntos_clave": [
+            "Las normas técnicas y legales obligan a adaptar.",
+            "La marca suele estandarizarse más que el empaque."
+          ],
+          "errores_frecuentes": [
+            "Traducir literalmente un mensaje publicitario sin revisar su sentido cultural."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/8-1-strategic-marketing-standardization-versus-adaptation",
+            "seccion": "8.1 Strategic Marketing: Standardization versus Adaptation"
+          }
+        }
+      ]
+    }
+  ]
+}

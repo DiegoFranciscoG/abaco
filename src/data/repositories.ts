@@ -291,7 +291,7 @@ export async function listCollections(db: AbacoDB = getDb()): Promise<Coleccion[
 export interface ReminderInput {
   titulo: string;
   fecha: string;
-  asignaturaId?: string;
+  materiaId?: string;
   avisoMinutos?: number;
 }
 
@@ -309,7 +309,7 @@ export async function createReminder(input: ReminderInput, db: AbacoDB = getDb()
     avisoMinutos: aviso,
     estado: 'pendiente',
     creadoEn: now(),
-    ...(input.asignaturaId ? { asignaturaId: input.asignaturaId } : {}),
+    ...(input.materiaId ? { materiaId: input.materiaId } : {}),
   };
   await db.recordatorios.put(reminder);
   return reminder;
@@ -424,15 +424,20 @@ export async function purgeExpiredCache(nowMs = Date.now(), db: AbacoDB = getDb(
 
 /** Counts what the student has saved (used for the backup reminder and the settings page). */
 export async function countUserData(db: AbacoDB = getDb()): Promise<Record<string, number>> {
-  const [apuntes, estrellas, colecciones, recordatorios, intentos, hojas] = await Promise.all([
-    db.apuntes.count(),
-    db.estrellas.count(),
-    db.colecciones.count(),
-    db.recordatorios.count(),
-    db.intentos.count(),
-    db.hojas.count(),
-  ]);
-  return { apuntes, estrellas, colecciones, recordatorios, intentos, hojas };
+  const [apuntes, estrellas, colecciones, recordatorios, intentos, hojas, documentos, diarios, tarjetas, tableros] =
+    await Promise.all([
+      db.apuntes.count(),
+      db.estrellas.count(),
+      db.colecciones.count(),
+      db.recordatorios.count(),
+      db.intentos.count(),
+      db.hojas.count(),
+      db.documentos.count(),
+      db.diarios.count(),
+      db.tarjetas.count(),
+      db.tableros.count(),
+    ]);
+  return { apuntes, estrellas, colecciones, recordatorios, intentos, hojas, documentos, diarios, tarjetas, tableros };
 }
 
 /** Deletes every table, including the local identifier: the next visit starts from zero. */

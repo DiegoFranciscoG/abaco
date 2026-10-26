@@ -1,5 +1,5 @@
 {
-  "asignatura": "ucuenca-contabilidad-auditoria--c1-contabilidad-general",
+  "materia": "contabilidad-general",
   "actualizado_en": "2026-10-14",
   "temas": [
     {
@@ -89,7 +89,10 @@
             "Clasificar un préstamo a cinco años completo como pasivo corriente: solo la porción que vence en el año es corriente.",
             "Registrar como activo algo que la empresa no controla (por ejemplo, un local arrendado sin contrato que lo reconozca)."
           ],
-          "formulas": ["ecuacion-contable", "patrimonio"],
+          "formulas": [
+            "ecuacion-contable",
+            "patrimonio"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
@@ -107,7 +110,9 @@
           "errores_frecuentes": [
             "Registrar el retiro del dueño como un gasto en el estado de resultados."
           ],
-          "formulas": ["ecuacion-contable-ampliada"],
+          "formulas": [
+            "ecuacion-contable-ampliada"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
@@ -126,7 +131,9 @@
             "Registrar solo un lado de la transacción.",
             "Pensar que una compra a crédito disminuye el efectivo."
           ],
-          "formulas": ["ecuacion-contable"],
+          "formulas": [
+            "ecuacion-contable"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/3-4-analyze-business-transactions-using-the-accounting-equation-and-show-the-impact-of-business-transactions-on-financial-statements",
@@ -194,7 +201,9 @@
             "Pasar un valor del diario al lado equivocado de la cuenta T.",
             "Sumar Debe y Haber en lugar de restarlos."
           ],
-          "formulas": ["saldo-cuenta-deudora"],
+          "formulas": [
+            "saldo-cuenta-deudora"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
@@ -213,7 +222,9 @@
             "Dar por correcto un balance solo porque cuadra.",
             "Omitir cuentas con saldo cero que sí tuvieron movimientos."
           ],
-          "formulas": ["comprobacion-partida-doble"],
+          "formulas": [
+            "comprobacion-partida-doble"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
@@ -241,7 +252,9 @@
             "Olvidar la depreciación del período.",
             "Registrar un ajuste que mueve efectivo: los ajustes normalmente no tocan Caja ni Bancos."
           ],
-          "formulas": ["depreciacion-linea-recta"],
+          "formulas": [
+            "depreciacion-linea-recta"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/4-2-discuss-the-adjustment-process-and-illustrate-common-types-of-adjusting-entries",
@@ -260,7 +273,9 @@
             "Incluir compras de activos fijos como gasto del período.",
             "Confundir utilidad con efectivo disponible."
           ],
-          "formulas": ["utilidad-neta"],
+          "formulas": [
+            "utilidad-neta"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
@@ -278,7 +293,9 @@
           "errores_frecuentes": [
             "Poner una fecha de período («del 1 de enero al 31 de diciembre») en el balance."
           ],
-          "formulas": ["ecuacion-contable"],
+          "formulas": [
+            "ecuacion-contable"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/2-3-prepare-an-income-statement-statement-of-owners-equity-and-balance-sheet",
@@ -344,7 +361,10 @@
             "Restar los fletes en compras en lugar de sumarlos.",
             "Registrar el descuento por pronto pago como gasto financiero sin revisar la política contable."
           ],
-          "formulas": ["ventas-netas", "compras-netas"],
+          "formulas": [
+            "ventas-netas",
+            "compras-netas"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/6-7-appendix-analyze-and-record-transactions-for-merchandise-purchases-and-sales-using-the-periodic-inventory-system",
@@ -363,7 +383,11 @@
             "Sobrevalorar el inventario final: el costo de ventas baja y la utilidad sube de forma ficticia.",
             "Calcular el margen bruto sobre las ventas brutas."
           ],
-          "formulas": ["costo-ventas-periodico", "utilidad-bruta", "margen-bruto"],
+          "formulas": [
+            "costo-ventas-periodico",
+            "utilidad-bruta",
+            "margen-bruto"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
@@ -383,7 +407,12 @@
             "Promediar los costos unitarios sin ponderarlos por las unidades de cada lote.",
             "Cambiar de método de un período a otro para mejorar la utilidad."
           ],
-          "formulas": ["costo-promedio-ponderado", "costo-ventas-promedio", "costo-ventas-peps", "inventario-final"],
+          "formulas": [
+            "costo-promedio-ponderado",
+            "costo-ventas-promedio",
+            "costo-ventas-peps",
+            "inventario-final"
+          ],
           "fuente": {
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/10-1-describe-and-demonstrate-the-basic-inventory-valuation-methods-and-their-cost-flow-assumptions",

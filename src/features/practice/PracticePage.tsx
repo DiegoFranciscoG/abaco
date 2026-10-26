@@ -1,7 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router';
-import { carreraOfAsignatura, loadEjercicios, loadMalla } from '../../data/content';
+import { getMateria, loadEjercicios } from '../../data/content';
 import { listAttempts } from '../../data/repositories';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
@@ -11,12 +11,10 @@ import { summarizeAttempts } from './progress';
 export default function PracticePage() {
   useDocumentTitle('Práctica');
   const [params] = useSearchParams();
-  const only = params.get('asignatura');
+  const only = params.get('materia');
   const data = useAsync(async () => {
     const exercises = await loadEjercicios();
-    const careerIds = [...new Set(exercises.map((e) => carreraOfAsignatura(e.asignatura)))];
-    const mallas = await Promise.all(careerIds.map((id) => loadMalla(id)));
-    const names = new Map(mallas.flatMap((m) => m?.asignaturas.map((a) => [a.id, a.nombre] as const) ?? []));
+    const names = new Map(exercises.map((e) => [e.materia, getMateria(e.materia)?.nombre ?? e.materia] as const));
     return { exercises, names };
   }, []);
   const attempts = useLiveQuery(() => listAttempts(), [], []);
@@ -25,8 +23,8 @@ export default function PracticePage() {
   if (data.status !== 'ready') return <Skeleton lines={5} />;
   const groups = new Map<string, typeof data.data.exercises>();
   for (const e of data.data.exercises) {
-    if (only && e.asignatura !== only) continue;
-    groups.set(e.asignatura, [...(groups.get(e.asignatura) ?? []), e]);
+    if (only && e.materia !== only) continue;
+    groups.set(e.materia, [...(groups.get(e.materia) ?? []), e]);
   }
   const solved = data.data.exercises.filter((e) => summary.get(e.id)?.solved).length;
 

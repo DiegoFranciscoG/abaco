@@ -1,5 +1,5 @@
 {
-  "asignatura": "ucuenca-contabilidad-auditoria--c1-informatica-intermedia",
+  "materia": "informatica-gestion",
   "actualizado_en": "2026-10-15",
   "temas": [
     {
@@ -84,7 +84,9 @@
           "errores_frecuentes": [
             "Usar CONTAR en una columna de nombres y obtener cero."
           ],
-          "formulas": ["media-aritmetica"],
+          "formulas": [
+            "media-aritmetica"
+          ],
           "fuente": {
             "ref": "ms-excel-est",
             "seccion": "PROMEDIO, CONTAR y CONTARA"
@@ -164,7 +166,12 @@
           "errores_frecuentes": [
             "Usar la tasa anual con períodos mensuales."
           ],
-          "formulas": ["valor-actual", "monto-compuesto", "va-anualidad-vencida", "vf-anualidad-vencida"],
+          "formulas": [
+            "valor-actual",
+            "monto-compuesto",
+            "va-anualidad-vencida",
+            "vf-anualidad-vencida"
+          ],
           "fuente": {
             "ref": "ms-excel-fin",
             "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-va-23879d31-0e02-4321-be01-da16e8168cbd",
@@ -182,7 +189,12 @@
           "errores_frecuentes": [
             "Olvidar el signo negativo del préstamo y obtener cuotas negativas sin entender por qué."
           ],
-          "formulas": ["cuota-prestamo", "interes-cuota", "capital-cuota", "saldo-insoluto"],
+          "formulas": [
+            "cuota-prestamo",
+            "interes-cuota",
+            "capital-cuota",
+            "saldo-insoluto"
+          ],
           "fuente": {
             "ref": "ms-excel-fin",
             "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-pago-0214da64-9a63-4996-bc20-214433fa6441",
@@ -200,7 +212,10 @@
           "errores_frecuentes": [
             "Incluir la inversión inicial dentro de VNA y descontarla un período de más."
           ],
-          "formulas": ["van", "tir"],
+          "formulas": [
+            "van",
+            "tir"
+          ],
           "fuente": {
             "ref": "ms-excel-fin",
             "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-vna-8672cb67-2576-4d07-b67b-ac28acf2a568",

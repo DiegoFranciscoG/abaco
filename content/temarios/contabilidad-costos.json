@@ -1,0 +1,286 @@
+{
+  "materia": "contabilidad-costos",
+  "actualizado_en": "2026-10-25",
+  "temas": [
+    {
+      "id": "cc-comportamiento",
+      "nombre": "Comportamiento de los costos",
+      "orden": 1,
+      "descripcion": "Tipos de empresa y costos fijos, variables y mixtos.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cc-tipos-empresa",
+          "nombre": "Empresas comerciales, de servicios y manufactureras",
+          "explicacion": "Una empresa comercial compra y revende; una de servicios vende trabajo; una manufacturera transforma materiales y por eso maneja tres inventarios: materia prima, productos en proceso y productos terminados.",
+          "puntos_clave": [
+            "El costo de un producto fabricado reúne materia prima, mano de obra directa y costos indirectos.",
+            "Cada tipo de empresa necesita información de costos distinta."
+          ],
+          "errores_frecuentes": [
+            "Tratar los costos de fabricación como gastos del período antes de vender el producto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/2-1-distinguish-between-merchandising-manufacturing-and-service-organizations",
+            "seccion": "2.1 Distinguish between Merchandising, Manufacturing, and Service Organizations"
+          }
+        },
+        {
+          "id": "cc-fijos-variables",
+          "nombre": "Costos fijos, variables y mixtos",
+          "explicacion": "El costo variable total cambia en proporción al volumen y es constante por unidad; el costo fijo total no cambia dentro del rango relevante, pero por unidad baja cuando se produce más. Un costo mixto tiene una parte de cada uno.",
+          "puntos_clave": [
+            "El rango relevante es el intervalo de actividad donde el comportamiento se mantiene.",
+            "Arriendo de planta: fijo; materia prima: variable; servicio eléctrico con cargo base: mixto."
+          ],
+          "errores_frecuentes": [
+            "Decir que el costo fijo por unidad es constante."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/2-2-identify-and-apply-basic-cost-behavior-patterns",
+            "seccion": "2.2 Identify and Apply Basic Cost Behavior Patterns"
+          }
+        },
+        {
+          "id": "cc-alto-bajo",
+          "nombre": "Separar un costo mixto: punto alto y punto bajo",
+          "explicacion": "Se toman los meses con la actividad más alta y más baja. El costo variable unitario es la diferencia de costos dividida para la diferencia de actividad; el costo fijo es el costo total menos la parte variable en cualquiera de esos dos puntos.",
+          "puntos_clave": [
+            "Los puntos se eligen por nivel de actividad, no por nivel de costo.",
+            "Luego se predice: costo = fijo + variable unitario × actividad."
+          ],
+          "errores_frecuentes": [
+            "Elegir el mes con el costo más alto aunque no tenga la mayor actividad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/2-3-estimate-a-variable-and-fixed-cost-equation-and-predict-future-costs",
+            "seccion": "2.3 Estimate a Variable and Fixed Cost Equation and Predict Future Costs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-cvu",
+      "nombre": "Costo–volumen–utilidad",
+      "orden": 2,
+      "descripcion": "Margen de contribución, punto de equilibrio y margen de seguridad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cc-margen-contribucion",
+          "nombre": "Margen de contribución",
+          "explicacion": "El margen de contribución es lo que queda de cada venta después de cubrir los costos variables; primero cubre los costos fijos y el resto es utilidad. Puede expresarse por unidad, en total o como razón sobre las ventas.",
+          "puntos_clave": [
+            "Margen unitario = precio − costo variable unitario.",
+            "Razón de margen = margen unitario ÷ precio."
+          ],
+          "errores_frecuentes": [
+            "Restar costos fijos al calcular el margen de contribución unitario."
+          ],
+          "formulas": [
+            "margen-contribucion-unitario",
+            "razon-margen-contribucion"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-1-explain-contribution-margin-and-calculate-contribution-margin-per-unit-contribution-margin-ratio-and-total-contribution-margin",
+            "seccion": "3.1 Explain Contribution Margin and Calculate Contribution Margin per Unit, Contribution Margin Ratio, and Total Contribution Margin"
+          }
+        },
+        {
+          "id": "cc-punto-equilibrio",
+          "nombre": "Punto de equilibrio",
+          "explicacion": "Es el volumen de ventas en que la utilidad es cero: los ingresos cubren exactamente los costos fijos y variables. En unidades se obtiene dividiendo los costos fijos para el margen de contribución unitario.",
+          "puntos_clave": [
+            "En dólares: costos fijos ÷ razón de margen de contribución.",
+            "Para una utilidad objetivo se suma esa utilidad a los costos fijos."
+          ],
+          "errores_frecuentes": [
+            "Dividir los costos fijos para el precio en lugar del margen de contribución."
+          ],
+          "formulas": [
+            "punto-equilibrio-unidades",
+            "punto-equilibrio-dolares",
+            "unidades-utilidad-objetivo"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-2-calculate-a-break-even-point-in-units-and-dollars",
+            "seccion": "3.2 Calculate a Break-Even Point in Units and Dollars"
+          }
+        },
+        {
+          "id": "cc-margen-seguridad",
+          "nombre": "Margen de seguridad y apalancamiento operativo",
+          "explicacion": "El margen de seguridad indica cuánto pueden caer las ventas antes de llegar a pérdidas. El grado de apalancamiento operativo mide cuánto cambia la utilidad ante un cambio porcentual en ventas: empresas con más costos fijos tienen más apalancamiento.",
+          "puntos_clave": [
+            "Margen de seguridad = ventas reales − ventas de equilibrio.",
+            "Apalancamiento operativo = margen de contribución total ÷ utilidad operativa."
+          ],
+          "errores_frecuentes": [
+            "Leer un apalancamiento alto como algo siempre bueno: también amplifica las pérdidas."
+          ],
+          "formulas": [
+            "margen-seguridad",
+            "apalancamiento-operativo"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-5-calculate-and-interpret-a-companys-margin-of-safety-and-operating-leverage",
+            "seccion": "3.5 Calculate and Interpret a Company’s Margin of Safety and Operating Leverage"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-sistemas",
+      "nombre": "Sistemas de costeo",
+      "orden": 3,
+      "descripcion": "Órdenes de producción, procesos y costeo basado en actividades.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cc-ordenes-procesos",
+          "nombre": "Costeo por órdenes y por procesos",
+          "explicacion": "El costeo por órdenes acumula costos para cada trabajo distinto (un mueble a medida, una auditoría). El costeo por procesos acumula costos por departamento y los reparte entre unidades iguales producidas en masa.",
+          "puntos_clave": [
+            "Órdenes: productos diferenciados; procesos: productos homogéneos.",
+            "Ambos usan materia prima, mano de obra y costos indirectos."
+          ],
+          "errores_frecuentes": [
+            "Usar costeo por órdenes para una embotelladora que produce millones de unidades iguales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/4-1-distinguish-between-job-order-costing-and-process-costing",
+            "seccion": "4.1 Distinguish between Job Order Costing and Process Costing"
+          }
+        },
+        {
+          "id": "cc-tasa-predeterminada",
+          "nombre": "Tasa predeterminada de costos indirectos",
+          "explicacion": "Como los costos indirectos reales se conocen al final del período, se aplican con una tasa estimada al inicio: costos indirectos presupuestados divididos para la base de asignación presupuestada (horas máquina, horas de mano de obra). La diferencia al cierre se llama sub o sobreaplicación.",
+          "puntos_clave": [
+            "Costos indirectos aplicados = tasa × base real usada.",
+            "La base debe tener relación de causa con los costos indirectos."
+          ],
+          "errores_frecuentes": [
+            "Calcular la tasa con datos reales del cierre en lugar de cifras presupuestadas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/4-4-compute-a-predetermined-overhead-rate-and-apply-overhead-to-production",
+            "seccion": "4.4 Compute a Predetermined Overhead Rate and Apply Overhead to Production"
+          }
+        },
+        {
+          "id": "cc-unidades-equivalentes",
+          "nombre": "Unidades equivalentes",
+          "explicacion": "En el costeo por procesos las unidades que quedan a medio terminar se convierten a unidades completas equivalentes según su grado de avance, por separado para materiales y para costos de conversión. Así se calcula un costo por unidad justo.",
+          "puntos_clave": [
+            "1 000 unidades al 40 % de conversión equivalen a 400 unidades completas en conversión.",
+            "Los materiales suelen agregarse al inicio y estar al 100 %."
+          ],
+          "errores_frecuentes": [
+            "Usar el mismo porcentaje de avance para materiales y conversión sin revisar cuándo entra cada uno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/5-3-explain-and-compute-equivalent-units-and-total-cost-of-production-in-an-initial-processing-stage",
+            "seccion": "5.3 Explain and Compute Equivalent Units and Total Cost of Production in an Initial Processing Stage"
+          }
+        },
+        {
+          "id": "cc-abc",
+          "nombre": "Costeo basado en actividades (ABC)",
+          "explicacion": "El ABC agrupa los costos indirectos por actividades (preparar máquinas, inspeccionar, despachar) y los asigna a los productos según los inductores de costo que cada producto consume. Da costos más precisos cuando los productos usan los recursos de forma muy distinta.",
+          "puntos_clave": [
+            "Un inductor de costo es la causa del costo de una actividad.",
+            "Productos de bajo volumen y alta complejidad suelen quedar subcosteados con una tasa única."
+          ],
+          "errores_frecuentes": [
+            "Implementar ABC sin identificar inductores que realmente causen el costo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/6-3-calculate-activity-based-product-costs",
+            "seccion": "6.3 Calculate Activity-Based Product Costs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-presupuestos",
+      "nombre": "Presupuestos y control",
+      "orden": 4,
+      "descripcion": "Presupuesto maestro, presupuesto flexible y variaciones.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cc-presupuesto-operativo",
+          "nombre": "Presupuestos operativos",
+          "explicacion": "El presupuesto maestro empieza por las ventas; de ahí salen el presupuesto de producción (ventas + inventario final deseado − inventario inicial), el de materiales, el de mano de obra y el de costos indirectos.",
+          "puntos_clave": [
+            "El pronóstico de ventas es la base de todo el presupuesto.",
+            "Los presupuestos se encadenan: un error en ventas se propaga."
+          ],
+          "errores_frecuentes": [
+            "Presupuestar producción igual a ventas sin considerar los inventarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+            "seccion": "7.2 Prepare Operating Budgets"
+          }
+        },
+        {
+          "id": "cc-presupuesto-flexible",
+          "nombre": "Presupuesto flexible",
+          "explicacion": "Un presupuesto flexible recalcula los costos para el nivel de actividad que realmente ocurrió. Comparar lo real con un presupuesto flexible separa el efecto del volumen del efecto de la eficiencia y los precios.",
+          "puntos_clave": [
+            "Los costos variables se ajustan al volumen real; los fijos no cambian.",
+            "Es la base correcta para evaluar a un responsable de costos."
+          ],
+          "errores_frecuentes": [
+            "Comparar costos reales de 12 000 unidades con un presupuesto estático hecho para 10 000."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-4-prepare-flexible-budgets",
+            "seccion": "7.4 Prepare Flexible Budgets"
+          }
+        },
+        {
+          "id": "cc-variaciones",
+          "nombre": "Costos estándar y variaciones de materiales",
+          "explicacion": "Un costo estándar es lo que debería costar una unidad. La variación de precio compara el precio real con el estándar para la cantidad real comprada; la variación de cantidad compara la cantidad real usada con la estándar permitida, valorada al precio estándar.",
+          "puntos_clave": [
+            "Una variación es favorable si el costo real es menor que el estándar.",
+            "Cada variación tiene un responsable distinto: compras o producción."
+          ],
+          "errores_frecuentes": [
+            "Valorar la variación de cantidad al precio real en lugar del estándar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-2-compute-and-evaluate-materials-variances",
+            "seccion": "8.2 Compute and Evaluate Materials Variances"
+          }
+        }
+      ]
+    }
+  ]
+}
