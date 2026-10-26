@@ -57,6 +57,10 @@ export async function saveExam(input: Omit<Examen, 'id' | 'fecha'>, db: AbacoDB 
   return row;
 }
 
+export async function listAllExams(db: AbacoDB = getDb()): Promise<Examen[]> {
+  return db.examenes.toArray();
+}
+
 export async function listExams(materiaId: string, db: AbacoDB = getDb()): Promise<Examen[]> {
   const rows = await db.examenes.where('materiaId').equals(materiaId).toArray();
   return rows.sort((a, b) => b.fecha.localeCompare(a.fecha));

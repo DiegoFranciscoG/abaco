@@ -23,6 +23,7 @@ import { AppLink, EmptyState, PageHeader, Tabs } from '../../ui/primitives';
 import { downloadFile, formatDate } from '../../ui/utils';
 import { useToast } from '../../ui/use-toast';
 import { accuracyBySubject, summarizeAttempts } from '../practice/progress';
+import { CareerMap } from './CareerMap';
 import { COLOR_HEX } from './colors';
 import { NoteCard } from './NotesPanel';
 
@@ -341,48 +342,56 @@ function ProgressTab() {
     }));
   }, [data, attempts]);
 
-  if ((attempts ?? []).length === 0)
-    return (
-      <EmptyState icon="target" title="Aún no hay intentos">
-        Resuelve ejercicios en{' '}
-        <AppLink to="/practica" className="link-red">
-          Práctica
-        </AppLink>{' '}
-        y aquí verás en qué temas fallas más.
-      </EmptyState>
-    );
   return (
-    <ul className="space-y-3">
-      {rows.map((r) => {
-        const pct = r.total === 0 ? 0 : Math.round((r.solved / r.total) * 100);
-        const accuracy = r.attempts === 0 ? null : Math.round((r.correct / r.attempts) * 100);
-        return (
-          <li key={r.id} className="card p-4">
-            <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
-              <AppLink to={`/practica?materia=${r.id}`} className="font-semibold hover:text-red">
-                {r.name}
-              </AppLink>
-              <span className="tnum text-sm text-muted">
-                {r.solved}/{r.total} resueltos{accuracy !== null ? ` · ${accuracy} % de aciertos` : ''}
-              </span>
-            </div>
-            <div
-              className="h-2.5 overflow-hidden rounded-full bg-line"
-              role="progressbar"
-              aria-valuenow={pct}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              aria-label={`Avance en ${r.name}`}
-            >
-              <div
-                className="h-full rounded-full bg-red transition-[width] duration-500"
-                style={{ width: `${pct}%` }}
-              />
-            </div>
-          </li>
-        );
-      })}
-    </ul>
+    <div className="space-y-10">
+      <CareerMap />
+      <section aria-labelledby="por-materia" className="space-y-3">
+        <h2 id="por-materia" className="font-display text-2xl font-semibold">
+          Ejercicios por materia
+        </h2>
+        {(attempts ?? []).length === 0 ? (
+          <EmptyState icon="target" title="Aún no hay intentos">
+            Resuelve ejercicios en{' '}
+            <AppLink to="/practica" className="link-red">
+              Práctica
+            </AppLink>{' '}
+            y aquí verás en qué temas fallas más.
+          </EmptyState>
+        ) : (
+          <ul className="space-y-3">
+            {rows.map((r) => {
+              const pct = r.total === 0 ? 0 : Math.round((r.solved / r.total) * 100);
+              const accuracy = r.attempts === 0 ? null : Math.round((r.correct / r.attempts) * 100);
+              return (
+                <li key={r.id} className="card p-4">
+                  <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+                    <AppLink to={`/practica?materia=${r.id}`} className="font-semibold hover:text-red">
+                      {r.name}
+                    </AppLink>
+                    <span className="tnum text-sm text-muted">
+                      {r.solved}/{r.total} resueltos{accuracy !== null ? ` · ${accuracy} % de aciertos` : ''}
+                    </span>
+                  </div>
+                  <div
+                    className="h-2.5 overflow-hidden rounded-full bg-line"
+                    role="progressbar"
+                    aria-valuenow={pct}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`Avance en ${r.name}`}
+                  >
+                    <div
+                      className="h-full rounded-full bg-red transition-[width] duration-500"
+                      style={{ width: `${pct}%` }}
+                    />
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </section>
+    </div>
   );
 }
 
