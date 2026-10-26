@@ -7,6 +7,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import MiniSearch from 'minisearch';
 import { buildSearchDocuments, SEARCH_OPTIONS, type SearchContent } from '../src/domain/search/index-data.ts';
+import { materiaCoverage } from '../src/domain/content/coverage.ts';
 import { DELIVERABLES } from '../src/domain/deliverables/catalog.ts';
 import { buildStatementCatalog } from '../src/domain/statement/catalog.ts';
 import { TOOLS } from '../src/domain/tools/catalog.ts';
@@ -96,4 +97,11 @@ const statementCatalog = buildStatementCatalog({
   formulas: content.formulas,
 });
 writeFileSync(join(outDir, 'enunciados.json'), JSON.stringify(statementCatalog));
+
+// Coverage of every subject against the depth standard (same function as docs/cobertura.md and test T-17).
+const coverage = content.materias.map((m) => {
+  const temario = content.temarios.find((t) => t.materia === m.id);
+  return temario ? materiaCoverage(m, temario, content.ejercicios) : null;
+});
+writeFileSync(join(outDir, 'cobertura.json'), JSON.stringify(coverage.filter((c) => c !== null)));
 console.log(`Índice de búsqueda: ${docs.length} documentos · cifras: ${JSON.stringify(stats)}`);

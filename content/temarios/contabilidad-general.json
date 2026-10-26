@@ -69,6 +69,26 @@
             "url": "https://openstax.org/books/principles-financial-accounting/pages/3-1-describe-principles-assumptions-and-concepts-of-accounting-and-their-relationship-to-financial-statements",
             "seccion": "3.1 Principios, supuestos y conceptos"
           }
+        },
+        {
+          "id": "cg-fundamentos-cualidades",
+          "nombre": "Características cualitativas de la información financiera",
+          "explicacion": "Según el Marco Conceptual del IASB, la información financiera es útil si es relevante, es decir, capaz de cambiar las decisiones de quien la usa porque ayuda a predecir o a confirmar, y si representa fielmente los hechos económicos: completa, neutral y sin errores. Esas son las dos características fundamentales. La comparabilidad, la verificabilidad, la oportunidad y la comprensibilidad la mejoran, y el costo de producirla es la restricción: el beneficio de informar debe justificar lo que cuesta.",
+          "ejemplo": "Una distribuidora de Ambato presenta sus estados de 2025 en abril de 2026 con las mismas políticas contables de 2024: el banco puede comparar los dos años (comparabilidad) y decidir a tiempo el crédito que le piden (oportunidad). Si la empresa omitiera una deuda de USD 12.000 con un proveedor, el balance dejaría de ser completo y ya no representaría fielmente su situación, aunque cada cifra registrada fuera exacta.",
+          "puntos_clave": [
+            "Fundamentales: relevancia y representación fiel.",
+            "De mejora: comparabilidad, verificabilidad, oportunidad y comprensibilidad.",
+            "El costo de informar es la restricción general."
+          ],
+          "errores_frecuentes": [
+            "Creer que basta con que cada cifra sea exacta: si falta información, la representación ya no es fiel.",
+            "Pensar que comparabilidad significa que todas las empresas presenten los mismos números."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iasb-marco-conceptual",
+            "seccion": "Qualitative characteristics (diapositiva 11)"
+          }
         }
       ]
     },
@@ -101,6 +121,26 @@
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
             "seccion": "2.2 Activos, pasivos y patrimonio"
+          }
+        },
+        {
+          "id": "cg-ecuacion-plan-cuentas",
+          "nombre": "Clasificación de las cuentas y plan de cuentas",
+          "explicacion": "Cada cuenta pertenece a un elemento de la ecuación contable ampliada: activo, pasivo, patrimonio, ingreso o gasto. El plan de cuentas es la lista numerada de todas las cuentas que usa la empresa: el primer dígito indica el grupo (1 activo, 2 pasivo, 3 patrimonio, 4 ingresos y 5 gastos) y las cuentas se ordenan como aparecen en los estados financieros, primero las del estado de situación y después las del estado de resultados.",
+          "ejemplo": "En el plan de cuentas de una papelería pequeña, Caja es la 101, Clientes la 111, Proveedores la 201, Capital la 301, Ventas la 401 y Arriendo la 501. Una empresa grande usa cuatro dígitos (1101, 2101…) para tener espacio para más cuentas. Al registrar una compra de mercadería a crédito, el número de Proveedores, que empieza con 2, confirma de un vistazo que es un pasivo.",
+          "puntos_clave": [
+            "El primer dígito identifica el grupo: 1 activo, 2 pasivo, 3 patrimonio, 4 ingresos y 5 gastos.",
+            "Las cuentas se listan en el orden de los estados financieros."
+          ],
+          "errores_frecuentes": [
+            "Clasificar Proveedores como activo porque se relaciona con la mercadería que se compró.",
+            "Usar nombres distintos para la misma cuenta en cada asiento: el mayor ya no se puede sumar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
+            "seccion": "3.2 Plan de cuentas (Chart of Accounts)"
           }
         },
         {

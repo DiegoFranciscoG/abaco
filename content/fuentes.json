@@ -99,6 +99,15 @@
     "fecha_consulta": "2026-10-14"
   },
   {
+    "id": "iasb-marco-conceptual",
+    "titulo": "Overview of the 2018 Conceptual Framework (World Standard-setters Conference, octubre de 2018)",
+    "autor_editor": "International Accounting Standards Board (IASB) · IFRS Foundation",
+    "tipo": "documentacion",
+    "url": "https://www.ifrs.org/content/dam/ifrs/meetings/2018/october/wss/wss4-conceptual-framework-overview.pdf",
+    "licencia": "Material del IASB: se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
     "id": "sri-iva",
     "titulo": "Impuesto al Valor Agregado (IVA) — información general y tarifas",
     "autor_editor": "Servicio de Rentas Internas (SRI)",

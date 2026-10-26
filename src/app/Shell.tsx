@@ -182,6 +182,11 @@ export function Shell() {
                     </AppLink>
                   </li>
                   <li>
+                    <AppLink to="/cobertura" className="link-red inline-flex min-h-6 items-center">
+                      Cobertura
+                    </AppLink>
+                  </li>
+                  <li>
                     <AppLink to="/legal/privacidad" className="link-red inline-flex min-h-6 items-center">
                       Privacidad
                     </AppLink>

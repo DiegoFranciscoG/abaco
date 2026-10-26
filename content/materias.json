@@ -15,7 +15,11 @@
       "laboratorio",
       "tarjetas"
     ],
-    "orden": 1
+    "orden": 1,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   },
   {
     "id": "contabilidad-financiera",
@@ -32,7 +36,11 @@
       "diario",
       "laboratorio"
     ],
-    "orden": 2
+    "orden": 2,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "contabilidad-costos",
@@ -51,7 +59,11 @@
       "equilibrio",
       "laboratorio"
     ],
-    "orden": 3
+    "orden": 3,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "tributacion",
@@ -69,7 +81,11 @@
       "impuestos",
       "tarjetas"
     ],
-    "orden": 4
+    "orden": 4,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "matematica-financiera",
@@ -86,7 +102,11 @@
       "proyectos",
       "laboratorio"
     ],
-    "orden": 5
+    "orden": 5,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "finanzas-corporativas",
@@ -103,7 +123,11 @@
       "proyectos",
       "laboratorio"
     ],
-    "orden": 6
+    "orden": 6,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "evaluacion-proyectos",
@@ -121,7 +145,11 @@
       "laboratorio",
       "equilibrio"
     ],
-    "orden": 7
+    "orden": 7,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "finanzas-internacionales",
@@ -138,7 +166,11 @@
       "divisas",
       "macro"
     ],
-    "orden": 8
+    "orden": 8,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "matematica-gestion",
@@ -156,7 +188,11 @@
     "herramientas": [
       "graficador"
     ],
-    "orden": 9
+    "orden": 9,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "calculo-diferencial",
@@ -171,7 +207,11 @@
     "herramientas": [
       "graficador"
     ],
-    "orden": 10
+    "orden": 10,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "estadistica-descriptiva",
@@ -188,7 +228,11 @@
       "estadistica",
       "laboratorio"
     ],
-    "orden": 11
+    "orden": 11,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "estadistica-inferencial",
@@ -204,7 +248,11 @@
     "herramientas": [
       "estadistica"
     ],
-    "orden": 12
+    "orden": 12,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "microeconomia",
@@ -221,7 +269,11 @@
       "mercado",
       "graficador"
     ],
-    "orden": 13
+    "orden": 13,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "macroeconomia",
@@ -237,7 +289,11 @@
     "herramientas": [
       "macro"
     ],
-    "orden": 14
+    "orden": 14,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "economia-internacional",
@@ -254,7 +310,11 @@
       "macro",
       "divisas"
     ],
-    "orden": 15
+    "orden": 15,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "fundamentos-administracion",
@@ -271,7 +331,11 @@
       "foda",
       "tarjetas"
     ],
-    "orden": 16
+    "orden": 16,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "comportamiento-organizacional",
@@ -287,7 +351,11 @@
       "tarjetas",
       "foda"
     ],
-    "orden": 17
+    "orden": 17,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "talento-humano",
@@ -305,7 +373,11 @@
       "rol-pagos",
       "tarjetas"
     ],
-    "orden": 18
+    "orden": 18,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "marketing",
@@ -323,7 +395,11 @@
       "foda",
       "estadistica"
     ],
-    "orden": 19
+    "orden": 19,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "investigacion-mercados",
@@ -341,7 +417,11 @@
       "estadistica",
       "buscador"
     ],
-    "orden": 20
+    "orden": 20,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "emprendimiento",
@@ -358,7 +438,11 @@
       "proyectos",
       "equilibrio"
     ],
-    "orden": 21
+    "orden": 21,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "derecho-empresarial",
@@ -374,7 +458,11 @@
     "herramientas": [
       "tarjetas"
     ],
-    "orden": 22
+    "orden": 22,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "legislacion-laboral",
@@ -391,7 +479,11 @@
       "rol-pagos",
       "tarjetas"
     ],
-    "orden": 23
+    "orden": 23,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "etica-profesional",
@@ -407,7 +499,11 @@
     "herramientas": [
       "tarjetas"
     ],
-    "orden": 24
+    "orden": 24,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "informatica-gestion",
@@ -425,7 +521,11 @@
       "laboratorio",
       "editor"
     ],
-    "orden": 25
+    "orden": 25,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   },
   {
     "id": "metodologia-investigacion",
@@ -443,6 +543,10 @@
       "citas",
       "buscador"
     ],
-    "orden": 26
+    "orden": 26,
+    "cobertura": {
+      "estado": "parcial",
+      "unidades_objetivo": 6
+    }
   }
 ]

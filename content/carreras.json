@@ -196,6 +196,48 @@
         ],
         "planes": 4
       }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Pensamiento Creativo",
+        "ciclo": 1,
+        "planes": 2
+      },
+      {
+        "nombre": "Economía Popular y Solidaria",
+        "ciclo": 2,
+        "planes": 2
+      },
+      {
+        "nombre": "Estadística Aplicada",
+        "ciclo": 2,
+        "planes": 2
+      },
+      {
+        "nombre": "TIC Aplicada en la Empresa",
+        "ciclo": 2,
+        "planes": 2
+      },
+      {
+        "nombre": "Ecosistemas de Emprendimiento e Innovación",
+        "ciclo": 5,
+        "planes": 2
+      },
+      {
+        "nombre": "Presupuestos",
+        "ciclo": 5,
+        "planes": 2
+      },
+      {
+        "nombre": "Administración Pública",
+        "ciclo": 6,
+        "planes": 2
+      },
+      {
+        "nombre": "E-Commerce y Marketing Digital",
+        "ciclo": 8,
+        "planes": 2
+      }
     ]
   },
   {
@@ -391,6 +433,213 @@
         ],
         "planes": 2
       }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Contabilidad Comercial",
+        "ciclo": 2,
+        "planes": 2
+      },
+      {
+        "nombre": "Contabilidad Costos Básica",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Contabilidad de Gestión Ambiental",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Régimen Impositivo y Fiscalidad",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Teoría Administrativa",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Aplicaciones de Costos",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Contabilidad Costos Avanzada",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Contabilidad Societaria",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Control Interno y Gestión de Riesgos",
+        "ciclo": 4,
+        "planes": 2
+      },
+      {
+        "nombre": "Legislación del Sector Público",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Normas Internacionales de Información Financiera",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Renta y Otros Impuestos",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Administración Pública y Presupuesto",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Contabilidad de IFIS y Economía Popular y Solidaria",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Costos Aplicados",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas a Corto Plazo",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Fiscalidad Internacional",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Fundamentos de Contabilidad Gubernamental",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Inteligencia de Negocios",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría Administrativa",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría de Gestión",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Contratación Pública",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas a Largo Plazo",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Legislación de Instituciones Financieras y EPS",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Liderazgo, Emprendimiento e Innovación",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Marco Legal de la Auditoría Financiera",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Planificación y Dirección Estratégica",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Presupuesto Público y Privado",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría Financiera",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Comercio Internacional y Aduanas",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Contabilidad Instituciones Financieras",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Inteligencia Artificial en Contabilidad y Auditoría",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Presupuesto Privado",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Redacción Científica",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoria Forense y Prevención de Lavado de Activos",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditorias Especiales",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría Forense",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría Gubernamental",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría de Calidad",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Contabilidad Gubernamental y Contratación Pública",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Escritura Académica",
+        "ciclo": 8,
+        "planes": 1
+      }
     ]
   },
   {
@@ -555,6 +804,173 @@
         ],
         "planes": 1
       }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Fundamentos de Programación",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Historia Económica",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Introducción a la Economía",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Álgebra Lineal",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Análisis de Datos y Programación",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Derecho Económico y Empresarial",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Estadística Probabilistica",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Historia del pensamiento económico",
+        "ciclo": 2,
+        "planes": 2
+      },
+      {
+        "nombre": "Teoría de los Grupos Sociales y del Estado",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Medición Económica",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Realidad Socio-Económica",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Derecho Económico",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Econometría",
+        "ciclo": 4,
+        "planes": 2
+      },
+      {
+        "nombre": "Economía Política",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Investigación Económica",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Métodos Dinámicos en Economía",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Investigación Operativa",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing y Comercio Digital",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Organización Industrial",
+        "ciclo": 5,
+        "planes": 2
+      },
+      {
+        "nombre": "Teoría de Juegos",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Contratación Pública",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Crecimiento y Desarrollo",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Crecimiento y Desarrollo Económico",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Planificación Económica",
+        "ciclo": 6,
+        "planes": 2
+      },
+      {
+        "nombre": "Análisis Multivariante",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Formulación y Gestión de Proyectos",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Machine Learning",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Política Económica",
+        "ciclo": 7,
+        "planes": 2
+      },
+      {
+        "nombre": "Big Data and Business Intelligence",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Economía Experimental y del Comportamiento",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas Públicas",
+        "ciclo": 8,
+        "planes": 2
+      },
+      {
+        "nombre": "Investigación de Operaciones",
+        "ciclo": 8,
+        "planes": 1
+      }
     ]
   },
   {
@@ -659,6 +1075,293 @@
         ],
         "planes": 2
       }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Administración y Organización",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Diseño para Marketing",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Introducción al Marketing",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Pensamiento Creativo y Desing Thinking",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Psicología del Comportamiento",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Costeo de Productos y Servicios",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Estrategia Competitiva",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Mix y Segmentacion",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing de Servicios",
+        "ciclo": 2,
+        "planes": 2
+      },
+      {
+        "nombre": "Planificación Estratégica",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Principios de Economía",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Diseño Gráfico y Digital con IA",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Estrategia Comunicacional y Redaccion Creativa",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Marca personal",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Marco Legal del Marketing y Ciberseguridad",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Sostenible",
+        "ciclo": 3,
+        "planes": 2
+      },
+      {
+        "nombre": "Metodos Cuantitativos",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Business English",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Businness Intelligence",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Diseño de Productos 3D+RA",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Entorno Macroeconómico",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas y Marketing",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Mercados Emergentes y Marketing Generacional",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Neuroventas y Negociación",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Branding",
+        "ciclo": 5,
+        "planes": 2
+      },
+      {
+        "nombre": "Creatividad Integral y Digital",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Diseño Publicitario",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Estrategia de Precio",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Estrategia de Producto",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas Aplicdas al Marketing",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión Logística",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Neuromarketing",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Business Intelligence y Big Data",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Campañas Publicitarias",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Distribución Comercial y Merchandising",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Gerencia de Ventas",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Proyectos",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Politica y Fijación de Precios",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Propiedad Intelectual",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Publicidad ATL y BTL",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Sistemas de Información den Marketing",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Técnicas de Ventas",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Dirección de Ventas",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "E-Commerce y Marketing Digital",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Gerencia de Distribución",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Promocional",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Modelos de Simulación",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Planes de Marketing",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "UIC",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría en Marketing",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Dirección de Marketing",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Investigación Aplicada",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Digital",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Global",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Internacional",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Politico",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Publicidad y Análisis de Medios",
+        "ciclo": 8,
+        "planes": 1
+      }
     ]
   },
   {
@@ -740,6 +1443,133 @@
         "ciclos": [
           4
         ],
+        "planes": 1
+      }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Matemáticas para Finanzas",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Responsabilidad Social",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Tecnologías de la Información para Negocios",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Análisis Exploratorio de Datos",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Sistema Financiero",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Econometría Aplicada",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Legislación Bancaria y de Seguros",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Mercado de Valores",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Fundamentos de Seguros",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión Bancaria",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Riesgos Financieros",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Gobierno de Datos y Calidad de la Información Financiera",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Matemática Actuarial",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Banca Comercial y Privada",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas Públicas",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Seguros",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Regulación y Cumplimiento Financiero",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Valoración Financiera",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Auditoría y Control Financiero",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas Digitales y Fintech",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Inversiones y Gestión de Portafolios",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Gobierno Corporativo",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Modelos Financieros",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas Sostenibles",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión Estratégica Financiera",
+        "ciclo": 8,
         "planes": 1
       }
     ]
@@ -873,6 +1703,98 @@
         ],
         "planes": 1
       }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Introducción a la Economía",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Introducción al Marketing",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Administración y Responsabilidad Social Empresarial (Rse)",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Comercio Electrónico y Marketing Digital",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Creación de Valor y Emprendimiento",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Legislación Aduanera",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Derecho Internacional",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Logística y Transporte Internacional",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Internacional",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Negocios Internacionales",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Cadena de Suministros para Operaciones Globales",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "International Negotiation Strategies",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Técnicas de Valoración Aduanera",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Geopolitics & International Relations",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Inteligencia de Negocios",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Nomenclatura Arancelaria",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Gerencia de Operaciones",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Leadership & Management Skills",
+        "ciclo": 8,
+        "planes": 1
+      }
     ]
   },
   {
@@ -937,6 +1859,223 @@
         "ciclos": [
           5
         ],
+        "planes": 1
+      }
+    ],
+    "pendientes": [
+      {
+        "nombre": "Análisis Estadístico Descriptivo",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Desarrollo de Habilidades Blandas 1: Inteligencia Emocional y Autogestión",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Fundamentos Matemáticos",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Fundamentos de Gestión Empresarial",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Herramientas de IA para la Gestión Emprendedora",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Manejo de Herramientas Digitales",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Perfil, Pensamiento y Visión Emprendedora",
+        "ciclo": 1,
+        "planes": 1
+      },
+      {
+        "nombre": "Análisis Estadístico Inferencial",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Desarrollo de Habilidades Blandas 2: Comunicación Efectiva y Trabajo Colaborativo",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Experiencias en Startups",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión Contable de Costos",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "IA Aplicada para la Gestión Empresarial y Emprendimiento",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Oportunidades y Ecosistemas Emprendedores",
+        "ciclo": 2,
+        "planes": 1
+      },
+      {
+        "nombre": "Análisis del Macroentorno Empresarial",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Business Intelligence",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Design Thinking",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Estudios de Mercado",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Innovación",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Legalidad y Negocios Responsables",
+        "ciclo": 3,
+        "planes": 1
+      },
+      {
+        "nombre": "Big Data y Analítica para Toma de Decisiones",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Desarrollo de Habilidades Blandas 4: Liderazgo Emprendedor, Gestión de Equipos y Manejo de Conflictos",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Emprendimientos Alternativos, Culturales y Familiares",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Finanzas para Emprendedores",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Operaciones",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Modelos de Negocio",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Preincubación",
+        "ciclo": 4,
+        "planes": 1
+      },
+      {
+        "nombre": "Estrategias de Crecimiento de Negocios",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de la Producción",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Incubación",
+        "ciclo": 5,
+        "planes": 1
+      },
+      {
+        "nombre": "Desarrollo de Habilidades Blandas 6: Negociación, Ventas Relacionales y Networking Básico",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Creación de Empresas",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Marketing Digital para E-Commerce",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Supply Chain Management",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Valoración de Emprendimientos",
+        "ciclo": 6,
+        "planes": 1
+      },
+      {
+        "nombre": "Aceleración",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Business English",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Desarrollo de Habilidades Blandas 7: Pitch, Storytelling y Adaptabilidad al Cambio",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Dirección Estratégica",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Marca para el Emprendimiento",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual",
+        "ciclo": 7,
+        "planes": 1
+      },
+      {
+        "nombre": "Estrategias de Negociación y Networking",
+        "ciclo": 8,
+        "planes": 1
+      },
+      {
+        "nombre": "Internacionalización de la Empresa",
+        "ciclo": 8,
         "planes": 1
       }
     ]

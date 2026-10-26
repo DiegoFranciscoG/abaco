@@ -199,6 +199,14 @@ export const materiaSchema = z.object({
   sinonimos: z.array(nonEmpty),
   herramientas: z.array(z.enum(TOOL_IDS)).min(1),
   orden: z.number().int().min(1),
+  /**
+   * Declared state against the depth standard (src/domain/content/coverage.ts) and ÁBACO's target of units. Test
+   * T-17 checks that "completa" is only declared when the content really meets the standard.
+   */
+  cobertura: z.object({
+    estado: z.enum(['completa', 'parcial']),
+    unidades_objetivo: z.number().int().min(5).max(7),
+  }),
 });
 export type Materia = z.infer<typeof materiaSchema>;
 
@@ -226,8 +234,32 @@ export const carreraSchema = z.object({
       }),
     )
     .min(1),
+  /** Subjects of this career (in at least half of its plans) that ÁBACO does not cover yet, by usual cycle. */
+  pendientes: z
+    .array(
+      z.object({
+        nombre: nonEmpty,
+        ciclo: z.number().int().min(1).max(12),
+        planes: z.number().int().min(1),
+      }),
+    )
+    .optional(),
 });
 export type Carrera = z.infer<typeof carreraSchema>;
+
+/**
+ * Repetition map: how many generic careers and public plans include each subject name (normalized). Aggregated
+ * data only; no plan or institution is kept (docs/investigacion.md, sección 1 y 16).
+ */
+export const repeticionSchema = z.object({
+  nombre: nonEmpty,
+  carreras: z.number().int().min(1).max(7),
+  planes: z.number().int().min(1).max(13),
+  ciclo_habitual: z.number().int().min(1).max(12),
+  materia: id.nullable(),
+  tipo: z.enum(['materia', 'practica']),
+});
+export type Repeticion = z.infer<typeof repeticionSchema>;
 
 export const subtemaSchema = z.object({
   id,
@@ -450,3 +482,4 @@ export const plantillasFileSchema = z.array(plantillaSchema);
 export const normativaFileSchema = z.array(cifraSchema);
 export const enunciadosFileSchema = z.array(conceptoSchema);
 export const indicadoresFileSchema = z.array(indicadorSchema);
+export const repeticionFileSchema = z.array(repeticionSchema);

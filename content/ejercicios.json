@@ -1100,7 +1100,7 @@
     "calculo": "UN / Pt",
     "respuesta": 0.15,
     "unidad": "proporción",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "ROE = UN ÷ Pt",
       "ROE = 54.000 ÷ 360.000 = 0,15 (15 %)"
@@ -1163,7 +1163,7 @@
     "calculo": "(FC1 / (1 + k) + FC2 / (1 + k) ^ 2 + FC3 / (1 + k) ^ 3) / I0",
     "respuesta": 1.0638,
     "unidad": "veces",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "VA de los flujos = 53.189,91",
       "IR = 53.189,91 ÷ 50.000 = 1,0638"
@@ -1280,7 +1280,7 @@
     "calculo": "s / media",
     "respuesta": 0.15,
     "unidad": "proporción",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "CV = s ÷ media",
       "CV = 126 ÷ 840 = 0,15 (15 %)"
@@ -1310,7 +1310,7 @@
     "calculo": "((Q2 - Q1) / ((Q2 + Q1) / 2)) / ((P2 - P1) / ((P2 + P1) / 2))",
     "respuesta": -0.8919,
     "unidad": "sin unidad",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "%ΔQ = (340 − 400) ÷ 370 = −0,1622",
       "%ΔP = (36 − 30) ÷ 33 = 0,1818",
@@ -1403,7 +1403,7 @@
     "calculo": "(IP1 - IP0) / IP0 * 100",
     "respuesta": 3.75,
     "unidad": "%",
-    "tolerancia": 5e-05,
+    "tolerancia": 0.00005,
     "procedimiento": [
       "Cambio = 107,9 − 104,0 = 3,9",
       "π = 3,9 ÷ 104 × 100 = 3,75 %"
@@ -1540,5 +1540,396 @@
     "actualizado_en": "2026-10-26",
     "formula": "identidad-ahorro-inversion",
     "subtema": "fi-ahorro-inversion"
+  },
+  {
+    "id": "ej-cg-pasivo",
+    "materia": "contabilidad-general",
+    "enunciado": "Una ferretería de Cuenca tiene activos por USD 86.500 y un patrimonio de USD 54.200. ¿Cuánto debe a terceros (pasivo total)?",
+    "datos": {
+      "A": 86500,
+      "Pt": 54200
+    },
+    "calculo": "A - Pt",
+    "respuesta": 32300,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "A = P + Pt, así que P = A − Pt",
+      "P = 86.500 − 54.200 = 32.300,00"
+    ],
+    "pistas": [
+      "Despeja el pasivo de la ecuación contable.",
+      "Lo que no es de los dueños se debe a terceros."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-2-define-explain-and-provide-examples-of-current-and-noncurrent-assets-current-and-noncurrent-liabilities-equity-revenues-and-expenses",
+      "seccion": "2.2 Activos, pasivos y patrimonio"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-ecuacion-elementos",
+    "formula": "ecuacion-contable"
+  },
+  {
+    "id": "ej-cg-patrimonio-cierre",
+    "materia": "contabilidad-general",
+    "enunciado": "La dueña de una tienda de ropa aportó USD 15.000. En el año la tienda tuvo ingresos por 48.600 y gastos por 39.150, y la dueña retiró 3.000. ¿Cuál es el patrimonio al cierre?",
+    "datos": {
+      "C": 15000,
+      "I": 48600,
+      "G": 39150,
+      "R": 3000
+    },
+    "calculo": "C + I - G - R",
+    "respuesta": 21450,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Pt = C + I − G − R",
+      "Pt = 15.000 + 48.600 − 39.150 − 3.000 = 21.450,00"
+    ],
+    "pistas": [
+      "Los ingresos aumentan el patrimonio y los gastos lo disminuyen.",
+      "Los retiros de la dueña también lo disminuyen."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-2-define-and-describe-the-expanded-accounting-equation-and-its-relationship-to-analyzing-transactions",
+      "seccion": "3.2 Ecuación contable ampliada"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-ecuacion-ampliada",
+    "formula": "ecuacion-contable-ampliada"
+  },
+  {
+    "id": "ej-cg-transaccion-pago",
+    "materia": "contabilidad-general",
+    "enunciado": "Una empresa tiene activos por USD 62.000 y pasivos por 21.500. Paga en efectivo USD 4.000 que le debía a un proveedor. ¿Cuál es su activo total después del pago?",
+    "datos": {
+      "A0": 62000,
+      "pago": 4000
+    },
+    "calculo": "A0 - pago",
+    "respuesta": 58000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Caja (activo) baja 4.000.",
+      "Proveedores (pasivo) baja 4.000; el patrimonio no cambia.",
+      "Activo = 62.000 − 4.000 = 58.000,00"
+    ],
+    "pistas": [
+      "Pagar una deuda no es un gasto.",
+      "Bajan a la vez un activo y un pasivo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-4-analyze-business-transactions-using-the-accounting-equation-and-show-the-impact-of-business-transactions-on-financial-statements",
+      "seccion": "3.4 Análisis de transacciones"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-ecuacion-transacciones",
+    "formula": "ecuacion-contable"
+  },
+  {
+    "id": "ej-cg-saldo-clientes",
+    "materia": "contabilidad-general",
+    "enunciado": "La cuenta Clientes registra cargos por USD 3.150, 2.480 y 1.900, y abonos por USD 2.000 y 1.150. ¿Cuál es su saldo?",
+    "datos": {
+      "debe": [
+        3150,
+        2480,
+        1900
+      ],
+      "haber": [
+        2000,
+        1150
+      ]
+    },
+    "calculo": "SUM(debe) - SUM(haber)",
+    "respuesta": 4380,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Σ Debe = 3.150 + 2.480 + 1.900 = 7.530",
+      "Σ Haber = 2.000 + 1.150 = 3.150",
+      "Saldo deudor = 7.530 − 3.150 = 4.380,00"
+    ],
+    "pistas": [
+      "Clientes es un activo: su saldo normal es deudor.",
+      "Los cobros se registran en el Haber."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-5-use-journal-entries-to-record-transactions-and-post-to-t-accounts",
+      "seccion": "3.5 Cuentas T"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-partida-doble-mayor",
+    "formula": "saldo-cuenta-deudora"
+  },
+  {
+    "id": "ej-cg-balance-cuadra",
+    "materia": "contabilidad-general",
+    "enunciado": "Un balance de comprobación tiene saldos deudores de USD 2.350 (Caja), 8.900 (Bancos), 4.380 (Clientes), 6.120 (Mercaderías) y 3.500 (Muebles), y saldos acreedores de 5.270 (Proveedores), 18.000 (Capital) y 1.980 (Ventas). ¿Qué diferencia hay entre las dos columnas?",
+    "datos": {
+      "debe": [
+        2350,
+        8900,
+        4380,
+        6120,
+        3500
+      ],
+      "haber": [
+        5270,
+        18000,
+        1980
+      ]
+    },
+    "calculo": "SUM(debe) - SUM(haber)",
+    "respuesta": 0,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Σ Debe = 2.350 + 8.900 + 4.380 + 6.120 + 3.500 = 25.250",
+      "Σ Haber = 5.270 + 18.000 + 1.980 = 25.250",
+      "Diferencia = 25.250 − 25.250 = 0: el balance cuadra"
+    ],
+    "pistas": [
+      "Suma cada columna por separado.",
+      "Si la diferencia es cero, el balance cuadra."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/3-6-prepare-a-trial-balance",
+      "seccion": "3.6 Balance de comprobación"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-partida-doble-comprobacion",
+    "formula": "comprobacion-partida-doble"
+  },
+  {
+    "id": "ej-cg-ajuste-depreciacion",
+    "materia": "contabilidad-general",
+    "enunciado": "Al cierre, una imprenta ajusta la depreciación de una máquina que costó USD 18.000, con valor residual de 3.000 y vida útil de 5 años. ¿Cuánto registra como gasto de depreciación del año?",
+    "datos": {
+      "C": 18000,
+      "VR": 3000,
+      "n": 5
+    },
+    "calculo": "(C - VR) / n",
+    "respuesta": 3000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "D = (C − VR) ÷ n",
+      "D = (18.000 − 3.000) ÷ 5 = 3.000,00",
+      "Asiento: Gasto depreciación (Debe) contra Depreciación acumulada (Haber)"
+    ],
+    "pistas": [
+      "Resta el valor residual antes de dividir.",
+      "El ajuste reconoce el gasto del período aunque no salga dinero."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/4-2-discuss-the-adjustment-process-and-illustrate-common-types-of-adjusting-entries",
+      "seccion": "4.2 Proceso de ajuste"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-estados-ajustes",
+    "formula": "depreciacion-linea-recta"
+  },
+  {
+    "id": "ej-cg-ajuste-mensual",
+    "materia": "contabilidad-general",
+    "enunciado": "Una consultora compró computadoras por USD 4.800 el 1 de enero, sin valor residual y con 3 años de vida útil. ¿Qué depreciación ajusta cada mes?",
+    "datos": {
+      "C": 4800,
+      "VR": 0,
+      "n": 36
+    },
+    "calculo": "(C - VR) / n",
+    "respuesta": 133.33,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Vida útil en meses = 3 × 12 = 36",
+      "D mensual = (4.800 − 0) ÷ 36 = 133,33"
+    ],
+    "pistas": [
+      "Pasa la vida útil a meses.",
+      "Sin valor residual, todo el costo se deprecia."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/4-2-discuss-the-adjustment-process-and-illustrate-common-types-of-adjusting-entries",
+      "seccion": "4.2 Proceso de ajuste"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-estados-ajustes",
+    "formula": "depreciacion-linea-recta"
+  },
+  {
+    "id": "ej-cg-perdida",
+    "materia": "contabilidad-general",
+    "enunciado": "Una cafetería tuvo ingresos de USD 26.800 y gastos por 28.150 entre insumos, sueldos, arriendo y servicios. ¿Cuál fue su resultado del período?",
+    "datos": {
+      "I": 26800,
+      "G": 28150
+    },
+    "calculo": "I - G",
+    "respuesta": -1350,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "UN = I − G",
+      "UN = 26.800 − 28.150 = −1.350,00: pérdida del período"
+    ],
+    "pistas": [
+      "Si los gastos superan a los ingresos, el resultado es negativo.",
+      "Una pérdida reduce el patrimonio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-1-describe-the-income-statement-statement-of-owners-equity-balance-sheet-and-statement-of-cash-flows-and-how-they-interrelate",
+      "seccion": "2.1 Estado de resultados"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-estados-resultados",
+    "formula": "utilidad-neta"
+  },
+  {
+    "id": "ej-cg-situacion-activo",
+    "materia": "contabilidad-general",
+    "enunciado": "Al 31 de diciembre una distribuidora presenta pasivos por USD 37.400 y un patrimonio de 58.900. ¿Cuánto debe sumar el activo de su estado de situación?",
+    "datos": {
+      "P": 37400,
+      "Pt": 58900
+    },
+    "calculo": "P + Pt",
+    "respuesta": 96300,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "A = P + Pt",
+      "A = 37.400 + 58.900 = 96.300,00"
+    ],
+    "pistas": [
+      "El estado de situación siempre cumple la ecuación contable.",
+      "Suma lo que se debe y lo que es de los dueños."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-3-prepare-an-income-statement-statement-of-owners-equity-and-balance-sheet",
+      "seccion": "2.3 Preparación de los estados"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-estados-situacion",
+    "formula": "ecuacion-contable"
+  },
+  {
+    "id": "ej-cg-situacion-patrimonio",
+    "materia": "contabilidad-general",
+    "enunciado": "Un estado de situación muestra activos corrientes por USD 24.600, activos no corrientes por 41.200 y pasivos por 29.750. ¿Cuál es el patrimonio?",
+    "datos": {
+      "A": [
+        24600,
+        41200
+      ],
+      "P": 29750
+    },
+    "calculo": "SUM(A) - P",
+    "respuesta": 36050,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "A = 24.600 + 41.200 = 65.800",
+      "Pt = 65.800 − 29.750 = 36.050,00"
+    ],
+    "pistas": [
+      "Primero suma los dos grupos de activos.",
+      "Luego resta el pasivo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/2-3-prepare-an-income-statement-statement-of-owners-equity-and-balance-sheet",
+      "seccion": "2.3 Preparación de los estados"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-estados-situacion",
+    "formula": "patrimonio"
+  },
+  {
+    "id": "ej-cg-ventas-netas",
+    "materia": "contabilidad-general",
+    "enunciado": "Una papelería vendió USD 18.400 en el mes; sus clientes devolvieron mercadería por 650 y se concedieron descuentos por pronto pago de 240. ¿Cuáles son sus ventas netas?",
+    "datos": {
+      "VB": 18400,
+      "Dv": 650,
+      "Ds": 240
+    },
+    "calculo": "VB - Dv - Ds",
+    "respuesta": 17510,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "VN = VB − Dv − Ds",
+      "VN = 18.400 − 650 − 240 = 17.510,00"
+    ],
+    "pistas": [
+      "Las devoluciones y los descuentos en ventas restan.",
+      "Las ventas netas son las que de verdad quedan."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-7-appendix-analyze-and-record-transactions-for-merchandise-purchases-and-sales-using-the-periodic-inventory-system",
+      "seccion": "6.7 Compras y ventas en el sistema periódico"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-mercaderias-netas",
+    "formula": "ventas-netas"
+  },
+  {
+    "id": "ej-cg-compras-netas",
+    "materia": "contabilidad-general",
+    "enunciado": "Una tienda compró mercadería por USD 9.800, pagó fletes por 320, devolvió productos dañados por 450 y obtuvo descuentos por 196. ¿Cuáles son sus compras netas?",
+    "datos": {
+      "Co": 9800,
+      "Fl": 320,
+      "Dc": 450,
+      "Dd": 196
+    },
+    "calculo": "Co + Fl - Dc - Dd",
+    "respuesta": 9474,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "CN = Co + Fl − Dc − Dd",
+      "CN = 9.800 + 320 − 450 − 196 = 9.474,00"
+    ],
+    "pistas": [
+      "Los fletes en compras se suman al costo.",
+      "Las devoluciones y los descuentos en compras restan."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "url": "https://openstax.org/books/principles-financial-accounting/pages/6-7-appendix-analyze-and-record-transactions-for-merchandise-purchases-and-sales-using-the-periodic-inventory-system",
+      "seccion": "6.7 Compras y ventas en el sistema periódico"
+    },
+    "actualizado_en": "2026-10-26",
+    "subtema": "cg-mercaderias-netas",
+    "formula": "compras-netas"
   }
 ]

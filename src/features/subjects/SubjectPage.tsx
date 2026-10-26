@@ -11,6 +11,7 @@ import {
   resolveFuente,
 } from '../../data/content';
 import { NotFoundPage } from '../../app/Fallbacks';
+import { ESTANDAR, materiaCoverage } from '../../domain/content/coverage';
 import { getTool } from '../../domain/tools/catalog';
 import { useAsync, useDocumentTitle } from '../../ui/hooks';
 import { Icon } from '../../ui/icons';
@@ -56,6 +57,7 @@ export default function SubjectPage() {
   const mine = profile.materias.includes(materia.id);
   const subtopicCount = temario.temas.reduce((sum, t) => sum + t.subtemas.length, 0);
   const careers = carrerasDeMateria(materia.id);
+  const coverage = materiaCoverage(materia, temario, ejercicios);
 
   const sources = new Map<string, { titulo: string; autor: string; url: string }>();
   for (const tema of temario.temas) {
@@ -130,6 +132,31 @@ export default function SubjectPage() {
           </span>
         }
       />
+
+      {!coverage.cumple ? (
+        <aside
+          aria-label="Cobertura de esta materia"
+          className="card flex flex-wrap items-center justify-between gap-3 border-dashed p-4 text-sm"
+        >
+          <p className="text-ink-2">
+            <span className="font-semibold text-ink">
+              Esta materia tiene {coverage.unidades} de {coverage.unidadesObjetivo} unidades
+            </span>{' '}
+            y {coverage.subtemas} subtemas: todavía no llega al estándar de ÁBACO ({ESTANDAR.unidadesMin} a{' '}
+            {ESTANDAR.unidadesMax} unidades con {ESTANDAR.subtemasPorUnidadMin} a{' '}
+            {ESTANDAR.subtemasPorUnidadMax} subtemas cada una y 2 ejercicios por subtema de cálculo). Avance:{' '}
+            {Math.round(coverage.avance * 100)} %.
+          </p>
+          <span className="flex flex-wrap gap-3">
+            <AppLink to="/cobertura" className="link-red">
+              Ver la cobertura
+            </AppLink>
+            <AppLink to="/sugerencias" className="link-red">
+              Aportar apuntes
+            </AppLink>
+          </span>
+        </aside>
+      ) : null}
 
       <section aria-labelledby="temario">
         <h2 id="temario" className="mb-4 font-display text-2xl font-semibold">

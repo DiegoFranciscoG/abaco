@@ -76,7 +76,16 @@ export default function MateriasPage() {
       <PageHeader
         eyebrow="Materias"
         title="Todas las materias, tema por tema"
-        subtitle={`${materias.length} materias del área económica y administrativa, ordenadas por carrera y ciclo, cada una con temas y subtemas explicados y una fuente citada en cada subtema. Marca las que llevas para tenerlas a mano.`}
+        subtitle={
+          <>
+            {materias.length} materias del área económica y administrativa, ordenadas por carrera y ciclo,
+            cada una con temas y subtemas explicados y una fuente citada en cada subtema. Marca las que llevas
+            para tenerlas a mano.{' '}
+            <AppLink to="/cobertura" className="link-red">
+              ¿Qué tan completa está cada una?
+            </AppLink>
+          </>
+        }
       />
 
       <CareerCycle profile={profile} />
