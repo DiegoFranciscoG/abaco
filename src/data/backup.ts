@@ -160,7 +160,7 @@ const tarjetaSchema = z.object({
   mazo: z.string().min(1).max(80),
   frente: z.string().min(1).max(500),
   reverso: z.string().min(1).max(2000),
-  origen: z.enum(['glosario', 'subtema', 'propia']),
+  origen: z.enum(['glosario', 'subtema', 'propia', 'pdf']),
   ef: z.number().min(1.3).max(5),
   intervalo: z.number().int().min(0).max(36500),
   repeticiones: z.number().int().min(0).max(10_000),
@@ -194,6 +194,25 @@ const tableroSchema = z.object({
   actualizadoEn: isoDateTime,
 });
 
+export const PDF_TEXT_MAX = 400_000;
+const pdfSchema = z.object({
+  id: shortText,
+  nombre: z.string().min(1).max(200),
+  materiaId: contentId,
+  paginas: z.number().int().min(1).max(2000),
+  texto: z.string().max(PDF_TEXT_MAX),
+  creadoEn: isoDateTime,
+});
+const examenSchema = z.object({
+  id: shortText,
+  materiaId: contentId,
+  fuentes: z.enum(['abaco', 'pdf', 'mixto']),
+  total: z.number().int().min(1).max(200),
+  correctas: z.number().int().min(0).max(200),
+  segundos: z.number().int().min(0).max(86_400),
+  fecha: isoDateTime,
+});
+
 const datosV3 = z.object({
   perfil: z.array(perfilSchema).max(1),
   apuntes: z.array(apunteSchema),
@@ -208,8 +227,13 @@ const datosV3 = z.object({
   tarjetas: z.array(tarjetaSchema),
   tableros: z.array(tableroSchema),
 });
-export type BackupData = z.infer<typeof datosV3>;
+const datosV4 = datosV3.extend({
+  pdfs: z.array(pdfSchema).max(50),
+  examenes: z.array(examenSchema).max(2000),
+});
+export type BackupData = z.infer<typeof datosV4>;
 
+/** Version 3 files: the study area (PDF texts and exams) did not exist yet. */
 const backupV3Schema = z.object({
   formato: z.literal(BACKUP_FORMAT),
   version: z.literal(3),
@@ -217,7 +241,15 @@ const backupV3Schema = z.object({
   dispositivo: z.string().max(100),
   datos: datosV3,
 });
-export type Backup = z.infer<typeof backupV3Schema>;
+
+const backupV4Schema = z.object({
+  formato: z.literal(BACKUP_FORMAT),
+  version: z.literal(4),
+  exportadoEn: isoDateTime,
+  dispositivo: z.string().max(100),
+  datos: datosV4,
+});
+export type Backup = z.infer<typeof backupV4Schema>;
 
 /** Version 2 files: subjects pointed to university curricula and the study tools did not exist yet. */
 const backupV2Schema = z.object({
@@ -266,7 +298,7 @@ export async function createBackup(db: AbacoDB = getDb(), nowDate = new Date()):
   ) as BackupData;
   return {
     formato: BACKUP_FORMAT,
-    version: SCHEMA_VERSION as 3,
+    version: SCHEMA_VERSION as 4,
     exportadoEn: nowDate.toISOString(),
     dispositivo: await getDeviceId(db),
     datos,
@@ -338,7 +370,16 @@ export function parseBackup(text: string): Backup {
       },
     };
   }
-  const parsed = backupV3Schema.safeParse(raw);
+  if ((raw as { version?: unknown }).version === 3) {
+    const v3 = backupV3Schema.safeParse(raw);
+    if (!v3.success) {
+      const first = v3.error.issues[0];
+      const where = first ? ` (${first.path.join('.')})` : '';
+      throw new BackupError(`El archivo no es un respaldo válido de ÁBACO${where}.`);
+    }
+    raw = { ...v3.data, version: 4, datos: { ...v3.data.datos, pdfs: [], examenes: [] } };
+  }
+  const parsed = backupV4Schema.safeParse(raw);
   if (!parsed.success) {
     const first = parsed.error.issues[0];
     const where = first ? ` (${first.path.join('.')})` : '';

@@ -7,7 +7,9 @@ import type {
   Coleccion,
   Diario,
   Documento,
+  DocumentoPdf,
   Estrella,
+  Examen,
   Hoja,
   Intento,
   MetaRow,
@@ -18,7 +20,7 @@ import type {
 } from './types';
 
 export const DB_NAME = 'abaco';
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 
 /** Version 1 (development release): notes could only be attached to a subject. */
 export const SCHEMA_V1 = {
@@ -51,6 +53,13 @@ export const SCHEMA_V3 = {
   diarios: 'id, actualizadoEn',
   tarjetas: 'id, mazo, proximaRevision',
   tableros: 'id, tipo, actualizadoEn',
+};
+
+/** Version 4: the study area keeps the text of the student's PDFs and the results of practice exams. */
+export const SCHEMA_V4 = {
+  ...SCHEMA_V3,
+  pdfs: 'id, materiaId, creadoEn',
+  examenes: 'id, materiaId, fecha',
 };
 
 type Row = Record<string, unknown>;
@@ -151,12 +160,15 @@ export class AbacoDB extends Dexie {
   diarios!: Table<Diario, string>;
   tarjetas!: Table<Tarjeta, string>;
   tableros!: Table<Tablero, string>;
+  pdfs!: Table<DocumentoPdf, string>;
+  examenes!: Table<Examen, string>;
 
   constructor(name: string = DB_NAME) {
     super(name);
     this.version(1).stores(SCHEMA_V1);
     this.version(2).stores(SCHEMA_V2).upgrade(upgradeToV2);
     this.version(3).stores(SCHEMA_V3).upgrade(upgradeToV3);
+    this.version(4).stores(SCHEMA_V4);
   }
 }
 
@@ -174,6 +186,8 @@ export const BACKUP_TABLES = [
   'diarios',
   'tarjetas',
   'tableros',
+  'pdfs',
+  'examenes',
 ] as const;
 export type BackupTable = (typeof BACKUP_TABLES)[number];
 

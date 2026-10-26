@@ -465,6 +465,8 @@ export async function countUserData(db: AbacoDB = getDb()): Promise<Record<strin
     diarios,
     tarjetas,
     tableros,
+    pdfs,
+    examenes,
   ] = await Promise.all([
     db.apuntes.count(),
     db.estrellas.count(),
@@ -476,6 +478,8 @@ export async function countUserData(db: AbacoDB = getDb()): Promise<Record<strin
     db.diarios.count(),
     db.tarjetas.count(),
     db.tableros.count(),
+    db.pdfs.count(),
+    db.examenes.count(),
   ]);
   return {
     apuntes,
@@ -488,6 +492,8 @@ export async function countUserData(db: AbacoDB = getDb()): Promise<Record<strin
     diarios,
     tarjetas,
     tableros,
+    pdfs,
+    examenes,
   };
 }
 

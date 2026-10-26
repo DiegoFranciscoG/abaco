@@ -151,7 +151,7 @@ export interface Tarjeta {
   mazo: string;
   frente: string;
   reverso: string;
-  origen: 'glosario' | 'subtema' | 'propia';
+  origen: 'glosario' | 'subtema' | 'propia' | 'pdf';
   ef: number;
   intervalo: number;
   repeticiones: number;
@@ -174,6 +174,27 @@ export interface Tablero {
   decision?: { criterios: CriterioDecision[]; opciones: string[]; puntajes: number[][] };
   creadoEn: string;
   actualizadoEn: string;
+}
+
+/** Text of a PDF the student loaded in the study area. The file itself is never stored or sent. */
+export interface DocumentoPdf {
+  id: string;
+  nombre: string;
+  materiaId: string;
+  paginas: number;
+  texto: string;
+  creadoEn: string;
+}
+
+/** Result of a practice exam in the study area. */
+export interface Examen {
+  id: string;
+  materiaId: string;
+  fuentes: 'abaco' | 'pdf' | 'mixto';
+  total: number;
+  correctas: number;
+  segundos: number;
+  fecha: string;
 }
 
 export interface CacheApi {

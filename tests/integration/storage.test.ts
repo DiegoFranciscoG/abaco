@@ -335,7 +335,7 @@ describe('T-05: schema migrations keep every note', () => {
 
     const upgraded = new AbacoDB(legacyName);
     await upgraded.open();
-    expect(upgraded.verno).toBe(3);
+    expect(upgraded.verno).toBe(4);
     const notes = await listNotes({}, upgraded);
     expect(notes).toHaveLength(2);
     // A known curriculum subject becomes a catalog subject; an unknown one becomes a free note (nothing is lost).
@@ -427,7 +427,7 @@ describe('version 3: subject catalog instead of curricula', () => {
 
     const upgraded = new AbacoDB(legacyName);
     await upgraded.open();
-    expect(upgraded.verno).toBe(3);
+    expect(upgraded.verno).toBe(4);
     const profile = await getProfile(upgraded);
     // The old university-specific career and cycle are dropped; the new generic ones start empty.
     expect(profile).toMatchObject({ materias: [], carrera: null, ciclo: null, tema: 'dark' });
@@ -489,7 +489,7 @@ describe('version 3: subject catalog instead of curricula', () => {
       },
     };
     const parsed = parseBackup(JSON.stringify(v2));
-    expect(parsed.version).toBe(3);
+    expect(parsed.version).toBe(4);
     expect(parsed.datos.perfil[0]).toMatchObject({ materias: [], sintaxisExcel: 'en' });
     expect(parsed.datos.apuntes[0]).toMatchObject({ refTipo: 'materia', refId: 'estadistica-descriptiva' });
     expect(parsed.datos.documentos).toEqual([]);
@@ -540,7 +540,7 @@ describe('T-06: backup and restore leave an identical state', () => {
       },
     };
     const parsed = parseBackup(JSON.stringify(v1));
-    expect(parsed.version).toBe(3);
+    expect(parsed.version).toBe(4);
     expect(parsed.datos.apuntes[0]).toMatchObject({ refTipo: 'libre', refId: 'general', etiquetas: [] });
     expect(parsed.datos.perfil[0]).toMatchObject({ materias: [] });
     await restoreBackup(parsed, 'reemplazar', db);
