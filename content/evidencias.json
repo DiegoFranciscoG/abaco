@@ -2463,5 +2463,99 @@
       "absorption costing",
       "period"
     ]
+  },
+  {
+    "id": "cf-resultados-multiple",
+    "palabras": [
+      "multi-step",
+      "gross margin",
+      "operating"
+    ]
+  },
+  {
+    "id": "cf-razones-inventario",
+    "palabras": [
+      "inventory turnover",
+      "days' sales in inventory"
+    ]
+  },
+  {
+    "id": "cf-tangibles-intangibles",
+    "palabras": [
+      "tangible",
+      "intangible",
+      "goodwill"
+    ]
+  },
+  {
+    "id": "cf-control-interno",
+    "palabras": [
+      "internal controls",
+      "fraud"
+    ]
+  },
+  {
+    "id": "cf-conciliacion",
+    "palabras": [
+      "bank reconciliation",
+      "deposit in transit",
+      "outstanding check",
+      "service fee"
+    ]
+  },
+  {
+    "id": "cf-incobrables",
+    "palabras": [
+      "allowance for doubtful accounts",
+      "balance sheet method",
+      "income statement method"
+    ]
+  },
+  {
+    "id": "cf-razones-cobrar",
+    "palabras": [
+      "accounts receivable turnover",
+      "number of days' sales in receivables"
+    ]
+  },
+  {
+    "id": "cf-pasivos-corrientes",
+    "palabras": [
+      "current liabilities",
+      "unearned revenue",
+      "current portion"
+    ]
+  },
+  {
+    "id": "cf-interes-efectivo",
+    "palabras": [
+      "effective-interest",
+      "amortization",
+      "discount"
+    ]
+  },
+  {
+    "id": "cf-emision-acciones",
+    "palabras": [
+      "par value",
+      "additional paid-in capital",
+      "treasury stock"
+    ]
+  },
+  {
+    "id": "cf-dividendos",
+    "palabras": [
+      "cash dividend",
+      "stock dividend",
+      "stock split"
+    ]
+  },
+  {
+    "id": "cf-upa",
+    "palabras": [
+      "earnings per share",
+      "preferred",
+      "weighted average"
+    ]
   }
 ]

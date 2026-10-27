@@ -5824,5 +5824,663 @@
     },
     "materia": "contabilidad-costos",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-margen-bruto",
+    "subtema": "cf-tamano-comun",
+    "formula": "margen-bruto",
+    "enunciado": "Una empresa vendió USD 250.000 y su costo de ventas fue USD 160.000. En un estado de tamaño común, ¿qué proporción de las ventas es la utilidad bruta?",
+    "datos": {
+      "UB": 90000,
+      "VN": 250000
+    },
+    "calculo": "UB / VN",
+    "respuesta": 0.36,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Utilidad bruta = 250.000 − 160.000 = 90.000",
+      "Margen bruto = 90.000 ÷ 250.000 = 0,36 (36 %)"
+    ],
+    "pistas": [
+      "En el tamaño común, todo se divide para las ventas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "5.7 Common-Size Statements"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-margen-neto",
+    "subtema": "cf-tamano-comun",
+    "formula": "margen-neto",
+    "enunciado": "La misma empresa obtuvo una utilidad neta de USD 22.500 sobre ventas de USD 250.000. ¿Cuál es su margen neto?",
+    "datos": {
+      "UN": 22500,
+      "VN": 250000
+    },
+    "calculo": "UN / VN",
+    "respuesta": 0.09,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Margen neto = 22.500 ÷ 250.000 = 0,09 (9 %)"
+    ],
+    "pistas": [
+      "Divide la utilidad neta para las ventas netas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "5.7 Common-Size Statements"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-peps",
+    "subtema": "cf-inv-metodos",
+    "formula": "costo-ventas-peps",
+    "enunciado": "Una ferretería compró 100 taladros a USD 10 y luego 200 a USD 12. Vendió 150. Con el método PEPS, ¿cuál es el costo de ventas?",
+    "datos": {
+      "q1": 100,
+      "c1": 10,
+      "q2": 200,
+      "c2": 12,
+      "v": 150
+    },
+    "calculo": "q1 * c1 + (v - q1) * c2",
+    "respuesta": 1600,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Primero salen los 100 a 10: 100 × 10 = 1.000",
+      "Luego 50 a 12: 50 × 12 = 600",
+      "Costo de ventas = 1.000 + 600 = 1.600"
+    ],
+    "pistas": [
+      "PEPS: lo primero que entra es lo primero que sale."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "10.1 Basic Inventory Valuation Methods"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-promedio",
+    "subtema": "cf-inv-metodos",
+    "formula": "costo-promedio-ponderado",
+    "enunciado": "Con las mismas compras (100 a USD 10 y 200 a USD 12) y 150 unidades vendidas, ¿cuál es el costo de ventas por promedio ponderado (sistema periódico)?",
+    "datos": {
+      "q1": 100,
+      "c1": 10,
+      "q2": 200,
+      "c2": 12,
+      "v": 150
+    },
+    "calculo": "(q1 * c1 + q2 * c2) / (q1 + q2) * v",
+    "respuesta": 1700,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Costo total = 1.000 + 2.400 = 3.400",
+      "Costo promedio = 3.400 ÷ 300 = 11,3333",
+      "Costo de ventas = 150 × 11,3333 = 1.700"
+    ],
+    "pistas": [
+      "Divide el costo total para las unidades disponibles."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "10.1 Basic Inventory Valuation Methods"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-costo-ventas-periodico",
+    "subtema": "cf-inv-sistemas",
+    "formula": "costo-ventas-periodico",
+    "enunciado": "Una tienda empezó con inventario de USD 12.000, compró 45.000 y terminó con 15.000. ¿Cuál es su costo de ventas?",
+    "datos": {
+      "II": 12000,
+      "C": 45000,
+      "IF": 15000
+    },
+    "calculo": "II + C - IF",
+    "respuesta": 42000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "CV = 12.000 + 45.000 − 15.000 = 42.000"
+    ],
+    "pistas": [
+      "Disponible para la venta menos inventario final."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "10.2 Periodic Method"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-inventario-final",
+    "subtema": "cf-inv-sistemas",
+    "formula": "inventario-final",
+    "enunciado": "Una librería empezó con inventario de USD 8.000, compró 30.000 y su costo de ventas fue 26.500. ¿Cuál es su inventario final?",
+    "datos": {
+      "II": 8000,
+      "C": 30000,
+      "CV": 26500
+    },
+    "calculo": "II + C - CV",
+    "respuesta": 11500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "IF = 8.000 + 30.000 − 26.500 = 11.500"
+    ],
+    "pistas": [
+      "Lo disponible menos lo vendido."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "10.3 Perpetual Method"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-utilidad-operativa",
+    "subtema": "cf-resultados-multiple",
+    "enunciado": "Una distribuidora vendió USD 180.000, su costo de ventas fue 108.000 y sus gastos de operación 42.000. ¿Cuál es su utilidad operativa?",
+    "datos": {
+      "V": 180000,
+      "CV": 108000,
+      "GO": 42000
+    },
+    "calculo": "V - CV - GO",
+    "respuesta": 30000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Utilidad bruta = 180.000 − 108.000 = 72.000",
+      "Utilidad operativa = 72.000 − 42.000 = 30.000"
+    ],
+    "pistas": [
+      "Primero calcula la utilidad bruta."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "6.6 Multi-Step Income Statements"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-utilidad-bruta",
+    "subtema": "cf-resultados-multiple",
+    "formula": "utilidad-bruta",
+    "enunciado": "Una tienda tuvo ventas netas de USD 96.500 y costo de ventas de 61.800. ¿Cuál es su utilidad bruta?",
+    "datos": {
+      "VN": 96500,
+      "CV": 61800
+    },
+    "calculo": "VN - CV",
+    "respuesta": 34700,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "UB = 96.500 − 61.800 = 34.700"
+    ],
+    "pistas": [
+      "Ventas netas menos costo de ventas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "6.6 Multi-Step Income Statements"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-rotacion-inventario",
+    "subtema": "cf-razones-inventario",
+    "formula": "rotacion-inventarios",
+    "enunciado": "Una tienda tuvo costo de ventas de USD 108.000 e inventarios de 16.000 al inicio y 20.000 al final del año. ¿Cuál es su rotación de inventarios?",
+    "datos": {
+      "CV": 108000,
+      "Ii": 16000,
+      "If": 20000
+    },
+    "calculo": "CV / ((Ii + If) / 2)",
+    "respuesta": 6,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Inventario promedio = (16.000 + 20.000) ÷ 2 = 18.000",
+      "Rotación = 108.000 ÷ 18.000 = 6"
+    ],
+    "pistas": [
+      "Usa el inventario promedio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "10.5 Inventory Ratios"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-dias-inventario",
+    "subtema": "cf-razones-inventario",
+    "formula": "dias-inventario",
+    "enunciado": "Si la rotación de inventarios es 6 veces al año, ¿cuántos días de inventario tiene la tienda?",
+    "datos": {
+      "R": 6
+    },
+    "calculo": "365 / R",
+    "respuesta": 60.83,
+    "unidad": "días",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Días = 365 ÷ 6 = 60,83"
+    ],
+    "pistas": [
+      "Divide 365 para la rotación."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "10.5 Inventory Ratios"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-conciliacion-banco",
+    "subtema": "cf-conciliacion",
+    "enunciado": "El estado de cuenta muestra USD 8.450; hay depósitos en tránsito por 1.200 y cheques pendientes de cobro por 2.350. ¿Cuál es el saldo bancario ajustado?",
+    "datos": {
+      "S": 8450,
+      "DT": 1200,
+      "CP": 2350
+    },
+    "calculo": "S + DT - CP",
+    "respuesta": 7300,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Saldo ajustado = 8.450 + 1.200 − 2.350 = 7.300"
+    ],
+    "pistas": [
+      "Al saldo del banco se suman depósitos en tránsito y se restan cheques pendientes."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "8.6 Bank Reconciliation"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-conciliacion-libros",
+    "subtema": "cf-conciliacion",
+    "enunciado": "Los libros muestran USD 7.380 de efectivo. El banco cobró USD 95 de comisiones y acreditó USD 15 de intereses que la empresa no había registrado. ¿Cuál es el saldo en libros ajustado?",
+    "datos": {
+      "L": 7380,
+      "C": 95,
+      "I": 15
+    },
+    "calculo": "L - C + I",
+    "respuesta": 7300,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Saldo ajustado = 7.380 − 95 + 15 = 7.300"
+    ],
+    "pistas": [
+      "Las comisiones restan; los intereses ganados suman."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "8.6 Bank Reconciliation"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-incobrables-ventas",
+    "subtema": "cf-incobrables",
+    "enunciado": "Una empresa vendió USD 400.000 a crédito y estima incobrable el 1,5 % de esas ventas (enfoque del estado de resultados). ¿Cuál es el gasto por cuentas incobrables?",
+    "datos": {
+      "VC": 400000,
+      "p": 0.015
+    },
+    "calculo": "VC * p",
+    "respuesta": 6000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Gasto = 400.000 × 0,015 = 6.000"
+    ],
+    "pistas": [
+      "Aplica el porcentaje a las ventas a crédito."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "9.2 Uncollectible Accounts"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-incobrables-balance",
+    "subtema": "cf-incobrables",
+    "enunciado": "Las cuentas por cobrar suman USD 85.000 y se estima incobrable el 4 %. La provisión ya tiene un saldo de USD 900. ¿Cuánto es el ajuste del período (enfoque del balance)?",
+    "datos": {
+      "CxC": 85000,
+      "p": 0.04,
+      "saldo": 900
+    },
+    "calculo": "CxC * p - saldo",
+    "respuesta": 2500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Provisión requerida = 85.000 × 0,04 = 3.400",
+      "Ajuste = 3.400 − 900 = 2.500"
+    ],
+    "pistas": [
+      "Se ajusta la provisión hasta el monto requerido."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "9.2 Uncollectible Accounts"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-rotacion-cobrar",
+    "subtema": "cf-razones-cobrar",
+    "formula": "rotacion-cuentas-cobrar",
+    "enunciado": "Una empresa vendió USD 360.000 a crédito y su promedio de cuentas por cobrar fue USD 45.000. ¿Cuál es su rotación de cuentas por cobrar?",
+    "datos": {
+      "VC": 360000,
+      "CxC": 45000
+    },
+    "calculo": "VC / CxC",
+    "respuesta": 8,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Rotación = 360.000 ÷ 45.000 = 8"
+    ],
+    "pistas": [
+      "Ventas a crédito ÷ cuentas por cobrar promedio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "9.3 Receivables Ratios"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-periodo-cobro",
+    "subtema": "cf-razones-cobrar",
+    "formula": "periodo-cobro",
+    "enunciado": "Con una rotación de cuentas por cobrar de 8 veces al año, ¿cuál es el período promedio de cobro?",
+    "datos": {
+      "R": 8
+    },
+    "calculo": "365 / R",
+    "respuesta": 45.63,
+    "unidad": "días",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Período = 365 ÷ 8 = 45,63"
+    ],
+    "pistas": [
+      "Divide 365 para la rotación."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "9.3 Receivables Ratios"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-interes-efectivo",
+    "subtema": "cf-interes-efectivo",
+    "enunciado": "Un bono de USD 10.000 con cupón anual de USD 500 tiene un valor en libros de USD 9.578,76 y una tasa de mercado de 6 %. ¿Cuál es el gasto por intereses del primer año?",
+    "datos": {
+      "VL": 9578.76,
+      "r": 0.06
+    },
+    "calculo": "VL * r",
+    "respuesta": 574.73,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Gasto = 9.578,76 × 0,06 = 574,73"
+    ],
+    "pistas": [
+      "Valor en libros por tasa de mercado."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "13.2 Effective-Interest Method"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-amortizacion-descuento",
+    "subtema": "cf-interes-efectivo",
+    "enunciado": "En el mismo bono (gasto por intereses de USD 574,73 y cupón de 500), ¿cuánto se amortiza del descuento en el primer año?",
+    "datos": {
+      "G": 574.73,
+      "C": 500
+    },
+    "calculo": "G - C",
+    "respuesta": 74.73,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Amortización = 574,73 − 500 = 74,73"
+    ],
+    "pistas": [
+      "Gasto por intereses menos cupón pagado."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "13.2 Effective-Interest Method"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-prima-acciones",
+    "subtema": "cf-emision-acciones",
+    "enunciado": "Una compañía emite 5.000 acciones de valor nominal USD 1 a USD 3,50 cada una. ¿Cuánto se registra como prima en colocación de acciones?",
+    "datos": {
+      "q": 5000,
+      "VN": 1,
+      "P": 3.5
+    },
+    "calculo": "q * (P - VN)",
+    "respuesta": 12500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Prima por acción = 3,5 − 1 = 2,5",
+      "Prima total = 5.000 × 2,5 = 12.500"
+    ],
+    "pistas": [
+      "La prima es el exceso sobre el valor nominal."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "14.2 Issuance and Repurchase of Stock"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-capital-social",
+    "subtema": "cf-emision-acciones",
+    "enunciado": "Una S.A.S. emite 20.000 acciones de valor nominal USD 0,50 a USD 2 cada una. ¿Cuánto efectivo recibe en total?",
+    "datos": {
+      "q": 20000,
+      "P": 2
+    },
+    "calculo": "q * P",
+    "respuesta": 40000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Efectivo = 20.000 × 2 = 40.000 (capital social 10.000 y prima 30.000)"
+    ],
+    "pistas": [
+      "El efectivo es el precio de colocación por el número de acciones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "14.2 Issuance and Repurchase of Stock"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-dividendo-efectivo",
+    "subtema": "cf-dividendos",
+    "enunciado": "Una compañía con 120.000 acciones en circulación declara un dividendo en efectivo de USD 0,40 por acción. ¿Cuánto pagará?",
+    "datos": {
+      "q": 120000,
+      "d": 0.4
+    },
+    "calculo": "q * d",
+    "respuesta": 48000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Dividendo = 120.000 × 0,4 = 48.000"
+    ],
+    "pistas": [
+      "Multiplica por las acciones en circulación."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "14.3 Dividends and Stock Splits"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-dividendo-acciones",
+    "subtema": "cf-dividendos",
+    "enunciado": "La misma compañía (120.000 acciones en circulación) declara un dividendo en acciones de 10 %. ¿Cuántas acciones nuevas emitirá?",
+    "datos": {
+      "q": 120000,
+      "p": 0.1
+    },
+    "calculo": "q * p",
+    "respuesta": 12000,
+    "unidad": "acciones",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Acciones nuevas = 120.000 × 0,1 = 12.000"
+    ],
+    "pistas": [
+      "El dividendo en acciones es un porcentaje de las acciones en circulación."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "14.3 Dividends and Stock Splits"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-upa",
+    "subtema": "cf-upa",
+    "enunciado": "Una compañía ganó USD 250.000, pagó USD 20.000 de dividendos preferentes y tuvo en promedio 115.000 acciones ordinarias. ¿Cuál es su utilidad por acción?",
+    "datos": {
+      "UN": 250000,
+      "DP": 20000,
+      "A": 115000
+    },
+    "calculo": "(UN - DP) / A",
+    "respuesta": 2,
+    "unidad": "USD por acción",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Utilidad para ordinarias = 250.000 − 20.000 = 230.000",
+      "UPA = 230.000 ÷ 115.000 = 2"
+    ],
+    "pistas": [
+      "Resta primero los dividendos preferentes."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "14.5 Earnings per Share"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cf-upa-2",
+    "subtema": "cf-upa",
+    "enunciado": "Una compañía sin acciones preferentes ganó USD 480.000 y tuvo un promedio de 200.000 acciones ordinarias. ¿Cuál es su UPA?",
+    "datos": {
+      "UN": 480000,
+      "A": 200000
+    },
+    "calculo": "UN / A",
+    "respuesta": 2.4,
+    "unidad": "USD por acción",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "UPA = 480.000 ÷ 200.000 = 2,4"
+    ],
+    "pistas": [
+      "Sin preferentes, toda la utilidad es de las ordinarias."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfa",
+      "seccion": "14.5 Earnings per Share"
+    },
+    "materia": "contabilidad-financiera",
+    "actualizado_en": "2026-10-26"
   }
 ]

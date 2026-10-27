@@ -68,6 +68,29 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/5-7-common-size-statements",
             "seccion": "5.7 Common-Size Statements"
           }
+        },
+        {
+          "id": "cf-resultados-multiple",
+          "nombre": "Estado de resultados de pasos múltiples",
+          "explicacion": "Una empresa comercial puede presentar su estado de resultados en formato simple (todos los ingresos menos todos los gastos) o de pasos múltiples. El de pasos múltiples muestra resultados intermedios útiles para analizar: ventas netas menos costo de ventas da la utilidad bruta; la utilidad bruta menos los gastos de operación (ventas y administración) da la utilidad operativa; luego se suman o restan otros ingresos y gastos para llegar a la utilidad antes de impuestos. Así se ve si el problema está en el margen de los productos o en los gastos.",
+          "ejemplo": "Una distribuidora vendió USD 180.000, su costo de ventas fue 108.000 y sus gastos de operación 42.000. Utilidad bruta = 180.000 − 108.000 = 72.000. Utilidad operativa = 72.000 − 42.000 = 30.000 dólares.",
+          "puntos_clave": [
+            "Utilidad bruta = ventas netas − costo de ventas.",
+            "Utilidad operativa = utilidad bruta − gastos de operación.",
+            "Los resultados intermedios ayudan a ubicar los problemas."
+          ],
+          "errores_frecuentes": [
+            "Restar los gastos financieros antes de la utilidad operativa.",
+            "Confundir ventas brutas con ventas netas."
+          ],
+          "formulas": [
+            "utilidad-bruta"
+          ],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/6-6-describe-and-prepare-multi-step-and-simple-income-statements-for-merchandising-companies",
+            "seccion": "6.6 Describe and Prepare Multi-Step and Simple Income Statements for Merchandising Companies"
+          }
         }
       ]
     },
@@ -140,6 +163,30 @@
             "url": "https://openstax.org/books/principles-financial-accounting/pages/10-4-explain-and-demonstrate-the-impact-of-inventory-valuation-errors-on-the-income-statement-and-balance-sheet",
             "seccion": "10.4 Explain and Demonstrate the Impact of Inventory Valuation Errors on the Income Statement and Balance Sheet"
           }
+        },
+        {
+          "id": "cf-razones-inventario",
+          "nombre": "Rotación de inventarios y días de inventario",
+          "explicacion": "La eficiencia en el manejo de inventarios se mide con la rotación de inventarios, que es el costo de ventas dividido para el inventario promedio, y con los días de inventario, que son 365 divididos para la rotación. Una rotación alta indica que la mercadería se vende rápido y que hay poco dinero inmovilizado; una muy baja puede indicar productos obsoletos o compras excesivas. La comparación útil es con años anteriores y con empresas del mismo sector.",
+          "ejemplo": "Una tienda tuvo un costo de ventas de USD 108.000 e inventarios de 16.000 al inicio y 20.000 al final. Inventario promedio = (16.000 + 20.000) ÷ 2 = 18.000. Rotación = 108.000 ÷ 18.000 = 6 veces; días de inventario = 365 ÷ 6 = 60,83.",
+          "puntos_clave": [
+            "Rotación = costo de ventas ÷ inventario promedio.",
+            "Días de inventario = 365 ÷ rotación.",
+            "Se compara con el sector y con años anteriores."
+          ],
+          "errores_frecuentes": [
+            "Usar las ventas en lugar del costo de ventas en la rotación.",
+            "Usar solo el inventario final en lugar del promedio."
+          ],
+          "formulas": [
+            "rotacion-inventarios",
+            "dias-inventario"
+          ],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/10-5-examine-the-efficiency-of-inventory-management-using-financial-ratios",
+            "seccion": "10.5 Examine the Efficiency of Inventory Management Using Financial Ratios"
+          }
         }
       ]
     },
@@ -210,6 +257,27 @@
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/11-4-describe-accounting-for-intangible-assets-and-record-related-transactions",
             "seccion": "11.4 Describe Accounting for Intangible Assets and Record Related Transactions"
+          }
+        },
+        {
+          "id": "cf-tangibles-intangibles",
+          "nombre": "Activos tangibles e intangibles",
+          "explicacion": "Los activos de largo plazo se usan en la operación por más de un año. Los tangibles tienen forma física: terrenos, edificios, maquinaria, vehículos (en NIIF, propiedades, planta y equipo). Los intangibles no tienen forma física pero dan derechos o ventajas: software, licencias, patentes, marcas adquiridas y la plusvalía que surge al comprar un negocio. Los tangibles, salvo los terrenos, se deprecian; los intangibles con vida útil definida se amortizan, y la plusvalía no se amortiza en NIIF completas pero se revisa por deterioro.",
+          "ejemplo": "Una empresa de transporte tiene un terreno de USD 80.000, buses por 450.000 y un software de rutas comprado en 12.000. Sus tangibles suman 80.000 + 450.000 = 530.000 dólares y su intangible, 12.000. El terreno no se deprecia; los buses sí, y el software se amortiza en su vida útil.",
+          "puntos_clave": [
+            "Tangibles: forma física; intangibles: derechos.",
+            "Los terrenos no se deprecian.",
+            "Los intangibles con vida definida se amortizan."
+          ],
+          "errores_frecuentes": [
+            "Registrar como gasto un software que se usará varios años.",
+            "Depreciar el terreno junto con el edificio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/11-1-distinguish-between-tangible-and-intangible-assets",
+            "seccion": "11.1 Distinguish between Tangible and Intangible Assets"
           }
         }
       ]
@@ -295,6 +363,216 @@
             "ref": "os-pfa",
             "url": "https://openstax.org/books/principles-financial-accounting/pages/16-3-prepare-the-statement-of-cash-flows-using-the-indirect-method",
             "seccion": "16.3 Prepare the Statement of Cash Flows Using the Indirect Method"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cf-efectivo-cobrar",
+      "nombre": "Efectivo, control interno y cuentas por cobrar",
+      "orden": 5,
+      "descripcion": "Control interno, conciliación bancaria, cuentas incobrables y eficiencia en la cobranza.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cf-control-interno",
+          "nombre": "Control interno: propósito y elementos",
+          "explicacion": "El control interno es el conjunto de políticas y procedimientos que una organización aplica para proteger sus activos, asegurar que la información contable sea confiable, promover la eficiencia y cumplir las leyes. Incluye separar funciones (quien cobra no registra ni concilia), autorizar las transacciones, documentarlas, limitar el acceso físico a los activos y revisar periódicamente. Un buen control interno no elimina el riesgo de fraude o error, pero lo reduce y permite detectarlo a tiempo.",
+          "ejemplo": "En una farmacia, la misma persona cobraba, registraba las ventas y depositaba. Tras separar funciones —la cajera cobra, el contador registra y el administrador deposita y concilia— aparece una diferencia de USD 340 que antes pasaba desapercibida.",
+          "puntos_clave": [
+            "Protege activos y asegura información confiable.",
+            "Separación de funciones como principio clave.",
+            "Reduce el riesgo, no lo elimina."
+          ],
+          "errores_frecuentes": [
+            "Concentrar cobro, registro y conciliación en una sola persona.",
+            "Pensar que el control interno es solo tarea del auditor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/8-2-define-and-explain-internal-controls-and-their-purpose-within-an-organization",
+            "seccion": "8.2 Define and Explain Internal Controls and Their Purpose within an Organization"
+          }
+        },
+        {
+          "id": "cf-conciliacion",
+          "nombre": "Conciliación bancaria",
+          "explicacion": "La conciliación bancaria compara el saldo del estado de cuenta del banco con el saldo de efectivo en los libros de la empresa y explica las diferencias. Al saldo del banco se le suman los depósitos en tránsito y se le restan los cheques girados que aún no se cobran. Al saldo de libros se le restan las comisiones y débitos que cobró el banco y se le suman los intereses o créditos que la empresa no había registrado; también se corrigen errores. Ambos saldos ajustados deben coincidir, y los ajustes del lado de libros se registran con asientos.",
+          "ejemplo": "El banco muestra USD 8.450; hay depósitos en tránsito por 1.200 y cheques pendientes por 2.350. Saldo bancario ajustado = 8.450 + 1.200 − 2.350 = 7.300. Los libros muestran 7.380, con comisiones no registradas de 95 e intereses de 15: 7.380 − 95 + 15 = 7.300. Los saldos concilian.",
+          "puntos_clave": [
+            "Banco: + depósitos en tránsito − cheques pendientes.",
+            "Libros: − comisiones + intereses ± errores.",
+            "Solo los ajustes de libros se registran contablemente."
+          ],
+          "errores_frecuentes": [
+            "Registrar en libros los cheques pendientes de cobro.",
+            "Sumar las comisiones bancarias en vez de restarlas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/8-6-define-the-purpose-of-a-bank-reconciliation-and-prepare-a-bank-reconciliation-and-its-associated-journal-entries",
+            "seccion": "8.6 Define the Purpose of a Bank Reconciliation, and Prepare a Bank Reconciliation and Its Associated Journal Entries"
+          }
+        },
+        {
+          "id": "cf-incobrables",
+          "nombre": "Cuentas incobrables: estimación y provisión",
+          "explicacion": "Al vender a crédito, parte de las cuentas no se cobrará. Para presentar las cuentas por cobrar a su valor recuperable y reconocer el gasto en el período de la venta, se estima una provisión para cuentas incobrables (en NIIF 9, una pérdida crediticia esperada). Con el enfoque del estado de resultados se aplica un porcentaje a las ventas a crédito; con el del balance se estima qué parte del saldo de cuentas por cobrar no se cobrará y se ajusta la provisión hasta ese monto. Cuando una cuenta se declara incobrable, se da de baja contra la provisión.",
+          "ejemplo": "Una empresa tiene cuentas por cobrar de USD 85.000 y estima que 4 % no se cobrará: la provisión debe ser 85.000 × 0,04 = 3.400. Si la provisión ya tenía 900, el ajuste del período es 3.400 − 900 = 2.500 dólares de gasto.",
+          "puntos_clave": [
+            "Enfoque de resultados: % de las ventas a crédito.",
+            "Enfoque de balance: % del saldo por cobrar, ajustando la provisión.",
+            "Dar de baja una cuenta no afecta el gasto si ya estaba provisionada."
+          ],
+          "errores_frecuentes": [
+            "Registrar el gasto solo cuando el cliente deja de pagar.",
+            "Olvidar el saldo previo de la provisión en el enfoque de balance."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/9-2-account-for-uncollectible-accounts-using-the-balance-sheet-and-income-statement-approaches",
+            "seccion": "9.2 Account for Uncollectible Accounts Using the Balance Sheet and Income Statement Approaches"
+          }
+        },
+        {
+          "id": "cf-razones-cobrar",
+          "nombre": "Rotación de cuentas por cobrar y período de cobro",
+          "explicacion": "La rotación de cuentas por cobrar divide las ventas a crédito para el promedio de cuentas por cobrar e indica cuántas veces al año se cobra la cartera. El período promedio de cobro, 365 dividido para la rotación, indica cuántos días tarda en promedio un cliente en pagar. Si el período supera mucho el plazo de crédito que otorga la empresa, hay problemas de cobranza que inmovilizan efectivo y elevan el riesgo de incobrables.",
+          "ejemplo": "Con ventas a crédito de USD 360.000 y cuentas por cobrar promedio de 45.000, la rotación es 360.000 ÷ 45.000 = 8 veces y el período de cobro 365 ÷ 8 = 45,63 días. Si el plazo concedido es de 30 días, los clientes pagan tarde.",
+          "puntos_clave": [
+            "Rotación = ventas a crédito ÷ cuentas por cobrar promedio.",
+            "Período de cobro = 365 ÷ rotación.",
+            "Se compara con el plazo de crédito otorgado."
+          ],
+          "errores_frecuentes": [
+            "Usar las ventas totales cuando hay muchas ventas al contado.",
+            "Interpretar una rotación alta como mala señal."
+          ],
+          "formulas": [
+            "rotacion-cuentas-cobrar",
+            "periodo-cobro"
+          ],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/9-3-determine-the-efficiency-of-receivables-management-using-financial-ratios",
+            "seccion": "9.3 Determine the Efficiency of Receivables Management Using Financial Ratios"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cf-pasivos-patrimonio",
+      "nombre": "Pasivos y patrimonio de las sociedades",
+      "orden": 6,
+      "descripcion": "Pasivos corrientes, bonos con el método del interés efectivo, emisión de acciones, dividendos y utilidad por acción.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cf-pasivos-corrientes",
+          "nombre": "Pasivos corrientes",
+          "explicacion": "Los pasivos corrientes son obligaciones que se pagarán dentro del ciclo de operación o de un año: cuentas por pagar a proveedores, ingresos cobrados por anticipado (se deben bienes o servicios), impuestos y retenciones por pagar, sueldos y beneficios por pagar, documentos por pagar de corto plazo y la porción corriente de la deuda de largo plazo, es decir, la parte de un préstamo largo que vence en los próximos doce meses. Clasificarlos bien es clave para medir la liquidez.",
+          "ejemplo": "Un préstamo de USD 60.000 se paga en 5 cuotas anuales iguales de capital. Al cierre del primer año quedan 48.000: la porción corriente es 60.000 ÷ 5 = 12.000 dólares y los 36.000 restantes son pasivo no corriente.",
+          "puntos_clave": [
+            "Vencen dentro de un año o del ciclo de operación.",
+            "Los anticipos de clientes son pasivo, no ingreso.",
+            "La porción corriente de la deuda larga es pasivo corriente."
+          ],
+          "errores_frecuentes": [
+            "Registrar como ingreso un cobro anticipado.",
+            "Dejar toda la deuda bancaria como no corriente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/12-1-identify-and-describe-current-liabilities",
+            "seccion": "12.1 Identify and Describe Current Liabilities"
+          }
+        },
+        {
+          "id": "cf-interes-efectivo",
+          "nombre": "Bonos por pagar: método del interés efectivo",
+          "explicacion": "Cuando una empresa emite bonos a una tasa de cupón distinta de la del mercado, los coloca con descuento o con prima. Con el método del interés efectivo, que exige la NIIF 9 para pasivos medidos al costo amortizado, el gasto por intereses de cada período es el valor en libros del bono por la tasa de mercado de la emisión. La diferencia entre ese gasto y el cupón pagado amortiza el descuento (o la prima) y acerca el valor en libros al valor nominal hasta el vencimiento.",
+          "ejemplo": "Un bono de USD 10.000 con cupón anual de 500 se emitió en 9.578,76 cuando el mercado exigía 6 %. Gasto por intereses del año 1 = 9.578,76 × 0,06 = 574,73. Amortización del descuento = 574,73 − 500 = 74,73, y el valor en libros sube a 9.653,49.",
+          "puntos_clave": [
+            "Gasto por intereses = valor en libros × tasa de mercado.",
+            "Amortización = gasto por intereses − cupón.",
+            "El valor en libros llega al nominal al vencimiento."
+          ],
+          "errores_frecuentes": [
+            "Calcular el gasto con la tasa del cupón.",
+            "Usar siempre el valor nominal en lugar del valor en libros."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/13-2-compute-amortization-of-long-term-liabilities-using-the-effective-interest-method",
+            "seccion": "13.2 Compute Amortization of Long-Term Liabilities Using the Effective-Interest Method"
+          }
+        },
+        {
+          "id": "cf-emision-acciones",
+          "nombre": "Emisión de acciones y prima en colocación",
+          "explicacion": "Cuando una sociedad emite acciones, registra en capital social el valor nominal de las acciones emitidas y, si las vende por encima de ese valor, registra la diferencia como prima en colocación de acciones (capital adicional pagado), que también forma parte del patrimonio. Si la sociedad recompra sus propias acciones, estas se presentan restando del patrimonio. En Ecuador, las compañías anónimas y las S.A.S. emiten acciones; las de responsabilidad limitada tienen participaciones.",
+          "ejemplo": "Una compañía emite 5.000 acciones de valor nominal USD 1 a USD 3,50 cada una. Recibe 5.000 × 3,5 = 17.500 dólares: 5.000 van a capital social y la prima es 5.000 × 2,5 = 12.500 dólares.",
+          "puntos_clave": [
+            "Capital social = acciones × valor nominal.",
+            "Prima = (precio − valor nominal) × acciones.",
+            "Las acciones recompradas restan del patrimonio."
+          ],
+          "errores_frecuentes": [
+            "Registrar la prima como ingreso del período.",
+            "Confundir el valor nominal con el precio de colocación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/14-2-analyze-and-record-transactions-for-the-issuance-and-repurchase-of-stock",
+            "seccion": "14.2 Analyze and Record Transactions for the Issuance and Repurchase of Stock"
+          }
+        },
+        {
+          "id": "cf-dividendos",
+          "nombre": "Dividendos en efectivo, en acciones y divisiones de acciones",
+          "explicacion": "Un dividendo en efectivo reparte utilidades acumuladas a los accionistas: reduce las utilidades retenidas y, al pagarse, el efectivo. Un dividendo en acciones entrega acciones nuevas en proporción a las que cada accionista tiene: traslada valor de utilidades retenidas a capital, sin salida de efectivo. Una división (split) aumenta el número de acciones y reduce su valor nominal en la misma proporción, sin cambiar el patrimonio total. Se distinguen la fecha de declaración, la de registro y la de pago.",
+          "ejemplo": "Una compañía con 120.000 acciones en circulación declara un dividendo en efectivo de USD 0,40 por acción: pagará 120.000 × 0,4 = 48.000 dólares. Si en cambio declara un dividendo en acciones de 10 %, emitirá 120.000 × 0,1 = 12.000 acciones nuevas.",
+          "puntos_clave": [
+            "En efectivo: reduce utilidades retenidas y efectivo.",
+            "En acciones: no hay salida de efectivo.",
+            "El split no cambia el patrimonio total."
+          ],
+          "errores_frecuentes": [
+            "Registrar el gasto por dividendos en el estado de resultados.",
+            "Calcular el dividendo sobre las acciones emitidas en lugar de las que están en circulación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/14-3-record-transactions-and-the-effects-on-financial-statements-for-cash-dividends-property-dividends-stock-dividends-and-stock-splits",
+            "seccion": "14.3 Record Transactions and the Effects on Financial Statements for Cash Dividends, Property Dividends, Stock Dividends, and Stock Splits"
+          }
+        },
+        {
+          "id": "cf-upa",
+          "nombre": "Utilidad por acción",
+          "explicacion": "La utilidad por acción (UPA) indica cuánto de la utilidad del período corresponde a cada acción ordinaria: (utilidad neta − dividendos preferentes) ÷ promedio ponderado de acciones ordinarias en circulación. En NIIF la regula la NIC 33. Sirve para comparar el desempeño de una compañía en el tiempo y para calcular la relación precio/utilidad, pero no debe compararse entre empresas sin mirar su tamaño y su número de acciones.",
+          "ejemplo": "Una compañía ganó USD 250.000, pagó 20.000 de dividendos preferentes y tuvo en promedio 115.000 acciones ordinarias. UPA = (250.000 − 20.000) ÷ 115.000 = 2 dólares por acción.",
+          "puntos_clave": [
+            "UPA = (UN − dividendos preferentes) ÷ acciones ordinarias promedio.",
+            "Se usa el promedio ponderado de acciones.",
+            "Base de la relación precio/utilidad."
+          ],
+          "errores_frecuentes": [
+            "Olvidar restar los dividendos preferentes.",
+            "Usar las acciones al cierre en vez del promedio del período."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/14-5-discuss-the-applicability-of-earnings-per-share-as-a-method-to-measure-performance",
+            "seccion": "14.5 Discuss the Applicability of Earnings per Share as a Method to Measure Performance"
           }
         }
       ]
