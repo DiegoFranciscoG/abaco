@@ -2,73 +2,129 @@
   {
     "nombre": "Microeconomía",
     "carreras": 7,
-    "planes": 12,
+    "planes": 13,
     "ciclo_habitual": 2,
     "materia": "microeconomia",
     "tipo": "materia"
   },
   {
     "nombre": "Matemática Financiera",
-    "carreras": 6,
-    "planes": 11,
+    "carreras": 7,
+    "planes": 12,
     "ciclo_habitual": 3,
     "materia": "matematica-financiera",
     "tipo": "materia"
   },
   {
     "nombre": "Estadística",
-    "carreras": 6,
-    "planes": 10,
+    "carreras": 7,
+    "planes": 11,
     "ciclo_habitual": 2,
     "materia": "estadistica-descriptiva",
     "tipo": "materia"
   },
   {
-    "nombre": "Metodología de la Investigación",
-    "carreras": 6,
-    "planes": 9,
-    "ciclo_habitual": 5,
-    "materia": "metodologia-investigacion",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Macroeconomía",
-    "carreras": 5,
-    "planes": 10,
-    "ciclo_habitual": 3,
-    "materia": "macroeconomia",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Matemáticas",
-    "carreras": 5,
-    "planes": 9,
-    "ciclo_habitual": 1,
-    "materia": "matematica-gestion",
-    "tipo": "materia"
-  },
-  {
     "nombre": "Administración",
-    "carreras": 5,
-    "planes": 8,
+    "carreras": 6,
+    "planes": 11,
     "ciclo_habitual": 1,
     "materia": "fundamentos-administracion",
     "tipo": "materia"
   },
   {
-    "nombre": "Contabilidad General",
+    "nombre": "Costos",
+    "carreras": 6,
+    "planes": 11,
+    "ciclo_habitual": 2,
+    "materia": "contabilidad-costos",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Macroeconomía",
+    "carreras": 6,
+    "planes": 11,
+    "ciclo_habitual": 3,
+    "materia": "macroeconomia",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Marketing Global",
+    "carreras": 6,
+    "planes": 11,
+    "ciclo_habitual": 6,
+    "materia": "economia-internacional",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Derecho Económico",
+    "carreras": 6,
+    "planes": 10,
+    "ciclo_habitual": 2,
+    "materia": "derecho-empresarial",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Escritura Académica",
+    "carreras": 6,
+    "planes": 10,
+    "ciclo_habitual": 4,
+    "materia": "metodologia-investigacion",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Estadística Aplicada",
+    "carreras": 6,
+    "planes": 10,
+    "ciclo_habitual": 2,
+    "materia": "estadistica-inferencial",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Incubación",
+    "carreras": 6,
+    "planes": 10,
+    "ciclo_habitual": 5,
+    "materia": "emprendimiento",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Matemáticas",
+    "carreras": 6,
+    "planes": 10,
+    "ciclo_habitual": 1,
+    "materia": "matematica-gestion",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Modelos Financieros",
+    "carreras": 6,
+    "planes": 9,
+    "ciclo_habitual": 5,
+    "materia": "finanzas-corporativas",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Contabilidad",
     "carreras": 5,
-    "planes": 8,
+    "planes": 10,
     "ciclo_habitual": 1,
     "materia": "contabilidad-general",
     "tipo": "materia"
   },
   {
-    "nombre": "Estadística Inferencial",
+    "nombre": "Gestión de Proyectos",
+    "carreras": 5,
+    "planes": 10,
+    "ciclo_habitual": 7,
+    "materia": "evaluacion-proyectos",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Informática Aplicada",
     "carreras": 5,
     "planes": 8,
-    "ciclo_habitual": 3,
-    "materia": "estadistica-inferencial",
+    "ciclo_habitual": 2,
+    "materia": "informatica-gestion",
     "tipo": "materia"
   },
   {
@@ -80,59 +136,19 @@
     "tipo": "materia"
   },
   {
-    "nombre": "Emprendimiento",
+    "nombre": "Neuromarketing",
     "carreras": 5,
-    "planes": 6,
-    "ciclo_habitual": 5,
-    "materia": "emprendimiento",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Finanzas Corporativas",
-    "carreras": 5,
-    "planes": 6,
-    "ciclo_habitual": 4,
-    "materia": "finanzas-corporativas",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Evaluación de Proyectos",
-    "carreras": 4,
-    "planes": 9,
-    "ciclo_habitual": 7,
-    "materia": "evaluacion-proyectos",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Comercio Exterior",
-    "carreras": 4,
     "planes": 8,
-    "ciclo_habitual": 6,
-    "materia": "economia-internacional",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Derecho Empresarial",
-    "carreras": 4,
-    "planes": 7,
-    "ciclo_habitual": 2,
-    "materia": "derecho-empresarial",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Investigación de Mercado",
-    "carreras": 4,
-    "planes": 7,
-    "ciclo_habitual": 4,
+    "ciclo_habitual": 3,
     "materia": "investigacion-mercados",
     "tipo": "materia"
   },
   {
-    "nombre": "Contabilidad de Costos",
+    "nombre": "Planes de Marketing",
     "carreras": 4,
-    "planes": 6,
+    "planes": 7,
     "ciclo_habitual": 2,
-    "materia": "contabilidad-costos",
+    "materia": "marketing",
     "tipo": "materia"
   },
   {
@@ -152,19 +168,19 @@
     "tipo": "materia"
   },
   {
-    "nombre": "Marketing Estratégico",
-    "carreras": 3,
-    "planes": 6,
-    "ciclo_habitual": 3,
-    "materia": "marketing",
-    "tipo": "materia"
-  },
-  {
     "nombre": "Ética del IFAC",
     "carreras": 3,
     "planes": 6,
     "ciclo_habitual": 5,
     "materia": "etica-profesional",
+    "tipo": "materia"
+  },
+  {
+    "nombre": "Contabilidad Financiera",
+    "carreras": 3,
+    "planes": 4,
+    "ciclo_habitual": 1,
+    "materia": "contabilidad-financiera",
     "tipo": "materia"
   },
   {
@@ -176,28 +192,12 @@
     "tipo": "materia"
   },
   {
-    "nombre": "Informática Aplicada",
-    "carreras": 3,
-    "planes": 4,
-    "ciclo_habitual": 1,
-    "materia": "informatica-gestion",
-    "tipo": "materia"
-  },
-  {
     "nombre": "Práctica Tributaria",
     "carreras": 3,
     "planes": 4,
     "ciclo_habitual": 2,
     "materia": "tributacion",
     "tipo": "practica"
-  },
-  {
-    "nombre": "Contabilidad Financiera",
-    "carreras": 3,
-    "planes": 3,
-    "ciclo_habitual": 1,
-    "materia": "contabilidad-financiera",
-    "tipo": "materia"
   },
   {
     "nombre": "Práctica Laboral",
@@ -312,34 +312,10 @@
     "tipo": "materia"
   },
   {
-    "nombre": "Introducción a la Economía",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 1,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Introducción al Marketing",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 1,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
     "nombre": "Investigación Operativa",
     "carreras": 2,
     "planes": 2,
     "ciclo_habitual": 4,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Marketing Internacional",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 5,
     "materia": null,
     "tipo": "materia"
   },

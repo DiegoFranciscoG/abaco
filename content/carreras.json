@@ -12,7 +12,7 @@
         "ciclos": [
           1
         ],
-        "planes": 3
+        "planes": 4
       },
       {
         "materia": "fundamentos-administracion",
@@ -45,7 +45,7 @@
           2,
           3
         ],
-        "planes": 3
+        "planes": 4
       },
       {
         "materia": "derecho-empresarial",
@@ -66,6 +66,25 @@
         "planes": 3
       },
       {
+        "materia": "estadistica-inferencial",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          3
+        ],
+        "planes": 4
+      },
+      {
+        "materia": "informatica-gestion",
+        "ciclo": 2,
+        "ciclos": [
+          2,
+          5,
+          6
+        ],
+        "planes": 4
+      },
+      {
         "materia": "legislacion-laboral",
         "ciclo": 2,
         "ciclos": [
@@ -73,15 +92,6 @@
           4
         ],
         "planes": 2
-      },
-      {
-        "materia": "estadistica-inferencial",
-        "ciclo": 3,
-        "ciclos": [
-          2,
-          3
-        ],
-        "planes": 3
       },
       {
         "materia": "marketing",
@@ -154,18 +164,10 @@
         "materia": "emprendimiento",
         "ciclo": 5,
         "ciclos": [
-          5
-        ],
-        "planes": 2
-      },
-      {
-        "materia": "informatica-gestion",
-        "ciclo": 5,
-        "ciclos": [
           5,
-          6
+          7
         ],
-        "planes": 2
+        "planes": 4
       },
       {
         "materia": "economia-internacional",
@@ -218,21 +220,6 @@
         "planes": 2
       },
       {
-        "nombre": "Estadística Aplicada",
-        "ciclo": 2,
-        "planes": 2
-      },
-      {
-        "nombre": "TIC Aplicada en la Empresa",
-        "ciclo": 2,
-        "planes": 2
-      },
-      {
-        "nombre": "Ecosistemas de Emprendimiento e Innovación",
-        "ciclo": 5,
-        "planes": 2
-      },
-      {
         "nombre": "Presupuestos",
         "ciclo": 5,
         "planes": 2
@@ -264,7 +251,8 @@
         "materia": "contabilidad-general",
         "ciclo": 1,
         "ciclos": [
-          1
+          1,
+          2
         ],
         "planes": 2
       },
@@ -316,7 +304,8 @@
         "ciclo": 1,
         "ciclos": [
           1,
-          7
+          7,
+          8
         ],
         "planes": 2
       },
@@ -351,6 +340,7 @@
         "ciclos": [
           2,
           3,
+          4,
           5,
           6
         ],
@@ -360,9 +350,21 @@
         "materia": "contabilidad-costos",
         "ciclo": 3,
         "ciclos": [
-          3
+          3,
+          4,
+          5,
+          6
         ],
-        "planes": 1
+        "planes": 2
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4
+        ],
+        "planes": 2
       },
       {
         "materia": "macroeconomia",
@@ -386,7 +388,7 @@
         "ciclos": [
           4
         ],
-        "planes": 1
+        "planes": 2
       },
       {
         "materia": "economia-internacional",
@@ -400,25 +402,20 @@
         "materia": "finanzas-corporativas",
         "ciclo": 4,
         "ciclos": [
-          4
+          4,
+          5,
+          6
         ],
-        "planes": 1
-      },
-      {
-        "materia": "fundamentos-administracion",
-        "ciclo": 4,
-        "ciclos": [
-          4
-        ],
-        "planes": 1
+        "planes": 2
       },
       {
         "materia": "emprendimiento",
         "ciclo": 5,
         "ciclos": [
-          5
+          5,
+          6
         ],
-        "planes": 1
+        "planes": 2
       },
       {
         "materia": "talento-humano",
@@ -440,43 +437,8 @@
     ],
     "pendientes": [
       {
-        "nombre": "Contabilidad Comercial",
-        "ciclo": 2,
-        "planes": 2
-      },
-      {
-        "nombre": "Contabilidad Costos Básica",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Contabilidad de Gestión Ambiental",
         "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Régimen Impositivo y Fiscalidad",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Teoría Administrativa",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Aplicaciones de Costos",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Contabilidad Costos Avanzada",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Contabilidad Societaria",
-        "ciclo": 4,
         "planes": 1
       },
       {
@@ -490,37 +452,12 @@
         "planes": 1
       },
       {
-        "nombre": "Normas Internacionales de Información Financiera",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Renta y Otros Impuestos",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
         "nombre": "Administración Pública y Presupuesto",
         "ciclo": 5,
         "planes": 1
       },
       {
         "nombre": "Contabilidad de IFIS y Economía Popular y Solidaria",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Costos Aplicados",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Finanzas a Corto Plazo",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Fiscalidad Internacional",
         "ciclo": 5,
         "planes": 1
       },
@@ -550,17 +487,7 @@
         "planes": 1
       },
       {
-        "nombre": "Finanzas a Largo Plazo",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Legislación de Instituciones Financieras y EPS",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Liderazgo, Emprendimiento e Innovación",
         "ciclo": 6,
         "planes": 1
       },
@@ -605,11 +532,6 @@
         "planes": 1
       },
       {
-        "nombre": "Redacción Científica",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
         "nombre": "Auditoria Forense y Prevención de Lavado de Activos",
         "ciclo": 8,
         "planes": 1
@@ -636,11 +558,6 @@
       },
       {
         "nombre": "Contabilidad Gubernamental y Contratación Pública",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Escritura Académica",
         "ciclo": 8,
         "planes": 1
       }
@@ -674,7 +591,8 @@
         "ciclo": 1,
         "ciclos": [
           1,
-          2
+          2,
+          3
         ],
         "planes": 2
       },
@@ -691,7 +609,20 @@
         "ciclo": 1,
         "ciclos": [
           1,
-          2
+          2,
+          3
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "microeconomia",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          3,
+          4,
+          5
         ],
         "planes": 2
       },
@@ -704,20 +635,19 @@
         "planes": 1
       },
       {
-        "materia": "microeconomia",
+        "materia": "derecho-empresarial",
         "ciclo": 2,
         "ciclos": [
           2,
-          3,
-          4,
-          5
+          4
         ],
         "planes": 2
       },
       {
         "materia": "estadistica-inferencial",
-        "ciclo": 3,
+        "ciclo": 2,
         "ciclos": [
+          2,
           3
         ],
         "planes": 1
@@ -747,6 +677,15 @@
         "ciclos": [
           3,
           4
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "metodologia-investigacion",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          7
         ],
         "planes": 2
       },
@@ -801,14 +740,6 @@
         "planes": 2
       },
       {
-        "materia": "metodologia-investigacion",
-        "ciclo": 7,
-        "ciclos": [
-          7
-        ],
-        "planes": 1
-      },
-      {
         "materia": "fundamentos-administracion",
         "ciclo": 8,
         "ciclos": [
@@ -829,27 +760,12 @@
         "planes": 1
       },
       {
-        "nombre": "Introducción a la Economía",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Álgebra Lineal",
         "ciclo": 1,
         "planes": 1
       },
       {
         "nombre": "Análisis de Datos y Programación",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Derecho Económico y Empresarial",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Estadística Probabilistica",
         "ciclo": 2,
         "planes": 1
       },
@@ -864,18 +780,8 @@
         "planes": 1
       },
       {
-        "nombre": "Medición Económica",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Realidad Socio-Económica",
         "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Derecho Económico",
-        "ciclo": 4,
         "planes": 1
       },
       {
@@ -885,11 +791,6 @@
       },
       {
         "nombre": "Economía Política",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Investigación Económica",
         "ciclo": 4,
         "planes": 1
       },
@@ -935,11 +836,6 @@
       },
       {
         "nombre": "Análisis Multivariante",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Formulación y Gestión de Proyectos",
         "ciclo": 7,
         "planes": 1
       },
@@ -993,7 +889,7 @@
         "ciclos": [
           1
         ],
-        "planes": 1
+        "planes": 2
       },
       {
         "materia": "fundamentos-administracion",
@@ -1001,15 +897,29 @@
         "ciclos": [
           1
         ],
-        "planes": 1
+        "planes": 2
+      },
+      {
+        "materia": "investigacion-mercados",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "planes": 2
       },
       {
         "materia": "marketing",
         "ciclo": 1,
         "ciclos": [
           1,
+          2,
           4,
-          7
+          7,
+          8
         ],
         "planes": 2
       },
@@ -1023,21 +933,29 @@
         "planes": 2
       },
       {
+        "materia": "contabilidad-costos",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 2
+      },
+      {
         "materia": "estadistica-descriptiva",
         "ciclo": 2,
         "ciclos": [
           2,
-          3
+          3,
+          4
         ],
         "planes": 1
       },
       {
-        "materia": "investigacion-mercados",
+        "materia": "microeconomia",
         "ciclo": 2,
         "ciclos": [
           2,
-          4,
-          5
+          3
         ],
         "planes": 2
       },
@@ -1066,10 +984,19 @@
         "planes": 1
       },
       {
-        "materia": "microeconomia",
-        "ciclo": 3,
+        "materia": "finanzas-corporativas",
+        "ciclo": 4,
         "ciclos": [
-          3
+          4,
+          5
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "macroeconomia",
+        "ciclo": 4,
+        "ciclos": [
+          4
         ],
         "planes": 1
       },
@@ -1078,9 +1005,18 @@
         "ciclo": 5,
         "ciclos": [
           5,
-          7
+          7,
+          8
         ],
         "planes": 2
+      },
+      {
+        "materia": "evaluacion-proyectos",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
       },
       {
         "materia": "marketing-digital",
@@ -1090,21 +1026,19 @@
           8
         ],
         "planes": 2
+      },
+      {
+        "materia": "economia-internacional",
+        "ciclo": 8,
+        "ciclos": [
+          8
+        ],
+        "planes": 2
       }
     ],
     "pendientes": [
       {
-        "nombre": "Administración y Organización",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Diseño para Marketing",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Introducción al Marketing",
         "ciclo": 1,
         "planes": 1
       },
@@ -1114,37 +1048,12 @@
         "planes": 1
       },
       {
-        "nombre": "Psicología del Comportamiento",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Costeo de Productos y Servicios",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
         "nombre": "Estrategia Competitiva",
         "ciclo": 2,
         "planes": 1
       },
       {
-        "nombre": "Marketing Mix y Segmentacion",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing de Servicios",
-        "ciclo": 2,
-        "planes": 2
-      },
-      {
         "nombre": "Planificación Estratégica",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Principios de Economía",
         "ciclo": 2,
         "planes": 1
       },
@@ -1194,21 +1103,6 @@
         "planes": 1
       },
       {
-        "nombre": "Entorno Macroeconómico",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Finanzas y Marketing",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Mercados Emergentes y Marketing Generacional",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
         "nombre": "Neuroventas y Negociación",
         "ciclo": 4,
         "planes": 1
@@ -1239,17 +1133,7 @@
         "planes": 1
       },
       {
-        "nombre": "Finanzas Aplicdas al Marketing",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión Logística",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Neuromarketing",
         "ciclo": 5,
         "planes": 1
       },
@@ -1274,11 +1158,6 @@
         "planes": 1
       },
       {
-        "nombre": "Gestión de Proyectos",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Politica y Fijación de Precios",
         "ciclo": 6,
         "planes": 1
@@ -1290,11 +1169,6 @@
       },
       {
         "nombre": "Publicidad ATL y BTL",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Sistemas de Información den Marketing",
         "ciclo": 6,
         "planes": 1
       },
@@ -1321,36 +1195,6 @@
       {
         "nombre": "Modelos de Simulación",
         "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Planes de Marketing",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoría en Marketing",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Dirección de Marketing",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Investigación Aplicada",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing Global",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing Internacional",
-        "ciclo": 8,
         "planes": 1
       },
       {
@@ -1390,6 +1234,14 @@
         "planes": 1
       },
       {
+        "materia": "matematica-financiera",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
         "materia": "metodologia-investigacion",
         "ciclo": 1,
         "ciclos": [
@@ -1414,6 +1266,14 @@
         "planes": 1
       },
       {
+        "materia": "informatica-gestion",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
         "materia": "estadistica-inferencial",
         "ciclo": 3,
         "ciclos": [
@@ -1426,7 +1286,10 @@
         "ciclo": 3,
         "ciclos": [
           3,
-          4
+          4,
+          6,
+          7,
+          8
         ],
         "planes": 1
       },
@@ -1449,18 +1312,8 @@
     ],
     "pendientes": [
       {
-        "nombre": "Matemáticas para Finanzas",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Responsabilidad Social",
         "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Tecnologías de la Información para Negocios",
-        "ciclo": 2,
         "planes": 1
       },
       {
@@ -1534,11 +1387,6 @@
         "planes": 1
       },
       {
-        "nombre": "Valoración Financiera",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Auditoría y Control Financiero",
         "ciclo": 7,
         "planes": 1
@@ -1559,17 +1407,7 @@
         "planes": 1
       },
       {
-        "nombre": "Modelos Financieros",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
         "nombre": "Finanzas Sostenibles",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión Estratégica Financiera",
         "ciclo": 8,
         "planes": 1
       }
@@ -1599,7 +1437,24 @@
         "planes": 1
       },
       {
+        "materia": "marketing",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
         "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "microeconomia",
         "ciclo": 1,
         "ciclos": [
           1,
@@ -1624,10 +1479,10 @@
         "planes": 1
       },
       {
-        "materia": "microeconomia",
-        "ciclo": 2,
+        "materia": "emprendimiento",
+        "ciclo": 3,
         "ciclos": [
-          2
+          3
         ],
         "planes": 1
       },
@@ -1660,7 +1515,8 @@
         "ciclo": 4,
         "ciclos": [
           4,
-          5
+          5,
+          7
         ],
         "planes": 1
       },
@@ -1715,23 +1571,8 @@
     ],
     "pendientes": [
       {
-        "nombre": "Introducción a la Economía",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Introducción al Marketing",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Administración y Responsabilidad Social Empresarial (Rse)",
         "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Creación de Valor y Emprendimiento",
-        "ciclo": 3,
         "planes": 1
       },
       {
@@ -1740,22 +1581,7 @@
         "planes": 1
       },
       {
-        "nombre": "Derecho Internacional",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
         "nombre": "Logística y Transporte Internacional",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing Internacional",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Negocios Internacionales",
         "ciclo": 5,
         "planes": 1
       },
@@ -1772,11 +1598,6 @@
       {
         "nombre": "Técnicas de Valoración Aduanera",
         "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Geopolitics & International Relations",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -1809,10 +1630,72 @@
     "ciclos": 8,
     "materias": [
       {
+        "materia": "emprendimiento",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-descriptiva",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "fundamentos-administracion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "informatica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "matematica-gestion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
         "materia": "tributacion",
         "ciclo": 1,
         "ciclos": [
           1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "contabilidad-costos",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "estadistica-inferencial",
+        "ciclo": 2,
+        "ciclos": [
+          2
         ],
         "planes": 1
       },
@@ -1833,11 +1716,18 @@
         "planes": 1
       },
       {
-        "materia": "emprendimiento",
-        "ciclo": 5,
+        "materia": "derecho-empresarial",
+        "ciclo": 3,
         "ciclos": [
-          5,
-          6
+          3
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "investigacion-mercados",
+        "ciclo": 3,
+        "ciclos": [
+          3
         ],
         "planes": 1
       },
@@ -1872,26 +1762,19 @@
           6
         ],
         "planes": 1
+      },
+      {
+        "materia": "economia-internacional",
+        "ciclo": 8,
+        "ciclos": [
+          8
+        ],
+        "planes": 1
       }
     ],
     "pendientes": [
       {
-        "nombre": "Análisis Estadístico Descriptivo",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Desarrollo de Habilidades Blandas 1: Inteligencia Emocional y Autogestión",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Fundamentos Matemáticos",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Fundamentos de Gestión Empresarial",
         "ciclo": 1,
         "planes": 1
       },
@@ -1901,42 +1784,12 @@
         "planes": 1
       },
       {
-        "nombre": "Manejo de Herramientas Digitales",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Perfil, Pensamiento y Visión Emprendedora",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Análisis Estadístico Inferencial",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
         "nombre": "Desarrollo de Habilidades Blandas 2: Comunicación Efectiva y Trabajo Colaborativo",
         "ciclo": 2,
         "planes": 1
       },
       {
-        "nombre": "Experiencias en Startups",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión Contable de Costos",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
         "nombre": "IA Aplicada para la Gestión Empresarial y Emprendimiento",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Oportunidades y Ecosistemas Emprendedores",
         "ciclo": 2,
         "planes": 1
       },
@@ -1961,17 +1814,7 @@
         "planes": 1
       },
       {
-        "nombre": "Estudios de Mercado",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Innovación",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Legalidad y Negocios Responsables",
         "ciclo": 3,
         "planes": 1
       },
@@ -1986,42 +1829,12 @@
         "planes": 1
       },
       {
-        "nombre": "Emprendimientos Alternativos, Culturales y Familiares",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Finanzas para Emprendedores",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión de Operaciones",
         "ciclo": 4,
         "planes": 1
       },
       {
-        "nombre": "Modelos de Negocio",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Preincubación",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Estrategias de Crecimiento de Negocios",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión de la Producción",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Incubación",
         "ciclo": 5,
         "planes": 1
       },
@@ -2031,23 +1844,8 @@
         "planes": 1
       },
       {
-        "nombre": "Gestión de Creación de Empresas",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Supply Chain Management",
         "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Valoración de Emprendimientos",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Aceleración",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -2077,11 +1875,6 @@
       },
       {
         "nombre": "Estrategias de Negociación y Networking",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Internacionalización de la Empresa",
         "ciclo": 8,
         "planes": 1
       }
