@@ -10094,5 +10094,181 @@
     },
     "materia": "producto-marca",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pu-impresiones-radio",
+    "subtema": "pu-impresiones",
+    "formula": "impresiones-anuncio",
+    "enunciado": "Una cuña de radio se emite 5 veces con un rating de 0,08 sobre un público objetivo de 250.000 personas. ¿Cuántas impresiones logra?",
+    "datos": {
+      "R": 0.08,
+      "P": 250000,
+      "n": 5
+    },
+    "calculo": "R * P * n",
+    "respuesta": 100000,
+    "unidad": "impresiones",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,08 × 250.000 = 20.000",
+      "Impresiones = 20.000 × 5 = 100.000"
+    ],
+    "pistas": [
+      "Multiplica rating, población y número de emisiones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "materia": "publicidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pu-impresiones-tv",
+    "subtema": "pu-impresiones",
+    "formula": "impresiones-anuncio",
+    "enunciado": "Un comercial de televisión tiene un rating de 12 % sobre un público objetivo de 2.400.000 personas y se emite 3 veces. ¿Cuántas impresiones logra?",
+    "datos": {
+      "R": 0.12,
+      "P": 2400000,
+      "n": 3
+    },
+    "calculo": "R * P * n",
+    "respuesta": 864000,
+    "unidad": "impresiones",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Rating en proporción: 0,12",
+      "0,12 × 2.400.000 = 288.000",
+      "Impresiones = 288.000 × 3 = 864.000"
+    ],
+    "pistas": [
+      "Convierte el rating de porcentaje a proporción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "materia": "publicidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pu-conversion-anuncio",
+    "subtema": "pu-conversion-campana",
+    "formula": "tasa-conversion",
+    "enunciado": "Un anuncio web llega a 500.000 personas y 10.000 hacen clic. ¿Cuál es su tasa de conversión?",
+    "datos": {
+      "Conv": 10000,
+      "Vis": 500000
+    },
+    "calculo": "Conv / Vis * 100",
+    "respuesta": 2,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "10.000 ÷ 500.000 = 0,02",
+      "× 100 = 2"
+    ],
+    "pistas": [
+      "La conversión aquí es el clic."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "materia": "publicidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pu-conversion-volante",
+    "subtema": "pu-conversion-campana",
+    "formula": "tasa-conversion",
+    "enunciado": "Se repartieron 4.000 volantes con un código promocional y 180 personas lo usaron al comprar. ¿Cuál fue la tasa de conversión?",
+    "datos": {
+      "Conv": 180,
+      "Vis": 4000
+    },
+    "calculo": "Conv / Vis * 100",
+    "respuesta": 4.5,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "180 ÷ 4.000 = 0,045",
+      "× 100 = 4,5"
+    ],
+    "pistas": [
+      "La audiencia son los volantes repartidos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "materia": "publicidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pu-roas-tienda",
+    "subtema": "pu-roas",
+    "formula": "roas",
+    "enunciado": "Una tienda en línea invierte USD 2.500 en anuncios en un mes y obtiene USD 10.000 de ingresos atribuibles. ¿Cuál es su ROAS?",
+    "datos": {
+      "I": 10000,
+      "G": 2500
+    },
+    "calculo": "I / G",
+    "respuesta": 4,
+    "unidad": "USD por USD invertido",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ROAS = 10.000 ÷ 2.500 = 4"
+    ],
+    "pistas": [
+      "Ingresos divididos para gasto publicitario."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "materia": "publicidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pu-roas-bajo",
+    "subtema": "pu-roas",
+    "formula": "roas",
+    "enunciado": "Una campaña costó USD 3.200 y generó USD 2.400 de ingresos. ¿Cuál es su ROAS?",
+    "datos": {
+      "I": 2400,
+      "G": 3200
+    },
+    "calculo": "I / G",
+    "respuesta": 0.75,
+    "unidad": "USD por USD invertido",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ROAS = 2.400 ÷ 3.200 = 0,75",
+      "Ingresó menos de lo que se gastó"
+    ],
+    "pistas": [
+      "Un ROAS menor que 1 indica que los ingresos no cubren el gasto."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "materia": "publicidad",
+    "actualizado_en": "2026-10-26"
   }
 ]

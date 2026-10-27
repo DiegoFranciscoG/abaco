@@ -1388,5 +1388,76 @@
       "seccion": "10.3 The Use of Metrics in Evaluating New Products"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "metricas-campana-publicitaria",
+    "nombre": "Métricas de campaña: impresiones, conversión y ROAS",
+    "descripcion": "Calcula las impresiones de dos medios a partir del rating, la conversión de la campaña y el ROAS del período.",
+    "materias": [
+      "publicidad"
+    ],
+    "celdas": {
+      "A1": "Medio",
+      "B1": "Rating",
+      "C1": "Población objetivo",
+      "D1": "Emisiones",
+      "E1": "Impresiones",
+      "A2": "Televisión",
+      "B2": 0.3,
+      "C2": 1000000,
+      "D2": 2,
+      "E2": "=B2*C2*D2",
+      "A3": "Radio",
+      "B3": 0.08,
+      "C3": 250000,
+      "D3": 5,
+      "E3": "=B3*C3*D3",
+      "A5": "Audiencia del anuncio web",
+      "B5": 500000,
+      "A6": "Clics",
+      "B6": 10000,
+      "A7": "Tasa de conversión (%)",
+      "B7": "=B6/B5*100",
+      "A9": "Ingresos atribuidos (USD)",
+      "B9": 5000,
+      "A10": "Gasto en publicidad (USD)",
+      "B10": 1000,
+      "A11": "ROAS",
+      "B11": "=B9/B10"
+    },
+    "formatos": {
+      "E2": "numero",
+      "E3": "numero",
+      "B7": "numero",
+      "B11": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "E2",
+        "esperado": 600000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "E3",
+        "esperado": 100000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B7",
+        "esperado": 2,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B11",
+        "esperado": 5,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

@@ -602,5 +602,33 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "publicidad",
+    "nombre": "Publicidad y comunicación comercial",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Proceso de comunicación y comunicación integrada, plan publicitario, métricas de campañas como impresiones y ROAS, relaciones públicas y promoción de ventas.",
+    "sinonimos": [
+      "campañas publicitarias",
+      "publicidad ATL y BTL",
+      "diseño publicitario",
+      "publicidad y análisis de medios",
+      "marketing promocional",
+      "estrategia comunicacional",
+      "redacción creativa",
+      "marketing político"
+    ],
+    "herramientas": [
+      "foda",
+      "tarjetas",
+      "estadistica"
+    ],
+    "orden": 29,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

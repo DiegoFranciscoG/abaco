@@ -4291,5 +4291,164 @@
       "bundle pricing",
       "odd-even pricing"
     ]
+  },
+  {
+    "id": "pu-proceso-comunicacion",
+    "palabras": [
+      "sender, encoding, messaging, media, the receiver, decoding, and the feedback loop",
+      "noise"
+    ]
+  },
+  {
+    "id": "pu-objetivos-promocion",
+    "palabras": [
+      "promotion is an attempt by marketers to inform, persuade, or remind",
+      "creating awareness"
+    ]
+  },
+  {
+    "id": "pu-imc-plan",
+    "palabras": [
+      "identify the target audience",
+      "determine the marketing communications objectives",
+      "select the promotional tools",
+      "measure the objectives"
+    ]
+  },
+  {
+    "id": "pu-etica-comunicacion",
+    "palabras": [
+      "lifetime customer",
+      "self-regulation as the first line of defense",
+      "good brands are always built on trust"
+    ]
+  },
+  {
+    "id": "pu-publicidad-concepto",
+    "palabras": [
+      "advertising is paid communication messages",
+      "cost per exposure"
+    ]
+  },
+  {
+    "id": "pu-objetivos-publicidad",
+    "palabras": [
+      "informative advertising",
+      "persuasive advertising",
+      "comparative advertising",
+      "reminder advertising"
+    ]
+  },
+  {
+    "id": "pu-empuje-presupuesto",
+    "palabras": [
+      "push strategy",
+      "pull strategy",
+      "competitive parity",
+      "objective and task",
+      "percentage-of-sales"
+    ]
+  },
+  {
+    "id": "pu-impacto-medios",
+    "palabras": [
+      "traditional advertising is any paid form",
+      "outdoor advertising, broadcast advertising"
+    ]
+  },
+  {
+    "id": "pu-reconocimiento",
+    "palabras": [
+      "key performance indicators (kpis)",
+      "brand recognition",
+      "brand awareness"
+    ]
+  },
+  {
+    "id": "pu-impresiones",
+    "palabras": [
+      "impressions = rating × target population × number of ads run"
+    ]
+  },
+  {
+    "id": "pu-conversion-campana",
+    "palabras": [
+      "conversion rate refers to the percentage of an audience that has completed a desired action",
+      "2 percent and 5 percent"
+    ]
+  },
+  {
+    "id": "pu-roas",
+    "palabras": [
+      "return on ad spend (roas)",
+      "divide the revenue for a given period by the advertising dollars"
+    ]
+  },
+  {
+    "id": "pu-rrpp-concepto",
+    "palabras": [
+      "public relations is about creating and maintaining a favorable public image",
+      "earned media",
+      "crisis communication"
+    ]
+  },
+  {
+    "id": "pu-rrpp-prensa",
+    "palabras": [
+      "press releases",
+      "it is up to the media whether the stories will be disseminated"
+    ]
+  },
+  {
+    "id": "pu-rrpp-ventajas",
+    "palabras": [
+      "increasing brand credibility",
+      "no direct control",
+      "lack of guaranteed results"
+    ]
+  },
+  {
+    "id": "pu-etica-publicidad",
+    "palabras": [
+      "false claims",
+      "truth in advertising",
+      "advertising to children"
+    ]
+  },
+  {
+    "id": "pu-promocion-ventas",
+    "palabras": [
+      "sales promotion is a promotional strategy focused on inducing sales in the short term",
+      "push strategy",
+      "pull strategy"
+    ]
+  },
+  {
+    "id": "pu-promo-consumidor",
+    "palabras": [
+      "consumer-oriented sales promotion",
+      "coupons",
+      "rebates",
+      "samples",
+      "premiums",
+      "contests"
+    ]
+  },
+  {
+    "id": "pu-promo-canal",
+    "palabras": [
+      "trade-oriented sales promotion",
+      "allowances and discounts",
+      "cooperative advertising",
+      "point-of-purchase displays"
+    ]
+  },
+  {
+    "id": "pu-influencia",
+    "palabras": [
+      "advertising industry revolves around creating commercial messages",
+      "social media",
+      "subliminal advertising"
+    ]
   }
 ]

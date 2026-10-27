@@ -933,6 +933,20 @@
         "planes": 2
       },
       {
+        "materia": "publicidad",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "contabilidad-costos",
         "ciclo": 2,
         "ciclos": [
@@ -1049,11 +1063,6 @@
     ],
     "pendientes": [
       {
-        "nombre": "Diseño para Marketing",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Pensamiento Creativo y Desing Thinking",
         "ciclo": 1,
         "planes": 1
@@ -1066,16 +1075,6 @@
       {
         "nombre": "Planificación Estratégica",
         "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Diseño Gráfico y Digital con IA",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Estrategia Comunicacional y Redaccion Creativa",
-        "ciclo": 3,
         "planes": 1
       },
       {
@@ -1109,27 +1108,12 @@
         "planes": 1
       },
       {
-        "nombre": "Creatividad Integral y Digital",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Diseño Publicitario",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión Logística",
         "ciclo": 5,
         "planes": 1
       },
       {
         "nombre": "Business Intelligence y Big Data",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Campañas Publicitarias",
         "ciclo": 6,
         "planes": 1
       },
@@ -1149,11 +1133,6 @@
         "planes": 1
       },
       {
-        "nombre": "Publicidad ATL y BTL",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Técnicas de Ventas",
         "ciclo": 6,
         "planes": 1
@@ -1169,23 +1148,8 @@
         "planes": 1
       },
       {
-        "nombre": "Marketing Promocional",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
         "nombre": "Modelos de Simulación",
         "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing Politico",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Publicidad y Análisis de Medios",
-        "ciclo": 8,
         "planes": 1
       }
     ]

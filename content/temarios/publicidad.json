@@ -1,0 +1,477 @@
+{
+  "materia": "publicidad",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pu-comunicacion",
+      "nombre": "Comunicación y comunicación integrada de marketing",
+      "orden": 1,
+      "descripcion": "Elementos del proceso de comunicación, objetivos de la promoción, planificación de la comunicación integrada y ética.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "pu-proceso-comunicacion",
+          "nombre": "El proceso de comunicación",
+          "explicacion": "Toda forma de promoción es comunicación de la empresa hacia el consumidor. El proceso incluye un emisor, la codificación del mensaje, el mensaje, el medio, el receptor, la decodificación y la retroalimentación, todo afectado por el ruido. De esos elementos, el marketing solo controla el emisor, la codificación, el mensaje y el medio; los demás están fuera de su control, por lo que debe entenderlos para reducir lo imprevisto y lograr los objetivos de la campaña.",
+          "ejemplo": "Una marca de jugos codifica su mensaje «sin azúcar añadida» en un video corto para redes (medio). Si los comentarios muestran que muchos entendieron «sin azúcar», la retroalimentación revela un problema de decodificación y la marca ajusta el texto.",
+          "puntos_clave": [
+            "Emisor, codificación, mensaje, medio, receptor, decodificación y retroalimentación.",
+            "El ruido interfiere en todo el proceso.",
+            "El marketing controla solo cuatro elementos."
+          ],
+          "errores_frecuentes": [
+            "Suponer que el público entiende el mensaje como se pensó.",
+            "No crear canales de retroalimentación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/13-2-the-communication-process",
+            "seccion": "13.2 The Communication Process"
+          }
+        },
+        {
+          "id": "pu-objetivos-promocion",
+          "nombre": "La promoción y sus objetivos",
+          "explicacion": "La promoción es el intento de informar, persuadir o recordar a consumidores y compradores empresariales para influir en su opinión o provocar una respuesta. En una empresa con fines de lucro la acción buscada es la compra; en organizaciones sin fines de lucro puede ser cambiar conductas, como no botar basura o donar. Sus metas incluyen crear conocimiento, lograr que se pruebe el producto, informar, retener clientes leales, aumentar el uso e identificar clientes potenciales.",
+          "ejemplo": "Una campaña municipal de reciclaje no vende nada: su promoción busca que los vecinos separen la basura; una tienda de bicicletas, en cambio, promociona sus talleres gratuitos para identificar clientes potenciales.",
+          "puntos_clave": [
+            "Informar, persuadir o recordar.",
+            "Busca una acción del público objetivo.",
+            "Metas: conocimiento, prueba, información, lealtad y más uso."
+          ],
+          "errores_frecuentes": [
+            "Promocionar sin definir qué acción se espera.",
+            "Usar el mismo mensaje para clientes nuevos y leales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/12-5-promotion-strategy",
+            "seccion": "12.5 Promotion Strategy"
+          }
+        },
+        {
+          "id": "pu-imc-plan",
+          "nombre": "Pasos para planificar la comunicación integrada",
+          "explicacion": "Una campaña de comunicación integrada de marketing (IMC) parte de un plan basado en investigación. Primero se identifica el público objetivo con investigación primaria y secundaria; luego se fijan objetivos de comunicación claros, simples y medibles; se define el presupuesto según la etapa del cliente, el conocimiento actual de la marca y la accesibilidad del público; se eligen las herramientas promocionales que mejor llegan al consumidor y, finalmente, se mide de forma continua si cada elemento cumple los objetivos.",
+          "ejemplo": "Una cooperativa que quiere más socios jóvenes investiga a universitarios, fija como meta abrir 500 cuentas en tres meses, asigna un presupuesto, combina redes sociales con charlas en universidades y revisa cada semana cuántas cuentas se abren.",
+          "puntos_clave": [
+            "Público objetivo y objetivos medibles.",
+            "Presupuesto y selección de herramientas.",
+            "Medición continua."
+          ],
+          "errores_frecuentes": [
+            "Elegir medios antes de conocer al público.",
+            "Plantear objetivos que no se pueden medir."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/13-4-steps-in-the-imc-planning-process",
+            "seccion": "13.4 Steps in the IMC Planning Process"
+          }
+        },
+        {
+          "id": "pu-etica-comunicacion",
+          "nombre": "Comunicación de marketing socialmente responsable",
+          "explicacion": "Aunque se dice que el marketing hace comprar lo que no se quiere, no puede obligar a nadie a comprar; además, los mercadólogos buscan clientes de por vida, que son más fáciles de educar y recomiendan la empresa. Sin ética es difícil conseguir y mantener clientes, porque las buenas marcas se construyen sobre la confianza. La primera línea de defensa es la autorregulación con un código de ética; luego vienen las asociaciones gremiales y, por último, la regulación estatal de la publicidad, el etiquetado y las comunicaciones.",
+          "ejemplo": "Una agencia adopta un código interno que prohíbe usar testimonios inventados; cuando un cliente le pide hacerlo, la agencia propone en su lugar testimonios reales de compradores con su autorización.",
+          "puntos_clave": [
+            "Clientes de por vida y confianza.",
+            "Autorregulación como primera defensa.",
+            "Luego gremios y regulación estatal."
+          ],
+          "errores_frecuentes": [
+            "Pensar que lo que no está prohibido siempre es ético.",
+            "Sacrificar la confianza por una venta rápida."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/13-5-ethical-issues-in-marketing-communication",
+            "seccion": "13.5 Ethical Issues in Marketing Communication"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pu-publicidad",
+      "nombre": "La publicidad y el plan publicitario",
+      "orden": 2,
+      "descripcion": "Qué es la publicidad, sus medios, objetivos, estrategias de empuje y atracción y métodos de presupuesto.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pu-publicidad-concepto",
+          "nombre": "Qué es la publicidad y su costo por exposición",
+          "explicacion": "La publicidad es comunicación pagada que identifica a una marca u organización y busca llegar a muchas personas. Sus medios tradicionales son periódicos, revistas, televisión, radio, internet y vallas, a los que se suman el teléfono móvil, el correo electrónico y las redes sociales. Es cara en total, pero como un solo anuncio llega a una gran audiencia, el costo por exposición es bajo. Al ser impersonal y masiva, el mensaje puede interpretarse distinto de lo que quiso el anunciante.",
+          "ejemplo": "Un comercial de 30 segundos cuesta USD 6.000 y lo ven 120.000 personas: el costo por exposición es 6.000 ÷ 120.000 = 0,05 dólares, es decir, 5 centavos por persona.",
+          "puntos_clave": [
+            "Comunicación pagada y masiva.",
+            "Medios tradicionales y digitales.",
+            "Alto costo total, bajo costo por exposición."
+          ],
+          "errores_frecuentes": [
+            "Comparar campañas solo por su costo total.",
+            "Olvidar que el mensaje masivo puede malinterpretarse."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-1-advertising-in-the-promotion-mix",
+            "seccion": "14.1 Advertising in the Promotion Mix"
+          }
+        },
+        {
+          "id": "pu-objetivos-publicidad",
+          "nombre": "Objetivos de la publicidad",
+          "explicacion": "El plan publicitario sigue pasos: elegir objetivos, decidir entre estrategia de empuje o de atracción, fijar el presupuesto, desarrollar la estrategia, ejecutar y evaluar el impacto. Los objetivos más comunes son: informativa, usada al lanzar un producto para darlo a conocer con información; persuasiva, que destaca beneficios y suele apelar a las emociones; comparativa, que muestra las ventajas frente a los competidores, y de recordación, que mantiene la marca presente, sobre todo en la madurez del producto.",
+          "ejemplo": "Una nueva marca de yogur griego empieza con anuncios informativos sobre su contenido de proteína, luego compara su textura con la de otras marcas y, años después, solo publica anuncios de recordación en temporada escolar.",
+          "puntos_clave": [
+            "Pasos del plan publicitario.",
+            "Informativa, persuasiva, comparativa y de recordación.",
+            "El objetivo depende de la etapa del producto."
+          ],
+          "errores_frecuentes": [
+            "Usar publicidad de recordación para un producto que nadie conoce.",
+            "Hacer comparaciones que no se pueden demostrar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-2-major-decisions-in-developing-an-advertising-plan",
+            "seccion": "14.2 Major Decisions in Developing an Advertising Plan"
+          }
+        },
+        {
+          "id": "pu-empuje-presupuesto",
+          "nombre": "Estrategias de empuje y atracción, y presupuesto",
+          "explicacion": "Una estrategia de empuje (push) pone la marca frente al público en muchos momentos, con postales, correos y anuncios impresos o de televisión; una de atracción (pull) busca que el consumidor busque el producto por su cuenta. El presupuesto publicitario es una parte del presupuesto de promoción y se fija con varios métodos: porcentaje de ventas, que aplica un porcentaje a las ventas pasadas o proyectadas; paridad competitiva, según lo que se espera que gasten los competidores, y objetivo y tarea, según las actividades necesarias para cumplir los objetivos.",
+          "ejemplo": "Una distribuidora que proyecta ventas de USD 400.000 y destina el 3 % a publicidad dispone de 400.000 × 0,03 = 12.000 dólares; si su objetivo exige actividades por 15.000, el método de objetivo y tarea indicaría que el presupuesto se queda corto.",
+          "puntos_clave": [
+            "Empuje frente a atracción.",
+            "Porcentaje de ventas, paridad competitiva y objetivo y tarea.",
+            "La publicidad es parte del presupuesto de promoción."
+          ],
+          "errores_frecuentes": [
+            "Recortar publicidad justo cuando caen las ventas usando solo el porcentaje de ventas.",
+            "Copiar el gasto de la competencia sin objetivos propios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-2-major-decisions-in-developing-an-advertising-plan",
+            "seccion": "14.2 Major Decisions in Developing an Advertising Plan"
+          }
+        },
+        {
+          "id": "pu-impacto-medios",
+          "nombre": "El impacto de la publicidad y sus medios",
+          "explicacion": "La publicidad tradicional es cualquier forma pagada de promoción entregada en distintos formatos: exterior, radiodifusión o piezas impresas. Las personas están expuestas a miles de anuncios y el gasto publicitario mundial es enorme, por lo que la competencia por la atención es intensa. Por eso los anunciantes eligen los medios según el público, el mensaje y el presupuesto, y combinan los tradicionales con los digitales.",
+          "ejemplo": "Un festival de música en Guayaquil combina vallas en las principales avenidas (exterior), cuñas en radios juveniles (radiodifusión) y anuncios segmentados en redes para llegar a su público en varios momentos del día.",
+          "puntos_clave": [
+            "Publicidad exterior, radiodifusión e impresa.",
+            "Exceso de anuncios: competencia por la atención.",
+            "Medios elegidos según público y presupuesto."
+          ],
+          "errores_frecuentes": [
+            "Elegir el medio por costumbre y no por el público.",
+            "Ignorar la saturación publicitaria del medio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/12-6-the-huge-impact-of-advertising",
+            "seccion": "12.6 The Huge Impact of Advertising"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pu-metricas",
+      "nombre": "Métricas de campañas publicitarias",
+      "orden": 3,
+      "descripcion": "Reconocimiento y conocimiento de marca, impresiones, tasa de conversión y retorno de la inversión publicitaria.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pu-reconocimiento",
+          "nombre": "KPI de marca: reconocimiento y conocimiento",
+          "explicacion": "Los indicadores clave de desempeño (KPI) miden cómo una campaña cumple sus metas y permiten corregirla. El reconocimiento de marca mide si la audiencia identifica la marca solo con un logotipo o una foto. El conocimiento de marca va más allá: evalúa si la audiencia recuerda información de la marca y qué emociones e impresiones dejó la campaña. Existen programas de seguimiento de marca que recogen estos datos.",
+          "ejemplo": "Tras una campaña, una marca de café muestra su logotipo sin nombre a 200 personas: 140 lo reconocen (reconocimiento). Luego pregunta qué la distingue y 90 recuerdan que es café de altura de Loja (conocimiento).",
+          "puntos_clave": [
+            "KPI para medir y corregir campañas.",
+            "Reconocimiento: identificar la marca.",
+            "Conocimiento: recordar información y emociones."
+          ],
+          "errores_frecuentes": [
+            "Confundir reconocimiento con conocimiento.",
+            "Medir solo al final de la campaña."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+            "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+          }
+        },
+        {
+          "id": "pu-impresiones",
+          "nombre": "Impresiones y rating",
+          "explicacion": "Las impresiones cuantifican cuántas veces aparece un anuncio en el medio elegido. Para calcularlas se necesita el rating, el porcentaje del público objetivo al que llega el anuncio, que suelen medir empresas externas de investigación de audiencias. La fórmula aceptada es impresiones = rating × población objetivo × número de anuncios emitidos.",
+          "ejemplo": "Un anuncio de radio se emite 5 veces con un rating de 0,08 sobre un público de 250.000 personas: impresiones = 0,08 × 250.000 × 5 = 100.000.",
+          "puntos_clave": [
+            "Rating: porcentaje del público alcanzado.",
+            "Impresiones = rating × población × anuncios.",
+            "Datos de empresas de medición de audiencias."
+          ],
+          "errores_frecuentes": [
+            "Usar el rating en porcentaje sin convertirlo a proporción.",
+            "Confundir impresiones con personas distintas alcanzadas."
+          ],
+          "formulas": [
+            "impresiones-anuncio"
+          ],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+            "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+          }
+        },
+        {
+          "id": "pu-conversion-campana",
+          "nombre": "Tasa de conversión de una campaña",
+          "explicacion": "La tasa de conversión es el porcentaje de la audiencia que completa la acción deseada: número de conversiones dividido para el tamaño de la audiencia, multiplicado por 100. En un anuncio web, la acción puede ser hacer clic. Los promedios varían por sector; en general, una tasa de entre 2 y 5 por ciento se considera efectiva en el marketing tradicional y por encima de 10 por ciento en el digital.",
+          "ejemplo": "Un anuncio llega a 500.000 personas y 10.000 hacen clic: conversión = 10.000 ÷ 500.000 × 100 = 2 %.",
+          "puntos_clave": [
+            "Conversiones ÷ audiencia × 100.",
+            "La acción depende del objetivo.",
+            "Comparar con promedios del sector."
+          ],
+          "errores_frecuentes": [
+            "Comparar conversiones de canales con objetivos distintos.",
+            "Olvidar multiplicar por 100."
+          ],
+          "formulas": [
+            "tasa-conversion"
+          ],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+            "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+          }
+        },
+        {
+          "id": "pu-roas",
+          "nombre": "Retorno de la inversión publicitaria (ROAS)",
+          "explicacion": "El ROAS mide cuántos ingresos genera cada dólar invertido en publicidad: se dividen los ingresos del período para el gasto publicitario del mismo período. A diferencia de otras métricas, usa los ingresos de la publicidad. Un ROAS de 5 significa que por cada dólar invertido ingresaron cinco, una relación de 5 a 1.",
+          "ejemplo": "Una tienda en línea invierte USD 2.500 en anuncios en un mes y vende USD 10.000 atribuibles a ellos: ROAS = 10.000 ÷ 2.500 = 4.",
+          "puntos_clave": [
+            "ROAS = ingresos ÷ gasto publicitario.",
+            "Se expresa como relación, por ejemplo 5 a 1.",
+            "Usa ingresos, no utilidades."
+          ],
+          "errores_frecuentes": [
+            "Tomar un ROAS mayor que 1 como garantía de ganancia.",
+            "Mezclar ingresos de un período con gastos de otro."
+          ],
+          "formulas": [
+            "roas"
+          ],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+            "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pu-rrpp",
+      "nombre": "Relaciones públicas y ética publicitaria",
+      "orden": 4,
+      "descripcion": "Qué son las relaciones públicas, sus herramientas, ventajas y desventajas, y los dilemas éticos de la publicidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pu-rrpp-concepto",
+          "nombre": "Relaciones públicas y comunicación de crisis",
+          "explicacion": "Las relaciones públicas buscan crear y mantener una imagen pública favorable. A diferencia de otras herramientas, no se pagan: son medios ganados, y su resultado se llama publicidad no pagada (publicity). Tienen dos caras: contar lo bueno que hace la organización y el control de daños, la comunicación de crisis que atiende problemas que pueden afectar la reputación. Hoy las empresas no pueden esconder sus errores ni desaprovechar la oportunidad de mostrar sus buenas acciones.",
+          "ejemplo": "Una cadena de restaurantes enfrenta un video viral de un local sucio: en pocas horas publica una disculpa, cierra el local para limpieza, invita a la prensa a verificar y explica qué cambiará. Eso es comunicación de crisis.",
+          "puntos_clave": [
+            "Medio ganado, no pagado.",
+            "Promover la imagen y controlar daños.",
+            "Comunicación de crisis rápida y transparente."
+          ],
+          "errores_frecuentes": [
+            "Negar un problema evidente.",
+            "Responder tarde a una crisis en redes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-4-public-relations-and-its-role-in-the-promotion-mix",
+            "seccion": "14.4 Public Relations and Its Role in the Promotion Mix"
+          }
+        },
+        {
+          "id": "pu-rrpp-prensa",
+          "nombre": "Herramientas: relaciones con la prensa",
+          "explicacion": "Una herramienta central de las relaciones públicas son las relaciones con la prensa: enviar comunicados de prensa e historias que ayuden a mantener una imagen positiva. Aunque la empresa controla lo que envía, son los medios quienes deciden si lo difunden. Por eso es valioso construir relaciones positivas con los periodistas y ofrecer información verdadera y de interés público.",
+          "ejemplo": "Una panadería que recauda fondos para un comedor infantil envía un comunicado al noticiero local con fotos y datos del evento; el canal decide cubrirlo porque la historia es de interés para la comunidad.",
+          "puntos_clave": [
+            "Comunicados de prensa e historias.",
+            "Los medios deciden qué publican.",
+            "Relaciones de confianza con periodistas."
+          ],
+          "errores_frecuentes": [
+            "Enviar comunicados que son publicidad disfrazada.",
+            "Exagerar datos que los periodistas pueden verificar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-4-public-relations-and-its-role-in-the-promotion-mix",
+            "seccion": "14.4 Public Relations and Its Role in the Promotion Mix"
+          }
+        },
+        {
+          "id": "pu-rrpp-ventajas",
+          "nombre": "Ventajas y desventajas de las relaciones públicas",
+          "explicacion": "La principal ventaja de las relaciones públicas es su costo, porque no se pagan; además aumentan la credibilidad de la marca, ya que provienen de una fuente objetiva como los medios y son la forma de promoción más creíble y persuasiva, y pueden aumentar ventas y contactos. Sus desventajas son que no hay control directo, pues los medios deciden cómo, cuándo y dónde aparece la organización; no hay resultados garantizados, y su efectividad es difícil de evaluar.",
+          "ejemplo": "Una startup que patrocina una carrera solidaria aparece en las noticias sin pagar por ello y gana credibilidad, pero no puede elegir el titular ni asegurar que la nota salga.",
+          "puntos_clave": [
+            "Ventajas: bajo costo, credibilidad, ventas y contactos.",
+            "Desventajas: sin control, sin garantía y difícil de medir.",
+            "Complementan, no reemplazan, a la publicidad."
+          ],
+          "errores_frecuentes": [
+            "Esperar resultados garantizados de las relaciones públicas.",
+            "No medir de ninguna forma su efecto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-5-the-advantages-and-disadvantages-of-public-relations",
+            "seccion": "14.5 The Advantages and Disadvantages of Public Relations"
+          }
+        },
+        {
+          "id": "pu-etica-publicidad",
+          "nombre": "Ética en la publicidad: afirmaciones falsas y niños",
+          "explicacion": "Los anunciantes deben cuidar las implicaciones legales y éticas de sus mensajes. Un problema frecuente son las afirmaciones no comprobadas, por ejemplo en productos de salud como suplementos o programas de ejercicio, que pueden dañar a las personas y meter a las empresas en problemas; existen organizaciones independientes que vigilan la publicidad engañosa. Otro tema sensible es la publicidad dirigida a niños, que están tan expuestos como los adultos pero tienen menos capacidad de juzgar los mensajes.",
+          "ejemplo": "Una marca de suplementos que anuncia «baja 10 kilos en una semana» sin estudios que lo respalden incurre en una afirmación engañosa; si además usa personajes infantiles para venderlo a niños, agrava el problema ético.",
+          "puntos_clave": [
+            "Afirmaciones comprobables.",
+            "Cuidado especial con productos de salud.",
+            "Publicidad responsable dirigida a niños."
+          ],
+          "errores_frecuentes": [
+            "Usar testimonios como si fueran pruebas científicas.",
+            "Dirigir mensajes de compra directa a niños pequeños."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/14-6-ethical-concerns-in-advertising-and-public-relations",
+            "seccion": "14.6 Ethical Concerns in Advertising and Public Relations"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pu-promocion",
+      "nombre": "Promoción de ventas",
+      "orden": 5,
+      "descripcion": "Promoción de ventas al consumidor y al canal, y la influencia de la publicidad en las decisiones del consumidor.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pu-promocion-ventas",
+          "nombre": "La promoción de ventas en la mezcla promocional",
+          "explicacion": "La promoción de ventas busca inducir ventas en el corto plazo y es la herramienta más centrada en una llamada directa a comprar. Puede dirigirse a los intermediarios con una estrategia de empuje o directamente a los consumidores con una de atracción, y suele combinarse con otras herramientas, como la publicidad. Es eficaz para lograr la prueba en la etapa de introducción y se vuelve más importante cuanto mayor es la competencia, para que el consumidor cambie o pruebe una marca.",
+          "ejemplo": "Una cadena de comida rápida anuncia papas gratis los viernes al pedir por su aplicación: combina publicidad con promoción para que los clientes descarguen la app y aumenten las ventas ese día.",
+          "puntos_clave": [
+            "Ventas en el corto plazo.",
+            "Empuje al canal o atracción del consumidor.",
+            "Útil para la prueba y frente a la competencia."
+          ],
+          "errores_frecuentes": [
+            "Usar promociones permanentes que desvalorizan la marca.",
+            "Promocionar sin stock suficiente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-5-sales-promotion-and-its-role-in-the-promotion-mix",
+            "seccion": "15.5 Sales Promotion and Its Role in the Promotion Mix"
+          }
+        },
+        {
+          "id": "pu-promo-consumidor",
+          "nombre": "Promoción dirigida al consumidor",
+          "explicacion": "La promoción orientada al consumidor ofrece un incentivo inmediato para que busque el producto y lo «jale» por el canal. Sus formas incluyen cupones, que reducen el precio y permiten medir la respuesta porque deben canjearse; reembolsos, que devuelven parte del costo al enviar datos de la compra; muestras gratuitas, costosas pero muy eficaces para lograr la prueba; premios, artículos gratis o de bajo costo junto con la compra que fomentan la lealtad, y concursos, en los que los consumidores usan sus habilidades para ganar algo de valor.",
+          "ejemplo": "Una marca de galletas reparte muestras en universidades, incluye un cupón de descuento en cada paquete y organiza un concurso de recetas en redes con premios para los mejores videos.",
+          "puntos_clave": [
+            "Cupones, reembolsos y muestras.",
+            "Premios y concursos.",
+            "Incentivo inmediato a la compra."
+          ],
+          "errores_frecuentes": [
+            "Diseñar reembolsos tan engorrosos que nadie los cobra.",
+            "Repartir muestras sin dirigirlas al público objetivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-6-main-types-of-sales-promotion",
+            "seccion": "15.6 Main Types of Sales Promotion"
+          }
+        },
+        {
+          "id": "pu-promo-canal",
+          "nombre": "Promoción dirigida al canal",
+          "explicacion": "La promoción orientada al canal se dirige a mayoristas y minoristas para que empujen el producto hacia el consumidor. Incluye descuentos y bonificaciones que el fabricante da al intermediario para trasladarlos al cliente final; la publicidad cooperativa, en la que el fabricante ayuda a pagar los anuncios del minorista a cambio de que destaque sus productos, y los exhibidores en el punto de compra, que hacen resaltar el producto en el pasillo, sobre todo cuando es nuevo.",
+          "ejemplo": "Un fabricante de detergentes paga parte del folleto semanal de un supermercado a cambio de que su marca aparezca en portada, y entrega exhibidores especiales para las cabeceras de góndola.",
+          "puntos_clave": [
+            "Descuentos y bonificaciones al intermediario.",
+            "Publicidad cooperativa.",
+            "Exhibidores en el punto de compra."
+          ],
+          "errores_frecuentes": [
+            "Dar descuentos al canal que no llegan al consumidor.",
+            "Instalar exhibidores sin acuerdo de ubicación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-6-main-types-of-sales-promotion",
+            "seccion": "15.6 Main Types of Sales Promotion"
+          }
+        },
+        {
+          "id": "pu-influencia",
+          "nombre": "La influencia de la publicidad en el consumidor",
+          "explicacion": "La industria publicitaria crea mensajes que impulsan la compra de productos nuevos o mejorados en medios impresos, digitales, televisión, radio y exteriores. Informar es positivo porque los consumidores necesitan saber; pero algunos anuncios empujan a comprar lo que no se necesita o exageran lo que el producto puede hacer, lo que plantea problemas éticos. Las redes sociales se han vuelto el espacio donde más se encuentran los anuncios. También se debate la publicidad subliminal y la vulnerabilidad de niños y adultos mayores frente a ciertos mensajes.",
+          "ejemplo": "Una influenciadora recomienda un producto en sus historias sin aclarar que le pagaron: la falta de transparencia hace que sus seguidores lo vean como opinión personal y no como publicidad.",
+          "puntos_clave": [
+            "Informar frente a manipular.",
+            "Las redes como principal espacio publicitario.",
+            "Vulnerabilidad de niños y adultos mayores."
+          ],
+          "errores_frecuentes": [
+            "No identificar el contenido pagado.",
+            "Exagerar beneficios para cerrar una venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/9-2-the-influence-of-advertising",
+            "seccion": "9.2 The Influence of Advertising"
+          }
+        }
+      ]
+    }
+  ]
+}

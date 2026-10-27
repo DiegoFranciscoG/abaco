@@ -7049,7 +7049,8 @@
     "nombre": "Tasa de conversión",
     "categoria": "marketing",
     "materias": [
-      "marketing-digital"
+      "marketing-digital",
+      "publicidad"
     ],
     "areas": [
       "gestion",
@@ -7346,6 +7347,135 @@
     },
     "supuestos": [],
     "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "impresiones-anuncio",
+    "nombre": "Impresiones de un anuncio",
+    "categoria": "marketing",
+    "materias": [
+      "publicidad"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Veces que un anuncio llega a la audiencia: rating por población objetivo por número de veces que se emite.",
+    "latex": "Imp = R \\times P \\times n",
+    "variables": [
+      {
+        "simbolo": "R",
+        "nombre": "R",
+        "significado": "Rating: proporción del público objetivo alcanzada por el anuncio",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Población objetivo",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de veces que se emite el anuncio",
+        "unidad": "emisiones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "R * P * n"
+    },
+    "excel": {
+      "es": "=R*P*n",
+      "en": "=R*P*n"
+    },
+    "ejemplo": {
+      "enunciado": "Un comercial de televisión se emitió 2 veces en la semana, con un rating de 0,30 sobre un público objetivo de 1.000.000 de personas. ¿Cuántas impresiones logró?",
+      "entradas": {
+        "R": 0.3,
+        "P": 1000000,
+        "n": 2
+      },
+      "pasos": [
+        "Imp = 0,30 × 1.000.000 × 2",
+        "Imp = 600.000"
+      ],
+      "resultado": 600000,
+      "unidad": "impresiones",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,3*1000000*2",
+      "excel_en": "=0.3*1000000*2"
+    },
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "roas",
+    "nombre": "Retorno de la inversión publicitaria (ROAS)",
+    "categoria": "marketing",
+    "materias": [
+      "publicidad"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Ingresos obtenidos por cada dólar invertido en publicidad en un período.",
+    "latex": "ROAS = \\frac{I}{G}",
+    "variables": [
+      {
+        "simbolo": "I",
+        "nombre": "I",
+        "significado": "Ingresos generados por la campaña en el período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "G",
+        "nombre": "G",
+        "significado": "Gasto en publicidad en el período",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "I / G"
+    },
+    "excel": {
+      "es": "=I/G",
+      "en": "=I/G"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa gastó USD 1.000 en una campaña en línea durante el mes y la campaña generó USD 5.000 de ingresos. ¿Cuál es su ROAS?",
+      "entradas": {
+        "I": 5000,
+        "G": 1000
+      },
+      "pasos": [
+        "ROAS = 5.000 ÷ 1.000",
+        "ROAS = 5: por cada dólar invertido ingresan 5"
+      ],
+      "resultado": 5,
+      "unidad": "USD por USD invertido",
+      "tolerancia": 0.0001,
+      "excel_es": "=5000/1000",
+      "excel_en": "=5000/1000"
+    },
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/14-3-the-use-of-metrics-to-measure-advertising-campaign-effectiveness",
+      "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
+    },
+    "supuestos": [],
+    "notas": [
+      "El ROAS usa ingresos, no utilidades: un ROAS mayor que 1 no garantiza ganancia si los márgenes son bajos."
+    ],
     "actualizado_en": "2026-10-27",
     "estado": "verificada"
   }

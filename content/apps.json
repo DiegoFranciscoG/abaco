@@ -573,7 +573,8 @@
     "nombre": "Inkscape",
     "para_que": "Editor libre de gráficos vectoriales para diseñar logotipos, etiquetas, empaques y piezas publicitarias.",
     "materias": [
-      "producto-marca"
+      "producto-marca",
+      "publicidad"
     ],
     "areas": [
       "gestion",
@@ -586,6 +587,26 @@
       "Linux"
     ],
     "url_oficial": "https://inkscape.org/",
+    "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "gimp",
+    "nombre": "GIMP",
+    "para_que": "Editor libre de imágenes para retocar fotos y preparar piezas gráficas de campañas y redes sociales.",
+    "materias": [
+      "publicidad"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.gimp.org/",
     "fecha_consulta": "2026-10-27"
   }
 ]
