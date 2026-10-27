@@ -8948,5 +8948,298 @@
     },
     "materia": "economia-internacional",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-conversion-euros",
+    "subtema": "fi-cotizaciones",
+    "formula": "conversion-divisas",
+    "enunciado": "Una empresa ecuatoriana cobra 12.500 euros por una exportación. Si 1 euro cuesta USD 1,08 (cotización supuesta), ¿cuántos dólares recibe?",
+    "datos": {
+      "Monto": 12500,
+      "TC": 1.08
+    },
+    "calculo": "Monto * TC",
+    "respuesta": 13500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "USD = 12.500 × 1,08",
+      "USD = 13.500"
+    ],
+    "pistas": [
+      "El tipo de cambio está en dólares por euro: multiplica."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+      "seccion": "3.5 Foreign Exchange Rates"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-inverso",
+    "subtema": "fi-cotizaciones",
+    "formula": "tipo-cambio-inverso",
+    "enunciado": "Si 1 sol peruano cuesta USD 0,27 (cotización supuesta), ¿cuántos soles compra un dólar?",
+    "datos": {
+      "TC": 0.27
+    },
+    "calculo": "1 / TC",
+    "respuesta": 3.7037,
+    "unidad": "soles por USD",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "TC inverso = 1 ÷ 0,27",
+      "TC inverso = 3,7037 soles por dólar"
+    ],
+    "pistas": [
+      "Invierte la cotización."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
+      "seccion": "3.5 Foreign Exchange Rates"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-balanza-bienes",
+    "subtema": "fi-balanza",
+    "formula": "balanza-mercancias",
+    "enunciado": "Un país exporta bienes por 31.200 e importa bienes por 28.900 (millones de USD). ¿Cuál es su balanza de mercancías?",
+    "datos": {
+      "Xb": 31200,
+      "Mb": 28900
+    },
+    "calculo": "Xb - Mb",
+    "respuesta": 2300,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "BC = 31.200 − 28.900 = 2.300",
+      "Positiva: superávit en bienes"
+    ],
+    "pistas": [
+      "Exportaciones menos importaciones de bienes."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+      "seccion": "10.1 Measuring Trade Balances"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-balanza-deficit",
+    "subtema": "fi-balanza",
+    "formula": "balanza-mercancias",
+    "enunciado": "Un país exporta bienes por 14.750 e importa bienes por 17.020 (millones de USD). ¿Cuál es su balanza de mercancías?",
+    "datos": {
+      "Xb": 14750,
+      "Mb": 17020
+    },
+    "calculo": "Xb - Mb",
+    "respuesta": -2270,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "BC = 14.750 − 17.020 = −2.270",
+      "Negativa: déficit en bienes"
+    ],
+    "pistas": [
+      "Un resultado negativo es déficit."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+      "seccion": "10.1 Measuring Trade Balances"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-ahorro-inversion-deficit",
+    "subtema": "fi-ahorro-inversion",
+    "formula": "identidad-ahorro-inversion",
+    "enunciado": "Un país tiene ahorro privado de 7.200, impuestos de 5.100, gasto público de 6.300 e inversión de 7.400 (millones de USD). ¿Cuál es su saldo comercial según la identidad de ahorro e inversión?",
+    "datos": {
+      "S": 7200,
+      "T": 5100,
+      "G": 6300,
+      "I": 7400
+    },
+    "calculo": "S + (T - G) - I",
+    "respuesta": -1400,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Ahorro público = 5.100 − 6.300 = −1.200",
+      "X − M = 7.200 − 1.200 − 7.400 = −1.400",
+      "Déficit comercial financiado con capital externo"
+    ],
+    "pistas": [
+      "Suma ahorro privado y público y resta la inversión."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-4-the-national-saving-and-investment-identity",
+      "seccion": "10.4 The National Saving and Investment Identity"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-tasa-real",
+    "subtema": "fi-tasa-real",
+    "formula": "tasa-interes-real",
+    "enunciado": "Una empresa obtiene un préstamo al 9 % nominal anual y la inflación esperada es 3 %. ¿Cuál es su costo real de endeudamiento?",
+    "datos": {
+      "i": 9,
+      "pi": 3
+    },
+    "calculo": "i - pi",
+    "respuesta": 6,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "r = 9 − 3",
+      "r = 6"
+    ],
+    "pistas": [
+      "Resta la inflación de la tasa nominal."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-4-interest-rates",
+      "seccion": "3.4 Interest Rates"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-tasa-real-negativa",
+    "subtema": "fi-tasa-real",
+    "formula": "tasa-interes-real",
+    "enunciado": "Una cuenta de ahorro paga 2,5 % nominal anual y la inflación es 4 %. ¿Cuál es la tasa real?",
+    "datos": {
+      "i": 2.5,
+      "pi": 4
+    },
+    "calculo": "i - pi",
+    "respuesta": -1.5,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "r = 2,5 − 4",
+      "r = −1,5: el ahorro pierde poder de compra"
+    ],
+    "pistas": [
+      "Una tasa real negativa significa pérdida de poder adquisitivo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-4-interest-rates",
+      "seccion": "3.4 Interest Rates"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-ppa",
+    "subtema": "fi-ppa",
+    "enunciado": "Un dólar estadounidense vale 1,35 dólares canadienses. Si un televisor cuesta USD 800 en Estados Unidos, ¿cuál sería su precio en Canadá según la paridad del poder adquisitivo?",
+    "datos": {
+      "P": 800,
+      "TC": 1.35
+    },
+    "calculo": "P * TC",
+    "respuesta": 1080,
+    "unidad": "dólares canadienses",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Precio PPA = 800 × 1,35",
+      "Precio PPA = 1.080"
+    ],
+    "pistas": [
+      "Multiplica el precio por las unidades de moneda canadiense por dólar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-2-demand-and-supply-shifts-in-foreign-exchange-markets",
+      "seccion": "16.2 Demand and Supply Shifts in Foreign Exchange Markets"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-depreciacion",
+    "subtema": "fi-apreciacion-devaluacion",
+    "enunciado": "Un equipo cuesta 2.000.000 de yenes. Si el yen pasa de USD 0,0065 a USD 0,0072, ¿cuántos dólares más cuesta el equipo?",
+    "datos": {
+      "P": 2000000,
+      "TC0": 0.0065,
+      "TC1": 0.0072
+    },
+    "calculo": "P * (TC1 - TC0)",
+    "respuesta": 1400,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Antes: 2.000.000 × 0,0065 = 13.000",
+      "Después: 2.000.000 × 0,0072 = 14.400",
+      "Diferencia: 14.400 − 13.000 = 1.400"
+    ],
+    "pistas": [
+      "Calcula el precio en dólares con cada tipo de cambio y resta."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-ib2",
+      "url": "https://openstax.org/books/introduction-business-2e/pages/3-1-global-trade-in-the-united-states",
+      "seccion": "3.1 Global Trade in the United States"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fi-futuros",
+    "subtema": "fi-riesgo-commodities",
+    "enunciado": "Un exportador vende futuros de 50 toneladas de cacao a USD 3.000. Al vencimiento el precio es USD 2.600. ¿Cuánto gana en la posición de futuros?",
+    "datos": {
+      "Q": 50,
+      "F": 3000,
+      "P": 2600
+    },
+    "calculo": "Q * (F - P)",
+    "respuesta": 20000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Ganancia por tonelada = 3.000 − 2.600 = 400",
+      "Ganancia total = 400 × 50 = 20.000",
+      "Compensa la menor venta física"
+    ],
+    "pistas": [
+      "Quien vende futuros gana si el precio baja."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/20-2-commodity-price-risk",
+      "seccion": "20.2 Commodity Price Risk"
+    },
+    "materia": "finanzas-internacionales",
+    "actualizado_en": "2026-10-26"
   }
 ]

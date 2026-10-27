@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (20 completas de 26)
+## Estado por materia (21 completas de 26)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -31,7 +31,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Investigación de mercados | 4 de 7 | completa | 6 de 6 | 24 | 1 de 1 | 100 % | — |
 | Contabilidad financiera (NIIF) | 3 de 7 | completa | 6 de 6 | 25 | 7 de 7 | 100 % | — |
 | Ética profesional | 3 de 7 | parcial | 4 de 6 | 13 | 0 de 0 | 77 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 3 puntos más) |
-| Finanzas internacionales | 3 de 7 | parcial | 4 de 6 | 12 | 0 de 3 | 42 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 5 puntos más) |
+| Finanzas internacionales | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Gestión del talento humano | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Informática para la gestión | 3 de 7 | parcial | 4 de 6 | 14 | 0 de 4 | 46 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 3 puntos más) |
 | Marketing | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
@@ -125,7 +125,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Derecho Económico, Econometría, Economía Política, Investigación Económica, Métodos Dinámicos en Economía.
 - **5.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades) · pendientes: Investigación Operativa, Marketing y Comercio Digital, Organización Industrial, Teoría de Juegos.
 - **6.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Contratación Pública, Crecimiento y Desarrollo, Crecimiento y Desarrollo Económico, Planificación Económica.
-- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (parcial, 4 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Análisis Multivariante, Formulación y Gestión de Proyectos, Machine Learning, Política Económica.
+- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Análisis Multivariante, Formulación y Gestión de Proyectos, Machine Learning, Política Económica.
 - **8.º ciclo**: en ÁBACO: Fundamentos de administración (completa, 6 de 6 unidades) · pendientes: Big Data and Business Intelligence, Diseño y Evaluación de Programas y Políticas Públicas, Economía Experimental y del Comportamiento, Finanzas Públicas, Investigación de Operaciones.
 
 ### Mercadotecnia (2 planes)
@@ -157,7 +157,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **3.º ciclo**: en ÁBACO: Estadística descriptiva (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Creación de Valor y Emprendimiento, Legislación Aduanera.
 - **4.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades) · pendientes: Derecho Internacional.
 - **5.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades) · pendientes: Logística y Transporte Internacional, Marketing Internacional, Negocios Internacionales.
-- **6.º ciclo**: en ÁBACO: Finanzas internacionales (parcial, 4 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Cadena de Suministros para Operaciones Globales, International Negotiation Strategies, Técnicas de Valoración Aduanera.
+- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Cadena de Suministros para Operaciones Globales, International Negotiation Strategies, Técnicas de Valoración Aduanera.
 - **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Geopolitics & International Relations, Inteligencia de Negocios, Nomenclatura Arancelaria.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Gerencia de Operaciones, Leadership & Management Skills.
 

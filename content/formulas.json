@@ -6980,5 +6980,68 @@
       "seccion": "10.2 Bond Valuation"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "tasa-interes-real",
+    "nombre": "Tasa de interés real",
+    "categoria": "valor-dinero",
+    "materias": [
+      "finanzas-internacionales"
+    ],
+    "areas": [
+      "finanzas",
+      "economia"
+    ],
+    "descripcion": "La tasa real aproxima la recompensa por prestar después de descontar la inflación: tasa nominal menos tasa de inflación.",
+    "latex": "r = i - \\pi",
+    "variables": [
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tasa de interés nominal",
+        "unidad": "%"
+      },
+      {
+        "simbolo": "pi",
+        "nombre": "pi",
+        "significado": "Tasa de inflación",
+        "unidad": "%"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "i - pi"
+    },
+    "excel": {
+      "es": "=i-pi",
+      "en": "=i-pi"
+    },
+    "ejemplo": {
+      "enunciado": "Un banco paga 6 % nominal anual por un depósito y la inflación del año es 2 %. ¿Cuál es la tasa de interés real?",
+      "entradas": {
+        "i": 6,
+        "pi": 2
+      },
+      "pasos": [
+        "r = 6 − 2",
+        "r = 4 puntos porcentuales de rendimiento real"
+      ],
+      "resultado": 4,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=6-2",
+      "excel_en": "=6-2"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/3-4-interest-rates",
+      "seccion": "3.4 Interest Rates"
+    },
+    "supuestos": [],
+    "notas": [
+      "Es la aproximación lineal que usa la fuente; con inflación alta conviene la relación exacta (1 + i) ÷ (1 + π) − 1."
+    ],
+    "actualizado_en": "2026-10-26",
+    "estado": "verificada"
   }
 ]

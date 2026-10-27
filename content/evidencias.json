@@ -3365,5 +3365,122 @@
       "resource acquisition",
       "china and india"
     ]
+  },
+  {
+    "id": "fi-ppa",
+    "palabras": [
+      "arbitrage",
+      "purchasing power parity (ppp) exchange rate",
+      "$26,000"
+    ]
+  },
+  {
+    "id": "fi-moneda-comun",
+    "palabras": [
+      "merged currency",
+      "when ecuador uses the u.s. dollar",
+      "european central bank"
+    ]
+  },
+  {
+    "id": "fi-gestion-riesgos",
+    "palabras": [
+      "risk is defined as uncertainty",
+      "hedging",
+      "speculating"
+    ]
+  },
+  {
+    "id": "fi-riesgo-commodities",
+    "palabras": [
+      "long-term contracts",
+      "vertical integration",
+      "futures contract",
+      "marking to market"
+    ]
+  },
+  {
+    "id": "fi-endeudamiento-publico",
+    "palabras": [
+      "national saving and investment identity",
+      "foreign financial investors",
+      "budget deficit"
+    ]
+  },
+  {
+    "id": "fi-empresas-globales",
+    "palabras": [
+      "domestic companies",
+      "international firms",
+      "global firms",
+      "ifrs",
+      "minority interests"
+    ]
+  },
+  {
+    "id": "fi-tasa-real",
+    "palabras": [
+      "loanable funds",
+      "real interest rate = nominal interest rate - inflation rate",
+      "risk-free rate",
+      "credit risk"
+    ]
+  },
+  {
+    "id": "fi-mercados-dinero-capitales",
+    "palabras": [
+      "money market",
+      "commercial paper",
+      "bond markets",
+      "primary market",
+      "secondary market"
+    ]
+  },
+  {
+    "id": "fi-deficits-gemelos",
+    "palabras": [
+      "twin deficits",
+      "net inflow of foreign financial investment"
+    ]
+  },
+  {
+    "id": "fi-apreciacion-devaluacion",
+    "palabras": [
+      "appreciates",
+      "depreciates",
+      "floating exchange rates",
+      "devaluation"
+    ]
+  },
+  {
+    "id": "fi-barreras-controles",
+    "palabras": [
+      "natural barriers",
+      "import quota",
+      "embargo",
+      "buy-national",
+      "exchange controls"
+    ]
+  },
+  {
+    "id": "fi-formas-participar",
+    "palabras": [
+      "exporting",
+      "licensing",
+      "contract manufacturing",
+      "joint venture",
+      "direct foreign investment",
+      "countertrade"
+    ]
+  },
+  {
+    "id": "fi-amenazas-oportunidades",
+    "palabras": [
+      "nationalism",
+      "expropriate",
+      "confiscation",
+      "cultural differences",
+      "infrastructure"
+    ]
   }
 ]

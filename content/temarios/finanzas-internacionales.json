@@ -68,6 +68,27 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/3-5-foreign-exchange-rates",
             "seccion": "3.5 Foreign Exchange Rates"
           }
+        },
+        {
+          "id": "fi-ppa",
+          "nombre": "Paridad del poder adquisitivo y arbitraje",
+          "explicacion": "A largo plazo, el tipo de cambio guarda relación con lo que una moneda puede comprar en bienes que se comercian internacionalmente. Si con cierto tipo de cambio un bien fuera mucho más barato en un país, las empresas lo comprarían allí para venderlo en otro: eso es el arbitraje, comprar y vender bienes o monedas entre países para obtener una ganancia. Con el tiempo, el arbitraje tiende a alinear precios y tipos de cambio. El tipo de cambio que iguala los precios de los bienes comercializados entre países se llama tipo de cambio de paridad del poder adquisitivo (PPA).",
+          "ejemplo": "Si un dólar estadounidense vale 1,30 dólares canadienses, un auto que cuesta USD 20.000 en Estados Unidos debería costar 20.000 × 1,30 = 26.000 dólares canadienses en Canadá. Si costara mucho menos, compradores estadounidenses irían a comprarlo a Canadá.",
+          "puntos_clave": [
+            "Arbitraje: comprar barato en un país y vender caro en otro.",
+            "El arbitraje alinea precios y tipos de cambio a largo plazo.",
+            "Tipo de cambio PPA: iguala los precios de bienes comercializados."
+          ],
+          "errores_frecuentes": [
+            "Esperar que la PPA se cumpla en el corto plazo.",
+            "Aplicarla a servicios que no se comercian entre países."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-2-demand-and-supply-shifts-in-foreign-exchange-markets",
+            "seccion": "16.2 Demand and Supply Shifts in Foreign Exchange Markets"
+          }
         }
       ]
     },
@@ -132,6 +153,27 @@
           "fuente": {
             "ref": "comf",
             "seccion": "Art. 94"
+          }
+        },
+        {
+          "id": "fi-moneda-comun",
+          "nombre": "Moneda común: el euro y el caso del Ecuador",
+          "explicacion": "La última opción de política cambiaria es compartir una moneda con otros países, lo que se llama moneda común o fusionada. Elimina por completo el riesgo cambiario: en la zona euro nadie se preocupa por el tipo de cambio entre Alemania y Francia. Pero, igual que una paridad fija rígida, implica renunciar a la política monetaria propia y dejar las tasas de interés en otras manos. Cuando Ecuador usa el dólar estadounidense, no tiene voz en las decisiones de la Reserva Federal; en la zona euro, el Banco Central Europeo tiene representantes de todos los países, pero sus decisiones no siempre coinciden con lo que cada país habría elegido.",
+          "ejemplo": "Si la Reserva Federal sube sus tasas para frenar la inflación en Estados Unidos, las condiciones financieras del dólar se endurecen también para el Ecuador, aunque la economía ecuatoriana esté desacelerándose y necesite lo contrario.",
+          "puntos_clave": [
+            "Moneda común: sin riesgo cambiario entre sus miembros.",
+            "Se renuncia a la política monetaria propia.",
+            "Ecuador no participa en las decisiones de la Reserva Federal."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la dolarización elimina todo riesgo financiero.",
+            "Confundir la dolarización con una paridad fija que se puede devaluar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/16-4-exchange-rate-policies",
+            "seccion": "16.4 Exchange Rate Policies"
           }
         }
       ]
@@ -198,6 +240,48 @@
             "ref": "os-pfin2",
             "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
             "seccion": "20.4 Interest Rate Risk"
+          }
+        },
+        {
+          "id": "fi-gestion-riesgos",
+          "nombre": "Gestión de riesgos: cobertura frente a especulación",
+          "explicacion": "El administrador financiero busca maximizar el valor de la empresa cuidando el tamaño, el momento y el riesgo de los flujos de caja. En finanzas, riesgo es incertidumbre: no se puede predecir el futuro, y los contratos financieros suelen cumplirse en momentos distintos para cada parte. Cuando la empresa toma acciones para reducir su exposición al riesgo, hace una cobertura (hedging), cuyo fin es protegerse de pérdidas. Especular, en cambio, es apostar a la dirección futura de un precio para ganar con esa predicción, sabiendo que si falla habrá una pérdida.",
+          "ejemplo": "Una importadora que comprará maquinaria en euros dentro de seis meses fija hoy el tipo de cambio para protegerse: es cobertura. Un inversionista que compra euros porque cree que subirán, sin ninguna compra pendiente, especula.",
+          "puntos_clave": [
+            "Tres focos: tamaño, momento y riesgo de los flujos.",
+            "Riesgo = incertidumbre.",
+            "Cobertura reduce exposición; especular es apostar a una dirección."
+          ],
+          "errores_frecuentes": [
+            "Llamar cobertura a una apuesta sin exposición previa.",
+            "Creer que cubrirse garantiza ganar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-1-the-importance-of-risk-management",
+            "seccion": "20.1 The Importance of Risk Management"
+          }
+        },
+        {
+          "id": "fi-riesgo-commodities",
+          "nombre": "Riesgo de precio de materias primas",
+          "explicacion": "Muchas empresas dependen de materias primas cuyo precio es muy volátil, como el café para una cadena de cafeterías. Hay tres formas de cubrirse. Los contratos de largo plazo con proveedores fijan precio y cantidad, pero tienen riesgo de incumplimiento, no son anónimos y son difíciles de cancelar. La integración vertical, comprar al proveedor, compensa los riesgos de ambos, aunque añade otros riesgos. Los contratos de futuros fijan hoy el precio de una operación futura, se negocian de forma anónima en bolsas líquidas y exigen margen y liquidación diaria, lo que reduce el riesgo de contraparte.",
+          "ejemplo": "Un exportador de cacao que espera vender 50 toneladas en tres meses puede vender futuros para fijar hoy el precio. Si el precio cae de USD 3.000 a 2.600 por tonelada, pierde 400 × 50 = 20.000 dólares en la venta física, pero gana aproximadamente lo mismo en los futuros.",
+          "puntos_clave": [
+            "Contratos de largo plazo: fijan precio, pero con riesgo de incumplimiento.",
+            "Integración vertical: fusionarse con el proveedor.",
+            "Futuros: anónimos, líquidos, con margen y liquidación diaria."
+          ],
+          "errores_frecuentes": [
+            "Ignorar el riesgo de que la otra parte no cumpla un contrato privado.",
+            "Pensar que la integración vertical elimina todos los riesgos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-2-commodity-price-risk",
+            "seccion": "20.2 Commodity Price Risk"
           }
         }
       ]
@@ -268,6 +352,215 @@
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-4-the-national-saving-and-investment-identity",
             "seccion": "10.4 The National Saving and Investment Identity"
+          }
+        },
+        {
+          "id": "fi-endeudamiento-publico",
+          "nombre": "Endeudamiento público, inversión y balanza comercial",
+          "explicacion": "Cuando el gobierno pide prestado, los fondos solo pueden salir de tres fuentes: que los hogares ahorren más, que las empresas privadas se endeuden menos o que lleguen fondos de inversionistas extranjeros. La identidad nacional de ahorro e inversión lo muestra: el ahorro privado más la entrada de ahorro externo (importaciones menos exportaciones) debe igualar la inversión privada más el déficit del gobierno, es decir, S + (M − X) = I + (G − T). Si el déficit público aumenta, debe subir el ahorro privado, bajar la inversión o crecer el déficit comercial.",
+          "ejemplo": "Con ahorro privado de 9.000, inversión privada de 8.500 y un déficit público de 1.500 (millones), la entrada de ahorro externo debe ser M − X = 8.500 + 1.500 − 9.000 = 1.000 millones: un déficit comercial de ese tamaño.",
+          "puntos_clave": [
+            "Tres fuentes para financiar al gobierno.",
+            "S + (M − X) = I + (G − T).",
+            "Más déficit público exige más ahorro, menos inversión o más déficit comercial."
+          ],
+          "errores_frecuentes": [
+            "Olvidar que la identidad siempre se cumple.",
+            "Confundir el signo: la entrada de ahorro externo es M − X."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/18-1-how-government-borrowing-affects-investment-and-the-trade-balance",
+            "seccion": "18.1 How Government Borrowing Affects Investment and the Trade Balance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fi-mercados-financieros",
+      "nombre": "Empresas globales, tasas de interés y mercados financieros",
+      "orden": 5,
+      "descripcion": "Tipos de empresa según su alcance, NIIF frente a US GAAP, tasa real y primas de riesgo, mercados de dinero y capitales y déficits gemelos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fi-empresas-globales",
+          "nombre": "Empresas nacionales, internacionales y globales",
+          "explicacion": "Una empresa nacional opera casi por completo dentro de su país, aunque importe insumos o exporte algo. Una empresa internacional tiene su sede en un país, pero mantiene inversiones y operaciones importantes en otros; sus subsidiarias en el exterior siguen las leyes del país anfitrión. Una empresa global tiene operaciones e inversiones sustanciales en varios países, a veces sin un centro único. Analizarlas exige saber qué leyes rigen su gobierno corporativo y con qué normas contables informa: muchas siguen las NIIF (IFRS) y otras los US GAAP, que tienen diferencias, por ejemplo, en inventarios, consolidación de subsidiarias e intereses minoritarios.",
+          "ejemplo": "Un analista que compara una empresa que reporta con NIIF y otra con US GAAP debe revisar cómo valora cada una sus inventarios y consolida sus subsidiarias antes de comparar utilidades.",
+          "puntos_clave": [
+            "Nacional, internacional y global según el alcance de sus operaciones.",
+            "Las subsidiarias siguen las leyes del país anfitrión.",
+            "NIIF y US GAAP difieren en inventarios, consolidación e intereses minoritarios."
+          ],
+          "errores_frecuentes": [
+            "Comparar estados financieros con normas distintas sin ajustar.",
+            "Creer que toda empresa que exporta es global."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/2-6-companies-in-domestic-and-global-markets",
+            "seccion": "2.6 Companies in Domestic and Global Markets"
+          }
+        },
+        {
+          "id": "fi-tasa-real",
+          "nombre": "Tasa nominal, tasa real y primas de riesgo",
+          "explicacion": "La tasa de interés es el precio de alquilar dinero y se determina en el mercado de fondos prestables, donde los ahorradores ofrecen fondos y los que tienen déficit los demandan. La tasa nominal es la que se cotiza; la tasa real descuenta la inflación (tasa nominal menos inflación) y es la que mide de verdad el costo de endeudarse y el premio por prestar. Además, hay varias tasas a la vez: la del gobierno de Estados Unidos a tres meses se toma como tasa libre de riesgo, y los prestatarios con más riesgo de crédito pagan una prima de riesgo adicional.",
+          "ejemplo": "Una empresa paga 15 % nominal cuando la inflación es 12 %: su costo real de endeudarse es 15 − 12 = 3 puntos. Por cada USD 100 prestados paga 15 de interés, pero 12 solo compensan la inflación.",
+          "puntos_clave": [
+            "Tasa real = tasa nominal − inflación.",
+            "Tasa libre de riesgo como referencia.",
+            "Prima de riesgo por el riesgo de crédito."
+          ],
+          "errores_frecuentes": [
+            "Comparar tasas nominales de países con inflaciones muy distintas.",
+            "Ignorar la prima de riesgo al comparar préstamos."
+          ],
+          "formulas": [
+            "tasa-interes-real"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/3-4-interest-rates",
+            "seccion": "3.4 Interest Rates"
+          }
+        },
+        {
+          "id": "fi-mercados-dinero-capitales",
+          "nombre": "Mercados de dinero, de bonos y de acciones",
+          "explicacion": "El mercado de dinero negocia valores de corto plazo (menos de un año), de muy bajo riesgo y líquidos, como las letras del Tesoro y el papel comercial que emiten empresas e instituciones financieras. El mercado de bonos paga a los inversionistas durante un plazo definido y abarca bonos de gobierno, corporativos y municipales. En el mercado de acciones se negocia la propiedad de las empresas: en el mercado primario se emiten valores nuevos, como en una oferta pública inicial (IPO), y en el secundario se negocian los ya emitidos, lo que facilita que las empresas emitan acciones porque los inversionistas saben que pueden revenderlas.",
+          "ejemplo": "Una empresa que necesita liquidez por tres meses emite papel comercial en el mercado de dinero; para financiar una planta a diez años emite bonos, y si quiere nuevos socios hace una oferta pública de acciones en el mercado primario.",
+          "puntos_clave": [
+            "Mercado de dinero: corto plazo, bajo riesgo y liquidez.",
+            "Bonos: gobierno, corporativos y municipales.",
+            "Acciones: mercado primario (IPO) y secundario."
+          ],
+          "errores_frecuentes": [
+            "Confundir el mercado primario con el secundario.",
+            "Pensar que una acción garantiza dividendos como un bono garantiza cupones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/12-1-overview-of-us-financial-markets",
+            "seccion": "12.1 Overview of US Financial Markets"
+          }
+        },
+        {
+          "id": "fi-deficits-gemelos",
+          "nombre": "Política fiscal, balanza comercial y déficits gemelos",
+          "explicacion": "Un déficit comercial siempre va acompañado de una entrada neta de inversión extranjera, y un superávit de una salida. Un déficit fiscal, por recortes de impuestos o más gasto, aumenta la demanda agregada y parte de ese aumento se va en importaciones, lo que amplía el déficit comercial; los extranjeros usan los dólares recibidos para invertir en el país, por ejemplo comprando bonos del gobierno. A mediados de los años ochenta, en Estados Unidos, el déficit fiscal y el comercial crecieron juntos y se les llamó déficits gemelos; después dejaron de moverse siempre en la misma dirección, porque también influyen el ahorro privado y la inversión.",
+          "ejemplo": "Si un gobierno aumenta su déficit en 2.000 millones y el ahorro privado y la inversión no cambian, la identidad de ahorro e inversión exige que el déficit comercial aumente también en 2.000 millones, financiado con capital extranjero.",
+          "puntos_clave": [
+            "Déficit comercial = entrada neta de capital.",
+            "Más déficit fiscal puede aumentar las importaciones.",
+            "Los déficits gemelos no siempre se mueven juntos."
+          ],
+          "errores_frecuentes": [
+            "Afirmar que el déficit fiscal siempre causa un déficit comercial del mismo tamaño.",
+            "Olvidar el papel del ahorro privado y la inversión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/18-2-fiscal-policy-and-the-trade-balance",
+            "seccion": "18.2 Fiscal Policy and the Trade Balance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fi-operar-global",
+      "nombre": "Operar en el mercado global",
+      "orden": 6,
+      "descripcion": "Apreciación, depreciación y devaluación; barreras y controles cambiarios; formas de entrar a otros mercados; amenazas y oportunidades.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fi-apreciacion-devaluacion",
+          "nombre": "Apreciación, depreciación y devaluación",
+          "explicacion": "El tipo de cambio es el precio de la moneda de un país expresado en la moneda de otro. Si una moneda se aprecia, se necesita menos de ella para comprar otra; si se deprecia, se necesita más, y los bienes importados se encarecen para sus residentes. Con tipos de cambio flotantes, el valor sube y baja según la oferta y la demanda de cada moneda. Un gobierno que considera mal valorada su moneda puede intervenir: en una devaluación baja su valor frente a otras monedas, lo que abarata sus exportaciones y debería mejorar la balanza de pagos. Una moneda subvaluada da a las exportaciones una ventaja que otros países pueden considerar desleal.",
+          "ejemplo": "Si un yen cuesta USD 0,0065, un auto de 2.000.000 de yenes cuesta 2.000.000 × 0,0065 = 13.000 dólares. Si el dólar se deprecia y el yen pasa a costar USD 0,012, el mismo auto cuesta 2.000.000 × 0,012 = 24.000 dólares.",
+          "puntos_clave": [
+            "Apreciación: se necesita menos moneda propia para comprar otra.",
+            "Tipos flotantes: oferta y demanda.",
+            "Devaluación: decisión del gobierno que abarata las exportaciones."
+          ],
+          "errores_frecuentes": [
+            "Confundir depreciación (mercado) con devaluación (decisión oficial).",
+            "Olvidar que una moneda débil encarece las importaciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-1-global-trade-in-the-united-states",
+            "seccion": "3.1 Global Trade in the United States"
+          }
+        },
+        {
+          "id": "fi-barreras-controles",
+          "nombre": "Barreras comerciales y controles de cambio",
+          "explicacion": "Las principales barreras al comercio internacional son naturales (distancia e idioma), arancelarias y no arancelarias. Un arancel puede cobrarse por unidad, como porcentaje del valor o combinando ambos, y siempre encarece lo importado. Entre las barreras no arancelarias están las cuotas de importación, los embargos, las reglas de compra nacional y las normas aduaneras distintas a los estándares internacionales. Los controles de cambio obligan a quien gana divisas exportando a venderlas a un organismo de control, normalmente el banco central; así el gobierno decide cuánta divisa entrega a las empresas y, con ello, cuánto se puede importar.",
+          "ejemplo": "Con controles de cambio, un exportador que vende USD 600.000 debe entregarlos al banco central a cambio de moneda local, y si luego necesita importar insumos tiene que pedirle al mismo banco que le venda divisas.",
+          "puntos_clave": [
+            "Barreras naturales, arancelarias y no arancelarias.",
+            "Cuotas, embargos y reglas de compra nacional.",
+            "Controles de cambio: el banco central concentra las divisas."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo los aranceles restringen el comercio.",
+            "Confundir una cuota (cantidad) con un arancel (impuesto)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-3-barriers-to-trade",
+            "seccion": "3.3 Barriers to Trade"
+          }
+        },
+        {
+          "id": "fi-formas-participar",
+          "nombre": "Formas de participar en el mercado global",
+          "explicacion": "Las empresas salen al exterior para ganar más, aprovechar una ventaja única, usar información exclusiva o porque su mercado interno está saturado. La forma menos complicada y riesgosa es exportar. Con licencias y franquicias, otra empresa usa la marca, patente o conocimiento a cambio de regalías. En la manufactura por contrato, una firma extranjera fabrica productos con la marca de la empresa local, lo que permite probar un mercado. En una empresa conjunta (joint venture) se compra parte de una compañía extranjera o se crea una nueva con ella. La inversión extranjera directa da control sobre empresas o instalaciones en el exterior, con la mayor recompensa y el mayor riesgo. El contracomercio paga con bienes o servicios en lugar de dinero.",
+          "ejemplo": "Una marca ecuatoriana de chocolate puede empezar exportando, luego licenciar su marca a un fabricante en otro país y, si el mercado crece, construir su propia planta allí (inversión extranjera directa).",
+          "puntos_clave": [
+            "De menor a mayor riesgo: exportar, licenciar, manufactura por contrato, joint venture, inversión directa.",
+            "Licencia: se paga regalía por usar la propiedad intelectual.",
+            "Contracomercio: pago con bienes o servicios."
+          ],
+          "errores_frecuentes": [
+            "Pensar que solo las grandes empresas pueden exportar.",
+            "Subestimar el riesgo de una joint venture."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-6-participating-in-the-global-marketplace",
+            "seccion": "3.6 Participating in the Global Marketplace"
+          }
+        },
+        {
+          "id": "fi-amenazas-oportunidades",
+          "nombre": "Amenazas y oportunidades: política, cultura y economía",
+          "explicacion": "Para tener éxito en otro país hay que entender su entorno político, cultural y económico. En lo político, el nacionalismo puede desalentar la inversión extranjera, y en climas hostiles un gobierno puede expropiar activos (con compensación) o confiscarlos (sin ella). En lo cultural, los valores, el idioma y las costumbres determinan qué es aceptable y cómo se traducen los nombres y mensajes. En lo económico, el nivel de desarrollo y la infraestructura condicionan el poder de compra y las oportunidades de negocio.",
+          "ejemplo": "Antes de invertir en un país, una empresa evalúa el riesgo de expropiación, revisa que el nombre de su producto no tenga un significado ofensivo en el idioma local y verifica si existen carreteras y servicios para distribuir.",
+          "puntos_clave": [
+            "Riesgo político: nacionalismo, expropiación y confiscación.",
+            "Cultura e idioma.",
+            "Desarrollo económico e infraestructura."
+          ],
+          "errores_frecuentes": [
+            "Traducir literalmente marcas y eslóganes.",
+            "Evaluar un mercado solo por su tamaño, sin su infraestructura."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-7-threats-and-opportunities-in-the-global-marketplace",
+            "seccion": "3.7 Threats and Opportunities in the Global Marketplace"
           }
         }
       ]
