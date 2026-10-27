@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (33 completas de 33)
+## Estado por materia (34 completas de 34)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -32,6 +32,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Investigación de mercados | 5 de 7 | completa | 6 de 6 | 24 | 1 de 1 | 100 % | — |
 | Marketing digital y comercio electrónico | 5 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Marketing | 4 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
+| Operaciones y cadena de suministro | 4 de 7 | completa | 5 de 5 | 21 | 2 de 2 | 100 % | — |
 | Planificación y dirección estratégica | 4 de 7 | completa | 5 de 5 | 20 | 0 de 0 | 100 % | — |
 | Contabilidad financiera (NIIF) | 3 de 7 | completa | 6 de 6 | 25 | 7 de 7 | 100 % | — |
 | Creatividad, innovación y design thinking | 3 de 7 | completa | 5 de 5 | 20 | 0 de 0 | 100 % | — |
@@ -74,6 +75,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Planes de Marketing | 4 | 7 | 2 | Marketing |
 | Dirección Estratégica | 4 | 5 | 3 | Planificación y dirección estratégica |
 | Prácticas de Servicio Comunitario (práctica o titulación) | 4 | 5 | 5 | no aplica |
+| Gestión Logística | 4 | 4 | 5 | Operaciones y cadena de suministro |
 | Gestión de Talento Humano | 3 | 6 | 4 | Gestión del talento humano |
 | Ética del IFAC | 3 | 6 | 5 | Ética profesional |
 | Contabilidad Financiera | 3 | 4 | 1 | Contabilidad financiera (NIIF) |
@@ -93,7 +95,6 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Contratación Pública | 2 | 2 | 6 | pendiente |
 | Cálculo Integral | 2 | 2 | 1 | Cálculo diferencial |
 | Fundamentos de Programación | 2 | 2 | 1 | pendiente |
-| Gestión de la Producción | 2 | 2 | 5 | pendiente |
 | Inteligencia de Negocios | 2 | 2 | 5 | pendiente |
 | Investigación Operativa | 2 | 2 | 4 | pendiente |
 | Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
@@ -141,7 +142,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · sin pendientes.
 - **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Marco Legal del Marketing y Ciberseguridad, Marketing Sostenible, Metodos Cuantitativos.
 - **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · pendientes: Business English, Businness Intelligence.
-- **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Gestión Logística.
+- **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Business Intelligence y Big Data, Propiedad Intelectual.
 - **7.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Modelos de Simulación.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
@@ -163,19 +164,18 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Administración y Responsabilidad Social Empresarial (Rse).
 - **3.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Legislación Aduanera.
 - **4.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades) · sin pendientes.
-- **5.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades) · pendientes: Logística y Transporte Internacional.
-- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Cadena de Suministros para Operaciones Globales, Técnicas de Valoración Aduanera.
+- **5.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
+- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Técnicas de Valoración Aduanera.
 - **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Inteligencia de Negocios, Nomenclatura Arancelaria.
-- **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Gerencia de Operaciones.
 
 ### Emprendimiento e innovación (1 plan)
 
 - **1.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Tributación (completa, 6 de 6 unidades) · pendientes: Herramientas de IA para la Gestión Emprendedora.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: IA Aplicada para la Gestión Empresarial y Emprendimiento.
 - **3.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · pendientes: Business Intelligence.
-- **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Big Data y Analítica para Toma de Decisiones, Gestión de Operaciones.
-- **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Gestión de la Producción.
-- **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Supply Chain Management.
+- **4.º ciclo**: en ÁBACO: Operaciones y cadena de suministro (completa, 5 de 5 unidades) · pendientes: Big Data y Analítica para Toma de Decisiones.
+- **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
+- **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · sin pendientes.
 - **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Business English, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
 

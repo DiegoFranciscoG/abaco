@@ -57,7 +57,8 @@
       "estadistica-inferencial",
       "contabilidad-costos",
       "evaluacion-proyectos",
-      "ventas-distribucion"
+      "ventas-distribucion",
+      "operaciones-logistica"
     ],
     "areas": [
       "tecnologia"
@@ -335,7 +336,8 @@
     "para_que": "Cronogramas de Gantt con tareas, recursos y costos del proyecto; abre y exporta archivos de Microsoft Project. Gratis y de código abierto (GPL-3.0).",
     "materias": [
       "evaluacion-proyectos",
-      "emprendimiento"
+      "emprendimiento",
+      "operaciones-logistica"
     ],
     "areas": [
       "gestion",

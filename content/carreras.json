@@ -1068,6 +1068,14 @@
         "planes": 2
       },
       {
+        "materia": "operaciones-logistica",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
         "materia": "evaluacion-proyectos",
         "ciclo": 6,
         "ciclos": [
@@ -1117,11 +1125,6 @@
       {
         "nombre": "Businness Intelligence",
         "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión Logística",
-        "ciclo": 5,
         "planes": 1
       },
       {
@@ -1477,6 +1480,16 @@
         "planes": 1
       },
       {
+        "materia": "operaciones-logistica",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          6,
+          8
+        ],
+        "planes": 1
+      },
+      {
         "materia": "finanzas-internacionales",
         "ciclo": 6,
         "ciclos": [
@@ -1522,16 +1535,6 @@
         "planes": 1
       },
       {
-        "nombre": "Logística y Transporte Internacional",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Cadena de Suministros para Operaciones Globales",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Técnicas de Valoración Aduanera",
         "ciclo": 6,
         "planes": 1
@@ -1544,11 +1547,6 @@
       {
         "nombre": "Nomenclatura Arancelaria",
         "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Gerencia de Operaciones",
-        "ciclo": 8,
         "planes": 1
       }
     ]
@@ -1695,6 +1693,16 @@
         "planes": 1
       },
       {
+        "materia": "operaciones-logistica",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5,
+          6
+        ],
+        "planes": 1
+      },
+      {
         "materia": "etica-profesional",
         "ciclo": 5,
         "ciclos": [
@@ -1762,21 +1770,6 @@
       {
         "nombre": "Big Data y Analítica para Toma de Decisiones",
         "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión de Operaciones",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión de la Producción",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Supply Chain Management",
-        "ciclo": 6,
         "planes": 1
       },
       {

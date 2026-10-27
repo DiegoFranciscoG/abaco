@@ -1459,5 +1459,72 @@
       "seccion": "14.3 The Use of Metrics to Measure Advertising Campaign Effectiveness"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "indicadores-inventario",
+    "nombre": "Indicadores de inventario: rotación y días",
+    "descripcion": "Calcula el inventario promedio, la rotación de inventario y los días de inventario de dos negocios a partir del costo de ventas y los inventarios inicial y final.",
+    "materias": [
+      "operaciones-logistica"
+    ],
+    "celdas": {
+      "A1": "Concepto",
+      "B1": "Tienda de ropa",
+      "C1": "Almacén de repuestos",
+      "A2": "Costo de ventas (USD)",
+      "B2": 240000,
+      "C2": 150000,
+      "A3": "Inventario inicial (USD)",
+      "B3": 50000,
+      "C3": 70000,
+      "A4": "Inventario final (USD)",
+      "B4": 30000,
+      "C4": 50000,
+      "A5": "Inventario promedio (USD)",
+      "B5": "=(B3+B4)/2",
+      "C5": "=(C3+C4)/2",
+      "A6": "Rotación (veces)",
+      "B6": "=B2/B5",
+      "C6": "=C2/C5",
+      "A7": "Días de inventario",
+      "B7": "=365*B5/B2",
+      "C7": "=365*C5/C2"
+    },
+    "formatos": {
+      "B5": "numero",
+      "C5": "numero",
+      "B6": "numero",
+      "C6": "numero",
+      "B7": "numero",
+      "C7": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B6",
+        "esperado": 6,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C6",
+        "esperado": 2.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B7",
+        "esperado": 60.833333,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C7",
+        "esperado": 146,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+      "seccion": "19.5 Inventory Management"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

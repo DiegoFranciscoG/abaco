@@ -5084,5 +5084,163 @@
       "reduce the uncertainty",
       "superordinate goals"
     ]
+  },
+  {
+    "id": "op-concepto",
+    "palabras": [
+      "production , the creation of products and services",
+      "inputs",
+      "operations management"
+    ]
+  },
+  {
+    "id": "op-calidad",
+    "palabras": [
+      "total quality management (tqm)",
+      "3.4 defects per million",
+      "dmaic",
+      "iso 9000 is a family of international standards"
+    ]
+  },
+  {
+    "id": "op-lean-jit",
+    "palabras": [
+      "lean manufacturing",
+      "just-in-time (jit)",
+      "materials should arrive exactly when they are needed"
+    ]
+  },
+  {
+    "id": "op-tecnologia",
+    "palabras": [
+      "computer-aided design (cad)",
+      "computer-aided manufacturing (cam)",
+      "robotics"
+    ]
+  },
+  {
+    "id": "op-tendencias",
+    "palabras": [
+      "workforce development",
+      "ai technology"
+    ]
+  },
+  {
+    "id": "op-costos-inventario",
+    "palabras": [
+      "carrying costs",
+      "ordering costs",
+      "stockout costs"
+    ]
+  },
+  {
+    "id": "op-inventario-logistica",
+    "palabras": [
+      "warehousing, inventory management, and transportation",
+      "warehousing is the stocking, maintaining, and controlling of products",
+      "inventory management is a function"
+    ]
+  },
+  {
+    "id": "op-dias-inventario",
+    "palabras": [
+      "days in inventory ratio measures the average number of days between acquiring inventory"
+    ]
+  },
+  {
+    "id": "op-rotacion-inventario",
+    "palabras": [
+      "inventory turnover"
+    ]
+  },
+  {
+    "id": "op-scm-concepto",
+    "palabras": [
+      "a supply chain is the entire process of distribution",
+      "supply chain management (scm) is the process of managing all the members and activities"
+    ]
+  },
+  {
+    "id": "op-scm-marketing",
+    "palabras": [
+      "the role of marketing in supply chain management",
+      "value proposition",
+      "right suppliers"
+    ]
+  },
+  {
+    "id": "op-scm-cliente",
+    "palabras": [
+      "the goal of supply-chain management is to create a satisfied customer",
+      "customer driven"
+    ]
+  },
+  {
+    "id": "op-scm-sostenible",
+    "palabras": [
+      "carbon footprint",
+      "sustainable sourcing is the process of considering suppliers' social, ethical, and environmental performance"
+    ]
+  },
+  {
+    "id": "op-logistica-concepto",
+    "palabras": [
+      "logistics is the planning, organizing, and controlling of the movement"
+    ]
+  },
+  {
+    "id": "op-transporte",
+    "palabras": [
+      "transportation is the physical movement of products by either road, water, or air"
+    ]
+  },
+  {
+    "id": "op-logistica-integrada",
+    "palabras": [
+      "logistics information management is the recording and reporting",
+      "demand forecasts",
+      "integrated logistics management means that every element of logistics works cohesively"
+    ]
+  },
+  {
+    "id": "op-3pl",
+    "palabras": [
+      "third-party logistics provider",
+      "core competency",
+      "flexibility"
+    ]
+  },
+  {
+    "id": "op-incoterms-concepto",
+    "palabras": [
+      "of the 11 rules, there are seven for any mode(s) of transport and four for sea",
+      "clearly specify the chosen version"
+    ]
+  },
+  {
+    "id": "op-incoterms-multimodales",
+    "palabras": [
+      "exw - ex works",
+      "fca - free carrier",
+      "ddp - delivered duty paid",
+      "dpu incoterms replaces the old dat"
+    ]
+  },
+  {
+    "id": "op-incoterms-maritimos",
+    "palabras": [
+      "fas - free alongside ship",
+      "fob - free on board",
+      "cfr - cost and freight",
+      "cif - cost insurance and freight"
+    ]
+  },
+  {
+    "id": "op-incoterms-responsabilidades",
+    "palabras": [
+      "commercial invoice",
+      "customs formalities",
+      "cargo insurance"
+    ]
   }
 ]

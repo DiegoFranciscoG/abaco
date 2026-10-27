@@ -10270,5 +10270,123 @@
     },
     "materia": "publicidad",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-op-dias-ferreteria",
+    "subtema": "op-dias-inventario",
+    "formula": "dias-inventario",
+    "enunciado": "Una ferretería tiene un inventario de USD 30.000 y un costo de ventas anual de USD 180.000. ¿Cuántos días de inventario tiene?",
+    "datos": {
+      "Inv": 30000,
+      "CV": 180000
+    },
+    "calculo": "365 * Inv / CV",
+    "respuesta": 60.83,
+    "unidad": "días",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "365 × 30.000 = 10.950.000",
+      "10.950.000 ÷ 180.000 = 60,83"
+    ],
+    "pistas": [
+      "Usa el costo de ventas, no las ventas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+      "seccion": "19.5 Inventory Management"
+    },
+    "materia": "operaciones-logistica",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-op-dias-perecibles",
+    "subtema": "op-dias-inventario",
+    "formula": "dias-inventario",
+    "enunciado": "Una distribuidora de frutas tiene inventario de USD 8.000 y costo de ventas anual de USD 584.000. ¿Cuántos días de inventario tiene?",
+    "datos": {
+      "Inv": 8000,
+      "CV": 584000
+    },
+    "calculo": "365 * Inv / CV",
+    "respuesta": 5,
+    "unidad": "días",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "365 × 8.000 = 2.920.000",
+      "2.920.000 ÷ 584.000 = 5"
+    ],
+    "pistas": [
+      "En perecibles se esperan pocos días."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+      "seccion": "19.5 Inventory Management"
+    },
+    "materia": "operaciones-logistica",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-op-rotacion-ropa",
+    "subtema": "op-rotacion-inventario",
+    "formula": "rotacion-inventarios",
+    "enunciado": "Una tienda de ropa tiene costo de ventas de USD 240.000, inventario inicial de USD 50.000 y final de USD 30.000. ¿Cuál es su rotación de inventario?",
+    "datos": {
+      "CV": 240000,
+      "II": 50000,
+      "IF": 30000
+    },
+    "calculo": "CV / ((II + IF) / 2)",
+    "respuesta": 6,
+    "unidad": "veces",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Inventario promedio = (50.000 + 30.000) ÷ 2 = 40.000",
+      "Rotación = 240.000 ÷ 40.000 = 6"
+    ],
+    "pistas": [
+      "Primero calcula el inventario promedio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+      "seccion": "19.5 Inventory Management"
+    },
+    "materia": "operaciones-logistica",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-op-rotacion-repuestos",
+    "subtema": "op-rotacion-inventario",
+    "formula": "rotacion-inventarios",
+    "enunciado": "Un almacén de repuestos tiene costo de ventas de USD 150.000, inventario inicial de USD 70.000 y final de USD 50.000. ¿Cuál es su rotación de inventario?",
+    "datos": {
+      "CV": 150000,
+      "II": 70000,
+      "IF": 50000
+    },
+    "calculo": "CV / ((II + IF) / 2)",
+    "respuesta": 2.5,
+    "unidad": "veces",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Inventario promedio = (70.000 + 50.000) ÷ 2 = 60.000",
+      "Rotación = 150.000 ÷ 60.000 = 2,5"
+    ],
+    "pistas": [
+      "Una rotación baja indica inventario que se mueve lento."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+      "seccion": "19.5 Inventory Management"
+    },
+    "materia": "operaciones-logistica",
+    "actualizado_en": "2026-10-26"
   }
 ]

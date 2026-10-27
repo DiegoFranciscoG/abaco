@@ -1,0 +1,496 @@
+{
+  "materia": "operaciones-logistica",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "op-produccion",
+      "nombre": "Producción y operaciones",
+      "orden": 1,
+      "descripcion": "Qué es la gestión de operaciones, calidad, manufactura esbelta y justo a tiempo, tecnología en la planta y tendencias.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "op-concepto",
+          "nombre": "La gestión de la producción y las operaciones",
+          "explicacion": "La producción es la creación de bienes y servicios y es una función esencial en toda empresa: transforma insumos como recursos naturales, materias primas, recursos humanos y capital en productos y servicios. Administrar ese proceso de conversión es la tarea de la gestión de operaciones. Se aplica tanto a fábricas como a empresas de servicios y exige coordinar equipos, materiales, personas, cronogramas y presupuestos.",
+          "ejemplo": "Una panadería transforma harina, levadura, energía y el trabajo de los panaderos (insumos) en pan (producto); una clínica transforma el tiempo de los médicos, equipos e insumos médicos en consultas (servicio). Ambas necesitan gestión de operaciones.",
+          "puntos_clave": [
+            "Insumos que se convierten en productos.",
+            "Gestión del proceso de conversión.",
+            "Aplica a manufactura y servicios."
+          ],
+          "errores_frecuentes": [
+            "Pensar que las operaciones solo existen en fábricas.",
+            "Planificar la producción sin mirar costos y tiempos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-1-production-and-operations-management-an-overview",
+            "seccion": "10.1 Production and Operations Management—An Overview"
+          }
+        },
+        {
+          "id": "op-calidad",
+          "nombre": "Calidad: TQM, Seis Sigma e ISO 9000",
+          "explicacion": "Para competir hay que mantener bajos los costos y, a la vez, ofrecer la calidad que el cliente espera; los productos defectuosos desperdician materiales y tiempo y provocan insatisfacción. La gestión de calidad total (TQM) aplica principios de calidad en todas las áreas y busca la mejora continua con la participación de todos. Seis Sigma mide los defectos y los elimina sistemáticamente para acercarse a cero, con la meta de no más de 3,4 defectos por millón, mediante el ciclo DMAIC (definir, medir, analizar, mejorar y controlar). ISO 9000 es una familia de normas internacionales que verifica si una organización sigue procedimientos sólidos de control de calidad; ISO 9001 es la norma certificable y exige una auditoría.",
+          "ejemplo": "Una fábrica de muebles forma equipos de mejora en todas sus áreas (TQM), mide las piezas defectuosas y reduce sus causas con DMAIC (Seis Sigma) y se certifica en ISO 9001 para vender a grandes cadenas.",
+          "puntos_clave": [
+            "TQM: calidad en toda la empresa y mejora continua.",
+            "Seis Sigma y DMAIC.",
+            "ISO 9001: norma certificable."
+          ],
+          "errores_frecuentes": [
+            "Ver la calidad como tarea solo del área de control.",
+            "Certificarse sin cambiar los procesos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6 Looking for a Better Way: Improving Production and Operations"
+          }
+        },
+        {
+          "id": "op-lean-jit",
+          "nombre": "Manufactura esbelta y justo a tiempo",
+          "explicacion": "La manufactura esbelta busca producir con menos desperdicio, y va de la mano del sistema justo a tiempo (JIT), que se basa en que los materiales lleguen exactamente cuando se necesitan para producir en lugar de almacenarse. Con sistemas informáticos de planificación de materiales y de recursos empresariales, los fabricantes determinan qué piezas necesitarán y cuándo, y las piden para que lleguen «justo a tiempo». En JIT, el inventario y los productos se «jalan» a través del proceso según la demanda de los clientes.",
+          "ejemplo": "Una ensambladora de motos no guarda grandes cantidades de llantas: su sistema calcula los pedidos de la semana y el proveedor entrega las llantas el día en que se montan.",
+          "puntos_clave": [
+            "Menos desperdicio.",
+            "Materiales cuando se necesitan.",
+            "Producción jalada por la demanda."
+          ],
+          "errores_frecuentes": [
+            "Aplicar JIT con proveedores poco confiables.",
+            "Confundir esbelto con recortar personal sin mejorar procesos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6 Looking for a Better Way: Improving Production and Operations"
+          }
+        },
+        {
+          "id": "op-tecnologia",
+          "nombre": "Tecnología en la planta: CAD, CAM y robótica",
+          "explicacion": "La tecnología mejora la eficiencia y la capacidad de competir. En el diseño asistido por computadora (CAD) se diseñan y prueban productos nuevos o se modifican los existentes antes de fabricarlos. La manufactura asistida por computadora (CAM) desarrolla y controla el proceso de producción. Otras tecnologías de automatización son la robótica, los sistemas de manufactura flexible, la manufactura integrada por computadora y la inteligencia artificial.",
+          "ejemplo": "Un taller de calzado diseña sus modelos en un programa CAD, prueba las medidas en pantalla y envía los patrones a una máquina de corte automatizada (CAM), reduciendo errores y desperdicio de cuero.",
+          "puntos_clave": [
+            "CAD: diseñar y probar en computadora.",
+            "CAM: controlar la producción.",
+            "Robótica, sistemas flexibles e IA."
+          ],
+          "errores_frecuentes": [
+            "Automatizar un proceso que está mal diseñado.",
+            "Comprar tecnología sin capacitar al personal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-7-transforming-the-factory-floor-with-technology",
+            "seccion": "10.7 Transforming the Factory Floor with Technology"
+          }
+        },
+        {
+          "id": "op-tendencias",
+          "nombre": "Tendencias en producción y operaciones",
+          "explicacion": "La producción enfrenta cambios tecnológicos rápidos e intensa competencia global. Una preocupación central es el desarrollo de la fuerza laboral y la falta de trabajadores calificados, que exige más énfasis en ciencia, educación, investigación y emprendimiento. La tecnología, y en especial la inteligencia artificial, ayuda a los líderes a analizar datos de toda la cadena, desde los proveedores hasta el cliente final, para tomar decisiones en tiempo real.",
+          "ejemplo": "Una agroexportadora usa sensores y analítica de datos para decidir a diario qué lotes cosechar y despachar, y al mismo tiempo capacita a su personal para operar esos sistemas.",
+          "puntos_clave": [
+            "Competencia global y cambio tecnológico.",
+            "Escasez de trabajadores calificados.",
+            "IA para decidir en tiempo real."
+          ],
+          "errores_frecuentes": [
+            "Invertir en tecnología sin desarrollar talento.",
+            "Ignorar la competencia de otros países."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-8-trends-in-production-and-operations-management",
+            "seccion": "10.8 Trends in Production and Operations Management"
+          }
+        }
+      ]
+    },
+    {
+      "id": "op-inventarios",
+      "nombre": "Gestión de inventarios",
+      "orden": 2,
+      "descripcion": "Costos de mantener inventario, la función de inventarios en la logística y los indicadores de días y rotación de inventario.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "op-costos-inventario",
+          "nombre": "Costos y beneficios de mantener inventario",
+          "explicacion": "La gestión de inventarios afecta el capital de trabajo: se busca mantener saldos bajos y alta rotación sin descuidar a compras, ventas y operaciones, que necesitan inventario. Mantener inventario genera costos de mantenimiento (almacenamiento, seguros, obsolescencia, deterioro y el costo de oportunidad del dinero invertido), costos de pedido (hacer y pagar las órdenes de compra) y, si falta, costos por desabastecimiento, cuando un cliente no recibe su pedido y compra en otra parte. El beneficio de tenerlo es poder atender la producción y las ventas sin interrupciones.",
+          "ejemplo": "Una distribuidora de lácteos que guarda demasiado yogur paga refrigeración y pierde producto vencido (mantenimiento); si guarda muy poco, los supermercados compran a la competencia (desabastecimiento).",
+          "puntos_clave": [
+            "Costos de mantenimiento, de pedido y de desabastecimiento.",
+            "Equilibrio entre áreas.",
+            "Impacto en el capital de trabajo."
+          ],
+          "errores_frecuentes": [
+            "Mirar solo el costo de almacenar e ignorar el de quedarse sin stock.",
+            "Olvidar el costo de oportunidad del dinero inmovilizado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+            "seccion": "19.5 Inventory Management"
+          }
+        },
+        {
+          "id": "op-inventario-logistica",
+          "nombre": "El inventario dentro de la logística",
+          "explicacion": "Las funciones principales de la logística son el almacenamiento, la gestión de inventarios y el transporte. El almacenamiento consiste en guardar, mantener y controlar los productos mientras esperan el siguiente paso hacia el consumidor: recibir y guardar mercadería, preparar y empacar pedidos y despacharlos, a veces con control de temperatura para perecibles. La gestión de inventarios identifica qué tipo de inventario hay y cuánto se tiene en cada momento, para que no haya ni demasiado ni muy poco.",
+          "ejemplo": "Un centro de distribución de medicinas recibe los lotes, los guarda refrigerados cuando corresponde, controla por sistema cuántas unidades hay de cada medicamento y prepara los pedidos de las farmacias cada mañana.",
+          "puntos_clave": [
+            "Almacenamiento: recibir, guardar, preparar y despachar.",
+            "Inventario: tipo y cantidad en cada momento.",
+            "Ni exceso ni faltante."
+          ],
+          "errores_frecuentes": [
+            "No llevar control de inventario en tiempo real.",
+            "Almacenar perecibles sin condiciones adecuadas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-6-logistics-and-its-functions",
+            "seccion": "17.6 Logistics and Its Functions"
+          }
+        },
+        {
+          "id": "op-dias-inventario",
+          "nombre": "Días de inventario",
+          "explicacion": "El indicador de días de inventario mide el número promedio de días entre la compra de la mercadería y su venta. Se calcula como 365 por el inventario dividido para el costo de ventas. Conviene vigilarlo y, en lo posible, reducirlo: un valor alto puede indicar inventario envejecido, con riesgo de obsolescencia o de deterioro en productos perecibles.",
+          "ejemplo": "Una ferretería tiene un inventario de USD 30.000 y un costo de ventas anual de USD 180.000: días de inventario = 365 × 30.000 ÷ 180.000 = 60,83 días.",
+          "puntos_clave": [
+            "Días entre compra y venta.",
+            "365 × inventario ÷ costo de ventas.",
+            "Valores altos: riesgo de obsolescencia."
+          ],
+          "errores_frecuentes": [
+            "Usar ventas en lugar del costo de ventas.",
+            "Comparar con empresas de otro sector."
+          ],
+          "formulas": [
+            "dias-inventario"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+            "seccion": "19.5 Inventory Management"
+          }
+        },
+        {
+          "id": "op-rotacion-inventario",
+          "nombre": "Rotación de inventario",
+          "explicacion": "La rotación de inventario indica cuántas veces se vende y repone el inventario en el período: es el costo de ventas dividido para el inventario promedio, que a su vez es el promedio entre el inventario inicial y el final. Los directivos buscan una rotación alta sin llegar a quedarse sin productos. La rotación y los días de inventario se relacionan: cuanto mayor es la rotación, menos días permanece la mercadería en bodega.",
+          "ejemplo": "Una tienda de ropa tiene costo de ventas de USD 240.000, inventario inicial de 50.000 y final de 30.000: inventario promedio = (50.000 + 30.000) ÷ 2 = 40.000 y rotación = 240.000 ÷ 40.000 = 6 veces al año.",
+          "puntos_clave": [
+            "Costo de ventas ÷ inventario promedio.",
+            "Inventario promedio = (inicial + final) ÷ 2.",
+            "Más rotación, menos días en bodega."
+          ],
+          "errores_frecuentes": [
+            "Usar solo el inventario final.",
+            "Buscar rotación tan alta que haya faltantes."
+          ],
+          "formulas": [
+            "rotacion-inventarios"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/19-5-inventory-management",
+            "seccion": "19.5 Inventory Management"
+          }
+        }
+      ]
+    },
+    {
+      "id": "op-cadena",
+      "nombre": "Cadena de suministro",
+      "orden": 3,
+      "descripcion": "Qué es la cadena de suministro y su gestión, el papel del marketing, la orientación al cliente y la sostenibilidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "op-scm-concepto",
+          "nombre": "Qué es la gestión de la cadena de suministro",
+          "explicacion": "La cadena de suministro es todo el proceso de distribución, desde conseguir las materias primas para fabricar hasta entregar los productos finales a los consumidores. Su gestión (SCM) administra a todos los miembros y actividades, desde la compra y transformación de materias primas en productos terminados hasta su distribución a los consumidores objetivo. Las cadenas de alto desempeño parten de una mentalidad centrada en el cliente: todas las actividades buscan crear y entregar valor al consumidor final.",
+          "ejemplo": "La cadena de una marca de chocolate incluye a los productores de cacao, el acopiador, la planta de procesamiento, el proveedor de empaques, el distribuidor y las tiendas; gestionarla es coordinar a todos para que el chocolate llegue fresco y a tiempo.",
+          "puntos_clave": [
+            "De las materias primas al consumidor.",
+            "Gestión de todos los miembros y actividades.",
+            "Centrada en el cliente."
+          ],
+          "errores_frecuentes": [
+            "Gestionar cada eslabón por separado.",
+            "Olvidar que el objetivo es el valor para el cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-5-the-supply-chain-and-its-functions",
+            "seccion": "17.5 The Supply Chain and Its Functions"
+          }
+        },
+        {
+          "id": "op-scm-marketing",
+          "nombre": "El papel del marketing y de los proveedores",
+          "explicacion": "El marketing cumple un papel central en la cadena de suministro: crear y entregar productos que satisfagan las necesidades de los clientes construyendo relaciones. Para cumplir la propuesta de valor prometida, la empresa debe empezar por trabajar con los proveedores correctos, que entregan los materiales e ingredientes que permiten cumplir esa promesa, por ejemplo, ingredientes naturales para una marca que se posiciona como saludable.",
+          "ejemplo": "Una marca de granola que promete «ingredientes 100 % ecuatorianos» selecciona proveedores de avena, miel y frutas del país y verifica su origen, porque un proveedor equivocado rompería su propuesta de valor.",
+          "puntos_clave": [
+            "Marketing: necesidades y relaciones.",
+            "La propuesta de valor depende de los proveedores.",
+            "Elegir proveedores coherentes con la promesa."
+          ],
+          "errores_frecuentes": [
+            "Elegir proveedores solo por precio.",
+            "Prometer atributos que la cadena no puede cumplir."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-5-the-supply-chain-and-its-functions",
+            "seccion": "17.5 The Supply Chain and Its Functions"
+          }
+        },
+        {
+          "id": "op-scm-cliente",
+          "nombre": "Una cadena orientada a la satisfacción del cliente",
+          "explicacion": "La distribución es parte de la mezcla de marketing: no sirve vender lo que no se puede entregar, y las entregas tardías o promesas incumplidas hacen perder clientes. Pedidos y facturas exactos, entregas a tiempo y productos en buen estado son claves. El objetivo de la gestión de la cadena de suministro es lograr clientes satisfechos coordinando a todos sus miembros en un proceso sin fisuras, y como está guiada por el cliente, sus necesidades orientan las decisiones, incluso cuando piden productos personalizados.",
+          "ejemplo": "Una tienda de colchones que vende en línea coordina con la fábrica y la empresa de transporte para entregar en 48 horas el tamaño exacto pedido; si falla un eslabón, el cliente culpa a la tienda.",
+          "puntos_clave": [
+            "Pedidos exactos y entregas a tiempo.",
+            "Coordinación sin fisuras.",
+            "El cliente guía las decisiones."
+          ],
+          "errores_frecuentes": [
+            "Prometer plazos que la logística no puede cumplir.",
+            "No informar al cliente de los retrasos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/12-4-using-supply-chain-management-to-increase-efficiency-and-customer-satisfaction",
+            "seccion": "12.4 Using Supply Chain Management to Increase Efficiency and Customer Satisfaction"
+          }
+        },
+        {
+          "id": "op-scm-sostenible",
+          "nombre": "Ética y sostenibilidad en la cadena de suministro",
+          "explicacion": "Al buscar entregar el producto correcto al cliente correcto en el momento correcto, las empresas deben equilibrar la rapidez de envío con la protección del ambiente. La sostenibilidad es el esfuerzo por reducir el impacto ambiental desde la compra de insumos hasta la producción y la distribución; una cadena sostenible suma a la rapidez y el costo metas para mitigar el daño a las personas y al ambiente, como reducir la huella de carbono. El abastecimiento sostenible considera el desempeño social, ético y ambiental de los proveedores, y mejora la reputación, protege la marca y atrae nuevos consumidores.",
+          "ejemplo": "Una tienda en línea ofrece al cliente un envío más lento con menor huella de carbono y trabaja solo con proveedores de algodón que demuestran buenas condiciones laborales.",
+          "puntos_clave": [
+            "Rapidez frente a huella de carbono.",
+            "Abastecimiento sostenible.",
+            "Reputación y protección de la marca."
+          ],
+          "errores_frecuentes": [
+            "Medir solo costo y rapidez.",
+            "No revisar las prácticas de los proveedores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-7-ethical-issues-in-supply-chain-management",
+            "seccion": "17.7 Ethical Issues in Supply Chain Management"
+          }
+        }
+      ]
+    },
+    {
+      "id": "op-logistica",
+      "nombre": "Logística",
+      "orden": 4,
+      "descripcion": "Qué es la logística, el transporte, la información logística, la logística integrada y los operadores logísticos externos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "op-logistica-concepto",
+          "nombre": "Qué es la logística",
+          "explicacion": "La logística incluye todas las actividades del flujo de productos de los fabricantes a los consumidores: es planificar, organizar y controlar el movimiento de materias primas y, al final, de productos terminados hasta el consumidor final. Requiere un esfuerzo coordinado entre todos los miembros del canal, por ejemplo para empacar y transportar un jugo desde la planta hasta la tienda.",
+          "ejemplo": "Para que un jugo de naranja llegue a una tienda de Loja, la empresa planifica la producción, coordina el empaque, programa los camiones refrigerados y controla que cada entrega llegue completa.",
+          "puntos_clave": [
+            "Flujo de productos del fabricante al consumidor.",
+            "Planificar, organizar y controlar.",
+            "Coordinación entre miembros del canal."
+          ],
+          "errores_frecuentes": [
+            "Reducir la logística al transporte.",
+            "Planificar la logística al final, después de vender."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-6-logistics-and-its-functions",
+            "seccion": "17.6 Logistics and Its Functions"
+          }
+        },
+        {
+          "id": "op-transporte",
+          "nombre": "El transporte",
+          "explicacion": "El transporte es el movimiento físico de los productos por tierra, agua o aire. Las empresas deben decidir qué medio o combinación de medios conviene según la naturaleza del producto, la ubicación del mercado objetivo y los costos de cada opción. El transporte incluye también todas las actividades necesarias para mover los productos de un punto a otro.",
+          "ejemplo": "Un exportador de rosas usa camión hasta el aeropuerto y avión hasta Europa porque las flores son perecibles; un exportador de banano usa barco, más lento pero mucho más barato para grandes volúmenes.",
+          "puntos_clave": [
+            "Tierra, agua o aire.",
+            "Depende del producto, el mercado y el costo.",
+            "Combinación de medios."
+          ],
+          "errores_frecuentes": [
+            "Elegir siempre el medio más barato sin mirar el producto.",
+            "Olvidar los tiempos de transbordo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-6-logistics-and-its-functions",
+            "seccion": "17.6 Logistics and Its Functions"
+          }
+        },
+        {
+          "id": "op-logistica-integrada",
+          "nombre": "Información logística y logística integrada",
+          "explicacion": "Para que la cadena funcione, fabricantes, proveedores, miembros del canal y clientes necesitan información logística útil. La gestión de la información logística registra y reporta datos que los miembros del canal analizan en tiempo real, lo que permite pronosticar la demanda. La logística integrada significa que todos los elementos de la logística trabajan coordinados para que los productos fluyan de forma eficiente; empieza por definir objetivos comunes, como minimizar costos, cumplir un alto porcentaje de entregas a tiempo y comunicarse con honestidad.",
+          "ejemplo": "Una cadena de agroproductos comparte en una plataforma los inventarios y pedidos de productores, bodegas y supermercados, y todos se comprometen con la meta de entregar a tiempo el 95 % de los pedidos.",
+          "puntos_clave": [
+            "Información en tiempo real.",
+            "Pronóstico de la demanda.",
+            "Objetivos logísticos comunes."
+          ],
+          "errores_frecuentes": [
+            "Que cada miembro guarde su información.",
+            "Fijar metas logísticas distintas para cada eslabón."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-6-logistics-and-its-functions",
+            "seccion": "17.6 Logistics and Its Functions"
+          }
+        },
+        {
+          "id": "op-3pl",
+          "nombre": "Operadores logísticos externos (3PL)",
+          "explicacion": "Un operador logístico externo (3PL) es una empresa contratada por un miembro del canal para encargarse de una o varias funciones logísticas; pueden ser bodegas, centros de distribución o centros de preparación de pedidos especializados. Sus ventajas son que la logística es su especialidad, que tercerizarla suele ser más barato y que ofrecen flexibilidad, ya que tener bodegas y flotas propias exige mucho capital.",
+          "ejemplo": "Una tienda en línea de cosméticos contrata a un operador logístico que guarda sus productos, prepara los pedidos y los entrega en todo el país, en lugar de comprar una bodega y camiones.",
+          "puntos_clave": [
+            "Terceros especializados en logística.",
+            "Menor costo y flexibilidad.",
+            "Evita inversiones de capital."
+          ],
+          "errores_frecuentes": [
+            "Tercerizar sin indicadores de servicio.",
+            "Perder el contacto con el cliente final."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-6-logistics-and-its-functions",
+            "seccion": "17.6 Logistics and Its Functions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "op-incoterms",
+      "nombre": "Logística internacional e Incoterms 2020",
+      "orden": 5,
+      "descripcion": "Qué son las reglas Incoterms, las siete para cualquier modo de transporte, las cuatro marítimas y las responsabilidades que reparten.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "op-incoterms-concepto",
+          "nombre": "Qué son las reglas Incoterms",
+          "explicacion": "Las reglas Incoterms son términos comerciales de tres letras que reflejan la práctica en los contratos de compraventa internacional de mercancías y aclaran quién es responsable de qué en cada paso de la operación. La versión 2020 tiene 11 reglas agrupadas según el modo de transporte: siete sirven para cualquier modo y cuatro solo para transporte marítimo y por vías navegables interiores. Aunque se recomienda usar la versión 2020, las partes pueden acordar otra versión siempre que la indiquen claramente en el contrato y en los documentos.",
+          "ejemplo": "Un contrato de exportación de cacao dice «FOB Guayaquil Incoterms® 2020»: indica la regla, el puerto y la versión, de modo que comprador y vendedor saben exactamente qué asume cada uno.",
+          "puntos_clave": [
+            "Términos de tres letras para compraventas internacionales.",
+            "11 reglas en la versión 2020.",
+            "Indicar siempre la versión y el lugar."
+          ],
+          "errores_frecuentes": [
+            "Usar una regla sin indicar el lugar.",
+            "No especificar la versión de los Incoterms."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ita-incoterms",
+            "url": "https://www.trade.gov/know-your-incoterms",
+            "seccion": "Know Your Incoterms"
+          }
+        },
+        {
+          "id": "op-incoterms-multimodales",
+          "nombre": "Las siete reglas para cualquier modo de transporte",
+          "explicacion": "Las siete reglas Incoterms® 2020 para cualquier modo de transporte son: EXW (en fábrica, se indica el lugar de entrega), FCA (franco transportista), CPT (transporte pagado hasta el lugar de destino), CIP (transporte y seguro pagados hasta el destino), DAP (entregada en el lugar de destino), DPU (entregada en el lugar descargada) y DDP (entregada con derechos pagados). DPU reemplazó a la antigua DAT y exige además que el vendedor descargue la mercancía del medio de transporte que llega.",
+          "ejemplo": "Si un fabricante ecuatoriano vende «EXW Cuenca», el comprador retira la mercadería en la fábrica y asume casi todo; si vende «DDP Bogotá», el vendedor entrega en destino con los derechos de importación pagados.",
+          "puntos_clave": [
+            "EXW, FCA, CPT, CIP, DAP, DPU y DDP.",
+            "Sirven para cualquier modo.",
+            "DPU reemplazó a DAT."
+          ],
+          "errores_frecuentes": [
+            "Usar FOB o CIF para envíos aéreos o terrestres.",
+            "Aceptar DDP sin conocer los impuestos del país de destino."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ita-incoterms",
+            "url": "https://www.trade.gov/know-your-incoterms",
+            "seccion": "Know Your Incoterms"
+          }
+        },
+        {
+          "id": "op-incoterms-maritimos",
+          "nombre": "Las cuatro reglas marítimas",
+          "explicacion": "Las cuatro reglas Incoterms® 2020 para transporte marítimo y por vías navegables interiores son: FAS (franco al costado del buque, en el puerto de carga), FOB (franco a bordo, en el puerto de carga), CFR (costo y flete, hasta el puerto de destino) y CIF (costo, seguro y flete, hasta el puerto de destino). En FAS y FOB se nombra el puerto de carga; en CFR y CIF, el puerto de destino.",
+          "ejemplo": "Un exportador de camarón que vende «CIF Rotterdam» paga el flete y el seguro hasta el puerto de Rotterdam; si vendiera «FOB Guayaquil», su responsabilidad terminaría al cargar la mercadería a bordo en Guayaquil.",
+          "puntos_clave": [
+            "FAS, FOB, CFR y CIF.",
+            "Solo marítimo y vías navegables.",
+            "Puerto de carga o de destino según la regla."
+          ],
+          "errores_frecuentes": [
+            "Confundir el puerto que se nombra en cada regla.",
+            "Suponer que CFR incluye seguro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ita-incoterms",
+            "url": "https://www.trade.gov/know-your-incoterms",
+            "seccion": "Know Your Incoterms"
+          }
+        },
+        {
+          "id": "op-incoterms-responsabilidades",
+          "nombre": "Qué responsabilidades reparten los Incoterms",
+          "explicacion": "Cada regla Incoterms establece la obligación del vendedor de entregar la mercancía y la factura comercial conforme al contrato, y la del comprador de pagar el precio. También indica quién obtiene las licencias o autorizaciones de exportación e importación y realiza los trámites aduaneros, quién contrata el transporte, quién debe contratar el seguro de la carga, si alguien está obligado a hacerlo, y quién asume los costos de cada tarea.",
+          "ejemplo": "Antes de cerrar una venta a Chile, un exportador revisa con el Incoterm acordado quién hará el trámite de exportación en Ecuador, quién contrata el camión y el buque, si debe asegurar la carga y quién paga la importación en Chile.",
+          "puntos_clave": [
+            "Entrega, factura y pago del precio.",
+            "Licencias y trámites aduaneros.",
+            "Transporte, seguro y costos."
+          ],
+          "errores_frecuentes": [
+            "Creer que los Incoterms definen el precio o la forma de pago.",
+            "No calcular los costos que asume cada parte."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ita-incoterms",
+            "url": "https://www.trade.gov/know-your-incoterms",
+            "seccion": "Know Your Incoterms"
+          }
+        }
+      ]
+    }
+  ]
+}

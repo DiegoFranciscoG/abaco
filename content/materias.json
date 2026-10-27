@@ -734,5 +734,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "operaciones-logistica",
+    "nombre": "Operaciones y cadena de suministro",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Gestión de la producción y las operaciones, calidad, manufactura esbelta y tecnología, inventarios y sus indicadores, cadena de suministro, logística e Incoterms 2020.",
+    "sinonimos": [
+      "gerencia de operaciones",
+      "gestión de operaciones",
+      "gestión de la producción",
+      "supply chain management",
+      "cadena de suministros para operaciones globales",
+      "gestión logística",
+      "logística y transporte internacional"
+    ],
+    "herramientas": [
+      "estadistica",
+      "foda"
+    ],
+    "orden": 34,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

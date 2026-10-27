@@ -168,6 +168,14 @@
     "tipo": "practica"
   },
   {
+    "nombre": "Gestión Logística",
+    "carreras": 4,
+    "planes": 4,
+    "ciclo_habitual": 5,
+    "materia": "operaciones-logistica",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Gestión de Talento Humano",
     "carreras": 3,
     "planes": 6,
@@ -316,14 +324,6 @@
     "carreras": 2,
     "planes": 2,
     "ciclo_habitual": 1,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Gestión de la Producción",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 5,
     "materia": null,
     "tipo": "materia"
   },

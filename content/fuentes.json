@@ -511,5 +511,14 @@
     "url": "https://www.arcotel.gob.ec/wp-content/uploads/2023/11/22_ley_de_comercio_electronico_firmas_y_mensajes_de_datos.pdf",
     "licencia": "Norma pública (Código Ingenios, art. 107)",
     "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "ita-incoterms",
+    "titulo": "Know Your Incoterms",
+    "autor_editor": "International Trade Administration — U.S. Department of Commerce",
+    "tipo": "pagina_oficial",
+    "url": "https://www.trade.gov/know-your-incoterms",
+    "licencia": "Información pública oficial; se cita y resume con redacción propia",
+    "fecha_consulta": "2026-10-27"
   }
 ]
