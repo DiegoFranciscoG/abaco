@@ -7785,5 +7785,368 @@
     },
     "materia": "emprendimiento",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-van-4-anios",
+    "subtema": "ep-van",
+    "formula": "van",
+    "enunciado": "Un proyecto requiere USD 80.000 y genera flujos de 25.000, 30.000, 35.000 y 20.000 en cuatro años. Con una tasa de 10 %, ¿cuál es su VAN?",
+    "datos": {
+      "I": 80000,
+      "r": 0.1,
+      "f": [
+        25000,
+        30000,
+        35000,
+        20000
+      ]
+    },
+    "calculo": "NPV(r, f) - I",
+    "respuesta": 7476.95,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "VA de los flujos = 22.727,27 + 24.793,39 + 26.296,02 + 13.660,27 = 87.476,95",
+      "VAN = 87.476,95 − 80.000 = 7.476,95"
+    ],
+    "pistas": [
+      "Descuenta cada flujo y resta la inversión."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.2 Net Present Value (NPV) Method"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-tir-4-anios",
+    "subtema": "ep-tir",
+    "formula": "tir",
+    "enunciado": "Con los mismos flujos (inversión de USD 80.000; flujos de 25.000, 30.000, 35.000 y 20.000), ¿cuál es la TIR del proyecto?",
+    "datos": {
+      "f": [
+        -80000,
+        25000,
+        30000,
+        35000,
+        20000
+      ]
+    },
+    "calculo": "IRR(f)",
+    "respuesta": 0.1429,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Se busca la tasa que hace VAN = 0",
+      "Con la función TIR: 0,1429 (14,29 %), mayor que el 10 % exigido"
+    ],
+    "pistas": [
+      "La TIR es la tasa que anula el VAN."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.3 Internal Rate of Return (IRR) Method"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-tir-3-anios",
+    "subtema": "ep-tir",
+    "formula": "tir",
+    "enunciado": "Un proyecto de USD 50.000 genera 20.000, 22.000 y 25.000 en tres años. ¿Cuál es su TIR?",
+    "datos": {
+      "f": [
+        -50000,
+        20000,
+        22000,
+        25000
+      ]
+    },
+    "calculo": "IRR(f)",
+    "respuesta": 0.1554,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Con la función TIR sobre −50.000; 20.000; 22.000; 25.000",
+      "TIR = 0,1554 (15,54 %)"
+    ],
+    "pistas": [
+      "Usa la función TIR con la inversión en negativo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.3 Internal Rate of Return (IRR) Method"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-ir-4-anios",
+    "subtema": "ep-indice-rentabilidad",
+    "formula": "indice-rentabilidad",
+    "enunciado": "Si el valor actual de los flujos de un proyecto es USD 87.476,95 y la inversión es 80.000, ¿cuál es su índice de rentabilidad?",
+    "datos": {
+      "VA": 87476.95,
+      "I": 80000
+    },
+    "calculo": "VA / I",
+    "respuesta": 1.0935,
+    "unidad": "veces",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "IR = 87.476,95 ÷ 80.000 = 1,0935"
+    ],
+    "pistas": [
+      "Un IR mayor que 1 equivale a un VAN positivo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.4 Alternative Methods"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-payback-simple",
+    "subtema": "ep-payback",
+    "formula": "periodo-recuperacion",
+    "enunciado": "Un proyecto de USD 50.000 genera flujos de 15.000, 20.000 y 25.000. ¿En cuántos años se recupera la inversión (sin descontar)?",
+    "datos": {
+      "I": 50000,
+      "f1": 15000,
+      "f2": 20000,
+      "f3": 25000
+    },
+    "calculo": "2 + (I - f1 - f2) / f3",
+    "respuesta": 2.6,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Acumulado tras 2 años = 15.000 + 20.000 = 35.000",
+      "Falta = 50.000 − 35.000 = 15.000",
+      "Recuperación = 2 + 15.000 ÷ 25.000 = 2,6"
+    ],
+    "pistas": [
+      "Acumula los flujos hasta cubrir la inversión."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.1 Payback Period Method"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-payback-constante",
+    "subtema": "ep-payback",
+    "formula": "periodo-recuperacion",
+    "enunciado": "Una máquina de USD 120.000 genera un flujo constante de 30.000 al año. ¿Cuál es su período de recuperación?",
+    "datos": {
+      "I": 120000,
+      "F": 30000
+    },
+    "calculo": "I / F",
+    "respuesta": 4,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Recuperación = 120.000 ÷ 30.000 = 4"
+    ],
+    "pistas": [
+      "Con flujos iguales, divide la inversión para el flujo anual."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.1 Payback Period Method"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-tirm",
+    "subtema": "ep-tir-modificada",
+    "enunciado": "Un proyecto de USD 50.000 genera 20.000, 22.000 y 25.000. Con tasa de financiamiento de 10 % y de reinversión de 12 %, ¿cuál es su TIR modificada?",
+    "datos": {
+      "f": [
+        -50000,
+        20000,
+        22000,
+        25000
+      ],
+      "rf": 0.1,
+      "rr": 0.12
+    },
+    "calculo": "MIRR(f, rf, rr)",
+    "respuesta": 0.1433,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "VF de entradas = 25.088 + 24.640 + 25.000 = 74.728",
+      "TIRM = (74.728 ÷ 50.000) elevado a 1/3, menos 1 = 0,1433"
+    ],
+    "pistas": [
+      "Lleva las entradas al año 3 con la tasa de reinversión."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.4 Alternative Methods"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-tirm-vf",
+    "subtema": "ep-tir-modificada",
+    "enunciado": "En el proyecto anterior, ¿cuál es el valor futuro al año 3 de las entradas 20.000, 22.000 y 25.000, reinvertidas al 12 %?",
+    "datos": {
+      "f1": 20000,
+      "f2": 22000,
+      "f3": 25000,
+      "r": 0.12
+    },
+    "calculo": "f1 * (1 + r) ^ 2 + f2 * (1 + r) + f3",
+    "respuesta": 74728,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "20.000 × 1,2544 = 25.088",
+      "22.000 × 1,12 = 24.640",
+      "VF = 25.088 + 24.640 + 25.000 = 74.728"
+    ],
+    "pistas": [
+      "El primer flujo se reinvierte dos años y el segundo, uno."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.4 Alternative Methods"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-payback-descontado",
+    "subtema": "ep-payback-descontado",
+    "enunciado": "Un proyecto de USD 50.000 genera 20.000, 22.000 y 25.000. Descontando al 10 %, ¿cuál es el período de recuperación descontado?",
+    "datos": {
+      "I": 50000,
+      "f1": 20000,
+      "f2": 22000,
+      "f3": 25000,
+      "r": 0.1
+    },
+    "calculo": "2 + (I - f1 / (1 + r) - f2 / (1 + r) ^ 2) / (f3 / (1 + r) ^ 3)",
+    "respuesta": 2.73,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Flujos descontados: 18.181,82; 18.181,82 y 18.782,87",
+      "Acumulado tras 2 años = 36.363,64",
+      "Recuperación = 2 + 13.636,36 ÷ 18.782,87 = 2,73"
+    ],
+    "pistas": [
+      "Descuenta cada flujo antes de acumularlo."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.4 Alternative Methods"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-payback-descontado-2",
+    "subtema": "ep-payback-descontado",
+    "enunciado": "Un proyecto de USD 45.000 genera 12.000, 15.000, 18.000 y 20.000. Al 8 %, los flujos descontados acumulados son 11.111,11; 23.971,19; 38.260,17 y 52.960,77. ¿Cuál es el período de recuperación descontado?",
+    "datos": {
+      "I": 45000,
+      "a3": 38260.17,
+      "d4": 14700.6
+    },
+    "calculo": "3 + (I - a3) / d4",
+    "respuesta": 3.46,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Falta tras 3 años = 45.000 − 38.260,17 = 6.739,83",
+      "Flujo descontado del año 4 = 52.960,77 − 38.260,17 = 14.700,6",
+      "Recuperación = 3 + 6.739,83 ÷ 14.700,6 = 3,46"
+    ],
+    "pistas": [
+      "El flujo descontado del año 4 es la diferencia entre los acumulados."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "16.4 Alternative Methods"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-ruta-critica",
+    "subtema": "ep-cronograma",
+    "enunciado": "Un proyecto tiene la actividad A (3 semanas), luego B (5 semanas) o C (6 semanas) en paralelo, y al final D (2 semanas). ¿Cuánto dura la ruta crítica?",
+    "datos": {
+      "a": 3,
+      "b": 5,
+      "c": 6,
+      "d": 2
+    },
+    "calculo": "MAX(a + b + d, a + c + d)",
+    "respuesta": 11,
+    "unidad": "semanas",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Ruta A–B–D = 3 + 5 + 2 = 10",
+      "Ruta A–C–D = 3 + 6 + 2 = 11",
+      "Ruta crítica = 11 semanas"
+    ],
+    "pistas": [
+      "La ruta crítica es la más larga."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-ib2",
+      "seccion": "10.5 Production and Operations Control"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-holgura",
+    "subtema": "ep-cronograma",
+    "enunciado": "En el mismo proyecto (ruta crítica de 11 semanas), la ruta que pasa por B dura 10 semanas. ¿Cuántas semanas de holgura tiene la actividad B?",
+    "datos": {
+      "rc": 11,
+      "rb": 10
+    },
+    "calculo": "rc - rb",
+    "respuesta": 1,
+    "unidad": "semanas",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Holgura = 11 − 10 = 1"
+    ],
+    "pistas": [
+      "Compara la ruta de B con la ruta crítica."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ib2",
+      "seccion": "10.5 Production and Operations Control"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
   }
 ]

@@ -358,7 +358,8 @@
   {
     "id": "mf-capital-constante",
     "palabras": [
-      "—"
+      "amortization",
+      "principal"
     ]
   },
   {
@@ -482,7 +483,7 @@
   {
     "id": "ep-indice-rentabilidad",
     "palabras": [
-      "—"
+      "profitability index"
     ]
   },
   {
@@ -3086,6 +3087,96 @@
       "team",
       "attorney",
       "financial"
+    ]
+  },
+  {
+    "id": "ep-flujos-descontados",
+    "palabras": [
+      "present value",
+      "cash flows",
+      "initial investment"
+    ]
+  },
+  {
+    "id": "ep-tir-modificada",
+    "palabras": [
+      "modified internal rate of return",
+      "mirr"
+    ]
+  },
+  {
+    "id": "ep-payback-descontado",
+    "palabras": [
+      "discounted payback"
+    ]
+  },
+  {
+    "id": "ep-sensibilidad",
+    "palabras": [
+      "forecast",
+      "cash flow",
+      "growth"
+    ]
+  },
+  {
+    "id": "ep-demanda",
+    "palabras": [
+      "forecast",
+      "sales"
+    ]
+  },
+  {
+    "id": "ep-proceso-productivo",
+    "palabras": [
+      "mass production",
+      "customization",
+      "inputs"
+    ]
+  },
+  {
+    "id": "ep-localizacion",
+    "palabras": [
+      "location",
+      "facility layout"
+    ]
+  },
+  {
+    "id": "ep-recursos",
+    "palabras": [
+      "supply chain",
+      "inventory",
+      "suppliers"
+    ]
+  },
+  {
+    "id": "ep-cronograma",
+    "palabras": [
+      "gantt",
+      "critical path",
+      "pert"
+    ]
+  },
+  {
+    "id": "ep-pest",
+    "palabras": [
+      "pest",
+      "political",
+      "resources"
+    ]
+  },
+  {
+    "id": "ep-recursos-ciclo",
+    "palabras": [
+      "resources",
+      "phase",
+      "growth"
+    ]
+  },
+  {
+    "id": "ep-riesgos",
+    "palabras": [
+      "risk",
+      "insurance"
     ]
   }
 ]

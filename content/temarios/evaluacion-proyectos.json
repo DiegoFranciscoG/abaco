@@ -65,6 +65,29 @@
             "url": "https://openstax.org/books/principles-managerial-accounting/pages/11-3-explain-the-time-value-of-money-and-calculate-present-and-future-values-of-lump-sums-and-annuities",
             "seccion": "11.3 Explain the Time Value of Money and Calculate Present and Future Values of Lump Sums and Annuities"
           }
+        },
+        {
+          "id": "ep-flujos-descontados",
+          "nombre": "Modelos de flujos de caja descontados en la inversión de capital",
+          "explicacion": "Para evaluar un proyecto de inversión se proyectan sus flujos de caja —la inversión inicial, los ingresos y egresos de cada período y el valor de rescate al final— y se traen a valor presente con la tasa de rendimiento que exige la empresa. Así se comparan cifras que ocurren en distintos momentos. Los modelos de flujos descontados, como el valor actual neto y la tasa interna de retorno, son preferibles a los métodos que ignoran el valor del dinero en el tiempo.",
+          "ejemplo": "Una imprenta evalúa una máquina de USD 20.000 que ahorrará USD 6.000 al año durante 4 años. A 8 %, el valor presente de esos ahorros es 6.000 × 3,312127 = 19.872,76, menor que la inversión: la máquina no rinde el 8 % exigido.",
+          "puntos_clave": [
+            "Proyectar inversión, flujos anuales y valor de rescate.",
+            "Descontar con la tasa de rendimiento exigida.",
+            "Comparar cifras en el mismo momento del tiempo."
+          ],
+          "errores_frecuentes": [
+            "Sumar flujos de distintos años sin descontarlos.",
+            "Olvidar el valor de rescate al final del proyecto."
+          ],
+          "formulas": [
+            "va-anualidad-vencida"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/11-4-use-discounted-cash-flow-models-to-make-capital-investment-decisions",
+            "seccion": "11.4 Use Discounted Cash Flow Models to Make Capital Investment Decisions"
+          }
         }
       ]
     },
@@ -137,6 +160,27 @@
             "url": "https://openstax.org/books/principles-finance/pages/16-4-alternative-methods",
             "seccion": "16.4 Métodos alternativos: índice de rentabilidad"
           }
+        },
+        {
+          "id": "ep-tir-modificada",
+          "nombre": "Tasa interna de retorno modificada (TIRM)",
+          "explicacion": "La TIR supone que los flujos del proyecto se reinvierten a la propia TIR, lo que puede ser poco realista y llevar a conclusiones engañosas al comparar proyectos. La TIR modificada corrige ese supuesto: lleva los flujos positivos al final del proyecto con una tasa de reinversión realista, trae los negativos al inicio con la tasa de financiamiento y calcula la tasa que iguala ambos valores: TIRM = (VF de entradas ÷ VP de salidas)^(1/n) − 1. En la hoja de cálculo se obtiene con la función TIRM.",
+          "ejemplo": "Un proyecto de USD 50.000 genera 20.000, 22.000 y 25.000. Con reinversión al 12 %, el valor futuro de las entradas es 20.000 × 1,2544 + 22.000 × 1,12 + 25.000 = 74.728. La TIRM es la raíz cúbica de 74.728 ÷ 50.000, menos 1: 0,1433, es decir, 14,33 %.",
+          "puntos_clave": [
+            "Corrige el supuesto de reinversión de la TIR.",
+            "TIRM = (VF entradas ÷ VP salidas)^(1/n) − 1.",
+            "En Excel: =TIRM(flujos; tasa financiamiento; tasa reinversión)."
+          ],
+          "errores_frecuentes": [
+            "Usar la TIR como tasa de reinversión.",
+            "Confundir la tasa de financiamiento con la de reinversión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-4-alternative-methods",
+            "seccion": "16.4 Alternative Methods"
+          }
         }
       ]
     },
@@ -205,6 +249,27 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/16-5-choosing-between-projects",
             "seccion": "16.5 Choosing between Projects"
           }
+        },
+        {
+          "id": "ep-payback-descontado",
+          "nombre": "Período de recuperación descontado",
+          "explicacion": "El período de recuperación simple ignora el valor del dinero en el tiempo. El período de recuperación descontado corrige ese defecto: se traen a valor presente los flujos de cada año, se acumulan y se identifica cuándo el acumulado iguala la inversión inicial. Siempre es mayor que el simple. Sigue sin considerar los flujos posteriores a la recuperación, por lo que conviene usarlo como medida de liquidez y riesgo, junto con el VAN.",
+          "ejemplo": "Un proyecto de USD 50.000 genera 20.000, 22.000 y 25.000; descontados al 10 % valen 18.181,82, 18.181,82 y 18.782,87. Tras dos años se han recuperado 36.363,64; faltan 13.636,36, que se cubren en 13.636,36 ÷ 18.782,87 = 0,726 del tercer año: la recuperación descontada es de 2,73 años.",
+          "puntos_clave": [
+            "Acumula flujos descontados hasta igualar la inversión.",
+            "Es mayor que el período simple.",
+            "Ignora lo que pasa después de recuperar."
+          ],
+          "errores_frecuentes": [
+            "Acumular flujos sin descontarlos.",
+            "Decidir solo con el período de recuperación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/16-4-alternative-methods",
+            "seccion": "16.4 Alternative Methods"
+          }
         }
       ]
     },
@@ -270,6 +335,213 @@
             "ref": "os-entre",
             "url": "https://openstax.org/books/entrepreneurship/pages/11-3-conducting-a-feasibility-analysis",
             "seccion": "11.3 Conducting a Feasibility Analysis"
+          }
+        },
+        {
+          "id": "ep-sensibilidad",
+          "nombre": "Proyectar el flujo de caja y evaluar escenarios",
+          "explicacion": "Los flujos de un proyecto dependen de supuestos —ventas, precios, costos, crecimiento— que pueden no cumplirse. Por eso se proyecta el flujo de caja con un escenario base y se prueban escenarios pesimista y optimista, o se cambia un supuesto a la vez (análisis de sensibilidad) para ver cuánto se mueve el resultado. Si el VAN se vuelve negativo con un cambio pequeño en las ventas, el proyecto es muy sensible a ese supuesto y conviene investigarlo mejor antes de invertir.",
+          "ejemplo": "Un proyecto tiene un VAN de USD 7.477 con el escenario base. Si las ventas caen 10 %, el VAN baja a −2.300; si suben 10 %, llega a 17.250. La amplitud entre escenarios es 17.250 − (−2.300) = 19.550 dólares: el resultado depende mucho de las ventas.",
+          "puntos_clave": [
+            "Escenarios pesimista, base y optimista.",
+            "Sensibilidad: cambiar un supuesto a la vez.",
+            "Identificar los supuestos críticos."
+          ],
+          "errores_frecuentes": [
+            "Presentar un solo escenario como si fuera seguro.",
+            "Cambiar todos los supuestos a la vez y no saber cuál pesa más."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/18-5-forecasting-cash-flow-and-assessing-the-value-of-growth",
+            "seccion": "18.5 Forecasting Cash Flow and Assessing the Value of Growth"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-estudios",
+      "nombre": "Estudios técnico y de mercado del proyecto",
+      "orden": 5,
+      "descripcion": "Demanda del proyecto, proceso productivo, localización y planificación de recursos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ep-demanda",
+          "nombre": "Estimar la demanda del proyecto",
+          "explicacion": "El estudio de mercado de un proyecto estima cuánto se venderá y a qué precio, que es la base de todos los flujos. Se usan datos históricos del sector, estadísticas oficiales, encuestas y pruebas con clientes, y se proyectan las ventas con tasas de crecimiento, promedios o regresión. Como la demanda es el supuesto que más pesa en la rentabilidad, conviene documentar sus fuentes y preparar escenarios.",
+          "ejemplo": "Un proyecto de panadería estima vender 600 panes diarios el primer año, con un crecimiento de 5 % anual. Para el tercer año proyecta 600 × 1,1025 = 661,5, es decir, unos 662 panes diarios.",
+          "puntos_clave": [
+            "La demanda es la base de los flujos.",
+            "Datos históricos, oficiales y primarios.",
+            "Documentar fuentes y escenarios."
+          ],
+          "errores_frecuentes": [
+            "Suponer que se captará una gran parte del mercado sin justificarlo.",
+            "Proyectar la demanda sin considerar la competencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/18-2-forecasting-sales",
+            "seccion": "18.2 Forecasting Sales"
+          }
+        },
+        {
+          "id": "ep-proceso-productivo",
+          "nombre": "El proceso productivo",
+          "explicacion": "El estudio técnico define cómo se producirá el bien o se prestará el servicio: qué insumos se transforman en qué productos, con qué tecnología y en qué volumen. Los procesos pueden ser de producción en masa (grandes cantidades de un producto estándar) o de personalización (productos adaptados a cada cliente), y continuos o intermitentes. La elección del proceso determina la inversión en equipos, el personal necesario y los costos de operación del proyecto.",
+          "ejemplo": "Un proyecto de muebles compara dos procesos: fabricar 50 modelos estándar al día con una línea de USD 120.000, o muebles a medida con talleres de USD 40.000 que producen 8 al día. La línea cuesta 120.000 ÷ 40.000 = 3 veces más, pero produce más de 6 veces el volumen.",
+          "puntos_clave": [
+            "Insumos, transformación y productos.",
+            "Producción en masa o personalizada.",
+            "El proceso define inversión, personal y costos."
+          ],
+          "errores_frecuentes": [
+            "Elegir la tecnología más moderna sin comparar costos.",
+            "Ignorar la capacidad real del proceso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-2-the-production-process-how-do-we-make-it",
+            "seccion": "10.2 The Production Process: How Do We Make It?"
+          }
+        },
+        {
+          "id": "ep-localizacion",
+          "nombre": "Localización y distribución de la planta",
+          "explicacion": "La localización del proyecto influye en sus costos y en su acceso a clientes, proveedores y trabajadores. Se comparan factores como el costo del terreno o del arriendo, la cercanía a materias primas y mercados, la disponibilidad de mano de obra, los servicios básicos, el transporte, los incentivos y las normas locales. Además se diseña la distribución de la planta (layout) para que materiales y personas se muevan con eficiencia. Un método práctico es puntuar cada alternativa según factores ponderados.",
+          "ejemplo": "Un proyecto evalúa dos sitios con tres factores ponderados (costo 50 %, cercanía al mercado 30 %, mano de obra 20 %). El sitio A obtiene 8, 6 y 7 puntos: 8 × 0,5 + 6 × 0,3 + 7 × 0,2 = 7,2. El sitio B obtiene 6, 9 y 8: 6 × 0,5 + 9 × 0,3 + 8 × 0,2 = 7,3. B queda levemente mejor.",
+          "puntos_clave": [
+            "Costos, cercanía a mercados e insumos, mano de obra.",
+            "Distribución eficiente de la planta.",
+            "Método de factores ponderados."
+          ],
+          "errores_frecuentes": [
+            "Elegir el sitio más barato sin mirar el acceso a clientes.",
+            "Olvidar permisos y normas municipales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-3-location-location-location-where-do-we-make-it",
+            "seccion": "10.3 Location, Location, Location: Where Do We Make It?"
+          }
+        },
+        {
+          "id": "ep-recursos",
+          "nombre": "Planificación de recursos e insumos",
+          "explicacion": "Un proyecto necesita asegurar sus insumos en la cantidad y el momento adecuados. La planificación de recursos incluye elegir proveedores, decidir qué fabricar y qué comprar, calcular las necesidades de materiales según el plan de producción y definir políticas de inventario. Herramientas como la planificación de requerimientos de materiales (MRP) y los sistemas ERP integran producción, compras e inventarios, y la gestión de la cadena de suministro coordina a los proveedores para reducir costos y tiempos.",
+          "ejemplo": "Un proyecto de mermeladas planea producir 2.000 frascos al mes; cada frasco lleva 0,3 kg de fruta. Necesita 2.000 × 0,3 = 600 kg de fruta mensuales, y acuerda con dos proveedores entregas semanales para no acumular inventario perecible.",
+          "puntos_clave": [
+            "Proveedores, hacer o comprar e inventarios.",
+            "MRP y ERP integran la planificación.",
+            "Coordinar la cadena de suministro."
+          ],
+          "errores_frecuentes": [
+            "Depender de un solo proveedor sin alternativas.",
+            "Calcular insumos sin considerar las mermas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-4-pulling-it-together-resource-planning",
+            "seccion": "10.4 Pulling It Together: Resource Planning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ep-gestion",
+      "nombre": "Gestión del proyecto y riesgos",
+      "orden": 6,
+      "descripcion": "Cronograma con Gantt y ruta crítica, factores del entorno, recursos en el ciclo de vida y manejo de riesgos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ep-cronograma",
+          "nombre": "Cronograma: diagrama de Gantt y ruta crítica",
+          "explicacion": "Para ejecutar un proyecto se programan sus actividades. El diagrama de Gantt muestra cada actividad como una barra en el tiempo y permite comparar lo planeado con lo avanzado. El método de la ruta crítica (CPM) identifica la secuencia más larga de actividades dependientes: su duración es el tiempo mínimo del proyecto, y cualquier retraso en ella retrasa todo. Las actividades fuera de la ruta crítica tienen holgura. PERT añade estimaciones optimistas, probables y pesimistas para tiempos inciertos.",
+          "ejemplo": "Un proyecto tiene la actividad A (3 semanas), luego dos caminos en paralelo, B (5 semanas) o C (6 semanas), y al final D (2 semanas). Las rutas duran 3 + 5 + 2 = 10 y 3 + 6 + 2 = 11 semanas: la ruta crítica es A–C–D, de 11 semanas, y B tiene 1 semana de holgura.",
+          "puntos_clave": [
+            "Gantt: actividades como barras en el tiempo.",
+            "Ruta crítica: la secuencia más larga.",
+            "Holgura: cuánto puede atrasarse una actividad no crítica."
+          ],
+          "errores_frecuentes": [
+            "Sumar todas las actividades aunque algunas sean paralelas.",
+            "Descuidar las actividades críticas por atender las que tienen holgura."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-5-production-and-operations-control",
+            "seccion": "10.5 Production and Operations Control"
+          }
+        },
+        {
+          "id": "ep-pest",
+          "nombre": "Factores del entorno: análisis PEST de los recursos",
+          "explicacion": "El análisis PEST revisa los factores políticos, económicos, sociales y tecnológicos que afectan los recursos y costos del proyecto: regulaciones y permisos, inflación, tasas de interés y tipo de cambio, preferencias y tendencias de la población, y cambios tecnológicos. Ayuda a anticipar necesidades de recursos y riesgos que no aparecen en las proyecciones financieras, y a incorporar supuestos más realistas en los flujos.",
+          "ejemplo": "Un proyecto de importación de equipos médicos identifica en su PEST un cambio de aranceles (político), una subida de tasas de interés (económico), el envejecimiento de la población (social) y la telemedicina (tecnológico). Ajusta su costo de financiamiento de 9 % a 11 %, es decir, 2 puntos más.",
+          "puntos_clave": [
+            "Político, económico, social y tecnológico.",
+            "Anticipa costos y riesgos.",
+            "Alimenta los supuestos de los flujos."
+          ],
+          "errores_frecuentes": [
+            "Hacer el PEST como lista sin usarlo en las proyecciones.",
+            "Ignorar cambios regulatorios previsibles."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/14-2-using-the-pest-framework-to-assess-resource-needs",
+            "seccion": "14.2 Using the PEST Framework to Assess Resource Needs"
+          }
+        },
+        {
+          "id": "ep-recursos-ciclo",
+          "nombre": "Recursos a lo largo del ciclo de vida",
+          "explicacion": "Las necesidades de un proyecto cambian según su etapa: al inicio predominan la inversión y la búsqueda de financiamiento; en la puesta en marcha, la contratación y la organización de procesos; en el crecimiento, la ampliación de capacidad, marketing y personal; en la madurez, la eficiencia. Planificar qué recursos (financieros, humanos, físicos, tecnológicos) se necesitarán en cada fase evita cuellos de botella y gastos prematuros.",
+          "ejemplo": "Un proyecto de cafetería planifica 2 empleados en la apertura, 4 cuando supere 150 clientes diarios y 6 al abrir el servicio a domicilio. Entre la apertura y la última fase el personal se triplica: 6 ÷ 2 = 3.",
+          "puntos_clave": [
+            "Las necesidades cambian en cada etapa.",
+            "Recursos financieros, humanos, físicos y tecnológicos.",
+            "Evitar cuellos de botella y gastos prematuros."
+          ],
+          "errores_frecuentes": [
+            "Contratar todo el personal desde el primer día.",
+            "No prever recursos para la etapa de crecimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/14-3-managing-resources-over-the-venture-life-cycle",
+            "seccion": "14.3 Managing Resources over the Venture Life Cycle"
+          }
+        },
+        {
+          "id": "ep-riesgos",
+          "nombre": "Identificar y manejar los riesgos del proyecto",
+          "explicacion": "Todo proyecto enfrenta riesgos: de mercado (ventas menores), operativos (fallas, accidentes), financieros (tasas, liquidez), legales (incumplimientos, demandas) y del entorno (desastres, cambios regulatorios). La gestión de riesgos los identifica, estima su probabilidad e impacto y define respuestas: evitarlos, reducirlos con controles, transferirlos con seguros o contratos, o aceptarlos con reservas. Un plan de riesgos convierte las amenazas en acciones concretas y responsables.",
+          "ejemplo": "Un proyecto agroindustrial estima 20 % de probabilidad de perder una cosecha por lluvias, con un impacto de USD 40.000. La pérdida esperada es 0,2 × 40.000 = 8.000 dólares, por lo que contratar un seguro de USD 3.000 al año resulta razonable.",
+          "puntos_clave": [
+            "Identificar, estimar probabilidad e impacto.",
+            "Evitar, reducir, transferir o aceptar.",
+            "Pérdida esperada = probabilidad × impacto."
+          ],
+          "errores_frecuentes": [
+            "Ignorar riesgos poco probables pero de gran impacto.",
+            "Pensar que el seguro elimina todos los riesgos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/13-7-mitigating-and-managing-risks",
+            "seccion": "13.7 Mitigating and Managing Risks"
           }
         }
       ]
