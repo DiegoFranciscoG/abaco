@@ -2557,5 +2557,98 @@
       "preferred",
       "weighted average"
     ]
+  },
+  {
+    "id": "fc-rol-finanzas",
+    "palabras": [
+      "financial planning",
+      "treasurer",
+      "budgeting"
+    ]
+  },
+  {
+    "id": "fc-mercado",
+    "palabras": [
+      "earnings per share",
+      "price/earnings",
+      "book value per share"
+    ]
+  },
+  {
+    "id": "fc-costo-deuda-patrimonio",
+    "palabras": [
+      "after-tax",
+      "cost of debt",
+      "cost of equity"
+    ]
+  },
+  {
+    "id": "fc-dcf",
+    "palabras": [
+      "discounted cash flow",
+      "terminal",
+      "discount rate"
+    ]
+  },
+  {
+    "id": "fc-estructura-capital",
+    "palabras": [
+      "capital structure",
+      "market value",
+      "book value"
+    ]
+  },
+  {
+    "id": "fc-apalancamiento-financiero",
+    "palabras": [
+      "leverage",
+      "tax shield",
+      "unlevered"
+    ]
+  },
+  {
+    "id": "fc-fuentes-fondos",
+    "palabras": [
+      "retained earnings",
+      "preferred stock",
+      "debt"
+    ]
+  },
+  {
+    "id": "fc-agencia",
+    "palabras": [
+      "agency problem",
+      "board"
+    ]
+  },
+  {
+    "id": "fc-pronostico-ventas",
+    "palabras": [
+      "forecast",
+      "sales"
+    ]
+  },
+  {
+    "id": "fc-proforma",
+    "palabras": [
+      "pro forma",
+      "forecast"
+    ]
+  },
+  {
+    "id": "fc-credito-comercial",
+    "palabras": [
+      "trade credit",
+      "2/10",
+      "discount period"
+    ]
+  },
+  {
+    "id": "fc-gestion-efectivo",
+    "palabras": [
+      "precautionary motive",
+      "speculative motive",
+      "cash equivalents"
+    ]
   }
 ]

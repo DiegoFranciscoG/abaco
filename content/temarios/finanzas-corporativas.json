@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/6-1-ratios-condensing-information-into-smaller-pieces",
             "seccion": "6.1 Ratios: Condensing Information into Smaller Pieces"
           }
+        },
+        {
+          "id": "fc-rol-finanzas",
+          "nombre": "El papel de las finanzas en la organización",
+          "explicacion": "El área financiera planifica, consigue y administra los fondos de la empresa. Sus tareas centrales son la planificación financiera (fijar objetivos y traducirlos en presupuestos y pronósticos), las decisiones de inversión (en qué activos y proyectos poner el dinero), las decisiones de financiamiento (de dónde obtenerlo: deuda o capital propio) y la gestión del capital de trabajo del día a día. El tesorero suele encargarse de la liquidez y el financiamiento, y el contralor de la contabilidad y los informes. El objetivo es crear valor para los dueños de forma sostenible.",
+          "ejemplo": "Una cadena de restaurantes planea abrir 3 locales que requieren USD 450.000. Finanzas pronostica las ventas de cada local, decide financiar el 40 % con un crédito bancario y el resto con aportes de los socios: 450.000 × 0,4 = 180.000 de deuda y 450.000 − 180.000 = 270.000 de capital propio.",
+          "puntos_clave": [
+            "Planificar, invertir, financiar y gestionar la liquidez.",
+            "El tesorero maneja fondos; el contralor, la información contable.",
+            "El objetivo es crear valor para los dueños."
+          ],
+          "errores_frecuentes": [
+            "Reducir las finanzas a llevar la contabilidad.",
+            "Decidir inversiones sin pensar en cómo se financiarán."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/1-2-the-role-of-finance-in-an-organization",
+            "seccion": "1.2 The Role of Finance in an Organization"
+          }
         }
       ]
     },
@@ -168,6 +189,27 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/6-6-profitability-ratios-and-the-dupont-method",
             "seccion": "6.6 Profitability Ratios and the DuPont Method"
           }
+        },
+        {
+          "id": "fc-mercado",
+          "nombre": "Razones de valor de mercado",
+          "explicacion": "Las razones de valor de mercado relacionan el precio de la acción con la información contable. La utilidad por acción (UPA) es la utilidad disponible para los accionistas ordinarios dividida para las acciones en circulación. La relación precio/utilidad (P/U) indica cuántos dólares pagan los inversionistas por cada dólar de utilidad: un P/U alto suele reflejar expectativas de crecimiento. El valor en libros por acción, que es el patrimonio dividido para las acciones en circulación, permite comparar el precio de mercado con el respaldo contable de cada acción. Solo se pueden calcular con precio de mercado, es decir, para empresas cuyas acciones se negocian.",
+          "ejemplo": "Una compañía tiene una UPA de USD 2 y su acción se negocia en USD 24. Su relación P/U es 24 ÷ 2 = 12. Si el valor en libros por acción es 16, su relación precio/valor en libros es 24 ÷ 16 = 1,5.",
+          "puntos_clave": [
+            "P/U = precio ÷ UPA.",
+            "Valor en libros por acción = patrimonio ÷ acciones en circulación.",
+            "Reflejan las expectativas del mercado."
+          ],
+          "errores_frecuentes": [
+            "Comparar P/U de sectores muy distintos.",
+            "Calcularlas para empresas que no cotizan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/6-5-market-value-ratios",
+            "seccion": "6.5 Market Value Ratios"
+          }
         }
       ]
     },
@@ -233,6 +275,27 @@
             "ref": "os-pfin2",
             "url": "https://openstax.org/books/principles-finance-2e/pages/17-3-calculating-the-weighted-average-cost-of-capital",
             "seccion": "17.3 Calculating the Weighted Average Cost of Capital"
+          }
+        },
+        {
+          "id": "fc-costo-deuda-patrimonio",
+          "nombre": "Costo de la deuda y costo del patrimonio",
+          "explicacion": "El costo de la deuda es el rendimiento que exigen los acreedores; se aproxima con el rendimiento al vencimiento de los bonos o la tasa de los préstamos de la empresa. Como los intereses son deducibles de impuestos, se usa el costo después de impuestos: kd × (1 − t). El costo del patrimonio es el rendimiento que exigen los accionistas; puede estimarse con el modelo de dividendos con crecimiento constante, ke = D₁ ÷ P₀ + g, o con el CAPM. Ambos costos son insumos del costo promedio ponderado de capital.",
+          "ejemplo": "Una empresa paga 9 % por su deuda y su tasa de impuesto a la renta es 25 %: su costo de deuda después de impuestos es 0,09 × 0,75 = 0,0675, es decir, 6,75 %. Si su acción vale USD 25, el próximo dividendo será USD 2 y crece 4 % anual, su costo del patrimonio es 2 ÷ 25 + 0,04 = 0,12.",
+          "puntos_clave": [
+            "Costo de la deuda después de impuestos = kd × (1 − t).",
+            "Costo del patrimonio con dividendos: D₁ ÷ P₀ + g.",
+            "El patrimonio cuesta más que la deuda porque tiene más riesgo."
+          ],
+          "errores_frecuentes": [
+            "Usar el costo de la deuda antes de impuestos en el WACC.",
+            "Usar el dividendo actual D₀ en lugar del próximo D₁."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/17-2-the-costs-of-debt-and-equity-capital",
+            "seccion": "17.2 The Costs of Debt and Equity Capital"
           }
         }
       ]
@@ -301,6 +364,213 @@
             "ref": "os-pfin2",
             "url": "https://openstax.org/books/principles-finance-2e/pages/11-2-dividend-discount-models-ddms",
             "seccion": "11.2 Dividend Discount Models (DDMs)"
+          }
+        },
+        {
+          "id": "fc-dcf",
+          "nombre": "Valoración por flujos de caja descontados",
+          "explicacion": "El modelo de flujos de caja descontados (DCF) valora una acción o una empresa como el valor actual de los flujos de caja que se esperan en el futuro, descontados a la tasa de rendimiento que exige el inversionista según el riesgo; para valorar toda la empresa se usa en la práctica el costo promedio ponderado de capital. Se proyectan los flujos de algunos años y un valor terminal que resume lo que vendrá después; si se supone que el flujo crece a una tasa constante g para siempre, el valor es F₁ ÷ (r − g). A diferencia del modelo de dividendos, sirve también para empresas que no reparten dividendos.",
+          "ejemplo": "Una empresa espera un flujo de caja libre de USD 500.000 el próximo año, que crecerá 3 % anual, y su WACC es 10 %. Su valor es 500.000 ÷ (0,10 − 0,03) = 7.142.857,14 dólares.",
+          "puntos_clave": [
+            "Valor = VA de los flujos de caja futuros.",
+            "Con crecimiento constante: F₁ ÷ (r − g).",
+            "Requiere que g sea menor que la tasa de descuento."
+          ],
+          "errores_frecuentes": [
+            "Usar un crecimiento perpetuo mayor que el de la economía.",
+            "Descontar flujos de los accionistas con el WACC."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/11-3-discounted-cash-flow-dcf-model",
+            "seccion": "11.3 Discounted Cash Flow (DCF) Model"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-estructura",
+      "nombre": "Estructura de capital y financiamiento",
+      "orden": 5,
+      "descripcion": "Concepto de estructura de capital, apalancamiento financiero, fuentes de fondos y problemas de agencia.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "fc-estructura-capital",
+          "nombre": "Qué es la estructura de capital",
+          "explicacion": "La estructura de capital es la combinación de deuda y patrimonio con que una empresa financia sus activos. Se mide con las proporciones de cada fuente sobre el total; para calcular el costo de capital conviene usar valores de mercado, porque reflejan lo que exigen hoy los inversionistas, aunque a menudo se usan valores en libros cuando no hay precios de mercado. La estructura elegida afecta el costo de capital, el riesgo y la flexibilidad de la empresa.",
+          "ejemplo": "Una empresa tiene deuda por USD 400.000 y patrimonio por USD 600.000. Su estructura de capital es 400.000 ÷ 1.000.000 = 0,4 de deuda y 600.000 ÷ 1.000.000 = 0,6 de patrimonio.",
+          "puntos_clave": [
+            "Combinación de deuda y patrimonio.",
+            "Pesos a valor de mercado cuando es posible.",
+            "Afecta el costo de capital y el riesgo."
+          ],
+          "errores_frecuentes": [
+            "Incluir las cuentas por pagar a proveedores como fuente de capital de largo plazo.",
+            "Mezclar valores en libros y de mercado en los pesos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/17-1-the-concept-of-capital-structure",
+            "seccion": "17.1 The Concept of Capital Structure"
+          }
+        },
+        {
+          "id": "fc-apalancamiento-financiero",
+          "nombre": "Apalancamiento financiero y escudo fiscal",
+          "explicacion": "Usar deuda en lugar de capital propio es apalancarse. Como los intereses se deducen antes de impuestos, la deuda genera un escudo fiscal que reduce lo que la empresa paga al Estado y puede elevar el rendimiento de los accionistas. Pero la deuda también aumenta el riesgo: los intereses se pagan aunque las ventas caigan, y un endeudamiento excesivo eleva el costo de los fondos y la probabilidad de dificultades financieras. Por eso existe un punto en que más deuda deja de crear valor.",
+          "ejemplo": "Una empresa con utilidad operativa de USD 100.000 paga 20.000 de intereses y 25 % de impuesto. Su utilidad neta es (100.000 − 20.000) × 0,75 = 60.000. El escudo fiscal de los intereses es 20.000 × 0,25 = 5.000 dólares.",
+          "puntos_clave": [
+            "Escudo fiscal = intereses × tasa de impuesto.",
+            "La deuda puede subir el rendimiento del accionista.",
+            "Más deuda también significa más riesgo."
+          ],
+          "errores_frecuentes": [
+            "Pensar que cuanta más deuda, siempre mejor.",
+            "Olvidar que los intereses se pagan aunque haya pérdidas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/17-4-capital-structure-choices",
+            "seccion": "17.4 Capital Structure Choices"
+          }
+        },
+        {
+          "id": "fc-fuentes-fondos",
+          "nombre": "Fuentes de financiamiento",
+          "explicacion": "Una empresa puede financiarse con utilidades retenidas (el dinero que genera y no reparte), con nuevas acciones comunes o preferentes, o con deuda: préstamos bancarios, bonos u obligaciones. Cada fuente tiene un costo distinto: las utilidades retenidas tienen el costo de oportunidad del accionista, las acciones nuevas suman además los costos de emisión, y la deuda es más barata pero aumenta el riesgo. En Ecuador, además de la banca, las empresas pueden emitir obligaciones o acciones en el mercado de valores.",
+          "ejemplo": "Una empresa necesita USD 1.000.000: usa 300.000 de utilidades retenidas, emite acciones por 200.000 y pide un crédito por el resto. El crédito es de 1.000.000 − 300.000 − 200.000 = 500.000 dólares.",
+          "puntos_clave": [
+            "Utilidades retenidas, acciones y deuda.",
+            "Cada fuente tiene su costo y su riesgo.",
+            "Las acciones nuevas tienen costos de emisión."
+          ],
+          "errores_frecuentes": [
+            "Creer que las utilidades retenidas son gratuitas.",
+            "Elegir la fuente solo por la tasa, sin mirar plazos y garantías."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/17-6-alternative-sources-of-funds",
+            "seccion": "17.6 Alternative Sources of Funds"
+          }
+        },
+        {
+          "id": "fc-agencia",
+          "nombre": "Problemas de agencia entre dueños y administradores",
+          "explicacion": "En una empresa grande, los dueños (accionistas) delegan la gestión en administradores. Un problema de agencia surge cuando los administradores toman decisiones en su propio interés y no en el de los dueños: gastos excesivos, proyectos que aumentan su poder pero no el valor, o maquillaje de resultados para cobrar bonos. Para reducirlo se usan juntas directivas independientes, auditoría externa, información transparente y remuneraciones ligadas al desempeño de largo plazo.",
+          "ejemplo": "Un gerente recibe un bono si la utilidad del año supera USD 2 millones. Para alcanzarla posterga el mantenimiento de las máquinas: la utilidad sube a 2,1 millones, pero el año siguiente las reparaciones cuestan el doble. El bono premió una decisión que redujo el valor de la empresa.",
+          "puntos_clave": [
+            "Conflicto de intereses entre dueños y administradores.",
+            "Se mitiga con directorios independientes y auditoría.",
+            "Los incentivos deben premiar el valor de largo plazo."
+          ],
+          "errores_frecuentes": [
+            "Suponer que los administradores siempre actúan como dueños.",
+            "Diseñar bonos basados solo en resultados de corto plazo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/2-4-agency-issues-shareholders-and-corporate-boards",
+            "seccion": "2.4 Agency Issues: Shareholders and Corporate Boards"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fc-planificacion",
+      "nombre": "Planificación financiera y gestión de corto plazo",
+      "orden": 6,
+      "descripcion": "Pronóstico de ventas, estados proforma, crédito comercial y gestión del efectivo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fc-pronostico-ventas",
+          "nombre": "Pronóstico de ventas",
+          "explicacion": "El pronóstico de ventas es el punto de partida de toda planificación financiera: de él dependen la producción, las compras, el personal y las necesidades de financiamiento. Se construye con datos históricos, tendencias, estacionalidad e información del mercado y de la economía. Un método sencillo proyecta las ventas con una tasa de crecimiento; otros usan promedios móviles o regresión. Siempre conviene preparar escenarios (pesimista, base y optimista), porque el pronóstico nunca es exacto.",
+          "ejemplo": "Una empresa vendió USD 500.000 este año y espera crecer 8 % anual. Su pronóstico es 500.000 × 1,08 = 540.000 para el próximo año y 540.000 × 1,08 = 583.200 para el siguiente.",
+          "puntos_clave": [
+            "Es la base de los presupuestos.",
+            "Usa historia, tendencias y estacionalidad.",
+            "Se prepara con escenarios."
+          ],
+          "errores_frecuentes": [
+            "Extrapolar un año excepcional como si fuera la tendencia.",
+            "Ignorar la estacionalidad en pronósticos mensuales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/18-2-forecasting-sales",
+            "seccion": "18.2 Forecasting Sales"
+          }
+        },
+        {
+          "id": "fc-proforma",
+          "nombre": "Estados financieros proforma",
+          "explicacion": "Los estados proforma proyectan el estado de resultados y el estado de situación financiera a partir del pronóstico de ventas. Con el método del porcentaje de ventas, las partidas que varían con las ventas (costo de ventas, cuentas por cobrar, inventarios, cuentas por pagar) se proyectan con su proporción histórica sobre las ventas, mientras que los costos fijos y otras partidas se proyectan por separado. Al cuadrar el balance proyectado se descubre cuánto financiamiento externo hará falta.",
+          "ejemplo": "Si las cuentas por cobrar suelen ser el 15 % de las ventas y se pronostican ventas de USD 540.000, las cuentas por cobrar proyectadas son 540.000 × 0,15 = 81.000 dólares.",
+          "puntos_clave": [
+            "Parten del pronóstico de ventas.",
+            "Porcentaje de ventas para partidas variables.",
+            "Revelan el financiamiento externo necesario."
+          ],
+          "errores_frecuentes": [
+            "Proyectar los costos fijos como porcentaje de las ventas.",
+            "No revisar si el balance proyectado cuadra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/18-3-pro-forma-financials",
+            "seccion": "18.3 Pro Forma Financials"
+          }
+        },
+        {
+          "id": "fc-credito-comercial",
+          "nombre": "Crédito comercial y costo de no tomar el descuento",
+          "explicacion": "El crédito comercial es el plazo que un proveedor concede para pagar. Muchas facturas ofrecen un descuento por pronto pago: «2/10 neto 30» significa 2 % de descuento si se paga en 10 días; si no, el total vence a los 30. No tomar el descuento equivale a pedir prestado durante los días adicionales a un costo implícito alto: (descuento ÷ (1 − descuento)) × (365 ÷ días adicionales). Si ese costo supera la tasa a la que la empresa puede endeudarse, conviene pagar a tiempo y tomar el descuento.",
+          "ejemplo": "Con condiciones 2/10 neto 30, no tomar el descuento cuesta (0,02 ÷ 0,98) × (365 ÷ 20) = 0,3724, es decir, cerca de 37 % anual: mucho más que un crédito bancario de corto plazo.",
+          "puntos_clave": [
+            "2/10 neto 30: 2 % de descuento si se paga en 10 días.",
+            "Costo implícito = d ÷ (1 − d) × 365 ÷ días adicionales.",
+            "Comparar con la tasa de un préstamo."
+          ],
+          "errores_frecuentes": [
+            "Dividir para los 30 días del plazo total en vez de los 20 adicionales.",
+            "Pensar que el crédito comercial siempre es gratuito."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/19-2-what-is-trade-credit",
+            "seccion": "19.2 What Is Trade Credit?"
+          }
+        },
+        {
+          "id": "fc-gestion-efectivo",
+          "nombre": "Gestión del efectivo",
+          "explicacion": "Las empresas mantienen efectivo por tres motivos: para las transacciones del día a día, por precaución ante imprevistos y por especulación, para aprovechar oportunidades. Tener demasiado efectivo tiene un costo de oportunidad, porque no rinde; tener muy poco expone a no poder pagar. Por eso se fija un saldo objetivo y el excedente se coloca en equivalentes de efectivo y valores negociables de corto plazo, líquidos y de bajo riesgo, como depósitos a plazo cortos.",
+          "ejemplo": "Una empresa necesita USD 40.000 al mes para pagos y quiere un colchón de precaución de 15.000. Si tiene 95.000 en la cuenta, el excedente que puede invertir a corto plazo es 95.000 − 40.000 − 15.000 = 40.000 dólares.",
+          "puntos_clave": [
+            "Motivos: transacción, precaución y especulación.",
+            "El exceso de efectivo tiene costo de oportunidad.",
+            "El excedente va a inversiones líquidas de corto plazo."
+          ],
+          "errores_frecuentes": [
+            "Mantener mucho efectivo ocioso «por si acaso».",
+            "Invertir el colchón de precaución en activos poco líquidos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/19-3-cash-management",
+            "seccion": "19.3 Cash Management"
           }
         }
       ]

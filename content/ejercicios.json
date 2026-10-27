@@ -6482,5 +6482,831 @@
     },
     "materia": "contabilidad-financiera",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-prueba-acida",
+    "subtema": "fc-liquidez",
+    "formula": "prueba-acida",
+    "enunciado": "Una empresa tiene activos corrientes de USD 96.000, de los cuales 30.000 son inventarios, y pasivos corrientes de 64.000. ¿Cuál es su prueba ácida?",
+    "datos": {
+      "AC": 96000,
+      "Inv": 30000,
+      "PC": 64000
+    },
+    "calculo": "(AC - Inv) / PC",
+    "respuesta": 1.03,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "AC sin inventarios = 96.000 − 30.000 = 66.000",
+      "Prueba ácida = 66.000 ÷ 64.000 = 1,03"
+    ],
+    "pistas": [
+      "Excluye los inventarios, el activo corriente menos líquido."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.3 Liquidity Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-endeudamiento",
+    "subtema": "fc-solvencia",
+    "formula": "razon-endeudamiento",
+    "enunciado": "Una empresa tiene pasivos totales de USD 180.000 y activos totales de 400.000. ¿Cuál es su razón de endeudamiento?",
+    "datos": {
+      "PT": 180000,
+      "AT": 400000
+    },
+    "calculo": "PT / AT",
+    "respuesta": 0.45,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Endeudamiento = 180.000 ÷ 400.000 = 0,45 (45 %)"
+    ],
+    "pistas": [
+      "Qué parte de los activos se financia con deuda."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.4 Solvency Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-deuda-patrimonio",
+    "subtema": "fc-solvencia",
+    "formula": "deuda-patrimonio",
+    "enunciado": "Con pasivos totales de USD 180.000 y patrimonio de 220.000, ¿cuál es la razón deuda/patrimonio?",
+    "datos": {
+      "PT": 180000,
+      "Pt": 220000
+    },
+    "calculo": "PT / Pt",
+    "respuesta": 0.8182,
+    "unidad": "veces",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "D/P = 180.000 ÷ 220.000 = 0,8182"
+    ],
+    "pistas": [
+      "Divide la deuda total para el patrimonio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.4 Solvency Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-rotacion-activos",
+    "subtema": "fc-eficiencia",
+    "formula": "rotacion-activos",
+    "enunciado": "Una empresa vendió USD 600.000 con activos totales de 400.000. ¿Cuál es su rotación de activos?",
+    "datos": {
+      "V": 600000,
+      "AT": 400000
+    },
+    "calculo": "V / AT",
+    "respuesta": 1.5,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Rotación = 600.000 ÷ 400.000 = 1,5"
+    ],
+    "pistas": [
+      "Cuántos dólares de ventas genera cada dólar de activos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.2 Operating Efficiency Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-rotacion-inventarios",
+    "subtema": "fc-eficiencia",
+    "formula": "rotacion-inventarios",
+    "enunciado": "El costo de ventas fue USD 360.000 y el inventario promedio 45.000. ¿Cuál es la rotación de inventarios?",
+    "datos": {
+      "CV": 360000,
+      "Inv": 45000
+    },
+    "calculo": "CV / Inv",
+    "respuesta": 8,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Rotación = 360.000 ÷ 45.000 = 8"
+    ],
+    "pistas": [
+      "Costo de ventas ÷ inventario promedio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.2 Operating Efficiency Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-roa",
+    "subtema": "fc-rentabilidad",
+    "formula": "roa",
+    "enunciado": "Una empresa ganó USD 36.000 de utilidad neta con activos totales de 400.000. ¿Cuál es su ROA?",
+    "datos": {
+      "UN": 36000,
+      "AT": 400000
+    },
+    "calculo": "UN / AT",
+    "respuesta": 0.09,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "ROA = 36.000 ÷ 400.000 = 0,09 (9 %)"
+    ],
+    "pistas": [
+      "Utilidad neta ÷ activos totales."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.6 Profitability Ratios and the DuPont Method"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-capital-trabajo",
+    "subtema": "fc-capital-trabajo",
+    "formula": "capital-trabajo",
+    "enunciado": "Una empresa tiene activos corrientes de USD 150.000 y pasivos corrientes de 90.000. ¿Cuál es su capital de trabajo neto?",
+    "datos": {
+      "AC": 150000,
+      "PC": 90000
+    },
+    "calculo": "AC - PC",
+    "respuesta": 60000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Capital de trabajo = 150.000 − 90.000 = 60.000"
+    ],
+    "pistas": [
+      "Activos corrientes menos pasivos corrientes."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "19.1 What Is Working Capital?"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-ciclo-efectivo",
+    "subtema": "fc-capital-trabajo",
+    "enunciado": "Una empresa tiene 60 días de inventario, 45 días de cuentas por cobrar y 30 días de cuentas por pagar. ¿Cuál es su ciclo de conversión del efectivo?",
+    "datos": {
+      "DI": 60,
+      "DC": 45,
+      "DP": 30
+    },
+    "calculo": "DI + DC - DP",
+    "respuesta": 75,
+    "unidad": "días",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Ciclo operativo = 60 + 45 = 105",
+      "Ciclo de efectivo = 105 − 30 = 75"
+    ],
+    "pistas": [
+      "Resta los días de pago a proveedores del ciclo operativo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "19.1 What Is Working Capital?"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-capm",
+    "subtema": "fc-capm",
+    "enunciado": "La tasa libre de riesgo es 4 %, el rendimiento esperado del mercado es 10 % y la beta de una acción es 1,2. Según el CAPM, ¿qué rendimiento se exige a la acción?",
+    "datos": {
+      "rf": 0.04,
+      "rm": 0.1,
+      "b": 1.2
+    },
+    "calculo": "rf + b * (rm - rf)",
+    "respuesta": 0.112,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Prima de mercado = 0,10 − 0,04 = 0,06",
+      "Rendimiento = 0,04 + 1,2 × 0,06 = 0,112 (11,2 %)"
+    ],
+    "pistas": [
+      "Beta multiplica la prima de riesgo del mercado."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "15.3 The Capital Asset Pricing Model (CAPM)"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-capm-defensiva",
+    "subtema": "fc-capm",
+    "enunciado": "Con tasa libre de riesgo de 4 % y rendimiento del mercado de 10 %, ¿qué rendimiento se exige a una acción con beta de 0,8?",
+    "datos": {
+      "rf": 0.04,
+      "rm": 0.1,
+      "b": 0.8
+    },
+    "calculo": "rf + b * (rm - rf)",
+    "respuesta": 0.088,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Rendimiento = 0,04 + 0,8 × 0,06 = 0,088 (8,8 %)"
+    ],
+    "pistas": [
+      "Una beta menor que 1 indica menos riesgo que el mercado."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "15.3 The Capital Asset Pricing Model (CAPM)"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-wacc",
+    "subtema": "fc-wacc",
+    "enunciado": "Una empresa tiene patrimonio de USD 600.000 (costo 14 %) y deuda de 400.000 (costo 8 % antes de impuestos). Con una tasa de impuesto de 25 %, ¿cuál es su WACC?",
+    "datos": {
+      "E": 600000,
+      "D": 400000,
+      "re": 0.14,
+      "rd": 0.08,
+      "t": 0.25
+    },
+    "calculo": "E / (E + D) * re + D / (E + D) * rd * (1 - t)",
+    "respuesta": 0.108,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Pesos: 0,6 patrimonio y 0,4 deuda",
+      "WACC = 0,6 × 0,14 + 0,4 × 0,08 × 0,75 = 0,108 (10,8 %)"
+    ],
+    "pistas": [
+      "La deuda entra después de impuestos."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "17.3 Calculating the Weighted Average Cost of Capital"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-wacc-2",
+    "subtema": "fc-wacc",
+    "enunciado": "Una empresa se financia 70 % con patrimonio (costo 12 %) y 30 % con deuda (costo 7 % antes de impuestos). Con impuesto de 25 %, ¿cuál es su WACC?",
+    "datos": {
+      "we": 0.7,
+      "wd": 0.3,
+      "re": 0.12,
+      "rd": 0.07,
+      "t": 0.25
+    },
+    "calculo": "we * re + wd * rd * (1 - t)",
+    "respuesta": 0.0998,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "WACC = 0,7 × 0,12 + 0,3 × 0,07 × 0,75",
+      "WACC = 0,084 + 0,01575 = 0,09975"
+    ],
+    "pistas": [
+      "Multiplica cada costo por su peso."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "17.3 Calculating the Weighted Average Cost of Capital"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-bono",
+    "subtema": "fc-bonos",
+    "formula": "precio-bono",
+    "enunciado": "Un bono de USD 1.000 paga un cupón anual de USD 70 y vence en 3 años. Si el mercado exige 8 %, ¿cuál es su precio?",
+    "datos": {
+      "C": 70,
+      "r": 0.08,
+      "n": 3,
+      "VN": 1000
+    },
+    "calculo": "C * (1 - (1 + r) ^ -n) / r + VN * (1 + r) ^ -n",
+    "respuesta": 974.23,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "VA de los cupones = 70 × 2,577097 = 180,40",
+      "VA del nominal = 1.000 × 0,793832 = 793,83",
+      "P = 180,40 + 793,83 = 974,23"
+    ],
+    "pistas": [
+      "Como el mercado exige más que el cupón, el bono vale menos que 1.000."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "10.2 Bond Valuation"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-bono-par",
+    "subtema": "fc-bonos",
+    "formula": "precio-bono",
+    "enunciado": "Un bono de USD 1.000 con cupón anual de USD 60 vence en 5 años y el mercado exige 6 %. ¿Cuál es su precio?",
+    "datos": {
+      "C": 60,
+      "r": 0.06,
+      "n": 5,
+      "VN": 1000
+    },
+    "calculo": "C * (1 - (1 + r) ^ -n) / r + VN * (1 + r) ^ -n",
+    "respuesta": 1000,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Cupón y rendimiento exigido son iguales (6 %)",
+      "El bono se vende a la par: P = 1.000"
+    ],
+    "pistas": [
+      "Si el cupón es igual al rendimiento exigido, el precio es el nominal."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "10.2 Bond Valuation"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-gordon",
+    "subtema": "fc-acciones",
+    "enunciado": "Una acción pagará un dividendo de USD 2,50 el próximo año, que crecerá 4 % anual. Si los inversionistas exigen 12 %, ¿cuánto vale la acción?",
+    "datos": {
+      "D1": 2.5,
+      "r": 0.12,
+      "g": 0.04
+    },
+    "calculo": "D1 / (r - g)",
+    "respuesta": 31.25,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "P = 2,5 ÷ (0,12 − 0,04)",
+      "P = 2,5 ÷ 0,08 = 31,25"
+    ],
+    "pistas": [
+      "Modelo de crecimiento constante."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "11.2 Dividend Discount Models (DDMs)"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-gordon-d0",
+    "subtema": "fc-acciones",
+    "enunciado": "Una acción acaba de pagar un dividendo de USD 1,80 que crecerá 5 % anual. Con un rendimiento exigido de 11 %, ¿cuánto vale?",
+    "datos": {
+      "D0": 1.8,
+      "r": 0.11,
+      "g": 0.05
+    },
+    "calculo": "D0 * (1 + g) / (r - g)",
+    "respuesta": 31.5,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "D1 = 1,8 × 1,05 = 1,89",
+      "P = 1,89 ÷ 0,06 = 31,5"
+    ],
+    "pistas": [
+      "Primero calcula el próximo dividendo D1."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "11.2 Dividend Discount Models (DDMs)"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-pu",
+    "subtema": "fc-mercado",
+    "enunciado": "La acción de una compañía cuesta USD 24 y su utilidad por acción es USD 2. ¿Cuál es su relación precio/utilidad?",
+    "datos": {
+      "P": 24,
+      "UPA": 2
+    },
+    "calculo": "P / UPA",
+    "respuesta": 12,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "P/U = 24 ÷ 2 = 12"
+    ],
+    "pistas": [
+      "Precio dividido para la utilidad por acción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.5 Market Value Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-precio-libros",
+    "subtema": "fc-mercado",
+    "enunciado": "La acción cuesta USD 24 y el valor en libros por acción es USD 16. ¿Cuál es la relación precio/valor en libros?",
+    "datos": {
+      "P": 24,
+      "VL": 16
+    },
+    "calculo": "P / VL",
+    "respuesta": 1.5,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "P/VL = 24 ÷ 16 = 1,5"
+    ],
+    "pistas": [
+      "Precio dividido para el patrimonio contable por acción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "6.5 Market Value Ratios"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-costo-deuda",
+    "subtema": "fc-costo-deuda-patrimonio",
+    "enunciado": "Una empresa paga 9 % por su deuda y su tasa de impuesto es 25 %. ¿Cuál es su costo de deuda después de impuestos?",
+    "datos": {
+      "kd": 0.09,
+      "t": 0.25
+    },
+    "calculo": "kd * (1 - t)",
+    "respuesta": 0.0675,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Costo neto = 0,09 × 0,75 = 0,0675 (6,75 %)"
+    ],
+    "pistas": [
+      "Los intereses son deducibles."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "17.2 The Costs of Debt and Equity Capital"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-costo-patrimonio",
+    "subtema": "fc-costo-deuda-patrimonio",
+    "enunciado": "La acción de una empresa vale USD 25, el próximo dividendo será USD 2 y crecerá 4 % anual. ¿Cuál es su costo del patrimonio?",
+    "datos": {
+      "D1": 2,
+      "P0": 25,
+      "g": 0.04
+    },
+    "calculo": "D1 / P0 + g",
+    "respuesta": 0.12,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Rendimiento por dividendo = 2 ÷ 25 = 0,08",
+      "ke = 0,08 + 0,04 = 0,12 (12 %)"
+    ],
+    "pistas": [
+      "Rendimiento por dividendo más crecimiento."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "17.2 The Costs of Debt and Equity Capital"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-dcf",
+    "subtema": "fc-dcf",
+    "enunciado": "Una empresa espera un flujo de caja libre de USD 500.000 el próximo año, que crecerá 3 % anual para siempre. Con un WACC de 10 %, ¿cuál es su valor?",
+    "datos": {
+      "F": 500000,
+      "w": 0.1,
+      "g": 0.03
+    },
+    "calculo": "F / (w - g)",
+    "respuesta": 7142857.14,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "V = 500.000 ÷ (0,10 − 0,03)",
+      "V = 500.000 ÷ 0,07 = 7.142.857,14"
+    ],
+    "pistas": [
+      "Perpetuidad creciente con el WACC como tasa."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "11.3 Discounted Cash Flow (DCF) Model"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-dcf-patrimonio",
+    "subtema": "fc-dcf",
+    "enunciado": "Si la empresa anterior vale USD 7.142.857,14 y tiene deuda por USD 2.000.000, ¿cuánto vale su patrimonio?",
+    "datos": {
+      "V": 7142857.14,
+      "D": 2000000
+    },
+    "calculo": "V - D",
+    "respuesta": 5142857.14,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Patrimonio = 7.142.857,14 − 2.000.000 = 5.142.857,14"
+    ],
+    "pistas": [
+      "El valor de la empresa se reparte entre acreedores y dueños."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "11.3 Discounted Cash Flow (DCF) Model"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-escudo-fiscal",
+    "subtema": "fc-apalancamiento-financiero",
+    "enunciado": "Una empresa paga USD 20.000 de intereses al año y su tasa de impuesto es 25 %. ¿Cuál es su escudo fiscal anual?",
+    "datos": {
+      "I": 20000,
+      "t": 0.25
+    },
+    "calculo": "I * t",
+    "respuesta": 5000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Escudo fiscal = 20.000 × 0,25 = 5.000"
+    ],
+    "pistas": [
+      "Los intereses deducibles ahorran impuestos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "17.4 Capital Structure Choices"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-utilidad-apalancada",
+    "subtema": "fc-apalancamiento-financiero",
+    "enunciado": "Con utilidad operativa de USD 100.000, intereses de 20.000 e impuesto de 25 %, ¿cuál es la utilidad neta?",
+    "datos": {
+      "UO": 100000,
+      "I": 20000,
+      "t": 0.25
+    },
+    "calculo": "(UO - I) * (1 - t)",
+    "respuesta": 60000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Utilidad antes de impuestos = 100.000 − 20.000 = 80.000",
+      "Utilidad neta = 80.000 × 0,75 = 60.000"
+    ],
+    "pistas": [
+      "Resta los intereses antes de aplicar el impuesto."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "17.4 Capital Structure Choices"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-costo-descuento",
+    "subtema": "fc-credito-comercial",
+    "enunciado": "Un proveedor ofrece condiciones 2/10 neto 30. ¿Cuál es el costo anual implícito de no tomar el descuento?",
+    "datos": {
+      "d": 0.02,
+      "dias": 20
+    },
+    "calculo": "d / (1 - d) * 365 / dias",
+    "respuesta": 0.3724,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "d ÷ (1 − d) = 0,02 ÷ 0,98 = 0,020408",
+      "Costo = 0,020408 × 365 ÷ 20 = 0,3724"
+    ],
+    "pistas": [
+      "Los días adicionales son 30 − 10 = 20."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "19.2 What Is Trade Credit?"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-costo-descuento-2",
+    "subtema": "fc-credito-comercial",
+    "enunciado": "Con condiciones 1/10 neto 40, ¿cuál es el costo anual implícito de no tomar el descuento?",
+    "datos": {
+      "d": 0.01,
+      "dias": 30
+    },
+    "calculo": "d / (1 - d) * 365 / dias",
+    "respuesta": 0.1229,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "d ÷ (1 − d) = 0,01 ÷ 0,99 = 0,010101",
+      "Costo = 0,010101 × 365 ÷ 30 = 0,1229"
+    ],
+    "pistas": [
+      "Los días adicionales son 40 − 10 = 30."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "19.2 What Is Trade Credit?"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-pronostico",
+    "subtema": "fc-pronostico-ventas",
+    "enunciado": "Una empresa vendió USD 500.000 y espera crecer 8 % anual. ¿Cuál es el pronóstico de ventas para dentro de dos años?",
+    "datos": {
+      "V": 500000,
+      "g": 0.08,
+      "n": 2
+    },
+    "calculo": "V * (1 + g) ^ n",
+    "respuesta": 583200,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Año 1 = 500.000 × 1,08 = 540.000",
+      "Año 2 = 540.000 × 1,08 = 583.200"
+    ],
+    "pistas": [
+      "Aplica el crecimiento dos veces."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "18.2 Forecasting Sales"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-proforma-cxc",
+    "subtema": "fc-proforma",
+    "enunciado": "Las cuentas por cobrar suelen ser el 15 % de las ventas. Si se pronostican ventas de USD 540.000, ¿cuánto serán las cuentas por cobrar proyectadas?",
+    "datos": {
+      "V": 540000,
+      "p": 0.15
+    },
+    "calculo": "V * p",
+    "respuesta": 81000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "CxC proyectadas = 540.000 × 0,15 = 81.000"
+    ],
+    "pistas": [
+      "Método del porcentaje de ventas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "18.3 Pro Forma Financials"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-proforma-inventario",
+    "subtema": "fc-proforma",
+    "enunciado": "Los inventarios suelen ser el 20 % de las ventas. Con ventas pronosticadas de USD 540.000, ¿cuánto serán los inventarios proyectados?",
+    "datos": {
+      "V": 540000,
+      "p": 0.2
+    },
+    "calculo": "V * p",
+    "respuesta": 108000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Inventarios proyectados = 540.000 × 0,2 = 108.000"
+    ],
+    "pistas": [
+      "Aplica la proporción histórica a las ventas proyectadas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "18.3 Pro Forma Financials"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fc-excedente-caja",
+    "subtema": "fc-gestion-efectivo",
+    "enunciado": "Una empresa necesita USD 40.000 al mes para pagos y quiere un colchón de 15.000. Si tiene 95.000 en la cuenta, ¿cuánto puede invertir a corto plazo?",
+    "datos": {
+      "S": 95000,
+      "T": 40000,
+      "C": 15000
+    },
+    "calculo": "S - T - C",
+    "respuesta": 40000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Excedente = 95.000 − 40.000 − 15.000 = 40.000"
+    ],
+    "pistas": [
+      "Reserva lo necesario para transacciones y precaución."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "19.3 Cash Management"
+    },
+    "materia": "finanzas-corporativas",
+    "actualizado_en": "2026-10-26"
   }
 ]

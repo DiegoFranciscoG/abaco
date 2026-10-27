@@ -125,7 +125,7 @@
     ],
     "orden": 6,
     "cobertura": {
-      "estado": "parcial",
+      "estado": "completa",
       "unidades_objetivo": 6
     }
   },
