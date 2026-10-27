@@ -8148,5 +8148,65 @@
     },
     "materia": "evaluacion-proyectos",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-va-ahorros",
+    "subtema": "ep-flujos-descontados",
+    "formula": "va-anualidad-vencida",
+    "enunciado": "Una máquina ahorrará USD 6.000 al año durante 4 años. Con una tasa exigida de 8 %, ¿cuál es el valor presente de esos ahorros?",
+    "datos": {
+      "A": 6000,
+      "i": 0.08,
+      "n": 4
+    },
+    "calculo": "A * (1 - (1 + i) ^ -n) / i",
+    "respuesta": 19872.76,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Factor de anualidad = 3,312127",
+      "VP = 6.000 × 3,312127 = 19.872,76"
+    ],
+    "pistas": [
+      "Los ahorros iguales forman una anualidad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "11.4 Discounted Cash Flow Models"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ep-van-rescate",
+    "subtema": "ep-flujos-descontados",
+    "enunciado": "Un equipo de USD 30.000 ahorra 8.000 al año durante 5 años y al final se vende en 3.000. Con una tasa de 10 %, ¿cuál es su VAN?",
+    "datos": {
+      "I": 30000,
+      "A": 8000,
+      "R": 3000,
+      "i": 0.1,
+      "n": 5
+    },
+    "calculo": "A * (1 - (1 + i) ^ -n) / i + R * (1 + i) ^ -n - I",
+    "respuesta": 2189.06,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "VP de los ahorros = 8.000 × 3,790787 = 30.326,30",
+      "VP del rescate = 3.000 × 0,620921 = 1.862,76",
+      "VAN = 30.326,30 + 1.862,76 − 30.000 = 2.189,06"
+    ],
+    "pistas": [
+      "No olvides traer a valor presente el valor de rescate."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "11.4 Discounted Cash Flow Models"
+    },
+    "materia": "evaluacion-proyectos",
+    "actualizado_en": "2026-10-26"
   }
 ]
