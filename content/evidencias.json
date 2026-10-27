@@ -3574,5 +3574,108 @@
       "art. 17.- derecho a la portabilidad",
       "art. 43.- notificacion de vulneracion de seguridad"
     ]
+  },
+  {
+    "id": "et-codigo-bloques",
+    "palabras": [
+      "building blocks",
+      "part 1",
+      "professional accountants in business (paibs)",
+      "professional accountants in public practice (papps)",
+      "r220.4",
+      "r270.3"
+    ]
+  },
+  {
+    "id": "et-marco-sesgos",
+    "palabras": [
+      "have an inquiring mind",
+      "strength of character to act appropriately",
+      "anchoring bias",
+      "confirmation bias",
+      "overconfidence bias",
+      "groupthink"
+    ]
+  },
+  {
+    "id": "et-situaciones-independencia",
+    "palabras": [
+      "independence is not a fundamental principle",
+      "international independence standards",
+      "r340.7",
+      "trivial and inconsequential"
+    ]
+  },
+  {
+    "id": "et-teorias-virtud",
+    "palabras": [
+      "aristotle",
+      "confucius",
+      "phronesis",
+      "self-regulation",
+      "managerial ethics"
+    ]
+  },
+  {
+    "id": "et-teorias-utilitarismo",
+    "palabras": [
+      "jeremy bentham",
+      "hedonic calculus",
+      "john stuart mill",
+      "greatest number",
+      "cost-benefit"
+    ]
+  },
+  {
+    "id": "et-teorias-deontologia",
+    "palabras": [
+      "immanuel kant",
+      "categorical imperative",
+      "universal law",
+      "ends in themselves"
+    ]
+  },
+  {
+    "id": "et-teorias-justicia",
+    "palabras": [
+      "john rawls",
+      "justice as fairness",
+      "social contract theory",
+      "original position",
+      "veil of ignorance"
+    ]
+  },
+  {
+    "id": "et-empresa-integridad",
+    "palabras": [
+      "professional of integrity",
+      "stakeholders",
+      "baseline minimum"
+    ]
+  },
+  {
+    "id": "et-empresa-grupos-interes",
+    "palabras": [
+      "stakeholder relationships",
+      "not all have equal priority",
+      "board of directors"
+    ]
+  },
+  {
+    "id": "et-empresa-integridad-financiera",
+    "palabras": [
+      "insider trading",
+      "nonpublic information",
+      "bribe",
+      "foreign corrupt practices act"
+    ]
+  },
+  {
+    "id": "et-empresa-denuncia",
+    "palabras": [
+      "whistleblowing",
+      "public service",
+      "blacklisted"
+    ]
   }
 ]

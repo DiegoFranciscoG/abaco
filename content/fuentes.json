@@ -466,5 +466,32 @@
     "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
     "licencia": "Norma pública (Código Ingenios, art. 107)",
     "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "os-be",
+    "titulo": "Business Ethics",
+    "autor_editor": "Stephen M. Byars, Kurt Stanberry et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/business-ethics",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "iesba-bloques",
+    "titulo": "Exploring the IESBA Code — The Building Blocks Installment",
+    "autor_editor": "International Federation of Accountants (IFAC) / IESBA",
+    "tipo": "documentacion",
+    "url": "https://www.ifac.org/system/files/publications/files/Exploring-the-IESBA-Code-the-Building-Blocks-Installment.pdf",
+    "licencia": "Publicación pública de IFAC; se cita y resume con redacción propia",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "iesba-rol-mentalidad",
+    "titulo": "Basis for Conclusions: Revisions to the Code to Promote the Role and Mindset Expected of Professional Accountants",
+    "autor_editor": "Personal del IESBA — International Federation of Accountants (IFAC)",
+    "tipo": "documentacion",
+    "url": "https://www.ifac.org/system/files/publications/files/Basis-for-Conclusions-Role-and-Mindset.pdf",
+    "licencia": "Publicación pública de IFAC; se cita y resume con redacción propia",
+    "fecha_consulta": "2026-10-26"
   }
 ]

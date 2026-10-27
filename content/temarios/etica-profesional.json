@@ -63,6 +63,27 @@
             "ref": "iesba-code",
             "seccion": "Role and mindset; professional skepticism"
           }
+        },
+        {
+          "id": "et-codigo-bloques",
+          "nombre": "La estructura por bloques: contadores en la empresa y en la práctica",
+          "explicacion": "El Código se organiza como bloques que se apoyan unos en otros. La Parte 1 (secciones 100 a 199) se aplica a todos los contadores profesionales: cumplimiento del Código, principios fundamentales y marco conceptual. La Parte 2 (200 a 299) se dirige a los contadores en la empresa (PAIB) y la Parte 3 (300 a 399) a los contadores en ejercicio público (PAPP), que también deben seguir la Parte 2 en ciertos casos. Las Partes 4A y 4B contienen las Normas Internacionales de Independencia para auditorías y revisiones, y para otros encargos de aseguramiento. Como el marco conceptual de la Parte 1 se aplica a todo, no se repite en las demás partes; el glosario define los términos.",
+          "ejemplo": "Un contador de una empresa presionado por el gerente para reconocer ingresos de forma agresiva consulta la Parte 2: la información financiera no puede ser intencionalmente engañosa (R220.4) y la presión de otros no puede llevar a incumplir los principios (R270.3).",
+          "puntos_clave": [
+            "Parte 1: todos los contadores.",
+            "Parte 2: en la empresa; Parte 3: en ejercicio público.",
+            "Partes 4A y 4B: independencia."
+          ],
+          "errores_frecuentes": [
+            "Creer que la Parte 2 no aplica a quienes trabajan en una firma.",
+            "Leer una sección sin relacionarla con el marco conceptual de la Parte 1."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iesba-bloques",
+            "url": "https://www.ifac.org/system/files/publications/files/Exploring-the-IESBA-Code-the-Building-Blocks-Installment.pdf",
+            "seccion": "Structure of the Code; PAIB scenario"
+          }
         }
       ]
     },
@@ -207,6 +228,27 @@
             "ref": "iesba-code",
             "seccion": "Conceptual framework — Step 3"
           }
+        },
+        {
+          "id": "et-marco-sesgos",
+          "nombre": "Mente inquisitiva, fortaleza de carácter y sesgos",
+          "explicacion": "Las revisiones del IESBA sobre el rol y la mentalidad del contador agregaron tres ideas. Primero, al aplicar el marco conceptual el contador debe tener una mente inquisitiva, concepto distinto del escepticismo profesional que se exige en auditorías, revisiones y otros encargos de aseguramiento. Segundo, la integridad incluye tener la fortaleza de carácter para actuar correctamente ante dilemas o situaciones difíciles. Tercero, el contador debe ser consciente de sus sesgos al ejercer el juicio profesional; entre los ejemplos considerados están el sesgo de anclaje, de disponibilidad, de confirmación y de exceso de confianza, además del pensamiento de grupo. También se destacó el papel de cada contador en promover una cultura ética en su organización.",
+          "ejemplo": "Una analista que revisa una provisión acepta la primera cifra que le dio el gerente y solo busca datos que la confirmen (anclaje y confirmación). Con mente inquisitiva, pide la evidencia de respaldo y considera información que pueda contradecirla antes de concluir.",
+          "puntos_clave": [
+            "Mente inquisitiva al aplicar el marco conceptual.",
+            "Fortaleza de carácter como parte de la integridad.",
+            "Conciencia de los sesgos: anclaje, disponibilidad, confirmación, exceso de confianza."
+          ],
+          "errores_frecuentes": [
+            "Confundir la mente inquisitiva con desconfiar de todo.",
+            "Creer que la experiencia elimina los sesgos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iesba-rol-mentalidad",
+            "url": "https://www.ifac.org/system/files/publications/files/Basis-for-Conclusions-Role-and-Mindset.pdf",
+            "seccion": "IV. Strength of character; V. Having an inquiring mind; VI. Bias and organizational culture"
+          }
         }
       ]
     },
@@ -269,6 +311,213 @@
           "fuente": {
             "ref": "iesba-code",
             "seccion": "Responding to non-compliance with laws and regulations (NOCLAR)"
+          }
+        },
+        {
+          "id": "et-situaciones-independencia",
+          "nombre": "Independencia en auditoría y otros encargos de aseguramiento",
+          "explicacion": "La independencia no es un principio fundamental, pero las mismas amenazas que afectan a los principios pueden amenazarla. Las Normas Internacionales de Independencia (Partes 4A y 4B del Código) explican cómo aplicar el marco conceptual en auditorías, revisiones y otros encargos de aseguramiento: identificar las amenazas, evaluarlas y atender las que no estén en un nivel aceptable. En el ejercicio público, las reglas se combinan: un regalo de un cliente no puede aceptarse si busca influir indebidamente en el comportamiento del contador (R340.7) y, en un encargo de auditoría o revisión, tampoco si su valor no es trivial e intrascendente (R420.3).",
+          "ejemplo": "Un auditor recibe del cliente auditado una invitación a un gran evento deportivo. Aunque el valor pareciera trivial, antes de aceptar debe evaluar la intención del cliente; si busca influir en su trabajo, debe rechazarla.",
+          "puntos_clave": [
+            "La independencia no es un principio fundamental, pero se protege con el marco conceptual.",
+            "Parte 4A: auditorías y revisiones; Parte 4B: otros aseguramientos.",
+            "Regalos: evaluar la intención y que el valor sea trivial e intrascendente."
+          ],
+          "errores_frecuentes": [
+            "Pensar que un regalo pequeño siempre puede aceptarse.",
+            "Creer que la independencia solo importa al firmar el informe."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iesba-bloques",
+            "url": "https://www.ifac.org/system/files/publications/files/Exploring-the-IESBA-Code-the-Building-Blocks-Installment.pdf",
+            "seccion": "Independence versus the fundamental principles; PAPP scenario"
+          }
+        }
+      ]
+    },
+    {
+      "id": "et-teorias",
+      "nombre": "Teorías éticas para tomar decisiones",
+      "orden": 5,
+      "descripcion": "Ética de la virtud, utilitarismo, deontología y justicia como equidad aplicadas a la empresa.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "et-teorias-virtud",
+          "nombre": "Ética de la virtud: Aristóteles y Confucio",
+          "explicacion": "Aristóteles y Confucio construyeron sistemas éticos basados en la virtud: el fin del primero era la felicidad y el del segundo, la armonía. Ambos comparten el tema del control. En Aristóteles se expresa en la phronesis, la sabiduría práctica que delibera y lleva a una vida virtuosa, relacionada con la templanza; en Confucio, en la autorregulación, que permite actuar de forma más humana y beneficia a la persona, a la familia y a la nación. En la empresa, ese control se traduce en la ética gerencial: un directivo disciplinado equilibra la responsabilidad individual y la colectiva.",
+          "ejemplo": "Una gerente de compras que recibe presión para cerrar rápido un contrato se detiene a deliberar sobre lo correcto y no cede al impulso de favorecer a un proveedor amigo: aplica la sabiduría práctica y la templanza.",
+          "puntos_clave": [
+            "Aristóteles: felicidad; Confucio: armonía.",
+            "Phronesis y templanza; autorregulación.",
+            "Ética gerencial: equilibrio entre lo individual y lo colectivo."
+          ],
+          "errores_frecuentes": [
+            "Reducir la virtud a seguir reglas.",
+            "Creer que la ética de la virtud no se aplica a los negocios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/2-3-comparing-the-virtue-ethics-of-east-and-west",
+            "seccion": "2.3 Comparing the Virtue Ethics of East and West"
+          }
+        },
+        {
+          "id": "et-teorias-utilitarismo",
+          "nombre": "Utilitarismo: el mayor bien para el mayor número",
+          "explicacion": "Jeremy Bentham sostuvo que el bien se reduce a buscar el placer y evitar el dolor, y creó el utilitarismo; propuso un cálculo hedónico para medir la utilidad de una acción según su intensidad, duración, certeza y probabilidad. John Stuart Mill lo refinó incorporando los derechos humanos. El utilitarismo juzga las acciones por sus consecuencias, no por el carácter ni la motivación de quien actúa, y busca el mayor bien para el mayor número de personas. En la empresa aparece en el análisis costo-beneficio, aunque solo es un cálculo utilitarista completo si considera a todos los grupos de interés y las externalidades.",
+          "ejemplo": "Una empresa evalúa cerrar una planta contaminante: además de su ahorro de costos, un análisis utilitarista completo suma los efectos sobre los trabajadores, la comunidad vecina y el ambiente antes de decidir.",
+          "puntos_clave": [
+            "Bentham: placer y dolor; cálculo hedónico.",
+            "Mill: incorpora los derechos humanos.",
+            "Juzga por las consecuencias; costo-beneficio con todos los grupos de interés."
+          ],
+          "errores_frecuentes": [
+            "Usar un costo-beneficio que solo mira a la empresa.",
+            "Olvidar que la mayoría puede perjudicar a una minoría."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/2-4-utilitarianism-the-greatest-good-for-the-greatest-number",
+            "seccion": "2.4 Utilitarianism: The Greatest Good for the Greatest Number"
+          }
+        },
+        {
+          "id": "et-teorias-deontologia",
+          "nombre": "Deontología: la ética como deber",
+          "explicacion": "A diferencia de Bentham y Mill, Immanuel Kant no se fijó en las consecuencias sino en los motivos: hacer algo por la razón correcta importa más que el resultado. Su imperativo categórico dice: obra solo según la máxima que puedas querer al mismo tiempo que se convierta en ley universal. Supone dos cosas: actuar por buena voluntad y no por interés propio a costa de otros, y nunca tratar a los demás solo como medios para nuestros fines, sino también como fines en sí mismos.",
+          "ejemplo": "Un vendedor podría ocultar un defecto menor del producto para cerrar la venta. Desde la deontología, si no puede querer que todos los vendedores oculten defectos, no debe hacerlo, aunque esa venta concreta le convenga.",
+          "puntos_clave": [
+            "Importan los motivos, no solo las consecuencias.",
+            "Imperativo categórico: máxima universalizable.",
+            "Tratar a las personas como fines, no solo como medios."
+          ],
+          "errores_frecuentes": [
+            "Confundir la deontología con el utilitarismo.",
+            "Justificar una mentira por su buen resultado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/2-5-deontology-ethics-as-duty",
+            "seccion": "2.5 Deontology: Ethics as Duty"
+          }
+        },
+        {
+          "id": "et-teorias-justicia",
+          "nombre": "La justicia como equidad de John Rawls",
+          "explicacion": "John Rawls propuso la justicia, y no la maximización de la riqueza, como criterio para distribuir bienes y servicios; la llamó justicia como equidad y le asignó al Estado el cuidado de los más desfavorecidos. Partió de la teoría del contrato social de Locke y Rousseau. Su procedimiento usa una posición original, una situación hipotética en la que personas racionales acuerdan cómo distribuir los recursos, y un velo de ignorancia, bajo el cual nadie sabe qué lugar ocupará en la sociedad, lo que lleva a elegir reglas justas para todos.",
+          "ejemplo": "Al diseñar la política salarial, un comité se pregunta qué reglas aceptaría si no supiera si va a ocupar el puesto mejor o peor pagado de la empresa: es aplicar el velo de ignorancia.",
+          "puntos_clave": [
+            "Justicia como equidad.",
+            "Posición original y velo de ignorancia.",
+            "Atención a los más desfavorecidos."
+          ],
+          "errores_frecuentes": [
+            "Confundir equidad con igualdad absoluta.",
+            "Pensar que Rawls busca maximizar la riqueza total."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/2-6-a-theory-of-justice",
+            "seccion": "2.6 A Theory of Justice"
+          }
+        }
+      ]
+    },
+    {
+      "id": "et-empresa",
+      "nombre": "Ética en la empresa: integridad, grupos de interés y denuncia",
+      "orden": 6,
+      "descripcion": "Profesional íntegro, ética frente a legalidad, grupos de interés, integridad financiera y denuncia de irregularidades.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "et-empresa-integridad",
+          "nombre": "Ser un profesional íntegro: ética y legalidad",
+          "explicacion": "La ética son los estándares de conducta que cada persona decide sostener en su vida personal y profesional. Un profesional íntegro considera a sus grupos de interés: clientes, proveedores, inversionistas, empleados, medios, gobierno, comunidad, competidores e incluso el ambiente, es decir, todos los afectados por las decisiones de la empresa. Cumplir la ley y actuar éticamente no son lo mismo: el cumplimiento legal es obligatorio y su violación se sanciona, pero es solo un mínimo; la ética va más allá de lo que exige la ley.",
+          "ejemplo": "Una empresa puede cumplir la ley pagando a sus proveedores pequeños en el plazo máximo permitido, aunque sabe que eso los ahoga financieramente; pagar antes cuando puede hacerlo es una decisión ética que la ley no exige.",
+          "puntos_clave": [
+            "Ética: estándares de conducta propios.",
+            "Grupos de interés: todos los afectados por la empresa.",
+            "La ley es el mínimo; la ética va más allá."
+          ],
+          "errores_frecuentes": [
+            "Creer que todo lo legal es ético.",
+            "Considerar solo a los accionistas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/1-1-being-a-professional-of-integrity",
+            "seccion": "1.1 Being a Professional of Integrity"
+          }
+        },
+        {
+          "id": "et-empresa-grupos-interes",
+          "nombre": "Orientación a los grupos de interés",
+          "explicacion": "Muchos individuos y grupos dentro y fuera de la empresa tienen interés en cómo produce y vende: clientes, empleados, accionistas, comunidades, ambiente, gobierno y medios. Todos son importantes, pero no tienen la misma prioridad, porque difieren en interés e influencia. Entre los internos, el directorio define y evalúa la misión, supervisa la dirección del negocio, fija metas de rentabilidad y su función más importante es elegir al gerente general. Las leyes no dictan todas las responsabilidades éticas que la empresa tiene con ellos, por lo que su bienestar debe estar en el centro de las decisiones.",
+          "ejemplo": "Antes de trasladar su planta, una empresa mapea a los afectados: trabajadores que perderían su empleo, la comunidad que recibe sus impuestos, los clientes y los accionistas, y pondera sus intereses y su influencia.",
+          "puntos_clave": [
+            "Grupos de interés internos y externos.",
+            "Distinta prioridad según interés e influencia.",
+            "El directorio define la misión y elige al gerente general."
+          ],
+          "errores_frecuentes": [
+            "Tratar a todos los grupos como si pesaran igual.",
+            "Pensar que basta con cumplir la ley frente a ellos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/3-1-adopting-a-stakeholder-orientation",
+            "seccion": "3.1 Adopting a Stakeholder Orientation"
+          }
+        },
+        {
+          "id": "et-empresa-integridad-financiera",
+          "nombre": "Integridad financiera: uso de información privilegiada y soborno",
+          "explicacion": "Los empleados pueden enfrentar dilemas financieros como el uso de información privilegiada y el soborno. El uso de información privilegiada (insider trading) es comprar o vender acciones, bonos u otras inversiones con información no pública que probablemente afectará su precio; es ilegal, poco ético e injusto, perjudica a otros inversionistas y debilita la confianza en el mercado. Un soborno es un pago, en dinero o en especie, por un acto contrario a la cultura legal o ética del trabajo; perjudica a las personas, a los competidores, al gobierno y al libre mercado. En Estados Unidos, la Ley de Prácticas Corruptas en el Extranjero (FCPA) prohíbe el soborno en transacciones internacionales.",
+          "ejemplo": "Un analista que sabe antes que el público que su empresa será comprada no puede comprar acciones para venderlas luego más caras, ni pasar el dato a un familiar para que lo haga.",
+          "puntos_clave": [
+            "Información privilegiada: operar con información no pública.",
+            "Soborno: pago por un acto contrario a la ética o la ley.",
+            "Ambos dañan a terceros y la confianza en el mercado."
+          ],
+          "errores_frecuentes": [
+            "Creer que pasar el dato a otro no es violación.",
+            "Ver un soborno pequeño como costumbre aceptable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/7-4-financial-integrity",
+            "seccion": "7.4 Financial Integrity"
+          }
+        },
+        {
+          "id": "et-empresa-denuncia",
+          "nombre": "Crítica a la empresa y denuncia de irregularidades",
+          "explicacion": "Los trabajadores tienen libertad para criticar a sus jefes y empresas, aunque no toda crítica está protegida. La denuncia de irregularidades (whistleblowing) es acudir a una agencia oficial y revelar una violación de la ley por parte del empleador; se considera un servicio público porque ayuda a reducir las malas conductas. Pero ser denunciante es difícil: si su identidad se conoce, puede afectar su carrera, no ser promovido, sufrir el rechazo de compañeros o quedar en listas negras. Por eso es una decisión que debe pensarse bien y apoyarse en los canales y protecciones disponibles.",
+          "ejemplo": "Un contador descubre que la empresa evade sistemáticamente impuestos. Primero documenta los hechos y usa los canales internos; si no hay respuesta y la violación continúa, puede acudir a la autoridad competente, sabiendo los riesgos personales que asume.",
+          "puntos_clave": [
+            "Denuncia: revelar a una autoridad una violación de la ley.",
+            "Se considera un servicio público.",
+            "El denunciante enfrenta riesgos de represalia."
+          ],
+          "errores_frecuentes": [
+            "Confundir una queja cotidiana con una denuncia.",
+            "Denunciar sin documentar los hechos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/7-5-criticism-of-the-company-and-whistleblowing",
+            "seccion": "7.5 Criticism of the Company and Whistleblowing"
           }
         }
       ]
