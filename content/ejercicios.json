@@ -7679,5 +7679,111 @@
     },
     "materia": "investigacion-mercados",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-em-meses-autonomia",
+    "subtema": "em-financiamiento-creativo",
+    "enunciado": "Un emprendimiento arranca con USD 6.000 de ahorros propios y gastos fijos de USD 750 al mes sin ingresos todavía. ¿Para cuántos meses alcanza el dinero?",
+    "datos": {
+      "A": 6000,
+      "G": 750
+    },
+    "calculo": "A / G",
+    "respuesta": 8,
+    "unidad": "meses",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Meses = 6.000 ÷ 750 = 8"
+    ],
+    "pistas": [
+      "Divide los ahorros para el gasto mensual."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-entre",
+      "seccion": "9.2 Special Funding Strategies"
+    },
+    "materia": "emprendimiento",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-em-crowdfunding",
+    "subtema": "em-financiamiento-creativo",
+    "enunciado": "Una campaña de crowdfunding busca reunir USD 12.000 y el aporte promedio esperado es de USD 40. ¿Cuántos aportantes necesita?",
+    "datos": {
+      "M": 12000,
+      "a": 40
+    },
+    "calculo": "M / a",
+    "respuesta": 300,
+    "unidad": "personas",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Aportantes = 12.000 ÷ 40 = 300"
+    ],
+    "pistas": [
+      "Divide la meta para el aporte promedio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-entre",
+      "seccion": "9.2 Special Funding Strategies"
+    },
+    "materia": "emprendimiento",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-em-tamano-mercado",
+    "subtema": "em-investigacion-mercado",
+    "enunciado": "En una parroquia hay 1.800 hogares. En 50 entrevistas, 18 familias dicen que comprarían un filtro de agua. ¿Cuántos hogares podrían comprarlo, según esa proporción?",
+    "datos": {
+      "H": 1800,
+      "s": 18,
+      "n": 50
+    },
+    "calculo": "H * s / n",
+    "respuesta": 648,
+    "unidad": "hogares",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Proporción = 18 ÷ 50 = 0,36",
+      "Hogares = 1.800 × 0,36 = 648"
+    ],
+    "pistas": [
+      "Aplica la proporción de la muestra a la población."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-entre",
+      "seccion": "8.2 Market Research, Market Opportunity Recognition, and Target Market"
+    },
+    "materia": "emprendimiento",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-em-tasa-recompra",
+    "subtema": "em-lean-startup",
+    "enunciado": "En una prueba de un mes, 60 personas probaron los almuerzos de un emprendimiento y 45 volvieron a pedir. ¿Cuál es la tasa de recompra?",
+    "datos": {
+      "r": 45,
+      "n": 60
+    },
+    "calculo": "r / n",
+    "respuesta": 0.75,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Tasa = 45 ÷ 60 = 0,75 (75 %)"
+    ],
+    "pistas": [
+      "Clientes que vuelven ÷ clientes que probaron."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-entre",
+      "seccion": "10.1 Launching the Imperfect Business: Lean Startup"
+    },
+    "materia": "emprendimiento",
+    "actualizado_en": "2026-10-26"
   }
 ]

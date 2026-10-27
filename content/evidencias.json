@@ -2995,5 +2995,97 @@
       "prediccion",
       "regresion"
     ]
+  },
+  {
+    "id": "em-vision",
+    "palabras": [
+      "vision",
+      "goals",
+      "balance"
+    ]
+  },
+  {
+    "id": "em-investigacion-mercado",
+    "palabras": [
+      "market research",
+      "target market",
+      "data"
+    ]
+  },
+  {
+    "id": "em-plan-operativo",
+    "palabras": [
+      "operational",
+      "equipment",
+      "employees"
+    ]
+  },
+  {
+    "id": "em-financiamiento-creativo",
+    "palabras": [
+      "bootstrapping",
+      "crowdfunding",
+      "barter"
+    ]
+  },
+  {
+    "id": "em-lean-startup",
+    "palabras": [
+      "lean",
+      "pivot",
+      "feedback"
+    ]
+  },
+  {
+    "id": "em-fracaso",
+    "palabras": [
+      "failure",
+      "fear"
+    ]
+  },
+  {
+    "id": "em-ajustar-plan",
+    "palabras": [
+      "build-measure-learn",
+      "plan"
+    ]
+  },
+  {
+    "id": "em-crecimiento",
+    "palabras": [
+      "growth",
+      "global"
+    ]
+  },
+  {
+    "id": "em-historia",
+    "palabras": [
+      "story",
+      "narrative"
+    ]
+  },
+  {
+    "id": "em-pitch",
+    "palabras": [
+      "pitch",
+      "elevator",
+      "deck"
+    ]
+  },
+  {
+    "id": "em-redes",
+    "palabras": [
+      "networks",
+      "association",
+      "connections"
+    ]
+  },
+  {
+    "id": "em-equipo",
+    "palabras": [
+      "team",
+      "attorney",
+      "financial"
+    ]
   }
 ]

@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/entrepreneurship/pages/4-2-creativity-innovation-and-invention-how-they-differ",
             "seccion": "4.2 Creativity, Innovation, and Invention: How They Differ"
           }
+        },
+        {
+          "id": "em-vision",
+          "nombre": "Visión y metas del emprendedor",
+          "explicacion": "La visión es la imagen de lo que el emprendedor quiere construir y del tipo de vida que desea llevar con su negocio. Definirla ayuda a tomar decisiones coherentes: cuánto crecer, cuánto riesgo asumir, cuánto tiempo dedicar. A partir de la visión se fijan metas personales y del negocio, que conviene escribir de forma concreta y con plazos. También importa el equilibrio entre la vida personal y el emprendimiento, porque el agotamiento es una causa frecuente de abandono.",
+          "ejemplo": "Daniela quiere una pastelería que le permita trabajar con horario propio y vivir de ella en 3 años. Se fija la meta de pasar de 40 a 100 pedidos mensuales en 18 meses: un aumento de 100 − 40 = 60 pedidos, y decide no abrir un segundo local hasta lograrlo.",
+          "puntos_clave": [
+            "La visión orienta las decisiones del negocio.",
+            "Metas concretas, escritas y con plazos.",
+            "Equilibrio entre vida personal y emprendimiento."
+          ],
+          "errores_frecuentes": [
+            "Emprender sin saber qué tipo de negocio y de vida se quiere.",
+            "Fijar metas vagas como «crecer mucho»."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/1-2-entrepreneurial-vision-and-goals",
+            "seccion": "1.2 Entrepreneurial Vision and Goals"
+          }
         }
       ]
     },
@@ -130,6 +151,27 @@
             "ref": "os-entre",
             "url": "https://openstax.org/books/entrepreneurship/pages/5-3-competitive-analysis",
             "seccion": "5.3 Competitive Analysis"
+          }
+        },
+        {
+          "id": "em-investigacion-mercado",
+          "nombre": "Investigación de mercado y mercado meta del emprendimiento",
+          "explicacion": "Antes de invertir, el emprendedor necesita evidencia de que existe un mercado. La investigación combina datos secundarios (estadísticas, estudios, información de la competencia) y primarios (entrevistas, encuestas y pruebas con clientes potenciales). Con esa información se reconoce la oportunidad, se estima el tamaño del mercado y se define el mercado meta: el grupo específico de clientes al que se dirigirá primero, descrito por sus características y necesidades.",
+          "ejemplo": "Un emprendedor que quiere vender filtros de agua en una parroquia rural averigua que hay 1.800 hogares y, en 50 entrevistas, 18 familias dicen que comprarían. Estima que el 36 % (18 ÷ 50) de los hogares podría comprar, es decir, unos 1.800 × 0,36 = 648 hogares.",
+          "puntos_clave": [
+            "Datos secundarios y primarios.",
+            "Estimar el tamaño del mercado.",
+            "Definir un mercado meta concreto."
+          ],
+          "errores_frecuentes": [
+            "Preguntar solo a familiares y amigos.",
+            "Definir el mercado meta como «todo el mundo»."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/8-2-market-research-market-opportunity-recognition-and-target-market",
+            "seccion": "8.2 Market Research, Market Opportunity Recognition, and Target Market"
           }
         }
       ]
@@ -197,6 +239,27 @@
             "url": "https://openstax.org/books/entrepreneurship/pages/11-4-the-business-plan",
             "seccion": "11.4 The Business Plan"
           }
+        },
+        {
+          "id": "em-plan-operativo",
+          "nombre": "El plan operativo del emprendimiento",
+          "explicacion": "El plan operativo describe cómo funcionará el negocio en el día a día: ubicación e instalaciones, equipos necesarios, proveedores, procesos de producción o de prestación del servicio, personal y horarios, control de calidad e inventarios, y el manejo del efectivo. Traducir la idea a operaciones concretas revela costos y riesgos que no se ven en el modelo de negocio, y sirve de base para el presupuesto inicial.",
+          "ejemplo": "Una lavandería planifica sus operaciones: 4 lavadoras que procesan 12 cargas diarias cada una, es decir, 4 × 12 = 48 cargas por día, dos turnos de personal y un proveedor de detergente con entrega semanal. Con esa capacidad calcula cuántos clientes puede atender sin contratar más personal.",
+          "puntos_clave": [
+            "Ubicación, equipos, proveedores y procesos.",
+            "Personal, calidad, inventarios y efectivo.",
+            "Base para el presupuesto inicial."
+          ],
+          "errores_frecuentes": [
+            "Subestimar el tiempo y el costo de montar las operaciones.",
+            "No calcular la capacidad máxima de atención."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/12-3-designing-a-startup-operational-plan",
+            "seccion": "12.3 Designing a Startup Operational Plan"
+          }
         }
       ]
     },
@@ -261,6 +324,213 @@
           "fuente": {
             "ref": "ley-companias",
             "seccion": "Sociedad por acciones simplificada: limitación de responsabilidad"
+          }
+        },
+        {
+          "id": "em-financiamiento-creativo",
+          "nombre": "Estrategias de financiamiento: bootstrapping, crowdfunding y trueque",
+          "explicacion": "Muchos emprendimientos empiezan sin acceso a crédito bancario ni inversionistas. El bootstrapping consiste en financiarse con recursos propios y con los ingresos del negocio, controlando cada gasto. El crowdfunding reúne aportes pequeños de muchas personas a través de plataformas en línea, a cambio de recompensas, del producto por adelantado o de participación. El trueque intercambia bienes o servicios sin dinero. Estas estrategias reducen la dependencia de deuda, pero exigen disciplina y una comunicación clara con quienes apoyan.",
+          "ejemplo": "Un estudio de diseño arranca con USD 6.000 de ahorros y gastos fijos de USD 750 al mes: le alcanza para 6.000 ÷ 750 = 8 meses mientras consigue clientes. Además intercambia el diseño de una página web por el arriendo de un mes de oficina compartida.",
+          "puntos_clave": [
+            "Bootstrapping: recursos propios e ingresos del negocio.",
+            "Crowdfunding: aportes pequeños de muchas personas.",
+            "Trueque: intercambio sin dinero."
+          ],
+          "errores_frecuentes": [
+            "No calcular cuántos meses alcanza el dinero propio.",
+            "Prometer recompensas de crowdfunding que no se pueden cumplir."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/9-2-special-funding-strategies",
+            "seccion": "9.2 Special Funding Strategies"
+          }
+        }
+      ]
+    },
+    {
+      "id": "em-lanzamiento",
+      "nombre": "Lanzar, validar y hacer crecer el negocio",
+      "orden": 5,
+      "descripcion": "Lean startup, aprender del fracaso, ajustar el plan y gestionar el crecimiento.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "em-lean-startup",
+          "nombre": "Lean startup: lanzar con un producto mínimo",
+          "explicacion": "El enfoque lean startup propone no esperar a tener el producto perfecto: se lanza un producto mínimo viable para aprender rápido de clientes reales. Con su retroalimentación se decide si perseverar o pivotar, es decir, cambiar algún elemento clave del modelo (cliente, producto, canal o precio). El objetivo es gastar poco tiempo y dinero en ideas que el mercado no quiere y concentrar los recursos en lo que sí funciona.",
+          "ejemplo": "Antes de abrir un restaurante de comida saludable, una emprendedora vende almuerzos por pedido en una oficina durante un mes. De 60 personas que los prueban, 45 vuelven a pedir: una tasa de 45 ÷ 60 = 0,75. Con esa evidencia abre un local pequeño en lugar de uno grande.",
+          "puntos_clave": [
+            "Producto mínimo viable para aprender.",
+            "Perseverar o pivotar según la evidencia.",
+            "Gastar poco en ideas no validadas."
+          ],
+          "errores_frecuentes": [
+            "Lanzar un producto mínimo tan pobre que no permite aprender nada.",
+            "Pivotar sin datos, solo por ansiedad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/10-1-launching-the-imperfect-business-lean-startup",
+            "seccion": "10.1 Launching the Imperfect Business: Lean Startup"
+          }
+        },
+        {
+          "id": "em-fracaso",
+          "nombre": "Aprender del fracaso temprano",
+          "explicacion": "Fracasar en una prueba, un producto o incluso un primer negocio es frecuente y puede ser una fuente de aprendizaje si se analiza qué falló: falta de mercado, mala gestión del efectivo, equipo inadecuado o competencia. El miedo al fracaso paraliza a muchos potenciales emprendedores; reconocer que los errores tempranos y baratos son parte del proceso ayuda a intentarlo con más preparación y menos riesgo.",
+          "ejemplo": "Un emprendedor cerró su tienda de ropa tras 10 meses porque gastó el 70 % de su capital en inventario que no se vendió. En su segundo intento, compra lotes pequeños y repone según las ventas: con el mismo capital, el inventario inmovilizado baja a la mitad.",
+          "puntos_clave": [
+            "El fracaso temprano es frecuente.",
+            "Analizar sus causas genera aprendizaje.",
+            "Los errores pequeños y baratos son preferibles."
+          ],
+          "errores_frecuentes": [
+            "Ocultar los errores en lugar de analizarlos.",
+            "Dejar de intentar por miedo a fallar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/10-2-why-early-failure-can-lead-to-success-later",
+            "seccion": "10.2 Why Early Failure Can Lead to Success Later"
+          }
+        },
+        {
+          "id": "em-ajustar-plan",
+          "nombre": "Seguir y ajustar el plan: construir, medir y aprender",
+          "explicacion": "Un plan de negocios no es un documento fijo. El ciclo construir–medir–aprender propone convertir cada idea en una prueba, medir sus resultados con indicadores concretos y aprender para ajustar el plan. Así el emprendedor compara lo planeado con lo real, detecta desviaciones a tiempo y decide qué cambiar. Llevar un registro de las pruebas y sus resultados evita repetir errores.",
+          "ejemplo": "Una tienda en línea planeaba vender 200 unidades al mes con publicidad en redes, pero vende 120. Prueba dos mensajes distintos durante dos semanas, mide cuál vende más y ajusta su plan: el mensaje ganador eleva las ventas a 170, es decir, 170 − 120 = 50 unidades más.",
+          "puntos_clave": [
+            "Construir, medir y aprender.",
+            "Comparar lo planeado con lo real.",
+            "Ajustar con evidencia."
+          ],
+          "errores_frecuentes": [
+            "Seguir el plan original aunque los datos muestren que no funciona.",
+            "Cambiar varias cosas a la vez sin medir cuál funcionó."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/10-4-managing-following-and-adjusting-the-initial-plan",
+            "seccion": "10.4 Managing, Following, and Adjusting the Initial Plan"
+          }
+        },
+        {
+          "id": "em-crecimiento",
+          "nombre": "Crecer: señales, dificultades y precauciones",
+          "explicacion": "El crecimiento trae oportunidades y riesgos. Son señales para crecer una demanda sostenida que supera la capacidad, clientes que piden más productos y finanzas sanas. El crecimiento puede venir de vender más a los clientes actuales, añadir productos, abrir mercados nuevos o expandirse al exterior. Pero crecer demasiado rápido presiona el efectivo, la calidad y el equipo; por eso conviene planificar el financiamiento, los procesos y la contratación antes de expandirse.",
+          "ejemplo": "Una cafetería con filas diarias abre un segundo local. Para no quedarse sin efectivo, financia la apertura con un crédito de USD 25.000 y mantiene una reserva equivalente a 3 meses de gastos fijos de USD 4.000, es decir, 3 × 4.000 = 12.000 dólares.",
+          "puntos_clave": [
+            "Crecer cuando la demanda supera la capacidad de forma sostenida.",
+            "Varias vías: más clientes, productos o mercados.",
+            "Planificar efectivo, procesos y equipo."
+          ],
+          "errores_frecuentes": [
+            "Crecer sin reservas de efectivo.",
+            "Perder la calidad por atender más pedidos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/10-5-growth-signs-pains-and-cautions",
+            "seccion": "10.5 Growth: Signs, Pains, and Cautions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "em-pitch-redes",
+      "nombre": "Pitch, historia, redes y equipo",
+      "orden": 6,
+      "descripcion": "Contar la historia del emprendimiento, presentar un pitch, construir redes y armar el equipo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "em-historia",
+          "nombre": "Contar la historia del emprendimiento",
+          "explicacion": "Las personas recuerdan historias más que cifras. Contar la historia del emprendimiento —el problema que se encontró, por qué importa, cómo nació la solución y qué cambio produce en los clientes— conecta con inversionistas, clientes y aliados. Una buena historia es auténtica, breve y tiene una estructura clara, y se apoya en datos concretos sin convertirse en una lista de números.",
+          "ejemplo": "En lugar de decir «vendemos bolsos reciclados», una emprendedora cuenta que vio cómo se acumulaban lonas publicitarias en un botadero y hoy convierte 300 lonas al año en bolsos, dando trabajo a 6 mujeres de su barrio.",
+          "puntos_clave": [
+            "Problema, solución y cambio que produce.",
+            "Auténtica y breve.",
+            "Apoyada en datos concretos."
+          ],
+          "errores_frecuentes": [
+            "Contar la historia de la empresa sin mencionar al cliente.",
+            "Exagerar logros que no se pueden demostrar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/7-2-sharing-your-entrepreneurial-story",
+            "seccion": "7.2 Sharing Your Entrepreneurial Story"
+          }
+        },
+        {
+          "id": "em-pitch",
+          "nombre": "Preparar un pitch para cada audiencia",
+          "explicacion": "Un pitch es una presentación breve para convencer a una audiencia de apoyar el emprendimiento. El de ascensor dura menos de un minuto y busca despertar interés; el de inversionistas suele acompañarse de un deck de pocas diapositivas: problema, solución, propuesta de valor, mercado, modelo de negocio, competencia, equipo, finanzas y lo que se pide. Cada audiencia (inversionistas, clientes, jurados de concursos, socios) busca algo distinto, así que el contenido y el énfasis se adaptan.",
+          "ejemplo": "Para un concurso de emprendimiento con 5 minutos de exposición, un equipo prepara 10 diapositivas: dedica unos 30 segundos a cada una, es decir, 10 × 30 = 300 segundos, y ensaya con un cronómetro para no pasarse.",
+          "puntos_clave": [
+            "Pitch de ascensor y pitch con deck.",
+            "Problema, solución, mercado, modelo, equipo y finanzas.",
+            "Adaptar el contenido a la audiencia."
+          ],
+          "errores_frecuentes": [
+            "Usar el mismo pitch para inversionistas y para clientes.",
+            "Llenar las diapositivas de texto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/7-3-developing-pitches-for-various-audiences-and-goals",
+            "seccion": "7.3 Developing Pitches for Various Audiences and Goals"
+          }
+        },
+        {
+          "id": "em-redes",
+          "nombre": "Construir redes de contactos",
+          "explicacion": "Las redes de contactos —asociaciones de pequeños negocios, cámaras, gremios profesionales, programas de gobierno y universidades, comunidades en línea— dan acceso a clientes, proveedores, mentores, información y financiamiento. Construirlas exige participar de forma activa y aportar, no solo pedir. Para un emprendedor en etapa temprana, una red sólida puede reemplazar recursos que no puede pagar, como asesoría especializada.",
+          "ejemplo": "Un emprendedor de software se une a una asociación de jóvenes empresarios de su ciudad. En 6 meses asiste a 10 encuentros y consigue 3 clientes y un mentor en temas tributarios, sin gastar en publicidad.",
+          "puntos_clave": [
+            "Asociaciones, cámaras, gremios y comunidades en línea.",
+            "Aportar, no solo pedir.",
+            "Acceso a clientes, mentores e información."
+          ],
+          "errores_frecuentes": [
+            "Buscar contactos solo cuando se necesita algo.",
+            "Coleccionar contactos sin mantener la relación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/12-1-building-and-connecting-to-networks",
+            "seccion": "12.1 Building and Connecting to Networks"
+          }
+        },
+        {
+          "id": "em-equipo",
+          "nombre": "Armar el equipo del emprendimiento",
+          "explicacion": "Ningún emprendedor domina todas las áreas. Armar el equipo implica sumar socios o colaboradores con habilidades complementarias y apoyarse en profesionales externos: contador, abogado, asesor financiero, especialistas del sector. Elegir bien desde el inicio evita errores costosos en lo legal, lo tributario o lo financiero. Además del conocimiento técnico, importan la confianza, los valores compartidos y acuerdos claros sobre roles y participación.",
+          "ejemplo": "Dos amigos fundan una empresa de alimentos: uno sabe de producción y la otra de ventas. Contratan por horas a un contador para las declaraciones mensuales y firman un acuerdo de socios que reparte la propiedad 50 % y 50 % y define quién decide en cada área.",
+          "puntos_clave": [
+            "Habilidades complementarias.",
+            "Asesores externos: contador, abogado, finanzas.",
+            "Acuerdos claros entre socios."
+          ],
+          "errores_frecuentes": [
+            "Asociarse solo por amistad sin acuerdos escritos.",
+            "Ahorrar en asesoría legal y tributaria al inicio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/12-2-building-the-entrepreneurial-dream-team",
+            "seccion": "12.2 Building the Entrepreneurial Dream Team"
           }
         }
       ]
