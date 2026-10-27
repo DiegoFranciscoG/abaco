@@ -361,7 +361,7 @@ describe('study tools', () => {
     await user.type(screen.getByLabelText('Haber de la línea 2'), '500');
     await user.click(screen.getByRole('button', { name: /Registrar/ }));
     await waitFor(async () => expect((await listJournals(db))[0]?.asientos).toHaveLength(1));
-    await user.click(screen.getByRole('tab', { name: /Balance de comprobación/ }));
+    await user.click(await screen.findByRole('tab', { name: /Balance de comprobación/ }));
     expect(await screen.findByText(/El balance cuadra/)).toBeInTheDocument();
   });
 
