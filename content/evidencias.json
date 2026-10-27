@@ -4450,5 +4450,165 @@
       "social media",
       "subliminal advertising"
     ]
+  },
+  {
+    "id": "vd-venta-concepto",
+    "palabras": [
+      "personal selling is the one-on-one interaction",
+      "relationship selling"
+    ]
+  },
+  {
+    "id": "vd-tipos-vendedores",
+    "palabras": [
+      "order takers",
+      "inside order taker",
+      "outside order takers",
+      "order getters",
+      "missionary salespeople",
+      "team selling"
+    ]
+  },
+  {
+    "id": "vd-proceso-inicio",
+    "palabras": [
+      "prospecting and qualifying",
+      "sales leads",
+      "pre-approach"
+    ]
+  },
+  {
+    "id": "vd-proceso-cierre",
+    "palabras": [
+      "objections",
+      "asking for the order",
+      "follow-up"
+    ]
+  },
+  {
+    "id": "vd-estructura-ventas",
+    "palabras": [
+      "setting goals, motivating, incentivizing, supporting, and monitoring",
+      "territorial sales force structure"
+    ]
+  },
+  {
+    "id": "vd-reclutamiento-compensacion",
+    "palabras": [
+      "recruiting and selecting salespeople",
+      "compensation of the sales force",
+      "commission -only"
+    ]
+  },
+  {
+    "id": "vd-metricas-ventas",
+    "palabras": [
+      "percentage of time spent on selling activities",
+      "lead response time",
+      "win rate"
+    ]
+  },
+  {
+    "id": "vd-etica-ventas",
+    "palabras": [
+      "lifetime customer",
+      "dishonest claims about a product",
+      "bribes and kickbacks"
+    ]
+  },
+  {
+    "id": "vd-canales-concepto",
+    "palabras": [
+      "a marketing channel is a system of people, organizations, and activities",
+      "logistical functions"
+    ]
+  },
+  {
+    "id": "vd-cobertura",
+    "palabras": [
+      "target market coverage",
+      "intensive distribution",
+      "selective distribution",
+      "exclusive distribution"
+    ]
+  },
+  {
+    "id": "vd-gestion-canal",
+    "palabras": [
+      "a channel member , also known as an intermediary",
+      "reputation and its profitability"
+    ]
+  },
+  {
+    "id": "vd-conflicto-canal",
+    "palabras": [
+      "channel conflict",
+      "horizontal conflict",
+      "vertical conflict",
+      "disintermediation"
+    ]
+  },
+  {
+    "id": "vd-minorista-funciones",
+    "palabras": [
+      "retailing is the process of selling goods and services to consumers",
+      "provide assortment"
+    ]
+  },
+  {
+    "id": "vd-tipos-minoristas",
+    "palabras": [
+      "store or non-store retailers",
+      "specialty store",
+      "category killer",
+      "vending machines"
+    ]
+  },
+  {
+    "id": "vd-estrategia-minorista",
+    "palabras": [
+      "pricing, location, and merchandise",
+      "retail pricing"
+    ]
+  },
+  {
+    "id": "vd-tendencias-minoristas",
+    "palabras": [
+      "social commerce is the blend of e-commerce and social media",
+      "covid-19 pandemic"
+    ]
+  },
+  {
+    "id": "vd-mayoreo",
+    "palabras": [
+      "wholesaling is the business of buying goods in bulk",
+      "middlemen"
+    ]
+  },
+  {
+    "id": "vd-tipos-mayoristas",
+    "palabras": [
+      "merchant wholesalers",
+      "full-service wholesalers",
+      "limited-service wholesalers",
+      "drop shippers"
+    ]
+  },
+  {
+    "id": "vd-tendencias-mayoreo",
+    "palabras": [
+      "growing competition",
+      "global dynamics",
+      "regulatory requirements",
+      "technology evolution"
+    ]
+  },
+  {
+    "id": "vd-etica-comercio",
+    "palabras": [
+      "ethical issues in retailing",
+      "deceptive or misleading marketing",
+      "misleading sales tactics"
+    ]
   }
 ]

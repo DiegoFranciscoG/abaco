@@ -630,5 +630,30 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "ventas-distribucion",
+    "nombre": "Ventas y distribución comercial",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Venta personal y su proceso, gestión de la fuerza de ventas, canales de distribución, comercio minorista con sus estrategias y comercio mayorista.",
+    "sinonimos": [
+      "técnicas de ventas",
+      "gerencia de ventas",
+      "dirección de ventas",
+      "neuroventas y negociación",
+      "distribución comercial y merchandising",
+      "gerencia de distribución"
+    ],
+    "herramientas": [
+      "foda",
+      "tarjetas"
+    ],
+    "orden": 30,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

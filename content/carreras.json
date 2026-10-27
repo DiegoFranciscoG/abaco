@@ -1026,6 +1026,16 @@
         "planes": 1
       },
       {
+        "materia": "ventas-distribucion",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          6,
+          7
+        ],
+        "planes": 2
+      },
+      {
         "materia": "metodologia-investigacion",
         "ciclo": 5,
         "ciclos": [
@@ -1103,11 +1113,6 @@
         "planes": 1
       },
       {
-        "nombre": "Neuroventas y Negociación",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión Logística",
         "ciclo": 5,
         "planes": 1
@@ -1118,33 +1123,8 @@
         "planes": 1
       },
       {
-        "nombre": "Distribución Comercial y Merchandising",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Gerencia de Ventas",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Propiedad Intelectual",
         "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Técnicas de Ventas",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Dirección de Ventas",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Gerencia de Distribución",
-        "ciclo": 7,
         "planes": 1
       },
       {

@@ -1,0 +1,471 @@
+{
+  "materia": "ventas-distribucion",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "vd-venta-personal",
+      "nombre": "La venta personal",
+      "orden": 1,
+      "descripcion": "Qué es la venta personal, tipos de vendedores y las siete etapas del proceso de venta.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "vd-venta-concepto",
+          "nombre": "Qué es la venta personal y la venta relacional",
+          "explicacion": "La venta personal es la interacción uno a uno entre un representante de la empresa y el comprador, en la que el vendedor descubre las necesidades del prospecto y muestra cómo el producto las satisface, buscando construir una relación para que compre y se convierta en cliente. Es la herramienta de la mezcla promocional que conecta directamente con el cliente y la más adecuada cuando el producto es complejo, de precio alto o se personaliza. La venta relacional pone el foco en la relación de largo plazo y no solo en la transacción.",
+          "ejemplo": "Una empresa que vende sistemas de facturación electrónica envía a un asesor a conversar con el contador de una ferretería, entiende cómo emite sus comprobantes y le propone la configuración que necesita, en lugar de enviarle un folleto.",
+          "puntos_clave": [
+            "Interacción uno a uno.",
+            "Ideal para productos complejos, caros o personalizados.",
+            "Relación de largo plazo."
+          ],
+          "errores_frecuentes": [
+            "Hablar del producto antes de entender al cliente.",
+            "Ver al cliente como una sola venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-1-personal-selling-and-its-role-in-the-promotion-mix",
+            "seccion": "15.1 Personal Selling and Its Role in the Promotion Mix"
+          }
+        },
+        {
+          "id": "vd-tipos-vendedores",
+          "nombre": "Tipos de vendedores",
+          "explicacion": "Hay varias funciones de venta según el producto y el cliente. Los tomadores de pedidos procesan órdenes: los internos atienden en el local, por teléfono o en línea, y los externos visitan a clientes que compran de forma rutinaria y les ayudan con su inventario, sin necesidad de persuadirlos. Los buscadores de pedidos (order getters) encuentran clientes nuevos y los persuaden de comprar, con gran conocimiento del sector. Los vendedores misioneros representan al fabricante ante los minoristas para informarles de productos nuevos; los especialistas técnicos apoyan con conocimiento experto, y la venta en equipo reúne a varias personas para productos complejos.",
+          "ejemplo": "Un laboratorio farmacéutico tiene visitadores que presentan medicamentos nuevos a los médicos (misioneros), vendedores que consiguen nuevas farmacias (buscadores de pedidos) y un centro telefónico que recibe pedidos de las farmacias habituales (tomadores internos).",
+          "puntos_clave": [
+            "Tomadores de pedidos internos y externos.",
+            "Buscadores de pedidos.",
+            "Misioneros, técnicos y venta en equipo."
+          ],
+          "errores_frecuentes": [
+            "Exigir a un tomador de pedidos que consiga clientes nuevos sin prepararlo.",
+            "Usar un solo vendedor para ventas muy técnicas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-2-classifications-of-salespeople-involved-in-personal-selling",
+            "seccion": "15.2 Classifications of Salespeople Involved in Personal Selling"
+          }
+        },
+        {
+          "id": "vd-proceso-inicio",
+          "nombre": "Proceso de venta: prospección, preacercamiento y acercamiento",
+          "explicacion": "El proceso de venta tiene siete etapas. La primera es prospectar y calificar: buscar clientes potenciales sólidos y formar una base de contactos (leads) mediante campañas digitales, ferias, programas de referidos u otros métodos, y verificar cuáles tienen necesidad y capacidad de compra. En el preacercamiento el vendedor investiga a fondo al prospecto: sus necesidades, su situación financiera e información pública. En el acercamiento hace el primer contacto para establecer una relación y despertar interés.",
+          "ejemplo": "Un vendedor de equipos de cocina industrial obtiene contactos en una feria gastronómica, revisa cuáles restaurantes están abriendo nuevos locales, estudia su menú y volumen de clientes y luego pide una cita para conversar con el chef.",
+          "puntos_clave": [
+            "Prospectar y calificar.",
+            "Preacercamiento: investigar al prospecto.",
+            "Acercamiento: primer contacto."
+          ],
+          "errores_frecuentes": [
+            "Llamar a todos los contactos sin calificarlos.",
+            "Llegar a la cita sin conocer al cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process",
+            "seccion": "15.3 Steps in the Personal Selling Process"
+          }
+        },
+        {
+          "id": "vd-proceso-cierre",
+          "nombre": "Proceso de venta: presentación, objeciones, cierre y seguimiento",
+          "explicacion": "En la presentación el vendedor muestra cómo el producto resuelve las necesidades descubiertas. Las objeciones se manejan con la información reunida en las etapas anteriores, respondiendo dudas sobre precio, características o tiempos. El cierre, pedir la orden, suele ser el paso más difícil para muchos vendedores. Después viene el seguimiento: incorporar al cliente, asegurar que todo marche bien y mantener la relación, porque es mucho más rentable conservar un cliente que conseguir uno nuevo.",
+          "ejemplo": "Ante la objeción «es muy caro», una vendedora de paneles solares muestra cuánto ahorrará el cliente en su planilla de luz cada año; cierra la venta proponiendo la fecha de instalación y, un mes después, llama para verificar el funcionamiento.",
+          "puntos_clave": [
+            "Presentación centrada en las necesidades.",
+            "Objeciones como oportunidades de aclarar.",
+            "Cierre y seguimiento para retener al cliente."
+          ],
+          "errores_frecuentes": [
+            "Discutir con el cliente en lugar de responder la objeción.",
+            "Desaparecer después de cerrar la venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-3-steps-in-the-personal-selling-process",
+            "seccion": "15.3 Steps in the Personal Selling Process"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vd-fuerza-ventas",
+      "nombre": "Gestión de la fuerza de ventas",
+      "orden": 2,
+      "descripcion": "Estructura, reclutamiento, compensación, métricas de desempeño y ética en las ventas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "vd-estructura-ventas",
+          "nombre": "Dirigir y estructurar la fuerza de ventas",
+          "explicacion": "La fuerza de ventas es vital para los ingresos, por lo que su gestión incluye fijar metas, motivar, incentivar, apoyar y supervisar, pues los vendedores trabajan bajo presión para cumplir objetivos. La estructura debe pensarse primero en el cliente, además de la empresa y sus productos. Puede organizarse por territorio, según el número y tamaño de prospectos y clientes y el ingreso potencial de cada zona; por producto, o por tipo y tamaño de cliente, y a veces se combinan las tres formas.",
+          "ejemplo": "Una distribuidora de insumos médicos divide al país en zonas (Sierra norte, Sierra sur, Costa y Oriente) y, dentro de cada una, asigna un vendedor para hospitales grandes y otro para consultorios pequeños.",
+          "puntos_clave": [
+            "Metas, motivación, apoyo y supervisión.",
+            "Estructura por territorio, producto o cliente.",
+            "Combinación de estructuras."
+          ],
+          "errores_frecuentes": [
+            "Asignar territorios desiguales en potencial.",
+            "Supervisar solo con presión por resultados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-4-management-of-the-sales-force",
+            "seccion": "15.4 Management of the Sales Force"
+          }
+        },
+        {
+          "id": "vd-reclutamiento-compensacion",
+          "nombre": "Reclutamiento y compensación de vendedores",
+          "explicacion": "Contratar y capacitar vendedores es un proceso costoso, por lo que el gerente define las habilidades y el conocimiento que debe tener cada candidato; se buscan tanto recién graduados como personas con experiencia que luego se capacitan en el sector. La compensación debe ser justa e incentivar el desempeño, y muchas empresas combinan métodos. La comisión pura motiva mucho y la prefieren vendedores experimentados y seguros de su capacidad; el sueldo fijo da estabilidad, y las combinaciones equilibran seguridad e incentivo.",
+          "ejemplo": "Una inmobiliaria paga a sus asesores con experiencia solo comisiones por cada venta, mientras a los recién contratados les da un sueldo básico más una comisión menor durante su primer año.",
+          "puntos_clave": [
+            "Perfil de habilidades y conocimiento.",
+            "Comisión pura, sueldo fijo y combinaciones.",
+            "Compensación justa y motivadora."
+          ],
+          "errores_frecuentes": [
+            "Pagar solo comisión a personas sin experiencia ni cartera.",
+            "Premiar volumen sin cuidar la rentabilidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-4-management-of-the-sales-force",
+            "seccion": "15.4 Management of the Sales Force"
+          }
+        },
+        {
+          "id": "vd-metricas-ventas",
+          "nombre": "Métricas para evaluar a la fuerza de ventas",
+          "explicacion": "Las métricas clave evalúan si las actividades de la fuerza de ventas conducen a la venta. Las de productividad incluyen el porcentaje de tiempo dedicado a vender, el tiempo usado para actualizar el sistema de gestión de clientes (CRM), el porcentaje de seguimiento a los contactos y el porcentaje de contactos generados. El tiempo de respuesta a los contactos «tibios», que ya mostraron interés, es decisivo. La tasa de oportunidades ganadas muestra cuántos contactos se convierten en clientes, revela dónde hace falta capacitación para cerrar y cuántos contactos se necesitan para lograr las ventas buscadas.",
+          "ejemplo": "Un equipo recibe 400 contactos al mes y gana 40 ventas: su tasa de oportunidades ganadas es 40 ÷ 400 = 0,1, es decir, 10 %. Si la meta son 60 ventas con la misma tasa, necesitará 60 ÷ 0,1 = 600 contactos.",
+          "puntos_clave": [
+            "Métricas de productividad.",
+            "Tiempo de respuesta a contactos interesados.",
+            "Tasa de oportunidades ganadas."
+          ],
+          "errores_frecuentes": [
+            "Medir solo el monto vendido.",
+            "Tardar días en responder a un cliente interesado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-4-management-of-the-sales-force",
+            "seccion": "15.4 Management of the Sales Force"
+          }
+        },
+        {
+          "id": "vd-etica-ventas",
+          "nombre": "Ética en la venta personal y la promoción",
+          "explicacion": "El objetivo de las ventas es crear lealtad y compras repetidas, algo que se logra con honestidad e integridad pensando en un cliente de por vida y no en una sola venta. La presión por las metas puede empujar a malas prácticas, por lo que se necesitan un código de ética y controles. Los problemas éticos frecuentes son afirmaciones falsas sobre el producto, comentarios difamatorios sobre la competencia, inflar o usar mal las cuentas de gastos, aumentar artificialmente las cifras de ventas para cobrar bonos, y sobornos y comisiones ilegales.",
+          "ejemplo": "Un vendedor que registra como cerradas a fin de mes ventas que el cliente aún no aprobó para alcanzar su bono comete una falta ética que distorsiona los datos de la empresa.",
+          "puntos_clave": [
+            "Cliente de por vida, no una sola venta.",
+            "Código de ética y controles.",
+            "Riesgos: afirmaciones falsas, gastos inflados, sobornos."
+          ],
+          "errores_frecuentes": [
+            "Prometer lo que el producto no hace.",
+            "Hablar mal de la competencia sin fundamento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/15-7-ethical-issues-in-personal-selling-and-sales-promotion",
+            "seccion": "15.7 Ethical Issues in Personal Selling and Sales Promotion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vd-canales",
+      "nombre": "Canales de distribución",
+      "orden": 3,
+      "descripcion": "Qué es un canal y cómo agregan valor los intermediarios, cobertura del mercado, gestión de miembros y conflictos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "vd-canales-concepto",
+          "nombre": "Canales de marketing y el valor de los intermediarios",
+          "explicacion": "Un canal de marketing es un sistema de personas, organizaciones y actividades que trabajan juntas para que los bienes y servicios estén disponibles para el consumidor; a lo largo del canal la propiedad pasa de un miembro a otro, con el fin de crear y entregar valor al consumidor final. Los intermediarios agregan valor porque mueven el producto de forma eficiente: realizan funciones transaccionales y funciones logísticas como manipular, empacar, inventariar, transportar, almacenar y proteger los productos hasta que llegan al cliente.",
+          "ejemplo": "Un productor de quinua de Chimborazo vende a un acopiador, que la limpia, empaca y almacena; un distribuidor la lleva a supermercados de todo el país. Cada intermediario agrega valor para que el consumidor la encuentre lista en la percha.",
+          "puntos_clave": [
+            "Canal: sistema que hace disponible el producto.",
+            "Transferencia de propiedad entre miembros.",
+            "Funciones transaccionales y logísticas."
+          ],
+          "errores_frecuentes": [
+            "Ver a los intermediarios solo como un costo.",
+            "Olvidar las funciones logísticas al diseñar el canal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-1-the-use-and-value-of-marketing-channels",
+            "seccion": "17.1 The Use and Value of Marketing Channels"
+          }
+        },
+        {
+          "id": "vd-cobertura",
+          "nombre": "Cobertura del mercado: intensiva, selectiva y exclusiva",
+          "explicacion": "La cobertura del mercado objetivo es tener los recursos para llegar y atender a los consumidores, y es el primer factor para elegir canal. La distribución intensiva coloca el producto en todos los intermediarios posibles, de modo que se encuentra en todas partes; conviene en mercados competitivos donde el cliente cambia fácilmente de marca. La selectiva usa más de uno pero no todos los intermediarios, cuando no se necesita estar en todas partes pero sí en ciertos puntos. La exclusiva limita la venta a muy pocos intermediarios, por ejemplo para productos de lujo.",
+          "ejemplo": "Una gaseosa usa distribución intensiva (tiendas, gasolineras, supermercados); una marca de electrodomésticos, selectiva en cadenas especializadas; una marca de relojes de lujo, exclusiva en una sola joyería por ciudad.",
+          "puntos_clave": [
+            "Intensiva: en todas partes.",
+            "Selectiva: algunos intermediarios.",
+            "Exclusiva: muy pocos puntos."
+          ],
+          "errores_frecuentes": [
+            "Distribuir un producto de lujo en todas partes.",
+            "Limitar la distribución de un producto de consumo masivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-3-factors-influencing-channel-choice",
+            "seccion": "17.3 Factors Influencing Channel Choice"
+          }
+        },
+        {
+          "id": "vd-gestion-canal",
+          "nombre": "Selección y motivación de los miembros del canal",
+          "explicacion": "Un miembro del canal o intermediario es una empresa que trabaja en red con otras para llevar los productos del fabricante al consumidor final. Tras evaluar sus opciones, el fabricante elige a sus miembros revisando sus años en el negocio, su experiencia con líneas de productos, su reputación y su rentabilidad, y luego los administra y motiva para que operen con eficacia. También usa métricas para evaluar su desempeño.",
+          "ejemplo": "Una fábrica de equipos veterinarios elige como distribuidor a una empresa con años atendiendo clínicas en todo el país y buena reputación, y la motiva con capacitación técnica y metas trimestrales con bonificaciones.",
+          "puntos_clave": [
+            "Criterios: experiencia, reputación y rentabilidad.",
+            "Administrar y motivar.",
+            "Evaluar con métricas."
+          ],
+          "errores_frecuentes": [
+            "Elegir al distribuidor solo por el menor margen.",
+            "No dar seguimiento al desempeño del canal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-4-managing-the-distribution-channel",
+            "seccion": "17.4 Managing the Distribution Channel"
+          }
+        },
+        {
+          "id": "vd-conflicto-canal",
+          "nombre": "Conflictos en el canal y desintermediación",
+          "explicacion": "El conflicto de canal ocurre cuando los miembros discrepan por tener una mentalidad competitiva en lugar de colaborativa, por ejemplo si uno busca bajar costos a costa del cliente. El conflicto horizontal se da entre empresas del mismo nivel del canal; el vertical, entre niveles distintos (fabricante, mayorista y minorista) cuyos objetivos no están alineados, y al final el cliente sufre con precios más altos o escasez. La desintermediación es eliminar a un intermediario cuando el fabricante descubre que puede vender directamente al usuario final.",
+          "ejemplo": "Dos franquiciados de la misma cadena en una ciudad compiten bajando precios y se roban clientes (horizontal); al mismo tiempo, el fabricante abre su tienda en línea y los distribuidores reclaman porque les quita ventas (vertical y desintermediación).",
+          "puntos_clave": [
+            "Conflicto horizontal y vertical.",
+            "El cliente termina afectado.",
+            "Desintermediación: vender directo."
+          ],
+          "errores_frecuentes": [
+            "Ignorar los reclamos del canal al vender en línea.",
+            "No fijar reglas de precios entre distribuidores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/17-4-managing-the-distribution-channel",
+            "seccion": "17.4 Managing the Distribution Channel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vd-minorista",
+      "nombre": "Comercio minorista y estrategia de punto de venta",
+      "orden": 4,
+      "descripcion": "Funciones del minorista, tipos de tiendas y ventas sin tienda, decisiones de precio, ubicación y mercadería, y tendencias.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "vd-minorista-funciones",
+          "nombre": "El minorista y sus funciones",
+          "explicacion": "El comercio minorista es la última parada del canal antes del consumidor: es vender bienes y servicios a los consumidores. Los minoristas normalmente no fabrican; compran a fabricantes o mayoristas y revenden. Un canal de distribución es el conjunto de empresas que mueven el producto del fabricante al usuario, y su longitud depende del producto. Entre las funciones del minorista está ofrecer surtido, es decir, varias opciones dentro de una categoría para que el consumidor elija sin ir a cada fabricante.",
+          "ejemplo": "Quien quiere una bebida no va a la planta embotelladora: entra a una tienda que ofrece varias marcas y sabores, compra una sola unidad y se la lleva fría. El minorista le dio surtido, cantidad adecuada y conveniencia.",
+          "puntos_clave": [
+            "Última etapa del canal.",
+            "Compra y revende, no fabrica.",
+            "Ofrece surtido y conveniencia."
+          ],
+          "errores_frecuentes": [
+            "Pensar que vender directo siempre es más barato para el consumidor.",
+            "Ofrecer un surtido que no responde al público del barrio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-1-retailing-and-the-role-of-retailers-in-the-distribution-channel",
+            "seccion": "18.1 Retailing and the Role of Retailers in the Distribution Channel"
+          }
+        },
+        {
+          "id": "vd-tipos-minoristas",
+          "nombre": "Tipos de minoristas con tienda y sin tienda",
+          "explicacion": "Los minoristas se dividen en con tienda y sin tienda, y su tipo se define por sus líneas de productos. Entre los de tienda están la tienda especializada (una sola línea), la tienda por departamentos (muchas líneas), el supermercado (sobre todo víveres), el hipermercado (supermercado y tienda por departamentos), la tienda de conveniencia (artículos de uso diario) y el «asesino de categoría» (enormes tiendas de una sola categoría). Los minoristas sin tienda incluyen máquinas expendedoras, correo y catálogos, televenta, ventas en línea, telemercadeo y venta directa.",
+          "ejemplo": "En una misma ciudad conviven una tienda de barrio (conveniencia), una ferretería (especializada), un hipermercado en el centro comercial, máquinas expendedoras en la universidad y una tienda que solo vende por redes sociales (sin tienda).",
+          "puntos_clave": [
+            "Con tienda y sin tienda.",
+            "Tipos definidos por las líneas de productos.",
+            "Venta en línea, catálogos y venta directa."
+          ],
+          "errores_frecuentes": [
+            "Competir en precio con un hipermercado siendo una tienda pequeña.",
+            "Ignorar los canales sin tienda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-2-major-types-of-retailers",
+            "seccion": "18.2 Major Types of Retailers"
+          }
+        },
+        {
+          "id": "vd-estrategia-minorista",
+          "nombre": "Decisiones de estrategia minorista: precio, ubicación y mercadería",
+          "explicacion": "Los minoristas compran en volumen, fraccionan y venden al consumidor, y su estrategia gira en torno al valor percibido. Las tres decisiones más importantes son el precio, que considera el costo de compra, el envío, el almacenamiento y los gastos generales; la ubicación, que define el acceso de los clientes, y la mercadería que se ofrece. Como venden productos hechos por otros, también es clave la comunicación con los demás miembros del canal.",
+          "ejemplo": "Una tienda de deportes decide instalarse junto a un parque muy concurrido (ubicación), ofrecer marcas de rango medio con asesoría especializada (mercadería) y fijar precios que cubran su arriendo y bodegaje sin alejarse del mercado.",
+          "puntos_clave": [
+            "Precio, ubicación y mercadería.",
+            "El precio cubre costos de compra y operación.",
+            "Comunicación con el canal."
+          ],
+          "errores_frecuentes": [
+            "Elegir el local más barato sin flujo de clientes.",
+            "Tener mercadería que no coincide con el público."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-3-retailing-strategy-decisions",
+            "seccion": "18.3 Retailing Strategy Decisions"
+          }
+        },
+        {
+          "id": "vd-tendencias-minoristas",
+          "nombre": "Tendencias del comercio minorista",
+          "explicacion": "El comercio minorista cambia con el comportamiento del consumidor y la tecnología: de las tiendas familiares a las tiendas por departamentos, luego supermercados, venta puerta a puerta, infomerciales, compras en línea y venta en línea de las tiendas físicas, con un fuerte retorno a lo digital durante la pandemia. Una tendencia actual es el comercio social, la mezcla de comercio electrónico y redes sociales, con publicaciones que permiten comprar y videos de creadores.",
+          "ejemplo": "Una tienda de ropa de Quito publica en redes videos de combinaciones con un botón para comprar directamente y, además, permite retirar en el local lo comprado en línea.",
+          "puntos_clave": [
+            "Evolución con el consumidor y la tecnología.",
+            "Comercio social.",
+            "Integración de canales físicos y digitales."
+          ],
+          "errores_frecuentes": [
+            "Pensar que lo físico y lo digital compiten en lugar de complementarse.",
+            "Ignorar la venta en redes sociales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-4-recent-trends-in-retailing",
+            "seccion": "18.4 Recent Trends in Retailing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vd-mayorista",
+      "nombre": "Comercio mayorista",
+      "orden": 5,
+      "descripcion": "Qué hace un mayorista, sus tipos, las tendencias del sector y los dilemas éticos en el comercio.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "vd-mayoreo",
+          "nombre": "Qué es el comercio mayorista",
+          "explicacion": "El comercio mayorista consiste en comprar bienes en volumen con descuento al fabricante u otro miembro del canal y venderlos a los minoristas a un precio mayor. Los mayoristas son intermediarios que conectan al productor con el minorista; en general no atienden al consumidor final ni tienen locales abiertos al público. Compran, almacenan, venden y promocionan, y ayudan a que el producto correcto llegue al lugar correcto en el momento correcto; como compran en volumen, pueden abaratar el precio final que los minoristas pequeños no lograrían solos.",
+          "ejemplo": "Un mayorista de víveres compra arroz por toneladas a la piladora y lo vende en quintales a cientos de tiendas de barrio que no podrían negociar directamente con la industria.",
+          "puntos_clave": [
+            "Compra en volumen y vende a minoristas.",
+            "No suele atender al consumidor final.",
+            "Compra, almacena, vende y promociona."
+          ],
+          "errores_frecuentes": [
+            "Confundir mayorista con minorista grande.",
+            "Pensar que el mayorista siempre encarece el producto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-5-wholesaling",
+            "seccion": "18.5 Wholesaling"
+          }
+        },
+        {
+          "id": "vd-tipos-mayoristas",
+          "nombre": "Tipos de mayoristas y el envío directo",
+          "explicacion": "Existen varios tipos de mayoristas. Los mayoristas comerciantes compran, almacenan y manejan físicamente grandes volúmenes y los venden en cantidades menores a los minoristas; son la forma más común y pueden ser de servicio completo o de servicio limitado, según cuántas funciones asumen. También están los agentes del fabricante. En el envío directo (drop shipping), el minorista vende al consumidor pero nunca tiene el producto: el proveedor lo envía directamente al cliente y el minorista lo paga solo después de cobrarlo.",
+          "ejemplo": "Una tienda en línea de accesorios para celulares no tiene bodega: cuando un cliente compra, el pedido pasa al proveedor, que lo despacha directamente con la marca de la tienda (envío directo).",
+          "puntos_clave": [
+            "Mayoristas comerciantes: servicio completo o limitado.",
+            "Agentes del fabricante.",
+            "Envío directo sin inventario."
+          ],
+          "errores_frecuentes": [
+            "Usar envío directo sin controlar los tiempos del proveedor.",
+            "Elegir un mayorista de servicio limitado cuando se necesita crédito y entrega."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-5-wholesaling",
+            "seccion": "18.5 Wholesaling"
+          }
+        },
+        {
+          "id": "vd-tendencias-mayoreo",
+          "nombre": "Tendencias del comercio mayorista",
+          "explicacion": "La pandemia hizo visible para todos la cadena de suministro y afectó a los mayoristas. Hoy enfrentan más competencia, con nuevos actores no tradicionales, y clientes minoristas que exigen la misma conveniencia y valor que piden los consumidores, por lo que necesitan modelos de negocio innovadores. Además, la globalización integra los mercados y expone la cadena a perturbaciones internacionales, las regulaciones son cada vez más complejas y la tecnología evoluciona rápido.",
+          "ejemplo": "Un mayorista de repuestos que solo vendía por teléfono crea un portal para que los talleres hagan pedidos en línea con inventario en tiempo real, porque nuevos competidores digitales empezaban a quitarle clientes.",
+          "puntos_clave": [
+            "Más competencia y clientes más exigentes.",
+            "Globalización y perturbaciones de la cadena.",
+            "Regulación compleja y cambio tecnológico."
+          ],
+          "errores_frecuentes": [
+            "Depender de un solo proveedor extranjero.",
+            "Postergar la digitalización de pedidos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-6-recent-trends-in-wholesaling",
+            "seccion": "18.6 Recent Trends in Wholesaling"
+          }
+        },
+        {
+          "id": "vd-etica-comercio",
+          "nombre": "Ética en el comercio minorista y mayorista",
+          "explicacion": "Como los minoristas son el último eslabón antes del consumidor, sus dilemas éticos suelen surgir en el trato al cliente: marketing engañoso, mal trato y tácticas de venta que confunden. Aunque los consumidores y las organizaciones de defensa denuncian cada vez más estas prácticas, algunas empresas aún las usan; por ejemplo, anunciar que un producto es completamente orgánico cuando no lo es. En el comercio mayorista también surgen problemas en las relaciones entre los miembros del canal.",
+          "ejemplo": "Una tienda etiqueta como «100 % natural» un jabón con colorantes sintéticos: además de engañar al cliente, se expone a sanciones y a perder su confianza cuando se descubra.",
+          "puntos_clave": [
+            "Marketing engañoso y mal trato al cliente.",
+            "Afirmaciones falsas sobre el producto.",
+            "Ética también entre miembros del canal."
+          ],
+          "errores_frecuentes": [
+            "Usar etiquetas que exageran beneficios.",
+            "Presionar al cliente con tácticas confusas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/18-7-ethical-issues-in-retailing-and-wholesaling",
+            "seccion": "18.7 Ethical Issues in Retailing and Wholesaling"
+          }
+        }
+      ]
+    }
+  ]
+}
