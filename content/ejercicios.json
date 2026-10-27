@@ -4131,5 +4131,346 @@
     },
     "materia": "matematica-financiera",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-pib-2",
+    "subtema": "ma-pib",
+    "formula": "pib-gasto",
+    "enunciado": "Una economía registra consumo de USD 41.200 millones, inversión de 9.800, gasto público de 10.500, exportaciones de 15.300 e importaciones de 16.900 millones. ¿Cuál es su PIB?",
+    "datos": {
+      "C": 41200,
+      "I": 9800,
+      "G": 10500,
+      "X": 15300,
+      "M": 16900
+    },
+    "calculo": "C + I + G + (X - M)",
+    "respuesta": 59900,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Exportaciones netas = 15.300 − 16.900 = −1.600",
+      "PIB = 41.200 + 9.800 + 10.500 − 1.600 = 59.900"
+    ],
+    "pistas": [
+      "Las exportaciones netas pueden ser negativas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "6.1 Measuring the Size of the Economy: Gross Domestic Product"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-pib-real",
+    "subtema": "ma-real-nominal",
+    "formula": "pib-real",
+    "enunciado": "El PIB nominal de un año fue USD 120.000 millones y el deflactor del PIB fue 125 (año base = 100). ¿Cuál es el PIB real?",
+    "datos": {
+      "PIBn": 120000,
+      "IP": 125
+    },
+    "calculo": "PIBn / (IP / 100)",
+    "respuesta": 96000,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "PIB real = 120.000 ÷ (125 ÷ 100)",
+      "PIB real = 120.000 ÷ 1,25 = 96.000"
+    ],
+    "pistas": [
+      "Divide el nominal para el índice expresado como proporción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "6.2 Adjusting Nominal Values to Real Values"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-crecimiento-real",
+    "subtema": "ma-real-nominal",
+    "enunciado": "El PIB nominal pasó de USD 110.000 millones (deflactor 104) a USD 118.000 millones (deflactor 107). ¿Cuál fue la tasa de crecimiento del PIB real?",
+    "datos": {
+      "N1": 110000,
+      "D1": 104,
+      "N2": 118000,
+      "D2": 107
+    },
+    "calculo": "(N2 / D2) / (N1 / D1) - 1",
+    "respuesta": 0.0427,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Real año 1 = 110.000 ÷ 104 × 100 = 105.769,23",
+      "Real año 2 = 118.000 ÷ 107 × 100 = 110.280,37",
+      "Crecimiento = 110.280,37 ÷ 105.769,23 − 1 = 0,0427"
+    ],
+    "pistas": [
+      "Primero convierte ambos años a valores reales."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "6.2 Adjusting Nominal Values to Real Values"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-desempleo-2",
+    "subtema": "ma-desempleo",
+    "formula": "tasa-desempleo",
+    "enunciado": "La población económicamente activa de una provincia es 852.000 personas y hay 820.500 ocupadas. ¿Cuál es la tasa de desempleo?",
+    "datos": {
+      "D": 31500,
+      "FL": 852000
+    },
+    "calculo": "D / FL * 100",
+    "respuesta": 3.7,
+    "unidad": "%",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Desempleados = 852.000 − 820.500 = 31.500",
+      "TD = 31.500 ÷ 852.000 × 100 = 3,70 %"
+    ],
+    "pistas": [
+      "Los desempleados son la fuerza laboral menos los ocupados."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "8.1 How Economists Define and Compute Unemployment Rate"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-inflacion-2",
+    "subtema": "ma-inflacion",
+    "formula": "tasa-inflacion",
+    "enunciado": "Un índice de precios pasó de 118,2 a 120,8 en un año. ¿Cuál fue la inflación del período?",
+    "datos": {
+      "IP0": 118.2,
+      "IP1": 120.8
+    },
+    "calculo": "(IP1 - IP0) / IP0 * 100",
+    "respuesta": 2.2,
+    "unidad": "%",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Cambio = 120,8 − 118,2 = 2,6",
+      "π = 2,6 ÷ 118,2 × 100 = 2,20 %"
+    ],
+    "pistas": [
+      "Divide el cambio para el índice inicial."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "9.1 Tracking Inflation"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-multiplicador",
+    "subtema": "ma-creacion-dinero",
+    "formula": "dinero-multiplicador",
+    "enunciado": "Un banco recibe un depósito que le deja USD 5.000 de reservas excedentes. Si el encaje es 10 %, ¿cuánto dinero puede crear como máximo todo el sistema bancario?",
+    "datos": {
+      "ER": 5000,
+      "r": 0.1
+    },
+    "calculo": "ER * (1 / r)",
+    "respuesta": 50000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Multiplicador = 1 ÷ 0,10 = 10",
+      "Dinero creado = 5.000 × 10 = 50.000"
+    ],
+    "pistas": [
+      "El multiplicador del dinero es 1 dividido para el encaje."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "14.4 How Banks Create Money"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-multiplicador-2",
+    "subtema": "ma-creacion-dinero",
+    "formula": "dinero-multiplicador",
+    "enunciado": "Con un encaje de 8 % y reservas excedentes de USD 12.000, ¿cuál es la expansión máxima de la oferta de dinero?",
+    "datos": {
+      "ER": 12000,
+      "r": 0.08
+    },
+    "calculo": "ER * (1 / r)",
+    "respuesta": 150000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Multiplicador = 1 ÷ 0,08 = 12,5",
+      "Dinero creado = 12.000 × 12,5 = 150.000"
+    ],
+    "pistas": [
+      "Un encaje más bajo da un multiplicador más alto."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "14.4 How Banks Create Money"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-m2",
+    "subtema": "ma-m1-m2",
+    "enunciado": "Una economía tiene USD 20.000 millones en efectivo, 35.000 en depósitos a la vista, 40.000 en ahorros y 25.000 en depósitos a plazo. ¿Cuánto es M2?",
+    "datos": {
+      "E": 20000,
+      "V": 35000,
+      "A": 40000,
+      "P": 25000
+    },
+    "calculo": "E + V + A + P",
+    "respuesta": 120000,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "M1 = 20.000 + 35.000 = 55.000",
+      "M2 = 55.000 + 40.000 + 25.000 = 120.000"
+    ],
+    "pistas": [
+      "M2 incluye a M1."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "14.2 Measuring Money: Currency, M1, and M2"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-encaje",
+    "subtema": "ma-politica-monetaria",
+    "enunciado": "Con un encaje de 10 %, ¿cuánto puede prestar un banco de un depósito nuevo de USD 5.000?",
+    "datos": {
+      "D": 5000,
+      "r": 0.1
+    },
+    "calculo": "D * (1 - r)",
+    "respuesta": 4500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Reserva = 5.000 × 0,10 = 500",
+      "Préstamo posible = 5.000 − 500 = 4.500"
+    ],
+    "pistas": [
+      "Lo que no se guarda como reserva se puede prestar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "15.3 How a Central Bank Executes Monetary Policy"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-encaje-sube",
+    "subtema": "ma-politica-monetaria",
+    "formula": "dinero-multiplicador",
+    "enunciado": "Si el encaje sube de 10 % a 12,5 %, ¿en cuánto baja la expansión máxima de dinero que generan USD 8.000 de reservas excedentes?",
+    "datos": {
+      "ER": 8000,
+      "r1": 0.1,
+      "r2": 0.125
+    },
+    "calculo": "ER / r1 - ER / r2",
+    "respuesta": 16000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Con 10 %: 8.000 ÷ 0,10 = 80.000",
+      "Con 12,5 %: 8.000 ÷ 0,125 = 64.000",
+      "Baja = 80.000 − 64.000 = 16.000"
+    ],
+    "pistas": [
+      "Calcula la expansión con cada encaje y resta."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "15.3 How a Central Bank Executes Monetary Policy"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-deuda-pib",
+    "subtema": "ma-deficit-deuda",
+    "enunciado": "La deuda pública de un país es USD 68.000 millones y su PIB USD 120.000 millones. ¿Cuál es la razón deuda/PIB en porcentaje?",
+    "datos": {
+      "D": 68000,
+      "PIB": 120000
+    },
+    "calculo": "D / PIB * 100",
+    "respuesta": 56.67,
+    "unidad": "%",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Deuda/PIB = 68.000 ÷ 120.000 × 100 = 56,67 %"
+    ],
+    "pistas": [
+      "Divide la deuda para el PIB."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "17.3 Federal Deficits and the National Debt"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ma-deuda-crece",
+    "subtema": "ma-deficit-deuda",
+    "enunciado": "Con una deuda de USD 68.000 millones, un déficit de 3.600 millones y un PIB que crece de 120.000 a 126.000 millones, ¿cuál es la nueva razón deuda/PIB en porcentaje?",
+    "datos": {
+      "D": 68000,
+      "d": 3600,
+      "PIB": 126000
+    },
+    "calculo": "(D + d) / PIB * 100",
+    "respuesta": 56.83,
+    "unidad": "%",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Deuda nueva = 68.000 + 3.600 = 71.600",
+      "Deuda/PIB = 71.600 ÷ 126.000 × 100 = 56,83 %"
+    ],
+    "pistas": [
+      "Suma el déficit a la deuda y divide para el nuevo PIB."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "seccion": "17.3 Federal Deficits and the National Debt"
+    },
+    "materia": "macroeconomia",
+    "actualizado_en": "2026-10-26"
   }
 ]

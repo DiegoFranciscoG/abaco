@@ -2225,5 +2225,93 @@
       "rent",
       "down payment"
     ]
+  },
+  {
+    "id": "ma-bienestar",
+    "palabras": [
+      "standard of living",
+      "per capita"
+    ]
+  },
+  {
+    "id": "ma-desempleo-natural",
+    "palabras": [
+      "natural rate of unemployment",
+      "frictional",
+      "structural"
+    ]
+  },
+  {
+    "id": "ma-da-oa-ciclo",
+    "palabras": [
+      "potential gdp",
+      "inflationary",
+      "recession"
+    ]
+  },
+  {
+    "id": "ma-m1-m2",
+    "palabras": [
+      "m1",
+      "m2",
+      "savings",
+      "credit card"
+    ]
+  },
+  {
+    "id": "ma-papel-bancos",
+    "palabras": [
+      "financial intermediar",
+      "net worth",
+      "loans"
+    ]
+  },
+  {
+    "id": "ma-banco-central",
+    "palabras": [
+      "central bank",
+      "monetary policy",
+      "financial stability",
+      "banking services"
+    ]
+  },
+  {
+    "id": "ma-politica-monetaria",
+    "palabras": [
+      "open market operations",
+      "discount rate",
+      "reserve requirements"
+    ]
+  },
+  {
+    "id": "ma-gasto-publico",
+    "palabras": [
+      "government spending",
+      "share of gdp",
+      "deficit"
+    ]
+  },
+  {
+    "id": "ma-impuestos",
+    "palabras": [
+      "income tax",
+      "progressive",
+      "regressive"
+    ]
+  },
+  {
+    "id": "ma-deficit-deuda",
+    "palabras": [
+      "debt/gdp ratio",
+      "deficit",
+      "surplus"
+    ]
+  },
+  {
+    "id": "ma-estabilizadores",
+    "palabras": [
+      "automatic stabilizers",
+      "unemployment insurance"
+    ]
   }
 ]

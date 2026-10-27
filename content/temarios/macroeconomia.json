@@ -69,6 +69,27 @@
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-4-comparing-gdp-among-countries",
             "seccion": "6.4 Comparing GDP among Countries"
           }
+        },
+        {
+          "id": "ma-bienestar",
+          "nombre": "¿Mide el PIB el bienestar?",
+          "explicacion": "El PIB per cápita es el indicador más usado del nivel de vida, pero no lo mide todo. No incluye el trabajo doméstico no remunerado, el tiempo libre, la calidad del ambiente, la seguridad ni la distribución del ingreso; tampoco descuenta los daños que causa cierta producción. Aun así, tiende a moverse junto con otras mejoras del bienestar, como mayor esperanza de vida, más años de educación y mejor salud. Por eso se usa con cuidado y acompañado de otros indicadores sociales.",
+          "ejemplo": "Dos países tienen el mismo PIB per cápita de USD 6.500. En el primero la jornada laboral promedio es de 38 horas por semana y en el segundo de 48. Con el mismo ingreso, en el segundo la gente trabaja 48 − 38 = 10 horas más por semana: el PIB no registra esa diferencia de tiempo libre.",
+          "puntos_clave": [
+            "PIB per cápita = PIB ÷ población.",
+            "El PIB no mide tiempo libre, ambiente ni distribución.",
+            "Se complementa con indicadores de salud y educación."
+          ],
+          "errores_frecuentes": [
+            "Concluir que un país es más feliz solo porque su PIB creció.",
+            "Ignorar el trabajo no remunerado y la economía informal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/6-5-how-well-gdp-measures-the-well-being-of-society",
+            "seccion": "6.5 How Well GDP Measures the Well-Being of Society"
+          }
         }
       ]
     },
@@ -139,6 +160,27 @@
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-1-tracking-inflation",
             "seccion": "9.1 Tracking Inflation"
           }
+        },
+        {
+          "id": "ma-desempleo-natural",
+          "nombre": "Desempleo friccional, estructural y tasa natural",
+          "explicacion": "Aun en una economía sana hay desempleo. El friccional ocurre mientras las personas buscan el trabajo adecuado o cambian de empleo. El estructural aparece cuando las habilidades de los trabajadores no coinciden con las que piden las empresas, por cambios tecnológicos o en la producción. La suma de ambos forma la tasa natural de desempleo, que depende de factores de largo plazo como la productividad, las instituciones del mercado laboral y la información disponible para buscar empleo. El desempleo cíclico, en cambio, sube en las recesiones.",
+          "ejemplo": "En una ciudad hay 4 % de desempleo friccional y 2 % de desempleo estructural, así que la tasa natural de desempleo es de 6 %. Si en una recesión el desempleo llega a 9 %, el desempleo cíclico es de 3 puntos porcentuales: la diferencia entre 9 y 6.",
+          "puntos_clave": [
+            "Friccional: búsqueda y cambio de empleo.",
+            "Estructural: desajuste de habilidades.",
+            "Tasa natural = friccional + estructural."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una tasa de desempleo de cero es posible o deseable.",
+            "Atribuir todo el desempleo a la falta de demanda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/8-4-what-causes-changes-in-unemployment-over-the-long-run",
+            "seccion": "8.4 What Causes Changes in Unemployment over the Long Run"
+          }
         }
       ]
     },
@@ -204,6 +246,27 @@
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/11-4-shifts-in-aggregate-demand",
             "seccion": "11.4 Shifts in Aggregate Demand"
+          }
+        },
+        {
+          "id": "ma-da-oa-ciclo",
+          "nombre": "Crecimiento, desempleo e inflación en el modelo DA/OA",
+          "explicacion": "El modelo de demanda y oferta agregadas integra los tres grandes problemas macroeconómicos. El PIB potencial, una línea vertical, marca lo que la economía produce con pleno empleo; su desplazamiento a la derecha es el crecimiento de largo plazo. Si el equilibrio queda a la izquierda del potencial hay una recesión con desempleo cíclico; si la demanda empuja el equilibrio cerca o más allá del potencial, aparecen presiones inflacionarias. Así, el modelo muestra el dilema entre desempleo e inflación en el corto plazo.",
+          "ejemplo": "Si el PIB potencial de una economía es USD 120.000 millones y el equilibrio actual está en USD 114.000 millones, la brecha recesiva es 120.000 − 114.000 = 6.000 millones, es decir, 6.000 ÷ 120.000 = 0,05, un 5 % por debajo del potencial.",
+          "puntos_clave": [
+            "El PIB potencial corresponde al pleno empleo.",
+            "Equilibrio bajo el potencial: recesión y desempleo.",
+            "Equilibrio cerca del potencial: riesgo de inflación."
+          ],
+          "errores_frecuentes": [
+            "Confundir crecimiento de largo plazo con una recuperación de corto plazo.",
+            "Pensar que el PIB nunca puede superar al potencial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/11-5-how-the-ad-as-model-incorporates-growth-unemployment-and-inflation",
+            "seccion": "11.5 How the AD/AS Model Incorporates Growth, Unemployment, and Inflation"
           }
         }
       ]
@@ -290,6 +353,194 @@
           "fuente": {
             "ref": "comf",
             "seccion": "Art. 94"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ma-banca",
+      "nombre": "Dinero, bancos y banca central",
+      "orden": 5,
+      "descripcion": "Agregados monetarios, función de los bancos, bancos centrales y política monetaria.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ma-m1-m2",
+          "nombre": "Medir el dinero: M1 y M2",
+          "explicacion": "La cantidad de dinero de una economía se mide con agregados según su liquidez. M1 incluye lo que se usa directamente para pagar: el efectivo en manos del público y los depósitos a la vista o en cuentas corrientes. M2 suma a M1 activos un poco menos líquidos, como los depósitos de ahorro y los depósitos a plazo de montos pequeños. Las tarjetas de crédito no son dinero: son un préstamo que se paga después con dinero. Los bancos centrales siguen estos agregados para entender la liquidez de la economía.",
+          "ejemplo": "Si en una economía hay USD 20.000 millones en efectivo, 35.000 millones en depósitos a la vista, 40.000 millones en ahorros y 25.000 millones en depósitos a plazo, M1 = 20.000 + 35.000 = 55.000 millones y M2 = 55.000 + 40.000 + 25.000 = 120.000 millones.",
+          "puntos_clave": [
+            "M1 = efectivo + depósitos a la vista.",
+            "M2 = M1 + ahorros + depósitos a plazo.",
+            "Una tarjeta de crédito no es dinero."
+          ],
+          "errores_frecuentes": [
+            "Incluir el cupo de las tarjetas de crédito en la oferta de dinero.",
+            "Olvidar que M2 contiene a M1."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-2-measuring-money-currency-m1-and-m2",
+            "seccion": "14.2 Measuring Money: Currency, M1, and M2"
+          }
+        },
+        {
+          "id": "ma-papel-bancos",
+          "nombre": "El papel de los bancos",
+          "explicacion": "Los bancos son intermediarios financieros: reciben depósitos de quienes ahorran y prestan a quienes necesitan financiamiento, cobrando una tasa mayor a la que pagan. Así canalizan el ahorro hacia la inversión y reducen los costos de que cada ahorrista busque por su cuenta a quién prestar. En su balance, los préstamos y las reservas son activos, y los depósitos son pasivos; la diferencia es el patrimonio neto del banco. Si muchos préstamos no se pagan, el patrimonio puede volverse negativo, y por eso los bancos se regulan.",
+          "ejemplo": "Un banco tiene préstamos por USD 9 millones, reservas de USD 1 millón y depósitos por USD 9,4 millones. Sus activos son 9 + 1 = 10 millones y su patrimonio neto es 10 − 9,4 = 0,6 millones de dólares.",
+          "puntos_clave": [
+            "Los bancos conectan ahorristas con prestatarios.",
+            "Préstamos y reservas son activos; depósitos, pasivos.",
+            "El patrimonio neto absorbe las pérdidas por créditos impagos."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el banco guarda todo el dinero depositado en la bóveda.",
+            "Confundir los depósitos (pasivo del banco) con sus activos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-3-the-role-of-banks",
+            "seccion": "14.3 The Role of Banks"
+          }
+        },
+        {
+          "id": "ma-banco-central",
+          "nombre": "Bancos centrales y sus funciones",
+          "explicacion": "Un banco central conduce la política monetaria, promueve la estabilidad del sistema financiero —entre otras cosas prestando a los bancos en emergencias— y presta servicios bancarios al gobierno y a los propios bancos, como el sistema de pagos. En la mayoría de países también emite la moneda. En una economía dolarizada como la ecuatoriana, el banco central no emite moneda propia ni puede fijar el tipo de cambio, pero conserva funciones como la gestión de las reservas internacionales, el sistema de pagos y las estadísticas macroeconómicas.",
+          "ejemplo": "Cuando en una crisis un banco solvente se queda sin liquidez porque sus clientes retiran muchos depósitos a la vez, el prestamista de última instancia le presta por unos días para que pueda pagar: si los retiros alcanzan USD 50 millones y el banco solo tiene 35 millones líquidos, necesita 50 − 35 = 15 millones de apoyo temporal.",
+          "puntos_clave": [
+            "Política monetaria, estabilidad financiera y servicios bancarios.",
+            "Puede prestar a los bancos en una emergencia de liquidez.",
+            "En dolarización no se emite moneda propia."
+          ],
+          "errores_frecuentes": [
+            "Creer que el banco central de un país dolarizado puede imprimir dólares.",
+            "Confundir falta de liquidez con insolvencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-1-the-federal-reserve-banking-system-and-central-banks",
+            "seccion": "15.1 The Federal Reserve Banking System and Central Banks"
+          }
+        },
+        {
+          "id": "ma-politica-monetaria",
+          "nombre": "Cómo se ejecuta la política monetaria",
+          "explicacion": "Un banco central influye en la cantidad de dinero y en las tasas de interés con tres herramientas clásicas: las operaciones de mercado abierto (comprar o vender bonos para dar o quitar reservas a los bancos), la tasa a la que presta a los bancos y los requisitos de reservas. Una política expansiva baja las tasas y estimula el crédito, el consumo y la inversión; una contractiva las sube para frenar la inflación. Varios bancos centrales también pagan intereses sobre las reservas que los bancos mantienen en ellos.",
+          "ejemplo": "Si el encaje legal es 10 % y un banco recibe un depósito nuevo de USD 5.000, debe guardar 5.000 × 0,10 = 500 dólares como reserva y puede prestar 5.000 − 500 = 4.500 dólares.",
+          "puntos_clave": [
+            "Mercado abierto, tasa de descuento y encaje.",
+            "Expansiva: baja tasas; contractiva: las sube.",
+            "Más encaje significa menos dinero para prestar."
+          ],
+          "errores_frecuentes": [
+            "Confundir política monetaria (dinero y tasas) con política fiscal (gasto e impuestos).",
+            "Pensar que bajar tasas tiene efecto inmediato sobre la producción."
+          ],
+          "formulas": [
+            "dinero-multiplicador"
+          ],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-3-how-a-central-bank-executes-monetary-policy",
+            "seccion": "15.3 How a Central Bank Executes Monetary Policy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ma-fiscal",
+      "nombre": "Política fiscal y deuda pública",
+      "orden": 6,
+      "descripcion": "Gasto público, impuestos, déficit y deuda, y estabilizadores automáticos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ma-gasto-publico",
+          "nombre": "El gasto público",
+          "explicacion": "El gasto público incluye el pago de sueldos de servidores públicos, la compra de bienes y servicios, la inversión en infraestructura, las transferencias (pensiones, bonos sociales, subsidios) y los intereses de la deuda. Para comparar el tamaño del gasto entre años o países se mide como porcentaje del PIB. Cuando el gasto supera a los ingresos del Estado hay déficit, que se financia con deuda; cuando los ingresos superan al gasto hay superávit.",
+          "ejemplo": "Si el gasto del Gobierno central es USD 36.000 millones y el PIB es USD 120.000 millones, el gasto representa 36.000 ÷ 120.000 = 0,3, es decir, 30 % del PIB.",
+          "puntos_clave": [
+            "Se compara como porcentaje del PIB.",
+            "Incluye compras, inversión, transferencias e intereses.",
+            "Gasto > ingresos = déficit."
+          ],
+          "errores_frecuentes": [
+            "Comparar el gasto en dólares entre años sin relacionarlo con el PIB.",
+            "Olvidar los intereses de la deuda como parte del gasto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-1-government-spending",
+            "seccion": "17.1 Government Spending"
+          }
+        },
+        {
+          "id": "ma-impuestos",
+          "nombre": "Impuestos: de dónde obtiene ingresos el Estado",
+          "explicacion": "Los impuestos son la principal fuente de ingresos del Estado. Los directos gravan el ingreso o el patrimonio (impuesto a la renta de personas y sociedades) y los indirectos gravan el consumo (impuesto al valor agregado y consumos especiales). También hay contribuciones a la seguridad social que financian pensiones y salud. Un impuesto es progresivo cuando quienes ganan más pagan una proporción mayor de su ingreso, regresivo cuando ocurre lo contrario y proporcional cuando todos pagan el mismo porcentaje.",
+          "ejemplo": "Con una tabla progresiva, una persona con ingreso anual de USD 20.000 paga USD 600 (600 ÷ 20.000 = 0,03, es decir, 3 %) y otra con USD 80.000 paga USD 9.600 (9.600 ÷ 80.000 = 0,12, es decir, 12 %): la proporción sube con el ingreso.",
+          "puntos_clave": [
+            "Directos: renta y patrimonio; indirectos: consumo.",
+            "Progresivo: la tasa efectiva sube con el ingreso.",
+            "Las contribuciones sociales financian pensiones y salud."
+          ],
+          "errores_frecuentes": [
+            "Confundir la tasa marginal con la tasa efectiva.",
+            "Pensar que todos los impuestos al consumo son progresivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-2-taxation",
+            "seccion": "17.2 Taxation"
+          }
+        },
+        {
+          "id": "ma-deficit-deuda",
+          "nombre": "Déficit fiscal y deuda pública",
+          "explicacion": "El déficit es un flujo: lo que falta en un año cuando el gasto supera a los ingresos. La deuda es un acervo: la suma de los déficits acumulados menos los superávits. Para evaluar si una deuda es sostenible se usa la razón deuda/PIB, porque una economía más grande puede sostener más deuda. La razón baja si el PIB crece más rápido que la deuda, y sube si se acumulan déficits grandes o si la economía entra en recesión. Una deuda alta obliga a destinar más presupuesto al pago de intereses.",
+          "ejemplo": "Si la deuda pública es USD 68.000 millones y el PIB USD 120.000 millones, la razón deuda/PIB es 68.000 ÷ 120.000 = 0,5667, es decir, 56,67 %. Si el año siguiente hay un déficit de 3.600 millones, la deuda sube a 68.000 + 3.600 = 71.600 millones.",
+          "puntos_clave": [
+            "Déficit = flujo anual; deuda = acumulado.",
+            "Razón deuda/PIB para evaluar sostenibilidad.",
+            "El crecimiento del PIB ayuda a bajar la razón."
+          ],
+          "errores_frecuentes": [
+            "Confundir déficit con deuda.",
+            "Comparar deudas de países sin relacionarlas con su PIB."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-3-federal-deficits-and-the-national-debt",
+            "seccion": "17.3 Federal Deficits and the National Debt"
+          }
+        },
+        {
+          "id": "ma-estabilizadores",
+          "nombre": "Estabilizadores automáticos",
+          "explicacion": "Algunas reglas fiscales actúan solas sobre el ciclo económico, sin que el gobierno tenga que aprobar nuevas medidas. En una recesión los ingresos de las personas bajan y con ellos los impuestos que pagan, mientras suben pagos como el seguro de desempleo; eso sostiene la demanda. En un auge ocurre lo contrario: suben los impuestos y bajan esas transferencias, lo que enfría la economía. Por eso el déficit tiende a aumentar en las recesiones aunque no cambie la política fiscal.",
+          "ejemplo": "En un año de recesión la recaudación del impuesto a la renta cae de USD 5.000 a 4.400 millones y los pagos del seguro de desempleo suben de 200 a 350 millones. Sin ninguna ley nueva, el déficit aumenta en (5.000 − 4.400) + (350 − 200) = 750 millones.",
+          "puntos_clave": [
+            "Actúan sin decisiones nuevas del gobierno.",
+            "En recesión: menos impuestos y más transferencias.",
+            "Suavizan las fluctuaciones de la demanda agregada."
+          ],
+          "errores_frecuentes": [
+            "Atribuir todo aumento del déficit a más gasto discrecional.",
+            "Pensar que los estabilizadores eliminan las recesiones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-5-automatic-stabilizers",
+            "seccion": "17.5 Automatic Stabilizers"
           }
         }
       ]
