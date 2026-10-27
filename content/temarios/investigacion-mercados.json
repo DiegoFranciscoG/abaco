@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-marketing/pages/6-3-steps-in-a-successful-marketing-research-plan",
             "seccion": "6.3 Steps in a Successful Marketing Research Plan"
           }
+        },
+        {
+          "id": "im-fuentes-informacion",
+          "nombre": "Fuentes de información de marketing",
+          "explicacion": "La información de marketing proviene de fuentes internas y externas. Las internas son los datos que la empresa ya genera: ventas por producto y cliente, inventarios, reclamos, registros del CRM y de la tienda en línea. Las externas incluyen estadísticas oficiales, estudios de mercado publicados, bases de datos comerciales, información de la competencia (inteligencia competitiva) y lo que dicen los clientes en redes sociales. Antes de diseñar una investigación nueva conviene agotar las fuentes disponibles, que son más rápidas y baratas.",
+          "ejemplo": "Una cadena de ferreterías quiere abrir un local en Manta. Primero revisa sus propias ventas por provincia (fuente interna) y las estadísticas de construcción del INEC (fuente externa). Solo después encarga una encuesta a 300 maestros de obra para conocer sus preferencias.",
+          "puntos_clave": [
+            "Internas: ventas, clientes, reclamos.",
+            "Externas: estadísticas oficiales, estudios y competencia.",
+            "Agotar lo existente antes de investigar de cero."
+          ],
+          "errores_frecuentes": [
+            "Encargar una encuesta cuando los datos ya existen.",
+            "Usar información externa sin verificar su fuente y fecha."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/6-2-sources-of-marketing-information",
+            "seccion": "6.2 Sources of Marketing Information"
+          }
         }
       ]
     },
@@ -130,6 +151,27 @@
             "ref": "os-est-es",
             "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-4-diseno-experimental-y-etica",
             "seccion": "1.4 Diseño experimental y ética"
+          }
+        },
+        {
+          "id": "im-escalas-medicion",
+          "nombre": "Niveles de medición y escalas en un cuestionario",
+          "explicacion": "Cada pregunta de un cuestionario produce datos con un nivel de medición que determina qué análisis son válidos. El nivel nominal clasifica sin orden (marca preferida, ciudad). El ordinal ordena sin distancias iguales (nada satisfecho, poco, satisfecho, muy satisfecho, como en una escala de Likert). El de intervalo tiene distancias iguales pero sin cero absoluto (temperatura). El de razón, también llamado de cociente, tiene cero real (gasto mensual, edad). Con datos nominales se cuentan frecuencias; con ordinales se usa la mediana; con datos de intervalo o razón se pueden calcular medias y desviaciones.",
+          "ejemplo": "Una encuesta pregunta la ciudad (nominal), la satisfacción de 1 a 5 (ordinal) y el gasto mensual en la tienda (razón). Para la ciudad se reportan porcentajes; para la satisfacción, la mediana; para el gasto, la media: si 4 clientes gastan 20, 35, 40 y 25 dólares, la media es 120 ÷ 4 = 30.",
+          "puntos_clave": [
+            "Nominal, ordinal, intervalo y razón.",
+            "El nivel define el análisis válido.",
+            "Las escalas de Likert son ordinales."
+          ],
+          "errores_frecuentes": [
+            "Promediar códigos de categorías nominales.",
+            "Tratar una escala ordinal como si tuviera distancias exactas sin advertirlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-3-frecuencia-tablas-de-frecuencia-y-niveles-de-medicion",
+            "seccion": "1.3 Frecuencia, tablas de frecuencia y niveles de medición"
           }
         }
       ]
@@ -197,6 +239,27 @@
             "url": "https://openstax.org/books/principles-marketing/pages/4-4-stages-in-the-b2b-buying-process",
             "seccion": "4.4 Stages in the B2B Buying Process"
           }
+        },
+        {
+          "id": "im-sociodemograficos",
+          "nombre": "Grupos sociodemográficos y generaciones",
+          "explicacion": "Las variables sociodemográficas —edad, generación, género, ingreso, educación, ocupación, discapacidad— ayudan a describir a los consumidores y a diseñar mensajes y productos adecuados. Las generaciones comparten experiencias que influyen en sus hábitos: los más jóvenes suelen informarse y comprar en canales digitales, mientras que otros grupos valoran más la atención presencial. Usar estas variables exige evitar los estereotipos: describen tendencias de grupo, no a cada persona, y deben combinarse con datos de comportamiento.",
+          "ejemplo": "Un banco encuesta a 400 clientes: el 78 % de los menores de 30 años prefiere abrir cuentas por la aplicación y solo el 35 % de los mayores de 55 lo prefiere. Diseña la apertura digital como canal principal para jóvenes y mantiene asesores en agencia para los clientes mayores.",
+          "puntos_clave": [
+            "Edad, generación, ingreso, educación y ocupación.",
+            "Describen tendencias de grupo.",
+            "Se combinan con datos de comportamiento."
+          ],
+          "errores_frecuentes": [
+            "Suponer que todos los miembros de una generación se comportan igual.",
+            "Excluir a personas con discapacidad del diseño de productos y canales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/8-5-marketing-to-sociodemographic-groups",
+            "seccion": "8.5 Marketing to Sociodemographic Groups"
+          }
         }
       ]
     },
@@ -262,6 +325,216 @@
             "ref": "os-mkt",
             "url": "https://openstax.org/books/principles-marketing/pages/6-4-ethical-issues-in-marketing-research",
             "seccion": "6.4 Ethical Issues in Marketing Research"
+          }
+        },
+        {
+          "id": "im-resumir-datos",
+          "nombre": "Resumir las respuestas: media, mediana y moda",
+          "explicacion": "Al analizar una encuesta, el primer paso es resumir cada pregunta. La media es útil para datos numéricos sin valores extremos; la mediana, para datos ordinales o asimétricos, porque no se deja arrastrar por los extremos; la moda indica la respuesta más frecuente y es la única que sirve para datos nominales. Reportar varias medidas y la distribución completa de respuestas da una imagen más honesta que un solo número.",
+          "ejemplo": "Siete clientes califican un servicio con 4, 5, 3, 4, 5, 2 y 4. La media es 27 ÷ 7 = 3,86; la mediana, ordenando los datos (2, 3, 4, 4, 4, 5, 5), es 4; y la moda también es 4.",
+          "puntos_clave": [
+            "Media para datos numéricos sin extremos.",
+            "Mediana para datos ordinales o asimétricos.",
+            "Moda para la respuesta más frecuente."
+          ],
+          "errores_frecuentes": [
+            "Reportar solo la media de una escala ordinal.",
+            "Ignorar la distribución completa de respuestas."
+          ],
+          "formulas": [
+            "media-aritmetica",
+            "mediana"
+          ],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/2-5-medidas-del-centro-de-los-datos",
+            "seccion": "2.5 Medidas del centro de los datos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "im-b2b-internacional",
+      "nombre": "Mercados empresariales e internacionales",
+      "orden": 5,
+      "descripcion": "Situaciones de compra entre empresas, influencias en el comprador empresarial y segmentación B2B e internacional.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "im-situaciones-compra",
+          "nombre": "Compradores y situaciones de compra entre empresas",
+          "explicacion": "En los mercados entre empresas (B2B) las compras las decide un centro de compras: usuarios, influenciadores, compradores, quienes aprueban y quienes controlan el acceso a la información. Hay tres situaciones típicas: la recompra directa (se repite un pedido sin cambios), la recompra modificada (se cambian proveedor, precio o especificaciones) y la compra nueva (una necesidad por primera vez, con más investigación y más personas involucradas). Investigar estos mercados exige identificar a quiénes influyen en cada situación.",
+          "ejemplo": "Un hospital compra guantes cada mes al mismo proveedor (recompra directa). Al evaluar un tomógrafo de USD 900.000 (compra nueva) participan médicos, el área financiera, compras y la gerencia, y el proceso toma 6 meses en lugar de un día.",
+          "puntos_clave": [
+            "El centro de compras reúne varios roles.",
+            "Recompra directa, modificada y compra nueva.",
+            "Más novedad, más personas y más tiempo."
+          ],
+          "errores_frecuentes": [
+            "Dirigirse solo al comprador e ignorar a los usuarios e influenciadores.",
+            "Tratar una compra nueva como una recompra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/4-2-buyers-and-buying-situations-in-a-b2b-market",
+            "seccion": "4.2 Buyers and Buying Situations in a B2B Market"
+          }
+        },
+        {
+          "id": "im-influencias-b2b",
+          "nombre": "Influencias en el comprador empresarial",
+          "explicacion": "El comportamiento de compra de una empresa está influido por factores del entorno (economía, tecnología, leyes, competencia), de la organización (objetivos, políticas, estructura y procedimientos de compra), interpersonales (relaciones y poder dentro del centro de compras) e individuales (experiencia, preferencias y riesgo que percibe cada persona). Comprender estas influencias permite adaptar la propuesta de valor y el argumento de venta a cada cliente empresarial.",
+          "ejemplo": "Una distribuidora de software vende a municipios. Descubre que, además del precio, pesan mucho las reglas de contratación pública (entorno), la aprobación del área jurídica (organización) y el temor del jefe de sistemas a fallas (individual). Ajusta su oferta con garantía de soporte de 24 meses.",
+          "puntos_clave": [
+            "Factores del entorno, organizacionales, interpersonales e individuales.",
+            "La propuesta se adapta a cada cliente.",
+            "El riesgo percibido pesa en las decisiones."
+          ],
+          "errores_frecuentes": [
+            "Pensar que en B2B solo importa el precio.",
+            "Ignorar las reglas y procedimientos de compra del cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/4-3-major-influences-on-b2b-buyer-behavior",
+            "seccion": "4.3 Major Influences on B2B Buyer Behavior"
+          }
+        },
+        {
+          "id": "im-segmentacion-b2b",
+          "nombre": "Segmentación de mercados empresariales",
+          "explicacion": "Los mercados entre empresas se segmentan con variables propias: características de la empresa (sector, tamaño, ubicación, número de empleados, ventas), que se conocen como firmografía; variables operativas (tecnología que usa, volumen de compra); enfoque de compra (centralizado o no, criterios de compra); factores situacionales (urgencia, tamaño del pedido) y características personales de los compradores. Una buena segmentación permite priorizar los clientes con mayor potencial.",
+          "ejemplo": "Una empresa de transporte de carga divide a sus clientes por sector y volumen: 40 exportadoras grandes que despachan más de 20 contenedores al mes y 300 pymes con envíos ocasionales. Asigna ejecutivos de cuenta a las 40 grandes y atiende a las pymes por una plataforma en línea.",
+          "puntos_clave": [
+            "Firmografía: sector, tamaño, ubicación.",
+            "Variables operativas y de enfoque de compra.",
+            "Priorizar segmentos de mayor potencial."
+          ],
+          "errores_frecuentes": [
+            "Usar solo el tamaño de la empresa para segmentar.",
+            "Atender igual a clientes con necesidades muy distintas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/5-2-segmentation-of-b2b-markets",
+            "seccion": "5.2 Segmentation of B2B Markets"
+          }
+        },
+        {
+          "id": "im-segmentacion-internacional",
+          "nombre": "Segmentación de mercados internacionales",
+          "explicacion": "Para investigar y segmentar mercados de otros países se combinan variables económicas (ingreso, nivel de desarrollo, poder de compra), geográficas, político-legales y culturales, como el grado de individualismo o la tolerancia a la incertidumbre. Los países pueden agruparse por semejanzas, pero también conviene segmentar dentro de cada país, porque las diferencias internas pueden ser grandes. La investigación internacional exige además adaptar los cuestionarios al idioma y la cultura.",
+          "ejemplo": "Un exportador de cacao fino agrupa sus mercados en dos segmentos: países de ingreso alto que pagan por origen y calidad (Europa occidental) y mercados emergentes que priorizan precio. Destina el 70 % de su producción premium al primer grupo.",
+          "puntos_clave": [
+            "Variables económicas, geográficas, legales y culturales.",
+            "Agrupar países y segmentar dentro de cada uno.",
+            "Adaptar los instrumentos de investigación."
+          ],
+          "errores_frecuentes": [
+            "Traducir un cuestionario sin adaptarlo a la cultura.",
+            "Tratar a todo un país como un solo segmento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/5-3-segmentation-of-international-markets",
+            "seccion": "5.3 Segmentation of International Markets"
+          }
+        }
+      ]
+    },
+    {
+      "id": "im-pruebas",
+      "nombre": "Pruebas A/B y experimentos de marketing",
+      "orden": 6,
+      "descripcion": "Comparar dos versiones, comparar medias, prueba de homogeneidad y pronósticos con regresión.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "im-prueba-ab",
+          "nombre": "Prueba A/B: comparar dos proporciones",
+          "explicacion": "Una prueba A/B muestra al azar dos versiones de un anuncio, correo o página a grupos distintos y compara un resultado, como la tasa de conversión. Para saber si la diferencia es real o se debe al azar se usa la prueba de dos proporciones: con la proporción combinada de ambos grupos se calcula el error estándar y el estadístico z. Si z supera el valor crítico (1,96 para un nivel de 5 % en dos colas), la diferencia es estadísticamente significativa.",
+          "ejemplo": "La versión A de una página convierte 120 de 1.000 visitas (12 %) y la B, 150 de 1.000 (15 %). Con la proporción combinada 270 ÷ 2.000 = 0,135, el estadístico es z = 1,96: justo en el límite del 5 %, así que conviene ampliar la prueba antes de decidir.",
+          "puntos_clave": [
+            "Asignación al azar a cada versión.",
+            "Prueba de dos proporciones con proporción combinada.",
+            "Comparar z con el valor crítico."
+          ],
+          "errores_frecuentes": [
+            "Detener la prueba apenas una versión va adelante.",
+            "Cambiar varias cosas a la vez y no saber cuál causó el efecto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/10-3-comparacion-de-dos-proporciones-de-poblacion-independientes",
+            "seccion": "10.3 Comparación de dos proporciones de población independientes"
+          }
+        },
+        {
+          "id": "im-dos-medias",
+          "nombre": "Comparar las medias de dos grupos",
+          "explicacion": "Para comparar el gasto promedio, la satisfacción u otra variable numérica entre dos grupos independientes —por ejemplo, clientes de dos campañas— se usa la prueba t para dos medias con desviaciones desconocidas. El estadístico es la diferencia de medias dividida para su error estándar, √(s₁² ÷ n₁ + s₂² ÷ n₂). Un valor grande en relación con la distribución t indica que la diferencia no se explica por el azar.",
+          "ejemplo": "Los clientes de la campaña A gastaron en promedio USD 52 (desviación 8, n = 40) y los de la B, USD 48 (desviación 10, n = 50). El error estándar es √(64 ÷ 40 + 100 ÷ 50) = 1,897367 y t = 4 ÷ 1,897367 = 2,1082.",
+          "puntos_clave": [
+            "Grupos independientes y variable numérica.",
+            "Error estándar = √(s₁²/n₁ + s₂²/n₂).",
+            "Se compara t con su valor crítico."
+          ],
+          "errores_frecuentes": [
+            "Usar esta prueba con los mismos clientes medidos dos veces.",
+            "Concluir causalidad si los grupos no se asignaron al azar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/10-1-medias-de-dos-poblaciones-con-desviaciones-tipicas-desconocidas",
+            "seccion": "10.1 Medias de dos poblaciones con desviaciones típicas desconocidas"
+          }
+        },
+        {
+          "id": "im-homogeneidad",
+          "nombre": "Prueba de homogeneidad: ¿prefieren lo mismo dos mercados?",
+          "explicacion": "La prueba de homogeneidad compara si la distribución de una variable categórica es la misma en dos o más poblaciones, por ejemplo la preferencia de marca en dos ciudades. Se construye una tabla de contingencia, se calculan las frecuencias esperadas bajo la hipótesis de igualdad (total de fila × total de columna ÷ total general) y el estadístico χ² = Σ(O − E)² ÷ E. Si χ² es grande, las preferencias difieren entre las poblaciones.",
+          "ejemplo": "En Quito 60 de 100 encuestados prefieren la marca A y en Guayaquil 45 de 100. Las esperadas son 52,5 para A y 47,5 para B en cada ciudad, y χ² = 2 × 1,071429 + 2 × 1,184211 = 4,5113, mayor que 3,84, el valor crítico con 1 grado de libertad al 5 %: las preferencias difieren.",
+          "puntos_clave": [
+            "Compara distribuciones entre poblaciones.",
+            "Esperada = fila × columna ÷ total.",
+            "Grados de libertad = (filas − 1)(columnas − 1)."
+          ],
+          "errores_frecuentes": [
+            "Usar porcentajes en lugar de frecuencias.",
+            "Confundirla con la prueba de independencia (una sola muestra con dos variables)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/11-4-prueba-de-homogeneidad",
+            "seccion": "11.4 Prueba de homogeneidad"
+          }
+        },
+        {
+          "id": "im-pronostico",
+          "nombre": "Pronosticar con la recta de regresión",
+          "explicacion": "Una vez estimada la recta ŷ = a + b·x con datos de mercado —por ejemplo, ventas frente a inversión en publicidad—, se puede predecir el valor de y para un nuevo x. La predicción es confiable dentro del rango de los datos observados; fuera de ese rango (extrapolación) puede fallar porque la relación cambia. Conviene acompañar la predicción con su margen de error y revisar si hay valores atípicos que distorsionen la recta.",
+          "ejemplo": "Con la recta ventas = 12 + 3,2 × publicidad (en miles de dólares), una inversión de 6 mil dólares predice ventas de 12 + 3,2 × 6 = 31,2 mil dólares.",
+          "puntos_clave": [
+            "ŷ = a + b·x para un nuevo x.",
+            "Confiable dentro del rango observado.",
+            "La extrapolación es arriesgada."
+          ],
+          "errores_frecuentes": [
+            "Predecir para valores muy lejanos a los observados.",
+            "Interpretar la predicción como un valor exacto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/12-5-prediccion",
+            "seccion": "12.5 Predicción"
           }
         }
       ]

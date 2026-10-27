@@ -2904,5 +2904,96 @@
       "privacy",
       "permission"
     ]
+  },
+  {
+    "id": "im-fuentes-informacion",
+    "palabras": [
+      "internal",
+      "external",
+      "competitive intelligence"
+    ]
+  },
+  {
+    "id": "im-escalas-medicion",
+    "palabras": [
+      "nominal",
+      "ordinal",
+      "intervalos",
+      "cociente"
+    ]
+  },
+  {
+    "id": "im-sociodemograficos",
+    "palabras": [
+      "sociodemographic",
+      "generation"
+    ]
+  },
+  {
+    "id": "im-resumir-datos",
+    "palabras": [
+      "media",
+      "mediana",
+      "moda"
+    ]
+  },
+  {
+    "id": "im-situaciones-compra",
+    "palabras": [
+      "buying center",
+      "rebuy"
+    ]
+  },
+  {
+    "id": "im-influencias-b2b",
+    "palabras": [
+      "influences",
+      "buyer behavior",
+      "political"
+    ]
+  },
+  {
+    "id": "im-segmentacion-b2b",
+    "palabras": [
+      "firmographics",
+      "segmentation"
+    ]
+  },
+  {
+    "id": "im-segmentacion-internacional",
+    "palabras": [
+      "international",
+      "individualism",
+      "segmenting"
+    ]
+  },
+  {
+    "id": "im-prueba-ab",
+    "palabras": [
+      "proporciones",
+      "proporcion combinada"
+    ]
+  },
+  {
+    "id": "im-dos-medias",
+    "palabras": [
+      "dos poblaciones",
+      "desviaciones tipicas desconocidas"
+    ]
+  },
+  {
+    "id": "im-homogeneidad",
+    "palabras": [
+      "homogeneidad",
+      "valor esperado",
+      "dos poblaciones"
+    ]
+  },
+  {
+    "id": "im-pronostico",
+    "palabras": [
+      "prediccion",
+      "regresion"
+    ]
   }
 ]

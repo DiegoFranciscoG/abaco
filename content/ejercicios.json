@@ -7360,5 +7360,324 @@
     },
     "materia": "marketing",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-media-calificacion",
+    "subtema": "im-resumir-datos",
+    "formula": "media-aritmetica",
+    "enunciado": "Siete clientes califican un servicio con 4, 5, 3, 4, 5, 2 y 4. ¿Cuál es la calificación media?",
+    "datos": {
+      "x": [
+        4,
+        5,
+        3,
+        4,
+        5,
+        2,
+        4
+      ]
+    },
+    "calculo": "AVERAGE(x)",
+    "respuesta": 3.86,
+    "unidad": "puntos",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Σx = 27",
+      "x̄ = 27 ÷ 7 = 3,86"
+    ],
+    "pistas": [
+      "Suma las calificaciones y divide para el número de clientes."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "2.5 Medidas del centro de los datos"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-mediana-calificacion",
+    "subtema": "im-resumir-datos",
+    "formula": "mediana",
+    "enunciado": "Con las mismas calificaciones (4, 5, 3, 4, 5, 2 y 4), ¿cuál es la mediana?",
+    "datos": {
+      "x": [
+        4,
+        5,
+        3,
+        4,
+        5,
+        2,
+        4
+      ]
+    },
+    "calculo": "MEDIAN(x)",
+    "respuesta": 4,
+    "unidad": "puntos",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Ordenadas: 2, 3, 4, 4, 4, 5, 5",
+      "Mediana = 4 (dato central)"
+    ],
+    "pistas": [
+      "Ordena los datos y toma el del centro."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "2.5 Medidas del centro de los datos"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-ab-z",
+    "subtema": "im-prueba-ab",
+    "enunciado": "La versión A de una página convierte 120 de 1.000 visitas y la versión B, 150 de 1.000. ¿Cuál es el estadístico z de la prueba de dos proporciones?",
+    "datos": {
+      "x1": 150,
+      "n1": 1000,
+      "x2": 120,
+      "n2": 1000
+    },
+    "calculo": "(x1 / n1 - x2 / n2) / SQRT(((x1 + x2) / (n1 + n2)) * (1 - (x1 + x2) / (n1 + n2)) * (1 / n1 + 1 / n2))",
+    "respuesta": 1.96,
+    "unidad": "sin unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Proporción combinada = 270 ÷ 2.000 = 0,135",
+      "Error estándar = 0,015282",
+      "z = 0,03 ÷ 0,015282 = 1,96"
+    ],
+    "pistas": [
+      "Usa la proporción combinada para el error estándar."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "10.3 Comparación de dos proporciones de población independientes"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-ab-combinada",
+    "subtema": "im-prueba-ab",
+    "enunciado": "En una prueba A/B, el correo A obtuvo 84 clics de 700 envíos y el B, 66 de 500. ¿Cuál es la proporción combinada de clics?",
+    "datos": {
+      "x1": 84,
+      "n1": 700,
+      "x2": 66,
+      "n2": 500
+    },
+    "calculo": "(x1 + x2) / (n1 + n2)",
+    "respuesta": 0.125,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Proporción combinada = (84 + 66) ÷ (700 + 500)",
+      "Proporción combinada = 150 ÷ 1.200 = 0,125"
+    ],
+    "pistas": [
+      "Suma los clics y los envíos de ambos grupos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "10.3 Comparación de dos proporciones de población independientes"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-t-dos-medias",
+    "subtema": "im-dos-medias",
+    "enunciado": "Los clientes de la campaña A gastaron en promedio USD 52 (desviación 8, n = 40) y los de la B, USD 48 (desviación 10, n = 50). ¿Cuál es el estadístico t?",
+    "datos": {
+      "m1": 52,
+      "s1": 8,
+      "n1": 40,
+      "m2": 48,
+      "s2": 10,
+      "n2": 50
+    },
+    "calculo": "(m1 - m2) / SQRT(s1 ^ 2 / n1 + s2 ^ 2 / n2)",
+    "respuesta": 2.1082,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Error estándar = √(64 ÷ 40 + 100 ÷ 50) = √3,6 = 1,897367",
+      "t = 4 ÷ 1,897367 = 2,1082"
+    ],
+    "pistas": [
+      "Divide la diferencia de medias para el error estándar."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "10.1 Medias de dos poblaciones con desviaciones típicas desconocidas"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-error-estandar",
+    "subtema": "im-dos-medias",
+    "enunciado": "Dos grupos tienen desviaciones de 12 y 9 con muestras de 36 y 81. ¿Cuál es el error estándar de la diferencia de medias?",
+    "datos": {
+      "s1": 12,
+      "n1": 36,
+      "s2": 9,
+      "n2": 81
+    },
+    "calculo": "SQRT(s1 ^ 2 / n1 + s2 ^ 2 / n2)",
+    "respuesta": 2.2361,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "144 ÷ 36 = 4 y 81 ÷ 81 = 1",
+      "Error estándar = √5 = 2,2361"
+    ],
+    "pistas": [
+      "Suma las varianzas divididas para cada tamaño de muestra."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "10.1 Medias de dos poblaciones con desviaciones típicas desconocidas"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-chi-homogeneidad",
+    "subtema": "im-homogeneidad",
+    "enunciado": "En Quito 60 de 100 encuestados prefieren la marca A (40 la B) y en Guayaquil 45 de 100 (55 la B). ¿Cuál es el estadístico chi-cuadrado de homogeneidad?",
+    "datos": {
+      "o": [
+        60,
+        40,
+        45,
+        55
+      ],
+      "e": [
+        52.5,
+        47.5,
+        52.5,
+        47.5
+      ]
+    },
+    "calculo": "SUM((o - e) ^ 2 / e)",
+    "respuesta": 4.5113,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Esperadas: A = 105 × 100 ÷ 200 = 52,5 y B = 95 × 100 ÷ 200 = 47,5",
+      "χ² = 2 × 1,071429 + 2 × 1,184211 = 4,5113"
+    ],
+    "pistas": [
+      "Cada diferencia es 7,5; divide su cuadrado para la esperada."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "11.4 Prueba de homogeneidad"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-esperada",
+    "subtema": "im-homogeneidad",
+    "enunciado": "En una tabla con 300 encuestados, 120 son de Cuenca y 90 prefieren el producto nuevo. Bajo la hipótesis de homogeneidad, ¿cuántos encuestados de Cuenca se espera que prefieran el producto nuevo?",
+    "datos": {
+      "fila": 120,
+      "col": 90,
+      "N": 300
+    },
+    "calculo": "fila * col / N",
+    "respuesta": 36,
+    "unidad": "personas",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Esperada = 120 × 90 ÷ 300 = 36"
+    ],
+    "pistas": [
+      "Total de fila por total de columna, dividido para el total general."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "11.4 Prueba de homogeneidad"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-prediccion",
+    "subtema": "im-pronostico",
+    "enunciado": "Con x (publicidad en miles) = 1, 2, 3 y 4, e y (ventas en miles) = 15, 19, 21 y 25, ¿cuánto predice la recta de regresión para una inversión de 6 mil?",
+    "datos": {
+      "x": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        15,
+        19,
+        21,
+        25
+      ],
+      "x0": 6
+    },
+    "calculo": "INTERCEPT(y, x) + SLOPE(y, x) * x0",
+    "respuesta": 31.2,
+    "unidad": "miles USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "b = 16 ÷ 5 = 3,2",
+      "a = 20 − 3,2 × 2,5 = 12",
+      "ŷ = 12 + 3,2 × 6 = 31,2"
+    ],
+    "pistas": [
+      "Calcula la pendiente y la intersección, luego reemplaza x = 6."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "12.5 Predicción"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-im-prediccion-directa",
+    "subtema": "im-pronostico",
+    "enunciado": "Una empresa estimó la recta ventas = 12 + 3,5 × publicidad (en miles de dólares). ¿Qué ventas predice para una inversión de 8 mil?",
+    "datos": {
+      "a": 12,
+      "b": 3.5,
+      "x": 8
+    },
+    "calculo": "a + b * x",
+    "respuesta": 40,
+    "unidad": "miles USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ŷ = 12 + 3,5 × 8 = 40"
+    ],
+    "pistas": [
+      "Reemplaza x en la recta."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "12.5 Predicción"
+    },
+    "materia": "investigacion-mercados",
+    "actualizado_en": "2026-10-26"
   }
 ]
