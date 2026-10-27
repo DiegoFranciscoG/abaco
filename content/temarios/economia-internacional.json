@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/20-3-intra-industry-trade-between-similar-economies",
             "seccion": "20.3 Intra-Industry Trade between Similar Economies"
           }
+        },
+        {
+          "id": "ec-beneficios-apertura",
+          "nombre": "Aranceles y beneficios de reducir las barreras comerciales",
+          "explicacion": "Los aranceles son impuestos que los gobiernos cobran a los bienes importados. Se aplican por razones como proteger industrias sensibles o defenderse del dumping, y tradicionalmente también como herramienta política para proteger intereses económicos o culturales. La Organización Mundial del Comercio (OMC) negocia por rondas la reducción de esas barreras; la Ronda de Doha comenzó en 2001. Bajar barreras permite aprovechar la ventaja comparativa, fragmentar la cadena de valor y lograr economías de escala, beneficios que pesan más en las economías pequeñas, cuyo mercado interno es reducido. Además, el comercio aumenta la competencia, lo que presiona a las empresas a ser más eficientes.",
+          "ejemplo": "Una fábrica ecuatoriana de chocolate que solo vende en el país produce 50.000 barras al año. Si se reducen los aranceles en los mercados vecinos y logra exportar otras 150.000, reparte sus costos fijos entre 200.000 barras: con costos fijos de USD 100.000, el costo fijo por barra baja de 100.000 ÷ 50.000 = 2 dólares a 100.000 ÷ 200.000 = 0,5 dólares.",
+          "puntos_clave": [
+            "Arancel: impuesto a las importaciones.",
+            "La OMC negocia la reducción de barreras por rondas.",
+            "Ganancias: ventaja comparativa, cadena de valor, economías de escala y más competencia."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el arancel lo paga el país exportador y no el comprador local.",
+            "Medir solo la ganancia de un año, cuando se repite cada año."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/20-4-the-benefits-of-reducing-barriers-to-international-trade",
+            "seccion": "20.4 The Benefits of Reducing Barriers to International Trade"
+          }
         }
       ]
     },
@@ -130,6 +151,27 @@
             "ref": "os-macro3",
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/21-4-how-governments-enact-trade-policy-globally-regionally-and-nationally",
             "seccion": "21.4 How Governments Enact Trade Policy: Globally, Regionally, and Nationally"
+          }
+        },
+        {
+          "id": "ec-empleo-salarios",
+          "nombre": "Comercio, empleo, salarios y condiciones laborales",
+          "explicacion": "Se teme que las importaciones causen menos empleos, salarios más bajos o malas condiciones de trabajo. La evidencia muestra que el número de empleos depende sobre todo de la demanda agregada y del mercado laboral, no del comercio: tras el TLCAN (NAFTA), Estados Unidos tuvo un fuerte crecimiento del empleo. El comercio sí reasigna empleos entre industrias. El proteccionismo tiene un costo de oportunidad alto: cada empleo que salva lo pagan los consumidores con precios más altos. Las preocupaciones por las normas laborales en países de bajos ingresos son legítimas, pero se atienden mejor con políticas específicas que cerrando el comercio.",
+          "ejemplo": "Si un arancel protege 1.000 empleos en una industria y encarece los productos para los consumidores en USD 200 millones al año, cada empleo protegido cuesta 200.000.000 ÷ 1.000 = 200.000 dólares anuales, mucho más que el salario que se protege.",
+          "puntos_clave": [
+            "El nivel de empleo depende de la demanda agregada, no del comercio.",
+            "El comercio reasigna empleos entre sectores.",
+            "Costo de oportunidad del proteccionismo: lo pagan los consumidores."
+          ],
+          "errores_frecuentes": [
+            "Ver solo los empleos perdidos y no los creados por las exportaciones.",
+            "Confundir el salario de un empleo protegido con su costo para la sociedad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/21-2-international-trade-and-its-effects-on-jobs-wages-and-working-conditions",
+            "seccion": "21.2 International Trade and Its Effects on Jobs, Wages, and Working Conditions"
           }
         }
       ]
@@ -199,6 +241,27 @@
             "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-6-the-difference-between-level-of-trade-and-the-trade-balance",
             "seccion": "10.6 The Difference between Level of Trade and the Trade Balance"
           }
+        },
+        {
+          "id": "ec-contexto-historico",
+          "nombre": "La balanza en perspectiva: cuenta corriente y proporción del PIB",
+          "explicacion": "La cuenta corriente y la balanza comercial de mercancías (solo bienes) se pueden presentar en dólares o como proporción del PIB. Dividir el saldo de cada año para el PIB de ese año elimina el efecto de la inflación y del crecimiento real, y permite comparar épocas y países de distinto tamaño. Algunos países mantienen déficits comerciales durante años, mientras otros, como Alemania o Japón, registran superávits persistentes.",
+          "ejemplo": "Un país exporta 20.000 millones, importa 26.000 millones y su PIB es de 120.000 millones. Su saldo es 20.000 − 26.000 = −6.000 millones, y como proporción del PIB: −6.000 ÷ 120.000 = −0,05, es decir, un déficit del 5 % del PIB.",
+          "puntos_clave": [
+            "Balanza de mercancías: solo bienes.",
+            "Expresar el saldo como proporción del PIB permite comparar.",
+            "Hay países con déficits y otros con superávits persistentes."
+          ],
+          "errores_frecuentes": [
+            "Comparar saldos en dólares entre países de tamaños muy distintos.",
+            "Confundir la cuenta corriente con la balanza de bienes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-2-trade-balances-in-historical-and-international-context",
+            "seccion": "10.2 Trade Balances in Historical and International Context"
+          }
         }
       ]
     },
@@ -264,6 +327,255 @@
             "ref": "os-mkt",
             "url": "https://openstax.org/books/principles-marketing/pages/8-1-strategic-marketing-standardization-versus-adaptation",
             "seccion": "8.1 Strategic Marketing: Standardization versus Adaptation"
+          }
+        },
+        {
+          "id": "ec-oportunidades-globales",
+          "nombre": "Oportunidades, ventajas y desafíos del mercado global",
+          "explicacion": "Las oportunidades de mercado global son condiciones favorables para que una empresa se expanda fuera de su país: factores internos, como su capacidad y conocimiento, y externos, como el crecimiento del mercado, la demanda y las regulaciones o barreras del sector. Las ventajas del comercio internacional para la empresa son más ingresos, menos competencia en algunos mercados, crecimiento más rápido, diversificación del riesgo y la facilidad de vender inventario excedente. Los desafíos incluyen las diferencias culturales, que cambian el comportamiento del consumidor, y la política, las leyes y las relaciones de cada país.",
+          "ejemplo": "Una empresa de Cuenca que fabrica sombreros de paja toquilla vende 70 % en Ecuador. Si exporta a varios países, una caída de la demanda local afecta solo una parte de sus ventas: diversifica el riesgo, pero debe adaptar su marketing a cada cultura.",
+          "puntos_clave": [
+            "Factores internos y externos definen la oportunidad.",
+            "Ventajas: ingresos, menos competencia, crecimiento, diversificación del riesgo, inventario.",
+            "Desafíos: cultura, política y leyes del país destino."
+          ],
+          "errores_frecuentes": [
+            "Copiar la estrategia local sin considerar la cultura del mercado destino.",
+            "Ignorar las barreras y regulaciones del sector en el otro país."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/7-1-the-global-market-and-advantages-of-international-trade",
+            "seccion": "7.1 The Global Market and Advantages of International Trade"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-desarrollo",
+      "nombre": "Economía global y desarrollo",
+      "orden": 5,
+      "descripcion": "Diversidad de países, políticas de crecimiento, preocupaciones sobre la apertura y costos del comercio.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ec-diversidad-paises",
+          "nombre": "La diversidad de economías: PIB e INB per cápita",
+          "explicacion": "El PIB per cápita es un indicador clave del nivel de vida y, para comparar países, se convierte con la paridad del poder adquisitivo, que considera que los mismos bienes cuestan distinto en cada país. El tamaño total de una economía no dice cuánto recibe cada persona: dividir el PIB para la población cambia mucho el orden de los países. El Banco Mundial usa el ingreso nacional bruto (INB) per cápita para clasificar cada año a los países en ingresos bajos, medianos bajos, medianos altos y altos. La geografía, la demografía, la estructura productiva y las instituciones económicas influyen en el nivel de vida.",
+          "ejemplo": "Un país con un PIB de 9.000.000 millones de dólares y 1.400 millones de habitantes tiene un PIB per cápita de 9.000.000 ÷ 1.400 = 6.428,57 dólares, menor que el de un país más pequeño con un PIB de 500.000 millones y 10 millones de habitantes: 500.000 ÷ 10 = 50.000 dólares.",
+          "puntos_clave": [
+            "PIB per cápita = PIB ÷ población.",
+            "Paridad del poder adquisitivo para comparar.",
+            "Cuatro grupos de ingreso del Banco Mundial según el INB per cápita."
+          ],
+          "errores_frecuentes": [
+            "Confundir economía grande con población rica.",
+            "Comparar ingresos con tipos de cambio de mercado sin ajustar por precios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/19-1-the-diversity-of-countries-and-economies-across-the-world",
+            "seccion": "19.1 The Diversity of Countries and Economies across the World"
+          }
+        },
+        {
+          "id": "ec-crecimiento-paises",
+          "nombre": "Políticas para mejorar el nivel de vida",
+          "explicacion": "Según el consenso sobre el crecimiento, la economía crece por aumentos de productividad, que vienen del capital humano, el capital físico y la tecnología en una economía orientada al mercado. Los países de ingresos altos buscan una fuerza laboral más educada y nuevas tecnologías, con inflación baja y estable. Los de ingresos medios, como los tigres asiáticos, crecieron con tecnología e incentivos de mercado. Los países de ingresos bajos enfrentan obstáculos como la falta de infraestructura y de instituciones, y la ayuda externa ha tenido resultados mixtos.",
+          "ejemplo": "Si un país invierte en educación y en maquinaria, y la producción por trabajador sube de USD 20.000 a USD 22.000 al año, la productividad crece (22.000 − 20.000) ÷ 20.000 = 0,1, es decir, un 10 %.",
+          "puntos_clave": [
+            "Productividad: capital humano, capital físico y tecnología.",
+            "Estabilidad macroeconómica y competencia.",
+            "La ayuda externa sola no garantiza el crecimiento."
+          ],
+          "errores_frecuentes": [
+            "Creer que basta con atraer capital sin educación ni instituciones.",
+            "Aplicar la misma receta a países de ingresos muy distintos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/19-2-improving-countries-standards-of-living",
+            "seccion": "19.2 Improving Countries’ Standards of Living"
+          }
+        },
+        {
+          "id": "ec-preocupaciones-apertura",
+          "nombre": "Preocupaciones sobre la apertura y reformas de mercado",
+          "explicacion": "Entre los años cincuenta y setenta muchos países de ingresos bajos y medios veían la apertura con desconfianza, por temor a ser explotados o a perder control frente a las multinacionales. Hoy casi todos buscan participar en el comercio, porque no hay casos de economías pequeñas aisladas que alcanzaran un nivel de vida alto. Conviene separar dos preocupaciones: el comercio de bienes y servicios, donde el argumento más debatido es el de la industria naciente, y los flujos internacionales de capital, que pueden entrar y salir de golpe y provocar crisis.",
+          "ejemplo": "Un país puede comerciar mucho con exportaciones e importaciones equilibradas y tener un flujo neto de capital igual a cero; otro, con poco comercio, puede tener un gran déficit en cuenta corriente que depende de capital extranjero que podría salir de repente.",
+          "puntos_clave": [
+            "Argumento de la industria naciente.",
+            "Separar comercio de bienes y flujos de capital.",
+            "Riesgo de salida repentina de capitales."
+          ],
+          "errores_frecuentes": [
+            "Asumir que mucho comercio implica un gran desequilibrio.",
+            "Proteger una industria naciente sin plazo para que sea competitiva."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/19-5-balance-of-trade-concerns",
+            "seccion": "19.5 Balance of Trade Concerns"
+          }
+        },
+        {
+          "id": "ec-costos-comercio",
+          "nombre": "Los costos y compensaciones de la política comercial",
+          "explicacion": "En promedio las personas ganan con el comercio, como trabajadores más productivos y como consumidores con más variedad y mejores precios, pero el promedio esconde a quienes pierden. La recomendación habitual de los economistas es aprovechar las ganancias del comercio y atender sus costos con otras políticas, como apoyo temporal y programas de recapacitación, en lugar de cerrar el comercio. El caso es parecido al de una nueva tecnología que desplaza a empresas antiguas: pocos propondrían prohibirla.",
+          "ejemplo": "Si la apertura de un mercado ahorra a los consumidores USD 50 millones al año y 500 trabajadores pierden su empleo, un programa de recapacitación de USD 10.000 por persona costaría 500 × 10.000 = 5.000.000 de dólares, una fracción de la ganancia anual.",
+          "puntos_clave": [
+            "Ganancias promedio con ganadores y perdedores.",
+            "Compensar con recapacitación y apoyo temporal.",
+            "Comparación con el cambio tecnológico."
+          ],
+          "errores_frecuentes": [
+            "Ignorar a quienes pierden con la apertura.",
+            "Creer que la única respuesta es restringir importaciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/21-5-the-tradeoffs-of-trade-policy",
+            "seccion": "21.5 The Tradeoffs of Trade Policy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-instituciones",
+      "nombre": "Instituciones y acuerdos del comercio mundial",
+      "orden": 6,
+      "descripcion": "OMC, Banco Mundial y FMI, bloques comerciales, Comunidad Andina, multinacionales y tendencias.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ec-omc",
+          "nombre": "La OMC, el antidumping y la solución de diferencias",
+          "explicacion": "El dumping es vender en mercados extranjeros a un precio menor que en el mercado propio, a veces por debajo del costo, cuando la diferencia no se explica por el costo de atender cada mercado. Muchos países tienen leyes antidumping, en especial contra el dumping predatorio, que busca eliminar a los competidores. La Organización Mundial del Comercio (OMC) reemplazó al GATT de 1948; la Ronda Uruguay, adoptada en 1994, redujo aranceles y por primera vez cubrió servicios, propiedad intelectual y medidas de inversión. Los miembros de la OMC se rebajan barreras entre sí y cuentan con un procedimiento de solución de diferencias con plazos estrictos.",
+          "ejemplo": "Si una empresa extranjera vende madera a USD 90 cuando su costo es USD 100 y en su país la vende a USD 120, sin diferencias de costo que lo expliquen, se sospecha dumping y el país afectado puede investigar e imponer un arancel antidumping.",
+          "puntos_clave": [
+            "Dumping: vender más barato afuera que en casa sin razón de costos.",
+            "La OMC reemplazó al GATT.",
+            "Ronda Uruguay: servicios, propiedad intelectual e inversión."
+          ],
+          "errores_frecuentes": [
+            "Llamar dumping a cualquier precio bajo de un competidor eficiente.",
+            "Confundir la OMC con un organismo de crédito."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-4-fostering-global-trade",
+            "seccion": "3.4 Fostering Global Trade"
+          }
+        },
+        {
+          "id": "ec-bm-fmi",
+          "nombre": "El Banco Mundial y el Fondo Monetario Internacional",
+          "explicacion": "El Banco Mundial otorga préstamos a bajo interés a países en desarrollo, al inicio para infraestructura como carreteras, centrales eléctricas, escuelas y hospitales, y ahora también para aliviar su deuda; además es una fuente de asesoría e información. El Fondo Monetario Internacional (FMI), fundado en 1945, promueve el comercio mediante la cooperación financiera y presta a corto plazo a países que no pueden cubrir sus gastos, actuando como prestamista de última instancia. A cambio suele exigir compromisos para corregir las causas de la crisis. Un riesgo de depender del FMI es el riesgo moral: los inversionistas podrían asumir más riesgos esperando un rescate.",
+          "ejemplo": "Un país con una crisis de balanza de pagos solicita un préstamo de corto plazo al FMI y se compromete a reducir su déficit fiscal; para construir una carretera rural, en cambio, buscaría un crédito de largo plazo del Banco Mundial.",
+          "puntos_clave": [
+            "Banco Mundial: desarrollo e infraestructura a largo plazo.",
+            "FMI: préstamos de corto plazo y estabilidad financiera.",
+            "Riesgo moral de los rescates."
+          ],
+          "errores_frecuentes": [
+            "Confundir las funciones del FMI y del Banco Mundial.",
+            "Creer que los préstamos del FMI no tienen condiciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-4-fostering-global-trade",
+            "seccion": "3.4 Fostering Global Trade"
+          }
+        },
+        {
+          "id": "ec-bloques",
+          "nombre": "Comunidades económicas y tratados de libre comercio",
+          "explicacion": "Los países que comercian mucho entre sí pueden formalizar su relación en una comunidad económica o en un acuerdo bilateral. Un arancel preferencial da ventajas a ciertos países sobre otros; en una zona de libre comercio casi no hay aranceles entre los socios, pero cada miembro fija los suyos frente a terceros. Ejemplos: el T-MEC (USMCA), que reemplazó al TLCAN en 2020; Mercosur; el CAFTA en Centroamérica; la Asociación Económica Integral Regional (RCEP) en Asia, y la Unión Europea, que creó una economía sin fronteras con instituciones comunes.",
+          "ejemplo": "Si un país cobra 10 % de arancel a un producto de USD 1.000, pero 0 % a sus socios de una zona de libre comercio, el importador paga 1.000 × 0,10 = 100 dólares de arancel si compra fuera del bloque y nada si compra a un socio.",
+          "puntos_clave": [
+            "Arancel preferencial y zona de libre comercio.",
+            "T-MEC, Mercosur, CAFTA, RCEP y Unión Europea.",
+            "Una unión económica comparte instituciones."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una zona de libre comercio tiene un arancel común frente a terceros.",
+            "Seguir llamando TLCAN al acuerdo vigente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-5-international-economic-communities",
+            "seccion": "3.5 International Economic Communities"
+          }
+        },
+        {
+          "id": "ec-comunidad-andina",
+          "nombre": "La Comunidad Andina (CAN)",
+          "explicacion": "La Comunidad Andina es un organismo internacional de integración formado por Bolivia, Colombia, Ecuador y Perú. Nació con el Acuerdo de Cartagena, firmado el 26 de mayo de 1969 en Colombia, cuando se llamaba Pacto Andino. Ese tratado fija los objetivos, el sistema institucional y las políticas de la integración andina. Entre sus objetivos están promover el desarrollo equilibrado de los países miembros, acelerar el crecimiento y el empleo, avanzar hacia un mercado común latinoamericano y reducir la vulnerabilidad externa. Argentina, Brasil, Chile, Paraguay y Uruguay son países asociados.",
+          "ejemplo": "Una empresa ecuatoriana que exporta conservas a Colombia o Perú opera dentro del espacio de integración andino, por lo que debe revisar las normas comunitarias que se aplican a ese comercio, además de las de cada país.",
+          "puntos_clave": [
+            "Miembros: Bolivia, Colombia, Ecuador y Perú.",
+            "Acuerdo de Cartagena de 1969.",
+            "Objetivos: desarrollo equilibrado, empleo e integración."
+          ],
+          "errores_frecuentes": [
+            "Confundir la CAN con Mercosur.",
+            "Creer que los países asociados son miembros plenos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "can-quienes-somos",
+            "url": "https://www.comunidadandina.org/quienes-somos/",
+            "seccion": "Quiénes somos"
+          }
+        },
+        {
+          "id": "ec-multinacionales",
+          "nombre": "El impacto de las corporaciones multinacionales",
+          "explicacion": "Una corporación multinacional mueve recursos, bienes, servicios y habilidades entre países sin importar dónde está su sede. Algunas superan en tamaño a países pequeños y muchas venden más fuera de su país de origen. Las exitosas toman en cuenta las diferencias políticas y culturales. Entre sus ventajas están superar barreras comerciales produciendo dentro de otros países, sortear problemas regulatorios ubicando cada actividad donde conviene, y trasladar la producción entre plantas cuando cambian las condiciones del mercado.",
+          "ejemplo": "Una multinacional de alimentos puede fabricar en el país donde vende para evitar aranceles a la importación y mantener su investigación en un país con mayor protección de la propiedad intelectual.",
+          "puntos_clave": [
+            "Opera en varios países sin depender de su sede.",
+            "Debe adaptarse a diferencias políticas y culturales.",
+            "Ventajas: evitar barreras, sortear regulaciones y mover producción."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una multinacional solo exporta desde su país de origen.",
+            "Ignorar los riesgos de reputación en los mercados donde opera."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-8-the-impact-of-multinational-corporations",
+            "seccion": "3.8 The Impact of Multinational Corporations"
+          }
+        },
+        {
+          "id": "ec-tendencias-globales",
+          "nombre": "Tendencias de la competencia global",
+          "explicacion": "Tres tendencias impulsan el comercio mundial. La expansión de mercados: los mercados internos limitados, sobre todo en países pequeños, no generan suficiente demanda para la manufactura a gran escala. La adquisición de recursos: las empresas buscan en el exterior mano de obra, materias primas escasas, tecnología o capital. Y el surgimiento de China e India, la primera como gran exportadora gracias a la inversión extranjera y la segunda como proveedora de servicios.",
+          "ejemplo": "Una camaronera ecuatoriana cuya producción supera lo que consume el mercado local busca clientes en Asia y Europa (expansión de mercados) y compra tecnología de acuicultura en el exterior (adquisición de recursos).",
+          "puntos_clave": [
+            "Expansión de mercados.",
+            "Adquisición de recursos.",
+            "Surgimiento de China e India."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo las grandes empresas compiten en el mercado global.",
+            "Ver a China e India como casos iguales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/3-9-trends-in-global-competition",
+            "seccion": "3.9 Trends in Global Competition"
           }
         }
       ]

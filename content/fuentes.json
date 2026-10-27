@@ -430,5 +430,14 @@
     "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
     "licencia": "Información pública oficial",
     "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "can-quienes-somos",
+    "titulo": "Quiénes somos — La Comunidad Andina",
+    "autor_editor": "Secretaría General de la Comunidad Andina",
+    "tipo": "pagina_oficial",
+    "url": "https://www.comunidadandina.org/quienes-somos/",
+    "licencia": "Información pública oficial; se cita y resume con redacción propia",
+    "fecha_consulta": "2026-10-26"
   }
 ]

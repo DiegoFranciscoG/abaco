@@ -281,7 +281,8 @@ export const temaSchema = z.object({
   orden: z.number().int().min(1),
   descripcion: nonEmpty,
   dificultad: z.number().int().min(1).max(3),
-  subtemas: z.array(subtemaSchema).min(3).max(5),
+  // The depth standard (coverage.ts) allows up to 6 subtopics per unit.
+  subtemas: z.array(subtemaSchema).min(3).max(6),
 });
 export type Tema = z.infer<typeof temaSchema>;
 

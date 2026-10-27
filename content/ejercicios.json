@@ -8805,5 +8805,148 @@
     },
     "materia": "calculo-diferencial",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-balanza-superavit",
+    "subtema": "ec-medir",
+    "formula": "balanza-mercancias",
+    "enunciado": "Un país exporta bienes por 32.500 e importa bienes por 29.800 (millones de USD). ¿Cuál es su balanza comercial de mercancías?",
+    "datos": {
+      "Xb": 32500,
+      "Mb": 29800
+    },
+    "calculo": "Xb - Mb",
+    "respuesta": 2700,
+    "unidad": "millones USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "BC = 32.500 − 29.800 = 2.700",
+      "Positiva: superávit comercial de bienes"
+    ],
+    "pistas": [
+      "Resta importaciones de exportaciones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-1-measuring-trade-balances",
+      "seccion": "10.1 Measuring Trade Balances"
+    },
+    "materia": "economia-internacional",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-saldo-pib",
+    "subtema": "ec-contexto-historico",
+    "enunciado": "Un país exporta 20.000 e importa 26.000 millones de USD, y su PIB es de 120.000 millones. ¿Cuál es su saldo comercial como porcentaje del PIB?",
+    "datos": {
+      "X": 20000,
+      "M": 26000,
+      "PIB": 120000
+    },
+    "calculo": "(X - M) / PIB * 100",
+    "respuesta": -5,
+    "unidad": "% del PIB",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Saldo = 20.000 − 26.000 = −6.000",
+      "−6.000 ÷ 120.000 = −0,05",
+      "Déficit del 5 % del PIB"
+    ],
+    "pistas": [
+      "Divide el saldo para el PIB y multiplica por 100."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/10-2-trade-balances-in-historical-and-international-context",
+      "seccion": "10.2 Trade Balances in Historical and International Context"
+    },
+    "materia": "economia-internacional",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-costo-oportunidad",
+    "subtema": "ec-ventaja",
+    "enunciado": "En un día, un trabajador ecuatoriano produce 20 cajas de banano o 4 cajas de flores. ¿Cuál es el costo de oportunidad de una caja de flores, en cajas de banano?",
+    "datos": {
+      "banano": 20,
+      "flores": 4
+    },
+    "calculo": "banano / flores",
+    "respuesta": 5,
+    "unidad": "cajas de banano",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Para producir 4 cajas de flores se renuncia a 20 de banano",
+      "Costo de oportunidad = 20 ÷ 4 = 5"
+    ],
+    "pistas": [
+      "Divide lo que se deja de producir para lo que se obtiene."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/20-1-absolute-and-comparative-advantage",
+      "seccion": "20.1 Absolute and Comparative Advantage"
+    },
+    "materia": "economia-internacional",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-pib-per-capita",
+    "subtema": "ec-diversidad-paises",
+    "enunciado": "Un país tiene un PIB de 125.000 millones de USD y 18 millones de habitantes. ¿Cuál es su PIB per cápita?",
+    "datos": {
+      "PIB": 125000000000,
+      "N": 18000000
+    },
+    "calculo": "PIB / N",
+    "respuesta": 6944.44,
+    "unidad": "USD por habitante",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "PIB per cápita = 125.000 millones ÷ 18 millones",
+      "125.000 ÷ 18 = 6.944,44"
+    ],
+    "pistas": [
+      "Divide el PIB para la población."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/19-1-the-diversity-of-countries-and-economies-across-the-world",
+      "seccion": "19.1 The Diversity of Countries and Economies across the World"
+    },
+    "materia": "economia-internacional",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-arancel",
+    "subtema": "ec-bloques",
+    "enunciado": "Un importador compra fuera de su bloque comercial mercadería por USD 8.000, con un arancel de 15 %. ¿Cuánto paga de arancel?",
+    "datos": {
+      "valor": 8000,
+      "t": 0.15
+    },
+    "calculo": "valor * t",
+    "respuesta": 1200,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Arancel = 8.000 × 0,15 = 1.200",
+      "Dentro de una zona de libre comercio pagaría 0"
+    ],
+    "pistas": [
+      "Multiplica el valor por la tasa arancelaria."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ib2",
+      "url": "https://openstax.org/books/introduction-business-2e/pages/3-5-international-economic-communities",
+      "seccion": "3.5 International Economic Communities"
+    },
+    "materia": "economia-internacional",
+    "actualizado_en": "2026-10-26"
   }
 ]
