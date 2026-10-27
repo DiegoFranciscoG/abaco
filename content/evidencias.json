@@ -2736,5 +2736,94 @@
       "negotiation",
       "bargaining"
     ]
+  },
+  {
+    "id": "th-cumplimiento",
+    "palabras": [
+      "compliance",
+      "laws",
+      "regulations"
+    ]
+  },
+  {
+    "id": "th-gestion-desempeno",
+    "palabras": [
+      "performance management",
+      "goals"
+    ]
+  },
+  {
+    "id": "th-recompensas",
+    "palabras": [
+      "intrinsic",
+      "extrinsic",
+      "reward"
+    ]
+  },
+  {
+    "id": "th-tendencias",
+    "palabras": [
+      "trends",
+      "competitive advantage"
+    ]
+  },
+  {
+    "id": "th-diversidad-concepto",
+    "palabras": [
+      "diversity",
+      "characteristics"
+    ]
+  },
+  {
+    "id": "th-discriminacion",
+    "palabras": [
+      "discrimination",
+      "harassment"
+    ]
+  },
+  {
+    "id": "th-diversidad-beneficios",
+    "palabras": [
+      "diversity",
+      "perspective",
+      "benefits"
+    ]
+  },
+  {
+    "id": "th-gestionar-diversidad",
+    "palabras": [
+      "diversity",
+      "training",
+      "leadership"
+    ]
+  },
+  {
+    "id": "th-ajuste-trabajo",
+    "palabras": [
+      "work adjustment",
+      "stress"
+    ]
+  },
+  {
+    "id": "th-causas-estres",
+    "palabras": [
+      "stress",
+      "role ambiguity",
+      "role conflict"
+    ]
+  },
+  {
+    "id": "th-amortiguadores",
+    "palabras": [
+      "social support",
+      "buffer"
+    ]
+  },
+  {
+    "id": "th-afrontamiento",
+    "palabras": [
+      "coping",
+      "stress"
+    ]
   }
 ]

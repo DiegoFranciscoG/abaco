@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/introduction-business-2e/pages/8-3-employee-selection",
             "seccion": "8.3 Employee Selection"
           }
+        },
+        {
+          "id": "th-cumplimiento",
+          "nombre": "Talento humano y cumplimiento legal",
+          "explicacion": "El área de talento humano debe asegurar que la organización cumpla las leyes y reglamentos laborales: contratos por escrito cuando la ley lo exige, pago de remuneraciones y beneficios, afiliación a la seguridad social, jornadas máximas, seguridad y salud en el trabajo, y no discriminación en la selección, el pago y los ascensos. El cumplimiento no es solo evitar multas: protege a las personas, reduce conflictos y cuida la reputación de la empresa. Exige mantener registros ordenados, capacitar a los jefes y revisar los cambios normativos.",
+          "ejemplo": "Una empresa con 25 trabajadores revisa sus expedientes y encuentra que 3 no tienen contrato escrito y 2 no figuran en la planilla de la seguridad social. Corrige los 3 + 2 = 5 casos antes de una inspección y fija una revisión trimestral de expedientes.",
+          "puntos_clave": [
+            "Contratos, remuneraciones, seguridad social y seguridad en el trabajo.",
+            "La no discriminación aplica a todo el ciclo laboral.",
+            "Registros ordenados y revisión periódica."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el cumplimiento laboral es solo tarea del abogado.",
+            "Esperar a una inspección para regularizar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/11-2-human-resource-management-and-compliance",
+            "seccion": "11.2 Human Resource Management and Compliance"
+          }
         }
       ]
     },
@@ -130,6 +151,27 @@
             "ref": "os-pmgmt",
             "url": "https://openstax.org/books/principles-management/pages/11-6-talent-development-and-succession-planning",
             "seccion": "11.6 Talent Development and Succession Planning"
+          }
+        },
+        {
+          "id": "th-gestion-desempeno",
+          "nombre": "Gestión del desempeño como proceso continuo",
+          "explicacion": "La gestión del desempeño es más que la evaluación anual: es un proceso continuo que alinea el trabajo de cada persona con las metas de la organización. Incluye fijar metas claras, dar retroalimentación frecuente, ofrecer apoyo y desarrollo, evaluar resultados y conectar esa evaluación con decisiones de reconocimiento, capacitación y carrera. En organizaciones con equipos en varios lugares exige procesos comunes y herramientas que permitan seguir el avance durante todo el año.",
+          "ejemplo": "Una cadena de 12 tiendas reemplaza la evaluación anual por reuniones mensuales de 15 minutos entre cada jefe y su equipo para revisar metas. En un año cada empleado tiene 12 conversaciones de seguimiento en lugar de una sola evaluación.",
+          "puntos_clave": [
+            "Proceso continuo, no un evento anual.",
+            "Metas claras y retroalimentación frecuente.",
+            "Vinculado a desarrollo y reconocimiento."
+          ],
+          "errores_frecuentes": [
+            "Reducir la gestión del desempeño a llenar un formulario al año.",
+            "Evaluar sin haber fijado metas previas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/11-3-performance-management",
+            "seccion": "11.3 Performance Management"
           }
         }
       ]
@@ -202,6 +244,27 @@
             "ref": "iess-tasas",
             "seccion": "Tasas de aportación, sector privado"
           }
+        },
+        {
+          "id": "th-recompensas",
+          "nombre": "Sistemas de recompensas: intrínsecas y extrínsecas",
+          "explicacion": "Las recompensas pueden ser extrínsecas, que vienen de la organización (sueldo, bonos, beneficios, ascensos, reconocimiento público), o intrínsecas, que nacen del propio trabajo (sentido de logro, autonomía, aprendizaje). Un sistema de recompensas eficaz atrae y retiene personas, motiva el desempeño deseado y se percibe como justo. Para lograrlo, las recompensas deben depender del desempeño, ser valoradas por quien las recibe y explicarse con claridad; el exceso de secreto sobre cómo se asignan genera desconfianza.",
+          "ejemplo": "Un call center sube el sueldo de sus agentes en USD 40, pero la rotación sigue en 30 % anual. Al rediseñar el trabajo para dar más autonomía en la atención y reconocer públicamente a los mejores agentes, la rotación baja a 18 %: una mejora de 30 − 18 = 12 puntos.",
+          "puntos_clave": [
+            "Extrínsecas: dinero, beneficios, ascensos.",
+            "Intrínsecas: logro, autonomía, aprendizaje.",
+            "Deben ligarse al desempeño y percibirse justas."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo el dinero motiva.",
+            "Mantener en secreto los criterios para asignar premios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/8-4-reward-systems-in-organizations",
+            "seccion": "8.4 Reward Systems in Organizations"
+          }
         }
       ]
     },
@@ -266,6 +329,213 @@
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 42"
+          }
+        },
+        {
+          "id": "th-tendencias",
+          "nombre": "Tendencias en talento humano y relaciones laborales",
+          "explicacion": "La gestión del talento humano cambia con la tecnología y el mercado laboral: más trabajo remoto e híbrido, uso de plataformas digitales para reclutar y capacitar, análisis de datos de personal, mayor atención a la diversidad y a la cultura organizacional, y nuevas formas de relación con los trabajadores y sus organizaciones. Las empresas que tratan a su gente como fuente de ventaja competitiva invierten en contratar bien, desarrollar habilidades y cuidar el clima laboral.",
+          "ejemplo": "Una empresa de software contrata a 40 personas al año. Al usar una plataforma en línea para las primeras entrevistas, reduce el tiempo de contratación de 45 a 30 días: 45 − 30 = 15 días menos por vacante.",
+          "puntos_clave": [
+            "Trabajo remoto e híbrido.",
+            "Tecnología y datos en la gestión de personas.",
+            "El talento como ventaja competitiva."
+          ],
+          "errores_frecuentes": [
+            "Adoptar herramientas digitales sin cuidar la experiencia de las personas.",
+            "Pensar que las tendencias de otros países aplican sin adaptación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/8-10-trends-in-human-resource-management-and-labor-relations",
+            "seccion": "8.10 Trends in Human Resource Management and Labor Relations"
+          }
+        }
+      ]
+    },
+    {
+      "id": "th-diversidad",
+      "nombre": "Diversidad e inclusión",
+      "orden": 5,
+      "descripcion": "Qué es la diversidad, discriminación, beneficios y retos, y cómo gestionarla.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "th-diversidad-concepto",
+          "nombre": "Qué es la diversidad en el trabajo",
+          "explicacion": "La diversidad en el trabajo son las diferencias entre las personas que forman una organización: edad, género, origen étnico, discapacidad, religión, formación, experiencia y forma de pensar, entre otras. Algunas diferencias son visibles y otras no. Gestionar la diversidad significa aprovechar esas diferencias para mejorar las decisiones y el servicio, y asegurar que todas las personas tengan las mismas oportunidades. La inclusión va un paso más allá: que cada persona se sienta valorada y pueda participar plenamente.",
+          "ejemplo": "Un banco forma un equipo para diseñar productos para emprendedores de zonas rurales. Incluye a una oficial de crédito de la Sierra, un analista de la Costa y una persona con experiencia en cooperativas. Sus diferentes miradas detectan 4 necesidades que un equipo homogéneo había pasado por alto.",
+          "puntos_clave": [
+            "Diferencias visibles y no visibles.",
+            "Diversidad no es lo mismo que inclusión.",
+            "Las diferencias enriquecen las decisiones."
+          ],
+          "errores_frecuentes": [
+            "Reducir la diversidad a cumplir cuotas.",
+            "Pensar que basta con contratar personas diversas sin incluirlas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/5-1-an-introduction-to-workplace-diversity",
+            "seccion": "5.1 An Introduction to Workplace Diversity"
+          }
+        },
+        {
+          "id": "th-discriminacion",
+          "nombre": "Discriminación y acoso en el trabajo",
+          "explicacion": "La discriminación ocurre cuando una persona recibe un trato desfavorable por características como su origen, género, edad, embarazo, religión o discapacidad, y no por su desempeño. Puede aparecer en la selección, el sueldo, los ascensos o los despidos. El acoso es un comportamiento ofensivo, reiterado o grave, que crea un ambiente hostil. Las leyes laborales prohíben ambas conductas, y las organizaciones deben prevenirlas con políticas claras, canales de denuncia confidenciales, investigación oportuna y sanciones.",
+          "ejemplo": "Una empresa descubre que, a igual cargo y desempeño, a las mujeres se les ofrece en promedio USD 60 menos de sueldo inicial. Revisa la escala salarial y fija rangos por cargo para que la diferencia desaparezca.",
+          "puntos_clave": [
+            "Trato desfavorable por características ajenas al desempeño.",
+            "Puede ocurrir en todo el ciclo laboral.",
+            "Prevención: políticas, canales de denuncia y sanciones."
+          ],
+          "errores_frecuentes": [
+            "Ignorar una denuncia por falta de pruebas inmediatas.",
+            "Pensar que sin intención no hay discriminación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/5-4-challenges-of-diversity",
+            "seccion": "5.4 Challenges of Diversity"
+          }
+        },
+        {
+          "id": "th-diversidad-beneficios",
+          "nombre": "Beneficios y retos de la diversidad",
+          "explicacion": "Los equipos diversos aportan más perspectivas, lo que mejora la creatividad, la solución de problemas y la comprensión de clientes distintos. También amplían el grupo de talento del que la empresa puede contratar. Pero la diversidad trae retos: más dificultades de comunicación al inicio, posibles conflictos y el riesgo de que los grupos minoritarios queden aislados. El resultado depende de cómo se gestione: con objetivos comunes, respeto y apertura, los beneficios superan a los costos.",
+          "ejemplo": "Una agencia de publicidad compara dos campañas: la de un equipo homogéneo obtiene 2.000 interacciones y la de un equipo diverso, 3.200. La diferencia, 3.200 − 2.000 = 1.200 interacciones, se atribuye a mensajes que conectaron con públicos que el primer equipo no consideró.",
+          "puntos_clave": [
+            "Más perspectivas y mejor solución de problemas.",
+            "Retos de comunicación y cohesión.",
+            "La gestión determina el resultado."
+          ],
+          "errores_frecuentes": [
+            "Esperar beneficios automáticos sin gestionar los retos.",
+            "Ignorar los conflictos iniciales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/5-6-benefits-and-challenges-of-workplace-diversity",
+            "seccion": "5.6 Benefits and Challenges of Workplace Diversity"
+          }
+        },
+        {
+          "id": "th-gestionar-diversidad",
+          "nombre": "Cómo gestionar la diversidad",
+          "explicacion": "Gestionar la diversidad requiere compromiso de la dirección, objetivos medibles y prácticas concretas: procesos de selección con criterios objetivos, capacitación sobre sesgos y respeto, programas de mentoría, horarios flexibles y espacios donde todas las personas puedan expresar ideas. La capacitación aislada no basta; debe acompañarse de cambios en las políticas, en la forma de evaluar y en el ejemplo de los líderes. Medir la composición del personal y el clima permite saber si las acciones funcionan.",
+          "ejemplo": "Una empresa con 200 empleados se fija como meta que su porcentaje de personas con discapacidad pase de 2 % a 4 % en dos años. Eso significa pasar de 200 × 0,02 = 4 a 200 × 0,04 = 8 personas, con adaptaciones de puestos y acompañamiento.",
+          "puntos_clave": [
+            "Compromiso de la dirección y metas medibles.",
+            "Selección objetiva, capacitación y mentoría.",
+            "Medir resultados y clima."
+          ],
+          "errores_frecuentes": [
+            "Hacer una capacitación única y darse por satisfecho.",
+            "Fijar metas sin adaptar los puestos ni acompañar a las personas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/5-7-recommendations-for-managing-diversity",
+            "seccion": "5.7 Recommendations for Managing Diversity"
+          }
+        }
+      ]
+    },
+    {
+      "id": "th-bienestar",
+      "nombre": "Estrés y bienestar laboral",
+      "orden": 6,
+      "descripcion": "Problemas de ajuste al trabajo, causas organizacionales del estrés, factores amortiguadores y afrontamiento.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "th-ajuste-trabajo",
+          "nombre": "Problemas de ajuste al trabajo",
+          "explicacion": "El ajuste al trabajo es la adaptación de una persona a las exigencias, el ambiente y las relaciones de su puesto. Cuando no se logra aparecen problemas como el estrés, el agotamiento, el ausentismo y la rotación. El estrés es la reacción ante situaciones que se perciben como amenazantes o que superan los recursos de la persona; en dosis moderadas puede estimular, pero cuando es intenso o prolongado afecta la salud y el desempeño. Detectarlo a tiempo es tarea compartida de la persona, los jefes y el área de talento humano.",
+          "ejemplo": "En un área de cobranzas, las ausencias por enfermedad suben de 20 a 35 días al mes tras un aumento de metas. Esa diferencia de 35 − 20 = 15 días es una señal de que la nueva carga está afectando el ajuste del equipo.",
+          "puntos_clave": [
+            "El desajuste se ve en estrés, ausentismo y rotación.",
+            "El estrés moderado estimula; el crónico daña.",
+            "La detección temprana es compartida."
+          ],
+          "errores_frecuentes": [
+            "Ver el estrés como un problema solo individual.",
+            "Ignorar el aumento de ausencias como señal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/18-1-problems-of-work-adjustment",
+            "seccion": "18.1 Problems of Work Adjustment"
+          }
+        },
+        {
+          "id": "th-causas-estres",
+          "nombre": "Causas organizacionales del estrés",
+          "explicacion": "Muchas fuentes de estrés están en la organización del trabajo: sobrecarga o, al contrario, tareas demasiado simples; ambigüedad sobre lo que se espera del puesto; conflicto entre las demandas de distintos jefes o roles; poca participación en las decisiones; malas condiciones físicas; inseguridad sobre la continuidad del empleo y relaciones conflictivas. Como son organizacionales, la empresa puede reducirlas con descripciones de puesto claras, cargas razonables y participación.",
+          "ejemplo": "Una asistente recibe instrucciones contradictorias de dos jefes sobre qué informe entregar primero. Al definir un único responsable de priorizar sus tareas, el conflicto de rol desaparece y deja de quedarse 2 horas extra cada día.",
+          "puntos_clave": [
+            "Sobrecarga, ambigüedad y conflicto de rol.",
+            "Poca participación e inseguridad laboral.",
+            "La empresa puede reducirlas."
+          ],
+          "errores_frecuentes": [
+            "Culpar solo a la personalidad del trabajador.",
+            "Aumentar metas sin revisar la carga real."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/18-2-organizational-influences-on-stress",
+            "seccion": "18.2 Organizational Influences on Stress"
+          }
+        },
+        {
+          "id": "th-amortiguadores",
+          "nombre": "Factores que amortiguan el estrés",
+          "explicacion": "Algunas condiciones reducen el efecto del estrés sobre la salud y el desempeño. El apoyo social de compañeros, jefes y familia ayuda a enfrentar las presiones; la sensación de control sobre el propio trabajo disminuye la amenaza percibida; ciertas características personales, como la resistencia ante la adversidad, también protegen. Las organizaciones pueden fortalecer estos amortiguadores con liderazgo cercano, equipos cohesionados y más autonomía.",
+          "ejemplo": "Dos sucursales con las mismas metas tienen niveles de agotamiento muy distintos. En la que el jefe se reúne cada semana con su equipo y ayuda en los días pico, el 10 % del personal reporta agotamiento; en la otra, el 30 %.",
+          "puntos_clave": [
+            "Apoyo social como amortiguador.",
+            "Sentido de control sobre el trabajo.",
+            "El liderazgo cercano reduce el efecto del estrés."
+          ],
+          "errores_frecuentes": [
+            "Pensar que las mismas metas producen el mismo estrés en todos.",
+            "Ignorar el papel del jefe directo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/18-3-buffering-effects-of-work-related-stress",
+            "seccion": "18.3 Buffering Effects of Work-Related Stress"
+          }
+        },
+        {
+          "id": "th-afrontamiento",
+          "nombre": "Afrontar el estrés laboral",
+          "explicacion": "El afrontamiento combina estrategias individuales y organizacionales. Las individuales incluyen planificar el tiempo, hacer ejercicio, dormir bien, técnicas de relajación y buscar apoyo. Las organizacionales atacan las causas: rediseñar puestos, aclarar roles, dar participación, ofrecer programas de bienestar y horarios flexibles. Las estrategias más eficaces son las que reducen la fuente del estrés, no solo sus síntomas.",
+          "ejemplo": "Una empresa implementa pausas activas de 10 minutos dos veces por jornada y aclara las funciones de cada puesto. En seis meses, las licencias por enfermedad bajan de 48 a 30 días por trimestre: 48 − 30 = 18 días menos.",
+          "puntos_clave": [
+            "Estrategias individuales y organizacionales.",
+            "Atacar la causa, no solo el síntoma.",
+            "Programas de bienestar y rediseño de puestos."
+          ],
+          "errores_frecuentes": [
+            "Ofrecer solo charlas de relajación sin cambiar la carga de trabajo.",
+            "Dejar todo el afrontamiento en manos del trabajador."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/18-4-coping-with-work-related-stress",
+            "seccion": "18.4 Coping with Work-Related Stress"
           }
         }
       ]
