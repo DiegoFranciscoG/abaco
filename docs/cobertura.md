@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (14 completas de 26)
+## Estado por materia (15 completas de 26)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -34,7 +34,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Finanzas internacionales | 3 de 7 | parcial | 4 de 6 | 12 | 0 de 3 | 42 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 5 puntos más) |
 | Gestión del talento humano | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Informática para la gestión | 3 de 7 | parcial | 4 de 6 | 14 | 0 de 4 | 46 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 3 puntos más) |
-| Marketing | 3 de 7 | parcial | 4 de 6 | 14 | 0 de 0 | 79 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 2 puntos más) |
+| Marketing | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Tributación | 3 de 7 | parcial | 4 de 6 | 13 | 0 de 4 | 44 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 4 puntos más) |
 | Cálculo diferencial | 2 de 7 | parcial | 4 de 6 | 14 | 0 de 6 | 46 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 3 puntos más) |
 | Comportamiento organizacional | 2 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
@@ -99,7 +99,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Pensamiento Creativo.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Derecho empresarial y societario (parcial, 5 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Legislación laboral (parcial, 4 de 6 unidades) · pendientes: Economía Popular y Solidaria, Estadística Aplicada, TIC Aplicada en la Empresa.
-- **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Marketing (parcial, 4 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · sin pendientes.
+- **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Investigación de mercados (parcial, 4 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Emprendimiento (parcial, 4 de 6 unidades); Informática para la gestión (parcial, 4 de 6 unidades) · pendientes: Ecosistemas de Emprendimiento e Innovación, Presupuestos.
 - **6.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (parcial, 4 de 6 unidades) · pendientes: Administración Pública.
@@ -130,7 +130,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 ### Mercadotecnia (2 planes)
 
-- **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Marketing (parcial, 4 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Administración y Organización, Diseño para Marketing, Introducción al Marketing, Pensamiento Creativo y Desing Thinking, Psicología del Comportamiento.
+- **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Administración y Organización, Diseño para Marketing, Introducción al Marketing, Pensamiento Creativo y Desing Thinking, Psicología del Comportamiento.
 - **2.º ciclo**: en ÁBACO: Estadística descriptiva (completa, 6 de 6 unidades); Investigación de mercados (parcial, 4 de 6 unidades) · pendientes: Costeo de Productos y Servicios, Estrategia Competitiva, Marketing Mix y Segmentacion, Marketing de Servicios, Planificación Estratégica, Principios de Economía.
 - **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (parcial, 4 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Diseño Gráfico y Digital con IA, Estrategia Comunicacional y Redaccion Creativa, Marca personal, Marco Legal del Marketing y Ciberseguridad, Marketing Sostenible, Metodos Cuantitativos.
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Business English, Businness Intelligence, Diseño de Productos 3D+RA, Entorno Macroeconómico, Finanzas y Marketing, Mercados Emergentes y Marketing Generacional, Neuroventas y Negociación.
@@ -167,7 +167,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **2.º ciclo**: en ÁBACO: Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Análisis Estadístico Inferencial, Desarrollo de Habilidades Blandas 2: Comunicación Efectiva y Trabajo Colaborativo, Experiencias en Startups, Gestión Contable de Costos, IA Aplicada para la Gestión Empresarial y Emprendimiento, Oportunidades y Ecosistemas Emprendedores.
 - **3.º ciclo**: ninguna materia en ÁBACO · pendientes: Análisis del Macroentorno Empresarial, Business Intelligence, Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas, Design Thinking, Estudios de Mercado, Innovación, Legalidad y Negocios Responsables.
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Big Data y Analítica para Toma de Decisiones, Desarrollo de Habilidades Blandas 4: Liderazgo Emprendedor, Gestión de Equipos y Manejo de Conflictos, Emprendimientos Alternativos, Culturales y Familiares, Finanzas para Emprendedores, Gestión de Operaciones, Modelos de Negocio, Preincubación.
-- **5.º ciclo**: en ÁBACO: Emprendimiento (parcial, 4 de 6 unidades); Ética profesional (parcial, 4 de 6 unidades); Marketing (parcial, 4 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Estrategias de Crecimiento de Negocios, Gestión de la Producción, Incubación.
+- **5.º ciclo**: en ÁBACO: Emprendimiento (parcial, 4 de 6 unidades); Ética profesional (parcial, 4 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Estrategias de Crecimiento de Negocios, Gestión de la Producción, Incubación.
 - **6.º ciclo**: ninguna materia en ÁBACO · pendientes: Desarrollo de Habilidades Blandas 6: Negociación, Ventas Relacionales y Networking Básico, Gestión de Creación de Empresas, Marketing Digital para E-Commerce, Supply Chain Management, Valoración de Emprendimientos.
 - **7.º ciclo**: ninguna materia en ÁBACO · pendientes: Aceleración, Business English, Desarrollo de Habilidades Blandas 7: Pitch, Storytelling y Adaptabilidad al Cambio, Dirección Estratégica, Gestión de Marca para el Emprendimiento, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Estrategias de Negociación y Networking, Internacionalización de la Empresa.
@@ -184,7 +184,7 @@ Carreras: Administración de empresas, Contabilidad y auditoría, Economía, Mer
 - Ética profesional: parcial, avance 77 %.
 - Fundamentos de administración: completa, avance 100 %.
 - Informática para la gestión: parcial, avance 46 %.
-- Marketing: parcial, avance 79 %.
+- Marketing: completa, avance 100 %.
 - Matemática para la gestión: completa, avance 100 %.
 - Metodología de la investigación: completa, avance 100 %.
 

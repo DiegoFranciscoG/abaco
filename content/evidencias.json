@@ -2825,5 +2825,84 @@
       "coping",
       "stress"
     ]
+  },
+  {
+    "id": "mk-entorno",
+    "palabras": [
+      "marketing environment",
+      "internal",
+      "external"
+    ]
+  },
+  {
+    "id": "mk-comunicacion-integrada",
+    "palabras": [
+      "integrated marketing communications",
+      "message"
+    ]
+  },
+  {
+    "id": "mk-plan-estrategico",
+    "palabras": [
+      "mission",
+      "vision",
+      "strategic plan"
+    ]
+  },
+  {
+    "id": "mk-crecimiento",
+    "palabras": [
+      "diversification",
+      "market penetration",
+      "swot"
+    ]
+  },
+  {
+    "id": "mk-plan-marketing",
+    "palabras": [
+      "marketing plan",
+      "buyer personas",
+      "positioning"
+    ]
+  },
+  {
+    "id": "mk-metricas-plan",
+    "palabras": [
+      "kpis",
+      "market share",
+      "customer acquisition"
+    ]
+  },
+  {
+    "id": "mk-servicios",
+    "palabras": [
+      "intangible",
+      "people-based",
+      "equipment-based"
+    ]
+  },
+  {
+    "id": "mk-brechas-servicio",
+    "palabras": [
+      "gap model",
+      "service quality",
+      "rater"
+    ]
+  },
+  {
+    "id": "mk-crm",
+    "palabras": [
+      "customer relationship management",
+      "retention",
+      "loyalty"
+    ]
+  },
+  {
+    "id": "mk-etico",
+    "palabras": [
+      "ethical",
+      "privacy",
+      "permission"
+    ]
   }
 ]

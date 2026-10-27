@@ -7308,5 +7308,57 @@
     },
     "materia": "finanzas-corporativas",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mk-participacion",
+    "subtema": "mk-metricas-plan",
+    "enunciado": "Una tienda en línea vendió USD 180.000 en un año, en un mercado local que vendió en total USD 1.500.000. ¿Cuál es su participación de mercado?",
+    "datos": {
+      "V": 180000,
+      "M": 1500000
+    },
+    "calculo": "V / M",
+    "respuesta": 0.12,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Participación = 180.000 ÷ 1.500.000 = 0,12 (12 %)"
+    ],
+    "pistas": [
+      "Divide las ventas propias para las del mercado total."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "seccion": "2.4 Marketing Plan Progress Using Metrics"
+    },
+    "materia": "marketing",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mk-costo-adquisicion",
+    "subtema": "mk-metricas-plan",
+    "enunciado": "Una empresa gastó USD 9.000 en una campaña y consiguió 300 clientes nuevos. ¿Cuál es su costo de adquisición por cliente?",
+    "datos": {
+      "G": 9000,
+      "N": 300
+    },
+    "calculo": "G / N",
+    "respuesta": 30,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Costo de adquisición = 9.000 ÷ 300 = 30"
+    ],
+    "pistas": [
+      "Gasto de marketing ÷ clientes nuevos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "seccion": "2.4 Marketing Plan Progress Using Metrics"
+    },
+    "materia": "marketing",
+    "actualizado_en": "2026-10-26"
   }
 ]

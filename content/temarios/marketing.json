@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-marketing/pages/1-5-determining-consumer-needs-and-wants",
             "seccion": "1.5 Determining Consumer Needs and Wants"
           }
+        },
+        {
+          "id": "mk-entorno",
+          "nombre": "El entorno de marketing",
+          "explicacion": "Las decisiones de marketing dependen de factores internos y externos. Los internos son los que la empresa controla: sus recursos, su cultura, sus capacidades y sus otras áreas. Los externos no los controla: competidores, proveedores, intermediarios, clientes y fuerzas generales como la economía, la tecnología, la demografía, la cultura, la política y el medio ambiente. Analizar el entorno permite descubrir oportunidades (una tendencia de consumo) y amenazas (un competidor nuevo o un cambio legal) antes de definir la estrategia.",
+          "ejemplo": "Una cafetería de Loja analiza su entorno: la población universitaria creció (oportunidad), abrió una cadena nacional a dos cuadras (amenaza) y el precio del café en grano subió 20 % (amenaza). Responde con un combo para estudiantes y mayor énfasis en café de origen local.",
+          "puntos_clave": [
+            "Factores internos: controlables por la empresa.",
+            "Factores externos: competidores, clientes y fuerzas generales.",
+            "El análisis del entorno precede a la estrategia."
+          ],
+          "errores_frecuentes": [
+            "Planificar sin mirar a la competencia.",
+            "Confundir factores internos con externos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/1-3-factors-comprising-and-affecting-the-marketing-environment",
+            "seccion": "1.3 Factors Comprising and Affecting the Marketing Environment"
+          }
         }
       ]
     },
@@ -300,6 +321,213 @@
             "ref": "os-mkt",
             "url": "https://openstax.org/books/principles-marketing/pages/16-3-metrics-used-to-evaluate-the-success-of-online-marketing",
             "seccion": "16.3 Metrics Used to Evaluate the Success of Online Marketing"
+          }
+        },
+        {
+          "id": "mk-comunicacion-integrada",
+          "nombre": "Comunicación integrada de marketing",
+          "explicacion": "La comunicación integrada de marketing coordina todos los medios con que la empresa habla con sus clientes —publicidad, redes sociales, punto de venta, relaciones públicas, vendedores— para que transmitan un mensaje coherente y se refuercen entre sí. Si cada canal dice algo distinto, el cliente se confunde y la marca pierde fuerza. Integrar exige una idea central, un tono común y planificar qué papel cumple cada medio en el recorrido del cliente, desde que conoce la marca hasta que compra y recomienda.",
+          "ejemplo": "Una marca de jugos lanza la idea «fruta ecuatoriana, sin azúcar añadida». La repite en su empaque, en sus videos en redes, en el material de los supermercados y en el discurso de sus impulsadoras. Al medir, el 65 % de los encuestados recuerda el mensaje, frente al 30 % de una campaña anterior con mensajes distintos en cada medio.",
+          "puntos_clave": [
+            "Un mensaje central y coherente en todos los medios.",
+            "Cada medio cumple un papel en el recorrido del cliente.",
+            "La coherencia fortalece la marca."
+          ],
+          "errores_frecuentes": [
+            "Que cada área haga su propia campaña sin coordinación.",
+            "Cambiar el mensaje en cada canal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/13-3-integrated-marketing-communications",
+            "seccion": "13.3 Integrated Marketing Communications"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mk-estrategia",
+      "nombre": "Estrategia y plan de marketing",
+      "orden": 5,
+      "descripcion": "Plan estratégico, papel del marketing en la estrategia, estructura del plan de marketing y métricas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mk-plan-estrategico",
+          "nombre": "El plan estratégico: misión, visión y objetivos",
+          "explicacion": "El plan estratégico define a dónde quiere llegar la organización y cómo. Parte de la misión (qué hace, para quién y por qué existe), la visión (lo que aspira a ser) y los valores. Sobre esa base se fijan metas generales y objetivos concretos y medibles, se analiza la situación (por ejemplo con un análisis FODA) y se eligen estrategias. El plan de marketing se deriva del plan estratégico: traduce sus objetivos en acciones sobre clientes, productos, precios, canales y comunicación.",
+          "ejemplo": "Una cooperativa de ahorro define su misión como «ofrecer crédito justo a emprendedores de la provincia» y fija el objetivo de pasar de 3.200 a 4.000 socios activos en dos años, un aumento de 4.000 − 3.200 = 800 socios, que el plan de marketing convertirá en acciones concretas.",
+          "puntos_clave": [
+            "Misión, visión y valores orientan el plan.",
+            "Las metas se traducen en objetivos medibles.",
+            "El plan de marketing se deriva del estratégico."
+          ],
+          "errores_frecuentes": [
+            "Escribir objetivos imposibles de medir.",
+            "Hacer un plan de marketing desconectado de la estrategia de la empresa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/2-1-developing-a-strategic-plan",
+            "seccion": "2.1 Developing a Strategic Plan"
+          }
+        },
+        {
+          "id": "mk-crecimiento",
+          "nombre": "Estrategias de crecimiento: matriz producto–mercado",
+          "explicacion": "El marketing participa en la planificación estratégica analizando el mercado y proponiendo cómo crecer. La matriz producto–mercado ofrece cuatro caminos: penetración de mercado (vender más de los productos actuales a los clientes actuales), desarrollo de mercado (llevar los productos actuales a nuevos mercados), desarrollo de producto (ofrecer productos nuevos a los clientes actuales) y diversificación (productos nuevos en mercados nuevos). El riesgo aumenta a medida que la empresa se aleja de lo que ya conoce.",
+          "ejemplo": "Una fábrica de chocolates de Esmeraldas que vende barras en Ecuador puede: hacer promociones para vender más barras en el país (penetración), exportar sus barras a Colombia (desarrollo de mercado), lanzar chocolate en polvo para sus clientes actuales (desarrollo de producto) o abrir una cafetería en Lima (diversificación).",
+          "puntos_clave": [
+            "Penetración, desarrollo de mercado, desarrollo de producto y diversificación.",
+            "Más novedad implica más riesgo.",
+            "El análisis FODA alimenta la elección."
+          ],
+          "errores_frecuentes": [
+            "Diversificar sin conocer el nuevo mercado.",
+            "Confundir desarrollo de mercado con desarrollo de producto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/2-2-the-role-of-marketing-in-the-strategic-planning-process",
+            "seccion": "2.2 The Role of Marketing in the Strategic Planning Process"
+          }
+        },
+        {
+          "id": "mk-plan-marketing",
+          "nombre": "Propósito y estructura del plan de marketing",
+          "explicacion": "El plan de marketing es el documento que organiza cómo se alcanzarán los objetivos comerciales en un período. Suele incluir un resumen ejecutivo, la descripción de la empresa y su misión, el análisis de la industria, de la competencia y del cliente (con perfiles o buyer personas), el mercado meta y el posicionamiento, los objetivos, las estrategias y tácticas de la mezcla de marketing, el presupuesto y las métricas de control. Es una guía viva: se revisa con los resultados.",
+          "ejemplo": "El plan anual de una heladería artesanal define como mercado meta a familias jóvenes de su barrio, fija el objetivo de subir las ventas de USD 60.000 a 69.000 (15 %), asigna USD 3.000 de presupuesto a redes sociales y degustaciones, y revisa cada mes las ventas por canal.",
+          "puntos_clave": [
+            "Análisis, objetivos, estrategias, presupuesto y control.",
+            "Define mercado meta y posicionamiento.",
+            "Se revisa con los resultados."
+          ],
+          "errores_frecuentes": [
+            "Hacer un plan sin presupuesto ni responsables.",
+            "Escribir el plan y no volver a revisarlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/2-3-purpose-and-structure-of-the-marketing-plan",
+            "seccion": "2.3 Purpose and Structure of the Marketing Plan"
+          }
+        },
+        {
+          "id": "mk-metricas-plan",
+          "nombre": "Indicadores clave para medir el plan de marketing",
+          "explicacion": "Los indicadores clave de desempeño (KPI) muestran si el plan de marketing avanza hacia sus objetivos. Hay indicadores de negocio (ventas, ingresos, margen), de participación de mercado (ventas de la empresa sobre las ventas totales del mercado), de clientes (costo de adquisición, retención, satisfacción, valor del cliente en el tiempo) y de atención (tiempo de respuesta, reclamos resueltos). Conviene elegir pocos indicadores, ligados a los objetivos, y revisarlos con una frecuencia fija.",
+          "ejemplo": "Una tienda en línea vendió USD 180.000 en un mercado local de USD 1.500.000: su participación es 180.000 ÷ 1.500.000 = 0,12, es decir, 12 %. Si gastó USD 9.000 en marketing y consiguió 300 clientes nuevos, su costo de adquisición es 9.000 ÷ 300 = 30 dólares por cliente.",
+          "puntos_clave": [
+            "Participación de mercado = ventas propias ÷ ventas del mercado.",
+            "Costo de adquisición = gasto de marketing ÷ clientes nuevos.",
+            "Pocos indicadores, ligados a los objetivos."
+          ],
+          "errores_frecuentes": [
+            "Medir muchas cosas sin relación con los objetivos.",
+            "Fijarse solo en las ventas e ignorar la retención."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/2-4-marketing-plan-progress-using-metrics",
+            "seccion": "2.4 Marketing Plan Progress Using Metrics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mk-servicios-relaciones",
+      "nombre": "Servicios, relaciones con el cliente y ética",
+      "orden": 6,
+      "descripcion": "Clasificación de los servicios, calidad del servicio, gestión de la relación con el cliente y marketing ético.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mk-servicios",
+          "nombre": "Qué distingue a los servicios",
+          "explicacion": "Un servicio es una actividad o beneficio que no da propiedad sobre algo físico: un corte de cabello, una asesoría contable, un viaje. Los servicios son intangibles (no se pueden ver ni probar antes de comprarlos), inseparables (se producen y consumen al mismo tiempo), variables (dependen de quién los presta y cuándo) y perecederos (una habitación de hotel vacía hoy no se vende mañana). Pueden clasificarse según dependan más de las personas o de los equipos. Por eso su marketing cuida la evidencia física, la capacitación del personal y la gestión de la demanda.",
+          "ejemplo": "Un hotel de Baños tiene 40 habitaciones. Un martes ocupa 22: las 40 − 22 = 18 habitaciones vacías de esa noche se pierden para siempre. Por eso ofrece tarifas más bajas entre semana para atraer a más huéspedes.",
+          "puntos_clave": [
+            "Intangibles, inseparables, variables y perecederos.",
+            "Basados en personas o en equipos.",
+            "Gestionar la demanda es clave por su caducidad."
+          ],
+          "errores_frecuentes": [
+            "Promocionar un servicio como si fuera un producto físico.",
+            "Ignorar el papel del personal en la experiencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/11-1-classification-of-services",
+            "seccion": "11.1 Classification of Services"
+          }
+        },
+        {
+          "id": "mk-brechas-servicio",
+          "nombre": "Calidad del servicio: el modelo de brechas",
+          "explicacion": "El modelo de brechas explica por qué un servicio decepciona: hay una diferencia entre lo que el cliente espera y lo que percibe que recibió. Esa brecha final surge de otras: no saber qué espera el cliente, no traducirlo en estándares de servicio, no cumplir esos estándares al prestar el servicio y prometer en la comunicación más de lo que se entrega. Para medir la calidad se usan dimensiones como confiabilidad, seguridad, aspectos tangibles, empatía y capacidad de respuesta.",
+          "ejemplo": "Una clínica promete en su publicidad «atención sin esperas», pero sus pacientes esperan en promedio 35 minutos frente a los 10 que esperaban. La brecha de 35 − 10 = 25 minutos nace de prometer en la comunicación más de lo que el servicio entrega.",
+          "puntos_clave": [
+            "Calidad percibida = lo recibido frente a lo esperado.",
+            "Brechas de conocimiento, estándares, entrega y comunicación.",
+            "Confiabilidad, seguridad, tangibles, empatía y respuesta."
+          ],
+          "errores_frecuentes": [
+            "Prometer en la publicidad más de lo que se puede cumplir.",
+            "Medir la calidad solo con indicadores internos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality",
+            "seccion": "11.3 The Gap Model of Service Quality"
+          }
+        },
+        {
+          "id": "mk-crm",
+          "nombre": "Gestión de la relación con el cliente (CRM)",
+          "explicacion": "La gestión de la relación con el cliente busca conservar y fortalecer la relación con los clientes rentables, no solo conseguir clientes nuevos, porque retener suele costar menos que atraer. Se apoya en información de cada cliente (compras, preferencias, contactos con la empresa) registrada en un sistema CRM, que permite personalizar ofertas, anticipar necesidades y medir la lealtad. El objetivo es aumentar el valor de los clientes a lo largo del tiempo.",
+          "ejemplo": "Una óptica registra la fecha del último examen de cada cliente y les envía un recordatorio al cumplirse el año. De 500 recordatorios enviados, 140 clientes regresan: una tasa de retorno de 140 ÷ 500 = 0,28, es decir, 28 %.",
+          "puntos_clave": [
+            "Retener clientes cuesta menos que atraerlos.",
+            "Datos del cliente para personalizar.",
+            "Medir lealtad y retención."
+          ],
+          "errores_frecuentes": [
+            "Comprar un software CRM sin una estrategia de relación.",
+            "Usar los datos de los clientes sin su consentimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/1-6-customer-relationship-management-crm",
+            "seccion": "1.6 Customer Relationship Management (CRM)"
+          }
+        },
+        {
+          "id": "mk-etico",
+          "nombre": "Marketing ético",
+          "explicacion": "El marketing ético aplica principios de honestidad, responsabilidad y respeto en todas las decisiones comerciales: no hacer afirmaciones falsas o engañosas, no explotar a públicos vulnerables, respetar la privacidad y pedir permiso antes de usar los datos de las personas, y asumir la responsabilidad por los efectos de los productos. Además de ser lo correcto, construye confianza, que es uno de los activos más valiosos de una marca. En Ecuador, la protección de datos personales está regulada por la Ley Orgánica de Protección de Datos Personales.",
+          "ejemplo": "Una tienda en línea pregunta a sus clientes si desean recibir ofertas por correo en lugar de suscribirlos automáticamente. De 2.000 compradores, 900 aceptan: una base más pequeña, pero de personas que quieren recibir sus mensajes.",
+          "puntos_clave": [
+            "Veracidad en los mensajes.",
+            "Respeto a la privacidad y consentimiento.",
+            "La confianza es un activo de la marca."
+          ],
+          "errores_frecuentes": [
+            "Usar letra pequeña para ocultar condiciones.",
+            "Comprar bases de datos de personas que no dieron su consentimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/1-7-ethical-marketing",
+            "seccion": "1.7 Ethical Marketing"
           }
         }
       ]
