@@ -680,5 +680,30 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "innovacion",
+    "nombre": "Creatividad, innovación y design thinking",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Creatividad e invención, técnicas de ideación, design thinking, resolución creativa de problemas, procesos lean y gestión de la tecnología y la innovación.",
+    "sinonimos": [
+      "pensamiento creativo",
+      "pensamiento creativo y design thinking",
+      "design thinking",
+      "innovación",
+      "gestión de la innovación"
+    ],
+    "herramientas": [
+      "foda",
+      "tarjetas",
+      "notas"
+    ],
+    "orden": 32,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

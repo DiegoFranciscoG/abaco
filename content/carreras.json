@@ -23,6 +23,14 @@
         "planes": 4
       },
       {
+        "materia": "innovacion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 2
+      },
+      {
         "materia": "matematica-gestion",
         "ciclo": 1,
         "ciclos": [
@@ -209,11 +217,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Pensamiento Creativo",
-        "ciclo": 1,
-        "planes": 2
-      },
       {
         "nombre": "Economía Popular y Solidaria",
         "ciclo": 2,
@@ -903,6 +906,14 @@
         "planes": 2
       },
       {
+        "materia": "innovacion",
+        "ciclo": 1,
+        "ciclos": [
+          1
+        ],
+        "planes": 1
+      },
+      {
         "materia": "investigacion-mercados",
         "ciclo": 1,
         "ciclos": [
@@ -1083,11 +1094,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Pensamiento Creativo y Desing Thinking",
-        "ciclo": 1,
-        "planes": 1
-      },
       {
         "nombre": "Marco Legal del Marketing y Ciberseguridad",
         "ciclo": 3,
@@ -1650,6 +1656,14 @@
         "planes": 1
       },
       {
+        "materia": "innovacion",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
         "materia": "investigacion-mercados",
         "ciclo": 3,
         "ciclos": [
@@ -1743,16 +1757,6 @@
       },
       {
         "nombre": "Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Design Thinking",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Innovación",
         "ciclo": 3,
         "planes": 1
       },

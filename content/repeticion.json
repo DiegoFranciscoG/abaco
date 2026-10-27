@@ -200,6 +200,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Innovación",
+    "carreras": 3,
+    "planes": 4,
+    "ciclo_habitual": 1,
+    "materia": "innovacion",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Práctica Tributaria",
     "carreras": 3,
     "planes": 4,

@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (31 completas de 31)
+## Estado por materia (32 completas de 32)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -34,6 +34,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Marketing | 4 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Planificación y dirección estratégica | 4 de 7 | completa | 5 de 5 | 20 | 0 de 0 | 100 % | — |
 | Contabilidad financiera (NIIF) | 3 de 7 | completa | 6 de 6 | 25 | 7 de 7 | 100 % | — |
+| Creatividad, innovación y design thinking | 3 de 7 | completa | 5 de 5 | 20 | 0 de 0 | 100 % | — |
 | Ética profesional | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Finanzas internacionales | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Gestión del talento humano | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
@@ -76,6 +77,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Ética del IFAC | 3 | 6 | 5 | Ética profesional |
 | Contabilidad Financiera | 3 | 4 | 1 | Contabilidad financiera (NIIF) |
 | Finanzas Internacionales | 3 | 4 | 7 | Finanzas internacionales |
+| Innovación | 3 | 4 | 1 | Creatividad, innovación y design thinking |
 | Práctica Tributaria (práctica o titulación) | 3 | 4 | 2 | Tributación |
 | Práctica Laboral (práctica o titulación) | 3 | 3 | 7 | no aplica |
 | Unidad de Integración Curricular (práctica o titulación) | 3 | 3 | 7 | no aplica |
@@ -100,7 +102,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 ### Administración de empresas (4 planes)
 
-- **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Pensamiento Creativo.
+- **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Legislación laboral (completa, 6 de 6 unidades) · pendientes: Economía Popular y Solidaria.
 - **3.º ciclo**: en ÁBACO: Marketing (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
@@ -133,7 +135,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 ### Mercadotecnia (2 planes)
 
-- **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Publicidad y comunicación comercial (completa, 5 de 5 unidades) · pendientes: Pensamiento Creativo y Desing Thinking.
+- **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Publicidad y comunicación comercial (completa, 5 de 5 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · sin pendientes.
 - **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Marco Legal del Marketing y Ciberseguridad, Marketing Sostenible, Metodos Cuantitativos.
 - **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · pendientes: Business English, Businness Intelligence.
@@ -168,7 +170,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Tributación (completa, 6 de 6 unidades) · pendientes: Desarrollo de Habilidades Blandas 1: Inteligencia Emocional y Autogestión, Herramientas de IA para la Gestión Emprendedora.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Desarrollo de Habilidades Blandas 2: Comunicación Efectiva y Trabajo Colaborativo, IA Aplicada para la Gestión Empresarial y Emprendimiento.
-- **3.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · pendientes: Business Intelligence, Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas, Design Thinking, Innovación.
+- **3.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · pendientes: Business Intelligence, Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas.
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Big Data y Analítica para Toma de Decisiones, Desarrollo de Habilidades Blandas 4: Liderazgo Emprendedor, Gestión de Equipos y Manejo de Conflictos, Gestión de Operaciones.
 - **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Gestión de la Producción.
 - **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Desarrollo de Habilidades Blandas 6: Negociación, Ventas Relacionales y Networking Básico, Supply Chain Management.
@@ -187,6 +189,7 @@ Carreras: Administración de empresas, Contabilidad y auditoría, Economía, Mer
 - Ética profesional: completa, avance 100 %.
 - Fundamentos de administración: completa, avance 100 %.
 - Informática para la gestión: completa, avance 100 %.
+- Creatividad, innovación y design thinking: completa, avance 100 %.
 - Investigación de mercados: completa, avance 100 %.
 - Marketing: completa, avance 100 %.
 - Matemática para la gestión: completa, avance 100 %.
@@ -194,4 +197,4 @@ Carreras: Administración de empresas, Contabilidad y auditoría, Economía, Mer
 - Microeconomía: completa, avance 100 %.
 - Publicidad y comunicación comercial: completa, avance 100 %.
 
-Asignaturas de ese primer ciclo que ÁBACO no tiene todavía: Álgebra Lineal, Fundamentos de Programación, Historia Económica, Pensamiento Creativo, Pensamiento Creativo y Desing Thinking.
+Asignaturas de ese primer ciclo que ÁBACO no tiene todavía: Álgebra Lineal, Fundamentos de Programación, Historia Económica.

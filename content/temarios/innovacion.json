@@ -1,0 +1,471 @@
+{
+  "materia": "innovacion",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "in-creatividad",
+      "nombre": "Creatividad, innovación e invención",
+      "orden": 1,
+      "descripcion": "Diferencias entre creatividad, innovación e invención, etapas de la creatividad, técnicas de ideación y estilos para resolver problemas.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "in-conceptos",
+          "nombre": "Creatividad, innovación e invención: cómo se relacionan",
+          "explicacion": "Se puede pensar en la creatividad como la materia prima: ideas originales. La innovación transforma esa creatividad en algo con un propósito funcional, a menudo para eliminar un problema del cliente o satisfacer una necesidad. La invención es una creación que deja un impacto duradero. Para patentar una invención, en general debe ser nueva, útil y no obvia, y demostrarse que funciona; cada país tiene su oficina de patentes que lo decide.",
+          "ejemplo": "Imaginar una mochila que cargue el celular es creatividad; integrar un panel solar y una batería en una mochila que se vende a estudiantes es innovación; desarrollar una tela solar flexible nueva, útil y no obvia que otros adopten por años sería una invención patentable.",
+          "puntos_clave": [
+            "Creatividad: ideas originales.",
+            "Innovación: ideas con propósito funcional.",
+            "Invención: creación de impacto duradero; patente si es nueva, útil y no obvia."
+          ],
+          "errores_frecuentes": [
+            "Usar creatividad e innovación como sinónimos.",
+            "Creer que toda innovación es patentable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/4-3-developing-ideas-innovations-and-inventions",
+            "seccion": "4.3 Developing Ideas, Innovations, and Inventions"
+          }
+        },
+        {
+          "id": "in-etapas-creatividad",
+          "nombre": "Las cinco etapas de la creatividad",
+          "explicacion": "La creatividad y el pensamiento lateral pueden ser innatos, pero se perfeccionan con práctica. Un modelo de creatividad aplicada, basado en el trabajo de Graham Wallas, tiene cinco etapas: preparación, que consiste en investigar el campo de interés, abrir la mente y sumergirse en materiales y experiencias; incubación, cuando la idea madura sin esfuerzo consciente; iluminación o insight, el momento en que aparece la solución; evaluación, en la que se juzga si la idea vale la pena, y elaboración, en la que se desarrolla y concreta.",
+          "ejemplo": "Una diseñadora de modas investiga tejidos andinos (preparación), deja reposar el tema varios días (incubación), al ver un mercado se le ocurre combinar colores de la cultura cañari con cortes urbanos (insight), lo discute con su equipo (evaluación) y diseña la colección (elaboración).",
+          "puntos_clave": [
+            "Preparación, incubación, insight, evaluación y elaboración.",
+            "La creatividad se entrena.",
+            "Sin preparación es difícil crear."
+          ],
+          "errores_frecuentes": [
+            "Esperar la inspiración sin investigar antes.",
+            "Saltar la evaluación por entusiasmo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/4-3-developing-ideas-innovations-and-inventions",
+            "seccion": "4.3 Developing Ideas, Innovations, and Inventions"
+          }
+        },
+        {
+          "id": "in-herramientas-ideacion",
+          "nombre": "Prácticas de ideación: los seis sombreros para pensar",
+          "explicacion": "Existen prácticas probadas para generar ideas. Además del ejercicio de diseño centrado en las personas, una herramienta muy usada es el método de los seis sombreros para pensar: cada participante adopta un solo modo de pensamiento a la vez, lo que libera de considerar otros enfoques y obliga a mirar el problema desde ángulos distintos, como los hechos, las emociones, los riesgos, los beneficios, la creatividad y el control del proceso. La lluvia de ideas también puede hacerse de forma creativa, más allá de escribir en una pizarra.",
+          "ejemplo": "Un equipo que piensa cómo reducir el desperdicio de comida en un restaurante dedica cinco minutos a cada «sombrero»: primero solo datos, luego solo emociones de los clientes, después solo riesgos, beneficios e ideas locas, y al final ordena las conclusiones.",
+          "puntos_clave": [
+            "Seis sombreros: un modo de pensar a la vez.",
+            "Mirar el problema desde varios ángulos.",
+            "Lluvia de ideas más allá de la pizarra."
+          ],
+          "errores_frecuentes": [
+            "Criticar las ideas mientras se generan.",
+            "Dejar que una sola voz domine la sesión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/4-1-tools-for-creativity-and-innovation",
+            "seccion": "4.1 Tools for Creativity and Innovation"
+          }
+        },
+        {
+          "id": "in-estilos-problemas",
+          "nombre": "Estilos de resolución de problemas: adaptativo e innovador",
+          "explicacion": "La resolución de problemas emprendedora usa la innovación y soluciones creativas para cerrar la brecha entre lo que existe y lo que podría existir. Hay dos modelos reconocidos, medidos por el inventario de adaptación-innovación de Michael Kirton (KAI) según la originalidad, la conformidad y la eficiencia de cada persona. El estilo adaptativo mejora lo existente dentro de las reglas; el innovador cuestiona la definición del problema y los supuestos, busca caminos nuevos y hace las cosas de manera diferente con pensamiento fuera de lo común.",
+          "ejemplo": "Ante la demora en la atención, un administrador adaptativo reorganiza los turnos del personal; uno innovador cuestiona si el cliente necesita venir y crea un servicio de atención en línea.",
+          "puntos_clave": [
+            "Cerrar la brecha entre lo que existe y lo posible.",
+            "Inventario KAI de Kirton.",
+            "Adaptativo mejora; innovador cuestiona supuestos."
+          ],
+          "errores_frecuentes": [
+            "Creer que un estilo es siempre mejor que el otro.",
+            "Formar equipos con un solo estilo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-1-problem-solving-to-find-entrepreneurial-solutions",
+            "seccion": "6.1 Problem Solving to Find Entrepreneurial Solutions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-design-thinking",
+      "nombre": "Design thinking y resolución creativa de problemas",
+      "orden": 2,
+      "descripcion": "Origen y definición del design thinking, sus cinco pasos, sus espacios y el proceso de resolución creativa de problemas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-dt-concepto",
+          "nombre": "Qué es el design thinking",
+          "explicacion": "David Kelley, fundador de la escuela de diseño de Stanford y cofundador de la empresa de diseño IDEO, es considerado el originador del design thinking en los negocios: al pasar de diseñar productos a diseñar experiencias de consumo, empezó a hablar de «pensamiento» de diseño. Se define como un enfoque colaborativo y centrado en las personas para resolver problemas complejos con mentalidad de diseño. Orienta las decisiones de desarrollo según las necesidades del cliente, con un proceso guiado por la empatía, y hoy se aplica más allá de los productos: interacciones digitales, servicios, estrategia y políticas públicas.",
+          "ejemplo": "Un municipio usa design thinking para rediseñar el trámite de permisos de funcionamiento: observa a los comerciantes haciendo filas, entiende sus frustraciones y simplifica el proceso en línea.",
+          "puntos_clave": [
+            "Origen en IDEO y Stanford.",
+            "Centrado en las personas y colaborativo.",
+            "Se aplica a servicios, estrategia y políticas."
+          ],
+          "errores_frecuentes": [
+            "Reducir el design thinking a hacer prototipos bonitos.",
+            "Diseñar sin hablar con los usuarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-3-design-thinking",
+            "seccion": "6.3 Design Thinking"
+          }
+        },
+        {
+          "id": "in-dt-pasos",
+          "nombre": "Los cinco pasos del diseño centrado en las personas",
+          "explicacion": "La práctica de ideación de la escuela de diseño de Stanford tiene cinco partes: empatizar, definir el problema, idear soluciones (lluvia de ideas), prototipar y probar. La empatía es la capacidad de sentir lo que sienten otros y permite ver el problema con los ojos de quien lo vive. Definir el problema debe basarse en una observación honesta, racional y emocional. Luego se generan soluciones, se construye un prototipo y se prueba; después se vuelve a la empatía para verificar si la solución es viable y representa una oportunidad.",
+          "ejemplo": "Estudiantes que quieren mejorar el almuerzo en su facultad entrevistan a compañeros (empatizar), concluyen que el problema es el tiempo de espera (definir), proponen pedidos anticipados (idear), arman un formulario simple (prototipo) y lo prueban una semana con un bar (probar).",
+          "puntos_clave": [
+            "Empatizar, definir, idear, prototipar y probar.",
+            "La empatía inicia el proceso.",
+            "Ciclo que vuelve a la empatía."
+          ],
+          "errores_frecuentes": [
+            "Saltar a la solución sin definir el problema.",
+            "Probar el prototipo solo con el propio equipo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/4-1-tools-for-creativity-and-innovation",
+            "seccion": "4.1 Tools for Creativity and Innovation"
+          }
+        },
+        {
+          "id": "in-dt-espacios",
+          "nombre": "Los espacios del design thinking y el prototipado",
+          "explicacion": "El proceso de design thinking se organiza en tres espacios: inspiración, en el que las ideas surgen de explorar a las personas reales, sus necesidades y problemas; ideación, en el que se generan y desarrollan las ideas, y la implementación, en la que la solución llega al mercado. En la fase experimental se prueban versiones baratas y reducidas del producto con las funciones que resuelven los problemas identificados, internamente con los empleados (práctica llamada dogfooding) o externamente con clientes potenciales; después se aplican pruebas rigurosas al producto completo.",
+          "ejemplo": "Una empresa de software lanza una versión sencilla de su aplicación de inventarios solo para sus propios empleados (dogfooding), corrige errores y luego la prueba con diez tiendas antes de venderla al público.",
+          "puntos_clave": [
+            "Inspiración, ideación e implementación.",
+            "Prototipos baratos y reducidos.",
+            "Pruebas internas y con clientes."
+          ],
+          "errores_frecuentes": [
+            "Invertir mucho antes de probar.",
+            "Ignorar lo que dicen las pruebas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-3-design-thinking",
+            "seccion": "6.3 Design Thinking"
+          }
+        },
+        {
+          "id": "in-resolucion-creativa",
+          "nombre": "El proceso de resolución creativa de problemas",
+          "explicacion": "La creatividad se define como el desarrollo de ideas originales para resolver un problema, y su proceso no es aleatorio sino lógico. Tiene cinco pasos: aclarar, reconocer la brecha entre el estado actual y el deseado hablando con los clientes; idear, generar y detallar la mayor variedad de ideas sobre las causas y soluciones; desarrollar, probar la factibilidad de cada idea considerando costos y obstáculos; implementar, poner a prueba la solución con el cliente, y evaluar, valorar el resultado final y corregir lo necesario, un paso que los emprendedores suelen olvidar. El ciclo se repite hasta lograr una solución exitosa.",
+          "ejemplo": "Un agricultor pierde suelo por la lluvia: se aclara el problema visitando la finca, se idean varias soluciones, se descartan las costosas, se siembran franjas de pasto en una parcela de prueba y se evalúa la pérdida de suelo al final de la temporada.",
+          "puntos_clave": [
+            "Aclarar, idear, desarrollar, implementar y evaluar.",
+            "Proceso lógico y repetitivo.",
+            "No olvidar la evaluación."
+          ],
+          "errores_frecuentes": [
+            "Implementar sin evaluar la factibilidad.",
+            "Dar por terminado el proceso sin evaluar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-2-creative-problem-solving-process",
+            "seccion": "6.2 Creative Problem-Solving Process"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-lean",
+      "nombre": "Procesos lean y mejora continua",
+      "orden": 3,
+      "descripcion": "Seis Sigma, el proceso lean, sus fases y su uso para emprendimientos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-six-sigma",
+          "nombre": "Seis Sigma",
+          "explicacion": "Seis Sigma, desarrollada en Motorola en los años setenta y ochenta, es una metodología disciplinada y basada en datos para mejorar la capacidad de los procesos de una empresa. Ve todo trabajo como un proceso que puede definirse, medirse, analizarse, mejorarse y controlarse, usando herramientas cualitativas y cuantitativas. Al mejorar el desempeño y reducir la variación de los procesos, disminuye los defectos y mejora las utilidades, la moral de los empleados y la calidad. Aunque la usan sobre todo empresas grandes, muchas de sus ideas encajan en el modelo lean.",
+          "ejemplo": "Una embotelladora mide cuántas botellas salen con la tapa mal sellada, analiza las causas, ajusta la máquina, controla diariamente el resultado y reduce los defectos de 2 % a 0,3 %.",
+          "puntos_clave": [
+            "Definir, medir, analizar, mejorar y controlar.",
+            "Basada en datos.",
+            "Menos variación, menos defectos."
+          ],
+          "errores_frecuentes": [
+            "Mejorar sin medir primero.",
+            "Aplicar herramientas complejas a problemas simples."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-4-lean-processes",
+            "seccion": "6.4 Lean Processes"
+          }
+        },
+        {
+          "id": "in-lean-proceso",
+          "nombre": "El proceso lean",
+          "explicacion": "Toyota impulsó el proceso lean en los años ochenta; aunque se lo conoce como manufactura esbelta, va más allá de la manufactura. Es un método sistemático para maximizar la mejora continua y minimizar el material sobrante o sin uso en un proceso. En los emprendimientos sirve porque el producto inicial casi nunca es el definitivo: el emprendedor debe observar, medir y ajustar continuamente en lugar de confiar en sus supuestos. Visualizar el proceso, por ejemplo en una pizarra, ayuda a ver dónde se pierden tiempo y recursos.",
+          "ejemplo": "Un huerto urbano dibuja su proceso de deshierbe y descubre que los trabajadores hacen varios viajes a la bodega por herramientas; las guardan juntas en el huerto y reducen el tiempo perdido.",
+          "puntos_clave": [
+            "Mejora continua.",
+            "Minimizar desperdicios.",
+            "Visualizar el proceso para mejorarlo."
+          ],
+          "errores_frecuentes": [
+            "Creer que lean solo sirve para fábricas.",
+            "Confiar en supuestos sin observar el proceso real."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-4-lean-processes",
+            "seccion": "6.4 Lean Processes"
+          }
+        },
+        {
+          "id": "in-lean-fases",
+          "nombre": "Fases de la resolución de problemas lean",
+          "explicacion": "La resolución de problemas lean avanza por fases que van de la observación a la evaluación. En la observación, el emprendedor estudia el reto y anota todos sus aspectos, hace preguntas e investiga qué cambio se necesita y por qué; la retroalimentación es muy importante en esta fase. En la fase de valoración (assessment), experimenta y analiza el posible proceso: cada paso de la solución debe agregar valor, resolver el problema y dar flexibilidad, o sobra; aquí se desarrolla un prototipo y se pregunta al cliente si satisface sus necesidades. Al final, la evaluación revisa si el cambio cumplió su propósito, y el ciclo se repite si hace falta.",
+          "ejemplo": "Una comunidad pide a un grupo de emprendedores reducir la obesidad infantil en una escuela: observan qué comen los niños y descubren que cambiar todo el menú es muy caro y que en casa comen comida rápida; en la valoración prueban cambios de bajo costo y piden la opinión de la escuela; luego evalúan los resultados.",
+          "puntos_clave": [
+            "Observación con mucha retroalimentación.",
+            "Valoración: cada paso debe agregar valor; prototipo.",
+            "Evaluación y repetición del ciclo."
+          ],
+          "errores_frecuentes": [
+            "Proponer soluciones antes de observar.",
+            "No medir si el cambio funcionó."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-entre",
+            "url": "https://openstax.org/books/entrepreneurship/pages/6-4-lean-processes",
+            "seccion": "6.4 Lean Processes"
+          }
+        },
+        {
+          "id": "in-economia-innovacion",
+          "nombre": "Por qué el mercado invierte poco en innovación",
+          "explicacion": "La competencia incentiva a innovar porque la empresa innovadora gana una ventaja temporal y utilidades mayores mientras los rivales la alcanzan. Pero si otros pueden copiar rápido la idea, la competencia desalienta la innovación, sobre todo cuando la investigación es cara, larga y puede fracasar, como al desarrollar un medicamento. La nueva tecnología genera externalidades positivas: beneficios sociales que superan los beneficios privados de quien la crea, por lo que el mercado tiende a invertir menos de lo que convendría a la sociedad.",
+          "ejemplo": "Una empresa invierte en una semilla resistente a la sequía; si otros productores pueden reproducirla sin pagar, la empresa recupera poco de su inversión aunque la sociedad gane mucho con cosechas más seguras.",
+          "puntos_clave": [
+            "Ventaja temporal del innovador.",
+            "La imitación rápida desalienta la innovación.",
+            "Beneficio social mayor que el privado."
+          ],
+          "errores_frecuentes": [
+            "Creer que la competencia siempre impulsa la innovación.",
+            "Ignorar el riesgo de fracaso de la investigación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/13-1-investments-in-innovation",
+            "seccion": "13.1 Investments in Innovation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-gestion-tecnologia",
+      "nombre": "Gestión de la tecnología y la innovación",
+      "orden": 4,
+      "descripcion": "Importancia de gestionar la tecnología y la innovación, capacidades dinámicas y fuentes externas e internas de innovación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-mti-importancia",
+          "nombre": "Por qué gestionar la tecnología y la innovación",
+          "explicacion": "La gestión de la tecnología y la innovación es crítica para las organizaciones porque las innovaciones y las nuevas tecnologías han dado origen a estructuras organizativas y formas de trabajo nuevas. La revolución industrial trajo la estructura funcional cuando los negocios pasaron de talleres artesanales a grandes empresas como los ferrocarriles; hoy las tecnologías de la información llevan a estructuras en red, con personas que trabajan a distancia. Los nuevos productos también cambian la tecnología que usamos y cómo la usamos.",
+          "ejemplo": "Una consultora que trabajaba solo en oficinas adopta herramientas en la nube y pasa a equipos que colaboran a distancia desde varias ciudades: la tecnología cambió su estructura y su forma de trabajar.",
+          "puntos_clave": [
+            "La tecnología transforma las estructuras.",
+            "De la estructura funcional a las redes.",
+            "Nuevos productos cambian cómo trabajamos."
+          ],
+          "errores_frecuentes": [
+            "Adoptar tecnología sin cambiar la organización.",
+            "Ver la innovación como algo solo de laboratorios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-1-mti-its-importance-now-and-in-the-future",
+            "seccion": "18.1 MTI—Its Importance Now and In the Future"
+          }
+        },
+        {
+          "id": "in-capacidades-dinamicas",
+          "nombre": "Desarrollar innovación: agilidad y capacidades dinámicas",
+          "explicacion": "Para gestionar con éxito la tecnología y la innovación, la organización debe prepararse con agilidad, porque los cambios en productos y procesos implican riesgo e incertidumbre; debe equilibrar la eficiencia de corto plazo con la eficacia de largo plazo. Necesita capacidades dinámicas fuertes, lo que implica diseñar sistemas que detecten, evalúen y desarrollen oportunidades tecnológicas (o protejan de amenazas), identificar necesidades de comunicación y convertir datos en información a tiempo, y desarrollar a los empleados con capacitación y aprendizaje.",
+          "ejemplo": "Una cadena de farmacias crea un pequeño equipo que vigila nuevas tecnologías de salud, analiza los datos de ventas para detectar cambios de demanda y capacita al personal en telemedicina antes de que la competencia lo haga.",
+          "puntos_clave": [
+            "Agilidad frente a riesgo e incertidumbre.",
+            "Equilibrio entre eficiencia y eficacia.",
+            "Capacidades dinámicas: detectar, informar y aprender."
+          ],
+          "errores_frecuentes": [
+            "Sacrificar toda la eficiencia por innovar.",
+            "Tener datos sin convertirlos en información útil."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-2-developing-technology-and-innovation",
+            "seccion": "18.2 Developing Technology and Innovation"
+          }
+        },
+        {
+          "id": "in-fuentes-externas",
+          "nombre": "Fuentes externas de tecnología e innovación",
+          "explicacion": "Las fuentes externas, como adquirir tecnología o empresas, conviene usarlas cuando los productos o procesos de la empresa quedaron atrás de los competidores, cuando un nuevo entrante cambió la dinámica de la industria o cuando la empresa cree que su forma de hacer las cosas no tendrá éxito a largo plazo. Su gran ventaja es la velocidad: integrar una tecnología adquirida suele tomar mucho menos tiempo que descubrirla y llevarla al mercado; a menudo también son menos costosas, aunque tienen desventajas como la menor propiedad sobre el conocimiento.",
+          "ejemplo": "Un banco tradicional que se quedó atrás en pagos móviles compra una fintech local en lugar de desarrollar su propia aplicación desde cero, y lanza el servicio en meses.",
+          "puntos_clave": [
+            "Útiles al quedarse atrás o ante nuevos entrantes.",
+            "Ventaja: velocidad y menor costo.",
+            "Desventaja: menos control del conocimiento."
+          ],
+          "errores_frecuentes": [
+            "Comprar tecnología sin capacidad de integrarla.",
+            "Depender siempre de terceros para innovar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-3-external-sources-of-technology-and-innovation",
+            "seccion": "18.3 External Sources of Technology and Innovation"
+          }
+        },
+        {
+          "id": "in-fuentes-internas",
+          "nombre": "Fuentes internas: investigación y desarrollo",
+          "explicacion": "La fuente interna más común es la investigación y desarrollo (I+D): buscar y desarrollar nuevas tecnologías, productos o procesos con esfuerzos creativos dentro de la empresa. Sus beneficios son la propiedad de la tecnología, protegida legalmente con patentes y marcas, y el conocimiento ganado, que da ventaja para la siguiente generación tecnológica, como la ventaja de ser el primero en el mercado. Sus desventajas son que suele ser más lenta y costosa y puede verse afectada por cambios del entorno.",
+          "ejemplo": "Una empresa ecuatoriana de alimentos instala un laboratorio propio para desarrollar snacks de frutas nativas; patenta su proceso de deshidratado y gana años de ventaja, aunque la inversión tarda en recuperarse.",
+          "puntos_clave": [
+            "I+D dentro de la empresa.",
+            "Propiedad protegida y ventaja del primero.",
+            "Más lenta y costosa."
+          ],
+          "errores_frecuentes": [
+            "Esperar resultados rápidos de la I+D.",
+            "Desarrollar sin proteger la propiedad intelectual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-4-internal-sources-of-technology-and-innovation",
+            "seccion": "18.4 Internal Sources of Technology and Innovation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-habilidades",
+      "nombre": "Habilidades y políticas para innovar",
+      "orden": 5,
+      "descripcion": "La propuesta de valor del emprendedor, las habilidades para gestionar la innovación y las políticas públicas que la fomentan.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-emprender-innovar",
+          "nombre": "Emprendimiento y propuesta de valor en la innovación",
+          "explicacion": "Las actividades emprendedoras suelen traer novedad en productos o procesos, y para la empresa emprendedora la propuesta de valor es clave: responde cómo ganará dinero con lo que ofrece y cómo se posicionará en el mercado. Los negocios nuevos son más flexibles y ágiles, y el emprendedor está muy comprometido con su éxito; sin embargo, iniciar un negocio es la forma más riesgosa de introducir productos y procesos nuevos, y la tasa de fracaso es alta.",
+          "ejemplo": "Una emprendedora crea una plataforma para alquilar herramientas entre vecinos: su propuesta de valor explica que cobrará una comisión por alquiler y que se diferencia por la confianza y la cercanía frente a las ferreterías.",
+          "puntos_clave": [
+            "Propuesta de valor: cómo ganar y cómo posicionarse.",
+            "Agilidad de los negocios nuevos.",
+            "Alto riesgo y tasa de fracaso."
+          ],
+          "errores_frecuentes": [
+            "Tener una idea novedosa sin modelo para ganar dinero.",
+            "Subestimar el riesgo de empezar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-5-management-entrepreneurship-skills-for-technology-and-innovation",
+            "seccion": "18.5 Management Entrepreneurship Skills for Technology and Innovation"
+          }
+        },
+        {
+          "id": "in-habilidades-mti",
+          "nombre": "Habilidades para gestionar la tecnología y la innovación",
+          "explicacion": "Toda organización que quiera innovar debe desarrollar dos capacidades: gestionar los procesos de aprendizaje y conocimiento, y analizar y pronosticar tendencias futuras. A nivel individual son críticos el liderazgo y la capacidad de seguir a otros, y el pensamiento creativo. A nivel organizativo, importa cómo se combinan personas y recursos para crear valor, es decir, construir capacidades que pueden dar ventaja competitiva. Para gestionar el conocimiento hacen falta sistemas que recojan datos y los conviertan en información.",
+          "ejemplo": "Una empresa de software documenta lo aprendido en cada proyecto en una base compartida, revisa cada trimestre las tendencias tecnológicas y forma líderes de equipo que impulsan ideas nuevas.",
+          "puntos_clave": [
+            "Aprendizaje, conocimiento y pronóstico de tendencias.",
+            "Liderazgo y pensamiento creativo.",
+            "Construir capacidades organizativas."
+          ],
+          "errores_frecuentes": [
+            "Perder lo aprendido cuando alguien se va.",
+            "Innovar sin mirar las tendencias."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-6-skills-needed-for-mti",
+            "seccion": "18.6 Skills Needed for MTI"
+          }
+        },
+        {
+          "id": "in-politicas-innovacion",
+          "nombre": "Cómo los gobiernos fomentan la innovación",
+          "explicacion": "Varias políticas públicas aumentan los incentivos para innovar: garantizar los derechos de propiedad intelectual, apoyar los costos de investigación y desarrollo, y promover la investigación cooperativa entre universidades y empresas. Las patentes dan al inventor el derecho exclusivo de fabricar, usar o vender su invención por un tiempo limitado, y los derechos de autor protegen obras literarias, musicales, audiovisuales e imágenes. Así el innovador puede recuperar su inversión, aunque la exclusividad también limita temporalmente la competencia.",
+          "ejemplo": "Un gobierno financia un fondo concursable para que universidades y empresas investiguen juntas mejoras en el cultivo de cacao, y las empresas pueden patentar los procesos que resulten.",
+          "puntos_clave": [
+            "Propiedad intelectual: patentes y derechos de autor.",
+            "Apoyo público a la I+D.",
+            "Investigación cooperativa universidad-empresa."
+          ],
+          "errores_frecuentes": [
+            "Creer que las patentes duran para siempre.",
+            "Ignorar el costo social de la exclusividad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/13-2-how-governments-can-encourage-innovation",
+            "seccion": "13.2 How Governments Can Encourage Innovation"
+          }
+        },
+        {
+          "id": "in-futuro-innovacion",
+          "nombre": "Gestionar hoy para la tecnología del futuro",
+          "explicacion": "Para seguir el ritmo de la tecnología, las personas de la empresa deben vigilar lo que hacen los competidores y qué inventos o descubrimientos podrían desplazar a su industria: es un proceso externo de exploración del entorno, que informa sobre tendencias generales y oportunidades para crear valor. Internamente, la empresa debe entender sus tareas y procesos y las habilidades que ya tiene. Con escenarios futuros posibles y un inventario de recursos y capacidades, quienes gestionan la innovación responden tres preguntas clave: ¿dónde estamos?, ¿dónde queremos estar? y ¿qué necesitamos para llegar?",
+          "ejemplo": "Una cooperativa de ahorro que hoy atiende sobre todo en ventanilla prepara su sistema y capacita a su personal para servicios digitales, anticipando que sus socios jóvenes los exigirán en pocos años.",
+          "puntos_clave": [
+            "Explorar el entorno: competidores y descubrimientos.",
+            "Conocer procesos y habilidades internas.",
+            "¿Dónde estamos, dónde queremos estar y qué necesitamos?"
+          ],
+          "errores_frecuentes": [
+            "Esperar a que la tecnología llegue para prepararse.",
+            "Planificar solo con lo que funciona hoy."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/18-7-managing-now-for-future-technology-and-innovation",
+            "seccion": "18.7 Managing Now for Future Technology and Innovation"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -4769,5 +4769,152 @@
       "difficult, specific, and accepted by the employee",
       "feedback"
     ]
+  },
+  {
+    "id": "in-conceptos",
+    "palabras": [
+      "you might think of creativity as raw",
+      "novel, useful, and nonobvious"
+    ]
+  },
+  {
+    "id": "in-etapas-creatividad",
+    "palabras": [
+      "preparation incubation insight evaluation elaboration",
+      "graham wallas"
+    ]
+  },
+  {
+    "id": "in-herramientas-ideacion",
+    "palabras": [
+      "six thinking hats",
+      "brainstorming"
+    ]
+  },
+  {
+    "id": "in-estilos-problemas",
+    "palabras": [
+      "entrepreneurial problem solving is the process of using innovation and creative solutions",
+      "adaptive and innovative",
+      "michael kirton"
+    ]
+  },
+  {
+    "id": "in-dt-concepto",
+    "palabras": [
+      "david kelley",
+      "ideo",
+      "a human-centered and collaborative approach to problem-solving"
+    ]
+  },
+  {
+    "id": "in-dt-pasos",
+    "palabras": [
+      "accessing and expressing empathy, defining the problem, ideating solutions (brainstorming), prototyping, and testing"
+    ]
+  },
+  {
+    "id": "in-dt-espacios",
+    "palabras": [
+      "inspiration, ideation, and implementation",
+      "dogfooding"
+    ]
+  },
+  {
+    "id": "in-resolucion-creativa",
+    "palabras": [
+      "creativity as the development of original ideas to solve an issue",
+      "clarify, ideate, develop, implement, and evaluate"
+    ]
+  },
+  {
+    "id": "in-six-sigma",
+    "palabras": [
+      "six sigma methodology",
+      "defined, measured, analyzed, improved and controlled"
+    ]
+  },
+  {
+    "id": "in-lean-proceso",
+    "palabras": [
+      "toyota pioneered the lean process",
+      "continuous improvement",
+      "lean manufacturing"
+    ]
+  },
+  {
+    "id": "in-lean-fases",
+    "palabras": [
+      "observation is the phase",
+      "feedback is extremely important in this phase",
+      "assessment , the phase in which the entrepreneur experiments"
+    ]
+  },
+  {
+    "id": "in-economia-innovacion",
+    "palabras": [
+      "positive externalities of new technology",
+      "private benefits and social benefits"
+    ]
+  },
+  {
+    "id": "in-mti-importancia",
+    "palabras": [
+      "management of technology and innovation is critical",
+      "functional structure"
+    ]
+  },
+  {
+    "id": "in-capacidades-dinamicas",
+    "palabras": [
+      "agility",
+      "dynamic capabilities"
+    ]
+  },
+  {
+    "id": "in-fuentes-externas",
+    "palabras": [
+      "external processes",
+      "speed"
+    ]
+  },
+  {
+    "id": "in-fuentes-internas",
+    "palabras": [
+      "research and development (r&d)",
+      "patents and trademarks",
+      "slower and more costly"
+    ]
+  },
+  {
+    "id": "in-emprender-innovar",
+    "palabras": [
+      "value proposition",
+      "riskiest approach"
+    ]
+  },
+  {
+    "id": "in-habilidades-mti",
+    "palabras": [
+      "manage learning and knowledge processes",
+      "analyze and forecast future trends",
+      "creative thinking"
+    ]
+  },
+  {
+    "id": "in-politicas-innovacion",
+    "palabras": [
+      "intellectual property rights",
+      "patents",
+      "copyright",
+      "cooperative research"
+    ]
+  },
+  {
+    "id": "in-futuro-innovacion",
+    "palabras": [
+      "scanning the environment",
+      "where are we now? where do we want to be? what do we need to move from here to there?"
+    ]
   }
 ]
