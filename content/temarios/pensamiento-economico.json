@@ -1,0 +1,492 @@
+{
+  "materia": "pensamiento-economico",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pens-origenes",
+      "nombre": "Sistemas económicos y orígenes del pensamiento",
+      "orden": 1,
+      "descripcion": "Economías tradicionales, de mando, de mercado y mixtas; los clásicos griegos; el contrato social; y el liberalismo clásico.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "pens-sistemas",
+          "nombre": "Economías tradicionales, de mando, de mercado y mixtas",
+          "explicacion": "Las sociedades organizan su economía al menos de tres formas. La economía tradicional, la más antigua, hace las cosas como siempre se han hecho: los oficios pasan de padres a hijos y la mayoría cultiva con métodos tradicionales. En la economía de mando, el esfuerzo económico se dedica a metas fijadas por un gobernante o una clase dirigente, como ocurrió en el antiguo Egipto con las pirámides. La economía de mercado tiene una estructura descentralizada: el mercado reúne a compradores y vendedores. En la práctica las economías son mixtas, con distintos grados de intervención del gobierno. La globalización amplía las conexiones culturales, políticas y económicas entre las personas del mundo.",
+          "ejemplo": "En una comunidad andina donde las familias cultivan como lo hicieron sus abuelos conviven rasgos de economía tradicional; al mismo tiempo, venden en el mercado de la ciudad y el Estado regula precios de algunos bienes: es una economía mixta.",
+          "puntos_clave": [
+            "Tradicional, de mando y de mercado.",
+            "Las economías reales son mixtas.",
+            "La globalización amplía las conexiones."
+          ],
+          "errores_frecuentes": [
+            "Creer que existen economías de mercado puras.",
+            "Confundir economía de mando con cualquier intervención estatal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/1-4-how-to-organize-economies-an-overview-of-economic-systems",
+            "seccion": "1.4 How to Organize Economies: An Overview of Economic Systems"
+          }
+        },
+        {
+          "id": "pens-clasicos-griegos",
+          "nombre": "Los orígenes clásicos: Sócrates, Platón y Aristóteles",
+          "explicacion": "La reflexión occidental sobre cómo organizar la vida en sociedad empieza en Atenas. Sócrates sostenía que las respuestas a las preguntas fundamentales deben buscarse con la razón, aceptando solo las ideas que resisten la crítica. Su discípulo Platón argumentó en La República que el poder político debía estar en manos de personas excepcionalmente capaces que conocen la verdadera naturaleza del mundo y aman la sabiduría, los filósofos. Aristóteles, a su vez, reflexionó sobre las formas de gobierno y la vida virtuosa en la comunidad política, y estas ideas siguen influyendo en el pensamiento político actual.",
+          "ejemplo": "Cuando hoy se debate si los cargos técnicos de un banco central deben ocuparlos expertos independientes, aparece una idea que ya discutía Platón: el poder en manos de quienes tienen más conocimiento.",
+          "puntos_clave": [
+            "Sócrates: la razón y la crítica.",
+            "Platón: gobierno de los sabios.",
+            "Aristóteles: formas de gobierno y vida en comunidad."
+          ],
+          "errores_frecuentes": [
+            "Pensar que estas ideas no influyen en debates actuales.",
+            "Atribuir a Sócrates ideas que solo conocemos por Platón sin aclararlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-1-the-classical-origins-of-western-political-ideologies",
+            "seccion": "3.1 The Classical Origins of Western Political Ideologies"
+          }
+        },
+        {
+          "id": "pens-contrato-social",
+          "nombre": "Leyes naturales y contrato social: Hobbes, Locke, Smith y Rousseau",
+          "explicacion": "En el siglo XVII Thomas Hobbes volvió a confiar en la razón humana para fundamentar el orden político, con las ideas de estado de naturaleza y contrato social. John Locke retomó esos conceptos, pero vio las leyes naturales como reglas morales descubribles por la razón y aplicables a todos, de las que nacen derechos naturales. Adam Smith llevó al comercio internacional el principio de Locke de que el libre intercambio genera prosperidad: propuso bajar aranceles y subsidios para que cada nación se especialice según su ventaja comparativa. Jean-Jacques Rousseau sostuvo que las personas nacen libres y con compasión, pero que el deseo de riqueza y estatus las encadena.",
+          "ejemplo": "Cuando un gobierno justifica la apertura comercial diciendo que cada país debe producir lo que hace mejor e intercambiar, está usando el argumento de Smith sobre la ventaja comparativa.",
+          "puntos_clave": [
+            "Estado de naturaleza y contrato social.",
+            "Locke: derechos naturales.",
+            "Smith: libre comercio y ventaja comparativa; Rousseau: libertad e igualdad."
+          ],
+          "errores_frecuentes": [
+            "Confundir las visiones de Hobbes y Locke sobre la naturaleza humana.",
+            "Reducir a Smith a un solo lema."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-2-the-laws-of-nature-and-the-social-contract",
+            "seccion": "3.2 The Laws of Nature and the Social Contract"
+          }
+        },
+        {
+          "id": "pens-liberalismo",
+          "nombre": "Variedades del liberalismo: de Mill a Hayek",
+          "explicacion": "El liberalismo clásico, surgido en el siglo XVIII, combina derechos naturales, gobierno limitado y capitalismo, entendido como un sistema basado en la propiedad privada y la libertad de invertir para obtener ganancias; defiende la libertad, pero no el libertinaje que destruye los derechos de otros. John Stuart Mill amplió la defensa de la libertad individual y la inclusión plena de las mujeres. La Gran Depresión y el New Deal ampliaron el papel del Estado en la economía, y F. A. Hayek advirtió en Camino de servidumbre sobre los riesgos de un gobierno con amplios poderes para regular la economía de una nación.",
+          "ejemplo": "El debate entre quienes piden más regulación estatal tras una crisis y quienes advierten sobre el exceso de poder del Estado reproduce la discusión entre la tradición del New Deal y las ideas de Hayek.",
+          "puntos_clave": [
+            "Liberalismo clásico: derechos, gobierno limitado y capitalismo.",
+            "Mill: libertad individual.",
+            "New Deal frente a la crítica de Hayek."
+          ],
+          "errores_frecuentes": [
+            "Usar «liberal» con un solo significado.",
+            "Ignorar el contexto de la Gran Depresión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-3-the-development-of-varieties-of-liberalism",
+            "seccion": "3.3 The Development of Varieties of Liberalism"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pens-ideologias",
+      "nombre": "Ideologías políticas y económicas",
+      "orden": 2,
+      "descripcion": "Nacionalismo y marxismo, liberalismo democrático, centroizquierda y centroderecha, y las nuevas corrientes de izquierda y derecha.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pens-nacionalismo-marxismo",
+          "nombre": "Nacionalismo y marxismo",
+          "explicacion": "El nacionalismo ve a un grupo nacional como poseedor de una cultura distintiva y de lazos comunes, a veces basados en sangre, historia y territorio; ha impulsado movimientos de independencia, pero también se ha usado para afirmar la superioridad de una nación, con exclusión y guerras. Karl Marx y Friedrich Engels criticaron el nacionalismo por desviar la atención de las luchas económicas y de la explotación entre clases, y predijeron una revolución que llevaría al comunismo, una sociedad que imaginaban de paz, justicia y libertad creativa. El texto también analiza el fascismo, el autoritarismo y el comunismo chino contemporáneo.",
+          "ejemplo": "En la historia latinoamericana del siglo XX se encuentran discursos nacionalistas de defensa de los recursos naturales y movimientos inspirados en el marxismo que hablaban de lucha de clases: dos lecturas distintas de los conflictos económicos.",
+          "puntos_clave": [
+            "Nacionalismo: cultura y lazos comunes.",
+            "Marx y Engels: clases y explotación.",
+            "Predicción de una revolución hacia el comunismo."
+          ],
+          "errores_frecuentes": [
+            "Confundir nacionalismo con patriotismo cívico sin matices.",
+            "Usar las ideologías como insultos y no como conceptos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-4-nationalism-communism-fascism-and-authoritarianism",
+            "seccion": "3.4 Nationalism, Communism, Fascism, and Authoritarianism"
+          }
+        },
+        {
+          "id": "pens-liberalismo-democratico",
+          "nombre": "Liberalismo democrático: centroizquierda y centroderecha",
+          "explicacion": "Desde mediados de los años setenta, en la llamada tercera ola de democratización, varios regímenes autoritarios adoptaron elecciones democráticas. En el siglo XX, el liberalismo democrático, que une el respaldo al capitalismo y a los derechos individuales con la igualdad de trato y la toma de decisiones mediante representantes elegidos, se volvió la corriente predominante en muchos países. Dentro de él, la centroizquierda y la centroderecha comparten la democracia representativa, los derechos individuales y una economía de libre mercado, y ambas rechazan el socialismo, el comunismo y el fascismo; difieren en temas como el alcance del gobierno.",
+          "ejemplo": "En muchos parlamentos, dos partidos que discuten cuánto debe gastar el Estado en programas sociales comparten, sin embargo, el respeto a las elecciones y a la propiedad privada: son variantes del liberalismo democrático.",
+          "puntos_clave": [
+            "Tercera ola de democratización.",
+            "Capitalismo, derechos e igualdad de trato.",
+            "Centroizquierda y centroderecha comparten bases."
+          ],
+          "errores_frecuentes": [
+            "Confundir una ideología con un partido político.",
+            "Exagerar las diferencias entre posiciones de centro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-5-contemporary-democratic-liberalism",
+            "seccion": "3.5 Contemporary Democratic Liberalism"
+          }
+        },
+        {
+          "id": "pens-nueva-izquierda",
+          "nombre": "La nueva izquierda",
+          "explicacion": "En los años sesenta surgió en los países occidentales una nueva izquierda: un conjunto amplio de movimientos que consideran que la centroizquierda no es suficientemente progresista. Uno de sus primeros movimientos fue el multiculturalismo, que sostiene que casi todas las culturas merecen respeto y que muchas personas obtienen su identidad y autoestima de su cultura, por lo que los gobiernos no deberían imponer normas culturales más allá de las mínimas compartidas. La frontera entre la centroizquierda y la nueva izquierda es difusa y cambiante.",
+          "ejemplo": "Un debate sobre si las escuelas deben enseñar en lenguas indígenas además del castellano refleja argumentos del multiculturalismo sobre identidad y respeto cultural.",
+          "puntos_clave": [
+            "Movimientos más allá de la centroizquierda.",
+            "Multiculturalismo.",
+            "Fronteras difusas entre corrientes."
+          ],
+          "errores_frecuentes": [
+            "Tratar a la nueva izquierda como un bloque homogéneo.",
+            "Confundir multiculturalismo con relativismo absoluto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-6-contemporary-ideologies-further-to-the-political-left",
+            "seccion": "3.6 Contemporary Ideologies Further to the Political Left"
+          }
+        },
+        {
+          "id": "pens-nueva-derecha",
+          "nombre": "La nueva derecha",
+          "explicacion": "Así como una nueva izquierda se separó de la centroizquierda, una nueva derecha se aparta de la centroderecha del liberalismo democrático, con éxito político en varios países. No es un simple regreso de la vieja derecha, que defendía el autoritarismo monárquico, la aristocracia heredada, el nacionalismo extremo, la unión de iglesia y Estado y la alianza con los grandes terratenientes. La línea entre la centroderecha y la nueva derecha también es difusa y cambiante.",
+          "ejemplo": "Un analista que compara los programas de dos partidos de derecha observa que uno defiende el libre comercio y el otro propone proteccionismo y control migratorio estricto: son posiciones distintas dentro del espectro de la derecha.",
+          "puntos_clave": [
+            "Se aparta de la centroderecha.",
+            "No es la vieja derecha.",
+            "Fronteras difusas."
+          ],
+          "errores_frecuentes": [
+            "Meter en una sola categoría a todas las corrientes de derecha.",
+            "Juzgar una ideología sin conocer sus argumentos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/3-7-contemporary-ideologies-further-to-the-political-right",
+            "seccion": "3.7 Contemporary Ideologies Further to the Political Right"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pens-macro",
+      "nombre": "Escuelas macroeconómicas: clásicos, Keynes y neoclásicos",
+      "orden": 3,
+      "descripcion": "La ley de Say y la ley de Keynes, la visión keynesiana de la demanda agregada y del papel del gobierno, la visión neoclásica y cómo se complementan.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pens-say-keynes",
+          "nombre": "La ley de Say y la ley de Keynes",
+          "explicacion": "La ley de Say afirma que la oferta crea su propia demanda, y la ley de Keynes, que la demanda crea su propia oferta. El modelo de oferta y demanda agregadas permite ilustrar ambas según la zona de la curva de oferta agregada de corto plazo. En la zona keynesiana, lejos del producto potencial, los cambios en la demanda agregada afectan sobre todo la producción y poco los precios; en la zona neoclásica, cerca del producto potencial, afectan sobre todo el nivel de precios y poco la producción; entre ambas hay una zona intermedia. El modelo sirve como prueba de diagnóstico del estado de la economía.",
+          "ejemplo": "En una recesión profunda, con fábricas paradas, un aumento del gasto público eleva la producción sin subir mucho los precios (zona keynesiana); con la economía a plena capacidad, el mismo gasto genera sobre todo inflación (zona neoclásica).",
+          "puntos_clave": [
+            "Say: la oferta crea su demanda.",
+            "Keynes: la demanda crea su oferta.",
+            "Zonas keynesiana, intermedia y neoclásica."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la misma receta en cualquier fase del ciclo.",
+            "Creer que una de las dos leyes siempre es falsa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/11-6-keynes-law-and-says-law-in-the-ad-as-model",
+            "seccion": "11.6 Keynes' Law and Say's Law in the AD/AS Model"
+          }
+        },
+        {
+          "id": "pens-keynes-demanda",
+          "nombre": "La perspectiva keynesiana de la demanda agregada",
+          "explicacion": "La perspectiva keynesiana se centra en la demanda agregada: las empresas producen solo si esperan vender, de modo que, aunque los factores de producción determinan el PIB potencial, el PIB real depende de cuánta demanda hay. En el modelo keynesiano, la oferta agregada de corto plazo es horizontal por debajo del producto potencial y vertical al alcanzarlo: una caída de la demanda reduce la producción, no los precios, y un aumento cuando ya se está en el potencial solo sube los precios. Keynes sostuvo que la demanda agregada no es estable y puede cambiar de forma inesperada, generando brechas recesivas o inflacionarias.",
+          "ejemplo": "Si los hogares, asustados por una crisis, dejan de comprar autos y viviendas, las empresas reducen su producción y despiden trabajadores aunque tengan capacidad para producir: el PIB real cae por falta de demanda.",
+          "puntos_clave": [
+            "El PIB real depende de la demanda.",
+            "Oferta agregada horizontal bajo el potencial.",
+            "Demanda inestable: brechas recesivas e inflacionarias."
+          ],
+          "errores_frecuentes": [
+            "Confundir PIB real con PIB potencial.",
+            "Pensar que bajar precios basta para salir de cualquier recesión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/12-1-aggregate-demand-in-keynesian-analysis",
+            "seccion": "12.1 Aggregate Demand in Keynesian Analysis"
+          }
+        },
+        {
+          "id": "pens-keynes-mercado",
+          "nombre": "Keynes y el papel del gobierno frente a los mercados",
+          "explicacion": "Desde el nacimiento de la economía keynesiana en los años treinta se debate cuánto debe intervenir el gobierno en la economía. Algunos seguidores defendieron una amplia planificación estatal, pero Keynes separó el problema de la demanda agregada del funcionamiento de cada mercado: los mercados individuales asignan bien los recursos, pero a veces la demanda agregada total es demasiado baja para emplear a todos. Por eso propuso que el gobierno actúe sobre la demanda agregada en las recesiones, sin reemplazar a los mercados en la asignación de bienes.",
+          "ejemplo": "Si 10 millones de personas quieren trabajar y un millón está desempleado, los mercados pueden estar asignando bien a los 9 millones ocupados; el problema, según Keynes, es que falta demanda total para dar empleo a todos.",
+          "puntos_clave": [
+            "Debate sobre la intervención estatal.",
+            "Mercados individuales útiles, demanda total a veces insuficiente.",
+            "Actuar sobre la demanda, no reemplazar mercados."
+          ],
+          "errores_frecuentes": [
+            "Equiparar keynesianismo con planificación centralizada.",
+            "Ignorar que Keynes valoraba los mercados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/12-4-the-keynesian-perspective-on-market-forces",
+            "seccion": "12.4 The Keynesian Perspective on Market Forces"
+          }
+        },
+        {
+          "id": "pens-neoclasicos",
+          "nombre": "La perspectiva neoclásica y el equilibrio entre ambas",
+          "explicacion": "La perspectiva neoclásica sostiene que, en el largo plazo, la economía fluctúa alrededor de su PIB potencial y su tasa natural de desempleo. Se apoya en dos pilares: el PIB potencial determina el tamaño de la economía, y los salarios y precios se ajustan con flexibilidad para volver a ese nivel. Por eso recomienda que el gobierno se concentre en el crecimiento de largo plazo y en controlar la inflación más que en las recesiones. Los macroeconomistas actuales combinan ambas visiones: la keynesiana explica bien las recesiones de corto plazo y la neoclásica, el crecimiento y el desempleo natural en el largo plazo.",
+          "ejemplo": "Ante una recesión, un economista keynesiano propone aumentar el gasto público ahora; uno neoclásico advierte que los precios y salarios se ajustarán y prefiere políticas que eleven la productividad a largo plazo.",
+          "puntos_clave": [
+            "Largo plazo: PIB potencial y desempleo natural.",
+            "Precios y salarios flexibles.",
+            "Keynesianos para el corto plazo, neoclásicos para el largo."
+          ],
+          "errores_frecuentes": [
+            "Creer que hay que elegir una sola escuela para todo.",
+            "Ignorar el horizonte de tiempo de cada análisis."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/13-1-the-building-blocks-of-neoclassical-analysis",
+            "seccion": "13.1 The Building Blocks of Neoclassical Analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pens-accion-colectiva",
+      "nombre": "Grupos sociales, Estado y acción colectiva",
+      "orden": 4,
+      "descripcion": "Dilemas colectivos, problemas de acción colectiva y sus soluciones, grupos de interés y fallas de la democracia.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pens-dilemas-colectivos",
+          "nombre": "Dilemas colectivos: decidir en grupo",
+          "explicacion": "Hay un dilema colectivo siempre que dos o más personas deben hacer un plan o resolver un conflicto y no coinciden en la solución, porque tienen necesidades, preferencias y metas distintas. Ocurre tanto cuando dos amigos eligen dónde comer como en un congreso nacional. Muchas legislaturas democráticas pierden apoyo ciudadano porque les cuesta resolver sus dilemas colectivos, lo que llega a provocar parálisis, como los cierres de gobierno cuando el Legislativo y el Ejecutivo no acuerdan un presupuesto.",
+          "ejemplo": "Un concejo municipal no logra aprobar el presupuesto porque cada concejal prioriza obras de su sector; la ciudad se queda sin nuevas inversiones mientras no se resuelva el dilema colectivo.",
+          "puntos_clave": [
+            "Preferencias distintas que exigen una decisión común.",
+            "Desde dos personas hasta un congreso.",
+            "Puede generar parálisis."
+          ],
+          "errores_frecuentes": [
+            "Atribuir la parálisis solo a malas intenciones.",
+            "Ignorar las reglas de decisión del grupo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/6-3-collective-dilemmas-making-group-decisions",
+            "seccion": "6.3 Collective Dilemmas: Making Group Decisions"
+          }
+        },
+        {
+          "id": "pens-accion-colectiva-problemas",
+          "nombre": "Problemas de acción colectiva",
+          "explicacion": "Hay problemas de acción colectiva cuando las personas, actuando racionalmente según su interés, tienen incentivos para tomar decisiones que perjudican a otros y, al final, a sí mismas. La teoría económica clásica suponía que el interés propio beneficia a todos mediante la «mano invisible», pero existen tres problemas típicos: la tragedia de los comunes, que agota un recurso disponible para todos; el problema del polizón (free rider), en el que quien no participa igual se beneficia, y el dilema del prisionero, en el que actuar estratégicamente perjudica a todos.",
+          "ejemplo": "En un trabajo grupal en el que todos reciben la misma nota, un estudiante que no aporta nada se beneficia del esfuerzo de los demás: es un polizón. Si todos hacen lo mismo, el trabajo fracasa.",
+          "puntos_clave": [
+            "Interés propio que daña a todos.",
+            "Tragedia de los comunes.",
+            "Polizón y dilema del prisionero."
+          ],
+          "errores_frecuentes": [
+            "Suponer que el interés propio siempre produce el bien común.",
+            "Confundir el polizón con la tragedia de los comunes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/6-4-collective-action-problems-the-problem-of-incentives",
+            "seccion": "6.4 Collective Action Problems: The Problem of Incentives"
+          }
+        },
+        {
+          "id": "pens-resolver-accion-colectiva",
+          "nombre": "Cómo se resuelven los problemas de acción colectiva",
+          "explicacion": "Los problemas de acción colectiva son difíciles pero no imposibles de resolver, y no hacerlo puede dañar gravemente la salud y el bienestar. Son más fáciles de manejar en grupos pequeños, como familias o comunidades, donde las personas se conocen y conviven durante mucho tiempo, porque quien se aprovecha es notado y presionado. Para la tragedia de los comunes, el polizón y el dilema del prisionero existen varias soluciones, como reglas, incentivos y acuerdos, aunque cada una es imperfecta.",
+          "ejemplo": "Los comuneros de una zona de páramo acuerdan turnos de pastoreo y multas internas para quien sobrepastoree: en un grupo pequeño, la vigilancia mutua ayuda a cuidar el recurso común.",
+          "puntos_clave": [
+            "Más fáciles en grupos pequeños.",
+            "Reglas, incentivos y acuerdos.",
+            "Ninguna solución es perfecta."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo el Estado puede resolverlos.",
+            "Diseñar reglas sin forma de vigilarlas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/6-5-resolving-collective-action-problems",
+            "seccion": "6.5 Resolving Collective Action Problems"
+          }
+        },
+        {
+          "id": "pens-grupos-interes",
+          "nombre": "Votante mediano, grupos de interés y fallas de la democracia",
+          "explicacion": "La democracia da a todos los ciudadanos la misma voz y reduce el riesgo de que una pequeña élite oprima a la mayoría, pero no es un sistema perfecto. La teoría del votante mediano sostiene que los políticos ajustan sus propuestas a las preferencias del votante del centro del espectro, por lo que las políticas tenderían a ser «de centro». Sin embargo, grupos de interés pequeños y bien organizados pueden imponer políticas que benefician a pocos, como ocurre con ciertos productores protegidos. Además, cuando hay tres o más opciones, la votación puede producir ciclos en los que ninguna alternativa logra una mayoría clara frente a todas las demás.",
+          "ejemplo": "Un pequeño grupo de productores bien organizado consigue mantener un arancel que encarece un alimento para millones de consumidores, que no se organizan porque el costo individual es pequeño.",
+          "puntos_clave": [
+            "Votante mediano: políticas de centro.",
+            "Minorías organizadas imponen intereses particulares.",
+            "Ciclos de votación con tres o más opciones."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la mayoría siempre define las políticas.",
+            "Ignorar el costo de organizarse."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/18-3-flaws-in-the-democratic-system-of-government",
+            "seccion": "18.3 Flaws in the Democratic System of Government"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pens-ipe",
+      "nombre": "Economía política internacional e historia económica",
+      "orden": 5,
+      "descripcion": "El crecimiento económico moderno, el mercantilismo, la economía liberal, las instituciones de Bretton Woods y la teoría de la modernización.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pens-crecimiento-moderno",
+          "nombre": "La llegada reciente del crecimiento económico",
+          "explicacion": "El crecimiento económico rápido y sostenido es una experiencia reciente para la humanidad: durante siglos el nivel de vida de la persona promedio apenas cambió. Cambios económicos e institucionales profundos comenzaron a tener efecto a finales del siglo XVIII y comienzos del XIX. Según historiadores económicos, condiciones como sociedades basadas en la esclavitud, demografía favorable, rutas comerciales globales e instituciones comerciales estandarizadas prepararon el terreno para que la Revolución Industrial tuviera éxito, y las políticas públicas influyen en el crecimiento de largo plazo.",
+          "ejemplo": "Un artesano europeo del año 1500 vivía de forma muy parecida a uno del año 1200; en cambio, entre 1850 y 1950 el ingreso por persona de los países industrializados se multiplicó varias veces.",
+          "puntos_clave": [
+            "Crecimiento sostenido: fenómeno de los dos últimos siglos.",
+            "Revolución Industrial.",
+            "Instituciones y políticas importan."
+          ],
+          "errores_frecuentes": [
+            "Creer que el crecimiento siempre existió.",
+            "Ignorar el costo humano de procesos históricos como la esclavitud."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/7-1-the-relatively-recent-arrival-of-economic-growth",
+            "seccion": "7.1 The Relatively Recent Arrival of Economic Growth"
+          }
+        },
+        {
+          "id": "pens-mercantilismo",
+          "nombre": "La economía política internacional y el mercantilismo",
+          "explicacion": "La economía política internacional estudia los procesos políticos y sus consecuencias económicas, internas e internacionales, y explica cómo la política y las políticas públicas definen ganadores y perdedores. El mercantilismo fue el sistema económico dominante en la era absolutista: se basaba en acumular riqueza, entendida como metales preciosos. Como no existían monedas de papel y la moneda era de oro y plata, cuanto más metal acumulaba un monarca o un país, más rico y poderoso era.",
+          "ejemplo": "Las potencias europeas de los siglos XVI y XVII buscaban exportar más de lo que importaban para que entrara oro y plata, y explotaban minas en sus colonias americanas con ese fin.",
+          "puntos_clave": [
+            "La política define ganadores y perdedores.",
+            "Mercantilismo: acumular metales preciosos.",
+            "Riqueza como poder del Estado."
+          ],
+          "errores_frecuentes": [
+            "Confundir riqueza con cantidad de dinero.",
+            "Creer que las ideas mercantilistas desaparecieron por completo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/16-1-the-origins-of-international-political-economy",
+            "seccion": "16.1 The Origins of International Political Economy"
+          }
+        },
+        {
+          "id": "pens-economia-liberal",
+          "nombre": "El surgimiento de la economía liberal",
+          "explicacion": "La Ilustración y la Revolución Industrial transformaron Europa: la razón y la ciencia reemplazaron a la religiosidad incuestionable y al absolutismo justificado por la voluntad divina. Los pensadores ilustrados rechazaron la idea mercantilista de que la riqueza es finita y propusieron que puede crearse produciendo bienes y servicios valorados en el mercado. Ese cambio en la noción de riqueza tuvo un enorme impacto político y económico y está en el origen de la economía de mercado moderna.",
+          "ejemplo": "Para el mercantilismo, un país se enriquecía quitando oro a otros; para el liberalismo, dos países pueden enriquecerse a la vez produciendo y comerciando más.",
+          "puntos_clave": [
+            "Ilustración y Revolución Industrial.",
+            "La riqueza puede crearse.",
+            "Origen de la economía de mercado moderna."
+          ],
+          "errores_frecuentes": [
+            "Ver el comercio siempre como un juego de suma cero.",
+            "Separar las ideas económicas de su contexto político."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/16-2-the-advent-of-the-liberal-economy",
+            "seccion": "16.2 The Advent of the Liberal Economy"
+          }
+        },
+        {
+          "id": "pens-bretton-woods",
+          "nombre": "Bretton Woods y el orden económico de posguerra",
+          "explicacion": "Al final de la Segunda Guerra Mundial, Estados Unidos tenía un gran superávit comercial y una posición económica y militar ventajosa frente a una Europa y un Japón destruidos, por lo que lideró la creación del orden internacional de posguerra. En julio de 1944, la conferencia de Bretton Woods reunió a los aliados para diseñar ese orden, que dio origen al Fondo Monetario Internacional y al Banco Mundial, y más tarde al GATT y a la Organización Mundial del Comercio, con la misión de mantener la paz y la prosperidad económica.",
+          "ejemplo": "Cuando hoy un país negocia un préstamo con el FMI o un crédito para infraestructura con el Banco Mundial, se relaciona con instituciones nacidas en Bretton Woods.",
+          "puntos_clave": [
+            "Liderazgo de Estados Unidos en la posguerra.",
+            "Conferencia de 1944.",
+            "FMI, Banco Mundial, GATT y OMC."
+          ],
+          "errores_frecuentes": [
+            "Confundir las funciones del FMI y del Banco Mundial.",
+            "Ignorar el contexto histórico de su creación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/16-3-the-bretton-woods-institutions",
+            "seccion": "16.3 The Bretton Woods Institutions"
+          }
+        },
+        {
+          "id": "pens-modernizacion",
+          "nombre": "Después de la Guerra Fría: la teoría de la modernización",
+          "explicacion": "Hasta el fin de la Guerra Fría en 1989, la economía política internacional se centró casi solo en las potencias financieras occidentales, y los demás países eran considerados espectadores; además, el intercambio entre Oriente y Occidente era escaso. La teoría de la modernización sostiene que el crecimiento económico produce cambios estructurales en la sociedad que llevan a una mayor representación política y, con el tiempo, a instituciones democráticas. Sin embargo, aunque la mayoría de países desarrollados son democracias, es difícil establecer una relación causal entre crecimiento y democracia.",
+          "ejemplo": "Algunos países crecieron rápidamente durante décadas sin volverse democracias, lo que se usa como contraargumento a la teoría de la modernización.",
+          "puntos_clave": [
+            "Fin de la Guerra Fría y nuevos actores.",
+            "Crecimiento que llevaría a la democracia.",
+            "Relación causal difícil de demostrar."
+          ],
+          "errores_frecuentes": [
+            "Tomar la correlación entre riqueza y democracia como causalidad.",
+            "Ignorar a los países fuera del eje occidental."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-polsci",
+            "url": "https://openstax.org/books/introduction-political-science/pages/16-4-the-post-cold-war-period-and-modernization-theory",
+            "seccion": "16.4 The Post–Cold War Period and Modernization Theory"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -164,7 +164,8 @@
     "nombre": "Zotero",
     "para_que": "Guardar artículos y generar citas y bibliografía en formato APA dentro de Word o LibreOffice.",
     "materias": [
-      "metodologia-investigacion"
+      "metodologia-investigacion",
+      "pensamiento-economico"
     ],
     "areas": [
       "formacion"
@@ -188,7 +189,8 @@
       "contabilidad-general",
       "derecho-empresarial",
       "legislacion-laboral",
-      "etica-profesional"
+      "etica-profesional",
+      "pensamiento-economico"
     ],
     "areas": [
       "formacion"

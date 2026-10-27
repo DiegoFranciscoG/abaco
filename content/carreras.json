@@ -636,6 +636,17 @@
         "planes": 2
       },
       {
+        "materia": "pensamiento-economico",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "planes": 2
+      },
+      {
         "materia": "contabilidad-costos",
         "ciclo": 2,
         "ciclos": [
@@ -772,27 +783,12 @@
         "planes": 1
       },
       {
-        "nombre": "Historia Económica",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Álgebra Lineal",
         "ciclo": 1,
         "planes": 1
       },
       {
         "nombre": "Análisis de Datos y Programación",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Historia del Pensamiento Económico",
-        "ciclo": 2,
-        "planes": 2
-      },
-      {
-        "nombre": "Teoría de los Grupos Sociales y del Estado",
         "ciclo": 2,
         "planes": 1
       },
@@ -805,11 +801,6 @@
         "nombre": "Econometría",
         "ciclo": 4,
         "planes": 2
-      },
-      {
-        "nombre": "Economía Política",
-        "ciclo": 4,
-        "planes": 1
       },
       {
         "nombre": "Métodos Dinámicos en Economía",

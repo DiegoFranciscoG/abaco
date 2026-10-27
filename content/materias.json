@@ -788,5 +788,29 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "pensamiento-economico",
+    "nombre": "Pensamiento económico y economía política",
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Sistemas económicos y orígenes del pensamiento político-económico, liberalismo y marxismo, Keynes frente a los neoclásicos, acción colectiva y grupos de interés, y economía política internacional e historia del crecimiento.",
+    "sinonimos": [
+      "historia del pensamiento económico",
+      "historia económica",
+      "economía política",
+      "teoría de los grupos sociales y del Estado",
+      "doctrinas económicas"
+    ],
+    "herramientas": [
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 36,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

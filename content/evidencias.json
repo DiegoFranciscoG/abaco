@@ -5400,5 +5400,176 @@
       "data anonymization",
       "cross-validation"
     ]
+  },
+  {
+    "id": "pens-sistemas",
+    "palabras": [
+      "traditional economy",
+      "command economy",
+      "market economies have a very decentralized structure",
+      "globalization"
+    ]
+  },
+  {
+    "id": "pens-clasicos-griegos",
+    "palabras": [
+      "socrates",
+      "plato",
+      "the republic",
+      "aristotle"
+    ]
+  },
+  {
+    "id": "pens-contrato-social",
+    "palabras": [
+      "thomas hobbes",
+      "john locke",
+      "natural rights",
+      "adam smith",
+      "comparative advantage",
+      "rousseau"
+    ]
+  },
+  {
+    "id": "pens-liberalismo",
+    "palabras": [
+      "classical liberalism is a system of thought that combines elements of natural rights, limited government, and capitalism",
+      "john stuart mill",
+      "new deal",
+      "hayek"
+    ]
+  },
+  {
+    "id": "pens-nacionalismo-marxismo",
+    "palabras": [
+      "nationalists see a national group",
+      "karl marx",
+      "engels",
+      "communism"
+    ]
+  },
+  {
+    "id": "pens-liberalismo-democratico",
+    "palabras": [
+      "third wave of democratization",
+      "democratic liberalism",
+      "center left",
+      "center right"
+    ]
+  },
+  {
+    "id": "pens-nueva-izquierda",
+    "palabras": [
+      "new left",
+      "multiculturalism"
+    ]
+  },
+  {
+    "id": "pens-nueva-derecha",
+    "palabras": [
+      "new right",
+      "old right"
+    ]
+  },
+  {
+    "id": "pens-say-keynes",
+    "palabras": [
+      "say's law that supply creates its own demand",
+      "keynes' law that demand creates its own supply",
+      "keynesian zone",
+      "neoclassical zone"
+    ]
+  },
+  {
+    "id": "pens-keynes-demanda",
+    "palabras": [
+      "the keynesian perspective focuses on aggregate demand",
+      "potential gdp",
+      "aggregate demand is not stable"
+    ]
+  },
+  {
+    "id": "pens-keynes-mercado",
+    "palabras": [
+      "individual markets for goods and services were appropriate and useful",
+      "aggregate demand was just too low"
+    ]
+  },
+  {
+    "id": "pens-neoclasicos",
+    "palabras": [
+      "neoclassical perspective on macroeconomics holds that, in the long run",
+      "flexible manner",
+      "long-term growth"
+    ]
+  },
+  {
+    "id": "pens-dilemas-colectivos",
+    "palabras": [
+      "collective dilemma",
+      "differing needs, preferences, and goals"
+    ]
+  },
+  {
+    "id": "pens-accion-colectiva-problemas",
+    "palabras": [
+      "collective action problems exist when individuals",
+      "tragedy of the commons",
+      "free riding",
+      "prisoner's dilemma",
+      "invisible hand"
+    ]
+  },
+  {
+    "id": "pens-resolver-accion-colectiva",
+    "palabras": [
+      "easier to solve",
+      "small groups"
+    ]
+  },
+  {
+    "id": "pens-grupos-interes",
+    "palabras": [
+      "median voter theory",
+      "the minority , not the median, dominates policy",
+      "voting cycle"
+    ]
+  },
+  {
+    "id": "pens-crecimiento-moderno",
+    "palabras": [
+      "modern economic growth",
+      "industrial revolution",
+      "van zanden"
+    ]
+  },
+  {
+    "id": "pens-mercantilismo",
+    "palabras": [
+      "international political economy (ipe)",
+      "mercantilism",
+      "gold and silver"
+    ]
+  },
+  {
+    "id": "pens-economia-liberal",
+    "palabras": [
+      "enlightenment",
+      "wealth could in fact be created"
+    ]
+  },
+  {
+    "id": "pens-bretton-woods",
+    "palabras": [
+      "bretton woods conference",
+      "imf, world bank, gatt, and wto"
+    ]
+  },
+  {
+    "id": "pens-modernizacion",
+    "palabras": [
+      "cold war",
+      "modernization theory is that economic growth promotes structural changes"
+    ]
   }
 ]

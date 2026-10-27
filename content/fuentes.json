@@ -538,5 +538,14 @@
     "url": "https://learn.microsoft.com/es-es/power-bi/fundamentals/power-bi-overview",
     "licencia": "Documentación pública; se cita y resume con redacción propia",
     "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "os-polsci",
+    "titulo": "Introduction to Political Science",
+    "autor_editor": "Mark Carl Rom, Masaki Hidaka, Rachel Bzostek Walker et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introduction-political-science",
+    "licencia": "CC BY 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-27"
   }
 ]
