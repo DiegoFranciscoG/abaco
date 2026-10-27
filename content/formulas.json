@@ -7480,5 +7480,189 @@
     ],
     "actualizado_en": "2026-10-27",
     "estado": "verificada"
+  },
+  {
+    "id": "tasa-pobreza",
+    "nombre": "Tasa de pobreza",
+    "categoria": "economia",
+    "materias": [
+      "desarrollo-economico"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Porcentaje de la población cuyo ingreso está por debajo de la línea de pobreza.",
+    "latex": "TP = \\frac{P}{N} \\times 100",
+    "variables": [
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Personas con ingreso por debajo de la línea de pobreza",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "N",
+        "nombre": "N",
+        "significado": "Población total",
+        "unidad": "personas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "P / N * 100"
+    },
+    "excel": {
+      "es": "=P/N*100",
+      "en": "=P/N*100"
+    },
+    "ejemplo": {
+      "enunciado": "En una ciudad de 250.000 habitantes, 45.000 personas tienen ingresos por debajo de la línea de pobreza. ¿Cuál es la tasa de pobreza?",
+      "entradas": {
+        "P": 45000,
+        "N": 250000
+      },
+      "pasos": [
+        "TP = 45.000 ÷ 250.000 × 100",
+        "TP = 18 %"
+      ],
+      "resultado": 18,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=45000/250000*100",
+      "excel_en": "=45000/250000*100"
+    },
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-1-drawing-the-poverty-line",
+      "seccion": "15.1 Drawing the Poverty Line"
+    },
+    "supuestos": [],
+    "notas": [
+      "La línea de pobreza la define cada país; en Ecuador la publica el INEC."
+    ],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "participacion-ingreso",
+    "nombre": "Participación de un grupo en el ingreso total",
+    "categoria": "economia",
+    "materias": [
+      "desarrollo-economico"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Porcentaje del ingreso total que recibe un grupo de la población, por ejemplo un quintil.",
+    "latex": "S = \\frac{Y_g}{Y} \\times 100",
+    "variables": [
+      {
+        "simbolo": "Y_g",
+        "nombre": "Yg",
+        "significado": "Ingreso del grupo (por ejemplo, un quintil)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Y",
+        "nombre": "Y",
+        "significado": "Ingreso total de la población",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Yg / Y * 100"
+    },
+    "excel": {
+      "es": "=Yg/Y*100",
+      "en": "=Yg/Y*100"
+    },
+    "ejemplo": {
+      "enunciado": "El quintil más pobre de un país recibe USD 3.600 millones de un ingreso total de USD 72.000 millones. ¿Qué porcentaje del ingreso recibe?",
+      "entradas": {
+        "Yg": 3600,
+        "Y": 72000
+      },
+      "pasos": [
+        "S = 3.600 ÷ 72.000 × 100",
+        "S = 5 %"
+      ],
+      "resultado": 5,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=3600/72000*100",
+      "excel_en": "=3600/72000*100"
+    },
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes",
+      "seccion": "15.4 Income Inequality: Measurement and Causes"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "velocidad-dinero",
+    "nombre": "Velocidad del dinero",
+    "categoria": "economia",
+    "materias": [
+      "desarrollo-economico"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Cuántas veces circula el dinero en la economía en un año: PIB nominal dividido para la oferta monetaria.",
+    "latex": "V = \\frac{PIB_{nominal}}{M}",
+    "variables": [
+      {
+        "simbolo": "PIB_{nominal}",
+        "nombre": "PIBn",
+        "significado": "PIB nominal del año",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "M",
+        "nombre": "M",
+        "significado": "Oferta monetaria (por ejemplo, M1)",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PIBn / M"
+    },
+    "excel": {
+      "es": "=PIBn/M",
+      "en": "=PIBn/M"
+    },
+    "ejemplo": {
+      "enunciado": "En 2009, M1 era de USD 1,7 billones y el PIB nominal de USD 14,3 billones. ¿Cuál fue la velocidad de M1?",
+      "entradas": {
+        "PIBn": 14.3,
+        "M": 1.7
+      },
+      "pasos": [
+        "V = 14,3 ÷ 1,7",
+        "V = 8,41"
+      ],
+      "resultado": 8.41,
+      "unidad": "veces al año",
+      "tolerancia": 0.005,
+      "excel_es": "=14,3/1,7",
+      "excel_en": "=14.3/1.7"
+    },
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-5-pitfalls-for-monetary-policy",
+      "seccion": "15.5 Pitfalls for Monetary Policy"
+    },
+    "supuestos": [],
+    "notas": [
+      "El valor depende de qué definición de oferta monetaria se use."
+    ],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
   }
 ]

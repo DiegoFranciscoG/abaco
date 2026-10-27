@@ -812,5 +812,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "desarrollo-economico",
+    "nombre": "Crecimiento, desarrollo y política económica",
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Componentes del crecimiento y convergencia, pobreza y desigualdad con su medición, límites del PIB como medida de bienestar y problemas prácticos de la política monetaria y fiscal.",
+    "sinonimos": [
+      "crecimiento y desarrollo",
+      "crecimiento y desarrollo económico",
+      "realidad socioeconómica",
+      "política económica",
+      "economía del desarrollo",
+      "pobreza y desigualdad"
+    ],
+    "herramientas": [
+      "macro",
+      "estadistica",
+      "graficador"
+    ],
+    "orden": 37,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

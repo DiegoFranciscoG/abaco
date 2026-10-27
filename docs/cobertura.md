@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (36 completas de 36)
+## Estado por materia (37 completas de 37)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -46,6 +46,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Habilidades directivas y blandas | 2 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Legislación laboral | 2 de 7 | completa | 6 de 6 | 27 | 0 de 0 | 100 % | — |
 | Producto, marca y precio | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
+| Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Pensamiento económico y economía política | 0 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Publicidad y comunicación comercial | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Ventas y distribución comercial | 0 de 7 | completa | 5 de 5 | 20 | 0 de 0 | 100 % | — |
@@ -130,11 +131,11 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Pensamiento económico y economía política (completa, 5 de 5 unidades) · pendientes: Fundamentos de Programación, Álgebra Lineal.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades) · pendientes: Análisis de Datos y Programación.
-- **3.º ciclo**: en ÁBACO: Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Realidad Socio-Económica.
+- **3.º ciclo**: en ÁBACO: Crecimiento, desarrollo y política económica (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Econometría, Métodos Dinámicos en Economía.
 - **5.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Investigación Operativa, Organización Industrial, Teoría de Juegos.
-- **6.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Contratación Pública, Crecimiento y Desarrollo, Crecimiento y Desarrollo Económico, Planificación Económica.
-- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (completa, 6 de 6 unidades) · pendientes: Análisis Multivariante, Machine Learning, Política Económica.
+- **6.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Contratación Pública.
+- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (completa, 6 de 6 unidades) · pendientes: Análisis Multivariante, Machine Learning.
 - **8.º ciclo**: en ÁBACO: Fundamentos de administración (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Diseño y Evaluación de Programas y Políticas Públicas, Economía Experimental y del Comportamiento, Finanzas Públicas, Investigación de Operaciones.
 
 ### Mercadotecnia (2 planes)

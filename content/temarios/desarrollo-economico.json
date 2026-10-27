@@ -1,0 +1,477 @@
+{
+  "materia": "desarrollo-economico",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "de-crecimiento",
+      "nombre": "Crecimiento económico y bienestar",
+      "orden": 1,
+      "descripcion": "Capital físico, capital humano y tecnología; contabilidad del crecimiento; convergencia entre países y límites del PIB como medida de bienestar.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "de-componentes",
+          "nombre": "Capital físico, capital humano y tecnología",
+          "explicacion": "A lo largo de décadas, pequeñas diferencias en la tasa anual de crecimiento producen enormes diferencias en el PIB por persona. Los componentes del crecimiento son el capital físico (plantas, equipos e infraestructura como carreteras), que puede crecer en cantidad o en calidad; el capital humano, es decir, las habilidades y conocimientos que hacen productivos a los trabajadores, y la tecnología. Cuando una sociedad aumenta el capital por persona, sea físico o humano, se produce una profundización del capital.",
+          "ejemplo": "Un país que construye carreteras rurales (capital físico), amplía la educación técnica (capital humano) y adopta mejores semillas y maquinaria (tecnología) puede aumentar la producción por trabajador de sus agricultores.",
+          "puntos_clave": [
+            "Capital físico, humano y tecnología.",
+            "Profundización del capital.",
+            "Pequeñas diferencias de crecimiento se acumulan."
+          ],
+          "errores_frecuentes": [
+            "Pensar que basta con más máquinas sin educación.",
+            "Subestimar el efecto acumulado de crecer un poco más cada año."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/7-3-components-of-economic-growth",
+            "seccion": "7.3 Components of Economic Growth"
+          }
+        },
+        {
+          "id": "de-contabilidad-crecimiento",
+          "nombre": "Contabilidad del crecimiento y clima favorable",
+          "explicacion": "Desde fines de los años cincuenta, los estudios de contabilidad del crecimiento estiman, con una función de producción agregada, cuánto del crecimiento per cápita se debe al aumento del capital físico y del capital humano; la parte que no explican estos insumos medidos se atribuye en gran medida a la tecnología. Además de los insumos, importa el clima en que se cultivan: una economía de mercado y un sistema legal que proteja los derechos de propiedad y los contratos son factores clave de un ambiente sano para crecer.",
+          "ejemplo": "Si el producto por trabajador de un país creció 3 % al año y el aumento de capital físico y humano explica solo una parte, el resto se atribuye a mejoras tecnológicas y de organización.",
+          "puntos_clave": [
+            "Función de producción agregada.",
+            "La parte no explicada se asocia a la tecnología.",
+            "Derechos de propiedad y contratos."
+          ],
+          "errores_frecuentes": [
+            "Atribuir todo el crecimiento a la inversión en maquinaria.",
+            "Ignorar las instituciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/7-3-components-of-economic-growth",
+            "seccion": "7.3 Components of Economic Growth"
+          }
+        },
+        {
+          "id": "de-convergencia",
+          "nombre": "Convergencia económica entre países",
+          "explicacion": "Algunas economías de ingresos bajos y medios muestran un patrón de convergencia: crecen más rápido que las de ingresos altos y podrían alcanzarlas. Hay un grupo de países de crecimiento rápido que mantuvo un crecimiento real de al menos 5 % anual en varios períodos, y otro de crecimiento lento que no logra acercarse. Se discuten argumentos a favor y en contra de la convergencia y la velocidad a la que podría ocurrir.",
+          "ejemplo": "Si un país de ingresos medios crece 6 % al año y los países ricos 2 %, la brecha de ingreso por persona se reduce año tras año; si crece 1 %, la brecha se amplía.",
+          "puntos_clave": [
+            "Convergencia: crecer más rápido que los países ricos.",
+            "Grupos de crecimiento rápido y lento.",
+            "La convergencia no es automática."
+          ],
+          "errores_frecuentes": [
+            "Creer que todos los países pobres convergen.",
+            "Mirar el PIB total y no el PIB por persona."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/7-4-economic-convergence",
+            "seccion": "7.4 Economic Convergence"
+          }
+        },
+        {
+          "id": "de-pib-bienestar",
+          "nombre": "Qué tan bien mide el PIB el bienestar",
+          "explicacion": "El PIB por persona captura parte de lo que entendemos por nivel de vida; por ejemplo, la mayoría de la migración va de países con PIB per cápita bajo a países con PIB per cápita alto. Pero nivel de vida es un concepto más amplio: el PIB mide la producción que se compra y vende en los mercados, mientras el bienestar incluye todo lo que afecta la vida de las personas, se venda o no. Por eso algunos economistas consideran el PIB una medida limitada del bienestar.",
+          "ejemplo": "Si un país aumenta su PIB talando bosques y contaminando ríos, su producción crece, pero el bienestar de quienes dependen de esos recursos puede empeorar.",
+          "puntos_clave": [
+            "El PIB per cápita refleja parte del nivel de vida.",
+            "El bienestar es más amplio que la producción de mercado.",
+            "Límites del PIB."
+          ],
+          "errores_frecuentes": [
+            "Igualar crecimiento del PIB con bienestar.",
+            "Ignorar lo que no pasa por el mercado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/19-5-how-well-gdp-measures-the-well-being-of-society",
+            "seccion": "19.5 How Well GDP Measures the Well-Being of Society"
+          }
+        }
+      ]
+    },
+    {
+      "id": "de-pobreza",
+      "nombre": "Pobreza y protección social",
+      "orden": 2,
+      "descripcion": "La línea de pobreza y su medición, la trampa de la pobreza, las redes de protección y el desempleo en el mundo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "de-linea-pobreza",
+          "nombre": "Pobreza, desigualdad y la línea de pobreza",
+          "explicacion": "Comparar ingresos altos y bajos plantea dos problemas distintos: la desigualdad y la pobreza. La pobreza se mide por el número de personas que están por debajo de un nivel de ingreso llamado línea de pobreza, que define lo necesario para un nivel de vida básico; la tasa de pobreza es el porcentaje de la población en esa situación. La desigualdad, en cambio, compara la parte del ingreso o de la riqueza que reciben distintos grupos, por ejemplo el 10 % más rico frente al 10 % más pobre. En Estados Unidos, la línea oficial nació del trabajo de Mollie Orshansky, que la basó en el costo de una dieta saludable.",
+          "ejemplo": "En una provincia de 400.000 habitantes, 60.000 personas tienen ingresos por debajo de la línea de pobreza: la tasa de pobreza es 60.000 ÷ 400.000 × 100 = 15 %.",
+          "puntos_clave": [
+            "Pobreza: personas bajo la línea de pobreza.",
+            "Desigualdad: reparto del ingreso entre grupos.",
+            "Tasa de pobreza = pobres ÷ población × 100."
+          ],
+          "errores_frecuentes": [
+            "Confundir pobreza con desigualdad.",
+            "Comparar tasas de pobreza con líneas distintas."
+          ],
+          "formulas": [
+            "tasa-pobreza"
+          ],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/15-1-drawing-the-poverty-line",
+            "seccion": "15.1 Drawing the Poverty Line"
+          }
+        },
+        {
+          "id": "de-trampa-pobreza",
+          "nombre": "La trampa de la pobreza",
+          "explicacion": "Dar alimentos, vivienda, salud o ingresos a quien lo necesita puede reducir su incentivo a trabajar, sobre todo si su trabajo paga poco y le hace perder la ayuda. Si un programa reduce la asistencia en un dólar por cada dólar que la persona gana trabajando, el beneficiario no obtiene ninguna ganancia neta por trabajar: es la trampa de la pobreza. El diseño de los programas importa: reducir la ayuda de forma más gradual mantiene el incentivo a trabajar.",
+          "ejemplo": "Una madre recibe USD 400 mensuales de ayuda; si consigue un empleo de USD 400 y pierde toda la ayuda, su ingreso no cambia. Si la ayuda bajara solo 50 centavos por cada dólar ganado, terminaría con USD 600.",
+          "puntos_clave": [
+            "La ayuda puede desincentivar el trabajo.",
+            "Perder un dólar de ayuda por cada dólar ganado.",
+            "Reducción gradual para mantener incentivos."
+          ],
+          "errores_frecuentes": [
+            "Diseñar ayudas que se pierden de golpe.",
+            "Culpar solo a los beneficiarios sin revisar el diseño del programa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/15-2-the-poverty-trap",
+            "seccion": "15.2 The Poverty Trap"
+          }
+        },
+        {
+          "id": "de-red-proteccion",
+          "nombre": "La red de protección social",
+          "explicacion": "Los gobiernos crean programas para ayudar a quienes están por debajo o apenas por encima de la línea de pobreza; se llaman red de protección social porque ofrecen protección a quien se queda sin trabajo o sin ingresos. Los programas cambian con el tiempo: en Estados Unidos, por ejemplo, la ayuda en efectivo a madres con hijos fue reemplazada en 1996 por un programa temporal que exige trabajo. Estas redes son complejas y polémicas porque deben equilibrar la protección con los incentivos y los costos fiscales.",
+          "ejemplo": "Un país combina transferencias monetarias para hogares pobres con hijos en edad escolar, condicionadas a la asistencia a clases, y un seguro de desempleo temporal para trabajadores formales.",
+          "puntos_clave": [
+            "Protección para quienes no tienen ingresos.",
+            "Programas que cambian con el tiempo.",
+            "Equilibrio entre protección, incentivos y costo."
+          ],
+          "errores_frecuentes": [
+            "Diseñar programas sin evaluar sus resultados.",
+            "Ignorar a quienes están apenas sobre la línea de pobreza."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/15-3-the-safety-net",
+            "seccion": "15.3 The Safety Net"
+          }
+        },
+        {
+          "id": "de-desempleo-mundo",
+          "nombre": "Causas del desempleo en el mundo",
+          "explicacion": "En los países de ingresos altos el desempleo puede ser cíclico, causado por una recesión, o natural, causado por factores del mercado laboral como las regulaciones para contratar o abrir negocios. Para el desempleo de una recesión, el modelo keynesiano propone políticas monetarias expansivas, que aumentan el dinero y los préstamos y bajan las tasas de interés, y políticas fiscales. En las economías con mercados laborales poco desarrollados, en cambio, la falta de empleo formal genera dificultades parecidas a las del desempleo aunque la gente esté ocupada en actividades de baja productividad.",
+          "ejemplo": "Durante una recesión, un país con moneda propia baja las tasas de interés para reactivar el crédito; en otro con poco empleo formal, muchas personas sobreviven con ventas ambulantes, lo que no aparece como desempleo pero refleja escasez de buenos empleos.",
+          "puntos_clave": [
+            "Desempleo cíclico y natural.",
+            "Política monetaria y fiscal ante recesiones.",
+            "Mercados laborales poco desarrollados."
+          ],
+          "errores_frecuentes": [
+            "Leer una tasa de desempleo baja como señal de buenos empleos.",
+            "Aplicar la misma receta al desempleo cíclico y al natural."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/19-3-causes-of-unemployment-around-the-world",
+            "seccion": "19.3 Causes of Unemployment around the World"
+          }
+        }
+      ]
+    },
+    {
+      "id": "de-desigualdad",
+      "nombre": "Desigualdad y desarrollo sostenible",
+      "orden": 3,
+      "descripcion": "Quintiles y curva de Lorenz, causas de la desigualdad, políticas para reducirla y el equilibrio entre producción y ambiente.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "de-quintiles-lorenz",
+          "nombre": "Quintiles y curva de Lorenz",
+          "explicacion": "Una forma común de medir la desigualdad es ordenar a los hogares por ingreso y dividirlos en cinco grupos con el mismo número de personas, llamados quintiles, y comparar qué parte del ingreso total recibe cada uno. La pobreza puede cambiar aunque la desigualdad no lo haga: si todos los ingresos caen 10 %, aumenta la pobreza pero el reparto relativo sigue igual. La curva de Lorenz muestra en el eje horizontal la proporción acumulada de la población y en el vertical la proporción acumulada del ingreso; cuanto más se aleja de la línea de igualdad, más desigual es la distribución.",
+          "ejemplo": "Si el quintil más pobre recibe USD 3.600 millones de un ingreso nacional de USD 72.000 millones, su participación es 3.600 ÷ 72.000 × 100 = 5 %, frente al 20 % que recibiría con igualdad perfecta.",
+          "puntos_clave": [
+            "Quintiles: cinco grupos iguales de población.",
+            "Participación de cada quintil en el ingreso.",
+            "Curva de Lorenz y línea de igualdad."
+          ],
+          "errores_frecuentes": [
+            "Confundir quintiles de población con quintiles de ingreso.",
+            "Creer que más pobreza implica siempre más desigualdad."
+          ],
+          "formulas": [
+            "participacion-ingreso"
+          ],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes",
+            "seccion": "15.4 Income Inequality: Measurement and Causes"
+          }
+        },
+        {
+          "id": "de-causas-desigualdad",
+          "nombre": "Causas de la desigualdad",
+          "explicacion": "La desigualdad en una economía de mercado tiene varias fuentes, que pueden analizarse con la oferta y la demanda de trabajo: por ejemplo, la demanda creciente de trabajadores con altas habilidades eleva sus salarios frente a los de menor calificación. También influyen cambios en la composición de los hogares, como el aumento de hogares con dos ingresos y la tendencia a que personas de altos ingresos formen pareja entre sí.",
+          "ejemplo": "Cuando las empresas demandan más programadores y analistas de datos, sus salarios suben más rápido que los de trabajos poco calificados, y la brecha salarial se amplía.",
+          "puntos_clave": [
+            "Oferta y demanda de habilidades.",
+            "Composición de los hogares.",
+            "Factores de mercado y sociales."
+          ],
+          "errores_frecuentes": [
+            "Atribuir la desigualdad a una sola causa.",
+            "Ignorar los cambios en la estructura de los hogares."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes",
+            "seccion": "15.4 Income Inequality: Measurement and Causes"
+          }
+        },
+        {
+          "id": "de-politicas-desigualdad",
+          "nombre": "Políticas para reducir la desigualdad",
+          "explicacion": "Ninguna sociedad debería esperar igualdad total de ingresos: los ingresos cambian con la edad y las personas tienen preferencias distintas. Para reducir la desigualdad, los gobiernos pueden redistribuir ingresos de quienes ganan más a quienes ganan menos, financiando programas con un sistema tributario progresivo, en el que los ricos pagan un porcentaje mayor; asegurar una escalera de oportunidades amplia, por ejemplo con educación, y gravar las herencias. Existe, sin embargo, un equilibrio entre incentivos e igualdad que la política debe considerar.",
+          "ejemplo": "Un gobierno financia becas universitarias para estudiantes de bajos ingresos con un impuesto a la renta progresivo: busca ampliar la escalera de oportunidades sin desalentar demasiado el trabajo.",
+          "puntos_clave": [
+            "Redistribución con impuestos progresivos.",
+            "Escalera de oportunidades.",
+            "Impuesto a la herencia y equilibrio con incentivos."
+          ],
+          "errores_frecuentes": [
+            "Buscar igualdad total de ingresos.",
+            "Ignorar el efecto de los impuestos sobre los incentivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality",
+            "seccion": "15.5 Government Policies to Reduce Income Inequality"
+          }
+        },
+        {
+          "id": "de-produccion-ambiente",
+          "nombre": "El equilibrio entre producción y protección ambiental",
+          "explicacion": "La relación entre producción económica y protección ambiental puede analizarse con una frontera de posibilidades de producción: en un extremo, mucha producción y poca protección; en el otro, mucha protección y poca producción. Aumentar la protección ambiental tiene un costo de oportunidad en menor producción. Todas las sociedades deberían evitar las combinaciones ineficientes, que están por debajo de la frontera, y cada una decide según sus valores qué punto de la frontera prefiere.",
+          "ejemplo": "Un país que hoy produce de forma muy contaminante y poco eficiente puede, con mejor tecnología, aumentar a la vez su producción y su protección ambiental hasta llegar a la frontera; desde allí, cada mejora ambiental adicional costará algo de producción.",
+          "puntos_clave": [
+            "Frontera de posibilidades entre producción y ambiente.",
+            "Costo de oportunidad de proteger.",
+            "Evitar combinaciones ineficientes."
+          ],
+          "errores_frecuentes": [
+            "Creer que siempre hay que elegir entre ambiente y producción.",
+            "Ignorar las combinaciones ineficientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/12-6-the-tradeoff-between-economic-output-and-environmental-protection",
+            "seccion": "12.6 The Tradeoff between Economic Output and Environmental Protection"
+          }
+        }
+      ]
+    },
+    {
+      "id": "de-politica-monetaria",
+      "nombre": "Política monetaria e inflación",
+      "orden": 4,
+      "descripcion": "Política monetaria expansiva y contractiva, rezagos y velocidad del dinero, la inflación en distintos países y sus efectos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "de-expansiva-contractiva",
+          "nombre": "Política monetaria expansiva y contractiva",
+          "explicacion": "Una política monetaria que baja las tasas de interés y estimula el crédito es expansiva o laxa; una que sube las tasas y reduce el crédito es contractiva o restrictiva. Al cambiar la oferta de fondos prestables, la política monetaria modifica las tasas de interés y, a través de ellas, la demanda agregada, lo que afecta metas como el desempleo y la inflación. En países dolarizados como el Ecuador, el banco central no fija la tasa de política del dólar, por lo que esta herramienta funciona de manera distinta.",
+          "ejemplo": "Ante una recesión, un banco central reduce su tasa de referencia: los créditos se abaratan, las empresas invierten más y las familias compran más bienes durables, lo que aumenta la demanda agregada.",
+          "puntos_clave": [
+            "Expansiva: baja tasas y estimula el crédito.",
+            "Contractiva: sube tasas y frena el crédito.",
+            "Efecto sobre la demanda agregada."
+          ],
+          "errores_frecuentes": [
+            "Esperar que la política monetaria actúe de inmediato.",
+            "Olvidar que un país dolarizado no controla la tasa del dólar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-4-monetary-policy-and-economic-outcomes",
+            "seccion": "15.4 Monetary Policy and Economic Outcomes"
+          }
+        },
+        {
+          "id": "de-rezagos-velocidad",
+          "nombre": "Rezagos de la política monetaria y velocidad del dinero",
+          "explicacion": "La política monetaria afecta a la economía con rezagos largos y variables, porque implica una cadena: el banco central debe percibir la situación, reunirse y decidir; el cambio pasa al sistema bancario y a las tasas; las empresas y familias ajustan su inversión y su consumo, y luego el efecto se difunde. La velocidad del dinero describe cuán rápido circula el dinero: es el PIB nominal dividido para la oferta monetaria. Si la velocidad es estable, un aumento porcentual del dinero lleva al mismo aumento del PIB nominal, sea por inflación, por más producción o por ambas.",
+          "ejemplo": "En 2009, M1 era de 1,7 billones de dólares y el PIB nominal de 14,3 billones: la velocidad de M1 fue 14,3 ÷ 1,7 = 8,41, es decir, cada dólar se usó unas 8 veces en el año.",
+          "puntos_clave": [
+            "Rezagos largos y variables.",
+            "Velocidad = PIB nominal ÷ oferta monetaria.",
+            "Ecuación cuantitativa del dinero."
+          ],
+          "errores_frecuentes": [
+            "Esperar resultados inmediatos de un cambio de tasas.",
+            "Suponer que la velocidad del dinero nunca cambia."
+          ],
+          "formulas": [
+            "velocidad-dinero"
+          ],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-5-pitfalls-for-monetary-policy",
+            "seccion": "15.5 Pitfalls for Monetary Policy"
+          }
+        },
+        {
+          "id": "de-inflacion-paises",
+          "nombre": "La inflación en distintos países",
+          "explicacion": "Las economías de ingresos altos aprendieron que pueden usar la política monetaria para impedir que la inflación se arraigue en el mediano y largo plazo, y que no hay ganancia de largo plazo en dejarla establecerse. Con inflación alta, empresas y personas dedican tiempo y esfuerzo a protegerse en lugar de buscar mejores formas de servir a sus clientes. Aun así, los repuntes de inflación pueden frenar el crecimiento y tener consecuencias políticas importantes para los gobiernos.",
+          "ejemplo": "En una economía con inflación muy alta, un comerciante cambia los precios cada semana y compra mercadería por adelantado para protegerse, en lugar de mejorar su servicio.",
+          "puntos_clave": [
+            "Evitar que la inflación se arraigue.",
+            "Sin ganancia de largo plazo por tolerarla.",
+            "Costos de protegerse de la inflación."
+          ],
+          "errores_frecuentes": [
+            "Ver la inflación moderada como inofensiva siempre.",
+            "Creer que la inflación alta se corrige sola."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/19-4-causes-of-inflation-in-various-countries-and-regions",
+            "seccion": "19.4 Causes of Inflation in Various Countries and Regions"
+          }
+        },
+        {
+          "id": "de-confusion-inflacion",
+          "nombre": "Por qué la inflación genera confusión y redistribuye",
+          "explicacion": "Los economistas se oponen a la inflación alta, pero de forma más moderada que el público en general, como mostraron encuestas de Robert Shiller. Si todo lo expresado en dinero subiera en la misma proporción de forma inesperada, nadie ganaría ni perdería en términos reales; pero en la práctica la inflación redistribuye el poder adquisitivo entre grupos, como deudores y acreedores o quienes tienen ingresos fijos, y puede confundir las señales de oferta y demanda que transmiten los precios.",
+          "ejemplo": "Con una inflación inesperada de 20 %, quien tomó un préstamo a tasa fija paga con dinero que vale menos (gana), mientras el banco que prestó y el jubilado con pensión fija pierden poder adquisitivo.",
+          "puntos_clave": [
+            "Redistribución del poder adquisitivo.",
+            "Ganadores y perdedores.",
+            "Precios que confunden las señales del mercado."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la inflación perjudica a todos por igual.",
+            "Olvidar el efecto sobre deudas a tasa fija."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/9-4-the-confusion-over-inflation",
+            "seccion": "9.4 The Confusion Over Inflation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "de-politica-fiscal",
+      "nombre": "Política fiscal en la práctica",
+      "orden": 5,
+      "descripcion": "Rezagos de la política fiscal discrecional, el debate sobre el presupuesto equilibrado, la equivalencia ricardiana y el desplazamiento de la inversión.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "de-rezagos-fiscales",
+          "nombre": "Problemas prácticos de la política fiscal discrecional",
+          "explicacion": "En los años sesenta muchos economistas creían superados los ciclos económicos, pero las recesiones posteriores mostraron los límites de la política fiscal discrecional. Hay tres rezagos: el de reconocimiento, hasta que los responsables advierten el problema; el legislativo, el tiempo para aprobar las leyes de gasto o impuestos, y el de implementación, para que los fondos lleguen a los programas. Además, nunca se sabe con exactitud cuánto debe ser el estímulo, porque el producto potencial y el efecto de cada medida solo se conocen de forma aproximada. La política fiscal y la monetaria están interconectadas.",
+          "ejemplo": "Un gobierno detecta una recesión seis meses tarde, tarda otros seis en aprobar un plan de obras y cuatro más en iniciarlas: cuando el gasto llega, la economía quizá ya se estaba recuperando.",
+          "puntos_clave": [
+            "Rezagos de reconocimiento, legislativo y de implementación.",
+            "Incertidumbre sobre la magnitud.",
+            "Interacción con la política monetaria."
+          ],
+          "errores_frecuentes": [
+            "Suponer que el estímulo fiscal llega a tiempo.",
+            "Calcular el estímulo como si el producto potencial se conociera con precisión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-6-practical-problems-with-discretionary-fiscal-policy",
+            "seccion": "17.6 Practical Problems with Discretionary Fiscal Policy"
+          }
+        },
+        {
+          "id": "de-presupuesto-equilibrado",
+          "nombre": "El debate sobre el presupuesto equilibrado",
+          "explicacion": "Desde los años treinta se proponen reglas que obliguen al gobierno a equilibrar su presupuesto cada año. La mayoría de los economistas ve con escepticismo un presupuesto equilibrado permanente: en el corto plazo, los déficits y superávits deberían subir y bajar con la economía y con los estabilizadores automáticos, de modo que las recesiones generen déficits mayores y los auges, déficits menores o superávits. Exigir el equilibrio cada año obligaría a recortar gastos o subir impuestos justo en las recesiones, profundizándolas.",
+          "ejemplo": "Si en una recesión caen los ingresos tributarios y la ley exige equilibrar el presupuesto ese mismo año, el gobierno debe recortar obras o subir impuestos, lo que reduce aún más la demanda.",
+          "puntos_clave": [
+            "Propuestas de equilibrio anual.",
+            "Déficits que varían con el ciclo.",
+            "Riesgo de profundizar las recesiones."
+          ],
+          "errores_frecuentes": [
+            "Tratar el presupuesto del Estado como el de una familia en cualquier momento.",
+            "Ignorar los estabilizadores automáticos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/17-7-the-question-of-a-balanced-budget",
+            "seccion": "17.7 The Question of a Balanced Budget"
+          }
+        },
+        {
+          "id": "de-equivalencia-ricardiana",
+          "nombre": "Endeudamiento público y ahorro privado: la equivalencia ricardiana",
+          "explicacion": "Los cambios en el presupuesto del gobierno pueden afectar el ahorro privado. Si las personas razonan que un déficit mayor implicará más impuestos en el futuro, ahorrarán más ahora; si hay superávit, quizá ahorren menos. La teoría de que los hogares racionales ajustan su ahorro para compensar el ahorro o endeudamiento del gobierno se llama equivalencia ricardiana, por las ideas del economista David Ricardo. Si se cumpliera por completo, el déficit público no cambiaría el ahorro nacional total.",
+          "ejemplo": "Un gobierno baja impuestos financiándose con deuda; si las familias esperan que suban después, guardan el dinero extra en lugar de gastarlo, y la reducción de impuestos no estimula el consumo.",
+          "puntos_clave": [
+            "El ahorro privado puede compensar el déficit.",
+            "Expectativas sobre impuestos futuros.",
+            "David Ricardo."
+          ],
+          "errores_frecuentes": [
+            "Suponer que la equivalencia se cumple siempre por completo.",
+            "Ignorar el papel de las expectativas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/18-3-how-government-borrowing-affects-private-saving",
+            "seccion": "18.3 How Government Borrowing Affects Private Saving"
+          }
+        },
+        {
+          "id": "de-desplazamiento-inversion",
+          "nombre": "Política fiscal, inversión y crecimiento: el desplazamiento",
+          "explicacion": "El crecimiento se basa en invertir en capital físico, capital humano y tecnología en un entorno de mercados que funcionan y precios flexibles. Un déficit público mayor aumenta la demanda de capital financiero; si el ahorro privado y la balanza comercial no cambian, queda menos capital para la inversión privada: es el efecto desplazamiento (crowding out), que además puede subir las tasas de interés. Pero el gasto público también puede impulsar el crecimiento si se dirige a carreteras, agua, educación o investigación.",
+          "ejemplo": "Si el gobierno se endeuda fuertemente en el mercado local, los bancos prestan menos a las empresas y a tasas más altas; en cambio, si invierte en riego y educación técnica, puede elevar la productividad futura.",
+          "puntos_clave": [
+            "Déficit que desplaza la inversión privada.",
+            "Posible alza de tasas.",
+            "Gasto público productivo que impulsa el crecimiento."
+          ],
+          "errores_frecuentes": [
+            "Tratar todo gasto público como improductivo.",
+            "Ignorar el efecto del déficit sobre las tasas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/18-4-fiscal-policy-investment-and-economic-growth",
+            "seccion": "18.4 Fiscal Policy, Investment, and Economic Growth"
+          }
+        }
+      ]
+    }
+  ]
+}

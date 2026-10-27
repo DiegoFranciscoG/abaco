@@ -1526,5 +1526,84 @@
       "seccion": "19.5 Inventory Management"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "pobreza-desigualdad-dinero",
+    "nombre": "Pobreza, quintiles de ingreso y velocidad del dinero",
+    "descripcion": "Calcula la tasa de pobreza, la participación de cada quintil en el ingreso total y la velocidad del dinero de una economía de ejemplo.",
+    "materias": [
+      "desarrollo-economico"
+    ],
+    "celdas": {
+      "A1": "Población total",
+      "B1": 400000,
+      "A2": "Personas bajo la línea de pobreza",
+      "B2": 60000,
+      "A3": "Tasa de pobreza (%)",
+      "B3": "=B2/B1*100",
+      "A5": "Quintil",
+      "B5": "Ingreso (millones USD)",
+      "C5": "Participación (%)",
+      "A6": "Q1 (más pobre)",
+      "B6": 3600,
+      "C6": "=B6/B$11*100",
+      "A7": "Q2",
+      "B7": 7200,
+      "C7": "=B7/B$11*100",
+      "A8": "Q3",
+      "B8": 10800,
+      "C8": "=B8/B$11*100",
+      "A9": "Q4",
+      "B9": 14400,
+      "C9": "=B9/B$11*100",
+      "A10": "Q5 (más rico)",
+      "B10": 36000,
+      "C10": "=B10/B$11*100",
+      "A11": "Total",
+      "B11": "=SUM(B6:B10)",
+      "A13": "PIB nominal (millones USD)",
+      "B13": 120000,
+      "A14": "Oferta monetaria M1 (millones USD)",
+      "B14": 30000,
+      "A15": "Velocidad del dinero",
+      "B15": "=B13/B14"
+    },
+    "formatos": {
+      "B3": "numero",
+      "C6": "numero",
+      "C7": "numero",
+      "C8": "numero",
+      "C9": "numero",
+      "C10": "numero",
+      "B15": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B3",
+        "esperado": 15,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C6",
+        "esperado": 5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C10",
+        "esperado": 50,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B15",
+        "esperado": 4,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes",
+      "seccion": "15.4 Income Inequality: Measurement and Causes"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

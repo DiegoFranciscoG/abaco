@@ -40,7 +40,7 @@ describe('carrera → ciclo → materia', () => {
       materiasDeCiclo(economia, 3)
         .map((r) => r.materia.id)
         .sort(),
-    ).toEqual(['investigacion-mercados', 'macroeconomia', 'matematica-financiera'].sort());
+    ).toEqual(['desarrollo-economico', 'investigacion-mercados', 'macroeconomia', 'matematica-financiera'].sort());
     const all = materiasDeCiclo(economia);
     expect(all.map((r) => r.entrada.ciclo)).toEqual(
       [...all.map((r) => r.entrada.ciclo)].sort((a, b) => a - b),

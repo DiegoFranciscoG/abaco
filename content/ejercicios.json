@@ -10388,5 +10388,178 @@
     },
     "materia": "operaciones-logistica",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-de-pobreza-provincia",
+    "subtema": "de-linea-pobreza",
+    "formula": "tasa-pobreza",
+    "enunciado": "En una provincia de 400.000 habitantes, 60.000 personas tienen ingresos por debajo de la línea de pobreza. ¿Cuál es la tasa de pobreza?",
+    "datos": {
+      "P": 60000,
+      "N": 400000
+    },
+    "calculo": "P / N * 100",
+    "respuesta": 15,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "60.000 ÷ 400.000 = 0,15",
+      "× 100 = 15"
+    ],
+    "pistas": [
+      "Divide a las personas pobres para la población total."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-1-drawing-the-poverty-line",
+      "seccion": "15.1 Drawing the Poverty Line"
+    },
+    "materia": "desarrollo-economico",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-de-pobreza-cambio",
+    "subtema": "de-linea-pobreza",
+    "formula": "tasa-pobreza",
+    "enunciado": "Un cantón de 80.000 habitantes tenía 20.000 personas pobres; tras un programa de empleo quedan 14.000. ¿Cuál es la nueva tasa de pobreza?",
+    "datos": {
+      "P": 14000,
+      "N": 80000
+    },
+    "calculo": "P / N * 100",
+    "respuesta": 17.5,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Antes: 20.000 ÷ 80.000 × 100 = 25",
+      "Ahora: 14.000 ÷ 80.000 × 100 = 17,5"
+    ],
+    "pistas": [
+      "Usa la cantidad de pobres después del programa."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-1-drawing-the-poverty-line",
+      "seccion": "15.1 Drawing the Poverty Line"
+    },
+    "materia": "desarrollo-economico",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-de-quintil-rico",
+    "subtema": "de-quintiles-lorenz",
+    "formula": "participacion-ingreso",
+    "enunciado": "El quintil más rico de un país recibe USD 36.000 millones de un ingreso total de USD 72.000 millones. ¿Qué porcentaje del ingreso recibe?",
+    "datos": {
+      "Yg": 36000,
+      "Y": 72000
+    },
+    "calculo": "Yg / Y * 100",
+    "respuesta": 50,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "36.000 ÷ 72.000 = 0,5",
+      "× 100 = 50"
+    ],
+    "pistas": [
+      "Con igualdad perfecta cada quintil recibiría 20 %."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes",
+      "seccion": "15.4 Income Inequality: Measurement and Causes"
+    },
+    "materia": "desarrollo-economico",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-de-quintil-pobre",
+    "subtema": "de-quintiles-lorenz",
+    "formula": "participacion-ingreso",
+    "enunciado": "El 20 % más pobre de una región recibe USD 450 millones de un ingreso total de USD 9.000 millones. ¿Qué porcentaje del ingreso recibe?",
+    "datos": {
+      "Yg": 450,
+      "Y": 9000
+    },
+    "calculo": "Yg / Y * 100",
+    "respuesta": 5,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "450 ÷ 9.000 = 0,05",
+      "× 100 = 5"
+    ],
+    "pistas": [
+      "Divide el ingreso del grupo para el total."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes",
+      "seccion": "15.4 Income Inequality: Measurement and Causes"
+    },
+    "materia": "desarrollo-economico",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-de-velocidad-m1",
+    "subtema": "de-rezagos-velocidad",
+    "formula": "velocidad-dinero",
+    "enunciado": "Un país tiene un PIB nominal de USD 120.000 millones y una oferta monetaria M1 de USD 30.000 millones. ¿Cuál es la velocidad del dinero?",
+    "datos": {
+      "PIBn": 120000,
+      "M": 30000
+    },
+    "calculo": "PIBn / M",
+    "respuesta": 4,
+    "unidad": "veces al año",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "V = 120.000 ÷ 30.000 = 4"
+    ],
+    "pistas": [
+      "PIB nominal dividido para la oferta monetaria."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-5-pitfalls-for-monetary-policy",
+      "seccion": "15.5 Pitfalls for Monetary Policy"
+    },
+    "materia": "desarrollo-economico",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-de-velocidad-cambio",
+    "subtema": "de-rezagos-velocidad",
+    "formula": "velocidad-dinero",
+    "enunciado": "Al año siguiente, el PIB nominal sube a USD 126.000 millones y M1 a USD 36.000 millones. ¿Cuál es la nueva velocidad del dinero?",
+    "datos": {
+      "PIBn": 126000,
+      "M": 36000
+    },
+    "calculo": "PIBn / M",
+    "respuesta": 3.5,
+    "unidad": "veces al año",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "V = 126.000 ÷ 36.000 = 3,5",
+      "La velocidad bajó de 4 a 3,5"
+    ],
+    "pistas": [
+      "Compara con la velocidad del año anterior."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-5-pitfalls-for-monetary-policy",
+      "seccion": "15.5 Pitfalls for Monetary Policy"
+    },
+    "materia": "desarrollo-economico",
+    "actualizado_en": "2026-10-26"
   }
 ]

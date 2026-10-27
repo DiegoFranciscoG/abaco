@@ -673,6 +673,17 @@
         "planes": 1
       },
       {
+        "materia": "desarrollo-economico",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          6,
+          7,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "investigacion-mercados",
         "ciclo": 3,
         "ciclos": [
@@ -793,11 +804,6 @@
         "planes": 1
       },
       {
-        "nombre": "Realidad Socio-Económica",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Econometría",
         "ciclo": 4,
         "planes": 2
@@ -828,21 +834,6 @@
         "planes": 1
       },
       {
-        "nombre": "Crecimiento y Desarrollo",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Crecimiento y Desarrollo Económico",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Planificación Económica",
-        "ciclo": 6,
-        "planes": 2
-      },
-      {
         "nombre": "Análisis Multivariante",
         "ciclo": 7,
         "planes": 1
@@ -851,11 +842,6 @@
         "nombre": "Machine Learning",
         "ciclo": 7,
         "planes": 1
-      },
-      {
-        "nombre": "Política Económica",
-        "ciclo": 7,
-        "planes": 2
       },
       {
         "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",

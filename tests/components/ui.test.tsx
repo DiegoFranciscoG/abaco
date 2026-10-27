@@ -229,7 +229,7 @@ describe('pages', () => {
     expect(screen.getByText(/Ciclo habitual calculado con 2 planes/)).toBeInTheDocument();
     await waitFor(async () => expect(await getProfile(db)).toMatchObject({ carrera: 'economia', ciclo: 3 }));
     await user.click(screen.getByRole('button', { name: /Agregar las de este ciclo/ }));
-    await waitFor(async () => expect((await getProfile(db)).materias).toHaveLength(3));
+    await waitFor(async () => expect((await getProfile(db)).materias).toHaveLength(4));
   });
 
   it('a shared link opens a career and cycle directly', async () => {
