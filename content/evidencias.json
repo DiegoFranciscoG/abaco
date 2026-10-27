@@ -4916,5 +4916,173 @@
       "scanning the environment",
       "where are we now? where do we want to be? what do we need to move from here to there?"
     ]
+  },
+  {
+    "id": "hd-autogestion-conducta",
+    "palabras": [
+      "behavioral self-management is the process of modifying one's own behavior",
+      "self-regulation",
+      "self-reinforcement"
+    ]
+  },
+  {
+    "id": "hd-barreras-decision",
+    "palabras": [
+      "bounded rationality",
+      "escalation of commitment",
+      "time constraints",
+      "uncertainty",
+      "personal biases"
+    ]
+  },
+  {
+    "id": "hd-mejores-decisiones",
+    "palabras": [
+      "heuristics (mental shortcuts)",
+      "satisficing",
+      "evidence-based decision-making",
+      "critical thinking",
+      "experience"
+    ]
+  },
+  {
+    "id": "hd-decision-grupo",
+    "palabras": [
+      "advantages of group decisions",
+      "diverse group",
+      "groupthink occurs when group members choose not to voice their concerns"
+    ]
+  },
+  {
+    "id": "hd-proceso-comunicacion",
+    "palabras": [
+      "interpersonal communication",
+      "encoding is the process",
+      "noise"
+    ]
+  },
+  {
+    "id": "hd-tipos-comunicacion",
+    "palabras": [
+      "oral communication",
+      "written communication",
+      "information overload",
+      "nonverbal communication"
+    ]
+  },
+  {
+    "id": "hd-roles-comunicacion",
+    "palabras": [
+      "mintzberg",
+      "interpersonal roles",
+      "figurehead role"
+    ]
+  },
+  {
+    "id": "hd-hablar-escuchar",
+    "palabras": [
+      "talking, listening, reading, and writing",
+      "one-on-one conversations"
+    ]
+  },
+  {
+    "id": "hd-etapas-equipo",
+    "palabras": [
+      "bruce tuckman",
+      "forming storming norming performing",
+      "adjourning",
+      "polite stage"
+    ]
+  },
+  {
+    "id": "hd-dirigir-equipos",
+    "palabras": [
+      "managing teams",
+      "people have to want to work together"
+    ]
+  },
+  {
+    "id": "hd-conflicto-equipo",
+    "palabras": [
+      "sources of conflict for a team",
+      "constructive conflicts",
+      "diversity of ideas and perspectives"
+    ]
+  },
+  {
+    "id": "hd-equipos-multiculturales",
+    "palabras": [
+      "multicultural teams",
+      "direct versus indirect communication"
+    ]
+  },
+  {
+    "id": "hd-proceso-liderazgo",
+    "palabras": [
+      "leadership is a process",
+      "the leader, the followers, the context"
+    ]
+  },
+  {
+    "id": "hd-lideres-formales",
+    "palabras": [
+      "formal and informal",
+      "a formal leader is that individual who is recognized by those outside the group"
+    ]
+  },
+  {
+    "id": "hd-rasgos-lider",
+    "palabras": [
+      "great man theory of leadership",
+      "stogdill",
+      "self-confidence"
+    ]
+  },
+  {
+    "id": "hd-liderazgo-transformacional",
+    "palabras": [
+      "transactional leaders",
+      "transformational and visionary leader",
+      "charisma"
+    ]
+  },
+  {
+    "id": "hd-liderazgo-actual",
+    "palabras": [
+      "network, virtual, and modular corporations",
+      "uncertainty tends to breed resistance",
+      "paradigms"
+    ]
+  },
+  {
+    "id": "hd-retroalimentacion",
+    "palabras": [
+      "feedback represents a critical variable",
+      "credibility of the source of the feedback"
+    ]
+  },
+  {
+    "id": "hd-conflicto-basico",
+    "palabras": [
+      "functional or dysfunctional",
+      "goal conflict",
+      "cognitive conflict"
+    ]
+  },
+  {
+    "id": "hd-tacticas-poder",
+    "palabras": [
+      "power tactics",
+      "controlling access to information",
+      "controlling access to persons"
+    ]
+  },
+  {
+    "id": "hd-limitar-politica",
+    "palabras": [
+      "politics in organizations cannot be eliminated",
+      "reduce the uncertainty",
+      "superordinate goals"
+    ]
   }
 ]

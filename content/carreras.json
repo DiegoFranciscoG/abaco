@@ -1485,6 +1485,15 @@
         "planes": 1
       },
       {
+        "materia": "habilidades-directivas",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          8
+        ],
+        "planes": 1
+      },
+      {
         "materia": "metodologia-investigacion",
         "ciclo": 6,
         "ciclos": [
@@ -1523,11 +1532,6 @@
         "planes": 1
       },
       {
-        "nombre": "International Negotiation Strategies",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Técnicas de Valoración Aduanera",
         "ciclo": 6,
         "planes": 1
@@ -1544,11 +1548,6 @@
       },
       {
         "nombre": "Gerencia de Operaciones",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Leadership & Management Skills",
         "ciclo": 8,
         "planes": 1
       }
@@ -1588,6 +1587,21 @@
         "ciclo": 1,
         "ciclos": [
           1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "habilidades-directivas",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
         ],
         "planes": 1
       },
@@ -1731,18 +1745,8 @@
     ],
     "pendientes": [
       {
-        "nombre": "Desarrollo de Habilidades Blandas 1: Inteligencia Emocional y Autogestión",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Herramientas de IA para la Gestión Emprendedora",
         "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Desarrollo de Habilidades Blandas 2: Comunicación Efectiva y Trabajo Colaborativo",
-        "ciclo": 2,
         "planes": 1
       },
       {
@@ -1756,17 +1760,7 @@
         "planes": 1
       },
       {
-        "nombre": "Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Big Data y Analítica para Toma de Decisiones",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Desarrollo de Habilidades Blandas 4: Liderazgo Emprendedor, Gestión de Equipos y Manejo de Conflictos",
         "ciclo": 4,
         "planes": 1
       },
@@ -1781,11 +1775,6 @@
         "planes": 1
       },
       {
-        "nombre": "Desarrollo de Habilidades Blandas 6: Negociación, Ventas Relacionales y Networking Básico",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Supply Chain Management",
         "ciclo": 6,
         "planes": 1
@@ -1796,18 +1785,8 @@
         "planes": 1
       },
       {
-        "nombre": "Desarrollo de Habilidades Blandas 7: Pitch, Storytelling y Adaptabilidad al Cambio",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual",
         "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Estrategias de Negociación y Networking",
-        "ciclo": 8,
         "planes": 1
       }
     ]

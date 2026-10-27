@@ -344,6 +344,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Leadership & Management Skills",
+    "carreras": 2,
+    "planes": 2,
+    "ciclo_habitual": 1,
+    "materia": "habilidades-directivas",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Prácticas Laborales",
     "carreras": 2,
     "planes": 2,

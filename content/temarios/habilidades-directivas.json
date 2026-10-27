@@ -1,0 +1,492 @@
+{
+  "materia": "habilidades-directivas",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "hd-autogestion",
+      "nombre": "Autogestión y toma de decisiones",
+      "orden": 1,
+      "descripcion": "Autogestión del comportamiento, barreras para decidir bien, técnicas para mejorar las decisiones y decisiones en grupo.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "hd-autogestion-conducta",
+          "nombre": "Autogestión del comportamiento",
+          "explicacion": "La autogestión del comportamiento es el proceso de modificar la propia conducta manejando de forma sistemática las señales, los procesos cognitivos y las consecuencias. Se apoya en que la persona tome la iniciativa de controlar su cambio y se centra en comportamientos, no en actitudes o personalidad; a diferencia de la modificación de conducta tradicional, da gran peso a los procesos cognitivos, por influencia de la teoría del aprendizaje social de Bandura. Parte de la autorregulación: las personas son capaces de autocontrolarse si quieren cambiar una conducta, como llegar puntual, y pueden reforzarse a sí mismas al lograrlo.",
+          "ejemplo": "Un estudiante que siempre llega tarde a su práctica laboral prepara su ropa la noche anterior (señal), lleva un registro de su hora de llegada y se permite ver su serie favorita solo los días en que llega a tiempo (autorrefuerzo).",
+          "puntos_clave": [
+            "Manejar señales, pensamientos y consecuencias.",
+            "Iniciativa de la propia persona.",
+            "Autorregulación y autorrefuerzo."
+          ],
+          "errores_frecuentes": [
+            "Querer cambiar todo a la vez.",
+            "No medir el avance del propio comportamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/4-4-behavioral-self-management",
+            "seccion": "4.4 Behavioral Self-Management"
+          }
+        },
+        {
+          "id": "hd-barreras-decision",
+          "nombre": "Barreras para decidir bien",
+          "explicacion": "Existen varias barreras para tomar buenas decisiones. La racionalidad limitada reconoce que en asuntos complejos no podemos ser totalmente racionales porque no captamos todas las alternativas ni sus consecuencias. La escalada del compromiso lleva a seguir con una mala decisión por lo ya invertido. Las restricciones de tiempo hacen que se recurra a atajos mentales en lugar de un análisis profundo. La incertidumbre impide conocer el resultado de cada alternativa antes de elegirla. Los sesgos personales nos inclinan hacia lo familiar y lo parecido a nosotros, y el rechazo al conflicto puede hacernos evitar la mejor decisión.",
+          "ejemplo": "Una gerente sigue invirtiendo en un software que no funciona porque ya pagó mucho por él (escalada del compromiso), y además lo eligió con prisa y sin comparar opciones (restricción de tiempo).",
+          "puntos_clave": [
+            "Racionalidad limitada y escalada del compromiso.",
+            "Tiempo e incertidumbre.",
+            "Sesgos y rechazo al conflicto."
+          ],
+          "errores_frecuentes": [
+            "Mantener una decisión solo por lo ya gastado.",
+            "Preferir siempre a quien se parece a uno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/6-4-barriers-to-effective-decision-making",
+            "seccion": "6.4 Barriers to Effective Decision-Making"
+          }
+        },
+        {
+          "id": "hd-mejores-decisiones",
+          "nombre": "Técnicas para mejorar las decisiones",
+          "explicacion": "Para decisiones programadas, los atajos mentales (heurísticas) y elegir la primera solución aceptable ahorran tiempo. Para decisiones no programadas conviene seguir de forma sistemática los pasos del proceso de decisión, conversar con otras personas para generar más opciones y reducir sesgos, ser creativo, investigar y decidir con evidencia, pensar críticamente, considerar las consecuencias de largo plazo y las implicaciones éticas. La experiencia también mejora las decisiones porque los directivos con más trayectoria han aprendido más de situaciones pasadas.",
+          "ejemplo": "Antes de abrir una sucursal, un administrador sigue los pasos del proceso, consulta a su equipo y a dos clientes, revisa datos de ventas por zona y evalúa si la apertura afectaría a sus trabajadores actuales.",
+          "puntos_clave": [
+            "Heurísticas para decisiones repetitivas.",
+            "Proceso sistemático para decisiones nuevas.",
+            "Evidencia, pensamiento crítico y ética."
+          ],
+          "errores_frecuentes": [
+            "Usar atajos en decisiones nuevas y de alto impacto.",
+            "Decidir sin consultar a nadie."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/6-5-improving-the-quality-of-decision-making",
+            "seccion": "6.5 Improving the Quality of Decision-Making"
+          }
+        },
+        {
+          "id": "hd-decision-grupo",
+          "nombre": "Decisiones en grupo y pensamiento de grupo",
+          "explicacion": "Involucrar a más personas puede mejorar la calidad de una decisión porque incorpora perspectivas e ideas distintas; para lograrlo, el grupo debe ser diverso, lo que también reduce el efecto de los sesgos, aunque demanda más trabajo y puede aumentar el conflicto. Entre sus desventajas, algunos grupos se estancan en el conflicto y otros buscan el acuerdo a costa de la calidad. El pensamiento de grupo ocurre cuando los miembros no expresan sus dudas u objeciones para mantener la paz, por un buen ambiente que no quieren alterar o por la complacencia de éxitos pasados.",
+          "ejemplo": "Un comité de contratación formado por personas de distintas áreas, edades y géneros discute los candidatos; la coordinadora pide a alguien que haga de «abogado del diablo» para evitar que todos se alineen con la primera opinión.",
+          "puntos_clave": [
+            "La diversidad mejora la decisión y reduce sesgos.",
+            "Riesgos: conflicto excesivo o acuerdo apresurado.",
+            "Pensamiento de grupo: callar por mantener la paz."
+          ],
+          "errores_frecuentes": [
+            "Formar grupos muy homogéneos.",
+            "Interpretar el silencio como acuerdo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/6-6-group-decision-making",
+            "seccion": "6.6 Group Decision-Making"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hd-comunicacion",
+      "nombre": "Comunicación efectiva",
+      "orden": 2,
+      "descripcion": "El proceso de comunicación del directivo, tipos de comunicación, roles del directivo y los canales de hablar, escuchar, leer y escribir.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "hd-proceso-comunicacion",
+          "nombre": "El proceso de comunicación interpersonal",
+          "explicacion": "La comunicación interpersonal influye en las opiniones, actitudes, motivación y conducta de los demás; expresa sentimientos e intenciones y permite dar, recibir e intercambiar información. En el modelo básico, un emisor codifica un mensaje y un receptor lo decodifica. Codificar es traducir las ideas a un sistema de símbolos, escrito u oral, influido por la experiencia del emisor. El ruido es todo lo que distorsiona la claridad del mensaje y puede aparecer en cualquier punto, incluso en la decodificación; por eso la retroalimentación es crítica para comprobar que se entendió.",
+          "ejemplo": "Una jefa estresada dice «quiero esto hoy, no me importa cuánto cueste», aunque sí le importa el costo; el equipo paga horas extra innecesarias. El ruido distorsionó el mensaje y faltó retroalimentación para aclararlo.",
+          "puntos_clave": [
+            "Emisor codifica, receptor decodifica.",
+            "El ruido distorsiona el mensaje.",
+            "La retroalimentación confirma la comprensión."
+          ],
+          "errores_frecuentes": [
+            "Asumir que lo que uno quiso decir es lo que el otro entendió.",
+            "Dar instrucciones importantes bajo presión sin aclararlas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/16-1-the-process-of-managerial-communication",
+            "seccion": "16.1 The Process of Managerial Communication"
+          }
+        },
+        {
+          "id": "hd-tipos-comunicacion",
+          "nombre": "Comunicación oral, escrita y no verbal",
+          "explicacion": "En una organización hay tres tipos de comunicación que usan tanto el emisor como el receptor al responder. La oral comprende todos los mensajes hablados y es la más frecuente. La escrita incluye correos, mensajes, cartas, informes, manuales y notas; aunque los directivos prefieren la oral por su rapidez, la comunicación electrónica crece, y algunos prefieren lo escrito para mensajes importantes, como un cambio de política, por la precisión y la constancia que deja. La no verbal transmite información sin hablar ni escribir, desde señales como un semáforo hasta el tamaño y la ubicación de una oficina, que comunican estatus. Un reto actual es la sobrecarga de información por la cantidad de correos y mensajes.",
+          "ejemplo": "Un gerente anuncia en una reunión un cambio de horario (oral), lo confirma por correo con los detalles y la fecha de vigencia (escrita) y elige reunirse en la sala común y no en su oficina para transmitir cercanía (no verbal).",
+          "puntos_clave": [
+            "Oral: la más frecuente.",
+            "Escrita: precisión y constancia.",
+            "Sobrecarga de información."
+          ],
+          "errores_frecuentes": [
+            "Comunicar cambios importantes solo de palabra.",
+            "Saturar al equipo con mensajes innecesarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/16-2-types-of-communications-in-organizations",
+            "seccion": "16.2 Types of Communications in Organizations"
+          }
+        },
+        {
+          "id": "hd-roles-comunicacion",
+          "nombre": "Los roles del directivo según Mintzberg",
+          "explicacion": "En el estudio de Mintzberg, los roles de los directivos se agrupan en tres grandes categorías: interpersonales, informativos y decisorios. Los roles interpersonales nacen de la autoridad formal: el de figura representativa, que cumple funciones ceremoniales; el de líder, y el de enlace, que conecta con personas dentro y fuera de la organización. Las relaciones personales que se forman en estos roles son la fuente más rica de información para los directivos por su carácter inmediato y personal. Además, el poder, el estatus, el propósito y las habilidades interpersonales afectan cómo se comunica.",
+          "ejemplo": "La gerente de una cooperativa corta la cinta de una nueva agencia (figura representativa), motiva a su equipo en la reunión semanal (líder) y almuerza con el presidente de una asociación de productores para conocer sus necesidades (enlace).",
+          "puntos_clave": [
+            "Roles interpersonales, informativos y decisorios.",
+            "Figura representativa, líder y enlace.",
+            "Las relaciones personales informan al directivo."
+          ],
+          "errores_frecuentes": [
+            "Encerrarse en la oficina y perder contacto.",
+            "Ignorar cómo el estatus intimida al comunicar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/16-3-factors-affecting-communications-and-the-roles-of-managers",
+            "seccion": "16.3 Factors Affecting Communications and the Roles of Managers"
+          }
+        },
+        {
+          "id": "hd-hablar-escuchar",
+          "nombre": "Hablar, escuchar, leer y escribir",
+          "explicacion": "Los principales canales de comunicación del directivo son hablar, escuchar, leer y escribir. Hablar es el predominante, aunque con el correo y los mensajes crecen la lectura y la escritura; los directivos dedican la mayor parte de su tiempo a la interacción verbal. Mucha información circula en conversaciones informales cara a cara en oficinas, pasillos y otros espacios, donde se intercambia, valida y confirma. Por eso escuchar con atención y escribir con claridad son tan importantes como saber hablar.",
+          "ejemplo": "Antes de responder a un reclamo de un cliente, una supervisora escucha sin interrumpir, resume lo que entendió, pregunta lo que falta y luego le envía por escrito los compromisos acordados.",
+          "puntos_clave": [
+            "Hablar, escuchar, leer y escribir.",
+            "Predominio de la interacción verbal.",
+            "Mucha información circula de manera informal."
+          ],
+          "errores_frecuentes": [
+            "Escuchar solo para responder.",
+            "Escribir correos largos y confusos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/16-5-the-major-channels-of-management-communication-are-talking-listening-reading-and-writing",
+            "seccion": "16.5 The Major Channels of Management Communication Are Talking, Listening, Reading, and Writing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hd-equipos",
+      "nombre": "Trabajo en equipo y colaboración",
+      "orden": 3,
+      "descripcion": "Etapas de desarrollo de un equipo, cómo dirigirlo, el conflicto constructivo y los equipos multiculturales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "hd-etapas-equipo",
+          "nombre": "Etapas de desarrollo de un equipo",
+          "explicacion": "En 1965 Bruce Tuckman propuso un modelo de cuatro etapas del desarrollo de equipos, al que en 1977 agregó una quinta. En la formación, los miembros se presentan, se centran en sus similitudes y buscan estructura en el líder; es la etapa «cortés». En la tormenta aparecen los desacuerdos y las tensiones cuando empieza el trabajo real. En la normalización el equipo acuerda reglas y formas de trabajar. En el desempeño trabaja con eficacia hacia la meta, y en la disolución el equipo se separa al terminar el proyecto.",
+          "ejemplo": "Un equipo de estudiantes que prepara un plan de negocios empieza muy amable (formación), discute fuerte sobre quién hace qué (tormenta), acuerda reuniones y responsabilidades (normalización), avanza bien (desempeño) y se despide al presentar el proyecto (disolución).",
+          "puntos_clave": [
+            "Formación, tormenta, normalización y desempeño.",
+            "Disolución al terminar.",
+            "El conflicto es una etapa normal."
+          ],
+          "errores_frecuentes": [
+            "Creer que la tormenta significa que el equipo fracasó.",
+            "Saltarse los acuerdos de trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/15-2-team-development-over-time",
+            "seccion": "15.2 Team Development Over Time"
+          }
+        },
+        {
+          "id": "hd-dirigir-equipos",
+          "nombre": "Qué considerar al dirigir equipos",
+          "explicacion": "Dirigir un equipo puede ser muy gratificante y también frustrante, porque se lidera a personas que a veces actúan como grupo y a veces como individuos. Los directivos con experiencia saben que su éxito depende de construir un equipo fuerte y que funcione bien: las personas deben querer trabajar juntas, ver cómo hacerlo y contar con un ambiente que lo facilite, algo que toma tiempo y debe ser una prioridad del líder.",
+          "ejemplo": "Un nuevo jefe de ventas dedica sus primeras semanas a conocer a cada vendedor, define con ellos metas comunes y crea un espacio semanal para compartir aprendizajes, antes de cambiar los procesos.",
+          "puntos_clave": [
+            "El éxito depende de construir el equipo.",
+            "Querer, saber y poder trabajar juntos.",
+            "Toma tiempo y es prioridad del líder."
+          ],
+          "errores_frecuentes": [
+            "Imponer cambios sin construir confianza.",
+            "Tratar al equipo solo como suma de individuos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/15-3-things-to-consider-when-managing-teams",
+            "seccion": "15.3 Things to Consider When Managing Teams"
+          }
+        },
+        {
+          "id": "hd-conflicto-equipo",
+          "nombre": "El conflicto constructivo en los equipos",
+          "explicacion": "Los conflictos en un equipo surgen por fallas de comunicación, visiones o metas distintas, luchas de poder o diferencias de personalidad. Mal manejados generan desconfianza, interrumpen el avance, bajan la moral y dañan las relaciones. Pero los conflictos constructivos, y las respuestas constructivas a ellos, pueden ser un hito de desarrollo: favorecen la diversidad de ideas, ayudan a entender puntos de vista opuestos, mejoran la capacidad de resolver problemas y destacan los puntos que necesitan más discusión.",
+          "ejemplo": "Dos diseñadores discuten si la campaña debe ser formal o divertida; la coordinadora les pide argumentar con datos del público, y la discusión termina en una propuesta mejor que las dos originales.",
+          "puntos_clave": [
+            "Causas: comunicación, metas, poder y personalidad.",
+            "Costos del conflicto mal manejado.",
+            "Beneficios del conflicto constructivo."
+          ],
+          "errores_frecuentes": [
+            "Evitar todo conflicto.",
+            "Convertir un desacuerdo de ideas en un ataque personal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/15-4-opportunities-and-challenges-to-team-building",
+            "seccion": "15.4 Opportunities and Challenges to Team Building"
+          }
+        },
+        {
+          "id": "hd-equipos-multiculturales",
+          "nombre": "Equipos multiculturales",
+          "explicacion": "La globalización hizo comunes los equipos multiculturales, que pueden convertir su diversidad en ventaja si se dirigen bien. Además del idioma, ciertas diferencias culturales pueden provocar conflictos destructivos. La primera es la comunicación directa frente a la indirecta: algunas culturas son explícitas y otras prefieren preguntar en lugar de señalar problemas, lo que puede generar malentendidos. También influyen las diferencias en el respeto a la jerarquía, en la forma de tomar decisiones y en los acentos o la fluidez del idioma.",
+          "ejemplo": "En un equipo con miembros de Ecuador, Alemania y Japón, el líder acuerda que las críticas se hagan por escrito y con ejemplos, para que quienes prefieren la comunicación indirecta participen sin incomodarse.",
+          "puntos_clave": [
+            "La diversidad cultural puede ser ventaja.",
+            "Comunicación directa frente a indirecta.",
+            "Jerarquía, decisiones e idioma."
+          ],
+          "errores_frecuentes": [
+            "Asumir que todos interpretan igual el silencio.",
+            "Imponer el estilo de comunicación propio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/15-6-multicultural-teams",
+            "seccion": "15.6 Multicultural Teams"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hd-liderazgo",
+      "nombre": "Liderazgo",
+      "orden": 4,
+      "descripcion": "El proceso de liderazgo, líderes formales e informales, rasgos del líder, liderazgo transformacional y carismático y necesidades actuales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "hd-proceso-liderazgo",
+          "nombre": "El liderazgo como proceso",
+          "explicacion": "El liderazgo es un proceso: una relación de intercambio compleja y dinámica que se construye con el tiempo entre el líder y sus seguidores, que dependen unos de otros para alcanzar una meta común. Sus componentes son el líder, los seguidores, el contexto o situación, el proceso en sí y las consecuencias, como la confianza. Cada componente influye en los demás y, cuando uno cambia, el liderazgo también cambia. Los líderes son quienes toman el mando o guían las actividades de otros y marcan el tono del grupo.",
+          "ejemplo": "Una jefa de enfermería que lideraba bien a un equipo pequeño debe ajustar su estilo cuando el hospital duplica el personal en una emergencia: cambiaron los seguidores y el contexto, y con ellos el liderazgo.",
+          "puntos_clave": [
+            "Relación de intercambio en el tiempo.",
+            "Líder, seguidores, contexto, proceso y consecuencias.",
+            "Si un componente cambia, cambia el liderazgo."
+          ],
+          "errores_frecuentes": [
+            "Creer que el liderazgo depende solo del líder.",
+            "Usar el mismo estilo en cualquier situación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/13-2-the-leadership-process",
+            "seccion": "13.2 The Leadership Process"
+          }
+        },
+        {
+          "id": "hd-lideres-formales",
+          "nombre": "Líderes formales e informales",
+          "explicacion": "Los líderes ocupan una posición única en sus grupos: ejercen influencia y dan dirección. Las organizaciones tienen dos tipos de líderes. El líder formal es reconocido desde fuera del grupo como su líder oficial; normalmente lo designa la organización como su agente, y casi todos los directivos lo son por su cargo. El líder informal surge del propio grupo, que lo reconoce por su influencia aunque no tenga un cargo; en equipos autogestionados los miembros incluso eligen a quien los coordina.",
+          "ejemplo": "En un taller mecánico, el jefe de taller es el líder formal, pero el técnico más antiguo, a quien todos consultan cuando hay una falla difícil, es el líder informal.",
+          "puntos_clave": [
+            "Influencia y dirección.",
+            "Líder formal: designado por la organización.",
+            "Líder informal: reconocido por el grupo."
+          ],
+          "errores_frecuentes": [
+            "Ignorar a los líderes informales al implementar cambios.",
+            "Creer que el cargo basta para liderar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/13-3-leader-emergence",
+            "seccion": "13.3 Leader Emergence"
+          }
+        },
+        {
+          "id": "hd-rasgos-lider",
+          "nombre": "El enfoque de rasgos del liderazgo",
+          "explicacion": "La teoría del «gran hombre» sostenía que algunas personas nacen con los atributos para ser grandes líderes, y aún hoy muchos creen que los líderes nacen. El enfoque de rasgos estudió qué características se asocian con el surgimiento y la eficacia del líder. Tras revisar cientos de estudios, Stogdill describió en 1974 al líder exitoso por su fuerte impulso de responsabilidad y de cumplir la tarea, vigor y persistencia, originalidad para resolver problemas, iniciativa en situaciones sociales, confianza en sí mismo y disposición a asumir las consecuencias de sus decisiones.",
+          "ejemplo": "Al elegir a un coordinador de proyecto, una empresa busca a alguien persistente, con iniciativa y confianza, que asuma sus errores, en lugar de elegir solo al empleado más antiguo.",
+          "puntos_clave": [
+            "Teoría del gran hombre.",
+            "Rasgos asociados al surgimiento y la eficacia.",
+            "Impulso, persistencia, iniciativa y confianza."
+          ],
+          "errores_frecuentes": [
+            "Creer que los rasgos bastan sin habilidades.",
+            "Pensar que el liderazgo no se puede desarrollar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/13-4-the-trait-approach-to-leadership",
+            "seccion": "13.4 The Trait Approach to Leadership"
+          }
+        },
+        {
+          "id": "hd-liderazgo-transformacional",
+          "nombre": "Liderazgo transaccional, transformacional y carismático",
+          "explicacion": "Los líderes transaccionales, que siguen la idea de «si no está roto, no lo arregles», se orientan a la tarea y buscan incentivos que lleven a los seguidores a actuar; se basan en intercambios recíprocos. Los líderes transformacionales y visionarios, en cambio, impulsan el cambio de cultura y el empoderamiento en organizaciones que atraviesan crisis. El carisma es un encanto especial que despierta lealtad y entusiasmo, y los líderes carismáticos ejercen una gran influencia personal para provocar cambios importantes.",
+          "ejemplo": "Un gerente transaccional ofrece un bono por cada venta adicional; una gerente transformacional comparte una visión de servicio, involucra al equipo en rediseñar la atención y logra que todos se sientan dueños del cambio.",
+          "puntos_clave": [
+            "Transaccional: tarea e intercambio.",
+            "Transformacional: visión y cambio.",
+            "Carisma: lealtad y entusiasmo."
+          ],
+          "errores_frecuentes": [
+            "Depender solo del carisma sin estructura.",
+            "Usar solo incentivos cuando se necesita un cambio profundo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/13-8-transformational-visionary-and-charismatic-leadership",
+            "seccion": "13.8 Transformational, Visionary, and Charismatic Leadership"
+          }
+        },
+        {
+          "id": "hd-liderazgo-actual",
+          "nombre": "Necesidades de liderazgo en el siglo XXI",
+          "explicacion": "Las organizaciones se están rediseñando y reestructurando: surgen empresas en red, virtuales y modulares, sin fronteras ni jerarquías rígidas. Esa transición no es fácil, porque la incertidumbre genera resistencia y tendemos a pensar de forma lineal, creyendo que bastan cambios graduales. Los paradigmas existentes enmarcan nuestras percepciones, y abandonar los que funcionaron en el pasado es difícil; por eso el liderazgo actual exige ayudar a las personas a cambiar su forma de pensar y a trabajar en estructuras nuevas.",
+          "ejemplo": "Una empresa que pasa al trabajo remoto necesita líderes que coordinen equipos dispersos, confíen en resultados más que en horas de oficina y ayuden a su gente a dejar de lado la costumbre de controlar presencialmente.",
+          "puntos_clave": [
+            "Organizaciones en red y virtuales.",
+            "La incertidumbre genera resistencia.",
+            "Cambiar paradigmas, no solo hacer ajustes."
+          ],
+          "errores_frecuentes": [
+            "Liderar estructuras nuevas con hábitos viejos.",
+            "Subestimar la resistencia al cambio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/13-9-leadership-needs-in-the-21st-century",
+            "seccion": "13.9 Leadership Needs in the 21st Century"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hd-conflicto-poder",
+      "nombre": "Retroalimentación, conflicto y poder",
+      "orden": 5,
+      "descripcion": "Dar retroalimentación efectiva, entender y manejar el conflicto, tácticas de poder y cómo limitar la política organizacional.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "hd-retroalimentacion",
+          "nombre": "Dar retroalimentación efectiva",
+          "explicacion": "La retroalimentación es clave para que funcionen las metas y la evaluación del desempeño: sin conocer los resultados, se pierde su efecto motivador. Puede venir de la propia tarea, del supervisor, de los compañeros o de uno mismo. La persona la evalúa considerando si la información es correcta, la credibilidad de quien la da, si el proceso es justo, si cumple sus expectativas y si los estándares son razonables; si alguna de esas evaluaciones es negativa, la retroalimentación pierde fuerza y puede rechazarse.",
+          "ejemplo": "En lugar de decir «tu informe está mal», una supervisora señala con datos qué cifras no cuadran, reconoce lo que estuvo bien y acuerda con el analista un estándar claro para el próximo informe.",
+          "puntos_clave": [
+            "Sin retroalimentación, las metas pierden fuerza.",
+            "Fuentes: tarea, jefe, compañeros y uno mismo.",
+            "Exactitud, credibilidad y justicia."
+          ],
+          "errores_frecuentes": [
+            "Dar retroalimentación vaga o tardía.",
+            "Criticar sin estándares claros."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/8-3-feedback",
+            "seccion": "8.3 Feedback"
+          }
+        },
+        {
+          "id": "hd-conflicto-basico",
+          "nombre": "El conflicto en las organizaciones",
+          "explicacion": "El conflicto es un tema central para los directivos, que dedican una parte importante de su tiempo a manejarlo, y la habilidad para hacerlo predice su éxito. Puede ser funcional o disfuncional según su naturaleza, intensidad y duración: tanto el exceso como la falta de conflicto traen resultados negativos, por lo que un nivel moderado puede ser lo mejor. Hay al menos cuatro tipos: de metas, cuando se desean resultados distintos; cognitivo, cuando las ideas u opiniones son incompatibles; afectivo, cuando chocan los sentimientos, y conductual, cuando una conducta resulta inaceptable para otros. El reto no es eliminar el conflicto sino manejarlo y resolverlo.",
+          "ejemplo": "Dos jefes de área quieren usar el mismo presupuesto para proyectos distintos (conflicto de metas); su gerente organiza una reunión para comparar el impacto de cada proyecto y acordar prioridades.",
+          "puntos_clave": [
+            "Funcional o disfuncional.",
+            "Nivel moderado puede ser positivo.",
+            "Tipos: de metas, cognitivo, afectivo y conductual."
+          ],
+          "errores_frecuentes": [
+            "Pensar que todo conflicto es malo.",
+            "Dejar crecer un conflicto hasta que paraliza el trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/14-1-conflict-in-organizations-basic-considerations",
+            "seccion": "14.1 Conflict in Organizations: Basic Considerations"
+          }
+        },
+        {
+          "id": "hd-tacticas-poder",
+          "nombre": "Tácticas de poder y su uso ético",
+          "explicacion": "En las organizaciones se usan muchos métodos basados en el poder para influir en otros, y algunos son más éticos que otros. Entre las tácticas comunes están controlar el acceso a la información, del que dependen muchas decisiones, y controlar el acceso a las personas. También existen símbolos del poder directivo y una dimensión ética: usar el poder para fines legítimos de la organización y no para beneficio propio a costa de otros.",
+          "ejemplo": "Un jefe que retiene información sobre un ascenso para favorecer a un amigo usa el control de la información de forma poco ética; otro que comparte criterios claros de evaluación usa su posición para un proceso justo.",
+          "puntos_clave": [
+            "Controlar información y acceso a personas.",
+            "Símbolos del poder.",
+            "Uso ético del poder."
+          ],
+          "errores_frecuentes": [
+            "Acumular información para ganar influencia.",
+            "Confundir autoridad con abuso de poder."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/13-2-uses-of-power",
+            "seccion": "13.2 Uses of Power"
+          }
+        },
+        {
+          "id": "hd-limitar-politica",
+          "nombre": "Cómo limitar la política organizacional",
+          "explicacion": "La política en las organizaciones no se puede eliminar, pero sus efectos negativos se pueden neutralizar si los directivos vigilan el ambiente y actúan cuando hace falta. Hay cuatro estrategias básicas. Primero, reducir la incertidumbre aclarando responsabilidades y criterios de evaluación y recompensa: con menos ambigüedad hay menos espacio para conductas políticas dañinas. Segundo, reducir la competencia entre personas y grupos con criterios imparciales para asignar recursos y destacando las metas comunes de toda la organización. Las otras estrategias apuntan a romper los feudos políticos y a prevenir su formación.",
+          "ejemplo": "Una empresa en la que los jefes compiten por presupuesto publica criterios objetivos para asignarlo y fija metas compartidas entre áreas; las disputas de pasillo disminuyen.",
+          "puntos_clave": [
+            "La política no se elimina, se maneja.",
+            "Reducir la incertidumbre.",
+            "Criterios imparciales y metas comunes."
+          ],
+          "errores_frecuentes": [
+            "Ignorar las conductas políticas dañinas.",
+            "Asignar recursos sin criterios claros."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/13-4-limiting-the-influence-of-political-behavior",
+            "seccion": "13.4 Limiting the Influence of Political Behavior"
+          }
+        }
+      ]
+    }
+  ]
+}

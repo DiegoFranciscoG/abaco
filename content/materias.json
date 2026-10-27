@@ -705,5 +705,34 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "habilidades-directivas",
+    "nombre": "Habilidades directivas y blandas",
+    "areas": [
+      "gestion",
+      "formacion"
+    ],
+    "descripcion": "Autogestión y toma de decisiones, comunicación efectiva, trabajo en equipo, liderazgo, retroalimentación, conflicto y uso ético del poder.",
+    "sinonimos": [
+      "habilidades blandas",
+      "desarrollo de habilidades blandas",
+      "leadership and management skills",
+      "liderazgo",
+      "comunicación efectiva",
+      "trabajo colaborativo",
+      "negociación y networking",
+      "international negotiation strategies"
+    ],
+    "herramientas": [
+      "foda",
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 33,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

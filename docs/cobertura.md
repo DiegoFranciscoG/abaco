@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (32 completas de 32)
+## Estado por materia (33 completas de 33)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -41,6 +41,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Tributación | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Cálculo diferencial | 2 de 7 | completa | 6 de 6 | 24 | 6 de 6 | 100 % | — |
 | Comportamiento organizacional | 2 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
+| Habilidades directivas y blandas | 2 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Legislación laboral | 2 de 7 | completa | 6 de 6 | 27 | 0 de 0 | 100 % | — |
 | Producto, marca y precio | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
 | Publicidad y comunicación comercial | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
@@ -95,6 +96,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Gestión de la Producción | 2 | 2 | 5 | pendiente |
 | Inteligencia de Negocios | 2 | 2 | 5 | pendiente |
 | Investigación Operativa | 2 | 2 | 4 | pendiente |
+| Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
 | Prácticas Laborales (práctica o titulación) | 2 | 2 | 4 | no aplica |
 | Titulación (práctica o titulación) | 2 | 2 | 7 | no aplica |
 
@@ -162,20 +164,20 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **3.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Legislación Aduanera.
 - **4.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades) · pendientes: Logística y Transporte Internacional.
-- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Cadena de Suministros para Operaciones Globales, International Negotiation Strategies, Técnicas de Valoración Aduanera.
+- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Cadena de Suministros para Operaciones Globales, Técnicas de Valoración Aduanera.
 - **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Inteligencia de Negocios, Nomenclatura Arancelaria.
-- **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Gerencia de Operaciones, Leadership & Management Skills.
+- **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Gerencia de Operaciones.
 
 ### Emprendimiento e innovación (1 plan)
 
-- **1.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Tributación (completa, 6 de 6 unidades) · pendientes: Desarrollo de Habilidades Blandas 1: Inteligencia Emocional y Autogestión, Herramientas de IA para la Gestión Emprendedora.
-- **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Desarrollo de Habilidades Blandas 2: Comunicación Efectiva y Trabajo Colaborativo, IA Aplicada para la Gestión Empresarial y Emprendimiento.
-- **3.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · pendientes: Business Intelligence, Desarrollo de Habilidades Blandas 3: Pensamiento Estratégico y Resolución de Problemas.
-- **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Big Data y Analítica para Toma de Decisiones, Desarrollo de Habilidades Blandas 4: Liderazgo Emprendedor, Gestión de Equipos y Manejo de Conflictos, Gestión de Operaciones.
+- **1.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Tributación (completa, 6 de 6 unidades) · pendientes: Herramientas de IA para la Gestión Emprendedora.
+- **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: IA Aplicada para la Gestión Empresarial y Emprendimiento.
+- **3.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · pendientes: Business Intelligence.
+- **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Big Data y Analítica para Toma de Decisiones, Gestión de Operaciones.
 - **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Gestión de la Producción.
-- **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Desarrollo de Habilidades Blandas 6: Negociación, Ventas Relacionales y Networking Básico, Supply Chain Management.
-- **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Business English, Desarrollo de Habilidades Blandas 7: Pitch, Storytelling y Adaptabilidad al Cambio, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
-- **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Estrategias de Negociación y Networking.
+- **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Supply Chain Management.
+- **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Business English, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
+- **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
 
 ## Meta: primer ciclo de las cuatro carreras con más planes
 
