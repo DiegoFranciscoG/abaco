@@ -361,7 +361,7 @@
   },
   {
     "id": "comf",
-    "titulo": "Código Orgánico Monetario y Financiero (2.º Supl. R.O. 332, 12-09-2014)",
+    "titulo": "Código Orgánico Monetario y Financiero (2.º Supl. R.O. 332, 12-09-2014; copia con reformas hasta el Supl. R.O. 1, 11-02-2022, que incluye la Ley de Mercado de Valores como Libro II y la Ley General de Seguros como Libro III)",
     "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por la SEPS",
     "tipo": "ley",
     "url": "https://www.seps.gob.ec/wp-content/uploads/CODIGO-ORGANICO-MONETARIO-Y-FINANCIERO.pdf",
@@ -546,6 +546,15 @@
     "tipo": "libro",
     "url": "https://openstax.org/details/books/introduction-political-science",
     "licencia": "CC BY 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "fsb-fintech",
+    "titulo": "Financial innovation (FinTech)",
+    "autor_editor": "Financial Stability Board (FSB)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/fintech/",
+    "licencia": "Se cita y enlaza; redacción propia",
     "fecha_consulta": "2026-10-27"
   }
 ]

@@ -1,0 +1,511 @@
+{
+  "materia": "sistema-financiero",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "sf-intermediacion",
+      "nombre": "Bancos e intermediación financiera",
+      "orden": 1,
+      "descripcion": "Intermediarios, mercados primario y secundario, balance de un banco y cómo puede quebrar.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sf-intermediarios",
+          "nombre": "Intermediarios financieros y desintermediación",
+          "explicacion": "Un intermediario financiero, como un banco comercial o un fondo de inversión, facilita los intercambios entre las partes: el banco recibe depósitos de ahorristas y crea préstamos para prestatarios; el fondo reúne dinero de inversionistas para comprar y administrar carteras a bajo costo. A diferencia de corredores y operadores, el intermediario recibe dinero y puede crear un instrumento distinto: si un prestatario no paga su hipoteca, el certificado de depósito del ahorrista sigue ganando intereses. Cuando prestamistas y prestatarios se saltan a los intermediarios a gran escala ocurre la desintermediación. Los intermediarios bajan los costos de transacción, reúnen información que reduce el fraude y aportan economías de escala.",
+          "ejemplo": "Una cooperativa recibe ahorros de cientos de socios y con ellos otorga créditos a pequeños comerciantes; ningún ahorrista tuvo que buscar por su cuenta a quién prestar ni evaluar su riesgo.",
+          "puntos_clave": [
+            "Intermediario: entre ahorristas y prestatarios.",
+            "Crea instrumentos distintos.",
+            "Baja costos de transacción e información."
+          ],
+          "errores_frecuentes": [
+            "Confundir intermediario con corredor.",
+            "Creer que el ahorrista asume directamente el riesgo de cada préstamo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/1-5-markets-and-participants",
+            "seccion": "1.5 Markets and Participants"
+          }
+        },
+        {
+          "id": "sf-mercados-participantes",
+          "nombre": "Mercado primario, secundario, corredores y operadores",
+          "explicacion": "El mercado primario es el de valores nuevos y el secundario el de valores ya emitidos, como la venta de autos nuevos frente a usados. Las emisiones iniciales (IPO) y las nuevas emisiones de empresas establecidas entregan dinero directamente a la empresa; las compraventas posteriores no. En el mercado secundario hay mercados de corredores y de operadores: el operador (dealer) compra y vende desde su propia cartera y gana con el volumen y la diferencia entre su precio de compra y su precio de venta; el corredor (broker) reúne a compradores y vendedores y cobra una comisión.",
+          "ejemplo": "Una empresa que emite acciones por primera vez recibe el dinero de esa venta (mercado primario); cuando un inversionista luego vende esas acciones a otro, la empresa no recibe nada (mercado secundario).",
+          "puntos_clave": [
+            "Primario: valores nuevos; secundario: ya emitidos.",
+            "Operador: compra y vende con cartera propia.",
+            "Corredor: intermedia y cobra comisión."
+          ],
+          "errores_frecuentes": [
+            "Creer que la empresa cobra en cada compraventa de sus acciones.",
+            "Confundir el margen del operador con la comisión del corredor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/1-5-markets-and-participants",
+            "seccion": "1.5 Markets and Participants"
+          }
+        },
+        {
+          "id": "sf-balance-bancario",
+          "nombre": "El balance de un banco",
+          "explicacion": "Los bancos reducen costos de transacción y actúan como intermediarios en el sistema de pagos. Su balance, presentado como cuenta T, tiene a la izquierda los activos: préstamos, bonos y reservas; a la derecha los pasivos, sobre todo los depósitos que el banco debe a sus clientes. El patrimonio neto o capital bancario es el total de activos menos el total de pasivos, y se coloca en el lado de los pasivos para que la cuenta T cuadre. En un banco sano es positivo. El valor de los préstamos depende de su riesgo y de cómo se compara su tasa con las tasas actuales del mercado.",
+          "ejemplo": "Un banco tiene préstamos por USD 5 millones, bonos por USD 4 millones y reservas por USD 2 millones (activos de USD 11 millones) y depósitos por USD 10 millones: su patrimonio neto es 11 − 10 = USD 1 millón.",
+          "puntos_clave": [
+            "Activos: préstamos, bonos y reservas.",
+            "Pasivos: depósitos.",
+            "Patrimonio neto = activos − pasivos."
+          ],
+          "errores_frecuentes": [
+            "Registrar los depósitos como activo del banco.",
+            "Valorar los préstamos sin considerar su riesgo."
+          ],
+          "formulas": [
+            "patrimonio"
+          ],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-3-the-role-of-banks",
+            "seccion": "14.3 The Role of Banks"
+          }
+        },
+        {
+          "id": "sf-quiebra-bancaria",
+          "nombre": "Cómo quiebra un banco y el riesgo de la titularización",
+          "explicacion": "Un banco en quiebra tiene patrimonio neto negativo: sus activos valen menos que sus pasivos. Un banco bien manejado prevé que algunos préstamos no se pagarán, pero si los impagos superan mucho lo esperado, como en una recesión, el valor de sus préstamos cae y puede volverse insolvente. La titularización agrupa préstamos en un valor que se vende a inversionistas; reduce el riesgo local, pero quien planea vender el préstamo tiene menos incentivo a evaluar bien al prestatario, lo que favoreció los préstamos de alto riesgo (subprime) antes de la crisis de 2008-2009.",
+          "ejemplo": "Si los préstamos de un banco con activos de USD 11 millones y depósitos de USD 10 millones pierden USD 2 millones de valor por impagos, sus activos quedan en USD 9 millones y su patrimonio en −1 millón.",
+          "puntos_clave": [
+            "Quiebra: patrimonio neto negativo.",
+            "Impagos mayores a los previstos.",
+            "Titularización e incentivos a evaluar mal."
+          ],
+          "errores_frecuentes": [
+            "Creer que un banco solo quiebra por robo o fraude.",
+            "Ignorar el incentivo de quien vende el préstamo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-3-the-role-of-banks",
+            "seccion": "14.3 The Role of Banks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-dinero-regulacion",
+      "nombre": "Creación de dinero y regulación bancaria",
+      "orden": 2,
+      "descripcion": "El multiplicador monetario, los requisitos de reservas y capital, la supervisión bancaria, las corridas, el seguro de depósitos y el prestamista de última instancia.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sf-creacion-dinero",
+          "nombre": "Cómo crean dinero los bancos: el multiplicador",
+          "explicacion": "Cuando un banco presta su exceso de reservas, ese dinero se gasta y se vuelve a depositar en otros bancos, que a su vez prestan su propio exceso. El multiplicador monetario indica cuántas veces se multiplica un préstamo en ese proceso: es 1 dividido para el encaje o reserva requerida. El aumento máximo de la oferta monetaria es el exceso de reservas por el multiplicador. En la práctica el multiplicador es menor, porque los bancos pueden guardar reservas adicionales, sobre todo en recesiones, y la autoridad puede cambiar el encaje.",
+          "ejemplo": "Con un encaje del 10 %, el multiplicador es 1 ÷ 0,10 = 10; si los bancos prestan un exceso de reservas de USD 9 millones, la oferta monetaria puede aumentar hasta 9 × 10 = USD 90 millones.",
+          "puntos_clave": [
+            "Multiplicador = 1 ÷ encaje.",
+            "Aumento máximo = exceso de reservas × multiplicador.",
+            "En la práctica es menor."
+          ],
+          "errores_frecuentes": [
+            "Usar el encaje en porcentaje (10) en lugar de proporción (0,10).",
+            "Tomar el resultado como cifra exacta y no como máximo."
+          ],
+          "formulas": [
+            "dinero-multiplicador"
+          ],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",
+            "seccion": "14.4 How Banks Create Money"
+          }
+        },
+        {
+          "id": "sf-regulacion-bancaria",
+          "nombre": "Regulación bancaria: reservas, capital e inversiones permitidas",
+          "explicacion": "La regulación bancaria busca mantener la solvencia de los bancos evitando riesgos excesivos. Incluye requisitos de reservas, para cubrir los retiros de los depositantes; requisitos de capital, porque el capital bancario es la diferencia entre activos y pasivos y debe ser positivo, y restricciones sobre los tipos de inversiones: los bancos pueden prestar y comprar bonos del gobierno, pero no invertir en activos considerados demasiado riesgosos. Un sistema financiero sano protege los ahorros y la integridad del sistema de pagos.",
+          "ejemplo": "La autoridad exige a un banco mantener un patrimonio mínimo en relación con sus activos; si sus pérdidas lo dejan por debajo, debe capitalizarse o reducir sus operaciones de riesgo.",
+          "puntos_clave": [
+            "Requisitos de reservas.",
+            "Requisitos de capital.",
+            "Restricciones a inversiones riesgosas."
+          ],
+          "errores_frecuentes": [
+            "Confundir reservas con capital.",
+            "Pensar que la regulación solo protege al banco y no a los depositantes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-2-bank-regulation",
+            "seccion": "15.2 Bank Regulation"
+          }
+        },
+        {
+          "id": "sf-supervision-bancaria",
+          "nombre": "Supervisión bancaria y sus dificultades",
+          "explicacion": "Varias entidades públicas revisan los balances de los bancos para verificar que tengan patrimonio neto positivo y no asuman demasiado riesgo. Si un banco tiene patrimonio bajo o negativo, o demasiados préstamos riesgosos, el supervisor puede exigirle cambios o, en casos extremos, forzar su cierre o venta. La supervisión enfrenta problemas prácticos, porque medir el valor de los préstamos no es sencillo, y políticos, porque las decisiones de cierre generan presiones de dueños y políticos locales.",
+          "ejemplo": "Un supervisor detecta que un banco concentra sus créditos en un sector en crisis y le ordena constituir más provisiones y frenar nuevos préstamos a ese sector.",
+          "puntos_clave": [
+            "Revisión de balances y riesgo.",
+            "Facultad de exigir cambios o cierre.",
+            "Problemas prácticos y presiones políticas."
+          ],
+          "errores_frecuentes": [
+            "Creer que el valor de los préstamos es fácil de medir.",
+            "Ignorar la presión política sobre el supervisor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-2-bank-regulation",
+            "seccion": "15.2 Bank Regulation"
+          }
+        },
+        {
+          "id": "sf-corridas-seguro",
+          "nombre": "Corridas bancarias, seguro de depósitos y prestamista de última instancia",
+          "explicacion": "Como los bancos prestan la mayor parte de los depósitos y guardan reservas limitadas, un simple rumor puede provocar una corrida: muchos depositantes retiran su dinero a la vez y hasta un banco sano puede caer, con efecto contagio sobre otros. Para evitarlo existen dos estrategias. El seguro de depósitos garantiza que los depositantes no pierdan su dinero, hasta un límite, aunque el banco quiebre; los bancos pagan una prima según sus depósitos y su riesgo. El prestamista de última instancia presta a los bancos y otras instituciones cuando no pueden obtener fondos en otro lugar.",
+          "ejemplo": "Ante rumores sobre un banco, los clientes saben que sus depósitos están asegurados hasta cierto monto, así que la mayoría no retira su dinero y la corrida no se produce.",
+          "puntos_clave": [
+            "Corridas y contagio.",
+            "Seguro de depósitos con primas según riesgo.",
+            "Prestamista de última instancia."
+          ],
+          "errores_frecuentes": [
+            "Creer que el seguro cubre cualquier monto.",
+            "Pensar que solo los bancos insolventes sufren corridas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-macro3",
+            "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/15-2-bank-regulation",
+            "seccion": "15.2 Bank Regulation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-sfn",
+      "nombre": "El sistema financiero nacional del Ecuador",
+      "orden": 3,
+      "descripcion": "Sectores y entidades, la Junta de Política y Regulación Financiera, las superintendencias, las operaciones permitidas, las tasas de interés y los derechos de los usuarios según el COMF.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sf-sectores",
+          "nombre": "Sectores y entidades del sistema financiero nacional",
+          "explicacion": "Según el Código Orgánico Monetario y Financiero (COMF), el sistema financiero nacional está integrado por tres sectores. El sector financiero público está compuesto por bancos y corporaciones. El sector financiero privado lo forman los bancos múltiples (con operaciones autorizadas en dos o más segmentos de crédito) y especializados (en un segmento), las entidades de servicios financieros, como almacenes generales de depósito y casas de cambio, y las de servicios auxiliares, como software bancario, redes y cajeros automáticos. El sector financiero popular y solidario incluye cooperativas de ahorro y crédito, cajas centrales, entidades asociativas o solidarias, cajas y bancos comunales y cajas de ahorro.",
+          "ejemplo": "Un banco que otorga créditos de consumo, productivos y de vivienda es un banco múltiple del sector privado; una cooperativa de ahorro y crédito pertenece al sector popular y solidario.",
+          "puntos_clave": [
+            "Tres sectores: público, privado y popular y solidario.",
+            "Bancos múltiples y especializados.",
+            "Cooperativas y cajas en el sector popular y solidario."
+          ],
+          "errores_frecuentes": [
+            "Ubicar a las cooperativas en el sector privado.",
+            "Confundir banco múltiple con banco especializado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 160-163"
+          }
+        },
+        {
+          "id": "sf-junta",
+          "nombre": "La Junta de Política y Regulación Financiera",
+          "explicacion": "Tras la reforma de 2021, el COMF crea la Junta de Política y Regulación Financiera como persona jurídica de derecho público, parte de la Función Ejecutiva, responsable de formular la política y regulación crediticia, financiera, de valores, seguros y servicios de atención integral de salud prepagada. Está conformada por tres miembros a tiempo completo designados por la Asamblea Nacional. Entre sus funciones están formular esas políticas, emitir regulaciones que mantengan la solidez y estabilidad de los sistemas financiero, de valores y seguros, y expedir regulaciones microprudenciales. La política monetaria corresponde a otra junta, la de Política y Regulación Monetaria.",
+          "ejemplo": "Cuando cambian los requisitos de provisiones para créditos o el sistema de tasas de interés, la norma la expide la Junta de Política y Regulación Financiera y la aplican las superintendencias.",
+          "puntos_clave": [
+            "Creada por la reforma de 2021.",
+            "Tres miembros designados por la Asamblea.",
+            "Regulación crediticia, financiera, de valores y seguros."
+          ],
+          "errores_frecuentes": [
+            "Confundir la Junta Financiera con la Junta Monetaria.",
+            "Creer que la Junta supervisa directamente a cada banco."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 13-14"
+          }
+        },
+        {
+          "id": "sf-superintendencias",
+          "nombre": "Superintendencia de Bancos y Superintendencia de Economía Popular y Solidaria",
+          "explicacion": "La Superintendencia de Bancos efectúa la vigilancia, auditoría, intervención, control y supervisión de las actividades financieras de las entidades públicas y privadas del sistema financiero nacional, para que atiendan al interés general, se sujeten al ordenamiento jurídico y se eviten prácticas fraudulentas, protegiendo los derechos de los usuarios. Entre sus funciones están vigilar el cumplimiento del COMF y de las regulaciones de la Junta, y autorizar la constitución y liquidación de entidades. La Superintendencia de Economía Popular y Solidaria es el organismo técnico que controla a las entidades del sector financiero popular y solidario.",
+          "ejemplo": "Un banco privado responde ante la Superintendencia de Bancos; una cooperativa de ahorro y crédito, ante la Superintendencia de Economía Popular y Solidaria.",
+          "puntos_clave": [
+            "Superintendencia de Bancos: sectores público y privado.",
+            "SEPS: sector popular y solidario.",
+            "Protección de los usuarios."
+          ],
+          "errores_frecuentes": [
+            "Creer que la Superintendencia de Compañías controla a los bancos.",
+            "Pensar que las superintendencias dictan la política financiera."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 60, 62 y 74"
+          }
+        },
+        {
+          "id": "sf-operaciones",
+          "nombre": "Actividad financiera y operaciones permitidas",
+          "explicacion": "El COMF define la actividad financiera como las operaciones y servicios vinculados con flujos o riesgos financieros que las entidades realizan de forma habitual, con autorización de los organismos de control, usando recursos de terceros. Clasifica las operaciones del sector público y privado en: activas, como otorgar préstamos hipotecarios, prendarios y quirografarios o créditos en cuenta corriente; pasivas, como recibir depósitos a la vista y a plazo o recibir préstamos de otras entidades; contingentes, como avales, garantías, fianzas y cartas de crédito, y servicios, como caja y tesorería, emisión de tarjetas, cobranzas, pagos y transferencias.",
+          "ejemplo": "Cuando un banco recibe tu depósito realiza una operación pasiva; cuando te presta para comprar un auto, una activa; cuando emite una carta de crédito para un importador, una contingente.",
+          "puntos_clave": [
+            "Activas: préstamos y créditos.",
+            "Pasivas: depósitos y financiamiento recibido.",
+            "Contingentes y servicios."
+          ],
+          "errores_frecuentes": [
+            "Llamar activa a la captación de depósitos.",
+            "Olvidar que las operaciones requieren autorización del organismo de control."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 143 y 194"
+          }
+        },
+        {
+          "id": "sf-tasas-usuarios",
+          "nombre": "Tasas de interés y derechos de los usuarios financieros",
+          "explicacion": "La Junta de Política y Regulación Financiera establece el sistema de tasas de interés para las operaciones activas y pasivas del sistema financiero nacional, y el COMF prohíbe el anatocismo, es decir, cobrar intereses sobre intereses. Los usuarios tienen derecho a servicios financieros de adecuada calidad y a información precisa y no engañosa; a elegir libremente productos y servicios según precios, tarifas, costos y beneficios, sin ser presionados, y a que sus reportes crediticios sean exactos y actualizados.",
+          "ejemplo": "Antes de firmar un crédito, el cliente compara el costo total y los cargos de dos entidades; si su historial crediticio tiene un error, puede exigir que se corrija.",
+          "puntos_clave": [
+            "La Junta fija el sistema de tasas.",
+            "Prohibición del anatocismo.",
+            "Información clara, libre elección y datos crediticios exactos."
+          ],
+          "errores_frecuentes": [
+            "Comparar créditos solo por la cuota.",
+            "Desconocer el derecho a corregir el historial crediticio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 130 y 152"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-prudencia",
+      "nombre": "Liquidez, solvencia y red de seguridad financiera",
+      "orden": 4,
+      "descripcion": "Parámetros de liquidez y reservas, índice de solvencia, la COSEDE, el seguro de depósitos y su monto, y el fondo de liquidez.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sf-liquidez",
+          "nombre": "Liquidez y reservas de liquidez",
+          "explicacion": "Las entidades del sistema financiero nacional deben mantener niveles suficientes de activos líquidos de alta calidad, libres de gravamen, que puedan convertirse en efectivo sin pérdida significativa de valor, en relación con sus obligaciones y contingentes. El COMF ordena medir la liquidez con al menos cinco parámetros prudenciales: liquidez inmediata, liquidez estructural, reservas de liquidez, liquidez doméstica y brechas de liquidez. Además, las entidades deben mantener reservas de liquidez en el Banco Central del Ecuador según la regulación que se expida.",
+          "ejemplo": "Una cooperativa con muchos depósitos a la vista mantiene una parte en efectivo e inversiones de corto plazo fáciles de vender, para atender retiros sin tener que vender cartera con pérdida.",
+          "puntos_clave": [
+            "Activos líquidos de alta calidad.",
+            "Cinco parámetros prudenciales.",
+            "Reservas de liquidez en el BCE."
+          ],
+          "errores_frecuentes": [
+            "Confundir liquidez con rentabilidad.",
+            "Contar como líquidos activos que no se pueden vender sin pérdida."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 121 y 189"
+          }
+        },
+        {
+          "id": "sf-solvencia",
+          "nombre": "Solvencia y patrimonio técnico: el mínimo del 9 %",
+          "explicacion": "Las entidades del sistema financiero nacional deben mantener suficiencia patrimonial para respaldar sus operaciones, absorber pérdidas no cubiertas por provisiones y sostener los riesgos de crédito, liquidez, mercado y operacional. El COMF exige mantener en todo tiempo una relación entre el patrimonio técnico y la suma ponderada por riesgo de los activos y contingentes no inferior al 9 %, calculada sobre estados financieros consolidados o combinados. Las superintendencias pueden establecer exigencias adicionales.",
+          "ejemplo": "Un banco con patrimonio técnico de USD 54 millones y activos ponderados por riesgo de USD 450 millones tiene un índice de 54 ÷ 450 × 100 = 12 %, por encima del 9 % exigido.",
+          "puntos_clave": [
+            "Patrimonio técnico ÷ activos ponderados por riesgo.",
+            "Mínimo legal: 9 %.",
+            "Respaldo frente a riesgos de crédito, liquidez, mercado y operacional."
+          ],
+          "errores_frecuentes": [
+            "Dividir para el activo total en lugar del ponderado por riesgo.",
+            "Confundir patrimonio técnico con patrimonio contable."
+          ],
+          "formulas": [
+            "indice-solvencia"
+          ],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Art. 190"
+          }
+        },
+        {
+          "id": "sf-cosede",
+          "nombre": "La COSEDE y el seguro de depósitos",
+          "explicacion": "La Corporación del Seguro de Depósitos, Fondo de Liquidez y Fondo de Seguros Privados (COSEDE) es una persona jurídica de derecho público, no financiera, que administra el seguro de depósitos y el fondo de liquidez de los sectores financiero privado y popular y solidario, y el fondo de seguros privados. El seguro de depósitos protege de forma limitada las cuentas corrientes, de ahorros, depósitos a plazo y otras modalidades. No están protegidos, entre otros, los depósitos de personas vinculadas a la entidad, el exceso sobre el monto protegido, los depósitos en oficinas del exterior y las obligaciones emitidas según la Ley de Mercado de Valores.",
+          "ejemplo": "Una persona con una cuenta de ahorros y un depósito a plazo en un banco privado está protegida por el seguro; las obligaciones que ese banco emitió en bolsa no lo están.",
+          "puntos_clave": [
+            "COSEDE administra seguro y fondos.",
+            "Protección limitada de depósitos.",
+            "Exclusiones: vinculados, exceso, exterior y valores."
+          ],
+          "errores_frecuentes": [
+            "Creer que el seguro protege inversiones en bolsa.",
+            "Suponer que cubre a los accionistas vinculados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 79, 80, 322 y 323"
+          }
+        },
+        {
+          "id": "sf-monto-asegurado",
+          "nombre": "Cálculo del monto asegurado por depositante",
+          "explicacion": "El monto protegido por el seguro de depósitos para cada persona natural o jurídica es diferenciado por sector. En las entidades financieras privadas y en el segmento 1 del sector popular y solidario es igual a dos veces la fracción básica exenta vigente del impuesto a la renta, pero nunca inferior a USD 32.000. Con la fracción básica de USD 12.208, el doble es USD 24.416, menor que el mínimo, así que el monto asegurado es USD 32.000. Para los demás segmentos lo define la Junta, sin superar ese valor, y el total a pagar no puede exceder el patrimonio del fideicomiso respectivo.",
+          "ejemplo": "Una persona tiene USD 45.000 en un banco privado que es liquidado: el seguro le paga hasta USD 32.000; los USD 13.000 restantes no están cubiertos por el seguro.",
+          "puntos_clave": [
+            "Monto = máx(2 × fracción básica, USD 32.000).",
+            "Diferenciado por sector y segmento.",
+            "Límite: patrimonio del fideicomiso."
+          ],
+          "errores_frecuentes": [
+            "Olvidar el mínimo de USD 32.000.",
+            "Pensar que el límite es por cuenta y no por persona."
+          ],
+          "formulas": [
+            "monto-asegurado-depositos"
+          ],
+          "cifras": [
+            "ir-personas-tabla"
+          ],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Art. 328"
+          }
+        },
+        {
+          "id": "sf-fondo-liquidez",
+          "nombre": "El fondo de liquidez como prestamista de última instancia",
+          "explicacion": "Las deficiencias de liquidez de las entidades de los sectores financiero privado y popular y solidario pueden cubrirse con el fondo de liquidez, que actúa como prestamista de última instancia y otorga préstamos de liquidez a las entidades que mantengan su patrimonio técnico dentro de los mínimos exigidos y que hayan administrado su liquidez según la regulación. Se organiza en fideicomisos independientes para cada sector y se nutre de los aportes de las propias entidades y del rendimiento de sus inversiones.",
+          "ejemplo": "Un banco solvente enfrenta retiros inesperados por un rumor; como cumple el patrimonio técnico mínimo, puede pedir un préstamo al fondo de liquidez en lugar de vender su cartera con pérdida.",
+          "puntos_clave": [
+            "Prestamista de última instancia.",
+            "Requisitos: solvencia y buena gestión de liquidez.",
+            "Fideicomisos por sector financiados por las entidades."
+          ],
+          "errores_frecuentes": [
+            "Creer que el fondo rescata a entidades insolventes.",
+            "Confundir el fondo de liquidez con el seguro de depósitos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 333-335"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sf-estructura-innovacion",
+      "nombre": "Capital, fusiones e innovación financiera",
+      "orden": 5,
+      "descripcion": "Capital autorizado y pagado, fusiones, bienes recibidos en pago y fintech.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sf-capital-entidades",
+          "nombre": "Capital autorizado, suscrito y pagado de las entidades financieras",
+          "explicacion": "Las entidades de los sectores financieros público y privado tienen un capital autorizado, que es el monto hasta el cual pueden aceptar suscripciones o emitir acciones, y un capital suscrito y pagado, que debe ser al menos la mitad del autorizado. En el sector financiero popular y solidario el capital social es variable y puede crecer de forma ilimitada. Los aumentos del capital autorizado los resuelve el directorio en las entidades públicas y la junta general de accionistas en las privadas, se inscriben en el registro mercantil y se notifican a la Superintendencia de Bancos.",
+          "ejemplo": "Un banco con capital autorizado de USD 200 millones debe tener al menos USD 100 millones de capital suscrito y pagado.",
+          "puntos_clave": [
+            "Capital autorizado como techo.",
+            "Suscrito y pagado: al menos la mitad del autorizado.",
+            "Capital variable en el sector popular y solidario."
+          ],
+          "errores_frecuentes": [
+            "Confundir capital autorizado con capital pagado.",
+            "Aplicar a una cooperativa las reglas de capital de un banco."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 165-166"
+          }
+        },
+        {
+          "id": "sf-fusiones",
+          "nombre": "Fusiones de entidades financieras",
+          "explicacion": "La fusión es la unión de dos o más entidades del sistema financiero nacional del mismo sector, que juntan sus patrimonios y forman una nueva sociedad que adquiere sus derechos y obligaciones; también hay fusión cuando una entidad absorbe a otras. Es ordinaria cuando ninguna de las entidades tiene deficiencia de patrimonio técnico, y extraordinaria cuando una entidad con deficiencia de patrimonio técnico se une a otra que no la tiene; en ese caso se requiere la aceptación expresa del representante legal de la entidad sana.",
+          "ejemplo": "Dos cooperativas pequeñas y solventes se fusionan para reducir costos (fusión ordinaria); una cooperativa con patrimonio insuficiente es absorbida por otra solvente (fusión extraordinaria).",
+          "puntos_clave": [
+            "Unión de entidades del mismo sector.",
+            "Fusión ordinaria y extraordinaria.",
+            "Patrimonio técnico como criterio."
+          ],
+          "errores_frecuentes": [
+            "Creer que pueden fusionarse entidades de sectores distintos.",
+            "Ignorar la aceptación de la entidad sana en la fusión extraordinaria."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Arts. 170-171"
+          }
+        },
+        {
+          "id": "sf-dacion-pago",
+          "nombre": "Bienes recibidos en dación en pago",
+          "explicacion": "Las entidades financieras pueden recibir, de forma extraordinaria, bienes muebles, inmuebles, acciones o participaciones como pago de créditos, por dación en pago o adjudicación judicial. Pueden conservarlos hasta por un año al valor de recepción; vencido ese plazo deben venderlos en pública subasta. Si no logran venderlos, deben constituir provisiones a razón de un doceavo mensual del valor en libros, y en ningún caso pueden mantenerlos más de un año adicional.",
+          "ejemplo": "Un banco recibe un terreno valorado en USD 60.000 como pago de un crédito; si al año no lo ha vendido, debe provisionar USD 60.000 ÷ 12 = USD 5.000 cada mes.",
+          "puntos_clave": [
+            "Dación en pago o adjudicación judicial.",
+            "Plazo de un año para conservar.",
+            "Provisión de un doceavo mensual."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el banco puede quedarse el bien indefinidamente.",
+            "Calcular la provisión sobre el valor comercial y no sobre el valor en libros."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Art. 195"
+          }
+        },
+        {
+          "id": "sf-fintech",
+          "nombre": "Fintech: innovación financiera basada en tecnología",
+          "explicacion": "El Consejo de Estabilidad Financiera (FSB) define la fintech como la innovación en servicios financieros habilitada por la tecnología que puede producir nuevos modelos de negocio, aplicaciones, procesos o productos con un efecto importante sobre los mercados, las instituciones y la prestación de servicios financieros. El FSB, junto con otros organismos internacionales, vigila estas actividades por sus implicaciones para la estabilidad financiera. Entre los temas que estudia están las grandes tecnológicas que ofrecen servicios financieros (bigtech), el uso de tecnología por los supervisores (suptech) y por las instituciones reguladas para cumplir la regulación (regtech), el crédito fintech, las monedas digitales, los registros distribuidos y la inteligencia artificial.",
+          "ejemplo": "Una aplicación que evalúa el riesgo de crédito con datos de pagos y desembolsa préstamos pequeños en minutos es fintech; un banco que automatiza sus reportes regulatorios usa regtech.",
+          "puntos_clave": [
+            "Definición del FSB.",
+            "Bigtech, suptech y regtech.",
+            "Beneficios y riesgos para la estabilidad."
+          ],
+          "errores_frecuentes": [
+            "Creer que fintech solo significa criptomonedas.",
+            "Ignorar los riesgos para la estabilidad financiera."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "fsb-fintech",
+            "url": "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/fintech/",
+            "seccion": "Financial innovation"
+          }
+        }
+      ]
+    }
+  ]
+}

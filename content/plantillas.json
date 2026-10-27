@@ -1605,5 +1605,78 @@
       "seccion": "15.4 Income Inequality: Measurement and Causes"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "banco-solvencia-seguro",
+    "nombre": "Balance de un banco, solvencia, multiplicador y monto asegurado",
+    "descripcion": "Calcula el patrimonio neto de un banco, su índice de solvencia frente al 9 %, la creación máxima de dinero y el monto asegurado por depositante.",
+    "materias": [
+      "sistema-financiero"
+    ],
+    "celdas": {
+      "A1": "Préstamos (millones USD)",
+      "B1": 7.5,
+      "A2": "Bonos (millones USD)",
+      "B2": 3,
+      "A3": "Reservas (millones USD)",
+      "B3": 1.5,
+      "A4": "Depósitos (millones USD)",
+      "B4": 11,
+      "A5": "Patrimonio neto",
+      "B5": "=B1+B2+B3-B4",
+      "A7": "Patrimonio técnico (millones USD)",
+      "B7": 18,
+      "A8": "Activos ponderados por riesgo (millones USD)",
+      "B8": 150,
+      "A9": "Índice de solvencia (%)",
+      "B9": "=B7/B8*100",
+      "A10": "¿Cumple el 9 %?",
+      "B10": "=IF(B9>=9,\"Sí\",\"No\")",
+      "A12": "Exceso de reservas (millones USD)",
+      "B12": 9,
+      "A13": "Encaje (proporción)",
+      "B13": 0.1,
+      "A14": "Aumento máximo de dinero",
+      "B14": "=B12*(1/B13)",
+      "A16": "Fracción básica exenta (USD)",
+      "B16": 12208,
+      "A17": "Mínimo legal (USD)",
+      "B17": 32000,
+      "A18": "Monto asegurado (USD)",
+      "B18": "=MAX(2*B16,B17)"
+    },
+    "formatos": {
+      "B5": "numero",
+      "B9": "numero",
+      "B14": "numero",
+      "B18": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B5",
+        "esperado": 1,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B9",
+        "esperado": 12,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 90,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B18",
+        "esperado": 32000,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Arts. 190 y 328"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

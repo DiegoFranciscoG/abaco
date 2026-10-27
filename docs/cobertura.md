@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (37 completas de 37)
+## Estado por materia (38 completas de 38)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -46,6 +46,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Habilidades directivas y blandas | 2 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Legislación laboral | 2 de 7 | completa | 6 de 6 | 27 | 0 de 0 | 100 % | — |
 | Producto, marca y precio | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
+| Sistema financiero y banca | 2 de 7 | completa | 5 de 5 | 22 | 4 de 4 | 100 % | — |
 | Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Pensamiento económico y economía política | 0 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Publicidad y comunicación comercial | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
@@ -98,6 +99,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Contratación Pública | 2 | 2 | 6 | pendiente |
 | Cálculo Integral | 2 | 2 | 1 | Cálculo diferencial |
 | Fundamentos de Programación | 2 | 2 | 1 | pendiente |
+| Gestión Bancaria | 2 | 2 | 3 | Sistema financiero y banca |
 | Investigación Operativa | 2 | 2 | 4 | pendiente |
 | Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
 | Prácticas Laborales (práctica o titulación) | 2 | 2 | 4 | no aplica |
@@ -123,7 +125,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **3.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Contabilidad de Gestión Ambiental.
 - **4.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades) · pendientes: Control Interno y Gestión de Riesgos, Legislación del Sector Público.
 - **5.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Administración Pública y Presupuesto, Contabilidad de IFIS y Economía Popular y Solidaria, Fundamentos de Contabilidad Gubernamental.
-- **6.º ciclo**: en ÁBACO: Planificación y dirección estratégica (completa, 5 de 5 unidades) · pendientes: Auditoría Administrativa, Auditoría de Gestión, Contratación Pública, Legislación de Instituciones Financieras y EPS, Marco Legal de la Auditoría Financiera, Presupuesto Público y Privado.
+- **6.º ciclo**: en ÁBACO: Planificación y dirección estratégica (completa, 5 de 5 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · pendientes: Auditoría Administrativa, Auditoría de Gestión, Contratación Pública, Marco Legal de la Auditoría Financiera, Presupuesto Público y Privado.
 - **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Auditoría Financiera, Comercio Internacional y Aduanas, Contabilidad Instituciones Financieras, Inteligencia Artificial en Contabilidad y Auditoría, Presupuesto Privado.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Auditoria Forense y Prevención de Lavado de Activos, Auditorias Especiales, Auditoría Forense, Auditoría Gubernamental, Auditoría de Calidad, Contabilidad Gubernamental y Contratación Pública.
 
@@ -153,11 +155,11 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Responsabilidad Social.
 - **2.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades) · sin pendientes.
-- **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Análisis Exploratorio de Datos, Sistema Financiero.
-- **4.º ciclo**: en ÁBACO: Macroeconomía (completa, 6 de 6 unidades) · pendientes: Econometría Aplicada, Legislación Bancaria y de Seguros, Mercado de Valores.
-- **5.º ciclo**: en ÁBACO: Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Fundamentos de Seguros, Gestión Bancaria, Gestión de Riesgos Financieros, Matemática Actuarial.
-- **6.º ciclo**: ninguna materia en ÁBACO · pendientes: Banca Comercial y Privada, Finanzas Públicas, Gestión de Seguros, Regulación y Cumplimiento Financiero.
-- **7.º ciclo**: ninguna materia en ÁBACO · pendientes: Auditoría y Control Financiero, Finanzas Digitales y Fintech, Gestión de Inversiones y Gestión de Portafolios, Gobierno Corporativo.
+- **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · pendientes: Análisis Exploratorio de Datos.
+- **4.º ciclo**: en ÁBACO: Macroeconomía (completa, 6 de 6 unidades) · pendientes: Econometría Aplicada, Mercado de Valores.
+- **5.º ciclo**: en ÁBACO: Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Fundamentos de Seguros, Gestión de Riesgos Financieros, Matemática Actuarial.
+- **6.º ciclo**: ninguna materia en ÁBACO · pendientes: Finanzas Públicas, Gestión de Seguros, Regulación y Cumplimiento Financiero.
+- **7.º ciclo**: ninguna materia en ÁBACO · pendientes: Auditoría y Control Financiero, Gestión de Inversiones y Gestión de Portafolios, Gobierno Corporativo.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Finanzas Sostenibles.
 
 ### Negocios internacionales (1 plan)

@@ -77,7 +77,8 @@
     "nombre": "Patrimonio (activo neto)",
     "categoria": "contabilidad-basica",
     "materias": [
-      "contabilidad-general"
+      "contabilidad-general",
+      "sistema-financiero"
     ],
     "areas": [
       "contabilidad"
@@ -6577,7 +6578,8 @@
     "nombre": "Dinero creado con el multiplicador monetario",
     "categoria": "economia",
     "materias": [
-      "macroeconomia"
+      "macroeconomia",
+      "sistema-financiero"
     ],
     "areas": [
       "economia",
@@ -7661,6 +7663,133 @@
     "supuestos": [],
     "notas": [
       "El valor depende de qué definición de oferta monetaria se use."
+    ],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "indice-solvencia",
+    "nombre": "Índice de solvencia (patrimonio técnico sobre activos ponderados por riesgo)",
+    "categoria": "razones-financieras",
+    "materias": [
+      "sistema-financiero"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Relación entre el patrimonio técnico de una entidad financiera y la suma ponderada por riesgo de sus activos y contingentes; el COMF exige que no sea inferior al 9 %.",
+    "latex": "IS = \\frac{PT}{APR} \\times 100",
+    "variables": [
+      {
+        "simbolo": "PT",
+        "nombre": "PT",
+        "significado": "Patrimonio técnico",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "APR",
+        "nombre": "APR",
+        "significado": "Activos y contingentes ponderados por riesgo",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PT / APR * 100"
+    },
+    "excel": {
+      "es": "=PT/APR*100",
+      "en": "=PT/APR*100"
+    },
+    "ejemplo": {
+      "enunciado": "Un banco tiene un patrimonio técnico de USD 54 millones y activos ponderados por riesgo de USD 450 millones. ¿Cuál es su índice de solvencia y cumple el mínimo legal?",
+      "entradas": {
+        "PT": 54,
+        "APR": 450
+      },
+      "pasos": [
+        "IS = 54 ÷ 450 × 100",
+        "IS = 12 %",
+        "12 % ≥ 9 %: cumple el mínimo del art. 190 del COMF"
+      ],
+      "resultado": 12,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=54/450*100",
+      "excel_en": "=54/450*100"
+    },
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Art. 190"
+    },
+    "supuestos": [],
+    "notas": [
+      "Las superintendencias pueden exigir requisitos adicionales; la forma de ponderar los activos la fija la regulación de la Junta."
+    ],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "monto-asegurado-depositos",
+    "nombre": "Monto asegurado por el seguro de depósitos",
+    "categoria": "razones-financieras",
+    "materias": [
+      "sistema-financiero"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Monto protegido por persona en entidades privadas y del segmento 1 del sector popular y solidario: dos veces la fracción básica exenta del impuesto a la renta, sin bajar del mínimo legal.",
+    "latex": "MA = \\max(2 \\times FB,\\ M_{min})",
+    "variables": [
+      {
+        "simbolo": "FB",
+        "nombre": "FB",
+        "significado": "Fracción básica exenta vigente del impuesto a la renta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "M_{min}",
+        "nombre": "Mmin",
+        "significado": "Monto mínimo fijado por la ley",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "MAX(2 * FB, Mmin)"
+    },
+    "excel": {
+      "es": "=MAX(2*FB;Mmin)",
+      "en": "=MAX(2*FB,Mmin)"
+    },
+    "ejemplo": {
+      "enunciado": "Con una fracción básica exenta de USD 12.208 y un mínimo legal de USD 32.000, ¿cuál es el monto asegurado por depositante?",
+      "entradas": {
+        "FB": 12208,
+        "Mmin": 32000
+      },
+      "pasos": [
+        "2 × 12.208 = 24.416",
+        "24.416 es menor que 32.000",
+        "MA = 32.000"
+      ],
+      "resultado": 32000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=MAX(2*12208;32000)",
+      "excel_en": "=MAX(2*12208,32000)"
+    },
+    "cifras": [
+      "ir-personas-tabla"
+    ],
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Art. 328"
+    },
+    "supuestos": [],
+    "notas": [
+      "Para los demás segmentos del sector popular y solidario el monto lo define la Junta y no puede superar este valor."
     ],
     "actualizado_en": "2026-10-27",
     "estado": "verificada"

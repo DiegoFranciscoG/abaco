@@ -5725,5 +5725,174 @@
       "crowding out",
       "physical capital, human capital, and technology"
     ]
+  },
+  {
+    "id": "sf-intermediarios",
+    "palabras": [
+      "financial intermediary",
+      "disintermediation",
+      "lower transaction costs"
+    ]
+  },
+  {
+    "id": "sf-mercados-participantes",
+    "palabras": [
+      "the primary market is the market for",
+      "broker markets and dealer markets",
+      "bid price"
+    ]
+  },
+  {
+    "id": "sf-balance-bancario",
+    "palabras": [
+      "t-account",
+      "net worth of the bank is the total assets minus total liabilities",
+      "payment system"
+    ]
+  },
+  {
+    "id": "sf-quiebra-bancaria",
+    "palabras": [
+      "how banks go bankrupt",
+      "securitized",
+      "subprime loans"
+    ]
+  },
+  {
+    "id": "sf-creacion-dinero",
+    "palabras": [
+      "money multiplier formula",
+      "excess reserves",
+      "cautions about the money multiplier"
+    ]
+  },
+  {
+    "id": "sf-regulacion-bancaria",
+    "palabras": [
+      "reserve requirements, capital requirements, and restrictions on the types of investments",
+      "bank capital is the difference between a bank's assets and its liabilities"
+    ]
+  },
+  {
+    "id": "sf-supervision-bancaria",
+    "palabras": [
+      "bank supervision",
+      "practical and political questions"
+    ]
+  },
+  {
+    "id": "sf-corridas-seguro",
+    "palabras": [
+      "bank run",
+      "deposit insurance",
+      "lender of last resort"
+    ]
+  },
+  {
+    "id": "sf-sectores",
+    "palabras": [
+      "sector financiero publico, el sector financiero privado y el sector financiero popular y solidario",
+      "banco multiple es la entidad financiera",
+      "cooperativas de ahorro y credito"
+    ]
+  },
+  {
+    "id": "sf-junta",
+    "palabras": [
+      "crease la junta de politica y regulacion financiera",
+      "tres miembros a tiempo completo",
+      "regulaciones micro prudenciales"
+    ]
+  },
+  {
+    "id": "sf-superintendencias",
+    "palabras": [
+      "la superintendencia de bancos efectuara la vigilancia, auditoria, intervencion, control y supervision",
+      "superintendencia de economia popular y solidaria es un organismo tecnico"
+    ]
+  },
+  {
+    "id": "sf-operaciones",
+    "palabras": [
+      "actividad financiera",
+      "operaciones activas",
+      "operaciones pasivas",
+      "operaciones contingentes"
+    ]
+  },
+  {
+    "id": "sf-tasas-usuarios",
+    "palabras": [
+      "se prohibe el anatocismo",
+      "informacion precisa y no enganosa"
+    ]
+  },
+  {
+    "id": "sf-liquidez",
+    "palabras": [
+      "activos liquidos de alta calidad",
+      "liquidez estructural",
+      "brechas de liquidez",
+      "reservas de liquidez en el banco central del ecuador"
+    ]
+  },
+  {
+    "id": "sf-solvencia",
+    "palabras": [
+      "solvencia y patrimonio tecnico",
+      "no inferior al nueve por ciento"
+    ]
+  },
+  {
+    "id": "sf-cosede",
+    "palabras": [
+      "la corporacion del seguro de depositos, fondo de liquidez y fondo de seguros privados es una persona juridica de derecho publico",
+      "exclusion del seguro",
+      "el exceso del monto protegido"
+    ]
+  },
+  {
+    "id": "sf-monto-asegurado",
+    "palabras": [
+      "sera igual a dos veces la fraccion basica exenta vigente del impuesto a la renta",
+      "usd 32.000,00"
+    ]
+  },
+  {
+    "id": "sf-fondo-liquidez",
+    "palabras": [
+      "prestamista de ultima instancia",
+      "fideicomisos del fondo de liquidez"
+    ]
+  },
+  {
+    "id": "sf-capital-entidades",
+    "palabras": [
+      "el capital suscrito y pagado sera al menos el 50% del monto del capital autorizado",
+      "aumentos de capital"
+    ]
+  },
+  {
+    "id": "sf-fusiones",
+    "palabras": [
+      "la fusion es la union de dos o mas entidades",
+      "fusion extraordinaria"
+    ]
+  },
+  {
+    "id": "sf-dacion-pago",
+    "palabras": [
+      "cancelacion extraordinaria de obligaciones",
+      "a razon de un doceavo mensual del valor en libros"
+    ]
+  },
+  {
+    "id": "sf-fintech",
+    "palabras": [
+      "technologically enabled innovation in financial services",
+      "bigtech",
+      "suptech",
+      "regtech"
+    ]
   }
 ]

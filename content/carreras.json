@@ -445,6 +445,14 @@
         "planes": 1
       },
       {
+        "materia": "sistema-financiero",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
+      },
+      {
         "materia": "evaluacion-proyectos",
         "ciclo": 7,
         "ciclos": [
@@ -497,11 +505,6 @@
       },
       {
         "nombre": "Contratación Pública",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Legislación de Instituciones Financieras y EPS",
         "ciclo": 6,
         "planes": 1
       },
@@ -1219,6 +1222,18 @@
         "planes": 1
       },
       {
+        "materia": "sistema-financiero",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "macroeconomia",
         "ciclo": 4,
         "ciclos": [
@@ -1247,17 +1262,7 @@
         "planes": 1
       },
       {
-        "nombre": "Sistema Financiero",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Econometría Aplicada",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Legislación Bancaria y de Seguros",
         "ciclo": 4,
         "planes": 1
       },
@@ -1272,11 +1277,6 @@
         "planes": 1
       },
       {
-        "nombre": "Gestión Bancaria",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión de Riesgos Financieros",
         "ciclo": 5,
         "planes": 1
@@ -1284,11 +1284,6 @@
       {
         "nombre": "Matemática Actuarial",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Banca Comercial y Privada",
-        "ciclo": 6,
         "planes": 1
       },
       {
@@ -1308,11 +1303,6 @@
       },
       {
         "nombre": "Auditoría y Control Financiero",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Finanzas Digitales y Fintech",
         "ciclo": 7,
         "planes": 1
       },

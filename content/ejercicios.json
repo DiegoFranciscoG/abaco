@@ -10561,5 +10561,242 @@
     },
     "materia": "desarrollo-economico",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-patrimonio-banco",
+    "subtema": "sf-balance-bancario",
+    "formula": "patrimonio",
+    "enunciado": "Un banco tiene préstamos por USD 7,5 millones, bonos por USD 3 millones y reservas por USD 1,5 millones; sus depósitos suman USD 11 millones. ¿Cuál es su patrimonio neto, en millones?",
+    "datos": {
+      "A": 12,
+      "P": 11
+    },
+    "calculo": "A - P",
+    "respuesta": 1,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Activos = 7,5 + 3 + 1,5 = 12",
+      "Patrimonio = 12 − 11 = 1"
+    ],
+    "pistas": [
+      "Suma primero todos los activos; los depósitos son el pasivo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-3-the-role-of-banks",
+      "seccion": "14.3 The Role of Banks"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-patrimonio-impagos",
+    "subtema": "sf-balance-bancario",
+    "formula": "patrimonio",
+    "enunciado": "El mismo banco sufre impagos y sus préstamos bajan de USD 7,5 a USD 5 millones; los depósitos siguen en USD 11 millones. ¿Cuál es ahora su patrimonio neto, en millones?",
+    "datos": {
+      "A": 9.5,
+      "P": 11
+    },
+    "calculo": "A - P",
+    "respuesta": -1.5,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Activos = 5 + 3 + 1,5 = 9,5",
+      "Patrimonio = 9,5 − 11 = −1,5",
+      "Patrimonio negativo: el banco es insolvente"
+    ],
+    "pistas": [
+      "Solo cambia el valor de los préstamos."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-3-the-role-of-banks",
+      "seccion": "14.3 The Role of Banks"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-multiplicador-10",
+    "subtema": "sf-creacion-dinero",
+    "formula": "dinero-multiplicador",
+    "enunciado": "Con un encaje del 10 %, un banco presta un exceso de reservas de USD 9 millones. ¿Cuánto puede aumentar como máximo la oferta monetaria, en millones?",
+    "datos": {
+      "ER": 9,
+      "r": 0.1
+    },
+    "calculo": "ER * (1 / r)",
+    "respuesta": 90,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Multiplicador = 1 ÷ 0,10 = 10",
+      "Aumento = 9 × 10 = 90"
+    ],
+    "pistas": [
+      "Expresa el encaje como proporción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",
+      "seccion": "14.4 How Banks Create Money"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-multiplicador-20",
+    "subtema": "sf-creacion-dinero",
+    "formula": "dinero-multiplicador",
+    "enunciado": "Si el encaje sube al 20 %, ¿cuánto puede aumentar como máximo la oferta monetaria con el mismo exceso de reservas de USD 9 millones?",
+    "datos": {
+      "ER": 9,
+      "r": 0.2
+    },
+    "calculo": "ER * (1 / r)",
+    "respuesta": 45,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Multiplicador = 1 ÷ 0,20 = 5",
+      "Aumento = 9 × 5 = 45",
+      "Un encaje mayor reduce la creación de dinero"
+    ],
+    "pistas": [
+      "Compara con el resultado del encaje del 10 %."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-macro3",
+      "url": "https://openstax.org/books/principles-macroeconomics-3e/pages/14-4-how-banks-create-money",
+      "seccion": "14.4 How Banks Create Money"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-solvencia-cumple",
+    "subtema": "sf-solvencia",
+    "formula": "indice-solvencia",
+    "enunciado": "Una cooperativa tiene un patrimonio técnico de USD 18 millones y activos ponderados por riesgo de USD 150 millones. ¿Cuál es su índice de solvencia?",
+    "datos": {
+      "PT": 18,
+      "APR": 150
+    },
+    "calculo": "PT / APR * 100",
+    "respuesta": 12,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "18 ÷ 150 = 0,12",
+      "× 100 = 12",
+      "12 % ≥ 9 %: cumple"
+    ],
+    "pistas": [
+      "Divide para los activos ponderados por riesgo, no para el activo total."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Art. 190"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-solvencia-deficit",
+    "subtema": "sf-solvencia",
+    "formula": "indice-solvencia",
+    "enunciado": "Un banco tiene un patrimonio técnico de USD 32 millones y activos ponderados por riesgo de USD 400 millones. ¿Cuál es su índice de solvencia? ¿Cumple el mínimo?",
+    "datos": {
+      "PT": 32,
+      "APR": 400
+    },
+    "calculo": "PT / APR * 100",
+    "respuesta": 8,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "32 ÷ 400 = 0,08",
+      "× 100 = 8",
+      "8 % < 9 %: no cumple; necesita USD 36 millones de patrimonio técnico"
+    ],
+    "pistas": [
+      "El mínimo legal es 9 %."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Art. 190"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-monto-asegurado-minimo",
+    "subtema": "sf-monto-asegurado",
+    "formula": "monto-asegurado-depositos",
+    "enunciado": "Con una fracción básica exenta de USD 12.208 y el mínimo legal de USD 32.000, ¿cuál es el monto asegurado por depositante en un banco privado?",
+    "datos": {
+      "FB": 12208,
+      "Mmin": 32000
+    },
+    "calculo": "MAX(2 * FB, Mmin)",
+    "respuesta": 32000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "2 × 12.208 = 24.416",
+      "24.416 < 32.000",
+      "Monto asegurado = 32.000"
+    ],
+    "pistas": [
+      "Toma el mayor entre el doble de la fracción básica y el mínimo."
+    ],
+    "dificultad": 1,
+    "cifras": [
+      "ir-personas-tabla"
+    ],
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Art. 328"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sf-monto-asegurado-hipotetico",
+    "subtema": "sf-monto-asegurado",
+    "formula": "monto-asegurado-depositos",
+    "enunciado": "Supón un año futuro en que la fracción básica exenta llegara a USD 17.500. Con el mismo mínimo legal de USD 32.000, ¿cuál sería el monto asegurado?",
+    "datos": {
+      "FB": 17500,
+      "Mmin": 32000
+    },
+    "calculo": "MAX(2 * FB, Mmin)",
+    "respuesta": 35000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "2 × 17.500 = 35.000",
+      "35.000 > 32.000",
+      "Monto asegurado = 35.000"
+    ],
+    "pistas": [
+      "Ahora el doble de la fracción básica supera el mínimo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "comf",
+      "seccion": "Art. 328"
+    },
+    "materia": "sistema-financiero",
+    "actualizado_en": "2026-10-26"
   }
 ]

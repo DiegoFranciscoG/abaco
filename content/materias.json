@@ -838,5 +838,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "sistema-financiero",
+    "nombre": "Sistema financiero y banca",
+    "areas": [
+      "finanzas",
+      "economia"
+    ],
+    "descripcion": "Intermediación financiera, balance de un banco y creación de dinero, regulación y supervisión bancaria, el sistema financiero nacional según el COMF, solvencia, liquidez, seguro de depósitos y fintech.",
+    "sinonimos": [
+      "sistema financiero ecuatoriano",
+      "gestión bancaria",
+      "banca comercial",
+      "legislación bancaria",
+      "moneda y banca",
+      "fintech"
+    ],
+    "herramientas": [
+      "macro",
+      "tarjetas",
+      "notas"
+    ],
+    "orden": 38,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]
