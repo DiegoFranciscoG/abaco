@@ -2650,5 +2650,91 @@
       "speculative motive",
       "cash equivalents"
     ]
+  },
+  {
+    "id": "co-barreras-percepcion",
+    "palabras": [
+      "stereotypes",
+      "perceptual defense",
+      "barriers"
+    ]
+  },
+  {
+    "id": "co-incentivos",
+    "palabras": [
+      "incentive",
+      "individual",
+      "group"
+    ]
+  },
+  {
+    "id": "co-desarrollo-equipos",
+    "palabras": [
+      "forming",
+      "storming",
+      "norming",
+      "performing"
+    ]
+  },
+  {
+    "id": "co-habilidades",
+    "palabras": [
+      "abilities",
+      "cognitive",
+      "physical"
+    ]
+  },
+  {
+    "id": "co-personalidad",
+    "palabras": [
+      "self-esteem",
+      "locus of control",
+      "introversion-extroversion"
+    ]
+  },
+  {
+    "id": "co-valores",
+    "palabras": [
+      "values",
+      "ethics"
+    ]
+  },
+  {
+    "id": "co-cultura-diferencias",
+    "palabras": [
+      "culture",
+      "individualism"
+    ]
+  },
+  {
+    "id": "co-bases-poder",
+    "palabras": [
+      "referent power",
+      "expert power",
+      "reward power",
+      "legitimate"
+    ]
+  },
+  {
+    "id": "co-politica",
+    "palabras": [
+      "political",
+      "uncertainty",
+      "resources"
+    ]
+  },
+  {
+    "id": "co-causas-conflicto",
+    "palabras": [
+      "conflict",
+      "causes"
+    ]
+  },
+  {
+    "id": "co-negociacion",
+    "palabras": [
+      "negotiation",
+      "bargaining"
+    ]
   }
 ]

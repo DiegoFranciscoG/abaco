@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/organizational-behavior/pages/3-5-work-related-attitudes",
             "seccion": "3.5 Work-Related Attitudes"
           }
+        },
+        {
+          "id": "co-barreras-percepcion",
+          "nombre": "Barreras para una percepción acertada",
+          "explicacion": "Al percibir a otras personas cometemos errores sistemáticos. Los estereotipos atribuyen a alguien las características que creemos propias de su grupo (edad, origen, género). La percepción selectiva hace que veamos solo lo que confirma lo que ya pensábamos. El efecto halo generaliza un rasgo positivo o negativo a toda la persona. La defensa perceptiva lleva a ignorar información que nos incomoda. En el trabajo estas barreras distorsionan selecciones, evaluaciones de desempeño y ascensos, por lo que conviene usar criterios explícitos y evidencia.",
+          "ejemplo": "En una entrevista, el evaluador ve que el candidato estudió en la misma universidad que él y desde ese momento interpreta todo con buenos ojos (efecto halo). Al comparar con una rúbrica de 5 criterios, el candidato obtiene 3 de 5, aunque la impresión inicial era de «excelente».",
+          "puntos_clave": [
+            "Estereotipos, percepción selectiva, efecto halo y defensa perceptiva.",
+            "Distorsionan selecciones y evaluaciones.",
+            "Los criterios explícitos reducen el sesgo."
+          ],
+          "errores_frecuentes": [
+            "Confiar solo en la primera impresión.",
+            "Creer que uno mismo está libre de estereotipos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/3-2-barriers-to-accurate-social-perception",
+            "seccion": "3.2 Barriers to Accurate Social Perception"
+          }
         }
       ]
     },
@@ -131,6 +152,27 @@
             "url": "https://openstax.org/books/organizational-behavior/pages/8-1-performance-appraisal-systems",
             "seccion": "8.1 Performance Appraisal Systems"
           }
+        },
+        {
+          "id": "co-incentivos",
+          "nombre": "Planes de incentivos individuales y grupales",
+          "explicacion": "Los planes de incentivos ligan parte de la remuneración al desempeño. Los individuales premian lo que logra cada persona: comisiones, bonos por metas, pago por pieza. Los grupales premian al equipo o a toda la organización: bonos por metas de área, participación en las utilidades o en los ahorros de costos. Los individuales motivan el esfuerzo propio pero pueden desalentar la colaboración; los grupales favorecen el trabajo conjunto pero diluyen la relación entre esfuerzo y premio. Funcionan mejor con metas claras, medibles y percibidas como justas.",
+          "ejemplo": "Una tienda paga a sus vendedores 3 % de comisión sobre sus ventas (individual) y reparte entre todo el equipo un bono de USD 600 si el local supera la meta del mes (grupal). Un vendedor que vende USD 8.000 gana 8.000 × 0,03 = 240 de comisión, más su parte del bono.",
+          "puntos_clave": [
+            "Individuales: comisiones, bonos y pago por pieza.",
+            "Grupales: bonos de equipo y participación en resultados.",
+            "Las metas deben ser claras, medibles y justas."
+          ],
+          "errores_frecuentes": [
+            "Premiar solo lo individual en trabajos que requieren cooperación.",
+            "Fijar metas imposibles que desmotivan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/8-5-individual-and-group-incentive-plans",
+            "seccion": "8.5 Individual and Group Incentive Plans"
+          }
         }
       ]
     },
@@ -196,6 +238,27 @@
             "ref": "os-ob",
             "url": "https://openstax.org/books/organizational-behavior/pages/11-2-types-of-communications-in-organizations",
             "seccion": "11.2 Types of Communications in Organizations"
+          }
+        },
+        {
+          "id": "co-desarrollo-equipos",
+          "nombre": "Cómo se desarrolla un equipo",
+          "explicacion": "Según el modelo de Tuckman, los equipos pasan por etapas. En la formación los miembros se conocen y dependen del líder. En la tormenta surgen desacuerdos sobre metas, roles y forma de trabajar. En la normalización se acuerdan reglas y aumenta la cohesión. En el desempeño el equipo trabaja con autonomía hacia la meta. Más tarde se añadió la etapa de disolución, cuando el proyecto termina. Conocer estas etapas ayuda a no interpretar el conflicto inicial como un fracaso y a acompañar al equipo según el momento en que está.",
+          "ejemplo": "Un equipo de 5 estudiantes prepara un plan de negocios en 8 semanas. En las semanas 1 y 2 se reparten tareas con cautela (formación); en la 3 discuten porque dos quieren cambiar la idea (tormenta); en la 4 acuerdan reglas de reunión (normalización) y desde la 5 avanzan rápido (desempeño).",
+          "puntos_clave": [
+            "Formación, tormenta, normalización, desempeño y disolución.",
+            "El conflicto de la tormenta es normal.",
+            "El rol del líder cambia según la etapa."
+          ],
+          "errores_frecuentes": [
+            "Evitar todo conflicto en la etapa de tormenta.",
+            "Esperar alto desempeño desde el primer día."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/10-2-team-development-over-time",
+            "seccion": "10.2 Team Development Over Time"
           }
         }
       ]
@@ -281,6 +344,192 @@
             "ref": "os-ob",
             "url": "https://openstax.org/books/organizational-behavior/pages/16-2-organizational-change",
             "seccion": "16.2 Organizational Change"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-individuo",
+      "nombre": "Diferencias individuales",
+      "orden": 5,
+      "descripcion": "Habilidades, personalidad, valores y diferencias culturales en el trabajo.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "co-habilidades",
+          "nombre": "Habilidades y capacidades de los empleados",
+          "explicacion": "Las capacidades son el potencial de una persona para realizar ciertas tareas; las habilidades, su dominio práctico. Las capacidades cognitivas o mentales incluyen razonamiento, comprensión verbal y numérica, y manejo de información compleja; las físicas, fuerza, resistencia y coordinación. El desempeño depende de que las capacidades de la persona encajen con las exigencias del puesto: un trabajo muy complejo para alguien sin la preparación genera errores y estrés, y uno muy simple para alguien muy capaz genera aburrimiento.",
+          "ejemplo": "Un banco asigna a un analista con gran capacidad numérica a revisar 40 solicitudes de crédito al día y a una persona con gran habilidad para comunicarse a atender reclamos. Al invertir los puestos, los errores en el análisis de crédito subieron de 2 a 6 por semana.",
+          "puntos_clave": [
+            "Capacidades cognitivas y físicas.",
+            "El desempeño depende del ajuste persona–puesto.",
+            "Las habilidades se desarrollan con práctica y capacitación."
+          ],
+          "errores_frecuentes": [
+            "Asignar puestos sin analizar las exigencias del trabajo.",
+            "Pensar que la capacidad cognitiva es lo único que importa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/2-2-employee-abilities-and-skills",
+            "seccion": "2.2 Employee Abilities and Skills"
+          }
+        },
+        {
+          "id": "co-personalidad",
+          "nombre": "Personalidad y comportamiento en el trabajo",
+          "explicacion": "La personalidad es el conjunto relativamente estable de rasgos que distingue a una persona. Algunos rasgos se refieren a cómo nos vemos (autoestima y locus de control: creer que lo que nos pasa depende de nosotros o de factores externos) y otros a cómo nos relacionamos (introversión o extroversión, responsabilidad, orientación hacia la autoridad). Ningún rasgo es bueno o malo en sí mismo: lo que importa es su ajuste con el puesto. Por ejemplo, un locus de control interno se asocia con más iniciativa, y la extroversión ayuda en ventas.",
+          "ejemplo": "Dos asesores reciben la misma meta. Ante un mes flojo, el de locus interno revisa qué puede cambiar y llama a 30 clientes antiguos; el de locus externo atribuye el resultado «a la economía» y espera. Al mes siguiente el primero recupera 6 ventas.",
+          "puntos_clave": [
+            "Rasgos sobre uno mismo: autoestima y locus de control.",
+            "Rasgos sobre los demás: extroversión y responsabilidad.",
+            "Importa el ajuste rasgo–puesto."
+          ],
+          "errores_frecuentes": [
+            "Etiquetar a las personas por un solo rasgo.",
+            "Usar pruebas de personalidad sin validez para seleccionar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/2-4-personality-and-work-behavior",
+            "seccion": "2.4 Personality and Work Behavior"
+          }
+        },
+        {
+          "id": "co-valores",
+          "nombre": "Valores personales y ética",
+          "explicacion": "Los valores son creencias duraderas sobre lo que es importante o deseable: honestidad, logro, seguridad, equilibrio entre trabajo y vida personal. Guían las decisiones y el comportamiento, y cuando los valores de una persona chocan con los de la organización aparecen insatisfacción y rotación. La ética aplica los valores a decidir qué es correcto. Las organizaciones influyen en el comportamiento ético con códigos de conducta, ejemplo de los líderes y lo que premian o toleran.",
+          "ejemplo": "Una analista que valora el tiempo con su familia trabaja en una consultora donde se espera quedarse hasta las 21:00. Tras 6 meses renuncia, aunque el sueldo era bueno: el choque de valores pesó más que el ingreso.",
+          "puntos_clave": [
+            "Los valores orientan las decisiones.",
+            "El choque de valores genera insatisfacción y rotación.",
+            "Los líderes modelan el comportamiento ético."
+          ],
+          "errores_frecuentes": [
+            "Suponer que todos los empleados valoran lo mismo.",
+            "Confiar la ética solo a un código escrito."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/2-6-personal-values-and-ethics",
+            "seccion": "2.6 Personal Values and Ethics"
+          }
+        },
+        {
+          "id": "co-cultura-diferencias",
+          "nombre": "Diferencias culturales en el trabajo",
+          "explicacion": "La cultura de un país o grupo influye en cómo las personas entienden la autoridad, el tiempo, las relaciones y el trabajo. Algunas culturas destacan al individuo y otras al grupo; algunas respetan la jerarquía y la antigüedad y otras prefieren relaciones más horizontales; en unas se va directo al punto y en otras se construye primero la relación. En equipos multiculturales o al negociar con otros países, reconocer estas diferencias evita malentendidos y permite adaptar el estilo sin caer en estereotipos.",
+          "ejemplo": "Una empresa ecuatoriana negocia con un proveedor asiático. En la primera reunión, el equipo ecuatoriano quiere cerrar precios en 30 minutos; la contraparte dedica la reunión a conocerse. Al entender que para ellos la relación va primero, agendan una segunda reunión y cierran el acuerdo.",
+          "puntos_clave": [
+            "Individualismo frente a orientación al grupo.",
+            "Distintas formas de ver la jerarquía y el tiempo.",
+            "Adaptarse sin estereotipar."
+          ],
+          "errores_frecuentes": [
+            "Juzgar otras costumbres como incorrectas.",
+            "Suponer que todas las personas de un país piensan igual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/2-7-cultural-differences",
+            "seccion": "2.7 Cultural Differences"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-poder-negociacion",
+      "nombre": "Poder, política y negociación",
+      "orden": 6,
+      "descripcion": "Bases del poder, comportamiento político, causas del conflicto y negociación.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "co-bases-poder",
+          "nombre": "Bases del poder",
+          "explicacion": "El poder es la capacidad de influir en el comportamiento de otros. French y Raven identificaron cinco bases: legítimo (viene del cargo), de recompensa (controlar premios que otros desean), coercitivo (poder sancionar), experto (saber algo que otros necesitan) y referente (la admiración que despierta la persona). Las tres primeras dependen de la posición; el experto y el referente, de la persona. El poder basado en la persona suele generar compromiso; el coercitivo, en cambio, solo obediencia mientras dura la vigilancia.",
+          "ejemplo": "En una oficina contable, la jefa tiene poder legítimo y de recompensa sobre 8 asistentes, pero cuando hay una duda tributaria todos consultan a Luis, el especialista en declaraciones: su poder es experto, aunque no tenga cargo de jefatura.",
+          "puntos_clave": [
+            "Legítimo, recompensa, coercitivo, experto y referente.",
+            "Poder de posición frente a poder personal.",
+            "El poder personal genera compromiso."
+          ],
+          "errores_frecuentes": [
+            "Confundir poder con autoridad formal.",
+            "Abusar del poder coercitivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/13-1-power-in-interpersonal-relations",
+            "seccion": "13.1 Power in Interpersonal Relations"
+          }
+        },
+        {
+          "id": "co-politica",
+          "nombre": "Comportamiento político en las organizaciones",
+          "explicacion": "El comportamiento político son las acciones para obtener o usar poder fuera de los canales formales, por ejemplo para conseguir recursos, influir en decisiones o proteger la posición de un área. Aumenta cuando los recursos son escasos, las metas son ambiguas, hay incertidumbre y las decisiones importantes no tienen criterios claros. Las áreas que controlan recursos críticos o reducen la incertidumbre de la organización suelen ganar poder. Se limita con criterios transparentes, información compartida y evaluación por resultados.",
+          "ejemplo": "Dos departamentos compiten por un presupuesto de USD 50.000 para tecnología. Sin criterios claros, gana quien tiene mejor relación con el gerente. Cuando la empresa fija que se asignará al proyecto con mayor ahorro demostrado, el debate pasa de las relaciones a los datos.",
+          "puntos_clave": [
+            "Influencia fuera de los canales formales.",
+            "Crece con escasez, ambigüedad e incertidumbre.",
+            "Se reduce con criterios transparentes."
+          ],
+          "errores_frecuentes": [
+            "Pensar que toda política organizacional es ilegítima.",
+            "Ignorar la política al implementar cambios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/13-3-political-behavior-in-organizations",
+            "seccion": "13.3 Political Behavior in Organizations"
+          }
+        },
+        {
+          "id": "co-causas-conflicto",
+          "nombre": "Causas del conflicto",
+          "explicacion": "El conflicto surge cuando una parte percibe que otra afecta negativamente algo que le importa. Sus causas frecuentes son metas incompatibles entre áreas, recursos compartidos y escasos, interdependencia en las tareas, roles y responsabilidades poco claros, diferencias de valores o de percepción y fallas de comunicación. El conflicto evoluciona por etapas: aparecen las condiciones, se percibe, se manifiesta y deja consecuencias. Un nivel moderado de conflicto sobre tareas puede mejorar las decisiones; el conflicto personal suele dañar al equipo.",
+          "ejemplo": "Ventas promete a un cliente entregar 1.000 unidades en 5 días para cumplir su meta, mientras Producción tiene como meta no pagar horas extra. Las metas incompatibles generan un conflicto que se resuelve fijando una meta común de rentabilidad por pedido.",
+          "puntos_clave": [
+            "Metas incompatibles, recursos escasos e interdependencia.",
+            "El conflicto avanza por etapas.",
+            "El conflicto de tarea puede ser útil; el personal, no."
+          ],
+          "errores_frecuentes": [
+            "Atribuir todo conflicto a la personalidad de las personas.",
+            "Ignorar el conflicto hasta que escala."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/14-2-causes-of-conflict-in-organizations",
+            "seccion": "14.2 Causes of Conflict in Organizations"
+          }
+        },
+        {
+          "id": "co-negociacion",
+          "nombre": "La negociación",
+          "explicacion": "Negociar es el proceso por el que dos o más partes con intereses distintos buscan un acuerdo. En la negociación distributiva se reparte un monto fijo y lo que gana uno lo pierde el otro; en la integrativa se buscan soluciones que agranden lo que hay para repartir, atendiendo a los intereses de fondo de cada parte. Una negociación tiene etapas: preparación (conocer los propios límites y la mejor alternativa si no hay acuerdo), apertura, intercambio de propuestas y cierre. La cultura y la relación de largo plazo cambian el estilo adecuado.",
+          "ejemplo": "Un proveedor pide USD 12 por unidad y el comprador ofrece 10. En lugar de solo regatear, descubren que al comprador le importa el plazo de pago y al proveedor el volumen: acuerdan 11 por unidad con un pedido de 2.000 unidades en lugar de 1.500 y pago a 60 días. El proveedor vende 2.000 − 1.500 = 500 unidades más.",
+          "puntos_clave": [
+            "Distributiva: repartir; integrativa: agrandar el total.",
+            "Prepararse: límites y mejor alternativa sin acuerdo.",
+            "Atender intereses, no solo posiciones."
+          ],
+          "errores_frecuentes": [
+            "Negociar sin conocer el propio límite.",
+            "Centrarse solo en el precio cuando hay otros intereses en juego."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ob",
+            "url": "https://openstax.org/books/organizational-behavior/pages/14-4-negotiation-behavior",
+            "seccion": "14.4 Negotiation Behavior"
           }
         }
       ]
