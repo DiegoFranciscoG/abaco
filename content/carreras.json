@@ -421,6 +421,14 @@
         "planes": 2
       },
       {
+        "materia": "inteligencia-negocios",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
         "materia": "talento-humano",
         "ciclo": 5,
         "ciclos": [
@@ -474,11 +482,6 @@
       },
       {
         "nombre": "Fundamentos de Contabilidad Gubernamental",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Inteligencia de Negocios",
         "ciclo": 5,
         "planes": 1
       },
@@ -752,6 +755,14 @@
           8
         ],
         "planes": 1
+      },
+      {
+        "materia": "inteligencia-negocios",
+        "ciclo": 8,
+        "ciclos": [
+          8
+        ],
+        "planes": 1
       }
     ],
     "pendientes": [
@@ -854,11 +865,6 @@
         "nombre": "Política Económica",
         "ciclo": 7,
         "planes": 2
-      },
-      {
-        "nombre": "Big Data and Business Intelligence",
-        "ciclo": 8,
-        "planes": 1
       },
       {
         "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",
@@ -1040,6 +1046,15 @@
         "planes": 2
       },
       {
+        "materia": "inteligencia-negocios",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          6
+        ],
+        "planes": 2
+      },
+      {
         "materia": "macroeconomia",
         "ciclo": 4,
         "ciclos": [
@@ -1120,16 +1135,6 @@
       {
         "nombre": "Business English",
         "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Businness Intelligence",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Business Intelligence y Big Data",
-        "ciclo": 6,
         "planes": 1
       },
       {
@@ -1243,6 +1248,14 @@
           4
         ],
         "planes": 1
+      },
+      {
+        "materia": "inteligencia-negocios",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
       }
     ],
     "pendientes": [
@@ -1288,11 +1301,6 @@
       },
       {
         "nombre": "Gestión de Riesgos Financieros",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Gobierno de Datos y Calidad de la Información Financiera",
         "ciclo": 5,
         "planes": 1
       },
@@ -1521,6 +1529,15 @@
           7
         ],
         "planes": 1
+      },
+      {
+        "materia": "inteligencia-negocios",
+        "ciclo": 7,
+        "ciclos": [
+          7,
+          8
+        ],
+        "planes": 1
       }
     ],
     "pendientes": [
@@ -1537,11 +1554,6 @@
       {
         "nombre": "Técnicas de Valoración Aduanera",
         "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Inteligencia de Negocios",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -1608,6 +1620,17 @@
         "ciclo": 1,
         "ciclos": [
           1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "inteligencia-negocios",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          3,
+          4
         ],
         "planes": 1
       },
@@ -1752,26 +1775,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Herramientas de IA para la Gestión Emprendedora",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "IA Aplicada para la Gestión Empresarial y Emprendimiento",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Business Intelligence",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Big Data y Analítica para Toma de Decisiones",
-        "ciclo": 4,
-        "planes": 1
-      },
       {
         "nombre": "Business English",
         "ciclo": 7,

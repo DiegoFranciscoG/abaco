@@ -760,5 +760,33 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "inteligencia-negocios",
+    "nombre": "Inteligencia de negocios y analítica de datos",
+    "areas": [
+      "tecnologia",
+      "gestion"
+    ],
+    "descripcion": "Ciencia de datos y gobierno de datos, calidad y preparación de los datos, analítica para decidir con herramientas de BI, visualización e informes, e inteligencia artificial con ética.",
+    "sinonimos": [
+      "inteligencia de negocios",
+      "business intelligence",
+      "big data",
+      "big data y business intelligence",
+      "big data y analítica para toma de decisiones",
+      "gobierno de datos y calidad de la información financiera",
+      "inteligencia artificial aplicada a la gestión",
+      "herramientas de IA"
+    ],
+    "herramientas": [
+      "estadistica",
+      "graficador"
+    ],
+    "orden": 35,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

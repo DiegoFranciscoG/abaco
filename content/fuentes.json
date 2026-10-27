@@ -520,5 +520,23 @@
     "url": "https://www.trade.gov/know-your-incoterms",
     "licencia": "Información pública oficial; se cita y resume con redacción propia",
     "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "os-pds",
+    "titulo": "Principles of Data Science",
+    "autor_editor": "Shaun V. Ault, Soohyun Nam Liao, Larry Musolino et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/principles-data-science",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "ms-powerbi",
+    "titulo": "¿Qué es Power BI?",
+    "autor_editor": "Microsoft Learn",
+    "tipo": "documentacion",
+    "url": "https://learn.microsoft.com/es-es/power-bi/fundamentals/power-bi-overview",
+    "licencia": "Documentación pública; se cita y resume con redacción propia",
+    "fecha_consulta": "2026-10-27"
   }
 ]

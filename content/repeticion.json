@@ -24,6 +24,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Business Intelligence",
+    "carreras": 7,
+    "planes": 8,
+    "ciclo_habitual": 5,
+    "materia": "inteligencia-negocios",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Administración",
     "carreras": 6,
     "planes": 11,
@@ -296,14 +304,6 @@
     "tipo": "materia"
   },
   {
-    "nombre": "Business Intelligence",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 3,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
     "nombre": "Contratación Pública",
     "carreras": 2,
     "planes": 2,
@@ -324,14 +324,6 @@
     "carreras": 2,
     "planes": 2,
     "ciclo_habitual": 1,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Inteligencia de Negocios",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 5,
     "materia": null,
     "tipo": "materia"
   },

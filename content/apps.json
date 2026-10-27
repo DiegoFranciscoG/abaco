@@ -58,7 +58,8 @@
       "contabilidad-costos",
       "evaluacion-proyectos",
       "ventas-distribucion",
-      "operaciones-logistica"
+      "operaciones-logistica",
+      "inteligencia-negocios"
     ],
     "areas": [
       "tecnologia"
@@ -616,6 +617,24 @@
       "Linux"
     ],
     "url_oficial": "https://www.gimp.org/",
+    "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "power-bi-desktop",
+    "nombre": "Power BI Desktop",
+    "para_que": "Aplicación de Microsoft para conectar, limpiar, modelar y visualizar datos en informes y tableros interactivos.",
+    "materias": [
+      "inteligencia-negocios"
+    ],
+    "areas": [
+      "tecnologia",
+      "gestion"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows"
+    ],
+    "url_oficial": "https://www.microsoft.com/es-es/power-platform/products/power-bi/desktop",
     "fecha_consulta": "2026-10-27"
   }
 ]

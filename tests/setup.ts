@@ -1,7 +1,11 @@
 import '@testing-library/jest-dom/vitest';
 import 'fake-indexeddb/auto';
-import { cleanup } from '@testing-library/react';
+import { cleanup, configure } from '@testing-library/react';
 import { afterEach } from 'vitest';
+
+// Pages load the content catalog lazily; with the whole suite running in parallel the first render can take
+// longer than the default 1 s that findBy* queries wait.
+configure({ asyncUtilTimeout: 5000 });
 
 afterEach(() => {
   cleanup();

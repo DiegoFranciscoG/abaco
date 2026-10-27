@@ -5242,5 +5242,163 @@
       "customs formalities",
       "cargo insurance"
     ]
+  },
+  {
+    "id": "bi-ciencia-datos",
+    "palabras": [
+      "data science is a field of study that investigates how to collect, manage, and analyze data",
+      "data science cycle",
+      "problem definition"
+    ]
+  },
+  {
+    "id": "bi-datasets",
+    "palabras": [
+      "a dataset is a collection of observations or data entities",
+      "attributes or characteristics",
+      "quantitative",
+      "qualitative data"
+    ]
+  },
+  {
+    "id": "bi-gobierno-datos",
+    "palabras": [
+      "data governance , which involves the policies, procedures, and standards",
+      "volume",
+      "variety"
+    ]
+  },
+  {
+    "id": "bi-bases-aplicaciones",
+    "palabras": [
+      "database design and management are important for businesses",
+      "customer relationship management",
+      "electronic health records"
+    ]
+  },
+  {
+    "id": "bi-limpieza",
+    "palabras": [
+      "data cleaning and preprocessing",
+      "data integration",
+      "data transformation",
+      "data reduction",
+      "data discretization"
+    ]
+  },
+  {
+    "id": "bi-faltantes-atipicos",
+    "palabras": [
+      "missing data refers to any data points or values that are not present",
+      "outliers"
+    ]
+  },
+  {
+    "id": "bi-grandes-volumenes",
+    "palabras": [
+      "large datasets, also known as big data",
+      "compression, indexing, and chunking"
+    ]
+  },
+  {
+    "id": "bi-cumplimiento",
+    "palabras": [
+      "compliance —the adherence to laws, regulations, and policies",
+      "gap analysis",
+      "risk assessment",
+      "audit"
+    ]
+  },
+  {
+    "id": "bi-metodos-analiticos",
+    "palabras": [
+      "decision trees, regression analysis, and clustering",
+      "approve or deny"
+    ]
+  },
+  {
+    "id": "bi-nube",
+    "palabras": [
+      "cloud computing",
+      "on-premise environment"
+    ]
+  },
+  {
+    "id": "bi-aplicaciones-nube",
+    "palabras": [
+      "analytics, development, and e-commerce",
+      "commercial off-the-shelf application",
+      "home-grown application"
+    ]
+  },
+  {
+    "id": "bi-power-bi",
+    "palabras": [
+      "power bi es la plataforma de analisis empresarial de microsoft",
+      "power bi escritorio aplicacion de windows para el desarrollo de informes",
+      "servicio power bi plataforma en la nube para publicar, compartir y colaborar",
+      "modelar y combinar datos"
+    ]
+  },
+  {
+    "id": "bi-graficos-univariados",
+    "palabras": [
+      "univariate data includes observations or measurements on a single characteristic",
+      "boxplots, histograms, and pareto charts",
+      "bivariate data"
+    ]
+  },
+  {
+    "id": "bi-graficos-tiempo",
+    "palabras": [
+      "time series graph allows data scientists to visually identify trends",
+      "seasonal patterns",
+      "forecasting"
+    ]
+  },
+  {
+    "id": "bi-informe",
+    "palabras": [
+      "research question",
+      "limitations or potential biases",
+      "structured format"
+    ]
+  },
+  {
+    "id": "bi-resumen-ejecutivo",
+    "palabras": [
+      "executive summary serves as an essential first impression",
+      "nontechnical audience",
+      "actionable"
+    ]
+  },
+  {
+    "id": "bi-tecnologias-emergentes",
+    "palabras": [
+      "can be considered an emerging technology",
+      "competitive advantage",
+      "risks of emerging technologies"
+    ]
+  },
+  {
+    "id": "bi-fronteras",
+    "palabras": [
+      "information systems frontiers refers to the latest developments"
+    ]
+  },
+  {
+    "id": "bi-etica-ia",
+    "palabras": [
+      "machine learning is a subset of ai",
+      "governance, fairness, bias, transparency, and explainability"
+    ]
+  },
+  {
+    "id": "bi-etica-analisis",
+    "palabras": [
+      "bias and fairness",
+      "data anonymization",
+      "cross-validation"
+    ]
   }
 ]

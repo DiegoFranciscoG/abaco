@@ -1,0 +1,471 @@
+{
+  "materia": "inteligencia-negocios",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "bi-datos",
+      "nombre": "Datos, ciencia de datos y gobierno de datos",
+      "orden": 1,
+      "descripcion": "Qué es la ciencia de datos y su ciclo, qué son los datos y los conjuntos de datos, gobierno de datos y aplicaciones de las bases de datos.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "bi-ciencia-datos",
+          "nombre": "Qué es la ciencia de datos y su ciclo",
+          "explicacion": "La ciencia de datos estudia cómo recolectar, gestionar y analizar datos de todo tipo para obtener información significativa. Antes se pensaba que estas tareas las hacían expertos distintos: los del dominio recolectaban, los informáticos gestionaban y almacenaban, y los estadísticos analizaban; hoy se espera que un científico de datos o un equipo maneje todo el proceso. El ciclo de la ciencia de datos incluye definir el problema, recolectar, preparar, analizar e informar; la recolección y la preparación, aunque parezcan sencillas, son las que más tiempo consumen.",
+          "ejemplo": "Una cadena de farmacias define el problema (qué productos se agotan), recolecta ventas por tienda, limpia los datos duplicados, analiza patrones por temporada y presenta un informe con recomendaciones de reposición.",
+          "puntos_clave": [
+            "Recolectar, gestionar y analizar datos.",
+            "Ciclo: problema, recolección, preparación, análisis e informe.",
+            "La preparación consume la mayor parte del tiempo."
+          ],
+          "errores_frecuentes": [
+            "Empezar a analizar sin definir el problema.",
+            "Subestimar el tiempo de limpieza de datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/1-1-what-is-data-science",
+            "seccion": "1.1 What Is Data Science?"
+          }
+        },
+        {
+          "id": "bi-datasets",
+          "nombre": "Datos, conjuntos de datos y tipos de datos",
+          "explicacion": "Un conjunto de datos (dataset) es una colección de observaciones organizada para su análisis; muchas veces se representa como una tabla en la que cada fila es una entidad única (ítem, registro o instancia) y cada columna un atributo (característica o variable). Los datos cuantitativos se miden y expresan con números, como estaturas o cifras de ventas, y se analizan con métodos estadísticos; los cualitativos describen atributos no numéricos y se analizan, por ejemplo, con análisis temático.",
+          "ejemplo": "La tabla de ventas de una tienda tiene una fila por factura (ítem) y columnas como fecha, vendedor, monto y método de pago (atributos); el monto es cuantitativo y el método de pago es cualitativo.",
+          "puntos_clave": [
+            "Dataset: filas como ítems y columnas como atributos.",
+            "Datos cuantitativos y cualitativos.",
+            "El tipo de dato define el análisis."
+          ],
+          "errores_frecuentes": [
+            "Promediar códigos numéricos que en realidad son categorías.",
+            "Mezclar varias entidades en una misma fila."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/1-3-data-and-datasets",
+            "seccion": "1.3 Data and Datasets"
+          }
+        },
+        {
+          "id": "bi-gobierno-datos",
+          "nombre": "Gobierno de datos y las cuatro V del big data",
+          "explicacion": "El gobierno de datos comprende las políticas, procedimientos y estándares con los que una organización gestiona la disponibilidad, usabilidad, integridad y seguridad de sus datos durante todo su ciclo de vida. Para cada tipo de dato deben definirse reglas que midan su calidad. El big data se describe con cuatro dimensiones: volumen, la enorme cantidad de datos; variedad, los distintos tipos y formatos; velocidad, la rapidez con que se generan, y veracidad, la exactitud y confiabilidad de los datos, que depende de su calidad y consistencia.",
+          "ejemplo": "Un banco define quién puede acceder a los datos de clientes, cómo se corrigen errores en los registros, cuánto tiempo se guardan y qué controles de seguridad se aplican: eso es gobierno de datos.",
+          "puntos_clave": [
+            "Disponibilidad, usabilidad, integridad y seguridad.",
+            "Reglas de calidad por tipo de dato.",
+            "Volumen, variedad, velocidad y veracidad."
+          ],
+          "errores_frecuentes": [
+            "Acumular datos sin reglas de calidad.",
+            "Dejar el gobierno de datos solo al área de sistemas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/2-1-practices-and-frameworks-for-data-management",
+            "seccion": "2.1 Practices and Frameworks for Data Management"
+          }
+        },
+        {
+          "id": "bi-bases-aplicaciones",
+          "nombre": "Aplicaciones de las bases de datos en la empresa",
+          "explicacion": "El diseño y la gestión de bases de datos permiten almacenar, organizar y recuperar datos de forma eficiente, y un buen diseño asegura que sean exactos, seguros y fáciles de consultar. Muchos sistemas empresariales dependen de ellas: la gestión de relaciones con los clientes (CRM), los sistemas financieros y los de salud. En el comercio electrónico gestionan inventarios, pedidos y análisis de ventas y permiten recomendaciones personalizadas; en salud, las historias clínicas electrónicas guardan la información de los pacientes.",
+          "ejemplo": "Una tienda en línea usa su base de datos para descontar el inventario con cada venta, avisar al cliente el estado de su pedido y sugerirle productos según sus compras anteriores.",
+          "puntos_clave": [
+            "Almacenar, organizar y recuperar datos.",
+            "CRM, finanzas y salud.",
+            "Inventarios, pedidos y recomendaciones."
+          ],
+          "errores_frecuentes": [
+            "Diseñar la base sin pensar en las consultas que se harán.",
+            "Guardar datos sensibles sin controles de acceso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/3-2-practical-applications-of-database-design-and-management",
+            "seccion": "3.2 Practical Applications of Database Design and Management"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi-calidad",
+      "nombre": "Calidad y preparación de los datos",
+      "orden": 2,
+      "descripcion": "Limpieza y preprocesamiento, datos faltantes y atípicos, manejo de grandes volúmenes y cumplimiento normativo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "bi-limpieza",
+          "nombre": "Limpieza y preprocesamiento de datos",
+          "explicacion": "La limpieza y el preprocesamiento organizan y convierten los datos crudos en estructuras útiles para el análisis: se eliminan datos irrelevantes o duplicados, se tratan los valores faltantes y se corrigen errores e inconsistencias. Los pasos típicos son la integración, que une datos de varias fuentes en un solo conjunto; la limpieza, que corrige errores; la transformación, que convierte tipos de datos, escala o normaliza valores y codifica categorías, y la reducción, que selecciona solo las variables más adecuadas. También se puede discretizar, agrupando datos continuos en rangos, o muestrear cuando el volumen es muy grande.",
+          "ejemplo": "Antes de analizar las ventas, un analista une las hojas de tres sucursales, elimina facturas duplicadas, unifica el formato de fechas y agrupa las edades de los clientes en rangos.",
+          "puntos_clave": [
+            "Integración, limpieza, transformación y reducción.",
+            "Eliminar duplicados y corregir errores.",
+            "Discretizar y muestrear cuando conviene."
+          ],
+          "errores_frecuentes": [
+            "Analizar datos sin revisar duplicados.",
+            "Mezclar formatos de fecha o de moneda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/2-4-data-cleaning-and-preprocessing",
+            "seccion": "2.4 Data Cleaning and Preprocessing"
+          }
+        },
+        {
+          "id": "bi-faltantes-atipicos",
+          "nombre": "Datos faltantes y valores atípicos",
+          "explicacion": "Los datos faltantes son valores que no están en el conjunto, por errores de recolección, corrupción de datos o falta de respuesta. Reducen el tamaño de la muestra y pueden introducir sesgos, por lo que afectan la exactitud del análisis. Los valores atípicos se alejan mucho del resto y pueden deberse a errores o a casos reales extraordinarios. Por eso hay que decidir de forma justificada cómo tratar ambos: eliminar, completar o conservar, documentando la decisión.",
+          "ejemplo": "En una encuesta de satisfacción, 40 personas no respondieron la edad y una registró 250 años; el analista revisa el formulario, corrige el error de digitación y reporta cuántos datos faltaban.",
+          "puntos_clave": [
+            "Faltantes: menos muestra y posible sesgo.",
+            "Atípicos: errores o casos reales.",
+            "Decidir y documentar el tratamiento."
+          ],
+          "errores_frecuentes": [
+            "Borrar todos los atípicos sin investigarlos.",
+            "Rellenar faltantes sin decirlo en el informe."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/2-4-data-cleaning-and-preprocessing",
+            "seccion": "2.4 Data Cleaning and Preprocessing"
+          }
+        },
+        {
+          "id": "bi-grandes-volumenes",
+          "nombre": "Manejo de grandes conjuntos de datos",
+          "explicacion": "Los grandes conjuntos de datos (big data) son tan grandes y complejos que los métodos tradicionales no pueden procesarlos; combinan volumen, variedad y velocidad, y provienen de redes sociales, sensores o transacciones financieras, con datos estructurados, semiestructurados y no estructurados. Plantean límites de almacenamiento, procesamiento y análisis, que se enfrentan con técnicas como la compresión, la indexación y el procesamiento por partes (chunking), con sistemas gestores de bases de datos y con computación en la nube, o analizando una muestra representativa.",
+          "ejemplo": "Una empresa de telecomunicaciones no puede abrir en una hoja de cálculo los registros de millones de llamadas: los guarda comprimidos en la nube y los procesa por partes para calcular el consumo por zona.",
+          "puntos_clave": [
+            "Volumen, variedad y velocidad.",
+            "Compresión, indexación y procesamiento por partes.",
+            "Bases de datos, nube y muestreo."
+          ],
+          "errores_frecuentes": [
+            "Intentar procesar todo en una hoja de cálculo.",
+            "Muestrear sin que la muestra sea representativa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/2-5-handling-large-datasets",
+            "seccion": "2.5 Handling Large Datasets"
+          }
+        },
+        {
+          "id": "bi-cumplimiento",
+          "nombre": "Cumplimiento, brechas y evaluación de riesgos",
+          "explicacion": "Proteger la seguridad y privacidad de los datos es un requisito legal y una base del éxito empresarial. El cumplimiento es apegarse a las leyes, regulaciones y políticas de una industria. Las políticas son guías y procedimientos para regular las acciones, y los protocolos son reglas detalladas que las aplican, como estándares de cifrado o controles de acceso. El análisis de brechas evalúa las políticas existentes e identifica debilidades; la evaluación de riesgos identifica amenazas a los activos y estima su probabilidad e impacto, y la auditoría verifica de forma sistemática si las prácticas cumplen el marco aplicable.",
+          "ejemplo": "Antes de lanzar una aplicación de pagos, una fintech compara sus políticas con la ley de protección de datos (análisis de brechas), estima el riesgo de filtraciones y contrata una auditoría externa.",
+          "puntos_clave": [
+            "Políticas y protocolos.",
+            "Análisis de brechas y evaluación de riesgos.",
+            "Auditoría de cumplimiento."
+          ],
+          "errores_frecuentes": [
+            "Tener políticas escritas que nadie aplica.",
+            "Evaluar riesgos una sola vez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/6-4-managing-enterprise-risk-and-compliance",
+            "seccion": "6.4 Managing Enterprise Risk and Compliance"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi-analitica",
+      "nombre": "Analítica para decidir y herramientas de BI",
+      "orden": 3,
+      "descripcion": "Árboles de decisión, regresión y agrupamiento; la nube como plataforma y el uso de herramientas como Power BI.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "bi-metodos-analiticos",
+          "nombre": "Árboles de decisión, regresión y agrupamiento",
+          "explicacion": "La analítica de datos recolecta, interpreta y analiza grandes cantidades de datos para descubrir patrones y transformar datos crudos en inteligencia para la acción. Tres metodologías fundamentales sostienen las decisiones basadas en datos: los árboles de decisión, que clasifican y predicen resultados dividiendo los datos según variables predictoras (por ejemplo, para aprobar o negar un préstamo); el análisis de regresión, que estima relaciones entre variables, y el agrupamiento (clustering), que forma grupos de elementos parecidos, como segmentos de clientes.",
+          "ejemplo": "Una cooperativa usa un árbol de decisión con ingresos, historial de pagos y antigüedad para precalificar créditos, una regresión para estimar el monto que cada socio puede pagar y un agrupamiento para crear segmentos de socios.",
+          "puntos_clave": [
+            "Árboles de decisión para clasificar.",
+            "Regresión para estimar relaciones.",
+            "Agrupamiento para segmentar."
+          ],
+          "errores_frecuentes": [
+            "Usar un modelo sin validar su precisión.",
+            "Confundir correlación con causalidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-3-analytics-to-improve-decision-making",
+            "seccion": "8.3 Analytics to Improve Decision-Making"
+          }
+        },
+        {
+          "id": "bi-nube",
+          "nombre": "La nube frente a la infraestructura propia",
+          "explicacion": "La computación en la nube permite agregar, ampliar o modificar sistemas de contabilidad, recursos humanos u operaciones y trabajar de forma colaborativa desde cualquier dispositivo. Frente a un entorno propio (on-premise), con servidores, equipos de red y estaciones de trabajo físicos que pueden tardar meses en comprarse e instalarse y requieren gran inversión de capital, una solución en la nube puede implementarse en días y atender necesidades inmediatas, por ejemplo al lanzar una nueva línea de productos.",
+          "ejemplo": "Una cadena de restaurantes que abre diez locales en dos meses contrata su sistema de inventarios y su tablero de ventas en la nube, en lugar de comprar servidores para cada local.",
+          "puntos_clave": [
+            "Escalar sistemas rápidamente.",
+            "On-premise: inversión y plazos largos.",
+            "Nube: implementación en días."
+          ],
+          "errores_frecuentes": [
+            "Migrar a la nube sin revisar la seguridad.",
+            "Comparar solo el precio mensual sin el costo total."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/7-1-fundamentals-of-cloud-computing",
+            "seccion": "7.1 Fundamentals of Cloud Computing"
+          }
+        },
+        {
+          "id": "bi-aplicaciones-nube",
+          "nombre": "Aplicaciones en la nube: comerciales o propias",
+          "explicacion": "Las aplicaciones en la nube varían según la industria y las necesidades, y se agrupan en categorías como analítica, desarrollo y comercio electrónico. Una opción es la aplicación comercial lista para usar (COTS), vendida lista para instalar sin personalización; otra es la aplicación propia, desarrollada dentro de la organización según sus requisitos. Como las aplicaciones tienen costos de mantenimiento y licencias y deben actualizarse o reemplazarse, muchas organizaciones migran a aplicaciones alojadas en la nube.",
+          "ejemplo": "Una distribuidora reemplaza su sistema contable instalado, que debía actualizar cada año, por una aplicación comercial en la nube; en cambio, desarrolla internamente su aplicación de rutas porque su operación es muy particular.",
+          "puntos_clave": [
+            "Categorías: analítica, desarrollo y comercio electrónico.",
+            "Comercial lista para usar o desarrollo propio.",
+            "Costos de licencias y mantenimiento."
+          ],
+          "errores_frecuentes": [
+            "Desarrollar desde cero lo que ya existe en el mercado.",
+            "Ignorar el costo de las licencias por usuario."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/7-4-cloud-based-industry-applications",
+            "seccion": "7.4 Cloud-Based Industry Applications"
+          }
+        },
+        {
+          "id": "bi-power-bi",
+          "nombre": "Herramientas de BI: el caso de Power BI",
+          "explicacion": "Power BI es la plataforma de análisis empresarial de Microsoft para convertir datos en información útil para la acción, con herramientas para conectarse a datos, visualizarlos y compartirlos. Power BI Desktop es la aplicación de Windows para desarrollar informes, y el servicio Power BI es la plataforma en la nube para publicarlos, compartirlos y colaborar. El trabajo sigue pasos: conectarse a fuentes como Excel, bases SQL o servicios en la nube; limpiar y dar forma a los datos; modelar y combinar fuentes con relaciones y cálculos; crear informes y paneles interactivos; explorar y analizar, y publicar y compartir con control de accesos.",
+          "ejemplo": "Un analista conecta Power BI Desktop a las hojas de ventas y a la base de clientes, crea una relación entre ambas, arma un panel de ventas por ciudad y lo publica en el servicio para que la gerencia lo consulte.",
+          "puntos_clave": [
+            "Desktop para crear, servicio para publicar.",
+            "Conectar, limpiar, modelar y visualizar.",
+            "Compartir con control de accesos."
+          ],
+          "errores_frecuentes": [
+            "Crear paneles llenos de gráficos sin una pregunta clara.",
+            "Publicar sin controlar quién ve los datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-powerbi",
+            "url": "https://learn.microsoft.com/es-es/power-bi/fundamentals/power-bi-overview",
+            "seccion": "¿Qué es Power BI?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi-visualizacion",
+      "nombre": "Visualización y comunicación de resultados",
+      "orden": 4,
+      "descripcion": "Gráficos para una variable, series de tiempo, informes técnicos y resúmenes ejecutivos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "bi-graficos-univariados",
+          "nombre": "Visualizar datos de una variable",
+          "explicacion": "Una vez organizados los datos, se crean visualizaciones para comunicar y detectar tendencias y patrones. Los datos univariados son observaciones de una sola característica y los bivariados, de dos variables posiblemente relacionadas. Para datos univariados se usan diagramas de caja, histogramas y diagramas de Pareto, que deben estar bien rotulados; para bivariados, por ejemplo, diagramas de dispersión. El método elegido depende del tipo de datos.",
+          "ejemplo": "Un hotel grafica en un histograma la duración de las estadías de sus huéspedes y en un diagrama de Pareto los motivos de quejas, para ver que dos motivos concentran la mayoría de reclamos.",
+          "puntos_clave": [
+            "Univariados frente a bivariados.",
+            "Caja, histograma y Pareto.",
+            "Gráficos bien rotulados."
+          ],
+          "errores_frecuentes": [
+            "Graficar sin títulos ni unidades.",
+            "Usar un gráfico de dispersión para una sola variable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/9-1-encoding-univariate-data",
+            "seccion": "9.1 Encoding Univariate Data"
+          }
+        },
+        {
+          "id": "bi-graficos-tiempo",
+          "nombre": "Gráficos de series de tiempo",
+          "explicacion": "Una serie de tiempo es un conjunto de mediciones de la misma variable tomadas a intervalos regulares. El gráfico de series de tiempo permite ver tendencias a lo largo del tiempo y revelar patrones estacionales o ciclos, información valiosa para decidir, por ejemplo, cuándo lanzar campañas o qué nivel de inventario mantener. Estos gráficos también sirven de base para los métodos de pronóstico, que intentan predecir tendencias futuras a partir de datos pasados.",
+          "ejemplo": "Una heladería grafica sus ventas mensuales de tres años y ve picos cada verano y una tendencia creciente; con eso programa la producción y una campaña antes de cada temporada alta.",
+          "puntos_clave": [
+            "Mediciones a intervalos regulares.",
+            "Tendencias, estacionalidad y ciclos.",
+            "Base para pronosticar."
+          ],
+          "errores_frecuentes": [
+            "Confundir un pico estacional con una tendencia.",
+            "Usar intervalos irregulares sin aclararlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/9-2-encoding-data-that-change-over-time",
+            "seccion": "9.2 Encoding Data That Change Over Time"
+          }
+        },
+        {
+          "id": "bi-informe",
+          "nombre": "Cómo escribir un informe de datos",
+          "explicacion": "Quien presenta un proyecto de datos debe explicar la pregunta de investigación, las fuentes, los pasos de procesamiento, las técnicas y métodos estadísticos usados con su justificación y los resultados, apoyándose en tablas y gráficos. También debe exponer las limitaciones o posibles sesgos y ofrecer recomendaciones accionables y guías para trabajos futuros. Los informes suelen seguir un formato estructurado con partes estándar, como portada, resumen, introducción, métodos, resultados y conclusiones, adaptando el lenguaje a la audiencia.",
+          "ejemplo": "Un equipo que analizó la rotación de personal entrega un informe con la pregunta, las fuentes (encuestas y nómina), cómo limpió los datos, el modelo usado, los hallazgos, la advertencia de que faltaron datos de una sucursal y tres recomendaciones.",
+          "puntos_clave": [
+            "Pregunta, fuentes, métodos y resultados.",
+            "Limitaciones y sesgos.",
+            "Recomendaciones accionables y formato estructurado."
+          ],
+          "errores_frecuentes": [
+            "Ocultar las limitaciones de los datos.",
+            "Usar lenguaje técnico con una audiencia no técnica."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/10-1-writing-an-informative-report",
+            "seccion": "10.1 Writing an Informative Report"
+          }
+        },
+        {
+          "id": "bi-resumen-ejecutivo",
+          "nombre": "El resumen ejecutivo",
+          "explicacion": "El resumen ejecutivo es la primera impresión del trabajo: convierte un análisis técnico complejo en una síntesis accesible para públicos diversos. Debe empezar presentando con claridad el problema de negocio o la pregunta, de forma comprensible para quien no es técnico y destacando el posible impacto; dar una visión general de los datos y métodos sin lenguaje excesivamente técnico, y sobre todo presentar los hallazgos clave de manera clara y accionable, con recomendaciones concretas en lugar de solo estadísticas.",
+          "ejemplo": "En lugar de abrir con «el modelo tuvo un R² de 0,82», el resumen empieza: «Podemos reducir 15 % las devoluciones si cambiamos el empaque de dos productos», y luego explica brevemente cómo se llegó a esa conclusión.",
+          "puntos_clave": [
+            "Problema claro y su impacto.",
+            "Datos y métodos sin tecnicismos.",
+            "Hallazgos y recomendaciones accionables."
+          ],
+          "errores_frecuentes": [
+            "Llenar el resumen de cifras sin interpretación.",
+            "Dejar las recomendaciones para el final del informe largo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/10-3-effective-executive-summaries",
+            "seccion": "10.3 Effective Executive Summaries"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi-ia",
+      "nombre": "Inteligencia artificial y ética de los datos",
+      "orden": 5,
+      "descripcion": "Tecnologías emergentes, fronteras de los sistemas de información, ética de la inteligencia artificial y del análisis de datos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "bi-tecnologias-emergentes",
+          "nombre": "Tecnologías emergentes: oportunidades y riesgos",
+          "explicacion": "Una tecnología emergente es cualquier software o hardware que mejora la experiencia del usuario obteniendo o usando información y datos de formas nuevas; el término incluye tecnologías nuevas y el desarrollo continuo de las existentes. Las empresas que las adoptan pueden ganar ventaja competitiva. Ofrecen muchas oportunidades, como usar inteligencia artificial para conocer la satisfacción de los clientes o generar materiales de estudio personalizados, pero también plantean desafíos y riesgos que deben gestionarse.",
+          "ejemplo": "Una aseguradora usa inteligencia artificial para clasificar automáticamente los reclamos de sus clientes y detectar los más urgentes, pero revisa que el sistema no discrimine a ciertos grupos.",
+          "puntos_clave": [
+            "Nuevas formas de usar información y datos.",
+            "Ventaja competitiva para quien las adopta.",
+            "Oportunidades con riesgos que gestionar."
+          ],
+          "errores_frecuentes": [
+            "Adoptar una tecnología por moda.",
+            "Ignorar sus riesgos para clientes y empleados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/10-1-defining-emerging-technologies",
+            "seccion": "10.1 Defining Emerging Technologies"
+          }
+        },
+        {
+          "id": "bi-fronteras",
+          "nombre": "Las fronteras de los sistemas de información",
+          "explicacion": "Los sistemas de información evolucionan constantemente gracias a investigadores, desarrolladores y centros de pensamiento. Las fronteras de los sistemas de información son los desarrollos más recientes del campo: nuevas áreas de investigación, aplicaciones innovadoras y tecnologías emergentes que convergen con ellos. Un ejemplo es cómo un teléfono inteligente pasó de llamadas, música y cámara a incorporar funciones de inteligencia artificial en cada nueva versión.",
+          "ejemplo": "Un sistema contable que solo registraba transacciones incorpora reconocimiento automático de facturas y alertas de gastos inusuales con inteligencia artificial: es la frontera llegando a una herramienta cotidiana.",
+          "puntos_clave": [
+            "Desarrollos más recientes del campo.",
+            "Convergencia con tecnologías emergentes.",
+            "Evolución continua de los sistemas."
+          ],
+          "errores_frecuentes": [
+            "Creer que los sistemas actuales no cambiarán.",
+            "Adoptar novedades sin evaluar su madurez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/10-2-the-evolving-frontiers-of-information-systems",
+            "seccion": "10.2 The Evolving Frontiers of Information Systems"
+          }
+        },
+        {
+          "id": "bi-etica-ia",
+          "nombre": "Ética de la inteligencia artificial",
+          "explicacion": "La inteligencia artificial es un campo amplio que se asemeja a la inteligencia humana: recoger información, entender conceptos, aplicarla y tomar decisiones. El aprendizaje automático es una parte de la IA que permite a las computadoras aprender de los datos. Por su gran impacto en la sociedad, las personas y el ambiente, su desarrollo debe guiarse por principios éticos y marcos de gobernanza, con colaboración entre países y organizaciones, atendiendo la equidad, los sesgos, la transparencia y la explicabilidad de los sistemas.",
+          "ejemplo": "Un banco que usa IA para aprobar créditos debe poder explicar a un cliente por qué se le negó, revisar que el modelo no discrimine por género o zona y documentar cómo fue entrenado.",
+          "puntos_clave": [
+            "IA y aprendizaje automático.",
+            "Gobernanza y principios éticos.",
+            "Equidad, sesgos, transparencia y explicabilidad."
+          ],
+          "errores_frecuentes": [
+            "Usar modelos que nadie puede explicar en decisiones sensibles.",
+            "Asumir que un algoritmo es neutral."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/12-3-ethics-of-artificial-intelligence-development-and-machine-learning",
+            "seccion": "12.3 Ethics of Artificial Intelligence Development and Machine Learning"
+          }
+        },
+        {
+          "id": "bi-etica-analisis",
+          "nombre": "Ética en el análisis y el modelado de datos",
+          "explicacion": "El análisis de datos examina, organiza y transforma datos para tomar decisiones informadas, y el modelado usa métodos matemáticos y estadísticos para representar situaciones reales y anticipar resultados; ambos dependen de la calidad de los datos. Las consideraciones éticas incluyen el sesgo y la equidad de los modelos, la identificación de datos sensibles y su anonimización, y la validación de los resultados con técnicas como la validación cruzada y la detección de atípicos.",
+          "ejemplo": "Antes de compartir una base de pacientes con un equipo de análisis, un hospital elimina nombres y cédulas (anonimización) y verifica que el modelo de riesgo funcione igual de bien para hombres y mujeres.",
+          "puntos_clave": [
+            "Sesgo y equidad.",
+            "Datos sensibles y anonimización.",
+            "Validación de resultados."
+          ],
+          "errores_frecuentes": [
+            "Compartir datos personales sin anonimizarlos.",
+            "Validar el modelo solo con los mismos datos de entrenamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/8-2-ethics-in-data-analysis-and-modeling",
+            "seccion": "8.2 Ethics in Data Analysis and Modeling"
+          }
+        }
+      ]
+    }
+  ]
+}
