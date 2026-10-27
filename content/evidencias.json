@@ -1,0 +1,1893 @@
+[
+  {
+    "id": "cf-estados-conjunto",
+    "palabras": [
+      "income statement",
+      "balance sheet",
+      "statement of cash flows"
+    ]
+  },
+  {
+    "id": "cf-corriente",
+    "palabras": [
+      "current assets",
+      "noncurrent",
+      "current liabilities"
+    ]
+  },
+  {
+    "id": "cf-tamano-comun",
+    "palabras": [
+      "common-size"
+    ]
+  },
+  {
+    "id": "cf-inv-metodos",
+    "palabras": [
+      "first-in",
+      "first-out",
+      "weighted average",
+      "ifrs"
+    ]
+  },
+  {
+    "id": "cf-inv-sistemas",
+    "palabras": [
+      "perpetual"
+    ]
+  },
+  {
+    "id": "cf-inv-errores",
+    "palabras": [
+      "inventory",
+      "error",
+      "overstated"
+    ]
+  },
+  {
+    "id": "cf-capitalizar",
+    "palabras": [
+      "capitalized",
+      "expense"
+    ]
+  },
+  {
+    "id": "cf-depreciacion",
+    "palabras": [
+      "straight-line",
+      "double-declining",
+      "units-of-production"
+    ]
+  },
+  {
+    "id": "cf-intangibles",
+    "palabras": [
+      "patent",
+      "goodwill",
+      "amortization"
+    ]
+  },
+  {
+    "id": "cf-contingencias",
+    "palabras": [
+      "contingent liabilit",
+      "probable",
+      "remote"
+    ]
+  },
+  {
+    "id": "cf-patrimonio",
+    "palabras": [
+      "retained earnings",
+      "dividends"
+    ]
+  },
+  {
+    "id": "cf-flujo-actividades",
+    "palabras": [
+      "operating",
+      "investing",
+      "financing"
+    ]
+  },
+  {
+    "id": "cf-metodo-indirecto",
+    "palabras": [
+      "indirect method",
+      "depreciation"
+    ]
+  },
+  {
+    "id": "cc-tipos-empresa",
+    "palabras": [
+      "merchandising",
+      "manufacturing",
+      "service"
+    ]
+  },
+  {
+    "id": "cc-fijos-variables",
+    "palabras": [
+      "fixed cost",
+      "variable cost",
+      "mixed cost",
+      "relevant range"
+    ]
+  },
+  {
+    "id": "cc-alto-bajo",
+    "palabras": [
+      "high-low"
+    ]
+  },
+  {
+    "id": "cc-margen-contribucion",
+    "palabras": [
+      "contribution margin"
+    ]
+  },
+  {
+    "id": "cc-punto-equilibrio",
+    "palabras": [
+      "break-even"
+    ]
+  },
+  {
+    "id": "cc-margen-seguridad",
+    "palabras": [
+      "margin of safety",
+      "operating leverage"
+    ]
+  },
+  {
+    "id": "cc-ordenes-procesos",
+    "palabras": [
+      "job order",
+      "process costing"
+    ]
+  },
+  {
+    "id": "cc-tasa-predeterminada",
+    "palabras": [
+      "predetermined overhead rate"
+    ]
+  },
+  {
+    "id": "cc-unidades-equivalentes",
+    "palabras": [
+      "equivalent units"
+    ]
+  },
+  {
+    "id": "cc-abc",
+    "palabras": [
+      "activity-based costing",
+      "cost driver"
+    ]
+  },
+  {
+    "id": "cc-presupuesto-operativo",
+    "palabras": [
+      "sales budget",
+      "production budget"
+    ]
+  },
+  {
+    "id": "cc-presupuesto-flexible",
+    "palabras": [
+      "flexible budget"
+    ]
+  },
+  {
+    "id": "cc-variaciones",
+    "palabras": [
+      "materials price variance",
+      "materials quantity variance"
+    ]
+  },
+  {
+    "id": "tr-ruc",
+    "palabras": [
+      "personas naturales",
+      "actividades económicas",
+      "treinta"
+    ]
+  },
+  {
+    "id": "tr-regimenes",
+    "palabras": [
+      "20.000",
+      "300.000",
+      "negocios populares",
+      "emprendedores"
+    ]
+  },
+  {
+    "id": "tr-comprobantes",
+    "palabras": [
+      "firma electrónica",
+      "notas de crédito",
+      "guías de remisión"
+    ]
+  },
+  {
+    "id": "tr-iva-tarifas",
+    "palabras": [
+      "15%",
+      "decreto ejecutivo",
+      "198"
+    ]
+  },
+  {
+    "id": "tr-iva-liquidacion",
+    "palabras": [
+      "crédito tributario"
+    ]
+  },
+  {
+    "id": "tr-iva-rimpe",
+    "palabras": [
+      "semestral",
+      "negocios populares"
+    ]
+  },
+  {
+    "id": "tr-renta-base",
+    "palabras": [
+      "1 de enero al 31 de diciembre",
+      "base imponible"
+    ]
+  },
+  {
+    "id": "tr-renta-personas",
+    "palabras": [
+      "—"
+    ]
+  },
+  {
+    "id": "tr-renta-sociedades",
+    "palabras": [
+      "25%",
+      "sociedades"
+    ]
+  },
+  {
+    "id": "tr-renta-plazos",
+    "palabras": [
+      "noveno dígito",
+      "10 de marzo",
+      "28 de abril"
+    ]
+  },
+  {
+    "id": "tr-rimpe-populares",
+    "palabras": [
+      "2.500",
+      "60",
+      "00",
+      "negocio popular"
+    ]
+  },
+  {
+    "id": "tr-rimpe-emprendedores",
+    "palabras": [
+      "emprendedores",
+      "1",
+      "75%",
+      "2.797",
+      "52"
+    ]
+  },
+  {
+    "id": "tr-rimpe-comprobantes",
+    "palabras": [
+      "contribuyente régimen rimpe",
+      "liquidaciones de compra"
+    ]
+  },
+  {
+    "id": "mf-simple",
+    "palabras": [
+      "simple interest"
+    ]
+  },
+  {
+    "id": "mf-compuesto",
+    "palabras": [
+      "compound interest"
+    ]
+  },
+  {
+    "id": "mf-tasas",
+    "palabras": [
+      "effective annual rate"
+    ]
+  },
+  {
+    "id": "mf-vtm",
+    "palabras": [
+      "present value",
+      "future value"
+    ]
+  },
+  {
+    "id": "mf-flujos-desiguales",
+    "palabras": [
+      "timing"
+    ]
+  },
+  {
+    "id": "mf-excel",
+    "palabras": [
+      "excel",
+      "pmt"
+    ]
+  },
+  {
+    "id": "mf-anualidad-vencida",
+    "palabras": [
+      "ordinary annuity"
+    ]
+  },
+  {
+    "id": "mf-anualidad-anticipada",
+    "palabras": [
+      "annuity due"
+    ]
+  },
+  {
+    "id": "mf-perpetuidades",
+    "palabras": [
+      "perpetuity",
+      "growing perpetuity"
+    ]
+  },
+  {
+    "id": "mf-cuota",
+    "palabras": [
+      "amortization"
+    ]
+  },
+  {
+    "id": "mf-saldo",
+    "palabras": [
+      "loan",
+      "balance"
+    ]
+  },
+  {
+    "id": "mf-capital-constante",
+    "palabras": [
+      "—"
+    ]
+  },
+  {
+    "id": "fc-relacion-estados",
+    "palabras": [
+      "balance sheet",
+      "income statement"
+    ]
+  },
+  {
+    "id": "fc-flujo-libre",
+    "palabras": [
+      "free cash flow"
+    ]
+  },
+  {
+    "id": "fc-razones",
+    "palabras": [
+      "ratio"
+    ]
+  },
+  {
+    "id": "fc-liquidez",
+    "palabras": [
+      "current ratio",
+      "quick ratio"
+    ]
+  },
+  {
+    "id": "fc-solvencia",
+    "palabras": [
+      "debt-to-assets",
+      "debt-to-equity"
+    ]
+  },
+  {
+    "id": "fc-eficiencia",
+    "palabras": [
+      "inventory turnover",
+      "accounts receivable turnover"
+    ]
+  },
+  {
+    "id": "fc-rentabilidad",
+    "palabras": [
+      "dupont",
+      "return on equity"
+    ]
+  },
+  {
+    "id": "fc-riesgo-rendimiento",
+    "palabras": [
+      "risk",
+      "return"
+    ]
+  },
+  {
+    "id": "fc-capm",
+    "palabras": [
+      "capital asset pricing model",
+      "beta"
+    ]
+  },
+  {
+    "id": "fc-wacc",
+    "palabras": [
+      "weighted average cost of capital"
+    ]
+  },
+  {
+    "id": "fc-capital-trabajo",
+    "palabras": [
+      "working capital"
+    ]
+  },
+  {
+    "id": "fc-bonos",
+    "palabras": [
+      "bond valuation",
+      "coupon"
+    ]
+  },
+  {
+    "id": "fc-acciones",
+    "palabras": [
+      "dividend discount model",
+      "constant growth"
+    ]
+  },
+  {
+    "id": "ep-inversion-capital",
+    "palabras": [
+      "capital investment"
+    ]
+  },
+  {
+    "id": "ep-informacion-relevante",
+    "palabras": [
+      "relevant",
+      "sunk cost"
+    ]
+  },
+  {
+    "id": "ep-valor-dinero",
+    "palabras": [
+      "time value of money"
+    ]
+  },
+  {
+    "id": "ep-van",
+    "palabras": [
+      "net present value"
+    ]
+  },
+  {
+    "id": "ep-tir",
+    "palabras": [
+      "internal rate of return"
+    ]
+  },
+  {
+    "id": "ep-indice-rentabilidad",
+    "palabras": [
+      "—"
+    ]
+  },
+  {
+    "id": "ep-payback",
+    "palabras": [
+      "payback period"
+    ]
+  },
+  {
+    "id": "ep-tasa-contable",
+    "palabras": [
+      "accounting rate of return"
+    ]
+  },
+  {
+    "id": "ep-elegir",
+    "palabras": [
+      "mutually exclusive"
+    ]
+  },
+  {
+    "id": "ep-hoja-calculo",
+    "palabras": [
+      "excel",
+      "npv"
+    ]
+  },
+  {
+    "id": "ep-comparar-metodos",
+    "palabras": [
+      "time value"
+    ]
+  },
+  {
+    "id": "ep-factibilidad",
+    "palabras": [
+      "feasibility"
+    ]
+  },
+  {
+    "id": "fi-mercado-divisas",
+    "palabras": [
+      "foreign exchange market"
+    ]
+  },
+  {
+    "id": "fi-oferta-demanda-divisas",
+    "palabras": [
+      "purchasing power parity"
+    ]
+  },
+  {
+    "id": "fi-cotizaciones",
+    "palabras": [
+      "exchange rate"
+    ]
+  },
+  {
+    "id": "fi-efectos",
+    "palabras": [
+      "exports",
+      "imports",
+      "depreciat"
+    ]
+  },
+  {
+    "id": "fi-politicas",
+    "palabras": [
+      "floating",
+      "hard peg"
+    ]
+  },
+  {
+    "id": "fi-dolarizacion",
+    "palabras": [
+      "dólares de los estados unidos de américa",
+      "banco central del ecuador"
+    ]
+  },
+  {
+    "id": "fi-riesgo-cambiario",
+    "palabras": [
+      "exchange rate risk"
+    ]
+  },
+  {
+    "id": "fi-coberturas",
+    "palabras": [
+      "forward"
+    ]
+  },
+  {
+    "id": "fi-riesgo-tasa",
+    "palabras": [
+      "interest rate risk"
+    ]
+  },
+  {
+    "id": "fi-balanza",
+    "palabras": [
+      "current account",
+      "trade balance"
+    ]
+  },
+  {
+    "id": "fi-flujos",
+    "palabras": [
+      "financial capital"
+    ]
+  },
+  {
+    "id": "fi-ahorro-inversion",
+    "palabras": [
+      "national saving and investment identity"
+    ]
+  },
+  {
+    "id": "mg-funcion-notacion",
+    "palabras": [
+      "función"
+    ]
+  },
+  {
+    "id": "mg-dominio",
+    "palabras": [
+      "dominio",
+      "rango"
+    ]
+  },
+  {
+    "id": "mg-tasa-variacion",
+    "palabras": [
+      "tasa media de cambio"
+    ]
+  },
+  {
+    "id": "mg-pendiente",
+    "palabras": [
+      "pendiente"
+    ]
+  },
+  {
+    "id": "mg-modelado",
+    "palabras": [
+      "modelo"
+    ]
+  },
+  {
+    "id": "mg-ajuste",
+    "palabras": [
+      "regresión"
+    ]
+  },
+  {
+    "id": "mg-cuadraticas",
+    "palabras": [
+      "vértice"
+    ]
+  },
+  {
+    "id": "mg-exponenciales",
+    "palabras": [
+      "exponencial"
+    ]
+  },
+  {
+    "id": "mg-logaritmos",
+    "palabras": [
+      "logaritmo"
+    ]
+  },
+  {
+    "id": "mg-sistemas-2",
+    "palabras": [
+      "sistema"
+    ]
+  },
+  {
+    "id": "mg-matrices",
+    "palabras": [
+      "matriz"
+    ]
+  },
+  {
+    "id": "mg-gauss",
+    "palabras": [
+      "gauss"
+    ]
+  },
+  {
+    "id": "ei-tipos-muestreo",
+    "palabras": [
+      "muestreo aleatorio",
+      "estratificad",
+      "conglomerado"
+    ]
+  },
+  {
+    "id": "ei-tlc",
+    "palabras": [
+      "teorema del límite central"
+    ]
+  },
+  {
+    "id": "ei-uso-tlc",
+    "palabras": [
+      "límite central"
+    ]
+  },
+  {
+    "id": "ei-ic-z",
+    "palabras": [
+      "intervalo de confianza",
+      "margen de error"
+    ]
+  },
+  {
+    "id": "ei-ic-t",
+    "palabras": [
+      "distribución t",
+      "grados de libertad"
+    ]
+  },
+  {
+    "id": "ei-ic-proporcion",
+    "palabras": [
+      "proporción"
+    ]
+  },
+  {
+    "id": "ei-tamano-muestra",
+    "palabras": [
+      "tamaño de la muestra"
+    ]
+  },
+  {
+    "id": "ei-h0-ha",
+    "palabras": [
+      "hipótesis nula"
+    ]
+  },
+  {
+    "id": "ei-errores",
+    "palabras": [
+      "tipo i",
+      "tipo ii"
+    ]
+  },
+  {
+    "id": "ei-valor-p",
+    "palabras": [
+      "valor p"
+    ]
+  },
+  {
+    "id": "ei-dos-medias",
+    "palabras": [
+      "dos poblaciones"
+    ]
+  },
+  {
+    "id": "ei-chi-independencia",
+    "palabras": [
+      "independencia",
+      "chi-cuadrado"
+    ]
+  },
+  {
+    "id": "ei-regresion",
+    "palabras": [
+      "mínimos cuadrados",
+      "coeficiente de correlación"
+    ]
+  },
+  {
+    "id": "ei-significancia-r",
+    "palabras": [
+      "coeficiente de correlación"
+    ]
+  },
+  {
+    "id": "ei-prediccion",
+    "palabras": [
+      "predicción"
+    ]
+  },
+  {
+    "id": "mi-restriccion",
+    "palabras": [
+      "budget constraint",
+      "opportunity cost"
+    ]
+  },
+  {
+    "id": "mi-fpp",
+    "palabras": [
+      "production possibilities frontier"
+    ]
+  },
+  {
+    "id": "mi-enfoque",
+    "palabras": [
+      "economic approach"
+    ]
+  },
+  {
+    "id": "mi-oferta-demanda",
+    "palabras": [
+      "equilibrium",
+      "surplus",
+      "shortage"
+    ]
+  },
+  {
+    "id": "mi-desplazamientos",
+    "palabras": [
+      "shift"
+    ]
+  },
+  {
+    "id": "mi-cuatro-pasos",
+    "palabras": [
+      "four-step"
+    ]
+  },
+  {
+    "id": "mi-precios-controlados",
+    "palabras": [
+      "price ceiling",
+      "price floor"
+    ]
+  },
+  {
+    "id": "mi-elasticidad-precio",
+    "palabras": [
+      "price elasticity",
+      "midpoint"
+    ]
+  },
+  {
+    "id": "mi-elasticidad-ingreso-total",
+    "palabras": [
+      "elastic",
+      "revenue"
+    ]
+  },
+  {
+    "id": "mi-utilidad-marginal",
+    "palabras": [
+      "marginal utility"
+    ]
+  },
+  {
+    "id": "mi-costos-corto-plazo",
+    "palabras": [
+      "marginal cost",
+      "average total cost"
+    ]
+  },
+  {
+    "id": "mi-competencia-perfecta",
+    "palabras": [
+      "perfectly competitive",
+      "marginal revenue"
+    ]
+  },
+  {
+    "id": "mi-monopolio",
+    "palabras": [
+      "monopoly",
+      "marginal revenue"
+    ]
+  },
+  {
+    "id": "mi-oligopolio",
+    "palabras": [
+      "oligopoly",
+      "prisoner's dilemma"
+    ]
+  },
+  {
+    "id": "ma-pib",
+    "palabras": [
+      "gross domestic product",
+      "final goods"
+    ]
+  },
+  {
+    "id": "ma-real-nominal",
+    "palabras": [
+      "real gdp",
+      "nominal"
+    ]
+  },
+  {
+    "id": "ma-comparar",
+    "palabras": [
+      "per capita",
+      "purchasing power parity"
+    ]
+  },
+  {
+    "id": "ma-crecimiento",
+    "palabras": [
+      "labor productivity"
+    ]
+  },
+  {
+    "id": "ma-desempleo",
+    "palabras": [
+      "unemployment rate",
+      "labor force"
+    ]
+  },
+  {
+    "id": "ma-inflacion",
+    "palabras": [
+      "inflation",
+      "basket"
+    ]
+  },
+  {
+    "id": "ma-modelo",
+    "palabras": [
+      "aggregate demand",
+      "aggregate supply"
+    ]
+  },
+  {
+    "id": "ma-desplaza-oa",
+    "palabras": [
+      "productivity",
+      "stagflation"
+    ]
+  },
+  {
+    "id": "ma-desplaza-da",
+    "palabras": [
+      "aggregate demand",
+      "shift"
+    ]
+  },
+  {
+    "id": "ma-funciones-dinero",
+    "palabras": [
+      "medium of exchange",
+      "unit of account",
+      "store of value"
+    ]
+  },
+  {
+    "id": "ma-creacion-dinero",
+    "palabras": [
+      "money multiplier"
+    ]
+  },
+  {
+    "id": "ma-politica-fiscal",
+    "palabras": [
+      "expansionary fiscal policy"
+    ]
+  },
+  {
+    "id": "ma-dolarizacion",
+    "palabras": [
+      "dólares de los estados unidos de américa"
+    ]
+  },
+  {
+    "id": "ec-ventaja",
+    "palabras": [
+      "comparative advantage",
+      "absolute advantage"
+    ]
+  },
+  {
+    "id": "ec-sin-ventaja",
+    "palabras": [
+      "absolute advantage"
+    ]
+  },
+  {
+    "id": "ec-intraindustrial",
+    "palabras": [
+      "intra-industry trade"
+    ]
+  },
+  {
+    "id": "ec-proteccionismo",
+    "palabras": [
+      "protectionism",
+      "tariff",
+      "quota"
+    ]
+  },
+  {
+    "id": "ec-argumentos",
+    "palabras": [
+      "infant industry",
+      "dumping"
+    ]
+  },
+  {
+    "id": "ec-acuerdos",
+    "palabras": [
+      "world trade organization"
+    ]
+  },
+  {
+    "id": "ec-medir",
+    "palabras": [
+      "trade balance"
+    ]
+  },
+  {
+    "id": "ec-deficit",
+    "palabras": [
+      "trade deficit"
+    ]
+  },
+  {
+    "id": "ec-nivel-vs-saldo",
+    "palabras": [
+      "level of trade"
+    ]
+  },
+  {
+    "id": "ec-evaluar-mercados",
+    "palabras": [
+      "global market"
+    ]
+  },
+  {
+    "id": "ec-formas-entrada",
+    "palabras": [
+      "exporting",
+      "joint venture"
+    ]
+  },
+  {
+    "id": "ec-adaptacion",
+    "palabras": [
+      "standardization",
+      "adaptation"
+    ]
+  },
+  {
+    "id": "fa-funciones",
+    "palabras": [
+      "planning",
+      "organizing",
+      "controlling"
+    ]
+  },
+  {
+    "id": "fa-roles",
+    "palabras": [
+      "mintzberg",
+      "interpersonal",
+      "informational",
+      "decisional"
+    ]
+  },
+  {
+    "id": "fa-caracteristicas",
+    "palabras": [
+      "manager"
+    ]
+  },
+  {
+    "id": "fa-cientifica",
+    "palabras": [
+      "taylor",
+      "scientific management"
+    ]
+  },
+  {
+    "id": "fa-administrativa",
+    "palabras": [
+      "fayol",
+      "weber",
+      "bureaucra"
+    ]
+  },
+  {
+    "id": "fa-relaciones-humanas",
+    "palabras": [
+      "hawthorne"
+    ]
+  },
+  {
+    "id": "fa-sistemas",
+    "palabras": [
+      "contingency",
+      "system"
+    ]
+  },
+  {
+    "id": "fa-planeacion",
+    "palabras": [
+      "planning process"
+    ]
+  },
+  {
+    "id": "fa-foda",
+    "palabras": [
+      "swot"
+    ]
+  },
+  {
+    "id": "fa-pestel",
+    "palabras": [
+      "pestel"
+    ]
+  },
+  {
+    "id": "fa-porter",
+    "palabras": [
+      "five forces"
+    ]
+  },
+  {
+    "id": "fa-decisiones",
+    "palabras": [
+      "programmed",
+      "nonprogrammed"
+    ]
+  },
+  {
+    "id": "fa-estructura",
+    "palabras": [
+      "organizational structure"
+    ]
+  },
+  {
+    "id": "fa-apo",
+    "palabras": [
+      "management by objectives"
+    ]
+  },
+  {
+    "id": "co-proceso-perceptivo",
+    "palabras": [
+      "perceptual process"
+    ]
+  },
+  {
+    "id": "co-atribucion",
+    "palabras": [
+      "attribution"
+    ]
+  },
+  {
+    "id": "co-actitudes",
+    "palabras": [
+      "job satisfaction",
+      "organizational commitment"
+    ]
+  },
+  {
+    "id": "co-contenido",
+    "palabras": [
+      "maslow",
+      "herzberg",
+      "mcclelland"
+    ]
+  },
+  {
+    "id": "co-proceso",
+    "palabras": [
+      "expectancy",
+      "equity",
+      "goal"
+    ]
+  },
+  {
+    "id": "co-evaluacion-recompensas",
+    "palabras": [
+      "performance appraisal"
+    ]
+  },
+  {
+    "id": "co-grupos-trabajo",
+    "palabras": [
+      "work group"
+    ]
+  },
+  {
+    "id": "co-comunicacion-proceso",
+    "palabras": [
+      "communication",
+      "feedback"
+    ]
+  },
+  {
+    "id": "co-tipos-comunicacion",
+    "palabras": [
+      "downward",
+      "upward"
+    ]
+  },
+  {
+    "id": "co-liderazgo-conductual",
+    "palabras": [
+      "behavioral"
+    ]
+  },
+  {
+    "id": "co-liderazgo-situacional",
+    "palabras": [
+      "situational",
+      "contingency"
+    ]
+  },
+  {
+    "id": "co-conflicto",
+    "palabras": [
+      "conflict"
+    ]
+  },
+  {
+    "id": "co-cambio",
+    "palabras": [
+      "organizational change"
+    ]
+  },
+  {
+    "id": "th-planeacion",
+    "palabras": [
+      "human resource"
+    ]
+  },
+  {
+    "id": "th-reclutamiento",
+    "palabras": [
+      "recruitment"
+    ]
+  },
+  {
+    "id": "th-seleccion",
+    "palabras": [
+      "selection"
+    ]
+  },
+  {
+    "id": "th-capacitacion",
+    "palabras": [
+      "training"
+    ]
+  },
+  {
+    "id": "th-evaluacion",
+    "palabras": [
+      "performance"
+    ]
+  },
+  {
+    "id": "th-sucesion",
+    "palabras": [
+      "succession"
+    ]
+  },
+  {
+    "id": "th-compensacion-beneficios",
+    "palabras": [
+      "compensation",
+      "benefits"
+    ]
+  },
+  {
+    "id": "th-salario-basico",
+    "palabras": [
+      "mínimos legales",
+      "consejo nacional de trabajo y salarios"
+    ]
+  },
+  {
+    "id": "th-aportes-iess",
+    "palabras": [
+      "9.45",
+      "11.15",
+      "20.60"
+    ]
+  },
+  {
+    "id": "th-relaciones-laborales",
+    "palabras": [
+      "labor relations",
+      "collective bargaining"
+    ]
+  },
+  {
+    "id": "th-quejas",
+    "palabras": [
+      "grievance"
+    ]
+  },
+  {
+    "id": "th-obligaciones-empleador",
+    "palabras": [
+      "obligaciones del empleador",
+      "seguridad e higiene"
+    ]
+  },
+  {
+    "id": "mk-proceso",
+    "palabras": [
+      "marketing process"
+    ]
+  },
+  {
+    "id": "mk-4p",
+    "palabras": [
+      "4ps",
+      "marketing mix"
+    ]
+  },
+  {
+    "id": "mk-necesidades",
+    "palabras": [
+      "needs",
+      "wants"
+    ]
+  },
+  {
+    "id": "mk-decision-compra",
+    "palabras": [
+      "purchasing decision"
+    ]
+  },
+  {
+    "id": "mk-segmentacion",
+    "palabras": [
+      "segmentation"
+    ]
+  },
+  {
+    "id": "mk-mercado-meta",
+    "palabras": [
+      "target market"
+    ]
+  },
+  {
+    "id": "mk-posicionamiento",
+    "palabras": [
+      "positioning"
+    ]
+  },
+  {
+    "id": "mk-ciclo-vida",
+    "palabras": [
+      "product life cycle"
+    ]
+  },
+  {
+    "id": "mk-marca",
+    "palabras": [
+      "brand"
+    ]
+  },
+  {
+    "id": "mk-fijacion-precios",
+    "palabras": [
+      "pricing"
+    ]
+  },
+  {
+    "id": "mk-precios-nuevos",
+    "palabras": [
+      "skimming",
+      "penetration"
+    ]
+  },
+  {
+    "id": "mk-canales",
+    "palabras": [
+      "marketing channel"
+    ]
+  },
+  {
+    "id": "mk-mezcla-promocional",
+    "palabras": [
+      "promotion mix"
+    ]
+  },
+  {
+    "id": "mk-metricas-digitales",
+    "palabras": [
+      "metrics"
+    ]
+  },
+  {
+    "id": "im-big-data",
+    "palabras": [
+      "marketing research",
+      "big data"
+    ]
+  },
+  {
+    "id": "im-fuentes",
+    "palabras": [
+      "primary",
+      "secondary"
+    ]
+  },
+  {
+    "id": "im-pasos",
+    "palabras": [
+      "research plan"
+    ]
+  },
+  {
+    "id": "im-muestreo",
+    "palabras": [
+      "muestreo"
+    ]
+  },
+  {
+    "id": "im-tamano",
+    "palabras": [
+      "tamaño de la muestra"
+    ]
+  },
+  {
+    "id": "im-etica-diseno",
+    "palabras": [
+      "ética"
+    ]
+  },
+  {
+    "id": "im-mercados-consumo",
+    "palabras": [
+      "consumer markets"
+    ]
+  },
+  {
+    "id": "im-factores",
+    "palabras": [
+      "cultural",
+      "social",
+      "psychological"
+    ]
+  },
+  {
+    "id": "im-b2b",
+    "palabras": [
+      "b2b buying process"
+    ]
+  },
+  {
+    "id": "im-proporcion",
+    "palabras": [
+      "proporción"
+    ]
+  },
+  {
+    "id": "im-tablas-cruzadas",
+    "palabras": [
+      "independencia"
+    ]
+  },
+  {
+    "id": "im-etica",
+    "palabras": [
+      "ethical"
+    ]
+  },
+  {
+    "id": "em-hoy",
+    "palabras": [
+      "entrepreneurship"
+    ]
+  },
+  {
+    "id": "em-mentalidad",
+    "palabras": [
+      "entrepreneurial mindset"
+    ]
+  },
+  {
+    "id": "em-creatividad-innovacion",
+    "palabras": [
+      "creativity",
+      "innovation",
+      "invention"
+    ]
+  },
+  {
+    "id": "em-oportunidad-que-es",
+    "palabras": [
+      "opportunity"
+    ]
+  },
+  {
+    "id": "em-investigar",
+    "palabras": [
+      "research"
+    ]
+  },
+  {
+    "id": "em-competencia",
+    "palabras": [
+      "competitive analysis"
+    ]
+  },
+  {
+    "id": "em-modelo",
+    "palabras": [
+      "business model"
+    ]
+  },
+  {
+    "id": "em-factibilidad",
+    "palabras": [
+      "feasibility"
+    ]
+  },
+  {
+    "id": "em-plan",
+    "palabras": [
+      "business plan"
+    ]
+  },
+  {
+    "id": "em-proyecciones",
+    "palabras": [
+      "projections"
+    ]
+  },
+  {
+    "id": "em-estructuras",
+    "palabras": [
+      "business structure"
+    ]
+  },
+  {
+    "id": "em-sas-ecuador",
+    "palabras": [
+      "una o varias personas naturales o jurídicas",
+      "monto de sus respectivos aportes"
+    ]
+  },
+  {
+    "id": "ll-definicion",
+    "palabras": [
+      "bajo su dependencia",
+      "remuneración"
+    ]
+  },
+  {
+    "id": "ll-clases",
+    "palabras": [
+      "expreso o tácito",
+      "tiempo indefinido"
+    ]
+  },
+  {
+    "id": "ll-prueba",
+    "palabras": [
+      "noventa días",
+      "período de prueba"
+    ]
+  },
+  {
+    "id": "ll-escrito",
+    "palabras": [
+      "por escrito",
+      "período de prueba"
+    ]
+  },
+  {
+    "id": "ll-jornada-maxima",
+    "palabras": [
+      "ocho horas diarias",
+      "cuarenta horas semanales"
+    ]
+  },
+  {
+    "id": "ll-horas-extra",
+    "palabras": [
+      "cincuenta por ciento de recargo",
+      "ciento por ciento"
+    ]
+  },
+  {
+    "id": "ll-sbu",
+    "palabras": [
+      "salario básico",
+      "mínimos legales"
+    ]
+  },
+  {
+    "id": "ll-decimo-tercero",
+    "palabras": [
+      "doceava parte",
+      "veinte y cuatro de diciembre"
+    ]
+  },
+  {
+    "id": "ll-decimo-cuarto",
+    "palabras": [
+      "decimocuarta",
+      "15 de marzo",
+      "15 de agosto"
+    ]
+  },
+  {
+    "id": "ll-fondo-reserva",
+    "palabras": [
+      "fondo de reserva",
+      "cada año completo posterior al primero"
+    ]
+  },
+  {
+    "id": "ll-vacaciones",
+    "palabras": [
+      "quince días",
+      "cinco años"
+    ]
+  },
+  {
+    "id": "ll-utilidades",
+    "palabras": [
+      "quince por ciento",
+      "cargas familiares"
+    ]
+  },
+  {
+    "id": "ll-aportes",
+    "palabras": [
+      "9.45",
+      "11.15"
+    ]
+  },
+  {
+    "id": "ll-terminacion",
+    "palabras": [
+      "acuerdo de las partes",
+      "terminación"
+    ]
+  },
+  {
+    "id": "ll-desahucio",
+    "palabras": [
+      "veinticinco por ciento",
+      "años de servicio"
+    ]
+  },
+  {
+    "id": "ll-despido",
+    "palabras": [
+      "tres meses de remuneración",
+      "veinte y cinco meses"
+    ]
+  },
+  {
+    "id": "mt-fuentes-existentes",
+    "palabras": [
+      "sources"
+    ]
+  },
+  {
+    "id": "mt-fuentes-propias",
+    "palabras": [
+      "interview",
+      "survey"
+    ]
+  },
+  {
+    "id": "mt-evidencia",
+    "palabras": [
+      "evidence"
+    ]
+  },
+  {
+    "id": "mt-notas",
+    "palabras": [
+      "research log"
+    ]
+  },
+  {
+    "id": "mt-bibliografia-anotada",
+    "palabras": [
+      "annotated bibliography"
+    ]
+  },
+  {
+    "id": "mt-etica",
+    "palabras": [
+      "ethical"
+    ]
+  },
+  {
+    "id": "mt-citas",
+    "palabras": [
+      "signal phrase",
+      "publication date after the author",
+      "every source cited in the text"
+    ]
+  },
+  {
+    "id": "mt-referencias",
+    "palabras": [
+      "date of publication",
+      "doi or url",
+      "chronologically by year"
+    ]
+  },
+  {
+    "id": "mt-integrar",
+    "palabras": [
+      "quotation"
+    ]
+  },
+  {
+    "id": "mt-conceptos",
+    "palabras": [
+      "población",
+      "muestra",
+      "parámetro"
+    ]
+  },
+  {
+    "id": "mt-medicion",
+    "palabras": [
+      "niveles de medición"
+    ]
+  },
+  {
+    "id": "mt-diseno-experimental",
+    "palabras": [
+      "diseño experimental",
+      "ética"
+    ]
+  },
+  {
+    "id": "mi-que-es-economia",
+    "palabras": [
+      "scarcity",
+      "division of labor",
+      "specializ"
+    ]
+  },
+  {
+    "id": "mi-economia-comportamiento",
+    "palabras": [
+      "behavioral economics",
+      "loss aversion"
+    ]
+  },
+  {
+    "id": "mi-utilidad-economica",
+    "palabras": [
+      "explicit costs",
+      "implicit costs",
+      "economic profit",
+      "accounting profit"
+    ]
+  },
+  {
+    "id": "mi-produccion-corto-plazo",
+    "palabras": [
+      "marginal product",
+      "diminishing marginal productivity"
+    ]
+  },
+  {
+    "id": "mi-produccion-largo-plazo",
+    "palabras": [
+      "long run",
+      "all factors",
+      "variable"
+    ]
+  },
+  {
+    "id": "mi-costos-largo-plazo",
+    "palabras": [
+      "economies of scale",
+      "long-run average cost"
+    ]
+  },
+  {
+    "id": "mi-excedentes",
+    "palabras": [
+      "consumer surplus",
+      "producer surplus",
+      "deadweight loss"
+    ]
+  },
+  {
+    "id": "mi-externalidades",
+    "palabras": [
+      "externalit",
+      "pollution"
+    ]
+  },
+  {
+    "id": "mi-bienes-publicos",
+    "palabras": [
+      "public good",
+      "free rider"
+    ]
+  },
+  {
+    "id": "mi-competencia-regulacion",
+    "palabras": [
+      "herfindahl",
+      "four-firm concentration ratio",
+      "merger"
+    ]
+  },
+  {
+    "id": "mi-mercado-laboral",
+    "palabras": [
+      "minimum wage",
+      "labor market"
+    ]
+  },
+  {
+    "id": "mg-funciones-inversas",
+    "palabras": [
+      "inversa",
+      "biunivoca",
+      "prueba de la linea horizontal"
+    ]
+  },
+  {
+    "id": "mg-graficos-lineales",
+    "palabras": [
+      "pendiente",
+      "paralelas",
+      "perpendiculares"
+    ]
+  },
+  {
+    "id": "mg-modelos-exponenciales",
+    "palabras": [
+      "crecimiento exponencial",
+      "duplica"
+    ]
+  },
+  {
+    "id": "mg-sistemas-3",
+    "palabras": [
+      "tres variables",
+      "eliminaci"
+    ]
+  },
+  {
+    "id": "mg-aritmeticas",
+    "palabras": [
+      "diferencia comun",
+      "aritmetica"
+    ]
+  },
+  {
+    "id": "mg-geometricas",
+    "palabras": [
+      "razon comun",
+      "geometrica"
+    ]
+  },
+  {
+    "id": "mg-series",
+    "palabras": [
+      "serie",
+      "sigma"
+    ]
+  },
+  {
+    "id": "mg-conteo",
+    "palabras": [
+      "permutaci",
+      "combinaci",
+      "multiplicaci"
+    ]
+  },
+  {
+    "id": "mg-polinomicas-costos",
+    "palabras": [
+      "polinomic",
+      "grado",
+      "coeficiente principal"
+    ]
+  },
+  {
+    "id": "mg-ceros",
+    "palabras": [
+      "ceros",
+      "teorema del factor"
+    ]
+  },
+  {
+    "id": "mg-racionales",
+    "palabras": [
+      "racional",
+      "asintota"
+    ]
+  },
+  {
+    "id": "mg-variacion",
+    "palabras": [
+      "variacion directa",
+      "variacion inversa",
+      "constante de variacion"
+    ]
+  }
+]

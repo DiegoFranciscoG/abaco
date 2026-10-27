@@ -67,6 +67,27 @@
             "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/1-3-tasas-de-variacion-y-comportamiento-de-los-graficos",
             "seccion": "1.3 Tasas de variación y comportamiento de los gráficos"
           }
+        },
+        {
+          "id": "mg-funciones-inversas",
+          "nombre": "Funciones inversas: de la demanda al precio",
+          "explicacion": "La función inversa deshace lo que hace la original: si f transforma x en y, su inversa f⁻¹ transforma y de regreso en x. Solo existe cuando cada salida proviene de una única entrada, es decir, cuando la función es biunívoca o uno a uno; gráficamente, cuando pasa la prueba de la línea horizontal. En economía sirve para pasar de la función de demanda q = f(p), que da la cantidad según el precio, a la demanda inversa p = f⁻¹(q), que da el precio al que se vende una cantidad. Para hallarla se despeja la variable de entrada y se intercambian los papeles de las variables.",
+          "ejemplo": "La demanda de un producto es q = 1.200 − 40p. Despejando p: 40p = 1.200 − q, así que p = 30 − q ÷ 40. Si la empresa quiere vender 400 unidades, el precio debe ser 30 − 400 ÷ 40 = 20 dólares.",
+          "puntos_clave": [
+            "Una función tiene inversa solo si es biunívoca (uno a uno).",
+            "f⁻¹(f(x)) = x: la inversa deshace a la original.",
+            "La demanda inversa expresa el precio en función de la cantidad."
+          ],
+          "errores_frecuentes": [
+            "Confundir f⁻¹(x) con 1 ÷ f(x).",
+            "Olvidar restringir el dominio para que la función sea biunívoca."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/1-7-funciones-inversas",
+            "seccion": "1.7 Funciones inversas"
+          }
         }
       ]
     },
@@ -136,6 +157,27 @@
             "ref": "os-precalc-es",
             "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/2-4-ajuste-de-modelos-lineales-a-los-datos",
             "seccion": "2.4 Ajuste de modelos lineales a los datos"
+          }
+        },
+        {
+          "id": "mg-graficos-lineales",
+          "nombre": "Graficar rectas: costo, ingreso y equilibrio",
+          "explicacion": "Una función lineal se grafica con dos puntos o con su intersección con el eje y y su pendiente. Las rectas con la misma pendiente son paralelas y las que tienen pendientes cuyo producto es −1 son perpendiculares. En negocios, graficar en el mismo plano el costo total C(q) = CF + cv·q y el ingreso I(q) = p·q muestra dónde se cruzan: ese punto es el equilibrio; a la izquierda hay pérdida y a la derecha, utilidad. La pendiente de cada recta es el costo variable unitario y el precio, respectivamente.",
+          "ejemplo": "Un servicio de lavado de autos tiene C(q) = 900 + 3q e I(q) = 8q. Las rectas se cruzan cuando 8q = 900 + 3q, es decir, cuando 5q = 900 y q = 180 lavados. Con 180 lavados el ingreso es 8 × 180 = 1.440 y el costo es 900 + 3 × 180 = 1.440.",
+          "puntos_clave": [
+            "Basta con dos puntos para graficar una recta.",
+            "Rectas paralelas: misma pendiente.",
+            "El cruce entre costo e ingreso es el punto de equilibrio."
+          ],
+          "errores_frecuentes": [
+            "Ubicar el costo fijo como pendiente en lugar de como intersección.",
+            "Leer el punto de equilibrio en el eje y en vez de en el eje de cantidades."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/2-2-graficos-de-funciones-lineales",
+            "seccion": "2.2 Gráficos de funciones lineales"
           }
         }
       ]
@@ -209,6 +251,29 @@
             "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/4-6-ecuaciones-exponenciales-y-logaritmicas",
             "seccion": "4.6 Ecuaciones exponenciales y logarítmicas"
           }
+        },
+        {
+          "id": "mg-modelos-exponenciales",
+          "nombre": "Modelos de crecimiento y decrecimiento exponencial",
+          "explicacion": "Una cantidad que crece o decrece un porcentaje fijo por período sigue un modelo exponencial: A(t) = A₀(1 + r)ᵗ en tiempo discreto, o A(t) = A₀·e^(k·t) en tiempo continuo. Si k es positivo hay crecimiento; si es negativo, decrecimiento, como la pérdida de valor de un equipo o la caída de ventas de un producto en declive. El tiempo de duplicación del modelo continuo es ln 2 ÷ k, y se obtiene aplicando logaritmos para despejar t.",
+          "ejemplo": "Los usuarios de una aplicación crecen a una tasa continua de 8 % mensual. El tiempo que tardan en duplicarse es ln 2 ÷ 0,08, es decir, 0,6931 ÷ 0,08 = 8,66 meses.",
+          "puntos_clave": [
+            "Crecimiento continuo: A(t) = A₀·e^(k·t).",
+            "Tiempo de duplicación = ln 2 ÷ k.",
+            "Con k negativo el modelo describe un decrecimiento."
+          ],
+          "errores_frecuentes": [
+            "Usar la tasa en porcentaje (8) en lugar de decimal (0,08).",
+            "Confundir crecimiento lineal (suma fija) con exponencial (porcentaje fijo)."
+          ],
+          "formulas": [
+            "interes-continuo"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/4-7-modelos-exponenciales-y-logaritmicos",
+            "seccion": "4.7 Modelos exponenciales y logarítmicos"
+          }
         }
       ]
     },
@@ -274,6 +339,213 @@
             "ref": "os-precalc-es",
             "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-6-resolver-sistemas-con-eliminacion-de-gauss-jordan",
             "seccion": "9.6 Resolver sistemas con eliminación de Gauss-Jordan"
+          }
+        },
+        {
+          "id": "mg-sistemas-3",
+          "nombre": "Sistemas de tres ecuaciones: mezcla de producción",
+          "explicacion": "Un sistema de tres ecuaciones lineales con tres incógnitas aparece cuando hay tres productos y tres recursos limitados. Se resuelve por eliminación: se combinan pares de ecuaciones para eliminar una variable, se obtiene un sistema de dos ecuaciones y se resuelve; luego se sustituye hacia atrás. El sistema puede tener una solución, infinitas o ninguna. Siempre conviene comprobar la solución en las tres ecuaciones originales.",
+          "ejemplo": "Una fábrica hace sillas (x), mesas (y) y repisas (z). En corte usan 1, 2 y 1 horas; en ensamble, 2, 1 y 1; en pintura, 1, 1 y 2. Con 40 horas de corte, 45 de ensamble y 35 de pintura, la solución es x = 15, y = 10 y z = 5. Comprobación: corte 15 + 2 × 10 + 5 = 40; ensamble 2 × 15 + 10 + 5 = 45; pintura 15 + 10 + 2 × 5 = 35.",
+          "puntos_clave": [
+            "Eliminación: reducir a dos ecuaciones y luego a una.",
+            "Un sistema puede tener una, infinitas o ninguna solución.",
+            "Toda solución se comprueba en las tres ecuaciones."
+          ],
+          "errores_frecuentes": [
+            "Eliminar variables distintas en cada par de ecuaciones.",
+            "Dar por buena la solución sin comprobarla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-2-sistemas-de-ecuaciones-lineales-tres-variables",
+            "seccion": "9.2 Sistemas de ecuaciones lineales: tres variables"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mg-sucesiones",
+      "nombre": "Sucesiones, series y conteo",
+      "orden": 5,
+      "descripcion": "Sucesiones aritméticas y geométricas, sumas de series y principios de conteo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mg-aritmeticas",
+          "nombre": "Sucesiones aritméticas",
+          "explicacion": "Una sucesión aritmética aumenta o disminuye una cantidad constante, la diferencia común d, en cada término. Su término general es aₙ = a₁ + (n − 1)·d. Describe situaciones con incrementos fijos: un arriendo que sube la misma cantidad cada año, un ahorro que crece un monto fijo cada mes o una depreciación por línea recta, donde el valor en libros baja lo mismo en cada período.",
+          "ejemplo": "Un arriendo empieza en USD 600 mensuales y sube USD 25 cada año. En el quinto año el arriendo es 600 + (5 − 1) × 25 = 700 dólares mensuales.",
+          "puntos_clave": [
+            "Diferencia común: d = aₙ − aₙ₋₁.",
+            "Término general: aₙ = a₁ + (n − 1)·d.",
+            "La depreciación en línea recta forma una sucesión aritmética."
+          ],
+          "errores_frecuentes": [
+            "Usar n en lugar de n − 1 en el término general.",
+            "Confundir un aumento fijo en dólares con un aumento porcentual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/11-2-secuencias-aritmeticas",
+            "seccion": "11.2 Secuencias aritméticas"
+          }
+        },
+        {
+          "id": "mg-geometricas",
+          "nombre": "Sucesiones geométricas",
+          "explicacion": "En una sucesión geométrica cada término se obtiene multiplicando el anterior por una razón común r. Su término general es aₙ = a₁·rⁿ⁻¹. Describe todo lo que crece o decrece un porcentaje fijo por período: ventas que suben 5 % anual (r = 1,05), precios con inflación o el saldo de un depósito con interés compuesto. Si la razón está entre 0 y 1, los términos decrecen.",
+          "ejemplo": "Las ventas de una empresa son USD 80.000 el primer año y crecen 5 % anual. Como 1,05 elevado al cubo es 1,157625, el cuarto año serán 80.000 × 1,157625 = 92.610 dólares.",
+          "puntos_clave": [
+            "Razón común: r = aₙ ÷ aₙ₋₁.",
+            "Término general: aₙ = a₁·rⁿ⁻¹.",
+            "Un crecimiento de g % equivale a r = 1 + g."
+          ],
+          "errores_frecuentes": [
+            "Usar r = 0,05 en lugar de r = 1,05 para un crecimiento de 5 %.",
+            "Elevar a n en lugar de a n − 1."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/11-3-secuencias-geometricas",
+            "seccion": "11.3 Secuencias geométricas"
+          }
+        },
+        {
+          "id": "mg-series",
+          "nombre": "Series: sumar los términos de una sucesión",
+          "explicacion": "Una serie es la suma de los términos de una sucesión y se escribe con la notación sigma (Σ). La suma de los n primeros términos de una serie aritmética es Sₙ = n·(a₁ + aₙ) ÷ 2. La de una serie geométrica es Sₙ = a₁·(1 − rⁿ) ÷ (1 − r). Esta última es la base de las fórmulas de anualidades de la matemática financiera: el valor futuro de pagos iguales es una serie geométrica.",
+          "ejemplo": "Si depositas USD 100 el primer mes y cada mes depositas 10 % más que el anterior, en cuatro meses habrás depositado 100 + 110 + 121 + 133,1 = 464,1 dólares.",
+          "puntos_clave": [
+            "Σ indica una suma de términos.",
+            "Serie aritmética: Sₙ = n·(a₁ + aₙ) ÷ 2.",
+            "Serie geométrica: Sₙ = a₁·(1 − rⁿ) ÷ (1 − r)."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la fórmula geométrica a una sucesión aritmética.",
+            "Contar mal el número de términos que se suman."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/11-4-series-y-sus-notaciones",
+            "seccion": "11.4 Series y sus notaciones"
+          }
+        },
+        {
+          "id": "mg-conteo",
+          "nombre": "Principios de conteo: permutaciones y combinaciones",
+          "explicacion": "El principio de la multiplicación dice que si una decisión tiene m opciones y otra n, juntas tienen m·n combinaciones. Una permutación cuenta arreglos en los que importa el orden: elegir presidente, secretario y tesorero de un grupo. Una combinación cuenta selecciones en las que el orden no importa: elegir tres personas para un comité. Estas cuentas son la base de la probabilidad y ayudan a dimensionar opciones de productos, rutas o códigos.",
+          "ejemplo": "Un restaurante ofrece 3 entradas, 4 platos fuertes y 2 postres. El número de almuerzos distintos es 3 × 4 × 2 = 24.",
+          "puntos_clave": [
+            "Principio de la multiplicación: m × n opciones.",
+            "Permutación: el orden importa.",
+            "Combinación: el orden no importa."
+          ],
+          "errores_frecuentes": [
+            "Usar permutaciones cuando el orden no importa.",
+            "Sumar opciones que deberían multiplicarse."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/11-5-principios-de-conteo",
+            "seccion": "11.5 Principios de conteo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mg-polinomicas",
+      "nombre": "Funciones polinómicas y racionales",
+      "orden": 6,
+      "descripcion": "Costos polinómicos, ceros de una función de utilidad, costo medio y variación.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mg-polinomicas-costos",
+          "nombre": "Funciones potencia y polinómicas",
+          "explicacion": "Una función polinómica es una suma de términos de la forma a·xⁿ con exponentes enteros no negativos; el mayor exponente es su grado y determina el comportamiento en los extremos. En gestión se usan para modelar costos que primero crecen despacio y luego rápido, como C(q) = aq³ + bq² + cq + d. El coeficiente principal y el grado indican hacia dónde va la función cuando la cantidad crece mucho.",
+          "ejemplo": "El costo de un taller es C(q) = 0,01q³ − 0,6q² + 15q + 200. Para q = 20: C = 0,01 × 8.000 − 0,6 × 400 + 15 × 20 + 200 = 340 dólares.",
+          "puntos_clave": [
+            "El grado es el mayor exponente del polinomio.",
+            "El término de mayor grado domina cuando x es grande.",
+            "Las funciones cúbicas modelan costos con rendimientos decrecientes."
+          ],
+          "errores_frecuentes": [
+            "Calcular mal las potencias (20 al cubo es 8.000, no 60).",
+            "Olvidar el término independiente (el costo fijo)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/3-3-funciones-potencia-y-funciones-polinomicas",
+            "seccion": "3.3 Funciones potencia y funciones polinómicas"
+          }
+        },
+        {
+          "id": "mg-ceros",
+          "nombre": "Ceros de una función: puntos de equilibrio",
+          "explicacion": "Los ceros de una función son los valores de x para los que f(x) = 0. En una función de utilidad, los ceros son los puntos de equilibrio: allí la empresa ni gana ni pierde. Para un polinomio de grado 2 se hallan factorizando o con la fórmula cuadrática; para grados mayores se usan el teorema del factor, la división de polinomios o métodos numéricos. Entre dos ceros consecutivos la función conserva el signo, lo que indica dónde hay utilidad y dónde pérdida.",
+          "ejemplo": "La utilidad de un producto es U(q) = −2q² + 100q − 800, que se factoriza como −2(q − 10)(q − 40). Sus ceros son q = 10 y q = 40. Comprobación: U(10) = −200 + 1.000 − 800 = 0. Entre 10 y 40 unidades hay utilidad.",
+          "puntos_clave": [
+            "Un cero cumple f(x) = 0.",
+            "En la utilidad, los ceros son los puntos de equilibrio.",
+            "Entre dos ceros consecutivos el signo no cambia."
+          ],
+          "errores_frecuentes": [
+            "Confundir el cero de la función con su valor en x = 0.",
+            "Quedarse con un solo punto de equilibrio cuando hay dos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/3-6-ceros-de-funciones-polinomicas",
+            "seccion": "3.6 Ceros de funciones polinómicas"
+          }
+        },
+        {
+          "id": "mg-racionales",
+          "nombre": "Funciones racionales: el costo medio",
+          "explicacion": "Una función racional es el cociente de dos polinomios. Tiene asíntotas: valores a los que la función se acerca sin alcanzarlos. El costo medio es un caso típico: si C(q) = CF + cv·q, el costo por unidad es CF ÷ q + cv. Cuando q crece, el término CF ÷ q se reparte entre más unidades y el costo medio se acerca al costo variable unitario, que es su asíntota horizontal. Por eso producir más abarata cada unidad, pero nunca por debajo de cv.",
+          "ejemplo": "Con C(q) = 5.000 + 12q, el costo medio es 5.000 ÷ q + 12. Con 100 unidades vale 5.000 ÷ 100 + 12 = 62 y con 1.000 unidades, 5.000 ÷ 1.000 + 12 = 17. Nunca baja de 12 dólares.",
+          "puntos_clave": [
+            "Función racional = polinomio ÷ polinomio.",
+            "Costo medio = CF ÷ q + cv.",
+            "La asíntota horizontal del costo medio es el costo variable unitario."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el costo medio puede llegar a cero.",
+            "Olvidar que q no puede valer 0 en el costo medio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/3-7-funciones-racionales",
+            "seccion": "3.7 Funciones racionales"
+          }
+        },
+        {
+          "id": "mg-variacion",
+          "nombre": "Variación directa e inversa",
+          "explicacion": "Dos cantidades varían directamente cuando una es una constante por la otra: y = k·x (el costo de transporte y el peso). Varían inversamente cuando y = k ÷ x (el tiempo de una tarea y el número de trabajadores, si todos rinden igual). La constante de variación k se calcula con un par de datos conocidos y después sirve para predecir otros valores. También existe la variación conjunta, cuando una cantidad depende del producto de varias.",
+          "ejemplo": "El costo de transporte varía directamente con el peso. Si 250 kg cuestan USD 45, la constante es 45 ÷ 250 = 0,18 dólares por kg, y 400 kg costarán 0,18 × 400 = 72 dólares.",
+          "puntos_clave": [
+            "Variación directa: y = k·x.",
+            "Variación inversa: y = k ÷ x.",
+            "La constante k se obtiene con un par de datos conocidos."
+          ],
+          "errores_frecuentes": [
+            "Suponer variación directa cuando hay un costo fijo (y = b + k·x no es variación directa).",
+            "Confundir variación inversa con una relación lineal decreciente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/3-9-modelado-mediante-la-variacion",
+            "seccion": "3.9 Modelado mediante la variación"
           }
         }
       ]

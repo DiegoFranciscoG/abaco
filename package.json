@@ -26,7 +26,9 @@
     "screenshots": "node scripts/screenshots.ts",
     "pdf:analizar": "node scripts/pdf-analizar.ts",
     "cobertura": "node scripts/cobertura.ts && prettier --write docs/cobertura.md",
-    "ficha": "vitest run tests/content/ficha.test.ts --silent=false"
+    "ficha": "vitest run tests/content/ficha.test.ts --silent=false",
+    "fuentes:verificar": "node scripts/verificar-fuentes.ts",
+    "cobertura:estado": "node scripts/estado-cobertura.ts"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "5.3.0",

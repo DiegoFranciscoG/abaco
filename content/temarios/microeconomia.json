@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-microeconomics-3e/pages/2-3-confronting-objections-to-the-economic-approach",
             "seccion": "2.3 Confronting Objections to the Economic Approach"
           }
+        },
+        {
+          "id": "mi-que-es-economia",
+          "nombre": "Qué estudia la economía: escasez y especialización",
+          "explicacion": "La economía estudia cómo las personas, las empresas y los gobiernos deciden usar recursos escasos —tiempo, dinero, trabajo, tierra, capital— que tienen usos alternativos. Como no alcanza para todo, cada decisión implica renunciar a algo. Adam Smith mostró que la división del trabajo y la especialización elevan la producción: cada trabajador se vuelve más hábil en su tarea, se pierde menos tiempo cambiando de actividad y se aprovechan las economías de escala. Por eso las sociedades intercambian en mercados en lugar de que cada persona produzca todo lo que consume.",
+          "ejemplo": "En una panadería de Riobamba, si cada uno de los 4 trabajadores hace todo el proceso, entre todos producen 240 panes por hora. Al especializarse (uno amasa, otro forma, otro hornea y otro atiende), la producción sube a 360 panes por hora: 360 − 240 = 120 panes más con el mismo personal, un aumento de 120 ÷ 240 = 0,5, es decir, 50 %.",
+          "puntos_clave": [
+            "La escasez obliga a elegir: toda decisión tiene un costo de oportunidad.",
+            "La división del trabajo y la especialización aumentan la productividad.",
+            "Quien se especializa necesita intercambiar, y el intercambio necesita mercados."
+          ],
+          "errores_frecuentes": [
+            "Creer que la economía solo trata sobre dinero.",
+            "Confundir escasez (recursos limitados frente a deseos ilimitados) con pobreza."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/1-1-what-is-economics-and-why-is-it-important",
+            "seccion": "1.1 What Is Economics, and Why Is It Important?"
+          }
         }
       ]
     },
@@ -221,6 +242,27 @@
             "url": "https://openstax.org/books/principles-microeconomics-3e/pages/6-1-consumption-choices",
             "seccion": "6.1 Consumption Choices"
           }
+        },
+        {
+          "id": "mi-economia-comportamiento",
+          "nombre": "Economía del comportamiento",
+          "explicacion": "El modelo tradicional supone un consumidor racional que compara utilidades marginales y elige lo que más le conviene. La economía del comportamiento, que une economía y psicología, documenta desvíos sistemáticos: valoramos más evitar una pérdida que obtener una ganancia del mismo tamaño (aversión a la pérdida), preferimos la gratificación inmediata aunque nos perjudique después y nos dejamos influir por cómo se presenta una opción. No anula el análisis económico, pero explica por qué la gente ahorra poco o se endeuda de más, y hoy se usa en políticas públicas y en marketing.",
+          "ejemplo": "Una cooperativa ofrece a sus socios un plan de ahorro programado. Cuando el plan es opcional y hay que llenar un formulario, se inscribe el 18 % de los socios. Cuando la inscripción viene marcada por defecto y quien no quiere puede salirse, se queda el 72 %. El plan es el mismo; cambió solo la presentación, y la diferencia es de 72 − 18 = 54 puntos porcentuales.",
+          "puntos_clave": [
+            "La aversión a la pérdida pesa más que una ganancia equivalente.",
+            "Las opciones por defecto cambian decisiones sin cambiar los incentivos.",
+            "El sesgo del presente ayuda a explicar el bajo ahorro y el sobreendeudamiento."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la economía del comportamiento demuestra que el análisis racional no sirve.",
+            "Usar los sesgos para manipular al consumidor sin considerar la ética."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/6-3-behavioral-economics-an-alternative-framework-for-consumer-choice",
+            "seccion": "6.3 Behavioral Economics: An Alternative Framework for Consumer Choice"
+          }
         }
       ]
     },
@@ -307,6 +349,213 @@
             "ref": "os-micro3",
             "url": "https://openstax.org/books/principles-microeconomics-3e/pages/10-2-oligopoly",
             "seccion": "10.2 Oligopoly"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mi-produccion",
+      "nombre": "Producción y costos de la empresa",
+      "orden": 5,
+      "descripcion": "Costos explícitos e implícitos, producción en el corto y largo plazo y economías de escala.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mi-utilidad-economica",
+          "nombre": "Costos explícitos e implícitos: utilidad contable y económica",
+          "explicacion": "Los costos explícitos son pagos en dinero: sueldos, arriendo, materiales. Los costos implícitos son el costo de oportunidad de los recursos propios que no se pagan con dinero, como el sueldo que el dueño deja de ganar en otro empleo o el rendimiento que daría su capital en otra inversión. La utilidad contable resta de los ingresos solo los costos explícitos; la utilidad económica resta además los implícitos. Un negocio con utilidad contable positiva puede tener utilidad económica negativa: en ese caso el dueño ganaría más usando sus recursos en otra alternativa.",
+          "ejemplo": "Andrea dejó un empleo de USD 1.200 mensuales para abrir una cafetería en Cuenca, donde invirtió USD 30.000 de ahorros que le rendían 0,5 % mensual en una póliza. La cafetería vende USD 9.000 al mes y paga USD 7.100 de costos explícitos. Utilidad contable = 9.000 − 7.100 = 1.900. Costos implícitos = 1.200 + 30.000 × 0,005 = 1.350. Utilidad económica = 1.900 − 1.350 = 550 dólares al mes.",
+          "puntos_clave": [
+            "Utilidad contable = ingresos − costos explícitos.",
+            "Utilidad económica = utilidad contable − costos implícitos.",
+            "Una utilidad económica de cero significa que el negocio rinde lo mismo que la mejor alternativa."
+          ],
+          "errores_frecuentes": [
+            "Olvidar el sueldo que el propio dueño deja de ganar.",
+            "Concluir que un negocio conviene solo porque tiene utilidad contable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit",
+            "seccion": "7.1 Explicit and Implicit Costs, and Accounting and Economic Profit"
+          }
+        },
+        {
+          "id": "mi-produccion-corto-plazo",
+          "nombre": "Producción en el corto plazo y rendimientos decrecientes",
+          "explicacion": "En el corto plazo al menos un insumo está fijo (el local, la maquinaria) y la empresa solo ajusta los variables, como las horas de trabajo. La función de producción relaciona los insumos con la cantidad producida. El producto marginal es la producción adicional que aporta una unidad más del insumo variable. Con un insumo fijo llega un momento en que cada trabajador adicional aporta menos que el anterior: es la ley de los rendimientos marginales decrecientes, que explica por qué el costo marginal termina subiendo.",
+          "ejemplo": "Un taller de costura con 3 máquinas produce 40 camisetas al día con 2 operarias, 70 con 3 y 85 con 4. El producto marginal de la tercera operaria es 70 − 40 = 30 camisetas y el de la cuarta es 85 − 70 = 15. Con las mismas máquinas, cada persona adicional aporta menos.",
+          "puntos_clave": [
+            "Corto plazo: hay al menos un insumo fijo.",
+            "Producto marginal = cambio en la producción ÷ cambio en el insumo variable.",
+            "Los rendimientos decrecientes aparecen porque el insumo fijo se comparte entre más trabajadores."
+          ],
+          "errores_frecuentes": [
+            "Confundir rendimientos decrecientes con producción total que baja.",
+            "Pensar que el corto plazo es un período de calendario fijo, como un mes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/7-2-production-in-the-short-run",
+            "seccion": "7.2 Production in the Short Run"
+          }
+        },
+        {
+          "id": "mi-produccion-largo-plazo",
+          "nombre": "Producción en el largo plazo: elegir la técnica",
+          "explicacion": "En el largo plazo todos los insumos son variables: la empresa puede ampliar el local, comprar máquinas o cambiar de tecnología. Por eso elige la combinación de trabajo y capital que produce la cantidad deseada al menor costo, según el precio de cada insumo. Si el trabajo se encarece frente al capital, conviene una técnica más intensiva en capital (más máquinas y menos horas), y al revés. Las decisiones de largo plazo definen la escala de la planta; las de corto plazo, cuánto producir con esa planta.",
+          "ejemplo": "Una empresa de empaques puede producir 1.000 cajas diarias con 8 trabajadores y 2 máquinas, o con 4 trabajadores y 4 máquinas. Si un trabajador cuesta USD 30 al día y una máquina USD 50, la primera opción cuesta 8 × 30 + 2 × 50 = 340 y la segunda 4 × 30 + 4 × 50 = 320 dólares diarios. En el largo plazo la empresa elige la segunda técnica.",
+          "puntos_clave": [
+            "En el largo plazo no hay insumos fijos.",
+            "Se elige la combinación de insumos de menor costo para una producción dada.",
+            "Los precios relativos de los insumos cambian la técnica elegida."
+          ],
+          "errores_frecuentes": [
+            "Elegir la técnica con menos trabajadores sin comparar costos totales.",
+            "Creer que la técnica más moderna siempre es la más barata."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/7-4-production-in-the-long-run",
+            "seccion": "7.4 Production in the Long Run"
+          }
+        },
+        {
+          "id": "mi-costos-largo-plazo",
+          "nombre": "Costos de largo plazo y economías de escala",
+          "explicacion": "La curva de costo medio de largo plazo muestra el menor costo por unidad que se puede lograr con cada escala de producción. Si al crecer el costo medio baja, hay economías de escala: compras al por mayor, máquinas más eficientes, especialización del personal. Si se mantiene, hay rendimientos constantes; si sube, deseconomías de escala, por ejemplo por la dificultad de coordinar una organización muy grande. La forma de esta curva ayuda a explicar cuántas empresas caben en un mercado.",
+          "ejemplo": "Una embotelladora pequeña produce 20.000 botellas al mes con costos totales de USD 9.000: 9.000 ÷ 20.000 = 0,45 dólares por botella. Una planta grande produce 200.000 botellas con costos de USD 60.000: 60.000 ÷ 200.000 = 0,3 dólares por botella. Producir diez veces más bajó el costo medio: hay economías de escala.",
+          "puntos_clave": [
+            "Costo medio = costo total ÷ cantidad producida.",
+            "Economías de escala: el costo medio de largo plazo baja al crecer.",
+            "Las deseconomías de escala aparecen cuando la organización se vuelve difícil de coordinar."
+          ],
+          "errores_frecuentes": [
+            "Confundir economías de escala con rendimientos marginales decrecientes (este es un concepto de corto plazo).",
+            "Suponer que crecer siempre baja los costos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/7-5-costs-in-the-long-run",
+            "seccion": "7.5 Costs in the Long Run"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mi-fallas",
+      "nombre": "Eficiencia y fallas de mercado",
+      "orden": 6,
+      "descripcion": "Excedentes, externalidades, bienes públicos, competencia y mercado laboral.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mi-excedentes",
+          "nombre": "Excedente del consumidor y del productor",
+          "explicacion": "El excedente del consumidor es la diferencia entre lo máximo que los compradores estaban dispuestos a pagar y lo que realmente pagan; en el gráfico es el área entre la curva de demanda y el precio. El excedente del productor es la diferencia entre el precio que reciben los vendedores y el mínimo que habrían aceptado: el área entre el precio y la curva de oferta. En el equilibrio de un mercado competitivo la suma de ambos, el excedente social, es la mayor posible. Un precio máximo, un precio mínimo o un impuesto que alejan al mercado del equilibrio provocan una pérdida irrecuperable de eficiencia.",
+          "ejemplo": "La demanda de un almuerzo ejecutivo corta el eje del precio en USD 8 y el equilibrio está en USD 5 con 300 almuerzos diarios. Como la demanda es lineal, el excedente del consumidor es el área de un triángulo: (8 − 5) × 300 ÷ 2 = 450 dólares diarios.",
+          "puntos_clave": [
+            "Excedente del consumidor: disposición a pagar menos precio pagado.",
+            "Excedente del productor: precio recibido menos costo mínimo aceptable.",
+            "Fuera del equilibrio aparece una pérdida irrecuperable de eficiencia."
+          ],
+          "errores_frecuentes": [
+            "Calcular el área como rectángulo cuando la curva es una recta (es un triángulo).",
+            "Creer que un precio máximo siempre beneficia a todos los consumidores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/3-5-demand-supply-and-efficiency",
+            "seccion": "3.5 Demand, Supply, and Efficiency"
+          }
+        },
+        {
+          "id": "mi-externalidades",
+          "nombre": "Externalidades: el caso de la contaminación",
+          "explicacion": "Una externalidad es un costo o beneficio que recae sobre terceros que no participan en la transacción. La contaminación es una externalidad negativa: la empresa paga sus costos privados, pero el daño al río o al aire lo pagan otros. Como el precio no refleja el costo social completo, el mercado produce más de lo socialmente conveniente. También hay externalidades positivas, como la vacunación o la educación, que el mercado produce en menor cantidad de la deseable. Corregirlas exige que quien causa el costo lo asuma, mediante regulación, impuestos o permisos.",
+          "ejemplo": "Una curtiembre produce 1.000 cueros al mes con un costo privado de USD 14 por cuero, pero descarga desechos al río y el daño estimado para los pobladores es de USD 3 por cuero. El costo social es 14 + 3 = 17 dólares por cuero, y el daño total del mes es 1.000 × 3 = 3.000 dólares que el precio del cuero no recoge.",
+          "puntos_clave": [
+            "Costo social = costo privado + costo externo.",
+            "Con una externalidad negativa el mercado produce de más.",
+            "Con una externalidad positiva el mercado produce de menos."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una externalidad es solo un problema ambiental.",
+            "Creer que la solución siempre es prohibir la actividad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/12-1-the-economics-of-pollution",
+            "seccion": "12.1 The Economics of Pollution"
+          }
+        },
+        {
+          "id": "mi-bienes-publicos",
+          "nombre": "Bienes públicos y el problema del polizón",
+          "explicacion": "Un bien público tiene dos rasgos: no se puede excluir a quien no paga y su uso por una persona no reduce lo disponible para otra (no rivalidad). El alumbrado, la defensa nacional o la información de un sistema de alerta son ejemplos. Como cualquiera se beneficia sin pagar, cada persona tiene incentivo a esperar que otros paguen: es el problema del polizón. Por eso el mercado los produce poco o nada, y suelen financiarse con impuestos o mediante acuerdos colectivos.",
+          "ejemplo": "El alumbrado de una calle beneficia a todos los que pasan, paguen o no. Si 50 familias lo valoran en USD 4 al mes cada una, el beneficio total es 50 × 4 = 200 dólares mensuales; aunque cuesta USD 150, nadie quiere pagarlo solo y cada familia espera que pague el vecino. Por eso lo provee el municipio con impuestos.",
+          "puntos_clave": [
+            "Bien público: no excluible y no rival.",
+            "El polizón se beneficia sin pagar.",
+            "Los bienes públicos suelen financiarse con impuestos."
+          ],
+          "errores_frecuentes": [
+            "Llamar bien público a todo lo que ofrece el Estado.",
+            "Confundir un bien público con un recurso común, que sí es rival."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/13-3-public-goods",
+            "seccion": "13.3 Public Goods"
+          }
+        },
+        {
+          "id": "mi-competencia-regulacion",
+          "nombre": "Concentración de mercado y regulación de la competencia",
+          "explicacion": "Cuando pocas empresas dominan un mercado pueden acordar precios (colusión) o abusar de su posición, en perjuicio de los consumidores. Para medir la concentración se usan la razón de concentración de las cuatro mayores empresas y el índice de Herfindahl-Hirschman (IHH), que suma los cuadrados de las participaciones de mercado expresadas en porcentaje: va de casi 0, en un mercado atomizado, a 10.000, en un monopolio. Las autoridades de competencia revisan las fusiones que elevan mucho el IHH y sancionan los acuerdos de precios.",
+          "ejemplo": "En un mercado con cuatro empresas que tienen 40 %, 30 %, 20 % y 10 % de las ventas, el IHH es la suma de los cuadrados: 1.600 + 900 + 400 + 100 = 3.000. Es un mercado muy concentrado.",
+          "puntos_clave": [
+            "IHH = suma de los cuadrados de las participaciones en porcentaje.",
+            "Un IHH mayor significa un mercado más concentrado.",
+            "Una fusión eleva el IHH porque junta dos participaciones en una sola."
+          ],
+          "errores_frecuentes": [
+            "Usar participaciones en decimales (0,40) en lugar de porcentajes (40).",
+            "Creer que un mercado concentrado siempre significa colusión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+            "seccion": "11.1 Corporate Mergers"
+          }
+        },
+        {
+          "id": "mi-mercado-laboral",
+          "nombre": "Oferta y demanda en el mercado laboral",
+          "explicacion": "En el mercado laboral las empresas demandan trabajo y las personas lo ofrecen; el precio es el salario. La demanda de trabajo depende de la productividad y de la demanda del producto que se fabrica; la oferta, de la población, la formación y las alternativas disponibles. Un salario mínimo fijado por encima del salario de equilibrio sube el ingreso de quienes conservan su empleo, pero puede crear un excedente de oferta de trabajo, es decir, desempleo en ese mercado. La magnitud del efecto depende de las elasticidades de oferta y demanda.",
+          "ejemplo": "En un mercado local de cajeros el salario de equilibrio es USD 520. Si una norma fija un mínimo de USD 560, las empresas contratan 900 cajeros, pero 1.150 personas quieren trabajar a ese salario. El excedente de oferta es 1.150 − 900 = 250 personas sin empleo en ese mercado.",
+          "puntos_clave": [
+            "El salario es el precio del trabajo.",
+            "Un salario mínimo sobre el equilibrio puede generar excedente de oferta.",
+            "La productividad mueve la demanda de trabajo."
+          ],
+          "errores_frecuentes": [
+            "Pensar que un salario mínimo nunca afecta el empleo, o que siempre lo destruye.",
+            "Confundir un movimiento a lo largo de la curva con un desplazamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/4-1-demand-and-supply-at-work-in-labor-markets",
+            "seccion": "4.1 Demand and Supply at Work in Labor Markets"
           }
         }
       ]

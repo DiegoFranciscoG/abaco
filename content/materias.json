@@ -190,7 +190,7 @@
     ],
     "orden": 9,
     "cobertura": {
-      "estado": "parcial",
+      "estado": "completa",
       "unidades_objetivo": 6
     }
   },
@@ -271,7 +271,7 @@
     ],
     "orden": 13,
     "cobertura": {
-      "estado": "parcial",
+      "estado": "completa",
       "unidades_objetivo": 6
     }
   },

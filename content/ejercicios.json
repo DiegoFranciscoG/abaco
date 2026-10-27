@@ -846,7 +846,8 @@
       "seccion": "11.3 Métodos de depreciación"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "depreciacion-linea-recta"
+    "formula": "depreciacion-linea-recta",
+    "subtema": "cf-depreciacion"
   },
   {
     "id": "ej-cf-suma-digitos",
@@ -878,7 +879,8 @@
       "seccion": "11.3 Métodos de depreciación"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "depreciacion-suma-digitos"
+    "formula": "depreciacion-suma-digitos",
+    "subtema": "cf-depreciacion"
   },
   {
     "id": "ej-cc-equilibrio",
@@ -908,7 +910,8 @@
       "seccion": "3.2 Punto de equilibrio en unidades"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "punto-equilibrio-unidades"
+    "formula": "punto-equilibrio-unidades",
+    "subtema": "cc-punto-equilibrio"
   },
   {
     "id": "ej-cc-costo-ventas",
@@ -966,7 +969,8 @@
       "seccion": "Liquidación del IVA"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "iva-a-pagar"
+    "formula": "iva-a-pagar",
+    "subtema": "tr-iva-liquidacion"
   },
   {
     "id": "ej-tr-renta-personas",
@@ -999,7 +1003,8 @@
       "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "impuesto-renta-personas"
+    "formula": "impuesto-renta-personas",
+    "subtema": "tr-renta-personas"
   },
   {
     "id": "ej-mf-monto-compuesto",
@@ -1029,7 +1034,8 @@
       "seccion": "6.4 Interés compuesto"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "monto-compuesto"
+    "formula": "monto-compuesto",
+    "subtema": "mf-compuesto"
   },
   {
     "id": "ej-mf-cuota",
@@ -1059,7 +1065,8 @@
       "seccion": "8.3 Amortización de préstamos"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "cuota-prestamo"
+    "formula": "cuota-prestamo",
+    "subtema": "mf-cuota"
   },
   {
     "id": "ej-fc-razon-corriente",
@@ -1087,7 +1094,8 @@
       "seccion": "5.3 Razón corriente y capital de trabajo"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "razon-corriente"
+    "formula": "razon-corriente",
+    "subtema": "fc-liquidez"
   },
   {
     "id": "ej-fc-roe",
@@ -1115,7 +1123,8 @@
       "seccion": "6.6 Rentabilidad sobre patrimonio"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "roe"
+    "formula": "roe",
+    "subtema": "fc-rentabilidad"
   },
   {
     "id": "ej-ep-van",
@@ -1147,7 +1156,8 @@
       "seccion": "16.2 Método del VAN"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "van"
+    "formula": "van",
+    "subtema": "ep-van"
   },
   {
     "id": "ej-ep-indice",
@@ -1179,7 +1189,8 @@
       "seccion": "16.4 Métodos alternativos: índice de rentabilidad"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "indice-rentabilidad"
+    "formula": "indice-rentabilidad",
+    "subtema": "ep-indice-rentabilidad"
   },
   {
     "id": "ej-mg-interes-simple",
@@ -1208,7 +1219,8 @@
       "seccion": "6.3 Interés simple"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "interes-simple"
+    "formula": "interes-simple",
+    "subtema": "mg-modelado"
   },
   {
     "id": "ej-mg-tasa-promedio",
@@ -1238,7 +1250,8 @@
       "seccion": "3.1 Rectas secantes y tangentes"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "tasa-cambio-promedio"
+    "formula": "tasa-cambio-promedio",
+    "subtema": "mg-tasa-variacion"
   },
   {
     "id": "ej-ei-puntuacion-z",
@@ -1267,7 +1280,8 @@
       "seccion": "6.1 Puntuación z"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "puntuacion-z"
+    "formula": "puntuacion-z",
+    "subtema": "ei-uso-tlc"
   },
   {
     "id": "ej-ei-coef-variacion",
@@ -1327,7 +1341,8 @@
       "seccion": "5.1 Método del punto medio"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "elasticidad-precio"
+    "formula": "elasticidad-precio",
+    "subtema": "mi-elasticidad-precio"
   },
   {
     "id": "ej-mi-costo-marginal",
@@ -1357,7 +1372,8 @@
       "seccion": "3.4 Costo e ingreso marginal"
     },
     "actualizado_en": "2026-10-26",
-    "formula": "costo-marginal"
+    "formula": "costo-marginal",
+    "subtema": "mi-costos-corto-plazo"
   },
   {
     "id": "ej-ma-pib",
@@ -1931,5 +1947,779 @@
     "actualizado_en": "2026-10-26",
     "subtema": "cg-mercaderias-netas",
     "formula": "compras-netas"
+  },
+  {
+    "id": "ej-mi-elasticidad-pan",
+    "subtema": "mi-elasticidad-precio",
+    "formula": "elasticidad-precio",
+    "enunciado": "Una panadería sube el precio de la funda de pan de USD 2 a USD 2,50 y sus ventas diarias bajan de 500 a 420 fundas. Con el método del punto medio, ¿cuál es la elasticidad precio de la demanda en valor absoluto?",
+    "datos": {
+      "P0": 2,
+      "P1": 2.5,
+      "Q0": 500,
+      "Q1": 420
+    },
+    "calculo": "ABS(((Q1 - Q0) / ((Q1 + Q0) / 2)) / ((P1 - P0) / ((P1 + P0) / 2)))",
+    "respuesta": 0.78,
+    "unidad": "sin unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "%ΔQ = (420 − 500) ÷ 460 = −0,1739",
+      "%ΔP = (2,5 − 2) ÷ 2,25 = 0,2222",
+      "|E| = 0,1739 ÷ 0,2222 = 0,78 (demanda inelástica)"
+    ],
+    "pistas": [
+      "Divide cada cambio para el promedio de los dos valores.",
+      "Si el resultado es menor que 1, la demanda es inelástica."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "5.1 Price Elasticity of Demand and Price Elasticity of Supply"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-costo-medio",
+    "subtema": "mi-costos-corto-plazo",
+    "enunciado": "El costo total de una fábrica de mermeladas es CT(q) = 500 + 4q + 0,01q² dólares. ¿Cuál es el costo medio por frasco cuando produce 200 frascos?",
+    "datos": {
+      "CF": 500,
+      "a": 4,
+      "b": 0.01,
+      "q": 200
+    },
+    "calculo": "(CF + a * q + b * q ^ 2) / q",
+    "respuesta": 8.5,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "CT = 500 + 4 × 200 + 0,01 × 40.000 = 1.700",
+      "CMe = 1.700 ÷ 200 = 8,5"
+    ],
+    "pistas": [
+      "Primero calcula el costo total con q = 200.",
+      "Costo medio = costo total ÷ cantidad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "7.3 Costs in the Short Run"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-utilidad-economica",
+    "subtema": "mi-utilidad-economica",
+    "enunciado": "Un estudio fotográfico tuvo ingresos anuales de USD 54.000 y costos explícitos de USD 41.000. Su dueño dejó un empleo de USD 9.600 al año e invirtió USD 20.000 que le habrían rendido 6 % anual. ¿Cuál es la utilidad económica del año?",
+    "datos": {
+      "I": 54000,
+      "CE": 41000,
+      "S": 9600,
+      "K": 20000,
+      "r": 0.06
+    },
+    "calculo": "I - CE - S - K * r",
+    "respuesta": 2200,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Utilidad contable = 54.000 − 41.000 = 13.000",
+      "Costos implícitos = 9.600 + 20.000 × 0,06 = 10.800",
+      "Utilidad económica = 13.000 − 10.800 = 2.200"
+    ],
+    "pistas": [
+      "Los costos implícitos incluyen el sueldo que el dueño deja de ganar.",
+      "El capital propio también tiene un costo de oportunidad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "7.1 Explicit and Implicit Costs, and Accounting and Economic Profit"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-utilidad-economica-negativa",
+    "subtema": "mi-utilidad-economica",
+    "enunciado": "Una tienda de barrio vende USD 36.000 al año y tiene costos explícitos de USD 30.500. Su dueña podría ganar USD 7.200 al año como empleada. ¿Cuál es la utilidad económica? (Un resultado negativo indica pérdida económica.)",
+    "datos": {
+      "I": 36000,
+      "CE": 30500,
+      "S": 7200
+    },
+    "calculo": "I - CE - S",
+    "respuesta": -1700,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Utilidad contable = 36.000 − 30.500 = 5.500",
+      "Utilidad económica = 5.500 − 7.200 = −1.700"
+    ],
+    "pistas": [
+      "Resta el sueldo alternativo de la utilidad contable."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "7.1 Explicit and Implicit Costs, and Accounting and Economic Profit"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-excedente-consumidor",
+    "subtema": "mi-excedentes",
+    "enunciado": "La demanda de entradas a un parque acuático es lineal y corta el eje del precio en USD 12. El precio de equilibrio es USD 7 y se venden 1.600 entradas al día. ¿Cuál es el excedente del consumidor diario?",
+    "datos": {
+      "Pmax": 12,
+      "P": 7,
+      "Q": 1600
+    },
+    "calculo": "(Pmax - P) * Q / 2",
+    "respuesta": 4000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Altura del triángulo = 12 − 7 = 5",
+      "EC = 5 × 1.600 ÷ 2 = 4.000"
+    ],
+    "pistas": [
+      "Es el área de un triángulo: base por altura sobre dos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "3.5 Demand, Supply, and Efficiency"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-excedente-productor",
+    "subtema": "mi-excedentes",
+    "enunciado": "En el mismo mercado, la oferta es lineal y corta el eje del precio en USD 3; el precio es USD 7 con 1.600 entradas. ¿Cuál es el excedente del productor diario?",
+    "datos": {
+      "Pmin": 3,
+      "P": 7,
+      "Q": 1600
+    },
+    "calculo": "(P - Pmin) * Q / 2",
+    "respuesta": 3200,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Altura del triángulo = 7 − 3 = 4",
+      "EP = 4 × 1.600 ÷ 2 = 3.200"
+    ],
+    "pistas": [
+      "El excedente del productor está entre el precio y la curva de oferta."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "3.5 Demand, Supply, and Efficiency"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-ihh",
+    "subtema": "mi-competencia-regulacion",
+    "enunciado": "En el mercado de una ciudad, cinco cadenas de farmacias tienen participaciones de 35 %, 25 %, 20 %, 10 % y 10 %. ¿Cuál es el índice de Herfindahl-Hirschman (IHH)?",
+    "datos": {
+      "s": [
+        35,
+        25,
+        20,
+        10,
+        10
+      ]
+    },
+    "calculo": "SUM(s ^ 2)",
+    "respuesta": 2450,
+    "unidad": "puntos",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Cuadrados: 1.225, 625, 400, 100 y 100",
+      "IHH = 1.225 + 625 + 400 + 100 + 100 = 2.450"
+    ],
+    "pistas": [
+      "Eleva al cuadrado cada participación en porcentaje y suma."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mi-ihh-fusion",
+    "subtema": "mi-competencia-regulacion",
+    "enunciado": "Si en ese mercado se fusionan la segunda y la tercera cadena (25 % y 20 %), las participaciones quedan en 35 %, 45 %, 10 % y 10 %. ¿En cuántos puntos sube el IHH?",
+    "datos": {
+      "s": [
+        35,
+        25,
+        20,
+        10,
+        10
+      ],
+      "d": [
+        35,
+        45,
+        10,
+        10
+      ]
+    },
+    "calculo": "SUM(d ^ 2) - SUM(s ^ 2)",
+    "respuesta": 1000,
+    "unidad": "puntos",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "IHH después = 1.225 + 2.025 + 100 + 100 = 3.450",
+      "Aumento = 3.450 − 2.450 = 1.000"
+    ],
+    "pistas": [
+      "La empresa fusionada tiene 25 + 20 = 45 %."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-micro3",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "materia": "microeconomia",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-tasa-costo",
+    "subtema": "mg-tasa-variacion",
+    "formula": "tasa-cambio-promedio",
+    "enunciado": "Producir 100 unidades cuesta USD 2.400 y producir 150 unidades cuesta USD 3.150. ¿Cuál es la tasa de variación promedio del costo por unidad adicional en ese intervalo?",
+    "datos": {
+      "C1": 2400,
+      "C2": 3150,
+      "q1": 100,
+      "q2": 150
+    },
+    "calculo": "(C2 - C1) / (q2 - q1)",
+    "respuesta": 15,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "ΔC = 3.150 − 2.400 = 750",
+      "Δq = 150 − 100 = 50",
+      "Tasa = 750 ÷ 50 = 15"
+    ],
+    "pistas": [
+      "Divide el cambio del costo para el cambio de la cantidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "1.3 Tasas de variación y comportamiento de los gráficos"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-plan-celular",
+    "subtema": "mg-modelado",
+    "enunciado": "Un plan de telefonía cobra USD 15 fijos al mes más USD 0,05 por minuto. Con el modelo C = 15 + 0,05x, ¿cuánto paga quien habla 340 minutos?",
+    "datos": {
+      "b": 15,
+      "m": 0.05,
+      "x": 340
+    },
+    "calculo": "b + m * x",
+    "respuesta": 32,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "C = 15 + 0,05 × 340",
+      "C = 15 + 17 = 32"
+    ],
+    "pistas": [
+      "La pendiente es el costo por minuto y la intersección, el cargo fijo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "2.3 Modelado con funciones lineales"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-pendiente-datos",
+    "subtema": "mg-ajuste",
+    "enunciado": "En cinco semanas, el gasto en publicidad (x, en cientos de dólares) fue 1, 2, 3, 4 y 5, y las ventas (y, en miles) fueron 3, 5, 4, 7 y 8. ¿Cuál es la pendiente de la recta de mínimos cuadrados?",
+    "datos": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        3,
+        5,
+        4,
+        7,
+        8
+      ]
+    },
+    "calculo": "SLOPE(y, x)",
+    "respuesta": 1.2,
+    "unidad": "miles por cada cien dólares",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "x̄ = 3 y ȳ = 5,4",
+      "Σ(x − x̄)(y − ȳ) = 4,8 + 0,4 + 0 + 1,6 + 5,2 = 12",
+      "Σ(x − x̄)² = 4 + 1 + 0 + 1 + 4 = 10",
+      "b = 12 ÷ 10 = 1,2"
+    ],
+    "pistas": [
+      "La pendiente es la suma de productos de desviaciones dividida para la suma de desviaciones de x al cuadrado."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "2.4 Ajuste de modelos lineales a los datos"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-intercepto-datos",
+    "subtema": "mg-ajuste",
+    "enunciado": "Con los mismos datos (x: 1, 2, 3, 4, 5; y: 3, 5, 4, 7, 8) y la pendiente de 1,2, ¿cuál es la intersección de la recta con el eje y?",
+    "datos": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        3,
+        5,
+        4,
+        7,
+        8
+      ]
+    },
+    "calculo": "INTERCEPT(y, x)",
+    "respuesta": 1.8,
+    "unidad": "miles",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "a = ȳ − b·x̄",
+      "a = 5,4 − 1,2 × 3 = 1,8"
+    ],
+    "pistas": [
+      "La recta pasa por el punto de medias (x̄, ȳ)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "2.4 Ajuste de modelos lineales a los datos"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-precio-max-ingreso",
+    "subtema": "mg-cuadraticas",
+    "formula": "maximo-ingreso",
+    "enunciado": "La demanda de un curso en línea es q = 500 − 20p, así que el ingreso es I(p) = p(500 − 20p). ¿Qué precio maximiza el ingreso?",
+    "datos": {
+      "a": 500,
+      "b": 20
+    },
+    "calculo": "a / (2 * b)",
+    "respuesta": 12.5,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "I(p) = 500p − 20p²",
+      "Vértice: p = 500 ÷ (2 × 20) = 12,5"
+    ],
+    "pistas": [
+      "El máximo de una parábola que abre hacia abajo está en el vértice: −b ÷ 2a."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "3.2 Funciones cuadráticas"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-ingreso-maximo",
+    "subtema": "mg-cuadraticas",
+    "enunciado": "Con la misma demanda (q = 500 − 20p), ¿cuál es el ingreso máximo que se obtiene al precio de USD 12,50?",
+    "datos": {
+      "a": 500,
+      "b": 20,
+      "p": 12.5
+    },
+    "calculo": "p * (a - b * p)",
+    "respuesta": 3125,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "q = 500 − 20 × 12,5 = 250",
+      "I = 12,5 × 250 = 3.125"
+    ],
+    "pistas": [
+      "Calcula primero cuántos se venden a ese precio."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "3.2 Funciones cuadráticas"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-crecimiento-anual",
+    "subtema": "mg-exponenciales",
+    "formula": "monto-compuesto",
+    "enunciado": "Un fondo de USD 2.000 crece 4,5 % anual compuesto. ¿Cuánto vale al cabo de 6 años?",
+    "datos": {
+      "P": 2000,
+      "r": 0.045,
+      "t": 6
+    },
+    "calculo": "P * (1 + r) ^ t",
+    "respuesta": 2604.52,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,045 elevado a 6 = 1,30226",
+      "VF = 2.000 × 1,30226 = 2.604,52"
+    ],
+    "pistas": [
+      "Crecer 4,5 % es multiplicar por 1,045 cada año."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "4.1 Funciones exponenciales"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-decrecimiento",
+    "subtema": "mg-exponenciales",
+    "enunciado": "Un equipo de USD 18.000 pierde 15 % de su valor cada año (decrecimiento exponencial). ¿Cuánto vale después de 4 años?",
+    "datos": {
+      "V0": 18000,
+      "d": 0.15,
+      "t": 4
+    },
+    "calculo": "V0 * (1 - d) ^ t",
+    "respuesta": 9396.11,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "0,85 elevado a 4 = 0,522006",
+      "V = 18.000 × 0,522006 = 9.396,11"
+    ],
+    "pistas": [
+      "Perder 15 % es multiplicar por 0,85 cada año."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "4.1 Funciones exponenciales"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-anos-duplicar",
+    "subtema": "mg-logaritmos",
+    "formula": "numero-periodos",
+    "enunciado": "¿Cuántos años tarda en duplicarse una inversión que rinde 7 % anual compuesto?",
+    "datos": {
+      "r": 0.07
+    },
+    "calculo": "LN(2) / LN(1 + r)",
+    "respuesta": 10.24,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "2 = 1,07 elevado a n",
+      "n = ln 2 ÷ ln 1,07 = 0,693147 ÷ 0,067659 = 10,24"
+    ],
+    "pistas": [
+      "Aplica logaritmo natural a ambos lados para bajar el exponente."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "4.6 Ecuaciones exponenciales y logarítmicas"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-meses-meta",
+    "subtema": "mg-logaritmos",
+    "enunciado": "Tienes USD 5.000 en una cuenta que paga 1 % mensual compuesto. ¿En cuántos meses llegas a USD 6.000?",
+    "datos": {
+      "P": 5000,
+      "F": 6000,
+      "i": 0.01
+    },
+    "calculo": "LN(F / P) / LN(1 + i)",
+    "respuesta": 18.32,
+    "unidad": "meses",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "6.000 ÷ 5.000 = 1,2",
+      "n = ln 1,2 ÷ ln 1,01 = 0,182322 ÷ 0,00995 = 18,32"
+    ],
+    "pistas": [
+      "Despeja n: ln(F ÷ P) ÷ ln(1 + i)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "4.6 Ecuaciones exponenciales y logarítmicas"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-usuarios-continuo",
+    "subtema": "mg-modelos-exponenciales",
+    "formula": "interes-continuo",
+    "enunciado": "Una plataforma tiene 1.500 usuarios y crece a una tasa continua de 5 % mensual. Con A = A₀·e^(k·t), ¿cuántos usuarios tendrá en 12 meses?",
+    "datos": {
+      "A0": 1500,
+      "k": 0.05,
+      "t": 12
+    },
+    "calculo": "A0 * EXP(k * t)",
+    "respuesta": 2733.18,
+    "unidad": "usuarios",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "k × t = 0,05 × 12 = 0,6",
+      "e elevado a 0,6 = 1,822119",
+      "A = 1.500 × 1,822119 = 2.733,18"
+    ],
+    "pistas": [
+      "Calcula primero el exponente k × t."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "4.7 Modelos exponenciales y logarítmicos"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-duplicacion-continua",
+    "subtema": "mg-modelos-exponenciales",
+    "enunciado": "Si una población de clientes crece a una tasa continua de 6 % mensual, ¿en cuántos meses se duplica?",
+    "datos": {
+      "k": 0.06
+    },
+    "calculo": "LN(2) / k",
+    "respuesta": 11.55,
+    "unidad": "meses",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "t = ln 2 ÷ k",
+      "t = 0,693147 ÷ 0,06 = 11,55"
+    ],
+    "pistas": [
+      "En el modelo continuo, el tiempo de duplicación es ln 2 ÷ k."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "4.7 Modelos exponenciales y logarítmicos"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-termino-aritmetico",
+    "subtema": "mg-aritmeticas",
+    "enunciado": "Un trabajador gana USD 450 el primer mes de un contrato que le sube USD 18 cada mes. ¿Cuánto gana en el mes 12?",
+    "datos": {
+      "a1": 450,
+      "d": 18,
+      "n": 12
+    },
+    "calculo": "a1 + (n - 1) * d",
+    "respuesta": 648,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "a12 = 450 + (12 − 1) × 18",
+      "a12 = 450 + 198 = 648"
+    ],
+    "pistas": [
+      "Hay 11 aumentos entre el mes 1 y el mes 12."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "11.2 Secuencias aritméticas"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-termino-geometrico",
+    "subtema": "mg-geometricas",
+    "enunciado": "Una tienda vendió USD 2.000 el primer mes y sus ventas crecen 4 % cada mes. ¿Cuánto venderá en el sexto mes?",
+    "datos": {
+      "a1": 2000,
+      "r": 1.04,
+      "n": 6
+    },
+    "calculo": "a1 * r ^ (n - 1)",
+    "respuesta": 2433.31,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,04 elevado a 5 = 1,216653",
+      "a6 = 2.000 × 1,216653 = 2.433,31"
+    ],
+    "pistas": [
+      "Del mes 1 al mes 6 hay cinco crecimientos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "11.3 Secuencias geométricas"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-serie-aritmetica",
+    "subtema": "mg-series",
+    "enunciado": "Ahorras USD 50 el primer mes y cada mes ahorras USD 10 más que el anterior. ¿Cuánto habrás ahorrado en total en 12 meses?",
+    "datos": {
+      "a1": 50,
+      "d": 10,
+      "n": 12
+    },
+    "calculo": "n * (2 * a1 + (n - 1) * d) / 2",
+    "respuesta": 1260,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "a12 = 50 + 11 × 10 = 160",
+      "S = 12 × (50 + 160) ÷ 2 = 1.260"
+    ],
+    "pistas": [
+      "Suma de una serie aritmética: n por el promedio del primero y el último."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "11.4 Series y sus notaciones"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-serie-geometrica",
+    "subtema": "mg-series",
+    "enunciado": "Una empresa paga USD 500 de bono el primer año y lo sube 6 % cada año. ¿Cuánto habrá pagado en total en 5 años?",
+    "datos": {
+      "a1": 500,
+      "r": 1.06,
+      "n": 5
+    },
+    "calculo": "a1 * (1 - r ^ n) / (1 - r)",
+    "respuesta": 2818.55,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,06 elevado a 5 = 1,338226",
+      "S = 500 × (1,338226 − 1) ÷ 0,06 = 2.818,55"
+    ],
+    "pistas": [
+      "Es una serie geométrica con razón 1,06."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "11.4 Series y sus notaciones"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-combinaciones",
+    "subtema": "mg-conteo",
+    "enunciado": "Un gerente debe elegir 3 de 10 proveedores para una licitación (el orden no importa). ¿Cuántos grupos distintos puede formar?",
+    "datos": {
+      "n": 10
+    },
+    "calculo": "n * (n - 1) * (n - 2) / 6",
+    "respuesta": 120,
+    "unidad": "grupos",
+    "tolerancia": 0,
+    "procedimiento": [
+      "C(10, 3) = 10 × 9 × 8 ÷ (3 × 2 × 1)",
+      "C(10, 3) = 720 ÷ 6 = 120"
+    ],
+    "pistas": [
+      "Si el orden no importa, divide para las formas de ordenar a los 3 elegidos."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "11.5 Principios de conteo"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mg-permutaciones",
+    "subtema": "mg-conteo",
+    "enunciado": "De 8 candidatos se elige presidente, secretario y tesorero de una asociación (el orden sí importa). ¿Cuántas directivas distintas son posibles?",
+    "datos": {
+      "n": 8
+    },
+    "calculo": "n * (n - 1) * (n - 2)",
+    "respuesta": 336,
+    "unidad": "directivas",
+    "tolerancia": 0,
+    "procedimiento": [
+      "P(8, 3) = 8 × 7 × 6 = 336"
+    ],
+    "pistas": [
+      "Hay 8 opciones para el primer cargo, 7 para el segundo y 6 para el tercero."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "seccion": "11.5 Principios de conteo"
+    },
+    "materia": "matematica-gestion",
+    "actualizado_en": "2026-10-26"
   }
 ]
