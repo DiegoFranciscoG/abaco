@@ -28,6 +28,7 @@ export const FORMULA_CATEGORIES = [
   'estadistica',
   'calculo',
   'economia',
+  'marketing',
 ] as const;
 export type FormulaCategory = (typeof FORMULA_CATEGORIES)[number];
 

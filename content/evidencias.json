@@ -3960,5 +3960,158 @@
       "acto determinativo de obligacion tributaria",
       "dentro del plazo de veinte dias"
     ]
+  },
+  {
+    "id": "md-directo-tradicional",
+    "palabras": [
+      "direct marketing involves using communication tools",
+      "direct-mail marketing",
+      "telemarketing"
+    ]
+  },
+  {
+    "id": "md-directo-en-linea",
+    "palabras": [
+      "digital age has changed the way marketers engage",
+      "online direct marketing"
+    ]
+  },
+  {
+    "id": "md-redes-sociales",
+    "palabras": [
+      "social media marketing is defined as",
+      "highly targeted",
+      "easily measured"
+    ]
+  },
+  {
+    "id": "md-movil",
+    "palabras": [
+      "mobile marketing is defined as",
+      "smartphones and tablets"
+    ]
+  },
+  {
+    "id": "md-tendencias-redes",
+    "palabras": [
+      "misinformation",
+      "blog is an online journal",
+      "podcasts are essentially verbal blogs"
+    ]
+  },
+  {
+    "id": "md-redes-empresa",
+    "palabras": [
+      "consistent message across platforms",
+      "social media analytics",
+      "build it and they will come"
+    ]
+  },
+  {
+    "id": "md-contenido-tipos",
+    "palabras": [
+      "content refers to information in visual or audio form",
+      "information , in the form of text",
+      "knowledge refers to familiarity"
+    ]
+  },
+  {
+    "id": "md-etica-privacidad",
+    "palabras": [
+      "data privacy",
+      "transparency",
+      "personal data"
+    ]
+  },
+  {
+    "id": "md-cms-web2",
+    "palabras": [
+      "wysiwyg",
+      "web 1.0",
+      "web 2.0"
+    ]
+  },
+  {
+    "id": "md-crear-sitio",
+    "palabras": [
+      "wordpress is an open-source cms",
+      "domain name is your website address",
+      "hosting service"
+    ]
+  },
+  {
+    "id": "md-seo",
+    "palabras": [
+      "search engine optimization",
+      "algorithm",
+      "crawl",
+      "the goal of seo is to increase traffic"
+    ]
+  },
+  {
+    "id": "md-seo-etica",
+    "palabras": [
+      "black hat seo",
+      "keyword stuffing",
+      "hidden text and links"
+    ]
+  },
+  {
+    "id": "md-analitica-web",
+    "palabras": [
+      "web analytics involves the collection, measurement, analysis, and reporting",
+      "page tagging",
+      "log file analysis"
+    ]
+  },
+  {
+    "id": "md-tasa-rebote",
+    "palabras": [
+      "bounce rate in web analytics refers to the percentage of visitors who navigate away"
+    ]
+  },
+  {
+    "id": "md-tasa-conversion",
+    "palabras": [
+      "conversion rate in web analytics refers to the percentage of website visitors who complete a desired action"
+    ]
+  },
+  {
+    "id": "md-ctr-ab",
+    "palabras": [
+      "click-through rate (ctr)",
+      "divided by the total impressions",
+      "a/b testing",
+      "split testing"
+    ]
+  },
+  {
+    "id": "md-ecommerce-concepto",
+    "palabras": [
+      "e-commerce refers to the development and maintenance of a company's website",
+      "convenience of shopping online"
+    ]
+  },
+  {
+    "id": "md-mensajes-firma",
+    "palabras": [
+      "los mensajes de datos tendran igual valor juridico que los",
+      "la firma electronica tendra igual validez y se le reconoceran los mismos efectos",
+      "ser individual y estar vinculada exclusivamente a su titular"
+    ]
+  },
+  {
+    "id": "md-contratos-electronicos",
+    "palabras": [
+      "los contratos podran ser instrumentados mediante mensajes de datos",
+      "no implica aceptacion del contrato electronico"
+    ]
+  },
+  {
+    "id": "md-consumidor-electronico",
+    "palabras": [
+      "debe ser informado clara, precisa y satisfactoriamente",
+      "el oferente debera informar sobre todos los requisitos, condiciones y restricciones"
+    ]
   }
 ]

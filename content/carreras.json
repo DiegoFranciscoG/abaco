@@ -195,6 +195,15 @@
           8
         ],
         "planes": 4
+      },
+      {
+        "materia": "marketing-digital",
+        "ciclo": 8,
+        "ciclos": [
+          6,
+          8
+        ],
+        "planes": 3
       }
     ],
     "pendientes": [
@@ -231,11 +240,6 @@
       {
         "nombre": "Administración Pública",
         "ciclo": 6,
-        "planes": 2
-      },
-      {
-        "nombre": "E-Commerce y Marketing Digital",
-        "ciclo": 8,
         "planes": 2
       }
     ]
@@ -764,6 +768,14 @@
         "planes": 2
       },
       {
+        "materia": "marketing-digital",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
         "materia": "economia-internacional",
         "ciclo": 6,
         "ciclos": [
@@ -888,11 +900,6 @@
       },
       {
         "nombre": "Investigación Operativa",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing y Comercio Digital",
         "ciclo": 5,
         "planes": 1
       },
@@ -1074,6 +1081,15 @@
           7
         ],
         "planes": 2
+      },
+      {
+        "materia": "marketing-digital",
+        "ciclo": 7,
+        "ciclos": [
+          7,
+          8
+        ],
+        "planes": 2
       }
     ],
     "pendientes": [
@@ -1118,12 +1134,12 @@
         "planes": 1
       },
       {
-        "nombre": "Marketing de Servicios",
+        "nombre": "Marketing en Servicios",
         "ciclo": 2,
         "planes": 2
       },
       {
-        "nombre": "Planificación Estratégica",
+        "nombre": "Planificacion Estrategica",
         "ciclo": 2,
         "planes": 1
       },
@@ -1293,11 +1309,6 @@
         "planes": 1
       },
       {
-        "nombre": "E-Commerce y Marketing Digital",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
         "nombre": "Gerencia de Distribución",
         "ciclo": 7,
         "planes": 1
@@ -1318,11 +1329,6 @@
         "planes": 1
       },
       {
-        "nombre": "UIC",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
         "nombre": "Auditoría en Marketing",
         "ciclo": 8,
         "planes": 1
@@ -1334,11 +1340,6 @@
       },
       {
         "nombre": "Investigación Aplicada",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing Digital",
         "ciclo": 8,
         "planes": 1
       },
@@ -1615,6 +1616,14 @@
         "planes": 1
       },
       {
+        "materia": "marketing-digital",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
         "materia": "microeconomia",
         "ciclo": 2,
         "ciclos": [
@@ -1717,11 +1726,6 @@
       },
       {
         "nombre": "Administración y Responsabilidad Social Empresarial (Rse)",
-        "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Comercio Electrónico y Marketing Digital",
         "ciclo": 2,
         "planes": 1
       },
@@ -1858,6 +1862,14 @@
         "ciclo": 5,
         "ciclos": [
           5
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "marketing-digital",
+        "ciclo": 6,
+        "ciclos": [
+          6
         ],
         "planes": 1
       }
@@ -2020,11 +2032,6 @@
       },
       {
         "nombre": "Gestión de Creación de Empresas",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Marketing Digital para E-Commerce",
         "ciclo": 6,
         "planes": 1
       },

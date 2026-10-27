@@ -548,5 +548,32 @@
       "estado": "completa",
       "unidades_objetivo": 6
     }
+  },
+  {
+    "id": "marketing-digital",
+    "nombre": "Marketing digital y comercio electrónico",
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "descripcion": "Marketing directo y digital, redes sociales, sitios web y SEO, analítica web con sus métricas y el marco del comercio electrónico en Ecuador.",
+    "sinonimos": [
+      "e-commerce y marketing digital",
+      "marketing y comercio digital",
+      "comercio electrónico y marketing digital",
+      "marketing digital para e-commerce",
+      "comercio electrónico",
+      "e-commerce"
+    ],
+    "herramientas": [
+      "estadistica",
+      "foda",
+      "tarjetas"
+    ],
+    "orden": 27,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

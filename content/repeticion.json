@@ -72,6 +72,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Marketing Digital",
+    "carreras": 5,
+    "planes": 8,
+    "ciclo_habitual": 6,
+    "materia": "marketing-digital",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Emprendimiento",
     "carreras": 5,
     "planes": 6,
@@ -224,14 +232,6 @@
     "tipo": "materia"
   },
   {
-    "nombre": "E-Commerce y Marketing Digital",
-    "carreras": 2,
-    "planes": 3,
-    "ciclo_habitual": 8,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
     "nombre": "Finanzas Públicas",
     "carreras": 2,
     "planes": 3,
@@ -344,7 +344,7 @@
     "tipo": "materia"
   },
   {
-    "nombre": "Planificación Estratégica",
+    "nombre": "Planificacion Estrategica",
     "carreras": 2,
     "planes": 2,
     "ciclo_habitual": 2,

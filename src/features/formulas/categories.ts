@@ -15,4 +15,5 @@ export const CATEGORY_LABELS: Record<FormulaCategory, string> = {
   estadistica: 'Estadística',
   calculo: 'Cálculo',
   economia: 'Economía',
+  marketing: 'Marketing',
 };

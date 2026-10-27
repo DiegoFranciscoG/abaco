@@ -1266,5 +1266,71 @@
       "seccion": "12.3 La ecuación de regresión"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "metricas-marketing-digital",
+    "nombre": "Tablero de métricas web: CTR, conversión y rebote",
+    "descripcion": "Calcula la tasa de clics de dos versiones de un anuncio (prueba A/B), la tasa de conversión y la tasa de rebote del sitio a partir de impresiones, clics, visitas y compras.",
+    "materias": [
+      "marketing-digital"
+    ],
+    "celdas": {
+      "A1": "Concepto",
+      "B1": "Versión A",
+      "C1": "Versión B",
+      "A2": "Impresiones",
+      "B2": 20000,
+      "C2": 20000,
+      "A3": "Clics",
+      "B3": 600,
+      "C3": 840,
+      "A4": "CTR (%)",
+      "B4": "=B3/B2*100",
+      "C4": "=C3/C2*100",
+      "A6": "Visitas al sitio",
+      "B6": 5000,
+      "A7": "Visitas de una sola página",
+      "B7": 2150,
+      "A8": "Compras",
+      "B8": 160,
+      "A9": "Tasa de rebote (%)",
+      "B9": "=B7/B6*100",
+      "A10": "Tasa de conversión (%)",
+      "B10": "=B8/B6*100"
+    },
+    "formatos": {
+      "B4": "numero",
+      "C4": "numero",
+      "B9": "numero",
+      "B10": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B4",
+        "esperado": 3,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C4",
+        "esperado": 4.2,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B9",
+        "esperado": 43,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B10",
+        "esperado": 3.2,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

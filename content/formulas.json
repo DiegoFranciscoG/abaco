@@ -7043,5 +7043,188 @@
     ],
     "actualizado_en": "2026-10-26",
     "estado": "verificada"
+  },
+  {
+    "id": "tasa-conversion",
+    "nombre": "Tasa de conversión",
+    "categoria": "marketing",
+    "materias": [
+      "marketing-digital"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "descripcion": "Porcentaje de visitantes de un sitio que completan la acción deseada, como comprar, llenar un formulario o suscribirse.",
+    "latex": "TC = \\frac{Conv}{Vis} \\times 100",
+    "variables": [
+      {
+        "simbolo": "Conv",
+        "nombre": "Conv",
+        "significado": "Visitantes que completan la acción deseada",
+        "unidad": "visitantes"
+      },
+      {
+        "simbolo": "Vis",
+        "nombre": "Vis",
+        "significado": "Total de visitantes del sitio o de la página",
+        "unidad": "visitantes"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Conv / Vis * 100"
+    },
+    "excel": {
+      "es": "=Conv/Vis*100",
+      "en": "=Conv/Vis*100"
+    },
+    "ejemplo": {
+      "enunciado": "Una tienda en línea recibe 8.000 visitantes en un mes y 160 de ellos compran. ¿Cuál es su tasa de conversión?",
+      "entradas": {
+        "Conv": 160,
+        "Vis": 8000
+      },
+      "pasos": [
+        "TC = 160 ÷ 8.000 × 100",
+        "TC = 2 %"
+      ],
+      "resultado": 2,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=160/8000*100",
+      "excel_en": "=160/8000*100"
+    },
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-rebote",
+    "nombre": "Tasa de rebote",
+    "categoria": "marketing",
+    "materias": [
+      "marketing-digital"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "descripcion": "Porcentaje de visitantes que abandonan el sitio después de ver una sola página.",
+    "latex": "TR = \\frac{S_1}{S} \\times 100",
+    "variables": [
+      {
+        "simbolo": "S_1",
+        "nombre": "S1",
+        "significado": "Visitas que vieron una sola página",
+        "unidad": "visitas"
+      },
+      {
+        "simbolo": "S",
+        "nombre": "S",
+        "significado": "Total de visitas",
+        "unidad": "visitas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "S1 / S * 100"
+    },
+    "excel": {
+      "es": "=S1/S*100",
+      "en": "=S1/S*100"
+    },
+    "ejemplo": {
+      "enunciado": "Un sitio tuvo 5.000 visitas, y en 2.150 el visitante salió después de ver una sola página. ¿Cuál es la tasa de rebote?",
+      "entradas": {
+        "S1": 2150,
+        "S": 5000
+      },
+      "pasos": [
+        "TR = 2.150 ÷ 5.000 × 100",
+        "TR = 43 %"
+      ],
+      "resultado": 43,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=2150/5000*100",
+      "excel_en": "=2150/5000*100"
+    },
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "ctr",
+    "nombre": "Tasa de clics (CTR)",
+    "categoria": "marketing",
+    "materias": [
+      "marketing-digital"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "descripcion": "Porcentaje de veces que un anuncio mostrado recibe un clic: clics divididos para impresiones.",
+    "latex": "CTR = \\frac{Clics}{Imp} \\times 100",
+    "variables": [
+      {
+        "simbolo": "Clics",
+        "nombre": "Clics",
+        "significado": "Clics que recibe el anuncio",
+        "unidad": "clics"
+      },
+      {
+        "simbolo": "Imp",
+        "nombre": "Imp",
+        "significado": "Impresiones: veces que el anuncio se carga en una página",
+        "unidad": "impresiones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Clics / Imp * 100"
+    },
+    "excel": {
+      "es": "=Clics/Imp*100",
+      "en": "=Clics/Imp*100"
+    },
+    "ejemplo": {
+      "enunciado": "Un anuncio se mostró 10.000 veces y recibió 500 clics. ¿Cuál es su CTR?",
+      "entradas": {
+        "Clics": 500,
+        "Imp": 10000
+      },
+      "pasos": [
+        "CTR = 500 ÷ 10.000 × 100",
+        "CTR = 5 %"
+      ],
+      "resultado": 5,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=500/10000*100",
+      "excel_en": "=500/10000*100"
+    },
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
   }
 ]

@@ -9830,5 +9830,180 @@
     },
     "materia": "tributacion",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-md-rebote-producto",
+    "subtema": "md-tasa-rebote",
+    "formula": "tasa-rebote",
+    "enunciado": "Una página de producto recibió 1.200 visitas y en 780 el visitante salió sin ver otra página. ¿Cuál es la tasa de rebote?",
+    "datos": {
+      "S1": 780,
+      "S": 1200
+    },
+    "calculo": "S1 / S * 100",
+    "respuesta": 65,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "TR = 780 ÷ 1.200 × 100",
+      "TR = 65"
+    ],
+    "pistas": [
+      "Divide las visitas de una sola página para el total."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "materia": "marketing-digital",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-md-rebote-blog",
+    "subtema": "md-tasa-rebote",
+    "formula": "tasa-rebote",
+    "enunciado": "El blog de una empresa tuvo 3.600 visitas en el mes; 2.700 fueron de una sola página. ¿Cuál es la tasa de rebote del blog?",
+    "datos": {
+      "S1": 2700,
+      "S": 3600
+    },
+    "calculo": "S1 / S * 100",
+    "respuesta": 75,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "TR = 2.700 ÷ 3.600 × 100",
+      "TR = 75"
+    ],
+    "pistas": [
+      "Un blog suele tener rebote alto porque el lector busca un solo artículo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "materia": "marketing-digital",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-md-conversion-curso",
+    "subtema": "md-tasa-conversion",
+    "formula": "tasa-conversion",
+    "enunciado": "Una página de inscripción recibe 2.400 visitantes y 96 se inscriben. ¿Cuál es la tasa de conversión?",
+    "datos": {
+      "Conv": 96,
+      "Vis": 2400
+    },
+    "calculo": "Conv / Vis * 100",
+    "respuesta": 4,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "TC = 96 ÷ 2.400 × 100",
+      "TC = 4"
+    ],
+    "pistas": [
+      "La conversión aquí es la inscripción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "materia": "marketing-digital",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-md-conversion-meta",
+    "subtema": "md-tasa-conversion",
+    "formula": "tasa-conversion",
+    "enunciado": "Una tienda en línea quiere 300 ventas al mes y su tasa de conversión es 2,5 %. ¿Cuántos visitantes necesita?",
+    "datos": {
+      "Conv": 300,
+      "TC": 2.5
+    },
+    "calculo": "Conv / (TC / 100)",
+    "respuesta": 12000,
+    "unidad": "visitantes",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Vis = Conv ÷ (TC ÷ 100)",
+      "2,5 ÷ 100 = 0,025",
+      "Vis = 300 ÷ 0,025 = 12.000"
+    ],
+    "pistas": [
+      "Despeja los visitantes de la fórmula de la tasa de conversión."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "materia": "marketing-digital",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-md-ctr-anuncio",
+    "subtema": "md-ctr-ab",
+    "formula": "ctr",
+    "enunciado": "Un anuncio en un buscador tuvo 48.000 impresiones y 1.440 clics. ¿Cuál es su CTR?",
+    "datos": {
+      "Clics": 1440,
+      "Imp": 48000
+    },
+    "calculo": "Clics / Imp * 100",
+    "respuesta": 3,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "CTR = 1.440 ÷ 48.000 × 100",
+      "CTR = 3"
+    ],
+    "pistas": [
+      "Clics divididos para impresiones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "materia": "marketing-digital",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-md-ctr-ab",
+    "subtema": "md-ctr-ab",
+    "formula": "ctr",
+    "enunciado": "En una prueba A/B, la versión B del anuncio tuvo 25.000 impresiones y 1.000 clics. ¿Cuál es su CTR?",
+    "datos": {
+      "Clics": 1000,
+      "Imp": 25000
+    },
+    "calculo": "Clics / Imp * 100",
+    "respuesta": 4,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "CTR = 1.000 ÷ 25.000 × 100",
+      "CTR = 4"
+    ],
+    "pistas": [
+      "Compara luego con el CTR de la versión A."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-fis",
+      "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+      "seccion": "8.4 Web Analytics"
+    },
+    "materia": "marketing-digital",
+    "actualizado_en": "2026-10-26"
   }
 ]

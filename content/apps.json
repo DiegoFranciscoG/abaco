@@ -531,5 +531,41 @@
     ],
     "url_oficial": "https://www.strategyzer.com/library/the-business-model-canvas",
     "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "wordpress",
+    "nombre": "WordPress.org",
+    "para_que": "Gestor de contenidos libre para crear sitios web, blogs y tiendas en línea sin programar, con plantillas y complementos.",
+    "materias": [
+      "marketing-digital"
+    ],
+    "areas": [
+      "tecnologia",
+      "gestion"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Web"
+    ],
+    "url_oficial": "https://wordpress.org/",
+    "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "google-analytics",
+    "nombre": "Google Analytics",
+    "para_que": "Mide visitas, fuentes de tráfico, tasa de rebote y conversiones de un sitio web mediante una etiqueta de seguimiento.",
+    "materias": [
+      "marketing-digital"
+    ],
+    "areas": [
+      "tecnologia",
+      "gestion"
+    ],
+    "costo": "gratis-con-cuenta",
+    "plataformas": [
+      "Web"
+    ],
+    "url_oficial": "https://marketingplatform.google.com/about/analytics/",
+    "fecha_consulta": "2026-10-27"
   }
 ]

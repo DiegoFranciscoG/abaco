@@ -1,0 +1,477 @@
+{
+  "materia": "marketing-digital",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "md-directo",
+      "nombre": "Del marketing directo al marketing digital",
+      "orden": 1,
+      "descripcion": "Formas de marketing directo tradicional, marketing directo en línea, redes sociales y marketing móvil.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "md-directo-tradicional",
+          "nombre": "Marketing directo tradicional",
+          "explicacion": "El marketing directo usa herramientas de comunicación para dirigirse a consumidores individuales y llamarlos a una acción concreta, como visitar un sitio web, llamar a un número o, en último término, comprar. Sus formas tradicionales incluyen el correo directo (postales, catálogos y cupones enviados a hogares u oficinas), el telemercadeo, en el que un representante hace o recibe llamadas para guiar al cliente hacia la compra, y los infomerciales. El correo directo puede segmentarse por edad, ingresos, zona o conducta de compra y destaca frente al exceso de mensajes digitales, aunque muchos lo consideran publicidad no deseada.",
+          "ejemplo": "Una librería de Cuenca envía postales con un código de descuento solo a los clientes que compraron libros infantiles el último año; cada postal invita a usar el código en la tienda en línea, de modo que la acción es medible.",
+          "puntos_clave": [
+            "Busca una respuesta concreta del consumidor.",
+            "Correo directo, telemercadeo e infomerciales.",
+            "Permite segmentar y medir la respuesta."
+          ],
+          "errores_frecuentes": [
+            "Enviar el mismo mensaje a todos sin segmentar.",
+            "Olvidar incluir una llamada a la acción clara."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/16-1-traditional-direct-marketing",
+            "seccion": "16.1 Traditional Direct Marketing"
+          }
+        },
+        {
+          "id": "md-directo-en-linea",
+          "nombre": "Marketing directo en la era digital",
+          "explicacion": "La era digital cambió la forma de relacionarse con los clientes: además de los canales tradicionales, las marcas pueden interactuar de manera muy personalizada e interactiva. El marketing directo en línea usa canales como el correo electrónico, los sitios web, los anuncios en buscadores y las redes para dirigirse a cada persona y pedirle una acción. Frente al correo físico, el correo electrónico es más barato y rápido, pero sus mensajes tienen una vida útil más corta en la bandeja del usuario.",
+          "ejemplo": "Una agencia de viajes envía por correo electrónico ofertas distintas según el último destino consultado por cada suscriptor; quien buscó Galápagos recibe paquetes a las islas con un botón de «reservar ahora».",
+          "puntos_clave": [
+            "Personalización e interactividad.",
+            "Correo electrónico, web, buscadores y redes.",
+            "Menor costo, pero mensajes de vida más corta."
+          ],
+          "errores_frecuentes": [
+            "Saturar a los suscriptores con correos frecuentes.",
+            "No ofrecer una forma sencilla de darse de baja."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/16-1-traditional-direct-marketing",
+            "seccion": "16.1 Traditional Direct Marketing"
+          }
+        },
+        {
+          "id": "md-redes-sociales",
+          "nombre": "Marketing en redes sociales",
+          "explicacion": "El marketing en redes sociales consiste en usar plataformas sociales para entregar contenido que genere interacción con la marca. Las empresas crean perfiles y contenido patrocinado, y los usuarios pueden comentar, guardar y compartir las publicaciones, que a menudo los llevan al sitio web de la marca. Sus ventajas son que permite segmentar con precisión, genera interacción entre usuarios, atrae visitantes al sitio y es fácil de medir; sus desventajas incluyen el tiempo que exige gestionar contenidos y la exposición a comentarios negativos.",
+          "ejemplo": "Una óptica publica en Instagram fotos de monturas según la forma del rostro; quien se interesa toca la publicación, entra al sitio, se prueba virtualmente las gafas y compra.",
+          "puntos_clave": [
+            "Contenido que genera interacción con la marca.",
+            "Segmentación precisa y fácil medición.",
+            "Lleva tráfico hacia el sitio web."
+          ],
+          "errores_frecuentes": [
+            "Publicar sin objetivos ni métricas.",
+            "Ignorar los comentarios de los usuarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing",
+            "seccion": "16.2 Social Media and Mobile Marketing"
+          }
+        },
+        {
+          "id": "md-movil",
+          "nombre": "Marketing móvil",
+          "explicacion": "El marketing móvil es el uso de varios canales digitales diseñados para llegar a los consumidores en sus teléfonos inteligentes y tabletas. Como el acceso a internet y a las aplicaciones desde el móvil ha crecido de forma sostenida, las estrategias digitales deben pensarse primero para pantallas pequeñas: sitios adaptables, mensajes breves, aplicaciones y anuncios dentro de ellas. El móvil permite además aprovechar el contexto del usuario, como su ubicación, siempre respetando su consentimiento.",
+          "ejemplo": "Una cadena de cafeterías lanza una aplicación que permite pedir y pagar desde el celular; cuando el cliente activa la ubicación, recibe una promoción al pasar cerca de un local.",
+          "puntos_clave": [
+            "Canales digitales pensados para el celular.",
+            "Diseño adaptable y mensajes breves.",
+            "Uso del contexto con consentimiento."
+          ],
+          "errores_frecuentes": [
+            "Tener un sitio que no se ve bien en el celular.",
+            "Enviar notificaciones sin permiso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/16-2-social-media-and-mobile-marketing",
+            "seccion": "16.2 Social Media and Mobile Marketing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "md-contenidos",
+      "nombre": "Redes, contenidos y ética digital",
+      "orden": 2,
+      "descripcion": "Tendencias en redes sociales, blogs y pódcast, estrategia de redes en la empresa, tipos de contenido y privacidad.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "md-tendencias-redes",
+          "nombre": "Tendencias: blogs, pódcast y videos",
+          "explicacion": "Hoy casi todas las empresas tienen presencia en redes sociales, y una sola publicación puede generar miles de impresiones positivas o negativas. Las plataformas cambian constantemente y la desinformación puede volverse viral y dañar a una marca aunque sea falsa. Un blog es un diario en línea con contenido actualizado que abre un diálogo con los clientes y puede distribuirse por RSS, correo o redes. Los pódcast son como blogs hablados organizados por episodios, y los videos amplían el alcance; muchas marcas también trabajan con creadores que ya tienen grandes audiencias.",
+          "ejemplo": "Una marca de café de especialidad mantiene un blog con recetas, un pódcast mensual con productores de Loja y videos cortos en redes; además prepara un protocolo para responder rápido si circula información falsa sobre sus productos.",
+          "puntos_clave": [
+            "Presencia en redes casi obligatoria.",
+            "Blogs, pódcast y videos como canales de contenido.",
+            "Riesgo de desinformación viral."
+          ],
+          "errores_frecuentes": [
+            "Abrir canales que luego no se actualizan.",
+            "No tener un plan para responder a crisis en redes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/12-10-trends-in-social-media",
+            "seccion": "12.10 Trends in Social Media"
+          }
+        },
+        {
+          "id": "md-redes-empresa",
+          "nombre": "Estrategia de redes sociales en la empresa",
+          "explicacion": "Las redes sociales son valiosas por su bajo costo y su alcance en casi todos los grupos de edad, y para muchas empresas son tan importantes como su sitio web. El mensaje debe ser coherente en todas las plataformas, aunque cada una se use de forma distinta: una publicación breve puede dirigir al sitio para más información. Como las personas dedican poco tiempo a cada publicación, el contenido debe captar la atención. La interacción en redes construye relaciones más personales, y la analítica de redes permite medir seguidores, interacciones y alcance para ajustar la estrategia. Sin planificación, «constrúyelo y vendrán» no funciona.",
+          "ejemplo": "Una fundación que da perros en adopción publica en redes la foto de cada perro con un enlace a su ficha en el sitio web; con las métricas de las publicaciones estima cuántas personas asistirán a su próxima feria de adopción.",
+          "puntos_clave": [
+            "Mensaje coherente entre plataformas.",
+            "Contenido que capte la atención en segundos.",
+            "Analítica de redes para medir y decidir."
+          ],
+          "errores_frecuentes": [
+            "Copiar el mismo formato en todas las redes.",
+            "Medir solo seguidores y no interacciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/8-5-social-media-in-business",
+            "seccion": "8.5 Social Media in Business"
+          }
+        },
+        {
+          "id": "md-contenido-tipos",
+          "nombre": "Contenido: datos, información y conocimiento",
+          "explicacion": "El contenido es información en forma visual o de audio (texto, arte, números o imágenes) destinada a un usuario final. Puede verse como datos, cifras que se pueden analizar, como el número de visitantes de un sitio; información, que son datos puestos en contexto para responder una pregunta, como saber desde qué ciudades llegan esos visitantes; o conocimiento, la comprensión que se desarrolla al analizar o interactuar con ellos. Los sistemas de gestión de contenidos (CMS) ayudan a las empresas a crear, organizar y publicar ese contenido de forma ordenada.",
+          "ejemplo": "Una academia de idiomas registra que su página tuvo 3.000 visitas (dato); al ver que la mitad vino de Guayaquil (información), decide abrir clases en línea con horario de la Costa (conocimiento aplicado).",
+          "puntos_clave": [
+            "Contenido para un usuario final.",
+            "Datos, información y conocimiento.",
+            "El CMS organiza la creación y publicación."
+          ],
+          "errores_frecuentes": [
+            "Acumular datos sin convertirlos en información útil.",
+            "Publicar contenido sin pensar en quién lo lee."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/8-1-what-are-content-management-systems",
+            "seccion": "8.1 What Are Content Management Systems?"
+          }
+        },
+        {
+          "id": "md-etica-privacidad",
+          "nombre": "Ética digital: privacidad y transparencia",
+          "explicacion": "Las herramientas digitales permiten segmentar con mucha precisión porque las empresas acceden a grandes cantidades de datos personales: nombre, correo, teléfono, intereses, opiniones y conducta de compra. Los consumidores están cada vez más preocupados por la privacidad y piden transparencia sobre el uso de sus datos; por eso algunas plataformas ya permiten al usuario autorizar o negar el rastreo de su actividad entre aplicaciones. Las redes sociales usan los datos personales para vender espacios publicitarios a quienes coinciden con el público objetivo de cada anunciante. En Ecuador, estas prácticas deben cumplir la Ley Orgánica de Protección de Datos Personales.",
+          "ejemplo": "Antes de enviar ofertas personalizadas, una tienda en línea muestra un aviso claro de para qué usará el historial de compras y permite al cliente desactivar las recomendaciones personalizadas.",
+          "puntos_clave": [
+            "Acceso masivo a datos personales.",
+            "Demanda de privacidad y transparencia.",
+            "Cumplimiento de la LOPDP en Ecuador."
+          ],
+          "errores_frecuentes": [
+            "Usar datos personales para fines no informados.",
+            "Esconder las opciones de privacidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/16-4-ethical-issues-in-digital-marketing-and-social-media",
+            "seccion": "16.4 Ethical Issues in Digital Marketing and Social Media"
+          }
+        }
+      ]
+    },
+    {
+      "id": "md-sitios-seo",
+      "nombre": "Sitios web, gestores de contenido y SEO",
+      "orden": 3,
+      "descripcion": "Web 1.0 y 2.0, gestores de contenido, cómo crear un sitio y posicionamiento en buscadores con prácticas éticas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "md-cms-web2",
+          "nombre": "Gestores de contenido y la Web 2.0",
+          "explicacion": "Un sistema de gestión de contenidos (CMS) es un software que ayuda a construir un sitio web sin dominar HTML, CSS o JavaScript, gracias a plantillas, extensiones y una interfaz WYSIWYG («lo que ves es lo que obtienes»), en la que el contenido se edita tal como se verá publicado. La Web 1.0 era casi solo de lectura: sitios estáticos con pocos elementos interactivos. La Web 2.0 convierte a los usuarios en participantes que leen y escriben: comentan, responden y comparten, y sus experiencias y opiniones agregan valor al contenido original.",
+          "ejemplo": "Una cooperativa de artesanos crea su sitio con un CMS, eligiendo una plantilla y arrastrando fotos de sus productos; los visitantes dejan comentarios y comparten las piezas, algo que un sitio estático de la Web 1.0 no permitía.",
+          "puntos_clave": [
+            "CMS: crear sitios sin programar.",
+            "Edición WYSIWYG.",
+            "Web 2.0: usuarios que también aportan contenido."
+          ],
+          "errores_frecuentes": [
+            "Creer que se necesita programar para tener un sitio.",
+            "Desactivar toda interacción con los visitantes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/8-2-common-content-management-systems",
+            "seccion": "8.2 Common Content Management Systems"
+          }
+        },
+        {
+          "id": "md-crear-sitio",
+          "nombre": "Crear un sitio: dominio, alojamiento y complementos",
+          "explicacion": "Antes de construir un sitio conviene definir los objetivos para elegir solo las funciones necesarias. Todo sitio necesita un nombre de dominio, que es su dirección y suele parecerse al nombre del negocio, y un servicio de alojamiento (hosting), que guarda los archivos y los publica en internet. WordPress es un CMS de código abierto con una gran participación en el mercado de sitios; con plantillas y complementos (plugins), como los de comercio electrónico, permite crear sitios de empresa, portafolios, blogs o tiendas en línea sin programar, y administrarlos desde cualquier lugar.",
+          "ejemplo": "Una pastelería registra un dominio parecido a su nombre, contrata alojamiento, instala una plantilla y agrega un complemento de tienda para recibir pedidos de tortas en línea.",
+          "puntos_clave": [
+            "Objetivos primero.",
+            "Dominio y alojamiento.",
+            "Plantillas y complementos amplían las funciones."
+          ],
+          "errores_frecuentes": [
+            "Instalar complementos innecesarios que hacen lento el sitio.",
+            "Elegir un dominio difícil de recordar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/8-3-creating-content-with-a-content-management-system",
+            "seccion": "8.3 Creating Content with a Content Management System"
+          }
+        },
+        {
+          "id": "md-seo",
+          "nombre": "Cómo funcionan los buscadores y qué es el SEO",
+          "explicacion": "Los buscadores como Google o Bing usan algoritmos que ordenan las páginas de la más a la menos relevante para cada consulta. Sus programas automáticos (bots) recorren constantemente internet buscando palabras, etiquetas y enlaces. La optimización para motores de búsqueda (SEO) busca aumentar el tráfico de un sitio logrando que aparezca más arriba en los resultados: cuanto más alto, más probable es que lo visiten. Como un solo buscador concentra la gran mayoría de las búsquedas, muchos sitios optimizan pensando en él. Usar en títulos y descripciones el lenguaje que usa el público objetivo es una de las prácticas recomendadas.",
+          "ejemplo": "Una ferretería de Ambato cambia el título de su página de «Inicio» a «Ferretería en Ambato: herramientas y materiales de construcción», porque esas son las palabras que sus clientes escriben en el buscador.",
+          "puntos_clave": [
+            "Algoritmos ordenan por relevancia.",
+            "Bots rastrean palabras, etiquetas y enlaces.",
+            "SEO: más visibilidad y tráfico."
+          ],
+          "errores_frecuentes": [
+            "Escribir títulos con lenguaje interno que nadie busca.",
+            "Ignorar la velocidad y estructura del sitio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/8-4-search-engine-optimization",
+            "seccion": "8.4 Search Engine Optimization"
+          }
+        },
+        {
+          "id": "md-seo-etica",
+          "nombre": "SEO ético: prácticas que se penalizan",
+          "explicacion": "Las prácticas engañosas para manipular los buscadores se conocen como SEO de sombrero negro o spam. Entre ellas está el relleno de palabras clave (keyword stuffing), que repite términos de forma excesiva y vuelve el contenido difícil de leer, y el texto o enlaces ocultos, invisibles para el usuario pero pensados para los rastreadores. Aunque no siempre sean ilegales, los buscadores pueden penalizarlas con caídas fuertes en los resultados o la exclusión del sitio. La alternativa es ofrecer contenido valioso, relevante y fácil de usar que represente con exactitud lo que el sitio ofrece.",
+          "ejemplo": "Un hotel que repite «hotel barato Quito» veinte veces en cada página y oculta texto blanco sobre fondo blanco corre el riesgo de ser penalizado; otro que publica guías útiles sobre el centro histórico gana visitas de forma sostenida.",
+          "puntos_clave": [
+            "SEO de sombrero negro o spam.",
+            "Relleno de palabras clave y texto oculto.",
+            "Penalizaciones de los buscadores."
+          ],
+          "errores_frecuentes": [
+            "Comprar enlaces para subir posiciones.",
+            "Escribir para el algoritmo y no para las personas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/8-4-search-engine-optimization",
+            "seccion": "8.4 Search Engine Optimization"
+          }
+        }
+      ]
+    },
+    {
+      "id": "md-analitica",
+      "nombre": "Analítica web y métricas",
+      "orden": 4,
+      "descripcion": "Recolección de datos web y las métricas de rebote, conversión y clics, con pruebas A/B.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "md-analitica-web",
+          "nombre": "Qué es la analítica web y cómo se recogen los datos",
+          "explicacion": "La analítica web es el proceso de recolectar, medir, analizar e informar datos sobre el uso de un sitio y la interacción de los usuarios para entender y mejorar su desempeño. Permite seguir métricas como el tráfico, las páginas vistas, la tasa de rebote, la tasa de conversión y la demografía de los usuarios. Los datos se recogen, por ejemplo, con el etiquetado de páginas, que inserta en cada página un fragmento de JavaScript (etiqueta o píxel) que envía las interacciones a la herramienta de analítica; con el análisis de archivos de registro del servidor, y con eventos que registran acciones como enviar un formulario.",
+          "ejemplo": "Una tienda en línea instala la etiqueta de su herramienta de analítica en todas sus páginas y descubre que la página de pago tiene muchas salidas; simplifica el formulario y vuelve a medir.",
+          "puntos_clave": [
+            "Recolectar, medir, analizar e informar.",
+            "Etiquetado de páginas, archivos de registro y eventos.",
+            "Decisiones basadas en datos."
+          ],
+          "errores_frecuentes": [
+            "Medir sin objetivos definidos.",
+            "Olvidar etiquetar páginas nuevas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+            "seccion": "8.4 Web Analytics"
+          }
+        },
+        {
+          "id": "md-tasa-rebote",
+          "nombre": "Tasa de rebote",
+          "explicacion": "La tasa de rebote es el porcentaje de visitantes que salen del sitio después de ver una sola página, lo que indica falta de interés o de interacción con el resto del contenido. Una tasa alta en una página clave suele señalar problemas de experiencia o de contenido: carga lenta, navegación confusa o un mensaje que no responde a lo que el visitante buscaba. Se calcula dividiendo las visitas de una sola página para el total de visitas y multiplicando por 100.",
+          "ejemplo": "Una página de producto recibe 1.200 visitas y en 780 el visitante se va sin ver otra página: la tasa de rebote es 780 ÷ 1.200 × 100 = 65 %, una señal para revisar fotos, precio visible y tiempo de carga.",
+          "puntos_clave": [
+            "Visitas de una sola página ÷ total de visitas × 100.",
+            "Alta: posible problema de contenido o experiencia.",
+            "Se analiza por página."
+          ],
+          "errores_frecuentes": [
+            "Juzgar igual una página de blog que una de pago.",
+            "Mirar el promedio del sitio y no cada página."
+          ],
+          "formulas": [
+            "tasa-rebote"
+          ],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+            "seccion": "8.4 Web Analytics"
+          }
+        },
+        {
+          "id": "md-tasa-conversion",
+          "nombre": "Tasa de conversión",
+          "explicacion": "La tasa de conversión es el porcentaje de visitantes que completan la acción deseada: comprar, llenar un formulario o suscribirse a un boletín. Junto con la tasa de rebote, permite identificar páginas con problemas y hacer mejoras concretas, como reducir el tiempo de carga, mejorar la navegación o ajustar el mensaje. Se calcula dividiendo las conversiones para el total de visitantes y multiplicando por 100.",
+          "ejemplo": "Una página de inscripción a un curso recibe 2.400 visitantes y 96 se inscriben: la tasa de conversión es 96 ÷ 2.400 × 100 = 4 %.",
+          "puntos_clave": [
+            "Conversiones ÷ visitantes × 100.",
+            "La conversión depende del objetivo definido.",
+            "Se usa para priorizar mejoras."
+          ],
+          "errores_frecuentes": [
+            "Contar como conversión cualquier clic.",
+            "Comparar tasas con distintas definiciones de conversión."
+          ],
+          "formulas": [
+            "tasa-conversion"
+          ],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+            "seccion": "8.4 Web Analytics"
+          }
+        },
+        {
+          "id": "md-ctr-ab",
+          "nombre": "Tasa de clics (CTR) y pruebas A/B",
+          "explicacion": "La tasa de clics (CTR) mide qué tan eficaz es un anuncio para atraer clics: es el total de clics dividido para el total de impresiones, es decir, las veces que el anuncio se cargó en una página, expresado en porcentaje. Ayuda a asignar recursos a las campañas con mejor retorno. Las pruebas A/B, o pruebas divididas, comparan dos versiones de una página, correo o anuncio repartiendo al azar a los visitantes entre ellas, para ver cuál logra más interacción o conversiones; pueden variar el titular, el diseño o la llamada a la acción.",
+          "ejemplo": "Un anuncio se mostró 10.000 veces y recibió 500 clics: CTR = 500 ÷ 10.000 × 100 = 5 %. Luego se prueba un segundo titular con la mitad del público para ver si supera ese resultado.",
+          "puntos_clave": [
+            "CTR = clics ÷ impresiones × 100.",
+            "Pruebas A/B con asignación aleatoria.",
+            "Cambiar un elemento a la vez."
+          ],
+          "errores_frecuentes": [
+            "Cambiar varios elementos a la vez en una prueba A/B.",
+            "Sacar conclusiones con muy pocas visitas."
+          ],
+          "formulas": [
+            "ctr"
+          ],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-4-web-analytics",
+            "seccion": "8.4 Web Analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "md-ecommerce",
+      "nombre": "Comercio electrónico en Ecuador",
+      "orden": 5,
+      "descripcion": "Qué es el comercio electrónico y su marco legal: mensajes de datos, firma electrónica, contratos electrónicos y derechos del consumidor.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "md-ecommerce-concepto",
+          "nombre": "Qué es el comercio electrónico",
+          "explicacion": "El comercio electrónico (e-commerce) comprende el desarrollo y mantenimiento del sitio web de una empresa y las transacciones que se hacen en él: pedir productos en línea, resolver dudas sobre ellos y conocer novedades. Puede incluir componentes dirigidos a distintos segmentos del mercado. Crece porque comprar en línea ahorra tiempo y dinero: evita traslados, permite comparar productos y precios al instante y simplifica la compra. Muchas pequeñas empresas lo usan como su principal canal de venta.",
+          "ejemplo": "Una tienda de ropa de Riobamba que solo vendía en su local abre una tienda en línea con catálogo, chat de preguntas y entregas a domicilio, y empieza a recibir pedidos de otras provincias.",
+          "puntos_clave": [
+            "Sitio web más transacciones en línea.",
+            "Conveniencia y comparación de precios.",
+            "Canal principal para muchas pequeñas empresas."
+          ],
+          "errores_frecuentes": [
+            "Abrir la tienda en línea sin resolver la logística de entrega.",
+            "No responder las preguntas de los clientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/12-11-trends-in-e-commerce",
+            "seccion": "12.11 Trends in E-Commerce"
+          }
+        },
+        {
+          "id": "md-mensajes-firma",
+          "nombre": "Mensajes de datos y firma electrónica",
+          "explicacion": "La Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos regula los mensajes de datos, la firma electrónica, los servicios de certificación, la contratación electrónica, la prestación de servicios electrónicos y la protección de sus usuarios (art. 1). Los mensajes de datos tienen igual valor jurídico que los documentos escritos (art. 2). La firma electrónica tiene la misma validez y efectos jurídicos que una firma manuscrita y se admite como prueba en juicio (art. 14); para ser válida debe ser individual y vinculada exclusivamente a su titular y permitir verificar su autoría e identidad (art. 15). El certificado de firma electrónica vincula la firma con una persona determinada.",
+          "ejemplo": "Una empresa envía por correo electrónico una propuesta firmada electrónicamente con un certificado vigente: ese documento tiene el mismo valor que si lo hubiera firmado a mano en papel.",
+          "puntos_clave": [
+            "Mensajes de datos con igual valor que documentos escritos.",
+            "Firma electrónica equivalente a la manuscrita.",
+            "Certificado que vincula firma y titular."
+          ],
+          "errores_frecuentes": [
+            "Confundir una firma escaneada con una firma electrónica.",
+            "Usar un certificado vencido."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-comercio-electronico",
+            "url": "https://www.arcotel.gob.ec/wp-content/uploads/2023/11/22_ley_de_comercio_electronico_firmas_y_mensajes_de_datos.pdf",
+            "seccion": "Arts. 1, 2, 14, 15 y 20"
+          }
+        },
+        {
+          "id": "md-contratos-electronicos",
+          "nombre": "Contratos electrónicos",
+          "explicacion": "Los contratos pueden instrumentarse mediante mensajes de datos, y no se les puede negar validez por haberse usado uno o más mensajes de datos en su formación (art. 45). Su perfeccionamiento se sujeta a los requisitos y solemnidades de las leyes, y el lugar de perfeccionamiento es el que acuerden las partes. Recibir, confirmar la recepción o abrir un mensaje de datos no implica aceptar el contrato, salvo acuerdo de las partes (art. 46). En caso de controversia, las partes se someten a la jurisdicción pactada en el contrato (art. 47).",
+          "ejemplo": "Un cliente que solo abre el correo con las condiciones de un servicio en línea no ha aceptado el contrato; la aceptación ocurre cuando marca expresamente que acepta y confirma la compra, según lo acordado.",
+          "puntos_clave": [
+            "Validez de los contratos por mensajes de datos.",
+            "Abrir un mensaje no es aceptar el contrato.",
+            "Lugar y jurisdicción según lo pactado."
+          ],
+          "errores_frecuentes": [
+            "Dar por aceptado un contrato porque el cliente abrió el correo.",
+            "No dejar constancia de la aceptación expresa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-comercio-electronico",
+            "url": "https://www.arcotel.gob.ec/wp-content/uploads/2023/11/22_ley_de_comercio_electronico_firmas_y_mensajes_de_datos.pdf",
+            "seccion": "Arts. 45, 46 y 47"
+          }
+        },
+        {
+          "id": "md-consumidor-electronico",
+          "nombre": "Derechos del consumidor de servicios electrónicos",
+          "explicacion": "Antes de que el consumidor acepte registros electrónicos o mensajes de datos, debe ser informado de forma clara, precisa y satisfactoria sobre los equipos y programas que necesita para acceder a ellos, y al consentir debe poder demostrar razonablemente que puede acceder a esa información (art. 48). En los servicios electrónicos, el consumidor debe estar suficientemente informado de sus derechos y obligaciones conforme a la Ley Orgánica de Defensa del Consumidor, y el oferente debe informar todos los requisitos, condiciones y restricciones para adquirir y usar los bienes o servicios promocionados (art. 50).",
+          "ejemplo": "Una plataforma de cursos en línea indica antes del pago qué navegador y conexión se necesitan, la duración del acceso, las condiciones de devolución y las restricciones de uso del material.",
+          "puntos_clave": [
+            "Información clara antes del consentimiento.",
+            "Requisitos técnicos para acceder.",
+            "Condiciones y restricciones visibles."
+          ],
+          "errores_frecuentes": [
+            "Esconder las condiciones en letra pequeña.",
+            "Informar las restricciones después de cobrar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-comercio-electronico",
+            "url": "https://www.arcotel.gob.ec/wp-content/uploads/2023/11/22_ley_de_comercio_electronico_firmas_y_mensajes_de_datos.pdf",
+            "seccion": "Arts. 48 y 50"
+          }
+        }
+      ]
+    }
+  ]
+}
