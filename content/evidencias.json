@@ -2132,5 +2132,98 @@
       "passive",
       "technical"
     ]
+  },
+  {
+    "id": "mf-descuentos",
+    "palabras": [
+      "discount",
+      "markup"
+    ]
+  },
+  {
+    "id": "mf-inflacion-real",
+    "palabras": [
+      "inflation",
+      "purchasing power",
+      "rule of 72"
+    ]
+  },
+  {
+    "id": "mf-fondo-ahorro",
+    "palabras": [
+      "annuity",
+      "savings",
+      "goal"
+    ]
+  },
+  {
+    "id": "mf-tarjetas",
+    "palabras": [
+      "average daily balance",
+      "billing cycle",
+      "minimum payment"
+    ]
+  },
+  {
+    "id": "mf-bonos-caracteristicas",
+    "palabras": [
+      "coupon",
+      "maturity",
+      "face value"
+    ]
+  },
+  {
+    "id": "mf-bonos-valoracion",
+    "palabras": [
+      "bond",
+      "coupon",
+      "present value"
+    ]
+  },
+  {
+    "id": "mf-curva-rendimiento",
+    "palabras": [
+      "yield curve",
+      "inverted"
+    ]
+  },
+  {
+    "id": "mf-bonos-riesgos",
+    "palabras": [
+      "interest rate risk",
+      "default"
+    ]
+  },
+  {
+    "id": "mf-presupuesto-personal",
+    "palabras": [
+      "budget",
+      "income",
+      "expenses"
+    ]
+  },
+  {
+    "id": "mf-inversiones-personales",
+    "palabras": [
+      "stocks",
+      "bonds",
+      "mutual fund",
+      "return on investment"
+    ]
+  },
+  {
+    "id": "mf-auto",
+    "palabras": [
+      "lease",
+      "down payment"
+    ]
+  },
+  {
+    "id": "mf-vivienda",
+    "palabras": [
+      "mortgage",
+      "rent",
+      "down payment"
+    ]
   }
 ]

@@ -3322,5 +3322,814 @@
     },
     "materia": "estadistica-descriptiva",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-interes-simple",
+    "subtema": "mf-simple",
+    "formula": "interes-simple",
+    "enunciado": "Un préstamo de USD 1.500 cobra 12 % anual de interés simple durante 9 meses. ¿Cuánto interés se paga?",
+    "datos": {
+      "C": 1500,
+      "i": 0.12,
+      "t": 0.75
+    },
+    "calculo": "C * i * t",
+    "respuesta": 135,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "t = 9 ÷ 12 = 0,75 años",
+      "I = 1.500 × 0,12 × 0,75 = 135"
+    ],
+    "pistas": [
+      "Expresa el tiempo en años si la tasa es anual."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.3 Simple Interest"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-monto-simple",
+    "subtema": "mf-simple",
+    "formula": "monto-interes-simple",
+    "enunciado": "Se invierten USD 4.200 a 10 % anual de interés simple durante 150 días (año comercial de 360 días). ¿Cuál es el monto al vencimiento?",
+    "datos": {
+      "C": 4200,
+      "i": 0.1,
+      "t": 0.4166666667
+    },
+    "calculo": "C * (1 + i * t)",
+    "respuesta": 4375,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Interés = 4.200 × 0,10 × 150 ÷ 360 = 175",
+      "M = 4.200 + 175 = 4.375"
+    ],
+    "pistas": [
+      "El año comercial tiene 360 días."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.3 Simple Interest"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-compuesto-trimestral",
+    "subtema": "mf-compuesto",
+    "formula": "monto-compuesto",
+    "enunciado": "Se depositan USD 5.000 a una tasa de 2 % trimestral compuesta durante 2 años (8 trimestres). ¿Cuál es el monto final?",
+    "datos": {
+      "VA": 5000,
+      "i": 0.02,
+      "n": 8
+    },
+    "calculo": "VA * (1 + i) ^ n",
+    "respuesta": 5858.3,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,02 elevado a 8 = 1,171659",
+      "VF = 5.000 × 1,171659 = 5.858,30"
+    ],
+    "pistas": [
+      "Dos años con capitalización trimestral son 8 períodos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.4 Compound Interest"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-tasa-efectiva-mensual",
+    "subtema": "mf-tasas",
+    "formula": "tasa-efectiva-anual",
+    "enunciado": "Un crédito anuncia una tasa nominal de 12 % anual capitalizable mensualmente. ¿Cuál es la tasa efectiva anual?",
+    "datos": {
+      "j": 0.12,
+      "m": 12
+    },
+    "calculo": "(1 + j / m) ^ m - 1",
+    "respuesta": 0.1268,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Tasa mensual = 0,12 ÷ 12 = 0,01",
+      "1,01 elevado a 12 = 1,126825",
+      "TEA = 1,126825 − 1 = 0,126825, es decir, 12,68 %"
+    ],
+    "pistas": [
+      "Primero obtén la tasa por período y luego capitaliza 12 veces."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.4 Stated versus Effective Rates"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-tasa-efectiva-trimestral",
+    "subtema": "mf-tasas",
+    "formula": "tasa-efectiva-anual",
+    "enunciado": "Una póliza paga 16 % anual nominal capitalizable trimestralmente. ¿Cuál es su tasa efectiva anual?",
+    "datos": {
+      "j": 0.16,
+      "m": 4
+    },
+    "calculo": "(1 + j / m) ^ m - 1",
+    "respuesta": 0.1699,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Tasa trimestral = 0,16 ÷ 4 = 0,04",
+      "1,04 elevado a 4 = 1,169859",
+      "TEA = 1,169859 − 1 = 0,169859, es decir, 16,99 %"
+    ],
+    "pistas": [
+      "Capitaliza cuatro veces la tasa trimestral."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.4 Stated versus Effective Rates"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-valor-actual",
+    "subtema": "mf-vtm",
+    "formula": "valor-actual",
+    "enunciado": "¿Cuánto hay que depositar hoy a 8 % anual compuesto para tener USD 10.000 dentro de 5 años?",
+    "datos": {
+      "VF": 10000,
+      "i": 0.08,
+      "n": 5
+    },
+    "calculo": "VF / (1 + i) ^ n",
+    "respuesta": 6805.83,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,08 elevado a 5 = 1,469328",
+      "VA = 10.000 ÷ 1,469328 = 6.805,83"
+    ],
+    "pistas": [
+      "Descontar es dividir para (1 + i) elevado a n."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "7.2 Time Value of Money (TVM) Basics"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-numero-periodos",
+    "subtema": "mf-vtm",
+    "formula": "numero-periodos",
+    "enunciado": "¿Cuántos meses tardan USD 2.500 en convertirse en USD 4.000 a 1,5 % mensual compuesto?",
+    "datos": {
+      "VA": 2500,
+      "VF": 4000,
+      "i": 0.015
+    },
+    "calculo": "LN(VF / VA) / LN(1 + i)",
+    "respuesta": 31.57,
+    "unidad": "meses",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "4.000 ÷ 2.500 = 1,6",
+      "n = ln 1,6 ÷ ln 1,015 = 0,470004 ÷ 0,014889 = 31,57"
+    ],
+    "pistas": [
+      "Despeja n con logaritmos."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "7.2 Time Value of Money (TVM) Basics"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-vf-anualidad",
+    "subtema": "mf-anualidad-vencida",
+    "formula": "vf-anualidad-vencida",
+    "enunciado": "Depositas USD 200 al final de cada mes durante 24 meses en una cuenta que paga 1 % mensual. ¿Cuánto tendrás al final?",
+    "datos": {
+      "A": 200,
+      "i": 0.01,
+      "n": 24
+    },
+    "calculo": "A * ((1 + i) ^ n - 1) / i",
+    "respuesta": 5394.69,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,01 elevado a 24 = 1,269735",
+      "VF = 200 × (1,269735 − 1) ÷ 0,01 = 5.394,70"
+    ],
+    "pistas": [
+      "Usa el valor futuro de una anualidad vencida."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.2 Annuities"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-va-anualidad",
+    "subtema": "mf-anualidad-vencida",
+    "formula": "va-anualidad-vencida",
+    "enunciado": "Un electrodoméstico se paga con 36 cuotas mensuales vencidas de USD 350 a una tasa de 1,2 % mensual. ¿Cuál es su valor de contado equivalente?",
+    "datos": {
+      "A": 350,
+      "i": 0.012,
+      "n": 36
+    },
+    "calculo": "A * (1 - (1 + i) ^ -n) / i",
+    "respuesta": 10182.64,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,012 elevado a −36 = 0,650881",
+      "VA = 350 × (1 − 0,650881) ÷ 0,012 = 10.182,64"
+    ],
+    "pistas": [
+      "Es el valor actual de una anualidad vencida."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.2 Annuities"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-va-anticipada",
+    "subtema": "mf-anualidad-anticipada",
+    "formula": "va-anualidad-anticipada",
+    "enunciado": "Un local se arrienda con 12 pagos mensuales de USD 600 al inicio de cada mes. Con una tasa de 1,5 % mensual, ¿cuál es el valor actual de los pagos?",
+    "datos": {
+      "A": 600,
+      "i": 0.015,
+      "n": 12
+    },
+    "calculo": "A * (1 - (1 + i) ^ -n) / i * (1 + i)",
+    "respuesta": 6642.67,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,015 elevado a −12 = 0,83638742",
+      "VA vencida = 600 × (1 − 0,83638742) ÷ 0,015 = 6.544,5032",
+      "VA anticipada = 6.544,5032 × 1,015 = 6.642,67"
+    ],
+    "pistas": [
+      "Una anualidad anticipada es la vencida multiplicada por (1 + i)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.2 Annuities"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-vf-anticipada",
+    "subtema": "mf-anualidad-anticipada",
+    "formula": "vf-anualidad-anticipada",
+    "enunciado": "Ahorras USD 150 al inicio de cada mes durante 18 meses a 0,8 % mensual. ¿Cuánto tendrás al final del mes 18?",
+    "datos": {
+      "A": 150,
+      "i": 0.008,
+      "n": 18
+    },
+    "calculo": "A * ((1 + i) ^ n - 1) / i * (1 + i)",
+    "respuesta": 2914.81,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,008 elevado a 18 = 1,154223",
+      "VF = 150 × (1,154223 − 1) ÷ 0,008 × 1,008 = 2.914,81"
+    ],
+    "pistas": [
+      "Cada depósito gana un período más que en la anualidad vencida."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.2 Annuities"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-perpetuidad",
+    "subtema": "mf-perpetuidades",
+    "formula": "perpetuidad",
+    "enunciado": "Una fundación quiere entregar una beca de USD 450 mensuales para siempre. Si el fondo rinde 0,75 % mensual, ¿cuánto debe depositar hoy?",
+    "datos": {
+      "A": 450,
+      "i": 0.0075
+    },
+    "calculo": "A / i",
+    "respuesta": 60000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "VA = 450 ÷ 0,0075 = 60.000"
+    ],
+    "pistas": [
+      "El valor de una perpetuidad es el pago dividido para la tasa."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.1 Perpetuities"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-perpetuidad-creciente",
+    "subtema": "mf-perpetuidades",
+    "formula": "perpetuidad-creciente",
+    "enunciado": "Un local genera un arriendo neto de USD 1.200 el próximo año, que crecerá 3 % anual para siempre. Si se exige 9 % anual, ¿cuánto vale hoy ese flujo?",
+    "datos": {
+      "A": 1200,
+      "i": 0.09,
+      "g": 0.03
+    },
+    "calculo": "A / (i - g)",
+    "respuesta": 20000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "VA = 1.200 ÷ (0,09 − 0,03)",
+      "VA = 1.200 ÷ 0,06 = 20.000"
+    ],
+    "pistas": [
+      "Resta el crecimiento a la tasa de descuento."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.1 Perpetuities"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-cuota-auto",
+    "subtema": "mf-cuota",
+    "formula": "cuota-prestamo",
+    "enunciado": "Un crédito de USD 15.000 se paga en 36 cuotas mensuales fijas a 1,25 % mensual. ¿Cuál es la cuota?",
+    "datos": {
+      "VA": 15000,
+      "i": 0.0125,
+      "n": 36
+    },
+    "calculo": "VA * i / (1 - (1 + i) ^ -n)",
+    "respuesta": 519.98,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,0125 elevado a −36 = 0,639409",
+      "A = 15.000 × 0,0125 ÷ (1 − 0,639409) = 519,98"
+    ],
+    "pistas": [
+      "Usa la fórmula del sistema francés."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.3 Loan Amortization"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-saldo-12",
+    "subtema": "mf-saldo",
+    "formula": "saldo-insoluto",
+    "enunciado": "En el crédito anterior (cuota de USD 519,98, tasa de 1,25 % mensual, 36 cuotas), ¿cuánto se debe después de pagar 12 cuotas?",
+    "datos": {
+      "A": 519.98,
+      "i": 0.0125,
+      "k": 24
+    },
+    "calculo": "A * (1 - (1 + i) ^ -k) / i",
+    "respuesta": 10724.19,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Quedan 36 − 12 = 24 cuotas",
+      "1,0125 elevado a −24 = 0,74219707",
+      "Saldo = 519,98 × (1 − 0,74219707) ÷ 0,0125 = 10.724,19"
+    ],
+    "pistas": [
+      "El saldo es el valor actual de las cuotas que faltan."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.3 Loan Amortization"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-saldo-6",
+    "subtema": "mf-saldo",
+    "formula": "saldo-insoluto",
+    "enunciado": "Un préstamo de USD 8.000 a 1,5 % mensual tiene 12 cuotas de USD 733,44. ¿Cuál es el saldo después de pagar 6 cuotas?",
+    "datos": {
+      "A": 733.44,
+      "i": 0.015,
+      "k": 6
+    },
+    "calculo": "A * (1 - (1 + i) ^ -k) / i",
+    "respuesta": 4178.55,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Quedan 12 − 6 = 6 cuotas",
+      "1,015 elevado a −6 = 0,91454219",
+      "Saldo = 733,44 × (1 − 0,91454219) ÷ 0,015 = 4.178,55"
+    ],
+    "pistas": [
+      "Trae a valor actual las 6 cuotas pendientes."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "8.3 Loan Amortization"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-capital-constante-1",
+    "subtema": "mf-capital-constante",
+    "formula": "cuota-capital-constante",
+    "enunciado": "Un crédito de USD 12.000 a 24 meses se paga con amortización de capital constante y tasa de 1 % mensual. ¿Cuánto es la primera cuota?",
+    "datos": {
+      "P": 12000,
+      "n": 24,
+      "i": 0.01
+    },
+    "calculo": "P / n + P * i",
+    "respuesta": 620,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Capital = 12.000 ÷ 24 = 500",
+      "Interés = 12.000 × 0,01 = 120",
+      "Cuota 1 = 500 + 120 = 620"
+    ],
+    "pistas": [
+      "En el sistema alemán el capital de cada cuota es constante."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-capital-constante-10",
+    "subtema": "mf-capital-constante",
+    "enunciado": "En el mismo crédito (USD 12.000, 24 meses, 1 % mensual, capital constante de USD 500), ¿cuánto es la cuota 10?",
+    "datos": {
+      "P": 12000,
+      "n": 24,
+      "i": 0.01,
+      "k": 10
+    },
+    "calculo": "P / n + (P - (k - 1) * P / n) * i",
+    "respuesta": 575,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Saldo antes de la cuota 10 = 12.000 − 9 × 500 = 7.500",
+      "Interés = 7.500 × 0,01 = 75",
+      "Cuota 10 = 500 + 75 = 575"
+    ],
+    "pistas": [
+      "El interés se calcula sobre el saldo antes de la cuota."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin",
+      "seccion": "8.3 Amortización de préstamos"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-descuento-sucesivo",
+    "subtema": "mf-descuentos",
+    "enunciado": "Una chaqueta de USD 120 tiene 10 % de descuento y, sobre ese precio, 5 % adicional por pago en efectivo. ¿Cuál es el precio final?",
+    "datos": {
+      "P": 120,
+      "d1": 0.1,
+      "d2": 0.05
+    },
+    "calculo": "P * (1 - d1) * (1 - d2)",
+    "respuesta": 102.6,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Precio final = 120 × 0,90 × 0,95 = 102,6"
+    ],
+    "pistas": [
+      "Multiplica los factores; no sumes los porcentajes."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.2 Discounts, Markups, and Sales Tax"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-margen",
+    "subtema": "mf-descuentos",
+    "enunciado": "Una tienda compra un producto en USD 40 y aplica un margen de 35 % sobre el costo. ¿Cuál es el precio de venta?",
+    "datos": {
+      "C": 40,
+      "m": 0.35
+    },
+    "calculo": "C * (1 + m)",
+    "respuesta": 54,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Precio = 40 × 1,35 = 54"
+    ],
+    "pistas": [
+      "Un margen sobre el costo se suma al costo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.2 Discounts, Markups, and Sales Tax"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-tasa-real",
+    "subtema": "mf-inflacion-real",
+    "enunciado": "Un depósito paga 9 % anual y la inflación del año fue 3 %. ¿Cuál es la tasa real exacta?",
+    "datos": {
+      "i": 0.09,
+      "pi": 0.03
+    },
+    "calculo": "(1 + i) / (1 + pi) - 1",
+    "respuesta": 0.0583,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Tasa real = 1,09 ÷ 1,03 − 1",
+      "Tasa real = 0,0583 (5,83 %)"
+    ],
+    "pistas": [
+      "Divide los factores de crecimiento y resta 1."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "7.4 Applications of TVM in Finance"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-regla-72",
+    "subtema": "mf-inflacion-real",
+    "enunciado": "Con la regla del 72, ¿en cuántos años aproximadamente se duplica una inversión que rinde 6 % anual?",
+    "datos": {
+      "t": 6
+    },
+    "calculo": "72 / t",
+    "respuesta": 12,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Años ≈ 72 ÷ 6 = 12"
+    ],
+    "pistas": [
+      "Divide 72 para la tasa expresada en porcentaje."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "7.4 Applications of TVM in Finance"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-fondo-casa",
+    "subtema": "mf-fondo-ahorro",
+    "formula": "vf-anualidad-vencida",
+    "enunciado": "Una pareja quiere reunir USD 6.000 para la entrada de una casa en 36 meses. Si la cuenta paga 0,5 % mensual, ¿cuánto deben depositar al final de cada mes?",
+    "datos": {
+      "VF": 6000,
+      "i": 0.005,
+      "n": 36
+    },
+    "calculo": "VF * i / ((1 + i) ^ n - 1)",
+    "respuesta": 152.53,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,005 elevado a 36 = 1,196681",
+      "A = 6.000 × 0,005 ÷ (1,196681 − 1) = 152,53"
+    ],
+    "pistas": [
+      "Despeja el pago del valor futuro de una anualidad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.6 Methods of Savings"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-fondo-maquina",
+    "subtema": "mf-fondo-ahorro",
+    "formula": "vf-anualidad-vencida",
+    "enunciado": "Un taller necesita USD 10.000 dentro de 24 meses para reponer una máquina. Con una tasa de 1 % mensual, ¿cuánto debe ahorrar cada mes?",
+    "datos": {
+      "VF": 10000,
+      "i": 0.01,
+      "n": 24
+    },
+    "calculo": "VF * i / ((1 + i) ^ n - 1)",
+    "respuesta": 370.73,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "1,01 elevado a 24 = 1,269735",
+      "A = 10.000 × 0,01 ÷ (1,269735 − 1) = 370,73"
+    ],
+    "pistas": [
+      "Es un fondo de amortización: meta futura con depósitos iguales."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.6 Methods of Savings"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-saldo-promedio",
+    "subtema": "mf-tarjetas",
+    "enunciado": "En un ciclo de 30 días, una tarjeta tuvo un saldo de USD 500 durante 10 días y de USD 800 durante 20 días. ¿Cuál es el saldo promedio diario?",
+    "datos": {
+      "s": [
+        500,
+        800
+      ],
+      "d": [
+        10,
+        20
+      ]
+    },
+    "calculo": "SUMPRODUCT(s, d) / SUM(d)",
+    "respuesta": 700,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Σ(saldo × días) = 5.000 + 16.000 = 21.000",
+      "Saldo promedio = 21.000 ÷ 30 = 700"
+    ],
+    "pistas": [
+      "Pondera cada saldo por los días que se mantuvo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.10 Credit Cards"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-interes-tarjeta",
+    "subtema": "mf-tarjetas",
+    "enunciado": "Con un saldo promedio diario de USD 850 durante un ciclo de 30 días y una tasa anual de 18 %, ¿cuánto interés cobra la tarjeta en el ciclo?",
+    "datos": {
+      "S": 850,
+      "i": 0.18,
+      "d": 30
+    },
+    "calculo": "S * i * d / 365",
+    "respuesta": 12.58,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Interés = 850 × 0,18 × 30 ÷ 365 = 12,58"
+    ],
+    "pistas": [
+      "Convierte la tasa anual a diaria dividiendo para 365."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "seccion": "6.10 Credit Cards"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-bono-bajo-par",
+    "subtema": "mf-bonos-valoracion",
+    "formula": "precio-bono",
+    "enunciado": "Un bono de valor nominal USD 1.000 paga un cupón anual de USD 40 y vence en 4 años. Si el mercado exige 6 % anual, ¿cuál es su precio?",
+    "datos": {
+      "C": 40,
+      "r": 0.06,
+      "n": 4,
+      "VN": 1000
+    },
+    "calculo": "C * (1 - (1 + r) ^ -n) / r + VN * (1 + r) ^ -n",
+    "respuesta": 930.7,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "VA de los cupones = 40 × 3,465106 = 138,60",
+      "VA del nominal = 1.000 × 0,792094 = 792,09",
+      "P = 138,60 + 792,09 = 930,69"
+    ],
+    "pistas": [
+      "Descuenta los cupones como anualidad y el nominal como pago único."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "10.2 Bond Valuation"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mf-bono-semestral",
+    "subtema": "mf-bonos-valoracion",
+    "formula": "precio-bono",
+    "enunciado": "Un bono de USD 1.000 paga cupones semestrales de USD 35 y vence en 5 años (10 semestres). Si el rendimiento exigido es 6 % anual (3 % semestral), ¿cuál es su precio?",
+    "datos": {
+      "C": 35,
+      "r": 0.03,
+      "n": 10,
+      "VN": 1000
+    },
+    "calculo": "C * (1 - (1 + r) ^ -n) / r + VN * (1 + r) ^ -n",
+    "respuesta": 1042.65,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "Con 10 semestres y 3 % semestral",
+      "P = VA de 10 cupones de 35 + VA de 1.000 = 1.042,65"
+    ],
+    "pistas": [
+      "Usa tasa y períodos semestrales."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pfin2",
+      "seccion": "10.2 Bond Valuation"
+    },
+    "materia": "matematica-financiera",
+    "actualizado_en": "2026-10-26"
   }
 ]

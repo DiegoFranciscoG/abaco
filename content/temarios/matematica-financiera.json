@@ -75,6 +75,27 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/8-4-stated-versus-effective-rates",
             "seccion": "8.4 Stated versus Effective Rates"
           }
+        },
+        {
+          "id": "mf-descuentos",
+          "nombre": "Porcentajes: descuentos y recargos sobre el precio",
+          "explicacion": "Muchas operaciones comerciales son porcentajes aplicados a un precio. Un descuento resta un porcentaje del precio original: precio final = precio × (1 − d). Un recargo o margen sobre el costo lo suma: precio de venta = costo × (1 + m). Cuando se aplican varios descuentos seguidos, se multiplican los factores; no se suman los porcentajes, porque cada descuento se calcula sobre el precio ya rebajado. Dominar estas operaciones es la base del interés, que también es un porcentaje aplicado en el tiempo.",
+          "ejemplo": "Una chaqueta de USD 120 tiene 10 % de descuento por temporada y 5 % adicional por pago en efectivo. El precio final es 120 × 0,90 × 0,95 = 102,6 dólares, es decir, un descuento total de 120 − 102,6 = 17,4 dólares, que equivale a 14,5 % y no al 15 % que resultaría de sumar los porcentajes.",
+          "puntos_clave": [
+            "Descuento: precio × (1 − d).",
+            "Recargo o margen: costo × (1 + m).",
+            "Los descuentos sucesivos se multiplican, no se suman."
+          ],
+          "errores_frecuentes": [
+            "Sumar descuentos sucesivos.",
+            "Confundir el margen sobre el costo con el margen sobre el precio de venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-2-discounts-markups-and-sales-tax",
+            "seccion": "6.2 Discounts, Markups, and Sales Tax"
+          }
         }
       ]
     },
@@ -143,6 +164,27 @@
             "ref": "os-pfin2",
             "url": "https://openstax.org/books/principles-finance-2e/pages/8-5-equal-payments-with-a-financial-calculator-and-excel",
             "seccion": "8.5 Equal Payments with a Financial Calculator and Excel"
+          }
+        },
+        {
+          "id": "mf-inflacion-real",
+          "nombre": "Inflación, tasa real y regla del 72",
+          "explicacion": "La inflación reduce el poder de compra del dinero: con la misma cantidad se compran menos bienes. Por eso la tasa de interés nominal que paga un depósito no es lo que realmente se gana; la tasa real descuenta la inflación: (1 + i) ÷ (1 + π) − 1, que de forma aproximada es i − π. La regla del 72 permite estimar rápido cuántos años tarda en duplicarse un monto: 72 ÷ tasa en porcentaje. Sirve tanto para el crecimiento de una inversión como para ver en cuánto tiempo los precios se duplican con cierta inflación.",
+          "ejemplo": "Un depósito paga 7 % anual y la inflación anual es 1,34 %. La tasa real es 1,07 ÷ 1,0134 − 1 = 0,0559, es decir, 5,59 %. Con la regla del 72, un monto que crece 6 % anual se duplica en unos 72 ÷ 6 = 12 años.",
+          "puntos_clave": [
+            "Tasa real = (1 + i) ÷ (1 + π) − 1.",
+            "Aproximación: tasa real ≈ i − π.",
+            "Regla del 72: años para duplicar ≈ 72 ÷ tasa en %."
+          ],
+          "errores_frecuentes": [
+            "Comparar rendimientos nominales sin descontar la inflación.",
+            "Usar la regla del 72 con tasas muy altas, donde pierde precisión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/7-4-applications-of-tvm-in-finance",
+            "seccion": "7.4 Applications of TVM in Finance"
           }
         }
       ]
@@ -219,6 +261,29 @@
             "url": "https://openstax.org/books/principles-finance-2e/pages/8-1-perpetuities",
             "seccion": "8.1 Perpetuities"
           }
+        },
+        {
+          "id": "mf-fondo-ahorro",
+          "nombre": "Fondo de ahorro: cuánto depositar para llegar a una meta",
+          "explicacion": "Cuando se quiere reunir una suma en el futuro con depósitos iguales, se usa el valor futuro de una anualidad: VF = A × [(1 + i)ⁿ − 1] ÷ i. Despejando A se obtiene el depósito periódico necesario: A = VF × i ÷ [(1 + i)ⁿ − 1]. Es la lógica de un fondo para la entrada de una casa, para reponer una máquina o para pagar una deuda al vencimiento. Cuanto antes se empieza y más alta es la tasa, menor es el depósito.",
+          "ejemplo": "Para reunir USD 6.000 en 36 meses en una cuenta que paga 0,5 % mensual, el depósito mensual es 6.000 × 0,005 ÷ (1,196681 − 1) = 152,53 dólares, porque 1,005 elevado a 36 es 1,196681.",
+          "puntos_clave": [
+            "VF de una anualidad vencida: A × [(1 + i)ⁿ − 1] ÷ i.",
+            "Depósito necesario: VF × i ÷ [(1 + i)ⁿ − 1].",
+            "Los intereses reducen lo que hay que depositar."
+          ],
+          "errores_frecuentes": [
+            "Dividir la meta para el número de meses sin considerar los intereses.",
+            "Usar la tasa anual con períodos mensuales."
+          ],
+          "formulas": [
+            "vf-anualidad-vencida"
+          ],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-6-methods-of-savings",
+            "seccion": "6.6 Methods of Savings"
+          }
         }
       ]
     },
@@ -292,6 +357,215 @@
             "ref": "os-pfin",
             "url": "https://openstax.org/books/principles-finance/pages/8-3-loan-amortization",
             "seccion": "8.3 Amortización de préstamos"
+          }
+        },
+        {
+          "id": "mf-tarjetas",
+          "nombre": "Tarjetas de crédito: saldo promedio diario e intereses",
+          "explicacion": "Las tarjetas de crédito cobran intereses sobre el saldo que no se paga a tiempo. Un método habitual es el del saldo promedio diario: se suma el saldo de cada día del ciclo de facturación y se divide para el número de días; el interés del ciclo es ese saldo promedio por la tasa anual dividida para 365 por los días del ciclo. Pagar solo el mínimo alarga la deuda y multiplica los intereses. Por eso conviene pagar el total del estado de cuenta o, al menos, mucho más que el mínimo.",
+          "ejemplo": "En un ciclo de 30 días, una tarjeta tuvo un saldo de USD 500 durante 10 días y de USD 800 durante 20 días. El saldo promedio diario es (500 × 10 + 800 × 20) ÷ 30 = 700 dólares. Con una tasa anual de 24 %, el interés del ciclo es 700 × 0,24 × 30 ÷ 365 = 13,81 dólares.",
+          "puntos_clave": [
+            "Saldo promedio diario = Σ(saldo × días) ÷ días del ciclo.",
+            "Interés = saldo promedio × tasa anual × días ÷ 365.",
+            "Pagar solo el mínimo encarece mucho la deuda."
+          ],
+          "errores_frecuentes": [
+            "Calcular el interés sobre el saldo final del ciclo.",
+            "Creer que pagar el mínimo evita los intereses."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-10-credit-cards",
+            "seccion": "6.10 Credit Cards"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mf-bonos",
+      "nombre": "Bonos y tasas de interés",
+      "orden": 5,
+      "descripcion": "Características de los bonos, valoración, curva de rendimiento y riesgos de tasa e incumplimiento.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mf-bonos-caracteristicas",
+          "nombre": "Qué es un bono y cuáles son sus elementos",
+          "explicacion": "Un bono es un título de deuda: el emisor (una empresa o el Estado) recibe dinero hoy y se compromete a pagar intereses periódicos, llamados cupones, y a devolver el valor nominal en la fecha de vencimiento. Sus elementos son el valor nominal, la tasa de cupón (que fija el monto de cada cupón), la frecuencia de pago, el plazo y la calificación de riesgo del emisor. Quien compra el bono es acreedor del emisor, no dueño; por eso su ingreso es fijo, a diferencia del de un accionista.",
+          "ejemplo": "Un bono corporativo de valor nominal USD 1.000 con cupón de 8 % anual pagadero cada semestre entrega 1.000 × 0,08 ÷ 2 = 40 dólares cada seis meses, y al vencimiento devuelve los USD 1.000.",
+          "puntos_clave": [
+            "Cupón = valor nominal × tasa de cupón ÷ pagos por año.",
+            "El bonista es acreedor, no dueño.",
+            "Al vencimiento se devuelve el valor nominal."
+          ],
+          "errores_frecuentes": [
+            "Confundir la tasa de cupón con el rendimiento que exige el mercado.",
+            "Pensar que un bono no tiene riesgo porque paga un monto fijo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/10-1-characteristics-of-bonds",
+            "seccion": "10.1 Characteristics of Bonds"
+          }
+        },
+        {
+          "id": "mf-bonos-valoracion",
+          "nombre": "Valoración de bonos",
+          "explicacion": "El precio de un bono es el valor actual de lo que promete pagar: los cupones, que forman una anualidad, y el valor nominal al vencimiento, descontados al rendimiento que exige el mercado para ese riesgo y plazo. Si el rendimiento exigido es igual a la tasa del cupón, el bono vale su nominal (a la par); si es menor, vale más (sobre la par); si es mayor, vale menos (bajo la par). En la hoja de cálculo se obtiene con la función VA.",
+          "ejemplo": "Un bono de USD 1.000 con cupón anual de USD 40 vence en 4 años y el mercado exige 6 %. Vale 40 × 3,465106 + 1.000 × 0,792094 = 930,70 dólares: como el mercado exige más que el cupón, se vende bajo la par.",
+          "puntos_clave": [
+            "Precio = VA de los cupones + VA del valor nominal.",
+            "Rendimiento > cupón: el bono vale menos que su nominal.",
+            "En Excel: =VA(rendimiento;períodos;−cupón;−nominal)."
+          ],
+          "errores_frecuentes": [
+            "Descontar con la tasa del cupón en lugar del rendimiento exigido.",
+            "Olvidar ajustar tasa y períodos cuando los cupones son semestrales."
+          ],
+          "formulas": [
+            "precio-bono"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/10-2-bond-valuation",
+            "seccion": "10.2 Bond Valuation"
+          }
+        },
+        {
+          "id": "mf-curva-rendimiento",
+          "nombre": "La curva de rendimiento",
+          "explicacion": "La curva de rendimiento muestra los rendimientos de bonos de similar riesgo con distintos plazos de vencimiento. Normalmente tiene pendiente positiva: los plazos largos rinden más porque el inversionista asume más incertidumbre y espera ser compensado. Una curva plana o invertida (los plazos cortos rinden más que los largos) suele interpretarse como señal de que el mercado espera tasas más bajas o una desaceleración económica. Sirve para fijar el rendimiento exigido a un bono según su plazo.",
+          "ejemplo": "Si los bonos del Estado rinden 6 % a 2 años, 7,5 % a 5 años y 9 % a 10 años, la curva tiene pendiente positiva: entre el plazo de 2 años y el de 10 hay una diferencia de 9 − 6 = 3 puntos porcentuales.",
+          "puntos_clave": [
+            "Relaciona rendimiento y plazo para un mismo riesgo.",
+            "Pendiente positiva: lo más habitual.",
+            "Curva invertida: posible señal de desaceleración."
+          ],
+          "errores_frecuentes": [
+            "Comparar en la misma curva bonos de distinto riesgo.",
+            "Leer la curva como una predicción segura."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/10-3-using-the-yield-curve",
+            "seccion": "10.3 Using the Yield Curve"
+          }
+        },
+        {
+          "id": "mf-bonos-riesgos",
+          "nombre": "Riesgo de tasa de interés y riesgo de incumplimiento",
+          "explicacion": "El precio de un bono se mueve en sentido contrario a las tasas de interés: si las tasas del mercado suben, los bonos ya emitidos, con cupones más bajos, pierden valor; si bajan, ganan. Este riesgo de tasa es mayor cuanto más largo es el plazo. El riesgo de incumplimiento es la posibilidad de que el emisor no pague; las calificadoras lo resumen en notas, y a mayor riesgo el mercado exige un rendimiento más alto. La diferencia entre el rendimiento de un bono y el de uno sin riesgo de igual plazo se llama prima de riesgo.",
+          "ejemplo": "El bono del ejemplo anterior valía USD 1.043,29 con un rendimiento exigido de 5 %. Si el mercado pasa a exigir 6 %, su precio baja a unos USD 1.000, porque ahora el cupón de 6 % coincide con el rendimiento exigido. La pérdida de valor es de unos 1.043,29 − 1.000 = 43,29 dólares.",
+          "puntos_clave": [
+            "Tasas arriba, precios de los bonos abajo.",
+            "Los bonos de largo plazo son más sensibles a las tasas.",
+            "Más riesgo de incumplimiento exige más rendimiento."
+          ],
+          "errores_frecuentes": [
+            "Creer que el precio de un bono no cambia antes del vencimiento.",
+            "Elegir un bono solo por su cupón alto sin mirar la calificación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/10-4-risks-of-interest-rates-and-default",
+            "seccion": "10.4 Risks of Interest Rates and Default"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mf-personales",
+      "nombre": "Decisiones de finanzas personales",
+      "orden": 6,
+      "descripcion": "Presupuesto personal, inversiones, comprar o arrendar un auto y arrendar o comprar vivienda.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "mf-presupuesto-personal",
+          "nombre": "El presupuesto personal",
+          "explicacion": "Un presupuesto personal compara los ingresos del mes con los gastos fijos (arriendo, transporte, deudas), los variables (alimentación, ocio) y el ahorro. Su propósito es decidir a dónde va el dinero antes de gastarlo. Una regla práctica muy difundida reparte el ingreso en necesidades, deseos y ahorro, aunque cada persona ajusta los porcentajes a su realidad. Registrar los gastos reales durante algunos meses permite descubrir fugas y fijar metas de ahorro alcanzables.",
+          "ejemplo": "Una profesional gana USD 900 al mes y gasta 520 en necesidades y 220 en deseos. Le quedan 900 − 520 − 220 = 160 dólares para ahorro, es decir, 160 ÷ 900 = 0,18, casi 18 % de su ingreso.",
+          "puntos_clave": [
+            "Ingresos − gastos = capacidad de ahorro.",
+            "Separar gastos fijos y variables.",
+            "Registrar los gastos reales revela fugas."
+          ],
+          "errores_frecuentes": [
+            "Ahorrar solo lo que sobra al final del mes.",
+            "Olvidar gastos anuales, como matrículas o seguros, al hacer el presupuesto mensual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-5-making-a-personal-budget",
+            "seccion": "6.5 Making a Personal Budget"
+          }
+        },
+        {
+          "id": "mf-inversiones-personales",
+          "nombre": "Inversiones: acciones, bonos y fondos",
+          "explicacion": "Invertir es destinar dinero hoy esperando un rendimiento futuro. Las alternativas van de las cuentas y depósitos a plazo, con rendimiento bajo y riesgo bajo, a los bonos, las acciones y los fondos mutuos, que ofrecen rendimientos esperados más altos pero no garantizados. Un fondo mutuo reúne el dinero de muchos inversionistas para comprar muchas acciones o bonos a la vez, de modo que el resultado no depende de una sola empresa. El rendimiento de una inversión se mide como la ganancia sobre lo invertido, y conviene anualizarlo para comparar alternativas.",
+          "ejemplo": "Una persona invierte USD 2.000 en un fondo y al año recibe USD 2.180. Su rendimiento es (2.180 − 2.000) ÷ 2.000 = 0,09, es decir, 9 %. Si un depósito a plazo pagaba 6 %, la diferencia de 3 puntos es la compensación por el mayor riesgo del fondo.",
+          "puntos_clave": [
+            "Rendimiento sobre la inversión = ganancia ÷ inversión inicial.",
+            "Más rendimiento esperado suele implicar más riesgo.",
+            "Un fondo mutuo reparte el dinero entre muchos títulos."
+          ],
+          "errores_frecuentes": [
+            "Comparar rendimientos de plazos distintos sin anualizarlos.",
+            "Poner todo el ahorro en las acciones de una sola empresa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-7-investments",
+            "seccion": "6.7 Investments"
+          }
+        },
+        {
+          "id": "mf-auto",
+          "nombre": "Comprar o arrendar un auto",
+          "explicacion": "Al decidir cómo obtener un vehículo se comparan los costos totales de cada alternativa durante el mismo período. Comprar con crédito implica entrada, cuotas con intereses, seguros y mantenimiento, pero al final se conserva un bien que tiene valor de reventa. Arrendar implica pagos mensuales y condiciones de uso, y al final el auto se devuelve. La comparación correcta resta, en la compra, el valor de reventa esperado, y considera el costo de oportunidad del dinero de la entrada.",
+          "ejemplo": "Comprar un auto cuesta en 3 años USD 18.000 entre entrada y cuotas, y al final se podría vender en USD 9.500: costo neto 18.000 − 9.500 = 8.500 dólares. Arrendarlo cuesta 36 × 260 = 9.360 dólares. Comprar resulta 9.360 − 8.500 = 860 dólares más barato en ese plazo.",
+          "puntos_clave": [
+            "Comparar costos totales en el mismo plazo.",
+            "La reventa reduce el costo neto de comprar.",
+            "El arriendo no deja un bien al final."
+          ],
+          "errores_frecuentes": [
+            "Comparar solo las cuotas mensuales.",
+            "Olvidar seguros, mantenimiento y valor de reventa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-11-buying-or-leasing-a-car",
+            "seccion": "6.11 Buying or Leasing a Car"
+          }
+        },
+        {
+          "id": "mf-vivienda",
+          "nombre": "Arrendar o comprar vivienda",
+          "explicacion": "Comprar vivienda exige una entrada y un crédito hipotecario de largo plazo, además de impuestos prediales, mantenimiento y seguros; a cambio, se acumula patrimonio a medida que se paga el capital. Arrendar exige menos dinero inicial y da flexibilidad para mudarse, pero el pago no construye patrimonio. La decisión depende del tiempo que se piensa vivir en el lugar, de la estabilidad del ingreso y de cuánto representa la cuota frente al ingreso: una cuota muy alta deja a la familia sin margen ante imprevistos.",
+          "ejemplo": "Una familia con ingreso mensual de USD 1.800 evalúa una cuota hipotecaria de USD 540. La cuota representa 540 ÷ 1.800 = 0,3, es decir, 30 % del ingreso, por lo que le queda un margen de 1.800 − 540 = 1.260 dólares para los demás gastos.",
+          "puntos_clave": [
+            "Comprar construye patrimonio; arrendar da flexibilidad.",
+            "Sumar todos los costos de ser propietario.",
+            "La cuota no debe comprometer todo el ingreso."
+          ],
+          "errores_frecuentes": [
+            "Comparar el arriendo solo con la cuota del crédito.",
+            "Endeudarse a un plazo largo sin un fondo de emergencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/6-12-renting-and-homeownership",
+            "seccion": "6.12 Renting and Homeownership"
           }
         }
       ]

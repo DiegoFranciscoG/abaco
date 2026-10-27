@@ -6893,5 +6893,92 @@
     "notas": [],
     "actualizado_en": "2026-10-26",
     "estado": "verificada"
+  },
+  {
+    "id": "precio-bono",
+    "nombre": "Precio de un bono con cupón fijo",
+    "categoria": "valor-dinero",
+    "materias": [
+      "matematica-financiera",
+      "finanzas-corporativas"
+    ],
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Valor actual de los cupones (una anualidad) más el valor actual del valor nominal que se devuelve al vencimiento, descontados al rendimiento que exige el mercado.",
+    "latex": "P = C\\cdot\\frac{1-(1+r)^{-n}}{r} + \\frac{VN}{(1+r)^{n}}",
+    "variables": [
+      {
+        "simbolo": "P",
+        "nombre": "P",
+        "significado": "Precio del bono",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Cupón por período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "r",
+        "nombre": "r",
+        "significado": "Rendimiento exigido por período",
+        "unidad": "por período"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Períodos hasta el vencimiento",
+        "unidad": "períodos"
+      },
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Valor nominal que se paga al vencimiento",
+        "unidad": "USD"
+      }
+    ],
+    "supuestos": [
+      "Cupones iguales al final de cada período, sin incumplimiento y con el rendimiento constante hasta el vencimiento."
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "C * (1 - (1 + r) ^ -n) / r + VN * (1 + r) ^ -n"
+    },
+    "excel": {
+      "es": "=VA(r;n;-C;-VN)",
+      "en": "=PV(r,n,-C,-VN)"
+    },
+    "ejemplo": {
+      "enunciado": "Un bono de valor nominal USD 1.000 paga un cupón anual de 6 % (USD 60) y vence en 5 años. Si el mercado exige 5 % anual, ¿cuánto vale hoy?",
+      "entradas": {
+        "C": 60,
+        "r": 0.05,
+        "n": 5,
+        "VN": 1000
+      },
+      "pasos": [
+        "VA de los cupones = 60 × 4,329477 = 259,77",
+        "VA del nominal = 1.000 × 0,783526 = 783,53",
+        "P = 259,77 + 783,53 = 1.043,30"
+      ],
+      "resultado": 1043.29,
+      "unidad": "USD",
+      "tolerancia": 0.02,
+      "excel_es": "=VA(0,05;5;-60;-1000)",
+      "excel_en": "=PV(0.05,5,-60,-1000)"
+    },
+    "notas": [
+      "Si el rendimiento exigido es menor que la tasa del cupón, el bono se vende sobre la par (más de su valor nominal)."
+    ],
+    "estado": "verificada",
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/10-2-bond-valuation",
+      "seccion": "10.2 Bond Valuation"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]
