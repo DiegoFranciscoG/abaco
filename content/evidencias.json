@@ -4113,5 +4113,183 @@
       "debe ser informado clara, precisa y satisfactoriamente",
       "el oferente debera informar sobre todos los requisitos, condiciones y restricciones"
     ]
+  },
+  {
+    "id": "pm-niveles",
+    "palabras": [
+      "products are tangible items",
+      "services are intangible solutions",
+      "core product",
+      "actual product",
+      "augmented product"
+    ]
+  },
+  {
+    "id": "pm-clasificacion",
+    "palabras": [
+      "convenience products",
+      "shopping products",
+      "specialty products",
+      "unsought products",
+      "industrial products"
+    ]
+  },
+  {
+    "id": "pm-lineas-mezcla",
+    "palabras": [
+      "product item",
+      "product line is a set of products that are similar or complementary",
+      "product mix contains all the products",
+      "line filling",
+      "cannibalize"
+    ]
+  },
+  {
+    "id": "pm-empaque",
+    "palabras": [
+      "package and label must represent the brand",
+      "protect the product",
+      "sensory experience"
+    ]
+  },
+  {
+    "id": "pm-introduccion",
+    "palabras": [
+      "rapid skimming strategy",
+      "slow skimming strategy",
+      "rapid penetration pricing strategy"
+    ]
+  },
+  {
+    "id": "pm-crecimiento",
+    "palabras": [
+      "growth stage is characterized by growing sales and increasing competition",
+      "first-mover advantage"
+    ]
+  },
+  {
+    "id": "pm-madurez",
+    "palabras": [
+      "maturity stage",
+      "market modification"
+    ]
+  },
+  {
+    "id": "pm-declive",
+    "palabras": [
+      "decline stage of the product life cycle is characterized by declining sales and profitability",
+      "divest"
+    ]
+  },
+  {
+    "id": "pm-desarrollo-marca",
+    "palabras": [
+      "line extensions",
+      "brand extensions",
+      "multibrands",
+      "new brands are an entirely different entity"
+    ]
+  },
+  {
+    "id": "pm-lealtad",
+    "palabras": [
+      "switchers are customers who continually change",
+      "shifting loyals",
+      "split loyals",
+      "hard-core loyals"
+    ]
+  },
+  {
+    "id": "pm-metricas-marca",
+    "palabras": [
+      "brand lift measures perception over time",
+      "brand engagement measures",
+      "brand preference measures"
+    ]
+  },
+  {
+    "id": "pm-extension-linea-ib",
+    "palabras": [
+      "new product",
+      "line extension",
+      "shelf space"
+    ]
+  },
+  {
+    "id": "pm-npd-etapas",
+    "palabras": [
+      "idea generation",
+      "idea screening",
+      "concept development and testing",
+      "business analysis",
+      "prototype",
+      "test-marketing",
+      "commercialization"
+    ]
+  },
+  {
+    "id": "pm-metricas-nuevos",
+    "palabras": [
+      "product metrics are quantifiable data",
+      "time to value",
+      "adoption rate",
+      "divide the number of new users by the total number of users",
+      "marketing roi"
+    ]
+  },
+  {
+    "id": "pm-exito-fracaso",
+    "palabras": [
+      "delivering unique benefits to users",
+      "planning before development",
+      "technological synergy",
+      "dollar shave club"
+    ]
+  },
+  {
+    "id": "pm-adopcion",
+    "palabras": [
+      "hierarchy of effects model",
+      "product awareness",
+      "product trial",
+      "innovators",
+      "early adopters",
+      "early majority",
+      "late majority",
+      "laggards"
+    ]
+  },
+  {
+    "id": "pm-precio-rol",
+    "palabras": [
+      "price refers to the exchange of something of value",
+      "psychology of pricing",
+      "price anchoring"
+    ]
+  },
+  {
+    "id": "pm-cinco-c",
+    "palabras": [
+      "cost, customers, channels of distribution, competition, and compatibility"
+    ]
+  },
+  {
+    "id": "pm-precio-nuevos",
+    "palabras": [
+      "price skimming",
+      "penetration pricing",
+      "leader pricing",
+      "loss leader",
+      "bundling"
+    ]
+  },
+  {
+    "id": "pm-precio-existentes",
+    "palabras": [
+      "product line pricing",
+      "captive product pricing",
+      "bundle pricing",
+      "odd-even pricing"
+    ]
   }
 ]

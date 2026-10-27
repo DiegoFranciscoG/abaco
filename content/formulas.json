@@ -7226,5 +7226,127 @@
     "notas": [],
     "actualizado_en": "2026-10-27",
     "estado": "verificada"
+  },
+  {
+    "id": "roi-marketing",
+    "nombre": "Retorno de la inversión en marketing",
+    "categoria": "marketing",
+    "materias": [
+      "producto-marca"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Rentabilidad de una inversión de marketing: ventas atribuidas menos costos de marketing, divididas para esos costos, en porcentaje.",
+    "latex": "ROI = \\frac{V - C}{C} \\times 100",
+    "variables": [
+      {
+        "simbolo": "V",
+        "nombre": "V",
+        "significado": "Ventas atribuidas al producto o campaña",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Costos de marketing",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(V - C) / C * 100"
+    },
+    "excel": {
+      "es": "=(V-C)/C*100",
+      "en": "=(V-C)/C*100"
+    },
+    "ejemplo": {
+      "enunciado": "El lanzamiento de un producto generó USD 100.000 en ventas y la campaña costó USD 20.000. ¿Cuál es el ROI de marketing?",
+      "entradas": {
+        "V": 100000,
+        "C": 20000
+      },
+      "pasos": [
+        "ROI = (100.000 − 20.000) ÷ 20.000 × 100",
+        "ROI = 400 %"
+      ],
+      "resultado": 400,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=(100000-20000)/20000*100",
+      "excel_en": "=(100000-20000)/20000*100"
+    },
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+      "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+    },
+    "supuestos": [],
+    "notas": [
+      "Así lo define la fuente; en la práctica conviene usar el margen y no las ventas brutas cuando se quiere medir utilidad."
+    ],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
+  },
+  {
+    "id": "tasa-adopcion",
+    "nombre": "Tasa de adopción de un producto",
+    "categoria": "marketing",
+    "materias": [
+      "producto-marca"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Proporción de usuarios nuevos sobre el total de usuarios de un producto, expresada en porcentaje.",
+    "latex": "TA = \\frac{N}{U} \\times 100",
+    "variables": [
+      {
+        "simbolo": "N",
+        "nombre": "N",
+        "significado": "Usuarios nuevos en el período",
+        "unidad": "usuarios"
+      },
+      {
+        "simbolo": "U",
+        "nombre": "U",
+        "significado": "Total de usuarios",
+        "unidad": "usuarios"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "N / U * 100"
+    },
+    "excel": {
+      "es": "=N/U*100",
+      "en": "=N/U*100"
+    },
+    "ejemplo": {
+      "enunciado": "Una aplicación tiene 5.000 usuarios y 1.250 se registraron este mes. ¿Cuál es la tasa de adopción del mes?",
+      "entradas": {
+        "N": 1250,
+        "U": 5000
+      },
+      "pasos": [
+        "TA = 1.250 ÷ 5.000 × 100",
+        "TA = 25 %"
+      ],
+      "resultado": 25,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=1250/5000*100",
+      "excel_en": "=1250/5000*100"
+    },
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+      "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-27",
+    "estado": "verificada"
   }
 ]

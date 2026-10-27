@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (27 completas de 27)
+## Estado por materia (28 completas de 28)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -40,6 +40,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Cálculo diferencial | 2 de 7 | completa | 6 de 6 | 24 | 6 de 6 | 100 % | — |
 | Comportamiento organizacional | 2 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Legislación laboral | 2 de 7 | completa | 6 de 6 | 27 | 0 de 0 | 100 % | — |
+| Producto, marca y precio | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
 
 ## Mapa de repetición
 
@@ -76,6 +77,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Unidad de Integración Curricular (práctica o titulación) | 3 | 3 | 7 | no aplica |
 | Comportamiento Organizacional | 2 | 4 | 4 | Comportamiento organizacional |
 | Derecho Laboral | 2 | 4 | 2 | Legislación laboral |
+| Branding | 2 | 3 | 4 | Producto, marca y precio |
 | Finanzas Públicas | 2 | 3 | 8 | pendiente |
 | Análisis Multivariante | 2 | 2 | 4 | pendiente |
 | Auditoría de Gestión | 2 | 2 | 5 | pendiente |
@@ -130,10 +132,10 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Diseño para Marketing, Pensamiento Creativo y Desing Thinking.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Estrategia Competitiva, Planificación Estratégica.
-- **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Diseño Gráfico y Digital con IA, Estrategia Comunicacional y Redaccion Creativa, Marca personal, Marco Legal del Marketing y Ciberseguridad, Marketing Sostenible, Metodos Cuantitativos.
-- **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades) · pendientes: Business English, Businness Intelligence, Diseño de Productos 3D+RA, Neuroventas y Negociación.
-- **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Branding, Creatividad Integral y Digital, Diseño Publicitario, Estrategia de Precio, Estrategia de Producto, Gestión Logística.
-- **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Business Intelligence y Big Data, Campañas Publicitarias, Distribución Comercial y Merchandising, Gerencia de Ventas, Politica y Fijación de Precios, Propiedad Intelectual, Publicidad ATL y BTL, Técnicas de Ventas.
+- **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Diseño Gráfico y Digital con IA, Estrategia Comunicacional y Redaccion Creativa, Marco Legal del Marketing y Ciberseguridad, Marketing Sostenible, Metodos Cuantitativos.
+- **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades) · pendientes: Business English, Businness Intelligence, Neuroventas y Negociación.
+- **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Creatividad Integral y Digital, Diseño Publicitario, Gestión Logística.
+- **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Business Intelligence y Big Data, Campañas Publicitarias, Distribución Comercial y Merchandising, Gerencia de Ventas, Propiedad Intelectual, Publicidad ATL y BTL, Técnicas de Ventas.
 - **7.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Dirección de Ventas, Gerencia de Distribución, Marketing Promocional, Modelos de Simulación.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Marketing Politico, Publicidad y Análisis de Medios.
 
@@ -167,7 +169,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Big Data y Analítica para Toma de Decisiones, Desarrollo de Habilidades Blandas 4: Liderazgo Emprendedor, Gestión de Equipos y Manejo de Conflictos, Gestión de Operaciones.
 - **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Gestión de la Producción.
 - **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Desarrollo de Habilidades Blandas 6: Negociación, Ventas Relacionales y Networking Básico, Supply Chain Management.
-- **7.º ciclo**: ninguna materia en ÁBACO · pendientes: Business English, Desarrollo de Habilidades Blandas 7: Pitch, Storytelling y Adaptabilidad al Cambio, Dirección Estratégica, Gestión de Marca para el Emprendimiento, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
+- **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Business English, Desarrollo de Habilidades Blandas 7: Pitch, Storytelling y Adaptabilidad al Cambio, Dirección Estratégica, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Estrategias de Negociación y Networking.
 
 ## Meta: primer ciclo de las cuatro carreras con más planes

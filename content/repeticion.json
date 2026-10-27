@@ -232,6 +232,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Branding",
+    "carreras": 2,
+    "planes": 3,
+    "ciclo_habitual": 4,
+    "materia": "producto-marca",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Finanzas Públicas",
     "carreras": 2,
     "planes": 3,

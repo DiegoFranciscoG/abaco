@@ -575,5 +575,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "producto-marca",
+    "nombre": "Producto, marca y precio",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Niveles y clases de producto, ciclo de vida, desarrollo de marca y lealtad, nuevos productos con sus métricas y estrategias de precio.",
+    "sinonimos": [
+      "branding",
+      "estrategia de producto",
+      "estrategia de precio",
+      "política y fijación de precios",
+      "marca personal",
+      "gestión de marca",
+      "diseño de productos"
+    ],
+    "herramientas": [
+      "foda",
+      "tarjetas",
+      "estadistica"
+    ],
+    "orden": 28,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

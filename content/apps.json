@@ -567,5 +567,25 @@
     ],
     "url_oficial": "https://marketingplatform.google.com/about/analytics/",
     "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "inkscape",
+    "nombre": "Inkscape",
+    "para_que": "Editor libre de gráficos vectoriales para diseñar logotipos, etiquetas, empaques y piezas publicitarias.",
+    "materias": [
+      "producto-marca"
+    ],
+    "areas": [
+      "gestion",
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://inkscape.org/",
+    "fecha_consulta": "2026-10-27"
   }
 ]

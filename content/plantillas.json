@@ -1332,5 +1332,61 @@
       "seccion": "8.4 Web Analytics"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "metricas-nuevo-producto",
+    "nombre": "Métricas de un nuevo producto: ROI y adopción",
+    "descripcion": "Calcula el ROI de marketing de dos campañas de lanzamiento y la tasa de adopción mensual de un producto a partir de ventas, costos y usuarios.",
+    "materias": [
+      "producto-marca"
+    ],
+    "celdas": {
+      "A1": "Concepto",
+      "B1": "Campaña 1",
+      "C1": "Campaña 2",
+      "A2": "Ventas atribuidas (USD)",
+      "B2": 100000,
+      "C2": 45000,
+      "A3": "Costo de marketing (USD)",
+      "B3": 20000,
+      "C3": 12000,
+      "A4": "ROI (%)",
+      "B4": "=(B2-B3)/B3*100",
+      "C4": "=(C2-C3)/C3*100",
+      "A6": "Usuarios totales",
+      "B6": 12000,
+      "A7": "Usuarios nuevos del mes",
+      "B7": 1800,
+      "A8": "Tasa de adopción (%)",
+      "B8": "=B7/B6*100"
+    },
+    "formatos": {
+      "B4": "numero",
+      "C4": "numero",
+      "B8": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B4",
+        "esperado": 400,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C4",
+        "esperado": 275,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B8",
+        "esperado": 15,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+      "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

@@ -984,6 +984,17 @@
         "planes": 1
       },
       {
+        "materia": "producto-marca",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
         "materia": "finanzas-corporativas",
         "ciclo": 4,
         "ciclos": [
@@ -1068,11 +1079,6 @@
         "planes": 1
       },
       {
-        "nombre": "Marca personal",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
         "nombre": "Marco Legal del Marketing y Ciberseguridad",
         "ciclo": 3,
         "planes": 1
@@ -1098,19 +1104,9 @@
         "planes": 1
       },
       {
-        "nombre": "Diseño de Productos 3D+RA",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
         "nombre": "Neuroventas y Negociación",
         "ciclo": 4,
         "planes": 1
-      },
-      {
-        "nombre": "Branding",
-        "ciclo": 5,
-        "planes": 2
       },
       {
         "nombre": "Creatividad Integral y Digital",
@@ -1119,16 +1115,6 @@
       },
       {
         "nombre": "Diseño Publicitario",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Estrategia de Precio",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Estrategia de Producto",
         "ciclo": 5,
         "planes": 1
       },
@@ -1154,11 +1140,6 @@
       },
       {
         "nombre": "Gerencia de Ventas",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Politica y Fijación de Precios",
         "ciclo": 6,
         "planes": 1
       },
@@ -1764,6 +1745,14 @@
         "planes": 1
       },
       {
+        "materia": "producto-marca",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "economia-internacional",
         "ciclo": 8,
         "ciclos": [
@@ -1860,11 +1849,6 @@
       },
       {
         "nombre": "Dirección Estratégica",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión de Marca para el Emprendimiento",
         "ciclo": 7,
         "planes": 1
       },

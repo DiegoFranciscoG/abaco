@@ -10005,5 +10005,94 @@
     },
     "materia": "marketing-digital",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pm-roi-lanzamiento",
+    "subtema": "pm-metricas-nuevos",
+    "formula": "roi-marketing",
+    "enunciado": "El lanzamiento de una nueva línea de snacks generó USD 45.000 en ventas y la campaña costó USD 12.000. ¿Cuál es el ROI de marketing?",
+    "datos": {
+      "V": 45000,
+      "C": 12000
+    },
+    "calculo": "(V - C) / C * 100",
+    "respuesta": 275,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "45.000 − 12.000 = 33.000",
+      "33.000 ÷ 12.000 = 2,75",
+      "ROI = 2,75 × 100 = 275"
+    ],
+    "pistas": [
+      "Resta los costos de las ventas y divide para los costos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+      "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+    },
+    "materia": "producto-marca",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pm-roi-negativo",
+    "subtema": "pm-metricas-nuevos",
+    "formula": "roi-marketing",
+    "enunciado": "Una campaña costó USD 8.000 y las ventas atribuidas fueron USD 6.800. ¿Cuál es el ROI de marketing?",
+    "datos": {
+      "V": 6800,
+      "C": 8000
+    },
+    "calculo": "(V - C) / C * 100",
+    "respuesta": -15,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "6.800 − 8.000 = −1.200",
+      "−1.200 ÷ 8.000 = −0,15",
+      "ROI = −15: la campaña no recuperó su costo"
+    ],
+    "pistas": [
+      "Un ROI negativo indica pérdida."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+      "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+    },
+    "materia": "producto-marca",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pm-adopcion-app",
+    "subtema": "pm-metricas-nuevos",
+    "formula": "tasa-adopcion",
+    "enunciado": "Una aplicación de delivery tiene 12.000 usuarios y 1.800 se registraron este mes. ¿Cuál es su tasa de adopción del mes?",
+    "datos": {
+      "N": 1800,
+      "U": 12000
+    },
+    "calculo": "N / U * 100",
+    "respuesta": 15,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "TA = 1.800 ÷ 12.000 × 100",
+      "TA = 15"
+    ],
+    "pistas": [
+      "Divide los usuarios nuevos para el total."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-mkt",
+      "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+      "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+    },
+    "materia": "producto-marca",
+    "actualizado_en": "2026-10-26"
   }
 ]

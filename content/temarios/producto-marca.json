@@ -1,0 +1,474 @@
+{
+  "materia": "producto-marca",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pm-producto",
+      "nombre": "El producto",
+      "orden": 1,
+      "descripcion": "Productos, servicios y experiencias; niveles y clasificación; líneas y mezcla; empaque y etiqueta.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "pm-niveles",
+          "nombre": "Productos, servicios, experiencias y niveles del producto",
+          "explicacion": "Los productos son bienes tangibles que se pueden ver, tocar, poseer y almacenar; los servicios son soluciones intangibles que no se pueden poseer ni guardar, y en ellos el cliente suele participar de la experiencia. Muchas compras combinan ambos en una experiencia producto-servicio, como un desayuno en un restaurante. Un producto tiene tres niveles: el producto básico, que es lo que el cliente realmente compra (comodidad, estatus, facilidad); el producto real, con sus características, marca, calidad, empaque y diseño, y el producto aumentado, con garantías, servicio al cliente y soporte.",
+          "ejemplo": "Quien compra una laptop para estudiar adquiere como producto básico la posibilidad de trabajar en cualquier lugar; el producto real es el equipo con su marca y diseño, y el aumentado incluye la garantía de dos años y la asistencia técnica.",
+          "puntos_clave": [
+            "Tangible frente a intangible.",
+            "Básico, real y aumentado.",
+            "La experiencia combina producto y servicio."
+          ],
+          "errores_frecuentes": [
+            "Competir solo en el producto real olvidando el aumentado.",
+            "Pensar que un servicio se puede almacenar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-1-products-services-and-experiences",
+            "seccion": "9.1 Products, Services, and Experiences"
+          }
+        },
+        {
+          "id": "pm-clasificacion",
+          "nombre": "Clasificación de los productos de consumo e industriales",
+          "explicacion": "Los productos se dividen en de consumo, que la persona compra para su uso, e industriales, que las empresas compran para producir otros bienes; la distinción cambia cómo se diseñan y venden. Los de consumo son de conveniencia (compras rápidas, habituales, de precio bajo y amplia distribución, como leche o jabón), de comparación (el cliente investiga calidad y precio), de especialidad (cualidades únicas por las que el cliente hace un esfuerzo especial, como joyas o autos de lujo) y no buscados (que el consumidor no piensa comprar, como una reparación de emergencia o servicios funerarios).",
+          "ejemplo": "Una panadería vende pan (conveniencia), una mueblería vende comedores que el cliente compara en varias tiendas (comparación), un taller artesanal vende guitarras hechas a mano por las que vienen de otras ciudades (especialidad).",
+          "puntos_clave": [
+            "Consumo frente a industrial.",
+            "Conveniencia, comparación, especialidad y no buscados.",
+            "La clase orienta precio, distribución y promoción."
+          ],
+          "errores_frecuentes": [
+            "Distribuir un producto de especialidad como si fuera de conveniencia.",
+            "Ignorar que un mismo bien puede ser industrial o de consumo según el comprador."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-1-products-services-and-experiences",
+            "seccion": "9.1 Products, Services, and Experiences"
+          }
+        },
+        {
+          "id": "pm-lineas-mezcla",
+          "nombre": "Artículo, línea y mezcla de productos",
+          "explicacion": "Un artículo es un bien concreto que vende la empresa; una línea de productos es un conjunto de productos similares o complementarios, y la mezcla de productos son todos los productos que vende. Organizar líneas y mezclas facilita la venta cruzada, hace más eficiente la publicidad y la logística y deja menos espacio a la competencia. Con el llenado de línea se agregan productos para que los competidores no entren; con la extensión de línea (stretching) se añaden líneas hacia arriba o hacia abajo del mercado. Si los productos son demasiado parecidos, pueden canibalizar las ventas del original.",
+          "ejemplo": "Una heladería tiene como artículo el helado de mora; su línea de helados incluye vainilla, chocolate y paila, y su mezcla agrega postres, bebidas y tortas heladas que se venden juntos en combos.",
+          "puntos_clave": [
+            "Artículo, línea y mezcla.",
+            "Llenado y extensión de línea.",
+            "Riesgo de canibalización."
+          ],
+          "errores_frecuentes": [
+            "Agregar variantes casi idénticas que se roban ventas.",
+            "Ampliar la mezcla sin capacidad de producción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-2-product-items-product-lines-and-product-mixes",
+            "seccion": "9.2 Product Items, Product Lines, and Product Mixes"
+          }
+        },
+        {
+          "id": "pm-empaque",
+          "nombre": "Empaque y etiqueta como herramientas de valor",
+          "explicacion": "El empaque y la etiqueta deben representar la marca. Aunque no son una de las 4P, están ligados al producto, sirven al punto de venta y funcionan como promoción. La función principal del empaque es contener y proteger el producto; después, diseñar un envase y una etiqueta que llamen la atención en la percha o en la tienda en línea. El consumidor ve el empaque antes que el producto: colores, tipografías, logotipos y materiales generan una experiencia sensorial que influye en la compra y le anticipan lo que encontrará dentro.",
+          "ejemplo": "Un productor de chocolate de Esmeraldas cambia su envoltura de plástico transparente por una caja de cartón con ilustraciones de la región e información del origen del cacao; el producto se distingue en la percha y justifica un precio mayor.",
+          "puntos_clave": [
+            "Proteger primero, atraer después.",
+            "Experiencia sensorial antes de la compra.",
+            "El empaque también comunica la marca."
+          ],
+          "errores_frecuentes": [
+            "Diseñar un empaque llamativo que no protege.",
+            "Usar un estilo que contradice el posicionamiento de la marca."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-7-creating-value-through-packaging-and-labeling",
+            "seccion": "9.7 Creating Value through Packaging and Labeling"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pm-ciclo-vida",
+      "nombre": "Estrategias en el ciclo de vida del producto",
+      "orden": 2,
+      "descripcion": "Qué hacer en la introducción, el crecimiento, la madurez y el declive de un producto.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pm-introduccion",
+          "nombre": "Introducción: descreme y penetración",
+          "explicacion": "La etapa de introducción busca dar a conocer el producto para que se pruebe, con una fuerte inversión en marketing; el precio es una herramienta para incentivar la prueba. El descreme rápido fija un precio alto con mucha publicidad y promoción para ganar participación rápido y frenar a los competidores; el descreme lento usa un precio alto con poca promoción cuando no se espera llegada de competidores. La penetración rápida fija un precio bajo para ganar volumen y participación con rapidez y lograr que los clientes cambien de marca; funciona en categorías con muchos competidores.",
+          "ejemplo": "Una marca de celulares lanza su modelo más avanzado a un precio alto con una gran campaña (descreme rápido); una nueva marca de agua embotellada entra con un precio menor al de sus rivales para ganar clientes (penetración).",
+          "puntos_clave": [
+            "Dar a conocer y lograr la prueba.",
+            "Descreme rápido y lento.",
+            "Penetración para ganar participación."
+          ],
+          "errores_frecuentes": [
+            "Usar descreme en un mercado lleno de sustitutos baratos.",
+            "Bajar el precio sin capacidad de atender el volumen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-4-marketing-strategies-at-each-stage-of-the-product-life-cycle",
+            "seccion": "9.4 Marketing Strategies at Each Stage of the Product Life Cycle"
+          }
+        },
+        {
+          "id": "pm-crecimiento",
+          "nombre": "Crecimiento",
+          "explicacion": "El crecimiento se caracteriza por ventas en aumento y más competencia. Es clave invertir en el producto y en la distribución para maximizar la participación y escalar rápido. Las marcas mejoran la calidad o agregan características según lo aprendido en la introducción y para defenderse de los competidores; quien tuvo la ventaja de ser el primero en el mercado verá aparecer imitadores, por lo que debe seguir mejorando.",
+          "ejemplo": "Una bebida energética que se vendía solo en Quito empieza a crecer: abre distribución en la Costa, lanza una versión sin azúcar y mejora su envase antes de que los imitadores se consoliden.",
+          "puntos_clave": [
+            "Ventas y competencia en aumento.",
+            "Inversión en producto y distribución.",
+            "Mejoras para defenderse de imitadores."
+          ],
+          "errores_frecuentes": [
+            "Confiarse en ser el primero.",
+            "Crecer sin asegurar la calidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-4-marketing-strategies-at-each-stage-of-the-product-life-cycle",
+            "seccion": "9.4 Marketing Strategies at Each Stage of the Product Life Cycle"
+          }
+        },
+        {
+          "id": "pm-madurez",
+          "nombre": "Madurez",
+          "explicacion": "La madurez es estable en utilidades, clientes y precios, pero obliga a defender la participación frente a la imitación y la innovación de los competidores. Una opción es la modificación del mercado, que extiende el producto a nuevos clientes, como cuando un cereal se posiciona para adultos mayores por sus beneficios para el corazón. También se puede modificar el producto o el marketing mix para renovar el interés.",
+          "ejemplo": "Una marca tradicional de avena, con ventas estables, lanza una campaña dirigida a deportistas y presenta una versión lista para beber: busca nuevos clientes sin abandonar a los actuales.",
+          "puntos_clave": [
+            "Estabilidad de ventas y precios.",
+            "Defensa de la participación.",
+            "Modificación del mercado o del producto."
+          ],
+          "errores_frecuentes": [
+            "Dejar de invertir porque el producto ya se vende solo.",
+            "Bajar precios sin diferenciar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-4-marketing-strategies-at-each-stage-of-the-product-life-cycle",
+            "seccion": "9.4 Marketing Strategies at Each Stage of the Product Life Cycle"
+          }
+        },
+        {
+          "id": "pm-declive",
+          "nombre": "Declive y retiro del producto",
+          "explicacion": "En el declive caen las ventas y la rentabilidad: el producto llegó al final de su vida y deja de ser una buena inversión. Las marcas reducen sus actividades a lo esencial y se preparan para deshacerse del activo, vendiéndolo o descontinuándolo para proteger el resto del portafolio.",
+          "ejemplo": "Un fabricante de reproductores de DVD reduce su publicidad, atiende solo a los distribuidores que aún piden y finalmente vende la línea a otra empresa para concentrarse en televisores inteligentes.",
+          "puntos_clave": [
+            "Caída de ventas y utilidades.",
+            "Reducir actividades a lo esencial.",
+            "Vender o descontinuar para proteger el portafolio."
+          ],
+          "errores_frecuentes": [
+            "Mantener por nostalgia un producto que pierde dinero.",
+            "Retirar un producto sin avisar a clientes y distribuidores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-4-marketing-strategies-at-each-stage-of-the-product-life-cycle",
+            "seccion": "9.4 Marketing Strategies at Each Stage of the Product Life Cycle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pm-marca",
+      "nombre": "Desarrollo y medición de la marca",
+      "orden": 3,
+      "descripcion": "Estrategias de desarrollo de marca, extensiones de línea, niveles de lealtad y métricas de marca.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pm-desarrollo-marca",
+          "nombre": "Estrategias de desarrollo de marca",
+          "explicacion": "Los productos nuevos se agregan a una marca según dos criterios: marca nueva o existente y categoría nueva o existente. Las extensiones de línea suman variantes a un producto y marca actuales, como nuevos sabores, con poco riesgo, aunque pueden saturar la línea. Las extensiones de marca llevan el nombre a una categoría nueva y aprovechan su reconocimiento, pero un producto inferior puede dañar a toda la marca. Las multimarcas son marcas distintas dentro de la misma categoría de la empresa, y las marcas nuevas son entidades separadas de la empresa madre, útiles cuando el producto es muy distinto, aunque costosas de mantener.",
+          "ejemplo": "Una marca de café molido lanza café en cápsulas (extensión de línea), luego galletas con su nombre (extensión de marca) y, para un público joven, una bebida de café frío con una marca totalmente nueva.",
+          "puntos_clave": [
+            "Extensión de línea y de marca.",
+            "Multimarcas.",
+            "Marcas nuevas para productos muy distintos."
+          ],
+          "errores_frecuentes": [
+            "Extender la marca a una categoría donde no tiene credibilidad.",
+            "Crear tantas variantes que confunden al cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-6-forms-of-brand-development-brand-loyalty-and-brand-metrics",
+            "seccion": "9.6 Forms of Brand Development, Brand Loyalty, and Brand Metrics"
+          }
+        },
+        {
+          "id": "pm-lealtad",
+          "nombre": "Niveles de lealtad a la marca",
+          "explicacion": "Los clientes leales compran la marca y la recomiendan, pero no todos son igual de leales. Hay cuatro categorías: los cambiantes (switchers), que cambian todo el tiempo por precio, conveniencia o novedad; los leales cambiantes (shifting loyals), fieles a una marca por un tiempo y luego a otra; los leales divididos (split loyals), que eligen entre dos o tres marcas de su conjunto de consideración, y los leales incondicionales (hard-core loyals), que casi siempre compran una sola marca, se preocupan menos por el precio y la recomiendan. Los programas de lealtad y la consistencia del producto ayudan a convertir a los divididos en incondicionales.",
+          "ejemplo": "Una cafetería detecta clientes que alternan entre tres cafeterías del barrio (leales divididos) y crea una tarjeta de sellos que regala el décimo café para atraerlos a comprar solo allí.",
+          "puntos_clave": [
+            "Cambiantes, leales cambiantes, divididos e incondicionales.",
+            "Los incondicionales recomiendan la marca.",
+            "Programas de lealtad para fidelizar."
+          ],
+          "errores_frecuentes": [
+            "Tratar a todos los clientes como si fueran igual de leales.",
+            "Descuidar a los clientes incondicionales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-6-forms-of-brand-development-brand-loyalty-and-brand-metrics",
+            "seccion": "9.6 Forms of Brand Development, Brand Loyalty, and Brand Metrics"
+          }
+        },
+        {
+          "id": "pm-metricas-marca",
+          "nombre": "Métricas de la marca",
+          "explicacion": "El sentimiento hacia una marca es difícil de medir, pero las empresas necesitan evaluarlo por lo que invierten en ella. El impulso de marca (brand lift) mide cambios de percepción con encuestas antes y después de una campaña; una mejor percepción no garantiza la compra. El compromiso con la marca (engagement) mide qué tan profundamente el cliente se identifica emocionalmente con ella, con métricas de redes, tiempo en el sitio, suscripciones o tasa de rebote. La preferencia de marca mide en qué grado se prefiere frente a otras de la categoría; es la que mejor predice las ventas porque se centra en el comportamiento.",
+          "ejemplo": "Antes de una campaña, 30 de cada 100 encuestados tienen buena opinión de una marca; después, 45 de cada 100. Ese aumento de 15 puntos es el impulso de marca, aunque luego hay que verificar si se tradujo en compras.",
+          "puntos_clave": [
+            "Impulso: percepción antes y después.",
+            "Compromiso: identificación emocional.",
+            "Preferencia: la que mejor predice ventas."
+          ],
+          "errores_frecuentes": [
+            "Confundir una mejor percepción con más ventas.",
+            "Medir solo seguidores en redes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/9-6-forms-of-brand-development-brand-loyalty-and-brand-metrics",
+            "seccion": "9.6 Forms of Brand Development, Brand Loyalty, and Brand Metrics"
+          }
+        },
+        {
+          "id": "pm-extension-linea-ib",
+          "nombre": "Productos nuevos para la empresa y extensiones de línea",
+          "explicacion": "Un producto es nuevo para la organización cuando no ha vendido antes ese bien, aunque exista en el mercado, y entra en una categoría nueva para ella. Un nuevo sabor, tamaño o modelo bajo una marca existente en una categoría existente es una extensión de línea. Agregar modelos permite a las empresas ocupar más espacio en percha y reforzar el reconocimiento de la marca. Las empresas de servicios también desarrollan nuevos servicios a partir de la investigación de mercados o cambian los existentes.",
+          "ejemplo": "Una marca de yogur que solo vendía presentaciones de un litro lanza envases individuales y un sabor de maracuyá: son extensiones de línea que le dan más espacio en la percha del supermercado.",
+          "puntos_clave": [
+            "Nuevo para la empresa frente a nuevo para el mercado.",
+            "Extensión de línea: sabor, tamaño o modelo.",
+            "Más espacio en percha y reconocimiento."
+          ],
+          "errores_frecuentes": [
+            "Llamar innovación a cualquier cambio de empaque.",
+            "Extender la línea sin datos de demanda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/11-7-creating-products-that-deliver-value",
+            "seccion": "11.7 Creating Products That Deliver Value"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pm-nuevos",
+      "nombre": "Desarrollo y adopción de nuevos productos",
+      "orden": 4,
+      "descripcion": "Etapas del desarrollo, métricas como el ROI y la tasa de adopción, factores de éxito y proceso de adopción del consumidor.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pm-npd-etapas",
+          "nombre": "Etapas del desarrollo de nuevos productos",
+          "explicacion": "El desarrollo de nuevos productos sigue etapas: 1) generación de ideas, internas (investigación y desarrollo, investigación de mercados, empleados) o externas (clientes, proveedores, distribuidores, competidores); 2) filtrado y evaluación de ideas; 3) desarrollo y prueba del concepto: quién lo usará, qué beneficio da y cuándo se consume; 4) estrategia de mercado preliminar: público, posicionamiento, precio, distribución, promoción y metas; 5) análisis del negocio: ventas, costos y utilidad esperados; 6) desarrollo del producto con un prototipo; 7) prueba de mercado en pocas tiendas o regiones; 8) comercialización a gran escala, y 9) evaluación de resultados.",
+          "ejemplo": "Una empresa de lácteos piensa en un yogur en polvo alto en proteína: filtra la idea, prueba el concepto con deportistas, estima ventas y costos, fabrica un prototipo, lo vende solo en Cuenca durante tres meses y, al ver buena respuesta, lo lanza a nivel nacional.",
+          "puntos_clave": [
+            "Nueve etapas, de la idea a la evaluación.",
+            "Prototipo y prueba de mercado antes del lanzamiento.",
+            "Cada etapa filtra para reducir costos."
+          ],
+          "errores_frecuentes": [
+            "Saltar la prueba de mercado.",
+            "Enamorarse de una idea sin análisis del negocio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/10-2-stages-of-the-new-product-development-process",
+            "seccion": "10.2 Stages of the New Product Development Process"
+          }
+        },
+        {
+          "id": "pm-metricas-nuevos",
+          "nombre": "Métricas de nuevos productos: ROI y tasa de adopción",
+          "explicacion": "Las métricas de producto son datos cuantificables que muestran si un producto nuevo tiene éxito, y los indicadores clave (KPI) fijan las metas a vigilar. Entre ellas están el gasto en investigación y desarrollo como porcentaje de las ventas, que se compara entre empresas del mismo sector; el tiempo hasta el valor, que mide cuánto tarda el usuario en percibir el valor del producto; la tasa de adopción, que divide los usuarios nuevos para el total de usuarios, y el retorno de la inversión (ROI) de marketing: ventas del producto menos costos de marketing, divididas para esos costos y multiplicadas por 100.",
+          "ejemplo": "Si las ventas crecieron USD 100.000 con el lanzamiento y la campaña costó USD 20.000, el ROI es (100.000 − 20.000) ÷ 20.000 × 100 = 400 %.",
+          "puntos_clave": [
+            "KPI para medir el éxito.",
+            "ROI = (ventas − costos) ÷ costos × 100.",
+            "Tasa de adopción = nuevos ÷ total de usuarios."
+          ],
+          "errores_frecuentes": [
+            "Comparar el gasto en I+D entre sectores distintos.",
+            "Atribuir al lanzamiento ventas que vienen de otras causas."
+          ],
+          "formulas": [
+            "roi-marketing",
+            "tasa-adopcion"
+          ],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/10-3-the-use-of-metrics-in-evaluating-new-products",
+            "seccion": "10.3 The Use of Metrics in Evaluating New Products"
+          }
+        },
+        {
+          "id": "pm-exito-fracaso",
+          "nombre": "Por qué triunfan o fracasan los nuevos productos",
+          "explicacion": "Al comparar lanzamientos exitosos y fallidos aparece un patrón. El primer factor es ofrecer beneficios únicos a los usuarios: los productos que solo imitan a la competencia («me too») rinden peor que los innovadores, que tienen varias veces más probabilidad de éxito. El segundo es planificar antes de desarrollar: definir el mercado objetivo, el concepto, las necesidades del cliente y los requisitos del producto antes de empezar. También ayuda la sinergia tecnológica, construir el producto sobre los recursos tecnológicos que la empresa ya domina, y la calidad. Un caso conocido es el de un club de afeitadoras por suscripción que detectó precios percibidos como altos y la incomodidad de comprar en tiendas, y creció vendiendo directamente en línea.",
+          "ejemplo": "Una empresa lanza un cargador solar portátil que carga más rápido que los existentes (beneficio único) y lo vende en línea a quienes viajan a zonas rurales, un segmento que sus competidores no atendían.",
+          "puntos_clave": [
+            "Beneficios únicos frente a productos «me too».",
+            "Planificar y definir el producto antes de desarrollarlo.",
+            "Sinergia tecnológica y calidad."
+          ],
+          "errores_frecuentes": [
+            "Lanzar un producto que solo imita al líder.",
+            "No escuchar al cliente antes del lanzamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/10-4-factors-contributing-to-the-success-or-failure-of-new-products",
+            "seccion": "10.4 Factors Contributing to the Success or Failure of New Products"
+          }
+        },
+        {
+          "id": "pm-adopcion",
+          "nombre": "Proceso de adopción y categorías de adoptantes",
+          "explicacion": "El consumidor atraviesa cinco etapas para adoptar un producto nuevo, conocidas como modelo de jerarquía de efectos: conocimiento de que existe, interés, evaluación, prueba (una muestra o una compra con garantía de devolución) y adopción o compra. Los adoptantes se agrupan en innovadores, que asumen riesgos y compran apenas sale el producto; adoptantes tempranos, líderes de opinión y el mejor público para las innovaciones; mayoría temprana, que observa a los anteriores; mayoría tardía y rezagados.",
+          "ejemplo": "Una nueva billetera digital primero se da a conocer en redes, luego publica tutoriales para generar interés, ofrece una recarga gratis para la prueba y se enfoca en estudiantes universitarios influyentes como adoptantes tempranos.",
+          "puntos_clave": [
+            "Conocimiento, interés, evaluación, prueba y adopción.",
+            "Innovadores y adoptantes tempranos.",
+            "Mayoría temprana, tardía y rezagados."
+          ],
+          "errores_frecuentes": [
+            "Dirigir el lanzamiento a los rezagados.",
+            "Olvidar facilitar la prueba del producto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/10-5-stages-in-the-consumer-adoption-process-for-new-products",
+            "seccion": "10.5 Stages in the Consumer Adoption Process for New Products"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pm-precio",
+      "nombre": "Estrategias de precio",
+      "orden": 5,
+      "descripcion": "Papel del precio y su psicología, las cinco C, estrategias para productos nuevos y tácticas para productos existentes.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pm-precio-rol",
+          "nombre": "El precio en la mezcla de marketing y su psicología",
+          "explicacion": "El precio es el valor que se intercambia entre comprador y vendedor y es una de las 4P. Es de las decisiones más difíciles porque afecta la percepción de valor del cliente y las utilidades de la empresa: un mal precio puede tener efectos inmediatos y graves. Debe vincularse al valor real y percibido, a la competencia, a los costos y a la política de descuentos. Además intervienen factores psicológicos, como el anclaje de precio: mostrar primero un precio alto de referencia hace que el precio real parezca más atractivo.",
+          "ejemplo": "Una tienda de electrónica muestra primero que un televisor «costaba USD 900» y luego lo ofrece en USD 699; el precio inicial funciona como ancla y el cliente percibe una gran oportunidad.",
+          "puntos_clave": [
+            "El precio determina ingresos y percepción de valor.",
+            "Valor real y percibido.",
+            "Anclaje y otros efectos psicológicos."
+          ],
+          "errores_frecuentes": [
+            "Fijar el precio solo sumando un margen al costo.",
+            "Usar anclas engañosas que violan la confianza del cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/12-1-pricing-and-its-role-in-the-marketing-mix",
+            "seccion": "12.1 Pricing and Its Role in the Marketing Mix"
+          }
+        },
+        {
+          "id": "pm-cinco-c",
+          "nombre": "Las cinco C del precio",
+          "explicacion": "Para fijar el mejor precio, el que da valor al comprador y maximiza la utilidad, se consideran cinco C: costo (fijo y variable), que es la base, aunque al comprador no le interesa cuánto cuesta producir; clientes, qué esperan pagar y cuánto están dispuestos a pagar; canales de distribución, que agregan márgenes; competencia, cuyos precios condicionan los propios, y compatibilidad, la coherencia del precio con los objetivos y el resto de la mezcla de marketing.",
+          "ejemplo": "Una marca de cerveza artesanal calcula su costo por botella, investiga cuánto paga su público en bares, suma el margen que pide el distribuidor, revisa el precio de las importadas y fija un precio coherente con su imagen premium.",
+          "puntos_clave": [
+            "Costo, clientes, canales, competencia y compatibilidad.",
+            "El costo es base, no el único criterio.",
+            "Coherencia con la estrategia."
+          ],
+          "errores_frecuentes": [
+            "Ignorar el margen de los intermediarios.",
+            "Fijar un precio que contradice el posicionamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/12-2-the-five-critical-cs-of-pricing",
+            "seccion": "12.2 The Five Critical Cs of Pricing"
+          }
+        },
+        {
+          "id": "pm-precio-nuevos",
+          "nombre": "Descreme, penetración, precio líder y paquetes",
+          "explicacion": "Para productos nuevos se usa el descreme de precios, que introduce el producto con un precio alto y lo baja con el tiempo a medida que entran competidores y más consumidores pueden comprarlo, o la penetración, que entra con un precio bajo para ganar mercado. Para productos establecidos también se usa el precio líder: vender un artículo conocido al costo o incluso por debajo (producto gancho o loss leader) para atraer clientes que comprarán otros productos, y la venta en paquete, que combina productos a un precio conjunto.",
+          "ejemplo": "Un supermercado vende el pollo asado casi al costo para atraer clientes los domingos (precio líder); ellos aprovechan para comprar bebidas y postres, donde el supermercado sí gana.",
+          "puntos_clave": [
+            "Descreme: alto y luego baja.",
+            "Penetración: bajo para ganar mercado.",
+            "Precio líder y paquetes."
+          ],
+          "errores_frecuentes": [
+            "Usar un producto gancho sin calcular la compra adicional esperada.",
+            "Descremar en un mercado muy sensible al precio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/11-9-pricing-strategies-and-future-trends",
+            "seccion": "11.9 Pricing Strategies and Future Trends"
+          }
+        },
+        {
+          "id": "pm-precio-existentes",
+          "nombre": "Tácticas de precio para productos existentes",
+          "explicacion": "Los precios de los productos existentes cambian a lo largo del ciclo de vida para mantener el valor y las utilidades. El precio por línea de productos asigna niveles de precio a distintas líneas para atender a varios segmentos. El precio cautivo vende un producto principal que exige comprar otro complementario, como la impresora y su tinta. El precio por paquete hace que comprar varios productos juntos cueste poco más que uno solo. El precio psicológico par-impar usa terminaciones como 19,95 para sugerir que el producto es más barato que 20.",
+          "ejemplo": "Un local de comida rápida vende la hamburguesa sola en USD 4,50 y el combo con papas y bebida en USD 5,99: el cliente siente que por poco más obtiene mucho más (paquete y precio impar).",
+          "puntos_clave": [
+            "Precio por línea de productos.",
+            "Precio cautivo.",
+            "Paquetes y precios par-impar."
+          ],
+          "errores_frecuentes": [
+            "Encarecer tanto el producto cautivo que el cliente se siente atrapado.",
+            "Armar paquetes con productos que nadie quiere."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-mkt",
+            "url": "https://openstax.org/books/principles-marketing/pages/12-5-pricing-strategies-and-tactics-for-existing-products",
+            "seccion": "12.5 Pricing Strategies and Tactics for Existing Products"
+          }
+        }
+      ]
+    }
+  ]
+}
