@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/writing-guide/pages/12-1-introducing-research-and-research-evidence",
             "seccion": "12.1 Introducing Research and Research Evidence"
           }
+        },
+        {
+          "id": "mt-habilidades",
+          "nombre": "Habilidades clave del proceso de investigación",
+          "explicacion": "Investigar no es solo buscar: exige un conjunto de habilidades que se usan a lo largo de todo el proceso. Hay que formular preguntas precisas, ubicar fuentes pertinentes, evaluar su calidad, tomar notas ordenadas, sintetizar —es decir, relacionar ideas de distintas fuentes para construir algo propio— y citar correctamente. La síntesis es la habilidad que más distingue un trabajo de investigación de un resumen: no se trata de repetir lo que dice cada autor, sino de mostrar en qué coinciden, en qué difieren y qué falta por responder.",
+          "ejemplo": "Para un trabajo sobre el uso de billeteras digitales en Ecuador, una estudiante revisa 12 fuentes. En lugar de resumir cada una por separado, arma una tabla: 7 estudios coinciden en que la seguridad es la principal preocupación, 3 destacan el costo de las comisiones y 2 no tratan el tema. Esa comparación, 7 de 12 frente a 3 de 12, es su síntesis.",
+          "puntos_clave": [
+            "Preguntar, buscar, evaluar, anotar, sintetizar y citar.",
+            "La síntesis relaciona fuentes; el resumen solo las repite.",
+            "Las notas ordenadas ahorran tiempo al redactar."
+          ],
+          "errores_frecuentes": [
+            "Confundir un listado de resúmenes con una síntesis.",
+            "Empezar a buscar sin una pregunta clara."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/13-3-glance-at-the-research-process-key-skills",
+            "seccion": "13.3 Glance at the Research Process: Key Skills"
+          }
         }
       ]
     },
@@ -130,6 +151,27 @@
             "ref": "os-writing",
             "url": "https://openstax.org/books/writing-guide/pages/13-6-spotlight-on-ethical-research",
             "seccion": "13.6 Spotlight on … Ethical Research"
+          }
+        },
+        {
+          "id": "mt-sesgo",
+          "nombre": "Sesgo en el lenguaje y en la investigación",
+          "explicacion": "Un sesgo es una inclinación que distorsiona cómo se recoge, interpreta o presenta la información. Puede estar en la investigación (elegir solo las fuentes que confirman lo que uno ya cree, formular preguntas que inducen la respuesta) o en el lenguaje (términos que estereotipan a un grupo, que lo invisibilizan o que lo describen por un solo rasgo). Para reducirlo se buscan fuentes con distintas posturas, se revisan las propias suposiciones y se usa un lenguaje preciso, respetuoso e inclusivo.",
+          "ejemplo": "Una encuesta pregunta: «¿No cree que los impuestos son demasiado altos?». La forma de la pregunta empuja a responder que sí. Una versión neutral sería: «¿Cómo calificaría el nivel de impuestos: bajo, adecuado o alto?». Si con la primera versión el 80 % responde que sí y con la segunda solo el 52 % elige «alto», la diferencia de 80 − 52 = 28 puntos se debe al sesgo de la pregunta.",
+          "puntos_clave": [
+            "El sesgo puede entrar al elegir fuentes, al preguntar y al redactar.",
+            "Las preguntas sugerentes distorsionan los resultados.",
+            "El lenguaje preciso evita estereotipos."
+          ],
+          "errores_frecuentes": [
+            "Buscar solo evidencia que confirma la hipótesis.",
+            "Describir a las personas por un solo rasgo, como su edad o su origen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/12-8-spotlight-on-bias-in-language-and-research",
+            "seccion": "12.8 Spotlight on … Bias in Language and Research"
           }
         }
       ]
@@ -197,6 +239,27 @@
             "url": "https://openstax.org/books/writing-guide/pages/12-6-editing-focus-integrating-sources-and-quotations",
             "seccion": "12.6 Editing Focus: Integrating Sources and Quotations"
           }
+        },
+        {
+          "id": "mt-estilos-cita",
+          "nombre": "Estilos de citación: propósito y formato",
+          "explicacion": "Un estilo de citación es un conjunto de reglas para indicar de dónde viene cada idea, dato o cita. Los más usados son APA (ciencias sociales, economía y administración), MLA (humanidades) y Chicago (historia). Todos persiguen lo mismo: dar crédito a los autores, permitir que el lector encuentre la fuente y mostrar el rigor del trabajo. Lo importante es elegir el estilo que pide la institución o la revista y aplicarlo de forma consistente en todo el documento, tanto en las citas del texto como en la lista final.",
+          "ejemplo": "Un mismo artículo se cita en APA como (Pérez, 2024) dentro del texto y aparece en la lista de referencias ordenado por apellido. Si el trabajo tiene 25 referencias y 3 no siguen el formato, la revisión debe corregir 3 de 25, es decir, el 12 % de la lista: 3 ÷ 25 = 0,12.",
+          "puntos_clave": [
+            "Citar da crédito y permite verificar.",
+            "APA es el estilo habitual en ciencias económicas y administrativas.",
+            "La consistencia importa tanto como el estilo elegido."
+          ],
+          "errores_frecuentes": [
+            "Mezclar estilos en un mismo trabajo.",
+            "Citar en el texto fuentes que no aparecen en la lista final."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/14-2-glance-at-form-citation-style-purpose-and-formatting",
+            "seccion": "14.2 Glance at Form: Citation Style, Purpose, and Formatting"
+          }
         }
       ]
     },
@@ -262,6 +325,213 @@
             "ref": "os-est-es",
             "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-4-diseno-experimental-y-etica",
             "seccion": "1.4 Diseño experimental y ética"
+          }
+        },
+        {
+          "id": "mt-muestreo",
+          "nombre": "Muestreo: cómo elegir a quién estudiar",
+          "explicacion": "Casi nunca se puede estudiar a toda la población, así que se trabaja con una muestra. Para que la muestra represente a la población, conviene que sea aleatoria: en el muestreo aleatorio simple cada elemento tiene la misma probabilidad de ser elegido; en el estratificado se divide la población en grupos y se elige al azar dentro de cada uno; en el de conglomerados se eligen grupos completos al azar; en el sistemático se toma cada k-ésimo elemento de una lista. Las muestras por conveniencia (encuestar a quien está cerca) son baratas pero pueden estar muy sesgadas.",
+          "ejemplo": "Una universidad tiene 6.000 estudiantes: 3.600 en la mañana y 2.400 en la noche. Para una muestra estratificada de 300, toma 300 × 3.600 ÷ 6.000 = 180 de la mañana y 300 × 2.400 ÷ 6.000 = 120 de la noche, elegidos al azar dentro de cada jornada.",
+          "puntos_clave": [
+            "La muestra debe representar a la población.",
+            "Aleatorio simple, estratificado, por conglomerados y sistemático.",
+            "La conveniencia abarata, pero sesga."
+          ],
+          "errores_frecuentes": [
+            "Generalizar a toda la población con una muestra por conveniencia.",
+            "Confundir estratos (se muestrea dentro de cada uno) con conglomerados (se eligen grupos enteros)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/1-2-datos-muestreo-y-variacion-de-datos-y-muestreo",
+            "seccion": "1.2 Datos, muestreo y variación de datos y muestreo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mt-planteamiento",
+      "nombre": "Planteamiento del estudio",
+      "orden": 5,
+      "descripcion": "Problema, tesis y evidencia, estrategias de razonamiento y estudio de caso.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mt-problema",
+          "nombre": "Plantear el problema: hechos, opiniones y sesgos",
+          "explicacion": "Toda investigación parte de un problema bien delimitado: qué ocurre, a quién afecta, dónde y desde cuándo. Para plantearlo con pensamiento crítico hay que distinguir hechos (se pueden comprobar con datos) de opiniones (juicios o creencias) y reconocer los sesgos propios y de las fuentes. Un buen planteamiento describe el problema con evidencia, explica por qué importa y abre la puerta a evaluar soluciones posibles, sin presentar la respuesta como si ya estuviera decidida.",
+          "ejemplo": "«Los jóvenes no ahorran porque no quieren» es una opinión. «En la encuesta de un cantón, 62 de cada 100 jóvenes de 18 a 24 años no tienen cuenta de ahorro» es un hecho verificable. A partir de ese dato se plantea el problema: ¿qué factores explican que 62 % no ahorre en el sistema financiero?",
+          "puntos_clave": [
+            "Un problema se delimita en qué, quién, dónde y cuándo.",
+            "Los hechos se verifican; las opiniones se argumentan.",
+            "El planteamiento no anticipa la respuesta."
+          ],
+          "errores_frecuentes": [
+            "Plantear un tema demasiado amplio para investigarlo.",
+            "Presentar opiniones como si fueran datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/6-1-proposing-change-thinking-critically-about-problems-and-solutions",
+            "seccion": "6.1 Proposing Change: Thinking Critically About Problems and Solutions"
+          }
+        },
+        {
+          "id": "mt-tesis",
+          "nombre": "Tesis, razonamiento y evidencia",
+          "explicacion": "La tesis es la afirmación central que el trabajo defiende o la respuesta que propone a la pregunta de investigación. Se sostiene con razonamientos, que conectan las ideas de manera lógica, y con evidencia: datos, estudios, casos o citas de expertos. Una tesis útil es concreta, discutible y demostrable con la evidencia disponible. En un trabajo académico, además, se reconocen las posturas contrarias y se explica por qué la evidencia favorece la propia.",
+          "ejemplo": "Tesis débil: «El comercio electrónico es importante». Tesis útil: «En las microempresas de Quito, vender por redes sociales aumentó las ventas más que abrir una tienda física en 2025». La segunda se puede demostrar comparando, por ejemplo, el crecimiento de 40 negocios que usaron redes con el de 40 que abrieron un local.",
+          "puntos_clave": [
+            "La tesis es la afirmación central del trabajo.",
+            "Razonamiento + evidencia sostienen la tesis.",
+            "Una buena tesis es concreta y discutible."
+          ],
+          "errores_frecuentes": [
+            "Escribir como tesis un tema o una obviedad.",
+            "Usar evidencia que no se relaciona con la tesis."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/10-3-glance-at-genre-thesis-reasoning-and-evidence",
+            "seccion": "10.3 Glance at Genre: Thesis, Reasoning, and Evidence"
+          }
+        },
+        {
+          "id": "mt-razonamiento",
+          "nombre": "Estrategias de razonamiento: definir, clasificar y comparar",
+          "explicacion": "Organizar el razonamiento ayuda a que el lector siga el argumento. Definir fija el significado de los conceptos clave para evitar ambigüedades. Clasificar y dividir agrupa los casos según criterios comunes. Comparar y contrastar muestra semejanzas y diferencias entre dos o más objetos de estudio. Analizar causas y efectos explica por qué ocurre algo. Elegir la estrategia adecuada depende de la pregunta: una pregunta sobre diferencias pide comparación; una sobre por qué, análisis causal.",
+          "ejemplo": "Un estudio sobre créditos para emprendedores define primero qué es microcrédito, clasifica a los 150 solicitantes por tipo de negocio (comercio, servicios y producción) y compara la tasa de aprobación entre grupos: si se aprobaron 45 de 75 créditos de comercio, la tasa es 45 ÷ 75 = 0,6, es decir, 60 %.",
+          "puntos_clave": [
+            "Definir evita ambigüedades.",
+            "Clasificar agrupa por criterios comunes.",
+            "Comparar muestra semejanzas y diferencias."
+          ],
+          "errores_frecuentes": [
+            "Comparar grupos con criterios distintos.",
+            "Usar conceptos clave sin definirlos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/11-1-developing-your-sense-of-logic",
+            "seccion": "11.1 Developing Your Sense of Logic"
+          }
+        },
+        {
+          "id": "mt-estudio-caso",
+          "nombre": "El estudio de caso: observar, describir y analizar",
+          "explicacion": "El estudio de caso examina en profundidad una persona, organización o situación para entender un fenómeno más amplio. Se apoya en la observación y en datos recogidos de varias formas (entrevistas, documentos, registros) y su informe suele tener una introducción con la pregunta, la descripción del caso y de los métodos, el análisis de lo observado y las conclusiones con sus límites. Su fortaleza es la profundidad; su debilidad, que un solo caso no permite generalizar sin cuidado.",
+          "ejemplo": "Para entender cómo una asociación de artesanos de Otavalo empezó a exportar, una investigadora entrevista a 8 socios, revisa sus registros de ventas y observa 3 ferias. Describe el caso, analiza qué decisiones fueron clave y advierte que sus conclusiones valen para asociaciones parecidas, no para todas las empresas.",
+          "puntos_clave": [
+            "Profundidad sobre un caso concreto.",
+            "Combina observación, entrevistas y documentos.",
+            "Sus conclusiones se generalizan con cautela."
+          ],
+          "errores_frecuentes": [
+            "Presentar un caso como prueba de una regla general.",
+            "Describir el caso sin analizarlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/15-3-glance-at-genre-observation-description-and-analysis",
+            "seccion": "15.3 Glance at Genre: Observation, Description, and Analysis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mt-informe",
+      "nombre": "Redacción del informe de investigación",
+      "orden": 6,
+      "descripcion": "Estructura del informe analítico, proceso de redacción, párrafos y transiciones, y lenguaje técnico.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mt-informe-estructura",
+          "nombre": "Informes analíticos formales e informales",
+          "explicacion": "Un informe analítico presenta información sobre un tema, la analiza y llega a conclusiones o recomendaciones. Los informales son breves y directos, como un memorando interno. Los formales tienen partes reconocibles: título, resumen, introducción con el propósito, desarrollo con los métodos y hallazgos, conclusiones, recomendaciones y referencias. La estructura depende del público y del propósito: un informe para la gerencia prioriza las recomendaciones; uno académico, el método y la evidencia.",
+          "ejemplo": "Una analista prepara un informe formal sobre la morosidad de una cooperativa: en la introducción plantea la pregunta, en los hallazgos muestra que la morosidad subió de 4 % a 6,5 %, un aumento de 6,5 − 4 = 2,5 puntos, y en las recomendaciones propone revisar los créditos de consumo.",
+          "puntos_clave": [
+            "Informar, analizar y concluir.",
+            "Formal: secciones reconocibles y referencias.",
+            "La estructura se adapta al público."
+          ],
+          "errores_frecuentes": [
+            "Presentar datos sin analizarlos.",
+            "Esconder las conclusiones al final de un texto largo sin resumen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/8-3-glance-at-genre-informal-and-formal-analytical-reports",
+            "seccion": "8.3 Glance at Genre: Informal and Formal Analytical Reports"
+          }
+        },
+        {
+          "id": "mt-informe-proceso",
+          "nombre": "El proceso de redacción del informe",
+          "explicacion": "Escribir un informe es un proceso por etapas: elegir y delimitar el tema, formular preguntas, investigar, redactar una tesis provisional, organizar la evidencia en un esquema, escribir un primer borrador, pedir revisión a compañeros y corregir. El primer borrador no tiene que ser perfecto: sirve para ordenar ideas. La revisión entre pares detecta saltos lógicos, evidencia débil o párrafos confusos que el autor no ve. Al final se edita el estilo y se comprueban citas y referencias.",
+          "ejemplo": "Un grupo planifica 4 semanas para su informe: semana 1, tema y preguntas; semana 2, investigación y esquema; semana 3, borrador y revisión de otro grupo; semana 4, correcciones y referencias. Si el borrador tiene 12 páginas y la revisión marca 3 párrafos confusos, los corrigen antes de entregar.",
+          "puntos_clave": [
+            "Planificar, investigar, redactar, revisar y editar.",
+            "El primer borrador ordena ideas; no es el final.",
+            "La revisión de pares mejora la claridad."
+          ],
+          "errores_frecuentes": [
+            "Escribir todo la noche anterior sin borradores.",
+            "Confundir revisar (contenido y lógica) con corregir ortografía."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/8-5-writing-process-creating-an-analytical-report",
+            "seccion": "8.5 Writing Process: Creating an Analytical Report"
+          }
+        },
+        {
+          "id": "mt-parrafos",
+          "nombre": "Párrafos y transiciones",
+          "explicacion": "Cada párrafo desarrolla una sola idea principal, que suele anunciarse en la primera oración y se sostiene con evidencia y explicación. Las transiciones son palabras o frases que conectan ideas y párrafos y le indican al lector la relación lógica: adición (además), contraste (sin embargo), causa (por lo tanto), secuencia (primero, luego, finalmente) o ejemplo (por ejemplo). Sin transiciones, un texto con buenas ideas se lee como una lista de afirmaciones sueltas.",
+          "ejemplo": "Sin transición: «Las ventas subieron 20 %. Los costos subieron 30 %». Con transición: «Las ventas subieron 20 %; sin embargo, los costos subieron 30 %, por lo que el margen se redujo». La segunda versión muestra la relación entre los dos datos: los costos crecieron 30 − 20 = 10 puntos más que las ventas.",
+          "puntos_clave": [
+            "Una idea principal por párrafo.",
+            "Las transiciones muestran relaciones lógicas.",
+            "La primera oración suele anunciar la idea del párrafo."
+          ],
+          "errores_frecuentes": [
+            "Párrafos con varias ideas sin relación.",
+            "Usar «sin embargo» cuando no hay contraste."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/10-6-editing-focus-paragraphs-and-transitions",
+            "seccion": "10.6 Editing Focus: Paragraphs and Transitions"
+          }
+        },
+        {
+          "id": "mt-lenguaje-tecnico",
+          "nombre": "Lenguaje técnico y propio de la disciplina",
+          "explicacion": "Cada disciplina usa términos con significado preciso: en contabilidad, «devengado» o «provisión»; en finanzas, «costo de oportunidad» o «tasa efectiva». Usarlos bien muestra dominio del tema, pero hay que definirlos cuando el público no es especializado. En los informes técnicos también importa la voz: la voz pasiva («se aplicó la encuesta») pone el foco en la acción y es común en métodos; la activa («el equipo aplicó la encuesta») es más clara y directa en el resto del texto.",
+          "ejemplo": "En un informe para la gerencia, en lugar de escribir solo «el VAN es positivo», la analista explica: «el valor actual neto, que compara lo que el proyecto genera con lo que cuesta en dinero de hoy, es de USD 12.400; como es mayor que 0, el proyecto crea valor».",
+          "puntos_clave": [
+            "Los términos técnicos aportan precisión.",
+            "Se definen cuando el público no es especialista.",
+            "Voz pasiva en métodos; activa para claridad."
+          ],
+          "errores_frecuentes": [
+            "Llenar el texto de jerga para parecer experto.",
+            "Usar un término técnico con un significado coloquial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-writing",
+            "url": "https://openstax.org/books/writing-guide/pages/8-8-spotlight-on-discipline-specific-and-technical-language",
+            "seccion": "8.8 Spotlight on … Discipline-Specific and Technical Language"
           }
         }
       ]

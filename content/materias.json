@@ -230,7 +230,7 @@
     ],
     "orden": 11,
     "cobertura": {
-      "estado": "parcial",
+      "estado": "completa",
       "unidades_objetivo": 6
     }
   },
@@ -333,7 +333,7 @@
     ],
     "orden": 16,
     "cobertura": {
-      "estado": "parcial",
+      "estado": "completa",
       "unidades_objetivo": 6
     }
   },
@@ -545,7 +545,7 @@
     ],
     "orden": 26,
     "cobertura": {
-      "estado": "parcial",
+      "estado": "completa",
       "unidades_objetivo": 6
     }
   }

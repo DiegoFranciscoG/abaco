@@ -68,6 +68,27 @@
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-2-data-sampling-and-variation-in-data-and-sampling",
             "seccion": "1.2 Datos, muestreo y variación"
           }
+        },
+        {
+          "id": "ed-datos-diseno",
+          "nombre": "Estudios observacionales, experimentos y ética",
+          "explicacion": "En un estudio observacional se registran datos sin intervenir; en un experimento el investigador asigna tratamientos para medir su efecto. En un experimento se distinguen la variable explicativa (lo que se manipula), la variable de respuesta (lo que se mide) y las variables ocultas que pueden confundir el resultado. La asignación aleatoria y los grupos de control reducen ese riesgo; el placebo y el ciego evitan que las expectativas influyan. Toda investigación con personas exige consentimiento informado y proteger su información.",
+          "ejemplo": "Una cadena de supermercados quiere saber si un nuevo exhibidor aumenta las ventas de café. Elige al azar 10 de sus 20 locales para instalarlo (tratamiento) y deja los otros 10 como control. Si las ventas suben 12 % en los locales con exhibidor y 3 % en los de control, el efecto atribuible es 12 − 3 = 9 puntos porcentuales.",
+          "puntos_clave": [
+            "Observar no es lo mismo que experimentar.",
+            "La asignación aleatoria y el grupo de control aíslan el efecto del tratamiento.",
+            "El consentimiento informado es obligatorio con personas."
+          ],
+          "errores_frecuentes": [
+            "Concluir causalidad a partir de un estudio observacional.",
+            "Elegir a mano los locales del tratamiento, lo que introduce sesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-4-experimental-design-and-ethics",
+            "seccion": "1.4 Experimental Design and Ethics"
+          }
         }
       ]
     },
@@ -135,6 +156,27 @@
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-4-box-plots",
             "seccion": "2.4 Diagramas de caja"
+          }
+        },
+        {
+          "id": "ed-graficos-barras",
+          "nombre": "Diagramas de tallo y hojas, de líneas y de barras",
+          "explicacion": "El diagrama de tallo y hojas divide cada dato en un tallo (las primeras cifras) y una hoja (la última) y muestra la forma de la distribución sin perder los valores. El gráfico de líneas muestra cómo cambia una variable en el tiempo o en una secuencia. El gráfico de barras compara categorías con barras separadas cuya altura es la frecuencia o el porcentaje. Elegir bien el gráfico depende del tipo de dato: barras para categorías, líneas para series temporales, histogramas para datos numéricos continuos.",
+          "ejemplo": "Las notas de un paralelo son 62, 67, 71, 74, 74, 78, 81, 85 y 93. En un tallo y hojas, el tallo 7 lleva las hojas 1, 4, 4 y 8: cuatro estudiantes sacaron entre 70 y 79. De los 9 estudiantes, la proporción en ese rango es 4 ÷ 9 = 0,44.",
+          "puntos_clave": [
+            "Tallo y hojas conserva los datos originales.",
+            "Barras para categorías; líneas para tiempo.",
+            "Las barras van separadas; las del histograma, juntas."
+          ],
+          "errores_frecuentes": [
+            "Usar un gráfico de líneas para categorías sin orden.",
+            "Empezar el eje de un gráfico de barras en un valor distinto de cero y exagerar las diferencias."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-1-stem-and-leaf-graphs-stemplots-line-graphs-and-bar-graphs",
+            "seccion": "2.1 Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs"
           }
         }
       ]
@@ -212,6 +254,29 @@
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-6-skewness-and-the-mean-median-and-mode",
             "seccion": "2.6 Asimetría, media, mediana y moda"
           }
+        },
+        {
+          "id": "ed-centro-agrupados",
+          "nombre": "Media de datos agrupados en una tabla de frecuencias",
+          "explicacion": "Cuando los datos vienen agrupados en intervalos, no se conocen los valores exactos y la media se aproxima con la marca de clase, que es el punto medio de cada intervalo. Se multiplica cada marca de clase por su frecuencia, se suman los productos y se divide para el total de datos. El resultado es una aproximación: supone que, dentro de cada intervalo, los datos se reparten alrededor de su punto medio.",
+          "ejemplo": "Una tienda registra compras de 0 a 10 dólares (12 clientes), de 10 a 20 (20 clientes) y de 20 a 30 (8 clientes). Las marcas de clase son 5, 15 y 25. La suma de productos es 5 × 12 + 15 × 20 + 25 × 8 = 560 y hay 40 clientes, así que la compra media es 560 ÷ 40 = 14 dólares.",
+          "puntos_clave": [
+            "Marca de clase = (límite inferior + límite superior) ÷ 2.",
+            "Media agrupada = Σ(marca × frecuencia) ÷ Σ frecuencia.",
+            "Es una aproximación de la media real."
+          ],
+          "errores_frecuentes": [
+            "Dividir para el número de intervalos en lugar del número de datos.",
+            "Usar el límite inferior en lugar de la marca de clase."
+          ],
+          "formulas": [
+            "media-ponderada"
+          ],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+            "seccion": "2.5 Measures of the Center of the Data"
+          }
         }
       ]
     },
@@ -286,6 +351,27 @@
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-3-measures-of-the-location-of-the-data",
             "seccion": "2.3 Medidas de posición"
           }
+        },
+        {
+          "id": "ed-dispersion-atipicos",
+          "nombre": "Rango intercuartílico y valores atípicos",
+          "explicacion": "El rango intercuartílico (RIC) es la diferencia entre el tercer y el primer cuartil, Q3 − Q1, y mide la dispersión del 50 % central de los datos sin que influyan los extremos. Se usa para detectar valores atípicos: un dato es potencialmente atípico si está por debajo de Q1 − 1,5·RIC o por encima de Q3 + 1,5·RIC. Un atípico no se borra sin más: hay que revisar si es un error de registro o un caso real que merece atención.",
+          "ejemplo": "Los tiempos de entrega de un courier tienen Q1 = 20 y Q3 = 32 horas. El RIC es 32 − 20 = 12. El límite superior es 32 + 1,5 × 12 = 50 horas: una entrega de 65 horas es un valor atípico que conviene investigar.",
+          "puntos_clave": [
+            "RIC = Q3 − Q1.",
+            "Límites: Q1 − 1,5·RIC y Q3 + 1,5·RIC.",
+            "El RIC no se deja arrastrar por los valores extremos."
+          ],
+          "errores_frecuentes": [
+            "Eliminar atípicos sin investigar su causa.",
+            "Calcular el RIC con el mínimo y el máximo (eso es el rango)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-3-measures-of-the-location-of-the-data",
+            "seccion": "2.3 Measures of the Location of the Data"
+          }
         }
       ]
     },
@@ -353,6 +439,141 @@
             "ref": "os-stats",
             "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
             "seccion": "12.3 Correlación y causalidad"
+          }
+        },
+        {
+          "id": "ed-relacion-regresion",
+          "nombre": "Recta de mínimos cuadrados",
+          "explicacion": "La recta de mínimos cuadrados, ŷ = a + b·x, es la que hace mínima la suma de los cuadrados de las distancias verticales entre los datos y la recta. Su pendiente b indica cuánto cambia y, en promedio, por cada unidad de x, y la intersección a es el valor estimado de y cuando x vale 0. La recta siempre pasa por el punto de medias (x̄, ȳ). Sirve para describir la relación y hacer predicciones dentro del rango observado de x.",
+          "ejemplo": "Con x (años de experiencia) = 2, 4, 6 y 8, e y (ventas en miles) = 5, 9, 11 y 15, se obtiene b = 32 ÷ 20 = 1,6 y a = 10 − 1,6 × 5 = 2. La recta es ŷ = 2 + 1,6x: un vendedor con 10 años de experiencia vendería 2 + 1,6 × 10 = 18 mil dólares.",
+          "puntos_clave": [
+            "b = Σ(x − x̄)(y − ȳ) ÷ Σ(x − x̄)².",
+            "a = ȳ − b·x̄.",
+            "Predecir fuera del rango de los datos es arriesgado."
+          ],
+          "errores_frecuentes": [
+            "Intercambiar los papeles de x e y.",
+            "Interpretar la intersección cuando x = 0 no tiene sentido en el problema."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/12-3-the-regression-equation",
+            "seccion": "12.3 The Regression Equation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed-probabilidad",
+      "nombre": "Probabilidad básica",
+      "orden": 6,
+      "descripcion": "Eventos, reglas de la suma y la multiplicación, tablas de contingencia y valor esperado.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ed-prob-terminologia",
+          "nombre": "Experimento, espacio muestral y probabilidad",
+          "explicacion": "Un experimento aleatorio es una acción cuyo resultado no se conoce de antemano; el espacio muestral es el conjunto de todos los resultados posibles y un evento es un subconjunto de ese espacio. La probabilidad de un evento es un número entre 0 y 1: si todos los resultados son igual de probables, se calcula como casos favorables entre casos posibles. A largo plazo, la frecuencia relativa con que ocurre un evento se acerca a su probabilidad (ley de los grandes números).",
+          "ejemplo": "Una urna de una rifa tiene 50 boletos, de los cuales 4 tienen premio. La probabilidad de sacar un boleto premiado es 4 ÷ 50 = 0,08, es decir, 8 %. La del complemento, no ganar, es 1 − 0,08 = 0,92.",
+          "puntos_clave": [
+            "0 ≤ P(A) ≤ 1.",
+            "Resultados igualmente probables: favorables ÷ posibles.",
+            "P(no A) = 1 − P(A)."
+          ],
+          "errores_frecuentes": [
+            "Pensar que después de varios fracasos un éxito «ya toca».",
+            "Contar casos que no son igualmente probables como si lo fueran."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology",
+            "seccion": "3.1 Terminology"
+          }
+        },
+        {
+          "id": "ed-prob-independientes",
+          "nombre": "Eventos independientes y mutuamente excluyentes",
+          "explicacion": "Dos eventos son mutuamente excluyentes cuando no pueden ocurrir a la vez: P(A y B) = 0. Son independientes cuando que ocurra uno no cambia la probabilidad del otro: P(A y B) = P(A)·P(B). Son ideas distintas: dos eventos excluyentes con probabilidad positiva nunca son independientes, porque si ocurre uno el otro queda descartado. Las extracciones con reposición suelen ser independientes; sin reposición, no.",
+          "ejemplo": "En una caja, 30 % de los clientes paga con tarjeta y 20 % de las facturas tiene descuento, y ambas cosas son independientes. La probabilidad de que un cliente pague con tarjeta y tenga descuento es 0,3 × 0,2 = 0,06.",
+          "puntos_clave": [
+            "Excluyentes: P(A y B) = 0.",
+            "Independientes: P(A y B) = P(A) × P(B).",
+            "Excluyente no es lo mismo que independiente."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar probabilidades de eventos que no son independientes.",
+            "Confundir eventos excluyentes con independientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events",
+            "seccion": "3.2 Independent and Mutually Exclusive Events"
+          }
+        },
+        {
+          "id": "ed-prob-reglas",
+          "nombre": "Reglas de la suma y de la multiplicación",
+          "explicacion": "La regla de la suma da la probabilidad de que ocurra A o B: P(A o B) = P(A) + P(B) − P(A y B); se resta la intersección para no contarla dos veces. La regla de la multiplicación da la probabilidad de que ocurran ambos: P(A y B) = P(A)·P(B | A), donde P(B | A) es la probabilidad de B sabiendo que ocurrió A. Si los eventos son independientes, P(B | A) = P(B).",
+          "ejemplo": "En una tienda en línea, 40 % de los clientes compra ropa, 35 % compra calzado y 15 % compra ambas cosas. La probabilidad de que un cliente compre ropa o calzado es 0,4 + 0,35 − 0,15 = 0,6.",
+          "puntos_clave": [
+            "P(A o B) = P(A) + P(B) − P(A y B).",
+            "P(A y B) = P(A) × P(B | A).",
+            "Si son excluyentes, la intersección es cero."
+          ],
+          "errores_frecuentes": [
+            "Sumar sin restar la intersección.",
+            "Confundir P(B | A) con P(A | B)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability",
+            "seccion": "3.3 Two Basic Rules of Probability"
+          }
+        },
+        {
+          "id": "ed-prob-contingencia",
+          "nombre": "Tablas de contingencia y probabilidad condicional",
+          "explicacion": "Una tabla de contingencia cruza dos variables categóricas y muestra cuántos casos hay en cada combinación. Con ella se calculan probabilidades conjuntas (una celda ÷ el total), marginales (un total de fila o columna ÷ el total) y condicionales: P(A | B) = casos con A y B ÷ casos con B. Es la herramienta más usada en investigación de mercados para comparar grupos, por ejemplo la preferencia por un producto según la edad.",
+          "ejemplo": "De 200 encuestados, 80 son menores de 30 años; de ellos, 56 prefieren comprar por internet. La probabilidad de preferir internet dado que la persona es menor de 30 es 56 ÷ 80 = 0,7.",
+          "puntos_clave": [
+            "Conjunta: celda ÷ total general.",
+            "Marginal: total de fila o columna ÷ total general.",
+            "Condicional: celda ÷ total de la condición."
+          ],
+          "errores_frecuentes": [
+            "Dividir para el total general cuando se pide una probabilidad condicional.",
+            "Leer la fila cuando la condición está en la columna."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-4-contingency-tables",
+            "seccion": "3.4 Contingency Tables"
+          }
+        },
+        {
+          "id": "ed-prob-valor-esperado",
+          "nombre": "Variable aleatoria discreta y valor esperado",
+          "explicacion": "Una variable aleatoria discreta toma valores contables, cada uno con su probabilidad; la tabla de valores y probabilidades es su distribución, y las probabilidades suman 1. El valor esperado, E(X) = Σ x·P(x), es el promedio a largo plazo si el experimento se repitiera muchas veces. Se usa para decidir: el pago esperado de un seguro, las ventas esperadas de un día o la ganancia esperada de una apuesta.",
+          "ejemplo": "Un vendedor cierra 0, 1, 2 o 3 ventas por día con probabilidades 0,1; 0,3; 0,4 y 0,2. Las ventas esperadas por día son 0 × 0,1 + 1 × 0,3 + 2 × 0,4 + 3 × 0,2 = 1,7.",
+          "puntos_clave": [
+            "Las probabilidades de la distribución suman 1.",
+            "E(X) = Σ x × P(x).",
+            "El valor esperado puede no ser un valor posible de X."
+          ],
+          "errores_frecuentes": [
+            "Promediar los valores sin ponderarlos por su probabilidad.",
+            "Interpretar el valor esperado como el resultado más probable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-stats",
+            "url": "https://openstax.org/books/introductory-statistics-2e/pages/4-2-mean-or-expected-value-and-standard-deviation",
+            "seccion": "4.2 Mean or Expected Value and Standard Deviation"
           }
         }
       ]

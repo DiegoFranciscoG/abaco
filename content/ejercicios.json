@@ -2721,5 +2721,606 @@
     },
     "materia": "matematica-gestion",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-moda",
+    "subtema": "ed-centro-mediana-moda",
+    "enunciado": "Los días de atraso en el pago de siete clientes fueron 3, 5, 5, 6, 8, 5 y 9. ¿Cuál es la moda?",
+    "datos": {
+      "x": [
+        3,
+        5,
+        5,
+        6,
+        8,
+        5,
+        9
+      ]
+    },
+    "calculo": "MODE.SNGL(x)",
+    "respuesta": 5,
+    "unidad": "días",
+    "tolerancia": 0,
+    "procedimiento": [
+      "El 5 aparece tres veces y los demás valores una vez",
+      "Moda = 5"
+    ],
+    "pistas": [
+      "La moda es el valor que más se repite."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.5 Measures of the Center of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-asimetria",
+    "subtema": "ed-centro-asimetria",
+    "formula": "mediana",
+    "enunciado": "Los pedidos diarios de una semana fueron 2, 3, 3, 4, 5, 6 y 15. ¿Cuánto vale la media menos la mediana? (Un valor positivo sugiere asimetría a la derecha.)",
+    "datos": {
+      "x": [
+        2,
+        3,
+        3,
+        4,
+        5,
+        6,
+        15
+      ]
+    },
+    "calculo": "AVERAGE(x) - MEDIAN(x)",
+    "respuesta": 1.43,
+    "unidad": "pedidos",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "x̄ = 38 ÷ 7 = 5,43",
+      "Me = 4 (dato central)",
+      "x̄ − Me = 5,43 − 4 = 1,43"
+    ],
+    "pistas": [
+      "Un valor alto (15) jala la media hacia la derecha."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.6 Skewness and the Mean, Median, and Mode"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-asimetria-ingresos",
+    "subtema": "ed-centro-asimetria",
+    "formula": "media-aritmetica",
+    "enunciado": "Los ingresos mensuales de seis trabajadores de un taller son USD 400, 450, 480, 500, 520 y 2.600. ¿Cuánto supera la media a la mediana?",
+    "datos": {
+      "x": [
+        400,
+        450,
+        480,
+        500,
+        520,
+        2600
+      ]
+    },
+    "calculo": "AVERAGE(x) - MEDIAN(x)",
+    "respuesta": 335,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "x̄ = 4.950 ÷ 6 = 825",
+      "Me = (480 + 500) ÷ 2 = 490",
+      "x̄ − Me = 825 − 490 = 335"
+    ],
+    "pistas": [
+      "Con datos asimétricos, la mediana representa mejor al trabajador típico."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.6 Skewness and the Mean, Median, and Mode"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-varianza",
+    "subtema": "ed-dispersion-varianza",
+    "formula": "varianza-muestral",
+    "enunciado": "Las ventas (en miles) de cinco sucursales fueron 4, 8, 6, 5 y 7. ¿Cuál es la varianza muestral?",
+    "datos": {
+      "x": [
+        4,
+        8,
+        6,
+        5,
+        7
+      ]
+    },
+    "calculo": "VAR.S(x)",
+    "respuesta": 2.5,
+    "unidad": "miles al cuadrado",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "x̄ = 30 ÷ 5 = 6",
+      "Σ(x − x̄)² = 4 + 4 + 0 + 1 + 1 = 10",
+      "s² = 10 ÷ 4 = 2,5"
+    ],
+    "pistas": [
+      "En la muestra se divide para n − 1."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.7 Measures of the Spread of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-cv-comparar",
+    "subtema": "ed-dispersion-cv",
+    "formula": "coeficiente-variacion",
+    "enunciado": "Las ventas diarias de una sucursal tienen media de USD 1.200 y desviación estándar de USD 300. ¿Cuál es el coeficiente de variación?",
+    "datos": {
+      "s": 300,
+      "m": 1200
+    },
+    "calculo": "s / m",
+    "respuesta": 0.25,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "CV = 300 ÷ 1.200 = 0,25 (25 %)"
+    ],
+    "pistas": [
+      "El coeficiente de variación compara la dispersión con la media."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "seccion": "2.7 Coeficiente de variación"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-z-negativa",
+    "subtema": "ed-dispersion-posicion",
+    "formula": "puntuacion-z",
+    "enunciado": "El puntaje promedio de satisfacción es 60 con desviación estándar de 4. ¿Cuál es la puntuación z de una sucursal con 52 puntos?",
+    "datos": {
+      "x": 52,
+      "mu": 60,
+      "sigma": 4
+    },
+    "calculo": "(x - mu) / sigma",
+    "respuesta": -2,
+    "unidad": "desviaciones estándar",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Diferencia = 52 − 60 = −8",
+      "z = −8 ÷ 4 = −2"
+    ],
+    "pistas": [
+      "Una z negativa indica un valor por debajo de la media."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.3 Measures of the Location of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-correlacion",
+    "subtema": "ed-relacion-correlacion",
+    "formula": "correlacion-pearson",
+    "enunciado": "Para cinco semanas, x (anuncios publicados) fue 1, 2, 3, 4 y 5, e y (ventas en miles) fue 2, 4, 5, 4 y 5. ¿Cuál es el coeficiente de correlación de Pearson?",
+    "datos": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        2,
+        4,
+        5,
+        4,
+        5
+      ]
+    },
+    "calculo": "CORREL(x, y)",
+    "respuesta": 0.7746,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "x̄ = 3 y ȳ = 4",
+      "Σ(x − x̄)(y − ȳ) = 4 + 0 + 0 + 0 + 2 = 6",
+      "Σ(x − x̄)² = 10 y Σ(y − ȳ)² = 6",
+      "r = 6 ÷ 7,746 = 0,7746"
+    ],
+    "pistas": [
+      "r = Σ(x − x̄)(y − ȳ) ÷ √[Σ(x − x̄)² · Σ(y − ȳ)²]."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "12.3 The Regression Equation"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-correlacion-negativa",
+    "subtema": "ed-relacion-correlacion",
+    "formula": "correlacion-pearson",
+    "enunciado": "Una cafetería anota el precio de un combo (x: 10, 20, 30 y 40 dólares) y los combos vendidos (y: 50, 45, 35 y 30). ¿Cuál es el coeficiente de correlación?",
+    "datos": {
+      "x": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "y": [
+        50,
+        45,
+        35,
+        30
+      ]
+    },
+    "calculo": "CORREL(x, y)",
+    "respuesta": -0.99,
+    "unidad": "sin unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "x̄ = 25 y ȳ = 40",
+      "Σ(x − x̄)(y − ȳ) = −150 − 25 − 25 − 150 = −350",
+      "Σ(x − x̄)² = 500 y Σ(y − ȳ)² = 250",
+      "r = −350 ÷ 353,55 = −0,99"
+    ],
+    "pistas": [
+      "Un signo negativo indica que una variable baja cuando la otra sube."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "12.3 The Regression Equation"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-media-agrupada",
+    "subtema": "ed-centro-agrupados",
+    "formula": "media-ponderada",
+    "enunciado": "Las edades de los clientes de un gimnasio están agrupadas así: 0-10 (4 personas), 10-20 (10), 20-30 (8) y 30-40 (3). Usando las marcas de clase, ¿cuál es la edad media aproximada?",
+    "datos": {
+      "m": [
+        5,
+        15,
+        25,
+        35
+      ],
+      "f": [
+        4,
+        10,
+        8,
+        3
+      ]
+    },
+    "calculo": "SUMPRODUCT(m, f) / SUM(f)",
+    "respuesta": 19,
+    "unidad": "años",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Σ(m × f) = 20 + 150 + 200 + 105 = 475",
+      "Σf = 25",
+      "x̄ = 475 ÷ 25 = 19"
+    ],
+    "pistas": [
+      "La marca de clase es el punto medio de cada intervalo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.5 Measures of the Center of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-media-agrupada-montos",
+    "subtema": "ed-centro-agrupados",
+    "formula": "media-ponderada",
+    "enunciado": "Los créditos de una cooperativa se agrupan en 0-200 (12 créditos), 200-400 (20) y 400-600 (8), en dólares. ¿Cuál es el monto medio aproximado?",
+    "datos": {
+      "m": [
+        100,
+        300,
+        500
+      ],
+      "f": [
+        12,
+        20,
+        8
+      ]
+    },
+    "calculo": "SUMPRODUCT(m, f) / SUM(f)",
+    "respuesta": 280,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Σ(m × f) = 1.200 + 6.000 + 4.000 = 11.200",
+      "Σf = 40",
+      "x̄ = 11.200 ÷ 40 = 280"
+    ],
+    "pistas": [
+      "Multiplica cada marca de clase por su frecuencia."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.5 Measures of the Center of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-limite-superior",
+    "subtema": "ed-dispersion-atipicos",
+    "enunciado": "Los tiempos de espera en una agencia tienen Q1 = 20 y Q3 = 32 minutos. ¿Cuál es el límite superior para considerar un tiempo como atípico?",
+    "datos": {
+      "Q1": 20,
+      "Q3": 32
+    },
+    "calculo": "Q3 + 1.5 * (Q3 - Q1)",
+    "respuesta": 50,
+    "unidad": "minutos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "RIC = 32 − 20 = 12",
+      "Límite superior = 32 + 1,5 × 12 = 50"
+    ],
+    "pistas": [
+      "Suma 1,5 veces el rango intercuartílico al tercer cuartil."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.3 Measures of the Location of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-limite-inferior",
+    "subtema": "ed-dispersion-atipicos",
+    "enunciado": "Con los mismos cuartiles (Q1 = 20 y Q3 = 32 minutos), ¿cuál es el límite inferior para considerar un tiempo como atípico?",
+    "datos": {
+      "Q1": 20,
+      "Q3": 32
+    },
+    "calculo": "Q1 - 1.5 * (Q3 - Q1)",
+    "respuesta": 2,
+    "unidad": "minutos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "RIC = 32 − 20 = 12",
+      "Límite inferior = 20 − 1,5 × 12 = 2"
+    ],
+    "pistas": [
+      "Resta 1,5 veces el RIC al primer cuartil."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "2.3 Measures of the Location of the Data"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-recta-prediccion",
+    "subtema": "ed-relacion-regresion",
+    "enunciado": "Con x (años de experiencia) = 2, 4, 6 y 8, e y (ventas anuales en miles) = 5, 9, 11 y 15, ¿cuánto predice la recta de mínimos cuadrados para un vendedor con 10 años de experiencia?",
+    "datos": {
+      "x": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "y": [
+        5,
+        9,
+        11,
+        15
+      ],
+      "x0": 10
+    },
+    "calculo": "INTERCEPT(y, x) + SLOPE(y, x) * x0",
+    "respuesta": 18,
+    "unidad": "miles USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "b = 32 ÷ 20 = 1,6",
+      "a = 10 − 1,6 × 5 = 2",
+      "ŷ = 2 + 1,6 × 10 = 18"
+    ],
+    "pistas": [
+      "Calcula la pendiente, luego la intersección con el punto de medias."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "12.3 The Regression Equation"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-recta-pendiente",
+    "subtema": "ed-relacion-regresion",
+    "enunciado": "Con los mismos datos (x: 2, 4, 6, 8; y: 5, 9, 11, 15), ¿cuál es la pendiente de la recta de mínimos cuadrados?",
+    "datos": {
+      "x": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "y": [
+        5,
+        9,
+        11,
+        15
+      ]
+    },
+    "calculo": "SLOPE(y, x)",
+    "respuesta": 1.6,
+    "unidad": "miles por año",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "x̄ = 5 y ȳ = 10",
+      "Σ(x − x̄)(y − ȳ) = 15 + 1 + 1 + 15 = 32",
+      "Σ(x − x̄)² = 9 + 1 + 1 + 9 = 20",
+      "b = 32 ÷ 20 = 1,6"
+    ],
+    "pistas": [
+      "Usa las desviaciones respecto de las medias."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "12.3 The Regression Equation"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-regla-suma",
+    "subtema": "ed-prob-reglas",
+    "enunciado": "En una tienda, 40 % de los clientes compra ropa, 35 % compra calzado y 15 % compra ambas cosas. ¿Cuál es la probabilidad de que un cliente compre ropa o calzado?",
+    "datos": {
+      "A": 0.4,
+      "B": 0.35,
+      "AB": 0.15
+    },
+    "calculo": "A + B - AB",
+    "respuesta": 0.6,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(A o B) = 0,4 + 0,35 − 0,15 = 0,6"
+    ],
+    "pistas": [
+      "Resta la intersección para no contarla dos veces."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "3.3 Two Basic Rules of Probability"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-condicional",
+    "subtema": "ed-prob-contingencia",
+    "enunciado": "De 200 encuestados, 80 son menores de 30 años y 56 de ellos prefieren comprar por internet. ¿Cuál es la probabilidad de preferir internet dado que la persona es menor de 30?",
+    "datos": {
+      "AB": 56,
+      "B": 80
+    },
+    "calculo": "AB / B",
+    "respuesta": 0.7,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(internet | menor de 30) = 56 ÷ 80 = 0,7"
+    ],
+    "pistas": [
+      "La condición reduce el total a los 80 menores de 30."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "3.4 Contingency Tables"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-independientes",
+    "subtema": "ed-prob-independientes",
+    "enunciado": "En una caja, 30 % de los clientes paga con tarjeta y 20 % de las compras tiene descuento, de forma independiente. ¿Cuál es la probabilidad de que una compra se pague con tarjeta y tenga descuento?",
+    "datos": {
+      "A": 0.3,
+      "B": 0.2
+    },
+    "calculo": "A * B",
+    "respuesta": 0.06,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(A y B) = 0,3 × 0,2 = 0,06"
+    ],
+    "pistas": [
+      "Si son independientes, se multiplican las probabilidades."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "3.2 Independent and Mutually Exclusive Events"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ed-valor-esperado",
+    "subtema": "ed-prob-valor-esperado",
+    "enunciado": "Un vendedor cierra 0, 1, 2 o 3 ventas por día con probabilidades 0,1; 0,3; 0,4 y 0,2. ¿Cuántas ventas espera cerrar por día?",
+    "datos": {
+      "x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "p": [
+        0.1,
+        0.3,
+        0.4,
+        0.2
+      ]
+    },
+    "calculo": "SUMPRODUCT(x, p)",
+    "respuesta": 1.7,
+    "unidad": "ventas",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "E(X) = 0 × 0,1 + 1 × 0,3 + 2 × 0,4 + 3 × 0,2",
+      "E(X) = 0 + 0,3 + 0,8 + 0,6 = 1,7"
+    ],
+    "pistas": [
+      "Multiplica cada valor por su probabilidad y suma."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-stats",
+      "seccion": "4.2 Mean or Expected Value and Standard Deviation"
+    },
+    "materia": "estadistica-descriptiva",
+    "actualizado_en": "2026-10-26"
   }
 ]

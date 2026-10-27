@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-management/pages/1-3-major-characteristics-of-the-managers-job",
             "seccion": "1.3 Major Characteristics of the Manager's Job"
           }
+        },
+        {
+          "id": "fa-que-hacen",
+          "nombre": "Qué hacen los gerentes: niveles y habilidades",
+          "explicacion": "Un gerente logra resultados a través de otras personas. Las organizaciones suelen tener tres niveles: la alta dirección define la estrategia y el rumbo; los mandos medios convierten esa estrategia en planes de su área; los supervisores de primera línea coordinan el trabajo diario con los empleados. Todos usan tres tipos de habilidades en distinta proporción: técnicas (conocimiento especializado para hacer el trabajo), de relaciones humanas (trabajar con personas, comunicar y motivar) y conceptuales (ver la organización como un todo y anticipar). Las técnicas pesan más en la supervisión y las conceptuales en la alta dirección.",
+          "ejemplo": "En una cadena de farmacias con 12 locales, la gerente general decide abrir 3 sucursales en la Costa (alta dirección), el jefe regional elige las ubicaciones y el presupuesto de cada una (mando medio) y cada administrador de local organiza turnos e inventario (primera línea). Con las nuevas sucursales la cadena llega a 12 + 3 = 15 locales.",
+          "puntos_clave": [
+            "Tres niveles: alta dirección, mandos medios y primera línea.",
+            "Habilidades técnicas, humanas y conceptuales.",
+            "Las habilidades humanas son importantes en todos los niveles."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el mejor técnico siempre será el mejor gerente.",
+            "Creer que solo la alta dirección toma decisiones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/6-7-managerial-skills",
+            "seccion": "6.7 Managerial Skills"
+          }
         }
       ]
     },
@@ -300,6 +321,213 @@
             "ref": "os-pmgmt",
             "url": "https://openstax.org/books/principles-management/pages/17-7-management-by-objectives-a-planning-and-control-technique",
             "seccion": "17.7 Management by Objectives: A Planning and Control Technique"
+          }
+        },
+        {
+          "id": "fa-decision-proceso",
+          "nombre": "El proceso de toma de decisiones",
+          "explicacion": "Decidir es elegir entre alternativas para resolver un problema o aprovechar una oportunidad. Para las decisiones no programadas conviene seguir seis pasos: reconocer que hay que decidir, generar varias alternativas, analizarlas con criterios claros (costo, riesgo, tiempo, impacto en las personas), elegir una, implementarla y evaluar su efecto. Para las decisiones rutinarias se usan atajos, como elegir la primera solución aceptable, lo que ahorra tiempo. Como nadie puede conocer todas las alternativas ni sus consecuencias (racionalidad limitada), consultar a otros y pensar con creatividad mejora la calidad de la decisión.",
+          "ejemplo": "Una panificadora pierde clientes en la mañana porque el pan sale tarde. Define el problema (el horno no alcanza), genera alternativas (segundo horno de USD 4.500, adelantar el turno o tercerizar), las evalúa por costo y tiempo, y elige adelantar el turno una hora. Al mes, mide que las ventas de la mañana subieron de 300 a 360 panes: 360 − 300 = 60 panes más por día.",
+          "puntos_clave": [
+            "Seis pasos: reconocer, generar, analizar, elegir, implementar y evaluar.",
+            "Las decisiones rutinarias admiten atajos; las nuevas exigen el proceso completo.",
+            "Consultar a otras personas amplía las alternativas y reduce sesgos."
+          ],
+          "errores_frecuentes": [
+            "Saltar directamente a la solución sin definir el problema.",
+            "Evaluar las alternativas solo por su costo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/2-5-improving-the-quality-of-decision-making",
+            "seccion": "2.5 Improving the Quality of Decision-Making"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa-organizacion",
+      "nombre": "Organización: entorno, diseño y cultura",
+      "orden": 5,
+      "descripcion": "Entorno externo, diseños mecanicistas y orgánicos, cultura organizacional y organización para el cambio.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fa-entorno-externo",
+          "nombre": "El entorno externo de la organización",
+          "explicacion": "Ninguna organización opera aislada: depende de clientes, proveedores, competidores, reguladores y de condiciones económicas, tecnológicas, sociales y políticas que no controla. Ese entorno externo puede ser estable o dinámico y simple o complejo. Cuanto más incierto, más necesita la organización vigilarlo, adaptarse rápido y construir relaciones con los actores que la afectan. Analizar el entorno es la base de la planeación: las oportunidades y amenazas vienen de afuera.",
+          "ejemplo": "Una importadora de repuestos en Guayaquil depende del tipo de cambio de sus proveedores, de los aranceles que fija el Estado, de la demanda de autos y de la competencia en línea. Si los aranceles de una línea suben del 10 % al 15 %, un repuesto de USD 200 pasa a pagar 200 × 0,15 = 30 dólares de arancel en lugar de 200 × 0,10 = 20.",
+          "puntos_clave": [
+            "El entorno externo incluye actores (clientes, competidores) y condiciones generales.",
+            "Un entorno dinámico y complejo genera más incertidumbre.",
+            "Las oportunidades y amenazas provienen del entorno."
+          ],
+          "errores_frecuentes": [
+            "Planificar mirando solo hacia adentro de la empresa.",
+            "Suponer que el entorno de hoy seguirá igual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/4-1-the-organizations-external-environment",
+            "seccion": "4.1 The Organization's External Environment"
+          }
+        },
+        {
+          "id": "fa-disenos",
+          "nombre": "Diseños mecanicistas y orgánicos",
+          "explicacion": "El diseño organizacional define cómo se dividen y coordinan las tareas. Un diseño mecanicista tiene reglas formales, tareas especializadas, autoridad centralizada y comunicación vertical; funciona bien en entornos estables donde importan la eficiencia y la estandarización. Un diseño orgánico tiene menos reglas, equipos flexibles, decisiones descentralizadas y comunicación en todas las direcciones; se adapta mejor a entornos cambiantes que exigen innovación. La mayoría de empresas combina ambos según el área.",
+          "ejemplo": "Una planta embotelladora usa un diseño mecanicista: cada operario sigue un procedimiento escrito y la producción se controla por turno. Su área de nuevos productos, en cambio, trabaja como un equipo orgánico de 6 personas de marketing, producción y finanzas que decide sin pedir autorización para cada prueba.",
+          "puntos_clave": [
+            "Mecanicista: reglas, especialización y centralización.",
+            "Orgánico: flexibilidad, equipos y descentralización.",
+            "El diseño adecuado depende del entorno y de la tarea."
+          ],
+          "errores_frecuentes": [
+            "Creer que lo orgánico siempre es mejor que lo mecanicista.",
+            "Copiar la estructura de otra empresa sin considerar su entorno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/4-3-organizational-designs-and-structures",
+            "seccion": "4.3 Organizational Designs and Structures"
+          }
+        },
+        {
+          "id": "fa-cultura",
+          "nombre": "Cultura organizacional",
+          "explicacion": "La cultura organizacional es el conjunto de valores, creencias y normas compartidas que guían cómo se comportan las personas en una organización, aunque no esté escrito. Se manifiesta en símbolos visibles (vestimenta, oficinas, rituales, historias que se cuentan) y en supuestos profundos sobre cómo se hacen las cosas. Una cultura fuerte alinea a las personas con la estrategia, pero puede resistirse al cambio. Los líderes la moldean con lo que premian, lo que toleran y su propio ejemplo.",
+          "ejemplo": "En una cooperativa de ahorro, el gerente saluda a cada socio por su nombre y los empleados cuentan la historia de cuando la cooperativa refinanció sin recargo a 40 familias afectadas por una inundación. Esos relatos transmiten el valor de la cercanía con el socio mejor que cualquier manual.",
+          "puntos_clave": [
+            "La cultura son valores y normas compartidas, escritas o no.",
+            "Se observa en símbolos, historias y rituales.",
+            "Los líderes la refuerzan con lo que premian y toleran."
+          ],
+          "errores_frecuentes": [
+            "Confundir la cultura con la lista de valores colgada en la pared.",
+            "Pensar que la cultura cambia con un solo comunicado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/4-5-corporate-cultures",
+            "seccion": "4.5 Corporate Cultures"
+          }
+        },
+        {
+          "id": "fa-organizar-cambio",
+          "nombre": "Organizarse para el cambio",
+          "explicacion": "Las organizaciones de hoy enfrentan cambios tecnológicos, de mercado y regulatorios cada vez más rápidos. Organizarse para el cambio implica estructuras más planas y flexibles, equipos que se forman y disuelven según el proyecto, uso intensivo de tecnología para coordinar y personas capacitadas para asumir nuevas tareas. También exige gestionar la resistencia: explicar el porqué del cambio, involucrar a quienes lo viven y acompañar la transición.",
+          "ejemplo": "Una distribuidora que vendía solo por teléfono crea un equipo temporal de 5 personas para lanzar su tienda en línea en 4 meses. Al terminar, dos de ellas se quedan a cargo del canal digital y las demás vuelven a sus áreas con nuevas habilidades.",
+          "puntos_clave": [
+            "Estructuras más planas y equipos temporales facilitan la adaptación.",
+            "La tecnología cambia cómo se coordina el trabajo.",
+            "La resistencia al cambio se gestiona con explicación y participación."
+          ],
+          "errores_frecuentes": [
+            "Imponer cambios sin explicar sus razones.",
+            "Pensar que el cambio termina cuando se anuncia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/4-6-organizing-for-change-in-the-21st-century",
+            "seccion": "4.6 Organizing for Change in the 21st Century"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa-direccion-control",
+      "nombre": "Dirección y control",
+      "orden": 6,
+      "descripcion": "Liderazgo, trabajo en equipo, enfoques de control y evaluación del desempeño estratégico.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fa-liderazgo",
+          "nombre": "La naturaleza del liderazgo",
+          "explicacion": "Liderar es influir en otras personas para que trabajen hacia metas compartidas. No es lo mismo que administrar: administrar se ocupa de planificar, organizar y controlar con orden; liderar, de dar dirección, inspirar y movilizar el compromiso. Un buen gerente necesita ambas cosas. El liderazgo puede ser formal (viene del cargo) o informal (lo reconoce el grupo aunque la persona no tenga el cargo), y su eficacia depende del líder, de los seguidores y de la situación.",
+          "ejemplo": "En un call center, la supervisora tiene autoridad formal sobre 20 agentes, pero cuando hay un cliente difícil todos buscan a Carlos, un agente con 8 años de experiencia que nunca pierde la calma. Carlos ejerce un liderazgo informal que la supervisora aprovecha encargándole la inducción de los nuevos.",
+          "puntos_clave": [
+            "Liderar es influir hacia metas compartidas.",
+            "Administrar y liderar son complementarios.",
+            "El liderazgo puede ser formal o informal."
+          ],
+          "errores_frecuentes": [
+            "Creer que el cargo convierte automáticamente a alguien en líder.",
+            "Pensar que solo hay un estilo correcto de liderazgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/13-1-the-nature-of-leadership",
+            "seccion": "13.1 The Nature of Leadership"
+          }
+        },
+        {
+          "id": "fa-equipos",
+          "nombre": "Trabajo en equipo",
+          "explicacion": "Un equipo es un grupo pequeño con habilidades complementarias, un propósito común y responsabilidad compartida por los resultados. Se diferencia de un simple grupo de trabajo en que sus miembros dependen unos de otros para lograr la meta. Los equipos funcionan bien cuando tienen objetivos claros, roles definidos, confianza y comunicación abierta; fracasan cuando hay metas confusas, conflictos no resueltos o miembros que se aprovechan del esfuerzo de los demás.",
+          "ejemplo": "Un equipo de 4 personas organiza una feria de emprendimiento: una consigue auspiciantes, otra gestiona permisos, otra diseña la difusión y la cuarta coordina a los 30 expositores. Si una falla, toda la feria se afecta: dependen unos de otros y comparten el resultado.",
+          "puntos_clave": [
+            "Equipo: propósito común y responsabilidad compartida.",
+            "Roles claros y confianza mejoran el desempeño.",
+            "El aprovechamiento del esfuerzo ajeno debilita al equipo."
+          ],
+          "errores_frecuentes": [
+            "Llamar equipo a cualquier grupo de personas que trabajan juntas.",
+            "Evaluar solo el desempeño individual en un trabajo de equipo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/15-1-teamwork-in-the-workplace",
+            "seccion": "15.1 Teamwork in the Workplace"
+          }
+        },
+        {
+          "id": "fa-enfoques-control",
+          "nombre": "Control orientado al cumplimiento o a la participación",
+          "explicacion": "Controlar es comparar lo logrado con lo planeado y corregir las desviaciones. Hay dos grandes enfoques. El orientado al control fija normas desde arriba, supervisa de cerca y usa recompensas y sanciones para asegurar el cumplimiento. El orientado a la participación involucra a las personas en fijar las metas y les da información y autonomía para autocontrolarse. El primero funciona con tareas simples y repetitivas; el segundo, con trabajo complejo donde el compromiso marca la diferencia.",
+          "ejemplo": "Una cadena de comida rápida controla el tiempo de atención con una meta de 3 minutos por pedido y un tablero visible (control). Su equipo de desarrollo de menú, en cambio, define con la gerencia una meta trimestral de 2 productos nuevos y se organiza solo para cumplirla (participación).",
+          "puntos_clave": [
+            "Controlar es medir, comparar con lo planeado y corregir.",
+            "Enfoque de control: normas y supervisión desde arriba.",
+            "Enfoque participativo: metas compartidas y autocontrol."
+          ],
+          "errores_frecuentes": [
+            "Controlar sin metas previas contra las cuales comparar.",
+            "Aplicar supervisión estricta a trabajos creativos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-8-the-control-and-involvement-oriented-approaches-to-planning-and-controlling",
+            "seccion": "17.8 The Control- and Involvement-Oriented Approaches to Planning and Controlling"
+          }
+        },
+        {
+          "id": "fa-desempeno-estrategico",
+          "nombre": "Medir y evaluar el desempeño estratégico",
+          "explicacion": "Una estrategia solo sirve si se sabe si está funcionando. Por eso la última etapa del ciclo estratégico es medir y evaluar el desempeño: cada acción del plan debe tener una meta medible —la M de las metas SMART— y un estándar con el cual comparar el resultado. Se miden tanto resultados financieros (ventas, rentabilidad) como de clientes y procesos (satisfacción, tiempos, calidad). Si la medición muestra que una acción no logra lo que se esperaba, se corrige la acción o se replantea el plan en el siguiente ciclo.",
+          "ejemplo": "Una tienda de electrodomésticos fija como meta subir su participación de mercado local del 12 % al 15 % en un año. Al cierre llegó al 14 %: cumplió 14 − 12 = 2 de los 3 puntos planeados y revisa qué falló en su canal en línea.",
+          "puntos_clave": [
+            "Medir y evaluar cierra el ciclo de la estrategia.",
+            "Cada acción necesita una meta medible y un estándar de comparación.",
+            "Los resultados alimentan el siguiente ciclo de planeación."
+          ],
+          "errores_frecuentes": [
+            "Medir solo resultados financieros.",
+            "Definir indicadores que nadie revisa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-6-measuring-and-evaluating-strategic-performance",
+            "seccion": "9.6 Measuring and Evaluating Strategic Performance"
           }
         }
       ]

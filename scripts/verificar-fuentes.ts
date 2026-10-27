@@ -101,8 +101,10 @@ for (const file of readdirSync(join(root, 'content', 'temarios'))) {
         faltan: [],
       };
       try {
-        const text = await textOf(url);
-        for (const p of palabras) (text.includes(fold(p)) ? row.encontradas : row.faltan).push(p);
+        // Removing the tags leaves stray spaces ("y -intercept", "( iqr )"), so words are compared without spaces.
+        const text = (await textOf(url)).replace(/\s/g, '');
+        for (const p of palabras)
+          (text.includes(fold(p).replace(/\s/g, '')) ? row.encontradas : row.faltan).push(p);
       } catch (error) {
         row.error = (error as Error).message;
       }

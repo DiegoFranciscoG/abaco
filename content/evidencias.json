@@ -1889,5 +1889,248 @@
       "variacion inversa",
       "constante de variacion"
     ]
+  },
+  {
+    "id": "ed-datos-diseno",
+    "palabras": [
+      "explanatory variable",
+      "response variable",
+      "placebo",
+      "informed consent"
+    ]
+  },
+  {
+    "id": "ed-graficos-barras",
+    "palabras": [
+      "stem-and-leaf",
+      "line graph",
+      "bar graph"
+    ]
+  },
+  {
+    "id": "ed-centro-agrupados",
+    "palabras": [
+      "midpoint",
+      "grouped frequency"
+    ]
+  },
+  {
+    "id": "ed-dispersion-atipicos",
+    "palabras": [
+      "interquartile range",
+      "outlier",
+      "(1.5)(iqr)"
+    ]
+  },
+  {
+    "id": "ed-relacion-regresion",
+    "palabras": [
+      "least-squares",
+      "slope",
+      "y-intercept"
+    ]
+  },
+  {
+    "id": "ed-prob-terminologia",
+    "palabras": [
+      "sample space",
+      "event",
+      "law of large numbers"
+    ]
+  },
+  {
+    "id": "ed-prob-independientes",
+    "palabras": [
+      "independent",
+      "mutually exclusive"
+    ]
+  },
+  {
+    "id": "ed-prob-reglas",
+    "palabras": [
+      "multiplication rule",
+      "addition rule"
+    ]
+  },
+  {
+    "id": "ed-prob-contingencia",
+    "palabras": [
+      "contingency table",
+      "given"
+    ]
+  },
+  {
+    "id": "ed-prob-valor-esperado",
+    "palabras": [
+      "expected value",
+      "probability distribution function"
+    ]
+  },
+  {
+    "id": "fa-que-hacen",
+    "palabras": [
+      "technical skills",
+      "human relations skills",
+      "conceptual skills"
+    ]
+  },
+  {
+    "id": "fa-decision-proceso",
+    "palabras": [
+      "generate multiple alternatives",
+      "satisficing",
+      "implement the selected alternative"
+    ]
+  },
+  {
+    "id": "fa-entorno-externo",
+    "palabras": [
+      "external environment",
+      "uncertainty"
+    ]
+  },
+  {
+    "id": "fa-disenos",
+    "palabras": [
+      "mechanistic",
+      "organic"
+    ]
+  },
+  {
+    "id": "fa-cultura",
+    "palabras": [
+      "culture",
+      "values"
+    ]
+  },
+  {
+    "id": "fa-organizar-cambio",
+    "palabras": [
+      "change",
+      "21st century"
+    ]
+  },
+  {
+    "id": "fa-liderazgo",
+    "palabras": [
+      "leadership",
+      "influence"
+    ]
+  },
+  {
+    "id": "fa-equipos",
+    "palabras": [
+      "katzenbach and smith",
+      "team"
+    ]
+  },
+  {
+    "id": "fa-enfoques-control",
+    "palabras": [
+      "control-oriented",
+      "involvement-oriented"
+    ]
+  },
+  {
+    "id": "fa-desempeno-estrategico",
+    "palabras": [
+      "smart goals",
+      "measuring and evaluating performance",
+      "standards"
+    ]
+  },
+  {
+    "id": "mt-habilidades",
+    "palabras": [
+      "synthesis",
+      "key skills"
+    ]
+  },
+  {
+    "id": "mt-sesgo",
+    "palabras": [
+      "bias",
+      "stereotyping"
+    ]
+  },
+  {
+    "id": "mt-estilos-cita",
+    "palabras": [
+      "citation style",
+      "annotated bibliography"
+    ]
+  },
+  {
+    "id": "mt-muestreo",
+    "palabras": [
+      "muestreo aleatorio simple",
+      "estratificado",
+      "conglomerados",
+      "sistematico"
+    ]
+  },
+  {
+    "id": "mt-problema",
+    "palabras": [
+      "problem",
+      "solutions",
+      "fact",
+      "opinion"
+    ]
+  },
+  {
+    "id": "mt-tesis",
+    "palabras": [
+      "thesis",
+      "reasoning",
+      "evidence"
+    ]
+  },
+  {
+    "id": "mt-razonamiento",
+    "palabras": [
+      "classification",
+      "comparison",
+      "definition"
+    ]
+  },
+  {
+    "id": "mt-estudio-caso",
+    "palabras": [
+      "case study",
+      "observation",
+      "participants"
+    ]
+  },
+  {
+    "id": "mt-informe-estructura",
+    "palabras": [
+      "formal",
+      "informal",
+      "analytical report"
+    ]
+  },
+  {
+    "id": "mt-informe-proceso",
+    "palabras": [
+      "thesis",
+      "draft",
+      "peer"
+    ]
+  },
+  {
+    "id": "mt-parrafos",
+    "palabras": [
+      "transitions",
+      "transitional"
+    ]
+  },
+  {
+    "id": "mt-lenguaje-tecnico",
+    "palabras": [
+      "discipline-specific",
+      "passive",
+      "technical"
+    ]
   }
 ]
