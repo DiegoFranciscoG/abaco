@@ -2378,5 +2378,90 @@
       "anova",
       "medias"
     ]
+  },
+  {
+    "id": "cc-elementos-costo",
+    "palabras": [
+      "direct materials",
+      "direct labor",
+      "overhead"
+    ]
+  },
+  {
+    "id": "cc-sensibilidad",
+    "palabras": [
+      "break-even",
+      "sensitivity analysis"
+    ]
+  },
+  {
+    "id": "cc-variaciones-mano-obra",
+    "palabras": [
+      "labor rate variance",
+      "labor time variance",
+      "unfavorable"
+    ]
+  },
+  {
+    "id": "cc-pedido-especial",
+    "palabras": [
+      "special order",
+      "capacity"
+    ]
+  },
+  {
+    "id": "cc-hacer-comprar",
+    "palabras": [
+      "make or buy",
+      "outsourcing",
+      "relevant"
+    ]
+  },
+  {
+    "id": "cc-mantener-eliminar",
+    "palabras": [
+      "segment",
+      "discontinue",
+      "contribution margin"
+    ]
+  },
+  {
+    "id": "cc-recursos-limitados",
+    "palabras": [
+      "bottleneck",
+      "constraint",
+      "contribution margin"
+    ]
+  },
+  {
+    "id": "cc-costo-orden",
+    "palabras": [
+      "job",
+      "direct materials",
+      "finished goods"
+    ]
+  },
+  {
+    "id": "cc-cif-sub-sobre",
+    "palabras": [
+      "underapplied",
+      "overapplied"
+    ]
+  },
+  {
+    "id": "cc-conversion",
+    "palabras": [
+      "conversion costs",
+      "direct labor",
+      "overhead"
+    ]
+  },
+  {
+    "id": "cc-variable-absorbente",
+    "palabras": [
+      "variable costing",
+      "absorption costing",
+      "period"
+    ]
   }
 ]

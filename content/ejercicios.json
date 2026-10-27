@@ -5039,5 +5039,790 @@
     },
     "materia": "estadistica-inferencial",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-mc-unitario",
+    "subtema": "cc-margen-contribucion",
+    "formula": "margen-contribucion-unitario",
+    "enunciado": "Una lámpara se vende a USD 85 y su costo variable es USD 49. ¿Cuál es su margen de contribución unitario?",
+    "datos": {
+      "p": 85,
+      "cv": 49
+    },
+    "calculo": "p - cv",
+    "respuesta": 36,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "MCu = 85 − 49 = 36"
+    ],
+    "pistas": [
+      "Resta el costo variable unitario al precio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.1 Contribution Margin"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-razon-mc",
+    "subtema": "cc-margen-contribucion",
+    "formula": "razon-margen-contribucion",
+    "enunciado": "Con un precio de USD 85 y un margen de contribución unitario de USD 36, ¿cuál es la razón de margen de contribución?",
+    "datos": {
+      "mc": 36,
+      "p": 85
+    },
+    "calculo": "mc / p",
+    "respuesta": 0.4235,
+    "unidad": "proporción",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Razón = 36 ÷ 85 = 0,4235 (42,35 %)"
+    ],
+    "pistas": [
+      "Divide el margen para el precio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.1 Contribution Margin"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-pe-taller",
+    "subtema": "cc-punto-equilibrio",
+    "formula": "punto-equilibrio-unidades",
+    "enunciado": "Un taller tiene costos fijos de USD 18.000, precio de venta de USD 60 y costo variable de USD 36 por unidad. ¿Cuál es su punto de equilibrio en unidades?",
+    "datos": {
+      "CF": 18000,
+      "p": 60,
+      "cv": 36
+    },
+    "calculo": "CF / (p - cv)",
+    "respuesta": 750,
+    "unidad": "unidades",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "MCu = 60 − 36 = 24",
+      "PE = 18.000 ÷ 24 = 750"
+    ],
+    "pistas": [
+      "Divide los costos fijos para el margen de contribución unitario."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.2 Break-Even Point"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-margen-seguridad",
+    "subtema": "cc-margen-seguridad",
+    "formula": "margen-seguridad",
+    "enunciado": "Una empresa vende USD 120.000 y su punto de equilibrio en ventas es USD 90.000. ¿Cuál es su margen de seguridad en dólares?",
+    "datos": {
+      "V": 120000,
+      "PE": 90000
+    },
+    "calculo": "V - PE",
+    "respuesta": 30000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "MS = 120.000 − 90.000 = 30.000"
+    ],
+    "pistas": [
+      "Es cuánto pueden caer las ventas antes de tener pérdida."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.5 Margin of Safety and Operating Leverage"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-apalancamiento",
+    "subtema": "cc-margen-seguridad",
+    "formula": "apalancamiento-operativo",
+    "enunciado": "Una empresa tiene un margen de contribución total de USD 48.000 y una utilidad operativa de USD 12.000. ¿Cuál es su grado de apalancamiento operativo?",
+    "datos": {
+      "MC": 48000,
+      "U": 12000
+    },
+    "calculo": "MC / U",
+    "respuesta": 4,
+    "unidad": "veces",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "GAO = 48.000 ÷ 12.000 = 4"
+    ],
+    "pistas": [
+      "Un GAO de 4 significa que la utilidad cambia 4 veces más que las ventas en porcentaje."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.5 Margin of Safety and Operating Leverage"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-sensibilidad-precio",
+    "subtema": "cc-sensibilidad",
+    "formula": "punto-equilibrio-unidades",
+    "enunciado": "En el taller (costos fijos USD 18.000, costo variable USD 36), el precio baja de USD 60 a USD 56. ¿Cuál es el nuevo punto de equilibrio en unidades?",
+    "datos": {
+      "CF": 18000,
+      "p": 56,
+      "cv": 36
+    },
+    "calculo": "CF / (p - cv)",
+    "respuesta": 900,
+    "unidad": "unidades",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Nuevo MCu = 56 − 36 = 20",
+      "PE = 18.000 ÷ 20 = 900"
+    ],
+    "pistas": [
+      "Recalcula el margen con el nuevo precio."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.3 Break-Even Sensitivity Analysis"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-sensibilidad-fijos",
+    "subtema": "cc-sensibilidad",
+    "formula": "punto-equilibrio-unidades",
+    "enunciado": "Si el taller mantiene el precio de USD 60 y el costo variable de USD 36, pero sus costos fijos suben a USD 21.000 por un nuevo arriendo, ¿cuál es el nuevo punto de equilibrio?",
+    "datos": {
+      "CF": 21000,
+      "p": 60,
+      "cv": 36
+    },
+    "calculo": "CF / (p - cv)",
+    "respuesta": 875,
+    "unidad": "unidades",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "MCu = 60 − 36 = 24",
+      "PE = 21.000 ÷ 24 = 875"
+    ],
+    "pistas": [
+      "Solo cambian los costos fijos."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "3.3 Break-Even Sensitivity Analysis"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-costo-primo",
+    "subtema": "cc-elementos-costo",
+    "enunciado": "Un lote usó USD 80.000 de materiales directos, USD 42.000 de mano de obra directa y USD 63.000 de CIF. ¿Cuál es el costo de producción del lote?",
+    "datos": {
+      "MD": 80000,
+      "MOD": 42000,
+      "CIF": 63000
+    },
+    "calculo": "MD + MOD + CIF",
+    "respuesta": 185000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Costo primo = 80.000 + 42.000 = 122.000",
+      "Costo de producción = 122.000 + 63.000 = 185.000"
+    ],
+    "pistas": [
+      "Suma los tres elementos del costo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "4.2 Three Major Components of Product Costs"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-variacion-tarifa",
+    "subtema": "cc-variaciones-mano-obra",
+    "enunciado": "Se pagaron 1.050 horas de mano de obra a USD 11 por hora; la tarifa estándar es USD 10. ¿Cuál es la variación de tarifa? (Positiva = desfavorable.)",
+    "datos": {
+      "TR": 11,
+      "TE": 10,
+      "HR": 1050
+    },
+    "calculo": "(TR - TE) * HR",
+    "respuesta": 1050,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Variación de tarifa = (11 − 10) × 1.050 = 1.050 (desfavorable)"
+    ],
+    "pistas": [
+      "Usa las horas reales."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "8.3 Labor Variances"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-variacion-eficiencia",
+    "subtema": "cc-variaciones-mano-obra",
+    "enunciado": "Para la producción lograda debían usarse 1.000 horas a la tarifa estándar de USD 10, pero se usaron 1.050. ¿Cuál es la variación de eficiencia? (Positiva = desfavorable.)",
+    "datos": {
+      "HR": 1050,
+      "HE": 1000,
+      "TE": 10
+    },
+    "calculo": "(HR - HE) * TE",
+    "respuesta": 500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Variación de eficiencia = (1.050 − 1.000) × 10 = 500 (desfavorable)"
+    ],
+    "pistas": [
+      "Usa la tarifa estándar."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "8.3 Labor Variances"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-pedido-acepta",
+    "subtema": "cc-pedido-especial",
+    "enunciado": "Con capacidad ociosa, una fábrica recibe un pedido de 500 unidades a USD 32. El costo variable es USD 26 y el pedido requiere un ajuste de USD 600. ¿Cuál es el margen incremental del pedido?",
+    "datos": {
+      "p": 32,
+      "cv": 26,
+      "q": 500,
+      "CA": 600
+    },
+    "calculo": "(p - cv) * q - CA",
+    "respuesta": 2400,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Margen = (32 − 26) × 500 = 3.000",
+      "Margen incremental = 3.000 − 600 = 2.400 (aceptar)"
+    ],
+    "pistas": [
+      "Los costos fijos existentes no son relevantes."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.2 Special Order"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-pedido-rechaza",
+    "subtema": "cc-pedido-especial",
+    "enunciado": "Si el mismo pedido de 500 unidades se ofreciera a USD 27, con costo variable de USD 26 y ajuste de USD 600, ¿cuál sería el margen incremental? (Negativo = rechazar.)",
+    "datos": {
+      "p": 27,
+      "cv": 26,
+      "q": 500,
+      "CA": 600
+    },
+    "calculo": "(p - cv) * q - CA",
+    "respuesta": -100,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Margen = (27 − 26) × 500 = 500",
+      "Margen incremental = 500 − 600 = −100 (rechazar)"
+    ],
+    "pistas": [
+      "El ajuste no alcanza a cubrirse."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.2 Special Order"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-hacer-comprar",
+    "subtema": "cc-hacer-comprar",
+    "enunciado": "Fabricar 1.000 tapas cuesta USD 14 variables por unidad más USD 3.000 de costos fijos evitables. Comprarlas cuesta USD 16,50 cada una. ¿Cuánto se ahorra comprándolas? (Negativo = conviene fabricar.)",
+    "datos": {
+      "cv": 14,
+      "q": 1000,
+      "CFe": 3000,
+      "pc": 16.5
+    },
+    "calculo": "(cv * q + CFe) - pc * q",
+    "respuesta": 500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Fabricar = 14 × 1.000 + 3.000 = 17.000",
+      "Comprar = 16,5 × 1.000 = 16.500",
+      "Ahorro = 17.000 − 16.500 = 500"
+    ],
+    "pistas": [
+      "Incluye solo los fijos que se evitarían."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.3 Make or Buy"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-hacer-comprar-2",
+    "subtema": "cc-hacer-comprar",
+    "enunciado": "Fabricar 2.000 empaques cuesta USD 3,20 variables por unidad y USD 1.000 de fijos evitables; el proveedor cobra USD 3,90. ¿Cuánto se ahorra comprando? (Negativo = conviene fabricar.)",
+    "datos": {
+      "cv": 3.2,
+      "q": 2000,
+      "CFe": 1000,
+      "pc": 3.9
+    },
+    "calculo": "(cv * q + CFe) - pc * q",
+    "respuesta": -400,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Fabricar = 3,2 × 2.000 + 1.000 = 7.400",
+      "Comprar = 3,9 × 2.000 = 7.800",
+      "Ahorro = 7.400 − 7.800 = −400 (conviene fabricar)"
+    ],
+    "pistas": [
+      "Compara los dos costos totales relevantes."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.3 Make or Buy"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-segmento",
+    "subtema": "cc-mantener-eliminar",
+    "enunciado": "Una línea de producto tiene margen de contribución de USD 22.000 y costos fijos evitables de USD 18.000. ¿Cuánto aporta a la utilidad de la empresa? (Positivo = mantener.)",
+    "datos": {
+      "MC": 22000,
+      "CFe": 18000
+    },
+    "calculo": "MC - CFe",
+    "respuesta": 4000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Aporte = 22.000 − 18.000 = 4.000 (mantener)"
+    ],
+    "pistas": [
+      "Los costos comunes asignados no se evitan."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.4 Keep or Discontinue a Segment"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-segmento-elimina",
+    "subtema": "cc-mantener-eliminar",
+    "enunciado": "Otra línea tiene margen de contribución de USD 22.000 y costos fijos evitables de USD 25.000. ¿Cuánto aporta a la utilidad? (Negativo = eliminarla mejora la utilidad.)",
+    "datos": {
+      "MC": 22000,
+      "CFe": 25000
+    },
+    "calculo": "MC - CFe",
+    "respuesta": -3000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Aporte = 22.000 − 25.000 = −3.000 (eliminar mejora la utilidad en 3.000)"
+    ],
+    "pistas": [
+      "Compara el margen con lo que se ahorraría al cerrar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.4 Keep or Discontinue a Segment"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-margen-hora",
+    "subtema": "cc-recursos-limitados",
+    "enunciado": "El producto A deja USD 30 de margen de contribución y usa 2 horas de máquina. ¿Cuál es su margen por hora de máquina?",
+    "datos": {
+      "MC": 30,
+      "h": 2
+    },
+    "calculo": "MC / h",
+    "respuesta": 15,
+    "unidad": "USD por hora",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Margen por hora = 30 ÷ 2 = 15"
+    ],
+    "pistas": [
+      "Divide el margen para las horas del recurso escaso."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.6 Resources Are Constrained"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-mezcla-optima",
+    "subtema": "cc-recursos-limitados",
+    "enunciado": "Hay 600 horas de máquina. A deja USD 30 y usa 2 horas (demanda máxima 200 unidades); B deja USD 36 y usa 2,5 horas. Priorizando A, ¿cuál es el margen de contribución total?",
+    "datos": {
+      "qA": 200,
+      "mA": 30,
+      "hA": 2,
+      "H": 600,
+      "mB": 36,
+      "hB": 2.5
+    },
+    "calculo": "qA * mA + (H - qA * hA) / hB * mB",
+    "respuesta": 8880,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Horas para A = 200 × 2 = 400",
+      "Horas para B = 600 − 400 = 200, es decir, 200 ÷ 2,5 = 80 unidades",
+      "Margen total = 200 × 30 + 80 × 36 = 8.880"
+    ],
+    "pistas": [
+      "A deja 15 por hora y B, 14,4: produce primero A hasta su demanda."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "10.6 Resources Are Constrained"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-costo-orden",
+    "subtema": "cc-costo-orden",
+    "enunciado": "La orden 215 usó USD 2.400 de materiales y 80 horas de mano de obra a USD 12. Con una tasa de CIF de USD 15 por hora, ¿cuál es el costo de la orden?",
+    "datos": {
+      "MD": 2400,
+      "h": 80,
+      "t": 12,
+      "tasa": 15
+    },
+    "calculo": "MD + h * t + h * tasa",
+    "respuesta": 4560,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "MOD = 80 × 12 = 960",
+      "CIF aplicados = 80 × 15 = 1.200",
+      "Costo = 2.400 + 960 + 1.200 = 4.560"
+    ],
+    "pistas": [
+      "Suma materiales, mano de obra y CIF aplicados."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "4.5 Cost of a Job"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-costo-unitario-orden",
+    "subtema": "cc-costo-orden",
+    "enunciado": "Si la orden 215 (costo total USD 4.560) es de 40 sillas, ¿cuál es el costo unitario?",
+    "datos": {
+      "C": 4560,
+      "q": 40
+    },
+    "calculo": "C / q",
+    "respuesta": 114,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Costo unitario = 4.560 ÷ 40 = 114"
+    ],
+    "pistas": [
+      "Divide el costo de la orden para las unidades."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "4.5 Cost of a Job"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-subaplicados",
+    "subtema": "cc-cif-sub-sobre",
+    "enunciado": "La tasa de CIF es USD 18 por hora y se trabajaron 2.050 horas; los CIF reales fueron USD 38.200. ¿Cuántos dólares de CIF quedaron subaplicados?",
+    "datos": {
+      "tasa": 18,
+      "h": 2050,
+      "real": 38200
+    },
+    "calculo": "real - tasa * h",
+    "respuesta": 1300,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Aplicados = 18 × 2.050 = 36.900",
+      "Subaplicados = 38.200 − 36.900 = 1.300"
+    ],
+    "pistas": [
+      "Compara los aplicados con los reales."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "4.6 Underapplied or Overapplied Overhead"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-sobreaplicados",
+    "subtema": "cc-cif-sub-sobre",
+    "enunciado": "Con una tasa de USD 12,50 por hora y 4.000 horas, los CIF reales fueron USD 48.200. ¿Cuántos dólares quedaron sobreaplicados?",
+    "datos": {
+      "tasa": 12.5,
+      "h": 4000,
+      "real": 48200
+    },
+    "calculo": "tasa * h - real",
+    "respuesta": 1800,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Aplicados = 12,5 × 4.000 = 50.000",
+      "Sobreaplicados = 50.000 − 48.200 = 1.800"
+    ],
+    "pistas": [
+      "Si se aplicó más de lo real, hay sobreaplicación."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "4.6 Underapplied or Overapplied Overhead"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-conversion",
+    "subtema": "cc-conversion",
+    "enunciado": "Un departamento pagó USD 42.000 de mano de obra directa y aplicó USD 63.000 de CIF. ¿Cuál es su costo de conversión?",
+    "datos": {
+      "MOD": 42000,
+      "CIF": 63000
+    },
+    "calculo": "MOD + CIF",
+    "respuesta": 105000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Conversión = 42.000 + 63.000 = 105.000"
+    ],
+    "pistas": [
+      "No incluyas los materiales directos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "5.2 Conversion Costs"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-absorbente-unitario",
+    "subtema": "cc-variable-absorbente",
+    "enunciado": "Por unidad se usan USD 6 de materiales, USD 4 de mano de obra y USD 2 de CIF variables; los CIF fijos son USD 50.000 para 10.000 unidades. ¿Cuál es el costo unitario con costeo absorbente?",
+    "datos": {
+      "MD": 6,
+      "MOD": 4,
+      "CIFv": 2,
+      "CIFf": 50000,
+      "q": 10000
+    },
+    "calculo": "MD + MOD + CIFv + CIFf / q",
+    "respuesta": 17,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "CIF fijo por unidad = 50.000 ÷ 10.000 = 5",
+      "Costo absorbente = 6 + 4 + 2 + 5 = 17 (variable: 12)"
+    ],
+    "pistas": [
+      "El absorbente incluye los CIF fijos por unidad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "6.5 Variable and Absorption Costing"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-diferencia-utilidad",
+    "subtema": "cc-variable-absorbente",
+    "enunciado": "Se producen 10.000 unidades (CIF fijos de USD 5 por unidad) y se venden 8.000. ¿En cuánto supera la utilidad del costeo absorbente a la del costeo variable?",
+    "datos": {
+      "prod": 10000,
+      "venta": 8000,
+      "f": 5
+    },
+    "calculo": "(prod - venta) * f",
+    "respuesta": 10000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Unidades en inventario = 10.000 − 8.000 = 2.000",
+      "Diferencia = 2.000 × 5 = 10.000"
+    ],
+    "pistas": [
+      "Los CIF fijos que quedan en el inventario explican la diferencia."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "6.5 Variable and Absorption Costing"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-alto-bajo",
+    "subtema": "cc-alto-bajo",
+    "enunciado": "Con 2.400 horas de máquina el costo de mantenimiento fue USD 15.800 y con 1.600 horas fue USD 12.600. Por el método de punto alto y punto bajo, ¿cuál es el costo variable por hora?",
+    "datos": {
+      "Ca": 15800,
+      "Cb": 12600,
+      "ha": 2400,
+      "hb": 1600
+    },
+    "calculo": "(Ca - Cb) / (ha - hb)",
+    "respuesta": 4,
+    "unidad": "USD por hora",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Variable = (15.800 − 12.600) ÷ (2.400 − 1.600)",
+      "Variable = 3.200 ÷ 800 = 4",
+      "Fijo = 15.800 − 4 × 2.400 = 6.200"
+    ],
+    "pistas": [
+      "Divide el cambio en el costo para el cambio en la actividad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "2.3 Variable and Fixed Cost Equation"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-tasa-cif",
+    "subtema": "cc-tasa-predeterminada",
+    "enunciado": "Una fábrica estima CIF de USD 240.000 para el año y 16.000 horas de mano de obra directa. ¿Cuál es su tasa predeterminada de CIF por hora?",
+    "datos": {
+      "CIF": 240000,
+      "h": 16000
+    },
+    "calculo": "CIF / h",
+    "respuesta": 15,
+    "unidad": "USD por hora",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Tasa = 240.000 ÷ 16.000 = 15"
+    ],
+    "pistas": [
+      "Divide los CIF estimados para la base de asignación estimada."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "4.4 Predetermined Overhead Rate"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cc-unidades-equivalentes",
+    "subtema": "cc-unidades-equivalentes",
+    "enunciado": "En un mes se terminaron 8.000 unidades y quedaron 2.000 en proceso con 40 % de avance en conversión. ¿Cuántas unidades equivalentes de conversión hubo?",
+    "datos": {
+      "T": 8000,
+      "P": 2000,
+      "a": 0.4
+    },
+    "calculo": "T + P * a",
+    "respuesta": 8800,
+    "unidad": "unidades",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "En proceso equivalentes = 2.000 × 0,4 = 800",
+      "Total = 8.000 + 800 = 8.800"
+    ],
+    "pistas": [
+      "Las unidades en proceso cuentan según su porcentaje de avance."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "seccion": "5.3 Equivalent Units"
+    },
+    "materia": "contabilidad-costos",
+    "actualizado_en": "2026-10-26"
   }
 ]

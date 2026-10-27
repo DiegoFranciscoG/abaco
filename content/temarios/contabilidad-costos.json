@@ -65,6 +65,27 @@
             "url": "https://openstax.org/books/principles-managerial-accounting/pages/2-3-estimate-a-variable-and-fixed-cost-equation-and-predict-future-costs",
             "seccion": "2.3 Estimate a Variable and Fixed Cost Equation and Predict Future Costs"
           }
+        },
+        {
+          "id": "cc-elementos-costo",
+          "nombre": "Los tres elementos del costo de producción",
+          "explicacion": "El costo de un producto fabricado tiene tres elementos. Los materiales directos son los que forman parte física del producto y se pueden identificar con él, como la madera de una mesa. La mano de obra directa es el trabajo de quienes transforman los materiales, como el carpintero. Los costos indirectos de fabricación (CIF) son todos los demás costos de la planta que no se pueden asignar directamente a cada unidad: supervisión, depreciación de la maquinaria, energía, materiales indirectos. Materiales directos más mano de obra directa forman el costo primo; mano de obra directa más CIF, el costo de conversión.",
+          "ejemplo": "Una mesa usa USD 12 de madera, USD 8 de mano de obra del carpintero y USD 5 de CIF asignados. Su costo de producción es 12 + 8 + 5 = 25 dólares; su costo primo es 12 + 8 = 20 y su costo de conversión, 8 + 5 = 13.",
+          "puntos_clave": [
+            "Materiales directos + mano de obra directa + CIF = costo de producción.",
+            "Costo primo = materiales directos + mano de obra directa.",
+            "Costo de conversión = mano de obra directa + CIF."
+          ],
+          "errores_frecuentes": [
+            "Clasificar el sueldo del supervisor como mano de obra directa.",
+            "Incluir gastos de ventas o de administración en el costo del producto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/4-2-describe-and-identify-the-three-major-components-of-product-costs-under-job-order-costing",
+            "seccion": "4.2 Describe and Identify the Three Major Components of Product Costs under Job Order Costing"
+          }
         }
       ]
     },
@@ -140,6 +161,29 @@
             "ref": "os-pma",
             "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-5-calculate-and-interpret-a-companys-margin-of-safety-and-operating-leverage",
             "seccion": "3.5 Calculate and Interpret a Company’s Margin of Safety and Operating Leverage"
+          }
+        },
+        {
+          "id": "cc-sensibilidad",
+          "nombre": "Análisis de sensibilidad del punto de equilibrio",
+          "explicacion": "El punto de equilibrio cambia cuando cambian el precio, el costo variable o los costos fijos. El análisis de sensibilidad responde preguntas del tipo «¿qué pasa si…?»: si el precio baja, el margen de contribución por unidad se reduce y hacen falta más unidades para cubrir los costos fijos; si los costos fijos suben, por ejemplo por un arriendo más caro, también sube el punto de equilibrio. Este análisis ayuda a decidir promociones, inversiones en maquinaria o cambios de proveedores antes de ejecutarlos.",
+          "ejemplo": "Un taller tiene costos fijos de USD 18.000, precio de USD 60 y costo variable de USD 36: su equilibrio es 18.000 ÷ 24 = 750 unidades. Si baja el precio a USD 56, el margen cae a 20 y el equilibrio sube a 18.000 ÷ 20 = 900 unidades.",
+          "puntos_clave": [
+            "Menor precio o mayor costo variable: equilibrio más alto.",
+            "Más costos fijos: equilibrio más alto.",
+            "Se evalúa antes de tomar la decisión."
+          ],
+          "errores_frecuentes": [
+            "Cambiar el precio sin recalcular el margen de contribución.",
+            "Suponer que las ventas aumentarán lo suficiente para compensar cualquier rebaja."
+          ],
+          "formulas": [
+            "punto-equilibrio-unidades"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/3-3-perform-break-even-sensitivity-analysis-for-a-single-product-under-changing-business-situations",
+            "seccion": "3.3 Perform Break-Even Sensitivity Analysis for a Single Product Under Changing Business Situations"
           }
         }
       ]
@@ -291,6 +335,213 @@
             "ref": "os-pma",
             "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-2-compute-and-evaluate-materials-variances",
             "seccion": "8.2 Compute and Evaluate Materials Variances"
+          }
+        },
+        {
+          "id": "cc-variaciones-mano-obra",
+          "nombre": "Variaciones de mano de obra: tarifa y eficiencia",
+          "explicacion": "Con costos estándar se compara lo que costó realmente la mano de obra con lo que debió costar. La variación de tarifa mide el efecto de pagar una tarifa por hora distinta de la estándar: (tarifa real − tarifa estándar) × horas reales. La variación de eficiencia mide el efecto de usar más o menos horas de las previstas para la producción lograda: (horas reales − horas estándar) × tarifa estándar. Una variación es desfavorable cuando aumenta el costo y favorable cuando lo reduce; ambas deben investigarse para conocer su causa.",
+          "ejemplo": "Se pagaron 1.050 horas a USD 11 cuando el estándar era USD 10 por hora y 1.000 horas para la producción lograda. Variación de tarifa = (11 − 10) × 1.050 = 1.050 desfavorable. Variación de eficiencia = (1.050 − 1.000) × 10 = 500 desfavorable.",
+          "puntos_clave": [
+            "Tarifa: (TR − TE) × HR.",
+            "Eficiencia: (HR − HE) × TE.",
+            "Desfavorable si aumenta el costo."
+          ],
+          "errores_frecuentes": [
+            "Usar las horas estándar en la variación de tarifa.",
+            "Concluir que toda variación desfavorable es culpa de los trabajadores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-3-compute-and-evaluate-labor-variances",
+            "seccion": "8.3 Compute and Evaluate Labor Variances"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-decisiones",
+      "nombre": "Costos relevantes para decidir",
+      "orden": 5,
+      "descripcion": "Pedidos especiales, hacer o comprar, mantener o eliminar un segmento y recursos limitados.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cc-pedido-especial",
+          "nombre": "Aceptar o rechazar un pedido especial",
+          "explicacion": "Un pedido especial es una venta única a un precio menor que el habitual. Si la empresa tiene capacidad ociosa, solo importan los costos e ingresos que cambian con el pedido: el precio ofrecido, los costos variables y cualquier costo adicional del pedido. Los costos fijos que existirán de todos modos no son relevantes. Si el margen incremental es positivo, el pedido aumenta la utilidad. Si no hay capacidad, hay que considerar las ventas normales que se perderían, y también los efectos cualitativos, como la reacción de los clientes habituales.",
+          "ejemplo": "Una fábrica con capacidad ociosa recibe un pedido de 500 unidades a USD 32. Su costo variable es USD 26 y el pedido requiere un ajuste de USD 600. Margen incremental = (32 − 26) × 500 − 600 = 2.400 dólares: conviene aceptarlo.",
+          "puntos_clave": [
+            "Con capacidad ociosa, los costos fijos no son relevantes.",
+            "Margen incremental = (precio − costo variable) × unidades − costos adicionales.",
+            "Sin capacidad, se suma el costo de oportunidad de las ventas perdidas."
+          ],
+          "errores_frecuentes": [
+            "Rechazar el pedido porque el precio no cubre el costo total unitario.",
+            "Olvidar costos adicionales propios del pedido."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/10-2-evaluate-and-determine-whether-to-accept-or-reject-a-special-order",
+            "seccion": "10.2 Evaluate and Determine Whether to Accept or Reject a Special Order"
+          }
+        },
+        {
+          "id": "cc-hacer-comprar",
+          "nombre": "Hacer o comprar un componente",
+          "explicacion": "Cuando una empresa puede fabricar un componente o comprarlo a un proveedor (tercerizar), compara los costos relevantes de cada opción: al fabricar, los costos variables y los costos fijos que se evitarían si se deja de producir; al comprar, el precio del proveedor. Los costos fijos que seguirán existiendo, como la depreciación de un edificio, no son relevantes. También pesan factores cualitativos: calidad, confiabilidad de las entregas y si el espacio liberado puede usarse en otra actividad rentable.",
+          "ejemplo": "Fabricar 1.000 tapas cuesta USD 14 variables por unidad más USD 3.000 de costos fijos evitables: 14 × 1.000 + 3.000 = 17.000 dólares. Comprarlas cuesta 16,5 × 1.000 = 16.500. Comprar ahorra 17.000 − 16.500 = 500 dólares.",
+          "puntos_clave": [
+            "Costo relevante de fabricar: variables + fijos evitables.",
+            "Costo de comprar: precio del proveedor.",
+            "Los fijos inevitables no cambian la decisión."
+          ],
+          "errores_frecuentes": [
+            "Incluir costos fijos que no desaparecen al comprar.",
+            "Decidir solo por costo sin evaluar calidad y entregas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/10-3-evaluate-and-determine-whether-to-make-or-buy-a-component",
+            "seccion": "10.3 Evaluate and Determine Whether to Make or Buy a Component"
+          }
+        },
+        {
+          "id": "cc-mantener-eliminar",
+          "nombre": "Mantener o eliminar un segmento o producto",
+          "explicacion": "Un producto o sucursal que muestra pérdida en el estado de resultados no siempre debe eliminarse. Lo relevante es su margen de contribución menos los costos fijos que desaparecerían al cerrarlo (fijos evitables). Si ese resultado es positivo, el segmento ayuda a cubrir los costos fijos comunes de la empresa, que seguirían existiendo, y eliminarlo reduciría la utilidad total. Si es negativo, eliminarlo mejora la utilidad.",
+          "ejemplo": "Una línea de botas tiene margen de contribución de USD 22.000 y costos fijos evitables de USD 18.000; además se le asignan USD 9.000 de costos comunes, por lo que en el informe muestra pérdida. Su aporte real es 22.000 − 18.000 = 4.000 dólares: conviene mantenerla.",
+          "puntos_clave": [
+            "Aporte del segmento = margen de contribución − fijos evitables.",
+            "Los costos comunes asignados no desaparecen.",
+            "Aporte positivo: mantener el segmento."
+          ],
+          "errores_frecuentes": [
+            "Eliminar un producto solo porque muestra pérdida con costos asignados.",
+            "Olvidar efectos en las ventas de otros productos relacionados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/10-4-evaluate-and-determine-whether-to-keep-or-discontinue-a-segment-or-product",
+            "seccion": "10.4 Evaluate and Determine Whether to Keep or Discontinue a Segment or Product"
+          }
+        },
+        {
+          "id": "cc-recursos-limitados",
+          "nombre": "Decidir con recursos limitados",
+          "explicacion": "Cuando un recurso es escaso —horas de máquina, horas de trabajo especializado, materia prima— y limita la producción, se convierte en el cuello de botella. En ese caso no conviene priorizar el producto con mayor margen por unidad, sino el que genera mayor margen de contribución por unidad del recurso escaso. Se ordena la producción de mayor a menor margen por hora (o por unidad del recurso) hasta agotar la capacidad, respetando la demanda máxima de cada producto.",
+          "ejemplo": "El producto A deja USD 30 de margen y usa 2 horas de máquina; el B deja USD 36 y usa 3 horas. Por hora, A deja 30 ÷ 2 = 15 y B deja 36 ÷ 3 = 12 dólares. Con horas de máquina limitadas, conviene producir primero A.",
+          "puntos_clave": [
+            "Margen por unidad del recurso escaso = margen ÷ uso del recurso.",
+            "Se prioriza el mayor margen por recurso escaso.",
+            "La demanda máxima limita cuánto producir de cada uno."
+          ],
+          "errores_frecuentes": [
+            "Priorizar el mayor margen por unidad sin mirar el recurso escaso.",
+            "Ignorar la demanda máxima del producto prioritario."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/10-6-evaluate-and-determine-how-to-make-decisions-when-resources-are-constrained",
+            "seccion": "10.6 Evaluate and Determine How to Make Decisions When Resources Are Constrained"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-ordenes-variable",
+      "nombre": "Costeo por órdenes, CIF y costeo variable",
+      "orden": 6,
+      "descripcion": "Costo de una orden, CIF subaplicados y sobreaplicados, costos de conversión y costeo variable frente a absorbente.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cc-costo-orden",
+          "nombre": "Calcular el costo de una orden de trabajo",
+          "explicacion": "En el costeo por órdenes, cada pedido o lote tiene su hoja de costos donde se acumulan los materiales directos requisados, la mano de obra directa (horas por tarifa) y los CIF aplicados con la tasa predeterminada. Al terminar la orden, su costo total pasa de productos en proceso a productos terminados, y al venderse, a costo de ventas. Dividir el costo total para las unidades de la orden da el costo unitario, que sirve para fijar precios y evaluar la rentabilidad del pedido.",
+          "ejemplo": "La orden 215 usó USD 2.400 de materiales y 80 horas de mano de obra a USD 12. Con una tasa de CIF de USD 15 por hora, su costo es 2.400 + 80 × 12 + 80 × 15 = 4.560 dólares. Si la orden es de 40 sillas, cada una cuesta 4.560 ÷ 40 = 114 dólares.",
+          "puntos_clave": [
+            "Costo de la orden = MD + MOD + CIF aplicados.",
+            "Los CIF se aplican con la tasa predeterminada.",
+            "Costo unitario = costo de la orden ÷ unidades."
+          ],
+          "errores_frecuentes": [
+            "Aplicar los CIF reales en lugar de los predeterminados durante el período.",
+            "Mezclar costos de distintas órdenes en una misma hoja."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/4-5-compute-the-cost-of-a-job-using-job-order-costing",
+            "seccion": "4.5 Compute the Cost of a Job Using Job Order Costing"
+          }
+        },
+        {
+          "id": "cc-cif-sub-sobre",
+          "nombre": "CIF subaplicados y sobreaplicados",
+          "explicacion": "Como los CIF se aplican con una tasa estimada, al cierre del período casi nunca coinciden con los CIF reales. Si los aplicados son menores que los reales, los CIF están subaplicados y el costo de los productos quedó subestimado; si son mayores, están sobreaplicados. La diferencia se cierra normalmente contra el costo de ventas (o se reparte entre inventarios y costo de ventas si es importante), para que los estados financieros reflejen los costos reales.",
+          "ejemplo": "Con una tasa de USD 18 por hora y 2.050 horas trabajadas, los CIF aplicados son 18 × 2.050 = 36.900 dólares. Los reales fueron USD 38.200, así que hay 38.200 − 36.900 = 1.300 dólares de CIF subaplicados.",
+          "puntos_clave": [
+            "Aplicados < reales: subaplicados.",
+            "Aplicados > reales: sobreaplicados.",
+            "La diferencia se ajusta al costo de ventas."
+          ],
+          "errores_frecuentes": [
+            "Confundir qué significa subaplicado y sobreaplicado.",
+            "Dejar la diferencia sin ajustar al cierre."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/4-6-determine-and-dispose-of-underapplied-or-overapplied-overhead",
+            "seccion": "4.6 Determine and Dispose of Underapplied or Overapplied Overhead"
+          }
+        },
+        {
+          "id": "cc-conversion",
+          "nombre": "Costos de conversión",
+          "explicacion": "El costo de conversión es lo que cuesta transformar las materias primas en producto: la mano de obra directa más los costos indirectos de fabricación. En el costeo por procesos se usa mucho porque, en cada departamento, los materiales suelen agregarse al inicio mientras que la conversión ocurre a lo largo del proceso; por eso se calculan unidades equivalentes por separado para materiales y para conversión.",
+          "ejemplo": "En el departamento de moldeado se pagaron USD 42.000 de mano de obra directa y se aplicaron USD 63.000 de CIF. El costo de conversión del mes es 42.000 + 63.000 = 105.000 dólares.",
+          "puntos_clave": [
+            "Conversión = mano de obra directa + CIF.",
+            "En procesos se trata por separado de los materiales.",
+            "Se usa para las unidades equivalentes de conversión."
+          ],
+          "errores_frecuentes": [
+            "Incluir los materiales directos en el costo de conversión.",
+            "Usar el mismo porcentaje de avance para materiales y conversión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/5-2-explain-and-identify-conversion-costs",
+            "seccion": "5.2 Explain and Identify Conversion Costs"
+          }
+        },
+        {
+          "id": "cc-variable-absorbente",
+          "nombre": "Costeo variable frente a costeo absorbente",
+          "explicacion": "En el costeo absorbente, que exigen las normas contables para los informes externos, el costo del producto incluye materiales, mano de obra y todos los CIF, variables y fijos. En el costeo variable solo los costos variables de producción forman parte del producto, y los CIF fijos se cargan como gasto del período. Cuando se produce más de lo que se vende, el costeo absorbente muestra más utilidad porque parte de los CIF fijos queda en el inventario final; el costeo variable es más útil para decisiones internas y para el análisis costo–volumen–utilidad.",
+          "ejemplo": "Una fábrica produce 10.000 unidades con CIF fijos de USD 50.000 (50.000 ÷ 10.000 = 5 dólares por unidad) y vende 8.000. En el costeo absorbente quedan en el inventario 2.000 × 5 = 10.000 dólares de CIF fijos, por lo que su utilidad supera en 10.000 a la del costeo variable.",
+          "puntos_clave": [
+            "Absorbente: CIF fijos en el costo del producto.",
+            "Variable: CIF fijos como gasto del período.",
+            "Producción > ventas: mayor utilidad en el absorbente."
+          ],
+          "errores_frecuentes": [
+            "Usar el costeo variable en los estados financieros externos.",
+            "Interpretar como mejor gestión una utilidad que subió solo por producir más."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/6-5-compare-and-contrast-variable-and-absorption-costing",
+            "seccion": "6.5 Compare and Contrast Variable and Absorption Costing"
           }
         }
       ]
