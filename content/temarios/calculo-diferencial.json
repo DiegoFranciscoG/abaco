@@ -69,6 +69,27 @@
             "url": "https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions",
             "seccion": "1.5 Exponenciales y logaritmos"
           }
+        },
+        {
+          "id": "cd-funciones-inversas",
+          "nombre": "Funciones inversas",
+          "explicacion": "Una función tiene inversa cuando es uno a uno: a cada salida le corresponde una sola entrada, lo que gráficamente se comprueba con la prueba de la línea horizontal. La inversa f⁻¹ deshace a f, de modo que f⁻¹(f(x)) = x, y su gráfica es la reflexión de la de f respecto de la recta y = x. Si una función no es uno a uno, se puede restringir su dominio para que lo sea. En economía, la demanda inversa expresa el precio en función de la cantidad.",
+          "ejemplo": "Si la oferta de un producto es q = 4p − 20, despejando se obtiene la oferta inversa p = (q + 20) ÷ 4. Para que los productores ofrezcan 100 unidades, el precio debe ser (100 + 20) ÷ 4 = 30 dólares.",
+          "puntos_clave": [
+            "Existe inversa si la función es uno a uno.",
+            "Prueba de la línea horizontal.",
+            "La gráfica de f⁻¹ es simétrica a la de f respecto de y = x."
+          ],
+          "errores_frecuentes": [
+            "Confundir f⁻¹(x) con 1 ÷ f(x).",
+            "Olvidar restringir el dominio cuando la función no es uno a uno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/1-4-inverse-functions",
+            "seccion": "1.4 Funciones inversas"
+          }
         }
       ]
     },
@@ -138,6 +159,27 @@
             "ref": "os-calc1",
             "url": "https://openstax.org/books/calculus-volume-1/pages/2-4-continuity",
             "seccion": "2.4 Continuidad"
+          }
+        },
+        {
+          "id": "cd-limites-infinito",
+          "nombre": "Límites al infinito y asíntotas",
+          "explicacion": "Un límite al infinito describe el comportamiento de una función cuando x crece sin cota. Si f(x) se acerca a un número L, la recta y = L es una asíntota horizontal. En funciones racionales se comparan los grados del numerador y del denominador: si son iguales, el límite es el cociente de los coeficientes principales; si el denominador tiene mayor grado, el límite es 0. En negocios, el costo medio (CF + cv·q) ÷ q tiende al costo variable unitario cuando la producción crece.",
+          "ejemplo": "El costo medio de una empresa es (5.000 + 12q) ÷ q = 5.000 ÷ q + 12. Cuando q tiende a infinito, 5.000 ÷ q tiende a 0 y el costo medio tiende a 12: con 10.000 unidades ya vale 5.000 ÷ 10.000 + 12 = 12,5.",
+          "puntos_clave": [
+            "Asíntota horizontal: y = límite al infinito.",
+            "Grados iguales: cociente de coeficientes principales.",
+            "El costo medio tiende al costo variable unitario."
+          ],
+          "errores_frecuentes": [
+            "Pensar que una función nunca puede cruzar su asíntota horizontal.",
+            "Sustituir infinito como si fuera un número."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-6-limits-at-infinity-and-asymptotes",
+            "seccion": "4.6 Límites al infinito y asíntotas"
           }
         }
       ]
@@ -317,6 +359,192 @@
             "ref": "os-econ",
             "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
             "seccion": "5.1 Elasticidad precio"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cd-mas-derivadas",
+      "nombre": "Más técnicas y aplicaciones de la derivada",
+      "orden": 5,
+      "descripcion": "Derivadas exponenciales y logarítmicas, diferenciales, forma de la gráfica y regla de L'Hôpital.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cd-derivadas-exp-log",
+          "nombre": "Derivadas de funciones exponenciales y logarítmicas",
+          "explicacion": "La función eˣ es su propia derivada, y con la regla de la cadena la derivada de e^(k·x) es k·e^(k·x). La derivada de ln x es 1 ÷ x, para x positivo. Estas reglas permiten analizar tasas de crecimiento: si una cantidad crece de forma exponencial, su tasa de cambio es proporcional a su tamaño. En negocios se usan para estudiar ventas que crecen o se saturan, y para la derivación logarítmica de funciones complejas.",
+          "ejemplo": "Las ventas de un producto son S(t) = 200·ln(t + 1) miles de dólares, con t en meses. Su tasa de cambio es S′(t) = 200 ÷ (t + 1); en el mes 4 vale 200 ÷ 5 = 40 mil dólares por mes, y va disminuyendo con el tiempo.",
+          "puntos_clave": [
+            "Derivada de e^(k·x) = k·e^(k·x).",
+            "Derivada de ln x = 1 ÷ x.",
+            "Crecimiento exponencial: tasa proporcional al tamaño."
+          ],
+          "errores_frecuentes": [
+            "Olvidar multiplicar por la derivada del exponente.",
+            "Aplicar ln a valores negativos o cero."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions",
+            "seccion": "3.9 Derivadas de funciones exponenciales y logarítmicas"
+          }
+        },
+        {
+          "id": "cd-diferenciales",
+          "nombre": "Aproximación lineal y diferenciales",
+          "explicacion": "Cerca de un punto, una función se parece a su recta tangente. La aproximación lineal L(x) = f(a) + f′(a)·(x − a) permite estimar valores sin calcular la función exacta. El diferencial dy = f′(x)·dx estima el cambio de la función ante un cambio pequeño dx de la variable. En economía, el costo marginal multiplicado por el cambio en la producción estima cuánto variará el costo total.",
+          "ejemplo": "Con C(q) = 0,01q² + 5q + 800, el costo marginal en q = 100 es C′(100) = 0,02 × 100 + 5 = 7. Si la producción aumenta en 2 unidades, el costo sube aproximadamente dC = 7 × 2 = 14 dólares.",
+          "puntos_clave": [
+            "L(x) = f(a) + f′(a)·(x − a).",
+            "dy = f′(x)·dx.",
+            "La aproximación es buena para cambios pequeños."
+          ],
+          "errores_frecuentes": [
+            "Usar la aproximación lineal para cambios grandes.",
+            "Evaluar la derivada en el punto equivocado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-2-linear-approximations-and-differentials",
+            "seccion": "4.2 Aproximaciones lineales y diferenciales"
+          }
+        },
+        {
+          "id": "cd-forma-grafica",
+          "nombre": "La derivada y la forma de la gráfica",
+          "explicacion": "La primera derivada indica dónde una función crece (f′ > 0) o decrece (f′ < 0), y sus cambios de signo en los puntos críticos permiten clasificar máximos y mínimos locales (criterio de la primera derivada). La segunda derivada indica la concavidad: hacia arriba si f″ > 0 y hacia abajo si f″ < 0; donde la concavidad cambia hay un punto de inflexión. En una curva de ventas, el punto de inflexión marca el momento en que el crecimiento empieza a desacelerarse.",
+          "ejemplo": "Para f(x) = x³ − 6x² + 9x, la segunda derivada es f″(x) = 6x − 12, que vale 0 en x = 2 y cambia de signo allí: x = 2 es un punto de inflexión. Además f′(x) = 3x² − 12x + 9 se anula en x = 1 y x = 3, y f(1) = 1 − 6 + 9 = 4 es un máximo local.",
+          "puntos_clave": [
+            "f′ > 0: crece; f′ < 0: decrece.",
+            "f″ > 0: cóncava hacia arriba; f″ < 0: hacia abajo.",
+            "Punto de inflexión: cambia la concavidad."
+          ],
+          "errores_frecuentes": [
+            "Concluir que f″ = 0 siempre indica inflexión sin revisar el cambio de signo.",
+            "Confundir máximo local con máximo absoluto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph",
+            "seccion": "4.5 Las derivadas y la forma de una gráfica"
+          }
+        },
+        {
+          "id": "cd-lhopital",
+          "nombre": "Regla de L'Hôpital",
+          "explicacion": "Cuando al evaluar un límite de un cociente se obtiene una forma indeterminada 0 ÷ 0 o ∞ ÷ ∞, la regla de L'Hôpital permite reemplazar el cociente por el de las derivadas del numerador y del denominador, y volver a calcular el límite. Se puede aplicar varias veces si la indeterminación persiste. Otras formas indeterminadas (0 · ∞, ∞ − ∞, potencias) se transforman primero en un cociente.",
+          "ejemplo": "El límite de (x² − 9) ÷ (x − 3) cuando x tiende a 3 da 0 ÷ 0. Derivando arriba y abajo: 2x ÷ 1, que en x = 3 vale 2 × 3 = 6. El mismo resultado se obtiene factorizando: (x − 3)(x + 3) ÷ (x − 3) = x + 3.",
+          "puntos_clave": [
+            "Solo para 0 ÷ 0 o ∞ ÷ ∞.",
+            "Se derivan numerador y denominador por separado.",
+            "Puede aplicarse varias veces."
+          ],
+          "errores_frecuentes": [
+            "Aplicarla cuando el límite no es indeterminado.",
+            "Derivar el cociente con la regla del cociente en lugar de derivar cada parte."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-8-lhopitals-rule",
+            "seccion": "4.8 Regla de L'Hôpital"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cd-integral",
+      "nombre": "La integral y sus aplicaciones",
+      "orden": 6,
+      "descripcion": "Antiderivadas, teorema fundamental del cálculo, cambio neto y áreas entre curvas.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cd-antiderivadas",
+          "nombre": "Antiderivadas: del marginal al total",
+          "explicacion": "Una antiderivada de f es una función F cuya derivada es f. Como las funciones que difieren en una constante tienen la misma derivada, la antiderivada general es F(x) + C. Para potencias, la antiderivada de xⁿ es xⁿ⁺¹ ÷ (n + 1), con n distinto de −1. En economía permite recuperar el costo total a partir del costo marginal: la constante C se determina con un dato conocido, como el costo fijo cuando la producción es cero.",
+          "ejemplo": "Si el costo marginal es C′(q) = 3q² − 4q + 10 y el costo fijo es USD 500, el costo total es C(q) = q³ − 2q² + 10q + 500. Para 10 unidades: C(10) = 1.000 − 200 + 100 + 500 = 1.400 dólares.",
+          "puntos_clave": [
+            "F′(x) = f(x).",
+            "Antiderivada de xⁿ = xⁿ⁺¹ ÷ (n + 1) + C.",
+            "La constante se fija con un dato conocido."
+          ],
+          "errores_frecuentes": [
+            "Olvidar la constante de integración.",
+            "Aplicar la regla de potencias con n = −1."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives",
+            "seccion": "4.10 Antiderivadas"
+          }
+        },
+        {
+          "id": "cd-teorema-fundamental",
+          "nombre": "Teorema fundamental del cálculo",
+          "explicacion": "El teorema fundamental conecta derivadas e integrales. Su segunda parte permite calcular una integral definida con una antiderivada: la integral de f entre a y b es F(b) − F(a). Así, en lugar de sumar infinitos rectángulos, basta evaluar la antiderivada en los extremos. También permite calcular el valor promedio de una función en un intervalo: la integral dividida para la longitud del intervalo.",
+          "ejemplo": "La integral de 3x² entre 0 y 4 se calcula con la antiderivada x³: 4³ − 0³ = 64 − 0 = 64. El valor promedio de 3x² en ese intervalo es 64 ÷ 4 = 16.",
+          "puntos_clave": [
+            "∫ de a a b de f(x) dx = F(b) − F(a).",
+            "Une derivación e integración.",
+            "Valor promedio = integral ÷ (b − a)."
+          ],
+          "errores_frecuentes": [
+            "Restar en el orden equivocado, F(a) − F(b).",
+            "Incluir la constante de integración en una integral definida."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus",
+            "seccion": "5.3 El teorema fundamental del cálculo"
+          }
+        },
+        {
+          "id": "cd-cambio-neto",
+          "nombre": "Teorema del cambio neto",
+          "explicacion": "El teorema del cambio neto dice que la integral de una tasa de cambio entre a y b es el cambio total de la cantidad en ese intervalo: F(b) − F(a) es igual a la integral de F′. Si se conoce el costo marginal, su integral entre dos niveles de producción da cuánto aumenta el costo total; si se conoce la tasa de ventas por día, su integral da las ventas acumuladas del período.",
+          "ejemplo": "El costo marginal de una fábrica es C′(q) = 0,6q + 20. El aumento del costo al pasar de 10 a 20 unidades es la integral entre 10 y 20, con antiderivada 0,3q² + 20q: (120 + 400) − (30 + 200) = 290 dólares.",
+          "puntos_clave": [
+            "Integral de la tasa = cambio total.",
+            "Del costo marginal al aumento del costo.",
+            "De la tasa de ventas a las ventas acumuladas."
+          ],
+          "errores_frecuentes": [
+            "Confundir el cambio neto con el valor final.",
+            "Integrar fuera del intervalo pedido."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem",
+            "seccion": "5.4 Fórmulas de integración y el teorema del cambio neto"
+          }
+        },
+        {
+          "id": "cd-areas-curvas",
+          "nombre": "Áreas entre curvas: el excedente del consumidor",
+          "explicacion": "El área entre dos curvas en un intervalo se obtiene integrando la diferencia entre la función de arriba y la de abajo. En economía, el excedente del consumidor es el área entre la curva de demanda y la recta del precio de equilibrio, desde 0 hasta la cantidad de equilibrio; el excedente del productor, el área entre el precio y la curva de oferta. Con curvas no lineales, la integral da el valor exacto que el triángulo solo aproxima.",
+          "ejemplo": "La demanda es p = 50 − 0,5q y el equilibrio está en q = 40 con p = 30. El excedente del consumidor es la integral entre 0 y 40 de (20 − 0,5q): 20 × 40 − 0,25 × 1.600 = 800 − 400 = 400 dólares.",
+          "puntos_clave": [
+            "Área = ∫ (función de arriba − función de abajo).",
+            "Excedente del consumidor: demanda menos precio.",
+            "Excedente del productor: precio menos oferta."
+          ],
+          "errores_frecuentes": [
+            "Restar las funciones en el orden equivocado.",
+            "Usar un intervalo distinto de 0 a la cantidad de equilibrio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/6-1-areas-between-curves",
+            "seccion": "6.1 Áreas entre curvas"
           }
         }
       ]

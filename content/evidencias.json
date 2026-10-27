@@ -3178,5 +3178,77 @@
       "risk",
       "insurance"
     ]
+  },
+  {
+    "id": "cd-funciones-inversas",
+    "palabras": [
+      "inverse",
+      "one-to-one",
+      "horizontal line test"
+    ]
+  },
+  {
+    "id": "cd-limites-infinito",
+    "palabras": [
+      "horizontal asymptote",
+      "infinity"
+    ]
+  },
+  {
+    "id": "cd-derivadas-exp-log",
+    "palabras": [
+      "exponential",
+      "logarithmic",
+      "derivative"
+    ]
+  },
+  {
+    "id": "cd-diferenciales",
+    "palabras": [
+      "linear approximation",
+      "differentials"
+    ]
+  },
+  {
+    "id": "cd-forma-grafica",
+    "palabras": [
+      "concave",
+      "inflection",
+      "first derivative test"
+    ]
+  },
+  {
+    "id": "cd-lhopital",
+    "palabras": [
+      "hopital",
+      "indeterminate"
+    ]
+  },
+  {
+    "id": "cd-antiderivadas",
+    "palabras": [
+      "antiderivative",
+      "indefinite integral"
+    ]
+  },
+  {
+    "id": "cd-teorema-fundamental",
+    "palabras": [
+      "fundamental theorem of calculus",
+      "average value"
+    ]
+  },
+  {
+    "id": "cd-cambio-neto",
+    "palabras": [
+      "net change theorem"
+    ]
+  },
+  {
+    "id": "cd-areas-curvas",
+    "palabras": [
+      "area between",
+      "curves"
+    ]
   }
 ]

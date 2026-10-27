@@ -8208,5 +8208,602 @@
     },
     "materia": "evaluacion-proyectos",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-continuo",
+    "subtema": "cd-funciones-exponenciales",
+    "formula": "interes-continuo",
+    "enunciado": "Se invierten USD 5.000 a una tasa de 6 % anual con capitalización continua durante 4 años. ¿Cuál es el monto final?",
+    "datos": {
+      "P": 5000,
+      "r": 0.06,
+      "t": 4
+    },
+    "calculo": "P * EXP(r * t)",
+    "respuesta": 6356.25,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "r × t = 0,06 × 4 = 0,24",
+      "e elevado a 0,24 = 1,271249",
+      "F = 5.000 × 1,271249 = 6.356,25"
+    ],
+    "pistas": [
+      "Con capitalización continua, F = P·e^(r·t)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "1.5 Exponenciales y logaritmos"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-tiempo-continuo",
+    "subtema": "cd-funciones-exponenciales",
+    "enunciado": "¿En cuántos años USD 2.000 se convierten en USD 3.000 a 5 % anual con capitalización continua?",
+    "datos": {
+      "P": 2000,
+      "F": 3000,
+      "r": 0.05
+    },
+    "calculo": "LN(F / P) / r",
+    "respuesta": 8.11,
+    "unidad": "años",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "3.000 ÷ 2.000 = 1,5",
+      "t = ln 1,5 ÷ 0,05 = 0,405465 ÷ 0,05 = 8,11"
+    ],
+    "pistas": [
+      "Aplica logaritmo natural para despejar t."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "1.5 Exponenciales y logaritmos"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-secante-cuadratica",
+    "subtema": "cd-derivada-secante",
+    "formula": "tasa-cambio-promedio",
+    "enunciado": "Para f(x) = x² + 3x, ¿cuál es la tasa de cambio promedio entre x = 2 y x = 5?",
+    "datos": {
+      "a": 2,
+      "b": 5
+    },
+    "calculo": "((b ^ 2 + 3 * b) - (a ^ 2 + 3 * a)) / (b - a)",
+    "respuesta": 10,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "f(5) = 25 + 15 = 40",
+      "f(2) = 4 + 6 = 10",
+      "Tasa = (40 − 10) ÷ (5 − 2) = 10"
+    ],
+    "pistas": [
+      "Es la pendiente de la recta secante."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "3.1 Definición de la derivada"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-derivada-costo",
+    "subtema": "cd-derivada-reglas",
+    "formula": "costo-marginal",
+    "enunciado": "El costo de producir q unidades es C(q) = 0,5q³ − 4q² + 20q + 300. ¿Cuál es el costo marginal cuando q = 6?",
+    "datos": {
+      "q": 6
+    },
+    "calculo": "1.5 * q ^ 2 - 8 * q + 20",
+    "respuesta": 26,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "C′(q) = 1,5q² − 8q + 20",
+      "C′(6) = 54 − 48 + 20 = 26"
+    ],
+    "pistas": [
+      "Deriva término a término con la regla de la potencia."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "3.3 Reglas de derivación"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-ingreso-marginal",
+    "subtema": "cd-derivada-reglas",
+    "enunciado": "El ingreso por vender q unidades es R(q) = 80q − 0,4q². ¿Cuál es el ingreso marginal cuando q = 30?",
+    "datos": {
+      "q": 30
+    },
+    "calculo": "80 - 0.8 * q",
+    "respuesta": 56,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "R′(q) = 80 − 0,8q",
+      "R′(30) = 80 − 24 = 56"
+    ],
+    "pistas": [
+      "La derivada de −0,4q² es −0,8q."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "3.3 Reglas de derivación"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-utilidad-marginal",
+    "subtema": "cd-aplicaciones-marginal",
+    "enunciado": "La utilidad de una empresa es P(q) = −0,02q² + 40q − 3.000. ¿Cuál es la utilidad marginal cuando q = 500?",
+    "datos": {
+      "q": 500
+    },
+    "calculo": "-0.04 * q + 40",
+    "respuesta": 20,
+    "unidad": "USD por unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P′(q) = −0,04q + 40",
+      "P′(500) = −20 + 40 = 20"
+    ],
+    "pistas": [
+      "Deriva la función de utilidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "3.4 Derivadas como tasas de cambio"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-max-utilidad",
+    "subtema": "cd-aplicaciones-optimizacion",
+    "enunciado": "Con la utilidad P(q) = −0,02q² + 40q − 3.000, ¿qué cantidad maximiza la utilidad?",
+    "datos": {
+      "a": 0.02,
+      "b": 40
+    },
+    "calculo": "b / (2 * a)",
+    "respuesta": 1000,
+    "unidad": "unidades",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P′(q) = −0,04q + 40 = 0",
+      "q = 40 ÷ 0,04 = 1.000"
+    ],
+    "pistas": [
+      "Iguala la utilidad marginal a cero."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.7 Optimización aplicada"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-elasticidad-punto",
+    "subtema": "cd-aplicaciones-elasticidad",
+    "formula": "elasticidad-precio",
+    "enunciado": "La demanda es q = 1.000 − 20p. ¿Cuál es la elasticidad precio en valor absoluto cuando p = 30?",
+    "datos": {
+      "a": 1000,
+      "b": 20,
+      "p": 30
+    },
+    "calculo": "ABS(b * p / (a - b * p))",
+    "respuesta": 1.5,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "q = 1.000 − 20 × 30 = 400",
+      "dq/dp = −20",
+      "|E| = 20 × 30 ÷ 400 = 1,5 (elástica)"
+    ],
+    "pistas": [
+      "E = (dq/dp) × (p ÷ q)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-econ",
+      "seccion": "5.1 Elasticidad precio"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-derivada-log",
+    "subtema": "cd-derivadas-exp-log",
+    "enunciado": "Las ventas son S(t) = 200·ln(t + 1) miles de dólares (t en meses). ¿Cuál es su tasa de cambio en t = 4?",
+    "datos": {
+      "t": 4
+    },
+    "calculo": "200 / (t + 1)",
+    "respuesta": 40,
+    "unidad": "miles USD por mes",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "S′(t) = 200 ÷ (t + 1)",
+      "S′(4) = 200 ÷ 5 = 40"
+    ],
+    "pistas": [
+      "La derivada de ln(t + 1) es 1 ÷ (t + 1)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "3.9 Derivadas de funciones exponenciales y logarítmicas"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-derivada-exp",
+    "subtema": "cd-derivadas-exp-log",
+    "enunciado": "Para f(x) = e^(0,05x), ¿cuánto vale f′(10)?",
+    "datos": {
+      "x": 10
+    },
+    "calculo": "0.05 * EXP(0.05 * x)",
+    "respuesta": 0.0824,
+    "unidad": "sin unidad",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "f′(x) = 0,05 × e^(0,05x)",
+      "e elevado a 0,5 = 1,648721",
+      "f′(10) = 0,05 × 1,648721 = 0,0824"
+    ],
+    "pistas": [
+      "Multiplica por la derivada del exponente."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "3.9 Derivadas de funciones exponenciales y logarítmicas"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-diferencial-costo",
+    "subtema": "cd-diferenciales",
+    "enunciado": "Con C(q) = 0,01q² + 5q + 800, estima con el diferencial cuánto sube el costo si la producción pasa de 100 a 102 unidades.",
+    "datos": {
+      "q": 100,
+      "dq": 2
+    },
+    "calculo": "(0.02 * q + 5) * dq",
+    "respuesta": 14,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "C′(100) = 0,02 × 100 + 5 = 7",
+      "dC = 7 × 2 = 14"
+    ],
+    "pistas": [
+      "dC = C′(q) × dq."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.2 Aproximaciones lineales y diferenciales"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-aprox-raiz",
+    "subtema": "cd-diferenciales",
+    "enunciado": "Usa la aproximación lineal de √x en a = 100 para estimar √101.",
+    "datos": {
+      "a": 100,
+      "x": 101
+    },
+    "calculo": "SQRT(a) + (x - a) / (2 * SQRT(a))",
+    "respuesta": 10.05,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "f(100) = 10 y f′(100) = 1 ÷ 20 = 0,05",
+      "L(101) = 10 + 0,05 × 1 = 10,05"
+    ],
+    "pistas": [
+      "La derivada de √x es 1 ÷ (2√x)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.2 Aproximaciones lineales y diferenciales"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-inflexion",
+    "subtema": "cd-forma-grafica",
+    "enunciado": "Para f(x) = x³ − 6x² + 9x, ¿en qué valor de x está el punto de inflexión?",
+    "datos": {
+      "a": 6,
+      "b": 12
+    },
+    "calculo": "b / a",
+    "respuesta": 2,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "f″(x) = 6x − 12",
+      "6x − 12 = 0, así que x = 12 ÷ 6 = 2"
+    ],
+    "pistas": [
+      "Iguala la segunda derivada a cero."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.5 Las derivadas y la forma de una gráfica"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-maximo-local",
+    "subtema": "cd-forma-grafica",
+    "enunciado": "Para f(x) = x³ − 6x² + 9x, el máximo local está en x = 1. ¿Cuánto vale la función allí?",
+    "datos": {
+      "x": 1
+    },
+    "calculo": "x ^ 3 - 6 * x ^ 2 + 9 * x",
+    "respuesta": 4,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "f′(x) = 3x² − 12x + 9 = 0 en x = 1 y x = 3",
+      "f(1) = 1 − 6 + 9 = 4"
+    ],
+    "pistas": [
+      "Evalúa la función en el punto crítico."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.5 Las derivadas y la forma de una gráfica"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-costo-desde-marginal",
+    "subtema": "cd-antiderivadas",
+    "enunciado": "El costo marginal es C′(q) = 3q² − 4q + 10 y el costo fijo es USD 500. ¿Cuál es el costo total de producir 10 unidades?",
+    "datos": {
+      "q": 10,
+      "CF": 500
+    },
+    "calculo": "q ^ 3 - 2 * q ^ 2 + 10 * q + CF",
+    "respuesta": 1400,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "C(q) = q³ − 2q² + 10q + 500",
+      "C(10) = 1.000 − 200 + 100 + 500 = 1.400"
+    ],
+    "pistas": [
+      "La constante de integración es el costo fijo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.10 Antiderivadas"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-ingreso-desde-marginal",
+    "subtema": "cd-antiderivadas",
+    "enunciado": "El ingreso marginal es R′(q) = 60 − 0,4q y el ingreso es 0 cuando q = 0. ¿Cuál es el ingreso total al vender 50 unidades?",
+    "datos": {
+      "q": 50
+    },
+    "calculo": "60 * q - 0.2 * q ^ 2",
+    "respuesta": 2500,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "R(q) = 60q − 0,2q²",
+      "R(50) = 3.000 − 500 = 2.500"
+    ],
+    "pistas": [
+      "Integra el ingreso marginal; la constante es 0."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "4.10 Antiderivadas"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-integral-definida",
+    "subtema": "cd-teorema-fundamental",
+    "enunciado": "Calcula la integral de 3x² entre 0 y 4.",
+    "datos": {
+      "a": 0,
+      "b": 4
+    },
+    "calculo": "b ^ 3 - a ^ 3",
+    "respuesta": 64,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Antiderivada: x³",
+      "Integral = 4³ − 0³ = 64 − 0 = 64"
+    ],
+    "pistas": [
+      "Evalúa la antiderivada en los extremos y resta."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "5.3 El teorema fundamental del cálculo"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-integral-lineal",
+    "subtema": "cd-teorema-fundamental",
+    "enunciado": "Calcula la integral de (2x + 1) entre 1 y 3.",
+    "datos": {
+      "a": 1,
+      "b": 3
+    },
+    "calculo": "(b ^ 2 + b) - (a ^ 2 + a)",
+    "respuesta": 10,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Antiderivada: x² + x",
+      "Integral = (9 + 3) − (1 + 1) = 12 − 2 = 10"
+    ],
+    "pistas": [
+      "La antiderivada de 2x + 1 es x² + x."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "5.3 El teorema fundamental del cálculo"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-cambio-neto-costo",
+    "subtema": "cd-cambio-neto",
+    "enunciado": "El costo marginal es C′(q) = 0,6q + 20. ¿Cuánto aumenta el costo al pasar de 10 a 20 unidades?",
+    "datos": {
+      "a": 10,
+      "b": 20
+    },
+    "calculo": "(0.3 * b ^ 2 + 20 * b) - (0.3 * a ^ 2 + 20 * a)",
+    "respuesta": 290,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Antiderivada: 0,3q² + 20q",
+      "Cambio = (120 + 400) − (30 + 200) = 290"
+    ],
+    "pistas": [
+      "La integral del costo marginal es el cambio del costo total."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "5.4 Fórmulas de integración y el teorema del cambio neto"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-ventas-acumuladas",
+    "subtema": "cd-cambio-neto",
+    "enunciado": "Una tienda vende a un ritmo de v(t) = 40 + 6t unidades por día. ¿Cuántas unidades vende entre el día 0 y el día 10?",
+    "datos": {
+      "a": 0,
+      "b": 10
+    },
+    "calculo": "(40 * b + 3 * b ^ 2) - (40 * a + 3 * a ^ 2)",
+    "respuesta": 700,
+    "unidad": "unidades",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Antiderivada: 40t + 3t²",
+      "Ventas = (400 + 300) − 0 = 700"
+    ],
+    "pistas": [
+      "Integra la tasa de ventas en el intervalo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "5.4 Fórmulas de integración y el teorema del cambio neto"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-excedente-integral",
+    "subtema": "cd-areas-curvas",
+    "enunciado": "La demanda es p = 50 − 0,5q y el equilibrio está en q = 40 con p = 30. ¿Cuál es el excedente del consumidor?",
+    "datos": {
+      "q": 40
+    },
+    "calculo": "20 * q - 0.25 * q ^ 2",
+    "respuesta": 400,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Integrando de (50 − 0,5q − 30) = 20 − 0,5q",
+      "Antiderivada: 20q − 0,25q²",
+      "EC = 800 − 400 = 400"
+    ],
+    "pistas": [
+      "Integra la demanda menos el precio de equilibrio entre 0 y 40."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "6.1 Áreas entre curvas"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cd-area-curvas",
+    "subtema": "cd-areas-curvas",
+    "enunciado": "¿Cuál es el área entre las curvas y = x e y = x² en el intervalo de 0 a 1?",
+    "datos": {
+      "b": 1
+    },
+    "calculo": "b ^ 2 / 2 - b ^ 3 / 3",
+    "respuesta": 0.1667,
+    "unidad": "unidades cuadradas",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "En [0, 1], x ≥ x²",
+      "Área = 1 ÷ 2 − 1 ÷ 3 = 0,1667"
+    ],
+    "pistas": [
+      "Integra (x − x²) entre 0 y 1."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "seccion": "6.1 Áreas entre curvas"
+    },
+    "materia": "calculo-diferencial",
+    "actualizado_en": "2026-10-26"
   }
 ]
