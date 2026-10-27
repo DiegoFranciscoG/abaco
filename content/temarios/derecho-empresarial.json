@@ -62,6 +62,27 @@
             "ref": "ley-companias",
             "seccion": "Arts. 3, 4 y 5"
           }
+        },
+        {
+          "id": "lm-companias-nombre-formacion",
+          "nombre": "Nombre, inscripción y compañía en formación",
+          "explicacion": "La razón social o denominación de cada compañía debe distinguirse claramente de la de cualquier otra, es propiedad suya y ninguna otra compañía o tercero puede adoptarla (art. 16). La inscripción en el Registro Mercantil surte los mismos efectos que la matrícula de comercio; las sociedades por acciones simplificadas quedan habilitadas con su inscripción en el registro de sociedades de la Superintendencia de Compañías, Valores y Seguros (art. 19). Una compañía está en formación cuando su documento constitutivo se otorgó pero aún no se inscribe (art. 29), y quienes contratan a su nombre responden personal, solidaria e ilimitadamente por esas obligaciones (art. 30).",
+          "ejemplo": "Tres socios firman la escritura de una compañía limitada y, antes de inscribirla, uno de ellos arrienda un local a nombre de la compañía. Si algo sale mal, él responde con su propio patrimonio por ese contrato, porque la compañía todavía está en formación.",
+          "puntos_clave": [
+            "La denominación es propiedad de la compañía y debe ser distinguible.",
+            "La inscripción en el Registro Mercantil equivale a la matrícula de comercio.",
+            "Quien contrata por una compañía en formación responde personalmente."
+          ],
+          "errores_frecuentes": [
+            "Firmar contratos a nombre de la compañía antes de inscribirla sin medir el riesgo.",
+            "Elegir un nombre parecido al de otra compañía."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 16, 19, 29 y 30"
+          }
         }
       ]
     },
@@ -125,6 +146,27 @@
           "fuente": {
             "ref": "ley-companias",
             "seccion": "Arts. 308 y 431"
+          }
+        },
+        {
+          "id": "lm-personas-comandita-acciones",
+          "nombre": "Compañía en comandita por acciones",
+          "explicacion": "En la compañía en comandita por acciones el capital se divide en acciones nominativas de igual valor nominal, y al menos la décima parte del capital debe ser aportada por los socios solidariamente responsables, llamados comanditados, que solo pueden ser personas naturales y reciben certificados nominativos intransferibles (art. 301). Existe bajo una razón social formada con el nombre de uno o más comanditados seguido de las palabras «compañía en comandita» o su abreviatura (art. 303). La administración corresponde a los comanditados, que solo pueden ser removidos por las causas que fija la ley (art. 304), y el comanditado único, o la mitad más uno de ellos, tiene derecho de veto sobre las resoluciones de la junta general (art. 306).",
+          "ejemplo": "Si el capital de una comandita por acciones es de USD 100.000, los socios comanditados deben aportar por lo menos 100.000 ÷ 10 = 10.000 dólares; el resto puede venir de socios comanditarios.",
+          "puntos_clave": [
+            "Capital en acciones nominativas de igual valor.",
+            "Comanditados: personas naturales, aportan al menos la décima parte y administran.",
+            "Derecho de veto de los comanditados."
+          ],
+          "errores_frecuentes": [
+            "Confundirla con la comandita simple, cuyo capital no se divide en acciones.",
+            "Creer que una persona jurídica puede ser socia comanditada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 301, 303, 304 y 306"
           }
         }
       ]
@@ -282,6 +324,27 @@
             "ref": "ley-companias",
             "seccion": "Sección de las sociedades por acciones simplificadas"
           }
+        },
+        {
+          "id": "lm-capitales-junta-accionistas",
+          "nombre": "La junta general de accionistas",
+          "explicacion": "La junta general, formada por los accionistas legalmente convocados y reunidos, es el órgano supremo de la compañía anónima, y sus resoluciones son obligatorias (art. 230). Tiene poderes para resolver todos los asuntos relativos a los negocios sociales (art. 231). Entre sus competencias están nombrar y remover a los miembros de los organismos administrativos, comisarios y administradores; conocer cada año las cuentas, los estados financieros y los informes de los administradores y comisarios, así como los informes de auditoría externa cuando proceda, y fijar la retribución de comisarios y administradores cuando no esté determinada en el estatuto. Si el estatuto prevé comisarios, el balance no puede aprobarse sin su informe previo.",
+          "ejemplo": "En la junta anual de una compañía anónima, los accionistas conocen el informe del gerente y los estados financieros, aprueban el balance después del informe del comisario y nombran a un nuevo administrador.",
+          "puntos_clave": [
+            "Órgano supremo de la compañía anónima.",
+            "Nombra y remueve administradores y comisarios.",
+            "Conoce y aprueba cuentas y estados financieros."
+          ],
+          "errores_frecuentes": [
+            "Creer que el gerente puede aprobar por sí mismo los estados financieros.",
+            "Aprobar el balance sin el informe del comisario cuando el estatuto lo exige."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 230 y 231"
+          }
         }
       ]
     },
@@ -344,6 +407,141 @@
           "fuente": {
             "ref": "ley-companias",
             "seccion": "Art. 433"
+          }
+        },
+        {
+          "id": "lm-control-ejercicio-transferencias",
+          "nombre": "Ejercicio económico y comunicación de transferencias",
+          "explicacion": "El ejercicio económico de las compañías termina cada treinta y uno de diciembre (art. 26), por lo que los estados financieros anuales se preparan con corte a esa fecha. Las transferencias de acciones y participaciones de compañías sujetas a la vigilancia de la Superintendencia deben comunicarse a esta por los administradores, con el nombre y la nacionalidad del cedente y del cesionario, dentro de los ocho días posteriores a su inscripción en los libros de la compañía (art. 21).",
+          "ejemplo": "Si un accionista vende sus acciones y la transferencia se inscribe en el libro de acciones el 3 de marzo, el gerente debe comunicarla a la Superintendencia a más tardar dentro de los ocho días siguientes.",
+          "puntos_clave": [
+            "Ejercicio económico al 31 de diciembre.",
+            "Comunicar transferencias de acciones y participaciones.",
+            "Plazo de ocho días desde la inscripción en los libros."
+          ],
+          "errores_frecuentes": [
+            "Usar un año fiscal distinto del calendario.",
+            "Olvidar informar la nacionalidad del cesionario."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 21 y 26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lm-reorganizacion",
+      "nombre": "Transformación, fusión, escisión, disolución y liquidación",
+      "orden": 6,
+      "descripcion": "Cómo cambia de forma, se une, se divide o se extingue una compañía.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "lm-transformacion",
+          "nombre": "Transformación",
+          "explicacion": "Una compañía se transforma cuando adopta una figura jurídica distinta, sin disolverse ni perder su personería. Si la transformación se hace conforme a la ley, la personalidad jurídica no cambia: la compañía sigue existiendo bajo la nueva forma (art. 330). La ley prevé además un derecho de separación para los socios o accionistas que no estén de acuerdo, y la transformación surte efecto desde su inscripción en el Registro Mercantil (art. 336).",
+          "ejemplo": "Una compañía limitada que quiere abrir su capital a nuevos inversionistas se transforma en sociedad anónima: conserva sus contratos, deudas y bienes, porque sigue siendo la misma persona jurídica.",
+          "puntos_clave": [
+            "Cambia la especie, no la persona jurídica.",
+            "No hay disolución.",
+            "Surte efecto desde la inscripción."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la transformación crea una compañía nueva.",
+            "Olvidar a los socios que no están de acuerdo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 330 y 336"
+          }
+        },
+        {
+          "id": "lm-fusion",
+          "nombre": "Fusión por creación y por absorción",
+          "explicacion": "La fusión se produce de dos maneras: cuando dos o más compañías se unen para formar una nueva que les sucede en sus derechos y obligaciones, o cuando una o más compañías son absorbidas por otra que sigue existiendo (art. 337). Para fusionarse en una compañía nueva, primero se acuerda la disolución de las que se unen y luego se traspasan en bloque sus patrimonios a la nueva (art. 338). En la fusión, los activos tangibles o intangibles pueden traspasarse a valor presente o de mercado (art. 339), y la compañía absorbente debe aprobar las bases de la operación en junta extraordinaria (art. 340).",
+          "ejemplo": "Una cadena de farmacias absorbe a una distribuidora: la distribuidora se disuelve y su patrimonio pasa en bloque a la cadena, que asume sus deudas y derechos y sigue funcionando.",
+          "puntos_clave": [
+            "Fusión por creación de una nueva compañía.",
+            "Fusión por absorción: una compañía continúa.",
+            "Traspaso en bloque de los patrimonios."
+          ],
+          "errores_frecuentes": [
+            "Creer que en la absorción desaparecen las deudas de la absorbida.",
+            "Confundir fusión con compra de acciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 337 a 340"
+          }
+        },
+        {
+          "id": "lm-escision",
+          "nombre": "Escisión",
+          "explicacion": "La junta general puede acordar la división de la compañía en una o más sociedades (art. 345). La compañía que se escinde mantiene su naturaleza, pero las nuevas compañías que nacen de la escisión pueden ser de una especie distinta de la original (art. 346). Si el capital no alcanza para dividirse entre las nuevas compañías, la ley regula cómo proceder (art. 347).",
+          "ejemplo": "Una empresa que tiene una línea de restaurantes y otra de catering decide separar el catering en una nueva compañía anónima, mientras la original sigue como compañía limitada con los restaurantes.",
+          "puntos_clave": [
+            "División de la compañía en una o más sociedades.",
+            "La original mantiene su naturaleza.",
+            "Las nuevas pueden ser de otra especie."
+          ],
+          "errores_frecuentes": [
+            "Confundir escisión con liquidación.",
+            "Creer que las nuevas compañías deben ser de la misma especie."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 345 a 347"
+          }
+        },
+        {
+          "id": "lm-disolucion",
+          "nombre": "Disolución",
+          "explicacion": "Las sociedades se disuelven de pleno derecho, por voluntad de los socios o accionistas, por decisión de la Superintendencia de Compañías, Valores y Seguros o por sentencia ejecutoriada (art. 359). Son causales de disolución de pleno derecho, entre otras, el vencimiento del plazo de duración sin que se haya inscrito antes la prórroga, salvo que el plazo sea indefinido, y el auto de quiebra ejecutoriado (art. 360). El Superintendente puede declarar disuelta de oficio o a petición de parte una compañía, por ejemplo, cuando hay imposibilidad manifiesta de cumplir el objeto social (art. 377). Con la inscripción de la disolución voluntaria y anticipada comienza la liquidación (art. 373).",
+          "ejemplo": "Una compañía constituida a veinte años no inscribió la escritura de prórroga antes de que venciera su plazo: queda disuelta de pleno derecho y debe liquidarse.",
+          "puntos_clave": [
+            "Cuatro vías: pleno derecho, voluntad, Superintendencia o sentencia.",
+            "Vencimiento del plazo y quiebra como causales de pleno derecho.",
+            "La disolución abre la liquidación."
+          ],
+          "errores_frecuentes": [
+            "Dejar vencer el plazo sin inscribir la prórroga.",
+            "Pensar que disolver es lo mismo que extinguir la compañía."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 359, 360, 373 y 377"
+          }
+        },
+        {
+          "id": "lm-liquidacion",
+          "nombre": "Liquidación y cancelación",
+          "explicacion": "En la liquidación, el liquidador representa a la compañía solo para los fines de la liquidación, realiza las operaciones pendientes y las necesarias para liquidar, custodia los libros y vela por la integridad del patrimonio (art. 389). Responde por los perjuicios que cause por fraude o negligencia (art. 388). Ningún socio o accionista puede exigir su parte del haber social mientras no se hayan extinguido todas las deudas y obligaciones de la compañía (art. 402). Concluida la liquidación, la Superintendencia ordena cancelar la inscripción de la compañía en el Registro Mercantil (art. 407).",
+          "ejemplo": "Al liquidar una compañía con activos de USD 80.000 y deudas de USD 50.000, el liquidador primero paga las deudas y solo después reparte entre los socios los 80.000 − 50.000 = 30.000 dólares restantes.",
+          "puntos_clave": [
+            "El liquidador representa a la compañía para liquidarla.",
+            "Primero se pagan las deudas, luego se reparte a los socios.",
+            "La liquidación termina con la cancelación de la inscripción."
+          ],
+          "errores_frecuentes": [
+            "Repartir el patrimonio antes de pagar a los acreedores.",
+            "Creer que el liquidador no responde por su gestión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ley-companias",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+            "seccion": "Arts. 388, 389, 402 y 407"
           }
         }
       ]

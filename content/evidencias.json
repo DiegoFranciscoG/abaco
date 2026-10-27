@@ -3779,5 +3779,82 @@
       "labor distinta de la convenida",
       "violencia y acoso laboral"
     ]
+  },
+  {
+    "id": "lm-companias-nombre-formacion",
+    "palabras": [
+      "claramente distinguida",
+      "surtira los mismos efectos que la matricula de comercio",
+      "compania en formacion",
+      "solidaria e ilimitadamente responsables"
+    ]
+  },
+  {
+    "id": "lm-personas-comandita-acciones",
+    "palabras": [
+      "acciones nominativas de un valor nominal igual",
+      "la decima parte del capital social",
+      "solamente las personas naturales podran ser socios comanditados",
+      "derecho de veto"
+    ]
+  },
+  {
+    "id": "lm-capitales-junta-accionistas",
+    "palabras": [
+      "es el organo supremo de la compania",
+      "nombrar y remover a los miembros de los organismos administrativos",
+      "informes de auditoria externa",
+      "fijar la retribucion de los comisarios"
+    ]
+  },
+  {
+    "id": "lm-control-ejercicio-transferencias",
+    "palabras": [
+      "el ejercicio economico de las companias terminara cada treinta y uno de diciembre",
+      "transferencias de acciones y de participaciones",
+      "dentro de los ocho dias posteriores"
+    ]
+  },
+  {
+    "id": "lm-transformacion",
+    "palabras": [
+      "se transforma una compania cuando adopta una figura juridica distinta",
+      "continuara subsistiendo bajo la nueva forma"
+    ]
+  },
+  {
+    "id": "lm-fusion",
+    "palabras": [
+      "la fusion de las companias se produce",
+      "son absorbidas por otra",
+      "traspaso en bloque",
+      "valor presente o de mercado"
+    ]
+  },
+  {
+    "id": "lm-escision",
+    "palabras": [
+      "podra acordar la division de la compania",
+      "mantendra su naturaleza",
+      "especie distinta de la original"
+    ]
+  },
+  {
+    "id": "lm-disolucion",
+    "palabras": [
+      "las sociedades se disuelven",
+      "de pleno derecho",
+      "vencimiento del plazo de duracion",
+      "imposibilidad manifiesta de cumplir el objeto social"
+    ]
+  },
+  {
+    "id": "lm-liquidacion",
+    "palabras": [
+      "incumbe al liquidador",
+      "unicamente para los fines de la liquidacion",
+      "mientras no se hallen extinguidas todas las deudas",
+      "cancelacion de la inscripcion"
+    ]
   }
 ]

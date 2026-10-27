@@ -9555,5 +9555,60 @@
     },
     "materia": "legislacion-laboral",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-lm-aporte-comanditados",
+    "subtema": "lm-personas-comandita-acciones",
+    "enunciado": "Una compañía en comandita por acciones se constituye con un capital de USD 250.000. ¿Cuál es el aporte mínimo de los socios comanditados (art. 301)?",
+    "datos": {
+      "K": 250000
+    },
+    "calculo": "K / 10",
+    "respuesta": 25000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Décima parte del capital = 250.000 ÷ 10 = 25.000"
+    ],
+    "pistas": [
+      "La ley exige al menos la décima parte del capital."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ley-companias",
+      "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+      "seccion": "Art. 301"
+    },
+    "materia": "derecho-empresarial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-lm-remanente-liquidacion",
+    "subtema": "lm-liquidacion",
+    "enunciado": "Una compañía en liquidación tiene activos realizados por USD 80.000 y deudas por USD 50.000. Tres socios tienen participaciones iguales. ¿Cuánto recibe cada socio después de pagar todas las deudas (art. 402)?",
+    "datos": {
+      "A": 80000,
+      "D": 50000,
+      "n": 3
+    },
+    "calculo": "(A - D) / n",
+    "respuesta": 10000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Remanente = 80.000 − 50.000 = 30.000",
+      "Por socio = 30.000 ÷ 3 = 10.000"
+    ],
+    "pistas": [
+      "Primero se extinguen las deudas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ley-companias",
+      "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/12/LEY_DE_COMPAN%CC%83I%CC%81AS.pdf",
+      "seccion": "Art. 402"
+    },
+    "materia": "derecho-empresarial",
+    "actualizado_en": "2026-10-26"
   }
 ]
