@@ -154,6 +154,27 @@
             "ref": "codigo-trabajo",
             "seccion": "Art. 81"
           }
+        },
+        {
+          "id": "ll-jornada-nocturna-descanso",
+          "nombre": "Jornada nocturna, descanso semanal y feriados",
+          "explicacion": "La jornada nocturna es la que se cumple entre las 19h00 y las 06h00 del día siguiente; puede durar lo mismo que la diurna, pero se paga con un aumento del veinticinco por ciento (art. 49). Las jornadas obligatorias no pueden exceder de cinco en la semana; sábados y domingos son de descanso forzoso y, si el trabajo no puede interrumpirse, se acuerda otro tiempo igual de descanso (art. 50), que debe comprender al menos cuarenta y ocho horas consecutivas (art. 51). El art. 65 fija los días de descanso obligatorio: 1 de enero, viernes santo, 1 y 24 de mayo, 10 de agosto, 9 de octubre, 2 y 3 de noviembre, 25 de diciembre y lunes y martes de carnaval, con reglas para trasladar algunos feriados al lunes o al viernes.",
+          "ejemplo": "Un guardia gana USD 3,20 por hora en jornada diurna. Por cada hora trabajada entre las 19h00 y las 06h00 debe recibir 3,20 × 1,25 = 4 dólares.",
+          "puntos_clave": [
+            "Nocturna: de 19h00 a 06h00, con un recargo del veinticinco por ciento.",
+            "Descanso semanal de al menos cuarenta y ocho horas consecutivas.",
+            "Feriados del art. 65 y su traslado."
+          ],
+          "errores_frecuentes": [
+            "Pagar la hora nocturna igual que la diurna.",
+            "Creer que trabajar el fin de semana no da derecho a otro descanso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Arts. 49, 50, 51 y 65"
+          }
         }
       ]
     },
@@ -355,6 +376,234 @@
           "fuente": {
             "ref": "codigo-trabajo",
             "seccion": "Art. 188"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-obligaciones",
+      "nombre": "Obligaciones, prohibiciones y pago de la remuneración",
+      "orden": 5,
+      "descripcion": "Obligaciones y prohibiciones del empleador y del trabajador, y reglas para pagar sueldos y salarios.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ll-obligaciones-empleador",
+          "nombre": "Obligaciones del empleador",
+          "explicacion": "El art. 42 enumera las obligaciones del empleador. Entre las principales: pagar lo que corresponde según el contrato y el Código; instalar los lugares de trabajo con medidas de prevención, seguridad e higiene; indemnizar por accidentes de trabajo y enfermedades profesionales; llevar un registro de trabajadores; dar a tiempo los útiles y materiales para trabajar; tratar a los trabajadores con la debida consideración; entregar certificados de trabajo cuando se soliciten; facilitar las inspecciones de las autoridades, e inscribir a los trabajadores en el IESS desde el primer día de labores. Además, el empleador con un mínimo de veinticinco trabajadores debe contratar al menos a una persona con discapacidad en labores permanentes apropiadas.",
+          "ejemplo": "Una panadería contrata a una ayudante el lunes: ese mismo día debe registrarla en el IESS, entregarle el uniforme y los utensilios necesarios y anotarla en su registro de trabajadores.",
+          "puntos_clave": [
+            "Pagar, dar condiciones seguras e indemnizar riesgos del trabajo.",
+            "Afiliar al IESS desde el primer día.",
+            "Inclusión de personas con discapacidad."
+          ],
+          "errores_frecuentes": [
+            "Afiliar al trabajador recién después del período de prueba.",
+            "Negar certificados de trabajo al trabajador que se retira."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 42"
+          }
+        },
+        {
+          "id": "ll-prohibiciones-empleador",
+          "nombre": "Prohibiciones al empleador",
+          "explicacion": "El art. 44 prohíbe al empleador, entre otras cosas: imponer multas que no consten en el reglamento interno aprobado; retener más del diez por ciento de la remuneración por multas; obligar al trabajador a comprar en tiendas determinadas; exigir o aceptar dinero para darle el empleo; cobrar intereses por anticipos de remuneración; presionarlo para que se retire de su asociación o vote por un candidato; imponer colectas; hacer propaganda política o religiosa; sancionarlo con suspensión del trabajo; interferir en las actividades sindicales, y obstaculizar las inspecciones de las autoridades del trabajo.",
+          "ejemplo": "Si un trabajador gana USD 600 al mes, las multas previstas en el reglamento interno no pueden descontarle más de 600 × 0,10 = 60 dólares en ese mes.",
+          "puntos_clave": [
+            "Multas solo si constan en el reglamento interno aprobado.",
+            "Tope de retención por multas: diez por ciento de la remuneración.",
+            "Prohibido cobrar por dar empleo o interés por anticipos."
+          ],
+          "errores_frecuentes": [
+            "Suspender sin sueldo como sanción disciplinaria.",
+            "Cobrar intereses por adelantos de sueldo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 44"
+          }
+        },
+        {
+          "id": "ll-obligaciones-trabajador",
+          "nombre": "Obligaciones del trabajador",
+          "explicacion": "Según el art. 45, el trabajador debe ejecutar el trabajo en los términos del contrato, con intensidad, cuidado y esmero, en la forma, tiempo y lugar convenidos; devolver los materiales no usados y conservar en buen estado los instrumentos, sin responder por el desgaste normal; trabajar más allá de la jornada en casos de peligro o siniestro inminente, con derecho al aumento de remuneración; observar buena conducta; cumplir el reglamento interno; avisar cuando falte por causa justa; comunicar los peligros que amenacen a personas o bienes, y guardar los secretos técnicos, comerciales o de fabricación.",
+          "ejemplo": "Un operario que no puede ir a trabajar por una cita médica debe avisar al empleador; si conoce una fuga de gas en la planta, debe comunicarla de inmediato.",
+          "puntos_clave": [
+            "Trabajar con cuidado y esmero según lo convenido.",
+            "Cuidar los instrumentos; no responde por el desgaste normal.",
+            "Avisar ausencias justificadas y guardar secretos."
+          ],
+          "errores_frecuentes": [
+            "Creer que el trabajador paga el deterioro por uso normal.",
+            "Faltar sin avisar aunque exista causa justa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 45"
+          }
+        },
+        {
+          "id": "ll-prohibiciones-trabajador",
+          "nombre": "Prohibiciones al trabajador",
+          "explicacion": "El art. 46 prohíbe al trabajador: poner en peligro su seguridad, la de sus compañeros o la del establecimiento; tomar sin permiso útiles, materia prima o productos; presentarse embriagado o bajo efecto de estupefacientes; portar armas sin permiso; hacer colectas en horas de trabajo sin autorización; usar las herramientas para fines distintos del trabajo; hacer competencia al empleador; suspender el trabajo, salvo huelga; abandonar el trabajo sin causa legal, y cometer actos de acoso laboral contra compañeros, superiores, subordinados o el empleador.",
+          "ejemplo": "Un técnico que usa la camioneta de la empresa para hacer trabajos particulares los fines de semana incumple la prohibición de usar los útiles en objetos distintos del trabajo.",
+          "puntos_clave": [
+            "Seguridad propia y ajena.",
+            "No competir con el empleador ni usar sus bienes para otros fines.",
+            "El acoso laboral está prohibido."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el acoso solo puede venir del jefe.",
+            "Confundir la huelga legal con abandonar el trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 46"
+          }
+        },
+        {
+          "id": "ll-pago-remuneracion",
+          "nombre": "Plazos, lugar y forma de pago",
+          "explicacion": "El plazo para pagar salarios no puede superar una semana, y el de los sueldos, un mes (art. 83). En el trabajo por tarea u obra que se puede entregar por partes, el trabajador tiene derecho a que cada semana se reciba lo ejecutado y se le pague (art. 84). Las remuneraciones se pagan directamente al trabajador o a quien él designe, en el lugar donde presta sus servicios, salvo convenio escrito (art. 86), y en efectivo solo con moneda de curso legal; se prohíbe pagar con pagarés, vales o cupones (art. 87).",
+          "ejemplo": "Una empresa que paga sueldos mensuales no puede cancelar el sueldo de marzo a mediados de mayo; tampoco puede pagar con vales canjeables en su propia tienda.",
+          "puntos_clave": [
+            "Salarios: máximo cada semana; sueldos: máximo cada mes.",
+            "Pago directo al trabajador o a quien designe.",
+            "Moneda de curso legal, no vales ni cupones."
+          ],
+          "errores_frecuentes": [
+            "Acumular varios meses de sueldo impago.",
+            "Pagar parte de la remuneración con productos de la empresa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Arts. 83 a 87"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-proteccion",
+      "nombre": "Protección especial y visto bueno",
+      "orden": 6,
+      "descripcion": "Licencias por maternidad y paternidad, protección de la mujer embarazada y lactante, prohibición del trabajo infantil y terminación por visto bueno.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ll-maternidad-paternidad",
+          "nombre": "Licencias por maternidad y paternidad",
+          "explicacion": "Toda trabajadora tiene derecho a una licencia con remuneración de doce semanas por el nacimiento de su hija o hijo, con diez días adicionales en nacimientos múltiples; se justifica con un certificado médico del IESS o, a falta de este, de otro profesional (art. 152). El padre tiene licencia remunerada de quince días por parto normal, cinco días más en nacimientos múltiples o por cesárea, ocho días más si el hijo nace prematuro o requiere cuidado especial, y puede llegar a veinticinco días si nace con una enfermedad degenerativa, terminal o irreversible, o con discapacidad severa. Si la madre fallece en el parto o durante su licencia, el padre puede usar el tiempo que a ella le restaba.",
+          "ejemplo": "Un trabajador cuya hija nace por cesárea tiene quince días más cinco, es decir, veinte días de licencia con remuneración.",
+          "puntos_clave": [
+            "Madre: doce semanas, más diez días en partos múltiples.",
+            "Padre: quince días, con ampliaciones según el caso.",
+            "Se justifican con certificado médico."
+          ],
+          "errores_frecuentes": [
+            "Descontar del sueldo los días de licencia.",
+            "Olvidar las ampliaciones de la licencia por paternidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 152"
+          }
+        },
+        {
+          "id": "ll-embarazo-lactancia",
+          "nombre": "Protección a la mujer embarazada y período de lactancia",
+          "explicacion": "No se puede terminar el contrato por causa del embarazo, ni reemplazar definitivamente a la trabajadora durante las doce semanas de licencia, en las que recibe la remuneración completa; el juez dispondrá el reintegro inmediato de la mujer despedida en estado de embarazo o en período de lactancia (art. 153). Salvo los casos del art. 172, la mujer embarazada no puede ser despedida intempestivamente, y si una enfermedad causada por el embarazo o el parto la incapacita hasta por un año, no se puede terminar su contrato por esa causa (art. 154). Durante los quince meses siguientes al fin de la licencia por maternidad, la jornada de la madre lactante dura seis horas, y las empresas permanentes con cincuenta o más trabajadores deben ofrecer servicio de guardería (art. 155).",
+          "ejemplo": "Una trabajadora termina su licencia por maternidad en abril: durante los quince meses siguientes trabaja seis horas diarias sin que se le reduzca la remuneración por ese motivo.",
+          "puntos_clave": [
+            "Prohibido despedir por embarazo; reintegro inmediato.",
+            "Jornada de seis horas durante quince meses de lactancia.",
+            "Guardería en empresas con cincuenta o más trabajadores."
+          ],
+          "errores_frecuentes": [
+            "Disfrazar un despido por embarazo como fin de contrato.",
+            "Negar la jornada reducida de lactancia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Arts. 153, 154 y 155"
+          }
+        },
+        {
+          "id": "ll-trabajo-infantil",
+          "nombre": "Prohibición del trabajo infantil",
+          "explicacion": "El art. 134 prohíbe todo trabajo por cuenta ajena de niños, niñas y adolescentes menores de quince años. El empleador que viole la prohibición debe pagar al menor el doble de la remuneración, cumplir todas las obligaciones laborales y de seguridad social derivadas de esa relación, y será sancionado con la multa máxima del Código de la Niñez y Adolescencia y con la clausura del establecimiento si reincide. Las autoridades y empleadores deben aplicar las normas de ese Código sobre la erradicación del trabajo infantil y la protección contra la explotación laboral.",
+          "ejemplo": "Si un taller contrata a un chico de catorce años, además de la sanción debe pagarle el doble de la remuneración y afiliarlo con todos sus beneficios por el tiempo trabajado.",
+          "puntos_clave": [
+            "Prohibido el trabajo por cuenta ajena de menores de quince años.",
+            "Sanción: doble remuneración, obligaciones sociales, multa y clausura si reincide.",
+            "Se aplica también el Código de la Niñez y Adolescencia."
+          ],
+          "errores_frecuentes": [
+            "Creer que basta con el permiso de los padres.",
+            "Pensar que la sanción libera de pagar la seguridad social."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 134"
+          }
+        },
+        {
+          "id": "ll-visto-bueno-empleador",
+          "nombre": "Visto bueno solicitado por el empleador",
+          "explicacion": "El empleador puede terminar el contrato previo visto bueno de la autoridad laboral en los casos del art. 172: faltas repetidas e injustificadas de puntualidad o asistencia, o abandono por más de tres días consecutivos sin causa justa dentro de un período mensual; indisciplina o desobediencia graves al reglamento interno; falta de probidad o conducta inmoral; injurias graves al empleador o a su familia; ineptitud manifiesta para la labor; denuncia injustificada sobre sus obligaciones con la seguridad social; incumplir medidas de seguridad e higiene o prescripciones médicas, y cometer violencia o acoso laboral. Antes de la petición se abre una conciliación presidida por la autoridad laboral.",
+          "ejemplo": "Un trabajador falta cuatro días seguidos sin justificación en el mismo mes. El empleador no puede despedirlo sin más: debe pedir el visto bueno a la autoridad laboral, que primero convoca a una conciliación.",
+          "puntos_clave": [
+            "Requiere la autorización previa de la autoridad laboral.",
+            "Causales taxativas del art. 172.",
+            "Conciliación previa."
+          ],
+          "errores_frecuentes": [
+            "Despedir directamente alegando una causal de visto bueno.",
+            "Invocar causales que no constan en la ley."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 172"
+          }
+        },
+        {
+          "id": "ll-visto-bueno-trabajador",
+          "nombre": "Visto bueno solicitado por el trabajador",
+          "explicacion": "El trabajador también puede terminar el contrato previo visto bueno, según el art. 173: por injurias graves del empleador, sus familiares o representantes; por disminución, falta de pago o impuntualidad en el pago de la remuneración pactada; por exigirle una labor distinta de la convenida, salvo las urgencias previstas en la ley, y por sufrir violencia y acoso laboral cometido o permitido por el empleador o sus representantes. También aquí se abre una conciliación ante la autoridad laboral.",
+          "ejemplo": "Una vendedora a la que se le paga el sueldo con dos meses de retraso de forma reiterada puede pedir el visto bueno para dar por terminado el contrato por falta de puntualidad en el pago.",
+          "puntos_clave": [
+            "Causales del art. 173: injurias, falta de pago, cambio de labor, acoso.",
+            "Requiere visto bueno de la autoridad laboral.",
+            "Conciliación previa."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo el empleador puede pedir visto bueno.",
+            "Abandonar el trabajo en lugar de pedir el visto bueno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-trabajo",
+            "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+            "seccion": "Art. 173"
           }
         }
       ]

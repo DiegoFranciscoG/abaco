@@ -3677,5 +3677,107 @@
       "public service",
       "blacklisted"
     ]
+  },
+  {
+    "id": "ll-jornada-nocturna-descanso",
+    "palabras": [
+      "art. 49 jornada nocturna",
+      "entre las 19h00 y las 06h00",
+      "veinticinco por ciento",
+      "cuarenta y ocho horas consecutivas",
+      "art. 65 dias de descanso obligatorio"
+    ]
+  },
+  {
+    "id": "ll-obligaciones-empleador",
+    "palabras": [
+      "art. 42 obligaciones del empleador",
+      "llevar un registro de trabajadores",
+      "inscribir a los trabajadores en el instituto ecuatoriano de seguridad social, desde el primer dia de labores",
+      "a una persona con discapacidad"
+    ]
+  },
+  {
+    "id": "ll-prohibiciones-empleador",
+    "palabras": [
+      "art. 44 prohibiciones al empleador",
+      "retener mas del diez por ciento (10%) de la remuneracion por concepto de multas",
+      "cobrar al trabajador interes",
+      "sancionar al trabajador con la suspension del trabajo"
+    ]
+  },
+  {
+    "id": "ll-obligaciones-trabajador",
+    "palabras": [
+      "art. 45 obligaciones del trabajador",
+      "intensidad, cuidado y esmero",
+      "dar aviso al empleador cuando por causa justa faltare",
+      "guardar escrupulosamente los secretos"
+    ]
+  },
+  {
+    "id": "ll-prohibiciones-trabajador",
+    "palabras": [
+      "art. 46 prohibiciones al trabajador",
+      "estado de embriaguez",
+      "hacer competencia al empleador",
+      "acoso laboral"
+    ]
+  },
+  {
+    "id": "ll-pago-remuneracion",
+    "palabras": [
+      "art. 83 plazo para pagos",
+      "no podra ser mayor de una semana",
+      "moneda de curso legal",
+      "pagares, vales"
+    ]
+  },
+  {
+    "id": "ll-maternidad-paternidad",
+    "palabras": [
+      "doce (12) semanas",
+      "diez dias adicionales",
+      "licencia con remuneracion por quince dias",
+      "veinte y cinco dias"
+    ]
+  },
+  {
+    "id": "ll-embarazo-lactancia",
+    "palabras": [
+      "art. 153 proteccion a la mujer embarazada",
+      "reintegro inmediato",
+      "quince (15) meses",
+      "seis (6) horas",
+      "cincuenta o mas trabajadores"
+    ]
+  },
+  {
+    "id": "ll-trabajo-infantil",
+    "palabras": [
+      "art. 134 prohibicion del trabajo de ninos",
+      "menores de quince anos",
+      "el doble de la remuneracion",
+      "clausura del establecimiento"
+    ]
+  },
+  {
+    "id": "ll-visto-bueno-empleador",
+    "palabras": [
+      "art. 172 causas por las que el empleador puede dar por terminado el contrato",
+      "previo visto bueno",
+      "falta de probidad",
+      "ineptitud manifiesta",
+      "conciliacion"
+    ]
+  },
+  {
+    "id": "ll-visto-bueno-trabajador",
+    "palabras": [
+      "art. 173 causas para que el trabajador pueda dar por terminado el contrato",
+      "falta de pago o de puntualidad",
+      "labor distinta de la convenida",
+      "violencia y acoso laboral"
+    ]
   }
 ]

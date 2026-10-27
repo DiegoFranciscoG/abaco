@@ -9499,5 +9499,61 @@
     },
     "materia": "informatica-gestion",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ll-hora-nocturna",
+    "subtema": "ll-jornada-nocturna-descanso",
+    "enunciado": "Un trabajador gana USD 3,20 por hora en jornada diurna y cumple 8 horas en jornada nocturna (art. 49). ¿Cuánto recibe por esa jornada?",
+    "datos": {
+      "h": 3.2,
+      "n": 8,
+      "recargo": 0.25
+    },
+    "calculo": "h * (1 + recargo) * n",
+    "respuesta": 32,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Hora nocturna = 3,20 × 1,25 = 4",
+      "Jornada = 4 × 8 = 32"
+    ],
+    "pistas": [
+      "La hora nocturna se paga con el aumento del art. 49."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+      "seccion": "Art. 49"
+    },
+    "materia": "legislacion-laboral",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ll-tope-multas",
+    "subtema": "ll-prohibiciones-empleador",
+    "enunciado": "Un trabajador gana USD 650 al mes. ¿Cuál es el máximo que el empleador puede retenerle en el mes por multas previstas en el reglamento interno (art. 44)?",
+    "datos": {
+      "R": 650,
+      "tope": 0.1
+    },
+    "calculo": "R * tope",
+    "respuesta": 65,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Tope = 650 × 0,10 = 65"
+    ],
+    "pistas": [
+      "El tope es el diez por ciento de la remuneración."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "codigo-trabajo",
+      "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/CODIGO-DEL-TRABAJO.pdf",
+      "seccion": "Art. 44"
+    },
+    "materia": "legislacion-laboral",
+    "actualizado_en": "2026-10-26"
   }
 ]
