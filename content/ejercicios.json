@@ -4472,5 +4472,572 @@
     },
     "materia": "macroeconomia",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-media-muestral",
+    "subtema": "ei-uso-tlc",
+    "formula": "puntuacion-z",
+    "enunciado": "El gasto por cliente tiene media de USD 500 y desviación típica de USD 80. Para una muestra de 64 clientes, ¿cuál es la puntuación z de una media muestral de USD 520?",
+    "datos": {
+      "xbar": 520,
+      "mu": 500,
+      "sigma": 80,
+      "n": 64
+    },
+    "calculo": "(xbar - mu) / (sigma / SQRT(n))",
+    "respuesta": 2,
+    "unidad": "desviaciones estándar",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Error estándar = 80 ÷ 8 = 10",
+      "z = (520 − 500) ÷ 10 = 2"
+    ],
+    "pistas": [
+      "El error estándar de la media es σ ÷ √n."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "7.3 Uso del teorema del límite central"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-pendiente",
+    "subtema": "ei-regresion",
+    "formula": "correlacion-pearson",
+    "enunciado": "Con x (meses) = 1, 3, 5 y 7, e y (clientes nuevos) = 4, 8, 10 y 14, ¿cuál es la pendiente de la recta de regresión?",
+    "datos": {
+      "x": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "y": [
+        4,
+        8,
+        10,
+        14
+      ]
+    },
+    "calculo": "SLOPE(y, x)",
+    "respuesta": 1.6,
+    "unidad": "clientes por mes",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "x̄ = 4 y ȳ = 9",
+      "Σ(x − x̄)(y − ȳ) = 15 + 1 + 1 + 15 = 32",
+      "Σ(x − x̄)² = 9 + 1 + 1 + 9 = 20",
+      "b = 32 ÷ 20 = 1,6"
+    ],
+    "pistas": [
+      "b = Σ(x − x̄)(y − ȳ) ÷ Σ(x − x̄)²."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "12.3 La ecuación de regresión"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-prediccion",
+    "subtema": "ei-regresion",
+    "enunciado": "Con los mismos datos (x: 1, 3, 5, 7; y: 4, 8, 10, 14), ¿cuántos clientes nuevos predice la recta para el mes 9?",
+    "datos": {
+      "x": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "y": [
+        4,
+        8,
+        10,
+        14
+      ],
+      "x0": 9
+    },
+    "calculo": "INTERCEPT(y, x) + SLOPE(y, x) * x0",
+    "respuesta": 17,
+    "unidad": "clientes",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "a = 9 − 1,6 × 4 = 2,6",
+      "ŷ = 2,6 + 1,6 × 9 = 17"
+    ],
+    "pistas": [
+      "La recta pasa por el punto de medias."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "12.3 La ecuación de regresión"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-binomial",
+    "subtema": "ei-binomial",
+    "enunciado": "El 30 % de los visitantes de una tienda compra algo. ¿Cuál es la probabilidad de que exactamente 2 de 5 visitantes compren?",
+    "datos": {
+      "p": 0.3
+    },
+    "calculo": "10 * p ^ 2 * (1 - p) ^ 3",
+    "respuesta": 0.3087,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "C(5, 2) = 10",
+      "P = 10 × 0,09 × 0,343 = 0,3087"
+    ],
+    "pistas": [
+      "Hay C(5, 2) formas de elegir quiénes compran."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "4.3 Distribución binomial"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-binomial-cero",
+    "subtema": "ei-binomial",
+    "enunciado": "Si el 20 % de las facturas tiene algún error, ¿cuál es la probabilidad de que ninguna de 4 facturas revisadas tenga error?",
+    "datos": {
+      "p": 0.2,
+      "n": 4
+    },
+    "calculo": "(1 - p) ^ n",
+    "respuesta": 0.4096,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(X = 0) = 0,8 × 0,8 × 0,8 × 0,8 = 0,4096"
+    ],
+    "pistas": [
+      "Todas deben estar bien: multiplica la probabilidad de acierto cuatro veces."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "4.3 Distribución binomial"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-poisson",
+    "subtema": "ei-poisson",
+    "enunciado": "A una ventanilla llegan en promedio 3 clientes cada 10 minutos. ¿Cuál es la probabilidad de que lleguen exactamente 2 en los próximos 10 minutos?",
+    "datos": {
+      "lambda": 3
+    },
+    "calculo": "lambda ^ 2 * EXP(-lambda) / 2",
+    "respuesta": 0.224,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "e elevado a −3 = 0,049787",
+      "P = 9 × 0,049787 ÷ 2 = 0,2240"
+    ],
+    "pistas": [
+      "P(X = x) = λˣ × e^(−λ) ÷ x!."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "4.6 Distribución de Poisson"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-poisson-cero",
+    "subtema": "ei-poisson",
+    "enunciado": "Un sistema registra en promedio 2 fallas por mes. ¿Cuál es la probabilidad de que en un mes no haya ninguna falla?",
+    "datos": {
+      "lambda": 2
+    },
+    "calculo": "EXP(-lambda)",
+    "respuesta": 0.1353,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(X = 0) = e elevado a −2 = 0,1353"
+    ],
+    "pistas": [
+      "Con x = 0, la fórmula se reduce a e^(−λ)."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "4.6 Distribución de Poisson"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-z-acumulada",
+    "subtema": "ei-normal-estandar",
+    "enunciado": "¿Cuál es la probabilidad de que una variable normal estándar sea menor que 1,5?",
+    "datos": {
+      "z": 1.5
+    },
+    "calculo": "NORM.S.DIST(z, TRUE)",
+    "respuesta": 0.9332,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(Z < 1,5) = área a la izquierda de 1,5 = 0,9332"
+    ],
+    "pistas": [
+      "Usa la distribución acumulada de la normal estándar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "6.1 La distribución normal estándar"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-z-derecha",
+    "subtema": "ei-normal-estandar",
+    "enunciado": "¿Cuál es la probabilidad de que una variable normal estándar sea mayor que −0,5?",
+    "datos": {
+      "z": -0.5
+    },
+    "calculo": "1 - NORM.S.DIST(z, TRUE)",
+    "respuesta": 0.6915,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(Z < −0,5) = 0,3085",
+      "P(Z > −0,5) = 1 − 0,3085 = 0,6915"
+    ],
+    "pistas": [
+      "El área a la derecha es 1 menos el área a la izquierda."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "6.1 La distribución normal estándar"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-normal-menor",
+    "subtema": "ei-uso-normal",
+    "enunciado": "El tiempo de entrega sigue una normal con media 60 minutos y desviación 8. ¿Cuál es la probabilidad de entregar en menos de 70 minutos?",
+    "datos": {
+      "x": 70,
+      "mu": 60,
+      "sigma": 8
+    },
+    "calculo": "NORM.DIST(x, mu, sigma, TRUE)",
+    "respuesta": 0.8944,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "z = (70 − 60) ÷ 8 = 1,25",
+      "P(X < 70) = P(Z < 1,25) = 0,8944"
+    ],
+    "pistas": [
+      "Estandariza y busca el área a la izquierda."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "6.2 Uso de la distribución normal"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-normal-intervalo",
+    "subtema": "ei-uso-normal",
+    "enunciado": "Con la misma distribución (media 60 minutos, desviación 8), ¿cuál es la probabilidad de entregar entre 55 y 65 minutos?",
+    "datos": {
+      "a": 55,
+      "b": 65,
+      "mu": 60,
+      "sigma": 8
+    },
+    "calculo": "NORM.DIST(b, mu, sigma, TRUE) - NORM.DIST(a, mu, sigma, TRUE)",
+    "respuesta": 0.468,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "P(X < 65) = 0,7340",
+      "P(X < 55) = 0,2660",
+      "P(55 < X < 65) = 0,7340 − 0,2660 = 0,468"
+    ],
+    "pistas": [
+      "Resta las dos áreas acumuladas."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "6.2 Uso de la distribución normal"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-z-proporcion",
+    "subtema": "ei-prueba-proporcion",
+    "enunciado": "En una encuesta a 400 clientes, 224 prefieren el empaque nuevo. Para H₀: p = 0,5, ¿cuál es el estadístico z?",
+    "datos": {
+      "x": 224,
+      "n": 400,
+      "p0": 0.5
+    },
+    "calculo": "(x / n - p0) / SQRT(p0 * (1 - p0) / n)",
+    "respuesta": 2.4,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "p̂ = 224 ÷ 400 = 0,56",
+      "Error estándar = √(0,25 ÷ 400) = 0,025",
+      "z = (0,56 − 0,5) ÷ 0,025 = 2,4"
+    ],
+    "pistas": [
+      "El error estándar usa p₀, no p̂."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "9.6 Pruebas de hipótesis de una sola media y una sola proporción"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-z-proporcion-2",
+    "subtema": "ei-prueba-proporcion",
+    "enunciado": "Una empresa afirma que el 80 % de sus pedidos llega a tiempo. En una muestra de 100 pedidos, 74 llegaron a tiempo. ¿Cuál es el estadístico z?",
+    "datos": {
+      "x": 74,
+      "n": 100,
+      "p0": 0.8
+    },
+    "calculo": "(x / n - p0) / SQRT(p0 * (1 - p0) / n)",
+    "respuesta": -1.5,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "p̂ = 74 ÷ 100 = 0,74",
+      "Error estándar = √(0,16 ÷ 100) = 0,04",
+      "z = (0,74 − 0,8) ÷ 0,04 = −1,5"
+    ],
+    "pistas": [
+      "p₀ × q₀ = 0,8 × 0,2 = 0,16."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "9.6 Pruebas de hipótesis de una sola media y una sola proporción"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-dos-proporciones",
+    "subtema": "ei-dos-proporciones",
+    "enunciado": "La campaña A obtuvo 90 respuestas de 200 correos y la B, 95 de 250. ¿Cuál es el estadístico z para comparar las dos proporciones?",
+    "datos": {
+      "x1": 90,
+      "n1": 200,
+      "x2": 95,
+      "n2": 250
+    },
+    "calculo": "(x1 / n1 - x2 / n2) / SQRT(((x1 + x2) / (n1 + n2)) * (1 - (x1 + x2) / (n1 + n2)) * (1 / n1 + 1 / n2))",
+    "respuesta": 1.5,
+    "unidad": "sin unidad",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "p̂₁ = 0,45 y p̂₂ = 0,38",
+      "p̄ = 185 ÷ 450 = 0,4111",
+      "Error estándar = 0,0467",
+      "z = 0,07 ÷ 0,0467 = 1,50"
+    ],
+    "pistas": [
+      "Usa la proporción combinada en el error estándar."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "10.3 Comparación de dos proporciones de población independientes"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-agrupada",
+    "subtema": "ei-dos-proporciones",
+    "enunciado": "Una agencia registra 30 créditos en mora de 300 en la sucursal norte y 45 de 300 en la sur. ¿Cuál es la proporción combinada de mora?",
+    "datos": {
+      "x1": 30,
+      "n1": 300,
+      "x2": 45,
+      "n2": 300
+    },
+    "calculo": "(x1 + x2) / (n1 + n2)",
+    "respuesta": 0.125,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "p̄ = (30 + 45) ÷ (300 + 300)",
+      "p̄ = 75 ÷ 600 = 0,125"
+    ],
+    "pistas": [
+      "Suma los éxitos y divide para el total de observaciones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "10.3 Comparación de dos proporciones de población independientes"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-chi-ajuste",
+    "subtema": "ei-bondad-ajuste",
+    "enunciado": "Se esperaba vender 40, 40 y 20 unidades de tres tallas y se vendieron 50, 30 y 20. ¿Cuál es el estadístico chi-cuadrado?",
+    "datos": {
+      "o": [
+        50,
+        30,
+        20
+      ],
+      "e": [
+        40,
+        40,
+        20
+      ]
+    },
+    "calculo": "SUM((o - e) ^ 2 / e)",
+    "respuesta": 5,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Talla 1: 100 ÷ 40 = 2,5",
+      "Talla 2: 100 ÷ 40 = 2,5",
+      "Talla 3: 0 ÷ 20 = 0",
+      "χ² = 2,5 + 2,5 + 0 = 5"
+    ],
+    "pistas": [
+      "Divide cada diferencia al cuadrado para la frecuencia esperada."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "11.2 Prueba de bondad de ajuste"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-chi-ajuste-dias",
+    "subtema": "ei-bondad-ajuste",
+    "enunciado": "Un local espera atender 50 clientes cada uno de los 4 días de la semana que abre, y atendió 60, 45, 40 y 55. ¿Cuál es el estadístico chi-cuadrado?",
+    "datos": {
+      "o": [
+        60,
+        45,
+        40,
+        55
+      ],
+      "e": [
+        50,
+        50,
+        50,
+        50
+      ]
+    },
+    "calculo": "SUM((o - e) ^ 2 / e)",
+    "respuesta": 5,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "(100 + 25 + 100 + 25) ÷ 50 = 250 ÷ 50 = 5"
+    ],
+    "pistas": [
+      "Todas las esperadas son 50."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "11.2 Prueba de bondad de ajuste"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-f",
+    "subtema": "ei-anova",
+    "enunciado": "En un ANOVA de una vía, la varianza entre grupos es 120 y la varianza dentro de los grupos es 40. ¿Cuál es el estadístico F?",
+    "datos": {
+      "MSB": 120,
+      "MSW": 40
+    },
+    "calculo": "MSB / MSW",
+    "respuesta": 3,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "F = 120 ÷ 40 = 3"
+    ],
+    "pistas": [
+      "F = varianza entre grupos ÷ varianza dentro de los grupos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "13.1 ANOVA de una vía"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ei-f-sumas",
+    "subtema": "ei-anova",
+    "enunciado": "Con 3 grupos y 15 observaciones en total, la suma de cuadrados entre grupos es 180 y la suma de cuadrados dentro de los grupos es 240. ¿Cuál es el estadístico F?",
+    "datos": {
+      "SCB": 180,
+      "SCW": 240,
+      "k": 3,
+      "N": 15
+    },
+    "calculo": "(SCB / (k - 1)) / (SCW / (N - k))",
+    "respuesta": 4.5,
+    "unidad": "sin unidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Varianza entre grupos = 180 ÷ 2 = 90",
+      "Varianza dentro = 240 ÷ 12 = 20",
+      "F = 90 ÷ 20 = 4,5"
+    ],
+    "pistas": [
+      "Divide cada suma de cuadrados para sus grados de libertad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-est-es",
+      "seccion": "13.1 ANOVA de una vía"
+    },
+    "materia": "estadistica-inferencial",
+    "actualizado_en": "2026-10-26"
   }
 ]

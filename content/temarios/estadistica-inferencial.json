@@ -3,9 +3,104 @@
   "actualizado_en": "2026-10-26",
   "temas": [
     {
+      "id": "ei-distribuciones",
+      "nombre": "Distribuciones de probabilidad",
+      "orden": 1,
+      "descripcion": "Binomial, Poisson, normal estándar y uso de la distribución normal.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ei-binomial",
+          "nombre": "Distribución binomial",
+          "explicacion": "La distribución binomial cuenta el número de aciertos en n ensayos independientes, cada uno con solo dos resultados (acierto o fallo) y la misma probabilidad de acierto p. La probabilidad de obtener exactamente x aciertos es C(n, x)·pˣ·(1 − p)ⁿ⁻ˣ, donde C(n, x) es el número de formas de elegir cuáles ensayos son aciertos. Su media es n·p y su desviación típica √(n·p·q). Se usa, por ejemplo, para la cantidad de clientes que compran entre los que entran a una tienda.",
+          "ejemplo": "Si el 30 % de los visitantes de una tienda compra algo, la probabilidad de que exactamente 2 de 5 visitantes compren es 10 × 0,09 × 0,343 = 0,3087, porque C(5, 2) = 10, 0,3 al cuadrado es 0,09 y 0,7 al cubo es 0,343.",
+          "puntos_clave": [
+            "n ensayos independientes con la misma p.",
+            "P(X = x) = C(n, x) × pˣ × qⁿ⁻ˣ.",
+            "Media = n × p."
+          ],
+          "errores_frecuentes": [
+            "Aplicarla cuando los ensayos no son independientes.",
+            "Olvidar el coeficiente C(n, x)."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/4-3-distribucion-binomial",
+            "seccion": "4.3 Distribución binomial"
+          }
+        },
+        {
+          "id": "ei-poisson",
+          "nombre": "Distribución de Poisson",
+          "explicacion": "La distribución de Poisson describe el número de eventos que ocurren en un intervalo fijo de tiempo o espacio cuando suceden de forma independiente y a un ritmo promedio conocido λ. La probabilidad de observar exactamente x eventos es λˣ·e^(−λ) ÷ x!. Su media y su varianza son iguales a λ. Es útil para llegadas de clientes por hora, llamadas a un centro de atención o fallas por mes.",
+          "ejemplo": "A una ventanilla llegan en promedio 3 clientes cada 10 minutos. La probabilidad de que lleguen exactamente 2 en un intervalo de 10 minutos es 9 × 0,049787 ÷ 2 = 0,2240, porque 3 al cuadrado es 9, e elevado a −3 es 0,049787 y 2! es 2.",
+          "puntos_clave": [
+            "Cuenta eventos en un intervalo fijo.",
+            "P(X = x) = λˣ × e^(−λ) ÷ x!.",
+            "Media = varianza = λ."
+          ],
+          "errores_frecuentes": [
+            "Usar un λ de otro intervalo sin ajustarlo.",
+            "Aplicarla a eventos que no son independientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/4-6-distribucion-de-poisson",
+            "seccion": "4.6 Distribución de Poisson"
+          }
+        },
+        {
+          "id": "ei-normal-estandar",
+          "nombre": "La distribución normal estándar",
+          "explicacion": "La distribución normal tiene forma de campana, es simétrica alrededor de la media y queda definida por su media μ y su desviación típica σ. La normal estándar tiene media 0 y desviación 1; cualquier normal se convierte en estándar con la puntuación z = (x − μ) ÷ σ, que indica a cuántas desviaciones típicas está un valor de la media. Por la regla empírica, cerca del 68 % de los datos queda a menos de una desviación de la media, el 95 % a menos de dos y el 99,7 % a menos de tres.",
+          "ejemplo": "Las ventas diarias de un local siguen una normal con media de USD 1.200 y desviación típica de USD 150. Un día con USD 1.500 en ventas tiene z = (1.500 − 1.200) ÷ 150 = 2: está dos desviaciones por encima de la media, algo que ocurre en pocos días.",
+          "puntos_clave": [
+            "z = (x − μ) ÷ σ.",
+            "68 %, 95 % y 99,7 % dentro de 1, 2 y 3 desviaciones.",
+            "La normal es simétrica respecto de la media."
+          ],
+          "errores_frecuentes": [
+            "Usar la regla empírica con datos claramente asimétricos.",
+            "Olvidar el signo de z para valores bajo la media."
+          ],
+          "formulas": [
+            "puntuacion-z"
+          ],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/6-1-la-distribucion-normal-estandar",
+            "seccion": "6.1 La distribución normal estándar"
+          }
+        },
+        {
+          "id": "ei-uso-normal",
+          "nombre": "Calcular probabilidades con la distribución normal",
+          "explicacion": "Las probabilidades de una variable normal son áreas bajo la curva. Se calculan con la función de distribución acumulada: P(X < x) es el área a la izquierda de x. Para un intervalo se restan dos áreas: P(a < X < b) = P(X < b) − P(X < a). En la hoja de cálculo se usa DISTR.NORM.N(x; μ; σ; VERDADERO), y para el problema inverso, hallar el valor que deja cierta área a su izquierda, INV.NORM(probabilidad; μ; σ).",
+          "ejemplo": "Si el tiempo de entrega sigue una normal con media 60 minutos y desviación 8, la probabilidad de entregar en menos de 70 minutos es el área a la izquierda de z = (70 − 60) ÷ 8 = 1,25, que vale 0,8944.",
+          "puntos_clave": [
+            "Probabilidad = área bajo la curva.",
+            "P(a < X < b) = P(X < b) − P(X < a).",
+            "En Excel: DISTR.NORM.N e INV.NORM."
+          ],
+          "errores_frecuentes": [
+            "Leer el área de la derecha cuando se pide la de la izquierda.",
+            "Olvidar el argumento VERDADERO para obtener la probabilidad acumulada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/6-2-uso-de-la-distribucion-normal",
+            "seccion": "6.2 Uso de la distribución normal"
+          }
+        }
+      ]
+    },
+    {
       "id": "ei-muestreo",
       "nombre": "Muestreo y teorema del límite central",
-      "orden": 1,
+      "orden": 2,
       "descripcion": "De la muestra a la población.",
       "dificultad": 1,
       "subtemas": [
@@ -67,13 +162,34 @@
             "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/7-3-uso-del-teorema-del-limite-central",
             "seccion": "7.3 Uso del teorema del límite central"
           }
+        },
+        {
+          "id": "ei-tlc-sumas",
+          "nombre": "Teorema del límite central para sumas",
+          "explicacion": "El teorema del límite central no solo vale para medias: la suma de n observaciones independientes de una misma población también se distribuye aproximadamente normal cuando n es grande. Su media es n·μ y su desviación típica es √n·σ. Esto sirve para calcular probabilidades sobre totales: la carga total de un ascensor, el tiempo total de atención de varios clientes o las ventas totales de varios días.",
+          "ejemplo": "El tiempo de atención por cliente tiene media de 6 minutos y desviación típica de 2. Para 36 clientes, la suma de tiempos tiene media 36 × 6 = 216 minutos y desviación típica 6 × 2 = 12 minutos, porque la raíz de 36 es 6.",
+          "puntos_clave": [
+            "Media de la suma = n × μ.",
+            "Desviación típica de la suma = √n × σ.",
+            "Con n grande la suma es aproximadamente normal."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar σ por n en lugar de por √n.",
+            "Confundir la distribución de la suma con la de la media."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/7-2-el-teorema-del-limite-central-para-las-sumas",
+            "seccion": "7.2 El teorema del límite central para las sumas"
+          }
         }
       ]
     },
     {
       "id": "ei-intervalos",
       "nombre": "Intervalos de confianza",
-      "orden": 2,
+      "orden": 3,
       "descripcion": "Estimar con un margen de error.",
       "dificultad": 2,
       "subtemas": [
@@ -158,7 +274,7 @@
     {
       "id": "ei-hipotesis",
       "nombre": "Pruebas de hipótesis",
-      "orden": 3,
+      "orden": 4,
       "descripcion": "Decidir con datos y controlar errores.",
       "dificultad": 2,
       "subtemas": [
@@ -243,7 +359,7 @@
     {
       "id": "ei-relaciones",
       "nombre": "Chi-cuadrado, correlación y regresión",
-      "orden": 4,
+      "orden": 5,
       "descripcion": "Relaciones entre variables.",
       "dificultad": 3,
       "subtemas": [
@@ -323,6 +439,99 @@
             "ref": "os-est-es",
             "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/12-5-prediccion",
             "seccion": "12.5 Predicción"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ei-mas-pruebas",
+      "nombre": "Pruebas para proporciones, bondad de ajuste y ANOVA",
+      "orden": 6,
+      "descripcion": "Prueba de una proporción, comparación de dos proporciones, bondad de ajuste y análisis de varianza de una vía.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ei-prueba-proporcion",
+          "nombre": "Prueba de hipótesis para una proporción",
+          "explicacion": "Para probar si la proporción de una población es igual a un valor p₀ se usa el estadístico z = (p̂ − p₀) ÷ √(p₀·q₀ ÷ n), donde p̂ es la proporción de la muestra. Se compara con el valor crítico o se calcula el valor p. La prueba es válida cuando n·p₀ y n·q₀ son, ambos, al menos 5. Se usa, por ejemplo, para comprobar si más de la mitad de los clientes prefiere un nuevo empaque.",
+          "ejemplo": "En una encuesta a 400 clientes, 224 prefieren el empaque nuevo: p̂ = 224 ÷ 400 = 0,56. Para H₀: p = 0,5, el error estándar es 0,025 y z = (0,56 − 0,5) ÷ 0,025 = 2,4. Con un nivel de 5 % en una prueba de dos colas se rechaza H₀.",
+          "puntos_clave": [
+            "z = (p̂ − p₀) ÷ √(p₀ × q₀ ÷ n).",
+            "Requiere n·p₀ y n·q₀ de al menos 5.",
+            "Se decide con el valor p o con el valor crítico."
+          ],
+          "errores_frecuentes": [
+            "Usar p̂ en lugar de p₀ en el error estándar de la prueba.",
+            "Concluir que H₀ es verdadera cuando no se rechaza."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/9-6-pruebas-de-hipotesis-de-una-sola-media-y-una-sola-proporcion",
+            "seccion": "9.6 Pruebas de hipótesis de una sola media y una sola proporción"
+          }
+        },
+        {
+          "id": "ei-dos-proporciones",
+          "nombre": "Comparar dos proporciones",
+          "explicacion": "Para comparar las proporciones de dos poblaciones independientes se combina la información en una proporción combinada, p̄ = (x₁ + x₂) ÷ (n₁ + n₂), y se calcula z = (p̂₁ − p̂₂) ÷ √[p̄·(1 − p̄)·(1 ÷ n₁ + 1 ÷ n₂)]. Si el valor p es menor que el nivel de significación, se concluye que las proporciones difieren. Es la prueba típica para comparar la tasa de respuesta de dos campañas o la morosidad de dos tipos de crédito.",
+          "ejemplo": "Una campaña A obtuvo 90 respuestas de 200 correos (45 %) y una campaña B, 95 de 250 (38 %). La proporción combinada es 185 ÷ 450 = 0,4111 y el estadístico resulta z = 1,50, menor que 1,96: con 5 % de significación no hay evidencia de que las campañas difieran.",
+          "puntos_clave": [
+            "Proporción combinada bajo H₀: p₁ = p₂.",
+            "z compara la diferencia con su error estándar.",
+            "Las muestras deben ser independientes."
+          ],
+          "errores_frecuentes": [
+            "Concluir que una campaña es mejor solo porque su porcentaje es mayor.",
+            "Usar esta prueba con muestras emparejadas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/10-3-comparacion-de-dos-proporciones-de-poblacion-independientes",
+            "seccion": "10.3 Comparación de dos proporciones de población independientes"
+          }
+        },
+        {
+          "id": "ei-bondad-ajuste",
+          "nombre": "Prueba de bondad de ajuste",
+          "explicacion": "La prueba de bondad de ajuste comprueba si las frecuencias observadas en categorías se ajustan a una distribución esperada. El estadístico es χ² = Σ(O − E)² ÷ E, donde O son las frecuencias observadas y E las esperadas según la hipótesis nula. Se compara con la distribución chi-cuadrado con k − 1 grados de libertad, siendo k el número de categorías. Un χ² grande indica que los datos no se ajustan a lo esperado. Cada frecuencia esperada debería ser al menos 5.",
+          "ejemplo": "Una tienda espera vender 40 %, 40 % y 20 % de sus 100 unidades diarias en tres tallas, es decir, 40, 40 y 20. Vendió 50, 30 y 20. El estadístico es 100 ÷ 40 + 100 ÷ 40 + 0 ÷ 20 = 5, con 2 grados de libertad.",
+          "puntos_clave": [
+            "χ² = Σ(O − E)² ÷ E.",
+            "Grados de libertad = categorías − 1.",
+            "Frecuencias esperadas de al menos 5."
+          ],
+          "errores_frecuentes": [
+            "Usar porcentajes en lugar de frecuencias.",
+            "Dividir para la frecuencia observada en lugar de la esperada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/11-2-prueba-de-bondad-de-ajuste",
+            "seccion": "11.2 Prueba de bondad de ajuste"
+          }
+        },
+        {
+          "id": "ei-anova",
+          "nombre": "ANOVA de una vía",
+          "explicacion": "El análisis de varianza de una vía (ANOVA) prueba si las medias de tres o más grupos son iguales. Compara la variación entre los grupos con la variación dentro de ellos mediante el cociente F = varianza entre grupos ÷ varianza dentro de los grupos. Si F es grande, al menos una media difiere. Supone poblaciones normales, varianzas similares y muestras independientes. El ANOVA dice si hay diferencias, pero no cuáles grupos difieren; para eso se usan comparaciones posteriores.",
+          "ejemplo": "Se comparan las ventas medias de tres tipos de exhibidor. La varianza entre grupos es 120 y la varianza dentro de los grupos es 40, así que F = 120 ÷ 40 = 3. Ese valor se compara con el valor crítico de la distribución F para decidir.",
+          "puntos_clave": [
+            "H₀: todas las medias son iguales.",
+            "F = varianza entre grupos ÷ varianza dentro de los grupos.",
+            "Un F grande lleva a rechazar H₀."
+          ],
+          "errores_frecuentes": [
+            "Hacer muchas pruebas t de a pares en lugar de un ANOVA.",
+            "Concluir cuál grupo difiere solo con el ANOVA."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-est-es",
+            "url": "https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica/pages/13-1-anova-de-una-via",
+            "seccion": "13.1 ANOVA de una vía"
           }
         }
       ]

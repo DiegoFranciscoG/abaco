@@ -2313,5 +2313,70 @@
       "automatic stabilizers",
       "unemployment insurance"
     ]
+  },
+  {
+    "id": "ei-tlc-sumas",
+    "palabras": [
+      "sumas",
+      "teorema del limite central"
+    ]
+  },
+  {
+    "id": "ei-binomial",
+    "palabras": [
+      "binomial",
+      "ensayos"
+    ]
+  },
+  {
+    "id": "ei-poisson",
+    "palabras": [
+      "poisson",
+      "intervalo"
+    ]
+  },
+  {
+    "id": "ei-normal-estandar",
+    "palabras": [
+      "normal estandar",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "ei-uso-normal",
+    "palabras": [
+      "normalcdf",
+      "invnorm",
+      "percentil"
+    ]
+  },
+  {
+    "id": "ei-prueba-proporcion",
+    "palabras": [
+      "hipotesis",
+      "proporcion"
+    ]
+  },
+  {
+    "id": "ei-dos-proporciones",
+    "palabras": [
+      "proporciones",
+      "independientes",
+      "proporcion combinada"
+    ]
+  },
+  {
+    "id": "ei-bondad-ajuste",
+    "palabras": [
+      "bondad de ajuste",
+      "frecuencias"
+    ]
+  },
+  {
+    "id": "ei-anova",
+    "palabras": [
+      "anova",
+      "medias"
+    ]
   }
 ]
