@@ -3482,5 +3482,97 @@
       "cultural differences",
       "infrastructure"
     ]
+  },
+  {
+    "id": "ii-auditoria-formulas",
+    "palabras": [
+      "auditing formulas",
+      "tracing precedent",
+      "tracing dependent",
+      "show formulas",
+      "watch window"
+    ]
+  },
+  {
+    "id": "ii-financieras-nper-tasa",
+    "palabras": [
+      "devuelve el numero de periodos",
+      "pagos periodicos constantes",
+      "nper(tasa,pago,va,[vf],[tipo])"
+    ]
+  },
+  {
+    "id": "ii-si-componentes",
+    "palabras": [
+      "information system is a set of interconnected components",
+      "hardware, software, data, people, and procedures"
+    ]
+  },
+  {
+    "id": "ii-tipos-datos-bd",
+    "palabras": [
+      "structured, semistructured, and unstructured",
+      "database management system (dbms)",
+      "primary key"
+    ]
+  },
+  {
+    "id": "ii-proceso-analitico",
+    "palabras": [
+      "business analytics process",
+      "problem definition",
+      "big data",
+      "variety of data"
+    ]
+  },
+  {
+    "id": "ii-inteligencia-negocios",
+    "palabras": [
+      "business intelligence (bi)",
+      "descriptive analytics",
+      "predictive analytics",
+      "key performance indicators",
+      "benchmarking"
+    ]
+  },
+  {
+    "id": "ii-nube",
+    "palabras": [
+      "infrastructure as a service",
+      "platform as a service",
+      "software as a service",
+      "private cloud",
+      "hybrid cloud",
+      "community cloud"
+    ]
+  },
+  {
+    "id": "ii-privacidad-seguridad",
+    "palabras": [
+      "data privacy",
+      "data security",
+      "confidentiality, integrity, and availability",
+      "general data protection regulation"
+    ]
+  },
+  {
+    "id": "ii-gestion-riesgo-informatico",
+    "palabras": [
+      "information security and risk management (isrm)",
+      "penetration testing",
+      "risk management plan",
+      "four-stage"
+    ]
+  },
+  {
+    "id": "ii-lopdp",
+    "palabras": [
+      "registro oficial no.459",
+      "dato personal: dato que identifica",
+      "consentimiento: manifestacion de la voluntad libre, especifica, informada e inequivoca",
+      "art. 7.- tratamiento legitimo",
+      "art. 17.- derecho a la portabilidad",
+      "art. 43.- notificacion de vulneracion de seguridad"
+    ]
   }
 ]

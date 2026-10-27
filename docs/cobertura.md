@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (21 completas de 26)
+## Estado por materia (22 completas de 26)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -33,7 +33,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Ética profesional | 3 de 7 | parcial | 4 de 6 | 13 | 0 de 0 | 77 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 3 puntos más) |
 | Finanzas internacionales | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Gestión del talento humano | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
-| Informática para la gestión | 3 de 7 | parcial | 4 de 6 | 14 | 0 de 4 | 46 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 3 puntos más) |
+| Informática para la gestión | 3 de 7 | completa | 6 de 6 | 24 | 4 de 4 | 100 % | — |
 | Marketing | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Tributación | 3 de 7 | parcial | 4 de 6 | 13 | 0 de 4 | 44 % | Falta 1 unidad: tiene 4 y el estándar pide de 5 a 7. (y 4 puntos más) |
 | Cálculo diferencial | 2 de 7 | completa | 6 de 6 | 24 | 6 de 6 | 100 % | — |
@@ -101,14 +101,14 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Derecho empresarial y societario (parcial, 5 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Legislación laboral (parcial, 4 de 6 unidades) · pendientes: Economía Popular y Solidaria, Estadística Aplicada, TIC Aplicada en la Empresa.
 - **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
-- **5.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Informática para la gestión (parcial, 4 de 6 unidades) · pendientes: Ecosistemas de Emprendimiento e Innovación, Presupuestos.
+- **5.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades) · pendientes: Ecosistemas de Emprendimiento e Innovación, Presupuestos.
 - **6.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · pendientes: Administración Pública.
 - **7.º ciclo**: en ÁBACO: Ética profesional (parcial, 4 de 6 unidades); Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · sin pendientes.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: E-Commerce y Marketing Digital.
 
 ### Contabilidad y auditoría (2 planes)
 
-- **1.º ciclo**: en ÁBACO: Cálculo diferencial (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Derecho empresarial y societario (parcial, 5 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Ética profesional (parcial, 4 de 6 unidades); Informática para la gestión (parcial, 4 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · sin pendientes.
+- **1.º ciclo**: en ÁBACO: Cálculo diferencial (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Derecho empresarial y societario (parcial, 5 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Ética profesional (parcial, 4 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Legislación laboral (parcial, 4 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Tributación (parcial, 4 de 6 unidades) · pendientes: Contabilidad Comercial.
 - **3.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Contabilidad Costos Básica, Contabilidad de Gestión Ambiental, Régimen Impositivo y Fiscalidad, Teoría Administrativa.
 - **4.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades) · pendientes: Aplicaciones de Costos, Contabilidad Costos Avanzada, Contabilidad Societaria, Control Interno y Gestión de Riesgos, Legislación del Sector Público, Normas Internacionales de Información Financiera, Renta y Otros Impuestos.
@@ -119,7 +119,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 ### Economía (2 planes)
 
-- **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (parcial, 4 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Fundamentos de Programación, Historia Económica, Introducción a la Economía, Álgebra Lineal.
+- **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Fundamentos de Programación, Historia Económica, Introducción a la Economía, Álgebra Lineal.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Análisis de Datos y Programación, Derecho Económico y Empresarial, Estadística Probabilistica, Historia del pensamiento económico, Teoría de los Grupos Sociales y del Estado.
 - **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Medición Económica, Realidad Socio-Económica.
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Derecho Económico, Econometría, Economía Política, Investigación Económica, Métodos Dinámicos en Economía.
@@ -183,7 +183,7 @@ Carreras: Administración de empresas, Contabilidad y auditoría, Economía, Mer
 - Estadística descriptiva: completa, avance 100 %.
 - Ética profesional: parcial, avance 77 %.
 - Fundamentos de administración: completa, avance 100 %.
-- Informática para la gestión: parcial, avance 46 %.
+- Informática para la gestión: completa, avance 100 %.
 - Marketing: completa, avance 100 %.
 - Matemática para la gestión: completa, avance 100 %.
 - Metodología de la investigación: completa, avance 100 %.

@@ -9241,5 +9241,263 @@
     },
     "materia": "finanzas-internacionales",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-promedio-ventas",
+    "subtema": "ii-funciones-basicas",
+    "formula": "media-aritmetica",
+    "enunciado": "Las ventas diarias de una semana laboral fueron 1.250, 980, 1.430, 1.100 y 1.240 dólares. ¿Qué devuelve =PROMEDIO(B2:B6)?",
+    "datos": {
+      "x": [
+        1250,
+        980,
+        1430,
+        1100,
+        1240
+      ]
+    },
+    "calculo": "AVERAGE(x)",
+    "respuesta": 1200,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Suma = 6.000",
+      "6.000 ÷ 5 = 1.200"
+    ],
+    "pistas": [
+      "PROMEDIO suma los valores y divide para cuántos son."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ms-excel-est",
+      "url": "https://support.microsoft.com/es-es/office/funciones-estad%C3%ADsticas-referencia-624dac86-a375-4435-bc25-76d659719ffd",
+      "seccion": "Funciones estadísticas"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-promedio-notas",
+    "subtema": "ii-funciones-basicas",
+    "formula": "media-aritmetica",
+    "enunciado": "Un estudiante tiene las notas 8,5; 7; 9; 6,5; 9,5 y 8. ¿Qué devuelve =PROMEDIO(C2:C7)?",
+    "datos": {
+      "x": [
+        8.5,
+        7,
+        9,
+        6.5,
+        9.5,
+        8
+      ]
+    },
+    "calculo": "AVERAGE(x)",
+    "respuesta": 8.0833,
+    "unidad": "puntos",
+    "tolerancia": 0.00005,
+    "procedimiento": [
+      "Suma = 48,5",
+      "48,5 ÷ 6 = 8,0833"
+    ],
+    "pistas": [
+      "Son seis notas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ms-excel-est",
+      "url": "https://support.microsoft.com/es-es/office/funciones-estad%C3%ADsticas-referencia-624dac86-a375-4435-bc25-76d659719ffd",
+      "seccion": "Funciones estadísticas"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-va",
+    "subtema": "ii-financieras-va-vf",
+    "formula": "valor-actual",
+    "enunciado": "¿Cuánto hay que depositar hoy al 8 % anual para tener USD 10.000 en 5 años? ¿Qué devuelve =VA(8%;5;0;-10000)?",
+    "datos": {
+      "VF": 10000,
+      "i": 0.08,
+      "n": 5
+    },
+    "calculo": "VF / (1 + i) ^ n",
+    "respuesta": 6805.83,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "1,08 elevado a 5 = 1,469328",
+      "VA = 10.000 ÷ 1,469328 = 6.805,83"
+    ],
+    "pistas": [
+      "Sin pagos periódicos, el argumento pago es 0."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-va-23879d31-0e02-4321-be01-da16e8168cbd",
+      "seccion": "Función VA"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-vf-ahorro",
+    "subtema": "ii-financieras-va-vf",
+    "formula": "vf-anualidad-vencida",
+    "enunciado": "Una persona ahorra USD 150 al final de cada mes durante 24 meses al 1 % mensual. ¿Qué devuelve =VF(1%;24;-150)?",
+    "datos": {
+      "A": 150,
+      "i": 0.01,
+      "n": 24
+    },
+    "calculo": "A * ((1 + i) ^ n - 1) / i",
+    "respuesta": 4046.02,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "1,01 elevado a 24 = 1,269735",
+      "(1,269735 − 1) ÷ 0,01 = 26,9735",
+      "VF = 150 × 26,973465 = 4.046,02"
+    ],
+    "pistas": [
+      "Tasa y plazo en meses."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-va-23879d31-0e02-4321-be01-da16e8168cbd",
+      "seccion": "Función VA"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-pago-auto",
+    "subtema": "ii-financieras-pago",
+    "formula": "cuota-prestamo",
+    "enunciado": "Un crédito de USD 12.000 se paga en 36 cuotas mensuales al 1,5 % mensual. ¿Qué devuelve =PAGO(1,5%;36;-12000)?",
+    "datos": {
+      "VA": 12000,
+      "i": 0.015,
+      "n": 36
+    },
+    "calculo": "VA * i / (1 - (1 + i) ^ -n)",
+    "respuesta": 433.83,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "12.000 × 0,015 = 180",
+      "1,015 elevado a −36 = 0,58509",
+      "1 − 0,58509 = 0,41491",
+      "Cuota = 180 ÷ 0,41491 = 433,83"
+    ],
+    "pistas": [
+      "El préstamo va con signo negativo para que la cuota salga positiva."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-pago-0214da64-9a63-4996-bc20-214433fa6441",
+      "seccion": "Función PAGO"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-tir",
+    "subtema": "ii-financieras-vna-tir",
+    "enunciado": "Un proyecto cuesta USD 10.000 y genera 4.000, 4.500 y 5.000 en los años 1 a 3. ¿Qué tasa devuelve =TIR(B1:B4), en porcentaje?",
+    "datos": {
+      "f": [
+        -10000,
+        4000,
+        4500,
+        5000
+      ]
+    },
+    "calculo": "IRR(f) * 100",
+    "respuesta": 15.98,
+    "unidad": "%",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "TIR es la tasa que hace VAN = 0",
+      "Con 15,98 %: 4.000 ÷ 1,1598 + 4.500 ÷ 1,1598 elevado a 2 + 5.000 ÷ 1,1598 elevado a 3 ≈ 10.000"
+    ],
+    "pistas": [
+      "La inversión inicial va negativa en la primera celda del rango."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-vna-8672cb67-2576-4d07-b67b-ac28acf2a568",
+      "seccion": "Función VNA"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-nper",
+    "subtema": "ii-financieras-nper-tasa",
+    "enunciado": "Un préstamo de USD 5.000 al 1 % mensual se paga con cuotas de USD 200. ¿Cuántas cuotas devuelve =NPER(1%;-200;5000)?",
+    "datos": {
+      "VA": 5000,
+      "i": 0.01,
+      "A": 200
+    },
+    "calculo": "-LN(1 - i * VA / A) / LN(1 + i)",
+    "respuesta": 28.91,
+    "unidad": "meses",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "0,01 × 5.000 = 50",
+      "50 ÷ 200 = 0,25",
+      "1 − 0,25 = 0,75",
+      "n = 0,287682 ÷ 0,009950 = 28,91"
+    ],
+    "pistas": [
+      "La última cuota será menor que 200."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-nper-240535b5-6653-4d2d-bfcf-b6a38151d815",
+      "seccion": "Función NPER"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ii-tasa",
+    "subtema": "ii-financieras-nper-tasa",
+    "enunciado": "Un préstamo de USD 9.000 se paga con 4 cuotas anuales de USD 2.600. ¿Qué tasa anual devuelve =TASA(4;-2600;9000), en porcentaje?",
+    "datos": {
+      "f": [
+        -9000,
+        2600,
+        2600,
+        2600,
+        2600
+      ]
+    },
+    "calculo": "IRR(f) * 100",
+    "respuesta": 6.04,
+    "unidad": "%",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "TASA busca por iteración la tasa que iguala 9.000 al valor actual de las cuotas",
+      "Resultado: 6,04 % anual"
+    ],
+    "pistas": [
+      "Equivale a la TIR de los flujos del préstamo."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "ms-excel-fin",
+      "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-tasa-9f665657-4a7e-4bb7-a030-83fc59e748ce",
+      "seccion": "Función TASA"
+    },
+    "materia": "informatica-gestion",
+    "actualizado_en": "2026-10-26"
   }
 ]

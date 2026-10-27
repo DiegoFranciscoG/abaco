@@ -69,6 +69,27 @@
             "ref": "ms-excel-log",
             "seccion": "Función SI.ERROR"
           }
+        },
+        {
+          "id": "ii-auditoria-formulas",
+          "nombre": "Auditar fórmulas y corregir errores",
+          "explicacion": "A medida que una empresa crece, sus libros de Excel acumulan fórmulas, rangos, tablas dinámicas y referencias encadenadas, y cualquier dato mal ingresado se propaga. Auditar fórmulas es usar las herramientas de Excel para encontrar y corregir esos errores. Rastrear precedentes muestra con flechas las celdas que alimentan la fórmula activa; rastrear dependientes muestra qué celdas cambian si se modifica la activa, algo que conviene revisar antes de borrar una celda. Mostrar fórmulas reemplaza los resultados por las fórmulas para revisarlas, la comprobación de errores identifica errores específicos y la ventana Inspección permite vigilar celdas clave mientras se trabaja en otra parte del libro.",
+          "ejemplo": "Antes de eliminar la columna de descuentos de una hoja de facturación, se selecciona una celda de esa columna y se usa Rastrear dependientes: si aparecen flechas hacia el total facturado, borrarla produciría errores #¡REF! en esos totales.",
+          "puntos_clave": [
+            "Rastrear precedentes: de dónde vienen los datos.",
+            "Rastrear dependientes: qué se afecta si cambio esta celda.",
+            "Mostrar fórmulas, comprobación de errores y ventana Inspección."
+          ],
+          "errores_frecuentes": [
+            "Borrar celdas sin revisar sus dependientes.",
+            "Revisar solo los resultados y no las fórmulas que los producen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-wss",
+            "url": "https://openstax.org/books/workplace-software-skills/pages/10-5-auditing-formulas-and-fixing-errors",
+            "seccion": "10.5 Auditing Formulas and Fixing Errors"
+          }
         }
       ]
     },
@@ -234,6 +255,27 @@
             "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-vna-8672cb67-2576-4d07-b67b-ac28acf2a568",
             "seccion": "Función VNA"
           }
+        },
+        {
+          "id": "ii-financieras-nper-tasa",
+          "nombre": "NPER y TASA: plazo y tasa de una anualidad",
+          "explicacion": "NPER devuelve el número de períodos de una inversión o préstamo con pagos periódicos constantes y tasa de interés constante; su sintaxis es NPER(tasa; pago; va; [vf]; [tipo]). TASA devuelve la tasa de interés por período de una anualidad y se calcula por iteración: TASA(nper; pago; va; [vf]; [tipo]; [estimar]); si no converge, devuelve #¡NUM! y conviene probar otro valor de estimar. En ambas, el argumento tipo indica si los pagos vencen al final (0 u omitido) o al inicio del período (1), y las unidades deben ser coherentes: con pagos mensuales, la tasa es mensual y el plazo se cuenta en meses.",
+          "ejemplo": "Con un préstamo de USD 5.000 al 1 % mensual y cuotas de USD 200, =NPER(1%;-200;5000) devuelve unos 28,91 meses. Con un préstamo de USD 8.000 pagado en 48 cuotas de USD 200, =TASA(48;-200;8000) devuelve la tasa mensual, que luego se puede anualizar.",
+          "puntos_clave": [
+            "NPER(tasa; pago; va; [vf]; [tipo]).",
+            "TASA(nper; pago; va; [vf]; [tipo]; [estimar]).",
+            "Tasa y plazo en la misma unidad de tiempo."
+          ],
+          "errores_frecuentes": [
+            "Usar la tasa anual con pagos mensuales.",
+            "Dar el mismo signo al préstamo y a la cuota, lo que produce #¡NUM!."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ms-excel-fin",
+            "url": "https://support.microsoft.com/es-es/office/funci%C3%B3n-nper-240535b5-6653-4d2d-bfcf-b6a38151d815",
+            "seccion": "Función NPER"
+          }
         }
       ]
     },
@@ -318,6 +360,192 @@
             "ref": "ms-excel-formulas",
             "url": "https://support.microsoft.com/es-es/office/crear-un-gr%C3%A1fico-de-principio-a-fin-0baf399e-dd61-4e18-8a73-b3fd5d5680c2",
             "seccion": "Crear un gráfico de principio a fin"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ii-sistemas-datos",
+      "nombre": "Sistemas de información y análisis de datos",
+      "orden": 5,
+      "descripcion": "Componentes de un sistema de información, tipos de datos y bases de datos, proceso analítico e inteligencia de negocios.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ii-si-componentes",
+          "nombre": "Qué es un sistema de información y sus componentes",
+          "explicacion": "Un sistema de información es un conjunto de componentes interconectados que integran la recolección, el procesamiento, el almacenamiento y la distribución de datos e información para apoyar la toma de decisiones, la coordinación, el control y el análisis en una organización. Tiene cinco componentes: hardware (computadoras, servidores, redes y almacenamiento), software (sistemas operativos, gestores de bases de datos y aplicaciones), datos (hechos y cifras sin procesar que se convierten en información), personas y procedimientos. Se diferencia de la tecnología de la información, que implementa y mantiene los sistemas, y de las ciencias de la computación, que aportan su base teórica.",
+          "ejemplo": "El sistema de facturación de una ferretería incluye las computadoras y la impresora (hardware), el programa de facturación (software), los registros de productos y clientes (datos), los cajeros (personas) y la regla de emitir comprobante en cada venta (procedimiento).",
+          "puntos_clave": [
+            "Cinco componentes: hardware, software, datos, personas y procedimientos.",
+            "Apoya decisiones, coordinación y control.",
+            "Sistemas de información frente a tecnología de la información."
+          ],
+          "errores_frecuentes": [
+            "Reducir el sistema de información al software.",
+            "Olvidar a las personas y los procedimientos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/1-1-introduction-to-information-systems",
+            "seccion": "1.1 Introduction to Information Systems"
+          }
+        },
+        {
+          "id": "ii-tipos-datos-bd",
+          "nombre": "Tipos de datos y bases de datos",
+          "explicacion": "Los datos pueden ser estructurados (tablas, hojas de cálculo y bases de datos relacionales, fáciles de consultar), semiestructurados (con alguna organización pero sin tablas fijas, como XML y JSON) o no estructurados (textos, imágenes, videos y publicaciones en redes, más difíciles de analizar). Un sistema gestor de bases de datos (DBMS) permite recolectar, almacenar y procesar datos, y se encarga de tareas como respaldo y recuperación, rendimiento y seguridad. La clave primaria identifica de forma única cada registro de una tabla: no admite valores repetidos ni vacíos, lo que protege la integridad de los datos.",
+          "ejemplo": "En la tabla Clientes de una tienda, el campo IdCliente es la clave primaria: dos clientes con el mismo nombre siguen siendo distintos porque tienen identificadores diferentes, y el sistema impide guardar un cliente sin identificador.",
+          "puntos_clave": [
+            "Estructurados, semiestructurados y no estructurados.",
+            "DBMS: almacenamiento, respaldo, rendimiento y seguridad.",
+            "Clave primaria: única y no vacía."
+          ],
+          "errores_frecuentes": [
+            "Usar el nombre como identificador único.",
+            "Guardar datos en hojas sueltas sin respaldo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/3-1-data-types-database-management-systems-and-tools-for-managing-data",
+            "seccion": "3.1 Data Types, Database Management Systems, and Tools for Managing Data"
+          }
+        },
+        {
+          "id": "ii-proceso-analitico",
+          "nombre": "El proceso de analítica de negocios y los macrodatos",
+          "explicacion": "La analítica de datos examina conjuntos de datos para obtener conclusiones con métodos estadísticos y computacionales. El proceso de analítica de negocios empieza con la definición del problema y sigue con la preparación de los datos, el análisis, la interpretación y la implementación, repitiéndose si aparecen nuevos problemas. Los macrodatos (big data) son conjuntos tan grandes de datos estructurados y no estructurados que no pueden procesarse con técnicas tradicionales; su volumen, velocidad y variedad son a la vez la oportunidad y el desafío. Los datos se adquieren de fuentes internas, sensores, redes sociales, interfaces de programación (API) y mercados de datos.",
+          "ejemplo": "Una cadena de farmacias define el problema (quiebres de stock en fin de semana), prepara los datos de ventas por hora, los analiza, interpreta que la demanda sube los sábados por la tarde y ajusta su reposición.",
+          "puntos_clave": [
+            "Definición del problema, preparación, análisis, interpretación e implementación.",
+            "Big data: volumen, velocidad y variedad.",
+            "Fuentes internas y externas de datos."
+          ],
+          "errores_frecuentes": [
+            "Empezar a analizar sin definir el problema.",
+            "Confiar en datos sin limpiarlos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-1-the-business-analytics-process",
+            "seccion": "8.1 The Business Analytics Process"
+          }
+        },
+        {
+          "id": "ii-inteligencia-negocios",
+          "nombre": "Inteligencia de negocios, KPI y benchmarking",
+          "explicacion": "La inteligencia de negocios (BI) consiste en recolectar, analizar e interpretar datos para tomar decisiones y mejorar el desempeño; permite identificar tendencias, patrones y correlaciones sobre clientes, mercados y operaciones, a menudo mediante tableros (dashboards). La analítica descriptiva estudia datos históricos para entender lo que pasó, y la predictiva anticipa tendencias y preferencias. Un indicador clave de desempeño (KPI) es un valor medible que muestra qué tan bien se cumplen los objetivos, y el benchmarking compara el desempeño con los estándares del sector y la competencia.",
+          "ejemplo": "Un supermercado sigue en un tablero el KPI de rotación de inventario por tienda y lo compara con el promedio del sector (benchmarking); si una tienda está por debajo, revisa qué productos se acumulan.",
+          "puntos_clave": [
+            "BI: datos para decidir mejor.",
+            "Analítica descriptiva y predictiva.",
+            "KPI y benchmarking."
+          ],
+          "errores_frecuentes": [
+            "Medir muchos indicadores que no se relacionan con los objetivos.",
+            "Comparar con empresas que no son del mismo sector."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/8-2-foundations-of-business-intelligence-and-analytics",
+            "seccion": "8.2 Foundations of Business Intelligence and Analytics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ii-nube-seguridad",
+      "nombre": "Nube, seguridad y protección de datos",
+      "orden": 6,
+      "descripcion": "Modelos de servicio y despliegue en la nube, privacidad y seguridad de los datos, gestión del riesgo informático y la LOPDP del Ecuador.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ii-nube",
+          "nombre": "Computación en la nube: servicios y despliegue",
+          "explicacion": "Los servicios en la nube combinan un modelo de entrega, que define qué recursos ofrece el proveedor, y un modelo de despliegue, que define dónde están, cómo se implementan y quién controla la infraestructura. Los modelos de entrega son infraestructura como servicio (IaaS: redes y almacenamiento), plataforma como servicio (PaaS: recursos para desarrollar) y software como servicio (SaaS: aplicaciones listas para usar); todos se contratan por suscripción y se escalan según la necesidad. Los modelos de despliegue son la nube privada, dedicada a una organización; la pública, con servicios a demanda; la híbrida, que combina ambas, y la comunitaria, limitada a un grupo.",
+          "ejemplo": "Una pyme usa correo y hojas de cálculo en línea (SaaS), contrata servidores virtuales para su tienda virtual (IaaS) y mantiene la contabilidad en un servidor propio: en conjunto opera con un esquema híbrido.",
+          "puntos_clave": [
+            "IaaS, PaaS y SaaS.",
+            "Nube privada, pública, híbrida y comunitaria.",
+            "Suscripción y escalabilidad."
+          ],
+          "errores_frecuentes": [
+            "Pensar que en la nube la seguridad es solo responsabilidad del proveedor.",
+            "Elegir un modelo solo por precio sin revisar quién controla los datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/7-2-cloud-computing-services-pricing-and-deployment-models",
+            "seccion": "7.2 Cloud Computing Services, Pricing, and Deployment Models"
+          }
+        },
+        {
+          "id": "ii-privacidad-seguridad",
+          "nombre": "Privacidad y seguridad de los datos",
+          "explicacion": "La privacidad de datos es el estado en que los datos están protegidos del acceso no autorizado gracias a su manejo, procesamiento, almacenamiento y uso adecuados, respetando el consentimiento, el aviso y las obligaciones legales; se centra en el derecho de las personas a que su información personal sea protegida. La seguridad de datos es parte de la privacidad: son las medidas que mantienen los datos a salvo de corrupción y accesos no autorizados preservando su confidencialidad, integridad y disponibilidad (tríada CIA). Proteger los datos cuida la confianza y la reputación, evita pérdidas financieras y reduce riesgos operativos; normas como el Reglamento General de Protección de Datos europeo imponen sanciones a quien no lo hace.",
+          "ejemplo": "Un consultorio que guarda historias clínicas cifra sus respaldos (confidencialidad), registra quién modifica cada ficha (integridad) y mantiene una copia fuera de la oficina para seguir atendiendo si falla el equipo (disponibilidad).",
+          "puntos_clave": [
+            "Privacidad: derechos de las personas sobre sus datos.",
+            "Seguridad: confidencialidad, integridad y disponibilidad.",
+            "Una brecha daña la confianza y la reputación."
+          ],
+          "errores_frecuentes": [
+            "Creer que privacidad y seguridad son lo mismo.",
+            "Guardar más datos personales de los necesarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/6-1-key-concepts-in-data-privacy-and-data-security",
+            "seccion": "6.1 Key Concepts in Data Privacy and Data Security"
+          }
+        },
+        {
+          "id": "ii-gestion-riesgo-informatico",
+          "nombre": "Estrategia de seguridad y gestión del riesgo (ISRM)",
+          "explicacion": "Una estrategia de seguridad de la información y gestión del riesgo (ISRM) es un enfoque estructurado para manejar los procesos, herramientas y políticas de seguridad de una organización. Persigue tres objetivos: proteger los activos, prevenir filtraciones y ciberataques y reducir la exposición general al riesgo. Sus componentes incluyen la evaluación de riesgos, el desarrollo de políticas, la implementación de controles y la capacitación, junto con defensas proactivas como el monitoreo de redes y las pruebas de penetración. El plan de gestión de riesgos sigue cuatro etapas: identificar, evaluar, mitigar y monitorear los riesgos.",
+          "ejemplo": "Una cooperativa identifica el riesgo de correos de suplantación (phishing), lo evalúa como probable y grave, lo mitiga con doble factor de autenticación y capacitación al personal, y lo monitorea revisando cada mes los intentos detectados.",
+          "puntos_clave": [
+            "Tres objetivos: proteger activos, prevenir ataques y reducir la exposición.",
+            "Evaluación, políticas, controles y capacitación.",
+            "Plan: identificar, evaluar, mitigar y monitorear."
+          ],
+          "errores_frecuentes": [
+            "Comprar tecnología sin capacitar a las personas.",
+            "Hacer la evaluación de riesgos una sola vez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-fis",
+            "url": "https://openstax.org/books/foundations-information-systems/pages/5-3-information-security-and-risk-management-strategies",
+            "seccion": "5.3 Information Security and Risk Management Strategies"
+          }
+        },
+        {
+          "id": "ii-lopdp",
+          "nombre": "La Ley Orgánica de Protección de Datos Personales del Ecuador",
+          "explicacion": "La LOPDP se publicó en el Quinto Suplemento del Registro Oficial 459, del 26 de mayo de 2021. Define dato personal como el que identifica o hace identificable a una persona natural, directa o indirectamente, y consentimiento como la manifestación de voluntad libre, específica, informada e inequívoca del titular. El tratamiento es legítimo si cumple alguna condición del art. 7, como el consentimiento o una obligación legal. Entre sus principios (art. 10) están juridicidad, transparencia, finalidad, proporcionalidad, confidencialidad, calidad y exactitud, seguridad y responsabilidad proactiva. Reconoce los derechos de información, acceso, rectificación y actualización, eliminación, oposición, portabilidad y suspensión del tratamiento (arts. 12 a 19), y el art. 43 obliga a notificar las vulneraciones de seguridad a la Autoridad de Protección de Datos Personales.",
+          "ejemplo": "Una tienda en línea que pide el correo de sus clientes para enviar facturas debe informarles para qué lo usa; si luego quiere enviarles publicidad, necesita su consentimiento para esa finalidad distinta, y si un cliente pide eliminar sus datos, debe atender ese derecho salvo que una obligación legal le exija conservarlos.",
+          "puntos_clave": [
+            "Dato personal y consentimiento libre, específico, informado e inequívoco.",
+            "Principios del art. 10, como finalidad y proporcionalidad.",
+            "Derechos de acceso, rectificación, eliminación, oposición y portabilidad."
+          ],
+          "errores_frecuentes": [
+            "Usar los datos para una finalidad distinta de la informada.",
+            "Pensar que la ley solo aplica a empresas grandes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Arts. 4, 7, 8, 10, 12 a 19 y 43"
           }
         }
       ]

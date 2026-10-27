@@ -439,5 +439,32 @@
     "url": "https://www.comunidadandina.org/quienes-somos/",
     "licencia": "Información pública oficial; se cita y resume con redacción propia",
     "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "os-wss",
+    "titulo": "Workplace Software and Skills",
+    "autor_editor": "Tammie Bolling, Angela Mitchell, Tanya Scott et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/workplace-software-skills",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "os-fis",
+    "titulo": "Foundations of Information Systems",
+    "autor_editor": "Mahesh S. Raisinghani, Amal Alhosban, Dax Bradley et al. — OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/foundations-information-systems",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-26"
+  },
+  {
+    "id": "lopdp",
+    "titulo": "Ley Orgánica de Protección de Datos Personales (Quinto Supl. R.O. 459, 26-05-2021)",
+    "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por el Consejo de Comunicación",
+    "tipo": "ley",
+    "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-26"
   }
 ]
