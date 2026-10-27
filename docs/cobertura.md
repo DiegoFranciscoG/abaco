@@ -72,7 +72,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Informática Aplicada | 3 | 4 | 1 | Informática para la gestión |
 | Práctica Tributaria (práctica o titulación) | 3 | 4 | 2 | Tributación |
 | Contabilidad Financiera | 3 | 3 | 1 | Contabilidad financiera (NIIF) |
-| Practica Laboral (práctica o titulación) | 3 | 3 | 7 | no aplica |
+| Práctica Laboral (práctica o titulación) | 3 | 3 | 7 | no aplica |
 | Unidad de Integración Curricular (práctica o titulación) | 3 | 3 | 7 | no aplica |
 | Comportamiento Organizacional | 2 | 4 | 4 | Comportamiento organizacional |
 | Derecho Laboral | 2 | 4 | 2 | Legislación laboral |
@@ -90,7 +90,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Introducción al Marketing | 2 | 2 | 1 | pendiente |
 | Investigación Operativa | 2 | 2 | 4 | pendiente |
 | Marketing Internacional | 2 | 2 | 5 | pendiente |
-| Planificacion Estrategica | 2 | 2 | 2 | pendiente |
+| Planificación Estratégica | 2 | 2 | 2 | pendiente |
 | Prácticas Laborales (práctica o titulación) | 2 | 2 | 4 | no aplica |
 | Titulación (práctica o titulación) | 2 | 2 | 7 | no aplica |
 
@@ -121,7 +121,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 ### Economía (2 planes)
 
 - **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Fundamentos de Programación, Historia Económica, Introducción a la Economía, Álgebra Lineal.
-- **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Análisis de Datos y Programación, Derecho Económico y Empresarial, Estadística Probabilistica, Historia del pensamiento económico, Teoría de los Grupos Sociales y del Estado.
+- **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Análisis de Datos y Programación, Derecho Económico y Empresarial, Estadística Probabilistica, Historia del Pensamiento Económico, Teoría de los Grupos Sociales y del Estado.
 - **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Medición Económica, Realidad Socio-Económica.
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Derecho Económico, Econometría, Economía Política, Investigación Económica, Métodos Dinámicos en Economía.
 - **5.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Investigación Operativa, Organización Industrial, Teoría de Juegos.
@@ -132,7 +132,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 ### Mercadotecnia (2 planes)
 
 - **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades) · pendientes: Administración y Organización, Diseño para Marketing, Introducción al Marketing, Pensamiento Creativo y Desing Thinking, Psicología del Comportamiento.
-- **2.º ciclo**: en ÁBACO: Estadística descriptiva (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades) · pendientes: Costeo de Productos y Servicios, Estrategia Competitiva, Marketing Mix y Segmentacion, Marketing en Servicios, Planificacion Estrategica, Principios de Economía.
+- **2.º ciclo**: en ÁBACO: Estadística descriptiva (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades) · pendientes: Costeo de Productos y Servicios, Estrategia Competitiva, Marketing Mix y Segmentacion, Marketing de Servicios, Planificación Estratégica, Principios de Economía.
 - **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · pendientes: Diseño Gráfico y Digital con IA, Estrategia Comunicacional y Redaccion Creativa, Marca personal, Marco Legal del Marketing y Ciberseguridad, Marketing Sostenible, Metodos Cuantitativos.
 - **4.º ciclo**: ninguna materia en ÁBACO · pendientes: Business English, Businness Intelligence, Diseño de Productos 3D+RA, Entorno Macroeconómico, Finanzas y Marketing, Mercados Emergentes y Marketing Generacional, Neuroventas y Negociación.
 - **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Branding, Creatividad Integral y Digital, Diseño Publicitario, Estrategia de Precio, Estrategia de Producto, Finanzas Aplicdas al Marketing, Gestión Logística, Neuromarketing.
