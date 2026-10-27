@@ -655,5 +655,30 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "planificacion-estrategica",
+    "nombre": "Planificación y dirección estratégica",
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Análisis del entorno y de los recursos, estrategias competitivas, visión, misión y niveles de estrategia, tipos de planes, metas y planificación en la práctica.",
+    "sinonimos": [
+      "planificación estratégica",
+      "dirección estratégica",
+      "planificación y dirección estratégica",
+      "estrategia competitiva",
+      "análisis del macroentorno empresarial",
+      "gestión estratégica"
+    ],
+    "herramientas": [
+      "foda",
+      "tarjetas"
+    ],
+    "orden": 31,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

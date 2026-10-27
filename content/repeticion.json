@@ -152,6 +152,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Dirección Estratégica",
+    "carreras": 4,
+    "planes": 5,
+    "ciclo_habitual": 3,
+    "materia": "planificacion-estrategica",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Prácticas de Servicio Comunitario",
     "carreras": 4,
     "planes": 5,
@@ -324,14 +332,6 @@
     "carreras": 2,
     "planes": 2,
     "ciclo_habitual": 4,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Planificación Estratégica",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 2,
     "materia": null,
     "tipo": "materia"
   },

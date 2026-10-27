@@ -1,0 +1,471 @@
+{
+  "materia": "planificacion-estrategica",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pe-analisis",
+      "nombre": "Análisis estratégico del entorno y de la empresa",
+      "orden": 1,
+      "descripcion": "Por qué analizar el entorno, la incertidumbre del entorno, recursos y capacidades con VRIO y la empresa como sistema abierto.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pe-analisis-estrategico",
+          "nombre": "Qué es el análisis estratégico",
+          "explicacion": "El análisis estratégico es el proceso con el que las empresas estudian y entienden las distintas capas y aspectos de su entorno competitivo. Las empresas no operan en el vacío: las afectan fuerzas de dentro de la organización y del mundo exterior, y entenderlas es clave para el éxito. El entorno externo cambia continuamente, y las empresas más exitosas se preparan y se adaptan porque hicieron ese análisis a tiempo.",
+          "ejemplo": "Al ver que crece el número de clientes extranjeros en una ciudad turística, una cadena de farmacias agrega señalética en inglés y personal bilingüe antes que su competencia.",
+          "puntos_clave": [
+            "Estudiar el entorno competitivo por capas.",
+            "Fuerzas internas y externas.",
+            "Prepararse y adaptarse a los cambios."
+          ],
+          "errores_frecuentes": [
+            "Analizar el entorno una sola vez.",
+            "Mirar solo a los competidores directos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-1-gaining-advantages-by-understanding-the-competitive-environment",
+            "seccion": "8.1 Gaining Advantages by Understanding the Competitive Environment"
+          }
+        },
+        {
+          "id": "pe-incertidumbre-entorno",
+          "nombre": "La incertidumbre del entorno",
+          "explicacion": "Los líderes vigilan el entorno para identificar, predecir y manejar tendencias, problemas y oportunidades; algunas empresas incluso crean tendencias, pero la mayoría debe adaptarse. Un marco clásico clasifica el entorno según su complejidad (simple o complejo) y su cambio (estable o inestable), además de la disponibilidad de recursos financieros para crecer. Industrias como embotelladoras o procesadoras de alimentos encajan mejor en un entorno simple y estable, de baja incertidumbre; otras, como la tecnología, enfrentan entornos complejos e inestables que exigen más flexibilidad.",
+          "ejemplo": "Una fábrica de fideos opera en un entorno simple y estable: pocos factores y cambios lentos. Una empresa de aplicaciones móviles vive en uno complejo e inestable: muchos competidores, cambios tecnológicos rápidos y reglas nuevas cada año.",
+          "puntos_clave": [
+            "Complejidad: simple o complejo.",
+            "Cambio: estable o inestable.",
+            "Más incertidumbre exige más flexibilidad."
+          ],
+          "errores_frecuentes": [
+            "Usar la misma estructura rígida en cualquier entorno.",
+            "Confundir un entorno complejo con uno inestable."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/4-2-external-environments-and-industries",
+            "seccion": "4.2 External Environments and Industries"
+          }
+        },
+        {
+          "id": "pe-recursos-vrio",
+          "nombre": "Recursos, capacidades, cadena de valor y VRIO",
+          "explicacion": "El entorno interno incluye a los miembros de la empresa, sus inversionistas y sus activos. Los recursos son lo que la empresa tiene (equipos, instalaciones, materias primas, personal, efectivo) y las capacidades son lo que sabe hacer (buen servicio, innovación). La cadena de valor es la secuencia de actividades para crear un producto por el que los clientes pagan, y en cada paso debe agregarse valor. El análisis VRIO evalúa cada recurso o capacidad con cuatro preguntas: ¿es valioso?, ¿es raro?, ¿es difícil de imitar? y ¿está la empresa organizada para aprovecharlo? Si todas las respuestas son sí, puede ser fuente de ventaja competitiva.",
+          "ejemplo": "Una chocolatería de Esmeraldas tiene contratos de largo plazo con productores de cacao fino de aroma (valioso y raro), una receta de fermentación propia difícil de copiar y un equipo de exportación organizado: según VRIO, esa capacidad puede darle ventaja competitiva.",
+          "puntos_clave": [
+            "Recursos: lo que se tiene; capacidades: lo que se sabe hacer.",
+            "Cadena de valor.",
+            "VRIO: valor, rareza, imitación y organización."
+          ],
+          "errores_frecuentes": [
+            "Contar recursos sin evaluar si son difíciles de imitar.",
+            "Tener una capacidad valiosa sin organización para aprovecharla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-5-the-internal-environment",
+            "seccion": "8.5 The Internal Environment"
+          }
+        },
+        {
+          "id": "pe-sistema-abierto",
+          "nombre": "La organización como sistema abierto",
+          "explicacion": "La teoría de sistemas abiertos ve a la organización como un sistema que toma recursos del entorno en la fase de entrada (información, materias primas, estudiantes que ingresan a una universidad), los transforma con sus procesos internos en la fase de transformación (throughput) y entrega resultados al entorno en la fase de salida. Por eso la organización depende de su entorno y debe ajustar su estructura y procesos para responder a amenazas y oportunidades del mercado.",
+          "ejemplo": "Una universidad recibe bachilleres (entrada), los forma durante varios años con docentes y laboratorios (transformación) y entrega profesionales al mercado laboral (salida); si las empresas piden nuevas habilidades, debe ajustar sus carreras.",
+          "puntos_clave": [
+            "Entrada, transformación y salida.",
+            "Dependencia del entorno.",
+            "Ajustar la organización a amenazas y oportunidades."
+          ],
+          "errores_frecuentes": [
+            "Diseñar procesos sin mirar lo que pide el entorno.",
+            "Ver la organización como un sistema cerrado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/4-4-the-internal-organization-and-external-environments",
+            "seccion": "4.4 The Internal Organization and External Environments"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pe-competencia",
+      "nombre": "Estrategia competitiva",
+      "orden": 2,
+      "descripcion": "Ventaja competitiva y las estrategias genéricas de liderazgo en costos, diferenciación y enfoque, y el posicionamiento estratégico.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pe-ventaja-competitiva",
+          "nombre": "Competencia, estrategia y ventaja competitiva",
+          "explicacion": "Las empresas existen para obtener utilidades vendiendo bienes y servicios a precios mayores que sus costos, y casi nunca están solas: deben atraer clientes hacia sus productos y alejarlos de los de la competencia. La estrategia es el proceso de planificar e implementar acciones que llevan al éxito en esa competencia, y no puede planificarse sin entender el panorama competitivo. Hay ventaja competitiva cuando una empresa atrae más clientes o gana más que sus rivales.",
+          "ejemplo": "Dos panaderías en la misma calle venden productos parecidos; la que logra más clientes y más margen gracias a su horario extendido y su pan de masa madre tiene ventaja competitiva.",
+          "puntos_clave": [
+            "Precio mayor que el costo.",
+            "Estrategia: planificar e implementar para competir.",
+            "Ventaja: más clientes o más utilidad que los rivales."
+          ],
+          "errores_frecuentes": [
+            "Confundir estar ocupado con tener una estrategia.",
+            "Ignorar a los competidores indirectos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-6-competition-strategy-and-competitive-advantage",
+            "seccion": "8.6 Competition, Strategy, and Competitive Advantage"
+          }
+        },
+        {
+          "id": "pe-liderazgo-costos",
+          "nombre": "Liderazgo en costos",
+          "explicacion": "Con una estrategia de liderazgo en costos la empresa ofrece su producto a un precio menor que el de sus rivales. Para lograr ventaja, controla estrictamente los costos en toda su cadena de valor: negocia los precios más bajos con proveedores, produce donde la mano de obra es más barata y automatiza para ser eficiente. Debe gastar lo menos posible en producir para seguir siendo rentable vendiendo al precio más bajo.",
+          "ejemplo": "Una cadena de supermercados de descuento tiene locales sencillos, compra enormes volúmenes para obtener precios bajos y ofrece pocas marcas por categoría: así vende más barato que sus rivales y aún gana.",
+          "puntos_clave": [
+            "Precio más bajo que los rivales.",
+            "Control de costos en toda la cadena de valor.",
+            "Eficiencia y escala."
+          ],
+          "errores_frecuentes": [
+            "Bajar precios sin tener costos más bajos.",
+            "Recortar calidad hasta perder clientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-6-competition-strategy-and-competitive-advantage",
+            "seccion": "8.6 Competition, Strategy, and Competitive Advantage"
+          }
+        },
+        {
+          "id": "pe-diferenciacion-enfoque",
+          "nombre": "Diferenciación y enfoque",
+          "explicacion": "La diferenciación es lo opuesto al liderazgo en costos: la empresa agrega valor a sus productos para atraer clientes dispuestos a pagar más, aumentando la calidad, las características y el atractivo en cada paso de la cadena de valor, con innovación, excelente servicio y una marca fuerte. Según la tipología de Porter, intentar combinar costos bajos y diferenciación puede dejar a la empresa «atrapada en el medio». El enfoque, la tercera estrategia genérica, se dirige a un segmento reducido del mercado, ya sea con costos bajos o con diferenciación.",
+          "ejemplo": "Una cafetería de especialidad cobra más que una cafetería común por su ambiente, su servicio y granos seleccionados (diferenciación); otra se dedica solo a cafés para personas con dietas veganas y sin gluten (enfoque).",
+          "puntos_clave": [
+            "Diferenciación: más valor por un precio mayor.",
+            "Riesgo de quedar atrapado en el medio.",
+            "Enfoque en un segmento reducido."
+          ],
+          "errores_frecuentes": [
+            "Diferenciar en atributos que el cliente no valora.",
+            "Intentar ser el más barato y el mejor a la vez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-6-competition-strategy-and-competitive-advantage",
+            "seccion": "8.6 Competition, Strategy, and Competitive Advantage"
+          }
+        },
+        {
+          "id": "pe-posicionamiento",
+          "nombre": "Posicionamiento estratégico",
+          "explicacion": "El posicionamiento estratégico son las decisiones de una empresa sobre cómo servir a sus clientes y competir con sus rivales. Combina lo aprendido sobre el entorno competitivo, los recursos y capacidades propios, la situación de la industria y el macroentorno. Incluye elegir una estrategia competitiva genérica según las capacidades propias y las posiciones de los rivales, decidir a qué clientes servir y qué están dispuestos a pagar, y en qué mercados geográficos participar. Sobre todo, debe ser único de alguna manera difícil de imitar rápidamente.",
+          "ejemplo": "Una aerolínea regional decide servir a viajeros de negocios entre ciudades intermedias, con horarios puntuales y tarifas medias, rutas que las grandes aerolíneas no atienden: ese es su posicionamiento.",
+          "puntos_clave": [
+            "Cómo servir a los clientes y competir.",
+            "Estrategia genérica, clientes y mercados geográficos.",
+            "Posición única difícil de imitar."
+          ],
+          "errores_frecuentes": [
+            "Querer servir a todos los clientes.",
+            "Elegir una posición fácil de copiar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/8-7-strategic-positioning",
+            "seccion": "8.7 Strategic Positioning"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pe-direccion",
+      "nombre": "Dirección estratégica",
+      "orden": 3,
+      "descripcion": "El ciclo de la estrategia, visión y misión, el papel del análisis en la formulación y los objetivos y niveles de estrategia.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pe-proceso-estrategico",
+          "nombre": "El proceso de dirección estratégica",
+          "explicacion": "El proceso de dirección estratégica es el conjunto de actividades que realizan los directivos para poner a su empresa en la mejor posición para competir. Incluye analizar el entorno, fijar visión y misión, formular, implementar y evaluar la estrategia. Aunque se explica como una secuencia ordenada, en la práctica los altos directivos hacen todo a la vez: actualizan su análisis del entorno mientras ejecutan estrategias del pasado y formulan las del futuro, en un ciclo continuo.",
+          "ejemplo": "La gerencia de una cadena de ferreterías ejecuta su plan de abrir dos locales este año, mientras monitorea la llegada de un competidor internacional y prepara la estrategia de comercio en línea para el próximo año.",
+          "puntos_clave": [
+            "Conjunto de actividades para competir mejor.",
+            "Analizar, formular, implementar y evaluar.",
+            "Ciclo continuo y simultáneo."
+          ],
+          "errores_frecuentes": [
+            "Tratar la estrategia como un documento que se hace una vez.",
+            "Dejar de analizar el entorno mientras se ejecuta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-1-strategic-management",
+            "seccion": "9.1 Strategic Management"
+          }
+        },
+        {
+          "id": "pe-vision-mision",
+          "nombre": "Visión y misión",
+          "explicacion": "La visión expresa lo que los fundadores quieren que la empresa logre; es muy amplia, no tiene que mencionar productos ni describir la estrategia, y en una o dos frases dice por qué existe el negocio. La misión es más específica: toma el porqué de la visión y describe en términos generales cómo la empresa intentará cumplirlo. Definir ambas es el primer paso para construir una posición estratégica exitosa, idealmente desde la fundación de la empresa.",
+          "ejemplo": "Visión de una empresa de alimentos: «que cada familia ecuatoriana coma sano». Misión: «producir y distribuir alimentos nutritivos y accesibles con ingredientes de productores locales».",
+          "puntos_clave": [
+            "Visión: el porqué, amplia.",
+            "Misión: el cómo general.",
+            "Base de la posición estratégica."
+          ],
+          "errores_frecuentes": [
+            "Redactar una visión que es solo una lista de productos.",
+            "Confundir la misión con los objetivos anuales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-2-firm-vision-and-mission",
+            "seccion": "9.2 Firm Vision and Mission"
+          }
+        },
+        {
+          "id": "pe-formulacion",
+          "nombre": "El análisis en la formulación de la estrategia",
+          "explicacion": "El análisis del entorno externo (el mundo y los competidores) y del interno (capacidades y recursos) da a los directivos una imagen clara de con qué cuentan y qué deben atender al planificar. Por eso el análisis va al inicio del proceso: la información obtenida guía las decisiones siguientes. Incluso los emprendedores que escriben un plan de negocios antes de que exista la empresa hacen este análisis para saber si la idea es viable y cómo posicionarse frente a competidores y clientes.",
+          "ejemplo": "Antes de abrir un gimnasio, una emprendedora analiza cuántos gimnasios hay en el sector, qué precios cobran, qué buscan los vecinos y con cuánto capital cuenta; con eso decide abrir un centro de entrenamiento funcional para adultos mayores.",
+          "puntos_clave": [
+            "Análisis externo e interno antes de decidir.",
+            "La información guía la formulación.",
+            "También sirve para validar ideas de negocio."
+          ],
+          "errores_frecuentes": [
+            "Formular la estrategia por intuición.",
+            "Analizar mucho y no decidir."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-3-the-role-of-strategic-analysis-in-formulating-a-strategy",
+            "seccion": "9.3 The Role of Strategic Analysis in Formulating a Strategy"
+          }
+        },
+        {
+          "id": "pe-objetivos-niveles",
+          "nombre": "Objetivos estratégicos, niveles de estrategia y estrategia general",
+          "explicacion": "Los objetivos estratégicos son las metas generales que describen qué hará la empresa para cumplir su misión, como lanzar un producto, aumentar la rentabilidad o ganar participación. La estrategia de nivel de negocio organiza las actividades de una empresa con uno o varios productos, como el liderazgo en costos o la diferenciación; la de nivel corporativo decide en qué negocios, industrias o países participar. La estrategia general (grand strategy) define si la empresa buscará crecer en ingresos, participación o alcance geográfico, mantenerse estable o adoptar una posición defensiva, según las condiciones del entorno.",
+          "ejemplo": "Una empresa de lácteos fija como objetivo crecer 20 % en ventas: a nivel de negocio lanza una línea de yogur griego; a nivel corporativo compra una pequeña quesera en Colombia; su estrategia general es de crecimiento.",
+          "puntos_clave": [
+            "Objetivos estratégicos ligados a la misión.",
+            "Nivel de negocio y nivel corporativo.",
+            "Estrategia general: crecimiento, estabilidad o defensa."
+          ],
+          "errores_frecuentes": [
+            "Plantear objetivos sin conexión con la misión.",
+            "Crecer en un entorno de crisis sin evaluar el riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-4-strategic-objectives-and-levels-of-strategy",
+            "seccion": "9.4 Strategic Objectives and Levels of Strategy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pe-planificacion",
+      "nombre": "Planificación e implementación",
+      "orden": 4,
+      "descripcion": "Qué es un plan, planificación estratégica, táctica y operativa, metas SMART, componentes de un plan y tipos de planes.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pe-niveles-planificacion",
+          "nombre": "Planes estratégicos, tácticos y operativos",
+          "explicacion": "Un plan es la decisión de realizar una acción para lograr una meta, con decisiones sobre cuándo y cómo hacerlo y qué recursos se necesitan. La planificación estratégica es la de alto nivel que hacen los ejecutivos para fijar la dirección general y conectar las acciones con la visión y la misión. La planificación táctica es de nivel medio, la hacen los gerentes de división y traduce la estrategia en ideas amplias de acción. La planificación operativa detalla las acciones y pasos precisos para lograr un objetivo específico.",
+          "ejemplo": "En una cadena de supermercados, el directorio decide crecer con precios bajos (estratégico); el gerente de logística decide dónde ubicar un nuevo centro de distribución (táctico), y el jefe de bodega programa los turnos de descarga de cada día (operativo).",
+          "puntos_clave": [
+            "Plan: acción, tiempo, forma y recursos.",
+            "Estratégico, táctico y operativo.",
+            "Cada nivel apoya al superior."
+          ],
+          "errores_frecuentes": [
+            "Hacer planes operativos sin conexión con la estrategia.",
+            "Que la alta dirección se pierda en detalles operativos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-5-planning-firm-actions-to-implement-strategies",
+            "seccion": "9.5 Planning Firm Actions to Implement Strategies"
+          }
+        },
+        {
+          "id": "pe-metas-smart",
+          "nombre": "Metas SMART",
+          "explicacion": "Las buenas metas comparten características que se resumen en el marco SMART: específicas, medibles, alcanzables, relevantes y con plazo definido. Una aspiración vaga como «que nos vaya bien» se convierte en una meta útil cuando dice exactamente qué se logrará, con qué indicador, si es realista, por qué importa y para cuándo. El marco sirve tanto para metas de negocio como personales.",
+          "ejemplo": "En lugar de «vender más», una tienda se propone «aumentar las ventas en línea de USD 8.000 a USD 10.000 mensuales hasta diciembre, con campañas en redes»: es específica, medible, alcanzable, relevante y con plazo.",
+          "puntos_clave": [
+            "Específica, medible, alcanzable, relevante y con plazo.",
+            "Convierte aspiraciones vagas en metas.",
+            "Sirve para empresas y personas."
+          ],
+          "errores_frecuentes": [
+            "Fijar metas sin indicador.",
+            "Poner metas imposibles que desmotivan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/9-5-planning-firm-actions-to-implement-strategies",
+            "seccion": "9.5 Planning Firm Actions to Implement Strategies"
+          }
+        },
+        {
+          "id": "pe-componentes-plan",
+          "nombre": "Por qué planificar: metas y acciones",
+          "explicacion": "Planificar es el proceso con el que los directivos establecen metas y especifican cómo alcanzarlas. Todo plan tiene dos componentes: las declaraciones de resultado o meta, que representan el estado final que se quiere lograr, y las declaraciones de acción, que describen los medios para avanzar hacia esas metas. La planificación es una actividad intelectual exigente, y junto con el control permite a las organizaciones avanzar de forma ordenada.",
+          "ejemplo": "Meta de una clínica: reducir el tiempo de espera a 20 minutos este año. Acciones: implementar citas en línea, contratar un médico más en horas pico y medir el tiempo de espera cada semana.",
+          "puntos_clave": [
+            "Planificar: metas y cómo lograrlas.",
+            "Declaraciones de resultado y de acción.",
+            "Planificar y controlar van juntos."
+          ],
+          "errores_frecuentes": [
+            "Escribir metas sin acciones.",
+            "Listar acciones sin una meta que las oriente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-1-is-planning-important",
+            "seccion": "17.1 Is Planning Important"
+          }
+        },
+        {
+          "id": "pe-tipos-planes",
+          "nombre": "Tipos de planes",
+          "explicacion": "Las organizaciones usan varios tipos de planes. Por jerarquía, hay planes para el nivel institucional, administrativo y operativo. Por frecuencia de uso, los planes permanentes incluyen políticas (guías generales que permiten cierta discreción), reglas (sin discreción) y procedimientos (pasos a seguir); los planes de uso único incluyen programas, proyectos y presupuestos, que son planes expresados en números. Por horizonte de tiempo, hay planes de corto (hasta un año), mediano (uno a cinco años) y largo plazo (más de cinco). Los planes de contingencia preparan respuestas alternativas ante eventos que podrían interrumpir lo planeado, como desastres naturales.",
+          "ejemplo": "Una empresa tiene una política de regalos de proveedores, una regla que prohíbe fumar en bodega, un procedimiento de compras, un proyecto para abrir una sucursal, un presupuesto anual y un plan de contingencia ante cortes de energía.",
+          "puntos_clave": [
+            "Permanentes: políticas, reglas y procedimientos.",
+            "De uso único: programas, proyectos y presupuestos.",
+            "Horizontes de tiempo y planes de contingencia."
+          ],
+          "errores_frecuentes": [
+            "Confundir una política con una regla.",
+            "No tener plan de contingencia para riesgos conocidos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-3-types-of-plans",
+            "seccion": "17.3 Types of Plans"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pe-practica",
+      "nombre": "La planificación en la práctica",
+      "orden": 5,
+      "descripcion": "Los cuatro tipos de planificación, metas oficiales y operativas, planificación formal e improvisada y la teoría de las metas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pe-cuatro-planificaciones",
+          "nombre": "Planificación estratégica, táctica, operativa y de contingencia",
+          "explicacion": "Planificar es decidir qué hay que hacer para lograr los objetivos, cuándo, cómo y quién lo hará, a partir de información del entorno externo e interno. Hay cuatro tipos básicos. La estratégica fija metas amplias de largo plazo (de uno a cinco años) y los recursos necesarios, considerando factores económicos, tecnológicos y sociales; la formulan los altos directivos. La táctica concreta esas metas para áreas específicas en plazos más cortos. La operativa define cómo hacer el trabajo en el día a día. La de contingencia prepara cursos de acción alternativos si algo sale mal.",
+          "ejemplo": "Un hotel planea ser el preferido de turistas extranjeros en tres años (estratégica), lanzar un paquete de turismo comunitario este año (táctica), organizar los turnos de recepción de la semana (operativa) y tener un protocolo si se cancela la llegada de un grupo grande (contingencia).",
+          "puntos_clave": [
+            "Qué, cuándo, cómo y quién.",
+            "Estratégica, táctica, operativa y de contingencia.",
+            "Los planes de corto plazo apoyan los de largo plazo."
+          ],
+          "errores_frecuentes": [
+            "Hacer solo planificación operativa.",
+            "Formular la estrategia sin mirar el entorno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/6-2-planning",
+            "seccion": "6.2 Planning"
+          }
+        },
+        {
+          "id": "pe-metas-oficiales",
+          "nombre": "Metas oficiales y operativas",
+          "explicacion": "Las organizaciones tienen dos tipos de metas relacionadas. Las metas oficiales son sus propósitos generales expresados en declaraciones públicas, informes anuales o estatutos; suelen ser ambiguas y buscan la aceptación de sus públicos, como «ser la universidad de primera elección». Las metas operativas reflejan las intenciones concretas de la dirección y son las que deben perseguir sus miembros, como aumentar en cierto porcentaje los pacientes atendidos en un hospital. Las metas orientan y motivan el trabajo y sirven para evaluar el desempeño.",
+          "ejemplo": "Una cooperativa declara en su memoria anual que quiere «impulsar el desarrollo de su comunidad» (oficial) y fija para este año otorgar 300 microcréditos a mujeres emprendedoras (operativa).",
+          "puntos_clave": [
+            "Oficiales: generales y públicas.",
+            "Operativas: concretas y medibles.",
+            "Orientan, motivan y permiten evaluar."
+          ],
+          "errores_frecuentes": [
+            "Quedarse solo con metas oficiales inspiradoras.",
+            "Fijar metas operativas que contradicen las oficiales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-4-goals-or-outcome-statements",
+            "seccion": "17.4 Goals or Outcome Statements"
+          }
+        },
+        {
+          "id": "pe-planificacion-formal",
+          "nombre": "Planificación formal y planificación sobre la marcha",
+          "explicacion": "Hoy casi todas las grandes empresas preparan planes formales de largo plazo, la mayoría a cinco años. Aun así, muchos directivos se resisten a planificar por falta de tiempo, por considerarlo complicado o por temor a no cumplir las metas. En lugar de la planificación de plano (blueprint), que formula metas y acciones antes de avanzar, algunos practican la planificación sobre la marcha, que decide el siguiente paso justo antes de actuar y funciona cuando hay claridad de propósito y mucha incertidumbre. También se discute quién planifica: la visión clásica separa planificar de ejecutar, y la conductual propone involucrar a los miembros de la organización.",
+          "ejemplo": "Una empresa constructora elabora un plan formal a cinco años para abrir operaciones en otra provincia, mientras su equipo de ventas digitales ajusta sus campañas semana a semana según los resultados.",
+          "puntos_clave": [
+            "Planes formales de largo plazo.",
+            "Planificación de plano frente a planificación sobre la marcha.",
+            "Participación de los empleados en la planificación."
+          ],
+          "errores_frecuentes": [
+            "No planificar por temor a fallar.",
+            "Planificar sin consultar a quienes ejecutan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-5-formal-organizational-planning-in-practice",
+            "seccion": "17.5 Formal Organizational Planning in Practice"
+          }
+        },
+        {
+          "id": "pe-teoria-metas",
+          "nombre": "La teoría de las metas y la respuesta de los empleados",
+          "explicacion": "No basta con que los empleados trabajen duro: su esfuerzo debe dirigirse al objetivo correcto. La teoría de las metas, la teoría de motivación con más respaldo, muestra que quienes tienen metas, aunque sean generales, rinden más que quienes no las tienen, y que ciertos tipos de metas funcionan mejor. Las metas que motivan son difíciles, específicas y aceptadas por el empleado, y deben acompañarse de retroalimentación de la dirección.",
+          "ejemplo": "En lugar de pedir «hagan su mejor esfuerzo», un jefe de producción acuerda con su equipo reducir los defectos de 5 % a 3 % este trimestre y comparte cada semana el avance en un tablero.",
+          "puntos_clave": [
+            "Tener metas mejora el desempeño.",
+            "Metas difíciles, específicas y aceptadas.",
+            "Retroalimentación constante."
+          ],
+          "errores_frecuentes": [
+            "Imponer metas sin que el equipo las acepte.",
+            "Fijar metas y no dar retroalimentación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-6-employees-responses-to-planning",
+            "seccion": "17.6 Employees' Responses to Planning"
+          }
+        }
+      ]
+    }
+  ]
+}
