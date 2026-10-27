@@ -65,6 +65,27 @@
             "ref": "sri-facturacion",
             "seccion": "Facturación electrónica"
           }
+        },
+        {
+          "id": "tr-tributos-clases",
+          "nombre": "Qué es un tributo y sus clases",
+          "explicacion": "El Código Tributario regula las relaciones jurídicas que nacen de los tributos entre los sujetos activos y los contribuyentes o responsables, y se aplica a todos los tributos: nacionales, provinciales, municipales o de otros entes acreedores. Tributo es la prestación en dinero que exige el Estado, por medio de entes nacionales, seccionales o de excepción, cuando se realiza el hecho previsto en la ley, con el objetivo de satisfacer necesidades públicas. Los tributos son impuestos, tasas y contribuciones especiales (art. 1). Además de recaudar ingresos, sirven como instrumento de política económica: estimulan la inversión, la reinversión y el ahorro, y procuran una mejor distribución de la renta (art. 6).",
+          "ejemplo": "El impuesto a la renta es un impuesto (se paga sin una contraprestación directa); el valor que cobra el municipio por recolectar basura es una tasa (paga un servicio concreto), y el cobro por el asfaltado de la calle frente a una casa es una contribución especial de mejora.",
+          "puntos_clave": [
+            "Tributo: prestación en dinero exigida por el Estado según la ley.",
+            "Clases: impuestos, tasas y contribuciones especiales.",
+            "Fines: recaudar y orientar la política económica."
+          ],
+          "errores_frecuentes": [
+            "Llamar impuesto a cualquier cobro del Estado.",
+            "Olvidar que los municipios también administran tributos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 1 y 6"
+          }
         }
       ]
     },
@@ -137,6 +158,27 @@
           "fuente": {
             "ref": "sri-rimpe",
             "seccion": "RIMPE: deberes formales"
+          }
+        },
+        {
+          "id": "tr-iva-base-declaracion",
+          "nombre": "Base imponible del IVA y periodicidad de la declaración",
+          "explicacion": "El IVA grava el valor de las transferencias locales o importaciones de bienes muebles en todas sus etapas de comercialización, los derechos de autor y de propiedad industrial y el valor de los servicios (art. 52 LRTI). En general, su base imponible es el precio de venta o el valor del servicio, incluidos otros impuestos, tasas y gastos imputables al precio, menos descuentos y devoluciones; en importaciones, el valor en aduana más impuestos, aranceles, tasas y recargos (arts. 58 a 60 LRTI). Se declara cada mes cuando las transacciones tienen tarifa de IVA distinta de 0 % o hay retenciones de IVA, y cada semestre cuando solo se venden bienes o servicios con tarifa 0 % o sujetos a retención total; los emprendedores del RIMPE declaran de forma semestral. Los plazos dependen del noveno dígito del RUC.",
+          "ejemplo": "Una ferretería vende una herramienta en USD 120 y concede un descuento de USD 20: la base imponible del IVA es 120 − 20 = 100 dólares, y como tiene ventas con tarifa distinta de 0 % declara el IVA cada mes.",
+          "puntos_clave": [
+            "Base: precio menos descuentos y devoluciones.",
+            "Importaciones: valor en aduana más tributos y recargos.",
+            "Declaración mensual o semestral según las operaciones."
+          ],
+          "errores_frecuentes": [
+            "Calcular el IVA sobre el precio antes del descuento.",
+            "Declarar semestralmente teniendo ventas gravadas con tarifa distinta de 0 %."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sri-iva",
+            "url": "https://www.sri.gob.ec/impuesto-al-valor-agregado-iva",
+            "seccion": "¿Qué es?, ¿Quién debe pagar? y ¿Sobre qué se debe pagar?"
           }
         }
       ]
@@ -302,6 +344,237 @@
           "fuente": {
             "ref": "sri-rimpe",
             "seccion": "Comprobantes de venta en el RIMPE"
+          }
+        },
+        {
+          "id": "tr-rimpe-exclusiones",
+          "nombre": "Actividades que no pueden estar en el RIMPE",
+          "explicacion": "El RIMPE no aplica a los ingresos de ciertas actividades: contratos de construcción y urbanización, lotización y similares; actividades profesionales, mandatos, representaciones y comisionistas; transporte, excepto taxis; actividades agropecuarias; comercialización de combustibles; relación de dependencia; arrendamiento de bienes muebles e inmuebles; regímenes especiales; inversión extranjera directa y asociaciones público-privadas; hidrocarburos, minería, petroquímica, laboratorios médicos y farmacéuticas, industrias básicas, sector financiero, seguros y economía popular y solidaria; servicios gravados con ICE, y artesanos calificados. Tampoco pueden acogerse al RIMPE quienes tuvieron ingresos brutos superiores a USD 300.000 en el año anterior, ni quienes están inscritos en el RUC sin actividad económica registrada.",
+          "ejemplo": "Una contadora que factura servicios profesionales no entra en el RIMPE aunque sus ingresos sean bajos: tributa en el régimen general. En cambio, una persona que vende ropa en un local propio con ingresos de USD 45.000 sí puede estar en el RIMPE como emprendedora.",
+          "puntos_clave": [
+            "Lista de actividades excluidas en la normativa.",
+            "Profesionales, arrendamientos y relación de dependencia no entran.",
+            "Excluidos también por superar el límite de ingresos."
+          ],
+          "errores_frecuentes": [
+            "Creer que cualquier negocio pequeño está en el RIMPE.",
+            "Ignorar que los ingresos por arriendo están excluidos."
+          ],
+          "formulas": [],
+          "cifras": [
+            "rimpe-limites"
+          ],
+          "fuente": {
+            "ref": "sri-rimpe",
+            "url": "https://www.sri.gob.ec/rimpe",
+            "seccion": "Actividades no sujetas al RIMPE"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tr-obligacion",
+      "nombre": "La obligación tributaria",
+      "orden": 5,
+      "descripcion": "Concepto, hecho generador, sujetos, exenciones, modos de extinción, prescripción e intereses de mora según el Código Tributario.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "tr-obligacion-concepto",
+          "nombre": "Obligación tributaria y hecho generador",
+          "explicacion": "La obligación tributaria es el vínculo jurídico personal entre el Estado u otros entes acreedores de tributos y los contribuyentes o responsables, por el cual debe pagarse una prestación en dinero, especies o servicios apreciables en dinero, al verificarse el hecho generador previsto en la ley (art. 15). El hecho generador es el presupuesto que fija la ley para configurar cada tributo (art. 16): por ejemplo, obtener ingresos en el impuesto a la renta o transferir bienes en el IVA. Sin hecho generador previsto en la ley no nace la obligación.",
+          "ejemplo": "Cuando una tienda vende un televisor, se produce el hecho generador del IVA (la transferencia del bien) y nace la obligación de cobrar y declarar ese impuesto.",
+          "puntos_clave": [
+            "Vínculo jurídico entre el acreedor del tributo y el sujeto pasivo.",
+            "Nace al verificarse el hecho generador.",
+            "El hecho generador lo define la ley."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la obligación nace cuando se presenta la declaración.",
+            "Confundir el hecho generador con la base imponible."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 15 y 16"
+          }
+        },
+        {
+          "id": "tr-sujetos",
+          "nombre": "Sujeto activo, sujeto pasivo, contribuyente y responsable",
+          "explicacion": "El sujeto activo es el ente público acreedor del tributo, como el SRI o un municipio (art. 23). El sujeto pasivo es la persona natural o jurídica obligada por ley a cumplir la prestación, sea como contribuyente o como responsable; también lo son las herencias yacentes, comunidades de bienes y otras unidades económicas sin personalidad jurídica cuando la ley lo establezca (art. 24). Contribuyente es a quien la ley impone la prestación por verificarse el hecho generador, y no pierde esa condición aunque traslade la carga a otros (art. 25). Responsable es quien, sin ser contribuyente, debe cumplir por disposición expresa de la ley las obligaciones de este, como un agente de retención; la obligación es solidaria entre ambos (art. 26).",
+          "ejemplo": "Cuando una empresa paga a un proveedor y le retiene parte del impuesto a la renta, el proveedor es el contribuyente y la empresa actúa como responsable (agente de retención) frente al SRI, que es el sujeto activo.",
+          "puntos_clave": [
+            "Sujeto activo: el acreedor del tributo.",
+            "Sujeto pasivo: contribuyente o responsable.",
+            "Obligación solidaria entre contribuyente y responsable."
+          ],
+          "errores_frecuentes": [
+            "Creer que quien traslada el impuesto deja de ser contribuyente.",
+            "Pensar que el agente de retención no responde si no retuvo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 23 a 26"
+          }
+        },
+        {
+          "id": "tr-exenciones",
+          "nombre": "Exenciones o exoneraciones",
+          "explicacion": "La exención o exoneración tributaria es la exclusión o dispensa legal de la obligación tributaria, establecida por razones de orden público, económico o social (art. 31). Solo una disposición expresa de ley puede establecer exenciones, y en ella deben constar los requisitos para concederlas, los tributos que comprenden y si son totales o parciales, permanentes o temporales (art. 32). Es distinta de la tarifa 0 %: en una exención la ley dispensa la obligación, mientras que en la tarifa 0 % la operación está gravada, pero con tarifa cero.",
+          "ejemplo": "Si una ley exonera del impuesto a la renta durante cinco años a las nuevas inversiones en cierta zona, la empresa que cumple los requisitos de esa ley no paga el impuesto en ese período; un reglamento o una resolución no podrían crear esa exoneración por sí solos.",
+          "puntos_clave": [
+            "Dispensa legal de la obligación.",
+            "Solo por disposición expresa de ley.",
+            "La ley fija requisitos, alcance y duración."
+          ],
+          "errores_frecuentes": [
+            "Confundir exención con tarifa 0 %.",
+            "Creer que un reglamento puede crear exenciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 31 y 32"
+          }
+        },
+        {
+          "id": "tr-extincion-prescripcion",
+          "nombre": "Modos de extinción y prescripción",
+          "explicacion": "La obligación tributaria se extingue, en todo o en parte, por pago, compensación, confusión, remisión, prescripción de la acción de cobro y transacción (art. 37). El pago lo deben hacer los contribuyentes o responsables. La obligación y la acción de cobro de los créditos tributarios, sus intereses y las multas por incumplir deberes formales prescriben en cinco años desde que fueron exigibles, o desde que debió presentarse la declaración si esta resultó incompleta o no se presentó; con facilidades de pago, la prescripción corre por cada cuota desde su vencimiento (art. 55).",
+          "ejemplo": "Si una declaración debía presentarse en abril de 2021 y nunca se presentó, el plazo de cinco años para cobrar ese tributo se cuenta desde abril de 2021, salvo que algo lo interrumpa según la ley.",
+          "puntos_clave": [
+            "Seis modos de extinción: pago, compensación, confusión, remisión, prescripción y transacción.",
+            "Prescripción del cobro: cinco años.",
+            "Se cuenta desde la exigibilidad o desde cuando debió declararse."
+          ],
+          "errores_frecuentes": [
+            "Creer que no declarar evita el cobro.",
+            "Pensar que la prescripción opera sola sin que se alegue."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 37 y 55"
+          }
+        },
+        {
+          "id": "tr-intereses-mora",
+          "nombre": "Intereses por mora tributaria",
+          "explicacion": "La obligación tributaria que no se paga a tiempo causa, sin necesidad de resolución alguna, un interés anual equivalente a la tasa activa referencial para noventa días que fija el Banco Central del Ecuador, desde que la obligación es exigible hasta que se extingue. El interés se calcula con las tasas de cada período trimestral que dure la mora, por cada mes de retraso, sin liquidaciones diarias: la fracción de mes se liquida como mes completo. Si la obligación se establece después de que la administración ejerce sus facultades, el interés es 1,3 veces esa tasa (art. 21).",
+          "ejemplo": "Un contribuyente paga con 2 meses y 10 días de retraso un impuesto de USD 3.000. Se cuentan 3 meses; con una tasa anual supuesta de 10 %, el interés es 3.000 × 0,10 ÷ 12 × 3 = 75 dólares.",
+          "puntos_clave": [
+            "Tasa: activa referencial a noventa días del BCE.",
+            "Por cada mes de retraso; la fracción cuenta como mes completo.",
+            "1,3 veces la tasa si la determina la administración."
+          ],
+          "errores_frecuentes": [
+            "Calcular el interés por días.",
+            "Usar una sola tasa para toda la mora sin revisar cada trimestre."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Art. 21"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tr-administracion",
+      "nombre": "Administración tributaria, deberes e infracciones",
+      "orden": 6,
+      "descripcion": "Facultades de la administración, deberes formales del contribuyente, infracciones y reclamos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "tr-facultades",
+          "nombre": "Facultades de la administración tributaria",
+          "explicacion": "La administración tributaria ejerce las facultades de aplicación de la ley, determinadora de la obligación tributaria, de resolución de reclamos y recursos, sancionadora, de transacción dentro de los parámetros legales y de recaudación (art. 67). La determinación es el acto o conjunto de actos reglados con los que la administración establece, en cada caso, la existencia del hecho generador, el sujeto obligado, la base imponible y la cuantía del tributo (art. 68).",
+          "ejemplo": "Al revisar la declaración de una empresa, el SRI detecta ventas no declaradas y emite un acto de determinación con el impuesto que corresponde: está ejerciendo su facultad determinadora; si luego la multa por la falta, ejerce la facultad sancionadora.",
+          "puntos_clave": [
+            "Facultades: aplicar la ley, determinar, resolver, sancionar, transigir y recaudar.",
+            "Determinación: hecho generador, sujeto, base y cuantía.",
+            "Son actos reglados."
+          ],
+          "errores_frecuentes": [
+            "Creer que el SRI solo recauda.",
+            "Confundir determinación con sanción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 67 y 68"
+          }
+        },
+        {
+          "id": "tr-deberes-formales",
+          "nombre": "Deberes formales del contribuyente",
+          "explicacion": "Son deberes formales de los contribuyentes o responsables (art. 96): inscribirse en los registros pertinentes y comunicar oportunamente los cambios; solicitar los permisos previos que correspondan; llevar libros y registros contables en castellano, anotar sus operaciones en moneda de curso legal y conservarlos mientras la obligación no esté prescrita; presentar las declaraciones que correspondan; cumplir los deberes específicos de cada ley; facilitar las inspecciones y verificaciones; exhibir declaraciones, libros y documentos y dar aclaraciones, y concurrir a las oficinas de la administración cuando sea requerido.",
+          "ejemplo": "Un emprendedor que cambia la dirección de su local debe actualizar su RUC, y debe conservar sus facturas y registros mientras el SRI todavía pueda revisar esos años.",
+          "puntos_clave": [
+            "Inscribirse y actualizar datos.",
+            "Llevar y conservar libros y registros.",
+            "Declarar, facilitar inspecciones y exhibir documentos."
+          ],
+          "errores_frecuentes": [
+            "Botar los comprobantes apenas se presenta la declaración.",
+            "No actualizar el RUC cuando cambia la actividad o la dirección."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Art. 96"
+          }
+        },
+        {
+          "id": "tr-infracciones",
+          "nombre": "Infracciones tributarias",
+          "explicacion": "Infracción tributaria es toda acción u omisión que viola normas tributarias sustantivas o adjetivas sancionadas con una pena establecida antes de esa acción u omisión (art. 314). Para su juzgamiento y sanción, el Código Tributario las clasifica en contravenciones y faltas reglamentarias. Son contravenciones las violaciones de normas adjetivas o el incumplimiento de deberes formales previstos en el Código y otras leyes (art. 315). Los delitos tributarios, como la defraudación, se tipifican en el Código Orgánico Integral Penal desde su reforma de 2014.",
+          "ejemplo": "No presentar a tiempo una declaración es incumplir un deber formal, es decir, una contravención que el SRI sanciona con multa, distinta del impuesto que igual se debe pagar.",
+          "puntos_clave": [
+            "Infracción: acción u omisión con pena previa.",
+            "Contravenciones y faltas reglamentarias en el Código Tributario.",
+            "Los delitos tributarios están en el COIP."
+          ],
+          "errores_frecuentes": [
+            "Creer que pagar la multa elimina el impuesto.",
+            "Pensar que no declarar a tiempo no tiene consecuencias si no hay impuesto a pagar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Arts. 314 y 315"
+          }
+        },
+        {
+          "id": "tr-reclamos",
+          "nombre": "Reclamos administrativos",
+          "explicacion": "Los contribuyentes, responsables o terceros que se sientan afectados, en todo o en parte, por un acto determinativo de la obligación tributaria, por la verificación de una declaración, una estimación de oficio o una liquidación, pueden presentar su reclamo ante la autoridad de la que emanó el acto, dentro del plazo de veinte días contados desde el día hábil siguiente a la notificación (art. 115). El reclamo es la vía administrativa para pedir que la propia administración revise su decisión antes de acudir a la justicia.",
+          "ejemplo": "El SRI notifica a una empresa el lunes con una liquidación de diferencias de IVA. Si la empresa no está de acuerdo, tiene veinte días, contados desde el martes, para presentar su reclamo ante el SRI.",
+          "puntos_clave": [
+            "Procede contra actos determinativos, verificaciones o liquidaciones.",
+            "Se presenta ante la autoridad que emitió el acto.",
+            "Plazo de veinte días desde el día hábil siguiente a la notificación."
+          ],
+          "errores_frecuentes": [
+            "Dejar vencer el plazo para reclamar.",
+            "Contar el plazo desde el mismo día de la notificación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-tributario",
+            "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+            "seccion": "Art. 115"
           }
         }
       ]

@@ -241,7 +241,11 @@
   {
     "id": "tr-renta-personas",
     "palabras": [
-      "—"
+      "ano 2026",
+      "12.208",
+      "35.136",
+      "109.956",
+      "24.572"
     ]
   },
   {
@@ -262,20 +266,19 @@
   {
     "id": "tr-rimpe-populares",
     "palabras": [
-      "2.500",
-      "60",
-      "00",
-      "negocio popular"
+      "negocios populares",
+      "impuesto a pagar (cuota en usd)",
+      "2.500,01",
+      "15.000,01"
     ]
   },
   {
     "id": "tr-rimpe-emprendedores",
     "palabras": [
-      "emprendedores",
-      "1",
-      "75%",
-      "2.797",
-      "52"
+      "rimpe emprendedor",
+      "impuesto a la fraccion basica",
+      "2.797,52",
+      "1,25%"
     ]
   },
   {
@@ -3855,6 +3858,107 @@
       "unicamente para los fines de la liquidacion",
       "mientras no se hallen extinguidas todas las deudas",
       "cancelacion de la inscripcion"
+    ]
+  },
+  {
+    "id": "tr-tributos-clases",
+    "palabras": [
+      "tributo es la prestacion pecuniaria exigida por el estado",
+      "los tributos son: impuestos, tasas y contribuciones especiales",
+      "art. 6.- fines de los tributos"
+    ]
+  },
+  {
+    "id": "tr-iva-base-declaracion",
+    "palabras": [
+      "grava al valor de las transferencias locales",
+      "menos descuentos y/o devoluciones",
+      "valor en aduana",
+      "de forma semestral"
+    ]
+  },
+  {
+    "id": "tr-rimpe-exclusiones",
+    "palabras": [
+      "actividades no sujetas al rimpe",
+      "actividades profesionales, mandatos, representaciones y comisionistas",
+      "arrendamientos de bienes muebles e inmuebles",
+      "ingresos brutos superiores a usd 300.000"
+    ]
+  },
+  {
+    "id": "tr-obligacion-concepto",
+    "palabras": [
+      "obligacion tributaria es el vinculo juridico personal",
+      "art. 16.- hecho generador"
+    ]
+  },
+  {
+    "id": "tr-sujetos",
+    "palabras": [
+      "sujeto activo es el ente publico acreedor del tributo",
+      "sea como contribuyente o como responsable",
+      "nunca perdera su condicion de contribuyente",
+      "responsable es la persona que sin tener el caracter de contribuyente"
+    ]
+  },
+  {
+    "id": "tr-exenciones",
+    "palabras": [
+      "exencion o exoneracion tributaria es la exclusion o la dispensa legal",
+      "solo mediante disposicion expresa de ley"
+    ]
+  },
+  {
+    "id": "tr-extincion-prescripcion",
+    "palabras": [
+      "art. 37.- modos de extincion",
+      "compensacion",
+      "confusion",
+      "por transaccion",
+      "prescribira en el plazo de cinco anos"
+    ]
+  },
+  {
+    "id": "tr-intereses-mora",
+    "palabras": [
+      "tasa activa referencial para noventa dias",
+      "la fraccion de mes se liquidara como mes completo",
+      "1.3 veces"
+    ]
+  },
+  {
+    "id": "tr-facultades",
+    "palabras": [
+      "art. 67.- facultades de la administracion tributaria",
+      "la determinadora de la obligacion tributaria",
+      "potestad sancionadora",
+      "art. 68.- facultad determinadora"
+    ]
+  },
+  {
+    "id": "tr-deberes-formales",
+    "palabras": [
+      "art. 96.- deberes formales",
+      "inscribirse en los registros pertinentes",
+      "en idioma castellano",
+      "presentar las declaraciones que correspondan"
+    ]
+  },
+  {
+    "id": "tr-infracciones",
+    "palabras": [
+      "art. 314.- concepto de infraccion tributaria",
+      "contravenciones y faltas reglamentarias",
+      "incumplimiento de deberes formales"
+    ]
+  },
+  {
+    "id": "tr-reclamos",
+    "palabras": [
+      "art. 115.- reclamantes",
+      "acto determinativo de obligacion tributaria",
+      "dentro del plazo de veinte dias"
     ]
   }
 ]

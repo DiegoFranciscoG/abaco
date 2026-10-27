@@ -9610,5 +9610,225 @@
     },
     "materia": "derecho-empresarial",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-iva-causado",
+    "subtema": "tr-iva-tarifas",
+    "formula": "iva-causado",
+    "enunciado": "Una empresa vende servicios por USD 1.240 sin IVA, gravados con la tarifa general del IVA de 15 %. ¿Cuánto IVA debe cobrar?",
+    "datos": {
+      "BI": 1240,
+      "t": 0.15
+    },
+    "calculo": "BI * t",
+    "respuesta": 186,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "IVA = 1.240 × 0,15 = 186"
+    ],
+    "pistas": [
+      "El IVA se calcula sobre la base imponible."
+    ],
+    "dificultad": 1,
+    "cifras": [
+      "iva-tarifa-general"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "url": "https://www.sri.gob.ec/impuesto-al-valor-agregado-iva",
+      "seccion": "¿Cuál es la tarifa?"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-base-desde-pvp",
+    "subtema": "tr-iva-tarifas",
+    "formula": "base-desde-pvp",
+    "enunciado": "Un par de zapatos cuesta USD 69 con IVA de 15 % incluido. ¿Cuál es su base imponible?",
+    "datos": {
+      "PVP": 69,
+      "t": 0.15
+    },
+    "calculo": "PVP / (1 + t)",
+    "respuesta": 60,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Base = 69 ÷ 1,15 = 60",
+      "IVA incluido = 69 − 60 = 9"
+    ],
+    "pistas": [
+      "Divide el precio para 1 más la tarifa."
+    ],
+    "dificultad": 1,
+    "cifras": [
+      "iva-tarifa-general"
+    ],
+    "fuente": {
+      "ref": "sri-iva",
+      "url": "https://www.sri.gob.ec/impuesto-al-valor-agregado-iva",
+      "seccion": "¿Cuál es la tarifa?"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-credito-tributario",
+    "subtema": "tr-iva-liquidacion",
+    "formula": "iva-a-pagar",
+    "enunciado": "En un mes, un comercio cobró USD 2.880 de IVA en sus ventas y pagó USD 3.150 de IVA en compras con derecho a crédito tributario. ¿Cuál es el resultado de la liquidación?",
+    "datos": {
+      "IVAv": 2880,
+      "IVAc": 3150
+    },
+    "calculo": "IVAv - IVAc",
+    "respuesta": -270,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "2.880 − 3.150 = −270",
+      "No paga: queda crédito tributario de 270 para el mes siguiente"
+    ],
+    "pistas": [
+      "Un resultado negativo es crédito tributario."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "sri-iva",
+      "url": "https://www.sri.gob.ec/impuesto-al-valor-agregado-iva",
+      "seccion": "¿Quién debe pagar?"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-renta-40000",
+    "subtema": "tr-renta-personas",
+    "formula": "impuesto-renta-personas",
+    "enunciado": "Con la tabla 2026 del SRI, una persona natural tiene una base imponible anual de USD 40.000. El tramo va desde USD 35.136, con impuesto de USD 2.678 sobre la fracción básica y 20 % sobre el excedente. ¿Cuál es el impuesto causado?",
+    "datos": {
+      "BI": 40000,
+      "FB": 35136,
+      "IFB": 2678,
+      "t": 0.2
+    },
+    "calculo": "IFB + (BI - FB) * t",
+    "respuesta": 3650.8,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Excedente = 40.000 − 35.136 = 4.864",
+      "4.864 × 0,20 = 972,8",
+      "Impuesto = 2.678 + 972,8 = 3.650,80"
+    ],
+    "pistas": [
+      "El porcentaje se aplica solo al excedente."
+    ],
+    "dificultad": 2,
+    "cifras": [
+      "ir-personas-tabla"
+    ],
+    "fuente": {
+      "ref": "sri-tablas-ir",
+      "seccion": "Tabla 2026, personas naturales y sucesiones indivisas"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-sociedad-basico",
+    "subtema": "tr-renta-sociedades",
+    "formula": "impuesto-renta-sociedades",
+    "enunciado": "Una sociedad tiene una base imponible de USD 120.000 y aplica la tarifa general de 25 %. ¿Cuál es su impuesto a la renta causado?",
+    "datos": {
+      "BI": 120000,
+      "t": 0.25
+    },
+    "calculo": "BI * t",
+    "respuesta": 30000,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Impuesto = 120.000 × 0,25 = 30.000"
+    ],
+    "pistas": [
+      "Multiplica la base imponible por la tarifa."
+    ],
+    "dificultad": 1,
+    "cifras": [
+      "ir-sociedades"
+    ],
+    "fuente": {
+      "ref": "sri-renta",
+      "seccion": "Tarifa para sociedades"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-sociedad-participacion",
+    "subtema": "tr-renta-sociedades",
+    "formula": "impuesto-renta-sociedades",
+    "enunciado": "Una compañía tiene una utilidad contable de USD 200.000 sin ajustes tributarios. Primero descuenta la participación laboral del 15 % y luego aplica la tarifa general de 25 %. ¿Cuál es su impuesto a la renta?",
+    "datos": {
+      "U": 200000,
+      "p": 0.15,
+      "t": 0.25
+    },
+    "calculo": "U * (1 - p) * t",
+    "respuesta": 42500,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "Participación = 200.000 × 0,15 = 30.000",
+      "Base imponible = 200.000 − 30.000 = 170.000",
+      "Impuesto = 170.000 × 0,25 = 42.500"
+    ],
+    "pistas": [
+      "La participación laboral se resta antes del impuesto."
+    ],
+    "dificultad": 2,
+    "cifras": [
+      "participacion-utilidades",
+      "ir-sociedades"
+    ],
+    "fuente": {
+      "ref": "sri-renta",
+      "seccion": "Tarifa para sociedades"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-tr-intereses-mora",
+    "subtema": "tr-intereses-mora",
+    "enunciado": "Un impuesto de USD 3.000 se paga con 2 meses y 10 días de retraso. Con una tasa anual supuesta de 10 % para todo el período, ¿cuánto interés de mora se paga (art. 21)?",
+    "datos": {
+      "D": 3000,
+      "r": 0.1,
+      "m": 3
+    },
+    "calculo": "D * r / 12 * m",
+    "respuesta": 75,
+    "unidad": "USD",
+    "tolerancia": 0.005,
+    "procedimiento": [
+      "La fracción de mes cuenta como mes completo: 3 meses",
+      "3.000 × 0,10 ÷ 12 = 25 por mes",
+      "Interés = 25 × 3 = 75"
+    ],
+    "pistas": [
+      "No se liquida por días."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "codigo-tributario",
+      "url": "https://www.emov.gob.ec/wp-content/uploads/2022/09/C%C3%93DIGO%20TRIBUTARIO.pdf",
+      "seccion": "Art. 21"
+    },
+    "materia": "tributacion",
+    "actualizado_en": "2026-10-26"
   }
 ]
