@@ -39,7 +39,7 @@ describe('integridad del contenido', () => {
   });
 
   it('every subject of the catalog has exactly one syllabus and every syllabus belongs to a subject', () => {
-    expect(content.materias.length).toBe(53);
+    expect(content.materias.length).toBe(54);
     expect(content.temarios.length).toBe(content.materias.length);
     for (const { file, data } of content.temarios) {
       expect(file).toBe(`${data.materia}.json`);

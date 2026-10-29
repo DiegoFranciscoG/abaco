@@ -280,6 +280,14 @@
     "tipo": "practica"
   },
   {
+    "nombre": "Business English",
+    "carreras": 3,
+    "planes": 3,
+    "ciclo_habitual": 5,
+    "materia": "ingles-negocios",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Práctica Laboral",
     "carreras": 3,
     "planes": 3,
@@ -341,14 +349,6 @@
     "planes": 3,
     "ciclo_habitual": 7,
     "materia": "presupuestos",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Business English",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 4,
-    "materia": null,
     "tipo": "materia"
   },
   {

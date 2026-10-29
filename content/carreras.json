@@ -1037,6 +1037,14 @@
         "planes": 2
       },
       {
+        "materia": "ingles-negocios",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
         "materia": "inteligencia-negocios",
         "ciclo": 4,
         "ciclos": [
@@ -1119,11 +1127,6 @@
       {
         "nombre": "Marco Legal del Marketing y Ciberseguridad",
         "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Business English",
-        "ciclo": 4,
         "planes": 1
       },
       {
@@ -1723,6 +1726,15 @@
         "planes": 1
       },
       {
+        "materia": "ingles-negocios",
+        "ciclo": 7,
+        "ciclos": [
+          7,
+          8
+        ],
+        "planes": 1
+      },
+      {
         "materia": "producto-marca",
         "ciclo": 7,
         "ciclos": [
@@ -1747,12 +1759,6 @@
         "planes": 1
       }
     ],
-    "pendientes": [
-      {
-        "nombre": "Business English",
-        "ciclo": 7,
-        "planes": 1
-      }
-    ]
+    "pendientes": []
   }
 ]

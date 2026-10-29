@@ -1,0 +1,492 @@
+{
+  "materia": "ingles-negocios",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "in-fundamentos",
+      "nombre": "Comunicación profesional en inglés",
+      "orden": 1,
+      "descripcion": "El proceso de comunicación y sus componentes, el lenguaje como barrera, los registros de escritura y el nivel de inglés exigido en la universidad.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "in-proceso-comunicacion",
+          "nombre": "El proceso de comunicación",
+          "explicacion": "La comunicación es el proceso de entender y compartir significado. El libro la divide en ocho componentes esenciales: la fuente (source), que imagina, crea y envía el mensaje; el mensaje (message); el canal (channel); el receptor (receiver); la retroalimentación (feedback); el entorno (environment); el contexto (context), y la interferencia o ruido (interference, noise), que es todo lo que bloquea o cambia el significado que la fuente quería transmitir. El ruido psicológico aparece cuando los propios pensamientos ocupan la atención mientras se lee o escucha.",
+          "ejemplo": "A las 16:45 llega un correo del jefe pidiendo las ventas del mes pasado, las proyecciones y las ventas de ese mes en los últimos cinco años; por pensar en irse a casa, se envían solo las dos primeras: el ruido psicológico cambió el mensaje recibido.",
+          "puntos_clave": [
+            "Source, message, channel, receiver.",
+            "Feedback, environment, context.",
+            "Interference o noise."
+          ],
+          "errores_frecuentes": [
+            "Responder sin leer el mensaje completo.",
+            "Ignorar el contexto del receptor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/1-2-what-is-communication/",
+            "seccion": "1.2 What Is Communication?"
+          }
+        },
+        {
+          "id": "in-barreras-lenguaje",
+          "nombre": "El lenguaje como barrera: clichés, jerga y slang",
+          "explicacion": "El lenguaje permite comunicar, pero también malinterpretar. La mala comunicación en los negocios daña relaciones, reduce la productividad, genera reprocesos, conflictos, retrasos y recursos desperdiciados. Tres obstáculos frecuentes: el cliché, una frase ingeniosa que perdió su impacto por el uso excesivo; la jerga (jargon), el lenguaje propio de una profesión, útil entre colegas pero confuso para otros, y el slang, palabras informales usadas entre amigos o un grupo de edad, que no tienen lugar en un mensaje profesional que busca claridad.",
+          "ejemplo": "En un correo a un cliente es mejor escribir 'We will review the contract by Friday' que 'We'll circle back and touch base on the deal ASAP', lleno de clichés y abreviaturas.",
+          "puntos_clave": [
+            "Cliché: frase gastada.",
+            "Jargon: lenguaje de una profesión.",
+            "Slang: lenguaje informal de grupo."
+          ],
+          "errores_frecuentes": [
+            "Usar jerga contable con clientes que no la conocen.",
+            "Traducir frases hechas del español palabra por palabra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/2-4-language-can-be-an-obstacle-to-communication/",
+            "seccion": "2.4 Language Can Be an Obstacle to Communication"
+          }
+        },
+        {
+          "id": "in-registro",
+          "nombre": "Registros de escritura: coloquial, casual y formal",
+          "explicacion": "Hay tres estilos comunes de escritura, cada uno con sus expectativas: el coloquial, el casual y el formal. El estilo depende de la audiencia y del propósito, y en especial de si el mensaje es interno, para personas de la empresa, o externo, para proveedores, clientes o socios. Como regla general, la comunicación externa tiende a ser más formal. Los errores de ortografía o de gramática no corregidos afectan la imagen de quien escribe y de la empresa.",
+          "ejemplo": "A un colega: 'Hi Ana, can we move the call to 3 p.m.?'. A un cliente: 'Dear Mr. Pérez, I am writing to confirm our meeting on Monday at 10:00 a.m.'",
+          "puntos_clave": [
+            "Coloquial, casual y formal.",
+            "Lo externo suele ser más formal.",
+            "Corregir errores antes de enviar."
+          ],
+          "errores_frecuentes": [
+            "Escribir a un cliente con el tono de un chat.",
+            "Usar un registro demasiado rígido con el propio equipo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/4-4-style-in-written-communication/",
+            "seccion": "4.4 Style in Written Communication"
+          }
+        },
+        {
+          "id": "in-suficiencia",
+          "nombre": "Suficiencia en inglés: el nivel B1 del MCER",
+          "explicacion": "El Reglamento de Régimen Académico expedido por el Consejo de Educación Superior en marzo de 2019, en su artículo 80, estableció el aprendizaje de una segunda lengua como requisito de graduación en las carreras de tercer nivel, con niveles del Marco Común Europeo de Referencia para las Lenguas (MCER): al menos A1 para el tercer nivel técnico, A2 para el tecnológico y B1 para el grado. Así lo recoge, por ejemplo, la Escuela Politécnica Nacional en sus directrices de registro de la suficiencia.",
+          "ejemplo": "Un estudiante de Economía debe acreditar al menos el nivel B1 de inglés para graduarse; cada universidad define cómo se registra esa suficiencia.",
+          "puntos_clave": [
+            "Segunda lengua como requisito de graduación.",
+            "Grado: al menos B1.",
+            "Técnico A1 y tecnológico A2."
+          ],
+          "errores_frecuentes": [
+            "Dejar la suficiencia para el último semestre.",
+            "Suponer que todas las universidades usan el mismo examen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "epn-suficiencia-ingles",
+            "url": "https://atenea.epn.edu.ec/bitstream/25000/878/1/Directrices%20para%20el%20Rregistro%20Suficiencia%20Ingles%20desde2021B.pdf",
+            "seccion": "Considerandos (art. 80 del Reglamento de Régimen Académico de 2019)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-escritura",
+      "nombre": "Escritura de negocios",
+      "orden": 2,
+      "descripcion": "Correos y netiqueta, mensajes de texto, memorandos y cartas, informes y hojas de vida.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-email",
+          "nombre": "El correo electrónico profesional y la netiqueta",
+          "explicacion": "La netiqueta son los protocolos y normas de comunicación en internet. Para un buen correo de negocios: un saludo apropiado, como 'Dear Ms. X' para externos o 'Hi Barry' para internos; un asunto claro, breve y específico, como 'Proposal attached'; una firma con nombre y datos de contacto; evitar abreviaturas; ser breve y llegar al punto en tres párrafos cortos o menos; releer y corregir antes de enviar, y responder en un plazo de veinticuatro horas, aunque sea para decir cuándo se enviará la información. Nunca se responde con enojo.",
+          "ejemplo": "Subject: Quotation for 200 units. Dear Ms. Andrade, Thank you for your inquiry. Please find attached our quotation. I look forward to hearing from you. Best regards, Carla Mena, Sales Assistant.",
+          "puntos_clave": [
+            "Saludo según la relación.",
+            "Asunto claro y específico.",
+            "Breve, revisado y respondido en 24 horas."
+          ],
+          "errores_frecuentes": [
+            "Dejar el asunto vacío.",
+            "Responder un correo molesto en caliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/9-1-text-e-mail-and-netiquette/",
+            "seccion": "9.1 Text, E-mail, and Netiquette"
+          }
+        },
+        {
+          "id": "in-texting",
+          "nombre": "Mensajes de texto en el trabajo",
+          "explicacion": "Los mensajes de texto sirven para intercambios cortos y para mantenerse en contacto cuando una llamada sería incómoda, pero no para mensajes largos o complicados. Hay que conocer al destinatario: una abreviatura que entiende un colega cercano puede no ser adecuada para un jefe; anticipar malentendidos, porque los símbolos y códigos se prestan a interpretaciones, y no escribir con demasiada frecuencia, porque puede rozar el acoso.",
+          "ejemplo": "A un colega puede bastar '? % dsct', pero al jefe conviene escribir 'What discount does Murray get on a $1,000 order?'.",
+          "puntos_clave": [
+            "Solo para mensajes cortos.",
+            "Conocer al destinatario.",
+            "Evitar abreviaturas ambiguas."
+          ],
+          "errores_frecuentes": [
+            "Tratar temas complejos por chat.",
+            "Usar abreviaturas con superiores o clientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/9-1-text-e-mail-and-netiquette/",
+            "seccion": "9.1 Text, E-mail, and Netiquette"
+          }
+        },
+        {
+          "id": "in-memo-carta",
+          "nombre": "Memorandos y cartas comerciales",
+          "explicacion": "El memorando (memo, de 'memorandum', recordatorio) se usa dentro de la organización para comunicar políticas, procedimientos o asuntos oficiales, normalmente de uno a todos; su propósito suele ser informar, a veces con un llamado a la acción. La carta comercial es un mensaje breve para destinatarios casi siempre externos, impreso en papel membretado, que representa a la empresa en una o dos páginas; el libro describe quince partes de una carta estándar.",
+          "ejemplo": "Memo: 'To: All staff. From: Human Resources. Subject: New vacation request procedure'. Carta: 'Dear Mr. Torres, We are pleased to inform you that your order has been shipped…'",
+          "puntos_clave": [
+            "Memo: interno, de uno a todos.",
+            "Carta: externa, en membrete.",
+            "Una o dos páginas."
+          ],
+          "errores_frecuentes": [
+            "Usar un memo para un cliente.",
+            "Omitir la fecha o la firma en la carta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/9-2-memorandums-and-letters/",
+            "seccion": "9.2 Memorandums and Letters"
+          }
+        },
+        {
+          "id": "in-informe",
+          "nombre": "Informes (reports)",
+          "explicacion": "Los informes son documentos para registrar y transmitir información al lector, y existen en toda organización: de crédito, de accidentes, de laboratorio o de ventas. Su tipo se identifica por su propósito o función. Muchos son analíticos, otros solo presentan hechos, y algunos resumen el pasado, presentan datos actuales y pronostican tendencias. Aunque tengan conclusiones o recomendaciones, su función principal es demostrar el análisis.",
+          "ejemplo": "Un sales report mensual presenta las ventas acumuladas, las compara con la meta y proyecta el trimestre; no intenta cerrar una venta.",
+          "puntos_clave": [
+            "Registrar y transmitir información.",
+            "Tipo según su función.",
+            "El análisis es lo principal."
+          ],
+          "errores_frecuentes": [
+            "Mezclar opiniones con datos sin distinguirlos.",
+            "Escribir conclusiones sin mostrar el análisis."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/9-4-report/",
+            "seccion": "9.4 Report"
+          }
+        },
+        {
+          "id": "in-cv",
+          "nombre": "La hoja de vida (resume)",
+          "explicacion": "El resume resume la educación, habilidades, historial laboral y experiencias de una persona de forma clara y concisa. Cumple tres propósitos: presentar la información profesional por escrito, mostrar su relación con el problema que el empleador quiere resolver y conseguir una entrevista. Hay varios tipos: cronológico inverso, que se centra en el historial laboral; funcional o por competencias, centrado en habilidades; combinado; dirigido a un puesto, y escaneable. El perfil en línea, como el de LinkedIn, funciona como una versión pública del resume.",
+          "ejemplo": "Un recién graduado sin mucha experiencia puede preferir un resume funcional que destaque 'Skills: financial analysis, Excel, SQL' antes que su historial de empleos.",
+          "puntos_clave": [
+            "Tres propósitos del resume.",
+            "Cronológico inverso, funcional y combinado.",
+            "El perfil en línea también cuenta."
+          ],
+          "errores_frecuentes": [
+            "Enviar la misma hoja de vida para todos los puestos.",
+            "Pasar de una página sin necesidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/9-5-resume/",
+            "seccion": "9.5 Resume"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-presentaciones",
+      "nombre": "Presentaciones en inglés",
+      "orden": 3,
+      "descripcion": "Presentaciones para informar, principios de persuasión, comunicación no verbal y apoyos visuales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-presentacion-informativa",
+          "nombre": "Presentaciones para informar",
+          "explicacion": "Las presentaciones informativas ayudan a la audiencia a entender un tema, un asunto o una técnica con más claridad, sin buscar que cambie de opinión o adopte un hábito. Sus funciones son compartir información, aumentar la comprensión, cambiar percepciones y ayudar a ganar habilidades. Para aumentar la comprensión hay que considerar qué sabe ya la audiencia y qué términos clave necesita.",
+          "ejemplo": "Una analista presenta 'Our Q3 Results' a la gerencia: explica las cifras y los términos clave, sin pedir ninguna decisión.",
+          "puntos_clave": [
+            "Informar, no persuadir.",
+            "Compartir y aumentar la comprensión.",
+            "Cambiar percepciones y ganar habilidades."
+          ],
+          "errores_frecuentes": [
+            "Suponer que la audiencia conoce los términos técnicos.",
+            "Convertir la exposición en un discurso de venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/13-1-functions-of-the-presentation-to-inform/",
+            "seccion": "13.1 Functions of the Presentation to Inform"
+          }
+        },
+        {
+          "id": "in-persuasion",
+          "nombre": "Los seis principios de persuasión",
+          "explicacion": "El psicólogo social Robert Cialdini propone seis principios de persuasión, universales y adaptables: reciprocidad (reciprocity), la expectativa mutua de intercambiar valor o servicio; escasez (scarcity); autoridad (authority); compromiso y coherencia (commitment and consistency); consenso (consensus), y simpatía (liking). Reconocer cuándo opera cada uno permite aprovechar las normas sociales a favor de una propuesta o de una venta.",
+          "ejemplo": "Un vendedor que resuelve un problema del cliente más allá de lo esperado activa la reciprocidad; una oferta 'only until Friday' apela a la escasez.",
+          "puntos_clave": [
+            "Reciprocity y scarcity.",
+            "Authority y commitment.",
+            "Consensus y liking."
+          ],
+          "errores_frecuentes": [
+            "Usar la escasez con información falsa.",
+            "Confundir persuasión con manipulación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/14-2-principles-of-persuasion/",
+            "seccion": "14.2 Principles of Persuasion"
+          }
+        },
+        {
+          "id": "in-no-verbal",
+          "nombre": "Comunicación no verbal",
+          "explicacion": "El libro distingue ocho tipos de comunicación no verbal: el espacio, el tiempo, las características físicas, los movimientos corporales, el tacto, el paralenguaje, los artefactos y el entorno. El espacio se asocia con el rango social y varía entre culturas: Edward T. Hall observó que en Francia las personas se paraban más cerca que en Inglaterra. En una presentación se espera mantener contacto visual con la audiencia; caminar de un lado a otro, meter las manos en los bolsillos o cruzar los brazos puede comunicar nerviosismo.",
+          "ejemplo": "Leer las diapositivas de espaldas al público transmite que el expositor no le presta atención, aunque su inglés sea correcto.",
+          "puntos_clave": [
+            "Ocho tipos de comunicación no verbal.",
+            "El espacio varía según la cultura.",
+            "Contacto visual con la audiencia."
+          ],
+          "errores_frecuentes": [
+            "Hablarle a la pantalla.",
+            "Cruzar los brazos mientras se expone."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/11-2-types-of-nonverbal-communication/",
+            "seccion": "11.2 Types of Nonverbal Communication"
+          }
+        },
+        {
+          "id": "in-apoyos-visuales",
+          "nombre": "Apoyos visuales",
+          "explicacion": "Casi todas las presentaciones mejoran con apoyos visuales bien usados: materiales impresos, dibujos en la pizarra, diapositivas y otros recursos. Son un aspecto no verbal que el expositor controla y cumplen varios objetivos: hacen la exposición más interesante, aumentan la credibilidad, sirven de guía en las transiciones para que la audiencia no se pierda y comunican información compleja de forma más clara.",
+          "ejemplo": "En lugar de leer doce cifras de ventas, una gráfica de barras con el título 'Sales by region, 2026' permite ver de inmediato cuál región creció más.",
+          "puntos_clave": [
+            "Más interés y credibilidad.",
+            "Guía de transiciones.",
+            "Hacen claro lo complejo."
+          ],
+          "errores_frecuentes": [
+            "Llenar las diapositivas de texto.",
+            "Mostrar gráficas sin título ni unidades."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/11-4-visual-aids/",
+            "seccion": "11.4 Visual Aids"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-interaccion",
+      "nombre": "Llamadas, reuniones, entrevistas y malas noticias",
+      "orden": 4,
+      "descripcion": "Las cinco etapas de una llamada, la preparación de reuniones y agendas, la conversación y la entrevista de trabajo, y cómo dar malas noticias.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-telefono",
+          "nombre": "Llamadas telefónicas y por voz en internet",
+          "explicacion": "Al hablar por teléfono o grabar un audio falta el contexto no verbal, por lo que se necesita un lenguaje vívido y descripciones claras para evitar malentendidos. Según el patrón de David Taylor y Alyse Terhune que recoge el libro, una conversación telefónica tiene cinco etapas: apertura (opening), anticipo del tema (feedforward), el asunto (business), retroalimentación (feedback) y cierre (closing).",
+          "ejemplo": "Opening: 'Good morning, this is Luis from Andes Foods.' Feedforward: 'I'm calling about your order.' Business: 'It will arrive on Tuesday.' Feedback: 'Does that work for you?' Closing: 'Thank you, have a nice day.'",
+          "puntos_clave": [
+            "Sin señales no verbales.",
+            "Lenguaje claro y vívido.",
+            "Cinco etapas de la llamada."
+          ],
+          "errores_frecuentes": [
+            "Entrar al asunto sin presentarse.",
+            "Colgar sin confirmar lo acordado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/15-2-telephonevoip-communication/",
+            "seccion": "15.2 Telephone/VoIP Communication"
+          }
+        },
+        {
+          "id": "in-reuniones",
+          "nombre": "Reuniones de trabajo y agenda",
+          "explicacion": "Una reunión necesita un propósito claro: reunirse solo por reunirse no es una reunión. La agenda es la lista de temas a tratar; incluye hora, fecha, lugar y forma de participación, la lista de participantes, el propósito, los puntos a considerar con un breve resumen de cada uno y las horas de inicio y fin, dejando tiempo al final para preguntas. Las reuniones virtuales son encuentros formales de participantes ubicados en lugares distintos que se conectan por internet.",
+          "ejemplo": "Agenda: 'Budget review meeting. Monday, 9:00–10:00 a.m., Zoom. Participants: Finance team. 1. Q3 expenses. 2. Q4 forecast. 3. Questions.'",
+          "puntos_clave": [
+            "Propósito claro.",
+            "Agenda completa con horarios.",
+            "Reuniones virtuales."
+          ],
+          "errores_frecuentes": [
+            "Convocar sin agenda.",
+            "No fijar la hora de terminación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/19-4-business-and-professional-meetings/",
+            "seccion": "19.4 Business and Professional Meetings"
+          }
+        },
+        {
+          "id": "in-entrevista",
+          "nombre": "La conversación y la entrevista de trabajo",
+          "explicacion": "La conversación es un ritual universal con cinco etapas, que también siguen las entrevistas de trabajo. Empieza con la iniciación (initiation), en la que se muestra apertura con contacto visual, una sonrisa o un comentario ligero; sigue un anticipo (preview) que indica de qué tratará la conversación; luego se trata el asunto, se intercambia retroalimentación y se llega al cierre (closing). Un buen comunicador sabe cuándo hablar, cuándo callar y deja de hablar antes de que la audiencia deje de escuchar.",
+          "ejemplo": "Initiation: 'Nice to meet you, thank you for having me.' Preview: 'I'd like to tell you how my internship relates to this position.' Closing: 'Thank you for your time. I look forward to hearing from you.'",
+          "puntos_clave": [
+            "La conversación como ritual.",
+            "Iniciación y anticipo.",
+            "Retroalimentación y cierre."
+          ],
+          "errores_frecuentes": [
+            "Hablar sin dejar intervenir al entrevistador.",
+            "Terminar la entrevista sin agradecer."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/16-5-rituals-of-conversation-and-interviews/",
+            "seccion": "16.5 Rituals of Conversation and Interviews"
+          }
+        },
+        {
+          "id": "in-malas-noticias",
+          "nombre": "Dar malas noticias",
+          "explicacion": "El mensaje de malas noticias comunica algo que la audiencia no quiere recibir, como un despido o una crítica al desempeño, y puede darse de forma directa o indirecta. El libro plantea siete objetivos: ser claro y conciso para no requerir aclaraciones; ayudar al receptor a entender y aceptar la noticia; mantener la confianza y el respeto; evitar responsabilidad legal o admisiones de culpa erróneas; mantener la relación aunque termine un vínculo formal; reducir la ansiedad para mejorar la comprensión, y lograr el resultado de negocio.",
+          "ejemplo": "'Thank you for your proposal. After careful review, we have decided not to move forward at this time. We appreciate your interest and hope to work with you in the future.'",
+          "puntos_clave": [
+            "Directo o indirecto.",
+            "Claro, respetuoso y sin admitir culpas indebidas.",
+            "Mantener la relación."
+          ],
+          "errores_frecuentes": [
+            "Esconder la noticia entre rodeos.",
+            "Admitir culpas que generan responsabilidad legal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/17-1-delivering-a-negative-news-message/",
+            "seccion": "17.1 Delivering a Negative News Message"
+          }
+        }
+      ]
+    },
+    {
+      "id": "in-intercultural",
+      "nombre": "Comunicación intercultural y negocios internacionales",
+      "orden": 5,
+      "descripcion": "Cultura y etnocentrismo, características culturales comunes, individualismo y colectivismo, y sistemas del mercado global.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "in-cultura",
+          "nombre": "Cultura y etnocentrismo",
+          "explicacion": "La cultura abarca las creencias, actitudes, valores y tradiciones que comparte un grupo de personas, y también las expectativas sobre el contexto de la comunicación. El etnocentrismo es la tendencia a ver otras culturas como inferiores a la propia; reduce la capacidad de tender puentes con otros y aumenta la intolerancia, algo especialmente costoso cuando los negocios ya no son solo regionales.",
+          "ejemplo": "Un exportador ecuatoriano que juzga 'lenta' la forma de negociar de un cliente japonés, en lugar de entender su proceso de consenso, actúa de forma etnocéntrica.",
+          "puntos_clave": [
+            "Creencias, valores y tradiciones compartidas.",
+            "Etnocentrismo: ver lo ajeno como inferior.",
+            "Negocios cada vez más globales."
+          ],
+          "errores_frecuentes": [
+            "Juzgar al otro con las normas propias.",
+            "Confundir cultura con nacionalidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/18-1-intercultural-communication/",
+            "seccion": "18.1 Intercultural Communication"
+          }
+        },
+        {
+          "id": "in-caracteristicas-comunes",
+          "nombre": "Características culturales comunes",
+          "explicacion": "Los investigadores han identificado características presentes en casi todas las culturas, también en la cultura de una empresa: ritos de iniciación para los nuevos miembros; historia y tradiciones comunes; valores y principios compartidos; un propósito y sentido de misión común, y símbolos, límites, estatus, lenguaje y rituales propios. Reconocerlas ayuda a integrarse en un equipo o en una organización extranjera.",
+          "ejemplo": "La inducción de un nuevo empleado, los valores corporativos en la pared y la jerga interna de una empresa son rasgos de su cultura.",
+          "puntos_clave": [
+            "Ritos de iniciación.",
+            "Historia, valores y misión comunes.",
+            "Símbolos, estatus y lenguaje."
+          ],
+          "errores_frecuentes": [
+            "Ignorar los rituales de un equipo nuevo.",
+            "Creer que la cultura organizacional es solo el código de vestimenta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/18-3-common-cultural-characteristics/",
+            "seccion": "18.3 Common Cultural Characteristics"
+          }
+        },
+        {
+          "id": "in-individualismo",
+          "nombre": "Culturas individualistas y colectivistas",
+          "explicacion": "Las culturas difieren en sus valores. En las culturas individualistas se valoran la libertad y la independencia personal; Geert Hofstede, que estudió el individualismo y el colectivismo en distintas culturas, encontró que en culturas individualistas como la de Estados Unidos las personas ven el mundo sobre todo desde su propio punto de vista y se perciben capaces de decidir por sí mismas. No es una dicotomía sino un continuo: una persona puede pertenecer a comunidades más individualistas y a otras más colectivistas.",
+          "ejemplo": "En una negociación con una empresa de cultura colectivista puede ser necesario esperar la decisión del grupo, mientras que en una individualista el gerente puede decidir en la misma reunión.",
+          "puntos_clave": [
+            "Individualismo: independencia personal.",
+            "Colectivismo: el grupo primero.",
+            "Un continuo, no dos extremos."
+          ],
+          "errores_frecuentes": [
+            "Presionar una decisión individual en una cultura colectivista.",
+            "Estereotipar a una persona por su país."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/18-4-divergent-cultural-characteristics/",
+            "seccion": "18.4 Divergent Cultural Characteristics"
+          }
+        },
+        {
+          "id": "in-mercado-global",
+          "nombre": "Comunicación internacional y mercado global",
+          "explicacion": "Las personas crean sistemas que reflejan sus valores culturales: políticos, legales, económicos y éticos. Estos sistemas reducen la incertidumbre dentro de la cultura, pero pueden ser un desafío para quien entra a un mercado nuevo, porque orientan, limitan o promueven ciertos comportamientos. Por ejemplo, un sistema tributario puede favorecer la compra de vivienda, y los aranceles a la importación encarecen ciertos bienes y reducen su demanda.",
+          "ejemplo": "Antes de exportar, una empresa revisa las normas legales, los aranceles y las prácticas comerciales del país de destino, además del idioma de los contratos.",
+          "puntos_clave": [
+            "Sistemas políticos, legales, económicos y éticos.",
+            "Reflejan valores culturales.",
+            "Afectan la entrada a nuevos mercados."
+          ],
+          "errores_frecuentes": [
+            "Suponer que las reglas del país propio valen en otro.",
+            "Ignorar el efecto de los aranceles en el precio final."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcs-sait",
+            "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/chapter/18-5-international-communication-and-the-global-marketplace/",
+            "seccion": "18.5 International Communication and the Global Marketplace"
+          }
+        }
+      ]
+    }
+  ]
+}

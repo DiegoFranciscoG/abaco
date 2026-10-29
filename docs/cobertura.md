@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (53 completas de 53)
+## Estado por materia (54 completas de 54)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -45,6 +45,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Ética profesional | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Finanzas internacionales | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Gestión del talento humano | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
+| Inglés de negocios | 3 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Investigación de operaciones | 3 de 7 | completa | 5 de 5 | 20 | 4 de 4 | 100 % | — |
 | Tributación | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Aduanas y comercio exterior | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
@@ -108,6 +109,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Innovación | 3 | 4 | 1 | Creatividad, innovación y design thinking |
 | Investigación Operativa | 3 | 4 | 4 | Investigación de operaciones |
 | Práctica Tributaria (práctica o titulación) | 3 | 4 | 2 | Tributación |
+| Business English | 3 | 3 | 5 | Inglés de negocios |
 | Práctica Laboral (práctica o titulación) | 3 | 3 | 7 | no aplica |
 | Unidad de Integración Curricular (práctica o titulación) | 3 | 3 | 7 | no aplica |
 | Comportamiento Organizacional | 2 | 4 | 4 | Comportamiento organizacional |
@@ -116,7 +118,6 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Contratación Pública | 2 | 3 | 6 | Contratación pública |
 | Economía Popular y Solidaria | 2 | 3 | 2 | Economía popular y solidaria |
 | Presupuestos | 2 | 3 | 7 | Presupuestos empresariales y control de gestión |
-| Business English | 2 | 2 | 4 | pendiente |
 | Cálculo Integral | 2 | 2 | 1 | Cálculo diferencial |
 | Gestión Bancaria | 2 | 2 | 3 | Sistema financiero y banca |
 | Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
@@ -165,7 +166,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Publicidad y comunicación comercial (completa, 5 de 5 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · sin pendientes.
 - **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Investigación de operaciones (completa, 5 de 5 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades); Responsabilidad social y sostenibilidad (completa, 5 de 5 unidades) · pendientes: Marco Legal del Marketing y Ciberseguridad.
-- **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · pendientes: Business English.
+- **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Inglés de negocios (completa, 5 de 5 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · sin pendientes.
 - **7.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Modelos de Simulación.
@@ -198,7 +199,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: en ÁBACO: Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · pendientes: Business English.
+- **7.º ciclo**: en ÁBACO: Inglés de negocios (completa, 5 de 5 unidades); Producto, marca y precio (completa, 5 de 5 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · sin pendientes.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
 
 ## Meta: primer ciclo de las cuatro carreras con más planes

@@ -1267,5 +1267,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "ingles-negocios",
+    "nombre": "Inglés de negocios",
+    "areas": [
+      "formacion",
+      "gestion"
+    ],
+    "descripcion": "Comunicación profesional en inglés: proceso de comunicación, registro formal, correos y mensajes, memorandos, cartas, informes y hojas de vida, presentaciones y persuasión, llamadas, reuniones, entrevistas, malas noticias y comunicación intercultural, con el nivel B1 del MCER como referencia de suficiencia.",
+    "sinonimos": [
+      "business english",
+      "inglés comercial",
+      "inglés para los negocios",
+      "comunicación empresarial en inglés",
+      "business communication"
+    ],
+    "herramientas": [
+      "notas",
+      "tarjetas",
+      "editor"
+    ],
+    "orden": 54,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

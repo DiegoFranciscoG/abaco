@@ -763,5 +763,23 @@
     "url": "https://www.wipo.int/wipolex/es/text/439750",
     "licencia": "Norma jurídica pública",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "bcs-sait",
+    "titulo": "Business Communication for Success",
+    "autor_editor": "Southern Alberta Institute of Technology (SAIT), adaptación de la obra de University of Minnesota Libraries Publishing · Open Education Alberta",
+    "tipo": "libro",
+    "url": "https://pressbooks.openeducationalberta.ca/saitbusinesscommunication/",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "epn-suficiencia-ingles",
+    "titulo": "Directrices para el registro de la suficiencia del idioma inglés para las carreras de tercer nivel a partir del período 2021-B",
+    "autor_editor": "Escuela Politécnica Nacional, Vicerrectorado de Docencia (cita el art. 80 del Reglamento de Régimen Académico del CES de 2019)",
+    "tipo": "norma",
+    "url": "https://atenea.epn.edu.ec/bitstream/25000/878/1/Directrices%20para%20el%20Rregistro%20Suficiencia%20Ingles%20desde2021B.pdf",
+    "licencia": "Documento público institucional",
+    "fecha_consulta": "2026-10-30"
   }
 ]
