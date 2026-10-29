@@ -521,6 +521,14 @@
         "planes": 1
       },
       {
+        "materia": "aduanas",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "evaluacion-proyectos",
         "ciclo": 7,
         "ciclos": [
@@ -539,11 +547,6 @@
       {
         "nombre": "Fundamentos de Contabilidad Gubernamental",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Comercio Internacional y Aduanas",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -1380,6 +1383,16 @@
         "planes": 1
       },
       {
+        "materia": "aduanas",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          6,
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "emprendimiento",
         "ciclo": 3,
         "ciclos": [
@@ -1502,21 +1515,6 @@
       {
         "nombre": "Administración y Responsabilidad Social Empresarial (Rse)",
         "ciclo": 2,
-        "planes": 1
-      },
-      {
-        "nombre": "Legislación Aduanera",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Técnicas de Valoración Aduanera",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Nomenclatura Arancelaria",
-        "ciclo": 7,
         "planes": 1
       }
     ]

@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (45 completas de 45)
+## Estado por materia (46 completas de 46)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -43,6 +43,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Finanzas internacionales | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
 | Gestión del talento humano | 3 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Tributación | 3 de 7 | completa | 6 de 6 | 25 | 4 de 4 | 100 % | — |
+| Aduanas y comercio exterior | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
 | Cálculo diferencial | 2 de 7 | completa | 6 de 6 | 24 | 6 de 6 | 100 % | — |
 | Comportamiento organizacional | 2 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Contratación pública | 2 de 7 | completa | 5 de 5 | 20 | 2 de 2 | 100 % | — |
@@ -111,6 +112,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Gestión Bancaria | 2 | 2 | 3 | Sistema financiero y banca |
 | Investigación Operativa | 2 | 2 | 4 | pendiente |
 | Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
+| Legislación Aduanera | 2 | 2 | 3 | Aduanas y comercio exterior |
 | Prácticas Laborales (práctica o titulación) | 2 | 2 | 4 | no aplica |
 | Titulación (práctica o titulación) | 2 | 2 | 7 | no aplica |
 
@@ -135,7 +137,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: en ÁBACO: Auditoría, control interno y prevención del fraude (completa, 6 de 6 unidades); Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Economía popular y solidaria (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Fundamentos de Contabilidad Gubernamental.
 - **6.º ciclo**: en ÁBACO: Contratación pública (completa, 5 de 5 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades); Presupuestos empresariales y control de gestión (completa, 5 de 5 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Comercio Internacional y Aduanas, Contabilidad Instituciones Financieras, Inteligencia Artificial en Contabilidad y Auditoría.
+- **7.º ciclo**: en ÁBACO: Aduanas y comercio exterior (completa, 5 de 5 unidades); Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Contabilidad Instituciones Financieras, Inteligencia Artificial en Contabilidad y Auditoría.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Auditoría de Calidad.
 
 ### Economía (2 planes)
@@ -175,11 +177,11 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Derecho empresarial y societario (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Administración y Responsabilidad Social Empresarial (Rse).
-- **3.º ciclo**: en ÁBACO: Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · pendientes: Legislación Aduanera.
+- **3.º ciclo**: en ÁBACO: Aduanas y comercio exterior (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades); Investigación de mercados (completa, 6 de 6 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
-- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Técnicas de Valoración Aduanera.
-- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Nomenclatura Arancelaria.
+- **6.º ciclo**: en ÁBACO: Finanzas internacionales (completa, 6 de 6 unidades); Habilidades directivas y blandas (completa, 5 de 5 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · sin pendientes.
+- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · sin pendientes.
 
 ### Emprendimiento e innovación (1 plan)
 

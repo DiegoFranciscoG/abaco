@@ -1,0 +1,468 @@
+{
+  "materia": "aduanas",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "ad-obligacion",
+      "nombre": "Obligación tributaria aduanera y tributos",
+      "orden": 1,
+      "descripcion": "Territorio y zonas aduaneras, obligación aduanera y sus sujetos, tributos al comercio exterior, base imponible, cálculo de tributos y extinción de la obligación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ad-territorio-obligacion",
+          "nombre": "Territorio aduanero y obligación aduanera",
+          "explicacion": "El territorio aduanero es el territorio nacional en el que se aplica el COPCI y comprende dos zonas: la primaria, formada por el área interior de puertos y aeropuertos, recintos aduaneros y locales habilitados en las fronteras, donde se cargan, descargan y movilizan mercancías del exterior, y la secundaria, que es el resto del territorio, incluidas las aguas territoriales y el espacio aéreo. La obligación aduanera es el vínculo jurídico entre la administración aduanera y la persona relacionada con una formalidad u operación aduanera, por el cual las mercancías quedan sometidas a la potestad aduanera. El sujeto activo es el Estado, a través del Servicio Nacional de Aduana del Ecuador (SENAE), y el sujeto pasivo, quien debe pagar el tributo como contribuyente o responsable.",
+          "ejemplo": "Un contenedor que llega al puerto de Guayaquil está en zona primaria; cuando sale del puerto tras el levante, circula en la zona secundaria.",
+          "puntos_clave": [
+            "Zona primaria y secundaria.",
+            "Obligación aduanera como vínculo jurídico.",
+            "Sujeto activo: Estado por la SENAE."
+          ],
+          "errores_frecuentes": [
+            "Creer que la zona primaria es todo el territorio.",
+            "Confundir sujeto activo y pasivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 105-107 y 111"
+          }
+        },
+        {
+          "id": "ad-tributos",
+          "nombre": "Tributos al comercio exterior y base imponible",
+          "explicacion": "Los tributos al comercio exterior son los derechos arancelarios, los impuestos de leyes orgánicas y ordinarias cuyo hecho generador se relaciona con el ingreso o salida de mercancías, y las tasas por servicios aduaneros, que crea, fija y regula la SENAE. Los recargos por medidas de defensa comercial no se consideran tributos. La base imponible de los derechos arancelarios es el valor en aduana de las mercancías importadas, incluido el flete, que en principio es su valor de transacción según las normas de valoración; los valores en moneda extranjera se convierten al tipo de cambio vigente a la fecha de la declaración.",
+          "ejemplo": "Una empresa importa maquinaria facturada en euros: para calcular la base imponible convierte el valor a dólares con el tipo de cambio del día en que presenta la declaración.",
+          "puntos_clave": [
+            "Derechos arancelarios, impuestos y tasas.",
+            "Base: valor en aduana con flete.",
+            "Conversión a la fecha de la declaración."
+          ],
+          "errores_frecuentes": [
+            "Calcular el arancel sobre el valor FOB.",
+            "Usar el tipo de cambio de la fecha de compra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 108 y 110"
+          }
+        },
+        {
+          "id": "ad-calculo-tributos",
+          "nombre": "Cálculo de los tributos a la importación",
+          "explicacion": "Para saber cuánto pagar hay que conocer la clasificación arancelaria del producto en el arancel nacional. Según la SENAE, el ad valorem es un porcentaje según el tipo de mercancía que se aplica sobre la suma del costo, el seguro y el flete, que es la base imponible; el FODINFA es el 0,5 % de esa misma base; el ICE es un porcentaje variable según el bien, y el IVA corresponde al 15 % sobre la base imponible más el ad valorem, el FODINFA y el ICE.",
+          "ejemplo": "Con un costo de USD 8.000, seguro de 100 y flete de 1.200 (base de 9.300) y un ad valorem del 20 %, se pagan 1.860 de ad valorem, 46,50 de FODINFA y 1.680,98 de IVA.",
+          "puntos_clave": [
+            "Base imponible = costo + seguro + flete.",
+            "Ad valorem y FODINFA sobre la base.",
+            "IVA 15 % sobre base + ad valorem + FODINFA + ICE."
+          ],
+          "errores_frecuentes": [
+            "Calcular el IVA solo sobre el valor CIF.",
+            "Olvidar el FODINFA."
+          ],
+          "formulas": [
+            "valor-cif",
+            "derechos-importacion",
+            "iva-importacion"
+          ],
+          "cifras": [
+            "iva-tarifa-general"
+          ],
+          "fuente": {
+            "ref": "senae-importar",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+            "seccion": "¿Cuánto se debe pagar en tributos por un producto importado?"
+          }
+        },
+        {
+          "id": "ad-extincion",
+          "nombre": "Extinción de la obligación y plazos de pago",
+          "explicacion": "La obligación tributaria aduanera se extingue por pago, compensación, prescripción, aceptación del abandono expreso, declaratoria de abandono definitivo, pérdida o destrucción total de las mercancías y decomiso administrativo o judicial. La pérdida o destrucción total la extingue si ocurre antes del arribo, durante el depósito temporal o en instalaciones autorizadas, por caso fortuito o fuerza mayor aceptado por la aduana. Los tributos de la declaración aduanera se pagan dentro de los dos días hábiles siguientes a la autorización del pago.",
+          "ejemplo": "Si un incendio en el depósito temporal destruye por completo la mercancía antes del levante, y la aduana acepta la fuerza mayor, se extingue la obligación de pagar sus tributos.",
+          "puntos_clave": [
+            "Siete formas de extinción.",
+            "Pérdida total por caso fortuito o fuerza mayor.",
+            "Pago en dos días hábiles."
+          ],
+          "errores_frecuentes": [
+            "Creer que cualquier daño extingue la obligación.",
+            "Pagar fuera del plazo de dos días hábiles."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 114, 116 y 122"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad-regimenes",
+      "nombre": "Regímenes aduaneros",
+      "orden": 2,
+      "descripcion": "Importación para el consumo, admisión temporal, depósito aduanero, reimportación y regímenes de exportación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ad-importacion-consumo",
+          "nombre": "Importación para el consumo",
+          "explicacion": "La importación para el consumo es el régimen por el cual las mercancías importadas del extranjero o de una zona especial de desarrollo económico pueden circular libremente en el territorio aduanero para quedarse de forma definitiva, luego de pagar los derechos e impuestos a la importación, los recargos y sanciones que correspondan, y de cumplir las formalidades aduaneras. Es el régimen más común para las compras al exterior de empresas y personas.",
+          "ejemplo": "Una tienda que importa celulares para venderlos en el país los declara a importación para el consumo y paga sus tributos antes de retirarlos.",
+          "puntos_clave": [
+            "Circulación libre y definitiva.",
+            "Pago previo de derechos e impuestos.",
+            "Cumplimiento de formalidades."
+          ],
+          "errores_frecuentes": [
+            "Usar este régimen para bienes que saldrán del país.",
+            "Retirar mercancía sin pagar los tributos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Art. 147"
+          }
+        },
+        {
+          "id": "ad-admision-temporal",
+          "nombre": "Admisión temporal: reexportación y perfeccionamiento activo",
+          "explicacion": "La admisión temporal para reexportación en el mismo estado permite introducir mercancías para un fin determinado con suspensión total o parcial de los derechos e impuestos, para reexportarlas en un plazo sin modificación alguna, salvo la depreciación por el uso. La admisión temporal para perfeccionamiento activo permite ingresar mercancías con suspensión del pago de derechos e impuestos para someterlas a transformación, elaboración o reparación y luego exportar los productos resultantes.",
+          "ejemplo": "Una productora trae cámaras para filmar un documental y las reexporta al terminar; una fábrica importa tela sin pagar tributos para confeccionar prendas que exportará.",
+          "puntos_clave": [
+            "Suspensión de derechos e impuestos.",
+            "Reexportación sin modificación.",
+            "Perfeccionamiento activo para transformar y exportar."
+          ],
+          "errores_frecuentes": [
+            "Vender en el país mercancía en admisión temporal.",
+            "Exceder el plazo autorizado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 148-149"
+          }
+        },
+        {
+          "id": "ad-deposito-reimportacion",
+          "nombre": "Depósito aduanero y reimportación en el mismo estado",
+          "explicacion": "El depósito aduanero permite almacenar mercancías importadas por un período determinado, bajo control de la aduana y en un lugar habilitado, sin pagar los derechos, impuestos y recargos. La reimportación en el mismo estado permite importar para el consumo, con exoneración de derechos e impuestos, mercancías que habían sido exportadas, siempre que no hayan sido transformadas, elaboradas ni reparadas en el exterior.",
+          "ejemplo": "Un distribuidor guarda repuestos en un depósito aduanero y paga los tributos solo de los que va sacando; una empresa reimporta, sin pagar tributos, muestras exportadas que no se vendieron.",
+          "puntos_clave": [
+            "Almacenamiento sin pagar tributos.",
+            "Control de la aduana.",
+            "Reimportación de bienes sin transformación."
+          ],
+          "errores_frecuentes": [
+            "Creer que el depósito aduanero elimina los tributos.",
+            "Reimportar con exoneración bienes reparados en el exterior."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 152-153"
+          }
+        },
+        {
+          "id": "ad-exportacion",
+          "nombre": "Regímenes de exportación",
+          "explicacion": "La exportación definitiva permite la salida definitiva de mercancías en libre circulación fuera del territorio aduanero comunitario o hacia una zona especial de desarrollo económico ubicada en el país. La exportación temporal para reimportación en el mismo estado permite sacar mercancías con un fin y plazo determinados, durante el cual deben reimportarse sin modificación, salvo el deterioro normal por el uso. La exportación temporal para perfeccionamiento pasivo permite sacar mercancías para transformarlas, elaborarlas o repararlas en el exterior.",
+          "ejemplo": "Un productor de flores exporta de forma definitiva; un artista saca temporalmente sus obras para una exposición y luego las reimporta.",
+          "puntos_clave": [
+            "Exportación definitiva.",
+            "Exportación temporal para reimportación.",
+            "Perfeccionamiento pasivo."
+          ],
+          "errores_frecuentes": [
+            "No reimportar dentro del plazo de una exportación temporal.",
+            "Confundir perfeccionamiento activo con pasivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 154-156"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad-despacho",
+      "nombre": "Despacho y control aduanero",
+      "orden": 3,
+      "descripcion": "Registro de importador en ECUAPASS, declaración aduanera de importación y documentos, canales de aforo y agentes de aduana.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ad-registro",
+          "nombre": "Quién puede importar y registro en ECUAPASS",
+          "explicacion": "Pueden importar las personas naturales o jurídicas, ecuatorianas o extranjeras radicadas en el país, registradas como importadoras en el sistema ECUAPASS y aprobadas por la SENAE. Después de obtener el RUC en el SRI, hay que adquirir un certificado digital de firma electrónica y registrarse en el portal ECUAPASS. Para saber si un producto tiene restricciones o es de prohibida importación se consulta al organismo regulador de comercio exterior (COMEX), y la subpartida del producto se consulta en el arancel nacional.",
+          "ejemplo": "Una emprendedora con RUC compra su firma electrónica, se registra en ECUAPASS y revisa en el arancel la subpartida de los cosméticos que piensa importar.",
+          "puntos_clave": [
+            "Registro como importador en ECUAPASS.",
+            "RUC y firma electrónica previos.",
+            "Consulta de restricciones y del arancel."
+          ],
+          "errores_frecuentes": [
+            "Comprar mercancía antes de verificar restricciones.",
+            "Importar sin registro aprobado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "senae-importar",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+            "seccion": "Pasos previos a la importación"
+          }
+        },
+        {
+          "id": "ad-dai",
+          "nombre": "Declaración aduanera de importación y documentos",
+          "explicacion": "El despacho requiere la participación del importador o de un agente de aduana acreditado. La declaración aduanera de importación (DAI) se transmite electrónicamente a la SENAE desde quince días calendario antes de la llegada del medio de transporte hasta treinta días calendario después de su arribo; si no se cumple ese plazo, las mercancías caen en abandono tácito. A la DAI se adjuntan los documentos de acompañamiento, de control previo, que se aprueban antes del embarque, y los de soporte, como el documento de transporte, la factura comercial y el certificado de origen cuando procede.",
+          "ejemplo": "Si el barco llega el 1 de marzo, el importador puede transmitir la DAI desde mediados de febrero y a más tardar treinta días después del arribo.",
+          "puntos_clave": [
+            "Transmisión electrónica de la DAI.",
+            "15 días antes a 30 días después del arribo.",
+            "Documentos de acompañamiento y de soporte."
+          ],
+          "errores_frecuentes": [
+            "Dejar vencer el plazo y caer en abandono tácito.",
+            "Tramitar el control previo después del embarque."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "senae-importar",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+            "seccion": "¿Cómo se desaduaniza una mercancía importada?"
+          }
+        },
+        {
+          "id": "ad-aforo",
+          "nombre": "Canales de aforo",
+          "explicacion": "Transmitida la DAI, el sistema de la SENAE le asigna un número y un canal de aforo, que se selecciona según el análisis de perfiles de riesgo. Los canales son el automático, el documental, el físico y el físico no intrusivo. Las mercancías perecederas y los animales vivos tienen prioridad en el reconocimiento físico, los controles con otras autoridades se coordinan, y en cualquier etapa la aduana puede inspeccionar la mercancía con escáneres de rayos X o similares.",
+          "ejemplo": "Un importador frecuente con buen historial suele recibir canal automático; un primer envío de un producto sensible puede ir a canal físico.",
+          "puntos_clave": [
+            "Canal según perfil de riesgo.",
+            "Automático, documental, físico y no intrusivo.",
+            "Prioridad a perecederos."
+          ],
+          "errores_frecuentes": [
+            "Creer que el canal se elige libremente.",
+            "Pensar que el canal automático impide inspecciones posteriores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "senae-importar",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+            "seccion": "¿Cuáles son los canales de aforo que existen?"
+          }
+        },
+        {
+          "id": "ad-agentes",
+          "nombre": "Agentes de aduana",
+          "explicacion": "El agente de aduana es la persona natural o jurídica con licencia de la SENAE que la faculta a gestionar de manera habitual y por cuenta ajena el despacho de mercancías, firmando la declaración aduanera en los casos que fija el reglamento y facturando según la tabla de honorarios mínimos. La licencia dura cinco años y es renovable por el mismo plazo. El agente puede tener auxiliares calificados por la SENAE, que lo representan ante la aduana salvo en la firma de la declaración.",
+          "ejemplo": "Una empresa que importa por primera vez contrata a un agente de aduana para clasificar su mercancía, transmitir la DAI y acompañar el aforo.",
+          "puntos_clave": [
+            "Licencia de la SENAE por cinco años.",
+            "Despacho por cuenta ajena.",
+            "Auxiliares que no firman la declaración."
+          ],
+          "errores_frecuentes": [
+            "Contratar a alguien sin licencia vigente.",
+            "Creer que el auxiliar puede firmar la declaración."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 227 y 230"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad-valoracion",
+      "nombre": "Valoración aduanera",
+      "orden": 4,
+      "descripcion": "Acuerdo de Valoración de la OMC, valor de transacción y sus condiciones, ajustes y partes vinculadas, y métodos secundarios.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ad-acuerdo-valoracion",
+          "nombre": "El Acuerdo de Valoración de la OMC",
+          "explicacion": "El Acuerdo sobre la aplicación del artículo VII del GATT de 1994, que reemplazó al Código de Valoración de la Ronda de Tokio, busca un sistema justo, uniforme y neutral de valoración de las mercancías para fines aduaneros, acorde con las realidades comerciales y basado en el valor de transacción, a diferencia del valor teórico de la antigua Definición de Valor de Bruselas. Se aplica solo a la valoración de mercancías importadas para cobrar derechos ad valorem, y todos los miembros de la OMC forman parte de él.",
+          "ejemplo": "Gracias al acuerdo, una prenda importada se valora por el precio realmente pagado y no por un valor de referencia fijado arbitrariamente por la aduana.",
+          "puntos_clave": [
+            "Sistema justo, uniforme y neutral.",
+            "Basado en el valor de transacción.",
+            "Obligatorio para todos los miembros de la OMC."
+          ],
+          "errores_frecuentes": [
+            "Creer que se aplica a impuestos internos.",
+            "Usar valores de referencia arbitrarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "wto-valoracion",
+            "url": "https://www.wto.org/english/tratop_e/cusval_e/cusval_info_e.htm",
+            "seccion": "The new agreement"
+          }
+        },
+        {
+          "id": "ad-valor-transaccion",
+          "nombre": "Método 1: valor de transacción",
+          "explicacion": "La valoración se basa, salvo casos especiales, en el precio realmente pagado o por pagar por las mercancías, que suele constar en la factura, más ciertos ajustes: ese es el valor de transacción, el primer y más importante método. Para usarlo debe haber prueba de una venta para exportación al país de importación, no debe haber restricciones a la disposición o uso de las mercancías salvo las permitidas, la venta no debe depender de condiciones cuyo valor no pueda determinarse, ninguna parte de la reventa debe revertir al vendedor salvo ajuste, y comprador y vendedor no deben estar vinculados o, si lo están, el vínculo no debe haber influido en el precio.",
+          "ejemplo": "Una empresa compra telas a un proveedor no vinculado con una factura de USD 20.000: si se cumplen las condiciones, ese precio más los ajustes es su valor en aduana.",
+          "puntos_clave": [
+            "Precio pagado o por pagar más ajustes.",
+            "Primer y principal método.",
+            "Condiciones de venta, disposición y vinculación."
+          ],
+          "errores_frecuentes": [
+            "Aceptar un precio condicionado a otra compra.",
+            "Ignorar la vinculación entre comprador y vendedor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "wto-valoracion",
+            "url": "https://www.wto.org/english/tratop_e/cusval_e/cusval_info_e.htm",
+            "seccion": "Method 1 — Transaction value"
+          }
+        },
+        {
+          "id": "ad-ajustes-vinculados",
+          "nombre": "Ajustes del artículo 8 y partes vinculadas",
+          "explicacion": "Al precio pagado se suman, entre otros, las comisiones y corretajes salvo las de compra, los costos de envases y embalajes, las prestaciones del comprador, las regalías y derechos de licencia, el producto de reventas posteriores y, si el país valora en base CIF, el transporte, el seguro y los gastos conexos hasta el lugar de importación; no se suman los costos posteriores a la importación. Las personas se consideran vinculadas, entre otros casos, si son directivos de sus empresas, socios legalmente reconocidos, empleador y empleado, si una posee el 5 % o más de las acciones con voto de ambas, si una controla a la otra o si son de la misma familia.",
+          "ejemplo": "Si el importador paga además USD 1.000 de regalías por la marca como condición de la venta, ese valor se suma al precio para obtener el valor en aduana.",
+          "puntos_clave": [
+            "Comisiones, embalajes, regalías y transporte.",
+            "No se suman costos posteriores a la importación.",
+            "Vinculación con 5 % de acciones con voto."
+          ],
+          "errores_frecuentes": [
+            "Omitir las regalías ligadas a la venta.",
+            "Sumar el transporte interno posterior a la importación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "wto-valoracion",
+            "url": "https://www.wto.org/english/tratop_e/cusval_e/cusval_info_e.htm",
+            "seccion": "Method 1 — Transaction value"
+          }
+        },
+        {
+          "id": "ad-metodos-secundarios",
+          "nombre": "Métodos secundarios de valoración",
+          "explicacion": "Cuando no hay valor de transacción o no es aceptable, el acuerdo establece cinco métodos más, aplicados en orden jerárquico: el valor de transacción de mercancías idénticas, el de mercancías similares, el valor deductivo, el valor reconstruido y el método del último recurso; el orden del deductivo y del reconstruido puede invertirse a pedido del importador, no del funcionario. El método deductivo parte del precio unitario al que se vende la mayor cantidad total a compradores no vinculados en el país importador y le resta comisiones, utilidades, gastos, transporte interno, derechos e impuestos; el reconstruido suma el costo de producción, la utilidad y los gastos generales.",
+          "ejemplo": "Si no se puede usar el precio de una importación entre empresas vinculadas, la aduana busca primero el valor de importaciones idénticas del mismo país y época.",
+          "puntos_clave": [
+            "Seis métodos en orden jerárquico.",
+            "Deductivo y reconstruido intercambiables a pedido del importador.",
+            "Último recurso al final."
+          ],
+          "errores_frecuentes": [
+            "Saltar directamente al método del último recurso.",
+            "Permitir que el funcionario cambie el orden a su criterio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "wto-valoracion",
+            "url": "https://www.wto.org/english/tratop_e/cusval_e/cusval_info_e.htm",
+            "seccion": "The 6 methods"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ad-nomenclatura",
+      "nombre": "Clasificación arancelaria",
+      "orden": 5,
+      "descripcion": "El Sistema Armonizado, su mantenimiento y notas explicativas, la resolución anticipada y el aforo como determinación tributaria.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ad-sistema-armonizado",
+          "nombre": "El Sistema Armonizado (SA)",
+          "explicacion": "El Sistema Armonizado de Designación y Codificación de Mercancías, desarrollado por la Organización Mundial de Aduanas (OMA), es una nomenclatura internacional de productos con más de 5.000 grupos de mercancías, cada uno identificado por un código de seis dígitos, ordenados en una estructura legal y lógica y con reglas definidas para una clasificación uniforme. Lo usan más de 200 países y economías como base de sus aranceles y de sus estadísticas de comercio, y más del 98 % de las mercancías del comercio internacional se clasifican según él; también sirve para impuestos internos, reglas de origen y estadísticas de transporte.",
+          "ejemplo": "Las primeras seis cifras de la subpartida de un producto son iguales en todos los países que usan el Sistema Armonizado; los dígitos adicionales son nacionales o regionales.",
+          "puntos_clave": [
+            "Nomenclatura de la OMA.",
+            "Código de seis dígitos.",
+            "Base de aranceles y estadísticas en más de 200 países."
+          ],
+          "errores_frecuentes": [
+            "Clasificar por el nombre comercial del producto.",
+            "Creer que los diez dígitos son iguales en todos los países."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "wco-hs",
+            "url": "https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx",
+            "seccion": "What is the Harmonized System (HS)?"
+          }
+        },
+        {
+          "id": "ad-mantenimiento-sa",
+          "nombre": "Notas explicativas y actualización del Sistema Armonizado",
+          "explicacion": "El Sistema Armonizado se rige por el Convenio Internacional del Sistema Armonizado. Su interpretación oficial está en las notas explicativas que publica la OMA. El Comité del Sistema Armonizado, que representa a las partes del convenio, examina asuntos de política, decide cuestiones de clasificación, resuelve controversias, prepara enmiendas a las notas explicativas y actualiza el sistema cada cinco o seis años según los cambios de la tecnología y del comercio. Sus decisiones de clasificación entran en vigor dos meses después de su aprobación.",
+          "ejemplo": "Cuando surgen productos nuevos, como ciertos dispositivos electrónicos, el Comité puede crear subpartidas específicas en la siguiente enmienda del sistema.",
+          "puntos_clave": [
+            "Convenio Internacional del SA.",
+            "Notas explicativas oficiales.",
+            "Actualización cada 5 o 6 años."
+          ],
+          "errores_frecuentes": [
+            "Usar una versión desactualizada del sistema.",
+            "Ignorar las notas explicativas al clasificar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "wco-hs",
+            "url": "https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx",
+            "seccion": "What is the Harmonized System (HS)?"
+          }
+        },
+        {
+          "id": "ad-resolucion-anticipada",
+          "nombre": "Aforo y resolución anticipada",
+          "explicacion": "El aforo es el acto de determinación tributaria de la administración aduanera, mediante la verificación electrónica, física o documental del origen, naturaleza, cantidad, valor, peso, medida y clasificación arancelaria de la mercancía. Antes de importar, cualquier persona puede pedir a la SENAE una resolución anticipada, un acto administrativo vinculante para el consultante, sobre la clasificación arancelaria de una mercancía, su carácter originario según un acuerdo comercial, los criterios de valoración aplicables según el acuerdo de la OMC y otros asuntos de acuerdos internacionales.",
+          "ejemplo": "Antes de traer un nuevo modelo de máquina, un importador pide una resolución anticipada para saber con certeza en qué subpartida se clasificará y qué arancel pagará.",
+          "puntos_clave": [
+            "Aforo: determinación tributaria.",
+            "Verificación de clasificación, valor y origen.",
+            "Resolución anticipada vinculante."
+          ],
+          "errores_frecuentes": [
+            "Importar productos dudosos sin pedir resolución anticipada.",
+            "Creer que el aforo solo revisa la cantidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Arts. 140-141"
+          }
+        },
+        {
+          "id": "ad-declaracion-aduanera",
+          "nombre": "La declaración aduanera en el COPCI",
+          "explicacion": "La declaración aduanera se presenta según los procedimientos que fije la Dirección General de la SENAE. La aduana puede autorizar el desaduanamiento directo de mercancías en los casos que prevé el reglamento, previo cumplimiento de requisitos; en esos casos la declaración puede presentarse después del levante de las mercancías. Se exceptúan de presentar declaración las importaciones y exportaciones calificadas como material bélico, entre otros casos previstos.",
+          "ejemplo": "En casos autorizados de desaduanamiento directo, una carga urgente se retira primero y la declaración se presenta después del levante en la forma que fije la SENAE.",
+          "puntos_clave": [
+            "Procedimientos de la SENAE.",
+            "Desaduanamiento directo autorizado.",
+            "Excepciones como material bélico."
+          ],
+          "errores_frecuentes": [
+            "Suponer que todo envío puede retirarse sin declaración previa.",
+            "Ignorar los requisitos del desaduanamiento directo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "copci",
+            "seccion": "Art. 138"
+          }
+        }
+      ]
+    }
+  ]
+}

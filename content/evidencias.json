@@ -6980,5 +6980,156 @@
       "procedimiento para la terminacion por mutuo acuerdo",
       "los contratos terminan conforme lo determina el articulo 106"
     ]
+  },
+  {
+    "id": "ad-territorio-obligacion",
+    "palabras": [
+      "comprende las zonas primaria y secundaria",
+      "constituida por el area interior de los puertos y aeropuertos",
+      "sujeto activo de la obligacion tributaria aduanera es el estado"
+    ]
+  },
+  {
+    "id": "ad-tributos",
+    "palabras": [
+      "a. los derechos arancelarios; b. los impuestos establecidos en leyes organicas y ordinarias",
+      "mercancias importadas, incluido el flete",
+      "al tipo de cambio vigente a la fecha de la presentacion de la declaracion"
+    ]
+  },
+  {
+    "id": "ad-calculo-tributos",
+    "palabras": [
+      "se aplica sobre la suma del costo, seguro y flete",
+      "se aplica el 0.5% sobre la base imponible de la importacion",
+      "corresponde al 15% sobre: base imponible + advalorem + fodinfa + ice"
+    ]
+  },
+  {
+    "id": "ad-extincion",
+    "palabras": [
+      "a. pago; b. compensacion",
+      "perdida o destruccion total de las mercancias",
+      "dentro de los dos (2) dias habiles siguientes a la autorizacion del pago"
+    ]
+  },
+  {
+    "id": "ad-importacion-consumo",
+    "palabras": [
+      "pueden circular libremente en el territorio aduanero, con el fin de permanecer en el de manera definitiva"
+    ]
+  },
+  {
+    "id": "ad-admision-temporal",
+    "palabras": [
+      "para ser reexportadas en un plazo determinado sin experimentar modificacion alguna",
+      "regimen de admision temporal para perfeccionamiento activo"
+    ]
+  },
+  {
+    "id": "ad-deposito-reimportacion",
+    "palabras": [
+      "almacenadas por un periodo determinado bajo el control de la aduana",
+      "que no hayan sido sometidas a ninguna transformacion, elaboracion o reparacion en el extranjero"
+    ]
+  },
+  {
+    "id": "ad-exportacion",
+    "palabras": [
+      "salida definitiva de mercancias",
+      "exportacion temporal para reimportacion en el mismo estado",
+      "exportacion temporal para perfeccionamiento pasivo"
+    ]
+  },
+  {
+    "id": "ad-registro",
+    "palabras": [
+      "registrados como importador en el sistema ecuapass",
+      "certificado digital para la firma electronica"
+    ]
+  },
+  {
+    "id": "ad-dai",
+    "palabras": [
+      "en un periodo no superior a quince dias calendario previo a la llegada del medio de transporte",
+      "abandono tacito",
+      "documentos de acompanamiento"
+    ]
+  },
+  {
+    "id": "ad-aforo",
+    "palabras": [
+      "canal de aforo automatico canal de aforo documental canal de aforo fisico canal de aforo fisico no intrusivo",
+      "perfiles de riesgo"
+    ]
+  },
+  {
+    "id": "ad-agentes",
+    "palabras": [
+      "le faculta a gestionar de manera habitual y por cuenta ajena, el despacho de las mercancias",
+      "plazo de duracion de 5 anos",
+      "excepto en la firma de la declaracion"
+    ]
+  },
+  {
+    "id": "ad-acuerdo-valoracion",
+    "palabras": [
+      "fair, uniform and neutral system for the valuation of goods for customs purposes",
+      "all wto members are members of the customs valuation agreement"
+    ]
+  },
+  {
+    "id": "ad-valor-transaccion",
+    "palabras": [
+      "the first and most important method of valuation",
+      "evidence of sale",
+      "no restriction on the disposition or use"
+    ]
+  },
+  {
+    "id": "ad-ajustes-vinculados",
+    "palabras": [
+      "commissions and brokerage, except buying commissions",
+      "royalties and licence fees",
+      "5 per cent or more of the outstanding voting stock"
+    ]
+  },
+  {
+    "id": "ad-metodos-secundarios",
+    "palabras": [
+      "to be applied in the prescribed hierarchical order",
+      "the sequence of methods 4 and 5 can be switched at the request of the importer",
+      "greatest aggregate quantity"
+    ]
+  },
+  {
+    "id": "ad-sistema-armonizado",
+    "palabras": [
+      "it comprises more than 5,000 commodity groups",
+      "each identified by a six digit code",
+      "over 98 % of the merchandise in international trade"
+    ]
+  },
+  {
+    "id": "ad-mantenimiento-sa",
+    "palabras": [
+      "explanatory notes",
+      "harmonized system committee",
+      "updating the hs every 5"
+    ]
+  },
+  {
+    "id": "ad-resolucion-anticipada",
+    "palabras": [
+      "realiza mediante la verificacion electronica, fisica o documental del origen, naturaleza, cantidad, valor, peso, medida y clasificacion arancelaria",
+      "1. clasificacion arancelaria de una mercancia"
+    ]
+  },
+  {
+    "id": "ad-declaracion-aduanera",
+    "palabras": [
+      "podra autorizar el desaduanamiento directo de las mercancias",
+      "material belico"
+    ]
   }
 ]

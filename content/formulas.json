@@ -9701,5 +9701,228 @@
     ],
     "actualizado_en": "2026-10-29",
     "estado": "verificada"
+  },
+  {
+    "id": "valor-cif",
+    "nombre": "Base imponible de la importación (valor CIF)",
+    "categoria": "tributario",
+    "materias": [
+      "aduanas"
+    ],
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Suma del costo de la mercancía, el seguro y el flete, que es la base imponible sobre la que se aplican el ad valorem y el FODINFA.",
+    "latex": "CIF = FOB + S + F",
+    "variables": [
+      {
+        "simbolo": "FOB",
+        "nombre": "FOB",
+        "significado": "Costo de la mercancía puesta a bordo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "S",
+        "nombre": "Seg",
+        "significado": "Seguro",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "F",
+        "nombre": "Fl",
+        "significado": "Flete",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "FOB + Seg + Fl"
+    },
+    "excel": {
+      "es": "=FOB+Seg+Fl",
+      "en": "=FOB+Seg+Fl"
+    },
+    "ejemplo": {
+      "enunciado": "Un importador compra mercancía por USD 8.000 FOB, paga USD 100 de seguro y USD 1.200 de flete. ¿Cuál es la base imponible?",
+      "entradas": {
+        "FOB": 8000,
+        "Seg": 100,
+        "Fl": 1200
+      },
+      "pasos": [
+        "CIF = 8.000 + 100 + 1.200",
+        "CIF = 9.300"
+      ],
+      "resultado": 9300,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=8000+100+1200",
+      "excel_en": "=8000+100+1200"
+    },
+    "fuente": {
+      "ref": "senae-importar",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+      "seccion": "¿Cuánto se debe pagar en tributos por un producto importado?"
+    },
+    "supuestos": [],
+    "notas": [
+      "El valor en aduana se determina con las reglas de valoración de la OMC."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "derechos-importacion",
+    "nombre": "Ad valorem más FODINFA",
+    "categoria": "tributario",
+    "materias": [
+      "aduanas"
+    ],
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "Derechos que se aplican sobre la base imponible: el ad valorem según la subpartida y el FODINFA del 0,5 %.",
+    "latex": "D = CIF \\times (t + f)",
+    "variables": [
+      {
+        "simbolo": "CIF",
+        "nombre": "CIF",
+        "significado": "Base imponible (costo, seguro y flete)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tarifa ad valorem de la subpartida",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "f",
+        "nombre": "f",
+        "significado": "FODINFA (0,005)",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CIF * (t + f)"
+    },
+    "excel": {
+      "es": "=CIF*(t+f)",
+      "en": "=CIF*(t+f)"
+    },
+    "ejemplo": {
+      "enunciado": "Con una base imponible de USD 9.300 y un ad valorem del 20 %, ¿cuánto se paga de ad valorem y FODINFA?",
+      "entradas": {
+        "CIF": 9300,
+        "t": 0.2,
+        "f": 0.005
+      },
+      "pasos": [
+        "Ad valorem = 9.300 × 0,20 = 1.860",
+        "FODINFA = 9.300 × 0,005 = 46,50",
+        "D = 1.906,50"
+      ],
+      "resultado": 1906.5,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=9300*(0,2+0,005)",
+      "excel_en": "=9300*(0.2+0.005)"
+    },
+    "fuente": {
+      "ref": "senae-importar",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+      "seccion": "¿Cuánto se debe pagar en tributos por un producto importado?"
+    },
+    "supuestos": [],
+    "notas": [
+      "La tarifa ad valorem se consulta en el arancel nacional por subpartida."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "iva-importacion",
+    "nombre": "IVA en la importación",
+    "categoria": "tributario",
+    "materias": [
+      "aduanas"
+    ],
+    "areas": [
+      "tributario"
+    ],
+    "descripcion": "IVA de la importación: tarifa del IVA sobre la suma de la base imponible, el ad valorem, el FODINFA y el ICE.",
+    "latex": "IVA = (CIF \\times (1 + t + f) + ICE) \\times i",
+    "variables": [
+      {
+        "simbolo": "CIF",
+        "nombre": "CIF",
+        "significado": "Base imponible (costo, seguro y flete)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Tarifa ad valorem",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "f",
+        "nombre": "f",
+        "significado": "FODINFA (0,005)",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "ICE",
+        "nombre": "ICE",
+        "significado": "Impuesto a los consumos especiales, si aplica",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "i",
+        "nombre": "i",
+        "significado": "Tarifa del IVA",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(CIF * (1 + t + f) + ICE) * i"
+    },
+    "excel": {
+      "es": "=(CIF*(1+t+f)+ICE)*i",
+      "en": "=(CIF*(1+t+f)+ICE)*i"
+    },
+    "ejemplo": {
+      "enunciado": "Con una base imponible de USD 9.300, ad valorem del 20 %, FODINFA del 0,5 %, sin ICE y con el IVA del 15 %, ¿cuánto se paga de IVA?",
+      "entradas": {
+        "CIF": 9300,
+        "t": 0.2,
+        "f": 0.005,
+        "ICE": 0,
+        "i": 0.15
+      },
+      "pasos": [
+        "Base del IVA = 9.300 + 1.860 + 46,50 + 0 = 11.206,50",
+        "IVA = 11.206,50 × 0,15 = 1.680,98"
+      ],
+      "resultado": 1680.975,
+      "unidad": "USD",
+      "tolerancia": 0.01,
+      "excel_es": "=(9300*(1+0,2+0,005)+0)*0,15",
+      "excel_en": "=(9300*(1+0.2+0.005)+0)*0.15"
+    },
+    "cifras": [
+      "iva-tarifa-general"
+    ],
+    "fuente": {
+      "ref": "senae-importar",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+      "seccion": "¿Cuánto se debe pagar en tributos por un producto importado?"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
   }
 ]

@@ -72,7 +72,8 @@
       "presupuestos",
       "economia-popular-solidaria",
       "auditoria",
-      "contratacion-publica"
+      "contratacion-publica",
+      "aduanas"
     ],
     "areas": [
       "tecnologia"
@@ -512,7 +513,8 @@
     "para_que": "Datos de comercio internacional del Banco Mundial y sus socios: exportaciones e importaciones por país y producto, aranceles y medidas no arancelarias. El perfil de Ecuador se consulta sin cuenta.",
     "materias": [
       "economia-internacional",
-      "finanzas-internacionales"
+      "finanzas-internacionales",
+      "aduanas"
     ],
     "areas": [
       "economia"

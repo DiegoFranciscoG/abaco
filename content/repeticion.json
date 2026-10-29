@@ -368,6 +368,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Legislación Aduanera",
+    "carreras": 2,
+    "planes": 2,
+    "ciclo_habitual": 3,
+    "materia": "aduanas",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Prácticas Laborales",
     "carreras": 2,
     "planes": 2,

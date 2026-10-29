@@ -2228,5 +2228,86 @@
       "seccion": "Arts. 170 y 382"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "liquidacion-tributos-importacion",
+    "nombre": "Liquidación de tributos a la importación",
+    "descripcion": "Calcula la base imponible CIF, el ad valorem, el FODINFA, el IVA y el total de tributos de una importación según la guía de la SENAE.",
+    "materias": [
+      "aduanas"
+    ],
+    "celdas": {
+      "A1": "Costo FOB (USD)",
+      "B1": 8000,
+      "A2": "Seguro (USD)",
+      "B2": 100,
+      "A3": "Flete (USD)",
+      "B3": 1200,
+      "A4": "Base imponible (CIF)",
+      "B4": "=B1+B2+B3",
+      "A6": "Tarifa ad valorem",
+      "B6": 0.2,
+      "A7": "FODINFA",
+      "B7": 0.005,
+      "A8": "ICE (USD)",
+      "B8": 0,
+      "A9": "Tarifa del IVA (15 %)",
+      "B9": 0.15,
+      "A11": "Ad valorem",
+      "B11": "=B4*B6",
+      "A12": "FODINFA",
+      "B12": "=B4*B7",
+      "A13": "Base del IVA",
+      "B13": "=B4+B11+B12+B8",
+      "A14": "IVA",
+      "B14": "=B13*B9",
+      "A15": "Total de tributos",
+      "B15": "=B11+B12+B8+B14",
+      "A16": "Costo total de la importación",
+      "B16": "=B4+B15"
+    },
+    "formatos": {
+      "B4": "moneda",
+      "B6": "porcentaje",
+      "B7": "porcentaje",
+      "B9": "porcentaje",
+      "B11": "moneda",
+      "B12": "moneda",
+      "B13": "moneda",
+      "B14": "moneda",
+      "B15": "moneda",
+      "B16": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B4",
+        "esperado": 9300,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B12",
+        "esperado": 46.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 1680.975,
+        "tolerancia": 0.0001
+      },
+      {
+        "celda": "B15",
+        "esperado": 3587.475,
+        "tolerancia": 0.0001
+      }
+    ],
+    "cifras": [
+      "iva-tarifa-general"
+    ],
+    "fuente": {
+      "ref": "senae-importar",
+      "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+      "seccion": "¿Cuánto se debe pagar en tributos por un producto importado?"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

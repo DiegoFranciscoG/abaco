@@ -619,5 +619,41 @@
     "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/REGLAMENTO-DE-LA-LEY-ORGANICA-SISTEMA-NACIONAL-CONTRATACION-PUBLICA.pdf",
     "licencia": "Norma pública (Código Ingenios, art. 107)",
     "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "copci",
+    "titulo": "Código Orgánico de la Producción, Comercio e Inversiones (Supl. R.O. 351, 29-12-2010; texto con la última reforma del 29-07-2026)",
+    "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por el Servicio Nacional de Aduana del Ecuador",
+    "tipo": "ley",
+    "url": "https://www.aduana.gob.ec/gacnorm/data/CODIGO-ORGANICO-DE-LA-PRODUCCION-COMERCIO-E-INVERSIONES.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "senae-importar",
+    "titulo": "Para importar (guía oficial, actualizada en diciembre de 2025)",
+    "autor_editor": "Servicio Nacional de Aduana del Ecuador (SENAE)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/para-importar/",
+    "licencia": "Información pública; se cita y enlaza",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "wco-hs",
+    "titulo": "What is the Harmonized System (HS)?",
+    "autor_editor": "World Customs Organization (WCO)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "wto-valoracion",
+    "titulo": "Technical Information on Customs valuation",
+    "autor_editor": "World Trade Organization (WTO)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.wto.org/english/tratop_e/cusval_e/cusval_info_e.htm",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-29"
   }
 ]

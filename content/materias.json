@@ -1052,5 +1052,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "aduanas",
+    "nombre": "Aduanas y comercio exterior",
+    "areas": [
+      "derecho",
+      "tributario"
+    ],
+    "descripcion": "Obligación tributaria aduanera y tributos al comercio exterior según el COPCI, cálculo de tributos a la importación, regímenes aduaneros, despacho y aforo, valoración aduanera de la OMC y clasificación arancelaria con el Sistema Armonizado.",
+    "sinonimos": [
+      "legislación aduanera",
+      "valoración aduanera",
+      "nomenclatura arancelaria",
+      "comercio exterior",
+      "tributos a la importación",
+      "regímenes aduaneros"
+    ],
+    "herramientas": [
+      "impuestos",
+      "divisas",
+      "notas"
+    ],
+    "orden": 46,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]
