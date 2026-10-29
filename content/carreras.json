@@ -187,6 +187,15 @@
         "planes": 4
       },
       {
+        "materia": "finanzas-publicas",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "etica-profesional",
         "ciclo": 7,
         "ciclos": [
@@ -225,11 +234,6 @@
       {
         "nombre": "Presupuestos",
         "ciclo": 5,
-        "planes": 2
-      },
-      {
-        "nombre": "Administración Pública",
-        "ciclo": 6,
         "planes": 2
       }
     ]
@@ -412,6 +416,16 @@
         "planes": 2
       },
       {
+        "materia": "finanzas-publicas",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
         "materia": "emprendimiento",
         "ciclo": 5,
         "ciclos": [
@@ -474,16 +488,6 @@
         "planes": 2
       },
       {
-        "nombre": "Legislación del Sector Público",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Administración Pública y Presupuesto",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Contabilidad de IFIS y Economía Popular y Solidaria",
         "ciclo": 5,
         "planes": 1
@@ -510,11 +514,6 @@
       },
       {
         "nombre": "Marco Legal de la Auditoría Financiera",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Presupuesto Público y Privado",
         "ciclo": 6,
         "planes": 1
       },
@@ -757,6 +756,15 @@
         "planes": 2
       },
       {
+        "materia": "finanzas-publicas",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "evaluacion-proyectos",
         "ciclo": 7,
         "ciclos": [
@@ -855,11 +863,6 @@
         "nombre": "Economía Experimental y del Comportamiento",
         "ciclo": 8,
         "planes": 1
-      },
-      {
-        "nombre": "Finanzas Públicas",
-        "ciclo": 8,
-        "planes": 2
       },
       {
         "nombre": "Investigación de Operaciones",
@@ -1267,6 +1270,14 @@
           5
         ],
         "planes": 1
+      },
+      {
+        "materia": "finanzas-publicas",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
       }
     ],
     "pendientes": [
@@ -1288,11 +1299,6 @@
       {
         "nombre": "Gestión de Riesgos Financieros",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Finanzas Públicas",
-        "ciclo": 6,
         "planes": 1
       },
       {

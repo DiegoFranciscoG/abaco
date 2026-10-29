@@ -11424,5 +11424,260 @@
     },
     "materia": "seguros",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-deuda-pib-sobre",
+    "subtema": "fp-regla-deuda",
+    "formula": "ratio-deuda-pib",
+    "enunciado": "Un país hipotético tiene deuda consolidada y otras obligaciones por USD 60.000 millones y un PIB de USD 125.000 millones. ¿Cuál es su relación deuda/PIB?",
+    "datos": {
+      "D": 60000,
+      "PIB": 125000
+    },
+    "calculo": "D / PIB * 100",
+    "respuesta": 48,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "60.000 ÷ 125.000 = 0,48",
+      "× 100 = 48",
+      "48 % > 40 %: sobre la regla"
+    ],
+    "pistas": [
+      "Compara el resultado con el 40 % de la regla."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de deuda y otras obligaciones de pago"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-deuda-pib-cumple",
+    "subtema": "fp-regla-deuda",
+    "formula": "ratio-deuda-pib",
+    "enunciado": "Otro país hipotético tiene deuda consolidada de USD 38.000 millones y un PIB de USD 100.000 millones. ¿Cuál es su relación deuda/PIB y cumple la regla?",
+    "datos": {
+      "D": 38000,
+      "PIB": 100000
+    },
+    "calculo": "D / PIB * 100",
+    "respuesta": 38,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "38.000 ÷ 100.000 × 100 = 38",
+      "38 % ≤ 40 %: cumple"
+    ],
+    "pistas": [
+      "La deuda debe medirse consolidada."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de deuda y otras obligaciones de pago"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-endeudamiento-neto",
+    "subtema": "fp-regla-deuda",
+    "formula": "endeudamiento-neto",
+    "enunciado": "En un año, el Estado recibe desembolsos de deuda por USD 3.800 millones y paga amortizaciones por USD 4.500 millones. ¿Cuál es su endeudamiento neto e indica si la deuda sube o baja?",
+    "datos": {
+      "Des": 3800,
+      "Am": 4500
+    },
+    "calculo": "Des - Am",
+    "respuesta": -700,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "EN = 3.800 − 4.500 = −700",
+      "Negativo: el saldo de deuda baja"
+    ],
+    "pistas": [
+      "Un endeudamiento neto negativo reduce el saldo de deuda."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de deuda y otras obligaciones de pago"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-gad-deuda-cumple",
+    "subtema": "fp-limites-gad",
+    "formula": "indicador-deuda-gad",
+    "enunciado": "Un gobierno provincial tiene deuda por USD 45 millones e ingresos totales sin endeudamiento de USD 30 millones. ¿Cuál es su indicador de deuda?",
+    "datos": {
+      "SD": 45,
+      "IT": 30
+    },
+    "calculo": "SD / IT * 100",
+    "respuesta": 150,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "45 ÷ 30 × 100 = 150",
+      "150 % ≤ 200 %: cumple"
+    ],
+    "pistas": [
+      "No incluyas el endeudamiento en los ingresos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-gad-deuda-excede",
+    "subtema": "fp-limites-gad",
+    "formula": "indicador-deuda-gad",
+    "enunciado": "Un municipio tiene deuda por USD 54 millones e ingresos totales sin endeudamiento de USD 24 millones. ¿Cumple el límite general?",
+    "datos": {
+      "SD": 54,
+      "IT": 24
+    },
+    "calculo": "SD / IT * 100",
+    "respuesta": 225,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "54 ÷ 24 × 100 = 225",
+      "225 % > 200 %: no cumple el límite general",
+      "Solo si la deuda es para agua y saneamiento el límite sube a 300 %"
+    ],
+    "pistas": [
+      "Revisa también la excepción para agua potable y alcantarillado."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-gad-servicio-cumple",
+    "subtema": "fp-limites-gad",
+    "formula": "indicador-servicio-deuda-gad",
+    "enunciado": "Un gobierno provincial paga al año USD 6,6 millones de amortización e intereses y tiene ingresos totales sin endeudamiento de USD 30 millones. ¿Cuál es su indicador de servicio de deuda?",
+    "datos": {
+      "SA": 6.6,
+      "IT": 30
+    },
+    "calculo": "SA / IT * 100",
+    "respuesta": 22,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "6,6 ÷ 30 × 100 = 22",
+      "22 % ≤ 25 %: cumple"
+    ],
+    "pistas": [
+      "El servicio incluye amortización e intereses."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-gad-servicio-agua",
+    "subtema": "fp-limites-gad",
+    "formula": "indicador-servicio-deuda-gad",
+    "enunciado": "Un municipio que se endeudó para alcantarillado paga USD 8,4 millones al año de servicio de deuda con ingresos totales sin endeudamiento de USD 24 millones. ¿Cuál es su indicador y qué límite aplica?",
+    "datos": {
+      "SA": 8.4,
+      "IT": 24
+    },
+    "calculo": "SA / IT * 100",
+    "respuesta": 35,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "8,4 ÷ 24 × 100 = 35",
+      "Supera el 25 % general",
+      "Para alcantarillado el límite puede subir a 40 %: cumpliría"
+    ],
+    "pistas": [
+      "Considera el destino del endeudamiento."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-gasto-limite-a",
+    "subtema": "fp-regla-gasto",
+    "formula": "limite-incremento-gasto",
+    "enunciado": "El gasto primario computable fue de USD 15.500 millones y el crecimiento nominal de largo plazo fijado es 4 %. ¿Cuánto puede aumentar como máximo?",
+    "datos": {
+      "G0": 15500,
+      "g": 0.04
+    },
+    "calculo": "G0 * g",
+    "respuesta": 620,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ΔGmax = 15.500 × 0,04 = 620",
+      "Gasto máximo = 16.120"
+    ],
+    "pistas": [
+      "Multiplica el gasto anterior por el crecimiento de largo plazo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de gasto primario computable"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-fp-gasto-limite-b",
+    "subtema": "fp-regla-gasto",
+    "formula": "limite-incremento-gasto",
+    "enunciado": "Con un gasto computable anterior de USD 18.000 millones y un crecimiento nominal de largo plazo de 5 %, un ministerio propone aumentar el gasto en USD 1.100 millones. ¿Cuál es el aumento máximo permitido y cumple la propuesta?",
+    "datos": {
+      "G0": 18000,
+      "g": 0.05
+    },
+    "calculo": "G0 * g",
+    "respuesta": 900,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ΔGmax = 18.000 × 0,05 = 900",
+      "1.100 > 900: la propuesta supera el límite"
+    ],
+    "pistas": [
+      "Compara el aumento propuesto con el máximo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de gasto primario computable"
+    },
+    "materia": "finanzas-publicas",
+    "actualizado_en": "2026-10-26"
   }
 ]

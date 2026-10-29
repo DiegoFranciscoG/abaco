@@ -917,5 +917,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "finanzas-publicas",
+    "nombre": "Finanzas públicas y presupuesto del Estado",
+    "areas": [
+      "economia",
+      "contabilidad"
+    ],
+    "descripcion": "El Sistema Nacional de Finanzas Públicas del Ecuador según el COPLAFIP: Presupuesto General del Estado, ingresos y egresos, ciclo presupuestario, reglas fiscales, endeudamiento, contabilidad gubernamental, tesorería, planificación e inversión pública.",
+    "sinonimos": [
+      "presupuesto público",
+      "finanzas del sector público",
+      "administración pública y presupuesto",
+      "legislación del sector público",
+      "COPLAFIP",
+      "reglas fiscales"
+    ],
+    "herramientas": [
+      "macro",
+      "graficador",
+      "notas"
+    ],
+    "orden": 41,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

@@ -6207,5 +6207,154 @@
       "0.003115",
       "0.016455"
     ]
+  },
+  {
+    "id": "fp-sinfip-principios",
+    "palabras": [
+      "sistema nacional de finanzas publicas (sinfip)",
+      "legalidad, universalidad, unidad, plurianualidad, integralidad"
+    ]
+  },
+  {
+    "id": "fp-sector-pge",
+    "palabras": [
+      "sector publico financiero: comprende todas las entidades cuya actividad principal es",
+      "no se consideran parte del presupuesto general del estado, los ingresos y egresos pertenecientes a la seguridad social",
+      "todo flujo de recurso publico debera estar contemplado obligatoriamente"
+    ]
+  },
+  {
+    "id": "fp-ingresos-egresos",
+    "palabras": [
+      "ingresos permanentes: son los ingresos de recursos publicos",
+      "no pueden provenir de la enajenacion, degradacion o venta de activos publicos",
+      "egresos permanentes: son los egresos de recursos publicos"
+    ]
+  },
+  {
+    "id": "fp-gasto-tributario",
+    "palabras": [
+      "renuncia de ingresos por gasto tributario",
+      "debido a la deduccion, exencion"
+    ]
+  },
+  {
+    "id": "fp-programacion-formulacion",
+    "palabras": [
+      "etapas del ciclo presupuestario",
+      "techos presupuestarios globales, institucionales y de gasto",
+      "catalogos y clasificadores presupuestarios"
+    ]
+  },
+  {
+    "id": "fp-aprobacion",
+    "palabras": [
+      "presupuestos prorrogados",
+      "el ejercicio presupuestario o ano fiscal se inicia el primer dia de enero"
+    ]
+  },
+  {
+    "id": "fp-ejecucion",
+    "palabras": [
+      "sin la emision de la respectiva certificacion presupuestaria",
+      "establecimiento de compromisos",
+      "la obligacion se genera y produce afectacion presupuestaria definitiva"
+    ]
+  },
+  {
+    "id": "fp-evaluacion-clausura",
+    "palabras": [
+      "clausura del presupuesto",
+      "se tendran por anulados",
+      "hasta el 1 de marzo del ano siguiente"
+    ]
+  },
+  {
+    "id": "fp-regla-permanentes",
+    "palabras": [
+      "los egresos permanentes se financiaran unica y exclusivamente con ingresos permanentes"
+    ]
+  },
+  {
+    "id": "fp-regla-deuda",
+    "palabras": [
+      "no podra superar el equivalente al 40% del pib",
+      "calculado como la diferencia entre desembolsos y amortizaciones"
+    ]
+  },
+  {
+    "id": "fp-limites-gad",
+    "palabras": [
+      "no debera ser superior al doscientos por ciento (200%)",
+      "veinte y cinco por ciento (25%) de los ingresos totales anuales",
+      "a 300% y 40% respectivamente"
+    ]
+  },
+  {
+    "id": "fp-regla-gasto",
+    "palabras": [
+      "regla de gasto primario computable",
+      "multiplicacion del gasto computable del ejercicio anterior con el crecimiento de la economia de largo plazo",
+      "hasta el 1% del pib por ano"
+    ]
+  },
+  {
+    "id": "fp-destino-deuda",
+    "palabras": [
+      "destino del endeudamiento",
+      "se prohibe el endeudamiento para gasto permanente"
+    ]
+  },
+  {
+    "id": "fp-contabilidad-gubernamental",
+    "palabras": [
+      "sistema unico de contabilidad",
+      "contabilizacion inmediata",
+      "principio contable del devenga"
+    ]
+  },
+  {
+    "id": "fp-obligaciones-atrasos",
+    "palabras": [
+      "obligaciones pendientes de pago.- son aquellas que quedaren pendientes de pago al 31 de diciembre",
+      "noventa (90) dias desde la fecha de devengamiento"
+    ]
+  },
+  {
+    "id": "fp-tesoreria",
+    "palabras": [
+      "cuenta unica del tesoro nacional",
+      "sistema unico de cuentas",
+      "excedentes de caja"
+    ]
+  },
+  {
+    "id": "fp-plan-nacional",
+    "palabras": [
+      "el plan nacional de desarrollo es la maxima directriz politica y administrativa",
+      "obligatoria para el sector publico e indicativa para los demas sectores"
+    ]
+  },
+  {
+    "id": "fp-inversion-publica",
+    "palabras": [
+      "se entendera por inversion publica al conjunto de egresos",
+      "evaluacion de viabilidad y los estudios que los sustenten"
+    ]
+  },
+  {
+    "id": "fp-banco-proyectos",
+    "palabras": [
+      "plan anual de inversiones",
+      "el banco de proyectos es el compendio oficial",
+      "no implica la asignacion o transferencia de recursos publicos"
+    ]
+  },
+  {
+    "id": "fp-participacion-transparencia",
+    "palabras": [
+      "presupuestos participativos",
+      "libre acceso a toda la informacion presupuestaria y financiera"
+    ]
   }
 ]

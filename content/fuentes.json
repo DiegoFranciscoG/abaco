@@ -565,5 +565,14 @@
     "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
     "licencia": "Obra del Gobierno de EE. UU. (dominio público); se cita y enlaza",
     "fecha_consulta": "2026-10-28"
+  },
+  {
+    "id": "coplafip",
+    "titulo": "Código Orgánico de Planificación y Finanzas Públicas (2.º Supl. R.O. 306, 22-10-2010; texto con la última reforma del 6.º Supl. R.O. 142, 13-10-2025)",
+    "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por el Ministerio de Economía y Finanzas",
+    "tipo": "ley",
+    "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-28"
   }
 ]

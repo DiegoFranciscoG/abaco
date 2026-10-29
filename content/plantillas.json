@@ -1843,5 +1843,85 @@
       "seccion": "16.2 Insurance and Imperfect Information"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "reglas-fiscales",
+    "nombre": "Verificación de reglas fiscales",
+    "descripcion": "Calcula la relación deuda/PIB, el endeudamiento neto, los indicadores de deuda de un GAD y el límite de incremento del gasto primario computable, con su verificación frente a los límites del COPLAFIP.",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "celdas": {
+      "A1": "Deuda consolidada (millones USD)",
+      "B1": 57000,
+      "A2": "PIB (millones USD)",
+      "B2": 120000,
+      "A3": "Deuda/PIB (%)",
+      "B3": "=B1/B2*100",
+      "A4": "¿Cumple el 40 %?",
+      "B4": "=IF(B3<=40,\"Sí\",\"No\")",
+      "A6": "Desembolsos (millones USD)",
+      "B6": 6500,
+      "A7": "Amortizaciones (millones USD)",
+      "B7": 4200,
+      "A8": "Endeudamiento neto",
+      "B8": "=B6-B7",
+      "A10": "Deuda del GAD (millones USD)",
+      "B10": 36,
+      "A11": "Servicio anual de deuda del GAD",
+      "B11": 6,
+      "A12": "Ingresos totales sin endeudamiento",
+      "B12": 20,
+      "A13": "Deuda / ingresos (%)",
+      "B13": "=B10/B12*100",
+      "A14": "Servicio / ingresos (%)",
+      "B14": "=B11/B12*100",
+      "A16": "Gasto computable anterior (millones USD)",
+      "B16": 20000,
+      "A17": "Crecimiento nominal de largo plazo",
+      "B17": 0.045,
+      "A18": "Incremento máximo",
+      "B18": "=B16*B17"
+    },
+    "formatos": {
+      "B3": "numero",
+      "B8": "numero",
+      "B13": "numero",
+      "B14": "numero",
+      "B17": "porcentaje",
+      "B18": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B3",
+        "esperado": 47.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B8",
+        "esperado": 2300,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B13",
+        "esperado": 180,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 30,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B18",
+        "esperado": 900,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

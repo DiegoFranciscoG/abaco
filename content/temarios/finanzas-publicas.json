@@ -1,0 +1,459 @@
+{
+  "materia": "finanzas-publicas",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "fp-sinfip",
+      "nombre": "El Sistema Nacional de Finanzas Públicas",
+      "orden": 1,
+      "descripcion": "SINFIP y sus principios, clasificación del sector público, Presupuesto General del Estado, ingresos y egresos permanentes y gasto tributario.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fp-sinfip-principios",
+          "nombre": "SINFIP: qué es, quién lo rige y sus principios",
+          "explicacion": "El Sistema Nacional de Finanzas Públicas (SINFIP) comprende las normas, políticas, instrumentos, procesos, registros y operaciones que las entidades del sector público deben realizar para gestionar de forma programada los ingresos, gastos y financiamiento públicos, con sujeción al Plan Nacional de Desarrollo. Su rectoría corresponde al ministerio a cargo de las finanzas públicas. Sus principios son legalidad, universalidad, unidad, plurianualidad, integralidad, oportunidad, efectividad, sostenibilidad, centralización normativa, desconcentración y descentralización operativas, participación, flexibilidad y transparencia.",
+          "ejemplo": "Un hospital público, un ministerio y una universidad pública registran sus ingresos y gastos con las mismas normas del SINFIP, aunque cada uno gestione su propio presupuesto.",
+          "puntos_clave": [
+            "Gestión programada de ingresos, gastos y financiamiento.",
+            "Rectoría del ministerio de finanzas.",
+            "Catorce principios, entre ellos plurianualidad y transparencia."
+          ],
+          "errores_frecuentes": [
+            "Creer que el SINFIP solo abarca al gobierno central.",
+            "Confundir el SINFIP con el sistema tributario."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 70, 71 y 73"
+          }
+        },
+        {
+          "id": "fp-sector-pge",
+          "nombre": "Sector público y Presupuesto General del Estado",
+          "explicacion": "El COPLAFIP clasifica el sector público en financiero, cuya actividad principal es monetaria o de intermediación financiera, y no financiero, que incluye al gobierno central, las otras funciones del Estado, los gobiernos autónomos descentralizados (GAD) y las empresas públicas, entre otros. El Presupuesto General del Estado es el instrumento para determinar y gestionar los ingresos y egresos de las entidades de las funciones del Estado; no incluye los de la seguridad social, la banca pública, las empresas públicas ni los GAD, que tienen presupuestos propios. Todo flujo de recursos públicos debe constar en alguno de esos presupuestos.",
+          "ejemplo": "El presupuesto de un ministerio forma parte del Presupuesto General del Estado; el de un municipio o el de una empresa pública eléctrica no, aunque también son públicos.",
+          "puntos_clave": [
+            "Sector público financiero y no financiero.",
+            "PGE: funciones del Estado.",
+            "Fuera del PGE: seguridad social, banca pública, empresas públicas y GAD."
+          ],
+          "errores_frecuentes": [
+            "Incluir el presupuesto de los municipios en el PGE.",
+            "Creer que hay recursos públicos fuera de todo presupuesto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Clasificación del sector público y arts. 77 y 108"
+          }
+        },
+        {
+          "id": "fp-ingresos-egresos",
+          "nombre": "Ingresos y egresos permanentes y no permanentes",
+          "explicacion": "Los ingresos permanentes son los que el Estado recibe de forma continua, periódica y previsible; no disminuyen la riqueza nacional, por lo que no pueden provenir de la venta de activos públicos ni del endeudamiento. Los no permanentes se reciben de manera temporal por una situación específica, excepcional o extraordinaria. Del lado del gasto, los egresos permanentes son operativos, se repiten y permiten la provisión continua de bienes y servicios públicos, sin generar directamente activos; los no permanentes son temporales y pueden generar directamente acumulación de capital o activos públicos.",
+          "ejemplo": "Los impuestos son ingresos permanentes y los sueldos de los docentes, egresos permanentes; un crédito externo es un ingreso no permanente y la construcción de un puente, un egreso no permanente.",
+          "puntos_clave": [
+            "Permanentes: continuos y previsibles.",
+            "La deuda y la venta de activos son no permanentes.",
+            "Egresos permanentes: operativos y repetitivos."
+          ],
+          "errores_frecuentes": [
+            "Clasificar un préstamo como ingreso permanente.",
+            "Tratar la inversión en obras como egreso permanente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 78-79"
+          }
+        },
+        {
+          "id": "fp-gasto-tributario",
+          "nombre": "Gasto tributario",
+          "explicacion": "El gasto tributario son los recursos que el Estado, en todos los niveles de gobierno, deja de percibir por deducciones, exenciones y otros mecanismos aplicados a tributos directos o indirectos. Las administraciones tributarias deben estimarlo y entregar su proyección al ente rector de las finanzas públicas para el período de la programación fiscal plurianual, y se presenta como anexo de la proforma del Presupuesto General del Estado. Para crear nuevos gastos tributarios se debe contar con la proyección de su costo.",
+          "ejemplo": "Si una ley exonera del impuesto a la renta a las nuevas inversiones en una provincia, lo que el Estado deja de recaudar por esa exoneración es gasto tributario.",
+          "puntos_clave": [
+            "Ingresos que se dejan de percibir.",
+            "Deducciones y exenciones.",
+            "Anexo de la proforma presupuestaria."
+          ],
+          "errores_frecuentes": [
+            "Pensar que un incentivo tributario no cuesta nada.",
+            "Confundir gasto tributario con gasto corriente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Art. 94"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fp-ciclo",
+      "nombre": "El ciclo presupuestario",
+      "orden": 2,
+      "descripcion": "Programación y formulación, aprobación y presupuestos prorrogados, ejecución con certificación, compromiso y obligación, evaluación, clausura y liquidación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fp-programacion-formulacion",
+          "nombre": "Etapas del ciclo: programación y formulación",
+          "explicacion": "El ciclo presupuestario es obligatorio para todo el sector público y tiene seis etapas: programación, formulación, aprobación, ejecución, evaluación y seguimiento, y clausura y liquidación. En la programación, con base en los objetivos de la planificación y en el escenario fiscal, se definen los programas, proyectos y actividades con sus metas, recursos, resultados esperados y plazos; para el Presupuesto General del Estado, el ente rector emite techos presupuestarios globales, institucionales y de gasto. En la formulación se elaboran las proformas con una presentación estandarizada según los catálogos y clasificadores presupuestarios.",
+          "ejemplo": "Un ministerio recibe su techo de gasto, programa los proyectos que caben en él con sus metas y luego formula su proforma con los clasificadores oficiales.",
+          "puntos_clave": [
+            "Seis etapas obligatorias.",
+            "Programación con techos presupuestarios.",
+            "Formulación con clasificadores estandarizados."
+          ],
+          "errores_frecuentes": [
+            "Formular el presupuesto sin metas ni resultados.",
+            "Ignorar los techos fijados por el ente rector."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 96-98"
+          }
+        },
+        {
+          "id": "fp-aprobacion",
+          "nombre": "Aprobación, ejercicio fiscal y presupuestos prorrogados",
+          "explicacion": "El Presupuesto General del Estado se aprueba en la forma y plazos que fija la Constitución; las entidades que no forman parte de él deben aprobar su presupuesto hasta el último día del año anterior. El ejercicio presupuestario o año fiscal empieza el 1 de enero y termina el 31 de diciembre. En el año en que se posesiona el presidente, hasta que se apruebe el nuevo presupuesto rige el presupuesto codificado al 31 de diciembre del año anterior, con reglas propias para los GAD y los sistemas de educación.",
+          "ejemplo": "En un año de cambio de gobierno, mientras la Asamblea aprueba la nueva proforma, los ministerios siguen operando con el presupuesto codificado al cierre del año anterior.",
+          "puntos_clave": [
+            "Aprobación según la Constitución.",
+            "Año fiscal: 1 de enero a 31 de diciembre.",
+            "Presupuesto prorrogado en años de posesión."
+          ],
+          "errores_frecuentes": [
+            "Creer que sin presupuesto aprobado el Estado deja de pagar.",
+            "Confundir presupuesto inicial con presupuesto codificado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 106, 107 y 110"
+          }
+        },
+        {
+          "id": "fp-ejecucion",
+          "nombre": "Ejecución: certificación, compromiso y obligación",
+          "explicacion": "La ejecución busca usar de forma óptima el talento humano y los recursos asignados para obtener los bienes, servicios y obras previstos. Ninguna entidad puede contraer compromisos, celebrar contratos ni contraer obligaciones sin la certificación presupuestaria. El compromiso nace cuando la autoridad, mediante acto administrativo expreso, decide realizar el gasto, y subsiste hasta que se reciban las obras, bienes o servicios. La obligación produce la afectación presupuestaria definitiva cuando se reciben de terceros las obras, bienes o servicios, o en pagos excepcionales sin contraprestación.",
+          "ejemplo": "Antes de comprar computadoras, la unidad financiera emite la certificación presupuestaria; al firmar el contrato se compromete el gasto, y al recibir los equipos se genera la obligación de pago.",
+          "puntos_clave": [
+            "Certificación presupuestaria previa.",
+            "Compromiso por acto administrativo.",
+            "Obligación al recibir bienes, obras o servicios."
+          ],
+          "errores_frecuentes": [
+            "Firmar contratos sin certificación presupuestaria.",
+            "Registrar la obligación al firmar el contrato y no al recibir el bien."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 113, 115, 116 y 117"
+          }
+        },
+        {
+          "id": "fp-evaluacion-clausura",
+          "nombre": "Evaluación, clausura y liquidación del presupuesto",
+          "explicacion": "La evaluación mide los resultados físicos y financieros, analiza las variaciones y sus causas y recomienda correctivos; es responsabilidad del titular de cada entidad y sus informes se difunden a la ciudadanía. Los presupuestos anuales se clausuran el 31 de diciembre: después no se pueden contraer compromisos ni obligaciones que afecten al presupuesto clausurado, y los compromisos que no se hayan convertido en obligaciones se anulan en lo no devengado. La liquidación del Presupuesto General del Estado se expide hasta el 1 de marzo del año siguiente.",
+          "ejemplo": "Un compromiso por una consultoría que al 31 de diciembre no se recibió queda anulado en la parte no devengada y, si aún se necesita, debe incluirse en el presupuesto del nuevo año.",
+          "puntos_clave": [
+            "Evaluación física y financiera.",
+            "Clausura al 31 de diciembre.",
+            "Liquidación hasta el 1 de marzo."
+          ],
+          "errores_frecuentes": [
+            "Registrar gastos nuevos en un presupuesto ya clausurado.",
+            "Creer que los compromisos anuales pasan automáticamente al año siguiente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 119, 121 y 122"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fp-reglas",
+      "nombre": "Reglas fiscales",
+      "orden": 3,
+      "descripcion": "Financiamiento de egresos permanentes, regla de deuda del 40 % del PIB, límites de endeudamiento de los GAD y regla de gasto primario computable.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "fp-regla-permanentes",
+          "nombre": "Regla de ingresos y egresos permanentes",
+          "explicacion": "Para conducir las finanzas públicas de forma sostenible y responsable, el COPLAFIP dispone que los egresos permanentes se financien única y exclusivamente con ingresos permanentes; los ingresos permanentes también pueden financiar egresos no permanentes. Solo en las situaciones excepcionales que prevé la Constitución, para salud, educación y justicia y previa calificación de la autoridad competente, los egresos permanentes pueden financiarse con ingresos no permanentes.",
+          "ejemplo": "Un gobierno no puede pagar el aumento de sueldos de toda la burocracia con un préstamo externo, porque usaría un ingreso no permanente para un egreso permanente.",
+          "puntos_clave": [
+            "Egresos permanentes con ingresos permanentes.",
+            "Ingresos permanentes pueden financiar inversión.",
+            "Excepciones constitucionales: salud, educación y justicia."
+          ],
+          "errores_frecuentes": [
+            "Financiar gasto corriente con deuda.",
+            "Creer que la regla prohíbe usar impuestos para obras."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Reglas fiscales: ingreso permanente y egreso permanente"
+          }
+        },
+        {
+          "id": "fp-regla-deuda",
+          "nombre": "Regla de deuda: 40 % del PIB",
+          "explicacion": "El saldo consolidado de la deuda pública y otras obligaciones del sector público no financiero y la seguridad social no puede superar el equivalente al 40 % del PIB, y la política fiscal debe buscar reducirlo y estabilizarlo en ese nivel. Para la regla cuentan, entre otros, el endeudamiento público, los títulos con vencimiento menor a 360 días, los anticipos en contratos de venta de productos, los pasivos de convenios de liquidez y las obligaciones pendientes de pago del ejercicio. El indicador es consolidado: se descuentan las deudas entre entidades públicas. La proforma del Presupuesto General del Estado incluye el endeudamiento neto anual, es decir, desembolsos menos amortizaciones.",
+          "ejemplo": "Si un país hipotético tiene deuda consolidada de USD 57.000 millones y un PIB de USD 120.000 millones, su relación es 47,5 %, por encima del 40 %; si en el año recibe 6.500 millones en desembolsos y paga 4.200 en amortizaciones, su endeudamiento neto es 2.300 millones.",
+          "puntos_clave": [
+            "Límite: 40 % del PIB.",
+            "Incluye deuda y otras obligaciones.",
+            "Endeudamiento neto = desembolsos − amortizaciones."
+          ],
+          "errores_frecuentes": [
+            "Contar solo la deuda externa.",
+            "Sumar deudas entre entidades públicas sin consolidar."
+          ],
+          "formulas": [
+            "ratio-deuda-pib",
+            "endeudamiento-neto"
+          ],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Reglas fiscales: regla de deuda y otras obligaciones de pago"
+          }
+        },
+        {
+          "id": "fp-limites-gad",
+          "nombre": "Límites de endeudamiento de los gobiernos autónomos descentralizados",
+          "explicacion": "Cada GAD debe cumplir dos límites: la relación entre el saldo total de su deuda y otras obligaciones y sus ingresos totales anuales sin endeudamiento no debe superar el 200 %, y el servicio anual de la deuda, con amortización e intereses, no debe superar el 25 % de esos ingresos. Si el endeudamiento se destina a agua potable, alcantarillado y manejo de desechos sólidos, los límites pueden subir a 300 % y 40 %. El GAD que los sobrepase debe someterse a un plan de fortalecimiento y sostenibilidad fiscal, y se prohíbe concederle créditos que los superen.",
+          "ejemplo": "Un municipio con deuda de USD 36 millones e ingresos de USD 20 millones está en 180 % (cumple), pero si paga USD 6 millones al año de servicio de deuda está en 30 % (no cumple el 25 %).",
+          "puntos_clave": [
+            "Deuda ÷ ingresos ≤ 200 %.",
+            "Servicio de deuda ÷ ingresos ≤ 25 %.",
+            "300 % y 40 % para agua y saneamiento."
+          ],
+          "errores_frecuentes": [
+            "Incluir el propio endeudamiento en los ingresos totales.",
+            "Revisar solo uno de los dos límites."
+          ],
+          "formulas": [
+            "indicador-deuda-gad",
+            "indicador-servicio-deuda-gad"
+          ],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+          }
+        },
+        {
+          "id": "fp-regla-gasto",
+          "nombre": "Regla de gasto primario computable",
+          "explicacion": "El gasto computable del gobierno central es el gasto primario, sin intereses, excluidas las preasignaciones constitucionales. El ente rector fija un límite nominal anual a su aumento, que se calcula multiplicando el gasto computable del ejercicio anterior por el crecimiento nominal de largo plazo de la economía, fijado para cada período del Plan Nacional de Desarrollo con la metodología del Banco Central. Si se proyecta un crecimiento al menos 2 puntos menor que el de largo plazo y una brecha negativa del producto, se puede añadir un espacio contracíclico de hasta 1 % del PIB por año, por un máximo de dos años, que debe compensarse en los dos siguientes.",
+          "ejemplo": "Con un gasto computable de USD 20.000 millones y un crecimiento de largo plazo de 4,5 %, el gasto puede aumentar como máximo 20.000 × 0,045 = USD 900 millones.",
+          "puntos_clave": [
+            "Gasto primario sin preasignaciones.",
+            "Límite = gasto anterior × crecimiento de largo plazo.",
+            "Espacio contracíclico de hasta 1 % del PIB."
+          ],
+          "errores_frecuentes": [
+            "Incluir los intereses de la deuda en el gasto primario.",
+            "Usar el crecimiento de un solo año en lugar del de largo plazo."
+          ],
+          "formulas": [
+            "limite-incremento-gasto"
+          ],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Reglas fiscales: regla de gasto primario computable"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fp-deuda-contabilidad",
+      "nombre": "Endeudamiento, contabilidad gubernamental y tesorería",
+      "orden": 4,
+      "descripcion": "Destino del endeudamiento, contabilidad gubernamental y devengado, obligaciones pendientes y atrasos, cuenta única del tesoro y acceso a la información.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "fp-destino-deuda",
+          "nombre": "Destino del endeudamiento público",
+          "explicacion": "El componente de endeudamiento público comprende normar, programar, negociar, contratar, registrar, controlar y contabilizar las operaciones de deuda. Las entidades públicas solo pueden endeudarse para financiar programas, proyectos de inversión en infraestructura o con capacidad financiera de pago, y el refinanciamiento o la renegociación de deuda en condiciones más beneficiosas para el país. Se prohíbe el endeudamiento para gasto permanente, salvo las excepciones constitucionales para salud, educación y justicia.",
+          "ejemplo": "Un municipio puede endeudarse para construir un sistema de agua potable, pero no para pagar los sueldos de su personal.",
+          "puntos_clave": [
+            "Deuda para programas e inversión.",
+            "Refinanciamiento en mejores condiciones.",
+            "Prohibido para gasto permanente."
+          ],
+          "errores_frecuentes": [
+            "Usar crédito para cubrir gasto corriente.",
+            "Endeudarse para proyectos sin capacidad de pago."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 123 y 126"
+          }
+        },
+        {
+          "id": "fp-contabilidad-gubernamental",
+          "nombre": "Contabilidad gubernamental y devengado",
+          "explicacion": "La contabilidad gubernamental es el registro sistemático, cronológico y secuencial de las operaciones patrimoniales y presupuestarias del sector público no financiero, desde la entrada original hasta los estados financieros, y su finalidad es mantener en cada entidad un sistema único de contabilidad que integre operaciones patrimoniales, presupuestarias y de costos. Los hechos económicos se contabilizan en la fecha en que ocurren, sin anticipar ni postergar registros, y los ingresos y gastos presupuestarios se registran según el principio del devengado: ingresos son los derechos de cobro y gastos, las obligaciones por bienes y servicios recibidos. El titular de la unidad financiera legaliza con su firma los estados financieros.",
+          "ejemplo": "Una entidad recibe en diciembre servicios de mantenimiento que pagará en enero: registra el gasto en diciembre, cuando se devengó, y no cuando paga.",
+          "puntos_clave": [
+            "Sistema único de contabilidad.",
+            "Contabilización inmediata.",
+            "Principio del devengado."
+          ],
+          "errores_frecuentes": [
+            "Registrar el gasto cuando se paga y no cuando se devenga.",
+            "Postergar registros al mes siguiente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 148, 152, 153 y 154"
+          }
+        },
+        {
+          "id": "fp-obligaciones-atrasos",
+          "nombre": "Obligaciones pendientes de pago y atrasos",
+          "explicacion": "Las obligaciones pendientes de pago son las que quedan sin pagar al 31 de diciembre de cada año. Los atrasos son obligaciones financieras no pagadas hasta su fecha de vencimiento, que debe fijarse por ley, acto administrativo o contrato; si no se fijó, el vencimiento es de noventa días desde la fecha de devengamiento. Estas obligaciones también cuentan para la regla de deuda y otras obligaciones de pago.",
+          "ejemplo": "Un proveedor entregó medicinas el 1 de septiembre sin plazo de pago pactado: si al 30 de noviembre no ha cobrado, la deuda con él ya es un atraso.",
+          "puntos_clave": [
+            "Pendientes de pago al 31 de diciembre.",
+            "Atraso: impago al vencimiento.",
+            "Vencimiento supletorio de 90 días."
+          ],
+          "errores_frecuentes": [
+            "Ignorar los atrasos al medir la deuda.",
+            "Contar el plazo desde la factura y no desde el devengamiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Art. 155 y artículo sobre atrasos"
+          }
+        },
+        {
+          "id": "fp-tesoreria",
+          "nombre": "Tesorería y Cuenta Única del Tesoro Nacional",
+          "explicacion": "El componente de tesorería regula la obtención, depósito y colocación de los recursos financieros públicos y su uso según los presupuestos y la liquidez de la caja fiscal, a través de la Cuenta Única del Tesoro Nacional, abierta en el Banco Central del Ecuador como depositario oficial. El sistema único de cuentas incluye además las subcuentas de los GAD y las cuentas de la seguridad social, las empresas públicas y la banca pública; los fondos de la seguridad social son propios y distintos del fisco. Los excedentes de caja de las entidades del Presupuesto General del Estado al cierre del año se convierten en ingresos del ejercicio siguiente.",
+          "ejemplo": "Cuando una universidad pública cobra un servicio, el dinero entra a una subcuenta del sistema único de cuentas y su gasto queda sujeto al presupuesto aprobado.",
+          "puntos_clave": [
+            "Cuenta Única del Tesoro en el BCE.",
+            "Sistema único de cuentas.",
+            "Excedentes de caja al año siguiente."
+          ],
+          "errores_frecuentes": [
+            "Creer que cada entidad maneja cuentas bancarias privadas libremente.",
+            "Pensar que el fisco puede disponer de los fondos de la seguridad social."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 160-163 y 167"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fp-planificacion",
+      "nombre": "Planificación e inversión pública",
+      "orden": 5,
+      "descripcion": "Planificación del desarrollo y Plan Nacional de Desarrollo, inversión pública y su viabilidad, priorización y banco de proyectos, presupuestos participativos y transparencia.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "fp-plan-nacional",
+          "nombre": "Planificación del desarrollo y Plan Nacional de Desarrollo",
+          "explicacion": "La planificación del desarrollo se orienta al cumplimiento de los derechos constitucionales y del régimen de desarrollo, con enfoques de equidad, plurinacionalidad e interculturalidad. La planificación nacional es competencia del gobierno central y se ejerce a través del Plan Nacional de Desarrollo, la máxima directriz política y administrativa para diseñar y aplicar la política pública. Su observancia es obligatoria para el sector público e indicativa para los demás sectores, y a él se sujetan los programas y proyectos públicos, el endeudamiento, la cooperación internacional y el presupuesto.",
+          "ejemplo": "Si el Plan Nacional de Desarrollo prioriza reducir la desnutrición infantil, los ministerios deben reflejar esa meta en sus programas y presupuestos.",
+          "puntos_clave": [
+            "Planificación orientada a derechos.",
+            "Plan Nacional de Desarrollo: máxima directriz.",
+            "Obligatorio para el sector público, indicativo para el resto."
+          ],
+          "errores_frecuentes": [
+            "Creer que el plan obliga a las empresas privadas.",
+            "Formular presupuestos desconectados del plan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 9, 10 y 34"
+          }
+        },
+        {
+          "id": "fp-inversion-publica",
+          "nombre": "Inversión pública y viabilidad de proyectos",
+          "explicacion": "Para el COPLAFIP, la inversión pública es el conjunto de egresos y transacciones con recursos públicos para mantener o incrementar la riqueza y las capacidades sociales y del Estado, con el fin de cumplir los objetivos de la planificación. Los ejecutores de programas y proyectos de inversión deben contar con la evaluación de viabilidad y los estudios que los sustenten. Los planes de inversión son la expresión técnica y financiera del conjunto de programas y proyectos priorizados, programados y territorializados.",
+          "ejemplo": "Antes de construir un hospital, el ministerio debe tener los estudios de demanda, de ingeniería y la evaluación de viabilidad que justifiquen la obra.",
+          "puntos_clave": [
+            "Mantener o incrementar riqueza y capacidades.",
+            "Evaluación de viabilidad obligatoria.",
+            "Planes de inversión priorizados y territorializados."
+          ],
+          "errores_frecuentes": [
+            "Iniciar obras sin estudios de viabilidad.",
+            "Confundir inversión pública con cualquier gasto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 55-57"
+          }
+        },
+        {
+          "id": "fp-banco-proyectos",
+          "nombre": "Priorización y banco de proyectos",
+          "explicacion": "Son prioritarios los programas y proyectos que el ente rector de la planificación incluye en el plan anual de inversiones del Presupuesto General del Estado, sujeto al Plan Nacional de Desarrollo; ese plan debe cumplir las reglas fiscales y respetar los techos de gasto. El banco de proyectos es el compendio oficial de programas y proyectos presentados para ser elegibles a financiamiento público y sirve para su seguimiento y evaluación. Registrar un proyecto no implica asignarle recursos, pero ningún proyecto puede recibir financiamiento público si no está registrado.",
+          "ejemplo": "Un GAD provincial que busca cofinanciamiento estatal para una vía primero registra el proyecto en el banco de proyectos; luego debe ser priorizado para recibir fondos.",
+          "puntos_clave": [
+            "Plan anual de inversiones.",
+            "Banco de proyectos como registro oficial.",
+            "Sin registro no hay financiamiento público."
+          ],
+          "errores_frecuentes": [
+            "Creer que registrar un proyecto garantiza su financiamiento.",
+            "Priorizar proyectos fuera del plan."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 60-61"
+          }
+        },
+        {
+          "id": "fp-participacion-transparencia",
+          "nombre": "Presupuestos participativos y acceso a la información",
+          "explicacion": "Cada nivel de gobierno define los procedimientos para formular presupuestos participativos, en el marco de sus competencias y de los planes de desarrollo y ordenamiento territorial. El Estado garantiza a la ciudadanía el libre acceso a toda la información presupuestaria y financiera de las entidades públicas, salvo los planes y estrategias de negocio de las empresas públicas y la banca pública, y el ente rector debe mantener un sistema de información oficial de amplia difusión que sirva de base para el control legislativo y ciudadano.",
+          "ejemplo": "Una parroquia rural convoca a sus comunidades para decidir qué obras se priorizan en su presupuesto, y luego publica cuánto ejecutó de cada una.",
+          "puntos_clave": [
+            "Presupuestos participativos por nivel de gobierno.",
+            "Libre acceso a la información presupuestaria.",
+            "Sistema oficial de información para el control."
+          ],
+          "errores_frecuentes": [
+            "Creer que la información presupuestaria es reservada.",
+            "Hacer participación sin vincularla al plan territorial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "seccion": "Arts. 8, 174 y 175"
+          }
+        }
+      ]
+    }
+  ]
+}

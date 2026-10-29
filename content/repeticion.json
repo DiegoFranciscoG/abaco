@@ -152,6 +152,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Finanzas Públicas",
+    "carreras": 4,
+    "planes": 7,
+    "ciclo_habitual": 6,
+    "materia": "finanzas-publicas",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Planes de Marketing",
     "carreras": 4,
     "planes": 7,
@@ -269,14 +277,6 @@
     "planes": 3,
     "ciclo_habitual": 4,
     "materia": "producto-marca",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Finanzas Públicas",
-    "carreras": 2,
-    "planes": 3,
-    "ciclo_habitual": 8,
-    "materia": null,
     "tipo": "materia"
   },
   {

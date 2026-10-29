@@ -8476,5 +8476,314 @@
     "notas": [],
     "actualizado_en": "2026-10-28",
     "estado": "verificada"
+  },
+  {
+    "id": "ratio-deuda-pib",
+    "nombre": "Relación deuda pública / PIB",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Saldo consolidado de la deuda pública y otras obligaciones como porcentaje del PIB; el COPLAFIP fija como regla que no supere el 40 %.",
+    "latex": "RD = \\frac{D}{PIB} \\times 100",
+    "variables": [
+      {
+        "simbolo": "D",
+        "nombre": "D",
+        "significado": "Saldo consolidado de deuda pública y otras obligaciones",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "PIB",
+        "nombre": "PIB",
+        "significado": "Producto interno bruto",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "D / PIB * 100"
+    },
+    "excel": {
+      "es": "=D/PIB*100",
+      "en": "=D/PIB*100"
+    },
+    "ejemplo": {
+      "enunciado": "Un país hipotético tiene un saldo consolidado de deuda y otras obligaciones de USD 57.000 millones y un PIB de USD 120.000 millones. ¿Cuál es su relación deuda/PIB y cumple la regla del 40 %?",
+      "entradas": {
+        "D": 57000,
+        "PIB": 120000
+      },
+      "pasos": [
+        "RD = 57.000 ÷ 120.000 × 100",
+        "RD = 47,5 %",
+        "47,5 % > 40 %: está sobre la regla y la política fiscal debe reducirla"
+      ],
+      "resultado": 47.5,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=57000/120000*100",
+      "excel_en": "=57000/120000*100"
+    },
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de deuda y otras obligaciones de pago"
+    },
+    "supuestos": [
+      "Cifras hipotéticas; el cálculo oficial es consolidado y lo detalla el reglamento del código."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "endeudamiento-neto",
+    "nombre": "Endeudamiento neto",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Diferencia entre los desembolsos y las amortizaciones de deuda pública del año; se incluye en la proforma del Presupuesto General del Estado.",
+    "latex": "EN = Des - Am",
+    "variables": [
+      {
+        "simbolo": "Des",
+        "nombre": "Des",
+        "significado": "Desembolsos de deuda recibidos en el año",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "Am",
+        "nombre": "Am",
+        "significado": "Amortizaciones de deuda pagadas en el año",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Des - Am"
+    },
+    "excel": {
+      "es": "=Des-Am",
+      "en": "=Des-Am"
+    },
+    "ejemplo": {
+      "enunciado": "En un año, el Estado recibe desembolsos de deuda por USD 6.500 millones y paga amortizaciones por USD 4.200 millones. ¿Cuál es su endeudamiento neto?",
+      "entradas": {
+        "Des": 6500,
+        "Am": 4200
+      },
+      "pasos": [
+        "EN = 6.500 − 4.200",
+        "EN = 2.300 millones"
+      ],
+      "resultado": 2300,
+      "unidad": "millones de USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=6500-4200",
+      "excel_en": "=6500-4200"
+    },
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de deuda y otras obligaciones de pago"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "indicador-deuda-gad",
+    "nombre": "Deuda de un GAD sobre sus ingresos totales",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Saldo total de la deuda pública y otras obligaciones de un gobierno autónomo descentralizado como porcentaje de sus ingresos totales anuales sin endeudamiento; el límite general es 200 %.",
+    "latex": "ID = \\frac{SD}{IT} \\times 100",
+    "variables": [
+      {
+        "simbolo": "SD",
+        "nombre": "SD",
+        "significado": "Saldo total de deuda pública y otras obligaciones del GAD",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IT",
+        "nombre": "IT",
+        "significado": "Ingresos totales anuales sin incluir endeudamiento",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SD / IT * 100"
+    },
+    "excel": {
+      "es": "=SD/IT*100",
+      "en": "=SD/IT*100"
+    },
+    "ejemplo": {
+      "enunciado": "Un municipio tiene un saldo de deuda de USD 36 millones e ingresos totales sin endeudamiento de USD 20 millones. ¿Cuál es su indicador y cumple el límite general?",
+      "entradas": {
+        "SD": 36,
+        "IT": 20
+      },
+      "pasos": [
+        "ID = 36 ÷ 20 × 100",
+        "ID = 180 %",
+        "180 % ≤ 200 %: cumple el límite general"
+      ],
+      "resultado": 180,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=36/20*100",
+      "excel_en": "=36/20*100"
+    },
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+    },
+    "supuestos": [],
+    "notas": [
+      "Para proyectos de agua potable, alcantarillado y desechos sólidos el límite puede subir a 300 %."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "indicador-servicio-deuda-gad",
+    "nombre": "Servicio de la deuda de un GAD sobre sus ingresos totales",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Servicio anual de la deuda (amortización más intereses) de un gobierno autónomo descentralizado como porcentaje de sus ingresos totales sin endeudamiento; el límite general es 25 %.",
+    "latex": "IS = \\frac{SA}{IT} \\times 100",
+    "variables": [
+      {
+        "simbolo": "SA",
+        "nombre": "SA",
+        "significado": "Servicio anual de la deuda (amortización e intereses)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IT",
+        "nombre": "IT",
+        "significado": "Ingresos totales anuales sin incluir endeudamiento",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SA / IT * 100"
+    },
+    "excel": {
+      "es": "=SA/IT*100",
+      "en": "=SA/IT*100"
+    },
+    "ejemplo": {
+      "enunciado": "Ese municipio paga al año USD 6 millones entre amortizaciones e intereses, con ingresos totales sin endeudamiento de USD 20 millones. ¿Cumple el límite general del servicio de la deuda?",
+      "entradas": {
+        "SA": 6,
+        "IT": 20
+      },
+      "pasos": [
+        "IS = 6 ÷ 20 × 100",
+        "IS = 30 %",
+        "30 % > 25 %: supera el límite general y debe someterse a un plan de fortalecimiento"
+      ],
+      "resultado": 30,
+      "unidad": "%",
+      "tolerancia": 0.0001,
+      "excel_es": "=6/20*100",
+      "excel_en": "=6/20*100"
+    },
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: endeudamiento de los gobiernos autónomos descentralizados"
+    },
+    "supuestos": [],
+    "notas": [
+      "Para proyectos de agua potable, alcantarillado y desechos sólidos el límite puede subir a 40 %."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "limite-incremento-gasto",
+    "nombre": "Límite de incremento del gasto primario computable",
+    "categoria": "economia",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Incremento nominal máximo del gasto primario computable: el gasto computable del ejercicio anterior multiplicado por el crecimiento nominal de largo plazo de la economía.",
+    "latex": "\\Delta G_{max} = G_{t-1} \\times g",
+    "variables": [
+      {
+        "simbolo": "G_{t-1}",
+        "nombre": "G0",
+        "significado": "Gasto primario computable del ejercicio anterior",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "g",
+        "nombre": "g",
+        "significado": "Crecimiento nominal de largo plazo de la economía",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "G0 * g"
+    },
+    "excel": {
+      "es": "=G0*g",
+      "en": "=G0*g"
+    },
+    "ejemplo": {
+      "enunciado": "El gasto primario computable del gobierno central fue de USD 20.000 millones y el crecimiento nominal de largo plazo fijado es 4,5 %. ¿Cuánto puede aumentar como máximo el gasto computable?",
+      "entradas": {
+        "G0": 20000,
+        "g": 0.045
+      },
+      "pasos": [
+        "ΔGmax = 20.000 × 0,045",
+        "ΔGmax = 900 millones",
+        "Gasto máximo = 20.900 millones"
+      ],
+      "resultado": 900,
+      "unidad": "millones de USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=20000*0,045",
+      "excel_en": "=20000*0.045"
+    },
+    "fuente": {
+      "ref": "coplafip",
+      "seccion": "Reglas fiscales: regla de gasto primario computable"
+    },
+    "supuestos": [
+      "Cifras hipotéticas; el crecimiento de largo plazo lo fija el Banco Central para cada período del Plan Nacional de Desarrollo."
+    ],
+    "notas": [
+      "El gasto computable excluye las preasignaciones constitucionales."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
   }
 ]
