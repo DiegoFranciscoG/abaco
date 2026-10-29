@@ -280,6 +280,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Presupuestos",
+    "carreras": 2,
+    "planes": 3,
+    "ciclo_habitual": 7,
+    "materia": "presupuestos",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Análisis Multivariante",
     "carreras": 2,
     "planes": 2,

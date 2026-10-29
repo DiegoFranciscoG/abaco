@@ -8785,5 +8785,493 @@
     ],
     "actualizado_en": "2026-10-28",
     "estado": "verificada"
+  },
+  {
+    "id": "unidades-a-producir",
+    "nombre": "Unidades a producir (presupuesto de producción)",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Unidades que deben producirse en el período: ventas presupuestadas más inventario final deseado menos inventario inicial.",
+    "latex": "UP = V + IF_d - II",
+    "variables": [
+      {
+        "simbolo": "V",
+        "nombre": "V",
+        "significado": "Unidades que se espera vender",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "IF_d",
+        "nombre": "IFd",
+        "significado": "Inventario final deseado",
+        "unidad": "unidades"
+      },
+      {
+        "simbolo": "II",
+        "nombre": "II",
+        "significado": "Inventario inicial",
+        "unidad": "unidades"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "V + IFd - II"
+    },
+    "excel": {
+      "es": "=V+IFd-II",
+      "en": "=V+IFd-II"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa espera vender 1.000 unidades en el trimestre, quiere terminar con un inventario igual al 30 % de las ventas del siguiente trimestre (1.000 unidades) y no tiene inventario inicial. ¿Cuántas unidades debe producir?",
+      "entradas": {
+        "V": 1000,
+        "IFd": 300,
+        "II": 0
+      },
+      "pasos": [
+        "IF deseado = 30 % × 1.000 = 300",
+        "Unidades disponibles necesarias = 1.000 + 300 = 1.300",
+        "UP = 1.300 − 0 = 1.300"
+      ],
+      "resultado": 1300,
+      "unidad": "unidades",
+      "tolerancia": 0.0001,
+      "excel_es": "=1000+300-0",
+      "excel_en": "=1000+300-0"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+      "seccion": "7.2 Prepare Operating Budgets"
+    },
+    "supuestos": [],
+    "notas": [
+      "En un comercio se reemplazan las unidades a producir por las unidades a comprar."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "cobros-presupuestados",
+    "nombre": "Cobros presupuestados de ventas a crédito",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Efectivo que se cobrará en un período: el porcentaje de las ventas del período que se cobra en él más el porcentaje de las ventas del período anterior que se cobra después.",
+    "latex": "C_t = a \\times V_t + b \\times V_{t-1}",
+    "variables": [
+      {
+        "simbolo": "V_t",
+        "nombre": "Vt",
+        "significado": "Ventas del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "a",
+        "nombre": "a",
+        "significado": "Porcentaje cobrado en el mismo período",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "V_{t-1}",
+        "nombre": "Va",
+        "significado": "Ventas del período anterior",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "b",
+        "nombre": "b",
+        "significado": "Porcentaje cobrado en el período siguiente",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "a * Vt + b * Va"
+    },
+    "excel": {
+      "es": "=a*Vt+b*Va",
+      "en": "=a*Vt+b*Va"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa cobra el 65 % de sus ventas en el trimestre de la venta y el 30 % en el siguiente; el 5 % restante es incobrable. Si vende USD 70.000 en el primer y en el segundo trimestre, ¿cuánto cobra en el segundo?",
+      "entradas": {
+        "Vt": 70000,
+        "a": 0.65,
+        "Va": 70000,
+        "b": 0.3
+      },
+      "pasos": [
+        "65 % × 70.000 = 45.500",
+        "30 % × 70.000 = 21.000",
+        "Cobros = 66.500"
+      ],
+      "resultado": 66500,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,65*70000+0,3*70000",
+      "excel_en": "=0.65*70000+0.3*70000"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "supuestos": [],
+    "notas": [
+      "La misma estructura sirve para programar los pagos de compras a crédito."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "saldo-caja-presupuestado",
+    "nombre": "Saldo final de caja presupuestado (antes de financiamiento)",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Saldo inicial más cobros menos pagos del período: el excedente o déficit de caja antes de financiamiento.",
+    "latex": "SF = SI + E - S",
+    "variables": [
+      {
+        "simbolo": "SI",
+        "nombre": "SI",
+        "significado": "Saldo inicial de caja",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "E",
+        "nombre": "E",
+        "significado": "Entradas o cobros de efectivo",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "S",
+        "nombre": "S",
+        "significado": "Salidas o pagos de efectivo",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SI + E - S"
+    },
+    "excel": {
+      "es": "=SI+E-S",
+      "en": "=SI+E-S"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa empieza el trimestre con USD 13.000 en caja, espera cobrar USD 50.500 y pagar USD 58.000. ¿Cuál es su saldo final antes de financiamiento?",
+      "entradas": {
+        "SI": 13000,
+        "E": 50500,
+        "S": 58000
+      },
+      "pasos": [
+        "Efectivo disponible = 13.000 + 50.500 = 63.500",
+        "SF = 63.500 − 58.000 = 5.500"
+      ],
+      "resultado": 5500,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=13000+50500-58000",
+      "excel_en": "=13000+50500-58000"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "financiamiento-requerido",
+    "nombre": "Financiamiento requerido para el saldo mínimo de caja",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Monto que debe financiarse para alcanzar el saldo mínimo de caja exigido; si el saldo potencial supera el mínimo, no se necesita financiamiento.",
+    "latex": "F = \\max(S_{min} - SF,\\ 0)",
+    "variables": [
+      {
+        "simbolo": "S_{min}",
+        "nombre": "Smin",
+        "significado": "Saldo mínimo de caja exigido",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "SF",
+        "nombre": "SF",
+        "significado": "Saldo final potencial antes de financiamiento",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "MAX(Smin - SF, 0)"
+    },
+    "excel": {
+      "es": "=MAX(Smin-SF;0)",
+      "en": "=MAX(Smin-SF,0)"
+    },
+    "ejemplo": {
+      "enunciado": "Con un saldo potencial de USD 5.500 y un saldo mínimo exigido de USD 10.000, ¿cuánto debe financiar la empresa?",
+      "entradas": {
+        "Smin": 10000,
+        "SF": 5500
+      },
+      "pasos": [
+        "F = 10.000 − 5.500 = 4.500",
+        "Se toman USD 4.500 de la línea de crédito"
+      ],
+      "resultado": 4500,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=MAX(10000-5500;0)",
+      "excel_en": "=MAX(10000-5500,0)"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "supuestos": [
+      "No se consideran intereses ni montos mínimos de préstamo."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "presupuesto-flexible",
+    "nombre": "Costo según el presupuesto flexible",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Costo presupuestado para el nivel real de actividad: costos fijos más costo variable unitario por las unidades reales.",
+    "latex": "PF = CF + cv \\times Q",
+    "variables": [
+      {
+        "simbolo": "CF",
+        "nombre": "CF",
+        "significado": "Costos fijos del período",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "cv",
+        "nombre": "cv",
+        "significado": "Costo variable por unidad",
+        "unidad": "USD/unidad"
+      },
+      {
+        "simbolo": "Q",
+        "nombre": "Q",
+        "significado": "Unidades reales producidas o vendidas",
+        "unidad": "unidades"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CF + cv * Q"
+    },
+    "excel": {
+      "es": "=CF+cv*Q",
+      "en": "=CF+cv*Q"
+    },
+    "ejemplo": {
+      "enunciado": "Una planta tiene costos fijos de USD 29.000 por trimestre y costos variables de USD 30 por unidad. El presupuesto estático era para 1.500 unidades, pero se produjeron 1.400. ¿Cuál es el costo según el presupuesto flexible?",
+      "entradas": {
+        "CF": 29000,
+        "cv": 30,
+        "Q": 1400
+      },
+      "pasos": [
+        "Variable = 30 × 1.400 = 42.000",
+        "PF = 29.000 + 42.000 = 71.000"
+      ],
+      "resultado": 71000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=29000+30*1400",
+      "excel_en": "=29000+30*1400"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-4-prepare-flexible-budgets",
+      "seccion": "7.4 Prepare Flexible Budgets"
+    },
+    "supuestos": [
+      "Los costos fijos no cambian dentro del rango relevante."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "variacion-tasa-cif-variable",
+    "nombre": "Variación de tasa (gasto) de CIF variables",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Diferencia entre la tasa real y la tasa estándar de costos indirectos variables por hora, multiplicada por las horas reales; positiva es desfavorable.",
+    "latex": "VT = (TR - TE) \\times HR",
+    "variables": [
+      {
+        "simbolo": "TR",
+        "nombre": "TR",
+        "significado": "Tasa real de CIF variables por hora",
+        "unidad": "USD/hora"
+      },
+      {
+        "simbolo": "TE",
+        "nombre": "TE",
+        "significado": "Tasa estándar de CIF variables por hora",
+        "unidad": "USD/hora"
+      },
+      {
+        "simbolo": "HR",
+        "nombre": "HR",
+        "significado": "Horas reales trabajadas",
+        "unidad": "horas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(TR - TE) * HR"
+    },
+    "excel": {
+      "es": "=(TR-TE)*HR",
+      "en": "=(TR-TE)*HR"
+    },
+    "ejemplo": {
+      "enunciado": "Los CIF variables reales fueron USD 7.000 en 2.500 horas (USD 2,80 por hora) y la tasa estándar es USD 2,00 por hora. ¿Cuál es la variación de tasa?",
+      "entradas": {
+        "TR": 2.8,
+        "TE": 2,
+        "HR": 2500
+      },
+      "pasos": [
+        "VT = (2,80 − 2,00) × 2.500",
+        "VT = 2.000 (desfavorable)"
+      ],
+      "resultado": 2000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=(2,8-2)*2500",
+      "excel_en": "=(2.8-2)*2500"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-4-compute-and-evaluate-overhead-variances",
+      "seccion": "8.4 Compute and Evaluate Overhead Variances"
+    },
+    "supuestos": [],
+    "notas": [
+      "Un resultado negativo indica una variación favorable."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "variacion-eficiencia-cif-variable",
+    "nombre": "Variación de eficiencia de CIF variables",
+    "categoria": "costo-volumen-utilidad",
+    "materias": [
+      "presupuestos"
+    ],
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Diferencia entre las horas reales y las horas estándar permitidas para la producción, multiplicada por la tasa estándar de CIF variables; positiva es desfavorable.",
+    "latex": "VE = (HR - HE) \\times TE",
+    "variables": [
+      {
+        "simbolo": "HR",
+        "nombre": "HR",
+        "significado": "Horas reales trabajadas",
+        "unidad": "horas"
+      },
+      {
+        "simbolo": "HE",
+        "nombre": "HE",
+        "significado": "Horas estándar permitidas para la producción real",
+        "unidad": "horas"
+      },
+      {
+        "simbolo": "TE",
+        "nombre": "TE",
+        "significado": "Tasa estándar de CIF variables por hora",
+        "unidad": "USD/hora"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(HR - HE) * TE"
+    },
+    "excel": {
+      "es": "=(HR-HE)*TE",
+      "en": "=(HR-HE)*TE"
+    },
+    "ejemplo": {
+      "enunciado": "Se trabajaron 2.500 horas cuando el estándar para la producción real era de 2.000 horas, con una tasa estándar de USD 2,00 por hora. ¿Cuál es la variación de eficiencia?",
+      "entradas": {
+        "HR": 2500,
+        "HE": 2000,
+        "TE": 2
+      },
+      "pasos": [
+        "VE = (2.500 − 2.000) × 2,00",
+        "VE = 1.000 (desfavorable)"
+      ],
+      "resultado": 1000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=(2500-2000)*2",
+      "excel_en": "=(2500-2000)*2"
+    },
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-4-compute-and-evaluate-overhead-variances",
+      "seccion": "8.4 Compute and Evaluate Overhead Variances"
+    },
+    "supuestos": [],
+    "notas": [
+      "Mide si la base de asignación (las horas) se usó con eficiencia."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
   }
 ]

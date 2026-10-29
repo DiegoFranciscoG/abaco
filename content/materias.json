@@ -944,5 +944,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "presupuestos",
+    "nombre": "Presupuestos empresariales y control de gestión",
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Para qué sirve un presupuesto, presupuesto maestro y sus enfoques, presupuestos operativos y financieros, presupuesto de caja, presupuesto flexible, costos estándar, variaciones y centros de responsabilidad.",
+    "sinonimos": [
+      "presupuesto privado",
+      "presupuesto maestro",
+      "presupuesto de caja",
+      "control presupuestario",
+      "presupuesto flexible",
+      "contabilidad por áreas de responsabilidad"
+    ],
+    "herramientas": [
+      "editor",
+      "equilibrio",
+      "notas"
+    ],
+    "orden": 42,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

@@ -1,0 +1,483 @@
+{
+  "materia": "presupuestos",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pr-fundamentos",
+      "nombre": "Para qué sirve un presupuesto",
+      "orden": 1,
+      "descripcion": "Presupuesto y plan estratégico, presupuesto maestro, enfoques de elaboración y ética presupuestaria.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "pr-ventajas",
+          "nombre": "Presupuesto y plan estratégico: ventajas",
+          "explicacion": "Tras el análisis situacional y la definición de estrategias, un paso importante para poner en marcha el plan estratégico es elaborar el presupuesto. Un buen sistema presupuestario ayuda a alcanzar las metas estratégicas porque permite planificar y controlar ingresos, gastos y financiamiento: planificar es fijar objetivos futuros y controlar es vigilar que se cumplan. Sus ventajas incluyen la comunicación formal de los planes a los responsables internos, la planificación, que obliga a revisar supuestos y coordinar departamentos, y la evaluación, porque al comparar con los resultados reales el presupuesto alerta sobre necesidades de caja y fija referencias para medir el desempeño.",
+          "ejemplo": "Una fábrica que lanza un producto nuevo comunica en su presupuesto el precio, las ventas esperadas por trimestre y los recursos que necesitará cada departamento para lograrlas.",
+          "puntos_clave": [
+            "Herramienta del plan estratégico.",
+            "Planificación y control.",
+            "Comunicación, coordinación y evaluación."
+          ],
+          "errores_frecuentes": [
+            "Hacer el presupuesto sin vincularlo a la estrategia.",
+            "Verlo solo como un límite de gastos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-1-describe-how-and-why-managers-use-budgets",
+            "seccion": "7.1 Describe How and Why Managers Use Budgets"
+          }
+        },
+        {
+          "id": "pr-presupuesto-maestro",
+          "nombre": "El presupuesto maestro: operativo y financiero",
+          "explicacion": "El presupuesto es el plan cuantitativo que estima cuándo y cuánto efectivo u otros recursos se recibirán y usarán; el período más común es un año. El presupuesto maestro tiene dos grandes partes: el presupuesto financiero, que planifica activos y pasivos y termina en un balance proyectado, y el presupuesto operativo, que planifica ingresos y gastos y termina en un estado de resultados proyectado. El presupuesto de ventas es la base de los demás presupuestos operativos: de él y de la política de inventarios sale el presupuesto de producción, que a su vez se divide en materiales, mano de obra y costos indirectos usando cantidades y precios estándar.",
+          "ejemplo": "Una panadería parte de cuántos panes venderá cada mes; con eso calcula cuánto producir, cuánta harina comprar, cuántas horas de trabajo necesita y cuánto dinero tendrá en caja.",
+          "puntos_clave": [
+            "Presupuesto financiero y operativo.",
+            "Balance y estado de resultados proyectados.",
+            "El presupuesto de ventas es la base."
+          ],
+          "errores_frecuentes": [
+            "Empezar por los gastos y no por las ventas.",
+            "Confundir presupuesto operativo con financiero."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-1-describe-how-and-why-managers-use-budgets",
+            "seccion": "7.1 Describe How and Why Managers Use Budgets"
+          }
+        },
+        {
+          "id": "pr-enfoques",
+          "nombre": "Enfoques: de arriba hacia abajo, participativo y base cero",
+          "explicacion": "En el enfoque de arriba hacia abajo la alta dirección fija metas y gastos permitidos que bajan por la organización; se alinea con la estrategia, pero quienes lo preparan pueden no conocer los detalles de cada área. En el enfoque de abajo hacia arriba, también llamado participativo, cada departamento estima sus ventas y recursos; es más realista y motivador, aunque los gerentes pueden no entender bien la estrategia. Hay un enfoque combinado, con metas desde arriba y detalle desde abajo, y el presupuesto base cero, que parte de cero y solo incluye lo que se justifica: elimina gastos innecesarios pero toma mucho tiempo. Hay que cuidar que no se inflen los gastos para crear holgura presupuestaria.",
+          "ejemplo": "Una empresa aplica base cero solo a los viajes: cada viaje debe justificarse con una meta del plan, mientras el resto del presupuesto parte del año anterior.",
+          "puntos_clave": [
+            "Arriba hacia abajo y abajo hacia arriba.",
+            "Enfoque combinado.",
+            "Base cero y holgura presupuestaria."
+          ],
+          "errores_frecuentes": [
+            "Inflar gastos para cumplir metas con facilidad.",
+            "Aplicar base cero a todo sin considerar el tiempo que exige."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-1-describe-how-and-why-managers-use-budgets",
+            "seccion": "7.1 Describe How and Why Managers Use Budgets"
+          }
+        },
+        {
+          "id": "pr-etica-presupuesto",
+          "nombre": "Ética y manipulación del presupuesto",
+          "explicacion": "Cuando la evaluación y la remuneración de un gerente dependen de cuánto se acerque al presupuesto, se pueden crear incentivos para actuar de forma poco ética: manipular las cifras o cambiar el momento de los registros para trasladar ingresos a otro período y cobrar bonos. Un estudio de Walker y Fleischman encontró que los códigos de ética formales, la capacitación en ética, los buenos modelos de liderazgo y la presión social hacia la transparencia disuaden la manipulación, y recomendó cultivar un clima ético sensible a esas presiones.",
+          "ejemplo": "Un gerente que adelanta facturas de enero a diciembre para cumplir su meta anual está manipulando el período del presupuesto, aunque las ventas sean reales.",
+          "puntos_clave": [
+            "Incentivos a manipular metas.",
+            "Cambios de período de ingresos.",
+            "Códigos y capacitación en ética."
+          ],
+          "errores_frecuentes": [
+            "Premiar solo el cumplimiento del presupuesto sin revisar cómo se logró.",
+            "Creer que mover un registro de período no es grave."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-5-explain-how-budgets-are-used-to-evaluate-goals",
+            "seccion": "7.5 Explain How Budgets Are Used to Evaluate Goals"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pr-operativos",
+      "nombre": "Presupuestos operativos",
+      "orden": 2,
+      "descripcion": "Presupuesto de ventas, de producción, de mano de obra y costos indirectos, de gastos de venta y administración y estado de resultados presupuestado.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pr-ventas",
+          "nombre": "Presupuesto de ventas",
+          "explicacion": "El presupuesto de ventas se prepara estimando las unidades que se venderán en cada período y multiplicándolas por el precio de venta. Es el primer presupuesto y el más importante: de él dependen el presupuesto de producción, que determina cuánto fabricar, y el programa de cobros, que alimenta el presupuesto de caja. Por eso los errores en la estimación de ventas se trasladan a todo el presupuesto maestro.",
+          "ejemplo": "Si una empresa estima vender 1.000 entrenadores por trimestre a USD 70 en los dos primeros trimestres, su presupuesto de ventas de cada uno de esos trimestres es USD 70.000.",
+          "puntos_clave": [
+            "Unidades × precio.",
+            "Base de producción y cobros.",
+            "Sus errores afectan a todo el presupuesto."
+          ],
+          "errores_frecuentes": [
+            "Estimar ventas sin considerar la estacionalidad.",
+            "Usar el precio sin descuentos ni cambios previstos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+            "seccion": "7.2 Prepare Operating Budgets"
+          }
+        },
+        {
+          "id": "pr-produccion",
+          "nombre": "Presupuesto de producción",
+          "explicacion": "Para saber cuánto producir se suman las ventas estimadas y el inventario final deseado, lo que da las unidades que deben estar disponibles, y se resta el inventario inicial, porque esas unidades ya están hechas; es la fórmula del costo de ventas al revés. El inventario final suele fijarse como un porcentaje de las ventas del período siguiente, equilibrando el riesgo de quedarse sin producto con el costo de almacenarlo. El inventario final de un período es el inicial del siguiente. En un comercio, en lugar de unidades a producir se calculan unidades a comprar.",
+          "ejemplo": "Con ventas de 1.000 unidades, un inventario final deseado de 300 y ningún inventario inicial, deben producirse 1.000 + 300 − 0 = 1.300 unidades.",
+          "puntos_clave": [
+            "Producción = ventas + IF deseado − II.",
+            "IF como porcentaje de ventas futuras.",
+            "El IF de un período es el II del siguiente."
+          ],
+          "errores_frecuentes": [
+            "Olvidar restar el inventario inicial.",
+            "Calcular el IF con las ventas del mismo período."
+          ],
+          "formulas": [
+            "unidades-a-producir"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+            "seccion": "7.2 Prepare Operating Budgets"
+          }
+        },
+        {
+          "id": "pr-mano-obra-cif",
+          "nombre": "Presupuestos de mano de obra directa y de costos indirectos",
+          "explicacion": "El presupuesto de mano de obra directa usa las unidades a producir para calcular las horas necesarias, multiplicándolas por las horas estándar por unidad, y luego por la tarifa por hora; así se asegura tener el personal y el dinero para pagarlo, incluidas posibles horas extra. El presupuesto de costos indirectos de fabricación incluye el resto de costos de producción y los separa según su comportamiento: la parte variable se calcula con un generador de costo, como las horas de mano de obra, por una tasa, y la parte fija se mantiene constante cada período.",
+          "ejemplo": "Si se producirán 1.300 unidades a 0,75 horas cada una y la hora cuesta USD 20, la mano de obra presupuestada es 1.300 × 0,75 × 20 = USD 19.500; los CIF variables se calculan sobre esas 975 horas y los fijos se suman sin cambio.",
+          "puntos_clave": [
+            "Horas = unidades × horas estándar.",
+            "Costo = horas × tarifa.",
+            "CIF variables por generador y CIF fijos constantes."
+          ],
+          "errores_frecuentes": [
+            "Presupuestar mano de obra con las ventas y no con la producción.",
+            "Variar los CIF fijos con el volumen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+            "seccion": "7.2 Prepare Operating Budgets"
+          }
+        },
+        {
+          "id": "pr-gastos-resultados",
+          "nombre": "Gastos de venta y administración y estado de resultados presupuestado",
+          "explicacion": "El presupuesto de gastos de venta y administración es un presupuesto no manufacturero que se basa en las ventas estimadas para calcular comisiones y otros gastos variables, además de los gastos fijos. Las ventas y los gastos estimados en todos los presupuestos operativos se reúnen en el estado de resultados presupuestado. Un presupuesto maestro siempre empieza por el de ventas y continúa con producción, materiales, mano de obra, costos indirectos y gastos de venta y administración.",
+          "ejemplo": "Si los vendedores cobran el 5 % de comisión, un presupuesto de ventas de USD 70.000 implica USD 3.500 de comisiones en el presupuesto de gastos de venta.",
+          "puntos_clave": [
+            "Gastos no manufactureros.",
+            "Comisiones ligadas a las ventas.",
+            "Estado de resultados presupuestado."
+          ],
+          "errores_frecuentes": [
+            "Olvidar los gastos variables de venta.",
+            "Armar el estado de resultados antes de los presupuestos de costos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+            "seccion": "7.3 Prepare Financial Budgets"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pr-financieros",
+      "nombre": "Presupuestos financieros",
+      "orden": 3,
+      "descripcion": "Presupuesto de activos de capital, programas de cobros y pagos, presupuesto de caja con saldo mínimo y balance presupuestado.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pr-capital",
+          "nombre": "Presupuesto de activos de capital",
+          "explicacion": "El presupuesto de activos de capital, o de inversiones, muestra los planes de la empresa para invertir en activos de largo plazo, como computadoras que se reemplazan cada pocos años o maquinaria que se compra rara vez. Algunas compras se pagan en efectivo y otras con préstamos, y afectan los flujos de caja actuales y futuros y el estado de resultados por la depreciación y los intereses. Se prepara antes del presupuesto de caja, porque representa una salida importante de efectivo; si no habrá caja suficiente, se ajusta.",
+          "ejemplo": "Una empresa planifica comprar una copiadora de USD 8.500 en el tercer trimestre; ese pago entra en el presupuesto de caja de ese trimestre y su depreciación en los resultados.",
+          "puntos_clave": [
+            "Inversiones en activos de largo plazo.",
+            "Efecto en caja, depreciación e intereses.",
+            "Se prepara antes del presupuesto de caja."
+          ],
+          "errores_frecuentes": [
+            "Registrar la compra del activo como gasto del período.",
+            "Planificar inversiones sin revisar la caja disponible."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+            "seccion": "7.3 Prepare Financial Budgets"
+          }
+        },
+        {
+          "id": "pr-cobros-pagos",
+          "nombre": "Programas de cobros y de pagos",
+          "explicacion": "El programa de cobros incluye todo el efectivo que se espera recibir de las ventas según el ritmo de pago de los clientes: cuánto se cobra en el período de la venta, en el siguiente y así sucesivamente, y excluye la parte que se estima incobrable. El programa de pagos hace lo mismo con las compras a crédito, por ejemplo pagando la mitad en el período de compra y la otra mitad en el siguiente. Ambos programas alimentan el presupuesto de caja.",
+          "ejemplo": "Si se cobra el 65 % en el trimestre de la venta y el 30 % en el siguiente, y se vende USD 70.000 en cada uno de los dos primeros trimestres, en el segundo se cobran 0,65 × 70.000 + 0,30 × 70.000 = USD 66.500.",
+          "puntos_clave": [
+            "Cobros según el patrón de pago de los clientes.",
+            "Se excluyen los incobrables.",
+            "Pagos según el patrón de pago a proveedores."
+          ],
+          "errores_frecuentes": [
+            "Suponer que todas las ventas se cobran en el mismo período.",
+            "Incluir las cuentas incobrables como cobros."
+          ],
+          "formulas": [
+            "cobros-presupuestados"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+            "seccion": "7.3 Prepare Financial Budgets"
+          }
+        },
+        {
+          "id": "pr-caja",
+          "nombre": "Presupuesto de caja, saldo mínimo y financiamiento",
+          "explicacion": "El presupuesto de caja reúne todas las entradas y salidas de efectivo y conviene dividirlo en los períodos más cortos posibles para detectar a tiempo los problemas de liquidez. Se suman los cobros al saldo inicial para obtener el efectivo disponible, se restan los pagos y se obtiene el excedente o déficit del período. Las empresas suelen exigir un saldo mínimo de caja: si el saldo potencial no lo alcanza, se planifica financiamiento, por ejemplo con una línea de crédito; si lo supera, el excedente puede usarse para pagar préstamos e intereses. La depreciación no se incluye porque no es una salida de efectivo.",
+          "ejemplo": "Con un saldo inicial de USD 13.000, cobros de USD 50.500 y pagos de USD 58.000, el saldo potencial es USD 5.500; con un mínimo de USD 10.000, deben financiarse USD 4.500.",
+          "puntos_clave": [
+            "Saldo final = inicial + cobros − pagos.",
+            "Saldo mínimo y línea de crédito.",
+            "La depreciación no es salida de caja."
+          ],
+          "errores_frecuentes": [
+            "Incluir la depreciación en los pagos.",
+            "Planificar la caja solo anualmente."
+          ],
+          "formulas": [
+            "saldo-caja-presupuestado",
+            "financiamiento-requerido"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+            "seccion": "7.3 Prepare Financial Budgets"
+          }
+        },
+        {
+          "id": "pr-balance-presupuestado",
+          "nombre": "Balance general presupuestado",
+          "explicacion": "El balance presupuestado muestra los activos, pasivos y patrimonio que la empresa tendría al final del año si cumple sus expectativas. Toma el saldo final de caja del presupuesto de caja, las cuentas por cobrar del programa de cobros, el inventario final de los cálculos del estado de resultados, la maquinaria del presupuesto de activos de capital y las cuentas por pagar del programa de pagos. Todos los presupuestos encajan como un rompecabezas para dar una visión completa del año.",
+          "ejemplo": "Si la empresa compra una copiadora de USD 8.500 y emite acciones por USD 5.000, su balance presupuestado muestra un aumento de activos fijos de 8.500 y de capital de 5.000.",
+          "puntos_clave": [
+            "Situación esperada al cierre.",
+            "Cada rubro sale de un presupuesto o programa.",
+            "Integra todo el presupuesto maestro."
+          ],
+          "errores_frecuentes": [
+            "Tomar la caja del balance anterior.",
+            "Olvidar las cuentas por cobrar pendientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+            "seccion": "7.3 Prepare Financial Budgets"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pr-flexible-variaciones",
+      "nombre": "Presupuesto flexible, costos estándar y variaciones",
+      "orden": 4,
+      "descripcion": "Presupuesto estático y flexible, variaciones favorables y desfavorables, costos estándar y variaciones de costos indirectos variables.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "pr-estatico-flexible",
+          "nombre": "Presupuesto estático y presupuesto flexible",
+          "explicacion": "Un presupuesto estático se prepara para un solo nivel de actividad; el presupuesto maestro es estático. Compararlo con los resultados reales puede ser como comparar peras con manzanas, porque los costos variables deben seguir a la producción y esta a las ventas. Un presupuesto flexible se basa en distintos volúmenes: ajusta el presupuesto al nivel real de actividad, sumando a los costos fijos el costo variable unitario por las unidades reales. Requiere conocer bien qué costos son fijos y cuáles variables, y se prepara en cada período de análisis.",
+          "ejemplo": "Con costos fijos de USD 29.000 y variables de USD 30 por unidad, si se produjeron 1.400 unidades en vez de 1.500, el presupuesto flexible es 29.000 + 30 × 1.400 = USD 71.000.",
+          "puntos_clave": [
+            "Estático: un solo nivel.",
+            "Flexible: nivel real de actividad.",
+            "Fijos + variable unitario × unidades reales."
+          ],
+          "errores_frecuentes": [
+            "Evaluar costos con el presupuesto estático cuando cambió el volumen.",
+            "Ajustar también los costos fijos."
+          ],
+          "formulas": [
+            "presupuesto-flexible"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-4-prepare-flexible-budgets",
+            "seccion": "7.4 Prepare Flexible Budgets"
+          }
+        },
+        {
+          "id": "pr-variaciones",
+          "nombre": "Variaciones favorables y desfavorables",
+          "explicacion": "El análisis de variaciones compara los resultados reales con los presupuestados; no demuestra que haya un problema, pero indica dónde podría haberlo. Una variación es favorable cuando los ingresos superan lo presupuestado o los gastos quedan por debajo, y desfavorable en el caso contrario. Una variación desfavorable no siempre es mala, por ejemplo si un mejor salario atrae a personal que desperdicia menos material, y una favorable puede esconder recortes excesivos. Con un presupuesto estático, menos unidades vendidas hacen ver favorables los costos; con el flexible se evalúa si los costos fueron adecuados para lo realmente producido.",
+          "ejemplo": "Si se vendieron 1.400 unidades en vez de 1.500, el costo de ventas real luce favorable frente al estático, pero frente al presupuesto flexible de 1.400 unidades la mano de obra puede resultar desfavorable.",
+          "puntos_clave": [
+            "Favorable: más ingresos o menos gastos.",
+            "Desfavorable: lo contrario.",
+            "Interpretar con el presupuesto flexible."
+          ],
+          "errores_frecuentes": [
+            "Asumir que toda variación favorable es buena.",
+            "Comparar costos reales con un presupuesto de otro volumen."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-5-explain-how-budgets-are-used-to-evaluate-goals",
+            "seccion": "7.5 Explain How Budgets Are Used to Evaluate Goals"
+          }
+        },
+        {
+          "id": "pr-costos-estandar",
+          "nombre": "Costos estándar",
+          "explicacion": "Un costo estándar es el costo esperado que la empresa fija al inicio del año para los precios que pagará y las cantidades que usará; el precio estándar es lo que se espera pagar por material o mano de obra y la cantidad estándar, lo que se espera usar. Se basa en la historia o en normas de la industria y en él participan diseño, producción, compras, ventas y personal. Los estándares suelen fijarse en niveles razonablemente alcanzables de eficiencia, porque un estándar ideal, que supone que nada falla, desmotiva por inalcanzable. La diferencia entre el estándar y lo real es una variación que se investiga.",
+          "ejemplo": "Una cafetería espera pagar USD 0,50 por onza de café molido; si paga USD 0,60, surge una variación de precio que debe explicar y quizá corregir.",
+          "puntos_clave": [
+            "Precio y cantidad estándar.",
+            "Estándares alcanzables frente a ideales.",
+            "Base para presupuestos y variaciones."
+          ],
+          "errores_frecuentes": [
+            "Fijar estándares ideales imposibles de cumplir.",
+            "No actualizar los estándares cuando cambian los precios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-1-explain-how-and-why-a-standard-cost-is-developed",
+            "seccion": "8.1 Explain How and Why a Standard Cost Is Developed"
+          }
+        },
+        {
+          "id": "pr-variaciones-cif",
+          "nombre": "Variaciones de costos indirectos variables: tasa y eficiencia",
+          "explicacion": "La diferencia total entre los costos indirectos variables reales y los estándar no dice si se debe a la tasa o al nivel de actividad, por eso se separa en dos variaciones. La variación de tasa, también llamada de gasto, es la diferencia entre la tasa real y la estándar por hora multiplicada por las horas reales. La variación de eficiencia, o controlable, es la diferencia entre las horas reales y las horas estándar permitidas para la producción, multiplicada por la tasa estándar, y mide si la base de asignación se usó con eficiencia. Un resultado positivo es desfavorable y uno negativo, favorable.",
+          "ejemplo": "Con CIF variables reales de USD 2,80 por hora frente a un estándar de USD 2,00 en 2.500 horas, la variación de tasa es (2,80 − 2,00) × 2.500 = USD 2.000 desfavorable; si el estándar era de 2.000 horas, la de eficiencia es (2.500 − 2.000) × 2,00 = USD 1.000 desfavorable.",
+          "puntos_clave": [
+            "Tasa = (TR − TE) × HR.",
+            "Eficiencia = (HR − HE) × TE.",
+            "Positivo: desfavorable."
+          ],
+          "errores_frecuentes": [
+            "Usar horas estándar en la variación de tasa.",
+            "Interpretar el signo al revés."
+          ],
+          "formulas": [
+            "variacion-tasa-cif-variable",
+            "variacion-eficiencia-cif-variable"
+          ],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-4-compute-and-evaluate-overhead-variances",
+            "seccion": "8.4 Compute and Evaluate Overhead Variances"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pr-control",
+      "nombre": "Control de gestión y responsabilidad",
+      "orden": 5,
+      "descripcion": "Explicación de variaciones y holgura presupuestaria, visión de largo plazo, contabilidad por áreas de responsabilidad y tipos de centros de responsabilidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pr-explicar-variaciones",
+          "nombre": "Explicar las variaciones y la holgura presupuestaria",
+          "explicacion": "Muchas empresas exigen que los responsables expliquen las variaciones que salen de cierto rango. Explicar las desfavorables obliga a identificar problemas o confirmar si fueron un hecho aislado; explicar las favorables permite saber si son sostenibles y planificarlas. A veces la dirección sobrestima precios, tarifas o cantidades al fijar los estándares para verse bien aunque los costos suban: es la holgura presupuestaria. También existe el riesgo de gestionar para las variaciones, tomando decisiones que cumplen los umbrales del reporte pero no convienen a la empresa a largo plazo.",
+          "ejemplo": "Un jefe de compras que fijó un precio estándar muy alto siempre reporta variaciones favorables, aunque en realidad no compre mejor que el mercado.",
+          "puntos_clave": [
+            "Explicar variaciones favorables y desfavorables.",
+            "Holgura presupuestaria.",
+            "Riesgo de gestionar para las variaciones."
+          ],
+          "errores_frecuentes": [
+            "Revisar solo las variaciones desfavorables.",
+            "Premiar variaciones favorables creadas con estándares inflados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-5-describe-how-companies-use-variance-analysis",
+            "seccion": "8.5 Describe How Companies Use Variance Analysis"
+          }
+        },
+        {
+          "id": "pr-largo-plazo",
+          "nombre": "Variaciones con visión de largo plazo",
+          "explicacion": "Muchos gerentes usan las variaciones solo para reaccionar en el corto plazo, sin analizar por qué ocurrieron. Un análisis de largo plazo se apoya en la contabilidad por responsabilidades, en la que la autoridad y la rendición de cuentas se delegan a los gerentes que más influyen en cada tarea. Si el sistema de control de costos no refuerza la visión de largo plazo, el gerente no tiene incentivos para atender asuntos distintos de los costos inmediatos y puede, por ejemplo, seguir reparando equipos obsoletos en lugar de invertir en equipos más eficientes que apoyen las metas de la empresa.",
+          "ejemplo": "El aumento constante del costo de reparaciones como porcentaje de las ventas puede indicar que conviene reemplazar la maquinaria, aunque repararla cueste menos este año.",
+          "puntos_clave": [
+            "Más allá de la reacción de corto plazo.",
+            "Delegar autoridad y rendición de cuentas.",
+            "Alinear el control con las metas."
+          ],
+          "errores_frecuentes": [
+            "Decidir solo por el costo del período.",
+            "Ignorar la tendencia de una variación repetida."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-5-describe-how-companies-use-variance-analysis",
+            "seccion": "8.5 Describe How Companies Use Variance Analysis"
+          }
+        },
+        {
+          "id": "pr-contabilidad-responsabilidad",
+          "nombre": "Contabilidad por áreas de responsabilidad",
+          "explicacion": "La contabilidad por responsabilidades asigna a una persona o grupo la responsabilidad financiera de cada segmento de la empresa, organizado como centro de responsabilidad, cuyo gerente toma las decisiones que lo afectan y es evaluado por su desempeño financiero. Los segmentos establecen la estructura de la responsabilidad operativa y los centros de responsabilidad, la de la responsabilidad financiera; ambos buscan que todas las áreas contribuyan a la estrategia. Por eso el marco debe permitir una evaluación adecuada y equitativa de cada gerente.",
+          "ejemplo": "El gerente de la sucursal norte responde por los resultados de su sucursal y recibe la autoridad para fijar horarios, contratar personal y negociar con proveedores locales.",
+          "puntos_clave": [
+            "Responsabilidad financiera por segmento.",
+            "Autoridad delegada al gerente.",
+            "Evaluación equitativa."
+          ],
+          "errores_frecuentes": [
+            "Evaluar a un gerente por costos que no controla.",
+            "Delegar responsabilidad sin autoridad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/9-3-describe-the-types-of-responsibility-centers",
+            "seccion": "9.3 Describe the Types of Responsibility Centers"
+          }
+        },
+        {
+          "id": "pr-centros-responsabilidad",
+          "nombre": "Tipos de centros de responsabilidad",
+          "explicacion": "Hay cinco tipos de centros de responsabilidad. En un centro de costos el gerente responde solo por los costos, con una relación directa entre costos y producción. En un centro de costos discrecionales responde por costos controlables sin una relación clara con lo producido, como recursos humanos o contabilidad. En un centro de ingresos responde solo por los ingresos. En un centro de utilidades responde por ingresos y costos, como una tienda de una cadena. En un centro de inversión responde por la utilidad y por el capital invertido en el segmento, como una región completa.",
+          "ejemplo": "El departamento de limpieza de un almacén es un centro de costos; el área de reservaciones de una aerolínea, un centro de ingresos, y una sucursal completa, un centro de utilidades.",
+          "puntos_clave": [
+            "Costos y costos discrecionales.",
+            "Ingresos y utilidades.",
+            "Inversión: utilidad y capital invertido."
+          ],
+          "errores_frecuentes": [
+            "Evaluar un centro de costos por sus ventas.",
+            "Confundir centro de utilidades con centro de inversión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pma",
+            "url": "https://openstax.org/books/principles-managerial-accounting/pages/9-3-describe-the-types-of-responsibility-centers",
+            "seccion": "9.3 Describe the Types of Responsibility Centers"
+          }
+        }
+      ]
+    }
+  ]
+}

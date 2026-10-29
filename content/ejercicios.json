@@ -11679,5 +11679,338 @@
     },
     "materia": "finanzas-publicas",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-produccion-a",
+    "subtema": "pr-produccion",
+    "formula": "unidades-a-producir",
+    "enunciado": "Una empresa espera vender 1.500 unidades en el tercer trimestre, quiere un inventario final de 750 unidades y empieza el trimestre con 450. ¿Cuántas unidades debe producir?",
+    "datos": {
+      "V": 1500,
+      "IFd": 750,
+      "II": 450
+    },
+    "calculo": "V + IFd - II",
+    "respuesta": 1800,
+    "unidad": "unidades",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Disponibles = 1.500 + 750 = 2.250",
+      "Producción = 2.250 − 450 = 1.800"
+    ],
+    "pistas": [
+      "El inventario inicial ya está producido."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+      "seccion": "7.2 Prepare Operating Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-produccion-b",
+    "subtema": "pr-produccion",
+    "formula": "unidades-a-producir",
+    "enunciado": "Una fábrica de muebles venderá 2.000 sillas en el mes; desea terminar con un inventario igual al 20 % de las ventas del mes siguiente, que serán 2.500 sillas, y empieza con 400. ¿Cuántas sillas debe producir?",
+    "datos": {
+      "V": 2000,
+      "IFd": 500,
+      "II": 400
+    },
+    "calculo": "V + IFd - II",
+    "respuesta": 2100,
+    "unidad": "unidades",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "IF deseado = 20 % × 2.500 = 500",
+      "Producción = 2.000 + 500 − 400 = 2.100"
+    ],
+    "pistas": [
+      "Calcula el inventario final con las ventas del mes siguiente."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-2-prepare-operating-budgets",
+      "seccion": "7.2 Prepare Operating Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-cobros-trimestre",
+    "subtema": "pr-cobros-pagos",
+    "formula": "cobros-presupuestados",
+    "enunciado": "Una empresa cobra el 65 % de sus ventas en el trimestre de la venta y el 30 % en el siguiente. Vende USD 70.000 en el segundo trimestre y USD 112.500 en el tercero. ¿Cuánto cobra en el tercer trimestre?",
+    "datos": {
+      "Vt": 112500,
+      "a": 0.65,
+      "Va": 70000,
+      "b": 0.3
+    },
+    "calculo": "a * Vt + b * Va",
+    "respuesta": 94125,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,65 × 112.500 = 73.125",
+      "0,30 × 70.000 = 21.000",
+      "Cobros = 94.125"
+    ],
+    "pistas": [
+      "Usa el 30 % sobre las ventas del trimestre anterior."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-pagos-compras",
+    "subtema": "pr-cobros-pagos",
+    "formula": "cobros-presupuestados",
+    "enunciado": "Una empresa paga la mitad de sus compras de materiales en el trimestre de compra y la otra mitad en el siguiente. Compra USD 12.000 en el primer trimestre y USD 16.000 en el segundo. ¿Cuánto paga en el segundo trimestre?",
+    "datos": {
+      "Vt": 16000,
+      "a": 0.5,
+      "Va": 12000,
+      "b": 0.5
+    },
+    "calculo": "a * Vt + b * Va",
+    "respuesta": 14000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,5 × 16.000 = 8.000",
+      "0,5 × 12.000 = 6.000",
+      "Pagos = 14.000"
+    ],
+    "pistas": [
+      "La misma estructura de los cobros sirve para los pagos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-caja-saldo",
+    "subtema": "pr-caja",
+    "formula": "saldo-caja-presupuestado",
+    "enunciado": "Una empresa empieza el mes con USD 8.000, espera cobrar USD 42.000 y pagar USD 47.500. ¿Cuál es su saldo final antes de financiamiento?",
+    "datos": {
+      "SI": 8000,
+      "E": 42000,
+      "S": 47500
+    },
+    "calculo": "SI + E - S",
+    "respuesta": 2500,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Disponible = 8.000 + 42.000 = 50.000",
+      "Saldo = 50.000 − 47.500 = 2.500"
+    ],
+    "pistas": [
+      "Suma primero los cobros al saldo inicial."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-caja-financiamiento",
+    "subtema": "pr-caja",
+    "formula": "financiamiento-requerido",
+    "enunciado": "Con el saldo potencial de USD 2.500 del ejercicio anterior y un saldo mínimo exigido de USD 6.000, ¿cuánto debe financiar la empresa?",
+    "datos": {
+      "Smin": 6000,
+      "SF": 2500
+    },
+    "calculo": "MAX(Smin - SF, 0)",
+    "respuesta": 3500,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "6.000 − 2.500 = 3.500",
+      "Se financian USD 3.500"
+    ],
+    "pistas": [
+      "Solo se financia si el saldo potencial está por debajo del mínimo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-caja-sin-financiamiento",
+    "subtema": "pr-caja",
+    "formula": "financiamiento-requerido",
+    "enunciado": "Si el saldo potencial de caja es USD 14.200 y el mínimo exigido es USD 10.000, ¿cuánto debe financiarse?",
+    "datos": {
+      "Smin": 10000,
+      "SF": 14200
+    },
+    "calculo": "MAX(Smin - SF, 0)",
+    "respuesta": 0,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "10.000 − 14.200 = −4.200",
+      "No se financia: hay un excedente de 4.200 para pagar deudas"
+    ],
+    "pistas": [
+      "Un resultado negativo indica excedente, no financiamiento."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-flexible-a",
+    "subtema": "pr-estatico-flexible",
+    "formula": "presupuesto-flexible",
+    "enunciado": "Un taller tiene costos fijos de USD 12.000 al mes y costos variables de USD 18 por unidad. Produjo 850 unidades. ¿Cuál es el costo según el presupuesto flexible?",
+    "datos": {
+      "CF": 12000,
+      "cv": 18,
+      "Q": 850
+    },
+    "calculo": "CF + cv * Q",
+    "respuesta": 27300,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Variable = 18 × 850 = 15.300",
+      "PF = 12.000 + 15.300 = 27.300"
+    ],
+    "pistas": [
+      "Usa las unidades reales, no las presupuestadas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-4-prepare-flexible-budgets",
+      "seccion": "7.4 Prepare Flexible Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-flexible-b",
+    "subtema": "pr-estatico-flexible",
+    "formula": "presupuesto-flexible",
+    "enunciado": "El presupuesto estático de una panadería era para 10.000 panes con costos fijos de USD 3.000 y variables de USD 0,25 por pan. Si produjo 11.200 panes, ¿cuál es el costo según el presupuesto flexible?",
+    "datos": {
+      "CF": 3000,
+      "cv": 0.25,
+      "Q": 11200
+    },
+    "calculo": "CF + cv * Q",
+    "respuesta": 5800,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Variable = 0,25 × 11.200 = 2.800",
+      "PF = 3.000 + 2.800 = 5.800",
+      "El estático era 3.000 + 0,25 × 10.000 = 5.500"
+    ],
+    "pistas": [
+      "Compara con el presupuesto estático."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-4-prepare-flexible-budgets",
+      "seccion": "7.4 Prepare Flexible Budgets"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-tasa-cif-favorable",
+    "subtema": "pr-variaciones-cif",
+    "formula": "variacion-tasa-cif-variable",
+    "enunciado": "Los CIF variables reales fueron USD 3.500 en 2.000 horas (USD 1,75 por hora) frente a una tasa estándar de USD 2,00. ¿Cuál es la variación de tasa?",
+    "datos": {
+      "TR": 1.75,
+      "TE": 2,
+      "HR": 2000
+    },
+    "calculo": "(TR - TE) * HR",
+    "respuesta": -500,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "(1,75 − 2,00) × 2.000 = −500",
+      "Negativo: USD 500 favorable"
+    ],
+    "pistas": [
+      "Un resultado negativo es favorable."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-4-compute-and-evaluate-overhead-variances",
+      "seccion": "8.4 Compute and Evaluate Overhead Variances"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pr-eficiencia-cif-favorable",
+    "subtema": "pr-variaciones-cif",
+    "formula": "variacion-eficiencia-cif-variable",
+    "enunciado": "Se trabajaron 1.800 horas cuando el estándar para la producción real era de 2.000 horas, con una tasa estándar de CIF variables de USD 2,00 por hora. ¿Cuál es la variación de eficiencia?",
+    "datos": {
+      "HR": 1800,
+      "HE": 2000,
+      "TE": 2
+    },
+    "calculo": "(HR - HE) * TE",
+    "respuesta": -400,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "(1.800 − 2.000) × 2,00 = −400",
+      "Negativo: USD 400 favorable"
+    ],
+    "pistas": [
+      "Se usaron menos horas que el estándar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/8-4-compute-and-evaluate-overhead-variances",
+      "seccion": "8.4 Compute and Evaluate Overhead Variances"
+    },
+    "materia": "presupuestos",
+    "actualizado_en": "2026-10-26"
   }
 ]

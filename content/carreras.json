@@ -178,6 +178,15 @@
         "planes": 4
       },
       {
+        "materia": "presupuestos",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          7
+        ],
+        "planes": 2
+      },
+      {
         "materia": "economia-internacional",
         "ciclo": 6,
         "ciclos": [
@@ -229,11 +238,6 @@
       {
         "nombre": "Economía Popular y Solidaria",
         "ciclo": 2,
-        "planes": 2
-      },
-      {
-        "nombre": "Presupuestos",
-        "ciclo": 5,
         "planes": 2
       }
     ]
@@ -459,6 +463,15 @@
         "planes": 1
       },
       {
+        "materia": "presupuestos",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          7
+        ],
+        "planes": 2
+      },
+      {
         "materia": "sistema-financiero",
         "ciclo": 6,
         "ciclos": [
@@ -534,11 +547,6 @@
       },
       {
         "nombre": "Inteligencia Artificial en Contabilidad y Auditoría",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Presupuesto Privado",
         "ciclo": 7,
         "planes": 1
       },

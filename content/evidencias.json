@@ -6356,5 +6356,151 @@
       "presupuestos participativos",
       "libre acceso a toda la informacion presupuestaria y financiera"
     ]
+  },
+  {
+    "id": "pr-ventajas",
+    "palabras": [
+      "a good budgeting system will help a company reach its strategic goals",
+      "communication budgeting is a formal method"
+    ]
+  },
+  {
+    "id": "pr-presupuesto-maestro",
+    "palabras": [
+      "the master budget has two major categories: the financial budget and the operating budget",
+      "the sales budget is the foundation for other operating budgets"
+    ]
+  },
+  {
+    "id": "pr-enfoques",
+    "palabras": [
+      "top-down approach",
+      "bottom-up approach",
+      "zero-based budgeting",
+      "budgetary slack"
+    ]
+  },
+  {
+    "id": "pr-etica-presupuesto",
+    "palabras": [
+      "budget manipulation and ethics training",
+      "game the budget"
+    ]
+  },
+  {
+    "id": "pr-ventas",
+    "palabras": [
+      "the sales budget leads into the production budget",
+      "multiplied by the sales price"
+    ]
+  },
+  {
+    "id": "pr-produccion",
+    "palabras": [
+      "estimated sales plus the desired ending inventory",
+      "the formula is the reverse of the formula for the cost of goods sold"
+    ]
+  },
+  {
+    "id": "pr-mano-obra-cif",
+    "palabras": [
+      "direct labor budget",
+      "manufacturing overhead budget",
+      "the fixed costs are the same for each quarter"
+    ]
+  },
+  {
+    "id": "pr-gastos-resultados",
+    "palabras": [
+      "the sales and administrative budget is a nonmanufacturing budget",
+      "budgeted income statement"
+    ]
+  },
+  {
+    "id": "pr-capital",
+    "palabras": [
+      "capital asset budget",
+      "capital expenditure budget"
+    ]
+  },
+  {
+    "id": "pr-cobros-pagos",
+    "palabras": [
+      "cash collections schedule",
+      "cash payments schedule",
+      "uncollectible"
+    ]
+  },
+  {
+    "id": "pr-caja",
+    "palabras": [
+      "minimum cash balance",
+      "line of credit",
+      "net cash excess or deficiency"
+    ]
+  },
+  {
+    "id": "pr-balance-presupuestado",
+    "palabras": [
+      "budgeted balance sheet",
+      "the ending cash balance is the amount shown on the budgeted balance sheet"
+    ]
+  },
+  {
+    "id": "pr-estatico-flexible",
+    "palabras": [
+      "a flexible budget is one based on different volumes of sales",
+      "a static budget is one that is prepared based on a single level of output"
+    ]
+  },
+  {
+    "id": "pr-variaciones",
+    "palabras": [
+      "a favorable variance occurs when revenue is higher than budgeted or expenses are lower than budgeted",
+      "unfavorable variance"
+    ]
+  },
+  {
+    "id": "pr-costos-estandar",
+    "palabras": [
+      "a standard cost is an expected cost",
+      "ideal standard",
+      "reasonably attainable levels of efficiency"
+    ]
+  },
+  {
+    "id": "pr-variaciones-cif",
+    "palabras": [
+      "variable overhead rate variance",
+      "variable overhead efficiency variance"
+    ]
+  },
+  {
+    "id": "pr-explicar-variaciones",
+    "palabras": [
+      "budget slack",
+      "requiring managers to explain favorable variances"
+    ]
+  },
+  {
+    "id": "pr-largo-plazo",
+    "palabras": [
+      "long-term perspective",
+      "responsibility accounting in which authority and accountability"
+    ]
+  },
+  {
+    "id": "pr-contabilidad-responsabilidad",
+    "palabras": [
+      "responsibility accounting is a basic component of accounting systems",
+      "segments establish the structure for operational accountability"
+    ]
+  },
+  {
+    "id": "pr-centros-responsabilidad",
+    "palabras": [
+      "cost centers, discretionary cost centers, revenue centers, profit centers, and investment centers",
+      "a cost center is an organizational segment in which a manager is held responsible only for costs"
+    ]
   }
 ]

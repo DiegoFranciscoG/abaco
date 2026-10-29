@@ -1923,5 +1923,91 @@
       "seccion": "Reglas fiscales"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "presupuesto-maestro-caja",
+    "nombre": "Producción, cobros, caja y presupuesto flexible",
+    "descripcion": "Encadena el presupuesto de producción, el programa de cobros, el presupuesto de caja con saldo mínimo y el presupuesto flexible de una empresa de ejemplo.",
+    "materias": [
+      "presupuestos"
+    ],
+    "celdas": {
+      "A1": "Ventas presupuestadas (unidades)",
+      "B1": 1500,
+      "A2": "Inventario final deseado",
+      "B2": 750,
+      "A3": "Inventario inicial",
+      "B3": 450,
+      "A4": "Unidades a producir",
+      "B4": "=B1+B2-B3",
+      "A6": "Ventas del trimestre (USD)",
+      "B6": 112500,
+      "A7": "Ventas del trimestre anterior (USD)",
+      "B7": 70000,
+      "A8": "% cobrado en el trimestre",
+      "B8": 0.65,
+      "A9": "% cobrado en el siguiente",
+      "B9": 0.3,
+      "A10": "Cobros del trimestre",
+      "B10": "=B8*B6+B9*B7",
+      "A12": "Saldo inicial de caja",
+      "B12": 13000,
+      "A13": "Pagos del trimestre",
+      "B13": 100000,
+      "A14": "Saldo antes de financiamiento",
+      "B14": "=B12+B10-B13",
+      "A15": "Saldo mínimo exigido",
+      "B15": 10000,
+      "A16": "Financiamiento requerido",
+      "B16": "=MAX(B15-B14,0)",
+      "A18": "Costos fijos",
+      "B18": 29000,
+      "A19": "Costo variable unitario",
+      "B19": 30,
+      "A20": "Unidades reales",
+      "B20": 1400,
+      "A21": "Presupuesto flexible",
+      "B21": "=B18+B19*B20"
+    },
+    "formatos": {
+      "B4": "entero",
+      "B10": "moneda",
+      "B14": "moneda",
+      "B16": "moneda",
+      "B21": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B4",
+        "esperado": 1800,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B10",
+        "esperado": 94125,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 7125,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B16",
+        "esperado": 2875,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B21",
+        "esperado": 71000,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-pma",
+      "url": "https://openstax.org/books/principles-managerial-accounting/pages/7-3-prepare-financial-budgets",
+      "seccion": "7.3 Prepare Financial Budgets"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]
