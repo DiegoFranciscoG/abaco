@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (56 completas de 56)
+## Estado por materia (57 completas de 57)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -62,6 +62,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Diseño y evaluación de programas y políticas públicas | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Gestión de riesgos financieros | 0 de 7 | completa | 5 de 5 | 21 | 4 de 4 | 100 % | — |
+| Marco legal del marketing, protección de datos y ciberseguridad | 0 de 7 | completa | 5 de 5 | 21 | 1 de 1 | 100 % | — |
 | Matemáticas para economistas | 0 de 7 | completa | 5 de 5 | 23 | 8 de 8 | 100 % | — |
 | Mercado de valores e inversiones | 0 de 7 | completa | 5 de 5 | 20 | 4 de 4 | 100 % | — |
 | Organización industrial, teoría de juegos y economía del comportamiento | 0 de 7 | completa | 5 de 5 | 21 | 2 de 2 | 100 % | — |
@@ -167,7 +168,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad general (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Creatividad, innovación y design thinking (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Publicidad y comunicación comercial (completa, 5 de 5 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades) · sin pendientes.
-- **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Investigación de operaciones (completa, 5 de 5 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades); Responsabilidad social y sostenibilidad (completa, 5 de 5 unidades) · pendientes: Marco Legal del Marketing y Ciberseguridad.
+- **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Marco legal del marketing, protección de datos y ciberseguridad (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Investigación de operaciones (completa, 5 de 5 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades); Responsabilidad social y sostenibilidad (completa, 5 de 5 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Inglés de negocios (completa, 5 de 5 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · sin pendientes.

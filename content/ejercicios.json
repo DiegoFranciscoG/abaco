@@ -14691,5 +14691,63 @@
     },
     "materia": "evaluacion-politicas-publicas",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-dm-multa-leve-max",
+    "subtema": "dm-multas",
+    "formula": "multa-proteccion-datos",
+    "enunciado": "Una tienda en línea con un volumen de negocio de USD 2.000.000 el año anterior comete una infracción leve. ¿Cuál es la multa máxima posible?",
+    "datos": {
+      "VN": 2000000,
+      "t": 0.007
+    },
+    "calculo": "VN * t",
+    "respuesta": 14000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Máximo para infracción leve: 0,7 %",
+      "2.000.000 × 0,007 = 14.000"
+    ],
+    "pistas": [
+      "0,7 % = 0,007."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "lopdp",
+      "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+      "seccion": "Art. 71"
+    },
+    "materia": "derecho-marketing-datos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-dm-multa-grave",
+    "subtema": "dm-multas",
+    "formula": "multa-proteccion-datos",
+    "enunciado": "Una empresa con ventas de USD 5.000.000 el año anterior comete una infracción grave y la autoridad aplica el porcentaje máximo. ¿Cuánto paga?",
+    "datos": {
+      "VN": 5000000,
+      "t": 0.01
+    },
+    "calculo": "VN * t",
+    "respuesta": 50000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Máximo para infracción grave: 1 %",
+      "5.000.000 × 0,01 = 50.000"
+    ],
+    "pistas": [
+      "El rango grave va de 0,7 % a 1 %."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "lopdp",
+      "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+      "seccion": "Art. 72"
+    },
+    "materia": "derecho-marketing-datos",
+    "actualizado_en": "2026-10-26"
   }
 ]

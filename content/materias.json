@@ -1347,5 +1347,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "derecho-marketing-datos",
+    "nombre": "Marco legal del marketing, protección de datos y ciberseguridad",
+    "areas": [
+      "derecho",
+      "tecnologia"
+    ],
+    "descripcion": "Publicidad engañosa y abusiva, derechos del consumidor, información de precios, garantías y sanciones según la Ley Orgánica de Defensa del Consumidor; tratamiento legítimo, consentimiento, derechos del titular y mercadotecnia directa, seguridad de los datos, notificación de vulneraciones y multas según la Ley Orgánica de Protección de Datos Personales.",
+    "sinonimos": [
+      "derecho del marketing",
+      "defensa del consumidor",
+      "protección de datos personales",
+      "LOPDP",
+      "publicidad engañosa",
+      "ciberseguridad"
+    ],
+    "herramientas": [
+      "notas",
+      "tarjetas",
+      "editor"
+    ],
+    "orden": 57,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

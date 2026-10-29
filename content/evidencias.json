@@ -8702,5 +8702,150 @@
       "should hisp be scaled up nationally",
       "you find that the program reduced household health expenditures by us$8.16"
     ]
+  },
+  {
+    "id": "dm-enganosa-abusiva",
+    "palabras": [
+      "cuyo contenido sea total o parcialmente contrario a las condiciones reales o de adquisicion de los bienes y servicios ofrecidos",
+      "capaz de incitar a la violencia, explotar el miedo, aprovechar la falta de madurez de los ninos y adolescentes",
+      "que incluya mensajes subliminales"
+    ]
+  },
+  {
+    "id": "dm-publicidad-prohibida",
+    "palabras": [
+      "quedan prohibidas todas las formas de publicidad enganosa o abusiva",
+      "comete infraccion a esta ley el proveedor que a traves de cualquier tipo de mensaje induce al error o engano"
+    ]
+  },
+  {
+    "id": "dm-sustento",
+    "palabras": [
+      "el anunciante debera justificar adecuadamente la causa de dicho incumplimiento",
+      "los datos tecnicos, facticos y cientificos que dieron sustento al mensaje"
+    ]
+  },
+  {
+    "id": "dm-sancion-publicidad",
+    "palabras": [
+      "sera sancionado con una multa de mil a cuatro mil dolares",
+      "ordenara la difusion de la rectificacion de su contenido, a costa del anunciante"
+    ]
+  },
+  {
+    "id": "dm-derechos-consumidor",
+    "palabras": [
+      "derecho a la proteccion de la vida, salud y seguridad en el consumo de bienes y servicios",
+      "derecho a la informacion adecuada, veraz, clara, oportuna y completa sobre los bienes y servicios ofrecidos en el mercado"
+    ]
+  },
+  {
+    "id": "dm-informacion-basica",
+    "palabras": [
+      "informacion basica comercial.- consiste en los datos, instructivos, antecedentes, indicaciones o contraindicaciones",
+      "practica comercial consistente en el ofrecimiento de bienes o servicios"
+    ]
+  },
+  {
+    "id": "dm-precios",
+    "palabras": [
+      "todos los bienes a ser comercializados deberan exhibir sus respectivos precios, peso y medidas",
+      "de tal manera que el consumidor pueda conocer el valor final"
+    ]
+  },
+  {
+    "id": "dm-garantia",
+    "palabras": [
+      "deberan ser obligatoriamente garantizados por el proveedor para cubrir deficiencias de la fabricacion y de funcionamiento"
+    ]
+  },
+  {
+    "id": "dm-conceptos-lopdp",
+    "palabras": [
+      "autoridad publica independiente encargada de supervisar la aplicacion de la presente ley",
+      "la aplicacion de medidas dirigidas a impedir la identificacion o reidentificacion de una persona natural"
+    ]
+  },
+  {
+    "id": "dm-tratamiento-legitimo",
+    "palabras": [
+      "el tratamiento sera legitimo y licito si se cumple con alguna de las siguientes condiciones",
+      "por consentimiento del titular para el tratamiento de sus datos personales, para una o varias finalidades especificas"
+    ]
+  },
+  {
+    "id": "dm-consentimiento",
+    "palabras": [
+      "se podran tratar y comunicar datos personales cuando se cuente con la manifestacion de la voluntad del titular para hacerlo",
+      "inequivoca, de manera que no presente dudas sobre el alcance de la autorizacion otorgada por el titular"
+    ]
+  },
+  {
+    "id": "dm-informacion-titular",
+    "palabras": [
+      "los datos personales deben tratarse con estricto apego y cumplimiento a los principios",
+      "el titular de datos personales tiene derecho a ser informado conforme los principios de lealtad y transparente"
+    ]
+  },
+  {
+    "id": "dm-eliminacion",
+    "palabras": [
+      "el titular tiene derecho a que el responsable del tratamiento suprima sus datos personales",
+      "haya vencido el plazo de conservacion de los datos personales"
+    ]
+  },
+  {
+    "id": "dm-oposicion",
+    "palabras": [
+      "el tratamiento de datos personales tenga por objeto la mercadotecnia directa",
+      "incluida la elaboracion de perfiles"
+    ]
+  },
+  {
+    "id": "dm-portabilidad",
+    "palabras": [
+      "en un formato compatible, actualizado, estructurado, comun, interoperable y de lectura mecanica"
+    ]
+  },
+  {
+    "id": "dm-uso-comercial",
+    "palabras": [
+      "el patron de consumo de sus abonados clientes o usuarios para la promocion comercial de servicios o productos"
+    ]
+  },
+  {
+    "id": "dm-medidas-seguridad",
+    "palabras": [
+      "deberan implementar todas las medidas de seguridad adecuadas y necesarias",
+      "sistemas de seguridad de la informacion"
+    ]
+  },
+  {
+    "id": "dm-evaluacion-impacto",
+    "palabras": [
+      "el responsable realizara una evaluacion de impacto del tratamiento de datos personales"
+    ]
+  },
+  {
+    "id": "dm-vulneracion",
+    "palabras": [
+      "el responsable del tratamiento debera notificar la vulneracion de la seguridad de datos personales",
+      "a mas tardar en el termino de cinco (5) dias despues de que haya tenido constancia de ella"
+    ]
+  },
+  {
+    "id": "dm-delegado",
+    "palabras": [
+      "se designara un delegado de proteccion de datos personales en los siguientes casos",
+      "requieran un control permanente y sistematizado por su volumen, naturaleza, alcance o finalidades del tratamiento"
+    ]
+  },
+  {
+    "id": "dm-multas",
+    "palabras": [
+      "se aplicara una multa de entre el 0.1% y el 0.7% calculada sobre su volumen de negocio",
+      "correspondiente al ejercicio economico inmediatamente anterior al de la imposicion de la multa",
+      "se entiende por volumen de negocio"
+    ]
   }
 ]

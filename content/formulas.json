@@ -11780,5 +11780,69 @@
     "notas": [],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "multa-proteccion-datos",
+    "nombre": "Multa por infracción a la protección de datos (sector privado)",
+    "categoria": "calculo",
+    "materias": [
+      "derecho-marketing-datos"
+    ],
+    "areas": [
+      "derecho"
+    ],
+    "descripcion": "Para entidades de derecho privado y empresas públicas, la multa se calcula como un porcentaje del volumen de negocio del ejercicio económico anterior: entre 0,1 % y 0,7 % para infracciones leves y entre 0,7 % y 1 % para infracciones graves, según la proporcionalidad que fije la autoridad.",
+    "latex": "M = VN \\times t",
+    "variables": [
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Volumen de negocio del ejercicio económico inmediatamente anterior",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Porcentaje de multa que fija la autoridad dentro del rango legal",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VN * t"
+    },
+    "excel": {
+      "es": "=VN*t",
+      "en": "=VN*t"
+    },
+    "ejemplo": {
+      "enunciado": "Una tienda en línea con un volumen de negocio de USD 2.000.000 el año anterior comete una infracción leve. ¿Cuál es la multa mínima posible?",
+      "entradas": {
+        "VN": 2000000,
+        "t": 0.001
+      },
+      "pasos": [
+        "Infracción leve: entre 0,1 % y 0,7 %",
+        "Mínimo = 2.000.000 × 0,001 = 2.000"
+      ],
+      "resultado": 2000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=2000000*0,001",
+      "excel_en": "=2000000*0.001"
+    },
+    "fuente": {
+      "ref": "lopdp",
+      "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+      "seccion": "Arts. 71, 72 y 73"
+    },
+    "supuestos": [
+      "La autoridad elige el porcentaje según la intencionalidad, la reiteración y otros criterios de proporcionalidad."
+    ],
+    "notas": [
+      "Para servidores públicos las multas se fijan en salarios básicos unificados."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

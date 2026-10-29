@@ -985,6 +985,14 @@
         "planes": 1
       },
       {
+        "materia": "derecho-marketing-datos",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
         "materia": "emprendimiento",
         "ciclo": 3,
         "ciclos": [
@@ -1126,11 +1134,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Marco Legal del Marketing y Ciberseguridad",
-        "ciclo": 3,
-        "planes": 1
-      },
       {
         "nombre": "Modelos de Simulación",
         "ciclo": 7,

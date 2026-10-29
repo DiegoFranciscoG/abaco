@@ -1,0 +1,494 @@
+{
+  "materia": "derecho-marketing-datos",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "dm-publicidad",
+      "nombre": "Publicidad y consumidor",
+      "orden": 1,
+      "descripcion": "Publicidad engañosa y abusiva, publicidad prohibida, infracciones publicitarias, sustento de los mensajes y sanciones.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "dm-enganosa-abusiva",
+          "nombre": "Publicidad engañosa y publicidad abusiva",
+          "explicacion": "La Ley Orgánica de Defensa del Consumidor define la publicidad engañosa como toda información o comunicación comercial cuyo contenido sea total o parcialmente contrario a las condiciones reales del bien o servicio, o que, con textos, sonidos, imágenes o incluso por omisión de datos esenciales, induzca a engaño, error o confusión. La publicidad abusiva es la capaz de incitar a la violencia, explotar el miedo, aprovechar la falta de madurez de niños y adolescentes o inducir a conductas peligrosas; también lo es la que incluye mensajes subliminales.",
+          "ejemplo": "Anunciar un plan de internet 'ilimitado' que en realidad reduce la velocidad tras cierto consumo, sin decirlo, es publicidad engañosa por omisión de un dato esencial.",
+          "puntos_clave": [
+            "Engañosa: contraria a la realidad o con omisiones.",
+            "Abusiva: explota miedo, violencia o inmadurez.",
+            "Los mensajes subliminales son abusivos."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo engaña lo que es falso, no lo que se omite.",
+            "Dirigir a niños mensajes que aprovechan su inmadurez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 2, definiciones"
+          }
+        },
+        {
+          "id": "dm-publicidad-prohibida",
+          "nombre": "Publicidad prohibida e infracciones publicitarias",
+          "explicacion": "Quedan prohibidas todas las formas de publicidad engañosa o abusiva, o que induzcan a error en la elección del bien o servicio y afecten los intereses del consumidor. Comete infracción el proveedor que, con cualquier mensaje, induce a error o engaño, en especial sobre el país de origen, los componentes, el precio, la calidad, los beneficios, las características o las condiciones de compra del producto.",
+          "ejemplo": "Un yogur que se anuncia como 'hecho en Ecuador' cuando es importado comete una infracción publicitaria sobre el país de origen.",
+          "puntos_clave": [
+            "Prohibición general de la publicidad engañosa o abusiva.",
+            "Infracción por inducir a error.",
+            "Origen, precio y características."
+          ],
+          "errores_frecuentes": [
+            "Usar comparaciones o atributos sin poder demostrarlos.",
+            "Anunciar precios que no incluyen condiciones relevantes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Arts. 6 y 7"
+          }
+        },
+        {
+          "id": "dm-sustento",
+          "nombre": "El sustento de los mensajes publicitarios",
+          "explicacion": "En las controversias por incumplimiento de las normas de publicidad, el anunciante debe justificar adecuadamente la causa del incumplimiento. Además, el proveedor debe mantener en su poder, para información de los interesados legítimos, los datos técnicos, fácticos y científicos que sustentaron su mensaje publicitario.",
+          "ejemplo": "Una marca que anuncia que su detergente 'elimina el 99 % de las manchas' debe conservar los estudios de laboratorio que respaldan esa afirmación.",
+          "puntos_clave": [
+            "El anunciante justifica sus mensajes.",
+            "Conservar datos técnicos y científicos.",
+            "Disponibles para los interesados."
+          ],
+          "errores_frecuentes": [
+            "Publicar cifras sin estudios que las respalden.",
+            "Perder la documentación de una campaña."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 8, controversias derivadas de la publicidad"
+          }
+        },
+        {
+          "id": "dm-sancion-publicidad",
+          "nombre": "Sanciones por publicidad engañosa o abusiva",
+          "explicacion": "El proveedor cuya publicidad sea considerada engañosa o abusiva es sancionado con una multa de mil a cuatro mil dólares. Cuando un mensaje publicitario es engañoso o abusivo, la autoridad competente dispone además la suspensión de la difusión y ordena difundir la rectificación de su contenido, a costa del anunciante, por los mismos medios, espacios y horarios.",
+          "ejemplo": "Si una cadena de tiendas difundió en televisión una promoción engañosa, además de la multa debe pagar la rectificación en el mismo canal y horario.",
+          "puntos_clave": [
+            "Multa de USD 1.000 a 4.000.",
+            "Suspensión del mensaje.",
+            "Rectificación a costa del anunciante."
+          ],
+          "errores_frecuentes": [
+            "Creer que basta con retirar el anuncio.",
+            "Ignorar el costo de la rectificación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 72"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dm-consumidor",
+      "nombre": "Derechos del consumidor e información comercial",
+      "orden": 2,
+      "descripcion": "Derechos del consumidor, información básica comercial, información pública de precios y garantía.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "dm-derechos-consumidor",
+          "nombre": "Derechos del consumidor",
+          "explicacion": "La ley reconoce derechos fundamentales del consumidor, además de los de la Constitución y los tratados: la protección de la vida, la salud y la seguridad en el consumo; recibir servicios básicos de óptima calidad; la información adecuada, veraz, clara, oportuna y completa sobre bienes y servicios, sus precios, características, calidad y riesgos; y un trato transparente, equitativo y no discriminatorio o abusivo por parte de los proveedores.",
+          "ejemplo": "Un consumidor tiene derecho a saber, antes de contratar, el costo total y las condiciones de permanencia de un plan de telefonía.",
+          "puntos_clave": [
+            "Vida, salud y seguridad.",
+            "Información veraz y completa.",
+            "Trato transparente y no abusivo."
+          ],
+          "errores_frecuentes": [
+            "Ocultar condiciones de contratación en letra pequeña.",
+            "Tratar de forma discriminatoria a ciertos clientes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 4, derechos del consumidor"
+          }
+        },
+        {
+          "id": "dm-informacion-basica",
+          "nombre": "Información básica comercial y oferta",
+          "explicacion": "La información básica comercial consiste en los datos, instructivos, antecedentes, indicaciones o contraindicaciones que el proveedor debe entregar obligatoriamente al consumidor al ofrecer el bien o prestar el servicio. La oferta es la práctica comercial de ofrecer bienes o servicios al consumidor, y el proveedor es toda persona natural o jurídica, pública o privada, que produce, fabrica, importa, distribuye o comercializa bienes o presta servicios.",
+          "ejemplo": "Un vendedor de suplementos debe informar en la oferta sus contraindicaciones, no solo sus beneficios.",
+          "puntos_clave": [
+            "Información obligatoria al ofrecer.",
+            "Instructivos e indicaciones.",
+            "Concepto de oferta y proveedor."
+          ],
+          "errores_frecuentes": [
+            "Entregar el manual solo después de la compra.",
+            "Omitir contraindicaciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 2, definiciones"
+          }
+        },
+        {
+          "id": "dm-precios",
+          "nombre": "Información pública de precios",
+          "explicacion": "Todos los bienes que se comercializan deben exhibir sus precios, peso y medidas, según la naturaleza del producto. Toda información sobre el valor de bienes y servicios debe incluir, además del precio total, los montos adicionales por impuestos y otros recargos, de modo que el consumidor conozca el valor final. Cuando la naturaleza del producto lo permite, también debe indicarse el precio por unidad de medida.",
+          "ejemplo": "Una tienda en línea que muestra un precio sin impuestos y los agrega solo al pagar no informa el valor final como exige la ley.",
+          "puntos_clave": [
+            "Exhibir precio, peso y medidas.",
+            "Precio final con impuestos y recargos.",
+            "Precio por unidad cuando aplica."
+          ],
+          "errores_frecuentes": [
+            "Anunciar precios sin impuestos.",
+            "Agregar recargos en el último paso de la compra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 9, información pública"
+          }
+        },
+        {
+          "id": "dm-garantia",
+          "nombre": "Garantía de los productos durables",
+          "explicacion": "Los productos de naturaleza durable, como vehículos, artefactos eléctricos, mecánicos, electrodomésticos y electrónicos, deben estar obligatoriamente garantizados por el proveedor para cubrir deficiencias de fabricación y de funcionamiento. Las leyendas 'garantizado' o 'garantía' solo pueden usarse cuando indiquen claramente en qué consiste la garantía y sus condiciones, forma, plazo y lugar para hacerla efectiva.",
+          "ejemplo": "Un anuncio de una refrigeradora que dice 'con garantía' debe explicar cuánto dura, qué cubre y dónde se reclama.",
+          "puntos_clave": [
+            "Garantía obligatoria en durables.",
+            "Cubre fabricación y funcionamiento.",
+            "Condiciones claras al usar la palabra garantía."
+          ],
+          "errores_frecuentes": [
+            "Usar 'garantía' sin explicar sus condiciones.",
+            "Negar la garantía por defectos de fabricación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lodc",
+            "url": "https://www.wipo.int/wipolex/es/text/513773",
+            "seccion": "Art. 11, garantía"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dm-datos",
+      "nombre": "Protección de datos personales",
+      "orden": 3,
+      "descripcion": "Conceptos de la LOPDP, tratamiento legítimo, consentimiento, principios y derecho a la información.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "dm-conceptos-lopdp",
+          "nombre": "La LOPDP y sus conceptos",
+          "explicacion": "La Ley Orgánica de Protección de Datos Personales se publicó en el Quinto Suplemento del Registro Oficial 459 del 26 de mayo de 2021. Define conceptos como la autoridad de protección de datos personales, una autoridad pública independiente que supervisa la aplicación de la ley, y la anonimización, que son las medidas para impedir que se identifique o reidentifique a una persona natural sin esfuerzos desproporcionados.",
+          "ejemplo": "Una empresa que publica estadísticas de sus ventas por cantón, sin nombres ni cédulas que permitan identificar a los clientes, trabaja con datos anonimizados.",
+          "puntos_clave": [
+            "LOPDP de 2021.",
+            "Autoridad independiente de protección de datos.",
+            "Anonimización."
+          ],
+          "errores_frecuentes": [
+            "Creer que quitar el nombre basta para anonimizar.",
+            "Ignorar que la ley también rige al sector privado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 4, términos y definiciones"
+          }
+        },
+        {
+          "id": "dm-tratamiento-legitimo",
+          "nombre": "Tratamiento legítimo de datos",
+          "explicacion": "El tratamiento de datos personales es legítimo y lícito si cumple alguna condición legal, entre ellas: el consentimiento del titular para una o varias finalidades específicas; el cumplimiento de una obligación legal del responsable; una orden judicial, o el cumplimiento de una misión de interés público o del ejercicio de poderes públicos. Sin una de estas bases, el tratamiento no es legítimo.",
+          "ejemplo": "Un almacén puede tratar los datos de facturación por obligación legal, pero para enviar promociones necesita otra base, normalmente el consentimiento.",
+          "puntos_clave": [
+            "Necesita una base legal.",
+            "Consentimiento para fines específicos.",
+            "Obligación legal, orden judicial o interés público."
+          ],
+          "errores_frecuentes": [
+            "Usar datos de facturación para marketing sin permiso.",
+            "Pedir un consentimiento genérico para todo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 7, tratamiento legítimo"
+          }
+        },
+        {
+          "id": "dm-consentimiento",
+          "nombre": "El consentimiento válido",
+          "explicacion": "Se pueden tratar y comunicar datos personales cuando el titular manifiesta su voluntad de hacerlo. El consentimiento es válido cuando es libre, sin vicios; específico, con medios y fines concretos; informado, conforme al principio de transparencia, e inequívoco, sin dudas sobre el alcance de lo autorizado. El consentimiento puede revocarse.",
+          "ejemplo": "Una casilla sin marcar que dice 'Acepto recibir ofertas por correo electrónico de esta tienda' es un consentimiento específico; una casilla ya marcada no lo es.",
+          "puntos_clave": [
+            "Libre, específico, informado e inequívoco.",
+            "Se puede revocar.",
+            "Transparencia sobre fines."
+          ],
+          "errores_frecuentes": [
+            "Usar casillas premarcadas.",
+            "Mezclar el consentimiento con los términos del servicio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 8, consentimiento"
+          }
+        },
+        {
+          "id": "dm-informacion-titular",
+          "nombre": "Principios y derecho a la información",
+          "explicacion": "La ley se rige por principios como la juridicidad, que exige tratar los datos con estricto apego a la Constitución, los instrumentos internacionales, la ley y su reglamento. El titular tiene derecho a ser informado, con lealtad y transparencia, sobre los fines del tratamiento, su base legal, los tipos de tratamiento, el tiempo de conservación, la existencia de la base de datos, el origen de los datos si no los dio él mismo, y la identidad y contacto del responsable.",
+          "ejemplo": "Un formulario de registro de un sitio web debe explicar para qué se usarán los datos, cuánto tiempo se guardarán y a quién contactar.",
+          "puntos_clave": [
+            "Principio de juridicidad.",
+            "Fines, base legal y conservación.",
+            "Identidad del responsable."
+          ],
+          "errores_frecuentes": [
+            "Recoger datos sin aviso de privacidad.",
+            "No indicar el tiempo de conservación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Arts. 10 y 12"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dm-derechos-titular",
+      "nombre": "Derechos del titular y mercadotecnia",
+      "orden": 4,
+      "descripcion": "Derechos de eliminación, oposición a la mercadotecnia directa y portabilidad, y uso comercial de datos de telecomunicaciones.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "dm-eliminacion",
+          "nombre": "Derecho de eliminación",
+          "explicacion": "El titular puede exigir que el responsable suprima sus datos personales cuando el tratamiento no cumple los principios de la ley, no es necesario o pertinente para su finalidad, los datos ya cumplieron la finalidad para la que se recogieron, venció el plazo de conservación o el tratamiento afecta derechos fundamentales.",
+          "ejemplo": "Al terminar un concurso, los datos de los participantes que no ganaron y no autorizaron otro uso deben eliminarse.",
+          "puntos_clave": [
+            "Supresión de los datos.",
+            "Cuando se cumplió la finalidad.",
+            "Cuando venció el plazo de conservación."
+          ],
+          "errores_frecuentes": [
+            "Guardar datos 'por si acaso'.",
+            "No tener un procedimiento para atender solicitudes de eliminación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 15, derecho de eliminación"
+          }
+        },
+        {
+          "id": "dm-oposicion",
+          "nombre": "Oposición a la mercadotecnia directa",
+          "explicacion": "El titular tiene derecho a oponerse al tratamiento de sus datos en varios casos. Uno de ellos es clave para el marketing: cuando el tratamiento tiene por objeto la mercadotecnia directa, el interesado puede oponerse en todo momento, incluida la elaboración de perfiles, y sus datos dejan de tratarse para esos fines.",
+          "ejemplo": "Si un cliente responde 'no quiero recibir más ofertas', la empresa debe sacarlo de sus campañas y de sus segmentaciones por perfil.",
+          "puntos_clave": [
+            "Oposición en todo momento.",
+            "Incluye la elaboración de perfiles.",
+            "Los datos dejan de usarse para marketing."
+          ],
+          "errores_frecuentes": [
+            "Seguir enviando campañas tras la oposición.",
+            "Mantener al cliente en audiencias personalizadas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 16, derecho de oposición"
+          }
+        },
+        {
+          "id": "dm-portabilidad",
+          "nombre": "Derecho a la portabilidad",
+          "explicacion": "El titular puede recibir del responsable sus datos personales en un formato compatible, actualizado, estructurado, común, interoperable y de lectura mecánica, o pedir que se transmitan a otro responsable cuando sea técnicamente posible. La autoridad de protección de datos debe dictar la normativa para ejercer este derecho.",
+          "ejemplo": "Un usuario que cambia de plataforma de ventas en línea puede pedir su historial de compras en un archivo estructurado para llevarlo a la nueva.",
+          "puntos_clave": [
+            "Formato estructurado y de lectura mecánica.",
+            "Transmisión a otro responsable.",
+            "Normativa de la autoridad."
+          ],
+          "errores_frecuentes": [
+            "Entregar los datos en un PDF escaneado.",
+            "Negar la portabilidad sin justificación técnica."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 17, derecho a la portabilidad"
+          }
+        },
+        {
+          "id": "dm-uso-comercial",
+          "nombre": "Uso comercial de datos de telecomunicaciones",
+          "explicacion": "La LOPDP reformó la normativa de telecomunicaciones: los prestadores de servicios no pueden usar los datos personales, la información de uso del servicio, el tráfico o el patrón de consumo de sus abonados o usuarios para promocionar servicios o productos, salvo que el usuario haya dado su consentimiento conforme a la LOPDP. Los usuarios deben poder retirar ese consentimiento de forma clara y fácil.",
+          "ejemplo": "Una operadora no puede usar el historial de navegación de sus clientes para venderles seguros sin su consentimiento previo.",
+          "puntos_clave": [
+            "Datos de tráfico y consumo protegidos.",
+            "Promoción solo con consentimiento.",
+            "Retiro fácil del consentimiento."
+          ],
+          "errores_frecuentes": [
+            "Segmentar campañas con datos de tráfico sin permiso.",
+            "Dificultar el retiro del consentimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Disposiciones reformatorias, uso comercial de datos personales"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dm-seguridad",
+      "nombre": "Seguridad de los datos y cumplimiento",
+      "orden": 5,
+      "descripcion": "Medidas de seguridad, evaluación de impacto, notificación de vulneraciones, delegado de protección de datos y multas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "dm-medidas-seguridad",
+          "nombre": "Medidas de seguridad de los datos",
+          "explicacion": "Los responsables y encargados del tratamiento deben implementar todas las medidas de seguridad adecuadas y necesarias, aceptadas por el estado de la técnica, sean organizativas, técnicas o de otra índole, para proteger los datos frente a cualquier riesgo, amenaza o vulnerabilidad, según la naturaleza de los datos y el contexto. Pueden acogerse a estándares internacionales de gestión de riesgos y de sistemas de seguridad de la información.",
+          "ejemplo": "Cifrar la base de clientes, limitar el acceso por perfiles y registrar quién consulta los datos son medidas técnicas y organizativas.",
+          "puntos_clave": [
+            "Medidas organizativas y técnicas.",
+            "Según el estado de la técnica.",
+            "Estándares internacionales de seguridad."
+          ],
+          "errores_frecuentes": [
+            "Compartir contraseñas entre el personal.",
+            "Guardar bases de datos en hojas de cálculo sin protección."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 10, principio de seguridad, y art. 37"
+          }
+        },
+        {
+          "id": "dm-evaluacion-impacto",
+          "nombre": "Evaluación de impacto del tratamiento",
+          "explicacion": "El responsable debe realizar una evaluación de impacto del tratamiento de datos personales cuando identifique que, por su naturaleza, contexto o fines, el tratamiento puede conllevar un alto riesgo para los derechos y libertades del titular. Junto con ella, debe evaluar, prevenir, reducir, mitigar y controlar de forma permanente los riesgos, amenazas y vulnerabilidades.",
+          "ejemplo": "Antes de lanzar una aplicación que rastrea la ubicación de los clientes para enviarles ofertas, la empresa evalúa el impacto de ese tratamiento.",
+          "puntos_clave": [
+            "Obligatoria ante alto riesgo.",
+            "Naturaleza, contexto y fines.",
+            "Mitigación continua de riesgos."
+          ],
+          "errores_frecuentes": [
+            "Lanzar el producto antes de evaluar el riesgo.",
+            "Hacer la evaluación una sola vez y olvidarla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 42, evaluación de impacto"
+          }
+        },
+        {
+          "id": "dm-vulneracion",
+          "nombre": "Notificación de vulneraciones de seguridad",
+          "explicacion": "Ante una vulneración de la seguridad de los datos personales, el responsable debe notificarla a la autoridad de protección de datos y a la Agencia de Regulación y Control de las Telecomunicaciones tan pronto como sea posible, y a más tardar en el término de cinco días después de conocerla, salvo que sea improbable que represente un riesgo para los derechos y libertades de las personas.",
+          "ejemplo": "Si un ataque informático expone los correos y teléfonos de los clientes de una tienda en línea, la empresa tiene cinco días para notificarlo.",
+          "puntos_clave": [
+            "Notificar a la autoridad y a la ARCOTEL.",
+            "Máximo cinco días.",
+            "Excepción si no hay riesgo probable."
+          ],
+          "errores_frecuentes": [
+            "Ocultar el incidente.",
+            "Notificar tarde por esperar a tener toda la información."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 43, notificación de vulneración de seguridad"
+          }
+        },
+        {
+          "id": "dm-delegado",
+          "nombre": "Delegado de protección de datos",
+          "explicacion": "Se debe designar un delegado de protección de datos personales, entre otros casos, cuando el tratamiento lo realiza el sector público, y cuando las actividades del responsable o encargado requieren un control permanente y sistematizado por su volumen, naturaleza, alcance o finalidades, según la ley, su reglamento o la normativa de la autoridad.",
+          "ejemplo": "Una cadena de farmacias con millones de registros de clientes y recetas necesita un delegado que supervise el cumplimiento.",
+          "puntos_clave": [
+            "Obligatorio en el sector público.",
+            "Obligatorio con tratamientos masivos o sistemáticos.",
+            "Supervisa el cumplimiento."
+          ],
+          "errores_frecuentes": [
+            "Nombrar un delegado sin conocimientos ni independencia.",
+            "Creer que solo las empresas grandes tratan datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Art. 48, delegado de protección de datos personales"
+          }
+        },
+        {
+          "id": "dm-multas",
+          "nombre": "Multas por infracciones",
+          "explicacion": "Para entidades de derecho privado y empresas públicas, las infracciones leves se sancionan con una multa entre el 0,1 % y el 0,7 % del volumen de negocio del ejercicio económico anterior, y las graves con una multa entre el 0,7 % y el 1 %. El volumen de negocio es la cuantía de las ventas de productos y servicios del último ejercicio. La autoridad fija la multa según la proporcionalidad, considerando, entre otros, la intencionalidad y la reiteración.",
+          "ejemplo": "Una empresa con ventas de USD 5.000.000 que comete una infracción grave podría pagar entre USD 35.000 y 50.000.",
+          "puntos_clave": [
+            "Leves: 0,1 % a 0,7 %.",
+            "Graves: 0,7 % a 1 %.",
+            "Sobre el volumen de negocio del año anterior."
+          ],
+          "errores_frecuentes": [
+            "Creer que la multa es fija.",
+            "Calcularla sobre la utilidad en lugar de las ventas."
+          ],
+          "formulas": [
+            "multa-proteccion-datos"
+          ],
+          "fuente": {
+            "ref": "lopdp",
+            "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+            "seccion": "Arts. 71, 72 y 73"
+          }
+        }
+      ]
+    }
+  ]
+}

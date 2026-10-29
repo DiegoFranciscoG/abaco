@@ -826,5 +826,14 @@
     "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
     "licencia": "CC BY 3.0 IGO (se cita y enlaza; redacción propia)",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "lodc",
+    "titulo": "Ley Orgánica de Defensa del Consumidor (R.O. Suplemento 116 de 10-07-2000, modificada hasta el 16-01-2015)",
+    "autor_editor": "Congreso Nacional del Ecuador; texto alojado en WIPO Lex (OMPI)",
+    "tipo": "ley",
+    "url": "https://www.wipo.int/wipolex/es/text/513773",
+    "licencia": "Norma jurídica pública",
+    "fecha_consulta": "2026-10-30"
   }
 ]

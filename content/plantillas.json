@@ -2947,5 +2947,55 @@
       "seccion": "Caps. 4 y 7, caso HISP"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "rango-multas-lopdp",
+    "nombre": "Rango de multas de la LOPDP",
+    "descripcion": "Calcula el rango de multas por infracciones leves y graves a partir del volumen de negocio del año anterior.",
+    "materias": [
+      "derecho-marketing-datos"
+    ],
+    "celdas": {
+      "A1": "Volumen de negocio del año anterior (USD)",
+      "B1": 2000000,
+      "A3": "Infracción",
+      "B3": "Mínimo",
+      "C3": "Máximo",
+      "A4": "Leve (0,1 % a 0,7 %)",
+      "B4": "=B1*0.001",
+      "C4": "=B1*0.007",
+      "A5": "Grave (0,7 % a 1 %)",
+      "B5": "=B1*0.007",
+      "C5": "=B1*0.01"
+    },
+    "formatos": {
+      "B4": "moneda",
+      "C4": "moneda",
+      "B5": "moneda",
+      "C5": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B4",
+        "esperado": 2000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C4",
+        "esperado": 14000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C5",
+        "esperado": 20000,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "lopdp",
+      "url": "https://consejodecomunicacion.gob.ec/wp-content/uploads/downloads/2021/07/lotaip/Ley%20Org%C3%A1nica%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf",
+      "seccion": "Arts. 71 y 72"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]
