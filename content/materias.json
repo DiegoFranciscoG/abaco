@@ -971,5 +971,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "economia-popular-solidaria",
+    "nombre": "Economía popular y solidaria",
+    "areas": [
+      "gestion",
+      "derecho"
+    ],
+    "descripcion": "La economía popular y solidaria del Ecuador según la LOEPS: principios y acto solidario, sectores comunitario, asociativo y cooperativo, gobierno de las cooperativas, capital, reserva legal y distribución de excedentes, sector financiero popular y solidario e institucionalidad.",
+    "sinonimos": [
+      "EPS",
+      "cooperativismo",
+      "LOEPS",
+      "economía solidaria",
+      "cooperativas",
+      "sector financiero popular y solidario"
+    ],
+    "herramientas": [
+      "notas",
+      "tarjetas",
+      "editor"
+    ],
+    "orden": 43,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

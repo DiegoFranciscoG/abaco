@@ -65,6 +65,14 @@
         "planes": 3
       },
       {
+        "materia": "economia-popular-solidaria",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 2
+      },
+      {
         "materia": "estadistica-descriptiva",
         "ciclo": 2,
         "ciclos": [
@@ -234,13 +242,7 @@
         "planes": 3
       }
     ],
-    "pendientes": [
-      {
-        "nombre": "Economía Popular y Solidaria",
-        "ciclo": 2,
-        "planes": 2
-      }
-    ]
+    "pendientes": []
   },
   {
     "id": "contabilidad-auditoria",
@@ -430,6 +432,15 @@
         "planes": 2
       },
       {
+        "materia": "economia-popular-solidaria",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          6
+        ],
+        "planes": 2
+      },
+      {
         "materia": "emprendimiento",
         "ciclo": 5,
         "ciclos": [
@@ -499,11 +510,6 @@
         "nombre": "Control Interno y Gestión de Riesgos",
         "ciclo": 4,
         "planes": 2
-      },
-      {
-        "nombre": "Contabilidad de IFIS y Economía Popular y Solidaria",
-        "ciclo": 5,
-        "planes": 1
       },
       {
         "nombre": "Fundamentos de Contabilidad Gubernamental",

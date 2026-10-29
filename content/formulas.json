@@ -9273,5 +9273,209 @@
     ],
     "actualizado_en": "2026-10-28",
     "estado": "verificada"
+  },
+  {
+    "id": "aportacion-maxima-socio",
+    "nombre": "Aportación máxima de un socio al capital de una cooperativa",
+    "categoria": "contabilidad-basica",
+    "materias": [
+      "economia-popular-solidaria"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Monto máximo de certificados de aportación que puede tener un socio: 5 % del capital social en cooperativas de ahorro y crédito y 10 % en los demás grupos.",
+    "latex": "A_{max} = CS \\times l",
+    "variables": [
+      {
+        "simbolo": "CS",
+        "nombre": "CS",
+        "significado": "Capital social de la cooperativa",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "l",
+        "nombre": "l",
+        "significado": "Límite legal (0,05 en ahorro y crédito; 0,10 en los demás grupos)",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CS * l"
+    },
+    "excel": {
+      "es": "=CS*l",
+      "en": "=CS*l"
+    },
+    "ejemplo": {
+      "enunciado": "Una cooperativa de ahorro y crédito tiene un capital social de USD 200.000. ¿Cuánto puede aportar como máximo un socio?",
+      "entradas": {
+        "CS": 200000,
+        "l": 0.05
+      },
+      "pasos": [
+        "Límite en ahorro y crédito = 5 %",
+        "A max = 200.000 × 0,05 = 10.000"
+      ],
+      "resultado": 10000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=200000*0,05",
+      "excel_en": "=200000*0.05"
+    },
+    "fuente": {
+      "ref": "loeps",
+      "seccion": "Art. 49"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "incremento-reserva-legal",
+    "nombre": "Incremento mínimo del fondo irrepartible de reserva legal",
+    "categoria": "contabilidad-basica",
+    "materias": [
+      "economia-popular-solidaria"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Lo que debe sumarse cada año a la reserva legal de una cooperativa: la totalidad de las utilidades (operaciones con terceros) y al menos el 30 % de los excedentes (operaciones con socios).",
+    "latex": "\\Delta RL = U + r \\times E",
+    "variables": [
+      {
+        "simbolo": "U",
+        "nombre": "U",
+        "significado": "Utilidades por operaciones con terceros",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "r",
+        "nombre": "r",
+        "significado": "Porcentaje de excedentes a la reserva (al menos 0,30)",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "E",
+        "nombre": "E",
+        "significado": "Excedentes por operaciones con socios",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "U + r * E"
+    },
+    "excel": {
+      "es": "=U+r*E",
+      "en": "=U+r*E"
+    },
+    "ejemplo": {
+      "enunciado": "Una cooperativa de producción obtuvo USD 4.000 de utilidades por ventas a terceros y USD 30.000 de excedentes con sus socios. ¿Cuánto debe sumar como mínimo a su reserva legal?",
+      "entradas": {
+        "U": 4000,
+        "r": 0.3,
+        "E": 30000
+      },
+      "pasos": [
+        "Utilidades completas = 4.000",
+        "30 % de excedentes = 9.000",
+        "ΔRL = 13.000"
+      ],
+      "resultado": 13000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=4000+0,3*30000",
+      "excel_en": "=4000+0.3*30000"
+    },
+    "fuente": {
+      "ref": "loeps",
+      "seccion": "Art. 50"
+    },
+    "supuestos": [],
+    "notas": [
+      "La reserva legal no se reparte entre los socios ni siquiera en la liquidación."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "devolucion-excedentes",
+    "nombre": "Devolución de excedentes a un socio",
+    "categoria": "contabilidad-basica",
+    "materias": [
+      "economia-popular-solidaria"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Parte de los excedentes netos que recibe un socio: el 40 % destinado a devolución, repartido en proporción a las operaciones que el socio realizó con la cooperativa.",
+    "latex": "D_s = EN \\times d \\times \\frac{O_s}{O_T}",
+    "variables": [
+      {
+        "simbolo": "EN",
+        "nombre": "EN",
+        "significado": "Excedentes netos del ejercicio",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "d",
+        "nombre": "d",
+        "significado": "Porcentaje para devolución a los socios (0,40)",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "O_s",
+        "nombre": "Os",
+        "significado": "Operaciones del socio con la cooperativa",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "O_T",
+        "nombre": "OT",
+        "significado": "Operaciones de todos los socios con la cooperativa",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "EN * d * Os / OT"
+    },
+    "excel": {
+      "es": "=EN*d*Os/OT",
+      "en": "=EN*d*Os/OT"
+    },
+    "ejemplo": {
+      "enunciado": "Una cooperativa de consumo tiene excedentes netos de USD 50.000. Un socio compró USD 12.000 de un total de USD 400.000 comprado por todos los socios. ¿Cuánto le corresponde como devolución?",
+      "entradas": {
+        "EN": 50000,
+        "d": 0.4,
+        "Os": 12000,
+        "OT": 400000
+      },
+      "pasos": [
+        "Fondo para devolución = 40 % × 50.000 = 20.000",
+        "Participación del socio = 12.000 ÷ 400.000 = 3 %",
+        "Devolución = 20.000 × 0,03 = 600"
+      ],
+      "resultado": 600,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=50000*0,4*12000/400000",
+      "excel_en": "=50000*0.4*12000/400000"
+    },
+    "fuente": {
+      "ref": "loeps",
+      "seccion": "Art. 54"
+    },
+    "supuestos": [],
+    "notas": [
+      "Las cooperativas de ahorro y crédito no siguen esta distribución."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
   }
 ]

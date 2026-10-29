@@ -280,6 +280,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Economía Popular y Solidaria",
+    "carreras": 2,
+    "planes": 3,
+    "ciclo_habitual": 2,
+    "materia": "economia-popular-solidaria",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Presupuestos",
     "carreras": 2,
     "planes": 3,

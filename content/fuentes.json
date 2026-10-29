@@ -574,5 +574,14 @@
     "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
     "licencia": "Norma pública (Código Ingenios, art. 107)",
     "fecha_consulta": "2026-10-28"
+  },
+  {
+    "id": "loeps",
+    "titulo": "Ley Orgánica de Economía Popular y Solidaria (R.O. 444, 10-05-2011; texto con la última reforma del Supl. R.O. 311, 16-05-2023)",
+    "autor_editor": "Asamblea Nacional del Ecuador — copia publicada por la Superintendencia de Economía Popular y Solidaria",
+    "tipo": "ley",
+    "url": "https://www.seps.gob.ec/wp-content/uploads/LOEPS.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107); se cita y enlaza",
+    "fecha_consulta": "2026-10-29"
   }
 ]

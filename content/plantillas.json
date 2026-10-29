@@ -2009,5 +2009,91 @@
       "seccion": "7.3 Prepare Financial Budgets"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "distribucion-excedentes-cooperativa",
+    "nombre": "Distribución de excedentes de una cooperativa",
+    "descripcion": "Reparte los excedentes netos según el art. 54 de la LOEPS, calcula el aumento mínimo de la reserva legal y la devolución de un socio.",
+    "materias": [
+      "economia-popular-solidaria"
+    ],
+    "celdas": {
+      "A1": "Excedentes netos (USD)",
+      "B1": 50000,
+      "A2": "Utilidades con terceros (USD)",
+      "B2": 4000,
+      "A4": "Destino",
+      "B4": "Porcentaje",
+      "C4": "Monto (USD)",
+      "A5": "Capital social",
+      "B5": 0.2,
+      "C5": "=B$1*B5",
+      "A6": "Reserva legal (mínimo)",
+      "B6": 0.3,
+      "C6": "=B$1*B6",
+      "A7": "Devolución a socios",
+      "B7": 0.4,
+      "C7": "=B$1*B7",
+      "A8": "Superintendencia (hasta)",
+      "B8": 0.05,
+      "C8": "=B$1*B8",
+      "A9": "Comunidad",
+      "B9": 0.05,
+      "C9": "=B$1*B9",
+      "A10": "Total",
+      "B10": "=SUM(B5:B9)",
+      "C10": "=SUM(C5:C9)",
+      "A12": "Aumento mínimo de la reserva legal",
+      "C12": "=B2+C6",
+      "A14": "Operaciones del socio (USD)",
+      "B14": 12000,
+      "A15": "Operaciones de todos los socios (USD)",
+      "B15": 400000,
+      "A16": "Devolución del socio",
+      "C16": "=C7*B14/B15"
+    },
+    "formatos": {
+      "B5": "porcentaje",
+      "B6": "porcentaje",
+      "B7": "porcentaje",
+      "B8": "porcentaje",
+      "B9": "porcentaje",
+      "B10": "porcentaje",
+      "C5": "moneda",
+      "C6": "moneda",
+      "C7": "moneda",
+      "C8": "moneda",
+      "C9": "moneda",
+      "C10": "moneda",
+      "C12": "moneda",
+      "C16": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B10",
+        "esperado": 1,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C7",
+        "esperado": 20000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C12",
+        "esperado": 19000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C16",
+        "esperado": 600,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "loeps",
+      "seccion": "Arts. 50 y 54"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

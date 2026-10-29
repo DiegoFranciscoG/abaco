@@ -1,0 +1,457 @@
+{
+  "materia": "economia-popular-solidaria",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "eps-concepto",
+      "nombre": "Qué es la economía popular y solidaria",
+      "orden": 1,
+      "descripcion": "Definición y objeto de la ley, principios, acto económico solidario y su tratamiento tributario, formas de organización y personalidad jurídica.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "eps-definicion",
+          "nombre": "Definición y objeto de la LOEPS",
+          "explicacion": "La Ley Orgánica de Economía Popular y Solidaria (LOEPS) define la economía popular y solidaria como la forma de organización económica en la que sus integrantes, individual o colectivamente, organizan procesos de producción, intercambio, comercialización, financiamiento y consumo para satisfacer necesidades y generar ingresos, basados en la solidaridad, la cooperación y la reciprocidad, privilegiando al trabajo y al ser humano por sobre el lucro y la acumulación de capital. La ley busca reconocer, fomentar y fortalecer este sector y el sector financiero popular y solidario, dar un marco jurídico común a sus integrantes y establecer la institucionalidad pública que lo regula, controla y acompaña.",
+          "ejemplo": "Un grupo de productoras de cacao de una comunidad que se organiza para secar, empacar y vender su cosecha en conjunto forma parte de la economía popular y solidaria.",
+          "puntos_clave": [
+            "Solidaridad, cooperación y reciprocidad.",
+            "El trabajo y el ser humano antes que el lucro.",
+            "Marco jurídico e institucional común."
+          ],
+          "errores_frecuentes": [
+            "Confundirla con la economía informal.",
+            "Creer que sus organizaciones no pueden generar ingresos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 1 y 3"
+          }
+        },
+        {
+          "id": "eps-principios",
+          "nombre": "Principios de la economía popular y solidaria",
+          "explicacion": "Las personas y organizaciones amparadas por la ley se guían por la búsqueda del buen vivir y del bien común; la prelación del trabajo sobre el capital y de los intereses colectivos sobre los individuales; el comercio justo y el consumo ético y responsable; la equidad de género; el respeto a la identidad cultural; la autogestión; la responsabilidad social y ambiental, la solidaridad y la rendición de cuentas, y la distribución equitativa y solidaria de los excedentes.",
+          "ejemplo": "Una asociación que reparte sus excedentes según el trabajo aportado por cada socio, y no según cuánto dinero puso, aplica la prelación del trabajo sobre el capital.",
+          "puntos_clave": [
+            "Buen vivir y bien común.",
+            "Trabajo sobre capital.",
+            "Autogestión y distribución equitativa de excedentes."
+          ],
+          "errores_frecuentes": [
+            "Repartir excedentes solo según el capital aportado.",
+            "Olvidar la rendición de cuentas a los socios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Art. 4"
+          }
+        },
+        {
+          "id": "eps-acto-solidario",
+          "nombre": "Acto económico solidario y tributos",
+          "explicacion": "Los actos que las organizaciones realizan con sus socios dentro de su objeto social no son actos de comercio ni civiles, sino actos solidarios, y el trabajo que los socios realizan en su organización no genera relación laboral de dependencia. Esos actos solidarios no constituyen hechos generadores de tributos; en cambio, las operaciones con terceros están sujetas al régimen tributario común, y las utilidades de operaciones con terceros que no se reinviertan en la organización pagan impuesto a la renta.",
+          "ejemplo": "Cuando una cooperativa de consumo vende víveres a sus socios realiza un acto solidario; cuando vende al público en general, esa venta sigue las reglas tributarias comunes.",
+          "puntos_clave": [
+            "Actos con socios: actos solidarios.",
+            "Sin relación laboral por el trabajo del socio.",
+            "Operaciones con terceros: régimen tributario común."
+          ],
+          "errores_frecuentes": [
+            "Creer que todo lo que hace una cooperativa está exento de impuestos.",
+            "Tratar al socio trabajador como empleado dependiente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 5 y 139"
+          }
+        },
+        {
+          "id": "eps-formas",
+          "nombre": "Formas de organización, registro y personalidad jurídica",
+          "explicacion": "Integran la economía popular y solidaria las organizaciones de los sectores comunitario, asociativo y cooperativo, así como las unidades económicas populares. Las personas y organizaciones deben inscribirse en el registro público a cargo del ministerio responsable de los registros sociales, lo que habilita el acceso a los beneficios de la ley. Las organizaciones se constituyen como personas jurídicas mediante acto administrativo del Superintendente, que se inscribe en el registro, y actúan a su nombre y no a nombre de sus socios.",
+          "ejemplo": "Una asociación de costureras obtiene su personalidad jurídica de la Superintendencia y desde entonces firma contratos a nombre de la asociación, no de cada socia.",
+          "puntos_clave": [
+            "Comunitario, asociativo, cooperativo y unidades populares.",
+            "Registro público para acceder a beneficios.",
+            "Personalidad jurídica otorgada por la Superintendencia."
+          ],
+          "errores_frecuentes": [
+            "Firmar contratos a título personal en nombre de la organización.",
+            "Olvidar el registro público."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 6, 8 y 9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eps-sectores",
+      "nombre": "Sectores comunitario, asociativo y cooperativo",
+      "orden": 2,
+      "descripcion": "Organizaciones comunitarias, asociaciones, cooperativas y sus grupos de producción, consumo, vivienda, ahorro y crédito y servicios.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "eps-comunitario",
+          "nombre": "Sector comunitario",
+          "explicacion": "El sector comunitario es el conjunto de organizaciones vinculadas por relaciones de territorio, familiares, identidades étnicas o culturales, de género, de cuidado de la naturaleza, urbanas o rurales, o de comunas, comunidades, pueblos y nacionalidades, que mediante el trabajo conjunto producen, comercializan, distribuyen y consumen bienes o servicios lícitos y socialmente necesarios, de forma solidaria y autogestionada. Estas organizaciones adoptan la denominación, el sistema de gobierno, el control interno y la representación que mejor convengan a sus costumbres.",
+          "ejemplo": "Una comuna que administra en conjunto un emprendimiento de turismo comunitario y decide en asamblea cómo repartir el trabajo pertenece al sector comunitario.",
+          "puntos_clave": [
+            "Vínculos de territorio, familia o identidad.",
+            "Trabajo conjunto y autogestión.",
+            "Gobierno según sus costumbres."
+          ],
+          "errores_frecuentes": [
+            "Exigirles la misma estructura que a una cooperativa.",
+            "Pensar que solo existen en zonas rurales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 15-16"
+          }
+        },
+        {
+          "id": "eps-asociativo",
+          "nombre": "Sector asociativo",
+          "explicacion": "El sector asociativo es el conjunto de asociaciones constituidas por personas naturales con actividades económicas productivas o de servicios similares o complementarias, para producir, comercializar y consumir bienes y servicios lícitos y socialmente necesarios, abastecerse de materia prima, insumos, herramientas, tecnología y equipos, o comercializar su producción de forma solidaria y autogestionada. Pueden constituirse en cualquier actividad económica, salvo vivienda, ahorro y crédito, entre otras excepciones de la ley.",
+          "ejemplo": "Varios artesanos de cuero forman una asociación para comprar juntos la materia prima a mejor precio y vender en ferias como un solo proveedor.",
+          "puntos_clave": [
+            "Personas naturales con actividades afines.",
+            "Compras y ventas conjuntas.",
+            "Excepciones como vivienda y ahorro y crédito."
+          ],
+          "errores_frecuentes": [
+            "Crear una asociación para captar ahorros.",
+            "Confundir asociación con cooperativa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Art. 18"
+          }
+        },
+        {
+          "id": "eps-cooperativo",
+          "nombre": "Sector cooperativo",
+          "explicacion": "El sector cooperativo es el conjunto de cooperativas, sociedades de personas que se unen voluntariamente para satisfacer sus necesidades económicas, sociales y culturales en común, mediante una empresa de propiedad conjunta y de gestión democrática, con personalidad jurídica de derecho privado sin fines de lucro y de interés social. Se rigen por los principios de la ley, por los valores y principios universales del cooperativismo y por las prácticas de buen gobierno cooperativo. Según su actividad principal, cada cooperativa pertenece a un solo grupo: producción, consumo, vivienda, ahorro y crédito o servicios.",
+          "ejemplo": "Un grupo de taxistas forma una cooperativa de servicios de transporte: todos son dueños de la empresa y la gobiernan democráticamente.",
+          "puntos_clave": [
+            "Sociedad de personas, no de capitales.",
+            "Propiedad conjunta y gestión democrática.",
+            "Cinco grupos de cooperativas."
+          ],
+          "errores_frecuentes": [
+            "Tratar la cooperativa como una sociedad anónima.",
+            "Inscribir una cooperativa en dos grupos a la vez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 21 y 23"
+          }
+        },
+        {
+          "id": "eps-tipos-cooperativas",
+          "nombre": "Cooperativas de producción, consumo y servicios",
+          "explicacion": "En las cooperativas de producción, los socios se dedican personalmente a actividades productivas lícitas, como agropecuarias, pesqueras, artesanales o textiles, en una sociedad de propiedad colectiva. Las de consumo abastecen a sus socios de bienes de libre comercialización, como artículos de primera necesidad, semillas, abonos o herramientas. Las de servicios satisfacen necesidades comunes de los socios o de la colectividad, como limpieza, alimentación, turismo, salud o trabajo asociado. En las cooperativas de producción y de servicios, no menos del 75 % del volumen de negocio debe realizarse con sus socios.",
+          "ejemplo": "Una cooperativa pesquera vende el 80 % de su producción a partir de lo capturado por sus socios y el 20 % de compras a terceros: cumple el mínimo del 75 %.",
+          "puntos_clave": [
+            "Producción: socios que producen.",
+            "Consumo: abastecimiento de los socios.",
+            "Mínimo de 75 % de negocio con los socios."
+          ],
+          "errores_frecuentes": [
+            "Hacer la mayor parte del negocio con terceros.",
+            "Confundir cooperativa de consumo con tienda comercial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 24, 25 y 28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eps-gobierno",
+      "nombre": "Gobierno de las cooperativas",
+      "orden": 3,
+      "descripcion": "Asamblea general y voto único, consejos de administración y vigilancia, gerente y organismos de integración.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "eps-asamblea",
+          "nombre": "Asamblea general: un socio, un voto",
+          "explicacion": "Las cooperativas cuentan con una asamblea general de socios o de representantes, un consejo de administración, un consejo de vigilancia y una gerencia, evitando conflictos de intereses al designarlos. La asamblea general es el máximo órgano de gobierno: la integran todos los socios, cada uno con derecho a un solo voto sin importar el monto de sus aportaciones, y sus decisiones obligan a todos. Las cooperativas con más de doscientos socios realizan la asamblea a través de representantes, en número no menor de treinta ni mayor de cien, elegidos por votación personal, directa y secreta.",
+          "ejemplo": "En una cooperativa, el socio que aportó USD 5.000 y el que aportó USD 200 tienen el mismo voto en la asamblea.",
+          "puntos_clave": [
+            "Máximo órgano de gobierno.",
+            "Un socio, un voto.",
+            "Asamblea de representantes con más de 200 socios."
+          ],
+          "errores_frecuentes": [
+            "Ponderar el voto por el capital aportado.",
+            "Elegir representantes sin votación secreta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 32-35"
+          }
+        },
+        {
+          "id": "eps-consejos",
+          "nombre": "Consejo de administración y consejo de vigilancia",
+          "explicacion": "El consejo de administración es el órgano directivo y de fijación de políticas: tiene entre tres y nueve vocales principales con sus suplentes, elegidos por la asamblea en votación secreta, por un período fijado en el estatuto que no excede cuatro años, con una sola reelección; su presidente lo es también de la cooperativa y de la asamblea. El consejo de vigilancia es el órgano de control interno de las actividades económicas, independiente de la administración y responsable ante la asamblea, con entre tres y cinco vocales principales elegidos de la misma forma.",
+          "ejemplo": "El consejo de vigilancia revisa que los créditos aprobados por la administración cumplan el reglamento y reporta sus hallazgos directamente a la asamblea.",
+          "puntos_clave": [
+            "Administración: 3 a 9 vocales, fija políticas.",
+            "Vigilancia: 3 a 5 vocales, control interno.",
+            "Períodos de hasta cuatro años y una reelección."
+          ],
+          "errores_frecuentes": [
+            "Que el consejo de vigilancia dependa de la administración.",
+            "Reelegir vocales indefinidamente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 38-40"
+          }
+        },
+        {
+          "id": "eps-gerente",
+          "nombre": "El gerente",
+          "explicacion": "El gerente es el representante legal, judicial y extrajudicial de la cooperativa; lo designa y remueve libremente el consejo de administración y es responsable de la gestión y administración integral conforme a la ley, su reglamento y el estatuto. En los segmentos de cooperativas de ahorro y crédito que determine la Superintendencia, el gerente debe ser calificado por ella. Su contratación se rige por el Código Civil y, en su ausencia temporal, lo subroga quien designe el consejo, con los mismos requisitos.",
+          "ejemplo": "El consejo de administración de una cooperativa de ahorro y crédito del segmento 1 elige un gerente, pero este solo puede asumir tras ser calificado por la Superintendencia.",
+          "puntos_clave": [
+            "Representante legal.",
+            "Designado por el consejo de administración.",
+            "Calificación en ciertos segmentos de ahorro y crédito."
+          ],
+          "errores_frecuentes": [
+            "Creer que la asamblea elige directamente al gerente.",
+            "Contratarlo como empleado bajo el Código del Trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 45-46"
+          }
+        },
+        {
+          "id": "eps-integracion",
+          "nombre": "Organismos de integración",
+          "explicacion": "Las organizaciones pueden constituir organismos de integración representativa o económica, de carácter local, provincial, regional o nacional. En ellos las decisiones se toman con voto ponderado según el número de socios de cada organización, en un rango de uno a cinco votos, garantizando el derecho de las minorías. La integración representativa defiende los intereses de sus afiliadas, ayuda a resolver conflictos y brinda capacitación y asistencia técnica mediante uniones, redes, federaciones y confederaciones; la integración económica complementa las operaciones de sus afiliadas.",
+          "ejemplo": "Varias cooperativas cafetaleras forman una federación provincial que negocia con exportadores y capacita a sus socios en calidad del grano.",
+          "puntos_clave": [
+            "Integración representativa y económica.",
+            "Voto ponderado de uno a cinco votos.",
+            "Uniones, redes, federaciones y confederaciones."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el voto único dentro de un organismo de integración.",
+            "Confundir integración representativa con económica."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 121-124"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eps-economico",
+      "nombre": "Régimen económico de las cooperativas",
+      "orden": 4,
+      "descripcion": "Patrimonio y capital social, utilidades y excedentes, fondo irrepartible de reserva legal y distribución de excedentes.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "eps-patrimonio-capital",
+          "nombre": "Patrimonio y capital social",
+          "explicacion": "El patrimonio de una cooperativa lo integran el capital social, el fondo irrepartible de reserva legal y otras reservas estatutarias. El capital social es variable e ilimitado y está formado por las aportaciones pagadas por los socios en dinero, bienes o trabajo avaluados por el consejo de administración, representadas en certificados de aportación nominativos y transferibles entre socios o a favor de la cooperativa. Cada socio puede tener aportaciones de hasta el 5 % del capital social en las cooperativas de ahorro y crédito y hasta el 10 % en los demás grupos.",
+          "ejemplo": "En una cooperativa de servicios con capital social de USD 80.000, ningún socio puede tener más de 0,10 × 80.000 = USD 8.000 en certificados de aportación.",
+          "puntos_clave": [
+            "Capital variable e ilimitado.",
+            "Certificados de aportación.",
+            "Límite de 5 % o 10 % por socio."
+          ],
+          "errores_frecuentes": [
+            "Permitir que un socio concentre el capital.",
+            "Aplicar el 10 % a una cooperativa de ahorro y crédito."
+          ],
+          "formulas": [
+            "aportacion-maxima-socio"
+          ],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 48-49"
+          }
+        },
+        {
+          "id": "eps-utilidades-excedentes",
+          "nombre": "Utilidades y excedentes",
+          "explicacion": "La ley distingue dos resultados. Las utilidades son los ingresos obtenidos en operaciones con terceros, luego de deducir los costos, gastos y deducciones correspondientes. Los excedentes son los valores sobrantes o remanentes que obtienen las cooperativas o asociaciones en las actividades realizadas con sus socios, una vez deducidos los costos y gastos. La diferencia importa porque cada uno tiene un destino distinto en la reserva legal y en la distribución.",
+          "ejemplo": "Si una cooperativa de consumo gana USD 3.000 vendiendo al público y USD 20.000 vendiendo a sus socios, tiene USD 3.000 de utilidades y USD 20.000 de excedentes.",
+          "puntos_clave": [
+            "Utilidades: operaciones con terceros.",
+            "Excedentes: operaciones con socios.",
+            "Destinos distintos."
+          ],
+          "errores_frecuentes": [
+            "Sumar utilidades y excedentes como un solo resultado.",
+            "Repartir utilidades de terceros como si fueran excedentes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 52-53"
+          }
+        },
+        {
+          "id": "eps-reserva-legal",
+          "nombre": "Fondo irrepartible de reserva legal",
+          "explicacion": "Las cooperativas constituyen el fondo irrepartible de reserva legal para solventar contingencias patrimoniales o cubrir pérdidas eventuales. Se incrementa cada año con la totalidad de las utilidades y al menos el 30 % de los excedentes anuales, y también con las donaciones y legados que reciba la cooperativa. No puede distribuirse entre los socios ni aumentar sus certificados de aportación bajo ninguna figura, ni siquiera en caso de liquidación. Además de la reserva legal, la cooperativa puede crear otras reservas que considere necesarias.",
+          "ejemplo": "Con USD 3.000 de utilidades y USD 20.000 de excedentes, la reserva legal debe crecer al menos 3.000 + 0,30 × 20.000 = USD 9.000.",
+          "puntos_clave": [
+            "Para contingencias y pérdidas.",
+            "100 % de utilidades + al menos 30 % de excedentes.",
+            "No se reparte nunca."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el 30 % también a las utilidades.",
+            "Repartir la reserva al liquidar la cooperativa."
+          ],
+          "formulas": [
+            "incremento-reserva-legal"
+          ],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 50-51"
+          }
+        },
+        {
+          "id": "eps-distribucion",
+          "nombre": "Distribución de los excedentes",
+          "explicacion": "Una vez deducidos los gastos de administración, la amortización de deudas y la compensación sobre las aportaciones, los excedentes netos se distribuyen así: el 20 % para incrementar el capital social, entregando certificados a los socios; al menos el 30 % para la reserva legal; el 40 % para devolver a los socios en proporción a las operaciones que realizaron con la cooperativa; hasta el 5 % para la Superintendencia de Economía Popular y Solidaria, y el 5 % en beneficio de la comunidad, según resuelva la asamblea. Las cooperativas de ahorro y crédito no siguen esta distribución y pueden destinar el saldo de excedentes a pagar un interés anual sobre los certificados de aportación.",
+          "ejemplo": "Con excedentes netos de USD 50.000, el fondo de devolución es USD 20.000; un socio que hizo el 3 % de las operaciones recibe 20.000 × 0,03 = USD 600.",
+          "puntos_clave": [
+            "20 % capital, 30 % reserva, 40 % socios.",
+            "Hasta 5 % para la SEPS y 5 % para la comunidad.",
+            "Devolución según operaciones, no según capital."
+          ],
+          "errores_frecuentes": [
+            "Devolver excedentes según las aportaciones.",
+            "Aplicar esta distribución a una cooperativa de ahorro y crédito."
+          ],
+          "formulas": [
+            "devolucion-excedentes"
+          ],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Art. 54"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eps-financiero-instituciones",
+      "nombre": "Sector financiero popular y solidario e institucionalidad",
+      "orden": 5,
+      "descripcion": "Entidades del sector financiero popular y solidario, unidades económicas populares, Superintendencia, IEPS y CONAFIPS, y medidas de fomento.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "eps-sector-financiero",
+          "nombre": "Sector financiero popular y solidario",
+          "explicacion": "Integran el sector financiero popular y solidario las cooperativas de ahorro y crédito, las entidades asociativas o solidarias, las cajas y bancos comunales y las cajas de ahorro. Las tasas de interés máximas activas y pasivas que aplican las fija la junta de regulación competente, y en lo no previsto se rigen por las normas del título de la ley sobre la economía popular y solidaria y por el Código Orgánico Monetario y Financiero. Las cooperativas de ahorro y crédito solo pueden realizar como actividades complementarias las auxiliares de las actividades financieras.",
+          "ejemplo": "Una caja de ahorro de un barrio, que reúne los ahorros de sus vecinos y les presta pequeños montos, forma parte del sector financiero popular y solidario.",
+          "puntos_clave": [
+            "Cooperativas de ahorro y crédito, cajas y bancos comunales.",
+            "Tasas máximas fijadas por la regulación.",
+            "Actividades complementarias limitadas."
+          ],
+          "errores_frecuentes": [
+            "Creer que una caja de ahorro no está regulada.",
+            "Ubicar a las cooperativas de ahorro y crédito en el sector privado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 27, 78 y 79"
+          }
+        },
+        {
+          "id": "eps-unidades-populares",
+          "nombre": "Unidades económicas populares",
+          "explicacion": "Son unidades económicas populares las que se dedican a la economía del cuidado, los emprendimientos unipersonales, familiares y domésticos, los comerciantes minoristas y los talleres artesanales, que producen, comercializan bienes o prestan servicios y que se promueven fomentando la asociación y la solidaridad. El comerciante minorista es la persona natural que de forma autónoma tiene un pequeño negocio de provisión de bienes o servicios, sin exceder los límites que fija cada año la Superintendencia; el artesano es el trabajador manual, maestro de taller o artesano autónomo que trabaja personalmente, también dentro de límites fijados anualmente.",
+          "ejemplo": "Una persona que vende abarrotes en una pequeña tienda de su barrio y un maestro zapatero con su taller son unidades económicas populares.",
+          "puntos_clave": [
+            "Cuidado, emprendimientos familiares, minoristas y artesanos.",
+            "Límites fijados por la Superintendencia.",
+            "Promoción de la asociación."
+          ],
+          "errores_frecuentes": [
+            "Considerar unidad popular a cualquier empresa pequeña sin revisar los límites.",
+            "Olvidar la economía del cuidado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 73, 76 y 77"
+          }
+        },
+        {
+          "id": "eps-instituciones",
+          "nombre": "Superintendencia, IEPS, CONAFIPS y balance social",
+          "explicacion": "El control de la economía popular y solidaria y del sector financiero popular y solidario está a cargo de la Superintendencia de Economía Popular y Solidaria, organismo técnico con jurisdicción nacional que puede expedir normas generales en su materia. Las cooperativas deben presentar cada año un balance social, con los criterios de evaluación social que elabore la Superintendencia. El Instituto Nacional de Economía Popular y Solidaria ejecuta la política pública de fomento y promoción, y la Corporación Nacional de Finanzas Populares y Solidarias es una entidad financiera pública que apoya al sector y puede actuar como fiduciaria.",
+          "ejemplo": "Una cooperativa de ahorro y crédito presenta sus estados financieros y su balance social a la Superintendencia, y puede acceder a líneas de segundo piso de la Corporación para prestar a sus socios.",
+          "puntos_clave": [
+            "SEPS: control y normas.",
+            "Balance social anual de las cooperativas.",
+            "IEPS fomenta; CONAFIPS financia."
+          ],
+          "errores_frecuentes": [
+            "Confundir la función de control con la de fomento.",
+            "Olvidar el balance social."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Arts. 146, 152.3, 153 y 158"
+          }
+        },
+        {
+          "id": "eps-fomento",
+          "nombre": "Medidas de fomento: contratación pública",
+          "explicacion": "El Estado debe establecer medidas de fomento a favor de las personas y organizaciones amparadas por la ley. En contratación pública, el ente rector debe implementar de forma obligatoria márgenes de preferencia a favor de estas organizaciones, así como de artesanos, pequeños productores, microempresas y emprendimientos, reconociendo la prioridad de los bienes y servicios que generan sobre los ofertados por otros. La feria inclusiva y el catálogo electrónico son algunos de los mecanismos para lograrlo.",
+          "ejemplo": "Una asociación de confección de uniformes participa en una feria inclusiva convocada por una institución pública y gana el contrato gracias al margen de preferencia.",
+          "puntos_clave": [
+            "Medidas de fomento obligatorias.",
+            "Márgenes de preferencia en contratación pública.",
+            "Feria inclusiva y catálogo electrónico."
+          ],
+          "errores_frecuentes": [
+            "Creer que la preferencia elimina los requisitos de calidad.",
+            "Desconocer las ferias inclusivas como oportunidad de venta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "loeps",
+            "seccion": "Art. 132"
+          }
+        }
+      ]
+    }
+  ]
+}
