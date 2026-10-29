@@ -1213,5 +1213,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "matematica-economistas",
+    "nombre": "Matemáticas para economistas",
+    "areas": [
+      "cuantitativo",
+      "economia"
+    ],
+    "descripcion": "Álgebra lineal (matrices inversas, determinantes, regla de Cramer y vectores), funciones de varias variables con optimización libre y restringida por multiplicadores de Lagrange, y métodos dinámicos: crecimiento continuo, ecuaciones diferenciales, recurrencias y series.",
+    "sinonimos": [
+      "álgebra lineal",
+      "métodos dinámicos en economía",
+      "matemática para economistas",
+      "multiplicadores de Lagrange",
+      "ecuaciones diferenciales",
+      "cálculo multivariable"
+    ],
+    "herramientas": [
+      "graficador",
+      "editor",
+      "estadistica"
+    ],
+    "orden": 52,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

@@ -1,0 +1,550 @@
+{
+  "materia": "matematica-economistas",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "me-matrices",
+      "nombre": "Matrices inversas y determinantes",
+      "orden": 1,
+      "descripcion": "Matriz identidad e inversa, solución de sistemas con la inversa, determinantes, regla de Cramer y propiedades de los determinantes.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "me-identidad-inversa",
+          "nombre": "Matriz identidad y matriz inversa",
+          "explicacion": "La matriz identidad es una matriz cuadrada con unos en la diagonal principal y ceros en el resto; actúa como el número 1 en el álgebra de matrices, porque AI = IA = A. La inversa de A es la matriz A⁻¹ tal que AA⁻¹ = A⁻¹A = I. Una matriz que tiene inversa se llama invertible; solo una matriz cuadrada puede tenerla, no todas la tienen y, si existe, es única.",
+          "ejemplo": "Las matrices A = [1 5; −2 −9] y B = [−9 −5; 2 1] son inversas entre sí, porque AB y BA dan la matriz identidad [1 0; 0 1].",
+          "puntos_clave": [
+            "Identidad: unos en la diagonal.",
+            "AA⁻¹ = A⁻¹A = I.",
+            "Solo matrices cuadradas pueden ser invertibles."
+          ],
+          "errores_frecuentes": [
+            "Comprobar solo AB y no BA.",
+            "Suponer que toda matriz cuadrada tiene inversa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-7-resolver-sistemas-con-inversas",
+            "seccion": "9.7 Resolver sistemas con inversas"
+          }
+        },
+        {
+          "id": "me-sistema-inversa",
+          "nombre": "Resolver sistemas con la matriz inversa",
+          "explicacion": "Un sistema de ecuaciones lineales se escribe como AX = B, donde A es la matriz de coeficientes, X el vector de incógnitas y B el de constantes. Si A es invertible, multiplicando ambos lados por A⁻¹ se obtiene X = A⁻¹B. El libro lo aplica a un problema financiero: repartir una inversión entre dos bonos para obtener una rentabilidad conjunta deseada.",
+          "ejemplo": "Soriya invierte USD 10.500 en dos bonos que rinden 10 % y 6 % y quiere un rendimiento de 8,5 %: x + y = 10.500 y 0,10x + 0,06y = 892,5. La solución es invertir USD 6.562,50 en el primero y USD 3.937,50 en el segundo.",
+          "puntos_clave": [
+            "Forma matricial AX = B.",
+            "X = A⁻¹B si A es invertible.",
+            "Aplicación a carteras de inversión."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar BA⁻¹ en lugar de A⁻¹B.",
+            "Olvidar expresar el rendimiento deseado en dólares."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-7-resolver-sistemas-con-inversas",
+            "seccion": "9.7 Resolver sistemas con inversas"
+          }
+        },
+        {
+          "id": "me-determinante",
+          "nombre": "Determinante de una matriz 2 × 2",
+          "explicacion": "El determinante es un número real asociado a una matriz cuadrada que tiene varias aplicaciones, como calcular áreas y volúmenes; aquí sirve sobre todo como indicador de si la matriz es invertible. Para una matriz 2 × 2 [a b; c d], el determinante es ad − bc y se escribe det(A) o con líneas rectas, |A|. Si vale cero, la matriz no es invertible.",
+          "ejemplo": "Para [5 2; −6 3], el determinante es 5 × 3 − 2 × (−6) = 27, distinto de cero: la matriz es invertible.",
+          "puntos_clave": [
+            "det(A) = ad − bc.",
+            "Notaciones det(A) y |A|.",
+            "Determinante cero: no invertible."
+          ],
+          "errores_frecuentes": [
+            "Restar en el orden equivocado.",
+            "Equivocarse con los signos negativos."
+          ],
+          "formulas": [
+            "determinante-2x2"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+            "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+          }
+        },
+        {
+          "id": "me-cramer",
+          "nombre": "Regla de Cramer",
+          "explicacion": "La regla de Cramer, publicada por el matemático suizo Gabriel Cramer en 1750, resuelve sistemas con tantas ecuaciones como incógnitas usando determinantes: cada incógnita es el determinante en el que su columna se reemplaza por las constantes, dividido para el determinante de los coeficientes. Da la solución única si existe; si el sistema no tiene solución o tiene infinitas, el determinante es cero y hay que usar otro método, como la eliminación.",
+          "ejemplo": "En 12x + 3y = 15 y 2x − 3y = 13, Dx = −84 y D = −42, por lo que x = 2.",
+          "puntos_clave": [
+            "Mismo número de ecuaciones e incógnitas.",
+            "x = Dx / D.",
+            "D = 0: sin solución única."
+          ],
+          "errores_frecuentes": [
+            "Reemplazar la columna equivocada por las constantes.",
+            "Aplicarla cuando el determinante es cero."
+          ],
+          "formulas": [
+            "cramer-x"
+          ],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+            "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+          }
+        },
+        {
+          "id": "me-propiedades-determinantes",
+          "nombre": "Propiedades de los determinantes",
+          "explicacion": "Algunas propiedades simplifican el cálculo: si la matriz es triangular superior, el determinante es el producto de la diagonal principal; al intercambiar dos filas, el determinante cambia de signo; si dos filas o columnas son idénticas, o si hay una fila o columna de ceros, el determinante es cero; el determinante de la inversa es el recíproco del de la matriz, y si una fila o columna se multiplica por una constante, el determinante se multiplica por ese mismo factor.",
+          "ejemplo": "En un sistema cuya matriz de coeficientes tiene dos columnas idénticas, el determinante es cero sin necesidad de calcularlo, y la regla de Cramer no da una solución única.",
+          "puntos_clave": [
+            "Triangular: producto de la diagonal.",
+            "Intercambio de filas: cambia el signo.",
+            "Filas iguales o de ceros: determinante cero."
+          ],
+          "errores_frecuentes": [
+            "Olvidar el cambio de signo al intercambiar filas.",
+            "Multiplicar toda la matriz y creer que el determinante cambia solo una vez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-precalc-es",
+            "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+            "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+          }
+        }
+      ]
+    },
+    {
+      "id": "me-vectores",
+      "nombre": "Vectores",
+      "orden": 2,
+      "descripcion": "Vectores, magnitud y dirección, operaciones, producto punto y vectores de precios, cantidades y costos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "me-vector",
+          "nombre": "Qué es un vector",
+          "explicacion": "Un vector es una cantidad que tiene magnitud y dirección. En el plano se representa con un segmento dirigido, una flecha, que va de un punto inicial a un punto terminal; la longitud representa la magnitud. El vector cero tiene el mismo punto inicial y terminal y es el único sin dirección. Dos vectores con la misma magnitud y dirección son equivalentes y se tratan como iguales.",
+          "ejemplo": "La velocidad de un avión es un vector: importa cuán rápido va y hacia dónde. En economía, una lista ordenada de cantidades vendidas también se trata como un vector.",
+          "puntos_clave": [
+            "Magnitud y dirección.",
+            "Punto inicial y terminal.",
+            "Vector cero y vectores equivalentes."
+          ],
+          "errores_frecuentes": [
+            "Confundir un vector con un escalar.",
+            "Creer que dos vectores en distinto lugar con igual magnitud y dirección son distintos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/2-1-vectors-in-the-plane",
+            "seccion": "2.1 Vectors in the Plane"
+          }
+        },
+        {
+          "id": "me-operaciones-vectores",
+          "nombre": "Operaciones con vectores",
+          "explicacion": "La multiplicación por un escalar k cambia la magnitud de un vector sin cambiar su dirección si k es positivo; si k = −1, se obtiene el vector opuesto, con la misma magnitud y dirección contraria; si k = 0, el resultado es el vector cero. Para sumar vectores gráficamente, el punto inicial del segundo se coloca en el punto terminal del primero. En forma de componentes, las operaciones se hacen componente por componente.",
+          "ejemplo": "Si las ventas de una semana son q = 〈30, 12, 18〉 y se espera vender el doble, el nuevo vector es 2q = 〈60, 24, 36〉.",
+          "puntos_clave": [
+            "Multiplicación por un escalar.",
+            "Vector opuesto.",
+            "Suma punta con cola y por componentes."
+          ],
+          "errores_frecuentes": [
+            "Sumar magnitudes en lugar de vectores.",
+            "Cambiar la dirección al multiplicar por un escalar positivo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/2-1-vectors-in-the-plane",
+            "seccion": "2.1 Vectors in the Plane"
+          }
+        },
+        {
+          "id": "me-producto-punto",
+          "nombre": "El producto punto",
+          "explicacion": "El producto punto de dos vectores es la suma de los productos de sus componentes: u · v = u1v1 + u2v2 + u3v3, y de la misma forma para vectores de dos o más dimensiones. El resultado es un número, no un vector. Aunque los vectores suelen describir movimientos en el espacio, también se usan de forma más abstracta, por ejemplo para representar cantidades y precios.",
+          "ejemplo": "Con precios p = 〈0,50; 0,25; 1〉 y cantidades q = 〈30, 12, 18〉, el producto punto p · q = 36 es el ingreso del día.",
+          "puntos_clave": [
+            "Suma de productos de componentes.",
+            "El resultado es un escalar.",
+            "Vectores de igual dimensión."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar componentes de distinta posición.",
+            "Esperar un vector como resultado."
+          ],
+          "formulas": [
+            "producto-punto"
+          ],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+            "seccion": "2.3 The Dot Product"
+          }
+        },
+        {
+          "id": "me-vectores-economia",
+          "nombre": "Vectores en contexto económico: ventas y utilidad",
+          "explicacion": "En el ejemplo económico del libro, una tienda de artículos para fiestas define un vector de costos c, uno de precios p y uno de cantidades vendidas q. Las ventas son el producto punto p · q y el costo de lo vendido es c · q; la utilidad es la diferencia. Si la tienda empieza a vender un producto nuevo, basta con agregar una componente a cada vector.",
+          "ejemplo": "Con c = 〈0,25; 0,25; 0,50; 0,20〉, p = 〈2,50; 1,50; 4,50; 1,25〉 y q = 〈1258, 342, 2426, 1354〉, las ventas de mayo son 16.267,50, el costo es 1.883,80 y la utilidad es 14.383,70 dólares.",
+          "puntos_clave": [
+            "Ventas = p · q.",
+            "Costo = c · q.",
+            "Utilidad = (p − c) · q."
+          ],
+          "errores_frecuentes": [
+            "Restar vectores de distinta dimensión.",
+            "Confundir ventas con utilidad."
+          ],
+          "formulas": [
+            "producto-punto"
+          ],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+            "seccion": "2.3 The Dot Product"
+          }
+        }
+      ]
+    },
+    {
+      "id": "me-optimizacion",
+      "nombre": "Funciones de varias variables y optimización",
+      "orden": 3,
+      "descripcion": "Funciones de dos variables, derivadas parciales, puntos críticos y prueba de la segunda derivada, máximo de una función de utilidad y multiplicadores de Lagrange.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "me-funcion-varias",
+          "nombre": "Funciones de dos variables",
+          "explicacion": "Una función de dos variables z = f(x, y) asigna a cada par ordenado (x, y) de su dominio un único valor z. Su gráfica es una superficie en el espacio, y sus curvas de nivel son los puntos donde f toma un mismo valor c, como en un mapa topográfico. En economía, la utilidad de una empresa puede depender a la vez de dos productos.",
+          "ejemplo": "La utilidad de un fabricante, en miles de dólares, es f(x, y) = 16 − (x − 3)² − (y − 2)², donde x e y son miles de tuercas y de pernos vendidos al mes; en x = 3 e y = 2 la utilidad es de 16 mil dólares.",
+          "puntos_clave": [
+            "Pares ordenados a un número.",
+            "Dominio en el plano.",
+            "Curvas de nivel."
+          ],
+          "errores_frecuentes": [
+            "Olvidar restricciones de dominio, como cantidades no negativas.",
+            "Confundir una curva de nivel con la gráfica."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables",
+            "seccion": "4.1 Functions of Several Variables"
+          }
+        },
+        {
+          "id": "me-derivadas-parciales",
+          "nombre": "Derivadas parciales",
+          "explicacion": "La derivada parcial de f(x, y) respecto de x mide cómo cambia f cuando cambia solo x; se escribe ∂f/∂x o fx y se define con un límite parecido al de una variable. La idea clave para calcularla es tratar como constantes todas las variables independientes excepto aquella respecto de la cual se deriva. En economía, las derivadas parciales son los efectos marginales de cada factor.",
+          "ejemplo": "Para f(x, y) = x² − 3xy + 2y² − 4x + 5y − 12, la derivada parcial respecto de y es −3x + 4y + 5.",
+          "puntos_clave": [
+            "Cambia una variable a la vez.",
+            "Las demás se tratan como constantes.",
+            "Notación ∂f/∂x o fx."
+          ],
+          "errores_frecuentes": [
+            "Derivar también la variable que se trata como constante.",
+            "Confundir fx con fy."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives",
+            "seccion": "4.3 Partial Derivatives"
+          }
+        },
+        {
+          "id": "me-puntos-criticos",
+          "nombre": "Puntos críticos y prueba de la segunda derivada",
+          "explicacion": "Un punto crítico de f(x, y) es aquel donde las dos derivadas parciales son cero o alguna no existe. La prueba de la segunda derivada usa el discriminante D = fxx·fyy − (fxy)²: si D > 0 y fxx > 0 hay un mínimo local; si D > 0 y fxx < 0, un máximo local; si D < 0, un punto de silla, donde la función no tiene extremo local, y si D = 0 la prueba no concluye.",
+          "ejemplo": "Para la utilidad de las pelotas de golf, fxx = −2, fyy = −18 y fxy = −2, así que D = 32 > 0 con fxx < 0: el punto crítico es un máximo local.",
+          "puntos_clave": [
+            "Derivadas parciales iguales a cero.",
+            "Discriminante D.",
+            "Máximo, mínimo o punto de silla."
+          ],
+          "errores_frecuentes": [
+            "Concluir con D = 0.",
+            "Olvidar revisar el signo de fxx."
+          ],
+          "formulas": [
+            "discriminante-segunda-derivada"
+          ],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/4-7-maxima-minima-problems",
+            "seccion": "4.7 Maxima/Minima Problems"
+          }
+        },
+        {
+          "id": "me-optimo-libre",
+          "nombre": "Maximizar la utilidad con dos variables",
+          "explicacion": "Para hallar el máximo absoluto de una función de dos variables en una región cerrada se buscan sus puntos críticos dentro de la región, se evalúa la función en ellos y en la frontera, y se elige el mayor valor. En el caso de apertura del capítulo, la utilidad depende de las pelotas de golf vendidas y de las horas de publicidad, con un máximo de 50.000 pelotas y de 25 horas.",
+          "ejemplo": "Con f(x, y) = 48x + 96y − x² − 2xy − 9y² en miles de dólares, la utilidad máxima es de 648 mil dólares, al vender 21.000 pelotas y comprar 3 horas de publicidad al mes.",
+          "puntos_clave": [
+            "Puntos críticos en el interior.",
+            "Revisar la frontera.",
+            "Elegir el mayor valor."
+          ],
+          "errores_frecuentes": [
+            "Ignorar la frontera de la región.",
+            "Olvidar las unidades de x e y."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/4-7-maxima-minima-problems",
+            "seccion": "4.7 Maxima/Minima Problems"
+          }
+        },
+        {
+          "id": "me-lagrange",
+          "nombre": "Optimización con restricciones: multiplicadores de Lagrange",
+          "explicacion": "Cuando hay una restricción g(x, y) = 0, como un presupuesto, el óptimo está donde una curva de nivel de la función objetivo es tangente a la restricción; ahí los gradientes de ambas funciones apuntan en la misma dirección o en la opuesta. El método de los multiplicadores de Lagrange plantea ∇f = λ∇g junto con g(x, y) = 0 y resuelve el sistema; λ se llama multiplicador de Lagrange. El libro lo aplica a una función de producción Cobb-Douglas con una restricción de presupuesto.",
+          "ejemplo": "Para maximizar la producción 2,5x^0,45·y^0,55 con USD 40 por hora de trabajo, USD 50 por unidad de capital y un presupuesto de USD 500.000, se resuelve ∇f = λ∇g con 40x + 50y = 500.000; la solución usa 5.625 horas de trabajo y 5.500 unidades de capital.",
+          "puntos_clave": [
+            "Tangencia entre curva de nivel y restricción.",
+            "∇f = λ∇g.",
+            "Aplicación a Cobb-Douglas y presupuestos."
+          ],
+          "errores_frecuentes": [
+            "Olvidar incluir la ecuación de la restricción.",
+            "Confundir el objetivo con la restricción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc3",
+            "url": "https://openstax.org/books/calculus-volume-3/pages/4-8-lagrange-multipliers",
+            "seccion": "4.8 Lagrange Multipliers"
+          }
+        }
+      ]
+    },
+    {
+      "id": "me-diferenciales",
+      "nombre": "Crecimiento continuo y ecuaciones diferenciales",
+      "orden": 4,
+      "descripcion": "Ecuaciones diferenciales y su orden, crecimiento exponencial e interés continuo, tiempo de duplicación, ecuación logística y ecuaciones separables.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "me-ecuacion-diferencial",
+          "nombre": "Ecuaciones diferenciales: solución y orden",
+          "explicacion": "Una ecuación diferencial es una ecuación que contiene una función desconocida y una o más de sus derivadas. Una solución es una función que cumple la ecuación cuando se sustituyen ella y sus derivadas. El orden de la ecuación es el mayor orden de derivada de la función desconocida que aparece en ella; un problema de valor inicial agrega el valor de la función en un punto para elegir una solución concreta.",
+          "ejemplo": "La ecuación y′ − 4y = x² − 3x + 4 es de primer orden, porque solo aparece la primera derivada.",
+          "puntos_clave": [
+            "Función desconocida y sus derivadas.",
+            "Solución que cumple la ecuación.",
+            "Orden y valor inicial."
+          ],
+          "errores_frecuentes": [
+            "Confundir el orden con el exponente.",
+            "Olvidar la condición inicial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations",
+            "seccion": "4.1 Basics of Differential Equations"
+          }
+        },
+        {
+          "id": "me-crecimiento-exponencial",
+          "nombre": "Crecimiento exponencial e interés continuo",
+          "explicacion": "Los sistemas con crecimiento exponencial siguen el modelo y = y0·e^(kt), donde y0 es el estado inicial y k > 0 es la constante de crecimiento. Una aplicación financiera es el interés compuesto: si los intereses se capitalizan cada vez con más frecuencia, en el límite se capitalizan de forma continua, y un saldo inicial P con tasa r crece a P·e^(rt) después de t años.",
+          "ejemplo": "USD 1.000 al 2 % anual: con interés simple se tienen 1.020 al final del año; con capitalización continua, 1.000·e^0,02 = 1.020,20.",
+          "puntos_clave": [
+            "y = y0·e^(kt).",
+            "Constante de crecimiento k.",
+            "Interés continuo P·e^(rt)."
+          ],
+          "errores_frecuentes": [
+            "Usar la tasa en porcentaje y no en decimal.",
+            "Confundir capitalización continua con interés simple."
+          ],
+          "formulas": [
+            "interes-continuo"
+          ],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+            "seccion": "6.8 Exponential Growth and Decay"
+          }
+        },
+        {
+          "id": "me-tiempo-duplicacion",
+          "nombre": "Tiempo de duplicación",
+          "explicacion": "Si una cantidad crece de forma exponencial, su tiempo de duplicación es el tiempo que tarda en llegar al doble de su tamaño. De 2y0 = y0·e^(kt) se obtiene t = ln 2 / k, que no depende del valor inicial. Sirve para comparar ritmos de crecimiento de poblaciones, saldos o economías.",
+          "ejemplo": "Con un crecimiento continuo del 5 % anual, el tiempo de duplicación es ln 2 / 0,05 ≈ 13,86 años.",
+          "puntos_clave": [
+            "Tiempo para llegar al doble.",
+            "t = ln 2 / k.",
+            "No depende del valor inicial."
+          ],
+          "errores_frecuentes": [
+            "Dividir para la tasa en porcentaje.",
+            "Aplicarlo a crecimientos que no son exponenciales."
+          ],
+          "formulas": [
+            "tiempo-duplicacion"
+          ],
+          "fuente": {
+            "ref": "os-calc1",
+            "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+            "seccion": "6.8 Exponential Growth and Decay"
+          }
+        },
+        {
+          "id": "me-logistica",
+          "nombre": "La ecuación logística y la capacidad de carga",
+          "explicacion": "En el modelo exponencial, dP/dt = rP: la población crece a una tasa proporcional a su tamaño actual y sin límite. El modelo logístico agrega la capacidad de carga K, la población máxima que el entorno puede sostener indefinidamente: dP/dt = rP(1 − P/K). Así el crecimiento es casi exponencial cuando P es pequeña y se frena a medida que P se acerca a K.",
+          "ejemplo": "Si K = 10.000 y la población es de 9.000, el factor 1 − P/K = 0,1 reduce el crecimiento a la décima parte del que daría el modelo exponencial.",
+          "puntos_clave": [
+            "Crecimiento proporcional al tamaño.",
+            "Capacidad de carga K.",
+            "dP/dt = rP(1 − P/K)."
+          ],
+          "errores_frecuentes": [
+            "Usar el modelo exponencial cuando hay límites de recursos.",
+            "Confundir r con K."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/4-4-the-logistic-equation",
+            "seccion": "4.4 The Logistic Equation"
+          }
+        },
+        {
+          "id": "me-separables",
+          "nombre": "Ecuaciones separables y lineales de primer orden",
+          "explicacion": "Una ecuación diferencial separable se puede escribir como y′ = f(x)g(y): el lado derecho se separa en una función de x por una función de y, y se resuelve llevando cada variable a un lado e integrando. Ejemplos son la concentración de una solución en un tanque y la ley de enfriamiento de Newton. Una ecuación de primer orden es lineal si se puede escribir como a(x)y′ + b(x)y = c(x).",
+          "ejemplo": "La ley de enfriamiento de Newton, dT/dt = k(T − Ts), es separable: la tasa de cambio de la temperatura es proporcional a la diferencia con la temperatura ambiente.",
+          "puntos_clave": [
+            "Forma y′ = f(x)g(y).",
+            "Separar variables e integrar.",
+            "Forma lineal a(x)y′ + b(x)y = c(x)."
+          ],
+          "errores_frecuentes": [
+            "Olvidar la constante de integración.",
+            "Separar mal las variables."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations",
+            "seccion": "4.3 Separable Equations"
+          }
+        }
+      ]
+    },
+    {
+      "id": "me-sucesiones",
+      "nombre": "Sucesiones, recurrencias y series",
+      "orden": 5,
+      "descripcion": "Sucesiones definidas por fórmulas o por recurrencia, convergencia y teorema de convergencia monótona, series, sumas parciales y series geométricas.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "me-sucesion-recurrencia",
+          "nombre": "Sucesiones y relaciones de recurrencia",
+          "explicacion": "Una sucesión infinita es una lista ordenada de números a1, a2, a3, …; cada número es un término y n es la variable índice. Una sucesión puede definirse con una fórmula explícita o con una relación de recurrencia, en la que uno o más términos se dan explícitamente y los siguientes se definen a partir de los anteriores. Las recurrencias son la base de los modelos dinámicos en tiempo discreto.",
+          "ejemplo": "La sucesión 2, 4, 8, 16, … se define por recurrencia con a1 = 2 y an = 2·an−1 para n ≥ 2. Del mismo modo, un saldo que crece 5 % por período cumple an = 1,05·an−1.",
+          "puntos_clave": [
+            "Términos e índice.",
+            "Fórmula explícita o recurrencia.",
+            "Base de los modelos en tiempo discreto."
+          ],
+          "errores_frecuentes": [
+            "Olvidar dar el término inicial.",
+            "Confundir el índice con el valor del término."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences",
+            "seccion": "5.1 Sequences"
+          }
+        },
+        {
+          "id": "me-convergencia",
+          "nombre": "Convergencia y teorema de convergencia monótona",
+          "explicacion": "Una sucesión converge si sus términos se acercan a un número real cuando n crece; si no, diverge. Una sucesión está acotada superiormente si existe un número mayor o igual que todos sus términos, e inferiormente si existe uno menor o igual. El teorema de convergencia monótona da una condición suficiente: si una sucesión es acotada y, desde algún término, es monótona, entonces converge.",
+          "ejemplo": "La sucesión rⁿ tiende a 0 si |r| < 1 y diverge si |r| > 1, lo que explica por qué una diferencia que se reduce en una proporción fija cada período desaparece con el tiempo.",
+          "puntos_clave": [
+            "Convergencia y divergencia.",
+            "Sucesiones acotadas.",
+            "Acotada y monótona: converge."
+          ],
+          "errores_frecuentes": [
+            "Creer que toda sucesión acotada converge.",
+            "Confundir monótona con constante."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences",
+            "seccion": "5.1 Sequences"
+          }
+        },
+        {
+          "id": "me-series-parciales",
+          "nombre": "Series y sumas parciales",
+          "explicacion": "Al sumar los términos de una sucesión se obtiene una serie. Una serie infinita converge si la sucesión de sus sumas parciales converge a un número real, que se llama la suma de la serie; si las sumas parciales divergen, la serie diverge. La serie armónica 1 + 1/2 + 1/3 + … es un caso interesante: diverge, pero muy lentamente.",
+          "ejemplo": "En el ejemplo del libro, la cantidad de petróleo en un lago se acerca a 2.000 galones porque las sumas parciales de 1 + 1/2 + 1/4 + … se acercan a 2.",
+          "puntos_clave": [
+            "Serie como suma de términos.",
+            "Converge si las sumas parciales convergen.",
+            "La serie armónica diverge."
+          ],
+          "errores_frecuentes": [
+            "Creer que basta con que los términos tiendan a cero.",
+            "Confundir la sucesión con la serie."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series",
+            "seccion": "5.2 Infinite Series"
+          }
+        },
+        {
+          "id": "me-serie-geometrica",
+          "nombre": "Series geométricas",
+          "explicacion": "Una serie geométrica tiene la forma a + ar + ar² + ar³ + …, donde a es el término inicial y r la razón entre cada término y el anterior. Si |r| < 1 la serie converge y su suma es a / (1 − r); si |r| ≥ 1, diverge. Las series geométricas aparecen en economía cuando un efecto se repite en una proporción fija, como el valor presente de una perpetuidad.",
+          "ejemplo": "La serie 1000 + 800 + 640 + … tiene a = 1000 y r = 0,8; como |r| < 1, su suma es 1000 / 0,2 = 5000.",
+          "puntos_clave": [
+            "Término inicial a y razón r.",
+            "Suma a / (1 − r) si |r| < 1.",
+            "Diverge si |r| ≥ 1."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la fórmula con |r| ≥ 1.",
+            "Confundir el término inicial con la razón."
+          ],
+          "formulas": [
+            "suma-serie-geometrica"
+          ],
+          "fuente": {
+            "ref": "os-calc2",
+            "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series",
+            "seccion": "5.2 Infinite Series"
+          }
+        }
+      ]
+    }
+  ]
+}

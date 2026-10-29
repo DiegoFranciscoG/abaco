@@ -2647,5 +2647,114 @@
       "seccion": "Lecture 3: Geometry and visualizations of linear programs"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "matematicas-economistas-basicas",
+    "nombre": "Cramer, producto punto y crecimiento continuo",
+    "descripcion": "Resuelve un sistema 2 × 2 con la regla de Cramer, calcula ventas y utilidad con producto punto, el tiempo de duplicación y la suma de una serie geométrica.",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "celdas": {
+      "A1": "Sistema: a1·x + b1·y = c1 y a2·x + b2·y = c2",
+      "A2": "a1",
+      "B2": 1,
+      "C2": "b1",
+      "D2": 1,
+      "E2": "c1",
+      "F2": 10500,
+      "A3": "a2",
+      "B3": 0.1,
+      "C3": "b2",
+      "D3": 0.06,
+      "E3": "c2",
+      "F3": 892.5,
+      "A4": "Determinante D",
+      "B4": "=B2*D3-D2*B3",
+      "A5": "x (Cramer)",
+      "B5": "=(F2*D3-D2*F3)/B4",
+      "A6": "y (Cramer)",
+      "B6": "=(B2*F3-F2*B3)/B4",
+      "A8": "Producto",
+      "B8": "Precio",
+      "C8": "Costo",
+      "D8": "Cantidad",
+      "A9": "Invitaciones",
+      "B9": 2.5,
+      "C9": 0.25,
+      "D9": 1258,
+      "A10": "Recuerdos",
+      "B10": 1.5,
+      "C10": 0.25,
+      "D10": 342,
+      "A11": "Decoraciones",
+      "B11": 4.5,
+      "C11": 0.5,
+      "D11": 2426,
+      "A12": "Vajilla",
+      "B12": 1.25,
+      "C12": 0.2,
+      "D12": 1354,
+      "A13": "Ventas (p · q)",
+      "B13": "=SUMPRODUCT(B9:B12,D9:D12)",
+      "A14": "Utilidad (p · q − c · q)",
+      "B14": "=SUMPRODUCT(B9:B12,D9:D12)-SUMPRODUCT(C9:C12,D9:D12)",
+      "A16": "Tasa de crecimiento continuo k",
+      "B16": 0.05,
+      "A17": "Tiempo de duplicación",
+      "B17": "=LN(2)/B16",
+      "A19": "Término inicial a",
+      "B19": 1000,
+      "A20": "Razón r",
+      "B20": 0.8,
+      "A21": "Suma de la serie geométrica",
+      "B21": "=IF(ABS(B20)<1,B19/(1-B20),\"Diverge\")"
+    },
+    "formatos": {
+      "B5": "moneda",
+      "B6": "moneda",
+      "B13": "moneda",
+      "B14": "moneda",
+      "B17": "numero",
+      "B21": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B5",
+        "esperado": 6562.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B6",
+        "esperado": 3937.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B13",
+        "esperado": 16267.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 14383.7,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B17",
+        "esperado": 13.862943611198906,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B21",
+        "esperado": 5000,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+      "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

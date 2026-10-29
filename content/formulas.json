@@ -2291,7 +2291,8 @@
     "categoria": "valor-dinero",
     "materias": [
       "calculo-diferencial",
-      "matematica-financiera"
+      "matematica-financiera",
+      "matematica-economistas"
     ],
     "areas": [
       "cuantitativo",
@@ -10945,6 +10946,432 @@
     },
     "supuestos": [
       "La variación está dentro del rango permitido del lado derecho."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "determinante-2x2",
+    "nombre": "Determinante de una matriz 2 × 2",
+    "categoria": "calculo",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Determinante de la matriz [a b; c d]: producto de la diagonal principal menos producto de la otra diagonal. Si es cero, la matriz no es invertible.",
+    "latex": "\\det(A) = ad - bc",
+    "variables": [
+      {
+        "simbolo": "a",
+        "nombre": "a",
+        "significado": "Entrada de la fila 1, columna 1",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "b",
+        "nombre": "b",
+        "significado": "Entrada de la fila 1, columna 2",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "c",
+        "nombre": "c",
+        "significado": "Entrada de la fila 2, columna 1",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "d",
+        "nombre": "d",
+        "significado": "Entrada de la fila 2, columna 2",
+        "unidad": "número"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "a * d - b * c"
+    },
+    "excel": {
+      "es": "=a*d-b*c",
+      "en": "=a*d-b*c"
+    },
+    "ejemplo": {
+      "enunciado": "Halla el determinante de la matriz [5 2; −6 3].",
+      "entradas": {
+        "a": 5,
+        "b": 2,
+        "c": -6,
+        "d": 3
+      },
+      "pasos": [
+        "det = 5 × 3 − 2 × (−6)",
+        "det = 15 + 12 = 27"
+      ],
+      "resultado": 27,
+      "unidad": "número",
+      "tolerancia": 0.0001,
+      "excel_es": "=5*3-2*(-6)",
+      "excel_en": "=5*3-2*(-6)"
+    },
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+      "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+    },
+    "supuestos": [],
+    "notas": [
+      "Para matrices más grandes, la hoja de cálculo ofrece la función MDETERM, que recibe el rango de la matriz."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "cramer-x",
+    "nombre": "Regla de Cramer: valor de x en un sistema 2 × 2",
+    "categoria": "calculo",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "En el sistema a1·x + b1·y = c1 y a2·x + b2·y = c2, x es el determinante con la columna de x reemplazada por las constantes, dividido para el determinante de los coeficientes.",
+    "latex": "x = \\frac{D_x}{D} = \\frac{c_1 b_2 - b_1 c_2}{a_1 b_2 - b_1 a_2}",
+    "variables": [
+      {
+        "simbolo": "a_1",
+        "nombre": "a1",
+        "significado": "Coeficiente de x en la ecuación 1",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "b_1",
+        "nombre": "b1",
+        "significado": "Coeficiente de y en la ecuación 1",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "c_1",
+        "nombre": "c1",
+        "significado": "Constante de la ecuación 1",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "a_2",
+        "nombre": "a2",
+        "significado": "Coeficiente de x en la ecuación 2",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "b_2",
+        "nombre": "b2",
+        "significado": "Coeficiente de y en la ecuación 2",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "c_2",
+        "nombre": "c2",
+        "significado": "Constante de la ecuación 2",
+        "unidad": "número"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(c1 * b2 - b1 * c2) / (a1 * b2 - b1 * a2)"
+    },
+    "excel": {
+      "es": "=(c1*b2-b1*c2)/(a1*b2-b1*a2)",
+      "en": "=(c1*b2-b1*c2)/(a1*b2-b1*a2)"
+    },
+    "ejemplo": {
+      "enunciado": "Resuelve x en el sistema 12x + 3y = 15 y 2x − 3y = 13 con la regla de Cramer.",
+      "entradas": {
+        "a1": 12,
+        "b1": 3,
+        "c1": 15,
+        "a2": 2,
+        "b2": -3,
+        "c2": 13
+      },
+      "pasos": [
+        "Dx = 15 × (−3) − 3 × 13 = −84",
+        "D = 12 × (−3) − 3 × 2 = −42",
+        "x = −84 / −42 = 2"
+      ],
+      "resultado": 2,
+      "unidad": "número",
+      "tolerancia": 0.0001,
+      "excel_es": "=(15*(-3)-3*13)/(12*(-3)-3*2)",
+      "excel_en": "=(15*(-3)-3*13)/(12*(-3)-3*2)"
+    },
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+      "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+    },
+    "supuestos": [
+      "El determinante de los coeficientes no es cero."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "producto-punto",
+    "nombre": "Producto punto de dos vectores",
+    "categoria": "calculo",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Suma de los productos de las componentes de dos vectores. Con un vector de precios y uno de cantidades, da el ingreso total.",
+    "latex": "u \\cdot v = \\sum u_i v_i",
+    "variables": [
+      {
+        "simbolo": "u",
+        "nombre": "u",
+        "significado": "Primer vector (por ejemplo, precios)",
+        "unidad": "según el problema"
+      },
+      {
+        "simbolo": "v",
+        "nombre": "v",
+        "significado": "Segundo vector (por ejemplo, cantidades)",
+        "unidad": "según el problema"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUMPRODUCT(u, v)"
+    },
+    "excel": {
+      "es": "=SUMAPRODUCTO(u;v)",
+      "en": "=SUMPRODUCT(u,v)"
+    },
+    "ejemplo": {
+      "enunciado": "Un vendedor de frutas vende 30 manzanas, 12 bananas y 18 naranjas a USD 0,50, 0,25 y 1 cada una. ¿Cuánto vendió?",
+      "entradas": {
+        "u": [
+          0.5,
+          0.25,
+          1
+        ],
+        "v": [
+          30,
+          12,
+          18
+        ]
+      },
+      "pasos": [
+        "p · q = 0,5 × 30 + 0,25 × 12 + 1 × 18",
+        "p · q = 15 + 3 + 18 = 36"
+      ],
+      "resultado": 36,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,5*30+0,25*12+1*18",
+      "excel_en": "=0.5*30+0.25*12+1*18"
+    },
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+      "seccion": "2.3 The Dot Product"
+    },
+    "supuestos": [],
+    "notas": [
+      "Los dos vectores deben tener el mismo número de componentes."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "discriminante-segunda-derivada",
+    "nombre": "Discriminante de la prueba de la segunda derivada",
+    "categoria": "calculo",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "En un punto crítico de f(x, y), D = fxx·fyy − (fxy)². Si D > 0 y fxx < 0 hay un máximo local; si D > 0 y fxx > 0, un mínimo local; si D < 0, un punto de silla.",
+    "latex": "D = f_{xx} f_{yy} - (f_{xy})^2",
+    "variables": [
+      {
+        "simbolo": "f_{xx}",
+        "nombre": "fxx",
+        "significado": "Segunda derivada parcial respecto de x",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "f_{yy}",
+        "nombre": "fyy",
+        "significado": "Segunda derivada parcial respecto de y",
+        "unidad": "número"
+      },
+      {
+        "simbolo": "f_{xy}",
+        "nombre": "fxy",
+        "significado": "Derivada parcial cruzada",
+        "unidad": "número"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "fxx * fyy - fxy ^ 2"
+    },
+    "excel": {
+      "es": "=fxx*fyy-fxy^2",
+      "en": "=fxx*fyy-fxy^2"
+    },
+    "ejemplo": {
+      "enunciado": "La utilidad de una empresa de pelotas de golf es f(x, y) = 48x + 96y − x² − 2xy − 9y². Sus segundas derivadas son fxx = −2, fyy = −18 y fxy = −2. ¿Cuánto vale D en el punto crítico?",
+      "entradas": {
+        "fxx": -2,
+        "fyy": -18,
+        "fxy": -2
+      },
+      "pasos": [
+        "D = (−2)(−18) − (−2)²",
+        "D = 36 − 4 = 32 > 0 y fxx < 0: máximo local"
+      ],
+      "resultado": 32,
+      "unidad": "número",
+      "tolerancia": 0.0001,
+      "excel_es": "=(-2)*(-18)-(-2)^2",
+      "excel_en": "=(-2)*(-18)-(-2)^2"
+    },
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-7-maxima-minima-problems",
+      "seccion": "4.7 Maxima/Minima Problems"
+    },
+    "supuestos": [
+      "Las primeras derivadas parciales son cero en el punto evaluado."
+    ],
+    "notas": [
+      "Si D = 0, la prueba no concluye."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "tiempo-duplicacion",
+    "nombre": "Tiempo de duplicación con crecimiento exponencial",
+    "categoria": "calculo",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "areas": [
+      "cuantitativo",
+      "economia"
+    ],
+    "descripcion": "Tiempo que tarda en duplicarse una cantidad que crece de forma exponencial continua con constante de crecimiento k: ln 2 dividido para k.",
+    "latex": "T_2 = \\frac{\\ln 2}{k}",
+    "variables": [
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Constante de crecimiento continuo por período",
+        "unidad": "por período"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "LN(2) / k"
+    },
+    "excel": {
+      "es": "=LN(2)/k",
+      "en": "=LN(2)/k"
+    },
+    "ejemplo": {
+      "enunciado": "Un saldo crece de forma continua al 5 % anual. ¿En cuántos años se duplica?",
+      "entradas": {
+        "k": 0.05
+      },
+      "pasos": [
+        "T = ln 2 / 0,05",
+        "T = 0,6931 / 0,05 = 13,86 años"
+      ],
+      "resultado": 13.8629,
+      "unidad": "años",
+      "tolerancia": 0.001,
+      "excel_es": "=LN(2)/0,05",
+      "excel_en": "=LN(2)/0.05"
+    },
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+      "seccion": "6.8 Exponential Growth and Decay"
+    },
+    "supuestos": [
+      "Crecimiento exponencial continuo con k constante."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "suma-serie-geometrica",
+    "nombre": "Suma de una serie geométrica infinita",
+    "categoria": "calculo",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "La serie a + ar + ar² + … converge a a / (1 − r) cuando |r| < 1 y diverge cuando |r| ≥ 1.",
+    "latex": "\\sum_{n=1}^{\\infty} a r^{n-1} = \\frac{a}{1 - r}, \\quad |r| < 1",
+    "variables": [
+      {
+        "simbolo": "a",
+        "nombre": "a",
+        "significado": "Término inicial",
+        "unidad": "según el problema"
+      },
+      {
+        "simbolo": "r",
+        "nombre": "r",
+        "significado": "Razón entre términos consecutivos",
+        "unidad": "número"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "a / (1 - r)"
+    },
+    "excel": {
+      "es": "=a/(1-r)",
+      "en": "=a/(1-r)"
+    },
+    "ejemplo": {
+      "enunciado": "¿A qué valor converge la serie 1 + 1/2 + 1/4 + 1/8 + …?",
+      "entradas": {
+        "a": 1,
+        "r": 0.5
+      },
+      "pasos": [
+        "|r| = 0,5 < 1: converge",
+        "Suma = 1 / (1 − 0,5) = 2"
+      ],
+      "resultado": 2,
+      "unidad": "número",
+      "tolerancia": 0.0001,
+      "excel_es": "=1/(1-0,5)",
+      "excel_en": "=1/(1-0.5)"
+    },
+    "fuente": {
+      "ref": "os-calc2",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series",
+      "seccion": "5.2 Infinite Series"
+    },
+    "supuestos": [
+      "|r| < 1."
     ],
     "notas": [],
     "actualizado_en": "2026-10-30",

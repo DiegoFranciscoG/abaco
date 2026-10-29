@@ -727,5 +727,23 @@
     "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/pages/lecture-notes/",
     "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "os-calc2",
+    "titulo": "Calculus Volume 2",
+    "autor_editor": "Gilbert Strang, Edwin Herman · OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/calculus-volume-2",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "os-calc3",
+    "titulo": "Calculus Volume 3",
+    "autor_editor": "Gilbert Strang, Edwin Herman · OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/calculus-volume-3",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
   }
 ]

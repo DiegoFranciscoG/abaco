@@ -13579,5 +13579,519 @@
     },
     "materia": "investigacion-operaciones",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-determinante-a",
+    "subtema": "me-determinante",
+    "formula": "determinante-2x2",
+    "enunciado": "Halla el determinante de la matriz de coeficientes [12 3; 2 −3].",
+    "datos": {
+      "a": 12,
+      "b": 3,
+      "c": 2,
+      "d": -3
+    },
+    "calculo": "a * d - b * c",
+    "respuesta": -42,
+    "unidad": "número",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "det = 12 × (−3) − 3 × 2",
+      "det = −36 − 6 = −42"
+    ],
+    "pistas": [
+      "Producto de la diagonal principal menos el de la otra diagonal."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+      "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-determinante-b",
+    "subtema": "me-determinante",
+    "formula": "determinante-2x2",
+    "enunciado": "El sistema x + y = 10.500 y 0,10x + 0,06y = 892,5 tiene la matriz de coeficientes [1 1; 0,10 0,06]. ¿Cuánto vale su determinante y es invertible?",
+    "datos": {
+      "a": 1,
+      "b": 1,
+      "c": 0.1,
+      "d": 0.06
+    },
+    "calculo": "a * d - b * c",
+    "respuesta": -0.04,
+    "unidad": "número",
+    "tolerancia": 0.000001,
+    "procedimiento": [
+      "det = 1 × 0,06 − 1 × 0,10 = −0,04",
+      "Es distinto de cero: la matriz es invertible"
+    ],
+    "pistas": [
+      "Si el determinante no es cero, la matriz tiene inversa."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+      "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-cramer-bonos",
+    "subtema": "me-cramer",
+    "formula": "cramer-x",
+    "enunciado": "Soriya invierte USD 10.500 en dos bonos que rinden 10 % y 6 % y quiere ganar 892,50 al año: x + y = 10.500 y 0,10x + 0,06y = 892,5. Con la regla de Cramer, ¿cuánto invierte en el primer bono?",
+    "datos": {
+      "a1": 1,
+      "b1": 1,
+      "c1": 10500,
+      "a2": 0.1,
+      "b2": 0.06,
+      "c2": 892.5
+    },
+    "calculo": "(c1 * b2 - b1 * c2) / (a1 * b2 - b1 * a2)",
+    "respuesta": 6562.5,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "Dx = 10.500 × 0,06 − 1 × 892,5 = −262,5",
+      "D = 1 × 0,06 − 1 × 0,10 = −0,04",
+      "x = −262,5 / −0,04 = 6.562,5"
+    ],
+    "pistas": [
+      "Reemplaza la columna de x por las constantes."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-7-resolver-sistemas-con-inversas",
+      "seccion": "9.7 Resolver sistemas con inversas"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-cramer-equilibrio",
+    "subtema": "me-cramer",
+    "formula": "cramer-x",
+    "enunciado": "En un mercado, la oferta es 2x − y = 4 y la demanda x + y = 11, donde x es el precio e y la cantidad. Con la regla de Cramer, ¿cuál es el precio de equilibrio?",
+    "datos": {
+      "a1": 2,
+      "b1": -1,
+      "c1": 4,
+      "a2": 1,
+      "b2": 1,
+      "c2": 11
+    },
+    "calculo": "(c1 * b2 - b1 * c2) / (a1 * b2 - b1 * a2)",
+    "respuesta": 5,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Dx = 4 × 1 − (−1) × 11 = 15",
+      "D = 2 × 1 − (−1) × 1 = 3",
+      "x = 15 / 3 = 5"
+    ],
+    "pistas": [
+      "Cuidado con el signo del coeficiente −1."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-precalc-es",
+      "url": "https://openstax.org/books/prec%C3%A1lculo-2ed/pages/9-8-resolver-sistemas-con-la-regla-de-cramer",
+      "seccion": "9.8 Resolver sistemas con la regla de Cramer"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-punto-ventas",
+    "subtema": "me-producto-punto",
+    "formula": "producto-punto",
+    "enunciado": "Una tienda vende 1258 invitaciones, 342 recuerdos, 2426 decoraciones y 1354 paquetes de vajilla a USD 2,50, 1,50, 4,50 y 1,25. ¿Cuánto vendió en mayo?",
+    "datos": {
+      "u": [
+        2.5,
+        1.5,
+        4.5,
+        1.25
+      ],
+      "v": [
+        1258,
+        342,
+        2426,
+        1354
+      ]
+    },
+    "calculo": "SUMPRODUCT(u, v)",
+    "respuesta": 16267.5,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "3145 + 513 + 10917 + 1692,5 = 16267,5"
+    ],
+    "pistas": [
+      "Multiplica cada precio por su cantidad y suma."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+      "seccion": "2.3 The Dot Product"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-punto-junio",
+    "subtema": "me-producto-punto",
+    "formula": "producto-punto",
+    "enunciado": "En junio la tienda sube el precio de los recuerdos a USD 2 y vende 1408 invitaciones, 147 recuerdos, 2112 decoraciones y 1894 paquetes de vajilla, con precios de 2,50, 2, 4,50 y 1,25. ¿Cuánto vendió?",
+    "datos": {
+      "u": [
+        2.5,
+        2,
+        4.5,
+        1.25
+      ],
+      "v": [
+        1408,
+        147,
+        2112,
+        1894
+      ]
+    },
+    "calculo": "SUMPRODUCT(u, v)",
+    "respuesta": 15685.5,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "3520 + 294 + 9504 + 2367,5 = 15685,5"
+    ],
+    "pistas": [
+      "Usa el nuevo precio de los recuerdos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+      "seccion": "2.3 The Dot Product"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-utilidad-mayo",
+    "subtema": "me-vectores-economia",
+    "formula": "producto-punto",
+    "enunciado": "Con márgenes unitarios p − c = 〈2,25; 1,25; 4; 1,05〉 y cantidades 〈1258, 342, 2426, 1354〉, ¿cuál fue la utilidad de mayo?",
+    "datos": {
+      "u": [
+        2.25,
+        1.25,
+        4,
+        1.05
+      ],
+      "v": [
+        1258,
+        342,
+        2426,
+        1354
+      ]
+    },
+    "calculo": "SUMPRODUCT(u, v)",
+    "respuesta": 14383.7,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "2830,5 + 427,5 + 9704 + 1421,7 = 14383,7"
+    ],
+    "pistas": [
+      "La utilidad es (p − c) · q."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+      "seccion": "2.3 The Dot Product"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-costo-mayo",
+    "subtema": "me-vectores-economia",
+    "formula": "producto-punto",
+    "enunciado": "Con costos unitarios c = 〈0,25; 0,25; 0,50; 0,20〉 y cantidades 〈1258, 342, 2426, 1354〉, ¿cuánto costó lo vendido en mayo?",
+    "datos": {
+      "u": [
+        0.25,
+        0.25,
+        0.5,
+        0.2
+      ],
+      "v": [
+        1258,
+        342,
+        2426,
+        1354
+      ]
+    },
+    "calculo": "SUMPRODUCT(u, v)",
+    "respuesta": 1883.8,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "314,5 + 85,5 + 1213 + 270,8 = 1883,8"
+    ],
+    "pistas": [
+      "El costo de lo vendido es c · q."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-3-the-dot-product",
+      "seccion": "2.3 The Dot Product"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-discriminante-silla",
+    "subtema": "me-puntos-criticos",
+    "formula": "discriminante-segunda-derivada",
+    "enunciado": "Para f(x, y) = x² − 3xy + 2y² − 4x + 5y − 12, las segundas derivadas son fxx = 2, fyy = 4 y fxy = −3. Calcula D en su punto crítico. ¿Qué tipo de punto es?",
+    "datos": {
+      "fxx": 2,
+      "fyy": 4,
+      "fxy": -3
+    },
+    "calculo": "fxx * fyy - fxy ^ 2",
+    "respuesta": -1,
+    "unidad": "número",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "D = 2 × 4 − (−3)² = 8 − 9 = −1",
+      "D < 0: punto de silla"
+    ],
+    "pistas": [
+      "Si D es negativo no hay extremo local."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-7-maxima-minima-problems",
+      "seccion": "4.7 Maxima/Minima Problems"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-discriminante-max",
+    "subtema": "me-puntos-criticos",
+    "formula": "discriminante-segunda-derivada",
+    "enunciado": "La utilidad de un fabricante es f(x, y) = 16 − (x − 3)² − (y − 2)², con fxx = −2, fyy = −2 y fxy = 0. Calcula D en el punto crítico (3, 2).",
+    "datos": {
+      "fxx": -2,
+      "fyy": -2,
+      "fxy": 0
+    },
+    "calculo": "fxx * fyy - fxy ^ 2",
+    "respuesta": 4,
+    "unidad": "número",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "D = (−2)(−2) − 0² = 4",
+      "D > 0 y fxx < 0: máximo local"
+    ],
+    "pistas": [
+      "Revisa el signo de fxx."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc3",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-1-functions-of-several-variables",
+      "seccion": "4.1 Functions of Several Variables"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-continuo-a",
+    "subtema": "me-crecimiento-exponencial",
+    "formula": "interes-continuo",
+    "enunciado": "Se depositan USD 1.000 al 2 % anual con capitalización continua. ¿Cuál es el saldo al cabo de un año?",
+    "datos": {
+      "VA": 1000,
+      "j": 0.02,
+      "t": 1
+    },
+    "calculo": "VA * EXP(j * t)",
+    "respuesta": 1020.2013,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "Saldo = 1.000 × e^0,02",
+      "Saldo ≈ 1.020,20"
+    ],
+    "pistas": [
+      "Usa e elevado a la tasa por el tiempo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+      "seccion": "6.8 Exponential Growth and Decay"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-continuo-b",
+    "subtema": "me-crecimiento-exponencial",
+    "formula": "interes-continuo",
+    "enunciado": "Una estudiante de 25 años invierte USD 135.335,28 en una cuenta de jubilación al 5 % anual con capitalización continua. ¿Cuánto tendrá a los 65 años?",
+    "datos": {
+      "VA": 135335.28,
+      "j": 0.05,
+      "t": 40
+    },
+    "calculo": "VA * EXP(j * t)",
+    "respuesta": 1000000,
+    "unidad": "USD",
+    "tolerancia": 0.05,
+    "procedimiento": [
+      "t = 65 − 25 = 40 años",
+      "Saldo = 135.335,28 × e^2 ≈ 1.000.000"
+    ],
+    "pistas": [
+      "El exponente es 0,05 × 40."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+      "seccion": "6.8 Exponential Growth and Decay"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-duplicacion-a",
+    "subtema": "me-tiempo-duplicacion",
+    "formula": "tiempo-duplicacion",
+    "enunciado": "Si el producto de una economía creciera de forma continua al 3 % anual, ¿en cuántos años se duplicaría?",
+    "datos": {
+      "k": 0.03
+    },
+    "calculo": "LN(2) / k",
+    "respuesta": 23.1049,
+    "unidad": "años",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "T = ln 2 / 0,03 ≈ 23,10 años"
+    ],
+    "pistas": [
+      "ln 2 ≈ 0,6931."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+      "seccion": "6.8 Exponential Growth and Decay"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-duplicacion-b",
+    "subtema": "me-tiempo-duplicacion",
+    "formula": "tiempo-duplicacion",
+    "enunciado": "Una población de peces pasa de 500 a 1000 en 6 meses, por lo que su constante de crecimiento es k = ln 2 / 6 ≈ 0,1155 por mes. Comprueba con k = 0,1155 el tiempo de duplicación.",
+    "datos": {
+      "k": 0.1155
+    },
+    "calculo": "LN(2) / k",
+    "respuesta": 6.0013,
+    "unidad": "meses",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "T = 0,6931 / 0,1155 ≈ 6 meses"
+    ],
+    "pistas": [
+      "El resultado no depende de la población inicial."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc1",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/6-8-exponential-growth-and-decay",
+      "seccion": "6.8 Exponential Growth and Decay"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-geometrica-a",
+    "subtema": "me-serie-geometrica",
+    "formula": "suma-serie-geometrica",
+    "enunciado": "¿A qué valor converge la serie 1000 + 800 + 640 + …?",
+    "datos": {
+      "a": 1000,
+      "r": 0.8
+    },
+    "calculo": "a / (1 - r)",
+    "respuesta": 5000,
+    "unidad": "número",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "r = 800 / 1000 = 0,8 < 1",
+      "Suma = 1000 / (1 − 0,8) = 5000"
+    ],
+    "pistas": [
+      "La razón es el cociente de dos términos consecutivos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc2",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series",
+      "seccion": "5.2 Infinite Series"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-me-geometrica-b",
+    "subtema": "me-serie-geometrica",
+    "formula": "suma-serie-geometrica",
+    "enunciado": "¿A qué valor converge la serie 5 + 5/3 + 5/9 + …?",
+    "datos": {
+      "a": 5,
+      "r": 0.333333333333
+    },
+    "calculo": "a / (1 - r)",
+    "respuesta": 7.5,
+    "unidad": "número",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "r = 1/3",
+      "Suma = 5 / (1 − 1/3) = 5 / (2/3) = 7,5"
+    ],
+    "pistas": [
+      "Divide un término para el anterior para hallar r."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-calc2",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-2-infinite-series",
+      "seccion": "5.2 Infinite Series"
+    },
+    "materia": "matematica-economistas",
+    "actualizado_en": "2026-10-26"
   }
 ]

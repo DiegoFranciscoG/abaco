@@ -7912,5 +7912,172 @@
       "there is a great deal of uncertainty surrounding the numbers",
       "one varies numbers and sees the effect"
     ]
+  },
+  {
+    "id": "me-identidad-inversa",
+    "palabras": [
+      "la matriz identidad es una matriz cuadrada que contiene unos en la diagonal principal y ceros en el resto",
+      "una matriz que tiene un multiplicador inverso se llama matriz invertible",
+      "solo una matriz cuadrada puede tener un multiplicador inverso"
+    ]
+  },
+  {
+    "id": "me-sistema-inversa",
+    "palabras": [
+      "resolver un sistema de ecuaciones lineales mediante una matriz inversa",
+      "soriya planea invertir 10.500 dolares en dos bonos diferentes para repartir su riesgo"
+    ]
+  },
+  {
+    "id": "me-determinante",
+    "palabras": [
+      "el determinante es un numero real que puede ser muy util en matematicas",
+      "nos centramos en el determinante como indicacion de la invertibilidad de la matriz"
+    ]
+  },
+  {
+    "id": "me-cramer",
+    "palabras": [
+      "la regla de cramer es un metodo viable y eficiente para calcular soluciones a sistemas con un numero arbitrario de incognitas",
+      "si el sistema no tiene solucion o tiene un numero infinito de soluciones, esto se indicara con un determinante de cero"
+    ]
+  },
+  {
+    "id": "me-propiedades-determinantes",
+    "palabras": [
+      "cuando se intercambian dos filas, el determinante cambia de signo",
+      "si una matriz contiene una fila de ceros o una columna de ceros, el determinante es igual a cero",
+      "si cualquier fila o columna se multiplica por una constante, el determinante se multiplica por el mismo factor"
+    ]
+  },
+  {
+    "id": "me-vector",
+    "palabras": [
+      "a vector is a quantity that has both magnitude and direction",
+      "the zero vector is the only vector without a direction"
+    ]
+  },
+  {
+    "id": "me-operaciones-vectores",
+    "palabras": [
+      "note that changing the magnitude of a vector does not indicate a change in its direction",
+      "the most common graphical method for adding two vectors is to place the initial point of the second vector at the terminal point of the first"
+    ]
+  },
+  {
+    "id": "me-producto-punto",
+    "palabras": [
+      "is given by the sum of the products of the components",
+      "vectors are often used in more abstract ways"
+    ]
+  },
+  {
+    "id": "me-vectores-economia",
+    "palabras": [
+      "using vectors in an economic context",
+      "aaa took in $16,267.50 during the month of may",
+      "aaa party supply store made $14,383.70 in may"
+    ]
+  },
+  {
+    "id": "me-funcion-varias",
+    "palabras": [
+      "we map ordered pairs of variables to another variable",
+      "a profit function for a hardware manufacturer is given by"
+    ]
+  },
+  {
+    "id": "me-derivadas-parciales",
+    "palabras": [
+      "the idea to keep in mind when calculating partial derivatives is to treat all independent variables"
+    ]
+  },
+  {
+    "id": "me-puntos-criticos",
+    "palabras": [
+      "is called a critical point of a function of two variables",
+      "second derivative test",
+      "is a saddle point if both"
+    ]
+  },
+  {
+    "id": "me-optimo-libre",
+    "palabras": [
+      "profitable golf balls",
+      "the maximum number of golf balls that can be produced and sold is 50,000",
+      "a maximum profit of $ 648,000"
+    ]
+  },
+  {
+    "id": "me-lagrange",
+    "palabras": [
+      "method of lagrange multipliers: one constraint",
+      "the gradient of both of the functions evaluated at that point must point in the same",
+      "a company has determined that its production level is given by the cobb-douglas function"
+    ]
+  },
+  {
+    "id": "me-ecuacion-diferencial",
+    "palabras": [
+      "a differential equation is an equation involving an unknown function",
+      "the order of a differential equation is the highest order of any derivative of the unknown function that appears in the equation"
+    ]
+  },
+  {
+    "id": "me-crecimiento-exponencial",
+    "palabras": [
+      "from population growth and continuously compounded interest to radioactive decay",
+      "interest that is not compounded is called simple interest",
+      "compounded continuously"
+    ]
+  },
+  {
+    "id": "me-tiempo-duplicacion",
+    "palabras": [
+      "if a quantity grows exponentially, the doubling time is",
+      "to calculate the doubling time, we want to know when the quantity reaches twice its original size"
+    ]
+  },
+  {
+    "id": "me-logistica",
+    "palabras": [
+      "the carrying capacity of an organism in a given environment is defined to be the maximum population",
+      "the rate at which the population increases is proport"
+    ]
+  },
+  {
+    "id": "me-separables",
+    "palabras": [
+      "a separable differential equation is any equation that can be written in the form",
+      "solution concentrations and newton's law of cooling"
+    ]
+  },
+  {
+    "id": "me-sucesion-recurrencia",
+    "palabras": [
+      "an infinite sequence is an ordered list of numbers",
+      "in a recurrence relation, one term (or more) of the sequence is given explicitly, and subsequent terms are defined in terms of earlier terms in the sequence"
+    ]
+  },
+  {
+    "id": "me-convergencia",
+    "palabras": [
+      "monotone convergence theorem",
+      "which gives a sufficient condition for convergence of a sequence"
+    ]
+  },
+  {
+    "id": "me-series-parciales",
+    "palabras": [
+      "if the sequence of partial sums converges to a real number",
+      "this series is interesting because it diverges, but it diverges very slowly"
+    ]
+  },
+  {
+    "id": "me-serie-geometrica",
+    "palabras": [
+      "a geometric series is any series that we can write in the form",
+      "the series converges, and"
+    ]
   }
 ]

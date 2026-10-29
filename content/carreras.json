@@ -614,6 +614,15 @@
         "planes": 1
       },
       {
+        "materia": "matematica-economistas",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          4
+        ],
+        "planes": 1
+      },
+      {
         "materia": "matematica-gestion",
         "ciclo": 1,
         "ciclos": [
@@ -845,16 +854,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Álgebra Lineal",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Métodos Dinámicos en Economía",
-        "ciclo": 4,
-        "planes": 1
-      },
       {
         "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",
         "ciclo": 8,
