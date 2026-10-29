@@ -7595,5 +7595,173 @@
       "task force on climate-related financial disclosures (tcfd)",
       "sasb standards"
     ]
+  },
+  {
+    "id": "pd-entrada-salida",
+    "palabras": [
+      "the print() function displays output to the user",
+      "the sep and end options can be used to customize the output",
+      "obtain user input using the input () function"
+    ]
+  },
+  {
+    "id": "pd-variables",
+    "palabras": [
+      "variables allow programs to refer to values using names rather than memory locations",
+      "the name cannot start with a digit",
+      "snake case"
+    ]
+  },
+  {
+    "id": "pd-tipos",
+    "palabras": [
+      "implicit type conversion",
+      "explicit type conversion",
+      "any fractional part is removed"
+    ]
+  },
+  {
+    "id": "pd-condicionales",
+    "palabras": [
+      "a condition is an expression that evaluates to true or false",
+      "the pep 8 style guide recommends four spaces per indentation level"
+    ]
+  },
+  {
+    "id": "pd-while",
+    "palabras": [
+      "a while loop is a code construct that runs a set of statements, known as the loop body",
+      "counting with a while loop"
+    ]
+  },
+  {
+    "id": "pd-for",
+    "palabras": [
+      "a for loop iterates over all elements in a container",
+      "inclusive of the start and exclusive of the end of the sequence"
+    ]
+  },
+  {
+    "id": "pd-funciones",
+    "palabras": [
+      "a function is a named, reusable block of code that performs a task when called",
+      "a function is defined using the def keyword",
+      "a function must be defined before the function is called"
+    ]
+  },
+  {
+    "id": "pd-listas",
+    "palabras": [
+      "a list is defined by using square brackets",
+      "indexes begin at 0 and end at one less than the length of the sequence"
+    ]
+  },
+  {
+    "id": "pd-diccionarios",
+    "palabras": [
+      "a dictionary in python is a container object including key-value pairs",
+      "a dictionary object cannot hold duplicate key values"
+    ]
+  },
+  {
+    "id": "pd-ciclo-vida",
+    "palabras": [
+      "data science is a multidisciplinary field",
+      "the data science life cycle is an iterative process that starts with data acquisition",
+      "google colaboratory"
+    ]
+  },
+  {
+    "id": "pd-ciencia-datos-negocios",
+    "palabras": [
+      "data science in business",
+      "business analytics investigate these data to launch new products"
+    ]
+  },
+  {
+    "id": "pd-numpy",
+    "palabras": [
+      "numpy (numerical python) is a python library",
+      "ndarray object",
+      "np.random.rand(n, m)"
+    ]
+  },
+  {
+    "id": "pd-pandas",
+    "palabras": [
+      "pandas is an open-source python library used for data cleaning, processing, and analysis",
+      "a series is a one-dimensional labeled array",
+      "a dataframe is a two-dimensional labeled data structure"
+    ]
+  },
+  {
+    "id": "pd-eda",
+    "palabras": [
+      "exploratory data analysis (eda) is the task of analyzing data to gain insights",
+      "the main goal of eda is to become familiar with the data and assess the quality of the data"
+    ]
+  },
+  {
+    "id": "pd-indexacion-nulos",
+    "palabras": [
+      "label-based indexing using loc[]",
+      "integer-based indexing using iloc[]",
+      "the dropna() function can be used to drop rows with null values"
+    ]
+  },
+  {
+    "id": "pd-visualizacion",
+    "palabras": [
+      "data visualization has a crucial role in data science for understanding the data",
+      "identify anomalies, understand relationships and trends, and produce reports"
+    ]
+  },
+  {
+    "id": "pd-tipos-graficos",
+    "palabras": [
+      "bar plot",
+      "line plot",
+      "scatter plot",
+      "histogram plot",
+      "box plot"
+    ]
+  },
+  {
+    "id": "pd-supervisado",
+    "palabras": [
+      "labeled data has specific labels, categories, or classes associated with each data point",
+      "unsupervised learning",
+      "k-means clustering, dbscan"
+    ]
+  },
+  {
+    "id": "pd-entrenamiento-prueba",
+    "palabras": [
+      "training set (or data)",
+      "about 60",
+      "80% of available data will be used for training"
+    ]
+  },
+  {
+    "id": "pd-sobreajuste",
+    "palabras": [
+      "overfitting happens when the model is adjusted to fit the training data too closely",
+      "underfitting"
+    ]
+  },
+  {
+    "id": "pd-etica-ml",
+    "palabras": [
+      "ensure fairness, privacy, and transparency",
+      "facial recognition algorithms in law enforcement"
+    ]
+  },
+  {
+    "id": "pd-regresion-ml",
+    "palabras": [
+      "creating an explicit functional equation",
+      "bootstrapping",
+      "linear, polynomial, logistic, exponential"
+    ]
   }
 ]

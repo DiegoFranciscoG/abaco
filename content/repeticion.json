@@ -184,6 +184,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Machine Learning",
+    "carreras": 4,
+    "planes": 5,
+    "ciclo_habitual": 3,
+    "materia": "programacion-datos",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Prácticas de Servicio Comunitario",
     "carreras": 4,
     "planes": 5,
@@ -341,14 +349,6 @@
     "planes": 2,
     "ciclo_habitual": 1,
     "materia": "calculo-diferencial",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Fundamentos de Programación",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 1,
-    "materia": null,
     "tipo": "materia"
   },
   {

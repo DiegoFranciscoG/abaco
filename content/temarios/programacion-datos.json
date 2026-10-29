@@ -1,0 +1,515 @@
+{
+  "materia": "programacion-datos",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pd-fundamentos",
+      "nombre": "Fundamentos de programación en Python",
+      "orden": 1,
+      "descripcion": "Entrada y salida, variables y sus nombres, conversión de tipos y decisiones con if-else.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "pd-entrada-salida",
+          "nombre": "Entrada y salida: print() e input()",
+          "explicacion": "La función print() muestra al usuario la salida, es decir, la información o el resultado que produce un programa. Puede imprimir varios valores separados por comas, que por defecto aparecen separados por un espacio; la opción sep cambia ese separador, y como print() agrega un salto de línea al final, la opción end permite seguir en la misma línea. La función input() obtiene datos que escribe el usuario y siempre los lee como texto.",
+          "ejemplo": "print(\"Ventas\", \"del\", \"mes\", sep=\"-\") muestra Ventas-del-mes; precio = input(\"Precio: \") guarda lo que escriba el usuario.",
+          "puntos_clave": [
+            "print() muestra la salida.",
+            "sep y end personalizan la salida.",
+            "input() lee datos como texto."
+          ],
+          "errores_frecuentes": [
+            "Olvidar las comillas de un texto en print().",
+            "Operar con lo leído por input() sin convertirlo a número."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/1-2-input-output",
+            "seccion": "1.2 Input/output"
+          }
+        },
+        {
+          "id": "pd-variables",
+          "nombre": "Variables y asignación",
+          "explicacion": "Las variables permiten referirse a valores mediante nombres en lugar de posiciones de memoria. El operador de asignación (=) da un valor a una variable: el lado izquierdo es la variable y el derecho el valor, lo que es distinto del signo igual de las matemáticas. Un nombre de variable puede tener letras, dígitos y guiones bajos, no puede empezar con un dígito y distingue mayúsculas de minúsculas; la guía de estilo de Python recomienda el formato snake_case, todo en minúsculas con guiones bajos.",
+          "ejemplo": "precio_unitario = 2.5 y cantidad = 40 son nombres válidos; 1precio no lo es porque empieza con un dígito.",
+          "puntos_clave": [
+            "El = asigna, no compara.",
+            "Letras, dígitos y guiones bajos, sin empezar con dígito.",
+            "Estilo snake_case."
+          ],
+          "errores_frecuentes": [
+            "Usar una variable antes de asignarla.",
+            "Confundir Total con total."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/1-3-variables",
+            "seccion": "1.3 Variables"
+          }
+        },
+        {
+          "id": "pd-tipos",
+          "nombre": "Conversión de tipos",
+          "explicacion": "Python convierte automáticamente un tipo de dato en otro cuando una operación lo requiere: es la conversión implícita, por ejemplo cuando una distancia entera pasa a tener decimales y se vuelve float. Otras veces el programador necesita la conversión explícita: int() convierte a entero eliminando la parte fraccionaria, float() a número con decimales y str() a texto. Es indispensable, por ejemplo, para sumar dos números leídos con input(), que los entrega como texto.",
+          "ejemplo": "int(5.9) devuelve 5; float(\"12.5\") devuelve 12.5 y str(100) devuelve el texto \"100\".",
+          "puntos_clave": [
+            "Conversión implícita automática.",
+            "Conversión explícita con int(), float() y str().",
+            "int() elimina los decimales."
+          ],
+          "errores_frecuentes": [
+            "Creer que int() redondea.",
+            "Sumar textos esperando un resultado numérico."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/2-2-type-conversion",
+            "seccion": "2.2 Type conversion"
+          }
+        },
+        {
+          "id": "pd-condicionales",
+          "nombre": "Decisiones con if y else",
+          "explicacion": "Una condición es una expresión que se evalúa como verdadera o falsa. La sentencia if contiene una condición y un cuerpo de instrucciones que solo se ejecuta si la condición es verdadera; con else se indica qué hacer en caso contrario. El cuerpo debe estar agrupado con un nivel de sangría, y la guía PEP 8 recomienda cuatro espacios. Una variable booleana ya vale True o False y puede usarse directamente como condición.",
+          "ejemplo": "if saldo < 0: print(\"Cuenta sobregirada\") else: print(\"Saldo disponible\"), con cada cuerpo en su propia línea sangrada.",
+          "puntos_clave": [
+            "Condición verdadera o falsa.",
+            "if y else.",
+            "Sangría de cuatro espacios."
+          ],
+          "errores_frecuentes": [
+            "Olvidar los dos puntos al final de la condición.",
+            "Sangrar de forma inconsistente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/4-2-if-else-statements",
+            "seccion": "4.2 If-else statements"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pd-estructuras",
+      "nombre": "Bucles, funciones y estructuras de datos",
+      "orden": 2,
+      "descripcion": "Bucles while y for, funciones definidas con def, listas e índices, y diccionarios de clave-valor.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pd-while",
+          "nombre": "El bucle while",
+          "explicacion": "Un bucle while ejecuta un conjunto de instrucciones, el cuerpo del bucle, mientras una condición, la expresión del bucle, sea verdadera. En cada iteración, al terminar el cuerpo, la expresión se evalúa de nuevo: si sigue siendo verdadera el cuerpo se ejecuta otra vez, y si es falsa el bucle termina y continúa la instrucción siguiente. Una variable contador en la expresión del bucle permite contar hacia arriba o hacia abajo.",
+          "ejemplo": "Un programa que imprime los números de Fibonacci menores que 20 usa while g < 20 y actualiza g en cada vuelta hasta que la condición se vuelve falsa.",
+          "puntos_clave": [
+            "Repite mientras la condición sea verdadera.",
+            "Se evalúa la condición en cada iteración.",
+            "Contadores para controlar repeticiones."
+          ],
+          "errores_frecuentes": [
+            "Olvidar actualizar la variable y crear un bucle infinito.",
+            "Equivocarse en la condición de salida por uno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/5-1-while-loop",
+            "seccion": "5.1 While loop"
+          }
+        },
+        {
+          "id": "pd-for",
+          "nombre": "El bucle for y range()",
+          "explicacion": "En Python, un contenedor puede ser un rango de números, una cadena de caracteres o una lista de valores, y un bucle for recorre todos sus elementos uno a uno, por ejemplo los nombres de una lista de estudiantes. La función range() genera una secuencia de enteros entre dos números con un paso dado; incluye el inicio y excluye el final, y acepta hasta tres valores.",
+          "ejemplo": "for mes in range(1, 13): recorre los meses 1 a 12; el 13 no se incluye.",
+          "puntos_clave": [
+            "Recorre contenedores.",
+            "range() incluye el inicio y excluye el final.",
+            "Hasta tres valores: inicio, fin y paso."
+          ],
+          "errores_frecuentes": [
+            "Esperar que range(1, 12) incluya el 12.",
+            "Modificar la lista mientras se recorre."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/5-2-for-loop",
+            "seccion": "5.2 For loop"
+          }
+        },
+        {
+          "id": "pd-funciones",
+          "nombre": "Funciones",
+          "explicacion": "Una función es un bloque de código con nombre y reutilizable que realiza una tarea cuando se le llama, como print() o sqrt(). Se define con la palabra clave def seguida del nombre en snake_case, paréntesis con los parámetros y dos puntos; el cuerpo sangrado empieza con una cadena de documentación que describe la tarea. Una función debe definirse antes de llamarla, y su beneficio es reutilizar código y organizar el programa.",
+          "ejemplo": "def mostrar_bienvenida(): seguido de una línea sangrada con print(\"Bienvenido al sistema\") define la función; mostrar_bienvenida() la ejecuta.",
+          "puntos_clave": [
+            "Bloque con nombre y reutilizable.",
+            "def nombre():",
+            "Se define antes de llamarla."
+          ],
+          "errores_frecuentes": [
+            "Olvidar los paréntesis al definir o llamar.",
+            "Llamar a la función antes de definirla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/6-1-defining-functions",
+            "seccion": "6.1 Defining functions"
+          }
+        },
+        {
+          "id": "pd-listas",
+          "nombre": "Listas e índices",
+          "explicacion": "Una lista agrupa elementos y se define con corchetes y valores separados por comas; puede contener enteros, cadenas, decimales o una combinación de tipos, y puede modificarse después de crearse. Cada elemento se accede con un índice que empieza en 0 y termina en uno menos que la longitud de la secuencia, y la función len() da el número de elementos.",
+          "ejemplo": "ventas = [120, 95, 140]; ventas[0] es 120, ventas[2] es 140 y len(ventas) es 3; ventas[1] = 100 cambia el segundo valor.",
+          "puntos_clave": [
+            "Corchetes y comas.",
+            "Índices desde 0.",
+            "len() y modificación de elementos."
+          ],
+          "errores_frecuentes": [
+            "Usar el índice len(lista), que no existe.",
+            "Creer que el primer índice es 1."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/3-4-list-basics",
+            "seccion": "3.4 List basics"
+          }
+        },
+        {
+          "id": "pd-diccionarios",
+          "nombre": "Diccionarios",
+          "explicacion": "Un diccionario en Python es un contenedor de pares clave-valor, como una palabra de un diccionario con su definición. Se implementa con el tipo dict y, como se usa para buscar valores a partir de sus claves, no puede tener claves duplicadas: si se repite una clave, el último valor reemplaza al anterior.",
+          "ejemplo": "precios = {\"cafe\": 2.5, \"te\": 1.8}; precios[\"cafe\"] devuelve 2.5.",
+          "puntos_clave": [
+            "Pares clave-valor.",
+            "Tipo dict.",
+            "Sin claves duplicadas."
+          ],
+          "errores_frecuentes": [
+            "Buscar por posición como en una lista.",
+            "Usar la misma clave para dos valores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/10-1-dictionary-basics",
+            "seccion": "10.1 Dictionary basics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pd-ciencia-datos",
+      "nombre": "Ciencia de datos con Python",
+      "orden": 3,
+      "descripcion": "Ciclo de vida de la ciencia de datos, aplicaciones en los negocios, NumPy y pandas.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pd-ciclo-vida",
+          "nombre": "El ciclo de vida de la ciencia de datos",
+          "explicacion": "La ciencia de datos es un campo multidisciplinario que combina recolectar, procesar y analizar grandes volúmenes de datos para obtener ideas y apoyar decisiones. Su ciclo de vida es iterativo: empieza con la adquisición de datos, de una fuente existente o mediante encuestas y otros medios; sigue la exploración, en la que se limpian y visualizan los datos para que tengan el formato correcto, y luego el análisis, que genera ideas o modelos predictivos que se comparten con los interesados en informes y presentaciones. Herramientas como Google Colaboratory permiten ejecutar código de Python en el navegador.",
+          "ejemplo": "Una cadena de farmacias descarga sus ventas, corrige registros duplicados, grafica las ventas por mes y presenta al directorio qué productos conviene reabastecer.",
+          "puntos_clave": [
+            "Adquisición, exploración y análisis.",
+            "Proceso iterativo.",
+            "Herramientas como Colab."
+          ],
+          "errores_frecuentes": [
+            "Analizar datos sin limpiarlos.",
+            "Omitir la comunicación de resultados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-1-introduction-to-data-science",
+            "seccion": "15.1 Introduction to data science"
+          }
+        },
+        {
+          "id": "pd-ciencia-datos-negocios",
+          "nombre": "Ciencia de datos en la práctica",
+          "explicacion": "La ciencia de datos toma técnicas de las matemáticas, la estadística y la computación, y se aplica en cada vez más campos: negocios y finanzas, políticas públicas, salud y medicina, ingeniería y ciencias, deportes y entretenimiento. En los negocios se generan datos de clientes, productos y ventas, y la analítica de negocios los investiga para lanzar productos y maximizar ingresos y utilidades; grandes cadenas minoristas recogen enormes volúmenes de datos no estructurados, lo que se conoce como big data, para estudiar patrones de consumo.",
+          "ejemplo": "Un supermercado analiza las compras con tarjeta de fidelidad para saber qué productos se compran juntos y ubicarlos cerca en las perchas.",
+          "puntos_clave": [
+            "Campo interdisciplinario.",
+            "Aplicaciones en negocios, salud y política pública.",
+            "Big data y analítica de negocios."
+          ],
+          "errores_frecuentes": [
+            "Creer que la ciencia de datos solo sirve a empresas tecnológicas.",
+            "Confundir volumen de datos con calidad de datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/1-2-data-science-in-practice",
+            "seccion": "1.2 Data Science in Practice"
+          }
+        },
+        {
+          "id": "pd-numpy",
+          "nombre": "NumPy y los arreglos numéricos",
+          "explicacion": "NumPy (Numerical Python) es una librería que permite operaciones numéricas eficientes con arreglos grandes y multidimensionales, y es una base del análisis de datos en Python; se importa por convención como import numpy as np. Implementa el objeto ndarray, un arreglo de cualquier número de dimensiones con datos de tipo homogéneo. Puede crearse convirtiendo una lista o tupla con np.array(), con funciones como np.zeros() o np.ones(), con números aleatorios mediante np.random.rand(n, m) o cargando datos de un archivo.",
+          "ejemplo": "precios = np.array([2.5, 3.0, 4.2]) crea un arreglo; precios * 1.15 multiplica cada elemento sin necesidad de un bucle.",
+          "puntos_clave": [
+            "Arreglos numéricos eficientes.",
+            "ndarray de tipo homogéneo.",
+            "np.array, np.zeros, np.ones y np.random.rand."
+          ],
+          "errores_frecuentes": [
+            "Mezclar textos y números en un ndarray esperando cálculos.",
+            "Olvidar importar NumPy como np."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-2-numpy",
+            "seccion": "15.2 NumPy"
+          }
+        },
+        {
+          "id": "pd-pandas",
+          "nombre": "pandas: Series y DataFrame",
+          "explicacion": "pandas es una librería de código abierto para limpiar, procesar y analizar datos estructurados; su nombre viene de panel data. Tiene dos estructuras principales: la Series, un arreglo unidimensional con etiquetas, y el DataFrame, una estructura bidimensional de filas y columnas parecida a una hoja de cálculo, en la que cada columna es una Series y puede tener un tipo de dato distinto. Permite seleccionar, filtrar, ordenar, unir y reorganizar datos, se integra con NumPy, se importa como import pandas as pd y un DataFrame puede crearse desde un diccionario, una lista, un arreglo o un archivo CSV.",
+          "ejemplo": "pd.read_csv(\"ventas.csv\") carga un archivo de ventas en un DataFrame con una columna por variable.",
+          "puntos_clave": [
+            "Series unidimensional.",
+            "DataFrame bidimensional y heterogéneo.",
+            "Creación desde diccionarios o CSV."
+          ],
+          "errores_frecuentes": [
+            "Confundir una Series con un DataFrame.",
+            "No revisar los tipos de cada columna al cargar un CSV."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-3-pandas",
+            "seccion": "15.3 Pandas"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pd-exploracion",
+      "nombre": "Análisis exploratorio y visualización",
+      "orden": 4,
+      "descripcion": "Objetivo del análisis exploratorio, indexación con loc e iloc, manejo de valores nulos y tipos de gráficos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pd-eda",
+          "nombre": "Análisis exploratorio de datos (EDA)",
+          "explicacion": "El análisis exploratorio de datos (EDA) consiste en analizar los datos para obtener ideas, identificar patrones y entender su estructura. Los científicos de datos examinan los datos visual y estadísticamente para descubrir relaciones, anomalías y tendencias y generar hipótesis. Su objetivo principal es familiarizarse con los datos y evaluar su calidad; después de entenderlos y limpiarlos se pueden crear variables nuevas, llamadas características, y formular hipótesis.",
+          "ejemplo": "Antes de modelar la morosidad de una cooperativa, el analista revisa cuántos créditos hay, sus montos promedio, si hay datos faltantes y si algún valor es imposible, como una edad de 150 años.",
+          "puntos_clave": [
+            "Patrones, anomalías y tendencias.",
+            "Evaluar la calidad de los datos.",
+            "Características e hipótesis."
+          ],
+          "errores_frecuentes": [
+            "Saltar al modelo sin explorar los datos.",
+            "Ignorar valores atípicos imposibles."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-4-exploratory-data-analysis",
+            "seccion": "15.4 Exploratory data analysis"
+          }
+        },
+        {
+          "id": "pd-indexacion-nulos",
+          "nombre": "Indexación y valores nulos en pandas",
+          "explicacion": "Para examinar un DataFrame se seleccionan filas y columnas con dos métodos: loc[], que usa las etiquetas de filas y columnas, e iloc[], que usa índices enteros. El filtrado y la segmentación permiten obtener subconjuntos de datos. Los valores nulos, que en pandas se representan con np.nan, pueden eliminarse con dropna(), que borra las filas que los contienen, o reemplazarse con fillna(), por ejemplo con el promedio de la columna mediante df.fillna(df.mean()).",
+          "ejemplo": "df.loc[3, \"monto\"] lee el monto de la fila con etiqueta 3; df.iloc[0, 0] lee el primer dato de la primera columna; df.dropna() elimina las filas incompletas.",
+          "puntos_clave": [
+            "loc por etiquetas, iloc por posiciones.",
+            "Filtrar y segmentar.",
+            "dropna() y fillna()."
+          ],
+          "errores_frecuentes": [
+            "Confundir loc con iloc.",
+            "Rellenar nulos con el promedio sin evaluar si sesga el análisis."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-4-exploratory-data-analysis",
+            "seccion": "15.4 Exploratory data analysis"
+          }
+        },
+        {
+          "id": "pd-visualizacion",
+          "nombre": "Por qué visualizar datos",
+          "explicacion": "La visualización de datos tiene un papel crucial para entenderlos y puede usarse en todas las etapas del ciclo de vida de la ciencia de datos: para explorar, identificar anomalías, entender relaciones y tendencias y producir informes. Python tiene librerías de visualización que permiten crear gráficos a partir de los datos de un DataFrame o un arreglo.",
+          "ejemplo": "Un gráfico de líneas de las ventas mensuales muestra de inmediato la caída de un trimestre que en una tabla pasaba desapercibida.",
+          "puntos_clave": [
+            "La visualización acompaña todo el ciclo.",
+            "Detecta anomalías y tendencias.",
+            "Apoya los informes."
+          ],
+          "errores_frecuentes": [
+            "Graficar sin un propósito claro.",
+            "Usar gráficos que distorsionan las escalas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-5-data-visualization",
+            "seccion": "15.5 Data visualization"
+          }
+        },
+        {
+          "id": "pd-tipos-graficos",
+          "nombre": "Elegir el tipo de gráfico",
+          "explicacion": "Los gráficos de barras comparan valores entre categorías; los de líneas muestran tendencias y cambios en el tiempo; los de dispersión representan la relación entre dos variables y ayudan a identificar correlaciones, grupos y valores atípicos; los histogramas resumen la distribución de una variable continua dividiendo su rango en intervalos y contando cuántos datos caen en cada uno, y los diagramas de caja resumen la distribución con la mediana, los cuartiles y los valores atípicos, y permiten comparar variables.",
+          "ejemplo": "Para comparar las ventas de cinco sucursales se usa un gráfico de barras; para ver la evolución mensual, uno de líneas, y para ver la distribución de los montos de crédito, un histograma.",
+          "puntos_clave": [
+            "Barras: categorías.",
+            "Líneas: tendencias en el tiempo.",
+            "Dispersión, histograma y caja."
+          ],
+          "errores_frecuentes": [
+            "Usar líneas para categorías sin orden.",
+            "Usar un pastel con demasiadas categorías."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-python",
+            "url": "https://openstax.org/books/introduction-python-programming/pages/15-5-data-visualization",
+            "seccion": "15.5 Data visualization"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pd-machine-learning",
+      "nombre": "Fundamentos de machine learning",
+      "orden": 5,
+      "descripcion": "Aprendizaje supervisado y no supervisado, conjuntos de entrenamiento y prueba, sobreajuste y subajuste, ética y regresión con machine learning.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "pd-supervisado",
+          "nombre": "Aprendizaje supervisado y no supervisado",
+          "explicacion": "Los datos pueden estar etiquetados o no. Los datos etiquetados tienen una categoría o clase asociada a cada observación, como saber si cada paciente es propenso o no a una enfermedad del corazón; los no etiquetados no la tienen, como los atributos de clientes sin una clase definida. El aprendizaje supervisado usa datos etiquetados para aprender a predecir la etiqueta; el no supervisado busca estructura en datos sin etiquetas, y en él están la mayoría de algoritmos de agrupamiento, como k-medias y DBSCAN, y los métodos de reducción de dimensiones, como el análisis de componentes principales.",
+          "ejemplo": "Predecir si un cliente pagará su crédito con datos de clientes que ya pagaron o no es aprendizaje supervisado; agrupar clientes por hábitos de compra sin una etiqueta previa es no supervisado.",
+          "puntos_clave": [
+            "Datos etiquetados y no etiquetados.",
+            "Supervisado: predecir etiquetas.",
+            "No supervisado: agrupamiento y reducción de dimensiones."
+          ],
+          "errores_frecuentes": [
+            "Usar un algoritmo de agrupamiento esperando predecir una etiqueta conocida.",
+            "Creer que todo machine learning necesita etiquetas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+            "seccion": "6.1 What Is Machine Learning?"
+          }
+        },
+        {
+          "id": "pd-entrenamiento-prueba",
+          "nombre": "Conjuntos de entrenamiento y prueba",
+          "explicacion": "Un modelo de machine learning se ajusta con un conjunto de entrenamiento, y suele haber un conjunto de prueba para comprobar si es suficientemente preciso. Como regla práctica, entre el 60 % y el 80 % de los datos disponibles se usa para entrenar y el resto para probar. Ya entrenado, el modelo puede hacer predicciones con datos nuevos, y puede haber varias rondas de entrenamiento y prueba antes de que esté listo; el ciclo de vida empieza por formular claramente el problema que el modelo debe resolver.",
+          "ejemplo": "Con 1.000 clientes y una proporción de entrenamiento de 0,8, se entrena con 800 y se prueba con los 200 restantes, que el modelo no vio durante el entrenamiento.",
+          "puntos_clave": [
+            "Entrenamiento y prueba separados.",
+            "Regla práctica: 60 % a 80 % para entrenar.",
+            "Varias rondas antes de usar el modelo."
+          ],
+          "errores_frecuentes": [
+            "Evaluar el modelo con los mismos datos de entrenamiento.",
+            "Dejar muy pocos datos para la prueba."
+          ],
+          "formulas": [
+            "datos-entrenamiento"
+          ],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+            "seccion": "6.1 What Is Machine Learning?"
+          }
+        },
+        {
+          "id": "pd-sobreajuste",
+          "nombre": "Sobreajuste y subajuste",
+          "explicacion": "En casi ningún caso real un algoritmo de machine learning alcanza el 100 % de precisión, porque los datos reales son ruidosos, incompletos y rara vez se ajustan a un modelo simple. Dos de los problemas más comunes son el sobreajuste, cuando el modelo se ajusta demasiado a los datos de entrenamiento y resulta complejo pero falla con datos nuevos, y el subajuste, cuando el modelo es demasiado simple para captar los patrones de los datos.",
+          "ejemplo": "Un modelo que acierta el 100 % en los datos de entrenamiento pero solo el 60 % en los de prueba probablemente está sobreajustado.",
+          "puntos_clave": [
+            "Los datos reales son ruidosos.",
+            "Sobreajuste: memoriza el entrenamiento.",
+            "Subajuste: modelo demasiado simple."
+          ],
+          "errores_frecuentes": [
+            "Celebrar una precisión perfecta en el entrenamiento.",
+            "Agregar complejidad sin comprobar en la prueba."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+            "seccion": "6.1 What Is Machine Learning?"
+          }
+        },
+        {
+          "id": "pd-etica-ml",
+          "nombre": "Ética en el machine learning",
+          "explicacion": "En todo el ciclo de vida de un modelo hay que tener en cuenta consideraciones éticas para asegurar equidad, privacidad y transparencia: si los datos se recogieron con los permisos adecuados y si los datos de entrenamiento reflejan la misma diversidad que tendrán los casos en que se usará el algoritmo. El libro cita las serias preguntas éticas sobre los algoritmos de reconocimiento facial en la seguridad pública, cuyas imágenes de entrenamiento pudieron obtenerse sin consentimiento y cuyos modelos pueden reflejar sesgos.",
+          "ejemplo": "Un modelo de aprobación de créditos entrenado solo con clientes urbanos puede perjudicar a solicitantes rurales; además, en Ecuador los datos personales deben tratarse conforme a la ley de protección de datos.",
+          "puntos_clave": [
+            "Equidad, privacidad y transparencia.",
+            "Permisos y representatividad de los datos.",
+            "Riesgo de sesgos."
+          ],
+          "errores_frecuentes": [
+            "Usar datos personales sin consentimiento.",
+            "Creer que un algoritmo es neutral por ser matemático."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+            "seccion": "6.1 What Is Machine Learning?"
+          }
+        },
+        {
+          "id": "pd-regresion-ml",
+          "nombre": "Regresión en machine learning",
+          "explicacion": "La regresión modela la relación entre una o más variables de entrada y una variable de salida mediante una ecuación y = f(x); con ella se obtienen predicciones para entradas nuevas. Según la forma de la ecuación hay regresiones lineales, polinomiales, logísticas o exponenciales, con una o varias variables de entrada. El remuestreo bootstrap permite estudiar la confiabilidad y la variabilidad de los parámetros de una regresión lineal, y Python permite estimar regresiones múltiples y logísticas.",
+          "ejemplo": "Una regresión logística puede estimar la probabilidad de que un cliente abandone un servicio según su antigüedad y su número de reclamos.",
+          "puntos_clave": [
+            "y = f(x) para predecir.",
+            "Lineal, polinomial, logística y exponencial.",
+            "Bootstrap para la variabilidad de los parámetros."
+          ],
+          "errores_frecuentes": [
+            "Usar una regresión lineal para predecir una probabilidad.",
+            "Ignorar la variabilidad de los coeficientes estimados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/6-3-machine-learning-in-regression-analysis",
+            "seccion": "6.3 Machine Learning in Regression Analysis"
+          }
+        }
+      ]
+    }
+  ]
+}

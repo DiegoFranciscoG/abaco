@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (49 completas de 49)
+## Estado por materia (50 completas de 50)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -36,6 +36,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Marketing | 4 de 7 | completa | 6 de 6 | 24 | 0 de 0 | 100 % | — |
 | Operaciones y cadena de suministro | 4 de 7 | completa | 5 de 5 | 21 | 2 de 2 | 100 % | — |
 | Planificación y dirección estratégica | 4 de 7 | completa | 5 de 5 | 20 | 0 de 0 | 100 % | — |
+| Programación y análisis de datos con Python | 4 de 7 | completa | 5 de 5 | 22 | 1 de 1 | 100 % | — |
 | Responsabilidad social y sostenibilidad | 4 de 7 | completa | 5 de 5 | 21 | 1 de 1 | 100 % | — |
 | Auditoría, control interno y prevención del fraude | 3 de 7 | completa | 6 de 6 | 25 | 1 de 1 | 100 % | — |
 | Contabilidad financiera (NIIF) | 3 de 7 | completa | 6 de 6 | 25 | 7 de 7 | 100 % | — |
@@ -92,6 +93,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Planes de Marketing | 4 | 7 | 2 | Marketing |
 | Dirección Estratégica | 4 | 5 | 3 | Planificación y dirección estratégica |
 | Finanzas Sostenibles | 4 | 5 | 3 | Responsabilidad social y sostenibilidad |
+| Machine Learning | 4 | 5 | 3 | Programación y análisis de datos con Python |
 | Prácticas de Servicio Comunitario (práctica o titulación) | 4 | 5 | 5 | no aplica |
 | Gestión Logística | 4 | 4 | 5 | Operaciones y cadena de suministro |
 | Gestión de Talento Humano | 3 | 6 | 4 | Gestión del talento humano |
@@ -112,7 +114,6 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Presupuestos | 2 | 3 | 7 | Presupuestos empresariales y control de gestión |
 | Business English | 2 | 2 | 4 | pendiente |
 | Cálculo Integral | 2 | 2 | 1 | Cálculo diferencial |
-| Fundamentos de Programación | 2 | 2 | 1 | pendiente |
 | Gestión Bancaria | 2 | 2 | 3 | Sistema financiero y banca |
 | Investigación Operativa | 2 | 2 | 4 | pendiente |
 | Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
@@ -141,18 +142,18 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: en ÁBACO: Auditoría, control interno y prevención del fraude (completa, 6 de 6 unidades); Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Economía popular y solidaria (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · pendientes: Fundamentos de Contabilidad Gubernamental.
 - **6.º ciclo**: en ÁBACO: Contratación pública (completa, 5 de 5 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades); Presupuestos empresariales y control de gestión (completa, 5 de 5 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Aduanas y comercio exterior (completa, 5 de 5 unidades); Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Contabilidad Instituciones Financieras, Inteligencia Artificial en Contabilidad y Auditoría.
+- **7.º ciclo**: en ÁBACO: Aduanas y comercio exterior (completa, 5 de 5 unidades); Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Programación y análisis de datos con Python (completa, 5 de 5 unidades) · pendientes: Contabilidad Instituciones Financieras.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Auditoría de Calidad.
 
 ### Economía (2 planes)
 
-- **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Pensamiento económico y economía política (completa, 5 de 5 unidades) · pendientes: Fundamentos de Programación, Álgebra Lineal.
-- **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades) · pendientes: Análisis de Datos y Programación.
+- **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Contabilidad general (completa, 5 de 5 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades); Matemática para la gestión (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Pensamiento económico y economía política (completa, 5 de 5 unidades); Programación y análisis de datos con Python (completa, 5 de 5 unidades) · pendientes: Álgebra Lineal.
+- **2.º ciclo**: en ÁBACO: Contabilidad de costos (completa, 6 de 6 unidades); Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística inferencial (completa, 6 de 6 unidades) · sin pendientes.
 - **3.º ciclo**: en ÁBACO: Crecimiento, desarrollo y política económica (completa, 5 de 5 unidades); Investigación de mercados (completa, 6 de 6 unidades); Macroeconomía (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Econometría y regresión aplicada (completa, 5 de 5 unidades); Metodología de la investigación (completa, 6 de 6 unidades) · pendientes: Métodos Dinámicos en Economía.
 - **5.º ciclo**: en ÁBACO: Organización industrial, teoría de juegos y economía del comportamiento (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Investigación Operativa.
 - **6.º ciclo**: en ÁBACO: Contratación pública (completa, 5 de 5 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (completa, 6 de 6 unidades) · pendientes: Machine Learning.
+- **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (completa, 6 de 6 unidades) · sin pendientes.
 - **8.º ciclo**: en ÁBACO: Fundamentos de administración (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Diseño y Evaluación de Programas y Políticas Públicas, Investigación de Operaciones.
 
 ### Mercadotecnia (2 planes)
@@ -170,7 +171,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 
 - **1.º ciclo**: en ÁBACO: Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Matemática financiera (completa, 6 de 6 unidades); Metodología de la investigación (completa, 6 de 6 unidades); Responsabilidad social y sostenibilidad (completa, 5 de 5 unidades) · sin pendientes.
 - **2.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades) · sin pendientes.
-- **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · pendientes: Análisis Exploratorio de Datos.
+- **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Programación y análisis de datos con Python (completa, 5 de 5 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Econometría y regresión aplicada (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Mercado de valores e inversiones (completa, 5 de 5 unidades); Seguros y fundamentos actuariales (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Gestión de Riesgos Financieros.
 - **6.º ciclo**: en ÁBACO: Auditoría, control interno y prevención del fraude (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
@@ -215,6 +216,7 @@ Carreras: Administración de empresas, Contabilidad y auditoría, Economía, Mer
 - Metodología de la investigación: completa, avance 100 %.
 - Microeconomía: completa, avance 100 %.
 - Pensamiento económico y economía política: completa, avance 100 %.
+- Programación y análisis de datos con Python: completa, avance 100 %.
 - Publicidad y comunicación comercial: completa, avance 100 %.
 
-Asignaturas de ese primer ciclo que ÁBACO no tiene todavía: Álgebra Lineal, Fundamentos de Programación.
+Asignaturas de ese primer ciclo que ÁBACO no tiene todavía: Álgebra Lineal.

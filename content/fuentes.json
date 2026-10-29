@@ -709,5 +709,14 @@
     "url": "https://sdgs.un.org/goals",
     "licencia": "Se cita y enlaza; redacción propia",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "os-python",
+    "titulo": "Introduction to Python Programming",
+    "autor_editor": "OpenStax (Rice University)",
+    "tipo": "libro",
+    "url": "https://openstax.org/details/books/introduction-python-programming",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
   }
 ]

@@ -10756,5 +10756,67 @@
     "notas": [],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "datos-entrenamiento",
+    "nombre": "Tamaño del conjunto de entrenamiento",
+    "categoria": "estadistica",
+    "materias": [
+      "programacion-datos"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Número de observaciones que se usan para entrenar un modelo de machine learning: total de datos por la proporción de entrenamiento (como regla práctica, entre 60 % y 80 %); el resto se usa para probarlo.",
+    "latex": "n_{ent} = N \\times p",
+    "variables": [
+      {
+        "simbolo": "N",
+        "nombre": "N",
+        "significado": "Total de observaciones disponibles",
+        "unidad": "observaciones"
+      },
+      {
+        "simbolo": "p",
+        "nombre": "p",
+        "significado": "Proporción destinada al entrenamiento",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "N * p"
+    },
+    "excel": {
+      "es": "=N*p",
+      "en": "=N*p"
+    },
+    "ejemplo": {
+      "enunciado": "Una base de 1.000 clientes se divide para entrenar un modelo con el 80 % de los datos. ¿Cuántos clientes quedan para entrenar y cuántos para probar?",
+      "entradas": {
+        "N": 1000,
+        "p": 0.8
+      },
+      "pasos": [
+        "Entrenamiento = 1.000 × 0,8 = 800",
+        "Prueba = 1.000 − 800 = 200"
+      ],
+      "resultado": 800,
+      "unidad": "observaciones",
+      "tolerancia": 0.0001,
+      "excel_es": "=1000*0,8",
+      "excel_en": "=1000*0.8"
+    },
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+      "seccion": "6.1 What Is Machine Learning?"
+    },
+    "supuestos": [],
+    "notas": [
+      "El resto de observaciones forma el conjunto de prueba."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

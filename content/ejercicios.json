@@ -13244,5 +13244,63 @@
     },
     "materia": "responsabilidad-social",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pd-entrenamiento-a",
+    "subtema": "pd-entrenamiento-prueba",
+    "formula": "datos-entrenamiento",
+    "enunciado": "Una cooperativa tiene 2.500 créditos históricos y quiere entrenar un modelo de morosidad con el 70 % de ellos. ¿Cuántos créditos usará para entrenar?",
+    "datos": {
+      "N": 2500,
+      "p": 0.7
+    },
+    "calculo": "N * p",
+    "respuesta": 1750,
+    "unidad": "observaciones",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Entrenamiento = 2.500 × 0,7 = 1.750",
+      "Prueba = 2.500 − 1.750 = 750"
+    ],
+    "pistas": [
+      "La proporción está dentro de la regla práctica de 60 % a 80 %."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+      "seccion": "6.1 What Is Machine Learning?"
+    },
+    "materia": "programacion-datos",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pd-entrenamiento-b",
+    "subtema": "pd-entrenamiento-prueba",
+    "formula": "datos-entrenamiento",
+    "enunciado": "Con 640 registros de ventas y una proporción de entrenamiento del 60 %, ¿cuántos registros se usan para entrenar el modelo?",
+    "datos": {
+      "N": 640,
+      "p": 0.6
+    },
+    "calculo": "N * p",
+    "respuesta": 384,
+    "unidad": "observaciones",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Entrenamiento = 640 × 0,6 = 384",
+      "Prueba = 256"
+    ],
+    "pistas": [
+      "El resto queda para probar el modelo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+      "seccion": "6.1 What Is Machine Learning?"
+    },
+    "materia": "programacion-datos",
+    "actualizado_en": "2026-10-26"
   }
 ]

@@ -544,6 +544,14 @@
           8
         ],
         "planes": 2
+      },
+      {
+        "materia": "programacion-datos",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
       }
     ],
     "pendientes": [
@@ -554,11 +562,6 @@
       },
       {
         "nombre": "Contabilidad Instituciones Financieras",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Inteligencia Artificial en Contabilidad y Auditoría",
         "ciclo": 7,
         "planes": 1
       },
@@ -640,6 +643,16 @@
           2,
           3,
           4
+        ],
+        "planes": 2
+      },
+      {
+        "materia": "programacion-datos",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          2,
+          7
         ],
         "planes": 2
       },
@@ -824,18 +837,8 @@
     ],
     "pendientes": [
       {
-        "nombre": "Fundamentos de Programación",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Álgebra Lineal",
         "ciclo": 1,
-        "planes": 1
-      },
-      {
-        "nombre": "Análisis de Datos y Programación",
-        "ciclo": 2,
         "planes": 1
       },
       {
@@ -846,11 +849,6 @@
       {
         "nombre": "Investigación Operativa",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Machine Learning",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -1233,6 +1231,14 @@
         "planes": 1
       },
       {
+        "materia": "programacion-datos",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
         "materia": "sistema-financiero",
         "ciclo": 3,
         "ciclos": [
@@ -1306,11 +1312,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Análisis Exploratorio de Datos",
-        "ciclo": 3,
-        "planes": 1
-      },
       {
         "nombre": "Gestión de Riesgos Financieros",
         "ciclo": 5,

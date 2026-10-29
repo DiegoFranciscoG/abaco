@@ -2526,5 +2526,48 @@
       "seccion": "12.3 Market-Oriented Environmental Tools"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "division-entrenamiento-prueba",
+    "nombre": "División de datos en entrenamiento y prueba",
+    "descripcion": "Calcula cuántas observaciones van al entrenamiento y a la prueba con distintas proporciones y verifica que la elegida esté dentro de la regla práctica.",
+    "materias": [
+      "programacion-datos"
+    ],
+    "celdas": {
+      "A1": "Total de observaciones",
+      "B1": 1000,
+      "A2": "Proporción de entrenamiento",
+      "B2": 0.8,
+      "A3": "Observaciones de entrenamiento",
+      "B3": "=B1*B2",
+      "A4": "Observaciones de prueba",
+      "B4": "=B1-B3",
+      "A5": "¿Dentro de 60 % a 80 %?",
+      "B5": "=IF(AND(B2>=0.6,B2<=0.8),\"Sí\",\"No\")"
+    },
+    "formatos": {
+      "B2": "porcentaje",
+      "B3": "entero",
+      "B4": "entero"
+    },
+    "verificacion": [
+      {
+        "celda": "B3",
+        "esperado": 800,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B4",
+        "esperado": 200,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/6-1-what-is-machine-learning",
+      "seccion": "6.1 What Is Machine Learning?"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

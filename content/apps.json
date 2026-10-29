@@ -666,5 +666,42 @@
     ],
     "url_oficial": "https://www.microsoft.com/es-es/power-platform/products/power-bi/desktop",
     "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "google-colab",
+    "nombre": "Google Colaboratory",
+    "para_que": "Cuadernos de Python en el navegador, sin instalar nada, para practicar código, NumPy, pandas y gráficos.",
+    "materias": [
+      "programacion-datos"
+    ],
+    "areas": [
+      "tecnologia",
+      "cuantitativo"
+    ],
+    "costo": "gratis-con-cuenta",
+    "plataformas": [
+      "Web"
+    ],
+    "url_oficial": "https://colab.research.google.com/",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "python",
+    "nombre": "Python",
+    "para_que": "Lenguaje de programación libre para escribir y ejecutar programas y análisis de datos en tu computadora.",
+    "materias": [
+      "programacion-datos"
+    ],
+    "areas": [
+      "tecnologia"
+    ],
+    "costo": "gratis",
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "url_oficial": "https://www.python.org/downloads/",
+    "fecha_consulta": "2026-10-30"
   }
 ]

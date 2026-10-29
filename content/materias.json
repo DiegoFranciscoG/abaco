@@ -1159,5 +1159,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "programacion-datos",
+    "nombre": "Programación y análisis de datos con Python",
+    "areas": [
+      "tecnologia",
+      "cuantitativo"
+    ],
+    "descripcion": "Fundamentos de programación en Python (entrada y salida, variables, tipos, decisiones, bucles, funciones, listas y diccionarios), ciclo de vida de la ciencia de datos, NumPy y pandas, análisis exploratorio, visualización y fundamentos de machine learning.",
+    "sinonimos": [
+      "fundamentos de programación",
+      "análisis de datos y programación",
+      "machine learning",
+      "análisis exploratorio de datos",
+      "Python",
+      "ciencia de datos"
+    ],
+    "herramientas": [
+      "laboratorio",
+      "estadistica",
+      "graficador"
+    ],
+    "orden": 50,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]
