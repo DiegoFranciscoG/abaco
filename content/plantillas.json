@@ -2391,5 +2391,80 @@
       "seccion": "14.3 Best-Fit Linear Model"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "concentracion-mercado",
+    "nombre": "Concentración de mercado: CR4 y HHI antes y después de una fusión",
+    "descripcion": "Calcula la CR4 y el HHI de una industria con seis empresas y el cambio del HHI si se fusionan dos de ellas.",
+    "materias": [
+      "economia-industrial"
+    ],
+    "celdas": {
+      "A1": "Empresa",
+      "B1": "Participación (%)",
+      "C1": "Participación²",
+      "A2": "A",
+      "B2": 35,
+      "C2": "=B2^2",
+      "A3": "B",
+      "B3": 25,
+      "C3": "=B3^2",
+      "A4": "C",
+      "B4": 15,
+      "C4": "=B4^2",
+      "A5": "D",
+      "B5": 10,
+      "C5": "=B5^2",
+      "A6": "E",
+      "B6": 10,
+      "C6": "=B6^2",
+      "A7": "F",
+      "B7": 5,
+      "C7": "=B7^2",
+      "A8": "Total",
+      "B8": "=SUM(B2:B7)",
+      "A10": "CR4",
+      "B10": "=B2+B3+B4+B5",
+      "A11": "HHI",
+      "B11": "=SUM(C2:C7)",
+      "A13": "HHI si se fusionan C y D",
+      "B13": "=B11-C4-C5+(B4+B5)^2",
+      "A14": "Aumento del HHI",
+      "B14": "=B13-B11"
+    },
+    "formatos": {
+      "B10": "numero",
+      "B11": "numero",
+      "B13": "numero",
+      "B14": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B8",
+        "esperado": 100,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B10",
+        "esperado": 85,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B11",
+        "esperado": 2300,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 300,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-micro3",
+      "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

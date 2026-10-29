@@ -7277,5 +7277,162 @@
       "=correl",
       "predict the corresponding value of the russell 2000 index"
     ]
+  },
+  {
+    "id": "oi-barreras",
+    "palabras": [
+      "barriers to entry are the legal, technological, or market forces that discourage or prevent potential competitors",
+      "natural monopoly economies of scale can combine with the size of the market to limit competition"
+    ]
+  },
+  {
+    "id": "oi-legal-propiedad",
+    "palabras": [
+      "legal monopoly for some products, the government erects barriers to entry",
+      "intellectual property",
+      "predatory pricing"
+    ]
+  },
+  {
+    "id": "oi-competencia-monopolistica",
+    "palabras": [
+      "monopolistic competition involves many firms competing against each other",
+      "edward chamberlin",
+      "joan robinson"
+    ]
+  },
+  {
+    "id": "oi-diferenciacion",
+    "palabras": [
+      "physical aspects of the product, location from which it sells the product, intangible aspects of the product, and perceptions of the product",
+      "perceived demand for a monopolistic competitor"
+    ]
+  },
+  {
+    "id": "oi-cr4",
+    "palabras": [
+      "concentration ratio",
+      "we calculate the four-firm concentration ratio by adding the market shares of the four largest firms"
+    ]
+  },
+  {
+    "id": "oi-hhi",
+    "palabras": [
+      "herfindahl-hirschman index (hhi)",
+      "summing the squares of the market share of each firm in the industry",
+      "note that the hhi gives greater weight to large firms"
+    ]
+  },
+  {
+    "id": "oi-cr4-vs-hhi",
+    "palabras": [
+      "a four-firm concentration ratio is a simple tool, which may reveal only part of the story",
+      "the near-monopolist in the second industry drives up the hhi"
+    ]
+  },
+  {
+    "id": "oi-practicas-restrictivas",
+    "palabras": [
+      "it is illegal for competitors to form a cartel",
+      "tying sales happen when a customer is allowed to buy one product only if the customer also buys a second product",
+      "bundling"
+    ]
+  },
+  {
+    "id": "oi-monopolio-natural",
+    "palabras": [
+      "most true monopolies today in the u.s. are regulated, natural monopolies",
+      "average costs are declining over the range of production that satisfies market demand"
+    ]
+  },
+  {
+    "id": "oi-costo-margen-tope",
+    "palabras": [
+      "cost-plus regulation",
+      "price cap regulation"
+    ]
+  },
+  {
+    "id": "oi-desregulacion",
+    "palabras": [
+      "removing government controls over prices and quantities produced in airlines, railroads, trucking",
+      "civil aeronautics board (cab)"
+    ]
+  },
+  {
+    "id": "oi-captura",
+    "palabras": [
+      "regulatory capture",
+      "the firms that are supposedly regulated end up playing a large role in setting the regulations"
+    ]
+  },
+  {
+    "id": "oi-dilema-prisionero",
+    "palabras": [
+      "whatever the other does, each is better off confessing than remaining silent",
+      "conflict between individual and group rationality"
+    ]
+  },
+  {
+    "id": "oi-dominancia-nash",
+    "palabras": [
+      "is the strictly dominant move for both players",
+      "in which nobody would have benefited by unilaterally choosing a different move"
+    ]
+  },
+  {
+    "id": "oi-juegos-repetidos",
+    "palabras": [
+      "opening the possibility that a player can use its current move to reward or punish the other",
+      "shadow of the future",
+      "axelrod and tit for tat"
+    ]
+  },
+  {
+    "id": "oi-bienes-publicos",
+    "palabras": [
+      "public goods dilemmas",
+      "public goods game",
+      "favorite for experimental research by economists and psychologists"
+    ]
+  },
+  {
+    "id": "oi-economia-experimental",
+    "palabras": [
+      "controlled laboratory experiments have emerged as a vital component of economic research",
+      "induced-value method"
+    ]
+  },
+  {
+    "id": "oi-subastas",
+    "palabras": [
+      "the english auction",
+      "the dutch auction",
+      "refute the theoretical prediction of equivalence between the dutch and the first-price auction"
+    ]
+  },
+  {
+    "id": "oi-heuristicas-prospectiva",
+    "palabras": [
+      "heuristic shortcuts or rules of thumb",
+      "law of small numbers",
+      "prospect theory"
+    ]
+  },
+  {
+    "id": "oi-contabilidad-mental",
+    "palabras": [
+      "limited rationality, perceptions about fairness, and lack of self-control",
+      "mental accounting",
+      "endowment effect"
+    ]
+  },
+  {
+    "id": "oi-equidad-nudges",
+    "palabras": [
+      "notions about fairness play a major role in decision-making",
+      "nudge individuals in the right direction",
+      "save more tomorrow"
+    ]
   }
 ]

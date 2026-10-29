@@ -655,5 +655,32 @@
     "url": "https://www.wto.org/english/tratop_e/cusval_e/cusval_info_e.htm",
     "licencia": "Se cita y enlaza; redacción propia",
     "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "sep-dilema-prisionero",
+    "titulo": "Prisoner's Dilemma (revisión sustantiva del 24-10-2025)",
+    "autor_editor": "Stanford Encyclopedia of Philosophy (Stanford University)",
+    "tipo": "articulo",
+    "url": "https://plato.stanford.edu/entries/prisoner-dilemma/",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "nobel-2002",
+    "titulo": "The Prize in Economic Sciences 2002: Popular information (Kahneman y Smith)",
+    "autor_editor": "Nobel Prize Outreach / Real Academia Sueca de Ciencias",
+    "tipo": "pagina_oficial",
+    "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/popular-information/",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "nobel-2017",
+    "titulo": "The Prize in Economic Sciences 2017: Popular information (Thaler)",
+    "autor_editor": "Nobel Prize Outreach / Real Academia Sueca de Ciencias",
+    "tipo": "pagina_oficial",
+    "url": "https://www.nobelprize.org/prizes/economic-sciences/2017/popular-information/",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-29"
   }
 ]

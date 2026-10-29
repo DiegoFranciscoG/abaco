@@ -74,7 +74,8 @@
       "auditoria",
       "contratacion-publica",
       "aduanas",
-      "econometria"
+      "econometria",
+      "economia-industrial"
     ],
     "areas": [
       "tecnologia"
@@ -95,7 +96,8 @@
     "para_que": "Graficar funciones, ver rectas secantes y tangentes y comprobar derivadas y máximos de forma visual.",
     "materias": [
       "calculo-diferencial",
-      "matematica-gestion"
+      "matematica-gestion",
+      "economia-industrial"
     ],
     "areas": [
       "cuantitativo"

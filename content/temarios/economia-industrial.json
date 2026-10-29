@@ -1,0 +1,496 @@
+{
+  "materia": "economia-industrial",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "oi-estructuras",
+      "nombre": "Poder de mercado y estructuras",
+      "orden": 1,
+      "descripcion": "Barreras de entrada y monopolio natural, monopolios legales y propiedad intelectual, competencia monopolística y diferenciación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "oi-barreras",
+          "nombre": "Barreras de entrada y monopolio natural",
+          "explicacion": "Las barreras de entrada son las fuerzas legales, tecnológicas o de mercado que desalientan o impiden la entrada de competidores, desde algo superable como el alquiler de un local hasta límites estrictos como el número finito de frecuencias de radio. Con barreras importantes, las ganancias altas no atraen necesariamente nuevas empresas ni bajan el precio a largo plazo. Un monopolio natural surge cuando las economías de escala, combinadas con el tamaño del mercado, hacen que solo haya espacio para un productor: una empresa más pequeña que intente entrar tendría costos promedio mayores.",
+          "ejemplo": "Si la demanda de aviones corta la curva de costo promedio de largo plazo donde aún hay economías de escala, una segunda fábrica más pequeña tendría costos tan altos que no podría competir.",
+          "puntos_clave": [
+            "Barreras legales, tecnológicas o de mercado.",
+            "Ganancias que no atraen entrada.",
+            "Monopolio natural por economías de escala."
+          ],
+          "errores_frecuentes": [
+            "Creer que toda ganancia alta atrae competidores.",
+            "Confundir monopolio natural con monopolio legal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/9-1-how-monopolies-form-barriers-to-entry",
+            "seccion": "9.1 How Monopolies Form: Barriers to Entry"
+          }
+        },
+        {
+          "id": "oi-legal-propiedad",
+          "nombre": "Monopolio legal, propiedad intelectual y precios predatorios",
+          "explicacion": "En un monopolio legal el Estado prohíbe o limita la competencia, por ejemplo en servicios públicos necesarios para la vida diaria, que suelen quedar como monopolios regulados. La propiedad intelectual, como patentes y marcas, implica la propiedad sobre una idea, un concepto o una imagen, y los países la protegen con leyes de distinta duración que se intenta armonizar en la Organización Mundial de la Propiedad Intelectual. Otra barrera es el precio predatorio: la amenaza de bajar fuertemente los precios para desalentar la competencia, prohibida por las leyes antimonopolio pero difícil de probar.",
+          "ejemplo": "Una farmacéutica con la patente de un medicamento es la única que puede venderlo durante años, como premio a su inversión en investigación.",
+          "puntos_clave": [
+            "Monopolio legal y servicios regulados.",
+            "Propiedad intelectual sobre ideas.",
+            "Precios predatorios difíciles de probar."
+          ],
+          "errores_frecuentes": [
+            "Creer que la patente protege para siempre.",
+            "Llamar predatorio a cualquier precio bajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/9-1-how-monopolies-form-barriers-to-entry",
+            "seccion": "9.1 How Monopolies Form: Barriers to Entry"
+          }
+        },
+        {
+          "id": "oi-competencia-monopolistica",
+          "nombre": "Competencia monopolística",
+          "explicacion": "En la competencia monopolística muchas empresas compiten vendiendo productos que son distintos en algún aspecto, como tiendas de ropa, restaurantes o marcas de cerveza. Cada empresa tiene un pequeño monopolio sobre su estilo o marca, pero compite con otros estilos y marcas: de ahí el nombre que mezcla monopolio y competencia. La teoría de la competencia imperfecta la desarrollaron, de forma independiente y simultánea en 1933, Edward Chamberlin en Harvard y Joan Robinson en Cambridge.",
+          "ejemplo": "En una ciudad hay cientos de restaurantes: cada uno tiene su menú y ambiente propio, pero si sube mucho sus precios sus clientes se van a otros.",
+          "puntos_clave": [
+            "Muchas empresas con productos distintos.",
+            "Pequeño monopolio sobre la marca.",
+            "Chamberlin y Robinson, 1933."
+          ],
+          "errores_frecuentes": [
+            "Confundir competencia monopolística con oligopolio.",
+            "Creer que la marca elimina la competencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/10-1-monopolistic-competition",
+            "seccion": "10.1 Monopolistic Competition"
+          }
+        },
+        {
+          "id": "oi-diferenciacion",
+          "nombre": "Productos diferenciados y publicidad",
+          "explicacion": "Una empresa puede diferenciar sus productos por sus características físicas, por la ubicación desde la que vende, por aspectos intangibles y por las percepciones de los consumidores. La publicidad puede moldear esas preferencias intangibles y crear fuertes preferencias por ciertas marcas. La variedad de estilos, sabores, ubicaciones y características es lo que genera la diferenciación y la competencia monopolística; por eso el competidor monopolístico percibe una demanda intermedia entre la de una empresa perfectamente competitiva y la de un monopolio.",
+          "ejemplo": "Una gasolinera en una esquina muy transitada vende más que otra igual en una calle secundaria: su diferencia es la ubicación.",
+          "puntos_clave": [
+            "Diferencias físicas, de ubicación, intangibles y de percepción.",
+            "La publicidad crea preferencias.",
+            "Demanda percibida intermedia."
+          ],
+          "errores_frecuentes": [
+            "Pensar que diferenciar solo significa cambiar el producto físico.",
+            "Ignorar el papel de la ubicación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/10-1-monopolistic-competition",
+            "seccion": "10.1 Monopolistic Competition"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oi-concentracion",
+      "nombre": "Concentración y prácticas restrictivas",
+      "orden": 2,
+      "descripcion": "Razón de concentración CR4, índice de Herfindahl-Hirschman, comparación de ambas medidas y prácticas anticompetitivas.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "oi-cr4",
+          "nombre": "Razón de concentración (CR4)",
+          "explicacion": "Los reguladores han buscado por décadas medir el poder de monopolio en una industria. Una herramienta temprana es la razón de concentración, que mide la participación combinada en las ventas de las empresas más grandes, normalmente de cuatro a ocho. La de cuatro empresas, CR4, suma las participaciones de las cuatro mayores; si es menor que la mitad del mercado, no se considera especialmente alta.",
+          "ejemplo": "Si las cuatro mayores empresas de reposición de parabrisas tienen 16 %, 10 %, 8 % y 6 %, la CR4 es 40: no es especialmente alta.",
+          "puntos_clave": [
+            "Suma de las mayores participaciones.",
+            "Normalmente cuatro a ocho empresas.",
+            "CR4 menor que 50 no es especialmente alta."
+          ],
+          "errores_frecuentes": [
+            "Sumar empresas que no son las más grandes.",
+            "Usar ventas absolutas en lugar de participaciones."
+          ],
+          "formulas": [
+            "concentracion-cr4"
+          ],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+            "seccion": "11.1 Corporate Mergers"
+          }
+        },
+        {
+          "id": "oi-hhi",
+          "nombre": "Índice de Herfindahl-Hirschman (HHI)",
+          "explicacion": "El índice de Herfindahl-Hirschman se calcula sumando los cuadrados de las participaciones de mercado de todas las empresas de la industria. Un monopolio, con el 100 % del mercado, tiene un HHI de 10.000; una industria con 100 empresas de 1 % cada una tiene un HHI de 100. Como eleva al cuadrado, el HHI da más peso a las empresas grandes.",
+          "ejemplo": "Una industria con cinco empresas del 20 % cada una tiene un HHI de 5 × 20² = 2.000.",
+          "puntos_clave": [
+            "HHI = Σ s².",
+            "Monopolio: 10.000.",
+            "Pesa más a las empresas grandes."
+          ],
+          "errores_frecuentes": [
+            "Usar participaciones en decimales y comparar con umbrales en puntos porcentuales.",
+            "Olvidar incluir a las empresas pequeñas."
+          ],
+          "formulas": [
+            "indice-hhi"
+          ],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+            "seccion": "11.1 Corporate Mergers"
+          }
+        },
+        {
+          "id": "oi-cr4-vs-hhi",
+          "nombre": "Limitaciones del CR4 frente al HHI",
+          "explicacion": "La razón de concentración puede contar solo parte de la historia. Dos industrias pueden tener la misma CR4 de 80: en una, cinco empresas tienen 20 % cada una; en la otra, la mayor tiene 77 % y las demás 1 % cada una. Sería razonable preocuparse más por la segunda, casi un monopolio, y el HHI sí distingue ambos casos: 2.000 en la primera y 5.952 en la segunda, porque la empresa casi monopolista eleva mucho el índice.",
+          "ejemplo": "Antes de aprobar una fusión, la autoridad de competencia mira cuánto subiría el HHI y no solo la CR4, para detectar si una empresa quedaría dominante.",
+          "puntos_clave": [
+            "Misma CR4, distinta concentración.",
+            "El HHI distingue casos de dominancia.",
+            "Las empresas grandes pesan más."
+          ],
+          "errores_frecuentes": [
+            "Basar una decisión de fusión solo en la CR4.",
+            "Creer que dos industrias con igual CR4 son igual de competitivas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+            "seccion": "11.1 Corporate Mergers"
+          }
+        },
+        {
+          "id": "oi-practicas-restrictivas",
+          "nombre": "Carteles y prácticas restrictivas",
+          "explicacion": "Las leyes antimonopolio prohíben que los competidores formen carteles para fijar precios o producción, manipular licitaciones o repartirse mercados, clientes o territorios; un ejemplo fue el cartel internacional de vitaminas de fines de los noventa. El monopolio en sí no es ilegal si surge de una patente o de un mejor producto. Las prácticas restrictivas son acuerdos que, sin fijar precios, pueden reducir la competencia: las ventas atadas obligan a comprar un segundo producto para obtener el primero; el empaquetamiento vende varios productos como uno, a menudo con ventaja para el consumidor, y el precio predatorio baja los precios para expulsar a un nuevo competidor y luego subirlos.",
+          "ejemplo": "Si una tienda solo vende una película popular a quien compra también un televisor portátil específico, practica una venta atada.",
+          "puntos_clave": [
+            "Carteles: fijación de precios y reparto de mercados.",
+            "El monopolio por sí solo no es ilegal.",
+            "Ventas atadas, empaquetamiento y precios predatorios."
+          ],
+          "errores_frecuentes": [
+            "Considerar ilegal todo empaquetamiento.",
+            "Confundir competir con precios bajos con precio predatorio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-2-regulating-anticompetitive-behavior",
+            "seccion": "11.2 Regulating Anticompetitive Behavior"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oi-regulacion",
+      "nombre": "Regulación de monopolios",
+      "orden": 3,
+      "descripcion": "El problema del monopolio natural, regulación por costo más margen y por precio tope, desregulación y captura regulatoria.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "oi-monopolio-natural",
+          "nombre": "El reto del monopolio natural",
+          "explicacion": "La mayoría de los monopolios verdaderos son monopolios naturales regulados. Un monopolio natural surge cuando los costos promedio bajan en todo el rango de producción que satisface la demanda, lo que suele ocurrir cuando los costos fijos son grandes frente a los variables. Una sola empresa abastece el mercado a menor costo que dos o más, así que dividirla subiría el costo promedio. Las empresas de agua y electricidad son los ejemplos clásicos: instalar cuatro o cinco redes de tuberías bajo una ciudad sería carísimo.",
+          "ejemplo": "Una empresa municipal de agua potable atiende a toda la ciudad con una sola red; duplicar las tuberías para tener competencia elevaría el costo por hogar.",
+          "puntos_clave": [
+            "Costos promedio decrecientes.",
+            "Costos fijos altos.",
+            "Dividir la empresa sube los costos."
+          ],
+          "errores_frecuentes": [
+            "Proponer dividir un monopolio natural para crear competencia.",
+            "Creer que un monopolio natural no necesita regulación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-3-regulating-natural-monopolies",
+            "seccion": "11.3 Regulating Natural Monopolies"
+          }
+        },
+        {
+          "id": "oi-costo-margen-tope",
+          "nombre": "Regulación por costo más margen y por precio tope",
+          "explicacion": "Durante décadas, los reguladores calcularon el costo promedio de las empresas de servicios públicos, le sumaron una utilidad normal y fijaron así el precio: es la regulación de costo más margen. Su problema es que la empresa tiene poco interés en controlar costos, porque puede trasladarlos al precio, e incluso incentivos para inflarlos con plantas enormes o mucho personal. Por eso, en los años ochenta y noventa algunos reguladores pasaron a la regulación por precio tope, en la que se fija por varios años el precio que la empresa puede cobrar, de modo que si reduce costos se queda con la ganancia.",
+          "ejemplo": "Con un precio tope fijado por cinco años, una distribuidora eléctrica que moderniza sus redes y reduce pérdidas aumenta su utilidad sin subir la tarifa.",
+          "puntos_clave": [
+            "Costo más margen: precio = costo + utilidad normal.",
+            "Incentivo a inflar costos.",
+            "Precio tope: incentivo a ser eficiente."
+          ],
+          "errores_frecuentes": [
+            "Creer que el costo más margen premia la eficiencia.",
+            "Fijar un precio tope sin revisarlo nunca."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-3-regulating-natural-monopolies",
+            "seccion": "11.3 Regulating Natural Monopolies"
+          }
+        },
+        {
+          "id": "oi-desregulacion",
+          "nombre": "El gran experimento de desregulación",
+          "explicacion": "Desde los años setenta, políticos de distintas tendencias concluyeron que la regulación de precios no funcionaba bien, y Estados Unidos eliminó los controles sobre precios y cantidades en aerolíneas, ferrocarriles, transporte de carga, buses interurbanos, gas natural y tasas de interés bancarias. En aviación, la Junta de Aeronáutica Civil aprobó durante cuarenta años, de 1938 a 1978, todas las tarifas, la entrada y salida y las rutas, sin que entrara ninguna aerolínea nueva en las rutas principales.",
+          "ejemplo": "Tras la desregulación aérea, aparecieron aerolíneas de bajo costo y bajaron las tarifas en muchas rutas que antes tenían precios fijados por el regulador.",
+          "puntos_clave": [
+            "Dudas sobre la regulación de precios.",
+            "Desregulación en transporte, energía y banca.",
+            "Cuarenta años de tarifas aéreas reguladas."
+          ],
+          "errores_frecuentes": [
+            "Creer que desregular siempre beneficia a todos.",
+            "Ignorar el caso de los monopolios naturales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-4-the-great-deregulation-experiment",
+            "seccion": "11.4 The Great Deregulation Experiment"
+          }
+        },
+        {
+          "id": "oi-captura",
+          "nombre": "Captura regulatoria",
+          "explicacion": "La captura regulatoria ocurre cuando las empresas supuestamente reguladas terminan teniendo un papel importante en fijar las reglas que deben seguir. Cuando la industria aérea estaba regulada, sugería candidatos a la junta reguladora, enviaba cabilderos, proveía la mayor parte de la información para las decisiones y ofrecía empleos bien pagados a algunos de quienes salían de la junta. El resultado es que la regulación de precios puede convertirse en una forma de que los competidores existentes reduzcan la producción, mantengan precios altos y limiten la competencia.",
+          "ejemplo": "Si los exdirectivos de las empresas de un sector ocupan los cargos del ente regulador y luego vuelven a esas empresas, el riesgo de captura es alto.",
+          "puntos_clave": [
+            "Las reguladas influyen en las reglas.",
+            "Información, cabildeo y puertas giratorias.",
+            "Precios altos y menos competencia."
+          ],
+          "errores_frecuentes": [
+            "Suponer que el regulador siempre representa al consumidor.",
+            "Ignorar quién aporta la información al regulador."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-micro3",
+            "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-4-the-great-deregulation-experiment",
+            "seccion": "11.4 The Great Deregulation Experiment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oi-juegos",
+      "nombre": "Teoría de juegos: el dilema del prisionero",
+      "orden": 4,
+      "descripcion": "El dilema del prisionero, dominancia y equilibrio de Nash, juegos repetidos y tit for tat, y dilemas de bienes públicos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "oi-dilema-prisionero",
+          "nombre": "El dilema del prisionero",
+          "explicacion": "Dos detenidos en celdas separadas pueden confesar o callar. Si uno confiesa y el otro calla, el que confiesa queda libre y el otro recibe una condena larga; si ambos confiesan, ambos son condenados con libertad anticipada, y si ambos callan, solo reciben penas simbólicas. El dilema es que, haga lo que haga el otro, a cada uno le conviene confesar, pero cuando ambos confiesan quedan peor que si ambos hubieran callado. Ilustra el conflicto entre la racionalidad individual y la del grupo: un grupo cuyos miembros persiguen racionalmente su interés propio puede terminar peor que uno que coopera.",
+          "ejemplo": "Dos empresas que podrían mantener precios altos terminan en una guerra de descuentos: a cada una le conviene bajar el precio, pero ambas ganan menos que si los hubieran mantenido.",
+          "puntos_clave": [
+            "Confesar conviene a cada uno.",
+            "Ambos confiesan y quedan peor.",
+            "Racionalidad individual frente a grupal."
+          ],
+          "errores_frecuentes": [
+            "Creer que el dilema se debe a falta de información.",
+            "Pensar que basta con que los jugadores sean racionales para cooperar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sep-dilema-prisionero",
+            "url": "https://plato.stanford.edu/entries/prisoner-dilemma/",
+            "seccion": "Introducción"
+          }
+        },
+        {
+          "id": "oi-dominancia-nash",
+          "nombre": "Estrategia dominante y equilibrio de Nash",
+          "explicacion": "En la forma más simple del dilema, los pagos cumplen T > R > P > S: la tentación de traicionar mientras el otro coopera, la recompensa por cooperar ambos, el castigo por traicionar ambos y el pago del ingenuo que coopera solo. Con ese orden, traicionar es la estrategia estrictamente dominante para ambos jugadores, aunque el resultado de traicionar ambos sea peor para cada uno que cooperar ambos. Un equilibrio de Nash es un resultado en el que nadie se beneficiaría cambiando su jugada de forma unilateral; los primeros experimentos con este juego, de Flood y Dresher en 1950, buscaban ver si los jugadores lo alcanzaban.",
+          "ejemplo": "Si traicionar da 5 o 1 según el otro coopere o no, y cooperar da 3 o 0, traicionar siempre paga más: es la estrategia dominante, aunque ambos ganarían 3 cooperando.",
+          "puntos_clave": [
+            "T > R > P > S.",
+            "Traicionar es estrictamente dominante.",
+            "Equilibrio de Nash: nadie gana cambiando solo."
+          ],
+          "errores_frecuentes": [
+            "Creer que el equilibrio de Nash es siempre el mejor resultado para el grupo.",
+            "Confundir estrategia dominante con equilibrio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sep-dilema-prisionero",
+            "url": "https://plato.stanford.edu/entries/prisoner-dilemma/",
+            "seccion": "1. Symmetric 2×2 PD with ordinal payoffs; 2. Asymmetry"
+          }
+        },
+        {
+          "id": "oi-juegos-repetidos",
+          "nombre": "Juegos repetidos y tit for tat",
+          "explicacion": "Cuando el dilema se juega repetidamente, cada jugador puede usar su jugada para premiar o castigar lo que el otro hizo antes e inducir cooperación. En los juegos de duración indeterminada se incluye una probabilidad de que el juego continúe, la sombra del futuro: el valor de cooperar depende de las probabilidades de volver a encontrarse con el oponente. En los torneos de computadora de Robert Axelrod, la estrategia ganadora fue tit for tat, que coopera en la primera ronda y luego imita la jugada anterior del oponente, y volvió a ganar en el segundo torneo.",
+          "ejemplo": "Dos proveedores que se ven todos los meses mantienen precios razonables entre sí: si uno abusa, el otro responde igual en la siguiente negociación.",
+          "puntos_clave": [
+            "Repetición permite premiar y castigar.",
+            "Sombra del futuro.",
+            "Tit for tat: coopera y luego imita."
+          ],
+          "errores_frecuentes": [
+            "Creer que en un juego repetido siempre conviene traicionar.",
+            "Ignorar la probabilidad de volver a interactuar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sep-dilema-prisionero",
+            "url": "https://plato.stanford.edu/entries/prisoner-dilemma/",
+            "seccion": "14. Indefinite iteration; 14.1 Axelrod and tit for tat"
+          }
+        },
+        {
+          "id": "oi-bienes-publicos",
+          "nombre": "Muchos jugadores: bienes públicos",
+          "explicacion": "La estructura del dilema se refleja en los dilemas de bienes públicos: a cada persona se le pide asumir el costo de contribuir a un bien social, como la salud pública, la defensa, la seguridad vial o el aire limpio. El costo individual es menor que el beneficio para la comunidad, pero cada uno recibe los beneficios de lo que aportan los demás aunque no contribuya. El juego de bienes públicos, en el que lo aportado se multiplica y se reparte por igual entre todos, se ha convertido en uno de los favoritos de la investigación experimental de economistas y psicólogos.",
+          "ejemplo": "En un barrio, todos se benefician de que alguien pague la guardianía, pero a cada vecino le tienta no aportar y aprovechar lo que pagan los demás.",
+          "puntos_clave": [
+            "Dilema de bienes públicos.",
+            "Beneficio sin contribuir.",
+            "Juego de bienes públicos en experimentos."
+          ],
+          "errores_frecuentes": [
+            "Creer que el bien público se provee solo si todos lo valoran.",
+            "Ignorar el incentivo a aprovechar el aporte ajeno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "sep-dilema-prisionero",
+            "url": "https://plato.stanford.edu/entries/prisoner-dilemma/",
+            "seccion": "5. Multiple players, tragedies of the commons, voting and public goods"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oi-comportamiento",
+      "nombre": "Economía experimental y del comportamiento",
+      "orden": 5,
+      "descripcion": "Experimentos de mercado de Vernon Smith, subastas, heurísticas y teoría prospectiva de Kahneman, contabilidad mental y efecto dotación de Thaler, equidad y nudges.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "oi-economia-experimental",
+          "nombre": "Economía experimental: los mercados en el laboratorio",
+          "explicacion": "La economía se consideraba una ciencia no experimental, que dependía solo de datos de campo, pero los experimentos controlados de laboratorio se volvieron un componente vital de la investigación. En los primeros experimentos de Vernon Smith, los participantes recibían al azar el papel de compradores o vendedores con distintos precios de reserva, y desde 1962 encontró que los precios obtenidos se acercaban mucho al equilibrio teórico aunque los participantes no tuvieran la información para calcularlo. Smith creó el método del valor inducido para que los participantes actúen según los incentivos del experimento y usó el laboratorio como un túnel de viento para probar mecanismos antes de aplicarlos.",
+          "ejemplo": "En un aula se reparten tarjetas con precios máximos de compra y mínimos de venta; tras varias rondas de negociación, los precios convergen al equilibrio que predice la oferta y la demanda.",
+          "puntos_clave": [
+            "Experimentos controlados de laboratorio.",
+            "Convergencia al equilibrio.",
+            "Método del valor inducido."
+          ],
+          "errores_frecuentes": [
+            "Creer que la economía no puede experimentar.",
+            "Ignorar que el diseño del mecanismo influye en el resultado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nobel-2002",
+            "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/popular-information/",
+            "seccion": "Experimental economics"
+          }
+        },
+        {
+          "id": "oi-subastas",
+          "nombre": "Subastas en el laboratorio",
+          "explicacion": "La teoría distingue cuatro formas básicas de subasta de un objeto: la inglesa, con pujas crecientes hasta que nadie ofrece más; la holandesa, en la que un precio alto baja hasta que alguien lo acepta; la de primer precio en sobre cerrado, en la que el ganador paga su oferta, y la de segundo precio en sobre cerrado, en la que paga la segunda oferta más alta. En los experimentos de Smith y sus colegas, como predecía la teoría, el vendedor obtiene el mismo ingreso esperado en la inglesa y en la de segundo precio, pero se refutó la equivalencia entre la holandesa y la de primer precio.",
+          "ejemplo": "Al privatizar frecuencias de radio, un gobierno puede probar primero en el laboratorio qué tipo de subasta da mejores resultados antes de aplicarla.",
+          "puntos_clave": [
+            "Inglesa, holandesa, primer y segundo precio.",
+            "Inglesa y segundo precio: igual ingreso.",
+            "Holandesa y primer precio no son equivalentes."
+          ],
+          "errores_frecuentes": [
+            "Creer que todas las subastas dan el mismo resultado.",
+            "Confundir la subasta holandesa con la inglesa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nobel-2002",
+            "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/popular-information/",
+            "seccion": "Experimental economics"
+          }
+        },
+        {
+          "id": "oi-heuristicas-prospectiva",
+          "nombre": "Heurísticas y teoría prospectiva",
+          "explicacion": "Daniel Kahneman, junto con Amos Tversky, mostró que las personas no analizan por completo las decisiones inciertas y usan atajos o reglas prácticas, las heurísticas, que contradicen sistemáticamente la teoría de probabilidades: por ejemplo, la ley de los pequeños números, que ignora que la incertidumbre baja con el tamaño de la muestra, y la representatividad, que ignora las proporciones en la población. Además, las personas son más sensibles a cómo un resultado se desvía de un punto de referencia que al resultado absoluto, y más reacias a las pérdidas que atraídas por ganancias del mismo tamaño. La teoría prospectiva explica estos patrones mejor que la teoría de la utilidad esperada.",
+          "ejemplo": "Un inversionista que ve a un administrador superar al índice dos años seguidos concluye que es muy hábil, aunque la evidencia estadística de solo dos años es débil.",
+          "puntos_clave": [
+            "Heurísticas y sesgos.",
+            "Punto de referencia y aversión a las pérdidas.",
+            "Teoría prospectiva frente a utilidad esperada."
+          ],
+          "errores_frecuentes": [
+            "Sacar conclusiones fuertes de muestras pequeñas.",
+            "Ignorar el punto de referencia al evaluar decisiones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nobel-2002",
+            "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/popular-information/",
+            "seccion": "Psychology and economics"
+          }
+        },
+        {
+          "id": "oi-contabilidad-mental",
+          "nombre": "Racionalidad limitada, contabilidad mental y efecto dotación",
+          "explicacion": "Richard Thaler, Nobel 2017, amplió el análisis económico considerando la racionalidad limitada, las percepciones de equidad y la falta de autocontrol. Su teoría de la contabilidad mental describe cómo creamos cuentas separadas en la mente, como una para cuentas del hogar y otra para vacaciones, y decidimos según su efecto en cada cuenta y no en nuestro patrimonio total. El efecto dotación hace que pidamos más por vender algo que tenemos que lo que pagaríamos por comprarlo; Thaler lo explica con la aversión a las pérdidas, porque desprenderse de algo propio se vive como una pérdida.",
+          "ejemplo": "Una persona no toca sus ahorros de largo plazo para una emergencia y prefiere un crédito de consumo caro, porque mentalmente ese dinero pertenece a otra cuenta.",
+          "puntos_clave": [
+            "Racionalidad limitada.",
+            "Contabilidad mental y puntos de referencia.",
+            "Efecto dotación y aversión a las pérdidas."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el dinero de distintas cuentas mentales no es intercambiable.",
+            "Valorar un bien más solo por poseerlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nobel-2017",
+            "url": "https://www.nobelprize.org/prizes/economic-sciences/2017/popular-information/",
+            "seccion": "Limited rationality"
+          }
+        },
+        {
+          "id": "oi-equidad-nudges",
+          "nombre": "Equidad y nudges",
+          "explicacion": "Las nociones de equidad pesan en las decisiones: las personas renuncian a beneficios materiales para mantener lo que consideran un reparto justo y pagan un costo por castigar a quien viola las reglas de equidad; por ejemplo, rechazan al comerciante que sube el precio de los paraguas cuando llueve, y las empresas pueden sufrir boicots. A partir de estas ideas surgieron los nudges o empujoncitos: diseñar las opciones, como la opción por defecto, para orientar a las personas en la dirección correcta manteniendo su libertad de elegir. El programa Ahorra Más Mañana de Thaler y Benartzi compromete parte de los futuros aumentos de sueldo al ahorro jubilar.",
+          "ejemplo": "Una empresa inscribe por defecto a sus nuevos empleados en un plan de ahorro, con la opción de salir; muchos más empleados terminan ahorrando que si tuvieran que inscribirse por su cuenta.",
+          "puntos_clave": [
+            "La equidad influye en las decisiones.",
+            "Nudges y opción por defecto.",
+            "Ahorra Más Mañana."
+          ],
+          "errores_frecuentes": [
+            "Creer que un nudge obliga a elegir algo.",
+            "Ignorar la reacción de los clientes ante precios percibidos como abusivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nobel-2017",
+            "url": "https://www.nobelprize.org/prizes/economic-sciences/2017/popular-information/",
+            "seccion": "Social preferences and lack of self-control"
+          }
+        }
+      ]
+    }
+  ]
+}

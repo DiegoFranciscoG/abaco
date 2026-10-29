@@ -726,6 +726,16 @@
         "planes": 2
       },
       {
+        "materia": "economia-industrial",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          7,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "emprendimiento",
         "ciclo": 5,
         "ciclos": [
@@ -836,27 +846,12 @@
         "planes": 1
       },
       {
-        "nombre": "Organización Industrial",
-        "ciclo": 5,
-        "planes": 2
-      },
-      {
-        "nombre": "Teoría de Juegos",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Machine Learning",
         "ciclo": 7,
         "planes": 1
       },
       {
         "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Economía Experimental y del Comportamiento",
         "ciclo": 8,
         "planes": 1
       },

@@ -13041,5 +13041,136 @@
     },
     "materia": "econometria",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-oi-cr4-alto",
+    "subtema": "oi-cr4",
+    "formula": "concentracion-cr4",
+    "enunciado": "En un mercado de telefonía, las cuatro mayores empresas tienen 30 %, 25 %, 15 % y 10 % de las ventas. ¿Cuál es la CR4?",
+    "datos": {
+      "s": [
+        30,
+        25,
+        15,
+        10
+      ]
+    },
+    "calculo": "SUM(s)",
+    "respuesta": 80,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "CR4 = 30 + 25 + 15 + 10 = 80",
+      "Más de la mitad del mercado: concentración alta"
+    ],
+    "pistas": [
+      "Suma solo las cuatro mayores."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-micro3",
+      "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "materia": "economia-industrial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-oi-cr4-bajo",
+    "subtema": "oi-cr4",
+    "formula": "concentracion-cr4",
+    "enunciado": "En el mercado de panaderías de una ciudad, las cuatro mayores tienen 12 %, 11 %, 9 % y 8 %. ¿Cuál es la CR4 y es alta?",
+    "datos": {
+      "s": [
+        12,
+        11,
+        9,
+        8
+      ]
+    },
+    "calculo": "SUM(s)",
+    "respuesta": 40,
+    "unidad": "%",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "CR4 = 12 + 11 + 9 + 8 = 40",
+      "Menos de la mitad del mercado: no es especialmente alta"
+    ],
+    "pistas": [
+      "Compárala con el 50 %."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-micro3",
+      "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "materia": "economia-industrial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-oi-hhi-cuatro",
+    "subtema": "oi-hhi",
+    "formula": "indice-hhi",
+    "enunciado": "Una industria tiene cuatro empresas con 40 %, 30 %, 20 % y 10 % del mercado. ¿Cuál es el HHI?",
+    "datos": {
+      "s": [
+        40,
+        30,
+        20,
+        10
+      ]
+    },
+    "calculo": "SUMSQ(s)",
+    "respuesta": 3000,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "40² + 30² + 20² + 10²",
+      "1.600 + 900 + 400 + 100 = 3.000"
+    ],
+    "pistas": [
+      "Eleva al cuadrado cada participación en porcentaje."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-micro3",
+      "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "materia": "economia-industrial",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-oi-hhi-fusion",
+    "subtema": "oi-hhi",
+    "formula": "indice-hhi",
+    "enunciado": "En la misma industria, las empresas de 20 % y 10 % se fusionan. Con participaciones de 40 %, 30 % y 30 %, ¿cuál es el nuevo HHI?",
+    "datos": {
+      "s": [
+        40,
+        30,
+        30
+      ]
+    },
+    "calculo": "SUMSQ(s)",
+    "respuesta": 3400,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "40² + 30² + 30² = 1.600 + 900 + 900 = 3.400",
+      "La fusión eleva el HHI en 400 puntos"
+    ],
+    "pistas": [
+      "Compara con el HHI antes de la fusión (3.000)."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-micro3",
+      "url": "https://openstax.org/books/principles-microeconomics-3e/pages/11-1-corporate-mergers",
+      "seccion": "11.1 Corporate Mergers"
+    },
+    "materia": "economia-industrial",
+    "actualizado_en": "2026-10-26"
   }
 ]

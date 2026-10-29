@@ -1106,5 +1106,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "economia-industrial",
+    "nombre": "Organización industrial, teoría de juegos y economía del comportamiento",
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Barreras de entrada y estructuras de mercado, concentración (CR4 y HHI), prácticas restrictivas y regulación, el dilema del prisionero y los juegos repetidos, y la economía experimental y del comportamiento.",
+    "sinonimos": [
+      "organización industrial",
+      "teoría de juegos",
+      "economía experimental",
+      "economía del comportamiento",
+      "política de competencia",
+      "estructuras de mercado"
+    ],
+    "herramientas": [
+      "mercado",
+      "graficador",
+      "tarjetas"
+    ],
+    "orden": 48,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]
