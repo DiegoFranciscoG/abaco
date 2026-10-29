@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (54 completas de 54)
+## Estado por materia (55 completas de 55)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -60,6 +60,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Propiedad intelectual y transferencia de tecnología | 2 de 7 | completa | 5 de 5 | 23 | 3 de 3 | 100 % | — |
 | Sistema financiero y banca | 2 de 7 | completa | 5 de 5 | 22 | 4 de 4 | 100 % | — |
 | Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
+| Gestión de riesgos financieros | 0 de 7 | completa | 5 de 5 | 21 | 4 de 4 | 100 % | — |
 | Matemáticas para economistas | 0 de 7 | completa | 5 de 5 | 23 | 8 de 8 | 100 % | — |
 | Mercado de valores e inversiones | 0 de 7 | completa | 5 de 5 | 20 | 4 de 4 | 100 % | — |
 | Organización industrial, teoría de juegos y economía del comportamiento | 0 de 7 | completa | 5 de 5 | 21 | 2 de 2 | 100 % | — |
@@ -178,7 +179,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **2.º ciclo**: en ÁBACO: Derecho empresarial y societario (completa, 6 de 6 unidades); Estadística descriptiva (completa, 6 de 6 unidades); Informática para la gestión (completa, 6 de 6 unidades) · sin pendientes.
 - **3.º ciclo**: en ÁBACO: Estadística inferencial (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Microeconomía (completa, 6 de 6 unidades); Programación y análisis de datos con Python (completa, 5 de 5 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · sin pendientes.
 - **4.º ciclo**: en ÁBACO: Econometría y regresión aplicada (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Mercado de valores e inversiones (completa, 5 de 5 unidades); Seguros y fundamentos actuariales (completa, 5 de 5 unidades) · sin pendientes.
-- **5.º ciclo**: en ÁBACO: Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Gestión de Riesgos Financieros.
+- **5.º ciclo**: en ÁBACO: Gestión de riesgos financieros (completa, 5 de 5 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Auditoría, control interno y prevención del fraude (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
 
 ### Negocios internacionales (1 plan)

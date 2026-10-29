@@ -14268,5 +14268,244 @@
     },
     "materia": "propiedad-intelectual",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-pe-a",
+    "subtema": "rf-perdida-esperada",
+    "formula": "perdida-esperada",
+    "enunciado": "Un portafolio de microcréditos de USD 2.000.000 tiene una PD de 5 % y una LGD de 60 %. ¿Cuál es su pérdida esperada?",
+    "datos": {
+      "PD": 0.05,
+      "EAD": 2000000,
+      "LGD": 0.6
+    },
+    "calculo": "PD * EAD * LGD",
+    "respuesta": 60000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "EL = 0,05 × 2.000.000 × 0,6",
+      "EL = 60.000"
+    ],
+    "pistas": [
+      "Expresa los porcentajes como proporciones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "bcbs-irb",
+      "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+      "seccion": "2. Economic foundations of the risk weight formulas"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-pe-b",
+    "subtema": "rf-perdida-esperada",
+    "formula": "perdida-esperada",
+    "enunciado": "Un crédito comercial con garantía hipotecaria de USD 250.000 tiene una PD de 1,5 % y, gracias a la garantía, una LGD de 25 %. ¿Cuál es la pérdida esperada?",
+    "datos": {
+      "PD": 0.015,
+      "EAD": 250000,
+      "LGD": 0.25
+    },
+    "calculo": "PD * EAD * LGD",
+    "respuesta": 937.5,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "EL = 0,015 × 250.000 × 0,25",
+      "EL = 937,50"
+    ],
+    "pistas": [
+      "La garantía reduce la LGD."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "bcbs-irb",
+      "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+      "seccion": "2. Economic foundations of the risk weight formulas"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-sne-a",
+    "subtema": "rf-salidas-netas",
+    "formula": "salidas-netas-lcr",
+    "enunciado": "Un banco espera, en 30 días de estrés, salidas ponderadas de USD 800 millones y entradas de USD 300 millones. ¿Cuáles son sus salidas netas para el LCR?",
+    "datos": {
+      "SAL": 800,
+      "ENT": 300
+    },
+    "calculo": "SAL - MIN(ENT, 0.75 * SAL)",
+    "respuesta": 500,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Tope = 0,75 × 800 = 600",
+      "Menor entre 300 y 600: 300",
+      "Salidas netas = 800 − 300 = 500"
+    ],
+    "pistas": [
+      "Compara las entradas con el 75 % de las salidas."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Total net cash outflows (párrafo 69)"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-sne-b",
+    "subtema": "rf-salidas-netas",
+    "formula": "salidas-netas-lcr",
+    "enunciado": "Una entidad espera salidas ponderadas de USD 400 millones y entradas de USD 380 millones en 30 días. ¿Cuáles son sus salidas netas?",
+    "datos": {
+      "SAL": 400,
+      "ENT": 380
+    },
+    "calculo": "SAL - MIN(ENT, 0.75 * SAL)",
+    "respuesta": 100,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Tope = 0,75 × 400 = 300",
+      "Menor entre 380 y 300: 300",
+      "Salidas netas = 400 − 300 = 100"
+    ],
+    "pistas": [
+      "Aquí las entradas superan el tope."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Total net cash outflows (párrafo 69)"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-lcr-a",
+    "subtema": "rf-ratio-lcr",
+    "formula": "ratio-lcr",
+    "enunciado": "Un banco tiene USD 450 millones en HQLA y salidas netas a 30 días de USD 500 millones. ¿Cuál es su LCR y cumple el mínimo?",
+    "datos": {
+      "HQLA": 450,
+      "SNE": 500
+    },
+    "calculo": "HQLA / SNE",
+    "respuesta": 0.9,
+    "unidad": "veces",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "LCR = 450 / 500 = 0,9",
+      "90 % < 100 %: no cumple en condiciones normales"
+    ],
+    "pistas": [
+      "Compara el resultado con 1 (100 %)."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Definition of the LCR (párrafos 16 y 17)"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-lcr-b",
+    "subtema": "rf-ratio-lcr",
+    "formula": "ratio-lcr",
+    "enunciado": "Un banco tiene USD 150 millones en efectivo y reservas en el banco central (nivel 1) y USD 100 millones en bonos de nivel 2A, que valen 85 después del descuento de 15 %. Sus salidas netas son USD 160 millones. ¿Cuál es su LCR?",
+    "datos": {
+      "HQLA": 235,
+      "SNE": 160
+    },
+    "calculo": "HQLA / SNE",
+    "respuesta": 1.46875,
+    "unidad": "veces",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "HQLA = 150 + 85 = 235",
+      "El nivel 2 (85 de 235) es cerca de 36 % del stock, dentro del límite de 40 %",
+      "LCR = 235 / 160 ≈ 1,47, es decir, 147 %"
+    ],
+    "pistas": [
+      "Aplica el descuento antes de sumar."
+    ],
+    "dificultad": 3,
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Definition of HQLA (párrafos 49 a 54)"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-va-5",
+    "subtema": "rf-tasa-interes",
+    "formula": "valor-actual",
+    "enunciado": "Una empresa debe pagar USD 1.000 dentro de 10 años. ¿Cuál es el valor presente de esa obligación con una tasa de 5 %?",
+    "datos": {
+      "VF": 1000,
+      "i": 0.05,
+      "n": 10
+    },
+    "calculo": "VF / (1 + i) ^ n",
+    "respuesta": 613.9133,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "VA = 1.000 / 1,05^10",
+      "VA ≈ 613,91"
+    ],
+    "pistas": [
+      "Descuenta el pago por 10 períodos."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
+      "seccion": "20.4 Interest Rate Risk"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rf-va-6",
+    "subtema": "rf-tasa-interes",
+    "formula": "valor-actual",
+    "enunciado": "Si la tasa sube a 6 %, ¿cuál es ahora el valor presente del pago de USD 1.000 a 10 años?",
+    "datos": {
+      "VF": 1000,
+      "i": 0.06,
+      "n": 10
+    },
+    "calculo": "VF / (1 + i) ^ n",
+    "respuesta": 558.3948,
+    "unidad": "USD",
+    "tolerancia": 0.001,
+    "procedimiento": [
+      "VA = 1.000 / 1,06^10 ≈ 558,39",
+      "Cae alrededor de 9 % frente a 613,91"
+    ],
+    "pistas": [
+      "Compara con el valor al 5 %."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
+      "seccion": "20.4 Interest Rate Risk"
+    },
+    "materia": "gestion-riesgos-financieros",
+    "actualizado_en": "2026-10-26"
   }
 ]

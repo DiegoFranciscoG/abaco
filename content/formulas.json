@@ -2011,7 +2011,8 @@
     "categoria": "valor-dinero",
     "materias": [
       "matematica-financiera",
-      "finanzas-corporativas"
+      "finanzas-corporativas",
+      "gestion-riesgos-financieros"
     ],
     "areas": [
       "finanzas",
@@ -11437,6 +11438,204 @@
     ],
     "notas": [
       "El derecho vence en la misma fecha del año final; el resultado indica el año."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "perdida-esperada",
+    "nombre": "Pérdida esperada por riesgo de crédito",
+    "categoria": "calculo",
+    "materias": [
+      "gestion-riesgos-financieros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Pérdida esperada de una exposición de crédito: probabilidad de incumplimiento por exposición al incumplimiento por pérdida dado el incumplimiento. Se cubre con el precio del crédito y con provisiones.",
+    "latex": "EL = PD \\times EAD \\times LGD",
+    "variables": [
+      {
+        "simbolo": "PD",
+        "nombre": "PD",
+        "significado": "Probabilidad de incumplimiento en un año",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "EAD",
+        "nombre": "EAD",
+        "significado": "Exposición al momento del incumplimiento",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "LGD",
+        "nombre": "LGD",
+        "significado": "Pérdida dado el incumplimiento (porcentaje de la exposición que no se recupera)",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PD * EAD * LGD"
+    },
+    "excel": {
+      "es": "=PD*EAD*LGD",
+      "en": "=PD*EAD*LGD"
+    },
+    "ejemplo": {
+      "enunciado": "Un crédito de USD 100.000 tiene una probabilidad de incumplimiento anual de 2 % y una pérdida dado el incumplimiento de 45 %. ¿Cuál es su pérdida esperada?",
+      "entradas": {
+        "PD": 0.02,
+        "EAD": 100000,
+        "LGD": 0.45
+      },
+      "pasos": [
+        "EL = 0,02 × 100.000 × 0,45",
+        "EL = 900"
+      ],
+      "resultado": 900,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,02*100000*0,45",
+      "excel_en": "=0.02*100000*0.45"
+    },
+    "fuente": {
+      "ref": "bcbs-irb",
+      "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+      "seccion": "2. Economic foundations of the risk weight formulas"
+    },
+    "supuestos": [
+      "Horizonte de un año, como en el marco de Basilea."
+    ],
+    "notas": [
+      "Expresada como porcentaje de la exposición: EL = PD × LGD."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "salidas-netas-lcr",
+    "nombre": "Salidas netas de efectivo a 30 días (LCR)",
+    "categoria": "calculo",
+    "materias": [
+      "gestion-riesgos-financieros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Salidas netas de efectivo esperadas en los próximos 30 días de un escenario de estrés: salidas totales menos el menor valor entre las entradas totales y el 75 % de las salidas.",
+    "latex": "SNE = S - \\min(E;\\ 0{,}75\\,S)",
+    "variables": [
+      {
+        "simbolo": "S",
+        "nombre": "SAL",
+        "significado": "Salidas de efectivo esperadas en 30 días, ya ponderadas",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "E",
+        "nombre": "ENT",
+        "significado": "Entradas de efectivo esperadas en 30 días, ya ponderadas",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SAL - MIN(ENT, 0.75 * SAL)"
+    },
+    "excel": {
+      "es": "=SAL-MIN(ENT;0,75*SAL)",
+      "en": "=SAL-MIN(ENT,0.75*SAL)"
+    },
+    "ejemplo": {
+      "enunciado": "Un banco espera salidas de USD 1.000 millones y entradas de USD 900 millones en 30 días de estrés. ¿Cuáles son sus salidas netas para el LCR?",
+      "entradas": {
+        "SAL": 1000,
+        "ENT": 900
+      },
+      "pasos": [
+        "Tope de entradas = 0,75 × 1.000 = 750",
+        "Se usa el menor entre 900 y 750: 750",
+        "Salidas netas = 1.000 − 750 = 250"
+      ],
+      "resultado": 250,
+      "unidad": "millones de USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=1000-MIN(900;0,75*1000)",
+      "excel_en": "=1000-MIN(900,0.75*1000)"
+    },
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Total net cash outflows (párrafo 69)"
+    },
+    "supuestos": [
+      "Las salidas y entradas ya están multiplicadas por sus tasas de retiro y de entrada."
+    ],
+    "notas": [
+      "El tope del 75 % impide que el banco dependa solo de las entradas esperadas."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "ratio-lcr",
+    "nombre": "Ratio de cobertura de liquidez (LCR)",
+    "categoria": "calculo",
+    "materias": [
+      "gestion-riesgos-financieros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Stock de activos líquidos de alta calidad (HQLA) dividido para las salidas netas de efectivo de 30 días. Fuera de una situación de estrés, no debe ser menor al 100 %.",
+    "latex": "LCR = \\frac{HQLA}{SNE} \\geq 100\\,\\%",
+    "variables": [
+      {
+        "simbolo": "HQLA",
+        "nombre": "HQLA",
+        "significado": "Activos líquidos de alta calidad, después de descuentos",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "SNE",
+        "nombre": "SNE",
+        "significado": "Salidas netas de efectivo en 30 días",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "HQLA / SNE"
+    },
+    "excel": {
+      "es": "=HQLA/SNE",
+      "en": "=HQLA/SNE"
+    },
+    "ejemplo": {
+      "enunciado": "Un banco tiene USD 300 millones en HQLA y salidas netas a 30 días de USD 250 millones. ¿Cuál es su LCR y cumple el mínimo?",
+      "entradas": {
+        "HQLA": 300,
+        "SNE": 250
+      },
+      "pasos": [
+        "LCR = 300 / 250 = 1,2",
+        "1,2 = 120 % ≥ 100 %: cumple"
+      ],
+      "resultado": 1.2,
+      "unidad": "veces",
+      "tolerancia": 0.0001,
+      "excel_es": "=300/250",
+      "excel_en": "=300/250"
+    },
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Objective of the LCR and use of HQLA"
+    },
+    "supuestos": [],
+    "notas": [
+      "En una situación de estrés el banco puede usar sus HQLA y quedar temporalmente por debajo del 100 %."
     ],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"

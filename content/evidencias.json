@@ -8411,5 +8411,156 @@
       "people create systems that reflect cultural values",
       "political, legal, economic, and ethical systems vary from culture to culture"
     ]
+  },
+  {
+    "id": "rf-riesgo-valor",
+    "palabras": [
+      "the three major areas of focus for the financial manager are the size, the timing, and the riskiness of the cash flows",
+      "hedging is a risk management tool",
+      "speculating occurs when someone bets on a future outcome"
+    ]
+  },
+  {
+    "id": "rf-tipos-riesgo",
+    "palabras": [
+      "para sostener los riesgos de credito, de liquidez, mercado, operacional",
+      "no inferior al nueve por ciento"
+    ]
+  },
+  {
+    "id": "rf-basilea",
+    "palabras": [
+      "basel iii is an internationally agreed set of measures developed by the basel committee on banking supervision in response to the financial crisis of 2007-09",
+      "the measures aim to strengthen the regulation, supervision and risk management of banks"
+    ]
+  },
+  {
+    "id": "rf-cultura-riesgo",
+    "palabras": [
+      "the board of directors should take the lead in establishing a strong risk management culture",
+      "articulation of operational risk appetite and tolerance statements"
+    ]
+  },
+  {
+    "id": "rf-parametros-credito",
+    "palabras": [
+      "probability of default (pd) per rating grade",
+      "exposure at default (ead), which gives an estimate of the amount outstanding",
+      "loss given default (lgd), which gives the percentage of exposure the bank might lose in case the borrower defaults"
+    ]
+  },
+  {
+    "id": "rf-perdida-esperada",
+    "palabras": [
+      "el = pd * ead * lgd",
+      "multiplied by the outstanding exposure at default, and once more multiplied by the loss given default rate"
+    ]
+  },
+  {
+    "id": "rf-esperada-inesperada",
+    "palabras": [
+      "these losses are referred to as expected losses (el)",
+      "financial institutions view expected losses as a cost component of doing business",
+      "capital is needed to cover the risks of such peak losses"
+    ]
+  },
+  {
+    "id": "rf-confianza",
+    "palabras": [
+      "the confidence level is fixed at 99.9%",
+      "banks are asked to report lgds that reflect economic-downturn conditions"
+    ]
+  },
+  {
+    "id": "rf-castigo",
+    "palabras": [
+      "el cual no podra superar los tres anos",
+      "previo al castigo de las obligaciones, estas deberan estar provisionadas al 100% de su valor registrado en libros"
+    ]
+  },
+  {
+    "id": "rf-lcr-objetivo",
+    "palabras": [
+      "the objective of the lcr is to promote the short-term resilience of the liquidity risk profile of banks",
+      "liquidity stress scenario"
+    ]
+  },
+  {
+    "id": "rf-hqla",
+    "palabras": [
+      "level 1 assets can comprise an unlimited share of the pool and are not subject to a haircut under the lcr",
+      "a 15% haircut is applied to the current market value of each level 2a asset"
+    ]
+  },
+  {
+    "id": "rf-salidas-netas",
+    "palabras": [
+      "total net cash outflows over the next 30 calendar days = total expected cash outflows",
+      "75% of total expected cash outflows",
+      "run-off rate of 10%"
+    ]
+  },
+  {
+    "id": "rf-ratio-lcr",
+    "palabras": [
+      "the value of the ratio be no lower than 100%",
+      "banks may use their stock of hqla"
+    ]
+  },
+  {
+    "id": "rf-definicion-operativo",
+    "palabras": [
+      "operational risk is defined in the capital framework as the risk of loss resulting from inadequate or failed internal processes, people and systems or from external events",
+      "this definition includes legal risk, but excludes strategic and reputational risk"
+    ]
+  },
+  {
+    "id": "rf-tres-lineas",
+    "palabras": [
+      "first line of defence is business unit management",
+      "third line of defence provides independent assurance to the board"
+    ]
+  },
+  {
+    "id": "rf-herramientas-operativo",
+    "palabras": [
+      "risk and control self-assessments (rcsas), key risk indicators, external loss data, business process mapping",
+      "senior management should ensure the comprehensive identification and assessment of the operational risk"
+    ]
+  },
+  {
+    "id": "rf-continuidad",
+    "palabras": [
+      "banks should have business continuity plans in place to ensure their ability to operate on an ongoing basis",
+      "a bank's public disclosures should allow stakeholders to assess its approach to operational risk management"
+    ]
+  },
+  {
+    "id": "rf-tasa-interes",
+    "palabras": [
+      "an interest rate is simply the price of borrowing money",
+      "suppose that a company is supposed to pay a bill of $1,000 in 10 years"
+    ]
+  },
+  {
+    "id": "rf-futuros",
+    "palabras": [
+      "a futures contract is an agreement to trade an asset on some future date at a price locked in today",
+      "futures contracts are traded anonymously on an exchange"
+    ]
+  },
+  {
+    "id": "rf-cambiario",
+    "palabras": [
+      "transaction risk is the risk that the value of a business's expected receipts or expenses will change as a result of a change in currency exchange rates",
+      "a forward contract is simply a contractual agreement between two parties to exchange a specified amount of currencies at a future date"
+    ]
+  },
+  {
+    "id": "rf-swap",
+    "palabras": [
+      "a swap involves two parties agreeing to swap, or exchange, something",
+      "known as counterparties"
+    ]
   }
 ]

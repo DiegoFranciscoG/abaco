@@ -2819,5 +2819,73 @@
       "seccion": "Arts. 201, 291, 325, 352 y 365"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "riesgo-credito-liquidez",
+    "nombre": "Pérdida esperada y LCR",
+    "descripcion": "Calcula la pérdida esperada de una cartera con PD, EAD y LGD, y el ratio de cobertura de liquidez con el tope de entradas del 75 %.",
+    "materias": [
+      "gestion-riesgos-financieros"
+    ],
+    "celdas": {
+      "A1": "Crédito",
+      "B1": "PD",
+      "C1": "EAD (USD)",
+      "D1": "LGD",
+      "E1": "Pérdida esperada",
+      "A2": "Microcrédito",
+      "B2": 0.05,
+      "C2": 2000000,
+      "D2": 0.6,
+      "E2": "=B2*C2*D2",
+      "A3": "Comercial con garantía",
+      "B3": 0.015,
+      "C3": 250000,
+      "D3": 0.25,
+      "E3": "=B3*C3*D3",
+      "A4": "Total cartera",
+      "E4": "=SUM(E2:E3)",
+      "A6": "Salidas esperadas 30 días (millones)",
+      "B6": 800,
+      "A7": "Entradas esperadas 30 días (millones)",
+      "B7": 300,
+      "A8": "Salidas netas",
+      "B8": "=B6-MIN(B7,0.75*B6)",
+      "A9": "HQLA (millones)",
+      "B9": 600,
+      "A10": "LCR",
+      "B10": "=B9/B8",
+      "A11": "¿Cumple el 100 %?",
+      "B11": "=IF(B10>=1,\"Sí\",\"No\")"
+    },
+    "formatos": {
+      "E2": "moneda",
+      "E3": "moneda",
+      "E4": "moneda",
+      "B10": "porcentaje"
+    },
+    "verificacion": [
+      {
+        "celda": "E4",
+        "esperado": 60937.5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B8",
+        "esperado": 500,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B10",
+        "esperado": 1.2,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "bcbs-lcr",
+      "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+      "seccion": "Definition of the LCR"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

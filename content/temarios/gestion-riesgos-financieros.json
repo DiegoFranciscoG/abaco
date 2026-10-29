@@ -1,0 +1,500 @@
+{
+  "materia": "gestion-riesgos-financieros",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "rf-fundamentos",
+      "nombre": "Riesgo y gestión de riesgos",
+      "orden": 1,
+      "descripcion": "El riesgo en la gestión financiera, cobertura frente a especulación, los riesgos que debe sostener el capital según el COMF y el marco de Basilea III.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "rf-riesgo-valor",
+          "nombre": "El riesgo y el valor de la empresa",
+          "explicacion": "El trabajo del gerente financiero es maximizar el valor de la empresa para sus dueños, y para ello atiende tres aspectos de los flujos de caja: su tamaño, su oportunidad en el tiempo y su riesgo. Debe aumentar las entradas y reducir las salidas, acelerar las entradas y demorar las salidas, y disminuir el riesgo de ambas. La cobertura (hedging) es una herramienta de gestión de riesgos; la especulación, en cambio, es apostar por un resultado futuro para ganar con esa predicción, aceptando que un error produzca pérdidas.",
+          "ejemplo": "Una exportadora de camarón que fija hoy el tipo de cambio de una venta futura se cubre; un inversionista que compra divisas porque cree que subirán especula.",
+          "puntos_clave": [
+            "Tamaño, oportunidad y riesgo de los flujos.",
+            "Cobertura: reducir la incertidumbre.",
+            "Especulación: apostar por una dirección."
+          ],
+          "errores_frecuentes": [
+            "Llamar cobertura a una apuesta direccional.",
+            "Ignorar el riesgo al evaluar un flujo de caja."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-1-the-importance-of-risk-management",
+            "seccion": "20.1 The Importance of Risk Management"
+          }
+        },
+        {
+          "id": "rf-tipos-riesgo",
+          "nombre": "Los riesgos que sostiene el capital según el COMF",
+          "explicacion": "El artículo 190 del Código Orgánico Monetario y Financiero exige a las entidades del sistema financiero nacional mantener un nivel de suficiencia patrimonial para respaldar sus operaciones, absorber las pérdidas no cubiertas por las provisiones de los activos de riesgo y sostener los riesgos de crédito, de liquidez, de mercado y operacional, además de los que deriven del desempeño macroeconómico. La relación entre el patrimonio técnico y los activos ponderados por riesgo no puede ser inferior al 9 %.",
+          "ejemplo": "Si un banco tiene activos ponderados por riesgo de USD 1.000 millones, necesita al menos USD 90 millones de patrimonio técnico.",
+          "puntos_clave": [
+            "Crédito, liquidez, mercado y operacional.",
+            "El capital absorbe lo que no cubren las provisiones.",
+            "Patrimonio técnico mínimo de 9 %."
+          ],
+          "errores_frecuentes": [
+            "Creer que las provisiones sustituyen al capital.",
+            "Olvidar el riesgo operacional."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CODIGO-ORGANICO-MONETARIO-Y-FINANCIERO.pdf",
+            "seccion": "Art. 190, solvencia y patrimonio técnico"
+          }
+        },
+        {
+          "id": "rf-basilea",
+          "nombre": "Basilea III",
+          "explicacion": "Basilea III es un conjunto de medidas acordadas internacionalmente por el Comité de Supervisión Bancaria de Basilea en respuesta a la crisis financiera de 2007-2009, para fortalecer la regulación, la supervisión y la gestión de riesgos de los bancos. Incluye requisitos de capital basados en activos ponderados por riesgo, un marco de razón de apalancamiento y estándares de liquidez. Las revisiones finales de Basilea III a los activos ponderados por riesgo empezaron a evaluarse en 2025.",
+          "ejemplo": "El LCR, que obliga a tener activos líquidos para 30 días de estrés, es uno de los estándares de liquidez de Basilea III.",
+          "puntos_clave": [
+            "Respuesta a la crisis de 2007-2009.",
+            "Capital, apalancamiento y liquidez.",
+            "Regulación, supervisión y gestión de riesgos."
+          ],
+          "errores_frecuentes": [
+            "Creer que Basilea es una ley ecuatoriana.",
+            "Pensar que Basilea III solo trata del capital."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bis-basel3",
+            "url": "https://www.bis.org/bcbs/basel3.htm",
+            "seccion": "Basel III: international regulatory framework for banks"
+          }
+        },
+        {
+          "id": "rf-cultura-riesgo",
+          "nombre": "Cultura de riesgo, apetito y tolerancia",
+          "explicacion": "Según los principios de Basilea para la gestión del riesgo operativo, el directorio debe liderar el establecimiento de una cultura sólida de gestión de riesgos, implementada por la alta gerencia, con estándares e incentivos para un comportamiento profesional y responsable. La revisión de 2021 refuerza la supervisión del directorio y de la alta gerencia y la formulación de declaraciones de apetito y tolerancia al riesgo, es decir, cuánto riesgo está dispuesta a asumir la entidad.",
+          "ejemplo": "Una cooperativa define que no aceptará más de cierto nivel de pérdidas por fraude al año y, si se acerca a ese límite, su comité de riesgos activa planes de acción.",
+          "puntos_clave": [
+            "El directorio lidera la cultura de riesgo.",
+            "Apetito y tolerancia al riesgo.",
+            "Incentivos a la conducta responsable."
+          ],
+          "errores_frecuentes": [
+            "Dejar la gestión de riesgos solo al área de riesgos.",
+            "No escribir el apetito de riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-oprisk",
+            "url": "https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk.pdf",
+            "seccion": "Principle 1 y resumen de la revisión"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rf-credito",
+      "nombre": "Riesgo de crédito",
+      "orden": 2,
+      "descripcion": "Parámetros PD, EAD y LGD, pérdida esperada, pérdidas esperadas e inesperadas, nivel de confianza de Basilea y provisiones y castigos según el COMF.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "rf-parametros-credito",
+          "nombre": "PD, EAD y LGD",
+          "explicacion": "Los modelos de riesgo de crédito de Basilea usan tres parámetros por exposición. La probabilidad de incumplimiento (PD) da el porcentaje promedio de deudores de una categoría de calificación que incumplen en el transcurso de un año. La exposición al incumplimiento (EAD) estima el monto pendiente si el deudor incumple, incluidos los montos usados y los que probablemente se usarán de líneas no utilizadas. La pérdida dado el incumplimiento (LGD) es el porcentaje de la exposición que el banco podría perder, que depende de las garantías y del tipo de deudor.",
+          "ejemplo": "Una tarjeta de crédito con cupo de USD 5.000 y USD 3.000 usados puede tener una EAD mayor a 3.000, porque el cliente suele usar más cupo antes de incumplir.",
+          "puntos_clave": [
+            "PD: probabilidad anual de incumplir.",
+            "EAD: exposición al incumplir.",
+            "LGD: porcentaje no recuperado."
+          ],
+          "errores_frecuentes": [
+            "Tomar como EAD solo el saldo actual de una línea de crédito.",
+            "Confundir LGD con la tasa de interés."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-irb",
+            "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+            "seccion": "2. Economic foundations of the risk weight formulas"
+          }
+        },
+        {
+          "id": "rf-perdida-esperada",
+          "nombre": "La pérdida esperada",
+          "explicacion": "Desde una visión por componentes, la pérdida esperada de un portafolio es la proporción de deudores que podría incumplir en un año, multiplicada por la exposición al incumplimiento y por la pérdida dado el incumplimiento: EL = PD × EAD × LGD. Expresada como porcentaje de la exposición, EL = PD × LGD. Es la base para fijar el precio de los créditos y las provisiones.",
+          "ejemplo": "Un portafolio de microcréditos de USD 2 millones con PD de 5 % y LGD de 60 % tiene una pérdida esperada de 0,05 × 2.000.000 × 0,6 = 60.000 dólares.",
+          "puntos_clave": [
+            "EL = PD × EAD × LGD.",
+            "En porcentaje: PD × LGD.",
+            "Base de precios y provisiones."
+          ],
+          "errores_frecuentes": [
+            "Olvidar multiplicar por la LGD.",
+            "Usar la PD en porcentaje entero en lugar de proporción."
+          ],
+          "formulas": [
+            "perdida-esperada"
+          ],
+          "fuente": {
+            "ref": "bcbs-irb",
+            "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+            "seccion": "2. Economic foundations of the risk weight formulas"
+          }
+        },
+        {
+          "id": "rf-esperada-inesperada",
+          "nombre": "Pérdidas esperadas e inesperadas",
+          "explicacion": "Aunque no se pueden conocer de antemano las pérdidas de un año, un banco puede prever su nivel promedio: las pérdidas esperadas, que trata como un costo del negocio y gestiona con el precio de los créditos y con provisiones. Las pérdidas inesperadas son los picos por encima de ese nivel: se sabe que ocurrirán de vez en cuando, pero no cuándo ni con qué severidad. El mercado no permite cobrar tasas que las cubran todas, por eso se necesita capital, que cumple una función de absorción de pérdidas.",
+          "ejemplo": "Un banco provisiona su pérdida esperada de cada año, y mantiene capital para un año de recesión en el que los incumplimientos se disparan.",
+          "puntos_clave": [
+            "Esperada: costo del negocio.",
+            "Inesperada: picos de pérdida.",
+            "Precio y provisiones frente a capital."
+          ],
+          "errores_frecuentes": [
+            "Cubrir las pérdidas inesperadas solo con provisiones.",
+            "Creer que más capital siempre es mejor sin costo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-irb",
+            "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+            "seccion": "2. Economic foundations of the risk weight formulas"
+          }
+        },
+        {
+          "id": "rf-confianza",
+          "nombre": "Nivel de confianza y pérdida en recesión",
+          "explicacion": "En el modelo de Basilea, el capital se fija para un nivel de confianza supervisor de 99,9 %: se espera que una entidad sufra pérdidas mayores a su capital de nivel 1 y 2 en promedio una vez cada mil años. Además, los bancos deben reportar LGD que reflejen condiciones de recesión económica, porque la severidad de las pérdidas suele ser mayor en esos períodos. Mantener capital para perder toda la cartera sería muy improbable y económicamente ineficiente.",
+          "ejemplo": "Al estimar la LGD de créditos hipotecarios, un banco usa el valor de recuperación de las viviendas en una recesión, no en un año de auge.",
+          "puntos_clave": [
+            "Confianza de 99,9 %.",
+            "LGD en condiciones de recesión.",
+            "Capital eficiente, no para el peor caso absoluto."
+          ],
+          "errores_frecuentes": [
+            "Estimar la LGD con datos de años buenos.",
+            "Interpretar 99,9 % como certeza total."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-irb",
+            "url": "https://www.bis.org/publications/explanatory-note-basel-ii-irb-risk-weight-functions.pdf",
+            "seccion": "5.1 Confidence level"
+          }
+        },
+        {
+          "id": "rf-castigo",
+          "nombre": "Provisiones y castigo de créditos en Ecuador",
+          "explicacion": "Según el Código Orgánico Monetario y Financiero, el plazo para que una entidad castigue las obligaciones incumplidas lo determina la Junta de Política y Regulación con base en la evaluación del incumplimiento y no puede superar los tres años. Antes del castigo, las obligaciones deben estar provisionadas al 100 % de su valor en libros. El castigo libera a la entidad de seguir cobrando, pero no releva al deudor de su condición de moroso.",
+          "ejemplo": "Un crédito de USD 8.000 incobrable debe tener una provisión de USD 8.000 antes de castigarse contablemente.",
+          "puntos_clave": [
+            "Castigo en un plazo de hasta tres años.",
+            "Provisión del 100 % antes del castigo.",
+            "El deudor sigue como moroso."
+          ],
+          "errores_frecuentes": [
+            "Castigar sin provisionar.",
+            "Creer que el castigo condona la deuda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CODIGO-ORGANICO-MONETARIO-Y-FINANCIERO.pdf",
+            "seccion": "Castigo de obligaciones"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rf-liquidez",
+      "nombre": "Riesgo de liquidez: el LCR",
+      "orden": 3,
+      "descripcion": "Objetivo del LCR, activos líquidos de alta calidad, salidas netas de efectivo y el ratio mínimo de 100 %.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "rf-lcr-objetivo",
+          "nombre": "Objetivo del ratio de cobertura de liquidez",
+          "explicacion": "El objetivo del LCR es promover la resiliencia de corto plazo del perfil de riesgo de liquidez de los bancos, asegurando que tengan un stock adecuado de activos líquidos de alta calidad (HQLA), libres de cargas, que puedan convertirse fácil e inmediatamente en efectivo para cubrir sus necesidades durante un escenario de estrés de liquidez de 30 días calendario. Debe complementarse con evaluaciones de supervisión y herramientas de monitoreo.",
+          "ejemplo": "Si se difunde un rumor y los depositantes retiran fondos durante un mes, el banco vende o usa como garantía sus bonos soberanos para pagar sin cerrar.",
+          "puntos_clave": [
+            "Resiliencia de corto plazo.",
+            "HQLA libres de cargas.",
+            "Escenario de estrés de 30 días."
+          ],
+          "errores_frecuentes": [
+            "Contar activos comprometidos como garantía.",
+            "Confundir liquidez con solvencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-lcr",
+            "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+            "seccion": "Objective of the LCR"
+          }
+        },
+        {
+          "id": "rf-hqla",
+          "nombre": "Activos líquidos de alta calidad (HQLA)",
+          "explicacion": "Los HQLA se clasifican por niveles. Los de nivel 1, como monedas, billetes y reservas en el banco central, pueden formar una parte ilimitada del stock y no tienen descuento (haircut) en el LCR. Los de nivel 2 no pueden superar el 40 % del stock después de descuentos; a cada activo de nivel 2A, como ciertos valores soberanos o corporativos de alta calidad, se le aplica un descuento de 15 % sobre su valor de mercado. Los de nivel 2B tienen descuentos mayores y límites más estrictos.",
+          "ejemplo": "USD 100 millones en bonos de nivel 2A cuentan como USD 85 millones de HQLA después del descuento de 15 %.",
+          "puntos_clave": [
+            "Nivel 1: sin descuento ni límite.",
+            "Nivel 2: máximo 40 % del stock.",
+            "Nivel 2A: descuento de 15 %."
+          ],
+          "errores_frecuentes": [
+            "Contar los bonos de nivel 2 a su valor de mercado completo.",
+            "Superar el límite de 40 % de nivel 2."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-lcr",
+            "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+            "seccion": "Definition of HQLA (párrafos 49 a 54)"
+          }
+        },
+        {
+          "id": "rf-salidas-netas",
+          "nombre": "Salidas netas de efectivo a 30 días",
+          "explicacion": "Las salidas netas se calculan como las salidas de efectivo esperadas menos el menor valor entre las entradas esperadas y el 75 % de las salidas. Cada pasivo se multiplica por una tasa de retiro (run-off rate) según su estabilidad: los depósitos minoristas menos estables, por ejemplo los que no están totalmente cubiertos por un seguro de depósitos efectivo o los de alto valor, reciben al menos 10 %. El tope del 75 % evita que el banco dependa solo de las entradas que espera.",
+          "ejemplo": "Con salidas de 800 y entradas de 300, el tope sería 600; como 300 es menor, las salidas netas son 800 − 300 = 500.",
+          "puntos_clave": [
+            "Salidas menos entradas con tope.",
+            "Tope de entradas: 75 % de las salidas.",
+            "Tasas de retiro según estabilidad."
+          ],
+          "errores_frecuentes": [
+            "Restar todas las entradas sin aplicar el tope.",
+            "Usar los saldos de depósitos sin la tasa de retiro."
+          ],
+          "formulas": [
+            "salidas-netas-lcr"
+          ],
+          "fuente": {
+            "ref": "bcbs-lcr",
+            "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+            "seccion": "Total net cash outflows (párrafos 69 a 75)"
+          }
+        },
+        {
+          "id": "rf-ratio-lcr",
+          "nombre": "El ratio mínimo de 100 %",
+          "explicacion": "El LCR es el stock de HQLA dividido para las salidas netas de efectivo de 30 días. Fuera de una situación de estrés, su valor no debe ser menor al 100 % de forma continua, es decir, el stock de HQLA debe ser al menos igual a las salidas netas. Como esos activos sirven de defensa ante el estrés, durante una crisis el banco puede usarlos y quedar temporalmente por debajo del 100 %.",
+          "ejemplo": "Con HQLA de USD 450 millones y salidas netas de USD 500 millones, el LCR es 0,9 o 90 %: el banco debe aumentar sus activos líquidos o reducir sus salidas.",
+          "puntos_clave": [
+            "LCR = HQLA / salidas netas.",
+            "Mínimo 100 % en tiempos normales.",
+            "Se puede usar en estrés."
+          ],
+          "errores_frecuentes": [
+            "Creer que el LCR nunca puede bajar de 100 %.",
+            "Usar las salidas brutas en el denominador."
+          ],
+          "formulas": [
+            "ratio-lcr"
+          ],
+          "fuente": {
+            "ref": "bcbs-lcr",
+            "url": "https://www.bis.org/publications/201301-standards-basel-iii-liquidity-coverage-ratio-and-liquidity-risk-monitoring-tools.pdf",
+            "seccion": "Definition of the LCR (párrafos 16 y 17)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rf-operativo",
+      "nombre": "Riesgo operativo",
+      "orden": 4,
+      "descripcion": "Definición del riesgo operativo, las tres líneas de defensa, herramientas de identificación y evaluación, y continuidad del negocio y tecnología.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "rf-definicion-operativo",
+          "nombre": "Qué es el riesgo operativo",
+          "explicacion": "En el marco de capital de Basilea, el riesgo operativo es el riesgo de pérdidas por procesos internos, personas y sistemas inadecuados o fallidos, o por eventos externos. Incluye el riesgo legal, pero excluye el estratégico y el reputacional. Está presente en todos los productos, actividades, procesos y sistemas de un banco, por lo que su gestión es un elemento fundamental del programa de gestión de riesgos.",
+          "ejemplo": "Un error al cargar una tasa de interés en el sistema, un fraude interno o una inundación en el centro de datos son eventos de riesgo operativo.",
+          "puntos_clave": [
+            "Procesos, personas, sistemas y eventos externos.",
+            "Incluye el riesgo legal.",
+            "Excluye el estratégico y el reputacional."
+          ],
+          "errores_frecuentes": [
+            "Clasificar una mala estrategia como riesgo operativo.",
+            "Creer que solo afecta al área de tecnología."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-oprisk",
+            "url": "https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk.pdf",
+            "seccion": "3. Operational risk management"
+          }
+        },
+        {
+          "id": "rf-tres-lineas",
+          "nombre": "Las tres líneas de defensa",
+          "explicacion": "El modelo de tres líneas de defensa reparte las responsabilidades. La primera línea es la gerencia de las unidades de negocio, responsable de identificar y gestionar los riesgos de sus productos, actividades, procesos y sistemas. La segunda línea es una función independiente de gestión de riesgos que supervisa y cuestiona a la primera. La tercera línea, a cargo de la auditoría interna o externa, da al directorio un aseguramiento independiente, y su personal no debe participar en los procesos que revisa.",
+          "ejemplo": "En una agencia bancaria, el jefe de agencia controla el cuadre de caja (primera línea), el área de riesgos revisa los indicadores (segunda) y auditoría interna evalúa todo el proceso (tercera).",
+          "puntos_clave": [
+            "Primera: unidades de negocio.",
+            "Segunda: gestión de riesgos independiente.",
+            "Tercera: auditoría y aseguramiento."
+          ],
+          "errores_frecuentes": [
+            "Que auditoría diseñe los controles que luego audita.",
+            "Dejar roles poco claros entre líneas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-oprisk",
+            "url": "https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk.pdf",
+            "seccion": "Three lines of defence"
+          }
+        },
+        {
+          "id": "rf-herramientas-operativo",
+          "nombre": "Identificar y evaluar el riesgo operativo",
+          "explicacion": "La alta gerencia debe asegurar la identificación y evaluación completa del riesgo operativo inherente a todos los productos, actividades, procesos y sistemas importantes. Las herramientas que destaca Basilea incluyen las autoevaluaciones de riesgos y controles (RCSA), los indicadores clave de riesgo (KRI), los datos de pérdidas externas, el mapeo de procesos de negocio, el análisis comparativo y el seguimiento de planes de acción; el análisis de escenarios se integra con la recuperación ante desastres y la continuidad del negocio.",
+          "ejemplo": "Una cooperativa mide como KRI el número de transacciones revertidas por error cada mes y define un umbral que, al superarse, activa una revisión del proceso.",
+          "puntos_clave": [
+            "Identificar riesgos de todos los procesos.",
+            "RCSA y KRI.",
+            "Datos de pérdidas y mapeo de procesos."
+          ],
+          "errores_frecuentes": [
+            "Medir solo pérdidas ya ocurridas.",
+            "Hacer autoevaluaciones sin planes de acción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-oprisk",
+            "url": "https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk.pdf",
+            "seccion": "Principle 6 y herramientas de gestión"
+          }
+        },
+        {
+          "id": "rf-continuidad",
+          "nombre": "Tecnología, continuidad del negocio y divulgación",
+          "explicacion": "La revisión de 2021 agregó un principio específico sobre el riesgo de las tecnologías de la información y la comunicación (TIC), incluida la ciberseguridad, ante las posibles interrupciones por pandemias, desastres naturales, ciberataques o fallas tecnológicas. Los bancos deben tener planes de continuidad del negocio para seguir operando y limitar pérdidas ante una interrupción severa, vinculados a su marco de riesgo operativo. Además, su divulgación pública debe permitir a los interesados evaluar su gestión y su exposición al riesgo operativo.",
+          "ejemplo": "Un banco prueba cada año que puede atender a sus clientes desde un centro de datos alterno si el principal queda fuera de servicio.",
+          "puntos_clave": [
+            "Riesgo de TIC y ciberseguridad.",
+            "Planes de continuidad del negocio.",
+            "Divulgación pública del riesgo."
+          ],
+          "errores_frecuentes": [
+            "Tener un plan de continuidad que nunca se prueba.",
+            "Tratar la ciberseguridad solo como un tema técnico."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bcbs-oprisk",
+            "url": "https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk.pdf",
+            "seccion": "Principles 11 y 12"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rf-mercado",
+      "nombre": "Riesgo de mercado y coberturas",
+      "orden": 5,
+      "descripcion": "Riesgo de tasa de interés y su medición, futuros sobre materias primas, riesgo cambiario con contratos a plazo y swaps de tasa de interés.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "rf-tasa-interes",
+          "nombre": "Riesgo de tasa de interés",
+          "explicacion": "La tasa de interés es el precio de pedir dinero prestado y, como otros precios, es volátil, lo que vuelve inciertos los flujos de caja. El valor presente de un pago futuro depende del nivel de las tasas: si la empresa debe pagar USD 1.000 dentro de 10 años, su valor presente es 613,91 con una tasa de 5 % y 558,39 con 6 %, es decir, 9,04 % menos por un punto de aumento. Los bonos de largo plazo son más sensibles a esos cambios que los de corto plazo.",
+          "ejemplo": "Un fondo con bonos a 30 años pierde más valor que uno con bonos a 5 años cuando suben las tasas de mercado.",
+          "puntos_clave": [
+            "La tasa es el precio del dinero.",
+            "Sube la tasa, baja el valor presente.",
+            "Más plazo, más sensibilidad."
+          ],
+          "errores_frecuentes": [
+            "Creer que un bono no tiene riesgo si el emisor es seguro.",
+            "Ignorar el plazo al medir el riesgo."
+          ],
+          "formulas": [
+            "valor-actual"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
+            "seccion": "20.4 Interest Rate Risk"
+          }
+        },
+        {
+          "id": "rf-futuros",
+          "nombre": "Futuros sobre materias primas",
+          "explicacion": "Un contrato de futuros es un acuerdo para negociar un activo en una fecha futura a un precio fijado hoy. Existen futuros de recursos naturales, como petróleo, gas, plata y oro, y de productos agrícolas, como soya, maíz, trigo, azúcar y cacao. Se negocian de forma anónima en una bolsa con precios públicos y alta liquidez, por lo que la empresa puede salir del contrato vendiéndolo a un tercero, y no tienen el riesgo de crédito de un contrato de largo plazo con un proveedor, porque las bolsas exigen márgenes.",
+          "ejemplo": "Una chocolatera que compra futuros de cacao fija hoy el costo de su materia prima de los próximos meses.",
+          "puntos_clave": [
+            "Precio fijado hoy para una fecha futura.",
+            "Se negocian en bolsa con márgenes.",
+            "Líquidos y sin riesgo de contraparte directo."
+          ],
+          "errores_frecuentes": [
+            "Confundir un futuro con un contrato privado a plazo.",
+            "Olvidar los márgenes que exige la bolsa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-2-commodity-price-risk",
+            "seccion": "20.2 Commodity Price Risk"
+          }
+        },
+        {
+          "id": "rf-cambiario",
+          "nombre": "Riesgo cambiario y contratos a plazo",
+          "explicacion": "El riesgo de transacción es el riesgo de que cambie el valor de los cobros o pagos esperados de una empresa por variaciones en el tipo de cambio. Para cubrirlo, una empresa puede pedir a su banco un contrato a plazo (forward): un acuerdo entre dos partes para intercambiar una cantidad determinada de divisas en una fecha futura a una tasa fijada hoy. Al ser un contrato privado, cada parte asume el riesgo de que la otra no cumpla. Las opciones de compra y de venta son otra herramienta de cobertura.",
+          "ejemplo": "Un importador ecuatoriano que debe pagar 200 millones de wones coreanos el 1 de marzo fija con su banco hoy cuántos dólares pagará.",
+          "puntos_clave": [
+            "Riesgo de transacción.",
+            "Forward: tasa fijada hoy.",
+            "Contrato privado con riesgo de contraparte."
+          ],
+          "errores_frecuentes": [
+            "Creer que la dolarización elimina el riesgo cambiario con otros países.",
+            "Ignorar el riesgo de contraparte del forward."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-3-exchange-rates-and-risk",
+            "seccion": "20.3 Exchange Rates and Risk"
+          }
+        },
+        {
+          "id": "rf-swap",
+          "nombre": "Swaps de tasa de interés",
+          "explicacion": "Un swap es un acuerdo entre dos partes, llamadas contrapartes, para intercambiar obligaciones de realizar flujos de pagos determinados. En un swap de tasa de interés, por ejemplo, una empresa con deuda a tasa variable puede intercambiar sus pagos con otra que tiene deuda a tasa fija, de modo que cada una pague el tipo de tasa que prefiere. El libro lo ilustra con dos empresas hipotéticas con distinta calificación crediticia que aprovechan sus ventajas para endeudarse.",
+          "ejemplo": "Una empresa con un préstamo a tasa variable que teme un alza de tasas pacta un swap para pagar una tasa fija y recibir la variable.",
+          "puntos_clave": [
+            "Intercambio de flujos de pagos.",
+            "Tasa fija por tasa variable.",
+            "Las partes son contrapartes."
+          ],
+          "errores_frecuentes": [
+            "Creer que en un swap se intercambia el capital del préstamo.",
+            "Olvidar el riesgo de que la contraparte incumpla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/20-4-interest-rate-risk",
+            "seccion": "20.4 Interest Rate Risk"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1294,6 +1294,14 @@
         "planes": 1
       },
       {
+        "materia": "gestion-riesgos-financieros",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
         "materia": "inteligencia-negocios",
         "ciclo": 5,
         "ciclos": [
@@ -1319,13 +1327,7 @@
         "planes": 1
       }
     ],
-    "pendientes": [
-      {
-        "nombre": "Gestión de Riesgos Financieros",
-        "ciclo": 5,
-        "planes": 1
-      }
-    ]
+    "pendientes": []
   },
   {
     "id": "negocios-internacionales",

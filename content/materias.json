@@ -1293,5 +1293,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "gestion-riesgos-financieros",
+    "nombre": "Gestión de riesgos financieros",
+    "areas": [
+      "finanzas",
+      "cuantitativo"
+    ],
+    "descripcion": "Riesgo y valor de la empresa, marco de Basilea III y del COMF, riesgo de crédito con pérdida esperada (PD × EAD × LGD), riesgo de liquidez con el LCR, riesgo operativo y tres líneas de defensa, y riesgo de mercado con futuros, contratos a plazo y swaps.",
+    "sinonimos": [
+      "riesgo financiero",
+      "administración de riesgos",
+      "basilea",
+      "riesgo de crédito",
+      "riesgo de liquidez",
+      "riesgo operativo"
+    ],
+    "herramientas": [
+      "editor",
+      "estadistica",
+      "notas"
+    ],
+    "orden": 55,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]
