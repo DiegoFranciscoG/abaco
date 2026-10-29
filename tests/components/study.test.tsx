@@ -1,4 +1,4 @@
-import { screen, waitFor, within } from '@testing-library/react';
+import { cleanup, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { setDbForTesting, type AbacoDB } from '../../src/data/db';
@@ -34,7 +34,10 @@ beforeEach(() => {
   extract.mockResolvedValue({ paginas: 3, texto: PDF_TEXT });
   openMailApp.mockClear();
 });
-afterEach(() => {
+afterEach(async () => {
+  // Unmount first and let pending writes settle, so no component touches the database after it is closed.
+  cleanup();
+  await new Promise((resolve) => setTimeout(resolve, 0));
   db.close();
   setDbForTesting(null);
 });

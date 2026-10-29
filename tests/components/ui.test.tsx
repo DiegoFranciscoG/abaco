@@ -1,4 +1,4 @@
-import { act, fireEvent, screen, waitFor, within } from '@testing-library/react';
+import { act, cleanup, fireEvent, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useState } from 'react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
@@ -31,6 +31,9 @@ beforeEach(() => {
   db = freshDb();
 });
 afterEach(async () => {
+  // Unmount first and let pending writes settle, so no component touches the database after it is closed.
+  cleanup();
+  await new Promise((resolve) => setTimeout(resolve, 0));
   db.close();
   setDbForTesting(null);
 });
