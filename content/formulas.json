@@ -11376,5 +11376,69 @@
     "notas": [],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "anio-fin-proteccion",
+    "nombre": "Año en que vence un plazo de protección",
+    "categoria": "calculo",
+    "materias": [
+      "propiedad-intelectual"
+    ],
+    "areas": [
+      "derecho"
+    ],
+    "descripcion": "Año en que termina la protección de un derecho de propiedad intelectual: año en que empieza a contarse el plazo más los años del plazo legal (70 después de la muerte del autor, 20 para patentes, 10 para modelos de utilidad, diseños, marcas y nombres comerciales).",
+    "latex": "A_{fin} = A_{inicio} + P",
+    "variables": [
+      {
+        "simbolo": "A_{inicio}",
+        "nombre": "anio",
+        "significado": "Año desde el que se cuenta el plazo (muerte del autor, presentación de la solicitud o concesión)",
+        "unidad": "año"
+      },
+      {
+        "simbolo": "P",
+        "nombre": "plazo",
+        "significado": "Plazo legal de protección",
+        "unidad": "años"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "anio + plazo"
+    },
+    "excel": {
+      "es": "=anio+plazo",
+      "en": "=anio+plazo"
+    },
+    "ejemplo": {
+      "enunciado": "Se presenta una solicitud de patente en 2026 y se concede. ¿Hasta qué año dura la protección?",
+      "entradas": {
+        "anio": 2026,
+        "plazo": 20
+      },
+      "pasos": [
+        "La patente dura 20 años desde la fecha de presentación",
+        "2026 + 20 = 2046"
+      ],
+      "resultado": 2046,
+      "unidad": "año",
+      "tolerancia": 0,
+      "excel_es": "=2026+20",
+      "excel_en": "=2026+20"
+    },
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Art. 291, duración del registro de una patente"
+    },
+    "supuestos": [
+      "El plazo se cuenta en años completos desde la fecha indicada por la ley; se ignoran prórrogas, caducidad por falta de pago o cancelación."
+    ],
+    "notas": [
+      "El derecho vence en la misma fecha del año final; el resultado indica el año."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

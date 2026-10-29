@@ -384,6 +384,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Propiedad Intelectual",
+    "carreras": 2,
+    "planes": 2,
+    "ciclo_habitual": 6,
+    "materia": "propiedad-intelectual",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Prácticas Laborales",
     "carreras": 2,
     "planes": 2,

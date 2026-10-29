@@ -2756,5 +2756,68 @@
       "seccion": "9.8 Resolver sistemas con la regla de Cramer"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "vencimiento-derechos-pi",
+    "nombre": "Vencimiento de derechos de propiedad intelectual",
+    "descripcion": "Calcula el año en que vence cada derecho a partir del año desde el que se cuenta y del plazo legal del Código Ingenios.",
+    "materias": [
+      "propiedad-intelectual"
+    ],
+    "celdas": {
+      "A1": "Derecho",
+      "B1": "Año desde el que se cuenta",
+      "C1": "Plazo legal (años)",
+      "D1": "Año de vencimiento",
+      "A2": "Patente (desde la presentación)",
+      "B2": 2026,
+      "C2": 20,
+      "D2": "=B2+C2",
+      "A3": "Modelo de utilidad (desde la presentación)",
+      "B3": 2026,
+      "C3": 10,
+      "D3": "=B3+C3",
+      "A4": "Diseño industrial (desde la presentación)",
+      "B4": 2026,
+      "C4": 10,
+      "D4": "=B4+C4",
+      "A5": "Marca (desde la concesión)",
+      "B5": 2026,
+      "C5": 10,
+      "D5": "=B5+C5",
+      "A6": "Derecho de autor (desde la muerte del autor)",
+      "B6": 1975,
+      "C6": 70,
+      "D6": "=B6+C6"
+    },
+    "formatos": {},
+    "verificacion": [
+      {
+        "celda": "D2",
+        "esperado": 2046,
+        "tolerancia": 0
+      },
+      {
+        "celda": "D3",
+        "esperado": 2036,
+        "tolerancia": 0
+      },
+      {
+        "celda": "D5",
+        "esperado": 2036,
+        "tolerancia": 0
+      },
+      {
+        "celda": "D6",
+        "esperado": 2045,
+        "tolerancia": 0
+      }
+    ],
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Arts. 201, 291, 325, 352 y 365"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

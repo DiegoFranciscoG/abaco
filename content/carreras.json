@@ -1090,6 +1090,14 @@
         "planes": 1
       },
       {
+        "materia": "propiedad-intelectual",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
+      },
+      {
         "materia": "marketing-digital",
         "ciclo": 7,
         "ciclos": [
@@ -1116,11 +1124,6 @@
       {
         "nombre": "Business English",
         "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Propiedad Intelectual",
-        "ciclo": 6,
         "planes": 1
       },
       {
@@ -1728,6 +1731,14 @@
         "planes": 1
       },
       {
+        "materia": "propiedad-intelectual",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "economia-internacional",
         "ciclo": 8,
         "ciclos": [
@@ -1739,11 +1750,6 @@
     "pendientes": [
       {
         "nombre": "Business English",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual",
         "ciclo": 7,
         "planes": 1
       }

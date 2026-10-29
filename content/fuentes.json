@@ -745,5 +745,23 @@
     "url": "https://openstax.org/details/books/calculus-volume-3",
     "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ompi-pi",
+    "titulo": "¿Qué es la propiedad intelectual? y páginas temáticas (patentes, marcas, derecho de autor, diseños, indicaciones geográficas, secretos comerciales y transferencia de tecnología)",
+    "autor_editor": "Organización Mundial de la Propiedad Intelectual (OMPI)",
+    "tipo": "pagina_oficial",
+    "url": "https://www.wipo.int/es/web/about-ip",
+    "licencia": "Información pública de un organismo internacional (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "codigo-ingenios",
+    "titulo": "Código Orgánico de la Economía Social de los Conocimientos, Creatividad e Innovación (Código Ingenios), R.O. Suplemento 899 de 9-12-2016",
+    "autor_editor": "Asamblea Nacional del Ecuador; texto alojado en WIPO Lex (OMPI)",
+    "tipo": "ley",
+    "url": "https://www.wipo.int/wipolex/es/text/439750",
+    "licencia": "Norma jurídica pública",
+    "fecha_consulta": "2026-10-30"
   }
 ]

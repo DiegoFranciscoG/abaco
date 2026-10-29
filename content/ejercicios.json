@@ -14093,5 +14093,180 @@
     },
     "materia": "matematica-economistas",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pi-autor-a",
+    "subtema": "pi-duracion-autor",
+    "formula": "anio-fin-proteccion",
+    "enunciado": "Un compositor ecuatoriano falleció en 1975. ¿Hasta qué año están protegidos los derechos patrimoniales sobre sus canciones?",
+    "datos": {
+      "anio": 1975,
+      "plazo": 70
+    },
+    "calculo": "anio + plazo",
+    "respuesta": 2045,
+    "unidad": "año",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Vida del autor y 70 años después de su muerte",
+      "1975 + 70 = 2045"
+    ],
+    "pistas": [
+      "El plazo se cuenta desde la muerte del autor."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Art. 201, duración de los derechos patrimoniales"
+    },
+    "materia": "propiedad-intelectual",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pi-autor-b",
+    "subtema": "pi-duracion-autor",
+    "formula": "anio-fin-proteccion",
+    "enunciado": "Una escritora publicó su primera novela en 1990 y murió en 2010. ¿En qué año pasa su obra al dominio público?",
+    "datos": {
+      "anio": 2010,
+      "plazo": 70
+    },
+    "calculo": "anio + plazo",
+    "respuesta": 2080,
+    "unidad": "año",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Se cuenta desde la muerte, no desde la publicación",
+      "2010 + 70 = 2080"
+    ],
+    "pistas": [
+      "El año de publicación no importa si la autora es persona natural."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Arts. 201 y 210"
+    },
+    "materia": "propiedad-intelectual",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pi-patente",
+    "subtema": "pi-duracion-patente",
+    "formula": "anio-fin-proteccion",
+    "enunciado": "Una empresa presentó su solicitud de patente en 2027 y la patente se concedió en 2030. ¿En qué año vence?",
+    "datos": {
+      "anio": 2027,
+      "plazo": 20
+    },
+    "calculo": "anio + plazo",
+    "respuesta": 2047,
+    "unidad": "año",
+    "tolerancia": 0,
+    "procedimiento": [
+      "El plazo de 20 años se cuenta desde la presentación",
+      "2027 + 20 = 2047"
+    ],
+    "pistas": [
+      "No uses el año de concesión."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Art. 291, duración del registro de una patente"
+    },
+    "materia": "propiedad-intelectual",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pi-modelo-utilidad",
+    "subtema": "pi-duracion-patente",
+    "formula": "anio-fin-proteccion",
+    "enunciado": "Un taller solicitó en 2026 un modelo de utilidad para una nueva herramienta agrícola. ¿Hasta qué año dura su protección?",
+    "datos": {
+      "anio": 2026,
+      "plazo": 10
+    },
+    "calculo": "anio + plazo",
+    "respuesta": 2036,
+    "unidad": "año",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Modelo de utilidad: 10 años desde la presentación",
+      "2026 + 10 = 2036"
+    ],
+    "pistas": [
+      "El plazo es la mitad del de una patente."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Art. 325, plazo de protección de los modelos de utilidad"
+    },
+    "materia": "propiedad-intelectual",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pi-marca-a",
+    "subtema": "pi-vigencia-marca",
+    "formula": "anio-fin-proteccion",
+    "enunciado": "Una marca se concedió en 2026. ¿En qué año vence su primer período de vigencia?",
+    "datos": {
+      "anio": 2026,
+      "plazo": 10
+    },
+    "calculo": "anio + plazo",
+    "respuesta": 2036,
+    "unidad": "año",
+    "tolerancia": 0,
+    "procedimiento": [
+      "10 años desde la concesión",
+      "2026 + 10 = 2036"
+    ],
+    "pistas": [
+      "La marca se cuenta desde la concesión, no desde la solicitud."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Art. 365, duración del registro de una marca"
+    },
+    "materia": "propiedad-intelectual",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pi-marca-b",
+    "subtema": "pi-vigencia-marca",
+    "formula": "anio-fin-proteccion",
+    "enunciado": "La marca concedida en 2026 se renueva a tiempo dos veces seguidas. ¿Hasta qué año queda protegida?",
+    "datos": {
+      "anio": 2026,
+      "plazo": 30
+    },
+    "calculo": "anio + plazo",
+    "respuesta": 2056,
+    "unidad": "año",
+    "tolerancia": 0,
+    "procedimiento": [
+      "Período inicial de 10 años más dos renovaciones de 10 años",
+      "Plazo total = 30 años",
+      "2026 + 30 = 2056"
+    ],
+    "pistas": [
+      "Cada renovación agrega 10 años."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "codigo-ingenios",
+      "url": "https://www.wipo.int/wipolex/es/text/439750",
+      "seccion": "Arts. 365 y 366"
+    },
+    "materia": "propiedad-intelectual",
+    "actualizado_en": "2026-10-26"
   }
 ]

@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (52 completas de 52)
+## Estado por materia (53 completas de 53)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -56,6 +56,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Legislación laboral | 2 de 7 | completa | 6 de 6 | 27 | 0 de 0 | 100 % | — |
 | Presupuestos empresariales y control de gestión | 2 de 7 | completa | 5 de 5 | 20 | 5 de 5 | 100 % | — |
 | Producto, marca y precio | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
+| Propiedad intelectual y transferencia de tecnología | 2 de 7 | completa | 5 de 5 | 23 | 3 de 3 | 100 % | — |
 | Sistema financiero y banca | 2 de 7 | completa | 5 de 5 | 22 | 4 de 4 | 100 % | — |
 | Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Matemáticas para economistas | 0 de 7 | completa | 5 de 5 | 23 | 8 de 8 | 100 % | — |
@@ -120,6 +121,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 | Gestión Bancaria | 2 | 2 | 3 | Sistema financiero y banca |
 | Leadership & Management Skills | 2 | 2 | 1 | Habilidades directivas y blandas |
 | Legislación Aduanera | 2 | 2 | 3 | Aduanas y comercio exterior |
+| Propiedad Intelectual | 2 | 2 | 6 | Propiedad intelectual y transferencia de tecnología |
 | Prácticas Laborales (práctica o titulación) | 2 | 2 | 4 | no aplica |
 | Titulación (práctica o titulación) | 2 | 2 | 7 | no aplica |
 
@@ -165,7 +167,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **3.º ciclo**: en ÁBACO: Comportamiento organizacional (completa, 6 de 6 unidades); Emprendimiento (completa, 6 de 6 unidades); Investigación de operaciones (completa, 5 de 5 unidades); Matemática financiera (completa, 6 de 6 unidades); Producto, marca y precio (completa, 5 de 5 unidades); Responsabilidad social y sostenibilidad (completa, 5 de 5 unidades) · pendientes: Marco Legal del Marketing y Ciberseguridad.
 - **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · pendientes: Business English.
 - **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
-- **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades) · pendientes: Propiedad Intelectual.
+- **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · sin pendientes.
 - **7.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Modelos de Simulación.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
 
@@ -196,7 +198,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: en ÁBACO: Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Ética profesional (completa, 6 de 6 unidades); Marketing (completa, 6 de 6 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades) · pendientes: Business English, Gestión de Transferencia de Tecnología, Conocimiento y Propiedad Intelectual.
+- **7.º ciclo**: en ÁBACO: Producto, marca y precio (completa, 5 de 5 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · pendientes: Business English.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
 
 ## Meta: primer ciclo de las cuatro carreras con más planes

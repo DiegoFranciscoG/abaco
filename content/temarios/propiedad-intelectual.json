@@ -1,0 +1,540 @@
+{
+  "materia": "propiedad-intelectual",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pi-fundamentos",
+      "nombre": "Fundamentos de la propiedad intelectual",
+      "orden": 1,
+      "descripcion": "Qué es la propiedad intelectual, sus tipos, el marco legal ecuatoriano y los conocimientos tradicionales.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "pi-que-es",
+          "nombre": "Qué es la propiedad intelectual",
+          "explicacion": "Según la OMPI, la propiedad intelectual se relaciona con las creaciones de la mente: las invenciones, las obras literarias y artísticas, y los símbolos, nombres e imágenes que se usan en el comercio. La ley la protege mediante figuras como las patentes, el derecho de autor y las marcas, que permiten obtener reconocimiento o ganancias por lo creado. El sistema busca equilibrar el interés de los innovadores con el interés público para fomentar la creatividad y la innovación.",
+          "ejemplo": "Una empresa ecuatoriana de software tiene a la vez derecho de autor sobre su programa, una marca para su producto y, si desarrolla un dispositivo nuevo, podría patentarlo.",
+          "puntos_clave": [
+            "Creaciones de la mente.",
+            "Protección legal con patentes, derecho de autor y marcas.",
+            "Equilibrio entre innovadores e interés público."
+          ],
+          "errores_frecuentes": [
+            "Creer que la propiedad intelectual solo son patentes.",
+            "Pensar que proteger una creación impide todo uso por terceros en cualquier caso."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ompi-pi",
+            "url": "https://www.wipo.int/es/web/about-ip",
+            "seccion": "¿Qué es la propiedad intelectual?"
+          }
+        },
+        {
+          "id": "pi-tipos",
+          "nombre": "Tipos de propiedad intelectual",
+          "explicacion": "La OMPI distingue los principales tipos: la patente, un derecho exclusivo sobre una invención; el derecho de autor, sobre las obras literarias y artísticas; la marca, un signo que diferencia los productos o servicios de una empresa; el diseño industrial, el aspecto ornamental o estético de un artículo; la indicación geográfica, un signo para productos cuyas cualidades se deben a su lugar de origen, y los secretos comerciales, derechos sobre información confidencial que pueden venderse o licenciarse.",
+          "ejemplo": "La forma original de una botella puede protegerse como diseño industrial; el nombre de la bebida, como marca, y la receta, como secreto comercial.",
+          "puntos_clave": [
+            "Patentes y derecho de autor.",
+            "Marcas y diseños industriales.",
+            "Indicaciones geográficas y secretos comerciales."
+          ],
+          "errores_frecuentes": [
+            "Confundir marca con patente.",
+            "Proteger con un solo derecho lo que necesita varios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ompi-pi",
+            "url": "https://www.wipo.int/es/web/about-ip",
+            "seccion": "Tipos de propiedad intelectual"
+          }
+        },
+        {
+          "id": "pi-marco-ecuador",
+          "nombre": "El marco legal en Ecuador: el Código Ingenios",
+          "explicacion": "En Ecuador, la propiedad intelectual se regula en el Código Orgánico de la Economía Social de los Conocimientos, Creatividad e Innovación, conocido como Código Ingenios, publicado en el Registro Oficial Suplemento 899 del 9 de diciembre de 2016. El código asigna a la entidad encargada de la gestión de la propiedad intelectual atribuciones como proteger y defender los derechos intelectuales y resolver sobre el otorgamiento de patentes, modelos de utilidad, diseños industriales y otros registros. Para el código, el sistema de patentes es una herramienta para promover el desarrollo industrial y tecnológico.",
+          "ejemplo": "Quien quiere registrar una marca o una patente en Ecuador presenta su solicitud ante la autoridad nacional competente en materia de derechos intelectuales, que la examina y la concede o la niega.",
+          "puntos_clave": [
+            "Código Ingenios, R.O. 899 de 2016.",
+            "Autoridad nacional en derechos intelectuales.",
+            "Patentes como herramienta de desarrollo."
+          ],
+          "errores_frecuentes": [
+            "Buscar la norma vigente en leyes de propiedad intelectual anteriores a 2016.",
+            "Creer que el registro lo hace cualquier notaría."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 11 y 266"
+          }
+        },
+        {
+          "id": "pi-conocimientos-tradicionales",
+          "nombre": "Conocimientos tradicionales",
+          "explicacion": "El Código Ingenios protege de forma especial los conocimientos tradicionales. No se consideran materia patentable, y quienes los poseen legítimamente deben participar, como mínimo, de forma equitativa en los beneficios del aporte de su conocimiento, de acuerdo con los tratados internacionales y la normativa nacional. La misma entidad que gestiona la propiedad intelectual tiene a su cargo la protección de estos conocimientos.",
+          "ejemplo": "Si una empresa usa el conocimiento de una comunidad sobre las propiedades de una planta para desarrollar un producto, la comunidad tiene derecho a participar equitativamente en los beneficios.",
+          "puntos_clave": [
+            "No son materia patentable.",
+            "Participación equitativa de sus poseedores.",
+            "Protección a cargo de la autoridad de propiedad intelectual."
+          ],
+          "errores_frecuentes": [
+            "Tratar un conocimiento tradicional como de libre uso comercial.",
+            "Intentar patentarlo como invención propia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 94 y 267"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pi-derecho-autor",
+      "nombre": "Derecho de autor",
+      "orden": 2,
+      "descripcion": "Obras protegidas, derechos morales y patrimoniales, protección sin registro y duración, uso justo y software.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pi-obras-protegidas",
+          "nombre": "Obras protegidas",
+          "explicacion": "El derecho de autor protege todas las obras literarias, artísticas y científicas que sean originales y que puedan reproducirse o divulgarse por cualquier medio: libros, artículos, conferencias, música, películas, fotografías, programas informáticos, bases de datos, mapas y otras. La OMPI aclara que protege solo las expresiones, no las ideas, procedimientos, métodos de operación o conceptos matemáticos en sí mismos.",
+          "ejemplo": "Un manual de contabilidad escrito por un docente está protegido, pero el método de partida doble que explica no lo está: cualquiera puede escribir su propio manual sobre el mismo tema.",
+          "puntos_clave": [
+            "Obras originales.",
+            "Cualquier forma o medio.",
+            "Se protege la expresión, no la idea."
+          ],
+          "errores_frecuentes": [
+            "Creer que una idea está protegida aunque no se haya expresado.",
+            "Pensar que solo se protegen obras publicadas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Art. 104, obras susceptibles de protección"
+          }
+        },
+        {
+          "id": "pi-derechos-autor",
+          "nombre": "Derechos morales y patrimoniales",
+          "explicacion": "El derecho de autor abarca dos tipos de derechos. Los morales son irrenunciables, inalienables, inembargables e imprescriptibles: conservar la obra inédita o divulgarla, reivindicar su paternidad y oponerse a deformaciones que dañen su decoro o la reputación del autor. Los patrimoniales permiten obtener una compensación económica y comprenden derechos exclusivos como la reproducción, la comunicación pública, la distribución, la traducción o adaptación y la puesta a disposición del público.",
+          "ejemplo": "Una editorial puede comprar el derecho de reproducir y distribuir una novela, pero el autor sigue siendo reconocido como su creador y puede oponerse a una versión que deforme la obra.",
+          "puntos_clave": [
+            "Morales: paternidad e integridad.",
+            "Patrimoniales: explotación económica.",
+            "Los morales no se pueden ceder."
+          ],
+          "errores_frecuentes": [
+            "Creer que al vender la obra se pierde la paternidad.",
+            "Confundir la venta del ejemplar con la cesión de los derechos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 118 y 120"
+          }
+        },
+        {
+          "id": "pi-duracion-autor",
+          "nombre": "Protección sin registro y duración",
+          "explicacion": "En Ecuador, la adquisición y el ejercicio de los derechos de autor no están sometidos a registro, depósito ni formalidad alguna: la protección nace con la obra, en línea con el Convenio de Berna. Los derechos patrimoniales duran toda la vida del autor y setenta años después de su muerte; si el titular es una persona jurídica, el plazo se cuenta desde la divulgación o publicación. Cumplidos los plazos, la obra pasa al dominio público y puede usarse libremente respetando su paternidad.",
+          "ejemplo": "La obra de una autora fallecida en 1980 queda protegida hasta 2050; desde entonces pasa al dominio público.",
+          "puntos_clave": [
+            "Sin registro ni formalidades.",
+            "Vida del autor más 70 años.",
+            "Luego, dominio público."
+          ],
+          "errores_frecuentes": [
+            "Creer que sin registro no hay protección.",
+            "Contar los 70 años desde la publicación cuando el titular es una persona natural."
+          ],
+          "formulas": [
+            "anio-fin-proteccion"
+          ],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 101, 201 y 210"
+          }
+        },
+        {
+          "id": "pi-uso-justo",
+          "nombre": "Uso justo y excepciones",
+          "explicacion": "El Código Ingenios reconoce el uso justo: no viola los derechos patrimoniales usar una obra en los casos que prevé la ley, siempre que no atente contra su explotación normal ni cause un perjuicio injustificado a los intereses del titular. Para evaluarlo se consideran al menos el objetivo y la naturaleza del uso, la naturaleza de la obra, la cantidad e importancia de la parte usada y el efecto del uso en el valor de mercado actual y potencial de la obra.",
+          "ejemplo": "Citar un párrafo de un libro en una tesis, con la referencia, es distinto de fotocopiar el libro completo para venderlo: el segundo afecta su valor de mercado.",
+          "puntos_clave": [
+            "Uso sin autorización en casos legales.",
+            "No perjudicar la explotación normal.",
+            "Cuatro factores de evaluación."
+          ],
+          "errores_frecuentes": [
+            "Creer que todo uso educativo es libre sin límites.",
+            "Ignorar el efecto en el mercado de la obra."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Art. 211, uso justo"
+          }
+        },
+        {
+          "id": "pi-software",
+          "nombre": "Protección del software",
+          "explicacion": "En Ecuador el software se protege como obra literaria, tanto en código fuente, legible por las personas, como en código objeto, legible por la máquina, e incluye diagramas de flujo, planos y manuales de uso, es decir, los elementos que forman la estructura, secuencia y organización del programa. Se excluyen de esta protección las formas estándar de desarrollo de software.",
+          "ejemplo": "El código de una aplicación de facturación y su manual están protegidos por derecho de autor; el uso de un patrón de programación habitual no lo está.",
+          "puntos_clave": [
+            "Software como obra literaria.",
+            "Código fuente y código objeto.",
+            "Se excluyen las formas estándar de desarrollo."
+          ],
+          "errores_frecuentes": [
+            "Creer que el software solo se protege con patentes.",
+            "Pensar que solo el código fuente está protegido."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Art. 131, protección de software"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pi-patentes",
+      "nombre": "Patentes, modelos de utilidad y diseños industriales",
+      "orden": 3,
+      "descripcion": "Concepto de patente, requisitos de patentabilidad, lo que no se considera invención, plazos y otras figuras de propiedad industrial.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pi-patente-concepto",
+          "nombre": "Qué es una patente",
+          "explicacion": "Una patente es un derecho exclusivo que se concede sobre una invención, es decir, un producto o un proceso que aporta una nueva forma de hacer algo o una nueva solución técnica a un problema. Su titular puede impedir que terceros produzcan, usen, distribuyan, importen o vendan la invención con fines comerciales sin su consentimiento, por un período limitado y en el país donde se concedió. A cambio, la información técnica de la invención se publica.",
+          "ejemplo": "Una empresa que patenta en Ecuador un nuevo proceso para secar cacao puede impedir que otros lo usen comercialmente en el país, pero su protección no se extiende a otros países donde no lo patentó.",
+          "puntos_clave": [
+            "Derecho exclusivo sobre una invención.",
+            "Territorial y por tiempo limitado.",
+            "A cambio se publica la información técnica."
+          ],
+          "errores_frecuentes": [
+            "Creer que una patente es mundial.",
+            "Pensar que la patente mantiene en secreto la invención."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ompi-pi",
+            "url": "https://www.wipo.int/es/web/patents",
+            "seccion": "Patentes"
+          }
+        },
+        {
+          "id": "pi-requisitos-patente",
+          "nombre": "Requisitos de patentabilidad",
+          "explicacion": "Según el Código Ingenios, se otorga patente a toda invención de producto o de procedimiento, en cualquier campo de la tecnología, que sea nueva, tenga nivel inventivo y sea susceptible de aplicación industrial. Es nueva si no está comprendida en el estado de la técnica; tiene nivel inventivo si no resulta obvia para una persona versada en la materia y constituye un aporte técnico significativo, y tiene aplicación industrial si puede producirse o usarse en cualquier actividad productiva, incluidos los servicios.",
+          "ejemplo": "Un envase que conserva frutas más tiempo puede ser patentable si nadie lo había divulgado antes, si no era obvio para un experto en envases y si puede fabricarse industrialmente.",
+          "puntos_clave": [
+            "Novedad.",
+            "Nivel inventivo.",
+            "Aplicación industrial."
+          ],
+          "errores_frecuentes": [
+            "Divulgar la invención antes de solicitar la patente.",
+            "Confundir novedad con originalidad artística."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 267, 269, 271 y 272"
+          }
+        },
+        {
+          "id": "pi-no-invenciones",
+          "nombre": "Lo que no se considera invención",
+          "explicacion": "El código enumera lo que no se considera invención, entre otros: los descubrimientos, los principios y teorías científicas y los métodos matemáticos; los seres vivos o sus partes tal como se encuentran en la naturaleza y los procesos biológicos naturales, incluidos genes, proteínas y germoplasma, y las nuevas formas de una sustancia ya conocida. Tampoco son patentables las invenciones cuya explotación comercial deba impedirse para proteger el orden público.",
+          "ejemplo": "Descubrir que una planta nativa tiene una propiedad medicinal es un descubrimiento, no una invención, y no puede patentarse como tal.",
+          "puntos_clave": [
+            "Descubrimientos y teorías científicas.",
+            "Métodos matemáticos.",
+            "Material biológico tal como existe en la naturaleza."
+          ],
+          "errores_frecuentes": [
+            "Creer que una fórmula matemática se puede patentar.",
+            "Confundir descubrir con inventar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Art. 268, no se consideran invenciones"
+          }
+        },
+        {
+          "id": "pi-duracion-patente",
+          "nombre": "Plazos de protección de patentes y modelos de utilidad",
+          "explicacion": "En Ecuador, la patente de invención dura veinte años contados desde la fecha de presentación de la solicitud, no desde su concesión. Los modelos de utilidad se protegen por diez años contados también desde la presentación. Al terminar el plazo, la invención queda libre para que cualquiera la use.",
+          "ejemplo": "Una patente solicitada en 2026 vence en 2046 aunque se haya concedido en 2029; un modelo de utilidad solicitado en 2026 vence en 2036.",
+          "puntos_clave": [
+            "Patente: 20 años.",
+            "Modelo de utilidad: 10 años.",
+            "Desde la fecha de presentación."
+          ],
+          "errores_frecuentes": [
+            "Contar el plazo desde la concesión.",
+            "Aplicar el plazo de la patente a un modelo de utilidad."
+          ],
+          "formulas": [
+            "anio-fin-proteccion"
+          ],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 291 y 325"
+          }
+        },
+        {
+          "id": "pi-modelo-diseno",
+          "nombre": "Modelos de utilidad y diseños industriales",
+          "explicacion": "El modelo de utilidad protege una nueva forma, configuración o disposición de elementos de un artefacto, herramienta u objeto que mejore su funcionamiento, uso o fabricación o le dé una ventaja técnica que antes no tenía; los procedimientos no pueden protegerse así. El diseño industrial, en cambio, protege el aspecto ornamental de un artículo, con rasgos tridimensionales como la forma o bidimensionales como motivos, líneas o colores; en Ecuador su registro dura diez años desde la presentación.",
+          "ejemplo": "Un mango de herramienta que reduce el esfuerzo al apretar puede ser modelo de utilidad; la forma estética de una lámpara, diseño industrial.",
+          "puntos_clave": [
+            "Modelo de utilidad: mejora funcional de un objeto.",
+            "Diseño industrial: aspecto ornamental.",
+            "Diseño: 10 años."
+          ],
+          "errores_frecuentes": [
+            "Proteger una función técnica como diseño.",
+            "Intentar proteger un procedimiento como modelo de utilidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 321 y 352"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pi-signos",
+      "nombre": "Marcas y signos distintivos",
+      "orden": 4,
+      "descripcion": "Marcas, vigencia y renovación, lemas, nombres comerciales y apariencias distintivas, marcas colectivas y de certificación, y denominaciones de origen.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pi-marca",
+          "nombre": "La marca",
+          "explicacion": "Una marca es un signo que permite diferenciar los productos o servicios de una empresa de los de otra. En Ecuador pueden registrarse como marcas los signos susceptibles de representación gráfica: palabras, letras, cifras, dibujos, formas tridimensionales y otros. No pueden registrarse, entre otros, los signos que carezcan de distintividad. El registro confiere a su titular el derecho exclusivo de usarla o de licenciarla a un tercero.",
+          "ejemplo": "Una cafetería de Loja registra el nombre y el logotipo con los que vende su café para impedir que otro negocio use un signo igual o parecido en productos similares.",
+          "puntos_clave": [
+            "Signo que diferencia productos o servicios.",
+            "Debe ser distintivo.",
+            "Uso exclusivo o licencia."
+          ],
+          "errores_frecuentes": [
+            "Elegir un nombre genérico, como 'Café', que no distingue.",
+            "Usar una marca sin verificar si ya está registrada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 359 y 360"
+          }
+        },
+        {
+          "id": "pi-vigencia-marca",
+          "nombre": "Vigencia, renovación y cancelación de la marca",
+          "explicacion": "El registro de una marca dura diez años desde su concesión y puede renovarse por períodos sucesivos de diez años. La renovación se pide dentro de los seis meses anteriores al vencimiento, con un plazo de gracia de seis meses después, durante el cual el registro sigue vigente. Cualquier interesado puede pedir la cancelación de una marca que, sin motivo justificado, no se haya usado durante los tres años consecutivos anteriores.",
+          "ejemplo": "Una marca concedida en 2026 vence en 2036; si se renueva a tiempo, sigue protegida hasta 2046. Si su titular deja de usarla tres años seguidos, un competidor puede pedir que se cancele.",
+          "puntos_clave": [
+            "10 años desde la concesión.",
+            "Renovable indefinidamente cada 10 años.",
+            "Cancelación por falta de uso de 3 años."
+          ],
+          "errores_frecuentes": [
+            "Dejar pasar el plazo de renovación.",
+            "Registrar una marca y no usarla."
+          ],
+          "formulas": [
+            "anio-fin-proteccion"
+          ],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 365, 366 y 378"
+          }
+        },
+        {
+          "id": "pi-otros-signos",
+          "nombre": "Lemas, nombres comerciales y apariencias distintivas",
+          "explicacion": "Además de las marcas, el código protege otros signos. El lema comercial es la palabra, frase o leyenda que complementa una marca. El nombre comercial es el signo que identifica a una persona o establecimiento en su actividad económica y lo distingue de otros del mismo rubro; su registro dura diez años desde la concesión y se renueva con prueba de uso. El rótulo o enseña distingue un establecimiento, y la apariencia distintiva es el conjunto de colores, formas y diseños característicos de un establecimiento o producto.",
+          "ejemplo": "Una panadería tiene un nombre comercial, una marca para sus productos empacados, un lema publicitario y una decoración característica de sus locales que puede protegerse como apariencia distintiva.",
+          "puntos_clave": [
+            "Lema comercial.",
+            "Nombre comercial y rótulo.",
+            "Apariencia distintiva."
+          ],
+          "errores_frecuentes": [
+            "Confundir nombre comercial con marca.",
+            "Creer que la razón social inscrita en la Superintendencia protege la marca."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 395, 415, 420, 424 y 426"
+          }
+        },
+        {
+          "id": "pi-marcas-colectivas",
+          "nombre": "Marcas colectivas, de certificación y marca país",
+          "explicacion": "La marca colectiva distingue el origen u otra característica común de productos o servicios de dos o más personas o empresas que la usan bajo el control de un titular; pueden tenerla asociaciones de productores, cooperativas y otras organizaciones. La marca de certificación se aplica a productos o servicios cuya calidad, origen u otra característica certifica su titular. La marca país promociona la identidad cultural, la biodiversidad, la imagen y otros valores del país.",
+          "ejemplo": "Una asociación de artesanas de paja toquilla usa una marca colectiva para todas sus socias; un sello de producto orgánico certificado funciona como marca de certificación.",
+          "puntos_clave": [
+            "Colectiva: varios productores bajo un titular.",
+            "Certificación: calidad u origen certificados.",
+            "Marca país."
+          ],
+          "errores_frecuentes": [
+            "Confundir una marca colectiva con una de certificación.",
+            "Usar una marca de certificación sin cumplir sus reglas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 401, 406 y 411"
+          }
+        },
+        {
+          "id": "pi-denominacion-origen",
+          "nombre": "Denominaciones de origen e indicaciones geográficas",
+          "explicacion": "Una indicación geográfica es un signo para productos de un lugar concreto cuyas cualidades, características o reputación se deben esencialmente a ese lugar de origen. El Código Ingenios define la denominación de origen como la indicación geográfica formada por el nombre de un país, región o lugar que designa un producto cuya calidad o reputación se debe exclusiva o esencialmente al medio geográfico. Su protección dura mientras subsistan las condiciones que la motivaron. La indicación de procedencia, en cambio, solo evoca un lugar y no puede usarse de forma engañosa.",
+          "ejemplo": "Los productores de una zona cuyo café tiene un sabor debido a su altitud y suelo pueden pedir una denominación de origen e impedir que se use ese nombre en café de otra zona.",
+          "puntos_clave": [
+            "Vínculo entre producto y lugar.",
+            "Denominación de origen.",
+            "Vigencia mientras duren las condiciones."
+          ],
+          "errores_frecuentes": [
+            "Confundir denominación de origen con indicación de procedencia.",
+            "Creer que la denominación impide usar la misma técnica en otro lugar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 428, 433 y 455"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pi-transferencia",
+      "nombre": "Secretos comerciales, licencias y transferencia de tecnología",
+      "orden": 5,
+      "descripcion": "Secretos comerciales e información no divulgada, licencias de patentes y marcas, transferencia de tecnología y su proceso.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pi-secretos",
+          "nombre": "Secretos comerciales e información no divulgada",
+          "explicacion": "Para la OMPI, un secreto comercial es información confidencial que tiene valor comercial por ser secreta, que conocen pocas personas y que su titular protege con medidas razonables, como acuerdos de confidencialidad. Su uso o divulgación no autorizados de forma contraria a los usos comerciales honestos es una práctica desleal. A diferencia de la patente, no impide que otros obtengan la misma información de forma independiente o por ingeniería inversa. El Código Ingenios protege la información no divulgada contra su divulgación a terceros y las prácticas desleales.",
+          "ejemplo": "La lista de clientes y la receta de una salsa pueden ser secretos comerciales si la empresa limita quién las conoce y firma acuerdos de confidencialidad con sus empleados.",
+          "puntos_clave": [
+            "Valor por ser secreta.",
+            "Medidas razonables de protección.",
+            "No protege frente al desarrollo independiente."
+          ],
+          "errores_frecuentes": [
+            "No firmar acuerdos de confidencialidad.",
+            "Creer que un secreto comercial protege como una patente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ompi-pi",
+            "url": "https://www.wipo.int/es/web/trade-secrets",
+            "seccion": "Secretos comerciales"
+          }
+        },
+        {
+          "id": "pi-licencias",
+          "nombre": "Licencias de patentes y marcas",
+          "explicacion": "Una patente concedida, o una solicitud en trámite, puede licenciarse a uno o más terceros para que exploten la invención; lo mismo ocurre con un registro de marca o una solicitud en trámite. En Ecuador, estas licencias deben inscribirse ante la autoridad nacional competente en materia de derechos intelectuales y surten efecto a partir de su inscripción. La licencia permite al titular obtener ingresos sin explotar directamente su derecho.",
+          "ejemplo": "Una universidad que patentó un fertilizante concede una licencia a una empresa para producirlo a cambio de regalías, e inscribe el contrato ante la autoridad.",
+          "puntos_clave": [
+            "Licencia a uno o más terceros.",
+            "Inscripción obligatoria.",
+            "Efectos desde la inscripción."
+          ],
+          "errores_frecuentes": [
+            "No inscribir la licencia.",
+            "Confundir licencia con transferencia de la titularidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Arts. 298 y 375"
+          }
+        },
+        {
+          "id": "pi-transferencia-tecnologia",
+          "nombre": "Transferencia de tecnología",
+          "explicacion": "El Código Ingenios define la transferencia de tecnología como las actividades para transferir conocimientos, técnicas o procesos tecnológicos que permitan elaborar productos, procesos o servicios, mediante acuerdos como la prueba de concepto, la validación tecnológica, la transferencia o licencia de derechos de propiedad intelectual, los contratos de saber hacer y la capacitación. Para la OMPI es un proceso colaborativo por el que los descubrimientos y la propiedad intelectual fluyen desde universidades e institutos de investigación hacia usuarios públicos y privados.",
+          "ejemplo": "Un centro de investigación transfiere a una cooperativa la técnica para procesar un cultivo, con un contrato de saber hacer y capacitación a sus técnicos.",
+          "puntos_clave": [
+            "Transferir conocimientos y procesos.",
+            "Licencias, saber hacer y capacitación.",
+            "De la investigación al mercado."
+          ],
+          "errores_frecuentes": [
+            "Reducir la transferencia a vender equipos.",
+            "Olvidar proteger la propiedad intelectual antes de negociar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "codigo-ingenios",
+            "url": "https://www.wipo.int/wipolex/es/text/439750",
+            "seccion": "Art. 81, transferencia de tecnología"
+          }
+        },
+        {
+          "id": "pi-ciclo-transferencia",
+          "nombre": "Del laboratorio al mercado: etapas de la transferencia",
+          "explicacion": "La OMPI describe seis etapas: identificar y divulgar la innovación ante la oficina de transferencia de tecnología de la institución; evaluar su potencial comercial y proteger la propiedad intelectual; desarrollar la innovación y reducir su riesgo con prototipos y pruebas; diseñar una estrategia de comercialización mediante licencias, asociaciones o empresas derivadas; negociar y celebrar los acuerdos, y supervisarlos y evaluar su impacto social y económico. Este proceso requiere un ecosistema que conecte la academia, la industria y el sector público.",
+          "ejemplo": "Un grupo de investigación universitario comunica un nuevo sensor a su oficina de transferencia, que lo protege, fabrica un prototipo, busca una empresa interesada y negocia una licencia con regalías.",
+          "puntos_clave": [
+            "Identificar y proteger.",
+            "Desarrollar y reducir riesgos.",
+            "Comercializar, negociar y supervisar."
+          ],
+          "errores_frecuentes": [
+            "Publicar los resultados antes de protegerlos.",
+            "Negociar sin conocer el valor de mercado de la tecnología."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ompi-pi",
+            "url": "https://www.wipo.int/es/web/technology-transfer",
+            "seccion": "La transferencia de conocimientos y tecnología, del laboratorio al mercado"
+          }
+        }
+      ]
+    }
+  ]
+}

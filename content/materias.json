@@ -1240,5 +1240,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "propiedad-intelectual",
+    "nombre": "Propiedad intelectual y transferencia de tecnología",
+    "areas": [
+      "derecho",
+      "gestion"
+    ],
+    "descripcion": "Tipos de propiedad intelectual según la OMPI y su régimen en el Código Ingenios de Ecuador: derecho de autor y software, patentes, modelos de utilidad y diseños, marcas y otros signos distintivos, denominaciones de origen, secretos comerciales, licencias y transferencia de tecnología.",
+    "sinonimos": [
+      "propiedad intelectual",
+      "propiedad industrial",
+      "derecho de autor",
+      "patentes y marcas",
+      "código ingenios",
+      "transferencia de tecnología"
+    ],
+    "herramientas": [
+      "notas",
+      "tarjetas",
+      "editor"
+    ],
+    "orden": 53,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]
