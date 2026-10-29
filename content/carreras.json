@@ -487,6 +487,15 @@
         "planes": 1
       },
       {
+        "materia": "contratacion-publica",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "planificacion-estrategica",
         "ciclo": 6,
         "ciclos": [
@@ -533,11 +542,6 @@
         "planes": 1
       },
       {
-        "nombre": "Contratación Pública",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Comercio Internacional y Aduanas",
         "ciclo": 7,
         "planes": 1
@@ -554,11 +558,6 @@
       },
       {
         "nombre": "Auditoría de Calidad",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Contabilidad Gubernamental y Contratación Pública",
         "ciclo": 8,
         "planes": 1
       }
@@ -738,6 +737,14 @@
         "planes": 1
       },
       {
+        "materia": "contratacion-publica",
+        "ciclo": 6,
+        "ciclos": [
+          6
+        ],
+        "planes": 1
+      },
+      {
         "materia": "economia-internacional",
         "ciclo": 6,
         "ciclos": [
@@ -827,11 +834,6 @@
       {
         "nombre": "Teoría de Juegos",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Contratación Pública",
-        "ciclo": 6,
         "planes": 1
       },
       {

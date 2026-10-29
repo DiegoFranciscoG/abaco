@@ -12257,5 +12257,157 @@
     },
     "materia": "auditoria",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cp-puntaje-a",
+    "subtema": "cp-metodo-evaluacion",
+    "formula": "puntaje-total-oferta",
+    "enunciado": "Con coeficientes de 0,7 para la evaluación técnica y 0,3 para la económica, la oferta A obtiene 78 puntos técnicos y 95 económicos. ¿Cuál es su puntaje total?",
+    "datos": {
+      "c1": 0.7,
+      "PT": 78,
+      "c2": 0.3,
+      "PE": 95
+    },
+    "calculo": "c1 * PT + c2 * PE",
+    "respuesta": 83.1,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,7 × 78 = 54,6",
+      "0,3 × 95 = 28,5",
+      "PTO = 83,1"
+    ],
+    "pistas": [
+      "Verifica que los coeficientes sumen uno."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Art. 170"
+    },
+    "materia": "contratacion-publica",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cp-puntaje-b",
+    "subtema": "cp-metodo-evaluacion",
+    "formula": "puntaje-total-oferta",
+    "enunciado": "En el mismo concurso, la oferta B obtiene 90 puntos técnicos y 80 económicos. ¿Cuál es su puntaje total y cuál oferta ocupa el primer lugar?",
+    "datos": {
+      "c1": 0.7,
+      "PT": 90,
+      "c2": 0.3,
+      "PE": 80
+    },
+    "calculo": "c1 * PT + c2 * PE",
+    "respuesta": 87,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,7 × 90 = 63",
+      "0,3 × 80 = 24",
+      "PTO = 87 > 83,1: la oferta B queda primera"
+    ],
+    "pistas": [
+      "Compara con el puntaje de la oferta A."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Art. 170"
+    },
+    "materia": "contratacion-publica",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cp-reajuste-a",
+    "subtema": "cp-reajuste",
+    "formula": "reajuste-precios-obra",
+    "enunciado": "Una planilla vale USD 50.000. Coeficientes: 0,35 mano de obra, 0,50 materiales y 0,15 otros. Índices base: 100, 120 y 90; índices actuales: 105, 132 y 90. ¿Cuál es el valor reajustado?",
+    "datos": {
+      "Po": 50000,
+      "p": [
+        0.35,
+        0.5,
+        0.15
+      ],
+      "I1": [
+        105,
+        132,
+        90
+      ],
+      "I0": [
+        100,
+        120,
+        90
+      ]
+    },
+    "calculo": "Po * SUMPRODUCT(p, I1 / I0)",
+    "respuesta": 53375,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "0,35 × 105/100 = 0,3675",
+      "0,50 × 132/120 = 0,55",
+      "0,15 × 90/90 = 0,15",
+      "Factor = 1,0675",
+      "Pr = 50.000 × 1,0675 = 53.375"
+    ],
+    "pistas": [
+      "Divide cada índice actual para su índice base antes de multiplicar."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Art. 382"
+    },
+    "materia": "contratacion-publica",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cp-reajuste-b",
+    "subtema": "cp-reajuste",
+    "formula": "reajuste-precios-obra",
+    "enunciado": "Un anticipo de USD 80.000 tiene coeficientes 0,40, 0,45 y 0,15. Sus índices pasan de 200 a 210, de 50 a 49 y de 80 a 84. ¿Cuál es el valor reajustado?",
+    "datos": {
+      "Po": 80000,
+      "p": [
+        0.4,
+        0.45,
+        0.15
+      ],
+      "I1": [
+        210,
+        49,
+        84
+      ],
+      "I0": [
+        200,
+        50,
+        80
+      ]
+    },
+    "calculo": "Po * SUMPRODUCT(p, I1 / I0)",
+    "respuesta": 81480,
+    "unidad": "USD",
+    "tolerancia": 0.01,
+    "procedimiento": [
+      "0,40 × 1,05 = 0,42",
+      "0,45 × 0,98 = 0,441",
+      "0,15 × 1,05 = 0,1575",
+      "Factor = 1,0185",
+      "Pr = 80.000 × 1,0185 = 81.480"
+    ],
+    "pistas": [
+      "Un índice que baja reduce su parte del reajuste."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Art. 382"
+    },
+    "materia": "contratacion-publica",
+    "actualizado_en": "2026-10-26"
   }
 ]

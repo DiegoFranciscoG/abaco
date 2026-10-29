@@ -9535,5 +9535,171 @@
     ],
     "actualizado_en": "2026-10-29",
     "estado": "verificada"
+  },
+  {
+    "id": "puntaje-total-oferta",
+    "nombre": "Puntaje total ponderado de una oferta",
+    "categoria": "estadistica",
+    "materias": [
+      "contratacion-publica"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Promedio ponderado de la evaluación técnica y la económica, ambas sobre 100 puntos; los coeficientes de ponderación deben sumar 1.",
+    "latex": "PTO_i = c_1 \\times PT_i + c_2 \\times PE_i",
+    "variables": [
+      {
+        "simbolo": "c_1",
+        "nombre": "c1",
+        "significado": "Coeficiente de ponderación de la evaluación técnica",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "PT_i",
+        "nombre": "PT",
+        "significado": "Puntaje técnico del oferente (sobre 100)",
+        "unidad": "puntos"
+      },
+      {
+        "simbolo": "c_2",
+        "nombre": "c2",
+        "significado": "Coeficiente de ponderación de la evaluación económica",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "PE_i",
+        "nombre": "PE",
+        "significado": "Puntaje económico del oferente (sobre 100)",
+        "unidad": "puntos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "c1 * PT + c2 * PE"
+    },
+    "excel": {
+      "es": "=c1*PT+c2*PE",
+      "en": "=c1*PT+c2*PE"
+    },
+    "ejemplo": {
+      "enunciado": "En un concurso de consultoría, un oferente obtiene 85 puntos técnicos y 92 económicos. Si los coeficientes son 0,8 para la parte técnica y 0,2 para la económica, ¿cuál es su puntaje total?",
+      "entradas": {
+        "c1": 0.8,
+        "PT": 85,
+        "c2": 0.2,
+        "PE": 92
+      },
+      "pasos": [
+        "0,8 × 85 = 68",
+        "0,2 × 92 = 18,4",
+        "PTO = 86,4"
+      ],
+      "resultado": 86.4,
+      "unidad": "puntos",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,8*85+0,2*92",
+      "excel_en": "=0.8*85+0.2*92"
+    },
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Art. 170"
+    },
+    "supuestos": [
+      "Los márgenes permitidos para cada coeficiente se fijan en el Registro Oficial del reglamento."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "reajuste-precios-obra",
+    "nombre": "Reajuste de precios en contratos de obra",
+    "categoria": "estadistica",
+    "materias": [
+      "contratacion-publica"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Valor reajustado del anticipo o de una planilla: el valor original multiplicado por la suma de cada coeficiente por la variación de su índice de precios (índice actual ÷ índice base).",
+    "latex": "P_r = P_o \\left( p_1 \\frac{B_1}{B_o} + p_2 \\frac{C_1}{C_o} + \\dots + p_x \\frac{X_1}{X_o} \\right)",
+    "variables": [
+      {
+        "simbolo": "P_o",
+        "nombre": "Po",
+        "significado": "Valor del anticipo o de la planilla a precios contractuales",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "p_i",
+        "nombre": "p",
+        "significado": "Coeficientes de cada componente (suman 1; el de no principales no excede 0,200)",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "I_1",
+        "nombre": "I1",
+        "significado": "Índice o precio de cada componente a la fecha de pago",
+        "unidad": "índice"
+      },
+      {
+        "simbolo": "I_o",
+        "nombre": "I0",
+        "significado": "Índice o precio de cada componente treinta días antes del cierre de ofertas",
+        "unidad": "índice"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Po * SUMPRODUCT(p, I1 / I0)"
+    },
+    "excel": {
+      "es": "=Po*SUMAPRODUCTO(p;I1/I0)",
+      "en": "=Po*SUMPRODUCT(p,I1/I0)"
+    },
+    "ejemplo": {
+      "enunciado": "Una planilla de obra vale USD 100.000 a precios contractuales. Sus coeficientes son 0,30 para mano de obra, 0,52 para materiales principales y 0,18 para otros componentes. Los índices pasaron de 100 a 104, de 100 a 110 y de 100 a 102. ¿Cuál es el valor reajustado?",
+      "entradas": {
+        "Po": 100000,
+        "p": [
+          0.3,
+          0.52,
+          0.18
+        ],
+        "I1": [
+          104,
+          110,
+          102
+        ],
+        "I0": [
+          100,
+          100,
+          100
+        ]
+      },
+      "pasos": [
+        "0,30 × 104/100 = 0,312",
+        "0,52 × 110/100 = 0,572",
+        "0,18 × 102/100 = 0,1836",
+        "Factor = 1,0676",
+        "Pr = 100.000 × 1,0676 = 106.760"
+      ],
+      "resultado": 106760,
+      "unidad": "USD",
+      "tolerancia": 0.01,
+      "excel_es": "=100000*(0,3*104/100+0,52*110/100+0,18*102/100)",
+      "excel_en": "=100000*(0.3*104/100+0.52*110/100+0.18*102/100)"
+    },
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Art. 382"
+    },
+    "supuestos": [],
+    "notas": [
+      "Los coeficientes se expresan al milésimo y la fórmula debe constar en el contrato."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
   }
 ]

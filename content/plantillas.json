@@ -2144,5 +2144,89 @@
       "seccion": "Art. 61"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "contratacion-evaluacion-reajuste",
+    "nombre": "Puntaje ponderado de ofertas y reajuste de precios",
+    "descripcion": "Calcula el puntaje total ponderado de dos ofertas y el reajuste polinómico de una planilla de obra con tres componentes.",
+    "materias": [
+      "contratacion-publica"
+    ],
+    "celdas": {
+      "A1": "Coeficiente técnico",
+      "B1": 0.7,
+      "A2": "Coeficiente económico",
+      "B2": "=1-B1",
+      "A4": "Oferta",
+      "B4": "Técnico",
+      "C4": "Económico",
+      "D4": "Total",
+      "A5": "A",
+      "B5": 78,
+      "C5": 95,
+      "D5": "=$B$1*B5+$B$2*C5",
+      "A6": "B",
+      "B6": 90,
+      "C6": 80,
+      "D6": "=$B$1*B6+$B$2*C6",
+      "A8": "Componente",
+      "B8": "Coeficiente",
+      "C8": "Índice base",
+      "D8": "Índice actual",
+      "A9": "Mano de obra",
+      "B9": 0.3,
+      "C9": 100,
+      "D9": 104,
+      "A10": "Materiales",
+      "B10": 0.52,
+      "C10": 100,
+      "D10": 110,
+      "A11": "Otros",
+      "B11": 0.18,
+      "C11": 100,
+      "D11": 102,
+      "A12": "Suma de coeficientes",
+      "B12": "=SUM(B9:B11)",
+      "A13": "Valor de la planilla",
+      "B13": 100000,
+      "A14": "Valor reajustado",
+      "B14": "=B13*(B9*D9/C9+B10*D10/C10+B11*D11/C11)"
+    },
+    "formatos": {
+      "B1": "numero",
+      "B2": "numero",
+      "D5": "numero",
+      "D6": "numero",
+      "B12": "numero",
+      "B13": "moneda",
+      "B14": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "D5",
+        "esperado": 83.1,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "D6",
+        "esperado": 87,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B12",
+        "esperado": 1,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B14",
+        "esperado": 106760,
+        "tolerancia": 0.0001
+      }
+    ],
+    "fuente": {
+      "ref": "reglamento-losncp",
+      "seccion": "Arts. 170 y 382"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

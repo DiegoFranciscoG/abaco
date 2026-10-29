@@ -6833,5 +6833,152 @@
       "igual o superior a diez mil dolares de los estados unidos de america",
       "dentro de un periodo de treinta (30) dias (resu)"
     ]
+  },
+  {
+    "id": "cp-sercop",
+    "palabras": [
+      "el sercop dispondra la publicacion en el registro oficial",
+      "utilizaran obligatoriamente las herramientas informaticas del portal de contratacion publica"
+    ]
+  },
+  {
+    "id": "cp-conceptos",
+    "palabras": [
+      "catalogo electronico: registro de bienes y servicios publicados en el portal de contratacion publica",
+      "pliegos: documentos precontractuales elaborados y aprobados por la entidad contratante",
+      "cincuenta y uno por ciento (51%)"
+    ]
+  },
+  {
+    "id": "cp-integridad",
+    "palabras": [
+      "acuerdo de integridad",
+      "integridad, probidad y etica"
+    ]
+  },
+  {
+    "id": "cp-preferencias",
+    "palabras": [
+      "subcontratacion preferente",
+      "margen preferencial para microempresas y profesionales individuales",
+      "catalogo dinamico inclusivo"
+    ]
+  },
+  {
+    "id": "cp-fases",
+    "palabras": [
+      "fase preparatoria: comprende el periodo de planificacion y preparacion de la contratacion",
+      "fase precontractual"
+    ]
+  },
+  {
+    "id": "cp-pac",
+    "palabras": [
+      "plan anual de contratacion pac detallara la siguiente informacion",
+      "el cronograma de implementacion del plan"
+    ]
+  },
+  {
+    "id": "cp-necesidad",
+    "palabras": [
+      "informe de necesidad que justifique la contratacion",
+      "analisis preliminar del mejor valor por dinero"
+    ]
+  },
+  {
+    "id": "cp-presupuesto-referencial",
+    "palabras": [
+      "presupuesto referencial sustentado en un analisis de mercado",
+      "certificacion de disponibilidad de fondos"
+    ]
+  },
+  {
+    "id": "cp-tipos",
+    "palabras": [
+      "procedimientos de regimen comun: a) consultoria; b) catalogo electronico",
+      "contrataciones en situacion de emergencia"
+    ]
+  },
+  {
+    "id": "cp-subasta",
+    "palabras": [
+      "bienes y servicios estandarizados",
+      "puja en precios hacia la baja con una duracion de entre quince (15) a sesenta (60) minutos"
+    ]
+  },
+  {
+    "id": "cp-infima-feria",
+    "palabras": [
+      "procedimiento de infima cuantia",
+      "no sera necesaria la elaboracion del pliego",
+      "feria inclusiva"
+    ]
+  },
+  {
+    "id": "cp-emergencia",
+    "palabras": [
+      "generalidades contrataciones en situacion de emergencia",
+      "no se realizara procedimiento de emergencia, tratandose de bienes y servicios que consten en el catalogo electronico"
+    ]
+  },
+  {
+    "id": "cp-comision-tecnica",
+    "palabras": [
+      "conformara una comision tecnica",
+      "cien mil dolares ($ 100.000,00)"
+    ]
+  },
+  {
+    "id": "cp-metodo-evaluacion",
+    "palabras": [
+      "cumple / no cumple",
+      "ptoi = (c1*pti) + (c2*pei)",
+      "la suma de ambos coeficientes debera ser igual a la unidad (1.00)"
+    ]
+  },
+  {
+    "id": "cp-adjudicacion",
+    "palabras": [
+      "termino para la adjudicacion",
+      "mejor valor por dinero y cumpla con las condiciones normativas, financieras y tecnicas"
+    ]
+  },
+  {
+    "id": "cp-fallidos-colusion",
+    "palabras": [
+      "superintendencia de competencia economica",
+      "inhabilitado del rup por el plazo de tres (3) anos",
+      "contratistas incumplidos"
+    ]
+  },
+  {
+    "id": "cp-garantias",
+    "palabras": [
+      "incondicionalidad, irrevocabilidad y cobro inmediato",
+      "combinacion de garantias",
+      "hasta la total amortizacion del anticipo"
+    ]
+  },
+  {
+    "id": "cp-reajuste",
+    "palabras": [
+      "reajuste en el caso de ejecucion de obras",
+      "no excedera de 0,200",
+      "la suma de aquellos debe ser igual a la unidad"
+    ]
+  },
+  {
+    "id": "cp-multas",
+    "palabras": [
+      "impugnacion de las multas",
+      "junta de resolucion de disputas"
+    ]
+  },
+  {
+    "id": "cp-terminacion",
+    "palabras": [
+      "procedimiento para la terminacion por mutuo acuerdo",
+      "los contratos terminan conforme lo determina el articulo 106"
+    ]
   }
 ]

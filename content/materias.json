@@ -1025,5 +1025,32 @@
       "estado": "completa",
       "unidades_objetivo": 6
     }
+  },
+  {
+    "id": "contratacion-publica",
+    "nombre": "Contratación pública",
+    "areas": [
+      "derecho",
+      "gestion"
+    ],
+    "descripcion": "El Sistema Nacional de Contratación Pública según su Reglamento General vigente: SERCOP y herramientas, preferencias, fase preparatoria y PAC, procedimientos de régimen común, evaluación y adjudicación, garantías, reajuste de precios, multas y terminación de contratos.",
+    "sinonimos": [
+      "compras públicas",
+      "LOSNCP",
+      "SERCOP",
+      "contratación estatal",
+      "procedimientos de contratación",
+      "subasta inversa"
+    ],
+    "herramientas": [
+      "notas",
+      "tarjetas",
+      "editor"
+    ],
+    "orden": 45,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

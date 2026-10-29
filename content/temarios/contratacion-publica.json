@@ -1,0 +1,455 @@
+{
+  "materia": "contratacion-publica",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "cp-sistema",
+      "nombre": "El Sistema Nacional de Contratación Pública",
+      "orden": 1,
+      "descripcion": "El SERCOP y las herramientas del portal, conceptos básicos, acuerdo de integridad y preferencias a proveedores nacionales y de sectores prioritarios.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cp-sercop",
+          "nombre": "El SERCOP y las herramientas obligatorias del portal",
+          "explicacion": "El Servicio Nacional de Contratación Pública (SERCOP) es el ente rector del sistema y ejerce las atribuciones de la ley y de su Reglamento General. Cuando expide manuales, instructivos o metodologías debe publicarlos en el Registro Oficial y difundirlos en su sede electrónica, y emite los modelos de pliegos mediante resoluciones. Las entidades contratantes deben usar obligatoriamente las herramientas informáticas del portal de contratación pública que correspondan a cada procedimiento, como los módulos para elaborar el Plan Anual de Contratación, los pliegos y las ofertas.",
+          "ejemplo": "Una universidad pública que va a comprar equipos de laboratorio usa el portal del SERCOP para registrar su plan anual, publicar el pliego y recibir las ofertas.",
+          "puntos_clave": [
+            "SERCOP: ente rector.",
+            "Manuales y pliegos publicados oficialmente.",
+            "Uso obligatorio del portal."
+          ],
+          "errores_frecuentes": [
+            "Contratar fuera del portal cuando la herramienta es obligatoria.",
+            "Usar modelos de pliegos desactualizados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 14, 17 y 18"
+          }
+        },
+        {
+          "id": "cp-conceptos",
+          "nombre": "Conceptos básicos: catálogo, pliegos y presupuesto referencial",
+          "explicacion": "El Reglamento define, entre otros conceptos, el catálogo electrónico, que es el registro de bienes y servicios publicados en el portal para su contratación directa por las entidades, y cuya incorporación está a cargo del SERCOP; la orden de compra, que produce los mismos efectos jurídicos que un contrato; los pliegos, que son los documentos precontractuales que elabora y aprueba la entidad para cada procedimiento según los modelos del SERCOP, y el presupuesto referencial, que es el monto del objeto de contratación. También define como socio o accionista mayoritario a quien posee el 51 % o más de las acciones de una persona jurídica.",
+          "ejemplo": "Una entidad que necesita resmas de papel revisa primero el catálogo electrónico; si el producto está catalogado, genera una orden de compra que tiene el mismo valor que un contrato.",
+          "puntos_clave": [
+            "Catálogo electrónico y orden de compra.",
+            "Pliegos según modelos del SERCOP.",
+            "Presupuesto referencial."
+          ],
+          "errores_frecuentes": [
+            "Tratar la orden de compra como un documento informal.",
+            "Elaborar pliegos sin el modelo obligatorio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 3"
+          }
+        },
+        {
+          "id": "cp-integridad",
+          "nombre": "Acuerdo de integridad de los proveedores",
+          "explicacion": "Todos los proveedores inscritos en el Registro Único de Proveedores (RUP), sin firmar documentos adicionales, están sujetos a la normativa ecuatoriana y al acuerdo de integridad que dicte la entidad encargada de la política de integridad pública, para garantizar su integridad, probidad y ética en los procedimientos, incluidos sus empleados y agentes. El acuerdo obliga a entregar la información que pidan las entidades para sus procesos de debida diligencia; si no se entrega, el SERCOP puede requerir su actualización y suspender al proveedor en el RUP.",
+          "ejemplo": "Una entidad pide a un proveedor la nómina de sus socios para verificar posibles conflictos de interés; si el proveedor no la entrega, puede ser suspendido en el RUP.",
+          "puntos_clave": [
+            "Aplica a todos los inscritos en el RUP.",
+            "Integridad, probidad y ética.",
+            "Entrega de información para debida diligencia."
+          ],
+          "errores_frecuentes": [
+            "Creer que el acuerdo requiere firma aparte.",
+            "Negarse a entregar información sin consecuencias."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 33"
+          }
+        },
+        {
+          "id": "cp-preferencias",
+          "nombre": "Preferencias en la contratación pública",
+          "explicacion": "Las preferencias son beneficios que incentivan la participación de proveedores nacionales, locales y de sectores prioritarios, respetando la igualdad, la no discriminación, la concurrencia y el trato justo. Entre ellas están la subcontratación preferente en licitaciones de obra con presupuesto referencial de USD 1.000.000 o más, y el margen preferencial para microempresas y profesionales individuales en licitaciones de obra de USD 100.000 o menos. El SERCOP las aplica mediante los pliegos y el catálogo dinámico inclusivo, donde constan bienes y servicios de artesanos, actores de la economía popular y solidaria y micro y pequeñas empresas.",
+          "ejemplo": "Un municipio que licita una obra de USD 80.000 aplica el margen preferencial, que favorece la oferta de una microempresa local frente a la de una empresa grande.",
+          "puntos_clave": [
+            "Subcontratación preferente en obras grandes.",
+            "Margen para microempresas en obras pequeñas.",
+            "Catálogo dinámico inclusivo."
+          ],
+          "errores_frecuentes": [
+            "Aplicar la preferencia en montos que no corresponden.",
+            "Olvidar el catálogo dinámico inclusivo para compras a la EPS."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 48 y 50"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cp-preparatoria",
+      "nombre": "Fase preparatoria",
+      "orden": 2,
+      "descripcion": "Fases del procedimiento, Plan Anual de Contratación, informe de necesidad y mejor valor por dinero, presupuesto referencial y certificación de fondos.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cp-fases",
+          "nombre": "Fases del procedimiento de contratación",
+          "explicacion": "Todo procedimiento de contratación pública es un conjunto ordenado de etapas en fases obligatorias. La fase preparatoria comprende la planificación y preparación de la contratación, en la que se justifica técnica y presupuestariamente la necesidad: empieza con la inclusión del requerimiento en el Plan Anual de Contratación y termina con la resolución de inicio del procedimiento. La fase precontractual incluye la convocatoria, las preguntas y aclaraciones, la recepción, apertura y evaluación de ofertas, la convalidación de errores de forma y la adjudicación; luego vienen la suscripción y la ejecución del contrato.",
+          "ejemplo": "Antes de publicar una licitación, el hospital incluye la compra en su plan anual, justifica la necesidad y el presupuesto y emite la resolución de inicio: con eso termina la fase preparatoria.",
+          "puntos_clave": [
+            "Fases obligatorias y secuenciales.",
+            "Preparatoria: planificación y justificación.",
+            "Precontractual: convocatoria a adjudicación."
+          ],
+          "errores_frecuentes": [
+            "Iniciar un procedimiento sin justificar la necesidad.",
+            "Saltarse etapas de la fase precontractual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 61"
+          }
+        },
+        {
+          "id": "cp-pac",
+          "nombre": "Plan Anual de Contratación (PAC)",
+          "explicacion": "El Plan Anual de Contratación detalla los procesos que se realizarán en el año fiscal, la descripción del objeto de contratación concordante con el código del Clasificador Central de Productos (CPC), para que los proveedores identifiquen lo que se contratará, el presupuesto estimativo y el cronograma de implementación. Los procesos deben ejecutarse en la oportunidad prevista en el PAC y previa la certificación de disponibilidad presupuestaria, salvo circunstancias no previstas que obliguen a reformarlo.",
+          "ejemplo": "Una dirección provincial publica en enero su PAC con la compra de uniformes en marzo y el mantenimiento de vehículos en julio, cada uno con su CPC y presupuesto estimado.",
+          "puntos_clave": [
+            "Procesos del año fiscal.",
+            "Objeto con código CPC.",
+            "Presupuesto estimativo y cronograma."
+          ],
+          "errores_frecuentes": [
+            "Contratar algo que no consta en el PAC sin reformarlo.",
+            "Usar un CPC que no describe el objeto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 64"
+          }
+        },
+        {
+          "id": "cp-necesidad",
+          "nombre": "Informe de necesidad y mejor valor por dinero",
+          "explicacion": "Antes de iniciar un procedimiento, la unidad requirente elabora un informe de necesidad que justifique la contratación, con el análisis de beneficio, eficiencia y efectividad según la necesidad y la capacidad institucional. Debe incluir un análisis preliminar del mejor valor por dinero para definir la estrategia de contratación más adecuada, considerando las características que maximizan los resultados del gasto público durante el ciclo de vida del bien, la obra o el servicio.",
+          "ejemplo": "Al comprar impresoras, el informe compara no solo el precio sino el costo de los cartuchos y del mantenimiento durante su vida útil para elegir la estrategia de compra.",
+          "puntos_clave": [
+            "Justificación de la contratación.",
+            "Beneficio, eficiencia y efectividad.",
+            "Mejor valor por dinero en el ciclo de vida."
+          ],
+          "errores_frecuentes": [
+            "Decidir solo por el precio de compra.",
+            "Redactar el informe después de contratar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 65"
+          }
+        },
+        {
+          "id": "cp-presupuesto-referencial",
+          "nombre": "Presupuesto referencial y certificación de fondos",
+          "explicacion": "Al publicar el procedimiento, la entidad debe contar con un presupuesto referencial sustentado en un análisis de mercado que refleje sus condiciones reales; para bienes y servicios, el estudio de mercado incluye, entre otros, el análisis del bien o servicio con sus especificaciones y la revisión de contrataciones anteriores. Además, la certificación de disponibilidad de fondos indica las partidas presupuestarias a las que se aplicará el gasto y se emite preferentemente por medios electrónicos.",
+          "ejemplo": "Para contratar limpieza, la entidad pide proformas, revisa los precios de contratos similares en el portal y con eso fija su presupuesto referencial; luego obtiene la certificación de la partida.",
+          "puntos_clave": [
+            "Presupuesto basado en análisis de mercado.",
+            "Estudio de mercado para bienes y servicios.",
+            "Certificación de disponibilidad de fondos."
+          ],
+          "errores_frecuentes": [
+            "Fijar el presupuesto con una sola proforma.",
+            "Publicar el procedimiento sin certificación presupuestaria."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 73 y 79"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cp-procedimientos",
+      "nombre": "Procedimientos de contratación",
+      "orden": 3,
+      "descripcion": "Procedimientos de régimen común, especial y especiales, subasta inversa y puja, ínfima cuantía, feria inclusiva y contratación en emergencia.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cp-tipos",
+          "nombre": "Tipos de procedimientos",
+          "explicacion": "El Reglamento clasifica los procedimientos en tres grupos. Los de régimen común son consultoría, catálogo electrónico y sus modalidades, subasta inversa electrónica, licitación, ínfima cuantía y feria inclusiva. Los de régimen especial se aplican en los casos que prevé la ley. Los procedimientos especiales incluyen compras corporativas, contratación integral por precio fijo, contrataciones en situación de emergencia, arrendamiento de bienes, licitación de seguros y adquisición de combustibles, entre otros.",
+          "ejemplo": "Para construir una escuela una entidad usa licitación; para comprar computadoras estandarizadas no catalogadas, subasta inversa, y para un estudio técnico, consultoría.",
+          "puntos_clave": [
+            "Régimen común: seis procedimientos.",
+            "Régimen especial.",
+            "Procedimientos especiales como emergencia y compras corporativas."
+          ],
+          "errores_frecuentes": [
+            "Usar subasta inversa para obras.",
+            "Elegir el procedimiento sin revisar el catálogo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 17"
+          }
+        },
+        {
+          "id": "cp-subasta",
+          "nombre": "Subasta inversa electrónica y puja",
+          "explicacion": "La subasta inversa se usa para adquirir bienes y servicios estandarizados de más de USD 10.000 que no pueden contratarse por catálogo electrónico, cuando el precio más bajo, y ningún otro atributo, representa el mejor valor por dinero. No puede usarse para obras ni para agrupar ítems no relacionados. Los participantes presentan una oferta económica inicial que los obliga aunque no pujen; luego se realiza una puja hacia la baja que dura entre quince y sesenta minutos, respetando el rango mínimo de variación fijado en el pliego.",
+          "ejemplo": "Un ministerio compra 500 sillas estandarizadas no catalogadas: tres proveedores presentan su oferta inicial y, durante la puja de treinta minutos, bajan sus precios hasta que gana el más bajo.",
+          "puntos_clave": [
+            "Bienes y servicios estandarizados.",
+            "Más de USD 10.000 y no catalogados.",
+            "Puja hacia la baja de 15 a 60 minutos."
+          ],
+          "errores_frecuentes": [
+            "Usar subasta inversa para mantenimiento de edificios.",
+            "Creer que no pujar libera de la oferta inicial."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 257-259"
+          }
+        },
+        {
+          "id": "cp-infima-feria",
+          "nombre": "Ínfima cuantía y feria inclusiva",
+          "explicacion": "En la ínfima cuantía, la unidad requirente justifica el requerimiento y sus especificaciones, la máxima autoridad lo autoriza y no se necesita pliego ni publicación en el PAC; la entidad publica obligatoriamente un aviso en la herramienta del SERCOP para recibir proformas, y el estudio de mercado se entiende hecho al analizarlas. La feria inclusiva se usa para bienes y servicios no catalogados que el SERCOP defina por CPC junto con el ente rector de la economía popular y solidaria, previo estudio de inclusión, y se publica también en la sede electrónica de la entidad.",
+          "ejemplo": "Una escuela compra suministros menores por ínfima cuantía publicando un aviso; un gobierno provincial compra uniformes a asociaciones textiles mediante una feria inclusiva.",
+          "puntos_clave": [
+            "Ínfima cuantía sin pliego ni PAC, con aviso público.",
+            "Feria inclusiva con estudio de inclusión.",
+            "Vínculo con la economía popular y solidaria."
+          ],
+          "errores_frecuentes": [
+            "Fraccionar compras para usar ínfima cuantía.",
+            "Hacer feria inclusiva sin estudio de inclusión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 269 y 274"
+          }
+        },
+        {
+          "id": "cp-emergencia",
+          "nombre": "Contrataciones en situación de emergencia",
+          "explicacion": "Las contrataciones en situación de emergencia son procedimientos especiales para superar una emergencia declarada. Se presume que los contratos deben ejecutarse durante la declaratoria, pero la entidad puede justificar con informes técnicos que un contrato deba durar más, por ejemplo una obra para evitar la ruina de otra infraestructura. No se hace procedimiento de emergencia para bienes y servicios que constan en el catálogo electrónico, salvo que la entidad justifique técnicamente su inconveniencia.",
+          "ejemplo": "Tras un deslave que corta una vía, la entidad declara la emergencia y contrata la limpieza y estabilización del talud; las bombas de agua catalogadas las compra por catálogo.",
+          "puntos_clave": [
+            "Procedimiento especial para superar la emergencia.",
+            "Plazo ligado a la declaratoria, con excepciones justificadas.",
+            "No para bienes catalogados salvo justificación."
+          ],
+          "errores_frecuentes": [
+            "Usar la emergencia para compras rutinarias.",
+            "Contratar por emergencia lo que está en el catálogo sin justificarlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 305"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cp-evaluacion",
+      "nombre": "Evaluación y adjudicación",
+      "orden": 4,
+      "descripcion": "Comisión técnica, método de evaluación cumple/no cumple y por puntaje, puntaje ponderado, adjudicación, adjudicatarios fallidos y colusión.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cp-comision-tecnica",
+          "nombre": "Comisión técnica",
+          "explicacion": "La máxima autoridad de la entidad o su delegado conforma una comisión técnica para los procedimientos de régimen común, subasta inversa, régimen especial y procedimientos especiales cuyo presupuesto referencial sea igual o superior a USD 100.000. Se designa en el mismo acto que aprueba los pliegos y el cronograma y autoriza el inicio. Es un órgano colegiado temporal que lleva a cabo las etapas de la fase precontractual; en montos menores, esas tareas las cumple un responsable designado.",
+          "ejemplo": "Para una licitación de USD 450.000, la entidad designa una comisión técnica que responde preguntas, evalúa las ofertas y recomienda la adjudicación.",
+          "puntos_clave": [
+            "Obligatoria desde USD 100.000.",
+            "Designada con la aprobación de pliegos.",
+            "Conduce la fase precontractual."
+          ],
+          "errores_frecuentes": [
+            "Conformarla después de abrir las ofertas.",
+            "Creer que siempre es obligatoria."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 88"
+          }
+        },
+        {
+          "id": "cp-metodo-evaluacion",
+          "nombre": "Método de evaluación y puntaje ponderado",
+          "explicacion": "Las capacidades técnicas, económico-financieras y jurídicas se analizan en una sola etapa cumple/no cumple en la subasta inversa electrónica, y en dos etapas en los demás procedimientos de régimen común: primero cumple/no cumple y luego, solo con los calificados, por puntaje en el portal. En consultoría, la evaluación técnica y la económica se califican sobre 100 puntos y el puntaje total es su promedio ponderado: el coeficiente técnico por el puntaje técnico más el coeficiente económico por el puntaje económico, con coeficientes que suman uno.",
+          "ejemplo": "Con coeficientes de 0,8 y 0,2, una consultora con 85 puntos técnicos y 92 económicos obtiene 0,8 × 85 + 0,2 × 92 = 86,4 puntos.",
+          "puntos_clave": [
+            "Cumple/no cumple y por puntaje.",
+            "Una etapa en subasta inversa.",
+            "Puntaje = c1 × técnico + c2 × económico."
+          ],
+          "errores_frecuentes": [
+            "Usar coeficientes que no suman uno.",
+            "Puntuar a oferentes que no pasaron el cumple/no cumple."
+          ],
+          "formulas": [
+            "puntaje-total-oferta"
+          ],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 107 y 170"
+          }
+        },
+        {
+          "id": "cp-adjudicacion",
+          "nombre": "Adjudicación",
+          "explicacion": "La resolución de adjudicación se emite en un término no menor a tres días desde que termina la calificación, la puja o la negociación. La entidad adjudica al oferente cuya oferta asegure las mejores condiciones para el Estado en términos de mejor valor por dinero y que cumpla las condiciones normativas, financieras y técnicas de los pliegos. La adjudicación se sustenta en un informe de recomendación de la comisión técnica o del servidor designado, con el resumen de la evaluación y el orden de prelación de los oferentes calificados.",
+          "ejemplo": "La comisión recomienda adjudicar a la oferta mejor puntuada y explica en su informe el orden de los demás oferentes, por si el primero no firma el contrato.",
+          "puntos_clave": [
+            "Término mínimo de tres días.",
+            "Mejor valor por dinero.",
+            "Informe de recomendación con orden de prelación."
+          ],
+          "errores_frecuentes": [
+            "Adjudicar sin informe de recomendación.",
+            "Confundir mejor valor por dinero con precio más bajo en todos los casos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 111-112"
+          }
+        },
+        {
+          "id": "cp-fallidos-colusion",
+          "nombre": "Adjudicatarios fallidos, incumplidos y colusión",
+          "explicacion": "Si el adjudicatario no firma el contrato por causas que le son imputables, la máxima autoridad lo declara adjudicatario fallido: queda inhabilitado en el RUP por tres años y el contrato puede adjudicarse al segundo en el orden de prelación. La entidad debe remitir al SERCOP la información para registrar a adjudicatarios fallidos y contratistas incumplidos dentro de cinco días. Además, el SERCOP comunica a la Superintendencia de Competencia Económica las presunciones de colusión, y si esta las confirma, el contrato se termina.",
+          "ejemplo": "Un proveedor gana una subasta pero no presenta las garantías ni firma: es declarado adjudicatario fallido y la entidad contrata con el segundo lugar.",
+          "puntos_clave": [
+            "Inhabilitación de tres años.",
+            "Adjudicación al segundo lugar.",
+            "Colusión investigada por la Superintendencia de Competencia."
+          ],
+          "errores_frecuentes": [
+            "Creer que no firmar el contrato no tiene consecuencias.",
+            "Pensar que el SERCOP sanciona directamente la colusión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 110, 113 y 415"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cp-ejecucion",
+      "nombre": "Ejecución del contrato",
+      "orden": 5,
+      "descripcion": "Garantías, reajuste de precios en obras, impugnación de multas y terminación de contratos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "cp-garantias",
+          "nombre": "Garantías contractuales",
+          "explicacion": "Cuando corresponde, el adjudicatario debe rendir las garantías antes de firmar el contrato; si no lo hace, es declarado adjudicatario fallido. Las garantías permanecen vigentes hasta el acta de entrega recepción definitiva, salvo las que tengan otra vigencia: la de buen uso del anticipo dura hasta que el anticipo se amortice por completo y se reduce en proporción, y la técnica rige desde la recepción definitiva por el plazo del contrato. Deben ser incondicionales, irrevocables y de cobro inmediato, pueden combinarse según los pliegos, se constituyen por separado para cada contratación y se emiten en dólares.",
+          "ejemplo": "Un contratista que recibió un anticipo entrega una garantía de buen uso del anticipo por ese monto; a medida que se amortiza en las planillas, la garantía se reduce.",
+          "puntos_clave": [
+            "Rendidas antes de firmar.",
+            "Vigencia según su finalidad.",
+            "Incondicionales, irrevocables y de cobro inmediato."
+          ],
+          "errores_frecuentes": [
+            "Firmar el contrato sin las garantías.",
+            "Devolver garantías antes de cumplir los requisitos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 346-348"
+          }
+        },
+        {
+          "id": "cp-reajuste",
+          "nombre": "Reajuste de precios en obras",
+          "explicacion": "Si varían los costos de los componentes de los precios unitarios de un contrato de obra, el anticipo y las planillas se reajustan con una fórmula que debe constar en el contrato: el valor original se multiplica por la suma de cada coeficiente por la relación entre el índice o precio actual y el base. El primer coeficiente corresponde a la mano de obra, basada en los sueldos mínimos de una cuadrilla tipo; los siguientes a los componentes principales, y el último a los no principales, que no puede exceder 0,200. Los coeficientes se expresan al milésimo y suman uno, y los índices base son los vigentes treinta días antes del cierre de ofertas.",
+          "ejemplo": "Una planilla de USD 100.000 con coeficientes 0,30, 0,52 y 0,18 y alzas de índices de 4 %, 10 % y 2 % se reajusta a 100.000 × 1,0676 = USD 106.760.",
+          "puntos_clave": [
+            "Fórmula polinómica en el contrato.",
+            "Coeficientes que suman uno.",
+            "No principales hasta 0,200."
+          ],
+          "errores_frecuentes": [
+            "Usar índices de la fecha de firma en lugar de treinta días antes del cierre.",
+            "Aplicar coeficientes que no suman uno."
+          ],
+          "formulas": [
+            "reajuste-precios-obra"
+          ],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 382"
+          }
+        },
+        {
+          "id": "cp-multas",
+          "nombre": "Impugnación de las multas",
+          "explicacion": "Las multas impuestas al contratista pueden impugnarse en sede administrativa mediante el recurso de apelación, ante la junta de resolución de disputas o en sede judicial, según la cláusula de solución de controversias del contrato. En lo no previsto se aplica el Código Orgánico Administrativo. Si se impugnan judicialmente, la demanda se presenta ante el tribunal contencioso administrativo de la jurisdicción fijada en el contrato.",
+          "ejemplo": "Un contratista multado por retraso apela en sede administrativa demostrando que la demora se debió a la falta de pago de planillas por parte de la entidad.",
+          "puntos_clave": [
+            "Recurso de apelación.",
+            "Junta de resolución de disputas.",
+            "Tribunal contencioso administrativo."
+          ],
+          "errores_frecuentes": [
+            "Creer que las multas no pueden impugnarse.",
+            "Ignorar la cláusula de solución de controversias."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Art. 377"
+          }
+        },
+        {
+          "id": "cp-terminacion",
+          "nombre": "Terminación de los contratos",
+          "explicacion": "Los contratos terminan conforme lo determina la ley. En la terminación por mutuo acuerdo, cualquiera de las partes la solicita con causas técnicamente fundamentadas; el administrador del contrato elabora un informe que autoriza la máxima autoridad, y las partes firman un acuerdo que contiene los antecedentes, las causas, la liquidación técnica, económica y de plazos, las obligaciones cumplidas y las que se finiquitan, y el estado de ejecución del contrato.",
+          "ejemplo": "Si cambia el diseño de un edificio y ya no sirve la obra contratada, entidad y contratista firman un acuerdo de terminación con la liquidación de lo ejecutado.",
+          "puntos_clave": [
+            "Causas de terminación fijadas en la ley.",
+            "Mutuo acuerdo fundamentado.",
+            "Liquidación técnica y económica."
+          ],
+          "errores_frecuentes": [
+            "Terminar sin informe del administrador.",
+            "Firmar el acuerdo sin liquidación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-losncp",
+            "seccion": "Arts. 406-407"
+          }
+        }
+      ]
+    }
+  ]
+}
