@@ -583,5 +583,32 @@
     "url": "https://www.seps.gob.ec/wp-content/uploads/LOEPS.pdf",
     "licencia": "Norma pública (Código Ingenios, art. 107); se cita y enlaza",
     "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "locge",
+    "titulo": "Ley Orgánica de la Contraloría General del Estado (Supl. R.O. 595, 12-06-2002; texto con la última reforma del 01-07-2026)",
+    "autor_editor": "Congreso Nacional del Ecuador — copia publicada por el Servicio Nacional de Contratación Pública",
+    "tipo": "ley",
+    "url": "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2026/08/LEY-ORGANICA-DE-LA-CONTRALORIA-GENERAL-DEL-ESTADO.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "nci-cge-2023",
+    "titulo": "Normas de Control Interno para las entidades, organismos del sector público y de las personas jurídicas de derecho privado que dispongan de recursos públicos (Acuerdo 004-CG-2023, Supl. R.O. 257, 27-02-2023)",
+    "autor_editor": "Contraloría General del Estado — publicado en el portal gob.ec",
+    "tipo": "norma",
+    "url": "https://www.gob.ec/sites/default/files/regulations/2026-04/Acuerdo_004-CG-2023__Normas_de_Control_Interno.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "reglamento-pla",
+    "titulo": "Reglamento General a la Ley Orgánica de Prevención, Detección y Combate del Delito de Lavado de Activos y de la Financiación de Otros Delitos (Decreto Ejecutivo 298, 30-01-2026)",
+    "autor_editor": "Presidencia de la República del Ecuador — copia publicada por la Superintendencia de Economía Popular y Solidaria",
+    "tipo": "norma",
+    "url": "https://www.seps.gob.ec/wp-content/uploads/Reglamento-Ley-Lavado-Decreto_Ejecutivo_No._298_PLA.pdf",
+    "licencia": "Norma pública (Código Ingenios, art. 107)",
+    "fecha_consulta": "2026-10-29"
   }
 ]

@@ -9477,5 +9477,63 @@
     ],
     "actualizado_en": "2026-10-29",
     "estado": "verificada"
+  },
+  {
+    "id": "acumulado-operaciones-resu",
+    "nombre": "Monto acumulado de operaciones de una persona en 30 días (RESU)",
+    "categoria": "contabilidad-basica",
+    "materias": [
+      "auditoria"
+    ],
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Suma de las operaciones realizadas en beneficio de una misma persona dentro de 30 días; si iguala o supera USD 10.000, el sujeto obligado debe incluirlas en el reporte de operaciones y transacciones (RESU).",
+    "latex": "M_{30} = \\sum x_i",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Monto de cada operación de la misma persona en el período de 30 días",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM(x)"
+    },
+    "excel": {
+      "es": "=SUMA(x)",
+      "en": "=SUM(x)"
+    },
+    "ejemplo": {
+      "enunciado": "Un cliente realiza en 30 días tres depósitos de USD 4.000, USD 3.500 y USD 2.800. ¿Cuál es el monto acumulado y debe reportarse en el RESU?",
+      "entradas": {
+        "x": [
+          4000,
+          3500,
+          2800
+        ]
+      },
+      "pasos": [
+        "M = 4.000 + 3.500 + 2.800 = 10.300",
+        "10.300 ≥ 10.000: se reporta en el RESU"
+      ],
+      "resultado": 10300,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=4000+3500+2800",
+      "excel_en": "=4000+3500+2800"
+    },
+    "fuente": {
+      "ref": "reglamento-pla",
+      "seccion": "Art. 61"
+    },
+    "supuestos": [],
+    "notas": [
+      "Una operación inferior al umbral también se reporta como ROS si es sospechosa."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
   }
 ]

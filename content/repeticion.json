@@ -208,6 +208,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Auditoría",
+    "carreras": 3,
+    "planes": 5,
+    "ciclo_habitual": 5,
+    "materia": "auditoria",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Contabilidad Financiera",
     "carreras": 3,
     "planes": 4,
@@ -300,14 +308,6 @@
     "carreras": 2,
     "planes": 2,
     "ciclo_habitual": 4,
-    "materia": null,
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Auditoría de Gestión",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 5,
     "materia": null,
     "tipo": "materia"
   },

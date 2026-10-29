@@ -2095,5 +2095,54 @@
       "seccion": "Arts. 50 y 54"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "control-resu",
+    "nombre": "Control de operaciones acumuladas para el RESU",
+    "descripcion": "Suma las operaciones de un cliente en 30 días y verifica si alcanzan el umbral de USD 10.000 del reporte RESU.",
+    "materias": [
+      "auditoria"
+    ],
+    "celdas": {
+      "A1": "Operación",
+      "B1": "Monto (USD)",
+      "A2": "Depósito 1",
+      "B2": 4000,
+      "A3": "Depósito 2",
+      "B3": 3500,
+      "A4": "Depósito 3",
+      "B4": 2800,
+      "A5": "Depósito 4",
+      "B5": 0,
+      "A6": "Depósito 5",
+      "B6": 0,
+      "A7": "Acumulado 30 días",
+      "B7": "=SUM(B2:B6)",
+      "A8": "Umbral RESU",
+      "B8": 10000,
+      "A9": "¿Se reporta en el RESU?",
+      "B9": "=IF(B7>=B8,\"Sí\",\"No\")"
+    },
+    "formatos": {
+      "B2": "moneda",
+      "B3": "moneda",
+      "B4": "moneda",
+      "B5": "moneda",
+      "B6": "moneda",
+      "B7": "moneda",
+      "B8": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B7",
+        "esperado": 10300,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "reglamento-pla",
+      "seccion": "Art. 61"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

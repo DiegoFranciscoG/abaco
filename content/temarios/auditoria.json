@@ -1,0 +1,566 @@
+{
+  "materia": "auditoria",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "au-clases",
+      "nombre": "La auditoría gubernamental y sus clases",
+      "orden": 1,
+      "descripcion": "Auditoría gubernamental, auditoría financiera, auditoría de gestión, examen especial, auditorías ambiental y de obras, y auditoría forense preventiva.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "au-gubernamental",
+          "nombre": "Auditoría gubernamental y marco normativo",
+          "explicacion": "El control externo de la Contraloría General del Estado se ejerce mediante la auditoría gubernamental y el examen especial, con normas nacionales e internacionales y técnicas de auditoría. La auditoría gubernamental es un sistema integrado de asesoría, asistencia y prevención de riesgos que incluye el examen y la evaluación crítica de las acciones y obras de quienes administran recursos públicos; no puede modificar las resoluciones que ya definieron la situación de los particulares, pero sí examinar la actuación del servidor. Para regular el sistema, la Contraloría expide normas de control interno, políticas y normas de auditoría gubernamental, adaptadas de normas internacionales y de las de la Organización Internacional de Entidades Fiscalizadoras Superiores (INTOSAI).",
+          "ejemplo": "Un equipo de la Contraloría examina cómo un municipio administró los fondos de un programa social y evalúa críticamente las decisiones de sus funcionarios.",
+          "puntos_clave": [
+            "Control externo de la Contraloría.",
+            "Asesoría, asistencia y prevención de riesgos.",
+            "Normas adaptadas de la INTOSAI."
+          ],
+          "errores_frecuentes": [
+            "Creer que la auditoría gubernamental anula resoluciones firmes.",
+            "Confundir control interno con control externo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Arts. 7 y 18"
+          }
+        },
+        {
+          "id": "au-financiera",
+          "nombre": "Auditoría financiera",
+          "explicacion": "La auditoría financiera informa, respecto a un período determinado, sobre la razonabilidad de las cifras presentadas en los estados financieros de una institución pública, ente contable, programa o proyecto. Concluye con un informe profesional de auditoría que incluye las opiniones correspondientes, y comprende además el examen del cumplimiento de las normas legales y la evaluación del control interno de la parte auditada.",
+          "ejemplo": "Los auditores revisan los estados financieros de una empresa pública del año 2025 y emiten una opinión sobre si sus cifras son razonables.",
+          "puntos_clave": [
+            "Razonabilidad de los estados financieros.",
+            "Período determinado.",
+            "Opinión, cumplimiento legal y control interno."
+          ],
+          "errores_frecuentes": [
+            "Creer que la auditoría garantiza que no hay ningún error.",
+            "Olvidar que también evalúa el control interno."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 20"
+          }
+        },
+        {
+          "id": "au-gestion",
+          "nombre": "Auditoría de gestión",
+          "explicacion": "La auditoría de gestión es la acción fiscalizadora que, con un equipo multidisciplinario, examina y evalúa el control interno y la gestión, el desempeño de una institución o la ejecución de programas y proyectos, para determinar si se cumplen los principios de economía, efectividad y eficiencia. Evalúa los resultados esperados con los indicadores institucionales y de desempeño. Son objeto de esta auditoría el proceso administrativo, las actividades de apoyo, financieras y operativas, y el uso eficiente, efectivo y económico de los recursos humanos, materiales, financieros, ambientales, tecnológicos y de tiempo.",
+          "ejemplo": "Una auditoría de gestión a un hospital público compara el número de cirugías realizadas y los tiempos de espera con las metas e indicadores de su plan.",
+          "puntos_clave": [
+            "Economía, efectividad y eficiencia.",
+            "Indicadores institucionales y de desempeño.",
+            "Equipo multidisciplinario."
+          ],
+          "errores_frecuentes": [
+            "Limitarla a revisar cifras contables.",
+            "Evaluar sin indicadores definidos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 21"
+          }
+        },
+        {
+          "id": "au-examen-especial",
+          "nombre": "Examen especial, auditoría ambiental y de obras públicas",
+          "explicacion": "Como parte de la auditoría gubernamental, el examen especial verifica, estudia y evalúa aspectos limitados o una parte de la gestión financiera, administrativa, operativa o ambiental, después de su ejecución, y concluye con un informe con comentarios, conclusiones y recomendaciones. La Contraloría también puede auditar los procedimientos de estudios y evaluaciones de impacto ambiental, y la auditoría de obras públicas o de ingeniería evalúa la administración de las obras, la gestión de los contratistas, el manejo de la contratación, los sistemas de mantenimiento, el cumplimiento de las cláusulas y los resultados físicos del proyecto.",
+          "ejemplo": "Un examen especial revisa solo los procesos de compra de medicinas de un hospital en un año; una auditoría de obras verifica si una vía se construyó según el contrato.",
+          "puntos_clave": [
+            "Examen especial: aspectos limitados y posteriores.",
+            "Auditoría de aspectos ambientales.",
+            "Auditoría de obras públicas o de ingeniería."
+          ],
+          "errores_frecuentes": [
+            "Confundir examen especial con auditoría financiera completa.",
+            "Creer que el examen especial se hace antes de ejecutar el gasto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Arts. 19, 22 y 23"
+          }
+        },
+        {
+          "id": "au-forense-preventiva",
+          "nombre": "Auditoría forense preventiva",
+          "explicacion": "Para asesorar a las entidades públicas y a las privadas que manejan recursos públicos, la Contraloría puede realizar en cualquier momento una auditoría forense preventiva y concurrente. Sus recomendaciones son vinculantes y buscan prevenir delitos contra la eficiencia de la administración pública y otros de naturaleza económica. Se apoya en programas y controles, esquemas de alerta temprana de irregularidades y sistemas de administración de denuncias, y puede generar acciones inmediatas para evitar un perjuicio económico al Estado o el financiamiento de delitos.",
+          "ejemplo": "Durante un proceso de compra de gran cuantía, la Contraloría detecta señales de sobreprecio con su sistema de alertas tempranas y recomienda suspenderlo antes de firmar.",
+          "puntos_clave": [
+            "Preventiva y concurrente.",
+            "Recomendaciones vinculantes.",
+            "Alertas tempranas y denuncias."
+          ],
+          "errores_frecuentes": [
+            "Creer que la auditoría forense solo actúa después del fraude.",
+            "Ignorar el carácter vinculante de sus recomendaciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 23.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "au-interna-informes",
+      "nombre": "Auditoría interna, informes y responsabilidades",
+      "orden": 2,
+      "descripcion": "Control interno según la ley, unidades de auditoría interna, informes de auditoría y determinación de responsabilidades.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "au-control-interno-ley",
+          "nombre": "Concepto y elementos del control interno en la ley",
+          "explicacion": "Según la Ley de la Contraloría, el control interno es un proceso aplicado por la máxima autoridad, la dirección y el personal de cada institución que proporciona seguridad razonable de que se protegen los recursos públicos y se alcanzan los objetivos institucionales. Sus elementos son el entorno de control, la organización, la idoneidad del personal, el cumplimiento de los objetivos, los riesgos y las medidas para afrontarlos, el sistema de información, el cumplimiento de las normas y la corrección oportuna de las deficiencias. Es responsabilidad de cada institución y busca crear las condiciones para el control externo.",
+          "ejemplo": "Un ministerio que capacita a su personal, separa funciones y corrige pronto las observaciones de auditoría está fortaleciendo su control interno.",
+          "puntos_clave": [
+            "Proceso de toda la institución.",
+            "Seguridad razonable, no absoluta.",
+            "Ocho elementos y corrección de deficiencias."
+          ],
+          "errores_frecuentes": [
+            "Creer que el control interno es solo tarea del auditor.",
+            "Esperar seguridad total."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 9"
+          }
+        },
+        {
+          "id": "au-unidad-interna",
+          "nombre": "Unidades de auditoría interna",
+          "explicacion": "Las instituciones del Estado cuentan, cuando se justifica, con una unidad de auditoría interna que depende técnica y administrativamente de la Contraloría General del Estado, la cual emite informe previo para su creación o supresión. El personal auditor es nombrado, removido o trasladado por el Contralor, aunque sus remuneraciones y gastos los cubren las propias instituciones a las que sirven y controlan; las máximas autoridades de estas unidades son de libre designación y remoción del Contralor.",
+          "ejemplo": "El auditor interno de un municipio no responde al alcalde sino a la Contraloría, lo que le permite revisar con independencia las decisiones de la alcaldía.",
+          "puntos_clave": [
+            "Dependencia técnica y administrativa de la Contraloría.",
+            "Nombramiento por el Contralor.",
+            "Financiadas por la institución."
+          ],
+          "errores_frecuentes": [
+            "Creer que el auditor interno depende de la máxima autoridad de la entidad.",
+            "Confundir auditoría interna con control previo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 14"
+          }
+        },
+        {
+          "id": "au-informes",
+          "nombre": "Informes de auditoría y sus plazos",
+          "explicacion": "Los informes de auditoría gubernamental tienen el contenido que fijan las normas de auditoría, incluida la opinión de los auditores cuando corresponde y la referencia al período examinado. Deben tramitarse, desde la orden de trabajo hasta la aprobación del informe, en un término máximo de ciento ochenta días improrrogables; luego de suscritos por el director de la unidad, los aprueba el Contralor o su delegado en un término máximo de treinta días improrrogables y se envían de inmediato a las máximas autoridades examinadas.",
+          "ejemplo": "Si una auditoría inició con su orden de trabajo el 1 de marzo, el equipo debe tener el informe listo para aprobación dentro de ciento ochenta días hábiles.",
+          "puntos_clave": [
+            "Opinión y período examinado.",
+            "180 días hasta la aprobación.",
+            "30 días para aprobar el informe."
+          ],
+          "errores_frecuentes": [
+            "Ampliar los plazos indefinidamente.",
+            "Omitir el período examinado en el informe."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 26"
+          }
+        },
+        {
+          "id": "au-responsabilidades",
+          "nombre": "Determinación de responsabilidades",
+          "explicacion": "Con base en los resultados de la auditoría gubernamental, la Contraloría tiene potestad exclusiva para predeterminar y determinar responsabilidades administrativas y civiles culposas, generar órdenes de reintegro e indicios de responsabilidad penal cuando corresponda. Si decide no predeterminar o no ordenar un reintegro, debe motivarlo con el análisis de la normativa y del informe aprobado. Antes de determinar responsabilidades que surjan de informes de las auditorías internas, la Contraloría verifica el cumplimiento de los requisitos aplicables.",
+          "ejemplo": "Si una auditoría encuentra pagos por obras no ejecutadas, puede derivar en una responsabilidad civil culposa para recuperar el dinero y en indicios penales enviados a la Fiscalía.",
+          "puntos_clave": [
+            "Administrativa, civil culposa e indicios penales.",
+            "Órdenes de reintegro.",
+            "Decisiones motivadas."
+          ],
+          "errores_frecuentes": [
+            "Creer que la Contraloría dicta sentencias penales.",
+            "Ignorar la responsabilidad civil por perjuicio económico."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "locge",
+            "seccion": "Art. 39"
+          }
+        }
+      ]
+    },
+    {
+      "id": "au-nci",
+      "nombre": "Normas de Control Interno de la Contraloría",
+      "orden": 3,
+      "descripcion": "Concepto y componentes del control interno, objetivos, responsables y rendición de cuentas, integridad y unidad de auditoría interna según el Acuerdo 004-CG-2023.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "au-nci-componentes",
+          "nombre": "Control interno y sus cinco componentes",
+          "explicacion": "Las Normas de Control Interno de 2023 establecen que el control interno es responsabilidad de cada institución del Estado y de las personas jurídicas privadas que dispongan de recursos públicos. Es un proceso integral aplicado por la máxima autoridad, la dirección y el personal, que da seguridad razonable para lograr los objetivos y proteger los recursos públicos. Sus componentes son el ambiente de control, la evaluación de riesgos, las actividades de control, los sistemas de información y comunicación, y el seguimiento. Las normas se codifican con un número de grupo y un título, por ejemplo 200-01 para integridad y valores éticos.",
+          "ejemplo": "Una fundación privada que administra fondos públicos de un convenio también debe aplicar estas normas de control interno.",
+          "puntos_clave": [
+            "Aplica también a privados con recursos públicos.",
+            "Seguridad razonable.",
+            "Cinco componentes."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo aplica a ministerios.",
+            "Omitir el seguimiento como componente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Norma 100-01"
+          }
+        },
+        {
+          "id": "au-nci-objetivos",
+          "nombre": "Objetivos del control interno",
+          "explicacion": "El control interno debe contribuir a promover la eficacia, eficiencia, efectividad y economía de las operaciones con principios éticos y de transparencia; cumplir las disposiciones normativas aplicables; proteger y conservar el patrimonio público contra pérdida, despilfarro, uso indebido, irregularidades o actos ilegales; garantizar la confiabilidad, integridad y oportunidad de la información física y digital, y establecer atribuciones y competencias claras.",
+          "ejemplo": "Mantener un inventario actualizado de los vehículos institucionales y controlar su uso protege el patrimonio público contra el uso indebido.",
+          "puntos_clave": [
+            "Eficacia, eficiencia, efectividad y economía.",
+            "Cumplimiento normativo.",
+            "Protección del patrimonio y confiabilidad de la información."
+          ],
+          "errores_frecuentes": [
+            "Reducir el control interno a evitar robos.",
+            "Olvidar la confiabilidad de la información digital."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Norma 100-02"
+          }
+        },
+        {
+          "id": "au-nci-responsables",
+          "nombre": "Responsables del control interno y rendición de cuentas",
+          "explicacion": "El diseño, establecimiento, mantenimiento, funcionamiento, perfeccionamiento y evaluación del control interno son responsabilidad de la máxima autoridad, de los directivos y del personal, según sus competencias. Los directivos deben cuidar especialmente las áreas de mayor importancia por su materialidad y riesgo. El personal debe actuar oportunamente para diseñar y fortalecer los componentes del control interno, con el apoyo de la auditoría interna como ente asesor y de consulta. Además, la máxima autoridad, los directivos y los servidores deben rendir cuentas.",
+          "ejemplo": "La directora financiera prioriza los controles sobre la caja y los pagos, porque son áreas de alto riesgo y materialidad.",
+          "puntos_clave": [
+            "Responsabilidad compartida según competencias.",
+            "Foco en materialidad y riesgo.",
+            "Auditoría interna como asesora."
+          ],
+          "errores_frecuentes": [
+            "Delegar todo el control interno a la auditoría interna.",
+            "Controlar por igual áreas de bajo y alto riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Normas 100-03 y 100-04"
+          }
+        },
+        {
+          "id": "au-nci-ambiente",
+          "nombre": "Ambiente de control y auditoría interna",
+          "explicacion": "El ambiente de control incluye, entre otras normas, la integridad y los valores éticos, la administración estratégica, las políticas de talento humano, la estructura orgánica, la delegación de autoridad, la competencia profesional y la unidad de auditoría interna. La auditoría interna es una actividad independiente y objetiva de aseguramiento y asesoría, concebida para agregar valor y mejorar las operaciones; evalúa el sistema de control interno y los procesos administrativos, financieros, operativos y de gestión de riesgos, con personal multidisciplinario.",
+          "ejemplo": "Una institución publica su código de ética, define su estructura orgánica y cuenta con una auditoría interna que revisa con independencia sus procesos de compra.",
+          "puntos_clave": [
+            "Integridad y valores éticos.",
+            "Estructura, delegación y competencia.",
+            "Auditoría interna: aseguramiento y asesoría."
+          ],
+          "errores_frecuentes": [
+            "Tratar el código de ética como un trámite.",
+            "Confundir independencia con aislamiento de la gestión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Normas 200-01 a 200-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "au-riesgos-actividades",
+      "nombre": "Riesgos, actividades de control y seguimiento",
+      "orden": 4,
+      "descripcion": "Evaluación y valoración del riesgo por probabilidad e impacto, respuestas al riesgo, separación de funciones y autorización, y seguimiento.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "au-evaluacion-riesgo",
+          "nombre": "Evaluación y valoración del riesgo",
+          "explicacion": "La máxima autoridad y el personal deben identificar, analizar, valorar y responder a los riesgos que afectan el logro de los objetivos, el cumplimiento legal, la protección de los recursos y la información confiable. El riesgo es la probabilidad de ocurrencia de un evento no deseado que podría afectar a la entidad o su entorno. Se valora desde dos perspectivas: la probabilidad, que es la posibilidad de que ocurra, y el impacto, que es su efecto. Son factores de alto riesgo, entre otros, las actividades complejas, el manejo de efectivo, la alta rotación del personal, los nuevos servicios y sistemas, el crecimiento rápido y la nueva tecnología.",
+          "ejemplo": "Una oficina que recibe pagos en efectivo y cambió de sistema informático este año debe calificar esos procesos como de alto riesgo y reforzar sus controles.",
+          "puntos_clave": [
+            "Identificar, analizar, valorar y responder.",
+            "Probabilidad e impacto.",
+            "Factores de alto riesgo."
+          ],
+          "errores_frecuentes": [
+            "Valorar solo la probabilidad sin el impacto.",
+            "Ignorar el riesgo de los cambios tecnológicos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Normas 300 y 300-02"
+          }
+        },
+        {
+          "id": "au-respuesta-riesgo",
+          "nombre": "Respuestas al riesgo",
+          "explicacion": "Los directivos identifican las opciones de respuesta considerando la probabilidad, el impacto, la tolerancia al riesgo y la relación costo/beneficio. Las respuestas pueden ser evitar, que implica prevenir las actividades que originan el riesgo; reducir, con métodos para disminuir su probabilidad e impacto; compartir, transfiriendo una parte del riesgo, y aceptar, sin acción para minimizarlo. Elegir e implementar la respuesta es parte integral de la administración de riesgos.",
+          "ejemplo": "Una entidad comparte el riesgo de incendio de sus bodegas contratando un seguro y lo reduce instalando detectores de humo.",
+          "puntos_clave": [
+            "Evitar, reducir, compartir y aceptar.",
+            "Tolerancia al riesgo.",
+            "Relación costo/beneficio."
+          ],
+          "errores_frecuentes": [
+            "Aceptar riesgos altos sin analizarlos.",
+            "Gastar en controles más de lo que cuesta el riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Norma 300-03"
+          }
+        },
+        {
+          "id": "au-separacion-autorizacion",
+          "nombre": "Separación de funciones y autorización de operaciones",
+          "explicacion": "Las actividades de control son políticas y procedimientos para manejar los riesgos, y toda operación debe justificarse con evidencia documental suficiente, pertinente y legal. La máxima autoridad y los directivos deben separar funciones incompatibles y rotar labores, de modo que no se asigne el control de todas las operaciones clave a una sola persona ni se la mantenga por períodos excesivos en el mismo puesto. Además, deben establecer por escrito o en sistemas electrónicos procedimientos de autorización que garanticen que solo se efectúen operaciones válidas, con condiciones y términos específicos.",
+          "ejemplo": "En una entidad, quien solicita una compra no la aprueba, quien la aprueba no recibe los bienes y quien registra el pago no lo firma.",
+          "puntos_clave": [
+            "Evidencia documental de cada operación.",
+            "Separación de funciones y rotación.",
+            "Autorizaciones por escrito."
+          ],
+          "errores_frecuentes": [
+            "Concentrar compra, recepción y pago en una persona.",
+            "Mantener años a la misma persona en un puesto sensible."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Normas 400, 401-01 y 401-02"
+          }
+        },
+        {
+          "id": "au-seguimiento",
+          "nombre": "Seguimiento continuo y evaluaciones periódicas",
+          "explicacion": "El seguimiento verifica que el control interno funcione. La máxima autoridad y los niveles directivos realizan un seguimiento continuo durante las operaciones, y además promueven evaluaciones periódicas de la gestión y del control interno sobre la base de los planes, el tablero de indicadores y la normativa, para prevenir y corregir desviaciones. Estas evaluaciones identifican fortalezas y debilidades del sistema de control, mejoran la eficacia de sus componentes, asignan responsabilidades y establecen el grado de cumplimiento de los objetivos.",
+          "ejemplo": "Cada trimestre, la dirección revisa su tablero de indicadores y el estado de las recomendaciones de auditoría pendientes de cumplir.",
+          "puntos_clave": [
+            "Seguimiento continuo en operación.",
+            "Evaluaciones periódicas con indicadores.",
+            "Corrección de desviaciones."
+          ],
+          "errores_frecuentes": [
+            "Evaluar el control interno solo cuando llega una auditoría.",
+            "No dar seguimiento a las recomendaciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "nci-cge-2023",
+            "seccion": "Normas 600-01 y 600-02"
+          }
+        }
+      ]
+    },
+    {
+      "id": "au-fraude",
+      "nombre": "Fraude y su prevención en la empresa",
+      "orden": 5,
+      "descripcion": "Triángulo del fraude, elementos del control interno, fraude en estados financieros y la ley Sarbanes-Oxley.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "au-triangulo-fraude",
+          "nombre": "El triángulo del fraude",
+          "explicacion": "El criminólogo Donald Cressey desarrolló el triángulo del fraude para explicar por qué personas respetuosas de la ley cometen delitos en el trabajo. Tiene tres elementos que deben estar presentes: la oportunidad percibida, cuando el potencial defraudador cree que los controles son débiles o puede evadirlos; la racionalización, la forma en que se justifica ante sí mismo, y el incentivo o presión, como vicios, problemas financieros, presión laboral o deseo de aparentar éxito. Las empresas se concentran en reducir la oportunidad, porque es el elemento que pueden controlar con buenos controles internos.",
+          "ejemplo": "Una empleada que nunca tomaba vacaciones y era la única con acceso a un sistema llevó dos juegos de registros durante años: tenía la oportunidad por la falta de controles.",
+          "puntos_clave": [
+            "Oportunidad, racionalización e incentivo.",
+            "Los tres deben estar presentes.",
+            "Los controles reducen la oportunidad."
+          ],
+          "errores_frecuentes": [
+            "Confiar en que un empleado antiguo nunca defraudará.",
+            "Ignorar señales de presión financiera."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/8-1-analyze-fraud-in-the-accounting-workplace",
+            "seccion": "8.1 Analyze Fraud in the Accounting Workplace"
+          }
+        },
+        {
+          "id": "au-elementos-control",
+          "nombre": "Elementos de un sistema de control interno",
+          "explicacion": "Un sistema sólido de control interno se basa en elementos consistentes: responsabilidades claras, para rastrear los problemas hasta su responsable; documentación adecuada, con respaldos fuera del local y formularios prenumerados; seguros adecuados; separación entre los activos y su custodia; separación de funciones, para que al menos dos personas intervengan en la mayoría de transacciones, por ejemplo que quien emite un cheque no lo firme, y uso de la tecnología.",
+          "ejemplo": "Al cerrar, un empleado cuenta la caja con formularios prenumerados y otro distinto vuelve a contarla y prepara el depósito bancario.",
+          "puntos_clave": [
+            "Responsabilidades y documentación.",
+            "Seguros y custodia separada.",
+            "Separación de funciones y tecnología."
+          ],
+          "errores_frecuentes": [
+            "Que la misma persona pida, reciba y pague.",
+            "No guardar respaldos fuera del lugar de trabajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/8-3-describe-internal-controls-within-an-organization",
+            "seccion": "8.3 Describe Internal Controls within an Organization"
+          }
+        },
+        {
+          "id": "au-fraude-estados",
+          "nombre": "Fraude en los estados financieros",
+          "explicacion": "Hay fraude en los estados financieros cuando se usan para ocultar la situación real de la empresa o transacciones ilegales, lo que se conoce como cocinar los libros, por ejemplo para obtener dinero de inversionistas o prestamistas, ocultar beneficios indebidos de ejecutivos o subir el precio de la acción. Uno de los métodos más comunes es manipular los ingresos y las cuentas por cobrar, reconociendo ingresos antes de tiempo o inexistentes; también se manipula el inventario con ventas ficticias, ventas con retención de mercadería, cortes de período indebidos o ventas con promesa de recompra. Casos como HealthSouth y Enron mostraron cómo la falta de separación de funciones y la evasión de controles por la dirección permiten grandes fraudes.",
+          "ejemplo": "Una empresa registra en diciembre como venta mercadería que el cliente recogerá en febrero y que puede devolver sin costo, para inflar los ingresos del año.",
+          "puntos_clave": [
+            "Cocinar los libros.",
+            "Manipulación de ingresos y cuentas por cobrar.",
+            "Manipulación de inventario y cortes."
+          ],
+          "errores_frecuentes": [
+            "Creer que el fraude contable solo ocurre en empresas grandes.",
+            "Ignorar los cortes de período al revisar ventas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/8-7-describe-fraud-in-financial-statements-and-sarbanes-oxley-act-requirements",
+            "seccion": "8.7 Describe Fraud in Financial Statements and Sarbanes-Oxley Act Requirements"
+          }
+        },
+        {
+          "id": "au-sox-direccion",
+          "nombre": "Responsabilidad de la dirección y la ley Sarbanes-Oxley",
+          "explicacion": "En Estados Unidos, la ley Sarbanes-Oxley (SOX) reguló con fuerza el control interno de las empresas que cotizan en bolsa. Aunque el auditor revisa los controles, la responsabilidad final es de la dirección: según la sección 302, el director ejecutivo y el director financiero deben certificar personalmente que revisaron el informe de control interno, que no contiene información inexacta y que los estados financieros presentan razonablemente la situación de la empresa; la sección 404 regula los informes y pruebas del control interno. Aun en empresas que no están sujetas a SOX, el tono desde la cima, es decir, el compromiso de la dirección con la ética, define el ambiente de control.",
+          "ejemplo": "El gerente general y el gerente financiero firman una declaración de que revisaron los controles y de que los estados financieros son razonables; si resultan falsos, responden personalmente.",
+          "puntos_clave": [
+            "Responsabilidad final de la dirección.",
+            "Certificación de la sección 302.",
+            "Tono desde la cima."
+          ],
+          "errores_frecuentes": [
+            "Delegar la responsabilidad del control interno al auditor externo.",
+            "Creer que el tono de la dirección no influye."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfa",
+            "url": "https://openstax.org/books/principles-financial-accounting/pages/8-5-discuss-management-responsibilities-for-maintaining-internal-controls-within-an-organization",
+            "seccion": "8.5 Discuss Management Responsibilities for Maintaining Internal Controls within an Organization"
+          }
+        }
+      ]
+    },
+    {
+      "id": "au-lavado",
+      "nombre": "Prevención del lavado de activos",
+      "orden": 6,
+      "descripcion": "Programa de prevención y evaluación nacional de riesgos, debida diligencia y beneficiario final, oficial y comité de cumplimiento, y reportes a la UAFE.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "au-pla-programa",
+          "nombre": "Programa de prevención y evaluación nacional de riesgos",
+          "explicacion": "El Reglamento General de la ley de prevención, detección y combate del lavado de activos, expedido en 2026, exige que todos los sujetos obligados a informar a la Unidad de Análisis Financiero y Económico (UAFE) tengan un programa de detección, prevención, mitigación y administración de riesgos de lavado de activos y de financiamiento del terrorismo y de la proliferación de armas de destrucción masiva. Ese programa está formado por políticas, procedimientos, controles y metodologías de riesgo que deben constar en un manual de prevención. La UAFE realiza la evaluación nacional de riesgos con estándares internacionales, y sus resultados orientan los sistemas de gestión de riesgos con enfoque basado en riesgo de los sujetos obligados.",
+          "ejemplo": "Una cooperativa elabora su manual de prevención con políticas para identificar clientes, alertas de operaciones inusuales y procedimientos para reportar a la UAFE.",
+          "puntos_clave": [
+            "Programa y manual de prevención obligatorios.",
+            "Evaluación nacional de riesgos de la UAFE.",
+            "Enfoque basado en riesgo."
+          ],
+          "errores_frecuentes": [
+            "Tener un manual que no se aplica.",
+            "Usar los mismos controles para clientes de bajo y alto riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-pla",
+            "seccion": "Arts. 25 y 28"
+          }
+        },
+        {
+          "id": "au-debida-diligencia",
+          "nombre": "Debida diligencia y beneficiario final",
+          "explicacion": "Los sujetos obligados deben registrar de forma fehaciente la identidad, ocupación, actividad económica, estado civil y domicilio de sus clientes, y aplicar políticas de debida diligencia según su sector: conozca a su cliente, a su empleado, a su mercado, a su corresponsal, a su proveedor y a su accionista o socio. Deben identificar al beneficiario final, la persona natural que es propietaria o destinataria de los recursos o que controla al cliente o a una persona jurídica. Los registros se conservan durante diez años después de la última transacción o relación contractual.",
+          "ejemplo": "Una casa de cambios que atiende a una empresa nueva pide su estructura de accionistas hasta llegar a las personas naturales que la controlan.",
+          "puntos_clave": [
+            "Seis políticas de «conozca a su…».",
+            "Identificación del beneficiario final.",
+            "Conservación de registros por diez años."
+          ],
+          "errores_frecuentes": [
+            "Quedarse en el nombre de la empresa sin llegar al beneficiario final.",
+            "Destruir expedientes antes de diez años."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-pla",
+            "seccion": "Arts. 30-31"
+          }
+        },
+        {
+          "id": "au-oficial-cumplimiento",
+          "nombre": "Oficial de cumplimiento y comité de cumplimiento",
+          "explicacion": "El oficial de cumplimiento controla las operaciones y transacciones del sujeto obligado como insumo para detectar y reportar operaciones sospechosas, remite los reportes a la UAFE en los plazos y formularios establecidos, entrega la información adicional que esta solicite y comunica al personal la estricta reserva y confidencialidad de la información. La negativa, el retraso o la entrega incompleta de información da lugar a acciones administrativas y legales. Los sujetos obligados deben además conformar un comité de cumplimiento según las disposiciones de su organismo de control.",
+          "ejemplo": "El oficial de cumplimiento de una aseguradora revisa las alertas del mes, documenta un caso sospechoso y lo reporta a la UAFE sin informar al cliente.",
+          "puntos_clave": [
+            "Controles y reportes a la UAFE.",
+            "Reserva y confidencialidad.",
+            "Comité de cumplimiento."
+          ],
+          "errores_frecuentes": [
+            "Avisar al cliente que fue reportado.",
+            "Retrasar la entrega de información solicitada."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "reglamento-pla",
+            "seccion": "Arts. 47 y 51"
+          }
+        },
+        {
+          "id": "au-reportes-uafe",
+          "nombre": "Reportes a la UAFE: ROS y RESU",
+          "explicacion": "Los sujetos obligados reportan a la UAFE el reporte de operaciones sospechosas (ROS), con sus sustentos firmados por el oficial de cumplimiento, o el registro de que no hubo operaciones sospechosas en el mes. También reportan las operaciones y transacciones individuales iguales o superiores a USD 10.000, y las múltiples que en conjunto igualen o superen ese valor cuando se realicen en beneficio de una misma persona dentro de treinta días (RESU), o el registro de que no hubo tales operaciones.",
+          "ejemplo": "Si un cliente deposita USD 4.000, USD 3.500 y USD 2.800 en el mismo mes, el total de USD 10.300 debe incluirse en el RESU aunque ningún depósito supere por sí solo el umbral.",
+          "puntos_clave": [
+            "ROS: operaciones sospechosas.",
+            "RESU: operaciones de USD 10.000 o más.",
+            "Acumulación por persona en 30 días."
+          ],
+          "errores_frecuentes": [
+            "Revisar solo operaciones individuales y no acumuladas.",
+            "Creer que una operación pequeña nunca se reporta."
+          ],
+          "formulas": [
+            "acumulado-operaciones-resu"
+          ],
+          "fuente": {
+            "ref": "reglamento-pla",
+            "seccion": "Art. 61"
+          }
+        }
+      ]
+    }
+  ]
+}

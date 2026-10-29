@@ -139,6 +139,15 @@
         "planes": 4
       },
       {
+        "materia": "auditoria",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5
+        ],
+        "planes": 2
+      },
+      {
         "materia": "comportamiento-organizacional",
         "ciclo": 4,
         "ciclos": [
@@ -396,6 +405,18 @@
         "planes": 2
       },
       {
+        "materia": "auditoria",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "contabilidad-financiera",
         "ciclo": 4,
         "ciclos": [
@@ -507,38 +528,13 @@
         "planes": 1
       },
       {
-        "nombre": "Control Interno y Gestión de Riesgos",
-        "ciclo": 4,
-        "planes": 2
-      },
-      {
         "nombre": "Fundamentos de Contabilidad Gubernamental",
         "ciclo": 5,
         "planes": 1
       },
       {
-        "nombre": "Auditoría Administrativa",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoría de Gestión",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
         "nombre": "Contratación Pública",
         "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Marco Legal de la Auditoría Financiera",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoría Financiera",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -554,26 +550,6 @@
       {
         "nombre": "Inteligencia Artificial en Contabilidad y Auditoría",
         "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoria Forense y Prevención de Lavado de Activos",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditorias Especiales",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoría Forense",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoría Gubernamental",
-        "ciclo": 8,
         "planes": 1
       },
       {
@@ -1286,6 +1262,15 @@
         "planes": 1
       },
       {
+        "materia": "auditoria",
+        "ciclo": 6,
+        "ciclos": [
+          6,
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "finanzas-publicas",
         "ciclo": 6,
         "ciclos": [
@@ -1313,16 +1298,6 @@
       {
         "nombre": "Gestión de Riesgos Financieros",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Regulación y Cumplimiento Financiero",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Auditoría y Control Financiero",
-        "ciclo": 7,
         "planes": 1
       },
       {

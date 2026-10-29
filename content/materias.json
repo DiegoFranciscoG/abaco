@@ -998,5 +998,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "auditoria",
+    "nombre": "Auditoría, control interno y prevención del fraude",
+    "areas": [
+      "contabilidad",
+      "derecho"
+    ],
+    "descripcion": "Clases de auditoría gubernamental según la Ley de la Contraloría, auditoría interna, informes y responsabilidades, Normas de Control Interno 2023, evaluación de riesgos y actividades de control, fraude y Sarbanes-Oxley, y prevención del lavado de activos.",
+    "sinonimos": [
+      "auditoría financiera",
+      "auditoría de gestión",
+      "auditoría gubernamental",
+      "control interno",
+      "auditoría forense",
+      "prevención de lavado de activos"
+    ],
+    "herramientas": [
+      "diario",
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 44,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 6
+    }
   }
 ]

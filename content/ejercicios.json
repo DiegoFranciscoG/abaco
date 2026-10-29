@@ -12191,5 +12191,71 @@
     },
     "materia": "economia-popular-solidaria",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-au-resu-no-reporta",
+    "subtema": "au-reportes-uafe",
+    "formula": "acumulado-operaciones-resu",
+    "enunciado": "En 30 días, un cliente realiza en una cooperativa operaciones por USD 6.200, USD 2.100 y USD 1.500. ¿Cuál es el monto acumulado? ¿Debe incluirse en el RESU?",
+    "datos": {
+      "x": [
+        6200,
+        2100,
+        1500
+      ]
+    },
+    "calculo": "SUM(x)",
+    "respuesta": 9800,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "M = 6.200 + 2.100 + 1.500 = 9.800",
+      "9.800 < 10.000: no va al RESU",
+      "Si fueran inusuales, igual se evaluaría un ROS"
+    ],
+    "pistas": [
+      "Suma todas las operaciones de la misma persona en el período."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "reglamento-pla",
+      "seccion": "Art. 61"
+    },
+    "materia": "auditoria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-au-resu-fraccionado",
+    "subtema": "au-reportes-uafe",
+    "formula": "acumulado-operaciones-resu",
+    "enunciado": "Una persona hace cinco depósitos de USD 2.400 cada uno en distintas agencias dentro de 30 días. ¿Cuál es el monto acumulado y qué debe hacer el sujeto obligado?",
+    "datos": {
+      "x": [
+        2400,
+        2400,
+        2400,
+        2400,
+        2400
+      ]
+    },
+    "calculo": "SUM(x)",
+    "respuesta": 12000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "M = 5 × 2.400 = 12.000",
+      "12.000 ≥ 10.000: se incluye en el RESU",
+      "El fraccionamiento también puede justificar un análisis para ROS"
+    ],
+    "pistas": [
+      "Las operaciones múltiples se acumulan aunque cada una sea pequeña."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "reglamento-pla",
+      "seccion": "Art. 61"
+    },
+    "materia": "auditoria",
+    "actualizado_en": "2026-10-26"
   }
 ]

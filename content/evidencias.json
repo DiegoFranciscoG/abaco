@@ -6645,5 +6645,193 @@
       "margenes de preferencia a favor de las personas y organizaciones regidas por esta ley",
       "la feria inclusiva y el catalogo electronico"
     ]
+  },
+  {
+    "id": "au-gubernamental",
+    "palabras": [
+      "se ejercera mediante la auditoria gubernamental y el examen especial",
+      "sistema integrado de asesoria, asistencia y prevencion de riesgos",
+      "organizacion internacional de entidades fiscalizadoras superiores"
+    ]
+  },
+  {
+    "id": "au-financiera",
+    "palabras": [
+      "sobre la razonabilidad las cifras presentadas en los estados financieros",
+      "la evaluacion del control interno de la parte auditada"
+    ]
+  },
+  {
+    "id": "au-gestion",
+    "palabras": [
+      "la auditoria de gestion es la accion fiscalizadora dirigida a examinar y evaluar el control interno y la gestion",
+      "principios y criterios de economia, efectividad y eficiencia"
+    ]
+  },
+  {
+    "id": "au-examen-especial",
+    "palabras": [
+      "el examen especial verificara, estudiara y evaluara aspectos limitados",
+      "auditoria de aspectos ambientales",
+      "auditoria de obras publicas o de ingenieria"
+    ]
+  },
+  {
+    "id": "au-forense-preventiva",
+    "palabras": [
+      "auditoria forense preventiva y concurrente",
+      "esquemas de alerta temprana de irregularidades"
+    ]
+  },
+  {
+    "id": "au-control-interno-ley",
+    "palabras": [
+      "concepto y elementos del control interno",
+      "proporciona seguridad razonable de que se protegen los recursos publicos"
+    ]
+  },
+  {
+    "id": "au-unidad-interna",
+    "palabras": [
+      "dependera tecnica y administrativamente de la contraloria general del estado"
+    ]
+  },
+  {
+    "id": "au-informes",
+    "palabras": [
+      "ciento ochenta dias improrrogables",
+      "treinta dias improrrogables"
+    ]
+  },
+  {
+    "id": "au-responsabilidades",
+    "palabras": [
+      "determinacion de responsabilidades y seguimiento",
+      "responsabilidades administrativas y civiles culposas",
+      "indicios de responsabilidad penal"
+    ]
+  },
+  {
+    "id": "au-nci-componentes",
+    "palabras": [
+      "constituyen componentes del control interno el ambiente de control, la evaluacion de riesgos, las actividades de control",
+      "proporciona seguridad razonable para el logro de los objetivos institucionales"
+    ]
+  },
+  {
+    "id": "au-nci-objetivos",
+    "palabras": [
+      "promover la eficacia, eficiencia, efectividad y economia en la ejecucion de operaciones",
+      "proteger y conservar el patrimonio publico contra perdida, despilfarro, uso indebido"
+    ]
+  },
+  {
+    "id": "au-nci-responsables",
+    "palabras": [
+      "es responsabilidad de la maxima autoridad, de los directivos y el personal de la entidad",
+      "areas de mayor importancia por su materialidad"
+    ]
+  },
+  {
+    "id": "au-nci-ambiente",
+    "palabras": [
+      "integridad y valores eticos",
+      "la auditoria interna es una actividad independiente y objetiva de aseguramiento y asesoria"
+    ]
+  },
+  {
+    "id": "au-evaluacion-riesgo",
+    "palabras": [
+      "el riesgo es la probabilidad de ocurrencia de un evento no deseado",
+      "a partir de dos perspectivas, probabilidad e impacto",
+      "el manejo de dinero en efectivo"
+    ]
+  },
+  {
+    "id": "au-respuesta-riesgo",
+    "palabras": [
+      "los modelos de respuestas al riesgo pueden ser: evitar, reducir, compartir y aceptar",
+      "relacion costo/beneficio"
+    ]
+  },
+  {
+    "id": "au-separacion-autorizacion",
+    "palabras": [
+      "evidencia documental suficiente, pertinente y legal",
+      "separacion de funciones y rotacion de labores",
+      "autorizacion y aprobacion de transacciones y operaciones"
+    ]
+  },
+  {
+    "id": "au-seguimiento",
+    "palabras": [
+      "seguimiento continuo o en operacion",
+      "evaluaciones periodicas de la gestion y el control interno",
+      "tablero de indicadores"
+    ]
+  },
+  {
+    "id": "au-triangulo-fraude",
+    "palabras": [
+      "fraud triangle",
+      "incentive, opportunity, and rationalization",
+      "donald cressey"
+    ]
+  },
+  {
+    "id": "au-elementos-control",
+    "palabras": [
+      "establishment of clear responsibilities proper documentation adequate insurance",
+      "separation of duties"
+    ]
+  },
+  {
+    "id": "au-fraude-estados",
+    "palabras": [
+      "cooking the books",
+      "channel stuffing",
+      "bill-and-hold sales",
+      "improper cutoff"
+    ]
+  },
+  {
+    "id": "au-sox-direccion",
+    "palabras": [
+      "section 302",
+      "ultimate responsibility for the controls is on the management of the company",
+      "tone at the top"
+    ]
+  },
+  {
+    "id": "au-pla-programa",
+    "palabras": [
+      "evaluacion nacional de riesgos (enr)",
+      "manual de prevencion de lavado de activos y del financiamiento de delitos",
+      "enfoque basado en riesgo"
+    ]
+  },
+  {
+    "id": "au-debida-diligencia",
+    "palabras": [
+      "conozca a su cliente; 2. conozca a su empleado",
+      "beneficiario final",
+      "durante los diez (10) anos posteriores"
+    ]
+  },
+  {
+    "id": "au-oficial-cumplimiento",
+    "palabras": [
+      "son funciones del oficial de cumplimiento",
+      "estricta reserva y confidencialidad",
+      "comite de cumplimiento"
+    ]
+  },
+  {
+    "id": "au-reportes-uafe",
+    "palabras": [
+      "reporte de operaciones sospechosas (ros)",
+      "igual o superior a diez mil dolares de los estados unidos de america",
+      "dentro de un periodo de treinta (30) dias (resu)"
+    ]
   }
 ]
