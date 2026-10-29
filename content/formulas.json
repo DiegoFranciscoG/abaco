@@ -12099,5 +12099,130 @@
     ],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "cartera-neta",
+    "nombre": "Cartera de créditos neta de provisiones",
+    "categoria": "calculo",
+    "materias": [
+      "contabilidad-ifis"
+    ],
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Las provisiones para créditos incobrables (cuenta 1499) son una cuenta de valuación con saldo acreedor dentro del activo; la cartera neta es la cartera bruta menos esas provisiones.",
+    "latex": "CN = CB - PROV",
+    "variables": [
+      {
+        "simbolo": "CB",
+        "nombre": "CB",
+        "significado": "Cartera de créditos bruta (grupo 14 sin las provisiones)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "PROV",
+        "nombre": "PROV",
+        "significado": "Provisiones para créditos incobrables (cuenta 1499)",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "CB - PROV"
+    },
+    "excel": {
+      "es": "=CB-PROV",
+      "en": "=CB-PROV"
+    },
+    "ejemplo": {
+      "enunciado": "Una cooperativa tiene cartera bruta de USD 12.000.000 y provisiones para créditos incobrables de USD 480.000. ¿Cuál es su cartera neta?",
+      "entradas": {
+        "CB": 12000000,
+        "PROV": 480000
+      },
+      "pasos": [
+        "Cartera neta = 12.000.000 − 480.000",
+        "Cartera neta = 11.520.000"
+      ],
+      "resultado": 11520000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=12000000-480000",
+      "excel_en": "=12000000-480000"
+    },
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "3. Estructura del catálogo (dígitos 99) y cuenta 1499"
+    },
+    "supuestos": [],
+    "notas": [
+      "Los dígitos 99 identifican cuentas de valuación con saldos acreedores en el activo."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "margen-intereses",
+    "nombre": "Margen de intereses (cuentas 51 − 41)",
+    "categoria": "calculo",
+    "materias": [
+      "contabilidad-ifis"
+    ],
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "descripcion": "Diferencia entre los intereses y descuentos ganados (grupo 51) y los intereses causados (grupo 41): mide cuánto gana la entidad por intermediar antes de provisiones y gastos de operación.",
+    "latex": "MI = IG - IC",
+    "variables": [
+      {
+        "simbolo": "IG",
+        "nombre": "IG",
+        "significado": "Intereses y descuentos ganados (grupo 51)",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "IC",
+        "nombre": "IC",
+        "significado": "Intereses causados (grupo 41)",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "IG - IC"
+    },
+    "excel": {
+      "es": "=IG-IC",
+      "en": "=IG-IC"
+    },
+    "ejemplo": {
+      "enunciado": "En el año, una cooperativa registró intereses ganados por USD 1.800.000 e intereses causados por USD 750.000. ¿Cuál es su margen de intereses?",
+      "entradas": {
+        "IG": 1800000,
+        "IC": 750000
+      },
+      "pasos": [
+        "MI = 1.800.000 − 750.000",
+        "MI = 1.050.000"
+      ],
+      "resultado": 1050000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=1800000-750000",
+      "excel_en": "=1800000-750000"
+    },
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "Plan de cuentas: grupos 41 y 51"
+    },
+    "supuestos": [
+      "Ambos montos corresponden al mismo período."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

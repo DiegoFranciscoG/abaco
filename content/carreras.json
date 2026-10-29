@@ -545,6 +545,14 @@
         "planes": 1
       },
       {
+        "materia": "contabilidad-ifis",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "evaluacion-proyectos",
         "ciclo": 7,
         "ciclos": [
@@ -563,11 +571,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Contabilidad Instituciones Financieras",
-        "ciclo": 7,
-        "planes": 1
-      },
       {
         "nombre": "Auditoría de Calidad",
         "ciclo": 8,

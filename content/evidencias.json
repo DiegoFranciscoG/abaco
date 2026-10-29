@@ -9131,5 +9131,144 @@
       "se mantienen para obtener rentas o plusvalia en condiciones comerciales",
       "tienen una importancia cultural, medio ambiental o historica"
     ]
+  },
+  {
+    "id": "if-alcance-cuc",
+    "palabras": [
+      "de uso obligatorio de las cooperativas de ahorro y credito, las cajas centrales",
+      "se consideraran las disposiciones del organismo de control, por cuanto su cumplimiento es obligatorio"
+    ]
+  },
+  {
+    "id": "if-objetivos-cuc",
+    "palabras": [
+      "garantizar la confiabilidad y transparencia de la informacion contable",
+      "armonizar y unificar el registro contable de los hechos economicos"
+    ]
+  },
+  {
+    "id": "if-codificacion",
+    "palabras": [
+      "la codificacion de las cuentas se basa en el sistema decimal",
+      "siguiendo la practica de dos numeros por nivel",
+      "se desagregan hasta un nivel de seis digitos"
+    ]
+  },
+  {
+    "id": "if-elementos",
+    "palabras": [
+      "el elemento 6 integra las cuentas contingentes que agrupan los compromisos y las obligaciones eventuales",
+      "se ha previsto la utilizacion de los digitos"
+    ]
+  },
+  {
+    "id": "if-postulados",
+    "palabras": [
+      "el ente contable lo constituye la entidad que desarrolla la actividad economica",
+      "sin preferencia para ninguno en particular"
+    ]
+  },
+  {
+    "id": "if-estados",
+    "palabras": [
+      "los estados financieros, son el medio principal para suministrar informacion contable",
+      "nic 1 \"presentacion de estados financieros\""
+    ]
+  },
+  {
+    "id": "if-envio-informacion",
+    "palabras": [
+      "los balances diarios, mensuales, trimestrales y anuales"
+    ]
+  },
+  {
+    "id": "if-calidad-activos",
+    "palabras": [
+      "a efecto de reflejar la verdadera calidad de los activos y contingentes",
+      "sera variable y podra acrecentarse de forma ilimitada"
+    ]
+  },
+  {
+    "id": "if-clasificacion-cartera",
+    "palabras": [
+      "el grupo cartera de creditos incluye una clasificacion principal de acuerdo a la actividad a la cual se destinan los recursos",
+      "siempre y cuando el plazo de dichos creditos sea mayor a 30 dias"
+    ]
+  },
+  {
+    "id": "if-vencimiento-cartera",
+    "palabras": [
+      "cartera por vencer, refinanciada, reestructurada, que no devenga intereses y vencida",
+      "en funcion de los dias que se mantiene cada operacion o cuota como vencida"
+    ]
+  },
+  {
+    "id": "if-provisiones",
+    "palabras": [
+      "por las provisiones constituidas determinadas por las entidades",
+      "por las disminuciones que se efectuen en cada segmento de creditos"
+    ]
+  },
+  {
+    "id": "if-castigo",
+    "palabras": [
+      "el cual no podra superar los tres anos",
+      "previo al castigo de las obligaciones, estas deberan estar provisionadas al 100% de su valor registrado en libros"
+    ]
+  },
+  {
+    "id": "if-depositos-vista",
+    "palabras": [
+      "2101 depositos a la vista",
+      "210135 depositos de ahorro"
+    ]
+  },
+  {
+    "id": "if-depositos-plazo",
+    "palabras": [
+      "210305 de 1 a 30 dias",
+      "210325 de mas de 361 dias"
+    ]
+  },
+  {
+    "id": "if-garantia-restringidos",
+    "palabras": [
+      "2104 depositos de garantia",
+      "2105 depositos restringidos",
+      "22 operaciones interfinancieras"
+    ]
+  },
+  {
+    "id": "if-titularizacion-venta",
+    "palabras": [
+      "los vencimientos de acuerdo al plan de pagos y las tasas de interes pactadas originalmente"
+    ]
+  },
+  {
+    "id": "if-ingresos",
+    "palabras": [
+      "los ingresos se registran a medida que se realizan o se devengan sin considerar la fecha y forma de recepcion del efectivo"
+    ]
+  },
+  {
+    "id": "if-intereses-causados",
+    "palabras": [
+      "intereses causados",
+      "4101 obligaciones con el publico",
+      "410130 depositos a plazo"
+    ]
+  },
+  {
+    "id": "if-margen",
+    "palabras": [
+      "intereses y descuentos ganados",
+      "intereses causados"
+    ]
+  },
+  {
+    "id": "if-cierre",
+    "palabras": [
+      "las cuentas de resultados acreedoras se liquidaran al final del ejercicio economico"
+    ]
   }
 ]

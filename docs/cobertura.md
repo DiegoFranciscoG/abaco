@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (59 completas de 59)
+## Estado por materia (60 completas de 60)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -59,6 +59,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Producto, marca y precio | 2 de 7 | completa | 5 de 5 | 20 | 1 de 1 | 100 % | — |
 | Propiedad intelectual y transferencia de tecnología | 2 de 7 | completa | 5 de 5 | 23 | 3 de 3 | 100 % | — |
 | Sistema financiero y banca | 2 de 7 | completa | 5 de 5 | 22 | 4 de 4 | 100 % | — |
+| Contabilidad de instituciones financieras | 0 de 7 | completa | 5 de 5 | 20 | 2 de 2 | 100 % | — |
 | Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Diseño y evaluación de programas y políticas públicas | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Fundamentos de contabilidad gubernamental | 0 de 7 | completa | 5 de 5 | 20 | 2 de 2 | 100 % | — |
@@ -152,7 +153,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: en ÁBACO: Auditoría, control interno y prevención del fraude (completa, 6 de 6 unidades); Contabilidad financiera (NIIF) (completa, 6 de 6 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Fundamentos de contabilidad gubernamental (completa, 5 de 5 unidades); Economía popular y solidaria (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Gestión del talento humano (completa, 6 de 6 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Contratación pública (completa, 5 de 5 unidades); Planificación y dirección estratégica (completa, 5 de 5 unidades); Presupuestos empresariales y control de gestión (completa, 5 de 5 unidades); Sistema financiero y banca (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Aduanas y comercio exterior (completa, 5 de 5 unidades); Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Programación y análisis de datos con Python (completa, 5 de 5 unidades) · pendientes: Contabilidad Instituciones Financieras.
+- **7.º ciclo**: en ÁBACO: Aduanas y comercio exterior (completa, 5 de 5 unidades); Contabilidad de instituciones financieras (completa, 5 de 5 unidades); Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Programación y análisis de datos con Python (completa, 5 de 5 unidades) · sin pendientes.
 - **8.º ciclo**: ninguna materia en ÁBACO · pendientes: Auditoría de Calidad.
 
 ### Economía (2 planes)

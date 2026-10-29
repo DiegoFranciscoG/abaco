@@ -1426,5 +1426,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "contabilidad-ifis",
+    "nombre": "Contabilidad de instituciones financieras",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "descripcion": "Contabilidad de cooperativas de ahorro y crédito, mutualistas y demás entidades del sector financiero popular y solidario con el Catálogo Único de Cuentas de la SEPS: estructura y codificación, principios, estados financieros y reportes, cartera de créditos y provisiones, obligaciones con el público, ingresos y gastos financieros, y provisiones y castigos según el COMF.",
+    "sinonimos": [
+      "contabilidad bancaria",
+      "contabilidad de cooperativas",
+      "catálogo único de cuentas",
+      "contabilidad de IFIs",
+      "contabilidad financiera de entidades financieras"
+    ],
+    "herramientas": [
+      "editor",
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 60,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

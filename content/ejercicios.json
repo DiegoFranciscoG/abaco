@@ -15090,5 +15090,117 @@
     },
     "materia": "contabilidad-gubernamental",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-if-cartera-neta-a",
+    "subtema": "if-provisiones",
+    "formula": "cartera-neta",
+    "enunciado": "Una cooperativa tiene cartera bruta de USD 3.500.000 y provisiones para créditos incobrables de USD 175.000. ¿Cuál es su cartera neta?",
+    "datos": {
+      "CB": 3500000,
+      "PROV": 175000
+    },
+    "calculo": "CB - PROV",
+    "respuesta": 3325000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "3.500.000 − 175.000 = 3.325.000"
+    ],
+    "pistas": [
+      "Las provisiones restan dentro del activo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "Cuenta 1499"
+    },
+    "materia": "contabilidad-ifis",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-if-cartera-neta-b",
+    "subtema": "if-provisiones",
+    "formula": "cartera-neta",
+    "enunciado": "Una mutualista tiene cartera inmobiliaria bruta de USD 25.000.000 y la provisiona en USD 625.000. ¿Cuál es la cartera neta que presenta?",
+    "datos": {
+      "CB": 25000000,
+      "PROV": 625000
+    },
+    "calculo": "CB - PROV",
+    "respuesta": 24375000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "25.000.000 − 625.000 = 24.375.000"
+    ],
+    "pistas": [
+      "Resta la cuenta de valuación."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "Cuenta 1499"
+    },
+    "materia": "contabilidad-ifis",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-if-margen-a",
+    "subtema": "if-margen",
+    "formula": "margen-intereses",
+    "enunciado": "Una cooperativa registró en el semestre intereses ganados por USD 640.000 e intereses causados por USD 290.000. ¿Cuál es su margen de intereses?",
+    "datos": {
+      "IG": 640000,
+      "IC": 290000
+    },
+    "calculo": "IG - IC",
+    "respuesta": 350000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "640.000 − 290.000 = 350.000"
+    ],
+    "pistas": [
+      "Grupo 51 menos grupo 41."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "Plan de cuentas: grupos 41 y 51"
+    },
+    "materia": "contabilidad-ifis",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-if-margen-b",
+    "subtema": "if-margen",
+    "formula": "margen-intereses",
+    "enunciado": "Una caja central tuvo intereses y descuentos ganados por USD 2.400.000 e intereses causados por USD 1.900.000 en el año. ¿Cuál fue su margen de intereses?",
+    "datos": {
+      "IG": 2400000,
+      "IC": 1900000
+    },
+    "calculo": "IG - IC",
+    "respuesta": 500000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "2.400.000 − 1.900.000 = 500.000"
+    ],
+    "pistas": [
+      "Un margen pequeño indica que paga casi tanto como cobra."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "Plan de cuentas: grupos 41 y 51"
+    },
+    "materia": "contabilidad-ifis",
+    "actualizado_en": "2026-10-26"
   }
 ]

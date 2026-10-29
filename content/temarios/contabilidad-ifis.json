@@ -1,0 +1,475 @@
+{
+  "materia": "contabilidad-ifis",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "if-catalogo",
+      "nombre": "El Catálogo Único de Cuentas",
+      "orden": 1,
+      "descripcion": "Quiénes lo aplican, objetivos, codificación de seis dígitos, elementos del 1 al 7 y cuentas de valuación.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "if-alcance-cuc",
+          "nombre": "Qué es y quiénes lo aplican",
+          "explicacion": "La Superintendencia de Economía Popular y Solidaria expide el Catálogo Único de Cuentas (CUC), de uso obligatorio para las cooperativas de ahorro y crédito, las cajas centrales, la Corporación Nacional de Finanzas Populares y Solidarias (CONAFIPS) y las asociaciones mutualistas de ahorro y crédito para la vivienda. Norma el registro, preparación y presentación de su contabilidad y contiene la codificación de cuentas, las instrucciones generales y el instructivo de cada cuenta. Si hay diferencias con los principios contables internacionales, prevalecen las disposiciones del organismo de control. Los bancos usan el catálogo de la Superintendencia de Bancos.",
+          "ejemplo": "Una cooperativa de Ambato registra sus depósitos de ahorro en la subcuenta 210135 del CUC, igual que cualquier otra cooperativa del país.",
+          "puntos_clave": [
+            "Obligatorio en el sector financiero popular y solidario.",
+            "Codificación, instrucciones y dinámicas.",
+            "Prevalecen las instrucciones del organismo de control."
+          ],
+          "errores_frecuentes": [
+            "Crear cuentas propias fuera del catálogo.",
+            "Aplicar a una cooperativa el catálogo de los bancos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "I. Introducción"
+          }
+        },
+        {
+          "id": "if-objetivos-cuc",
+          "nombre": "Objetivos y supervisión efectiva",
+          "explicacion": "El catálogo busca garantizar la confiabilidad y transparencia de la información contable para el público y las autoridades de supervisión, y armonizar y unificar el registro de los hechos económicos de las entidades supervisadas. Que todas reporten con estándares uniformes facilita evaluar su exposición al riesgo y tomar medidas a tiempo para conservar la confianza pública en el sistema financiero.",
+          "ejemplo": "Gracias a que todas las cooperativas usan las mismas cuentas, la SEPS puede comparar la morosidad de su cartera de consumo.",
+          "puntos_clave": [
+            "Confiabilidad y transparencia.",
+            "Registro armonizado y unificado.",
+            "Base para evaluar riesgos."
+          ],
+          "errores_frecuentes": [
+            "Ver el catálogo solo como un requisito formal.",
+            "Registrar operaciones en cuentas que no corresponden."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "II. Objetivos y III. La supervisión efectiva"
+          }
+        },
+        {
+          "id": "if-codificacion",
+          "nombre": "Codificación decimal de seis dígitos",
+          "explicacion": "La codificación se basa en el sistema decimal, con dos dígitos por nivel, salvo los elementos. Las cuentas se desagregan hasta seis dígitos: un dígito para el elemento, dos para el grupo, cuatro para la cuenta y seis para la subcuenta. Los nombres corresponden a los términos técnicos del negocio financiero y muchas cuentas se desagregan por vencimiento o tipo de entidad para facilitar la evaluación de riesgos.",
+          "ejemplo": "En 140105, el 1 es el activo, el 14 la cartera de créditos, el 1401 la cartera productiva por vencer y el 140105 la porción que vence de 1 a 30 días.",
+          "puntos_clave": [
+            "Sistema decimal.",
+            "Dos dígitos por nivel.",
+            "Elemento, grupo, cuenta y subcuenta."
+          ],
+          "errores_frecuentes": [
+            "Confundir un grupo con una cuenta.",
+            "Ignorar la desagregación por vencimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "3. Estructura del catálogo y partidas contables"
+          }
+        },
+        {
+          "id": "if-elementos",
+          "nombre": "Los siete elementos y las cuentas de valuación",
+          "explicacion": "El primer dígito identifica el elemento: activo (1), pasivo (2) y patrimonio (3) forman el balance de situación financiera; gastos (4) e ingresos (5) son las cuentas de gestión; el elemento 6 reúne las cuentas contingentes, con compromisos y obligaciones eventuales, y el 7 las cuentas de orden y de control. Los dígitos 90 se reservan para 'otros' y los dígitos 99 identifican cuentas de valuación con saldo acreedor en el activo, como provisiones, amortizaciones y depreciaciones.",
+          "ejemplo": "La cuenta 1499 'provisiones para créditos incobrables' está dentro del activo, pero con saldo acreedor, porque disminuye el valor de la cartera.",
+          "puntos_clave": [
+            "1 a 3: balance.",
+            "4 y 5: gestión.",
+            "6 contingentes, 7 orden; 99 valuación."
+          ],
+          "errores_frecuentes": [
+            "Presentar las provisiones como pasivo.",
+            "Olvidar las cuentas contingentes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "3. Estructura del catálogo y partidas contables"
+          }
+        }
+      ]
+    },
+    {
+      "id": "if-principios",
+      "nombre": "Principios, estados financieros y reportes",
+      "orden": 2,
+      "descripcion": "Principios y postulados contables, juego completo de estados financieros y frecuencia de envío de información.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "if-postulados",
+          "nombre": "Principios y postulados contables",
+          "explicacion": "Los principios y postulados contables son guías de acción para alcanzar los objetivos de la información contable. Entre ellos, el ente contable es la entidad que desarrolla la actividad económica; la equidad exige que el registro y la información se basen en la igualdad para todos los sectores, sin preferencia para ninguno, y la medición de recursos indica que la contabilidad se fundamenta en bienes materiales e inmateriales con valor económico, susceptibles de valuarse en dinero.",
+          "ejemplo": "La cooperativa registra sus operaciones separadas de las de sus socios, porque el ente contable es la cooperativa.",
+          "puntos_clave": [
+            "Guías de acción.",
+            "Ente contable y equidad.",
+            "Medición de recursos."
+          ],
+          "errores_frecuentes": [
+            "Mezclar cuentas de la entidad con las de sus directivos.",
+            "Registrar con criterios que favorecen a un grupo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "2. Principios y postulados contables"
+          }
+        },
+        {
+          "id": "if-estados",
+          "nombre": "Juego completo de estados financieros",
+          "explicacion": "Los estados financieros son el medio principal para informar a quienes no tienen acceso a los registros de la entidad. Un juego completo, en dólares de los Estados Unidos, incluye el balance general, el estado de resultados, un estado de cambios en el patrimonio, el estado de flujos de efectivo y las notas, en línea con la NIC 1, que los define como una representación estructurada de la situación y el rendimiento financiero de la entidad.",
+          "ejemplo": "Al cierre del año, una mutualista presenta sus cinco componentes, incluidas las notas que explican sus políticas de provisiones.",
+          "puntos_clave": [
+            "Cinco componentes.",
+            "Expresados en dólares.",
+            "Base en la NIC 1."
+          ],
+          "errores_frecuentes": [
+            "Omitir las notas.",
+            "Presentar solo balance y resultados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "5. Estados financieros"
+          }
+        },
+        {
+          "id": "if-envio-informacion",
+          "nombre": "Envío de información al organismo de control",
+          "explicacion": "Las entidades del sector financiero popular y solidario remiten a la SEPS balances diarios, mensuales, trimestrales y anuales, en los plazos y medios que fija el organismo de control según su segmento. Los estados financieros se presentan según las instrucciones de la Superintendencia, que también define las características técnicas y el nivel de apertura de la información.",
+          "ejemplo": "Una cooperativa de un segmento grande envía balances diarios; una pequeña puede tener otra frecuencia según su segmento.",
+          "puntos_clave": [
+            "Balances diarios a anuales.",
+            "Plazos según el segmento.",
+            "Formato fijado por la SEPS."
+          ],
+          "errores_frecuentes": [
+            "Enviar información fuera de plazo.",
+            "Cambiar el nivel de apertura de cuentas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "10. Envío de información"
+          }
+        },
+        {
+          "id": "if-calidad-activos",
+          "nombre": "Calidad de activos y provisiones según el COMF",
+          "explicacion": "El Código Orgánico Monetario y Financiero, que el catálogo recoge, exige a las entidades calificar permanentemente sus activos y contingentes para reflejar su verdadera calidad y constituir las provisiones que establecen el código y las regulaciones de la Junta. En las entidades del sector financiero popular y solidario, el capital social es variable y puede aumentar de forma ilimitada.",
+          "ejemplo": "Cada mes, la cooperativa califica sus créditos por riesgo y ajusta las provisiones según esa calificación.",
+          "puntos_clave": [
+            "Calificación permanente de activos.",
+            "Provisiones según la regulación.",
+            "Capital social variable."
+          ],
+          "errores_frecuentes": [
+            "Calificar la cartera solo al cierre del año.",
+            "Subestimar provisiones para mostrar más utilidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "V. 1. Marco legal (art. 204 del COMF)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "if-cartera",
+      "nombre": "Cartera de créditos y provisiones",
+      "orden": 3,
+      "descripcion": "Clasificación de la cartera por actividad y por vencimiento, bandas de maduración, provisiones para créditos incobrables y castigo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "if-clasificacion-cartera",
+          "nombre": "Clasificación de la cartera",
+          "explicacion": "El grupo 14, cartera de créditos, se clasifica según la actividad a la que se destinan los recursos, conforme a las normas de segmentación: productivo, consumo, inmobiliario, microcrédito, vivienda de interés social y público y educativo, entre otros. Los créditos a otras entidades financieras se registran aquí solo si su plazo supera los 30 días; si no, van a operaciones interfinancieras (1201).",
+          "ejemplo": "Un préstamo para capital de trabajo de una pequeña tienda es microcrédito; uno para comprar un electrodoméstico, consumo.",
+          "puntos_clave": [
+            "Clasificación por actividad.",
+            "Segmentos de crédito.",
+            "Interfinancieros de más de 30 días."
+          ],
+          "errores_frecuentes": [
+            "Clasificar un crédito por su monto y no por su destino.",
+            "Registrar un interfinanciero de 15 días en cartera."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Descripción del grupo 14 Cartera de créditos"
+          }
+        },
+        {
+          "id": "if-vencimiento-cartera",
+          "nombre": "Cartera por vencer, que no devenga intereses y vencida",
+          "explicacion": "La cartera se segrega por su vencimiento en por vencer, refinanciada, reestructurada, que no devenga intereses y vencida. Las primeras se subclasifican por maduración en bandas de 1 a 30, 31 a 90, 91 a 180, 181 a 360 y más de 360 días; la vencida, según los días que cada operación o cuota permanece vencida. Se registra como por vencer la cartera cuyo plazo no ha vencido y que no supera la categoría de riesgo límite fijada por la Junta.",
+          "ejemplo": "Una cuota que vence en 45 días se registra en la banda de 31 a 90 días de la cartera por vencer.",
+          "puntos_clave": [
+            "Cinco estados de la cartera.",
+            "Bandas de maduración.",
+            "La vencida, por días de atraso."
+          ],
+          "errores_frecuentes": [
+            "Mantener como por vencer una cuota ya vencida.",
+            "Ignorar las bandas de maduración."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Descripción del grupo 14 Cartera de créditos"
+          }
+        },
+        {
+          "id": "if-provisiones",
+          "nombre": "Provisiones para créditos incobrables",
+          "explicacion": "La cuenta 1499 registra las provisiones para créditos incobrables por segmento, con subcuentas que deben coincidir con las provisiones constituidas, por ejemplo para cartera refinanciada o reestructurada, y provisiones genéricas voluntarias o por tecnología crediticia. Se acredita por las provisiones que constituyen las entidades según las normas de la Junta y se debita por las disminuciones en cada segmento. La cartera neta es la cartera bruta menos estas provisiones.",
+          "ejemplo": "Con cartera bruta de USD 12 millones y provisiones de 480.000, la cartera neta que se presenta es de USD 11,52 millones.",
+          "puntos_clave": [
+            "Cuenta de valuación 1499.",
+            "Se acredita al constituir provisiones.",
+            "Cartera neta = bruta − provisiones."
+          ],
+          "errores_frecuentes": [
+            "No conciliar las subcuentas de provisiones.",
+            "Registrar las provisiones como gasto sin la contrapartida en 1499."
+          ],
+          "formulas": [
+            "cartera-neta"
+          ],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Cuenta 1499, descripción y dinámica"
+          }
+        },
+        {
+          "id": "if-castigo",
+          "nombre": "Castigo de créditos",
+          "explicacion": "El COMF dispone que el plazo para castigar obligaciones incumplidas lo fija la Junta con base en el incumplimiento y no puede superar los tres años, y que antes del castigo las obligaciones deben estar provisionadas al 100 % de su valor en libros. Contablemente, el castigo da de baja el crédito contra su provisión; el deudor sigue registrado como moroso.",
+          "ejemplo": "Un microcrédito de USD 4.000 incobrable y provisionado en su totalidad se castiga y deja de figurar en la cartera.",
+          "puntos_clave": [
+            "Plazo máximo de tres años.",
+            "Provisión total antes del castigo.",
+            "El deudor sigue siendo moroso."
+          ],
+          "errores_frecuentes": [
+            "Castigar sin provisión completa.",
+            "Creer que el castigo perdona la deuda."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CODIGO-ORGANICO-MONETARIO-Y-FINANCIERO.pdf",
+            "seccion": "Castigo de obligaciones"
+          }
+        }
+      ]
+    },
+    {
+      "id": "if-pasivos",
+      "nombre": "Obligaciones con el público",
+      "orden": 4,
+      "descripcion": "Depósitos a la vista, depósitos a plazo, depósitos de garantía y restringidos.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "if-depositos-vista",
+          "nombre": "Depósitos a la vista",
+          "explicacion": "Las obligaciones con el público (grupo 21) son el principal pasivo de una entidad financiera. La cuenta 2101, depósitos a la vista, agrupa entre otros los depósitos monetarios en cuentas corrientes, los cheques certificados, los depósitos de ahorro, los depósitos por confirmar y los depósitos de cuenta básica, que el socio o cliente puede retirar en cualquier momento.",
+          "ejemplo": "Cuando un socio deposita USD 500 en su libreta de ahorros, la cooperativa debita caja y acredita la subcuenta 210135 depósitos de ahorro.",
+          "puntos_clave": [
+            "Grupo 21: obligaciones con el público.",
+            "2101: depósitos a la vista.",
+            "Disponibles en cualquier momento."
+          ],
+          "errores_frecuentes": [
+            "Registrar depósitos como ingresos.",
+            "Confundir depósitos de ahorro con depósitos a plazo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Plan de cuentas: grupo 21"
+          }
+        },
+        {
+          "id": "if-depositos-plazo",
+          "nombre": "Depósitos a plazo",
+          "explicacion": "La cuenta 2103, depósitos a plazo, se desagrega por bandas de vencimiento: de 1 a 30 días, de 31 a 90, de 91 a 180, de 181 a 360 y de más de 361 días, además de los depósitos por confirmar. Esta apertura permite al supervisor y a la entidad medir cuándo vencen sus obligaciones y gestionar su liquidez.",
+          "ejemplo": "Un certificado de depósito a 180 días se registra en la subcuenta de 91 a 180 días; al acercarse su vencimiento, pasa a las bandas más cortas.",
+          "puntos_clave": [
+            "Cuenta 2103.",
+            "Bandas de vencimiento.",
+            "Base para medir la liquidez."
+          ],
+          "errores_frecuentes": [
+            "No reclasificar los depósitos según su plazo remanente.",
+            "Mezclar depósitos a plazo con depósitos a la vista."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Plan de cuentas: cuenta 2103"
+          }
+        },
+        {
+          "id": "if-garantia-restringidos",
+          "nombre": "Depósitos de garantía, restringidos y operaciones interfinancieras",
+          "explicacion": "Además de los depósitos a la vista y a plazo, las obligaciones con el público incluyen los depósitos de garantía (2104) y los depósitos restringidos (2105). Fuera de este grupo, las operaciones interfinancieras (grupo 22) registran los fondos que la entidad obtiene de otras entidades financieras, como los fondos interfinancieros comprados.",
+          "ejemplo": "Un depósito que respalda un crédito y no puede retirarse mientras el crédito esté vigente es un depósito restringido.",
+          "puntos_clave": [
+            "2104 depósitos de garantía.",
+            "2105 depósitos restringidos.",
+            "Grupo 22 operaciones interfinancieras."
+          ],
+          "errores_frecuentes": [
+            "Presentar depósitos restringidos como disponibles.",
+            "Registrar fondos interfinancieros como depósitos del público."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Plan de cuentas: grupos 21 y 22"
+          }
+        },
+        {
+          "id": "if-titularizacion-venta",
+          "nombre": "Compra y venta de cartera entre entidades",
+          "explicacion": "Cuando una entidad compra cartera de otra a precios previamente convenidos, debe respetar en principio los plazos de los créditos, los vencimientos del plan de pagos y las tasas de interés pactadas originalmente con los prestatarios. Solo después, con el acuerdo y consentimiento de cada prestatario, puede modificar los términos contractuales.",
+          "ejemplo": "Una cooperativa que compra la cartera de microcréditos de otra mantiene las cuotas y tasas que los socios habían firmado.",
+          "puntos_clave": [
+            "Precio previamente convenido.",
+            "Se respetan plazos y tasas.",
+            "Cambios solo con consentimiento."
+          ],
+          "errores_frecuentes": [
+            "Subir la tasa al comprar la cartera.",
+            "Cambiar el plan de pagos sin acuerdo del deudor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "13. Operaciones de compra y venta de cartera entre dos entidades financieras"
+          }
+        }
+      ]
+    },
+    {
+      "id": "if-resultados",
+      "nombre": "Ingresos y gastos financieros",
+      "orden": 5,
+      "descripcion": "Ingresos por intereses y su reconocimiento, intereses causados, margen de intereses y liquidación de cuentas de resultados.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "if-ingresos",
+          "nombre": "Ingresos financieros y su reconocimiento",
+          "explicacion": "El elemento 5 agrupa los ingresos financieros, operativos y no operativos, ordinarios y extraordinarios, del período. Los ingresos se registran a medida que se realizan o se devengan, sin considerar la fecha ni la forma en que se recibe el efectivo. El grupo 51, intereses y descuentos ganados, incluye los intereses por depósitos, operaciones interfinancieras, inversiones en títulos valores y cartera de créditos.",
+          "ejemplo": "Los intereses de un crédito correspondientes a junio se reconocen en junio, aunque el socio pague la cuota en julio.",
+          "puntos_clave": [
+            "Elemento 5: ingresos.",
+            "Reconocimiento por devengo.",
+            "Grupo 51: intereses ganados."
+          ],
+          "errores_frecuentes": [
+            "Registrar los intereses solo cuando se cobran.",
+            "Confundir intereses ganados con comisiones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Descripción del elemento 5 Ingresos"
+          }
+        },
+        {
+          "id": "if-intereses-causados",
+          "nombre": "Intereses causados",
+          "explicacion": "El grupo 41, intereses causados, registra el costo que paga la entidad por los recursos que capta. La cuenta 4101 corresponde a las obligaciones con el público e incluye los intereses de depósitos monetarios, depósitos de ahorro, depósitos a plazo, depósitos de garantía y depósitos de cuenta básica, entre otros.",
+          "ejemplo": "Los intereses que la cooperativa reconoce a un socio por su depósito a plazo se registran en la subcuenta 410130.",
+          "puntos_clave": [
+            "Grupo 41: costo de la captación.",
+            "4101: obligaciones con el público.",
+            "Por tipo de depósito."
+          ],
+          "errores_frecuentes": [
+            "Registrar intereses pagados como menor ingreso.",
+            "Olvidar provisionar intereses por pagar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Plan de cuentas: grupo 41"
+          }
+        },
+        {
+          "id": "if-margen",
+          "nombre": "Margen de intereses",
+          "explicacion": "La diferencia entre los intereses y descuentos ganados (grupo 51) y los intereses causados (grupo 41) muestra cuánto gana la entidad por intermediar entre quienes depositan y quienes reciben crédito, antes de las provisiones y los gastos de operación. Es una lectura directa del estado de resultados construido con el catálogo.",
+          "ejemplo": "Con intereses ganados de USD 1,8 millones y causados de USD 750.000, el margen de intereses es de USD 1,05 millones.",
+          "puntos_clave": [
+            "51 menos 41.",
+            "Ganancia por intermediación.",
+            "Antes de provisiones y gastos."
+          ],
+          "errores_frecuentes": [
+            "Restar gastos de operación al calcularlo.",
+            "Comparar períodos de distinta duración."
+          ],
+          "formulas": [
+            "margen-intereses"
+          ],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Plan de cuentas: grupos 41 y 51"
+          }
+        },
+        {
+          "id": "if-cierre",
+          "nombre": "Liquidación de las cuentas de resultados",
+          "explicacion": "Las cuentas de resultados acreedoras, es decir, los ingresos, se liquidan al final del ejercicio económico con crédito a la cuenta de utilidad o pérdida del ejercicio, según corresponda. Por su naturaleza, mantienen saldos acreedores durante el período.",
+          "ejemplo": "Al 31 de diciembre, los saldos de los grupos 51 y 41 se cierran contra la utilidad del ejercicio, y las cuentas de resultados empiezan en cero el nuevo año.",
+          "puntos_clave": [
+            "Cierre al final del ejercicio.",
+            "Contra utilidad o pérdida.",
+            "Ingresos con saldo acreedor."
+          ],
+          "errores_frecuentes": [
+            "Arrastrar saldos de resultados al año siguiente.",
+            "Cerrar los resultados antes de los ajustes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "seps-cuc",
+            "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+            "seccion": "Descripción del elemento 5 Ingresos"
+          }
+        }
+      ]
+    }
+  ]
+}

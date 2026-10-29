@@ -3110,5 +3110,61 @@
       "seccion": "Art. 154"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "cartera-margen-ifi",
+    "nombre": "Cartera neta y margen de intereses",
+    "descripcion": "Calcula la cartera neta de provisiones por segmento y el margen de intereses con los grupos 51 y 41 del Catálogo Único de Cuentas.",
+    "materias": [
+      "contabilidad-ifis"
+    ],
+    "celdas": {
+      "A1": "Segmento",
+      "B1": "Cartera bruta (USD)",
+      "C1": "Provisiones 1499 (USD)",
+      "D1": "Cartera neta",
+      "A2": "Microcrédito",
+      "B2": 7000000,
+      "C2": 350000,
+      "D2": "=B2-C2",
+      "A3": "Consumo",
+      "B3": 5000000,
+      "C3": 130000,
+      "D3": "=B3-C3",
+      "A4": "Total",
+      "B4": "=SUM(B2:B3)",
+      "C4": "=SUM(C2:C3)",
+      "D4": "=B4-C4",
+      "A6": "Intereses y descuentos ganados (51)",
+      "B6": 1800000,
+      "A7": "Intereses causados (41)",
+      "B7": 750000,
+      "A8": "Margen de intereses",
+      "B8": "=B6-B7"
+    },
+    "formatos": {
+      "D2": "moneda",
+      "D3": "moneda",
+      "D4": "moneda",
+      "B8": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "D4",
+        "esperado": 11520000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B8",
+        "esperado": 1050000,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "seps-cuc",
+      "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
+      "seccion": "Plan de cuentas"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]
