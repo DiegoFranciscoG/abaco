@@ -8847,5 +8847,153 @@
       "correspondiente al ejercicio economico inmediatamente anterior al de la imposicion de la multa",
       "se entiende por volumen de negocio"
     ]
+  },
+  {
+    "id": "sm-incertidumbre",
+    "palabras": [
+      "but certainty is usually unjustified",
+      "predictive nondeterminism",
+      "our lack of knowledge does not allow us to make accurate predictions"
+    ]
+  },
+  {
+    "id": "sm-proceso-estocastico",
+    "palabras": [
+      "an ongoing process where the next state might depend on both the previous states and some random element",
+      "return random.choice([1,2,3,4,5,6])"
+    ]
+  },
+  {
+    "id": "sm-probabilidad",
+    "palabras": [
+      "probability is about counting",
+      "probabilities are always in the range 0 to 1",
+      "when events are independent of each other, the probability of all of the events occurring is equal to a product of the probabilities of each of the events occurring"
+    ]
+  },
+  {
+    "id": "sm-independencia",
+    "palabras": [
+      "two events are independent if the outcome of one event has no influence on the outcome",
+      "independence should not be taken for granted",
+      "probability of both winning next sunday is 7/8 * 6/8 = 42/64"
+    ]
+  },
+  {
+    "id": "sm-que-es-montecarlo",
+    "palabras": [
+      "a method of estimating the value of an unknown quantity using the principles of inferential statistics",
+      "a random sample tends to exhibit the same properties as the population from which it is drawn",
+      "asked von neumann if he could build a program to simulate many hands on eniac"
+    ]
+  },
+  {
+    "id": "sm-eventos-raros",
+    "palabras": [
+      "it takes a lot of trials to get a good estimate of the frequency of occurrence of a rare event",
+      "one should not confuse the sample probability with the actual probability"
+    ]
+  },
+  {
+    "id": "sm-cumpleanos",
+    "palabras": [
+      "what's the probability of at least two people in a group having the same birthday",
+      "but changing the simulation is dead easy"
+    ]
+  },
+  {
+    "id": "sm-caminatas",
+    "palabras": [
+      "random walks are important in many domains",
+      "good illustration of how to use simulations to understand things",
+      "report average distance from origin"
+    ]
+  },
+  {
+    "id": "sm-grandes-numeros",
+    "palabras": [
+      "in repeated independent tests with the same actual probability p of a particular outcome in each test",
+      "converges to zero as the number of trials goes to infinity"
+    ]
+  },
+  {
+    "id": "sm-falacia-jugador",
+    "palabras": [
+      "gambler's fallacy",
+      "probability of 26 consecutive reds when previous 25 rolls were red"
+    ]
+  },
+  {
+    "id": "sm-regresion-media",
+    "palabras": [
+      "following an extreme random event, the next random event is likely to be less extreme",
+      "that is an extreme event (probability = 1/1024)"
+    ]
+  },
+  {
+    "id": "sm-comparar-escenarios",
+    "palabras": [
+      "casinos not in the business of being fair",
+      "exp. return for american roulette"
+    ]
+  },
+  {
+    "id": "sm-tamano-varianza",
+    "palabras": [
+      "confidence in our estimate depends upon two things",
+      "as the variance grows, we need larger samples to have the same degree of confidence",
+      "never possible to guarantee perfect accuracy through sampling"
+    ]
+  },
+  {
+    "id": "sm-desviacion",
+    "palabras": [
+      "standard deviation simply the square root of the variance",
+      "standard deviation should always be considered relative to mean"
+    ]
+  },
+  {
+    "id": "sm-intervalo",
+    "palabras": [
+      "a confidence interval provides a range that is likely to contain the unknown value",
+      "the margin of error is +/- 3.5% with a 95% level of confidence"
+    ]
+  },
+  {
+    "id": "sm-regla-empirica",
+    "palabras": [
+      "~95% of data within 1.96 standard deviations of mean",
+      "the distribution of the errors in the estimates is normal",
+      "the mean estimation error is zero"
+    ]
+  },
+  {
+    "id": "sm-tipos-muestreo",
+    "palabras": [
+      "each member of the population has a nonzero probability of being included in a sample",
+      "partition population into subgroups"
+    ]
+  },
+  {
+    "id": "sm-limite-central",
+    "palabras": [
+      "will be approximately normally distributed",
+      "the variance of the sample means will be close to the variance of the population divided by the sample size"
+    ]
+  },
+  {
+    "id": "sm-error-estandar",
+    "palabras": [
+      "compute standard error of the mean (sem or se)",
+      "16.28 +- 1.96*0.94",
+      "standard deviation goes from 0.943 to 0.662"
+    ]
+  },
+  {
+    "id": "sm-una-muestra",
+    "palabras": [
+      "once sample reaches a reasonable size, sample standard deviation is a pretty good approximation to population standard deviation",
+      "use the estimated se to generate confidence intervals around the sample mean"
+    ]
   }
 ]

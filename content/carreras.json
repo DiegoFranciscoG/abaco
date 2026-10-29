@@ -1125,6 +1125,14 @@
         "planes": 2
       },
       {
+        "materia": "modelos-simulacion",
+        "ciclo": 7,
+        "ciclos": [
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "economia-internacional",
         "ciclo": 8,
         "ciclos": [
@@ -1133,13 +1141,7 @@
         "planes": 2
       }
     ],
-    "pendientes": [
-      {
-        "nombre": "Modelos de Simulación",
-        "ciclo": 7,
-        "planes": 1
-      }
-    ]
+    "pendientes": []
   },
   {
     "id": "finanzas",

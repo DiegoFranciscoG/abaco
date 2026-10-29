@@ -17,7 +17,8 @@
       "investigacion-operaciones",
       "matematica-economistas",
       "gestion-riesgos-financieros",
-      "evaluacion-politicas-publicas"
+      "evaluacion-politicas-publicas",
+      "modelos-simulacion"
     ],
     "areas": [
       "tecnologia",
@@ -687,7 +688,8 @@
     "nombre": "Google Colaboratory",
     "para_que": "Cuadernos de Python en el navegador, sin instalar nada, para practicar código, NumPy, pandas y gráficos.",
     "materias": [
-      "programacion-datos"
+      "programacion-datos",
+      "modelos-simulacion"
     ],
     "areas": [
       "tecnologia",
@@ -705,7 +707,8 @@
     "nombre": "Python",
     "para_que": "Lenguaje de programación libre para escribir y ejecutar programas y análisis de datos en tu computadora.",
     "materias": [
-      "programacion-datos"
+      "programacion-datos",
+      "modelos-simulacion"
     ],
     "areas": [
       "tecnologia"

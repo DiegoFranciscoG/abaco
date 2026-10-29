@@ -1,0 +1,479 @@
+{
+  "materia": "modelos-simulacion",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "sm-estocastico",
+      "nombre": "Pensamiento estocástico",
+      "orden": 1,
+      "descripcion": "Incertidumbre y no determinismo predictivo, procesos estocásticos, probabilidad como conteo e independencia.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sm-incertidumbre",
+          "nombre": "Incertidumbre y no determinismo predictivo",
+          "explicacion": "El mundo es difícil de entender: la incertidumbre es incómoda, pero la certeza casi nunca está justificada. Sea o no el mundo intrínsecamente impredecible, nuestra falta de conocimiento no nos permite hacer predicciones exactas, así que conviene tratarlo como impredecible. A esta postura se la llama no determinismo predictivo, y es la base para modelar con probabilidades en lugar de certezas.",
+          "ejemplo": "Un gerente de marketing no puede saber cuántas personas comprarán en una promoción, pero sí puede estimar con qué probabilidad las ventas superarán cierto nivel.",
+          "puntos_clave": [
+            "La certeza casi nunca se justifica.",
+            "Falta de conocimiento.",
+            "No determinismo predictivo."
+          ],
+          "errores_frecuentes": [
+            "Presentar un pronóstico como seguro.",
+            "Ignorar la variabilidad de los resultados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+            "seccion": "Lecture 4: Stochastic thinking"
+          }
+        },
+        {
+          "id": "sm-proceso-estocastico",
+          "nombre": "Procesos estocásticos",
+          "explicacion": "Un proceso estocástico es un proceso continuo en el que el siguiente estado puede depender de los estados anteriores y de un elemento aleatorio. En un programa se implementa con números aleatorios: por ejemplo, en Python, random.choice elige al azar un elemento de una lista, como una cara de un dado entre 1 y 6. Repetir esa elección muchas veces genera resultados que pueden analizarse.",
+          "ejemplo": "Simular cada día si un cliente compra (con probabilidad 0,3) o no compra es modelar un proceso estocástico de demanda.",
+          "puntos_clave": [
+            "Estado siguiente con un elemento aleatorio.",
+            "Números aleatorios en el código.",
+            "random.choice en Python."
+          ],
+          "errores_frecuentes": [
+            "Usar siempre la misma semilla sin saberlo.",
+            "Confundir un resultado aleatorio con un patrón."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+            "seccion": "Lecture 4: Stochastic thinking"
+          }
+        },
+        {
+          "id": "sm-probabilidad",
+          "nombre": "La probabilidad como conteo",
+          "explicacion": "La probabilidad se basa en contar: se cuenta el número de eventos posibles, el número de eventos con la propiedad de interés y se divide uno para otro. Tres hechos básicos: las probabilidades están entre 0, imposible, y 1, seguro; si un evento tiene probabilidad p, la de que no ocurra es 1 − p, y si los eventos son independientes, la probabilidad de que ocurran todos es el producto de sus probabilidades.",
+          "ejemplo": "Obtener 11111 en cinco lanzamientos de un dado es uno de 6^5 = 7.776 resultados posibles: su probabilidad es cerca de 0,0001286.",
+          "puntos_clave": [
+            "Contar casos favorables y posibles.",
+            "Entre 0 y 1; complemento 1 − p.",
+            "Independientes: se multiplican."
+          ],
+          "errores_frecuentes": [
+            "Sumar probabilidades de eventos que deben ocurrir juntos.",
+            "Olvidar el complemento."
+          ],
+          "formulas": [
+            "probabilidad-eventos-repetidos"
+          ],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+            "seccion": "Lecture 4: Stochastic thinking"
+          }
+        },
+        {
+          "id": "sm-independencia",
+          "nombre": "Independencia",
+          "explicacion": "Dos eventos son independientes si el resultado de uno no influye en el del otro, y esa independencia no debe darse por supuesta. En el ejemplo de clase, si un equipo gana 7 de 8 partidos y otro 6 de 8, la probabilidad de que ambos ganen su próximo partido es 7/8 × 6/8 = 42/64; pero si juegan entre sí, los resultados no son independientes y la probabilidad de que uno pierda se acerca a 1.",
+          "ejemplo": "Las compras de dos clientes de la misma familia no son independientes: si uno compra, es más probable que el otro también lo haga.",
+          "puntos_clave": [
+            "Un resultado no influye en el otro.",
+            "No suponer independencia sin razón.",
+            "Producto solo si son independientes."
+          ],
+          "errores_frecuentes": [
+            "Multiplicar probabilidades de eventos relacionados.",
+            "Ignorar dependencias en los datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+            "seccion": "Lecture 4: Stochastic thinking"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sm-montecarlo",
+      "nombre": "Simulación Monte Carlo",
+      "orden": 2,
+      "descripcion": "Qué es la simulación Monte Carlo, eventos raros, el problema del cumpleaños y caminatas aleatorias.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sm-que-es-montecarlo",
+          "nombre": "Qué es la simulación Monte Carlo",
+          "explicacion": "La simulación Monte Carlo es un método para estimar el valor de una cantidad desconocida usando los principios de la estadística inferencial: una muestra aleatoria tiende a mostrar las mismas propiedades que la población de la que se extrae. Su origen se atribuye a Ulam, que quería calcular la probabilidad de ganar un solitario y le pidió a von Neumann programar en la ENIAC la simulación de muchas partidas.",
+          "ejemplo": "Para estimar la probabilidad de que una campaña supere su meta, se simulan 10.000 escenarios de respuesta de los clientes y se cuenta en cuántos se supera.",
+          "puntos_clave": [
+            "Estimar una cantidad desconocida.",
+            "Basada en muestras aleatorias.",
+            "Origen con Ulam y von Neumann."
+          ],
+          "errores_frecuentes": [
+            "Simular pocos escenarios.",
+            "Creer que la simulación da un valor exacto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Monte Carlo simulation"
+          }
+        },
+        {
+          "id": "sm-eventos-raros",
+          "nombre": "Eventos raros y probabilidad muestral",
+          "explicacion": "Al simular 1.000 veces cinco lanzamientos de dado, la probabilidad estimada de 11111 puede salir 0, aunque la real es 0,0001286. La lección: se necesitan muchos intentos para estimar bien la frecuencia de un evento raro; no hay que confundir la probabilidad muestral con la real, y si existe una solución cerrada no hace falta simular, aunque en muchos problemas no la hay.",
+          "ejemplo": "Si un fraude ocurre una vez cada 10.000 transacciones, simular 1.000 transacciones probablemente no mostrará ninguno.",
+          "puntos_clave": [
+            "Los eventos raros requieren muchos intentos.",
+            "Probabilidad muestral frente a real.",
+            "Simular cuando no hay solución cerrada."
+          ],
+          "errores_frecuentes": [
+            "Concluir que algo es imposible porque no apareció en la simulación.",
+            "Simular lo que tiene una fórmula exacta sencilla."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+            "seccion": "Lecture 4: Stochastic thinking (morals)"
+          }
+        },
+        {
+          "id": "sm-cumpleanos",
+          "nombre": "Cuando simular es más fácil: el problema del cumpleaños",
+          "explicacion": "El problema del cumpleaños pregunta por la probabilidad de que al menos dos personas de un grupo cumplan años el mismo día. Para dos personas existe una fórmula, si se supone que todas las fechas son igual de probables; para tres personas el problema complementario se vuelve muy complicado, pero cambiar la simulación es muy fácil. Además, en la realidad no todas las fechas son igual de probables, algo que la simulación puede incorporar.",
+          "ejemplo": "Un analista simula la llegada de clientes a una tienda por hora con una distribución realista, en lugar de suponer que todas las horas son iguales.",
+          "puntos_clave": [
+            "Fórmula cerrada con supuestos fuertes.",
+            "La simulación se adapta con facilidad.",
+            "Supuestos más realistas."
+          ],
+          "errores_frecuentes": [
+            "Suponer distribuciones uniformes sin revisar los datos.",
+            "Complicar la matemática cuando se puede simular."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+            "seccion": "Lecture 4: The birthday problem"
+          }
+        },
+        {
+          "id": "sm-caminatas",
+          "nombre": "Caminatas aleatorias y estructura de una simulación",
+          "explicacion": "Las caminatas aleatorias son importantes en muchos campos, como entender, tal vez, el mercado de valores o modelar procesos de difusión, y son un buen ejemplo de cómo usar simulaciones para entender algo. La estructura de la simulación es: simular una caminata de k pasos, simular n caminatas y reportar la distancia promedio al origen. Para programarla se definen abstracciones como la ubicación, el campo y el caminante.",
+          "ejemplo": "Para estudiar cómo se difunde un rumor en redes sociales, se simulan muchos recorridos aleatorios del mensaje y se promedia su alcance.",
+          "puntos_clave": [
+            "Mercados y difusión.",
+            "Una caminata, n caminatas, promedio.",
+            "Abstracciones del modelo."
+          ],
+          "errores_frecuentes": [
+            "Sacar conclusiones de una sola corrida.",
+            "No validar el modelo con casos sencillos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/508a9076aebfc7d597dde836255182c7_MIT6_0002F16_lec5.pdf",
+            "seccion": "Lecture 5: Random walks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sm-ley",
+      "nombre": "Ley de los grandes números y errores de razonamiento",
+      "orden": 3,
+      "descripcion": "Ley de los grandes números, falacia del jugador, regresión a la media y comparación de escenarios simulados.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sm-grandes-numeros",
+          "nombre": "La ley de los grandes números",
+          "explicacion": "En pruebas independientes repetidas con la misma probabilidad p de un resultado, la probabilidad de que la fracción de veces que ocurre ese resultado difiera de p tiende a cero a medida que el número de pruebas tiende al infinito. Por eso, en la simulación de una ruleta justa, 100 giros pueden dar rendimientos de −100 % o +44 %, pero con un millón de giros el rendimiento se acerca a cero.",
+          "ejemplo": "Con pocos clientes encuestados la tasa de compra estimada varía mucho; con miles, se estabiliza cerca de su valor real.",
+          "puntos_clave": [
+            "Pruebas independientes repetidas.",
+            "La fracción converge a p.",
+            "Más intentos, menos variación."
+          ],
+          "errores_frecuentes": [
+            "Confiar en una muestra pequeña.",
+            "Creer que la ley garantiza resultados en pocos intentos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Law of large numbers"
+          }
+        },
+        {
+          "id": "sm-falacia-jugador",
+          "nombre": "La falacia del jugador",
+          "explicacion": "La ley de los grandes números no significa que las desviaciones se compensen con desviaciones opuestas en el futuro. En 1913, en el casino de Monte Carlo, salió negro 26 veces seguidas y los jugadores apostaron en masa al rojo. Pero la probabilidad de 26 resultados iguales seguidos es de 1 en 67.108.865, mientras que la de que salga rojo después de 25 negros sigue siendo 1/2: los giros son independientes.",
+          "ejemplo": "Que una campaña haya fallado cinco meses seguidos no hace más probable que funcione el sexto si nada cambió.",
+          "puntos_clave": [
+            "Las desviaciones no se 'compensan'.",
+            "Cada evento independiente conserva su probabilidad.",
+            "El caso de Monte Carlo en 1913."
+          ],
+          "errores_frecuentes": [
+            "Esperar que una racha deba revertirse.",
+            "Confundir probabilidad de la racha con la del siguiente evento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Gambler's fallacy"
+          }
+        },
+        {
+          "id": "sm-regresion-media",
+          "nombre": "Regresión a la media",
+          "explicacion": "Después de un evento aleatorio extremo, es probable que el siguiente sea menos extremo. Si en 10 giros de una ruleta justa salen 10 rojos, un evento con probabilidad 1/1024, lo más probable es que en los 10 siguientes salgan menos rojos, aunque el número esperado sigue siendo solo 5; por eso el promedio de los 20 giros estará más cerca del 50 % esperado que del 100 % inicial.",
+          "ejemplo": "Una tienda con un mes de ventas excepcionales probablemente tendrá un mes siguiente más cercano a su promedio, sin que eso signifique que algo empeoró.",
+          "puntos_clave": [
+            "Tras un extremo, algo menos extremo.",
+            "No es compensación.",
+            "El promedio se acerca a lo esperado."
+          ],
+          "errores_frecuentes": [
+            "Atribuir la vuelta a la normalidad a una acción tomada.",
+            "Confundirla con la falacia del jugador."
+          ],
+          "formulas": [
+            "probabilidad-eventos-repetidos"
+          ],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Regression to the mean"
+          }
+        },
+        {
+          "id": "sm-comparar-escenarios",
+          "nombre": "Comparar escenarios simulados",
+          "explicacion": "La simulación permite comparar variantes de un mismo sistema. En clase se comparan una ruleta justa, una europea con un cero adicional y una americana con cero y doble cero: con muchos giros, el rendimiento esperado de la justa se acerca a 0 %, el de la europea a cerca de −2,7 % y el de la americana a cerca de −5,2 %. Los casinos, concluye la clase, no están en el negocio de ser justos.",
+          "ejemplo": "Una cadena simula tres políticas de descuentos con la misma demanda aleatoria y compara la utilidad promedio de cada una.",
+          "puntos_clave": [
+            "Mismas condiciones aleatorias para cada variante.",
+            "Muchos intentos por escenario.",
+            "Comparar rendimientos esperados."
+          ],
+          "errores_frecuentes": [
+            "Comparar escenarios simulados con pocos intentos.",
+            "Cambiar varias cosas a la vez."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Comparing the games"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sm-confianza",
+      "nombre": "Variabilidad e intervalos de confianza",
+      "orden": 4,
+      "descripcion": "De qué depende la confianza, desviación estándar, intervalos de confianza y la regla empírica.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sm-tamano-varianza",
+          "nombre": "De qué depende la confianza en una estimación",
+          "explicacion": "La confianza en una estimación depende de dos cosas: el tamaño de la muestra y su varianza. Con 2 lanzamientos de moneda, todo cara, la confianza debe ser baja; con 100 lanzamientos y 52 caras, la mejor estimación es 0,52, pero la confianza tampoco es total. A medida que crece la varianza, se necesitan muestras más grandes para lograr el mismo grado de confianza. Nunca es posible garantizar exactitud perfecta con un muestreo.",
+          "ejemplo": "Estimar el ticket promedio de una tienda con ventas muy variables requiere más observaciones que en una tienda con ventas parecidas.",
+          "puntos_clave": [
+            "Tamaño de muestra y varianza.",
+            "Más varianza, más muestra.",
+            "Sin exactitud perfecta."
+          ],
+          "errores_frecuentes": [
+            "Fijar el tamaño de muestra sin mirar la variabilidad.",
+            "Reportar estimaciones sin su incertidumbre."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Why the difference in confidence?"
+          }
+        },
+        {
+          "id": "sm-desviacion",
+          "nombre": "Desviación estándar",
+          "explicacion": "La desviación estándar es la raíz cuadrada de la varianza y cuantifica la variación de los datos. Los valores atípicos pueden tener un gran efecto sobre ella, y siempre debe interpretarse en relación con la media: una desviación de 10 es grande si la media es 20 y pequeña si la media es 10.000.",
+          "ejemplo": "Una desviación estándar de USD 50 en ventas diarias es mucha si se vende USD 100 al día, y poca si se vende USD 20.000.",
+          "puntos_clave": [
+            "Raíz de la varianza.",
+            "Sensible a valores atípicos.",
+            "Relativa a la media."
+          ],
+          "errores_frecuentes": [
+            "Comparar desviaciones de variables con medias muy distintas.",
+            "Ignorar los valores atípicos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Quantifying variation in data"
+          }
+        },
+        {
+          "id": "sm-intervalo",
+          "nombre": "Intervalos de confianza",
+          "explicacion": "En lugar de estimar un parámetro con un solo valor, un intervalo de confianza da un rango que probablemente contiene el valor desconocido y una confianza de que esté en ese rango. En la simulación de la ruleta europea, un rendimiento esperado de −3,3 % con un margen de error de ±3,5 % al 95 % significa que, en infinitas series de 10.000 apuestas, el rendimiento estaría entre cerca de −6,8 % y +0,2 % el 95 % de las veces.",
+          "ejemplo": "Una simulación estima ventas promedio de USD 12.000 con un margen de ±USD 294 al 95 %: el rango va de 11.706 a 12.294.",
+          "puntos_clave": [
+            "Rango y nivel de confianza.",
+            "Media ± margen de error.",
+            "Interpretación en muchas repeticiones."
+          ],
+          "errores_frecuentes": [
+            "Decir que el valor real está 'con 95 % de probabilidad' en un intervalo ya calculado sin matizar.",
+            "Reportar solo la media."
+          ],
+          "formulas": [
+            "margen-error-95"
+          ],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Confidence levels and intervals"
+          }
+        },
+        {
+          "id": "sm-regla-empirica",
+          "nombre": "La regla empírica y sus supuestos",
+          "explicacion": "Según la regla empírica, cerca del 68 % de los datos está a menos de una desviación estándar de la media, cerca del 95 % a menos de 1,96 desviaciones y cerca del 99,7 % a menos de 3. Se cumple bajo dos supuestos: que el error medio de la estimación sea cero y que los errores sigan una distribución normal, cuya probabilidad entre dos valores es el área bajo su curva de densidad.",
+          "ejemplo": "Si el tiempo de entrega simulado tiene media 48 horas y desviación 6 horas con distribución normal, cerca del 95 % de los pedidos llega entre 36,2 y 59,8 horas.",
+          "puntos_clave": [
+            "68 %, 95 % y 99,7 %.",
+            "1,96 desviaciones para el 95 %.",
+            "Requiere errores normales con media cero."
+          ],
+          "errores_frecuentes": [
+            "Aplicarla a distribuciones muy asimétricas.",
+            "Usar 2 en lugar de 1,96 sin saberlo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+            "seccion": "Lecture 6: Empirical rule"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sm-muestreo",
+      "nombre": "Muestreo y error estándar",
+      "orden": 5,
+      "descripcion": "Muestreo probabilístico y estratificado, teorema del límite central, error estándar de la media y estimación con una sola muestra.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sm-tipos-muestreo",
+          "nombre": "Muestreo probabilístico y estratificado",
+          "explicacion": "En el muestreo probabilístico, cada miembro de la población tiene una probabilidad distinta de cero de ser incluido; en el muestreo aleatorio simple, todos tienen la misma probabilidad. El muestreo estratificado divide la población en subgrupos y toma una muestra aleatoria simple de cada uno; conviene cuando hay subgrupos pequeños que deben estar representados o cuando deben representarse en proporción a su tamaño, y puede reducir el tamaño de muestra necesario.",
+          "ejemplo": "Para un estudio de satisfacción, una cadena con locales en la Sierra, la Costa y la Amazonía toma una muestra aleatoria de clientes en cada región.",
+          "puntos_clave": [
+            "Probabilidad distinta de cero para todos.",
+            "Aleatorio simple.",
+            "Estratificado por subgrupos."
+          ],
+          "errores_frecuentes": [
+            "Encuestar solo a quienes es fácil contactar.",
+            "Olvidar subgrupos pequeños."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+            "seccion": "Lecture 8: Probability and stratified sampling"
+          }
+        },
+        {
+          "id": "sm-limite-central",
+          "nombre": "El teorema del límite central",
+          "explicacion": "Con una muestra suficientemente grande, el teorema del límite central establece que las medias de un conjunto de muestras se distribuyen aproximadamente de forma normal, que esa distribución tiene una media cercana a la de la población y que la varianza de las medias muestrales es cercana a la varianza de la población dividida para el tamaño de la muestra. Este tercer punto da origen al error estándar de la media.",
+          "ejemplo": "Aunque los montos de compra individuales sean muy asimétricos, el promedio de muchas muestras de 200 compras se distribuye casi como una normal.",
+          "puntos_clave": [
+            "Las medias muestrales son casi normales.",
+            "Media cercana a la poblacional.",
+            "Varianza / n."
+          ],
+          "errores_frecuentes": [
+            "Creer que los datos individuales se vuelven normales.",
+            "Aplicarlo con muestras muy pequeñas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+            "seccion": "Lecture 8: Central limit theorem"
+          }
+        },
+        {
+          "id": "sm-error-estandar",
+          "nombre": "Error estándar de la media",
+          "explicacion": "El error estándar de la media es la desviación estándar de la población dividida para la raíz del tamaño de la muestra: SE = σ / √n. En el ejemplo de clase, con temperaturas de desviación estándar cercana a 9,44 y muestras de 100, las medias muestrales tuvieron una desviación cercana a 0,94 y el intervalo al 95 % fue 16,28 ± 1,96 × 0,94. Aumentar el tamaño de la muestra, no el número de muestras, es lo que estrecha el intervalo.",
+          "ejemplo": "Duplicar el número de encuestas de 100 personas no reduce el error; encuestar a 400 personas en lugar de 100 lo reduce a la mitad.",
+          "puntos_clave": [
+            "SE = σ / √n.",
+            "Más tamaño de muestra, menos error.",
+            "Base de los intervalos de confianza."
+          ],
+          "errores_frecuentes": [
+            "Aumentar el número de muestras pequeñas en lugar de su tamaño.",
+            "Confundir SE con desviación estándar de los datos."
+          ],
+          "formulas": [
+            "error-estandar-media"
+          ],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+            "seccion": "Lecture 8: Standard error of the mean"
+          }
+        },
+        {
+          "id": "sm-una-muestra",
+          "nombre": "Estimar la media con una sola muestra",
+          "explicacion": "Cuando no se conoce la desviación estándar de la población, la de una muestra de tamaño razonable es una buena aproximación. El procedimiento es: elegir el tamaño de muestra según la asimetría estimada de la población, tomar una muestra aleatoria, calcular su media y desviación estándar, usar esa desviación para estimar el error estándar y construir el intervalo de confianza alrededor de la media muestral. Funciona bien con muestras aleatorias independientes, algo que no siempre es fácil de lograr.",
+          "ejemplo": "Una encuesta a 400 clientes elegidos al azar da un gasto promedio de USD 35 con desviación de USD 12: el error estándar es 0,6 y el intervalo al 95 % va de 33,82 a 36,18.",
+          "puntos_clave": [
+            "La desviación muestral aproxima la poblacional.",
+            "La asimetría importa.",
+            "Muestras aleatorias independientes."
+          ],
+          "errores_frecuentes": [
+            "Usar muestras no aleatorias.",
+            "Ignorar la asimetría de la población."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-6-0002",
+            "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+            "seccion": "Lecture 8: To estimate mean from a single sample"
+          }
+        }
+      ]
+    }
+  ]
+}

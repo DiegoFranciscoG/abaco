@@ -2997,5 +2997,70 @@
       "seccion": "Arts. 71 y 72"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "intervalo-confianza-simulacion",
+    "nombre": "Error estándar e intervalo de confianza",
+    "descripcion": "A partir de la media, la desviación estándar y el tamaño de una muestra o de una simulación, calcula el error estándar, el margen de error al 95 % y los límites del intervalo; también la probabilidad de una racha de eventos independientes.",
+    "materias": [
+      "modelos-simulacion"
+    ],
+    "celdas": {
+      "A1": "Media de la muestra o simulación",
+      "B1": 35,
+      "A2": "Desviación estándar",
+      "B2": 12,
+      "A3": "Tamaño de la muestra (n)",
+      "B3": 400,
+      "A4": "Error estándar",
+      "B4": "=B2/SQRT(B3)",
+      "A5": "Margen de error al 95 %",
+      "B5": "=1.96*B4",
+      "A6": "Límite inferior",
+      "B6": "=B1-B5",
+      "A7": "Límite superior",
+      "B7": "=B1+B5",
+      "A9": "Probabilidad del evento",
+      "B9": 0.5,
+      "A10": "Veces seguidas",
+      "B10": 10,
+      "A11": "Probabilidad de la racha",
+      "B11": "=B9^B10"
+    },
+    "formatos": {
+      "B4": "numero",
+      "B5": "numero",
+      "B6": "numero",
+      "B7": "numero",
+      "B11": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B4",
+        "esperado": 0.6,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B6",
+        "esperado": 33.824,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B7",
+        "esperado": 36.176,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B11",
+        "esperado": 0.0009765625,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+      "seccion": "Lecture 8: Sampling and standard error"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

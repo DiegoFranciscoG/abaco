@@ -835,5 +835,14 @@
     "url": "https://www.wipo.int/wipolex/es/text/513773",
     "licencia": "Norma jurídica pública",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mit-6-0002",
+    "titulo": "6.0002 Introduction to Computational Thinking and Data Science (otoño de 2016), diapositivas de clase",
+    "autor_editor": "MIT OpenCourseWare — Eric Grimson, John Guttag y Ana Bell",
+    "tipo": "documentacion",
+    "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/pages/lecture-slides-and-files/",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
   }
 ]

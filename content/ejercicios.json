@@ -14749,5 +14749,232 @@
     },
     "materia": "derecho-marketing-datos",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-prob-dado",
+    "subtema": "sm-probabilidad",
+    "formula": "probabilidad-eventos-repetidos",
+    "enunciado": "¿Cuál es la probabilidad de obtener 11111 en cinco lanzamientos de un dado justo?",
+    "datos": {
+      "p": 0.166666666667,
+      "k": 5
+    },
+    "calculo": "p ^ k",
+    "respuesta": 0.0001286,
+    "unidad": "probabilidad",
+    "tolerancia": 1e-7,
+    "procedimiento": [
+      "P = (1/6)^5 = 1/7776 ≈ 0,0001286"
+    ],
+    "pistas": [
+      "Los lanzamientos son independientes."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+      "seccion": "Lecture 4: Probability is about counting"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-prob-clientes",
+    "subtema": "sm-probabilidad",
+    "formula": "probabilidad-eventos-repetidos",
+    "enunciado": "Cada cliente que recibe una oferta compra con probabilidad 0,2, de forma independiente. ¿Cuál es la probabilidad de que los tres primeros clientes compren?",
+    "datos": {
+      "p": 0.2,
+      "k": 3
+    },
+    "calculo": "p ^ k",
+    "respuesta": 0.008,
+    "unidad": "probabilidad",
+    "tolerancia": 1e-7,
+    "procedimiento": [
+      "P = 0,2 × 0,2 × 0,2 = 0,008"
+    ],
+    "pistas": [
+      "Multiplica la probabilidad por sí misma tres veces."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+      "seccion": "Lecture 4: Three basic facts about probability"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-diez-rojos",
+    "subtema": "sm-regresion-media",
+    "formula": "probabilidad-eventos-repetidos",
+    "enunciado": "En una ruleta justa con probabilidad 1/2 de rojo, ¿cuál es la probabilidad de obtener 10 rojos en 10 giros?",
+    "datos": {
+      "p": 0.5,
+      "k": 10
+    },
+    "calculo": "p ^ k",
+    "respuesta": 0.0009765625,
+    "unidad": "probabilidad",
+    "tolerancia": 1e-7,
+    "procedimiento": [
+      "P = 0,5^10 = 1/1024 ≈ 0,00098"
+    ],
+    "pistas": [
+      "Es un evento extremo; el siguiente probablemente será menos extremo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+      "seccion": "Lecture 6: Regression to the mean"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-racha-campana",
+    "subtema": "sm-regresion-media",
+    "formula": "probabilidad-eventos-repetidos",
+    "enunciado": "Un anuncio en línea logra un clic en una de cada 10 impresiones, de forma independiente. ¿Cuál es la probabilidad de que las 4 primeras impresiones logren clic, un resultado extremo?",
+    "datos": {
+      "p": 0.1,
+      "k": 4
+    },
+    "calculo": "p ^ k",
+    "respuesta": 0.0001,
+    "unidad": "probabilidad",
+    "tolerancia": 1e-7,
+    "procedimiento": [
+      "P = 0,1^4 = 0,0001"
+    ],
+    "pistas": [
+      "Tras una racha así, espera resultados más cercanos al 10 %."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+      "seccion": "Lecture 6: Regression to the mean"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-margen-a",
+    "subtema": "sm-intervalo",
+    "formula": "margen-error-95",
+    "enunciado": "Una simulación de 400 escenarios de ventas mensuales da una desviación estándar de USD 3.000. ¿Cuál es el margen de error al 95 % de la venta promedio?",
+    "datos": {
+      "s": 3000,
+      "n": 400
+    },
+    "calculo": "1.96 * s / SQRT(n)",
+    "respuesta": 294,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "SE = 3.000 / 20 = 150",
+      "ME = 1,96 × 150 = 294"
+    ],
+    "pistas": [
+      "Primero calcula el error estándar."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+      "seccion": "Lecture 6: Confidence levels and intervals"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-margen-b",
+    "subtema": "sm-intervalo",
+    "formula": "margen-error-95",
+    "enunciado": "Una encuesta a 400 clientes da un gasto promedio de USD 35 con desviación estándar de USD 12. ¿Cuál es el margen de error al 95 %?",
+    "datos": {
+      "s": 12,
+      "n": 400
+    },
+    "calculo": "1.96 * s / SQRT(n)",
+    "respuesta": 1.176,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "SE = 12 / 20 = 0,6",
+      "ME = 1,96 × 0,6 = 1,176",
+      "Intervalo: 33,82 a 36,18"
+    ],
+    "pistas": [
+      "√400 = 20."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+      "seccion": "Lecture 8: To estimate mean from a single sample"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-se-temperaturas",
+    "subtema": "sm-error-estandar",
+    "formula": "error-estandar-media",
+    "enunciado": "Con una desviación estándar poblacional de 9,44 °C, ¿cuál es el error estándar de la media para muestras de 200 días?",
+    "datos": {
+      "s": 9.44,
+      "n": 200
+    },
+    "calculo": "s / SQRT(n)",
+    "respuesta": 0.6675,
+    "unidad": "°C",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "SE = 9,44 / √200 ≈ 9,44 / 14,142 ≈ 0,6675"
+    ],
+    "pistas": [
+      "Compáralo con el 0,662 que obtuvo la simulación de clase."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+      "seccion": "Lecture 8: Getting a tighter bound"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sm-se-encuesta",
+    "subtema": "sm-error-estandar",
+    "formula": "error-estandar-media",
+    "enunciado": "En una encuesta de satisfacción, las calificaciones tienen una desviación estándar de 2 puntos. ¿Cuál es el error estándar de la media con 100 encuestados?",
+    "datos": {
+      "s": 2,
+      "n": 100
+    },
+    "calculo": "s / SQRT(n)",
+    "respuesta": 0.2,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "SE = 2 / √100 = 2 / 10 = 0,2"
+    ],
+    "pistas": [
+      "Cuadruplicar la muestra reduce el error a la mitad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+      "seccion": "Lecture 8: Standard error of the mean"
+    },
+    "materia": "modelos-simulacion",
+    "actualizado_en": "2026-10-26"
   }
 ]

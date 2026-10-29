@@ -1374,5 +1374,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "modelos-simulacion",
+    "nombre": "Modelos de simulación",
+    "areas": [
+      "cuantitativo",
+      "tecnologia"
+    ],
+    "descripcion": "Pensamiento estocástico y probabilidad, simulación Monte Carlo, caminatas aleatorias, ley de los grandes números, falacia del jugador y regresión a la media, variabilidad e intervalos de confianza, regla empírica, muestreo y error estándar de la media.",
+    "sinonimos": [
+      "simulación",
+      "monte carlo",
+      "modelos estocásticos",
+      "simulación de escenarios",
+      "métodos de simulación"
+    ],
+    "herramientas": [
+      "estadistica",
+      "graficador",
+      "editor"
+    ],
+    "orden": 58,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

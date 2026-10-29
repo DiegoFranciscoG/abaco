@@ -11844,5 +11844,195 @@
     ],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "probabilidad-eventos-repetidos",
+    "nombre": "Probabilidad de que un evento independiente se repita k veces",
+    "categoria": "calculo",
+    "materias": [
+      "modelos-simulacion"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Cuando los eventos son independientes, la probabilidad de que todos ocurran es el producto de sus probabilidades; si es el mismo evento k veces, es p elevado a k.",
+    "latex": "P = p^{k}",
+    "variables": [
+      {
+        "simbolo": "p",
+        "nombre": "p",
+        "significado": "Probabilidad del evento en un intento",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Número de veces que debe ocurrir",
+        "unidad": "intentos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "p ^ k"
+    },
+    "excel": {
+      "es": "=p^k",
+      "en": "=p^k"
+    },
+    "ejemplo": {
+      "enunciado": "Al lanzar cinco veces un dado justo, ¿cuál es la probabilidad de obtener 11111?",
+      "entradas": {
+        "p": 0.166666666667,
+        "k": 5
+      },
+      "pasos": [
+        "P = (1/6)^5 = 1/7776",
+        "P ≈ 0,0001286"
+      ],
+      "resultado": 0.0001286,
+      "unidad": "probabilidad",
+      "tolerancia": 1e-7,
+      "excel_es": "=(1/6)^5",
+      "excel_en": "=(1/6)^5"
+    },
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+      "seccion": "Lecture 4: Stochastic thinking"
+    },
+    "supuestos": [
+      "Los intentos son independientes y la probabilidad no cambia."
+    ],
+    "notas": [
+      "La independencia no debe darse por supuesta."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "error-estandar-media",
+    "nombre": "Error estándar de la media",
+    "categoria": "calculo",
+    "materias": [
+      "modelos-simulacion"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Desviación estándar de las medias muestrales: desviación estándar de la población (o de una muestra suficientemente grande) dividida para la raíz del tamaño de la muestra.",
+    "latex": "SE = \\frac{\\sigma}{\\sqrt{n}}",
+    "variables": [
+      {
+        "simbolo": "\\sigma",
+        "nombre": "s",
+        "significado": "Desviación estándar de la población o de la muestra",
+        "unidad": "según el dato"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Tamaño de la muestra",
+        "unidad": "observaciones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "s / SQRT(n)"
+    },
+    "excel": {
+      "es": "=s/RAIZ(n)",
+      "en": "=s/SQRT(n)"
+    },
+    "ejemplo": {
+      "enunciado": "La desviación estándar de las temperaturas máximas diarias de una población es 9,44 °C. ¿Cuál es el error estándar de la media con muestras de 100 días?",
+      "entradas": {
+        "s": 9.44,
+        "n": 100
+      },
+      "pasos": [
+        "SE = 9,44 / √100",
+        "SE = 9,44 / 10 = 0,944"
+      ],
+      "resultado": 0.944,
+      "unidad": "°C",
+      "tolerancia": 0.0001,
+      "excel_es": "=9,44/RAIZ(100)",
+      "excel_en": "=9.44/SQRT(100)"
+    },
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+      "seccion": "Lecture 8: Sampling and standard error"
+    },
+    "supuestos": [
+      "Muestras aleatorias independientes."
+    ],
+    "notas": [
+      "Con muestras razonablemente grandes, la desviación estándar de la muestra aproxima bien la de la población."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "margen-error-95",
+    "nombre": "Margen de error al 95 % de confianza",
+    "categoria": "calculo",
+    "materias": [
+      "modelos-simulacion"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Según la regla empírica, cerca del 95 % de los datos está a menos de 1,96 desviaciones estándar de la media; aplicado a la media muestral, el intervalo es la media más o menos 1,96 errores estándar.",
+    "latex": "ME = 1{,}96 \\times \\frac{s}{\\sqrt{n}}",
+    "variables": [
+      {
+        "simbolo": "s",
+        "nombre": "s",
+        "significado": "Desviación estándar",
+        "unidad": "según el dato"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Tamaño de la muestra",
+        "unidad": "observaciones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "1.96 * s / SQRT(n)"
+    },
+    "excel": {
+      "es": "=1,96*s/RAIZ(n)",
+      "en": "=1.96*s/SQRT(n)"
+    },
+    "ejemplo": {
+      "enunciado": "Una simulación de 400 escenarios de ventas da una desviación estándar de USD 3.000. ¿Cuál es el margen de error al 95 % de la venta promedio?",
+      "entradas": {
+        "s": 3000,
+        "n": 400
+      },
+      "pasos": [
+        "SE = 3.000 / √400 = 150",
+        "ME = 1,96 × 150 = 294"
+      ],
+      "resultado": 294,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=1,96*3000/RAIZ(400)",
+      "excel_en": "=1.96*3000/SQRT(400)"
+    },
+    "fuente": {
+      "ref": "mit-6-0002",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+      "seccion": "Lecture 6: Monte Carlo simulation (empirical rule)"
+    },
+    "supuestos": [
+      "El error medio de la estimación es cero y los errores siguen una distribución normal."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

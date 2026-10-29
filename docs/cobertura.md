@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (57 completas de 57)
+## Estado por materia (58 completas de 58)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -65,6 +65,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Marco legal del marketing, protección de datos y ciberseguridad | 0 de 7 | completa | 5 de 5 | 21 | 1 de 1 | 100 % | — |
 | Matemáticas para economistas | 0 de 7 | completa | 5 de 5 | 23 | 8 de 8 | 100 % | — |
 | Mercado de valores e inversiones | 0 de 7 | completa | 5 de 5 | 20 | 4 de 4 | 100 % | — |
+| Modelos de simulación | 0 de 7 | completa | 5 de 5 | 20 | 4 de 4 | 100 % | — |
 | Organización industrial, teoría de juegos y economía del comportamiento | 0 de 7 | completa | 5 de 5 | 21 | 2 de 2 | 100 % | — |
 | Pensamiento económico y economía política | 0 de 7 | completa | 5 de 5 | 21 | 0 de 0 | 100 % | — |
 | Publicidad y comunicación comercial | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
@@ -172,7 +173,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **4.º ciclo**: en ÁBACO: Finanzas corporativas (completa, 6 de 6 unidades); Inglés de negocios (completa, 5 de 5 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades); Macroeconomía (completa, 6 de 6 unidades); Ventas y distribución comercial (completa, 5 de 5 unidades) · sin pendientes.
 - **5.º ciclo**: en ÁBACO: Metodología de la investigación (completa, 6 de 6 unidades); Operaciones y cadena de suministro (completa, 5 de 5 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Propiedad intelectual y transferencia de tecnología (completa, 5 de 5 unidades) · sin pendientes.
-- **7.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · pendientes: Modelos de Simulación.
+- **7.º ciclo**: en ÁBACO: Marketing digital y comercio electrónico (completa, 5 de 5 unidades); Modelos de simulación (completa, 5 de 5 unidades) · sin pendientes.
 - **8.º ciclo**: en ÁBACO: Economía internacional y comercio exterior (completa, 6 de 6 unidades) · sin pendientes.
 
 ### Finanzas (1 plan)
