@@ -36,10 +36,8 @@ describe('avance por malla', () => {
     expect(general).toHaveAttribute('href', '/materia/contabilidad-general');
     expect(within(general).getByText('En curso')).toBeInTheDocument();
     expect(within(general).getByText(/1\/22 ejercicios · sin examen/)).toBeInTheDocument();
-    // An ethics exam of 90 % masters a subject that has no calculation exercises.
-    expect(
-      within(within(map).getByRole('link', { name: /Ética profesional/ })).getByText('Dominada'),
-    ).toBeInTheDocument();
+    // An ethics exam of 90 % masters a subject that has no calculation exercises; the exam loads asynchronously.
+    expect(await within(map).findByRole('link', { name: /Ética profesional.*Dominada/ })).toBeInTheDocument();
     expect(within(map).getAllByText('Aún no está en ÁBACO').length).toBeGreaterThan(0);
   });
 });
