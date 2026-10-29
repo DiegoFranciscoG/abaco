@@ -1,0 +1,479 @@
+{
+  "materia": "investigacion-operaciones",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "io-modelado",
+      "nombre": "Modelado y programación lineal",
+      "orden": 1,
+      "descripcion": "El modelado como habilidad y arte, formulación con variables, objetivo y restricciones, el problema de la dieta, optimización de portafolios y región factible.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "io-modelar",
+          "nombre": "Modelar: habilidad matemática y arte",
+          "explicacion": "Modelar un problema de decisión es a la vez una habilidad matemática y un arte. El proceso recomendado es empezar con un modelo simple del problema y mejorarlo paso a paso hasta que sea suficientemente bueno, en lugar de intentar capturar toda la realidad desde el inicio. Las clases citan la idea atribuida a Einstein de que todo debe hacerse tan simple como sea posible, pero no más simple.",
+          "ejemplo": "Para planificar la producción de una panadería se empieza con dos productos y una restricción de horno; luego se agregan la mano de obra, la harina y la demanda de cada día.",
+          "puntos_clave": [
+            "Habilidad matemática y arte.",
+            "Empezar simple.",
+            "Mejorar el modelo por etapas."
+          ],
+          "errores_frecuentes": [
+            "Querer un modelo perfecto desde el inicio.",
+            "Simplificar tanto que se pierde el problema real."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/d244065e2dce13f23254035a14586d6c_MIT15_053S13_lec2.pdf",
+            "seccion": "Lecture 2: Formulations of linear and non-linear programs"
+          }
+        },
+        {
+          "id": "io-formulacion",
+          "nombre": "Formular un programa lineal: el problema de la dieta",
+          "explicacion": "Un programa lineal tiene variables de decisión, una función objetivo y restricciones lineales. En el ejemplo de clase se busca minimizar el costo de una comida con pocos platos de un menú, cumpliendo que tenga entre 600 y 900 calorías, menos de la mitad del sodio diario, menos del 40 % de las calorías provenientes de grasa y al menos 30 gramos de proteína, y permitiendo porciones fraccionarias. Las variables son las cantidades de cada plato, el objetivo es el costo total y cada requisito nutricional es una restricción.",
+          "ejemplo": "Como ilustración, si x es la cantidad de ensaladas y y la de hamburguesas, con costos de USD 1 y USD 3, el objetivo sería minimizar x + 3y, sujeto a que las calorías estén entre 600 y 900 y a x, y ≥ 0.",
+          "puntos_clave": [
+            "Variables de decisión.",
+            "Función objetivo lineal.",
+            "Restricciones lineales y no negatividad."
+          ],
+          "errores_frecuentes": [
+            "Olvidar las restricciones de no negatividad.",
+            "Mezclar unidades en una misma restricción."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/d244065e2dce13f23254035a14586d6c_MIT15_053S13_lec2.pdf",
+            "seccion": "Lecture 2: Formulations of linear and non-linear programs"
+          }
+        },
+        {
+          "id": "io-portafolio",
+          "nombre": "Un modelo no lineal: optimización de portafolios",
+          "explicacion": "No todos los modelos son lineales. En la optimización de un portafolio, el administrador de un fondo elige entre cientos de acciones con sus rendimientos esperados, varianzas y covarianzas, con reglas como no invertir más de cierto porcentaje en una acción. El rendimiento del portafolio es el promedio ponderado de los rendimientos, pero el riesgo se mide con la varianza del portafolio, que depende de las covarianzas y es una función no lineal de las proporciones invertidas.",
+          "ejemplo": "En el ejemplo de clase, con 50 %, 20 % y 30 % invertidos en tres acciones de rendimientos promedio de 12,7 %, 9,9 % y 11,8 %, el rendimiento esperado es 0,5 × 12,7 + 0,2 × 9,9 + 0,3 × 11,8 = 11,87, es decir, 11,87 % anual.",
+          "puntos_clave": [
+            "Rendimiento: promedio ponderado.",
+            "Riesgo: varianza con covarianzas.",
+            "Modelo no lineal."
+          ],
+          "errores_frecuentes": [
+            "Medir el riesgo del portafolio con el promedio de las varianzas.",
+            "Tratar un modelo cuadrático como lineal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/d244065e2dce13f23254035a14586d6c_MIT15_053S13_lec2.pdf",
+            "seccion": "Lecture 2: Formulations of linear and non-linear programs"
+          }
+        },
+        {
+          "id": "io-region-factible",
+          "nombre": "Región factible, restricciones redundantes y convexidad",
+          "explicacion": "Cada desigualdad lineal define un semiplano, y la intersección de todos ellos es la región factible del programa lineal. Una restricción es redundante si al eliminarla no se agranda la región factible. La región factible de un programa lineal es convexa: el segmento que une dos de sus puntos está dentro de ella. Sus vértices o puntos extremos son los puntos que no son el punto medio de otros dos puntos de la región.",
+          "ejemplo": "Con 2x + 3y ≤ 10, x + 2y ≤ 6, x + y ≤ 5, y ≤ 3, x ≤ 4 y x, y ≥ 0, la restricción x + y ≤ 5 es redundante porque las demás ya la cumplen.",
+          "puntos_clave": [
+            "Semiplanos y región factible.",
+            "Restricciones redundantes.",
+            "Convexidad y vértices."
+          ],
+          "errores_frecuentes": [
+            "Graficar mal el sentido de una desigualdad.",
+            "Creer que toda restricción reduce la región."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+            "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "io-solucion",
+      "nombre": "Solución de programas lineales",
+      "orden": 2,
+      "descripcion": "Método gráfico, tipos de programas lineales, el método simplex y análisis de sensibilidad con precios sombra.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "io-metodo-grafico",
+          "nombre": "Método gráfico",
+          "explicacion": "Con dos variables, el método geométrico grafica rectas de la función objetivo, llamadas líneas de isoutilidad o isocosto, y las desplaza en paralelo mientras sigan tocando la región factible. El valor máximo se alcanza en el último punto de contacto, que es un vértice: si un programa lineal tiene solución óptima, esta ocurre en un vértice, por eso basta evaluar la función objetivo en los vértices.",
+          "ejemplo": "Para maximizar 3x + 5y con las restricciones del ejemplo, los vértices (4; 0,67), (2; 2) y (0; 3) dan 15,33, 16 y 15: el óptimo es (2, 2) con Z = 16.",
+          "puntos_clave": [
+            "Rectas de isoutilidad paralelas.",
+            "El óptimo está en un vértice.",
+            "Evaluar Z en los vértices."
+          ],
+          "errores_frecuentes": [
+            "Buscar el óptimo en el interior de la región.",
+            "Olvidar algún vértice al evaluar."
+          ],
+          "formulas": [
+            "valor-objetivo-lineal"
+          ],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+            "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+          }
+        },
+        {
+          "id": "io-tipos-lp",
+          "nombre": "Programas con óptimo, no acotados e infactibles",
+          "explicacion": "Un programa lineal puede tener solución óptima, tener un objetivo no acotado, es decir, que en un problema de máximo crece sin límite, o ser infactible, sin ninguna solución que cumpla todas las restricciones. Si la región factible no está vacía y está acotada, existe una solución óptima, siempre que las restricciones sean del tipo menor o igual y no desigualdades estrictas.",
+          "ejemplo": "Maximizar x sujeto a x + y ≥ 1 con x, y ≥ 0 no está acotado; maximizar x sujeto a x + y ≤ −1 con x, y ≥ 0 es infactible.",
+          "puntos_clave": [
+            "Óptimo, no acotado o infactible.",
+            "Región no vacía y acotada: hay óptimo.",
+            "Cuidado con desigualdades estrictas."
+          ],
+          "errores_frecuentes": [
+            "Creer que todo modelo tiene solución.",
+            "No revisar si faltan restricciones que acoten el problema."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+            "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+          }
+        },
+        {
+          "id": "io-simplex",
+          "nombre": "El método simplex",
+          "explicacion": "El método simplex, una técnica de búsqueda considerada uno de los avances más importantes de la optimización del último siglo, se basa en la eliminación gaussiana. Las ecuaciones se escriben con las variables arriba y los coeficientes abajo, en un tableau, y pivotear en un coeficiente convierte su columna en un vector unitario. Antes, el programa se lleva a forma canónica: variables no negativas, restricciones convertidas en igualdades con variables de holgura, lados derechos no negativos y una columna unitaria por cada fila.",
+          "ejemplo": "La restricción x1 + 2x2 ≤ 5 se convierte en igualdad agregando una variable de holgura: x1 + 2x2 + s1 = 5, con s1 ≥ 0.",
+          "puntos_clave": [
+            "Eliminación gaussiana y pivoteo.",
+            "Tableau.",
+            "Forma canónica con variables de holgura."
+          ],
+          "errores_frecuentes": [
+            "Olvidar las variables de holgura.",
+            "Pivotear sin mantener los lados derechos no negativos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/6894404cdfa3a78ae351d8f458af5025_MIT15_053S13_lec4.pdf",
+            "seccion": "Lecture 4: The simplex method 1"
+          }
+        },
+        {
+          "id": "io-precios-sombra",
+          "nombre": "Análisis de sensibilidad y precios sombra",
+          "explicacion": "El análisis de sensibilidad estudia qué pasa con el óptimo si cambia un dato. Con cambios pequeños, el conjunto de variables básicas óptimas no cambia: si cambia el lado derecho de una restricción, la solución y el valor óptimo cambian linealmente, y si cambia un coeficiente de costo, la solución óptima se mantiene. El precio sombra de una restricción es el aumento del valor óptimo por cada unidad que aumenta su lado derecho, y solo es válido dentro del rango permitido del lado derecho que muestra el informe de sensibilidad.",
+          "ejemplo": "Si la restricción de discos tiene un precio sombra de 0,8 y aumentos permitidos de hasta 0,6, conseguir 0,5 unidades más sube la utilidad en 0,8 × 0,5 = 0,4.",
+          "puntos_clave": [
+            "Sensibilidad ante cambios en los datos.",
+            "Precio sombra por unidad de lado derecho.",
+            "Válido solo dentro del rango."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el precio sombra fuera de su rango.",
+            "Confundir precio sombra con costo del recurso."
+          ],
+          "formulas": [
+            "cambio-por-precio-sombra"
+          ],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/8fead641e2eee52dc7de15c68a9effab_MIT15_053S13_lec6.pdf",
+            "seccion": "Lecture 6: Sensitivity analysis and shadow prices"
+          }
+        }
+      ]
+    },
+    {
+      "id": "io-entera",
+      "nombre": "Programación entera",
+      "orden": 3,
+      "descripcion": "Problemas de optimización combinatoria, programas enteros, variables binarias y restricciones lógicas, y diferencia entre solución lineal y entera.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "io-combinatoria",
+          "nombre": "Optimización combinatoria",
+          "explicacion": "Un problema de optimización combinatoria tiene datos de entrada, una forma de saber si una solución es factible, que suelen ser finitas, y una función objetivo que se minimiza o maximiza. Ejemplos son el problema del agente viajero, que busca el recorrido más corto que pasa una sola vez por cada punto; la partición balanceada de un conjunto de números en dos grupos de sumas lo más parecidas posible, y la programación de exámenes que minimiza los estudiantes con dos exámenes a la misma hora.",
+          "ejemplo": "Los números 7, 10, 13, 17, 20 y 22 suman 89; la mejor partición es {10, 13, 22} y {7, 17, 20}, con sumas 45 y 44.",
+          "puntos_clave": [
+            "Datos, factibilidad y objetivo.",
+            "Agente viajero.",
+            "Partición y programación de exámenes."
+          ],
+          "errores_frecuentes": [
+            "Probar todas las combinaciones en problemas grandes.",
+            "Confundir factibilidad con optimalidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/994cbaeb3ba44ca864de668cdf3c3dcc_MIT15_053S13_lec10.pdf",
+            "seccion": "Lecture 10: Introduction to integer programming"
+          }
+        },
+        {
+          "id": "io-programa-entero",
+          "nombre": "Programas enteros",
+          "explicacion": "Un programa entero tiene variables, desigualdades e igualdades lineales y un subconjunto de variables que debe tomar valores enteros; una solución es factible si cumple todas las restricciones y la integralidad, y el objetivo es maximizar o minimizar una función lineal. Como regla práctica, la programación entera permite modelar las variables y restricciones que uno quisiera poner en un programa lineal pero no puede.",
+          "ejemplo": "Maximizar 3x + 4y sujeto a 5x + 8y ≤ 24 con x e y enteros no negativos: la solución debe ser un punto con coordenadas enteras.",
+          "puntos_clave": [
+            "Variables que deben ser enteras.",
+            "Restricciones lineales.",
+            "Modela lo que un programa lineal no puede."
+          ],
+          "errores_frecuentes": [
+            "Redondear la solución lineal y suponer que es la entera óptima.",
+            "Exigir enteros donde no hace falta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/994cbaeb3ba44ca864de668cdf3c3dcc_MIT15_053S13_lec10.pdf",
+            "seccion": "Lecture 10: Introduction to integer programming"
+          }
+        },
+        {
+          "id": "io-variables-binarias",
+          "nombre": "Variables binarias y restricciones lógicas",
+          "explicacion": "Las variables binarias toman el valor 1 si se toma una decisión y 0 si no: si se hace el proyecto i, si se selecciona un nodo, si una tarea va después de otra o si una materia se toma en cierto semestre. Con ellas se modelan restricciones lógicas que un programa lineal no admite, como si se elige el proyecto i entonces no se elige el j; si una variable es positiva entonces debe ser al menos 10, o que al menos una de dos condiciones se cumpla.",
+          "ejemplo": "Si x1 y x2 valen 1 cuando se ejecutan los proyectos 1 y 2, la restricción x1 + x2 ≤ 1 impide hacer ambos a la vez.",
+          "puntos_clave": [
+            "Variables 0-1 para decisiones de sí o no.",
+            "Restricciones lógicas.",
+            "Selección de proyectos y secuencias."
+          ],
+          "errores_frecuentes": [
+            "Usar variables continuas para decisiones de sí o no.",
+            "Plantear mal la restricción de exclusión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/994cbaeb3ba44ca864de668cdf3c3dcc_MIT15_053S13_lec10.pdf",
+            "seccion": "Lecture 10: Introduction to integer programming"
+          }
+        },
+        {
+          "id": "io-lp-vs-ip",
+          "nombre": "Solución lineal frente a solución entera",
+          "explicacion": "Cuando se permiten valores fraccionarios, el programa lineal puede dar una solución más barata que la que se obtiene exigiendo valores enteros. En el ejemplo de la comida de costo mínimo de clase, la solución lineal óptima combina fracciones de dos platos con un costo de USD 2,37, mientras que la solución entera óptima, con platos completos, cuesta USD 3. Por eso la solución entera no se obtiene simplemente redondeando la lineal.",
+          "ejemplo": "La solución lineal de clase pide 1,13 porciones de un plato y 0,41 de otro, algo que no se puede servir; la solución entera elige platos completos, una porción de uno y dos de otro, y cuesta USD 3.",
+          "puntos_clave": [
+            "La solución lineal acota a la entera.",
+            "Fracciones no siempre tienen sentido.",
+            "Redondear no garantiza el óptimo."
+          ],
+          "errores_frecuentes": [
+            "Redondear y suponer optimalidad.",
+            "Creer que la solución entera nunca cuesta más."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/d244065e2dce13f23254035a14586d6c_MIT15_053S13_lec2.pdf",
+            "seccion": "Lecture 2: Formulations of linear and non-linear programs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "io-redes",
+      "nombre": "Modelos de redes",
+      "orden": 4,
+      "descripcion": "Nodos, arcos y redes, el problema de la ruta más corta y Dijkstra, el problema de transporte y el flujo de costo mínimo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "io-redes-conceptos",
+          "nombre": "Redes: nodos y arcos",
+          "explicacion": "Una red o grafo dirigido está formada por un conjunto de nodos y un conjunto de arcos que los unen; en un grafo no dirigido las conexiones no tienen sentido. Las redes están en todas partes: carreteras, ferrocarriles, rutas aéreas, redes eléctricas y de comunicaciones, organigramas y redes sociales. Los modelos de optimización en redes se resuelven mucho más rápido que otros programas lineales y se aplican a la logística industrial y la cadena de suministro.",
+          "ejemplo": "En una red de distribución, los nodos son la planta, las bodegas y las tiendas, y los arcos son las rutas de transporte entre ellos.",
+          "puntos_clave": [
+            "Nodos y arcos.",
+            "Redes dirigidas y no dirigidas.",
+            "Logística y cadena de suministro."
+          ],
+          "errores_frecuentes": [
+            "Confundir un arco dirigido con uno no dirigido.",
+            "Olvidar nodos intermedios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/74617247a52e2731836e2ec3ff783525_MIT15_053S13_lec15.pdf",
+            "seccion": "Lecture 15: Networks 1: Shortest path problem"
+          }
+        },
+        {
+          "id": "io-ruta-corta",
+          "nombre": "El problema de la ruta más corta",
+          "explicacion": "El problema de la ruta más corta busca el camino de menor longitud desde un nodo origen hasta un nodo destino, suponiendo que hay un camino del origen a todos los nodos y que las longitudes de los arcos no son negativas. Se usa en los navegadores de vehículos y en el enrutamiento de internet. El algoritmo de Dijkstra lo resuelve asignando etiquetas de distancia y el predecesor de cada nodo, y encontrando las distancias en orden creciente desde el origen.",
+          "ejemplo": "Un repartidor que debe ir del centro de distribución al cliente más lejano usa la ruta de menor tiempo total, aunque no sea la más directa en el mapa.",
+          "puntos_clave": [
+            "Origen, destino y longitudes no negativas.",
+            "Navegadores e internet.",
+            "Algoritmo de Dijkstra."
+          ],
+          "errores_frecuentes": [
+            "Aplicar Dijkstra con longitudes negativas.",
+            "Elegir en cada paso solo el arco más corto sin acumular distancias."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/74617247a52e2731836e2ec3ff783525_MIT15_053S13_lec15.pdf",
+            "seccion": "Lecture 15: Networks 1: Shortest path problem"
+          }
+        },
+        {
+          "id": "io-transporte",
+          "nombre": "El problema de transporte",
+          "explicacion": "El problema de transporte envía mercadería desde nodos de oferta, como bodegas, a nodos de demanda, como regiones, al menor costo total. Es un problema de flujo de costo mínimo en el que todos los arcos van de la oferta a la demanda y tienen costo, pero no tienen límite superior de flujo. Su formulación usa como variables las cantidades enviadas de cada origen a cada destino, con restricciones de oferta y demanda.",
+          "ejemplo": "Con bodegas A a D y regiones R1 a R3, un plan que envía 40 de A a R1, 40 de B a R1, 10 de B a R2, 10 de C a R2, 50 de C a R3 y 50 de D a R2, con sus costos unitarios, cuesta 440.",
+          "puntos_clave": [
+            "Nodos de oferta y de demanda.",
+            "Arcos con costo y sin límite superior.",
+            "Variables: cantidades enviadas."
+          ],
+          "errores_frecuentes": [
+            "No verificar que se cumpla la demanda de cada región.",
+            "Enviar más de lo que tiene una bodega."
+          ],
+          "formulas": [
+            "valor-objetivo-lineal"
+          ],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/687225c151d8cc8254dcb8b07e5f9ce2_MIT15_053S13_lec16.pdf",
+            "seccion": "Lecture 16: Networks 2: Network flows"
+          }
+        },
+        {
+          "id": "io-flujo-costo-minimo",
+          "nombre": "Flujo de costo mínimo e integralidad",
+          "explicacion": "El problema de flujo de costo mínimo modela movimientos en redes, como el envío desde bodegas a minoristas, considerando costos de producción, transporte, inventario y almacenamiento en la cadena de suministro. Su propiedad clave es el teorema de integralidad: si las ofertas, demandas y capacidades son números enteros, el problema tiene una solución óptima entera, por lo que estos problemas se resuelven de forma eficiente sin técnicas de programación entera.",
+          "ejemplo": "Si todas las ofertas y demandas se expresan en cajas enteras, la solución óptima del flujo también envía cajas enteras.",
+          "puntos_clave": [
+            "Flujos en redes.",
+            "Cadena de suministro.",
+            "Teorema de integralidad."
+          ],
+          "errores_frecuentes": [
+            "Tratar un flujo de costo mínimo como un problema entero difícil.",
+            "Usar datos fraccionarios y esperar soluciones enteras."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/687225c151d8cc8254dcb8b07e5f9ce2_MIT15_053S13_lec16.pdf",
+            "seccion": "Lecture 16: Networks 2: Network flows"
+          }
+        }
+      ]
+    },
+    {
+      "id": "io-decisiones",
+      "nombre": "Decisiones bajo incertidumbre",
+      "orden": 5,
+      "descripcion": "Árboles de decisión, probabilidades subjetivas, evaluación de nodos y análisis de sensibilidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "io-arbol-decision",
+          "nombre": "Árboles de decisión",
+          "explicacion": "Un árbol de decisión organiza un problema con decisiones y eventos inciertos. Los nodos de decisión, dibujados como cuadrados, representan momentos en que quien decide elige, y sus ramas son las opciones; los nodos de evento o de probabilidad, dibujados como círculos, representan momentos en que se conoce un resultado incierto, y sus ramas son los resultados con sus probabilidades. En el caso de clase, un estudiante decide entre aceptar una oferta segura de empleo o esperar ofertas inciertas.",
+          "ejemplo": "Un estudiante con una oferta de USD 72.000 debe decidir si la acepta o espera la respuesta de otra empresa, que tiene 60 % de probabilidad de ofrecerle USD 80.000.",
+          "puntos_clave": [
+            "Nodos de decisión: cuadrados.",
+            "Nodos de evento: círculos.",
+            "Ramas con opciones y resultados."
+          ],
+          "errores_frecuentes": [
+            "Mezclar decisiones y eventos en el mismo nodo.",
+            "Olvidar el orden en que se conoce la información."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/4dd30003fe23dc89d27f55b500c15d15_MIT15_053S13_lec18.pdf",
+            "seccion": "Lecture 18: Decision trees 1"
+          }
+        },
+        {
+          "id": "io-probabilidad-subjetiva",
+          "nombre": "Probabilidades subjetivas",
+          "explicacion": "Las probabilidades de muchos problemas de decisión no son frecuencias, sino mejores estimaciones de quien decide: se llaman probabilidades bayesianas o subjetivas. Pueden basarse en un análisis detallado o ser una primera aproximación. Una forma de definirlas es la indiferencia entre apuestas: si alguien es indiferente entre apostar a que no recibirá una oferta y apostar a que un dado de 20 caras muestre 8 o menos, su probabilidad subjetiva de no recibir la oferta es 0,4.",
+          "ejemplo": "Una gerente estima en 30 % la probabilidad de que un competidor entre al mercado el próximo año, a partir de su experiencia y de noticias del sector.",
+          "puntos_clave": [
+            "Probabilidades bayesianas o subjetivas.",
+            "Mejores estimaciones.",
+            "Indiferencia entre apuestas."
+          ],
+          "errores_frecuentes": [
+            "Creer que toda probabilidad es una frecuencia observada.",
+            "Usar probabilidades que no suman 1."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/4dd30003fe23dc89d27f55b500c15d15_MIT15_053S13_lec18.pdf",
+            "seccion": "Lecture 18: Decision trees 1"
+          }
+        },
+        {
+          "id": "io-evaluar-arbol",
+          "nombre": "Evaluar un árbol: valor esperado y mejor decisión",
+          "explicacion": "Un árbol se evalúa de las ramas finales hacia la raíz. El valor de un nodo de evento es el valor esperado de sus resultados, es decir, la suma de cada valor por su probabilidad; el valor de un nodo de decisión es el mejor de sus ramas. En el caso de clase, la feria de empleo ofrece USD 90.000, 70.000 o 60.000 con probabilidades 0,1, 0,5 y 0,4, con un valor esperado de 68.000; si la otra empresa ofrece 80.000, conviene aceptarla, porque 80.000 supera a 68.000.",
+          "ejemplo": "Esperar vale 0,6 × 80.000 + 0,4 × 68.000 = 75.200, más que la oferta segura de 72.000: si solo importa el salario esperado, conviene esperar.",
+          "puntos_clave": [
+            "Evaluar de derecha a izquierda.",
+            "Nodo de evento: valor esperado.",
+            "Nodo de decisión: el máximo."
+          ],
+          "errores_frecuentes": [
+            "Promediar también en los nodos de decisión.",
+            "Ignorar la actitud ante el riesgo."
+          ],
+          "formulas": [
+            "valor-esperado"
+          ],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/4dd30003fe23dc89d27f55b500c15d15_MIT15_053S13_lec18.pdf",
+            "seccion": "Lecture 18: Decision trees 1"
+          }
+        },
+        {
+          "id": "io-sensibilidad-arbol",
+          "nombre": "Sensibilidad en los árboles de decisión",
+          "explicacion": "El árbol es solo el comienzo: en los árboles de decisión suele haber mucha incertidumbre sobre los números. Los árboles funcionan bien en esas condiciones y son ideales para el análisis de sensibilidad: se varían los datos, como las probabilidades o los pagos, y se observa su efecto, buscando en especial qué cambios en los datos harían cambiar la decisión recomendada. Una hoja de cálculo facilita repetir el cálculo con distintos valores.",
+          "ejemplo": "Si la probabilidad de recibir la oferta de 80.000 bajara de 0,6, ¿a partir de qué valor convendría aceptar la oferta segura de 72.000? Variar la probabilidad en una hoja de cálculo lo muestra.",
+          "puntos_clave": [
+            "Incertidumbre en los datos.",
+            "Variar probabilidades y pagos.",
+            "Encontrar cambios que alteran la decisión."
+          ],
+          "errores_frecuentes": [
+            "Tomar la decisión sin probar su sensibilidad.",
+            "Presentar el valor esperado como un resultado seguro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mit-15053",
+            "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/4dd30003fe23dc89d27f55b500c15d15_MIT15_053S13_lec18.pdf",
+            "seccion": "Lecture 18: Decision trees 1"
+          }
+        }
+      ]
+    }
+  ]
+}

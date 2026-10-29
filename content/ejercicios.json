@@ -13302,5 +13302,282 @@
     },
     "materia": "programacion-datos",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-vertice-a",
+    "subtema": "io-metodo-grafico",
+    "formula": "valor-objetivo-lineal",
+    "enunciado": "Con Z = 3x + 5y, evalúa la función objetivo en el vértice (0, 3).",
+    "datos": {
+      "c": [
+        3,
+        5
+      ],
+      "x": [
+        0,
+        3
+      ]
+    },
+    "calculo": "SUMPRODUCT(c, x)",
+    "respuesta": 15,
+    "unidad": "unidades del objetivo",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Z = 3 × 0 + 5 × 3 = 15",
+      "Menor que 16 en (2, 2): no es el óptimo"
+    ],
+    "pistas": [
+      "Compara con el valor en los otros vértices."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+      "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-vertice-b",
+    "subtema": "io-metodo-grafico",
+    "formula": "valor-objetivo-lineal",
+    "enunciado": "Una fábrica gana USD 40 por mesa y USD 30 por silla. El vértice óptimo de su región factible es 12 mesas y 8 sillas. ¿Cuál es la utilidad máxima?",
+    "datos": {
+      "c": [
+        40,
+        30
+      ],
+      "x": [
+        12,
+        8
+      ]
+    },
+    "calculo": "SUMPRODUCT(c, x)",
+    "respuesta": 720,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Z = 40 × 12 + 30 × 8 = 480 + 240 = 720"
+    ],
+    "pistas": [
+      "Multiplica cada utilidad unitaria por su cantidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+      "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-precio-sombra-a",
+    "subtema": "io-precios-sombra",
+    "formula": "cambio-por-precio-sombra",
+    "enunciado": "La restricción del máximo de unidades del producto A tiene un precio sombra de 1,04 (millones de USD por mil unidades) y un aumento permitido de 0,75. Si el límite sube 0,5 mil unidades, ¿cuánto aumenta la utilidad óptima?",
+    "datos": {
+      "PS": 1.04,
+      "db": 0.5
+    },
+    "calculo": "PS * db",
+    "respuesta": 0.52,
+    "unidad": "millones de USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,5 ≤ 0,75: dentro del rango",
+      "ΔZ = 1,04 × 0,5 = 0,52"
+    ],
+    "pistas": [
+      "Verifica primero que el cambio esté dentro del rango."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/8fead641e2eee52dc7de15c68a9effab_MIT15_053S13_lec6.pdf",
+      "seccion": "Lecture 6: Sensitivity analysis and shadow prices"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-precio-sombra-b",
+    "subtema": "io-precios-sombra",
+    "formula": "cambio-por-precio-sombra",
+    "enunciado": "Una hora adicional de máquina tiene un precio sombra de USD 25 dentro de un rango de hasta 40 horas adicionales. Si se consiguen 30 horas más, ¿cuánto sube la utilidad óptima?",
+    "datos": {
+      "PS": 25,
+      "db": 30
+    },
+    "calculo": "PS * db",
+    "respuesta": 750,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "30 ≤ 40: dentro del rango",
+      "ΔZ = 25 × 30 = 750"
+    ],
+    "pistas": [
+      "Fuera del rango el precio sombra puede cambiar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/8fead641e2eee52dc7de15c68a9effab_MIT15_053S13_lec6.pdf",
+      "seccion": "Lecture 6: Sensitivity analysis and shadow prices"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-transporte-a",
+    "subtema": "io-transporte",
+    "formula": "valor-objetivo-lineal",
+    "enunciado": "Un plan envía 40 unidades de A a R1 (costo 2), 40 de B a R1 (2), 10 de B a R2 (4), 10 de C a R2 (4), 50 de C a R3 (2) y 50 de D a R2 (2). ¿Cuál es su costo total?",
+    "datos": {
+      "c": [
+        2,
+        2,
+        4,
+        4,
+        2,
+        2
+      ],
+      "x": [
+        40,
+        40,
+        10,
+        10,
+        50,
+        50
+      ]
+    },
+    "calculo": "SUMPRODUCT(c, x)",
+    "respuesta": 440,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "80 + 80 + 40 + 40 + 100 + 100 = 440"
+    ],
+    "pistas": [
+      "Multiplica cada envío por su costo unitario."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/687225c151d8cc8254dcb8b07e5f9ce2_MIT15_053S13_lec16.pdf",
+      "seccion": "Lecture 16: Networks 2: Network flows"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-transporte-b",
+    "subtema": "io-transporte",
+    "formula": "valor-objetivo-lineal",
+    "enunciado": "Una distribuidora envía 100 cajas a Quito a USD 3, 50 a Cuenca a USD 5 y 70 a Loja a USD 4 por caja. ¿Cuál es el costo total del plan?",
+    "datos": {
+      "c": [
+        3,
+        5,
+        4
+      ],
+      "x": [
+        100,
+        50,
+        70
+      ]
+    },
+    "calculo": "SUMPRODUCT(c, x)",
+    "respuesta": 830,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "300 + 250 + 280 = 830"
+    ],
+    "pistas": [
+      "Suma los productos de costo por cantidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/687225c151d8cc8254dcb8b07e5f9ce2_MIT15_053S13_lec16.pdf",
+      "seccion": "Lecture 16: Networks 2: Network flows"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-arbol-feria",
+    "subtema": "io-evaluar-arbol",
+    "formula": "valor-esperado",
+    "enunciado": "En la feria de empleo se espera un salario de USD 90.000 con probabilidad 0,1, de 70.000 con 0,5 y de 60.000 con 0,4. ¿Cuál es el valor esperado de ese nodo de evento?",
+    "datos": {
+      "x": [
+        90000,
+        70000,
+        60000
+      ],
+      "p": [
+        0.1,
+        0.5,
+        0.4
+      ]
+    },
+    "calculo": "SUMPRODUCT(x, p)",
+    "respuesta": 68000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "9.000 + 35.000 + 24.000 = 68.000"
+    ],
+    "pistas": [
+      "Multiplica cada salario por su probabilidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/4dd30003fe23dc89d27f55b500c15d15_MIT15_053S13_lec18.pdf",
+      "seccion": "Lecture 18: Decision trees 1"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-io-arbol-esperar",
+    "subtema": "io-evaluar-arbol",
+    "formula": "valor-esperado",
+    "enunciado": "Si espera, el estudiante recibe la oferta de USD 80.000 con probabilidad 0,6 y, si no, va a la feria, que vale 68.000 en valor esperado. ¿Cuál es el valor esperado de esperar y conviene frente a la oferta segura de 72.000?",
+    "datos": {
+      "x": [
+        80000,
+        68000
+      ],
+      "p": [
+        0.6,
+        0.4
+      ]
+    },
+    "calculo": "SUMPRODUCT(x, p)",
+    "respuesta": 75200,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "0,6 × 80.000 = 48.000",
+      "0,4 × 68.000 = 27.200",
+      "Esperar = 75.200 > 72.000: conviene esperar"
+    ],
+    "pistas": [
+      "El nodo de decisión elige la rama de mayor valor."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/4dd30003fe23dc89d27f55b500c15d15_MIT15_053S13_lec18.pdf",
+      "seccion": "Lecture 18: Decision trees 1"
+    },
+    "materia": "investigacion-operaciones",
+    "actualizado_en": "2026-10-26"
   }
 ]

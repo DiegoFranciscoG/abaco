@@ -8279,7 +8279,8 @@
     "nombre": "Valor esperado",
     "categoria": "estadistica",
     "materias": [
-      "seguros"
+      "seguros",
+      "investigacion-operaciones"
     ],
     "areas": [
       "finanzas"
@@ -10816,6 +10817,136 @@
     "notas": [
       "El resto de observaciones forma el conjunto de prueba."
     ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "valor-objetivo-lineal",
+    "nombre": "Valor de una función objetivo lineal",
+    "categoria": "calculo",
+    "materias": [
+      "investigacion-operaciones"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Valor de la función objetivo de un programa lineal en una solución: suma de cada coeficiente por el valor de su variable. Sirve para comparar vértices o para calcular el costo de un plan de transporte.",
+    "latex": "Z = \\sum c_j x_j",
+    "variables": [
+      {
+        "simbolo": "c_j",
+        "nombre": "c",
+        "significado": "Coeficientes de la función objetivo (utilidad o costo por unidad)",
+        "unidad": "según el problema"
+      },
+      {
+        "simbolo": "x_j",
+        "nombre": "x",
+        "significado": "Valores de las variables de decisión",
+        "unidad": "según el problema"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUMPRODUCT(c, x)"
+    },
+    "excel": {
+      "es": "=SUMAPRODUCTO(c;x)",
+      "en": "=SUMPRODUCT(c,x)"
+    },
+    "ejemplo": {
+      "enunciado": "Se maximiza Z = 3x + 5y. El vértice óptimo de la región factible es (2, 2). ¿Cuál es el valor máximo de Z?",
+      "entradas": {
+        "c": [
+          3,
+          5
+        ],
+        "x": [
+          2,
+          2
+        ]
+      },
+      "pasos": [
+        "Z = 3 × 2 + 5 × 2",
+        "Z = 6 + 10 = 16"
+      ],
+      "resultado": 16,
+      "unidad": "unidades del objetivo",
+      "tolerancia": 0.0001,
+      "excel_es": "=3*2+5*2",
+      "excel_en": "=3*2+5*2"
+    },
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+      "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+    },
+    "supuestos": [],
+    "notas": [
+      "En un programa lineal acotado, el óptimo está en un vértice."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "cambio-por-precio-sombra",
+    "nombre": "Cambio del óptimo con el precio sombra",
+    "categoria": "calculo",
+    "materias": [
+      "investigacion-operaciones"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Variación del valor óptimo cuando cambia el lado derecho de una restricción: precio sombra por la variación, válido solo dentro del rango permitido.",
+    "latex": "\\Delta Z = PS \\times \\Delta b",
+    "variables": [
+      {
+        "simbolo": "PS",
+        "nombre": "PS",
+        "significado": "Precio sombra de la restricción",
+        "unidad": "unidades del objetivo por unidad de recurso"
+      },
+      {
+        "simbolo": "\\Delta b",
+        "nombre": "db",
+        "significado": "Variación del lado derecho de la restricción",
+        "unidad": "unidades del recurso"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "PS * db"
+    },
+    "excel": {
+      "es": "=PS*db",
+      "en": "=PS*db"
+    },
+    "ejemplo": {
+      "enunciado": "La restricción de discos nuevos tiene un precio sombra de 0,8 (millones de USD por cada mil discos) y puede aumentar hasta 0,6 mil discos sin cambiar la base. Si se consiguen 0,5 mil discos más, ¿cuánto sube la utilidad óptima?",
+      "entradas": {
+        "PS": 0.8,
+        "db": 0.5
+      },
+      "pasos": [
+        "0,5 está dentro del aumento permitido de 0,6",
+        "ΔZ = 0,8 × 0,5 = 0,4 millones de USD"
+      ],
+      "resultado": 0.4,
+      "unidad": "millones de USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,8*0,5",
+      "excel_en": "=0.8*0.5"
+    },
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/8fead641e2eee52dc7de15c68a9effab_MIT15_053S13_lec6.pdf",
+      "seccion": "Lecture 6: Sensitivity analysis and shadow prices"
+    },
+    "supuestos": [
+      "La variación está dentro del rango permitido del lado derecho."
+    ],
+    "notas": [],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
   }

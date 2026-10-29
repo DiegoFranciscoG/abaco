@@ -2569,5 +2569,83 @@
       "seccion": "6.1 What Is Machine Learning?"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "programacion-lineal-vertices",
+    "nombre": "Evaluación de vértices y árbol de decisión",
+    "descripcion": "Evalúa Z = 3x + 5y en los vértices de una región factible para hallar el óptimo, aplica un precio sombra y calcula el valor esperado de una decisión.",
+    "materias": [
+      "investigacion-operaciones"
+    ],
+    "celdas": {
+      "A1": "Coeficiente de x",
+      "B1": 3,
+      "A2": "Coeficiente de y",
+      "B2": 5,
+      "A4": "Vértice",
+      "B4": "x",
+      "C4": "y",
+      "D4": "Z",
+      "A5": "V1",
+      "B5": 0,
+      "C5": 0,
+      "D5": "=$B$1*B5+$B$2*C5",
+      "A6": "V2",
+      "B6": 4,
+      "C6": 0,
+      "D6": "=$B$1*B6+$B$2*C6",
+      "A7": "V3",
+      "B7": 2,
+      "C7": 2,
+      "D7": "=$B$1*B7+$B$2*C7",
+      "A8": "V4",
+      "B8": 0,
+      "C8": 3,
+      "D8": "=$B$1*B8+$B$2*C8",
+      "A9": "Z máximo",
+      "D9": "=MAX(D5:D8)",
+      "A11": "Precio sombra",
+      "B11": 0.8,
+      "A12": "Aumento del recurso",
+      "B12": 0.5,
+      "A13": "Aumento del óptimo",
+      "B13": "=B11*B12",
+      "A15": "Oferta (USD)",
+      "B15": 80000,
+      "A16": "Probabilidad de la oferta",
+      "B16": 0.6,
+      "A17": "Valor esperado alternativo (USD)",
+      "B17": 68000,
+      "A18": "Valor esperado de esperar",
+      "B18": "=B16*B15+(1-B16)*B17"
+    },
+    "formatos": {
+      "D9": "numero",
+      "B13": "numero",
+      "B18": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "D9",
+        "esperado": 16,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B13",
+        "esperado": 0.4,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B18",
+        "esperado": 75200,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "mit-15053",
+      "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/56f54ffad5796b9459b260c5138930c5_MIT15_053S13_lec3.pdf",
+      "seccion": "Lecture 3: Geometry and visualizations of linear programs"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

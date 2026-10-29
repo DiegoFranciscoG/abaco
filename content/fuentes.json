@@ -718,5 +718,14 @@
     "url": "https://openstax.org/details/books/introduction-python-programming",
     "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mit-15053",
+    "titulo": "15.053 Optimization Methods in Management Science (primavera de 2013), notas de clase",
+    "autor_editor": "MIT OpenCourseWare — James Orlin y Ebrahim Nasrabadi",
+    "tipo": "documentacion",
+    "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/pages/lecture-notes/",
+    "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
   }
 ]

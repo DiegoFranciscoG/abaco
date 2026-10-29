@@ -13,7 +13,8 @@
       "presupuestos",
       "economia-popular-solidaria",
       "auditoria",
-      "contratacion-publica"
+      "contratacion-publica",
+      "investigacion-operaciones"
     ],
     "areas": [
       "tecnologia",
@@ -38,7 +39,8 @@
       "contabilidad-costos",
       "evaluacion-proyectos",
       "finanzas-corporativas",
-      "presupuestos"
+      "presupuestos",
+      "investigacion-operaciones"
     ],
     "areas": [
       "tecnologia",
@@ -98,7 +100,8 @@
     "materias": [
       "calculo-diferencial",
       "matematica-gestion",
-      "economia-industrial"
+      "economia-industrial",
+      "investigacion-operaciones"
     ],
     "areas": [
       "cuantitativo"

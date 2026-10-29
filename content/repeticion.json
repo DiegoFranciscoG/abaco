@@ -264,6 +264,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Investigación Operativa",
+    "carreras": 3,
+    "planes": 4,
+    "ciclo_habitual": 4,
+    "materia": "investigacion-operaciones",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Práctica Tributaria",
     "carreras": 3,
     "planes": 4,
@@ -357,14 +365,6 @@
     "planes": 2,
     "ciclo_habitual": 3,
     "materia": "sistema-financiero",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Investigación Operativa",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 4,
-    "materia": null,
     "tipo": "materia"
   },
   {

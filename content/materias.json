@@ -1186,5 +1186,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "investigacion-operaciones",
+    "nombre": "Investigación de operaciones",
+    "areas": [
+      "cuantitativo",
+      "gestion"
+    ],
+    "descripcion": "Modelado y programación lineal, región factible, método gráfico, simplex y precios sombra, programación entera, modelos de redes (ruta más corta, transporte y flujo de costo mínimo) y árboles de decisión.",
+    "sinonimos": [
+      "investigación operativa",
+      "métodos cuantitativos",
+      "programación lineal",
+      "optimización",
+      "modelos de redes",
+      "árboles de decisión"
+    ],
+    "herramientas": [
+      "graficador",
+      "editor",
+      "estadistica"
+    ],
+    "orden": 51,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

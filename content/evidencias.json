@@ -7763,5 +7763,154 @@
       "bootstrapping",
       "linear, polynomial, logistic, exponential"
     ]
+  },
+  {
+    "id": "io-modelar",
+    "palabras": [
+      "modeling as a mathematical skill",
+      "modeling as an art form",
+      "start with a simple model of the problem at hand"
+    ]
+  },
+  {
+    "id": "io-formulacion",
+    "palabras": [
+      "minimize the cost of a meal",
+      "between 600 and 900 calories",
+      "fractional meals permitted"
+    ]
+  },
+  {
+    "id": "io-portafolio",
+    "palabras": [
+      "portfolio optimization",
+      "use variance of portfolio as risk metric",
+      "covariance matrix"
+    ]
+  },
+  {
+    "id": "io-region-factible",
+    "palabras": [
+      "a single linear inequality determines a unique half-plane",
+      "a constraint is called redundant if deleting the constraint does not increase the size of the feasible region",
+      "the feasible region of a linear program is convex"
+    ]
+  },
+  {
+    "id": "io-metodo-grafico",
+    "palabras": [
+      "the geometrical method for optimizing",
+      "the optimal solution occurs at a corner point"
+    ]
+  },
+  {
+    "id": "io-tipos-lp",
+    "palabras": [
+      "lps with unbounded objective",
+      "infeasible lp",
+      "if the feasible region is non-empty and bounded, then there is an optimal solution"
+    ]
+  },
+  {
+    "id": "io-simplex",
+    "palabras": [
+      "solving equations using gaussian elimination",
+      "it will be called a tableau",
+      "canonical form"
+    ]
+  },
+  {
+    "id": "io-precios-sombra",
+    "palabras": [
+      "the shadow price of a constraint of a linear program is the increase in the optimal objective value per unit increase in the rhs of the constraint",
+      "if the rhs changes, the solution and the optimal objective change linearly"
+    ]
+  },
+  {
+    "id": "io-combinatoria",
+    "palabras": [
+      "combinatorial optimization problems",
+      "traveling salesman problem",
+      "balanced partition"
+    ]
+  },
+  {
+    "id": "io-programa-entero",
+    "palabras": [
+      "a subset of variables that is required to be integer",
+      "integer programming can model any of the variables and constraints that you really want to put into an lp, but can"
+    ]
+  },
+  {
+    "id": "io-variables-binarias",
+    "palabras": [
+      "binary variables",
+      "if project i is selected, then project j is not selected"
+    ]
+  },
+  {
+    "id": "io-lp-vs-ip",
+    "palabras": [
+      "opt lp solution",
+      "opt ip solution"
+    ]
+  },
+  {
+    "id": "io-redes-conceptos",
+    "palabras": [
+      "node set",
+      "arc set",
+      "networks are everywhere"
+    ]
+  },
+  {
+    "id": "io-ruta-corta",
+    "palabras": [
+      "what is the shortest path from a source node",
+      "all arc lengths are non-negative",
+      "dijkstra"
+    ]
+  },
+  {
+    "id": "io-transporte",
+    "palabras": [
+      "the transportation problem is a min cost flow problem",
+      "there is no upper bound on arc flows"
+    ]
+  },
+  {
+    "id": "io-flujo-costo-minimo",
+    "palabras": [
+      "the min cost flow problem",
+      "if the supplies, demands, and capacities of a minimum cost flow problem are all integral"
+    ]
+  },
+  {
+    "id": "io-arbol-decision",
+    "palabras": [
+      "decision node represents a time at which a decision maker makes a decision",
+      "event nodes (probability nodes) represents a time at which an uncertain event becomes known"
+    ]
+  },
+  {
+    "id": "io-probabilidad-subjetiva",
+    "palabras": [
+      "they are called bayesian or subjective probabilities",
+      "probability as indifference between bets"
+    ]
+  },
+  {
+    "id": "io-evaluar-arbol",
+    "palabras": [
+      "for a decision node, take the best outcome leading from its branches",
+      "expected value of its endpoints"
+    ]
+  },
+  {
+    "id": "io-sensibilidad-arbol",
+    "palabras": [
+      "there is a great deal of uncertainty surrounding the numbers",
+      "one varies numbers and sees the effect"
+    ]
   }
 ]

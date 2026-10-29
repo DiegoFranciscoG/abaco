@@ -769,6 +769,15 @@
         "planes": 2
       },
       {
+        "materia": "investigacion-operaciones",
+        "ciclo": 5,
+        "ciclos": [
+          5,
+          8
+        ],
+        "planes": 2
+      },
+      {
         "materia": "marketing-digital",
         "ciclo": 5,
         "ciclos": [
@@ -847,17 +856,7 @@
         "planes": 1
       },
       {
-        "nombre": "Investigación Operativa",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",
-        "ciclo": 8,
-        "planes": 1
-      },
-      {
-        "nombre": "Investigación de Operaciones",
         "ciclo": 8,
         "planes": 1
       }
@@ -993,6 +992,15 @@
         "planes": 1
       },
       {
+        "materia": "investigacion-operaciones",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          4
+        ],
+        "planes": 1
+      },
+      {
         "materia": "matematica-financiera",
         "ciclo": 3,
         "ciclos": [
@@ -1103,11 +1111,6 @@
     "pendientes": [
       {
         "nombre": "Marco Legal del Marketing y Ciberseguridad",
-        "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Metodos Cuantitativos",
         "ciclo": 3,
         "planes": 1
       },
