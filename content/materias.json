@@ -1079,5 +1079,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "econometria",
+    "nombre": "Econometría y regresión aplicada",
+    "areas": [
+      "cuantitativo",
+      "economia"
+    ],
+    "descripcion": "Tipos de datos y correlación, el modelo de regresión por mínimos cuadrados ordinarios, supuestos de Gauss-Markov y sus problemas, inferencia sobre coeficientes, variables ficticias, elasticidades y transformaciones logarítmicas, predicción y ANOVA.",
+    "sinonimos": [
+      "econometría aplicada",
+      "regresión lineal",
+      "mínimos cuadrados ordinarios",
+      "MCO",
+      "análisis multivariante",
+      "regresión múltiple"
+    ],
+    "herramientas": [
+      "estadistica",
+      "graficador",
+      "editor"
+    ],
+    "orden": 47,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

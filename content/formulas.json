@@ -9924,5 +9924,627 @@
     "notas": [],
     "actualizado_en": "2026-10-29",
     "estado": "verificada"
+  },
+  {
+    "id": "t-correlacion",
+    "nombre": "Estadístico t para el coeficiente de correlación",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Prueba si la correlación poblacional es distinta de cero; se compara con el valor crítico de t con n − 2 grados de libertad.",
+    "latex": "t_c = \\frac{r \\sqrt{n-2}}{\\sqrt{1-r^2}}",
+    "variables": [
+      {
+        "simbolo": "r",
+        "nombre": "r",
+        "significado": "Coeficiente de correlación muestral",
+        "unidad": "coeficiente"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Tamaño de la muestra",
+        "unidad": "observaciones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "r * SQRT(n - 2) / SQRT(1 - r ^ 2)"
+    },
+    "excel": {
+      "es": "=r*RAIZ(n-2)/RAIZ(1-r^2)",
+      "en": "=r*SQRT(n-2)/SQRT(1-r^2)"
+    },
+    "ejemplo": {
+      "enunciado": "En una muestra de 27 observaciones, la correlación entre dos variables es 0,6. ¿Cuál es el estadístico t?",
+      "entradas": {
+        "r": 0.6,
+        "n": 27
+      },
+      "pasos": [
+        "√(27 − 2) = 5",
+        "√(1 − 0,36) = 0,8",
+        "t = 0,6 × 5 ÷ 0,8 = 3,75"
+      ],
+      "resultado": 3.75,
+      "unidad": "t",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,6*RAIZ(27-2)/RAIZ(1-0,6^2)",
+      "excel_en": "=0.6*SQRT(27-2)/SQRT(1-0.6^2)"
+    },
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+      "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+    },
+    "supuestos": [],
+    "notas": [
+      "Grados de libertad: n − 2."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "umbral-correlacion",
+    "nombre": "Umbral rápido de significancia de la correlación",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Regla práctica: si el valor absoluto de r es al menos 2 dividido para la raíz de n, la correlación es significativa aproximadamente al 5 %.",
+    "latex": "|r| \\geq \\frac{2}{\\sqrt{n}}",
+    "variables": [
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Tamaño de la muestra",
+        "unidad": "observaciones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "2 / SQRT(n)"
+    },
+    "excel": {
+      "es": "=2/RAIZ(n)",
+      "en": "=2/SQRT(n)"
+    },
+    "ejemplo": {
+      "enunciado": "Con 10 observaciones, ¿qué correlación mínima se necesita para que sea significativa según la regla rápida?",
+      "entradas": {
+        "n": 10
+      },
+      "pasos": [
+        "Umbral = 2 ÷ √10",
+        "Umbral = 0,6325"
+      ],
+      "resultado": 0.6325,
+      "unidad": "coeficiente",
+      "tolerancia": 0.0001,
+      "excel_es": "=2/RAIZ(10)",
+      "excel_en": "=2/SQRT(10)"
+    },
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+      "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+    },
+    "supuestos": [
+      "Aproximación al nivel de significancia de 0,05."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "pendiente-mco",
+    "nombre": "Pendiente de la recta de regresión (MCO)",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Pendiente de la recta de mejor ajuste por mínimos cuadrados a partir de las sumas de los datos.",
+    "latex": "b = \\frac{n \\sum xy - \\sum x \\sum y}{n \\sum x^2 - (\\sum x)^2}",
+    "variables": [
+      {
+        "simbolo": "x",
+        "nombre": "x",
+        "significado": "Valores de la variable independiente",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "y",
+        "nombre": "y",
+        "significado": "Valores de la variable dependiente",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(COUNT(x) * SUMPRODUCT(x, y) - SUM(x) * SUM(y)) / (COUNT(x) * SUMSQ(x) - SUM(x) ^ 2)"
+    },
+    "excel": {
+      "es": "=PENDIENTE(y;x)",
+      "en": "=SLOPE(y,x)"
+    },
+    "ejemplo": {
+      "enunciado": "Con los datos x = 1, 2, 3, 4, 5 e y = 3, 5, 7, 8, 12, ¿cuál es la pendiente de la recta de regresión?",
+      "entradas": {
+        "x": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "y": [
+          3,
+          5,
+          7,
+          8,
+          12
+        ]
+      },
+      "pasos": [
+        "n = 5; Σx = 15; Σy = 35; Σxy = 126; Σx² = 55",
+        "b = (5 × 126 − 15 × 35) ÷ (5 × 55 − 15²)",
+        "b = 105 ÷ 50 = 2,1"
+      ],
+      "resultado": 2.1,
+      "unidad": "unidades de y por unidad de x",
+      "tolerancia": 0.0001,
+      "excel_es": "=(5*126-15*35)/(5*55-15^2)",
+      "excel_en": "=(5*126-15*35)/(5*55-15^2)"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-3-best-fit-linear-model",
+      "seccion": "14.3 Best-Fit Linear Model"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "intercepto-mco",
+    "nombre": "Intercepto de la recta de regresión (MCO)",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Intercepto de la recta de mejor ajuste: media de y menos la pendiente por la media de x.",
+    "latex": "a = \\frac{\\sum y}{n} - b \\frac{\\sum x}{n}",
+    "variables": [
+      {
+        "simbolo": "x",
+        "nombre": "x",
+        "significado": "Valores de la variable independiente",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "y",
+        "nombre": "y",
+        "significado": "Valores de la variable dependiente",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM(y) / COUNT(y) - (COUNT(x) * SUMPRODUCT(x, y) - SUM(x) * SUM(y)) / (COUNT(x) * SUMSQ(x) - SUM(x) ^ 2) * SUM(x) / COUNT(x)"
+    },
+    "excel": {
+      "es": "=INTERSECCION.EJE(y;x)",
+      "en": "=INTERCEPT(y,x)"
+    },
+    "ejemplo": {
+      "enunciado": "Con los mismos datos (x = 1, 2, 3, 4, 5; y = 3, 5, 7, 8, 12) y pendiente 2,1, ¿cuál es el intercepto?",
+      "entradas": {
+        "x": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "y": [
+          3,
+          5,
+          7,
+          8,
+          12
+        ]
+      },
+      "pasos": [
+        "Media de y = 35 ÷ 5 = 7",
+        "Media de x = 15 ÷ 5 = 3",
+        "a = 7 − 2,1 × 3 = 0,7"
+      ],
+      "resultado": 0.7,
+      "unidad": "unidades de y",
+      "tolerancia": 0.0001,
+      "excel_es": "=35/5-2,1*15/5",
+      "excel_en": "=35/5-2.1*15/5"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-3-best-fit-linear-model",
+      "seccion": "14.3 Best-Fit Linear Model"
+    },
+    "supuestos": [],
+    "notas": [
+      "La recta de MCO siempre pasa por el punto de medias."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "t-coeficiente",
+    "nombre": "Estadístico t de un coeficiente de regresión",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Cuántas desviaciones estándar se aleja el coeficiente estimado del valor hipotético; con β = 0 prueba si la variable tiene efecto.",
+    "latex": "t_c = \\frac{b_1 - \\beta_1}{s_{b_1}}",
+    "variables": [
+      {
+        "simbolo": "b_1",
+        "nombre": "b",
+        "significado": "Coeficiente estimado",
+        "unidad": "según el modelo"
+      },
+      {
+        "simbolo": "\\beta_1",
+        "nombre": "B",
+        "significado": "Valor hipotético del coeficiente (normalmente 0)",
+        "unidad": "según el modelo"
+      },
+      {
+        "simbolo": "s_{b_1}",
+        "nombre": "sb",
+        "significado": "Desviación estándar del coeficiente estimado",
+        "unidad": "según el modelo"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(b - B) / sb"
+    },
+    "excel": {
+      "es": "=(b-B)/sb",
+      "en": "=(b-B)/sb"
+    },
+    "ejemplo": {
+      "enunciado": "En una función de consumo, la propensión marginal estimada es 0,75 con una desviación estándar de 0,15. ¿Cuál es el estadístico t para la hipótesis β = 0?",
+      "entradas": {
+        "b": 0.75,
+        "B": 0,
+        "sb": 0.15
+      },
+      "pasos": [
+        "t = (0,75 − 0) ÷ 0,15",
+        "t = 5"
+      ],
+      "resultado": 5,
+      "unidad": "t",
+      "tolerancia": 0.0001,
+      "excel_es": "=(0,75-0)/0,15",
+      "excel_en": "=(0.75-0)/0.15"
+    },
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+      "seccion": "13.4 The Regression Equation"
+    },
+    "supuestos": [],
+    "notas": [
+      "Grados de libertad: n − k, una pérdida por cada parámetro estimado."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "varianza-error",
+    "nombre": "Estimación de la varianza del error",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Suma de los errores al cuadrado dividida para los grados de libertad (observaciones menos parámetros estimados).",
+    "latex": "s_e^2 = \\frac{\\sum e_i^2}{n - k}",
+    "variables": [
+      {
+        "simbolo": "\\sum e_i^2",
+        "nombre": "SSE",
+        "significado": "Suma de los errores al cuadrado",
+        "unidad": "unidades de y al cuadrado"
+      },
+      {
+        "simbolo": "n",
+        "nombre": "n",
+        "significado": "Número de observaciones",
+        "unidad": "observaciones"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Número de parámetros estimados",
+        "unidad": "parámetros"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SSE / (n - k)"
+    },
+    "excel": {
+      "es": "=SSE/(n-k)",
+      "en": "=SSE/(n-k)"
+    },
+    "ejemplo": {
+      "enunciado": "Un modelo con 4 parámetros estimados con 40 observaciones tiene una suma de errores al cuadrado de 360. ¿Cuál es la varianza estimada del error?",
+      "entradas": {
+        "SSE": 360,
+        "n": 40,
+        "k": 4
+      },
+      "pasos": [
+        "Grados de libertad = 40 − 4 = 36",
+        "s² = 360 ÷ 36 = 10"
+      ],
+      "resultado": 10,
+      "unidad": "unidades de y al cuadrado",
+      "tolerancia": 0.0001,
+      "excel_es": "=360/(40-4)",
+      "excel_en": "=360/(40-4)"
+    },
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+      "seccion": "13.4 The Regression Equation"
+    },
+    "supuestos": [],
+    "notas": [
+      "Su raíz es el error estándar de la estimación."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "elasticidad-media",
+    "nombre": "Elasticidad en el punto de medias",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Elasticidad estimada con un coeficiente de regresión lineal, evaluada en las medias de los datos: coeficiente por la media de x dividida para la media de y.",
+    "latex": "\\eta = b \\times \\frac{\\bar{x}}{\\bar{y}}",
+    "variables": [
+      {
+        "simbolo": "b",
+        "nombre": "b",
+        "significado": "Coeficiente estimado de la variable (por ejemplo, el precio)",
+        "unidad": "según el modelo"
+      },
+      {
+        "simbolo": "\\bar{x}",
+        "nombre": "xm",
+        "significado": "Media de la variable explicativa",
+        "unidad": "según los datos"
+      },
+      {
+        "simbolo": "\\bar{y}",
+        "nombre": "ym",
+        "significado": "Media de la variable dependiente",
+        "unidad": "según los datos"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "b * xm / ym"
+    },
+    "excel": {
+      "es": "=b*xm/ym",
+      "en": "=b*xm/ym"
+    },
+    "ejemplo": {
+      "enunciado": "Una demanda estimada por MCO tiene un coeficiente del precio de −2,5. El precio medio es USD 8 y la cantidad media 40 unidades. ¿Cuál es la elasticidad precio en las medias?",
+      "entradas": {
+        "b": -2.5,
+        "xm": 8,
+        "ym": 40
+      },
+      "pasos": [
+        "η = −2,5 × 8 ÷ 40",
+        "η = −0,5 (demanda inelástica)"
+      ],
+      "resultado": -0.5,
+      "unidad": "coeficiente",
+      "tolerancia": 0.0001,
+      "excel_es": "=-2,5*8/40",
+      "excel_en": "=-2.5*8/40"
+    },
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-5-interpretation-of-regression-coefficients-elasticity-and-logarithmic-transformation",
+      "seccion": "13.5 Interpretation of Regression Coefficients: Elasticity and Logarithmic Transformation"
+    },
+    "supuestos": [],
+    "notas": [
+      "Por convención se suele reportar el valor absoluto."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "prediccion-lineal",
+    "nombre": "Predicción con una recta de regresión",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Valor predicho de la variable dependiente: intercepto más pendiente por el valor de la variable independiente.",
+    "latex": "\\hat{y} = a + b x",
+    "variables": [
+      {
+        "simbolo": "a",
+        "nombre": "a",
+        "significado": "Intercepto",
+        "unidad": "unidades de y"
+      },
+      {
+        "simbolo": "b",
+        "nombre": "b",
+        "significado": "Pendiente",
+        "unidad": "unidades de y por unidad de x"
+      },
+      {
+        "simbolo": "x",
+        "nombre": "x",
+        "significado": "Valor de la variable independiente",
+        "unidad": "unidades de x"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "a + b * x"
+    },
+    "excel": {
+      "es": "=a+b*x",
+      "en": "=a+b*x"
+    },
+    "ejemplo": {
+      "enunciado": "La regresión del índice Russell 2000 sobre el DJIA es ŷ = −1.496,34 + 0,11x. Si el DJIA llega a 32.000, ¿qué valor predice para el Russell 2000?",
+      "entradas": {
+        "a": -1496.34,
+        "b": 0.11,
+        "x": 32000
+      },
+      "pasos": [
+        "ŷ = −1.496,34 + 0,11 × 32.000",
+        "ŷ = −1.496,34 + 3.520",
+        "ŷ = 2.023,66"
+      ],
+      "resultado": 2023.66,
+      "unidad": "puntos del índice",
+      "tolerancia": 0.0001,
+      "excel_es": "=-1496,34+0,11*32000",
+      "excel_en": "=-1496.34+0.11*32000"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-4-regression-applications-in-finance",
+      "seccion": "14.4 Regression Applications in Finance"
+    },
+    "supuestos": [
+      "La predicción es confiable dentro del rango de los datos usados."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
+  },
+  {
+    "id": "f-anova",
+    "nombre": "Estadístico F del ANOVA de un factor",
+    "categoria": "estadistica",
+    "materias": [
+      "econometria"
+    ],
+    "areas": [
+      "cuantitativo"
+    ],
+    "descripcion": "Cociente entre la varianza entre grupos y la varianza dentro de los grupos; se compara con la distribución F.",
+    "latex": "F = \\frac{SSB/(k-1)}{SSW/(N-k)}",
+    "variables": [
+      {
+        "simbolo": "SSB",
+        "nombre": "SSB",
+        "significado": "Suma de cuadrados entre grupos",
+        "unidad": "unidades al cuadrado"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Número de grupos",
+        "unidad": "grupos"
+      },
+      {
+        "simbolo": "SSW",
+        "nombre": "SSW",
+        "significado": "Suma de cuadrados dentro de los grupos",
+        "unidad": "unidades al cuadrado"
+      },
+      {
+        "simbolo": "N",
+        "nombre": "N",
+        "significado": "Total de observaciones",
+        "unidad": "observaciones"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(SSB / (k - 1)) / (SSW / (N - k))"
+    },
+    "excel": {
+      "es": "=(SSB/(k-1))/(SSW/(N-k))",
+      "en": "=(SSB/(k-1))/(SSW/(N-k))"
+    },
+    "ejemplo": {
+      "enunciado": "Se comparan tres grupos con 33 observaciones en total: la suma de cuadrados entre grupos es 120 y dentro de los grupos 300. ¿Cuál es el estadístico F?",
+      "entradas": {
+        "SSB": 120,
+        "k": 3,
+        "SSW": 300,
+        "N": 33
+      },
+      "pasos": [
+        "MSB = 120 ÷ (3 − 1) = 60",
+        "MSW = 300 ÷ (33 − 3) = 10",
+        "F = 60 ÷ 10 = 6"
+      ],
+      "resultado": 6,
+      "unidad": "F",
+      "tolerancia": 0.0001,
+      "excel_es": "=(120/(3-1))/(300/(33-3))",
+      "excel_en": "=(120/(3-1))/(300/(33-3))"
+    },
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/4-4-analysis-of-variance-anova",
+      "seccion": "4.4 Analysis of Variance (ANOVA)"
+    },
+    "supuestos": [
+      "Muestras aleatorias, independientes y aproximadamente normales."
+    ],
+    "notas": [
+      "Grados de libertad: k − 1 en el numerador y N − k en el denominador."
+    ],
+    "actualizado_en": "2026-10-29",
+    "estado": "verificada"
   }
 ]

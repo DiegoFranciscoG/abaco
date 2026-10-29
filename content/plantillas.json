@@ -2309,5 +2309,87 @@
       "seccion": "¿Cuánto se debe pagar en tributos por un producto importado?"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "regresion-simple-mco",
+    "nombre": "Regresión simple por MCO con sumas",
+    "descripcion": "Calcula las sumas, la pendiente, el intercepto, la correlación, su prueba t y una predicción para cinco pares de datos.",
+    "materias": [
+      "econometria"
+    ],
+    "celdas": {
+      "A1": "x",
+      "B1": "y",
+      "C1": "x·y",
+      "D1": "x²",
+      "A2": 2,
+      "B2": 20,
+      "C2": "=A2*B2",
+      "D2": "=A2^2",
+      "A3": 4,
+      "B3": 26,
+      "C3": "=A3*B3",
+      "D3": "=A3^2",
+      "A4": 6,
+      "B4": 30,
+      "C4": "=A4*B4",
+      "D4": "=A4^2",
+      "A5": 8,
+      "B5": 38,
+      "C5": "=A5*B5",
+      "D5": "=A5^2",
+      "A6": 10,
+      "B6": 41,
+      "C6": "=A6*B6",
+      "D6": "=A6^2",
+      "A7": "=SUM(A2:A6)",
+      "B7": "=SUM(B2:B6)",
+      "C7": "=SUM(C2:C6)",
+      "D7": "=SUM(D2:D6)",
+      "A9": "n",
+      "B9": "=COUNT(A2:A6)",
+      "A10": "Pendiente b",
+      "B10": "=(B9*C7-A7*B7)/(B9*D7-A7^2)",
+      "A11": "Intercepto a",
+      "B11": "=B7/B9-B10*A7/B9",
+      "A12": "Correlación r",
+      "B12": "=CORREL(A2:A6,B2:B6)",
+      "A13": "t de la correlación",
+      "B13": "=B12*SQRT(B9-2)/SQRT(1-B12^2)",
+      "A14": "x para predecir",
+      "B14": 12,
+      "A15": "ŷ predicho",
+      "B15": "=B11+B10*B14"
+    },
+    "formatos": {
+      "B10": "numero",
+      "B11": "numero",
+      "B12": "numero",
+      "B13": "numero",
+      "B15": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B10",
+        "esperado": 2.7,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B11",
+        "esperado": 14.8,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B15",
+        "esperado": 47.2,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-3-best-fit-linear-model",
+      "seccion": "14.3 Best-Fit Linear Model"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

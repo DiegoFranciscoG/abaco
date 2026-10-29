@@ -706,6 +706,17 @@
         "planes": 2
       },
       {
+        "materia": "econometria",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "planes": 2
+      },
+      {
         "materia": "metodologia-investigacion",
         "ciclo": 4,
         "ciclos": [
@@ -815,11 +826,6 @@
         "planes": 1
       },
       {
-        "nombre": "Econometría",
-        "ciclo": 4,
-        "planes": 2
-      },
-      {
         "nombre": "Métodos Dinámicos en Economía",
         "ciclo": 4,
         "planes": 1
@@ -837,11 +843,6 @@
       {
         "nombre": "Teoría de Juegos",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Análisis Multivariante",
-        "ciclo": 7,
         "planes": 1
       },
       {
@@ -1232,6 +1233,14 @@
         "planes": 1
       },
       {
+        "materia": "econometria",
+        "ciclo": 4,
+        "ciclos": [
+          4
+        ],
+        "planes": 1
+      },
+      {
         "materia": "macroeconomia",
         "ciclo": 4,
         "ciclos": [
@@ -1293,11 +1302,6 @@
       {
         "nombre": "Análisis Exploratorio de Datos",
         "ciclo": 3,
-        "planes": 1
-      },
-      {
-        "nombre": "Econometría Aplicada",
-        "ciclo": 4,
         "planes": 1
       },
       {

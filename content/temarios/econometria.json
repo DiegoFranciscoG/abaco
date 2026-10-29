@@ -1,0 +1,488 @@
+{
+  "materia": "econometria",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "ec-datos-correlacion",
+      "nombre": "Datos y correlación",
+      "orden": 1,
+      "descripcion": "Series de tiempo, corte transversal y datos de panel; correlación, su prueba de significancia, la regla rápida y el error de confundirla con causalidad.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ec-tipos-datos",
+          "nombre": "Series de tiempo, corte transversal y datos de panel",
+          "explicacion": "Los modelos de causa y efecto usan datos bivariados o multivariados, que se clasifican en tres tipos. Las series de tiempo miden varias características de una sola unidad de observación, como una persona, empresa o país, a lo largo del tiempo. Los datos de corte transversal miden muchas unidades en un mismo momento. Los datos de panel siguen a un grupo de unidades a lo largo del tiempo; son caros de construir y mantener, pero permiten responder preguntas que exigen seguir a las mismas personas durante años.",
+          "ejemplo": "El PIB del Ecuador de 2000 a 2025 es una serie de tiempo; los ingresos de 1.000 hogares en 2025 son un corte transversal, y los ingresos de esos mismos hogares cada año desde 2015 forman un panel.",
+          "puntos_clave": [
+            "Series de tiempo: una unidad en el tiempo.",
+            "Corte transversal: muchas unidades en un momento.",
+            "Panel: muchas unidades en el tiempo."
+          ],
+          "errores_frecuentes": [
+            "Tratar datos de panel como si fueran un corte transversal.",
+            "Mezclar períodos distintos en un corte transversal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-1-the-correlation-coefficient-r",
+            "seccion": "13.1 The Correlation Coefficient r"
+          }
+        },
+        {
+          "id": "ec-correlacion",
+          "nombre": "La correlación: comovimiento, no causa",
+          "explicacion": "El diagrama de dispersión permite ver si dos variables parecen relacionadas, y el coeficiente de correlación da precisión matemática a esa relación. La correlación dice algo sobre el comovimiento de dos variables, pero nada sobre por qué ocurre. Formalmente, el análisis de correlación supone que ambas variables son independientes, es decir, que ninguna causa el movimiento de la otra; por eso, para estudiar causa y efecto se necesita un modelo de regresión basado en una teoría.",
+          "ejemplo": "Las ventas de helados y los ahogamientos pueden estar muy correlacionados porque ambos aumentan en verano, sin que uno cause al otro.",
+          "puntos_clave": [
+            "Diagrama de dispersión primero.",
+            "La correlación mide comovimiento.",
+            "No explica por qué ocurre."
+          ],
+          "errores_frecuentes": [
+            "Concluir causalidad a partir de una correlación alta.",
+            "Omitir el diagrama de dispersión."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-1-the-correlation-coefficient-r",
+            "seccion": "13.1 The Correlation Coefficient r"
+          }
+        },
+        {
+          "id": "ec-prueba-r",
+          "nombre": "Prueba de significancia de la correlación",
+          "explicacion": "Como solo conocemos la correlación muestral r, se prueba si la correlación poblacional ρ es distinta de cero. La hipótesis nula dice que no hay una relación lineal significativa (ρ = 0) y la alternativa que sí la hay. El estadístico es t = r √(n − 2) ÷ √(1 − r²), con n − 2 grados de libertad: si cae en la cola, más allá del valor crítico, se rechaza la nula y se concluye que la correlación es significativa.",
+          "ejemplo": "Con r = 0,6 y 27 observaciones, t = 0,6 × 5 ÷ 0,8 = 3,75, mayor que el valor crítico de aproximadamente 2,06 al 5 %: la correlación es significativa.",
+          "puntos_clave": [
+            "H0: ρ = 0.",
+            "t = r √(n − 2) ÷ √(1 − r²).",
+            "n − 2 grados de libertad."
+          ],
+          "errores_frecuentes": [
+            "Usar n − 1 grados de libertad.",
+            "Olvidar elevar r al cuadrado en el denominador."
+          ],
+          "formulas": [
+            "t-correlacion"
+          ],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+            "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+          }
+        },
+        {
+          "id": "ec-regla-rapida",
+          "nombre": "Regla rápida y mal uso de la correlación",
+          "explicacion": "Una forma rápida de evaluar una correlación es comparar su valor absoluto con 2 dividido para la raíz del tamaño de la muestra: si lo iguala o supera, la relación lineal es significativa aproximadamente al 5 %. La relación es inversa: con 10 observaciones se necesita 0,6325, con 30 basta 0,3651 y con 100, 0,2000. El libro advierte que quizá ningún estadístico se usa peor que la correlación, cuando se cita para insinuar causa y efecto; para eso hay que usar pruebas diseñadas para relaciones causales.",
+          "ejemplo": "Con 25 observaciones el umbral es 2 ÷ 5 = 0,4: una correlación de 0,45 sería significativa, pero no probaría que una variable cause a la otra.",
+          "puntos_clave": [
+            "Umbral = 2 ÷ √n.",
+            "Más observaciones, menor umbral.",
+            "Correlación no es causalidad."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el mismo umbral con cualquier tamaño de muestra.",
+            "Usar la correlación para afirmar causas."
+          ],
+          "formulas": [
+            "umbral-correlacion"
+          ],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+            "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-mco",
+      "nombre": "El modelo de regresión por MCO",
+      "orden": 2,
+      "descripcion": "Modelo general de regresión, método de mínimos cuadrados y residuos, cálculo de pendiente e intercepto y teorema de Gauss-Markov.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ec-modelo-general",
+          "nombre": "El modelo general de regresión lineal",
+          "explicacion": "La regresión por mínimos cuadrados ordinarios (MCO) siempre usa una función lineal para estimar una relación, aunque esta pueda no ser lineal. El modelo general es yᵢ = β₀ + β₁x₁ᵢ + β₂x₂ᵢ + … + βₖxₖᵢ + εᵢ, donde las letras griegas son los parámetros poblacionales y ε el error. Esta es la forma del modelo de regresión múltiple; la regresión simple, con una sola variable independiente, es un caso especial que se puede graficar en dos dimensiones.",
+          "ejemplo": "Un modelo de demanda puede explicar la cantidad comprada con el precio, el ingreso y el precio de un sustituto: tres variables independientes en una regresión múltiple.",
+          "puntos_clave": [
+            "Modelo lineal con k variables.",
+            "Parámetros β y error ε.",
+            "La regresión simple es un caso especial."
+          ],
+          "errores_frecuentes": [
+            "Creer que la regresión múltiple es otro método distinto.",
+            "Olvidar el término de error."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        },
+        {
+          "id": "ec-minimos-cuadrados",
+          "nombre": "Método de mínimos cuadrados y residuos",
+          "explicacion": "Una vez que la correlación resulta significativa, se desarrolla un modelo de regresión que permite predecir la variable dependiente para un valor de la independiente. En regresión la recta se escribe ŷ = a + bx, donde b es la pendiente, a el intercepto e ŷ el valor predicho. A diferencia del álgebra, que usa dos puntos para trazar una recta, la regresión usa todos los pares (x, y) de los datos: el método de mínimos cuadrados busca la recta que minimiza la suma de los residuos, las diferencias entre los valores observados y los predichos, elevados al cuadrado.",
+          "ejemplo": "Una empresa estima que sus ingresos mensuales (en miles) son ŷ = 9.376,7 + 61,8x, donde x es su gasto en publicidad en miles de dólares.",
+          "puntos_clave": [
+            "ŷ = a + bx.",
+            "Usa todos los datos.",
+            "Minimiza la suma de residuos al cuadrado."
+          ],
+          "errores_frecuentes": [
+            "Calcular una regresión sin revisar antes la correlación.",
+            "Confundir el valor observado con el predicho."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/14-2-linear-regression-analysis",
+            "seccion": "14.2 Linear Regression Analysis"
+          }
+        },
+        {
+          "id": "ec-calculo-coeficientes",
+          "nombre": "Cálculo de la pendiente y el intercepto",
+          "explicacion": "La pendiente y el intercepto de la recta de mejor ajuste pueden calcularse con las sumas de los datos: b = (nΣxy − ΣxΣy) ÷ (nΣx² − (Σx)²) y a = Σy/n − b Σx/n. Como estas fórmulas son engorrosas con muchos datos, suele usarse tecnología: en Excel, =PENDIENTE(rango y; rango x) y =INTERSECCION.EJE(rango y; rango x), poniendo primero el rango de la variable dependiente. La recta siempre pasa por el punto de medias.",
+          "ejemplo": "Con x = 1 a 5 e y = 3, 5, 7, 8 y 12: Σx = 15, Σy = 35, Σxy = 126 y Σx² = 55, así que b = 105 ÷ 50 = 2,1 y a = 7 − 2,1 × 3 = 0,7.",
+          "puntos_clave": [
+            "Fórmulas con sumas.",
+            "Excel: PENDIENTE e INTERSECCION.EJE.",
+            "Primero el rango de y."
+          ],
+          "errores_frecuentes": [
+            "Invertir los rangos de x e y en Excel.",
+            "Confundir (Σx)² con Σx²."
+          ],
+          "formulas": [
+            "pendiente-mco",
+            "intercepto-mco"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/14-3-best-fit-linear-model",
+            "seccion": "14.3 Best-Fit Linear Model"
+          }
+        },
+        {
+          "id": "ec-gauss-markov",
+          "nombre": "Ecuaciones normales y teorema de Gauss-Markov",
+          "explicacion": "Las fórmulas de los estimadores salen de las ecuaciones normales, que provienen del teorema de Gauss-Markov. Este teorema demuestra que, si se cumplen los supuestos del modelo, los estimadores de MCO son insesgados y de varianza mínima entre los estimadores lineales. La pendiente también puede escribirse como b₁ = r (s_y ÷ s_x), es decir, la correlación por el cociente de las desviaciones estándar.",
+          "ejemplo": "Si la correlación es 0,8, la desviación estándar de y es 12 y la de x es 4, la pendiente es 0,8 × 12 ÷ 4 = 2,4.",
+          "puntos_clave": [
+            "Ecuaciones normales.",
+            "Estimadores insesgados y de varianza mínima.",
+            "b₁ = r × s_y ÷ s_x."
+          ],
+          "errores_frecuentes": [
+            "Creer que las propiedades valen aunque se violen los supuestos.",
+            "Confundir insesgado con exacto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-supuestos",
+      "nombre": "Supuestos, problemas e inferencia",
+      "orden": 3,
+      "descripcion": "Supuestos del modelo de MCO, heterocedasticidad y autocorrelación, multicolinealidad y prueba t de los coeficientes.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ec-supuestos-mco",
+          "nombre": "Supuestos del modelo de MCO",
+          "explicacion": "El modelo funciona solo si se cumplen ciertos supuestos: los errores se distribuyen normalmente con media cero y una desviación estándar constante, y los términos de error son independientes del tamaño de x y entre sí. Además, las variables independientes no deben estar perfectamente correlacionadas entre sí. Si algún supuesto falla, la calidad de las estimaciones se ve afectada: algunas fallas pueden corregirse y otras producen estimaciones sesgadas o sin utilidad para la pregunta del modelo.",
+          "ejemplo": "Si se estima el gasto en alimentos de los hogares y los errores son mucho mayores en los hogares ricos, falla el supuesto de varianza constante.",
+          "puntos_clave": [
+            "Errores normales con media cero.",
+            "Varianza constante e independencia.",
+            "Sin multicolinealidad perfecta."
+          ],
+          "errores_frecuentes": [
+            "Interpretar los resultados sin revisar los supuestos.",
+            "Creer que cualquier falla invalida todo el modelo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        },
+        {
+          "id": "ec-heteroscedasticidad",
+          "nombre": "Homocedasticidad, heterocedasticidad y autocorrelación",
+          "explicacion": "El supuesto de varianza constante de los errores respecto al tamaño de x se llama homocedasticidad; si falla, hay heterocedasticidad. Otro supuesto es que los términos de error no estén correlacionados entre sí; esto falla cuando un error influye en los siguientes, por ejemplo por variables omitidas o en series de tiempo, lo que se conoce como autocorrelación. Los métodos para corregir estas fallas se estudian en los cursos de econometría.",
+          "ejemplo": "En una serie de ventas mensuales, si un mes con error positivo tiende a ser seguido por otro con error positivo, los errores están autocorrelacionados.",
+          "puntos_clave": [
+            "Homocedasticidad: varianza constante.",
+            "Heterocedasticidad: varianza cambiante.",
+            "Errores correlacionados entre sí."
+          ],
+          "errores_frecuentes": [
+            "Ignorar el patrón de los residuos.",
+            "Confundir heterocedasticidad con multicolinealidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        },
+        {
+          "id": "ec-multicolinealidad",
+          "nombre": "Multicolinealidad",
+          "explicacion": "Que algunas variables independientes estén correlacionadas no es raro ni impide la regresión, pero las correlaciones altas, aunque no perfectas, se llaman multicolinealidad. Hacen más difícil separar el efecto individual de cada variable: inflan los errores estándar y vuelven inestables las estimaciones, porque cada variable toma parte del efecto que corresponde a la otra, lo que puede sesgar los coeficientes. Las variables que se mueven juntas por una causa común, como precios afectados por la inflación general, suelen provocarla.",
+          "ejemplo": "Si se explican las ventas con el gasto en publicidad en televisión y en redes, y ambos gastos suben y bajan juntos, es difícil saber cuánto aporta cada uno.",
+          "puntos_clave": [
+            "Correlación alta entre explicativas.",
+            "Errores estándar inflados.",
+            "Estimaciones inestables."
+          ],
+          "errores_frecuentes": [
+            "Eliminar una variable relevante sin justificación teórica.",
+            "Creer que la multicolinealidad viola la regresión en todos los casos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        },
+        {
+          "id": "ec-inferencia",
+          "nombre": "Prueba t de los coeficientes",
+          "explicacion": "Para probar si y depende realmente de x se contrasta la hipótesis nula β₁ = 0. El estadístico es t = (b₁ − β₁) ÷ s_b₁, es decir, cuántas desviaciones estándar se aleja el coeficiente estimado del valor hipotético, con n − k grados de libertad, porque se pierde uno por cada parámetro estimado. Si el estadístico cae en la región crítica se rechaza la nula y se concluye, con un nivel de confianza 1 − α, que la variable tiene efecto; varianzas grandes de los errores reducen el estadístico y dificultan rechazarla.",
+          "ejemplo": "En la función de consumo de Keynes, una propensión marginal estimada de 0,75 con desviación estándar de 0,15 da t = 5: el consumo depende del ingreso.",
+          "puntos_clave": [
+            "H0: β₁ = 0.",
+            "t = (b − β) ÷ s_b.",
+            "Grados de libertad n − k."
+          ],
+          "errores_frecuentes": [
+            "Usar n − 1 grados de libertad en una regresión múltiple.",
+            "Concluir que no hay efecto solo porque el coeficiente es pequeño."
+          ],
+          "formulas": [
+            "t-coeficiente"
+          ],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-especificacion",
+      "nombre": "Especificación e interpretación",
+      "orden": 4,
+      "descripcion": "Variables ficticias, tipos de elasticidad, elasticidad en el punto de medias y transformaciones logarítmicas.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ec-ficticias",
+          "nombre": "Variables ficticias (dummy)",
+          "explicacion": "Nada impide usar en la regresión variables independientes binarias, que toman solo los valores 1 y 0, para captar categorías como región, sexo o antes y después de una fecha. En el modelo y = b₀ + b₂x₂ + b₁x₁, con x₂ ficticia, la recta corta el eje en b₀ cuando x₂ = 0 y en b₀ + b₂ cuando x₂ = 1: la variable ficticia desplaza la recta en paralelo, hacia arriba o abajo, sin cambiar el efecto de la variable continua x₁.",
+          "ejemplo": "En una regresión de salarios sobre años de experiencia, una ficticia que vale 1 para quienes tienen título universitario mide cuánto más ganan, en promedio, a igual experiencia.",
+          "puntos_clave": [
+            "Variables binarias 1 y 0.",
+            "Desplazamiento paralelo de la recta.",
+            "No cambia la pendiente de x₁."
+          ],
+          "errores_frecuentes": [
+            "Codificar una categoría con valores 1, 2, 3 como si fueran cantidades.",
+            "Interpretar el coeficiente de la ficticia como pendiente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        },
+        {
+          "id": "ec-tipos-elasticidad",
+          "nombre": "Elasticidades en los modelos de demanda",
+          "explicacion": "La elasticidad mide la respuesta porcentual de una variable ante un cambio porcentual de otra, lo que permite comparar sin importar las unidades. La elasticidad precio es el cambio porcentual de la cantidad dividido para el cambio porcentual del precio; la elasticidad ingreso usa el cambio porcentual del ingreso, y la elasticidad cruzada, el del precio de otro bien. Si es menor que uno en valor absoluto la demanda es inelástica, como la de gasolina, con pocos sustitutos; si es mayor que uno, elástica, como la de frutas que se sustituyen entre sí.",
+          "ejemplo": "Si el precio de la gasolina sube 16 % y el consumo baja 4 %, la elasticidad precio es 0,04 ÷ 0,16 = 0,25: demanda inelástica.",
+          "puntos_clave": [
+            "Elasticidad precio, ingreso y cruzada.",
+            "Medida en porcentajes.",
+            "Inelástica < 1 < elástica."
+          ],
+          "errores_frecuentes": [
+            "Comparar pendientes en lugar de elasticidades entre bienes con unidades distintas.",
+            "Olvidar el signo negativo de la elasticidad precio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-5-interpretation-of-regression-coefficients-elasticity-and-logarithmic-transformation",
+            "seccion": "13.5 Interpretation of Regression Coefficients: Elasticity and Logarithmic Transformation"
+          }
+        },
+        {
+          "id": "ec-elasticidad-media",
+          "nombre": "Elasticidad en el punto de medias",
+          "explicacion": "En una demanda lineal la elasticidad cambia a lo largo de la curva: es alta con precios altos y baja con precios bajos. Por convención se estima en el punto de medias, por donde siempre pasa la recta de MCO y donde se concentra el peso de los datos: la elasticidad es el coeficiente estimado del precio multiplicado por el precio medio y dividido para la cantidad media. El mismo método sirve para la elasticidad ingreso o cruzada con las medias correspondientes.",
+          "ejemplo": "Con un coeficiente del precio de −2,5, precio medio de USD 8 y cantidad media de 40, la elasticidad es −2,5 × 8 ÷ 40 = −0,5.",
+          "puntos_clave": [
+            "La elasticidad varía en una recta.",
+            "Se evalúa en las medias.",
+            "η = b × x̄ ÷ ȳ."
+          ],
+          "errores_frecuentes": [
+            "Tomar el coeficiente b como si fuera la elasticidad en un modelo lineal.",
+            "Invertir las medias en la fórmula."
+          ],
+          "formulas": [
+            "elasticidad-media"
+          ],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-5-interpretation-of-regression-coefficients-elasticity-and-logarithmic-transformation",
+            "seccion": "13.5 Interpretation of Regression Coefficients: Elasticity and Logarithmic Transformation"
+          }
+        },
+        {
+          "id": "ec-logaritmos",
+          "nombre": "Transformaciones logarítmicas",
+          "explicacion": "Transformar los datos a logaritmos antes de la regresión cambia la interpretación de los coeficientes. Hay cuatro casos: en el modelo lineal, un cambio unitario en x cambia y en b unidades; en el semilogarítmico con log(y), un cambio unitario en x cambia y en 100 × b por ciento; con log(x), un cambio porcentual en x cambia y en unidades, y en el modelo log-log un cambio porcentual en x produce un cambio porcentual en y, por lo que el coeficiente es directamente una elasticidad.",
+          "ejemplo": "En una regresión de log(salario) sobre años de estudio con b = 0,08, cada año adicional de estudio se asocia con un salario 8 % mayor.",
+          "puntos_clave": [
+            "Lineal: unidades a unidades.",
+            "Semilog: unidades a porcentaje.",
+            "Log-log: elasticidad."
+          ],
+          "errores_frecuentes": [
+            "Leer un coeficiente semilog como cambio en unidades.",
+            "Olvidar multiplicar por 100."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-5-interpretation-of-regression-coefficients-elasticity-and-logarithmic-transformation",
+            "seccion": "13.5 Interpretation of Regression Coefficients: Elasticity and Logarithmic Transformation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-anova-aplicaciones",
+      "nombre": "ANOVA, ajuste y aplicaciones",
+      "orden": 5,
+      "descripcion": "Hipótesis y requisitos del ANOVA de un factor, cálculo del estadístico F, varianza del error y regresión aplicada a finanzas.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ec-anova-hipotesis",
+          "nombre": "ANOVA: hipótesis y requisitos",
+          "explicacion": "El análisis de varianza (ANOVA) permite comparar tres o más medias para saber si todas son estadísticamente iguales o si al menos una difiere. El ANOVA de un factor tiene una sola variable independiente, y los grupos pueden tener tamaños distintos. La hipótesis nula afirma que todas las medias poblacionales son iguales y la alternativa que al menos una es distinta. Requiere muestras aleatorias, independientes y aproximadamente normales, y se basa en la distribución F, sesgada a la derecha y con grados de libertad en el numerador y en el denominador.",
+          "ejemplo": "Una cadena compara las ventas promedio de tres diseños de vitrina en distintas tiendas para saber si alguno vende más.",
+          "puntos_clave": [
+            "Compara tres o más medias.",
+            "H0: todas iguales.",
+            "Distribución F."
+          ],
+          "errores_frecuentes": [
+            "Hacer muchas pruebas t de dos en dos en lugar de un ANOVA.",
+            "Concluir cuál media difiere solo con el ANOVA."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/4-4-analysis-of-variance-anova",
+            "seccion": "4.4 Analysis of Variance (ANOVA)"
+          }
+        },
+        {
+          "id": "ec-anova-calculo",
+          "nombre": "Cálculo del estadístico F",
+          "explicacion": "El estadístico F es el cociente entre la varianza entre las muestras, o variación explicada por el tratamiento, y la varianza dentro de las muestras, o variación no explicada. Se calculan la suma de cuadrados entre grupos (SSB), con las medias de cada grupo y la media general, y la suma de cuadrados dentro de los grupos (SSW), con las varianzas de cada grupo. Cada una se divide para sus grados de libertad, k − 1 y N − k, y F resulta del cociente; es muy común calcularlo con software.",
+          "ejemplo": "Con SSB = 120 en tres grupos y SSW = 300 con 33 observaciones, F = (120 ÷ 2) ÷ (300 ÷ 30) = 6.",
+          "puntos_clave": [
+            "F = varianza entre ÷ varianza dentro.",
+            "SSB y SSW.",
+            "Grados de libertad k − 1 y N − k."
+          ],
+          "errores_frecuentes": [
+            "Dividir SSW para k − 1.",
+            "Invertir numerador y denominador."
+          ],
+          "formulas": [
+            "f-anova"
+          ],
+          "fuente": {
+            "ref": "os-pds",
+            "url": "https://openstax.org/books/principles-data-science/pages/4-4-analysis-of-variance-anova",
+            "seccion": "4.4 Analysis of Variance (ANOVA)"
+          }
+        },
+        {
+          "id": "ec-error-estandar",
+          "nombre": "Varianza del error y error estándar de la estimación",
+          "explicacion": "Una medida del ajuste del modelo es la estimación de la varianza de los errores, a veces llamada error estándar de la estimación: la suma de los errores al cuadrado dividida para n − k, el número de observaciones menos el de parámetros estimados. Esta varianza entra en la fórmula de la desviación estándar de los coeficientes, por lo que una varianza grande de los errores reduce los estadísticos t y hace más difícil rechazar la hipótesis de que una variable no tiene efecto.",
+          "ejemplo": "Un modelo con 4 parámetros, 40 observaciones y suma de errores al cuadrado de 360 tiene una varianza del error de 360 ÷ 36 = 10.",
+          "puntos_clave": [
+            "s² = SSE ÷ (n − k).",
+            "Mide el ajuste.",
+            "Afecta a las pruebas t."
+          ],
+          "errores_frecuentes": [
+            "Dividir para n en lugar de n − k.",
+            "Comparar errores de modelos con variables dependientes distintas."
+          ],
+          "formulas": [
+            "varianza-error"
+          ],
+          "fuente": {
+            "ref": "os-ibs",
+            "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+            "seccion": "13.4 The Regression Equation"
+          }
+        },
+        {
+          "id": "ec-regresion-finanzas",
+          "nombre": "Regresión aplicada a finanzas y predicción",
+          "explicacion": "La regresión se usa mucho en finanzas, por ejemplo para saber si un índice bursátil depende de otro y predecirlo. El procedimiento es hacer el diagrama de dispersión, calcular la correlación y verificar su significancia, y luego obtener la pendiente y el intercepto, en Excel con =COEF.DE.CORREL, =PENDIENTE e =INTERSECCION.EJE. Con la recta estimada se sustituye el valor de la variable independiente para predecir la dependiente.",
+          "ejemplo": "Con una correlación de 0,947 entre el DJIA y el Russell 2000, la recta ŷ = −1.496,34 + 0,11x predice 2.023,66 puntos si el DJIA llega a 32.000.",
+          "puntos_clave": [
+            "Dispersión, correlación y significancia.",
+            "Pendiente e intercepto con Excel.",
+            "Predicción con ŷ = a + bx."
+          ],
+          "errores_frecuentes": [
+            "Predecir muy fuera del rango de los datos.",
+            "Saltarse la prueba de significancia."
+          ],
+          "formulas": [
+            "prediccion-lineal"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/14-4-regression-applications-in-finance",
+            "seccion": "14.4 Regression Applications in Finance"
+          }
+        }
+      ]
+    }
+  ]
+}

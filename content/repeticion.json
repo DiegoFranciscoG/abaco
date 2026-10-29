@@ -224,6 +224,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Econometría",
+    "carreras": 3,
+    "planes": 4,
+    "ciclo_habitual": 4,
+    "materia": "econometria",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Finanzas Internacionales",
     "carreras": 3,
     "planes": 4,
@@ -309,14 +317,6 @@
     "planes": 3,
     "ciclo_habitual": 7,
     "materia": "presupuestos",
-    "tipo": "materia"
-  },
-  {
-    "nombre": "Análisis Multivariante",
-    "carreras": 2,
-    "planes": 2,
-    "ciclo_habitual": 4,
-    "materia": null,
     "tipo": "materia"
   },
   {

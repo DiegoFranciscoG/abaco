@@ -12540,5 +12540,506 @@
     },
     "materia": "aduanas",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-t-r-significativa",
+    "subtema": "ec-prueba-r",
+    "formula": "t-correlacion",
+    "enunciado": "En 27 meses, la correlación entre el gasto en publicidad y las ventas de una empresa es 0,6. Calcula el estadístico t de la correlación.",
+    "datos": {
+      "r": 0.6,
+      "n": 27
+    },
+    "calculo": "r * SQRT(n - 2) / SQRT(1 - r ^ 2)",
+    "respuesta": 3.75,
+    "unidad": "t",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "√25 = 5",
+      "√(1 − 0,36) = 0,8",
+      "t = 0,6 × 5 ÷ 0,8 = 3,75"
+    ],
+    "pistas": [
+      "Los grados de libertad son n − 2."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+      "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-t-r-debil",
+    "subtema": "ec-prueba-r",
+    "formula": "t-correlacion",
+    "enunciado": "Con 18 observaciones, la correlación entre la tasa de interés y la inversión es 0,35. ¿Cuál es el estadístico t?",
+    "datos": {
+      "r": 0.35,
+      "n": 18
+    },
+    "calculo": "r * SQRT(n - 2) / SQRT(1 - r ^ 2)",
+    "respuesta": 1.4945,
+    "unidad": "t",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "√16 = 4",
+      "√(1 − 0,1225) = 0,93675",
+      "t = 0,35 × 4 ÷ 0,93675 = 1,4945",
+      "Menor que el valor crítico (≈ 2,12): no es significativa al 5 %"
+    ],
+    "pistas": [
+      "Compara con el valor crítico de t con 16 grados de libertad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+      "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-umbral-25",
+    "subtema": "ec-regla-rapida",
+    "formula": "umbral-correlacion",
+    "enunciado": "Con 25 observaciones, ¿qué valor absoluto mínimo de r se necesita según la regla rápida?",
+    "datos": {
+      "n": 25
+    },
+    "calculo": "2 / SQRT(n)",
+    "respuesta": 0.4,
+    "unidad": "coeficiente",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "2 ÷ √25 = 2 ÷ 5 = 0,4"
+    ],
+    "pistas": [
+      "Divide 2 para la raíz del tamaño de la muestra."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+      "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-umbral-64",
+    "subtema": "ec-regla-rapida",
+    "formula": "umbral-correlacion",
+    "enunciado": "Una encuesta tiene 64 observaciones y una correlación de 0,3 entre dos variables. ¿Cuál es el umbral y es significativa?",
+    "datos": {
+      "n": 64
+    },
+    "calculo": "2 / SQRT(n)",
+    "respuesta": 0.25,
+    "unidad": "coeficiente",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "2 ÷ √64 = 0,25",
+      "0,3 ≥ 0,25: significativa aproximadamente al 5 %"
+    ],
+    "pistas": [
+      "Con más datos, el umbral baja."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-2-testing-the-significance-of-the-correlation-coefficient",
+      "seccion": "13.2 Testing the Significance of the Correlation Coefficient"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-pendiente",
+    "subtema": "ec-calculo-coeficientes",
+    "formula": "pendiente-mco",
+    "enunciado": "El gasto en publicidad (x, miles USD) de cinco meses fue 2, 4, 6, 8 y 10, y las ventas (y, miles USD) 20, 26, 30, 38 y 41. ¿Cuál es la pendiente de la regresión?",
+    "datos": {
+      "x": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "y": [
+        20,
+        26,
+        30,
+        38,
+        41
+      ]
+    },
+    "calculo": "(COUNT(x) * SUMPRODUCT(x, y) - SUM(x) * SUM(y)) / (COUNT(x) * SUMSQ(x) - SUM(x) ^ 2)",
+    "respuesta": 2.7,
+    "unidad": "miles USD de ventas por mil USD de publicidad",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Σx = 30; Σy = 155; Σxy = 1.038; Σx² = 220",
+      "b = (5 × 1.038 − 30 × 155) ÷ (5 × 220 − 900)",
+      "b = 540 ÷ 200 = 2,7"
+    ],
+    "pistas": [
+      "Calcula primero las cuatro sumas."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-3-best-fit-linear-model",
+      "seccion": "14.3 Best-Fit Linear Model"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-intercepto",
+    "subtema": "ec-calculo-coeficientes",
+    "formula": "intercepto-mco",
+    "enunciado": "Con los mismos datos de publicidad y ventas, ¿cuál es el intercepto de la regresión?",
+    "datos": {
+      "x": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "y": [
+        20,
+        26,
+        30,
+        38,
+        41
+      ]
+    },
+    "calculo": "SUM(y) / COUNT(y) - (COUNT(x) * SUMPRODUCT(x, y) - SUM(x) * SUM(y)) / (COUNT(x) * SUMSQ(x) - SUM(x) ^ 2) * SUM(x) / COUNT(x)",
+    "respuesta": 14.8,
+    "unidad": "miles USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Media de y = 31; media de x = 6",
+      "a = 31 − 2,7 × 6 = 14,8"
+    ],
+    "pistas": [
+      "La recta pasa por el punto de medias."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-3-best-fit-linear-model",
+      "seccion": "14.3 Best-Fit Linear Model"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-t-coef-cero",
+    "subtema": "ec-inferencia",
+    "formula": "t-coeficiente",
+    "enunciado": "En una regresión de ventas sobre publicidad, el coeficiente estimado es 2,7 con desviación estándar de 0,45. ¿Cuál es el estadístico t para la hipótesis β = 0?",
+    "datos": {
+      "b": 2.7,
+      "B": 0,
+      "sb": 0.45
+    },
+    "calculo": "(b - B) / sb",
+    "respuesta": 6,
+    "unidad": "t",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "t = (2,7 − 0) ÷ 0,45 = 6"
+    ],
+    "pistas": [
+      "La hipótesis habitual es que el coeficiente vale cero."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+      "seccion": "13.4 The Regression Equation"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-t-coef-uno",
+    "subtema": "ec-inferencia",
+    "formula": "t-coeficiente",
+    "enunciado": "La beta estimada de una acción es 1,2 con desviación estándar de 0,25. ¿Cuál es el estadístico t para probar si la beta es igual a 1?",
+    "datos": {
+      "b": 1.2,
+      "B": 1,
+      "sb": 0.25
+    },
+    "calculo": "(b - B) / sb",
+    "respuesta": 0.8,
+    "unidad": "t",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "t = (1,2 − 1) ÷ 0,25 = 0,8",
+      "Muy pequeño: no se rechaza que la beta sea 1"
+    ],
+    "pistas": [
+      "El valor hipotético no siempre es cero."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+      "seccion": "13.4 The Regression Equation"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-elasticidad-precio",
+    "subtema": "ec-elasticidad-media",
+    "formula": "elasticidad-media",
+    "enunciado": "En una demanda estimada, el coeficiente del precio es −3, el precio medio es USD 20 y la cantidad media 150 unidades. ¿Cuál es la elasticidad precio en las medias?",
+    "datos": {
+      "b": -3,
+      "xm": 20,
+      "ym": 150
+    },
+    "calculo": "b * xm / ym",
+    "respuesta": -0.4,
+    "unidad": "coeficiente",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "η = −3 × 20 ÷ 150 = −0,4",
+      "Demanda inelástica"
+    ],
+    "pistas": [
+      "Multiplica por la media del precio y divide para la media de la cantidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-5-interpretation-of-regression-coefficients-elasticity-and-logarithmic-transformation",
+      "seccion": "13.5 Interpretation of Regression Coefficients: Elasticity and Logarithmic Transformation"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-elasticidad-ingreso",
+    "subtema": "ec-elasticidad-media",
+    "formula": "elasticidad-media",
+    "enunciado": "El coeficiente del ingreso en una demanda es 0,04; el ingreso medio es USD 2.000 y la cantidad media 50 unidades. ¿Cuál es la elasticidad ingreso en las medias?",
+    "datos": {
+      "b": 0.04,
+      "xm": 2000,
+      "ym": 50
+    },
+    "calculo": "b * xm / ym",
+    "respuesta": 1.6,
+    "unidad": "coeficiente",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "η = 0,04 × 2.000 ÷ 50 = 1,6",
+      "Mayor que 1: la demanda responde más que proporcionalmente al ingreso"
+    ],
+    "pistas": [
+      "El método es el mismo para cualquier variable explicativa."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-5-interpretation-of-regression-coefficients-elasticity-and-logarithmic-transformation",
+      "seccion": "13.5 Interpretation of Regression Coefficients: Elasticity and Logarithmic Transformation"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-prediccion-ventas",
+    "subtema": "ec-regresion-finanzas",
+    "formula": "prediccion-lineal",
+    "enunciado": "Una empresa estimó ventas = 14,8 + 2,7 × publicidad (miles USD). Si invierte USD 12.000 en publicidad (x = 12), ¿qué ventas predice?",
+    "datos": {
+      "a": 14.8,
+      "b": 2.7,
+      "x": 12
+    },
+    "calculo": "a + b * x",
+    "respuesta": 47.2,
+    "unidad": "miles USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ŷ = 14,8 + 2,7 × 12 = 14,8 + 32,4 = 47,2"
+    ],
+    "pistas": [
+      "x = 12 está fuera del rango observado (2 a 10): interpreta con cautela."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-4-regression-applications-in-finance",
+      "seccion": "14.4 Regression Applications in Finance"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-prediccion-costo",
+    "subtema": "ec-regresion-finanzas",
+    "formula": "prediccion-lineal",
+    "enunciado": "Una regresión de costos totales sobre unidades producidas da ŷ = 1.200 + 3,5x. ¿Qué costo predice para 80 unidades?",
+    "datos": {
+      "a": 1200,
+      "b": 3.5,
+      "x": 80
+    },
+    "calculo": "a + b * x",
+    "respuesta": 1480,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "ŷ = 1.200 + 3,5 × 80 = 1.480"
+    ],
+    "pistas": [
+      "El intercepto puede interpretarse como el costo fijo estimado."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/14-4-regression-applications-in-finance",
+      "seccion": "14.4 Regression Applications in Finance"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-anova-a",
+    "subtema": "ec-anova-calculo",
+    "formula": "f-anova",
+    "enunciado": "Se comparan cuatro tratamientos con 40 observaciones en total: SSB = 45 y SSW = 360. ¿Cuál es el estadístico F?",
+    "datos": {
+      "SSB": 45,
+      "k": 4,
+      "SSW": 360,
+      "N": 40
+    },
+    "calculo": "(SSB / (k - 1)) / (SSW / (N - k))",
+    "respuesta": 1.5,
+    "unidad": "F",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "MSB = 45 ÷ 3 = 15",
+      "MSW = 360 ÷ 36 = 10",
+      "F = 1,5"
+    ],
+    "pistas": [
+      "Divide cada suma de cuadrados para sus grados de libertad."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/4-4-analysis-of-variance-anova",
+      "seccion": "4.4 Analysis of Variance (ANOVA)"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-anova-b",
+    "subtema": "ec-anova-calculo",
+    "formula": "f-anova",
+    "enunciado": "Tres métodos de capacitación se prueban con 30 empleados en total: SSB = 84 y SSW = 189. ¿Cuál es el estadístico F?",
+    "datos": {
+      "SSB": 84,
+      "k": 3,
+      "SSW": 189,
+      "N": 30
+    },
+    "calculo": "(SSB / (k - 1)) / (SSW / (N - k))",
+    "respuesta": 6,
+    "unidad": "F",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "MSB = 84 ÷ 2 = 42",
+      "MSW = 189 ÷ 27 = 7",
+      "F = 6"
+    ],
+    "pistas": [
+      "N − k = 30 − 3."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pds",
+      "url": "https://openstax.org/books/principles-data-science/pages/4-4-analysis-of-variance-anova",
+      "seccion": "4.4 Analysis of Variance (ANOVA)"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-varianza-error-a",
+    "subtema": "ec-error-estandar",
+    "formula": "varianza-error",
+    "enunciado": "Una regresión simple (2 parámetros) con 16 observaciones tiene una suma de errores al cuadrado de 98. ¿Cuál es la varianza estimada del error?",
+    "datos": {
+      "SSE": 98,
+      "n": 16,
+      "k": 2
+    },
+    "calculo": "SSE / (n - k)",
+    "respuesta": 7,
+    "unidad": "unidades de y al cuadrado",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Grados de libertad = 16 − 2 = 14",
+      "s² = 98 ÷ 14 = 7"
+    ],
+    "pistas": [
+      "Una regresión simple estima dos parámetros."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+      "seccion": "13.4 The Regression Equation"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ec-varianza-error-b",
+    "subtema": "ec-error-estandar",
+    "formula": "varianza-error",
+    "enunciado": "Un modelo múltiple con 5 parámetros y 55 observaciones tiene SSE = 1.250. ¿Cuál es la varianza estimada del error?",
+    "datos": {
+      "SSE": 1250,
+      "n": 55,
+      "k": 5
+    },
+    "calculo": "SSE / (n - k)",
+    "respuesta": 25,
+    "unidad": "unidades de y al cuadrado",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Grados de libertad = 55 − 5 = 50",
+      "s² = 1.250 ÷ 50 = 25",
+      "Error estándar = √25 = 5"
+    ],
+    "pistas": [
+      "La raíz de la varianza es el error estándar."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-ibs",
+      "url": "https://openstax.org/books/introductory-business-statistics-2e/pages/13-4-the-regression-equation",
+      "seccion": "13.4 The Regression Equation"
+    },
+    "materia": "econometria",
+    "actualizado_en": "2026-10-26"
   }
 ]

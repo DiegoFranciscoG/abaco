@@ -73,7 +73,8 @@
       "economia-popular-solidaria",
       "auditoria",
       "contratacion-publica",
-      "aduanas"
+      "aduanas",
+      "econometria"
     ],
     "areas": [
       "tecnologia"
@@ -138,7 +139,8 @@
     "para_que": "Estadística con menús, sin programar: estadística descriptiva, gráficos y pruebas que luego se ven en Estadística Inferencial.",
     "materias": [
       "estadistica-descriptiva",
-      "estadistica-inferencial"
+      "estadistica-inferencial",
+      "econometria"
     ],
     "areas": [
       "cuantitativo"
@@ -158,7 +160,8 @@
     "para_que": "Lenguaje estadístico para analizar datos con código reproducible; muy usado en econometría y en trabajos de titulación.",
     "materias": [
       "estadistica-descriptiva",
-      "estadistica-inferencial"
+      "estadistica-inferencial",
+      "econometria"
     ],
     "areas": [
       "cuantitativo",

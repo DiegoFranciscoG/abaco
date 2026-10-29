@@ -7131,5 +7131,151 @@
       "podra autorizar el desaduanamiento directo de las mercancias",
       "material belico"
     ]
+  },
+  {
+    "id": "ec-tipos-datos",
+    "palabras": [
+      "time series data",
+      "cross-section data",
+      "panel data"
+    ]
+  },
+  {
+    "id": "ec-correlacion",
+    "palabras": [
+      "the correlation tells us something about the co-movement of two variables, but nothing about why this movement occurred"
+    ]
+  },
+  {
+    "id": "ec-prueba-r",
+    "palabras": [
+      "the population correlation coefficient is not significantly different from zero",
+      "the degrees of freedom are n-2"
+    ]
+  },
+  {
+    "id": "ec-regla-rapida",
+    "palabras": [
+      "with only 10 observations, the required correlation for significance is 0.6325",
+      "perhaps no single statistic is more misused than the correlation coefficient"
+    ]
+  },
+  {
+    "id": "ec-modelo-general",
+    "palabras": [
+      "ordinary least squares (ols) regression analysis will always use a linear function",
+      "simple regression is just a special case of multiple regression"
+    ]
+  },
+  {
+    "id": "ec-minimos-cuadrados",
+    "palabras": [
+      "method of least squares and residuals",
+      "all ( x, y ) points in the data set will be utilized"
+    ]
+  },
+  {
+    "id": "ec-calculo-coeficientes",
+    "palabras": [
+      "the slope ( b ) and y -intercept ( a ) can be calculated using the following formulas",
+      "=slope( y -data range, x -data range)"
+    ]
+  },
+  {
+    "id": "ec-gauss-markov",
+    "palabras": [
+      "these equations are called the normal equations",
+      "gauss-markov theorem"
+    ]
+  },
+  {
+    "id": "ec-supuestos-mco",
+    "palabras": [
+      "assumptions of the ordinary least squares regression model",
+      "no perfect multicollinearity"
+    ]
+  },
+  {
+    "id": "ec-heteroscedasticidad",
+    "palabras": [
+      "homoscedasticity",
+      "heteroscedasticity",
+      "the error terms are uncorrelated with each other"
+    ]
+  },
+  {
+    "id": "ec-multicolinealidad",
+    "palabras": [
+      "inflated standard errors and unstable estimates",
+      "multicollinearity"
+    ]
+  },
+  {
+    "id": "ec-inferencia",
+    "palabras": [
+      "test the hypothesis that β 1 equals zero",
+      "here we must subtract one degree of freedom for each parameter estimated"
+    ]
+  },
+  {
+    "id": "ec-ficticias",
+    "palabras": [
+      "dummy variables",
+      "these categorical variables take on only two values, 1 and 0",
+      "parallel shift"
+    ]
+  },
+  {
+    "id": "ec-tipos-elasticidad",
+    "palabras": [
+      "income elasticity",
+      "cross-price elasticity",
+      "inelastic demand"
+    ]
+  },
+  {
+    "id": "ec-elasticidad-media",
+    "palabras": [
+      "the convention is to estimate the elasticity at the point of means"
+    ]
+  },
+  {
+    "id": "ec-logaritmos",
+    "palabras": [
+      "logarithmic transformation of the data",
+      "semi-log estimation",
+      "elasticity case"
+    ]
+  },
+  {
+    "id": "ec-anova-hipotesis",
+    "palabras": [
+      "analysis of variance (anova)",
+      "all population means are equal",
+      "f -distribution"
+    ]
+  },
+  {
+    "id": "ec-anova-calculo",
+    "palabras": [
+      "variance between samples",
+      "sum of squares between (ssb)",
+      "sum of squares within (ssw)"
+    ]
+  },
+  {
+    "id": "ec-error-estandar",
+    "palabras": [
+      "standard error of the estimate",
+      "estimate of the error variance"
+    ]
+  },
+  {
+    "id": "ec-regresion-finanzas",
+    "palabras": [
+      "regression analysis is used extensively in finance-related applications",
+      "=correl",
+      "predict the corresponding value of the russell 2000 index"
+    ]
   }
 ]
