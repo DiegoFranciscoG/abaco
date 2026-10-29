@@ -14507,5 +14507,189 @@
     },
     "materia": "gestion-riesgos-financieros",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pp-aleatoria-a",
+    "subtema": "pp-aleatoria",
+    "formula": "impacto-diferencia-medias",
+    "enunciado": "Un programa de tutorías se asignó por sorteo. Al final del año, el puntaje promedio fue 72 en el grupo de tratamiento y 65 en el de comparación. ¿Cuál es el impacto estimado?",
+    "datos": {
+      "YT": 72,
+      "YC": 65
+    },
+    "calculo": "YT - YC",
+    "respuesta": 7,
+    "unidad": "puntos",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Δ = 72 − 65 = 7 puntos"
+    ],
+    "pistas": [
+      "Con sorteo, la comparación directa es válida."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 4, Randomized Assignment"
+    },
+    "materia": "evaluacion-politicas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pp-aleatoria-hisp",
+    "subtema": "pp-aleatoria",
+    "formula": "impacto-diferencia-medias",
+    "enunciado": "En el HISP, el gasto en salud de los hogares al final del seguimiento fue de USD 7,84 en las aldeas de tratamiento y de USD 17,98 en las de comparación. ¿Cuál es el impacto del programa?",
+    "datos": {
+      "YT": 7.84,
+      "YC": 17.98
+    },
+    "calculo": "YT - YC",
+    "respuesta": -10.14,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Δ = 7,84 − 17,98 = −10,14"
+    ],
+    "pistas": [
+      "Un signo negativo indica una reducción del gasto."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 4, Randomized Assignment (tabla 4.2)"
+    },
+    "materia": "evaluacion-politicas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pp-dd-hisp",
+    "subtema": "pp-diferencias",
+    "formula": "dobles-diferencias",
+    "enunciado": "En el HISP, los inscritos pasaron de un gasto en salud de USD 14,49 a 7,84 y los no inscritos de 20,79 a 22,30. Calcula el estimador de diferencias en diferencias.",
+    "datos": {
+      "A": 14.49,
+      "B": 7.84,
+      "C": 20.79,
+      "D": 22.3
+    },
+    "calculo": "(B - A) - (D - C)",
+    "respuesta": -8.16,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "B − A = −6,65",
+      "D − C = 1,51",
+      "DD = −6,65 − 1,51 = −8,16"
+    ],
+    "pistas": [
+      "Primero el cambio de cada grupo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 7, Difference-in-Differences (tabla 7.2)"
+    },
+    "materia": "evaluacion-politicas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pp-dd-empleo",
+    "subtema": "pp-diferencias",
+    "formula": "dobles-diferencias",
+    "enunciado": "Un programa de empleo juvenil se aplicó en algunos cantones. La tasa de empleo de los jóvenes pasó de 40 % a 52 % en los cantones con programa y de 42 % a 48 % en los cantones sin programa. ¿Cuál es el impacto estimado en puntos porcentuales?",
+    "datos": {
+      "A": 40,
+      "B": 52,
+      "C": 42,
+      "D": 48
+    },
+    "calculo": "(B - A) - (D - C)",
+    "respuesta": 6,
+    "unidad": "puntos porcentuales",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "B − A = 12",
+      "D − C = 6",
+      "DD = 12 − 6 = 6 puntos"
+    ],
+    "pistas": [
+      "El cambio de la comparación representa la tendencia sin programa."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 7, Difference-in-Differences (tabla 7.1)"
+    },
+    "materia": "evaluacion-politicas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pp-escalar",
+    "subtema": "pp-escalar",
+    "formula": "dobles-diferencias",
+    "enunciado": "Un programa de alimentación escolar elevó la asistencia de 85 % a 90 % en las escuelas participantes, mientras que en las no participantes pasó de 86 % a 87 %. ¿Cuál es el impacto estimado antes de decidir si se escala?",
+    "datos": {
+      "A": 85,
+      "B": 90,
+      "C": 86,
+      "D": 87
+    },
+    "calculo": "(B - A) - (D - C)",
+    "respuesta": 4,
+    "unidad": "puntos porcentuales",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "B − A = 5",
+      "D − C = 1",
+      "DD = 5 − 1 = 4 puntos"
+    ],
+    "pistas": [
+      "Luego compara el impacto con el costo del programa."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 7, Difference-in-Differences"
+    },
+    "materia": "evaluacion-politicas-publicas",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-pp-escalar-b",
+    "subtema": "pp-escalar",
+    "formula": "dobles-diferencias",
+    "enunciado": "En un piloto de transferencias, el ingreso mensual de los hogares participantes pasó de USD 300 a 360 y el de los no participantes de USD 310 a 340. ¿Cuál es el impacto estimado?",
+    "datos": {
+      "A": 300,
+      "B": 360,
+      "C": 310,
+      "D": 340
+    },
+    "calculo": "(B - A) - (D - C)",
+    "respuesta": 30,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "B − A = 60",
+      "D − C = 30",
+      "DD = 60 − 30 = 30"
+    ],
+    "pistas": [
+      "No todo el aumento se debe al programa."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 7, Difference-in-Differences"
+    },
+    "materia": "evaluacion-politicas-publicas",
+    "actualizado_en": "2026-10-26"
   }
 ]

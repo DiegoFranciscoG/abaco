@@ -11639,5 +11639,146 @@
     ],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "impacto-diferencia-medias",
+    "nombre": "Impacto estimado con asignación aleatoria",
+    "categoria": "calculo",
+    "materias": [
+      "evaluacion-politicas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Con asignación aleatoria, el grupo de comparación es un contrafactual válido: el impacto es la diferencia entre el resultado promedio del grupo de tratamiento y el del grupo de comparación después del programa.",
+    "latex": "\\Delta = \\bar{Y}_{T} - \\bar{Y}_{C}",
+    "variables": [
+      {
+        "simbolo": "\\bar{Y}_{T}",
+        "nombre": "YT",
+        "significado": "Resultado promedio del grupo de tratamiento después del programa",
+        "unidad": "según el indicador"
+      },
+      {
+        "simbolo": "\\bar{Y}_{C}",
+        "nombre": "YC",
+        "significado": "Resultado promedio del grupo de comparación después del programa",
+        "unidad": "según el indicador"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "YT - YC"
+    },
+    "excel": {
+      "es": "=YT-YC",
+      "en": "=YT-YC"
+    },
+    "ejemplo": {
+      "enunciado": "En el caso del subsidio de seguro de salud (HISP), tras dos años el gasto en salud de los hogares fue de USD 7,84 en las aldeas de tratamiento y de USD 17,98 en las de comparación, asignadas al azar. ¿Cuál es el impacto?",
+      "entradas": {
+        "YT": 7.84,
+        "YC": 17.98
+      },
+      "pasos": [
+        "Δ = 7,84 − 17,98",
+        "Δ = −10,14: el programa redujo el gasto en USD 10,14"
+      ],
+      "resultado": -10.14,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=7,84-17,98",
+      "excel_en": "=7.84-17.98"
+    },
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 4, Randomized Assignment (tabla 4.2)"
+    },
+    "supuestos": [
+      "La asignación fue aleatoria y los grupos eran similares al inicio."
+    ],
+    "notas": [
+      "Sin asignación aleatoria, esta diferencia puede contener sesgo de selección."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "dobles-diferencias",
+    "nombre": "Estimador de diferencias en diferencias",
+    "categoria": "calculo",
+    "materias": [
+      "evaluacion-politicas-publicas"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "Diferencia entre el cambio en el resultado del grupo de tratamiento (B − A) y el cambio del grupo de comparación (D − C). Supone que, sin el programa, ambos grupos habrían tenido la misma tendencia.",
+    "latex": "DD = (B - A) - (D - C)",
+    "variables": [
+      {
+        "simbolo": "A",
+        "nombre": "A",
+        "significado": "Resultado del grupo de tratamiento antes del programa",
+        "unidad": "según el indicador"
+      },
+      {
+        "simbolo": "B",
+        "nombre": "B",
+        "significado": "Resultado del grupo de tratamiento después del programa",
+        "unidad": "según el indicador"
+      },
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Resultado del grupo de comparación antes",
+        "unidad": "según el indicador"
+      },
+      {
+        "simbolo": "D",
+        "nombre": "D",
+        "significado": "Resultado del grupo de comparación después",
+        "unidad": "según el indicador"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(B - A) - (D - C)"
+    },
+    "excel": {
+      "es": "=(B-A)-(D-C)",
+      "en": "=(B-A)-(D-C)"
+    },
+    "ejemplo": {
+      "enunciado": "En el HISP, el gasto en salud de los hogares inscritos pasó de USD 14,49 a 7,84, y el de los no inscritos de 20,79 a 22,30. ¿Cuál es el estimador de diferencias en diferencias?",
+      "entradas": {
+        "A": 14.49,
+        "B": 7.84,
+        "C": 20.79,
+        "D": 22.3
+      },
+      "pasos": [
+        "B − A = 7,84 − 14,49 = −6,65",
+        "D − C = 22,30 − 20,79 = 1,51",
+        "DD = −6,65 − 1,51 = −8,16"
+      ],
+      "resultado": -8.16,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=(7,84-14,49)-(22,3-20,79)",
+      "excel_en": "=(7.84-14.49)-(22.3-20.79)"
+    },
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Cap. 7, Difference-in-Differences (tablas 7.1 y 7.2)"
+    },
+    "supuestos": [
+      "Tendencias iguales: sin el programa, ambos grupos habrían cambiado igual."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

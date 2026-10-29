@@ -2887,5 +2887,65 @@
       "seccion": "Definition of the LCR"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "evaluacion-impacto-hisp",
+    "nombre": "Evaluación de impacto: asignación aleatoria y diferencias en diferencias",
+    "descripcion": "Reproduce las estimaciones del caso HISP: diferencia de medias con asignación aleatoria, antes y después, y diferencias en diferencias.",
+    "materias": [
+      "evaluacion-politicas-publicas"
+    ],
+    "celdas": {
+      "A1": "Grupo",
+      "B1": "Antes (USD)",
+      "C1": "Después (USD)",
+      "D1": "Cambio",
+      "A2": "Inscritos (tratamiento)",
+      "B2": 14.49,
+      "C2": 7.84,
+      "D2": "=C2-B2",
+      "A3": "No inscritos (comparación)",
+      "B3": 20.79,
+      "C3": 22.3,
+      "D3": "=C3-B3",
+      "A4": "Diferencias en diferencias",
+      "D4": "=D2-D3",
+      "A6": "Asignación aleatoria",
+      "A7": "Tratamiento después (USD)",
+      "B7": 7.84,
+      "A8": "Comparación después (USD)",
+      "B8": 17.98,
+      "A9": "Impacto estimado",
+      "B9": "=B7-B8"
+    },
+    "formatos": {
+      "D2": "moneda",
+      "D3": "moneda",
+      "D4": "moneda",
+      "B9": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "D2",
+        "esperado": -6.65,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "D4",
+        "esperado": -8.16,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B9",
+        "esperado": -10.14,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "bm-iep",
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+      "seccion": "Caps. 4 y 7, caso HISP"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

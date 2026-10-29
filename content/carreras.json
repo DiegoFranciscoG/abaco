@@ -837,6 +837,14 @@
         "planes": 2
       },
       {
+        "materia": "evaluacion-politicas-publicas",
+        "ciclo": 8,
+        "ciclos": [
+          8
+        ],
+        "planes": 1
+      },
+      {
         "materia": "fundamentos-administracion",
         "ciclo": 8,
         "ciclos": [
@@ -853,13 +861,7 @@
         "planes": 1
       }
     ],
-    "pendientes": [
-      {
-        "nombre": "Diseño y Evaluación de Programas y Políticas Públicas",
-        "ciclo": 8,
-        "planes": 1
-      }
-    ]
+    "pendientes": []
   },
   {
     "id": "mercadotecnia",

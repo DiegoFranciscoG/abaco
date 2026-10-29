@@ -8562,5 +8562,145 @@
       "a swap involves two parties agreeing to swap, or exchange, something",
       "known as counterparties"
     ]
+  },
+  {
+    "id": "pp-monitoreo-evaluacion",
+    "palabras": [
+      "monitoring is a continuous process that tracks what is happening within a program",
+      "evaluations are periodic, objective assessments of a planned, ongoing, or completed project, program, or policy"
+    ]
+  },
+  {
+    "id": "pp-evaluacion-impacto",
+    "palabras": [
+      "impact evaluations are a particular type of evaluation that seeks to answer a specific cause-and-effect question",
+      "impact evaluations are part of a broader agenda of evidence-based policy making"
+    ]
+  },
+  {
+    "id": "pp-prospectiva",
+    "palabras": [
+      "prospective evaluations are developed at the same time as the program is being",
+      "prospective impact evaluations are more likely to produce strong and credible evaluation results"
+    ]
+  },
+  {
+    "id": "pp-coplafip",
+    "palabras": [
+      "el seguimiento y evaluacion de la planificacion y las finanzas publicas consiste en compilar, sistematizar y analizar la informacion sobre lo actuado en dichas materias",
+      "los ejecutores de los programas y proyectos de inversion publica deberan disponer de la evaluacion de viabilidad"
+    ]
+  },
+  {
+    "id": "pp-teoria-cambio",
+    "palabras": [
+      "theory of change is a description of how an intervention is supposed to deliver the desired results",
+      "a theory of change is a key underpinning of any impact evaluation"
+    ]
+  },
+  {
+    "id": "pp-cadena-resultados",
+    "palabras": [
+      "a results chain sets out the sequence of inputs, activities, and outputs that are expected to improve outcomes and final outcomes",
+      "the final results achieved indicating whether project goals were met"
+    ]
+  },
+  {
+    "id": "pp-indicadores",
+    "palabras": [
+      "smart specific, measurable, attributable, realistic, and targeted",
+      "selecting outcome and performance indicators"
+    ]
+  },
+  {
+    "id": "pp-validez",
+    "palabras": [
+      "external validity is of critical importance to policy makers",
+      "internal validity and is therefore fundamental to assessing a program's causal impact"
+    ]
+  },
+  {
+    "id": "pp-contrafactual",
+    "palabras": [
+      "this formula states that the causal impact",
+      "the counterfactual is what would have happened",
+      "since we cannot directly observe the counterfactual, we must estimate it"
+    ]
+  },
+  {
+    "id": "pp-falsos-contrafactuales",
+    "palabras": [
+      "a before-and-after comparison attempts to establish the impact of a program by tracking changes in outcomes for program participants over time",
+      "selection bias will occur when the reasons for which an individual participates in a program are correlated with outcomes"
+    ]
+  },
+  {
+    "id": "pp-aleatoria",
+    "palabras": [
+      "randomized assignment of treatment is considered the gold standard of impact evaluation",
+      "the impact is a reduction of us$10.14 over two years"
+    ]
+  },
+  {
+    "id": "pp-potencia",
+    "palabras": [
+      "will be maximized when the evaluation sample is divided equally between the treatment and comparison groups",
+      "the minimum detectable effect that the impact"
+    ]
+  },
+  {
+    "id": "pp-instrumentales",
+    "palabras": [
+      "intention-to-treat (itt) when comparing groups to which the program has randomly been offered",
+      "the local average treatment effect (late)",
+      "randomized promotion of treatment"
+    ]
+  },
+  {
+    "id": "pp-discontinuidad",
+    "palabras": [
+      "regression discontinuity design (rdd) is an impact evaluation method that can be used for programs that have a continuous eligibility index with a clearly defined eligibility threshold",
+      "which is a continuous pov"
+    ]
+  },
+  {
+    "id": "pp-diferencias",
+    "palabras": [
+      "the difference-in-differences method compares the changes in outcomes over time between a population that is enrolled in a program (the treatment group) and a population that is not (the comparison group)",
+      "this difference-in-differences is our impact estimate",
+      "the equal trends assumption behind difference-in-differences"
+    ]
+  },
+  {
+    "id": "pp-emparejamiento",
+    "palabras": [
+      "matching uses large data sets and statistical techniques to construct the best possible comparison group based on observed characteristics",
+      "propensity score matching"
+    ]
+  },
+  {
+    "id": "pp-costo-beneficio",
+    "palabras": [
+      "cost-benefit analysis estimates the total expected benefits of a program, compared to its total expected costs"
+    ]
+  },
+  {
+    "id": "pp-costo-efectividad",
+    "palabras": [
+      "cost-effectiveness analysis compares the relative cost of two or more"
+    ]
+  },
+  {
+    "id": "pp-etica",
+    "palabras": [
+      "the lack of evaluation can itself be seen as unethical"
+    ]
+  },
+  {
+    "id": "pp-escalar",
+    "palabras": [
+      "should hisp be scaled up nationally",
+      "you find that the program reduced household health expenditures by us$8.16"
+    ]
   }
 ]

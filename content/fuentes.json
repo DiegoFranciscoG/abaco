@@ -817,5 +817,14 @@
     "url": "https://www.bis.org/bcbs/basel3.htm",
     "licencia": "Información pública oficial (se cita y enlaza; redacción propia)",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "bm-iep",
+    "titulo": "Impact Evaluation in Practice, segunda edición (2016)",
+    "autor_editor": "Paul J. Gertler, Sebastián Martínez, Patrick Premand, Laura B. Rawlings y Christel M. J. Vermeersch · Banco Mundial y Banco Interamericano de Desarrollo",
+    "tipo": "libro",
+    "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+    "licencia": "CC BY 3.0 IGO (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
   }
 ]

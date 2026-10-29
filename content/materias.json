@@ -1320,5 +1320,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "evaluacion-politicas-publicas",
+    "nombre": "Diseño y evaluación de programas y políticas públicas",
+    "areas": [
+      "economia",
+      "cuantitativo"
+    ],
+    "descripcion": "Seguimiento y evaluación de programas públicos: teoría del cambio, cadena de resultados e indicadores, inferencia causal y contrafactual, asignación aleatoria, variables instrumentales, regresión discontinua, diferencias en diferencias, emparejamiento, costos y ética, con el marco de seguimiento del COPLAFIP.",
+    "sinonimos": [
+      "evaluación de impacto",
+      "políticas públicas",
+      "evaluación de programas",
+      "monitoreo y evaluación",
+      "diferencias en diferencias",
+      "políticas basadas en evidencia"
+    ],
+    "herramientas": [
+      "estadistica",
+      "editor",
+      "notas"
+    ],
+    "orden": 56,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

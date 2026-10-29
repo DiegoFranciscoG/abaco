@@ -1,0 +1,477 @@
+{
+  "materia": "evaluacion-politicas-publicas",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "pp-fundamentos",
+      "nombre": "Seguimiento, evaluación y políticas basadas en evidencia",
+      "orden": 1,
+      "descripcion": "Monitoreo frente a evaluación, evaluación de impacto, evaluaciones prospectivas y retrospectivas, y el seguimiento y evaluación en el COPLAFIP.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pp-monitoreo-evaluacion",
+          "nombre": "Monitoreo y evaluación",
+          "explicacion": "El monitoreo es un proceso continuo que sigue lo que ocurre dentro de un programa y usa esos datos, casi siempre administrativos, para la gestión diaria: desembolsos y desempeño frente a los resultados esperados. Las evaluaciones, en cambio, son valoraciones periódicas y objetivas de un proyecto, programa o política planificado, en curso o terminado; se hacen en momentos puntuales para responder preguntas específicas sobre su diseño, implementación y resultados. Ambos son el núcleo de la formulación de políticas basada en evidencia.",
+          "ejemplo": "Contar cada mes cuántos estudiantes reciben una beca es monitoreo; estudiar después de dos años si la beca redujo la deserción escolar es evaluación.",
+          "puntos_clave": [
+            "Monitoreo: continuo y administrativo.",
+            "Evaluación: periódica y objetiva.",
+            "Políticas basadas en evidencia."
+          ],
+          "errores_frecuentes": [
+            "Confundir reportar actividades con evaluar resultados.",
+            "Medir solo cuánto se gastó."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Why Evaluate?"
+          }
+        },
+        {
+          "id": "pp-evaluacion-impacto",
+          "nombre": "Qué es una evaluación de impacto",
+          "explicacion": "Las evaluaciones de impacto son un tipo particular de evaluación que responde una pregunta de causa y efecto: cuál es el impacto, o efecto causal, de un programa sobre un resultado de interés. Se concentran solo en los cambios directamente atribuibles al programa. Forman parte de una tendencia mundial hacia políticas basadas en evidencia, que pasa de mirar los insumos a mirar los resultados.",
+          "ejemplo": "Preguntar si un programa de capacitación aumentó los ingresos de los participantes es una pregunta de evaluación de impacto; preguntar cuántos cursos se dictaron, no.",
+          "puntos_clave": [
+            "Pregunta de causa y efecto.",
+            "Cambios atribuibles al programa.",
+            "De los insumos a los resultados."
+          ],
+          "errores_frecuentes": [
+            "Atribuir al programa cualquier cambio observado.",
+            "Evaluar sin una pregunta clara."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Why Evaluate?"
+          }
+        },
+        {
+          "id": "pp-prospectiva",
+          "nombre": "Evaluaciones prospectivas y retrospectivas",
+          "explicacion": "Las evaluaciones prospectivas se diseñan al mismo tiempo que el programa y se integran a su implementación: se recogen datos de línea base antes de empezar, tanto del grupo de tratamiento, que recibe la intervención, como del grupo de comparación. Las retrospectivas evalúan el impacto después de implementado el programa y buscan los grupos de tratamiento y comparación a posteriori. Las prospectivas tienen más probabilidades de producir resultados sólidos y creíbles, entre otras razones porque cuentan con una línea base.",
+          "ejemplo": "Un municipio que planea un programa de crédito para mujeres emprendedoras levanta una encuesta antes de lanzarlo; así podrá medir después qué cambió.",
+          "puntos_clave": [
+            "Prospectiva: desde el diseño.",
+            "Línea base de tratamiento y comparación.",
+            "Retrospectiva: después del programa."
+          ],
+          "errores_frecuentes": [
+            "Pensar en la evaluación solo cuando el programa terminó.",
+            "No levantar línea base."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Prospective versus Retrospective Impact Evaluation"
+          }
+        },
+        {
+          "id": "pp-coplafip",
+          "nombre": "Seguimiento y evaluación en Ecuador: el COPLAFIP",
+          "explicacion": "El Código Orgánico de Planificación y Finanzas Públicas establece como principio el seguimiento y evaluación de la planificación y las finanzas públicas, que consiste en compilar, sistematizar y analizar la información sobre lo actuado para tener elementos objetivos que permitan adoptar medidas preventivas y correctivas y emprender nuevas acciones públicas. Además, exige que los ejecutores de programas y proyectos de inversión pública dispongan de la evaluación de viabilidad y los estudios que los sustenten.",
+          "ejemplo": "Antes de financiar un programa de riego, la entidad ejecutora debe contar con su evaluación de viabilidad; durante la ejecución, reporta avances que permiten corregir el rumbo.",
+          "puntos_clave": [
+            "Principio de seguimiento y evaluación.",
+            "Medidas preventivas y correctivas.",
+            "Evaluación de viabilidad de la inversión pública."
+          ],
+          "errores_frecuentes": [
+            "Ver el seguimiento como un trámite.",
+            "Ejecutar proyectos sin estudios de viabilidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 5, numeral 4, y art. 56"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pp-diseno",
+      "nombre": "Diseño del programa: teoría del cambio e indicadores",
+      "orden": 2,
+      "descripcion": "Teoría del cambio, cadena de resultados, indicadores SMART y validez interna y externa.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pp-teoria-cambio",
+          "nombre": "Teoría del cambio",
+          "explicacion": "Una teoría del cambio describe cómo se supone que una intervención producirá los resultados deseados: la lógica causal de cómo y por qué un programa, una modalidad o una innovación de diseño alcanzará sus objetivos. Es un fundamento clave de toda evaluación de impacto, porque explicita los supuestos e hipótesis que conectan lo que hace el programa con lo que se espera lograr.",
+          "ejemplo": "Si se capacita a docentes y se entregan textos nuevos, se espera que los usen en clase, que los estudiantes mejoren en matemáticas y que más jóvenes terminen el bachillerato: esa cadena de supuestos es la teoría del cambio.",
+          "puntos_clave": [
+            "Lógica causal del programa.",
+            "Supuestos explícitos.",
+            "Base de la evaluación de impacto."
+          ],
+          "errores_frecuentes": [
+            "Saltar de las actividades a los resultados finales sin explicar cómo.",
+            "No revisar los supuestos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 2, Constructing a Theory of Change"
+          }
+        },
+        {
+          "id": "pp-cadena-resultados",
+          "nombre": "La cadena de resultados",
+          "explicacion": "La cadena de resultados establece la secuencia de insumos, actividades y productos que se espera mejoren los resultados y los resultados finales. Los insumos, actividades y productos corresponden a la implementación, bajo responsabilidad directa del proyecto; los resultados de corto y mediano plazo y los resultados finales, que indican si se cumplieron las metas, dependen también de otros factores y tardan más en lograrse.",
+          "ejemplo": "En una reforma de matemáticas: productos, docentes capacitados y textos entregados; resultado de corto plazo, uso de los nuevos métodos; de mediano plazo, mejores notas; resultado final, más graduados y mejores ingresos.",
+          "puntos_clave": [
+            "Insumos, actividades y productos.",
+            "Resultados y resultados finales.",
+            "Implementación frente a resultados."
+          ],
+          "errores_frecuentes": [
+            "Reportar productos como si fueran resultados.",
+            "Olvidar los resultados finales."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 2, Developing a Results Chain"
+          }
+        },
+        {
+          "id": "pp-indicadores",
+          "nombre": "Indicadores SMART",
+          "explicacion": "Para medir los resultados de la cadena se eligen indicadores de resultado y de desempeño. El libro usa el criterio SMART: indicadores específicos (specific), medibles (measurable), atribuibles (attributable), realistas (realistic) y focalizados (targeted). Se acompaña de una lista de verificación para asegurar que existan datos para cada indicador.",
+          "ejemplo": "'Porcentaje de estudiantes de tercero de bachillerato que aprueban el examen estandarizado de matemáticas' es más SMART que 'mejorar la educación'.",
+          "puntos_clave": [
+            "Específicos y medibles.",
+            "Atribuibles al programa.",
+            "Realistas y focalizados."
+          ],
+          "errores_frecuentes": [
+            "Usar indicadores que el programa no puede influir.",
+            "Definir indicadores sin fuente de datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 2, Selecting Outcome and Performance Indicators"
+          }
+        },
+        {
+          "id": "pp-validez",
+          "nombre": "Validez interna y externa",
+          "explicacion": "Una evaluación tiene validez interna cuando su grupo de comparación es un buen contrafactual, de modo que el impacto estimado es causal y no está contaminado por otros factores. Tiene validez externa cuando sus resultados pueden generalizarse a los beneficiarios previstos más allá de la muestra evaluada, lo que es crucial para que quienes deciden usen los resultados en decisiones de todo el programa.",
+          "ejemplo": "Un piloto evaluado con rigor en tres cantones puede tener validez interna, pero si esos cantones son muy distintos al resto del país su validez externa es limitada.",
+          "puntos_clave": [
+            "Interna: impacto causal creíble.",
+            "Externa: generalizable.",
+            "Ambas importan para decidir."
+          ],
+          "errores_frecuentes": [
+            "Escalar un programa con base en un piloto atípico.",
+            "Confiar en una muestra no representativa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Why Evaluate?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pp-inferencia",
+      "nombre": "Inferencia causal y contrafactual",
+      "orden": 3,
+      "descripcion": "El contrafactual, los falsos contrafactuales y el sesgo de selección, y la asignación aleatoria como estándar de oro.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "pp-contrafactual",
+          "nombre": "El contrafactual",
+          "explicacion": "La fórmula básica de la evaluación de impacto es Δ = (Y | P = 1) − (Y | P = 0): el impacto causal de un programa P sobre un resultado Y es la diferencia entre el resultado con el programa y el mismo resultado sin él. El contrafactual es lo que habría ocurrido con el participante en ausencia del programa. Como no puede observarse directamente, hay que estimarlo con un grupo de comparación válido.",
+          "ejemplo": "No se puede observar a la misma persona capacitada y no capacitada a la vez; por eso se busca un grupo parecido que no recibió la capacitación.",
+          "puntos_clave": [
+            "Δ = (Y | P = 1) − (Y | P = 0).",
+            "El contrafactual no se observa.",
+            "Se estima con un grupo de comparación."
+          ],
+          "errores_frecuentes": [
+            "Suponer que el contrafactual es cero.",
+            "Usar cualquier grupo como comparación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 3, Causal Inference and Counterfactuals"
+          }
+        },
+        {
+          "id": "pp-falsos-contrafactuales",
+          "nombre": "Falsos contrafactuales: antes y después, inscritos y no inscritos",
+          "explicacion": "Dos estimaciones del contrafactual son engañosas. La comparación antes y después supone que, sin el programa, el resultado se habría quedado igual que en la línea base, lo que casi nunca es cierto. La comparación entre quienes se inscriben voluntariamente y quienes no lo hacen sufre sesgo de selección, que ocurre cuando las razones por las que alguien participa se relacionan con el resultado aun sin el programa.",
+          "ejemplo": "En el HISP, el gasto en salud de los inscritos bajó USD 6,65 entre antes y después, pero esa caída también pudo deberse a una crisis económica o a nuevos medicamentos.",
+          "puntos_clave": [
+            "Antes y después: ignora otros cambios.",
+            "Inscritos frente a no inscritos: sesgo de selección.",
+            "Ambos son falsos contrafactuales."
+          ],
+          "errores_frecuentes": [
+            "Atribuir al programa toda la mejora en el tiempo.",
+            "Comparar voluntarios con no voluntarios."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 3, Two Counterfeit Estimates of the Counterfactual"
+          }
+        },
+        {
+          "id": "pp-aleatoria",
+          "nombre": "Asignación aleatoria",
+          "explicacion": "Cuando un programa se asigna al azar, por ejemplo mediante un sorteo, entre una población elegible grande, se obtiene una estimación robusta del contrafactual: por eso se considera el estándar de oro de la evaluación de impacto. Al azar, los grupos de tratamiento y comparación resultan parecidos en lo observable y en lo no observable, como la motivación. El impacto es entonces la diferencia de los resultados promedio de ambos grupos.",
+          "ejemplo": "En el HISP con aldeas asignadas al azar, el gasto en salud bajó USD 10,14 en dos años frente al grupo de comparación.",
+          "puntos_clave": [
+            "Sorteo entre elegibles.",
+            "Grupos comparables también en lo no observable.",
+            "Impacto = diferencia de promedios."
+          ],
+          "errores_frecuentes": [
+            "Asignar 'al azar' a los más fáciles de atender.",
+            "Comparar sin verificar el equilibrio en la línea base."
+          ],
+          "formulas": [
+            "impacto-diferencia-medias"
+          ],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 4, Randomized Assignment"
+          }
+        },
+        {
+          "id": "pp-potencia",
+          "nombre": "Muestra y potencia estadística",
+          "explicacion": "La potencia estadística es la capacidad de la evaluación para detectar un impacto si existe. Para un tamaño total de muestra dado, se maximiza cuando la muestra se divide por igual entre los grupos de tratamiento y comparación. Además, hay que definir el efecto mínimo detectable que la evaluación debe poder identificar, que depende del costo del programa, de sus beneficios y del costo de oportunidad de no invertir en otra intervención.",
+          "ejemplo": "Con 2.000 comunidades en total, la potencia es máxima con 1.000 de tratamiento y 1.000 de comparación.",
+          "puntos_clave": [
+            "Potencia: detectar un impacto real.",
+            "Muestras iguales maximizan la potencia.",
+            "Efecto mínimo detectable."
+          ],
+          "errores_frecuentes": [
+            "Usar muestras demasiado pequeñas.",
+            "Concluir que no hubo impacto con poca potencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Caps. 4 y 15, potencia y tamaño de muestra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pp-metodos",
+      "nombre": "Métodos cuasiexperimentales",
+      "orden": 4,
+      "descripcion": "Variables instrumentales y promoción aleatoria, regresión discontinua, diferencias en diferencias y emparejamiento.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "pp-instrumentales",
+          "nombre": "Variables instrumentales y cumplimiento imperfecto",
+          "explicacion": "Cuando no todos cumplen con la asignación, se distinguen dos estimaciones. La intención de tratar (ITT) compara a quienes se ofreció el programa con quienes no, se inscriban o no. El efecto local promedio del tratamiento (LATE) es el impacto sobre el subgrupo de cumplidores y debe interpretarse con cuidado. El método de variables instrumentales, como la promoción aleatoria, permite evaluar programas con inscripción voluntaria o cobertura universal.",
+          "ejemplo": "Si se envían al azar invitaciones para un curso abierto a todos, la invitación es un instrumento: permite estimar el efecto del curso en quienes asisten porque fueron invitados.",
+          "puntos_clave": [
+            "ITT: según la oferta.",
+            "LATE: impacto en los cumplidores.",
+            "Promoción aleatoria."
+          ],
+          "errores_frecuentes": [
+            "Generalizar el LATE a toda la población.",
+            "Ignorar a quienes no cumplieron la asignación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 5, Instrumental Variables"
+          }
+        },
+        {
+          "id": "pp-discontinuidad",
+          "nombre": "Regresión discontinua",
+          "explicacion": "El diseño de regresión discontinua (RDD) sirve para programas con un índice continuo de elegibilidad y un umbral claramente definido que separa a los elegibles de los no elegibles. Las unidades justo por encima y justo por debajo del umbral son muy parecidas, por lo que las que quedan del lado no elegible sirven como comparación. El libro cita su uso para evaluar en Bogotá un programa de reducción de pensiones escolares focalizado con el índice de pobreza Sisbén.",
+          "ejemplo": "Si una beca se otorga a hogares con un puntaje de pobreza menor a 30, se comparan los hogares con 29 y con 31 puntos.",
+          "puntos_clave": [
+            "Índice continuo de elegibilidad.",
+            "Umbral claro.",
+            "Comparar a ambos lados del umbral."
+          ],
+          "errores_frecuentes": [
+            "Comparar hogares muy lejanos al umbral.",
+            "Aplicarla si el índice puede manipularse."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 6, Regression Discontinuity Design"
+          }
+        },
+        {
+          "id": "pp-diferencias",
+          "nombre": "Diferencias en diferencias",
+          "explicacion": "El método de diferencias en diferencias compara los cambios en el tiempo de los resultados de una población inscrita en el programa, el grupo de tratamiento, con los de otra que no lo está, el grupo de comparación. Se calcula el cambio del tratamiento (B − A), el cambio de la comparación (D − C) y su diferencia: DD = (B − A) − (D − C). Su supuesto clave es el de tendencias iguales: sin el programa, ambos grupos habrían evolucionado igual.",
+          "ejemplo": "En el HISP, el gasto de los inscritos cayó 6,65 y el de los no inscritos subió 1,51, así que el impacto estimado es −8,16 dólares.",
+          "puntos_clave": [
+            "Dos grupos y dos períodos.",
+            "DD = (B − A) − (D − C).",
+            "Supuesto de tendencias iguales."
+          ],
+          "errores_frecuentes": [
+            "Aplicarla sin revisar las tendencias previas.",
+            "Restar en el orden equivocado."
+          ],
+          "formulas": [
+            "dobles-diferencias"
+          ],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 7, Difference-in-Differences"
+          }
+        },
+        {
+          "id": "pp-emparejamiento",
+          "nombre": "Emparejamiento (matching)",
+          "explicacion": "El emparejamiento usa grandes bases de datos y técnicas estadísticas para construir el mejor grupo de comparación posible según características observadas. Como emparejar en muchas características a la vez es difícil, se usa el emparejamiento por puntaje de propensión (propensity score matching), que resume en un número la probabilidad de participar. Su limitación es que solo controla lo observado: si la participación depende de algo no observado, puede quedar sesgo.",
+          "ejemplo": "Para evaluar un programa de microcrédito, a cada beneficiaria se le busca una no beneficiaria con edad, educación y tamaño de negocio parecidos.",
+          "puntos_clave": [
+            "Grupo de comparación según observables.",
+            "Puntaje de propensión.",
+            "No controla lo no observado."
+          ],
+          "errores_frecuentes": [
+            "Creer que el emparejamiento equivale a un sorteo.",
+            "Emparejar con variables afectadas por el programa."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 8, Matching"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pp-decision",
+      "nombre": "Costos, ética y uso de la evidencia",
+      "orden": 5,
+      "descripcion": "Análisis costo-beneficio y costo-efectividad, ética de la evaluación y decisiones de escalamiento.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "pp-costo-beneficio",
+          "nombre": "Análisis costo-beneficio",
+          "explicacion": "El análisis costo-beneficio estima los beneficios totales esperados de un programa frente a sus costos totales esperados, cuantificando todo en términos monetarios para saber si los beneficios superan a los costos. En este análisis, la evaluación de impacto aporta la estimación de los beneficios y el análisis de costos aporta la información de costos.",
+          "ejemplo": "Si un programa de vacunación cuesta USD 2 millones y evita gastos médicos y pérdidas de ingreso por USD 5 millones, sus beneficios superan a sus costos.",
+          "puntos_clave": [
+            "Beneficios frente a costos.",
+            "Todo en dinero.",
+            "El impacto da los beneficios."
+          ],
+          "errores_frecuentes": [
+            "Contar como beneficio un efecto que no se demostró causal.",
+            "Olvidar costos indirectos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Cost-Benefit and Cost-Effectiveness Analysis"
+          }
+        },
+        {
+          "id": "pp-costo-efectividad",
+          "nombre": "Análisis costo-efectividad",
+          "explicacion": "El análisis costo-efectividad compara el costo relativo de dos o más programas, o alternativas de un programa, para alcanzar un mismo resultado, como el rendimiento agrícola o los puntajes de los estudiantes. No necesita expresar los beneficios en dinero, pero sí un resultado común para comparar. Lo ideal es que exista evidencia de costos no solo de un programa, sino de varios que persiguen el mismo objetivo.",
+          "ejemplo": "Si dos programas suben en 10 puntos una prueba de lectura y uno cuesta la mitad, ese es más costo-efectivo.",
+          "puntos_clave": [
+            "Mismo resultado, distinto costo.",
+            "No requiere monetizar beneficios.",
+            "Comparar alternativas."
+          ],
+          "errores_frecuentes": [
+            "Comparar programas con resultados distintos.",
+            "Ignorar el tamaño del impacto."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Cost-Benefit and Cost-Effectiveness Analysis"
+          }
+        },
+        {
+          "id": "pp-etica",
+          "nombre": "Ética de la evaluación",
+          "explicacion": "Invertir muchos recursos públicos en programas cuya efectividad se desconoce plantea un problema ético, por lo que no evaluar puede considerarse en sí mismo poco ético: la información de las evaluaciones permite invertir de forma más efectiva y ética. Otras consideraciones éticas tienen que ver con las reglas para asignar los beneficios, el trato a los participantes y la protección de sus datos.",
+          "ejemplo": "Cuando no alcanza el presupuesto para atender a todos los elegibles, un sorteo transparente puede ser más justo que una asignación discrecional y además permite evaluar.",
+          "puntos_clave": [
+            "No evaluar también es un problema ético.",
+            "Reglas de asignación justas.",
+            "Proteger a los participantes."
+          ],
+          "errores_frecuentes": [
+            "Negar un beneficio sin justificación para crear un grupo de comparación.",
+            "Publicar datos personales de los participantes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 1, Ethical Considerations"
+          }
+        },
+        {
+          "id": "pp-escalar",
+          "nombre": "Del resultado a la decisión: escalar o ajustar",
+          "explicacion": "El objetivo final de la evaluación es informar decisiones: ampliar, modificar o cerrar un programa. Para eso hay que comparar estimaciones con distintos métodos, revisar sus supuestos y considerar la validez externa. En el caso HISP, el libro pregunta qué supuestos se necesitan para aceptar el resultado de diferencias en diferencias y si con él el programa debería escalarse a nivel nacional.",
+          "ejemplo": "Si el impacto estimado del HISP fue −10,14 con asignación aleatoria y −8,16 con diferencias en diferencias, ambos apuntan a una reducción del gasto, pero la decisión de escalar también depende de los costos.",
+          "puntos_clave": [
+            "Evaluar para decidir.",
+            "Comparar métodos y supuestos.",
+            "Considerar costos y validez externa."
+          ],
+          "errores_frecuentes": [
+            "Escalar con una sola estimación débil.",
+            "Ignorar el costo por beneficiario."
+          ],
+          "formulas": [
+            "dobles-diferencias"
+          ],
+          "fuente": {
+            "ref": "bm-iep",
+            "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4659ef23-61ff-5df7-9b4e-89fda12b074d/content",
+            "seccion": "Cap. 7, HISP question 6"
+          }
+        }
+      ]
+    }
+  ]
+}

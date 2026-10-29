@@ -9,7 +9,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 - Cada subtema de cálculo (con fórmulas) tiene al menos 2 ejercicios con respuesta verificable.
 - Los subtemas conceptuales se practican con las preguntas que el área de estudio arma con su ejemplo, sus puntos clave y sus errores frecuentes.
 
-## Estado por materia (55 completas de 55)
+## Estado por materia (56 completas de 56)
 
 | Materia | Carreras | Estado | Unidades | Subtemas | Cálculo con 2 ejercicios | Avance | Lo que falta |
 |---|---|---|---|---|---|---|---|
@@ -60,6 +60,7 @@ Generado con `npm run cobertura` a partir de `content/`. No se edita a mano: la 
 | Propiedad intelectual y transferencia de tecnología | 2 de 7 | completa | 5 de 5 | 23 | 3 de 3 | 100 % | — |
 | Sistema financiero y banca | 2 de 7 | completa | 5 de 5 | 22 | 4 de 4 | 100 % | — |
 | Crecimiento, desarrollo y política económica | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
+| Diseño y evaluación de programas y políticas públicas | 0 de 7 | completa | 5 de 5 | 20 | 3 de 3 | 100 % | — |
 | Gestión de riesgos financieros | 0 de 7 | completa | 5 de 5 | 21 | 4 de 4 | 100 % | — |
 | Matemáticas para economistas | 0 de 7 | completa | 5 de 5 | 23 | 8 de 8 | 100 % | — |
 | Mercado de valores e inversiones | 0 de 7 | completa | 5 de 5 | 20 | 4 de 4 | 100 % | — |
@@ -160,7 +161,7 @@ En cuántas carreras genéricas (de 7) y planes públicos (de 13) aparece cada a
 - **5.º ciclo**: en ÁBACO: Organización industrial, teoría de juegos y economía del comportamiento (completa, 5 de 5 unidades); Emprendimiento (completa, 6 de 6 unidades); Finanzas corporativas (completa, 6 de 6 unidades); Investigación de operaciones (completa, 5 de 5 unidades); Marketing digital y comercio electrónico (completa, 5 de 5 unidades) · sin pendientes.
 - **6.º ciclo**: en ÁBACO: Contratación pública (completa, 5 de 5 unidades); Economía internacional y comercio exterior (completa, 6 de 6 unidades); Finanzas públicas y presupuesto del Estado (completa, 5 de 5 unidades) · sin pendientes.
 - **7.º ciclo**: en ÁBACO: Formulación y evaluación de proyectos (completa, 6 de 6 unidades); Finanzas internacionales (completa, 6 de 6 unidades) · sin pendientes.
-- **8.º ciclo**: en ÁBACO: Fundamentos de administración (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · pendientes: Diseño y Evaluación de Programas y Políticas Públicas.
+- **8.º ciclo**: en ÁBACO: Diseño y evaluación de programas y políticas públicas (completa, 5 de 5 unidades); Fundamentos de administración (completa, 6 de 6 unidades); Inteligencia de negocios y analítica de datos (completa, 5 de 5 unidades) · sin pendientes.
 
 ### Mercadotecnia (2 planes)
 
