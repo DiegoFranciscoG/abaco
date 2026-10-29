@@ -844,5 +844,32 @@
     "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/pages/lecture-slides-and-files/",
     "licencia": "CC BY-NC-SA 4.0 (se cita y enlaza; redacción propia)",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mef-acuerdo-045",
+    "titulo": "Acuerdo Ministerial No. 045 (19-12-2024): actualización de la Normativa de Contabilidad Gubernamental bajo NICSP",
+    "autor_editor": "Ministerio de Economía y Finanzas del Ecuador",
+    "tipo": "norma",
+    "url": "https://www.economicoproductivo.gob.ec/wp-content/uploads/downloads/2024/12/ACUERDO-No.-045.pdf",
+    "licencia": "Norma pública oficial",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mef-acuerdo-014",
+    "titulo": "Acuerdo Ministerial No. 014 (22-03-2023): modificaciones a la Normativa de Contabilidad Gubernamental",
+    "autor_editor": "Ministerio de Economía y Finanzas del Ecuador",
+    "tipo": "norma",
+    "url": "https://www.finanzas.gob.ec/wp-content/uploads/downloads/2023/04/acuerdo_no._014_de_22_de_marzo_de_2023.pdf",
+    "licencia": "Norma pública oficial",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mef-instructivo-bienes",
+    "titulo": "Instructivo de clases de registros contables, fase 5: bienes e inventarios por convergencia a NICSP (actualizado al 15-12-2025)",
+    "autor_editor": "Ministerio de Economía y Finanzas del Ecuador, Subsecretaría de Contabilidad Gubernamental",
+    "tipo": "norma",
+    "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+    "licencia": "Documento oficial con derechos reservados (solo se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
   }
 ]

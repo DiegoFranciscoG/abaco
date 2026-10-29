@@ -8995,5 +8995,141 @@
       "once sample reaches a reasonable size, sample standard deviation is a pretty good approximation to population standard deviation",
       "use the estimated se to generate confidence intervals around the sample mean"
     ]
+  },
+  {
+    "id": "cgu-finalidad",
+    "palabras": [
+      "constituye el proceso de registro sistematico, cronologico y secuencial de las operaciones patrimoniales y presupuestarias",
+      "un sistema unico de contabilidad, que integre las operaciones, patrimoniales, presupuestarias y de costos"
+    ]
+  },
+  {
+    "id": "cgu-todos-recursos",
+    "palabras": [
+      "de forma que ningun recurso quede excluido del proceso de registro e informes financieros"
+    ]
+  },
+  {
+    "id": "cgu-responsables",
+    "palabras": [
+      "en cada entidad se establecera la unidad encargada de la ejecucion del componente de contabilidad gubernamental",
+      "luego de 60 dias de finalizado el mes del cual no se ha enviado la informacion"
+    ]
+  },
+  {
+    "id": "cgu-ente-rector",
+    "palabras": [
+      "tiene la facultad privativa para expedir, actualizar y difundir los principios, normas tecnicas, manuales"
+    ]
+  },
+  {
+    "id": "cgu-contabilizacion-inmediata",
+    "palabras": [
+      "los hechos economicos se contabilizaran en la fecha que ocurran, dentro de cada periodo mensual",
+      "no se anticiparan ni postergaran los registros respectivos"
+    ]
+  },
+  {
+    "id": "cgu-devengado-caja",
+    "palabras": [
+      "se consideraran ingresos todos los derechos de cobro",
+      "de conformidad con lo previsto en el principio contable del devengado",
+      "constituiran ingresos las recaudaciones tributarias y no tributarias que se perciban en el transcurso del ejercicio"
+    ]
+  },
+  {
+    "id": "cgu-obligaciones-pendientes",
+    "palabras": [
+      "son aquellas que quedaren pendientes de pago al 31 de diciembre de cada ano",
+      "el plazo para el vencimiento sera de noventa (90) dias desde la fecha de devengamiento"
+    ]
+  },
+  {
+    "id": "cgu-conservacion",
+    "palabras": [
+      "conservaran durante siete anos los registros financieros junto con los documentos de sustento correspondientes"
+    ]
+  },
+  {
+    "id": "cgu-consolidacion",
+    "palabras": [
+      "con la finalidad de obtener estados financieros agregados y consolidados"
+    ]
+  },
+  {
+    "id": "cgu-difusion",
+    "palabras": [
+      "publicara semestralmente la informacion consolidada del sector publico no financiero"
+    ]
+  },
+  {
+    "id": "cgu-empresas-publicas",
+    "palabras": [
+      "las empresas que manejan recursos naturales no renovables, aplicaran niif",
+      "no generan rentabilidad en sus resultados"
+    ]
+  },
+  {
+    "id": "cgu-tesoreria",
+    "palabras": [
+      "en la administracion y custodia de dineros y valores",
+      "a traves de la cuenta unica del tesoro nacional"
+    ]
+  },
+  {
+    "id": "cgu-convergencia",
+    "palabras": [
+      "actualizar la normativa de contabilidad gubernamental bajo normas internacionales de contabilidad del sector publico (nicsp)",
+      "mediante acuerdo no. 103 de 31 de diciembre de 2020"
+    ]
+  },
+  {
+    "id": "cgu-coberturas",
+    "palabras": [
+      "ntcg 43. contabilidad de coberturas",
+      "en una tercera fase de actualizacion de normativa, se incorporara: flujo de efectivo y beneficios a empleados"
+    ]
+  },
+  {
+    "id": "cgu-umbral-ppe",
+    "palabras": [
+      "que el costo de adquisicion sea igual o mayor a usd100,00",
+      "este requisito, se mantendra durante los ejercicios fiscales 2024 y 2025"
+    ]
+  },
+  {
+    "id": "cgu-activos-financieros",
+    "palabras": [
+      "dictara el manual de procedimientos contables",
+      "la banca publica remitira la informacion de manera mensual en medio magnetico"
+    ]
+  },
+  {
+    "id": "cgu-bien",
+    "palabras": [
+      "es un recurso, distinto al dinero, que es controlado por la entidad",
+      "son aquellos bienes que no son depreciables, y permanecen en cuentas de orden"
+    ]
+  },
+  {
+    "id": "cgu-inventarios",
+    "palabras": [
+      "son objetos, parte de los activos, que son adquiridos como materiales, insumos o suministros"
+    ]
+  },
+  {
+    "id": "cgu-depreciacion",
+    "palabras": [
+      "valor de la perdida periodica de los bienes",
+      "es la perdida, adicional a la depreciacion"
+    ]
+  },
+  {
+    "id": "cgu-bienes-especiales",
+    "palabras": [
+      "son parte de un sistema o red",
+      "se mantienen para obtener rentas o plusvalia en condiciones comerciales",
+      "tienen una importancia cultural, medio ambiental o historica"
+    ]
   }
 ]

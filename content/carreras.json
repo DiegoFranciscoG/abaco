@@ -461,6 +461,14 @@
         "planes": 2
       },
       {
+        "materia": "contabilidad-gubernamental",
+        "ciclo": 5,
+        "ciclos": [
+          5
+        ],
+        "planes": 1
+      },
+      {
         "materia": "economia-popular-solidaria",
         "ciclo": 5,
         "ciclos": [
@@ -555,11 +563,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Fundamentos de Contabilidad Gubernamental",
-        "ciclo": 5,
-        "planes": 1
-      },
       {
         "nombre": "Contabilidad Instituciones Financieras",
         "ciclo": 7,

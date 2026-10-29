@@ -1,0 +1,475 @@
+{
+  "materia": "contabilidad-gubernamental",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "cgu-componente",
+      "nombre": "El componente de contabilidad gubernamental",
+      "orden": 1,
+      "descripcion": "Contenido y finalidad, registro de todos los recursos, organización y responsables, y facultad normativa del ente rector.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "cgu-finalidad",
+          "nombre": "Contenido y finalidad",
+          "explicacion": "Según el COPLAFIP, la contabilidad gubernamental es el proceso de registro sistemático, cronológico y secuencial de las operaciones patrimoniales y presupuestarias de las entidades del sector público no financiero, en términos monetarios, desde el registro original hasta los estados financieros, su consolidación e interpretación. Su finalidad es mantener en cada entidad un sistema único de contabilidad que integre las operaciones patrimoniales, presupuestarias y de costos, para producir información completa, confiable y oportuna que permita rendir cuentas, decidir, controlar y elaborar estadísticas.",
+          "ejemplo": "Cuando un ministerio compra computadoras, el registro afecta a la vez su presupuesto (un gasto devengado) y su patrimonio (un nuevo bien de larga duración).",
+          "puntos_clave": [
+            "Registro sistemático, cronológico y secuencial.",
+            "Operaciones patrimoniales y presupuestarias.",
+            "Sistema único de contabilidad."
+          ],
+          "errores_frecuentes": [
+            "Llevar el presupuesto y la contabilidad como sistemas separados.",
+            "Olvidar el componente de costos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 148, contenido y finalidad"
+          }
+        },
+        {
+          "id": "cgu-todos-recursos",
+          "nombre": "Registro de todos los recursos",
+          "explicacion": "El componente de contabilidad incluye el registro de todos los recursos financieros y materiales que administran los entes públicos, aun cuando pertenezcan a terceros, de modo que ningún recurso quede fuera del registro y de los informes financieros.",
+          "ejemplo": "Los fondos de garantía que un GAD recibe de contratistas no son suyos, pero los administra y debe registrarlos.",
+          "puntos_clave": [
+            "Recursos financieros y materiales.",
+            "También los de terceros.",
+            "Ninguno queda excluido."
+          ],
+          "errores_frecuentes": [
+            "No registrar depósitos de terceros.",
+            "Dejar bienes recibidos en custodia fuera de los informes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 149, registro de recursos financieros y materiales"
+          }
+        },
+        {
+          "id": "cgu-responsables",
+          "nombre": "Organización contable y responsables",
+          "explicacion": "Cada entidad debe tener una unidad encargada de ejecutar el componente de contabilidad gubernamental. Las máximas autoridades responden por su funcionamiento y los servidores financieros por cumplir la normativa; el titular de la unidad financiera legaliza con su firma o clave los estados financieros. Si una entidad no envía su información financiera y presupuestaria, el ente rector suspende sus asignaciones y transferencias del Presupuesto General del Estado luego de 60 días de terminado el mes no reportado.",
+          "ejemplo": "Un hospital público que no envía su información de marzo puede ver suspendidas sus transferencias desde fines de mayo.",
+          "puntos_clave": [
+            "Unidad contable en cada entidad.",
+            "Firma del titular financiero.",
+            "Suspensión de recursos tras 60 días sin reporte."
+          ],
+          "errores_frecuentes": [
+            "Creer que el reporte es opcional.",
+            "Dejar la responsabilidad solo al contador."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Arts. 150 a 152"
+          }
+        },
+        {
+          "id": "cgu-ente-rector",
+          "nombre": "La normativa del ente rector",
+          "explicacion": "El ente rector de las finanzas públicas, el Ministerio de Economía y Finanzas, tiene la facultad privativa de expedir, actualizar y difundir los principios, normas técnicas, manuales, procedimientos, instructivos y demás disposiciones contables, de cumplimiento obligatorio para las entidades del sector público. Las políticas, normas técnicas y manuales establecen además la naturaleza, clasificación y forma de presentación de la información financiera.",
+          "ejemplo": "Cuando el Ministerio emite un instructivo de registro de inventarios, todas las entidades del sector público no financiero deben aplicarlo.",
+          "puntos_clave": [
+            "Facultad privativa del ente rector.",
+            "Normas de cumplimiento obligatorio.",
+            "Principios, normas técnicas e instructivos."
+          ],
+          "errores_frecuentes": [
+            "Aplicar políticas contables propias distintas a la normativa oficial.",
+            "No revisar las actualizaciones normativas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Arts. 157 y 158"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cgu-registro",
+      "nombre": "Registro: devengado, caja y conservación",
+      "orden": 2,
+      "descripcion": "Contabilización inmediata, devengado y caja, obligaciones pendientes y atrasos, y conservación de registros.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cgu-contabilizacion-inmediata",
+          "nombre": "Contabilización inmediata",
+          "explicacion": "Los hechos económicos se contabilizan en la fecha en que ocurren, dentro de cada período mensual; los registros no se anticipan ni se postergan. Así, la información de cada mes refleja lo que realmente sucedió en ese mes.",
+          "ejemplo": "Una factura de mantenimiento recibida el 28 de junio se registra en junio, aunque se pague en julio.",
+          "puntos_clave": [
+            "Registrar en la fecha del hecho.",
+            "Dentro de cada mes.",
+            "Sin anticipar ni postergar."
+          ],
+          "errores_frecuentes": [
+            "Acumular registros para fin de año.",
+            "Registrar en el mes del pago y no en el del hecho."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 153, contabilización inmediata"
+          }
+        },
+        {
+          "id": "cgu-devengado-caja",
+          "nombre": "Devengado y caja",
+          "explicacion": "La información contable refleja tanto la ejecución presupuestaria como las transacciones de caja. En la ejecución presupuestaria se consideran ingresos todos los derechos de cobro y gastos las obligaciones por bienes y servicios recibidos, registrados según el principio del devengado. En términos de caja, son ingresos las recaudaciones que se perciben en el ejercicio, cualquiera sea la fecha en que nació el derecho, y egresos los pagos realizados, incluidos los anticipos.",
+          "ejemplo": "Si se emiten títulos de crédito por USD 500.000 y se cobran 420.000, el ingreso devengado es 500.000, el de caja 420.000 y quedan 80.000 por cobrar.",
+          "puntos_clave": [
+            "Devengado: derechos y obligaciones.",
+            "Caja: cobros y pagos efectivos.",
+            "Ambas visiones en la contabilidad."
+          ],
+          "errores_frecuentes": [
+            "Registrar el ingreso presupuestario solo cuando se cobra.",
+            "Confundir el gasto devengado con el pago."
+          ],
+          "formulas": [
+            "saldo-por-cobrar-presupuestario"
+          ],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 154, ejecución presupuestaria y transacciones de caja"
+          }
+        },
+        {
+          "id": "cgu-obligaciones-pendientes",
+          "nombre": "Obligaciones pendientes y atrasos",
+          "explicacion": "Las obligaciones pendientes de pago son las que quedan sin pagar al 31 de diciembre de cada año. Los atrasos son obligaciones no pagadas hasta su fecha de vencimiento; el vencimiento lo fija la ley, un acto administrativo o el contrato y, si ninguno lo establece, el plazo es de 90 días desde el devengamiento. Las fechas de vencimiento se registran en el sistema informático para reportar los atrasos.",
+          "ejemplo": "Una factura devengada el 1 de marzo sin plazo contractual vence a los 90 días; si no se paga para entonces, se reporta como atraso.",
+          "puntos_clave": [
+            "Pendientes al 31 de diciembre.",
+            "Atraso: impago al vencimiento.",
+            "90 días si no hay plazo fijado."
+          ],
+          "errores_frecuentes": [
+            "No registrar la fecha de vencimiento.",
+            "Ocultar atrasos en los reportes."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 155 y artículo innumerado sobre atrasos"
+          }
+        },
+        {
+          "id": "cgu-conservacion",
+          "nombre": "Conservación de registros",
+          "explicacion": "Las unidades de contabilidad del sector público deben conservar durante siete años los registros financieros con sus documentos de sustento, en medios digitales con firma electrónica de responsabilidad y, si es el caso, también los soportes físicos.",
+          "ejemplo": "Los comprobantes de un pago de 2026 deben conservarse al menos hasta 2033.",
+          "puntos_clave": [
+            "Siete años.",
+            "Registros y documentos de sustento.",
+            "Digitales con firma electrónica."
+          ],
+          "errores_frecuentes": [
+            "Eliminar archivos antes del plazo.",
+            "Guardar copias digitales sin firma electrónica."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 156, retención de documentos y registros"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cgu-informacion",
+      "nombre": "Información financiera, consolidación y tesorería",
+      "orden": 3,
+      "descripcion": "Consolidación del sector público no financiero, difusión semestral, empresas públicas y cuenta única del tesoro.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cgu-consolidacion",
+          "nombre": "Agregación y consolidación",
+          "explicacion": "El ente rector recibe, valida, analiza, clasifica y procesa la información financiera de cada organismo del sector público para obtener estados financieros agregados y consolidados de agrupaciones predefinidas. Según la Normativa de Contabilidad Gubernamental (NTCG 39), los estados consolidados se preparan con la información que las entidades entregan en los plazos del ente rector.",
+          "ejemplo": "Los estados financieros de todos los ministerios se consolidan para mostrar la situación del gobierno central como un solo conjunto.",
+          "puntos_clave": [
+            "Información de cada entidad.",
+            "Estados agregados y consolidados.",
+            "NTCG 39 de consolidación."
+          ],
+          "errores_frecuentes": [
+            "Enviar la información fuera de plazo.",
+            "No eliminar operaciones entre entidades al consolidar."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 157, agregación y consolidación"
+          }
+        },
+        {
+          "id": "cgu-difusion",
+          "nombre": "Difusión de la información consolidada",
+          "explicacion": "El ente rector de las finanzas públicas publica semestralmente la información consolidada del sector público no financiero en su página web u otros medios, lo que permite a la ciudadanía y a los analistas conocer la situación financiera del Estado.",
+          "ejemplo": "Un estudiante puede descargar la información consolidada publicada por el Ministerio para analizar la evolución de los pasivos del sector público.",
+          "puntos_clave": [
+            "Publicación semestral.",
+            "Sector público no financiero.",
+            "Transparencia fiscal."
+          ],
+          "errores_frecuentes": [
+            "Confundir información consolidada con la de una sola entidad.",
+            "Usar datos desactualizados."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 159, difusión de la información financiera consolidada"
+          }
+        },
+        {
+          "id": "cgu-empresas-publicas",
+          "nombre": "Empresas públicas: NICSP o NIIF",
+          "explicacion": "El COPLAFIP permite que las empresas públicas tengan sus propios sistemas de contabilidad, aunque deben enviar reportes para la consolidación. El Acuerdo Ministerial 014 de 2023 precisó qué marco aplican: las empresas públicas del Ejecutivo que prestan servicios al público o redistribuyen ingreso, se financian sobre todo con impuestos o transferencias y no generan rentabilidad aplican la normativa gubernamental bajo NICSP, mientras que las que manejan recursos naturales no renovables aplican NIIF.",
+          "ejemplo": "Una empresa pública que presta un servicio gratuito financiado con transferencias aplica NICSP; una petrolera estatal aplica NIIF.",
+          "puntos_clave": [
+            "Sistemas propios con reportes al ente rector.",
+            "NICSP si no generan rentabilidad.",
+            "NIIF si manejan recursos no renovables."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el mismo marco a todas las empresas públicas.",
+            "No enviar reportes para consolidación."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-acuerdo-014",
+            "url": "https://www.finanzas.gob.ec/wp-content/uploads/downloads/2023/04/acuerdo_no._014_de_22_de_marzo_de_2023.pdf",
+            "seccion": "Art. 1, numeral 4.1, marco legal de la contabilidad gubernamental"
+          }
+        },
+        {
+          "id": "cgu-tesoreria",
+          "nombre": "Tesorería y cuenta única del tesoro",
+          "explicacion": "El componente de tesorería, vinculado con la contabilidad, comprende las normas y procedimientos para obtener, depositar y colocar los recursos financieros públicos, administrar y custodiar dineros y valores para pagar a tiempo las obligaciones, y usar esos recursos según los presupuestos y la liquidez de la caja fiscal, a través de la cuenta única del tesoro nacional.",
+          "ejemplo": "Los pagos a proveedores de los ministerios salen de la cuenta única del tesoro según la programación de caja.",
+          "puntos_clave": [
+            "Obtención, depósito y colocación de recursos.",
+            "Custodia de dineros y valores.",
+            "Cuenta única del tesoro nacional."
+          ],
+          "errores_frecuentes": [
+            "Mantener cuentas bancarias paralelas.",
+            "Pagar sin programación de caja."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "coplafip",
+            "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+            "seccion": "Art. 160, componente de tesorería"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cgu-nicsp",
+      "nombre": "Convergencia a las NICSP",
+      "orden": 4,
+      "descripcion": "Actualización de la Normativa de Contabilidad Gubernamental bajo NICSP, contabilidad de coberturas, fases pendientes y umbral de propiedad, planta y equipo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cgu-convergencia",
+          "nombre": "La Normativa de Contabilidad Gubernamental bajo NICSP",
+          "explicacion": "La Normativa de Contabilidad Gubernamental forma parte de la Normativa Técnica del Sistema Nacional de las Finanzas Públicas expedida con el Acuerdo Ministerial 103 de 31 de diciembre de 2020. Fue modificada por los acuerdos 0023 de 2021, 0048 de 2022 y 014 de 2023, y el Acuerdo 045 de diciembre de 2024 la actualizó bajo las Normas Internacionales de Contabilidad del Sector Público (NICSP).",
+          "ejemplo": "Una entidad que en 2026 registra sus bienes debe seguir la normativa actualizada bajo NICSP, no los manuales anteriores a 2020.",
+          "puntos_clave": [
+            "Acuerdo 103 de 2020.",
+            "Modificaciones de 2021, 2022 y 2023.",
+            "Actualización bajo NICSP en 2024."
+          ],
+          "errores_frecuentes": [
+            "Usar normativa derogada.",
+            "Confundir NICSP con NIIF."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-acuerdo-045",
+            "url": "https://www.economicoproductivo.gob.ec/wp-content/uploads/downloads/2024/12/ACUERDO-No.-045.pdf",
+            "seccion": "Art. 1"
+          }
+        },
+        {
+          "id": "cgu-coberturas",
+          "nombre": "Contabilidad de coberturas y fases pendientes",
+          "explicacion": "El Acuerdo 014 de 2023 incorporó la NTCG 43 de contabilidad de coberturas, que establece el tratamiento de las relaciones entre un instrumento de cobertura y una partida cubierta en el sector público no financiero. También dispuso que en una tercera fase de actualización se incorporen las normas de flujo de efectivo y beneficios a empleados.",
+          "ejemplo": "Si una entidad contrata un instrumento para cubrirse de la variación de una tasa de interés de su deuda, aplica la NTCG 43.",
+          "puntos_clave": [
+            "NTCG 43: coberturas.",
+            "Instrumento de cobertura y partida cubierta.",
+            "Pendientes: flujo de efectivo y beneficios a empleados."
+          ],
+          "errores_frecuentes": [
+            "Tratar una cobertura como especulación.",
+            "Suponer que la normativa ya cubre todos los temas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-acuerdo-014",
+            "url": "https://www.finanzas.gob.ec/wp-content/uploads/downloads/2023/04/acuerdo_no._014_de_22_de_marzo_de_2023.pdf",
+            "seccion": "Art. 1, literales c y d"
+          }
+        },
+        {
+          "id": "cgu-umbral-ppe",
+          "nombre": "Umbral para reconocer propiedad, planta y equipo",
+          "explicacion": "Como disposición transitoria, el Acuerdo 045 estableció como requisito para reconocer un bien como propiedad, planta y equipo que su costo de adquisición sea igual o mayor a USD 100. El requisito se mantiene durante los ejercicios fiscales 2024 y 2025 y luego será revisado hasta eliminarse. Los bienes que no lo cumplen no se deprecian y se controlan administrativamente.",
+          "ejemplo": "Una silla de USD 85 no se registra como propiedad, planta y equipo; una de USD 120 sí.",
+          "puntos_clave": [
+            "Costo igual o mayor a USD 100.",
+            "Vigente en 2024 y 2025.",
+            "Será revisado hasta eliminarse."
+          ],
+          "errores_frecuentes": [
+            "Depreciar bienes de bajo costo.",
+            "Aplicar el umbral sin revisar su vigencia."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-acuerdo-045",
+            "url": "https://www.economicoproductivo.gob.ec/wp-content/uploads/downloads/2024/12/ACUERDO-No.-045.pdf",
+            "seccion": "Art. 2, disposición transitoria 4"
+          }
+        },
+        {
+          "id": "cgu-activos-financieros",
+          "nombre": "Activos y pasivos financieros y manual de procedimientos",
+          "explicacion": "El Acuerdo 045 dispuso que el ministerio rector dicte el manual de procedimientos contables, sin perjuicio de que las entidades del sector público no financiero apliquen las normas de activos y pasivos financieros que se emitan. Además, mientras no exista el aplicativo informático, la banca pública y las entidades de seguridad social remiten su información financiera de forma mensual en medio magnético.",
+          "ejemplo": "Un banco público envía cada mes su información financiera en archivo magnético al Ministerio hasta que exista el aplicativo de captura.",
+          "puntos_clave": [
+            "Manual de procedimientos contables.",
+            "Normas de activos y pasivos financieros.",
+            "Reporte mensual de banca pública y seguridad social."
+          ],
+          "errores_frecuentes": [
+            "Esperar el manual para aplicar las normas vigentes.",
+            "No remitir la información mensual."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-acuerdo-045",
+            "url": "https://www.economicoproductivo.gob.ec/wp-content/uploads/downloads/2024/12/ACUERDO-No.-045.pdf",
+            "seccion": "Art. 2, disposiciones transitorias"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cgu-bienes",
+      "nombre": "Bienes e inventarios en el sector público",
+      "orden": 5,
+      "descripcion": "Concepto de bien, bienes de larga duración y de control administrativo, inventarios, depreciación y deterioro, y bienes especiales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "cgu-bien",
+          "nombre": "Bienes de larga duración y de control administrativo",
+          "explicacion": "Para el instructivo del Ministerio, un bien es un recurso distinto al dinero que controla la entidad, genera potencial de servicio o beneficios económicos futuros, puede medirse con fiabilidad y surge de hechos pasados. Los bienes de larga duración se destinan a la administración, producción, prestación de servicios o arriendo y están sujetos a depreciación; los bienes de control administrativo no se deprecian y se mantienen en cuentas de orden.",
+          "ejemplo": "Un vehículo institucional es un bien de larga duración; una grapadora de bajo costo se controla administrativamente en cuentas de orden.",
+          "puntos_clave": [
+            "Recurso controlado distinto al dinero.",
+            "Larga duración: se deprecia.",
+            "Control administrativo: cuentas de orden."
+          ],
+          "errores_frecuentes": [
+            "Registrar como activo un bien que no controla la entidad.",
+            "Depreciar bienes de control administrativo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-instructivo-bienes",
+            "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+            "seccion": "Glosario"
+          }
+        },
+        {
+          "id": "cgu-inventarios",
+          "nombre": "Inventarios",
+          "explicacion": "Los inventarios o existencias son activos adquiridos como materiales, insumos o suministros necesarios para la administración y el funcionamiento de la institución. Incluyen, entre otros, los bienes comprados y mantenidos para la venta y otros bienes que la normativa enumera. Su tratamiento se rige por la NTCG 9 y el instructivo define clases de registro para su ingreso, consumo y baja.",
+          "ejemplo": "Los medicamentos almacenados en un hospital público son inventarios; se registran al ingresar a bodega y se dan de baja al consumirse o por obsolescencia.",
+          "puntos_clave": [
+            "Materiales, insumos y suministros.",
+            "NTCG 9.",
+            "Clases de registro de ingreso y baja."
+          ],
+          "errores_frecuentes": [
+            "Registrar como gasto directo lo que entra a bodega.",
+            "No dar de baja inventarios obsoletos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-instructivo-bienes",
+            "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+            "seccion": "Glosario y 5.1 Inventarios (NTCG 9)"
+          }
+        },
+        {
+          "id": "cgu-depreciacion",
+          "nombre": "Depreciación y deterioro",
+          "explicacion": "La depreciación es el valor de la pérdida periódica de los bienes, calculada de forma sistemática con la fórmula de la cuota de depreciación proporcional, es decir, en línea recta. El deterioro es la pérdida, adicional a la depreciación, de los beneficios económicos o del potencial de servicio futuro de un activo, y se trata en la NTCG 18.",
+          "ejemplo": "Un vehículo de USD 30.000 con valor residual de USD 3.000 y vida útil de 10 años se deprecia 2.700 dólares por año.",
+          "puntos_clave": [
+            "Cuota proporcional: línea recta.",
+            "Deterioro: pérdida adicional.",
+            "NTCG 18."
+          ],
+          "errores_frecuentes": [
+            "Confundir depreciación con deterioro.",
+            "No revisar indicios de deterioro."
+          ],
+          "formulas": [
+            "depreciacion-linea-recta"
+          ],
+          "fuente": {
+            "ref": "mef-instructivo-bienes",
+            "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+            "seccion": "Glosario"
+          }
+        },
+        {
+          "id": "cgu-bienes-especiales",
+          "nombre": "Infraestructura, patrimonio histórico y propiedades de inversión",
+          "explicacion": "El instructivo distingue bienes con tratamiento especial. Los bienes de infraestructura se tratan como propiedad, planta y equipo y suelen ser parte de un sistema o red, especializados, inmóviles y sin usos alternativos. Los bienes del patrimonio histórico, artístico o cultural tienen importancia cultural, ambiental o histórica, su vida útil es difícil de estimar y son inalienables e inembargables. Las propiedades de inversión son terrenos o edificios mantenidos para obtener rentas o plusvalía en condiciones comerciales.",
+          "ejemplo": "Una red de agua potable es infraestructura; una iglesia colonial, patrimonio histórico; un local municipal arrendado a precio de mercado, propiedad de inversión.",
+          "puntos_clave": [
+            "Infraestructura: sistemas o redes.",
+            "Patrimonio: valor cultural o histórico.",
+            "Inversión: rentas o plusvalía."
+          ],
+          "errores_frecuentes": [
+            "Depreciar el patrimonio histórico como un bien común.",
+            "Clasificar como inversión un bien de uso institucional."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "mef-instructivo-bienes",
+            "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+            "seccion": "Glosario"
+          }
+        }
+      ]
+    }
+  ]
+}

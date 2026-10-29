@@ -14976,5 +14976,119 @@
     },
     "materia": "modelos-simulacion",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cgu-por-cobrar-a",
+    "subtema": "cgu-devengado-caja",
+    "formula": "saldo-por-cobrar-presupuestario",
+    "enunciado": "Un GAD devengó USD 1.200.000 por impuestos prediales en el año y recaudó 1.150.000 de esos derechos. ¿Cuánto queda por cobrar al cierre?",
+    "datos": {
+      "DEV": 1200000,
+      "REC": 1150000
+    },
+    "calculo": "DEV - REC",
+    "respuesta": 50000,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "1.200.000 − 1.150.000 = 50.000"
+    ],
+    "pistas": [
+      "El devengado registra el derecho; la caja, lo cobrado."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+      "seccion": "Art. 154"
+    },
+    "materia": "contabilidad-gubernamental",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cgu-por-cobrar-b",
+    "subtema": "cgu-devengado-caja",
+    "formula": "saldo-por-cobrar-presupuestario",
+    "enunciado": "Una universidad pública emitió órdenes de cobro por servicios por USD 85.000 y cobró USD 61.500. ¿Cuál es el saldo por cobrar?",
+    "datos": {
+      "DEV": 85000,
+      "REC": 61500
+    },
+    "calculo": "DEV - REC",
+    "respuesta": 23500,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "85.000 − 61.500 = 23.500"
+    ],
+    "pistas": [
+      "Resta lo recaudado de lo devengado."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "coplafip",
+      "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+      "seccion": "Art. 154"
+    },
+    "materia": "contabilidad-gubernamental",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cgu-depreciacion-vehiculo",
+    "subtema": "cgu-depreciacion",
+    "formula": "depreciacion-linea-recta",
+    "enunciado": "Un ministerio adquiere un vehículo por USD 30.000, con valor residual de USD 3.000 y vida útil de 10 años. ¿Cuál es su depreciación anual con la cuota proporcional?",
+    "datos": {
+      "C": 30000,
+      "VR": 3000,
+      "n": 10
+    },
+    "calculo": "(C - VR) / n",
+    "respuesta": 2700,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "(30.000 − 3.000) / 10 = 2.700"
+    ],
+    "pistas": [
+      "Resta el valor residual antes de dividir."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mef-instructivo-bienes",
+      "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+      "seccion": "Glosario: depreciación"
+    },
+    "materia": "contabilidad-gubernamental",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-cgu-depreciacion-equipo",
+    "subtema": "cgu-depreciacion",
+    "formula": "depreciacion-linea-recta",
+    "enunciado": "Un equipo informático institucional cuesta USD 1.200, tiene un valor residual de USD 120 y una vida útil de 3 años. ¿Cuánto se deprecia por año?",
+    "datos": {
+      "C": 1200,
+      "VR": 120,
+      "n": 3
+    },
+    "calculo": "(C - VR) / n",
+    "respuesta": 360,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "(1.200 − 120) / 3 = 360"
+    ],
+    "pistas": [
+      "Supera el umbral de USD 100, así que es propiedad, planta y equipo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "mef-instructivo-bienes",
+      "url": "https://www.finanzas.gob.ec/wp-content/uploads/2025/12/Instructivo-de-clases-de-registros-contables-Fase-5-Bienes-e-Inventarios-por-convergencia-a-NICSP_Actualizado-al-15_12_2025.pdf",
+      "seccion": "Glosario: depreciación"
+    },
+    "materia": "contabilidad-gubernamental",
+    "actualizado_en": "2026-10-26"
   }
 ]

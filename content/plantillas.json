@@ -3062,5 +3062,53 @@
       "seccion": "Lecture 8: Sampling and standard error"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "devengado-caja-depreciacion",
+    "nombre": "Devengado, caja y depreciación en el sector público",
+    "descripcion": "Calcula el saldo de ingresos devengados por cobrar, verifica el umbral de propiedad, planta y equipo y la depreciación anual por cuota proporcional.",
+    "materias": [
+      "contabilidad-gubernamental"
+    ],
+    "celdas": {
+      "A1": "Ingresos devengados (USD)",
+      "B1": 500000,
+      "A2": "Ingresos recaudados (USD)",
+      "B2": 420000,
+      "A3": "Pendiente de cobro",
+      "B3": "=B1-B2",
+      "A5": "Costo del bien (USD)",
+      "B5": 30000,
+      "A6": "¿Es propiedad, planta y equipo? (costo ≥ USD 100)",
+      "B6": "=IF(B5>=100,\"Sí\",\"No\")",
+      "A7": "Valor residual (USD)",
+      "B7": 3000,
+      "A8": "Vida útil (años)",
+      "B8": 10,
+      "A9": "Depreciación anual",
+      "B9": "=(B5-B7)/B8"
+    },
+    "formatos": {
+      "B3": "moneda",
+      "B9": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B3",
+        "esperado": 80000,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B9",
+        "esperado": 2700,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "coplafip",
+      "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+      "seccion": "Art. 154"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

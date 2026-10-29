@@ -1400,5 +1400,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "contabilidad-gubernamental",
+    "nombre": "Fundamentos de contabilidad gubernamental",
+    "areas": [
+      "contabilidad",
+      "finanzas"
+    ],
+    "descripcion": "El componente de contabilidad gubernamental del COPLAFIP: finalidad, registro de todos los recursos, contabilización inmediata, devengado y caja, obligaciones pendientes, conservación y consolidación de la información; convergencia de la Normativa de Contabilidad Gubernamental a las NICSP; y bienes, inventarios, depreciación y deterioro en el sector público.",
+    "sinonimos": [
+      "contabilidad gubernamental",
+      "contabilidad pública",
+      "contabilidad del sector público",
+      "NICSP",
+      "normativa de contabilidad gubernamental"
+    ],
+    "herramientas": [
+      "editor",
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 59,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

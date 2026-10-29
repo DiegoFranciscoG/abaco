@@ -1395,7 +1395,8 @@
     "categoria": "depreciacion",
     "materias": [
       "contabilidad-general",
-      "contabilidad-financiera"
+      "contabilidad-financiera",
+      "contabilidad-gubernamental"
     ],
     "areas": [
       "contabilidad"
@@ -12032,6 +12033,70 @@
       "El error medio de la estimación es cero y los errores siguen una distribución normal."
     ],
     "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "saldo-por-cobrar-presupuestario",
+    "nombre": "Ingresos devengados pendientes de recaudar",
+    "categoria": "calculo",
+    "materias": [
+      "contabilidad-gubernamental"
+    ],
+    "areas": [
+      "contabilidad"
+    ],
+    "descripcion": "Diferencia entre los ingresos presupuestarios devengados (derechos de cobro) y los efectivamente recaudados en el ejercicio: es lo que queda por cobrar.",
+    "latex": "PC = DEV - REC",
+    "variables": [
+      {
+        "simbolo": "DEV",
+        "nombre": "DEV",
+        "significado": "Ingresos devengados: derechos de cobro del ejercicio",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "REC",
+        "nombre": "REC",
+        "significado": "Ingresos recaudados en caja durante el ejercicio por esos derechos",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "DEV - REC"
+    },
+    "excel": {
+      "es": "=DEV-REC",
+      "en": "=DEV-REC"
+    },
+    "ejemplo": {
+      "enunciado": "Un municipio devengó USD 500.000 por tasas en el año y recaudó USD 420.000 de esos derechos. ¿Cuánto queda por cobrar?",
+      "entradas": {
+        "DEV": 500000,
+        "REC": 420000
+      },
+      "pasos": [
+        "Por cobrar = 500.000 − 420.000",
+        "Por cobrar = 80.000"
+      ],
+      "resultado": 80000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=500000-420000",
+      "excel_en": "=500000-420000"
+    },
+    "fuente": {
+      "ref": "coplafip",
+      "url": "https://ire.finanzas.gob.ec/content/2026/legal/COPLAFIP_RO_142_2025.pdf",
+      "seccion": "Art. 154, ejecución presupuestaria y transacciones de caja"
+    },
+    "supuestos": [
+      "Se comparan los mismos derechos de cobro del ejercicio."
+    ],
+    "notas": [
+      "El registro presupuestario sigue el principio del devengado; la caja, lo efectivamente percibido."
+    ],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
   }
