@@ -1,0 +1,495 @@
+{
+  "materia": "seguros",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "sg-fundamentos",
+      "nombre": "Cómo funciona el seguro",
+      "orden": 1,
+      "descripcion": "Primas y fondo común, ingresos de una aseguradora, grupos de riesgo y prima actuarialmente justa, y seguros públicos y sociales.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sg-que-es",
+          "nombre": "Qué es un seguro: primas y fondo común",
+          "explicacion": "El seguro es un método que usan hogares y empresas para evitar que un solo evento tenga un efecto financiero grave. Los asegurados hacen pagos periódicos llamados primas; la aseguradora fija esas primas según la probabilidad de que ocurran ciertos eventos en un grupo de personas, y quienes sufren el evento cubierto reciben pagos de ese fondo común. Hay seguros de salud, de vida, de automóviles, de hogar o propiedad, de responsabilidad civil y de mala práctica profesional. Todo seguro implica información imperfecta: no se puede predecir con certeza quién sufrirá un accidente, ni estimar con exactitud el riesgo de cada persona.",
+          "ejemplo": "Mil familias pagan una prima anual a una aseguradora; las pocas cuyas casas se incendian reciben dinero para reconstruir, financiado con las primas de todas.",
+          "puntos_clave": [
+            "Primas periódicas.",
+            "Fondo común según probabilidades.",
+            "Información imperfecta."
+          ],
+          "errores_frecuentes": [
+            "Pensar que la prima es un ahorro que se devuelve.",
+            "Creer que la aseguradora sabe con exactitud el riesgo de cada cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        },
+        {
+          "id": "sg-ingresos-ley",
+          "nombre": "Ingresos de una aseguradora y la ley fundamental del seguro",
+          "explicacion": "Las aseguradoras reciben ingresos por las primas y por invertir los fondos recibidos en años anteriores que no se pagaron como siniestros; suelen invertirlos en instrumentos bastante seguros y líquidos, porque deben poder usarlos rápido ante un desastre. Sus salidas son los pagos de siniestros y los gastos de operación: personal, administración de cuentas y procesamiento de reclamos. De ahí la ley fundamental del seguro: con el tiempo, los pagos de la persona promedio deben cubrir sus siniestros promedio, los costos de operar la empresa y dejar margen para la utilidad.",
+          "ejemplo": "Si los siniestros promedio de un grupo son USD 300 por persona y los gastos de operación USD 60, la prima debe superar USD 360 para que la aseguradora tenga utilidad.",
+          "puntos_clave": [
+            "Ingresos: primas e inversiones.",
+            "Salidas: siniestros y gastos.",
+            "Ley fundamental del seguro."
+          ],
+          "errores_frecuentes": [
+            "Olvidar el rendimiento de las inversiones.",
+            "Fijar primas que solo cubren siniestros y no gastos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        },
+        {
+          "id": "sg-grupos-riesgo",
+          "nombre": "Grupos de riesgo y prima actuarialmente justa",
+          "explicacion": "Un grupo de riesgo reúne a personas con aproximadamente los mismos riesgos. Si todos pagan la misma prima, quienes tienen bajo riesgo pagan por los de alto riesgo; si la aseguradora puede clasificarlos, cobra a cada grupo según sus pérdidas esperadas. Cuando la prima es igual a lo que una persona promedio de su grupo cobraría en indemnizaciones, se dice que el seguro es actuarialmente justo. Clasificar en grupos de riesgo puede ser polémico, por ejemplo al decidir si quien tuvo un accidente es de alto riesgo o solo tuvo mala suerte.",
+          "ejemplo": "Si de 100 conductores 60 causan daños de USD 100, 30 de USD 1.000 y 10 de USD 15.000, la prima igual para todos es (6.000 + 30.000 + 150.000) ÷ 100 = USD 1.860; con grupos separados, cada uno pagaría USD 100, 1.000 o 15.000.",
+          "puntos_clave": [
+            "Grupo de riesgo.",
+            "Prima = pérdida esperada del grupo.",
+            "Subsidio cruzado sin clasificación."
+          ],
+          "errores_frecuentes": [
+            "Promediar los daños sin ponderar por el número de personas.",
+            "Creer que la prima justa incluye la utilidad."
+          ],
+          "formulas": [
+            "prima-pura"
+          ],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        },
+        {
+          "id": "sg-seguro-social",
+          "nombre": "Seguros públicos y seguro social",
+          "explicacion": "Los gobiernos administran programas que funcionan como seguros: el seguro de desempleo, financiado por aportes de los empleadores, paga beneficios por un tiempo a quien pierde su empleo; el seguro de pensiones protege parte de las jubilaciones si la empresa quiebra; el seguro de depósitos protege a los ahorristas; el seguro de riesgos del trabajo paga beneficios a quien se lesiona en su empleo, y los programas de jubilación y salud para adultos mayores se financian con aportes de los trabajadores. A estos últimos se les llama seguro social, porque quienes aportan hoy no son los beneficiarios actuales, aunque funcionan como un seguro.",
+          "ejemplo": "Una empresa aporta cada mes a un fondo público de riesgos del trabajo; si un empleado se lesiona en su puesto, el fondo le paga una prestación aunque la empresa no haya tenido que ahorrar ese dinero por su cuenta.",
+          "puntos_clave": [
+            "Seguros de desempleo, depósitos y riesgos del trabajo.",
+            "Seguro social de jubilación y salud.",
+            "Fondos con aportes obligatorios."
+          ],
+          "errores_frecuentes": [
+            "Confundir seguro social con seguro privado.",
+            "Pensar que los aportes de hoy pagan solo la propia pensión futura."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sg-informacion",
+      "nombre": "Información imperfecta en los seguros",
+      "orden": 2,
+      "descripcion": "Información asimétrica, riesgo moral, deducibles y coaseguro, selección adversa y regulación de precios.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sg-informacion-asimetrica",
+          "nombre": "Información imperfecta y asimétrica",
+          "explicacion": "Hay información imperfecta cuando el comprador, el vendedor o ambos no están completamente seguros de la calidad de lo que negocian, e información asimétrica cuando una de las partes sabe mucho más que la otra. El ejemplo clásico es el auto usado defectuoso, llamado «limón»: el vendedor conoce los problemas del auto y tiene incentivos para ocultarlos. La información imperfecta puede bajar precios o cantidades vendidas, pero compradores y vendedores crean mecanismos para negociar igual, como la reputación de un vendedor confiable que repara los problemas antes de vender.",
+          "ejemplo": "Un comprador paga un poco más por un auto usado en un concesionario con buena reputación, porque reduce el riesgo de comprar un auto con fallas ocultas.",
+          "puntos_clave": [
+            "Imperfecta: falta información.",
+            "Asimétrica: una parte sabe más.",
+            "Reputación y otros mecanismos."
+          ],
+          "errores_frecuentes": [
+            "Usar los dos términos como sinónimos.",
+            "Elegir siempre el precio más bajo sin considerar la información."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-1-the-problem-of-imperfect-information-and-asymmetric-information",
+            "seccion": "16.1 The Problem of Imperfect Information and Asymmetric Information"
+          }
+        },
+        {
+          "id": "sg-riesgo-moral",
+          "nombre": "Riesgo moral",
+          "explicacion": "El riesgo moral ocurre cuando las personas asumen conductas más riesgosas por estar aseguradas: quien tiene seguro de auto se preocupa menos de dónde estacionar, y una empresa asegurada puede instalar menos sistemas contra robo e incendio. No se puede eliminar, pero se reduce investigando fraudes, monitoreando conductas, por ejemplo con tarifas menores para quien instala y revisa rociadores, y haciendo que el asegurado comparta los costos. En salud, otra vía es cambiar los incentivos de los prestadores, pagándoles un monto fijo por persona en lugar de por cada servicio.",
+          "ejemplo": "Una aseguradora ofrece una prima menor a una bodega que instala alarmas y rociadores y los inspecciona cada año.",
+          "puntos_clave": [
+            "Más riesgo por estar asegurado.",
+            "Investigación y monitoreo.",
+            "Costos compartidos e incentivos a prestadores."
+          ],
+          "errores_frecuentes": [
+            "Confundir riesgo moral con selección adversa.",
+            "Creer que el riesgo moral puede eliminarse por completo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        },
+        {
+          "id": "sg-costo-compartido",
+          "nombre": "Deducibles, copagos y coaseguro",
+          "explicacion": "Compartir costos desalienta el riesgo moral, porque el asegurado sabe que pagará algo de su bolsillo al reclamar. El deducible es el monto que el asegurado paga antes de que el seguro empiece a cubrir; por ejemplo, la póliza paga las pérdidas que superan USD 500. El copago es un monto pequeño que el asegurado paga en cada uso, como cada consulta médica. El coaseguro hace que la aseguradora cubra un porcentaje del costo, por ejemplo el 80 %, y el asegurado el resto. Un estudio citado por el libro encontró que con deducibles y copagos moderados las personas consumían cerca de un tercio menos de atención médica sin diferencias en su salud.",
+          "ejemplo": "Con un deducible de USD 500, un daño de USD 2.300 se indemniza con 2.300 − 500 = USD 1.800; con un coaseguro del 80 %, una reparación de USD 15.000 se cubre con 0,80 × 15.000 = USD 12.000.",
+          "puntos_clave": [
+            "Deducible: monto inicial a cargo del asegurado.",
+            "Copago por cada uso.",
+            "Coaseguro: porcentaje compartido."
+          ],
+          "errores_frecuentes": [
+            "Aplicar el deducible como porcentaje.",
+            "Olvidar que si la pérdida es menor que el deducible, la aseguradora no paga."
+          ],
+          "formulas": [
+            "indemnizacion-deducible",
+            "indemnizacion-coaseguro"
+          ],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        },
+        {
+          "id": "sg-seleccion-adversa",
+          "nombre": "Selección adversa",
+          "explicacion": "La selección adversa ocurre cuando quienes compran seguros saben más que la aseguradora sobre si son de alto o bajo riesgo, y los de alto riesgo tienden a comprar más seguro. Si la aseguradora no puede distinguirlos y cobra la prima promedio, los de bajo y mediano riesgo dejan de asegurarse y solo quedan los de alto riesgo, con lo que la aseguradora pierde dinero; si sube la prima, más clientes de bajo riesgo se retiran, y el mercado puede desaparecer. Las salidas son clasificar mejor a los compradores en grupos de riesgo o que los de bajo riesgo deban asegurarse, como ocurre con los seguros de grupo en el lugar de trabajo.",
+          "ejemplo": "Si la prima de USD 1.860 se cobra a todos, los conductores con daños esperados de USD 100 no la compran; solo la compran los de USD 15.000 y la aseguradora pierde.",
+          "puntos_clave": [
+            "El comprador conoce mejor su riesgo.",
+            "Salida de los clientes de bajo riesgo.",
+            "Clasificación de riesgos y seguros de grupo."
+          ],
+          "errores_frecuentes": [
+            "Creer que subir la prima resuelve el problema.",
+            "Confundirla con el riesgo moral."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        },
+        {
+          "id": "sg-regulacion-precios",
+          "nombre": "Regulación de seguros: precios bajos frente a cobertura",
+          "explicacion": "Los reguladores de seguros suelen buscar dos metas que pueden chocar: mantener bajo el precio del seguro y lograr que todos estén asegurados. Con primas actuarialmente justas, algunos grupos de alto riesgo pagarían montos muy altos y podrían dejar de asegurarse; si la regulación fija primas bajas, las aseguradoras evitan a los clientes de riesgo alto o medio, o incluso se retiran del mercado. A largo plazo debe cumplirse la ley fundamental: lo que los asegurados reciben en promedio no puede superar lo que pagan en primas.",
+          "ejemplo": "Si una norma obliga a vender seguros de auto a todos a un precio muy bajo, algunas aseguradoras dejan de operar en esa región en lugar de asumir pérdidas sostenidas.",
+          "puntos_clave": [
+            "Metas en conflicto.",
+            "Primas justas que excluyen a grupos de alto riesgo.",
+            "Retiro de aseguradoras ante precios forzados."
+          ],
+          "errores_frecuentes": [
+            "Creer que un precio regulado bajo amplía siempre la cobertura.",
+            "Ignorar la ley fundamental del seguro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+            "seccion": "16.2 Insurance and Imperfect Information"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sg-sistema-ec",
+      "nombre": "El sistema de seguro privado en el Ecuador",
+      "orden": 3,
+      "descripcion": "Integrantes del sistema, ramos generales y de vida, reaseguro, peritos y asesores productores según la Ley General de Seguros.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "sg-integrantes",
+          "nombre": "Integrantes y control del sistema de seguro privado",
+          "explicacion": "La Ley General de Seguros, hoy Libro III del Código Orgánico Monetario y Financiero, regula la constitución, organización, funcionamiento y extinción de las personas jurídicas y las actividades de las personas naturales que integran el sistema de seguro privado, bajo la vigilancia y control de la Superintendencia de Compañías, Valores y Seguros. Integran el sistema las empresas que realizan operaciones de seguros, las compañías de reaseguros, los intermediarios de reaseguros, los peritos de seguros y los asesores productores de seguros.",
+          "ejemplo": "Una aseguradora, el corredor que vende sus pólizas y el ajustador que valora un siniestro forman parte del sistema y responden ante la Superintendencia de Compañías, Valores y Seguros.",
+          "puntos_clave": [
+            "Ley General de Seguros: Libro III del COMF.",
+            "Control de la Superintendencia de Compañías, Valores y Seguros.",
+            "Cinco tipos de integrantes."
+          ],
+          "errores_frecuentes": [
+            "Creer que la Superintendencia de Bancos controla a las aseguradoras.",
+            "Olvidar a peritos y asesores como parte del sistema."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, arts. 1-2"
+          }
+        },
+        {
+          "id": "sg-ramos",
+          "nombre": "Empresas de seguros: ramos generales y de vida",
+          "explicacion": "Las empresas que realizan operaciones de seguros son compañías anónimas constituidas en el país o sucursales de empresas extranjeras, cuyo objeto exclusivo es asumir directa o indirectamente, o aceptar y ceder, riesgos a cambio de primas. Las de seguros generales aseguran los riesgos por afecciones, pérdidas o daños de la salud, de los bienes o del patrimonio, y los riesgos de fianza o garantía. Las de seguros de vida cubren los riesgos de las personas o les garantizan, dentro o al final de un plazo, un capital o una renta periódica para el asegurado y sus beneficiarios. Parte del artículo que regula los ramos fue declarada inconstitucional por la Corte Constitucional (sentencia 005-18-SIN-CC), por lo que conviene revisar su texto vigente.",
+          "ejemplo": "Un seguro contra robo de un local es del ramo de seguros generales; una póliza que paga un capital a la familia si fallece el asegurado es de seguros de vida.",
+          "puntos_clave": [
+            "Objeto: asumir riesgos a cambio de primas.",
+            "Seguros generales: bienes, patrimonio, salud y fianzas.",
+            "Seguros de vida: riesgos de las personas, capital o renta."
+          ],
+          "errores_frecuentes": [
+            "Clasificar las fianzas como seguros de vida.",
+            "Ignorar la sentencia constitucional sobre el artículo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, art. 3"
+          }
+        },
+        {
+          "id": "sg-reaseguro",
+          "nombre": "Reaseguro, retrocesión e intermediarios de reaseguros",
+          "explicacion": "Las compañías de reaseguros son compañías anónimas constituidas en el país o sucursales de empresas extranjeras cuyo objeto es otorgar coberturas a una o más empresas de seguros por los riesgos que estas hayan asumido, y realizar operaciones de retrocesión, es decir, reasegurar a su vez parte de lo que reaseguran. Los intermediarios de reaseguros son personas jurídicas cuya única actividad es gestionar y colocar reaseguros y retrocesiones para empresas de seguros o de reaseguros.",
+          "ejemplo": "Una aseguradora que cubre un edificio de USD 30 millones cede parte del riesgo a una reaseguradora para no quedar expuesta a una sola pérdida enorme.",
+          "puntos_clave": [
+            "Reaseguro: seguro de la aseguradora.",
+            "Retrocesión: reaseguro del reasegurador.",
+            "Intermediarios de reaseguros."
+          ],
+          "errores_frecuentes": [
+            "Creer que el asegurado contrata el reaseguro.",
+            "Confundir reaseguro con coaseguro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, arts. 4-5"
+          }
+        },
+        {
+          "id": "sg-peritos-asesores",
+          "nombre": "Peritos de seguros y asesores productores",
+          "explicacion": "Son peritos de seguros los inspectores de riesgos, que examinan y califican los riesgos antes de contratar el seguro y durante su vigencia, y los ajustadores de siniestros, que examinan las causas de los siniestros y valoran la cuantía de las pérdidas de forma equitativa según la póliza; el ajustador puede pedir al asegurado libros y documentos. Son asesores productores de seguros los agentes de seguros, personas naturales que gestionan y obtienen contratos a nombre de una o varias aseguradoras, y las agencias asesoras productoras de seguros, personas jurídicas dedicadas a esa actividad.",
+          "ejemplo": "Tras un choque, el ajustador revisa el auto y las facturas de reparación para determinar cuánto debe pagar la aseguradora según las cláusulas de la póliza.",
+          "puntos_clave": [
+            "Inspectores de riesgos.",
+            "Ajustadores de siniestros.",
+            "Agentes y agencias asesoras productoras."
+          ],
+          "errores_frecuentes": [
+            "Confundir al ajustador con el agente vendedor.",
+            "Creer que el ajustador decide sin revisar la póliza."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, arts. 6-7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sg-solvencia-polizas",
+      "nombre": "Solvencia, pólizas y siniestros",
+      "orden": 4,
+      "descripcion": "Régimen de solvencia y reservas técnicas, condiciones de las pólizas y tarifas, pago de siniestros, fianzas y propiedad de los bienes indemnizados.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sg-solvencia-reservas",
+          "nombre": "Régimen de solvencia y reservas técnicas",
+          "explicacion": "Las compañías de seguros y reaseguros deben mantener en todo tiempo los requerimientos de solvencia que fije la regulación, considerando el régimen de reservas técnicas, el sistema de administración de riesgos, el patrimonio técnico y las inversiones obligatorias. Deben constituir reservas técnicas por riesgos en curso, matemáticas, catastróficas, por obligaciones pendientes y por desviación de siniestralidad, con la metodología que defina la Junta, y esas reservas deben cubrir la totalidad de los riesgos asumidos. El patrimonio técnico mínimo se establece en función de un nivel de capital adecuado.",
+          "ejemplo": "Una aseguradora que vendió muchas pólizas anuales en diciembre mantiene una reserva de riesgos en curso por la parte de esas primas que corresponde a los meses que aún no transcurren.",
+          "puntos_clave": [
+            "Reservas técnicas, riesgos, patrimonio técnico e inversiones.",
+            "Cinco tipos de reservas.",
+            "Las reservas cubren todos los riesgos asumidos."
+          ],
+          "errores_frecuentes": [
+            "Tratar toda la prima cobrada como ingreso ganado.",
+            "Confundir reservas técnicas con utilidades retenidas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, art. 22"
+          }
+        },
+        {
+          "id": "sg-polizas",
+          "nombre": "Pólizas y tarifas",
+          "explicacion": "La Superintendencia de Compañías, Valores y Seguros determina las cláusulas obligatorias y las prohibidas de las pólizas; las prohibidas se tienen por no escritas. Las tarifas de primas y las notas técnicas requieren su autorización previa. Las pólizas deben, entre otras condiciones, responder a la igualdad y equidad entre las partes, estar redactadas de forma clara y fácil de comprender, con caracteres legibles, destacar las coberturas básicas y las exclusiones, listar los documentos necesarios para reclamar un siniestro y señalar la moneda de pago. La ley añade que las condiciones de las pólizas y las tarifas resultan del régimen de libre competencia del mercado de seguros.",
+          "ejemplo": "Antes de contratar un seguro de auto, el cliente revisa en la póliza la sección destacada de exclusiones y la lista de documentos que deberá presentar si sufre un choque.",
+          "puntos_clave": [
+            "Cláusulas obligatorias y prohibidas.",
+            "Tarifas y notas técnicas autorizadas.",
+            "Redacción clara y exclusiones destacadas."
+          ],
+          "errores_frecuentes": [
+            "Firmar sin leer las exclusiones.",
+            "Creer que una cláusula prohibida obliga al asegurado."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, arts. 25 y 75"
+          }
+        },
+        {
+          "id": "sg-pago-siniestros",
+          "nombre": "Pago de siniestros y reclamos",
+          "explicacion": "Las compañías de seguros y reaseguros deben pagar el seguro contratado o la parte de la pérdida debidamente comprobada dentro de los treinta días siguientes a la reclamación, acompañada de los documentos que exige la póliza. Dentro de ese plazo pueden objetar el pago por escrito y de forma motivada; si el asegurado no acepta la objeción, puede reclamar ante la Superintendencia de Compañías, Valores y Seguros, que resuelve administrativamente y puede ordenar el pago en diez días. El incumplimiento del pago ordenado es causal de liquidación forzosa de la aseguradora.",
+          "ejemplo": "Un asegurado presenta su reclamo con todos los documentos el 1 de marzo; si la aseguradora no paga ni objeta motivadamente hasta fines de marzo, incumple el plazo legal.",
+          "puntos_clave": [
+            "Plazo de treinta días.",
+            "Objeción escrita y motivada.",
+            "Reclamo ante la Superintendencia."
+          ],
+          "errores_frecuentes": [
+            "Contar el plazo antes de entregar los documentos.",
+            "Desconocer la vía de reclamo administrativo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, art. 42"
+          }
+        },
+        {
+          "id": "sg-fianzas-salvamento",
+          "nombre": "Fianzas y propiedad de los bienes indemnizados",
+          "explicacion": "Con autorización del Superintendente, una empresa de seguros puede otorgar mediante pólizas fianzas o garantías por cuenta de terceros, siempre que no estén prohibidas por la ley; el afianzado debe entregar a la aseguradora contragarantías personales o reales que respalden el riesgo. Por otro lado, cuando la aseguradora paga una indemnización por el valor total de los bienes asegurados, adquiere la propiedad de esos bienes; en pérdidas parciales, los bienes pasan a su propiedad cuando los ha reemplazado, salvo que renuncie a ese derecho.",
+          "ejemplo": "Una constructora contrata una póliza de fiel cumplimiento para una obra pública y entrega una hipoteca como contragarantía; un auto declarado pérdida total y pagado por completo pasa a ser de la aseguradora.",
+          "puntos_clave": [
+            "Fianzas y garantías mediante pólizas.",
+            "Contragarantías del afianzado.",
+            "Propiedad de los bienes tras indemnización total."
+          ],
+          "errores_frecuentes": [
+            "Pensar que el asegurado conserva el bien indemnizado totalmente.",
+            "Creer que una fianza no requiere contragarantías."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro III, Ley General de Seguros, arts. 43 y 68"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sg-actuarial",
+      "nombre": "Fundamentos actuariales",
+      "orden": 5,
+      "descripcion": "Valor esperado, ley de los grandes números, tablas de mortalidad, probabilidad de supervivencia y prima de riesgo de un seguro de vida.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "sg-valor-esperado",
+          "nombre": "Valor esperado",
+          "explicacion": "Muchos experimentos tienen valores asociados a sus resultados, como el dinero ganado o perdido. El valor esperado es la media de esos valores que se observaría al repetir el experimento muchas veces, y se calcula sumando cada valor multiplicado por su probabilidad. Es una media ponderada en la que los pesos son las probabilidades; cuando todas son iguales, coincide con la media simple. El valor esperado puede no ser un resultado posible del experimento: al lanzar un dado es 3,5.",
+          "ejemplo": "Una póliza paga USD 40.000 con probabilidad 0,001 y USD 8.000 con probabilidad 0,004; en otro caso no paga. El pago esperado es 40.000 × 0,001 + 8.000 × 0,004 = USD 72.",
+          "puntos_clave": [
+            "E = Σ valor × probabilidad.",
+            "Media ponderada por probabilidades.",
+            "No tiene que ser un resultado posible."
+          ],
+          "errores_frecuentes": [
+            "Olvidar los resultados con valor cero en las probabilidades.",
+            "Usar probabilidades que no suman 1."
+          ],
+          "formulas": [
+            "valor-esperado"
+          ],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/7-11-expected-value",
+            "seccion": "7.11 Expected Value"
+          }
+        },
+        {
+          "id": "sg-ley-grandes-numeros",
+          "nombre": "Interpretación del valor esperado y ley de los grandes números",
+          "explicacion": "El valor esperado se interpreta como la media de los valores que se observarían si el experimento se repitiera muchas veces; esta interpretación se apoya en un teorema de la probabilidad llamado ley de los grandes números. Cuántas repeticiones son «muchas» depende del experimento: deben ser suficientes para que cada resultado aparezca varias veces. Por eso una aseguradora necesita muchos asegurados: con un gran número de pólizas, el costo promedio por póliza se acerca al pago esperado y la prima calculada con él resulta suficiente.",
+          "ejemplo": "Una aseguradora con solo diez pólizas de vida puede tener un año sin muertes o uno con dos; con cien mil pólizas, el número de siniestros se acerca mucho al esperado según la tabla de mortalidad.",
+          "puntos_clave": [
+            "Media de muchas repeticiones.",
+            "Ley de los grandes números.",
+            "Importancia de un gran número de asegurados."
+          ],
+          "errores_frecuentes": [
+            "Esperar que pocos casos reproduzcan el valor esperado.",
+            "Interpretar el valor esperado como un resultado seguro."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-cmath",
+            "url": "https://openstax.org/books/contemporary-mathematics/pages/7-11-expected-value",
+            "seccion": "7.11 Expected Value"
+          }
+        },
+        {
+          "id": "sg-tablas-mortalidad",
+          "nombre": "Tablas de mortalidad y probabilidad de supervivencia",
+          "explicacion": "Una tabla de mortalidad de período se basa en la experiencia de mortalidad de una población durante un período corto. Para cada edad exacta presenta la probabilidad de morir dentro de un año (qx), el número de sobrevivientes de cada 100.000 nacidos vivos (lx) y la esperanza de vida, que es el promedio de años que le quedan a una persona de esa edad con las tasas de mortalidad del año de la tabla. Dividiendo los sobrevivientes de dos edades se obtiene la probabilidad de sobrevivir de una a otra. La tabla 2023 de la Administración del Seguro Social de EE. UU. es pública y sirve para practicar; para un seguro en Ecuador se usa una tabla de la población local.",
+          "ejemplo": "En la tabla 2023 de la SSA llegan a los 30 años 97.162 de cada 100.000 hombres y a los 65, 79.084: la probabilidad de que un hombre de 30 llegue a 65 es 79.084 ÷ 97.162 = 0,814.",
+          "puntos_clave": [
+            "qx: probabilidad de morir en el año.",
+            "lx: sobrevivientes de 100.000 nacidos.",
+            "Supervivencia = lx+n ÷ lx."
+          ],
+          "errores_frecuentes": [
+            "Dividir para 100.000 en lugar de los sobrevivientes a la edad inicial.",
+            "Usar una tabla de otro país sin advertirlo."
+          ],
+          "formulas": [
+            "probabilidad-supervivencia"
+          ],
+          "fuente": {
+            "ref": "ssa-tabla-vida",
+            "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+            "seccion": "Period Life Table, 2023"
+          }
+        },
+        {
+          "id": "sg-prima-vida",
+          "nombre": "Prima de riesgo de un seguro de vida",
+          "explicacion": "Un seguro de vida temporal a un año paga la suma asegurada si la persona muere dentro del año. Su prima de riesgo, la parte actuarialmente justa, es el pago esperado: la suma asegurada multiplicada por la probabilidad de morir en el año (qx) de la tabla de mortalidad. La prima comercial que cobra la aseguradora es mayor, porque debe cubrir además los gastos de operación y dejar margen de utilidad, y en seguros de varios años también se considera el interés.",
+          "ejemplo": "Con la tabla 2023 de la SSA, la probabilidad de morir en el año de un hombre de 40 es 0,003115: la prima de riesgo de un seguro de USD 100.000 es 100.000 × 0,003115 = USD 311,50.",
+          "puntos_clave": [
+            "Prima de riesgo = suma asegurada × qx.",
+            "Prima comercial mayor que la de riesgo.",
+            "Interés en seguros de varios años."
+          ],
+          "errores_frecuentes": [
+            "Usar la probabilidad de supervivencia en lugar de la de muerte.",
+            "Presentar la prima de riesgo como precio final."
+          ],
+          "formulas": [
+            "prima-riesgo-vida"
+          ],
+          "fuente": {
+            "ref": "ssa-tabla-vida",
+            "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+            "seccion": "Period Life Table, 2023"
+          }
+        }
+      ]
+    }
+  ]
+}

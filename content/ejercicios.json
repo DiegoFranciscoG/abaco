@@ -11043,5 +11043,386 @@
     },
     "materia": "mercado-valores",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-prima-pura-autos",
+    "subtema": "sg-grupos-riesgo",
+    "formula": "prima-pura",
+    "enunciado": "De 200 asegurados de auto, 150 no tienen siniestros, 40 tienen daños promedio de USD 2.000 y 10 de USD 20.000. ¿Qué prima igual para todos cubre exactamente los daños?",
+    "datos": {
+      "n": [
+        150,
+        40,
+        10
+      ],
+      "c": [
+        0,
+        2000,
+        20000
+      ]
+    },
+    "calculo": "SUMPRODUCT(n, c) / SUM(n)",
+    "respuesta": 1400,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Daño total = 150 × 0 + 40 × 2.000 + 10 × 20.000 = 280.000",
+      "Prima = 280.000 ÷ 200 = 1.400"
+    ],
+    "pistas": [
+      "Incluye a quienes no tienen siniestros en el total de asegurados."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-prima-pura-hogar",
+    "subtema": "sg-grupos-riesgo",
+    "formula": "prima-pura",
+    "enunciado": "De 500 viviendas aseguradas, 480 no tienen siniestros, 15 tienen daños de USD 4.000 y 5 de USD 60.000. ¿Cuál es la prima pura por vivienda?",
+    "datos": {
+      "n": [
+        480,
+        15,
+        5
+      ],
+      "c": [
+        0,
+        4000,
+        60000
+      ]
+    },
+    "calculo": "SUMPRODUCT(n, c) / SUM(n)",
+    "respuesta": 720,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Daño total = 15 × 4.000 + 5 × 60.000 = 360.000",
+      "Prima = 360.000 ÷ 500 = 720"
+    ],
+    "pistas": [
+      "Divide para el total de viviendas, no solo para las siniestradas."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-deducible-paga",
+    "subtema": "sg-costo-compartido",
+    "formula": "indemnizacion-deducible",
+    "enunciado": "Una póliza tiene un deducible de USD 500. El asegurado sufre un daño de USD 3.200. ¿Cuánto paga la aseguradora?",
+    "datos": {
+      "L": 3200,
+      "D": 500
+    },
+    "calculo": "MAX(L - D, 0)",
+    "respuesta": 2700,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "I = 3.200 − 500 = 2.700"
+    ],
+    "pistas": [
+      "El asegurado paga primero el deducible."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-deducible-no-paga",
+    "subtema": "sg-costo-compartido",
+    "formula": "indemnizacion-deducible",
+    "enunciado": "Con el mismo deducible de USD 500, el asegurado sufre un daño de USD 400. ¿Cuánto paga la aseguradora?",
+    "datos": {
+      "L": 400,
+      "D": 500
+    },
+    "calculo": "MAX(L - D, 0)",
+    "respuesta": 0,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "400 − 500 = −100",
+      "La indemnización no puede ser negativa: I = 0"
+    ],
+    "pistas": [
+      "Si la pérdida es menor que el deducible, el asegurado la asume completa."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-coaseguro-80",
+    "subtema": "sg-costo-compartido",
+    "formula": "indemnizacion-coaseguro",
+    "enunciado": "Un seguro médico cubre el 80 % de una cirugía de USD 12.000. ¿Cuánto paga la aseguradora?",
+    "datos": {
+      "c": 0.8,
+      "L": 12000
+    },
+    "calculo": "c * L",
+    "respuesta": 9600,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "I = 0,80 × 12.000 = 9.600",
+      "El paciente paga 2.400"
+    ],
+    "pistas": [
+      "Expresa el porcentaje como proporción."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-coaseguro-70",
+    "subtema": "sg-costo-compartido",
+    "formula": "indemnizacion-coaseguro",
+    "enunciado": "Una póliza de hogar con coaseguro paga el 70 % de los daños. Si una inundación causa daños por USD 25.000, ¿cuánto paga la aseguradora?",
+    "datos": {
+      "c": 0.7,
+      "L": 25000
+    },
+    "calculo": "c * L",
+    "respuesta": 17500,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "I = 0,70 × 25.000 = 17.500",
+      "El propietario asume 7.500"
+    ],
+    "pistas": [
+      "El asegurado paga el porcentaje restante."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-esperado-poliza",
+    "subtema": "sg-valor-esperado",
+    "formula": "valor-esperado",
+    "enunciado": "Una póliza paga USD 40.000 con probabilidad 0,001, USD 8.000 con probabilidad 0,004 y nada con probabilidad 0,995. ¿Cuál es el pago esperado?",
+    "datos": {
+      "x": [
+        40000,
+        8000,
+        0
+      ],
+      "p": [
+        0.001,
+        0.004,
+        0.995
+      ]
+    },
+    "calculo": "SUMPRODUCT(x, p)",
+    "respuesta": 72,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "40.000 × 0,001 = 40",
+      "8.000 × 0,004 = 32",
+      "0 × 0,995 = 0",
+      "E = 72"
+    ],
+    "pistas": [
+      "Multiplica cada pago por su probabilidad y suma."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/7-11-expected-value",
+      "seccion": "7.11 Expected Value"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-esperado-proyecto",
+    "subtema": "sg-valor-esperado",
+    "formula": "valor-esperado",
+    "enunciado": "Un lanzamiento de producto puede ganar USD 5.000 con probabilidad 0,6, ganar USD 1.000 con probabilidad 0,3 o perder USD 2.000 con probabilidad 0,1. ¿Cuál es la ganancia esperada?",
+    "datos": {
+      "x": [
+        5000,
+        1000,
+        -2000
+      ],
+      "p": [
+        0.6,
+        0.3,
+        0.1
+      ]
+    },
+    "calculo": "SUMPRODUCT(x, p)",
+    "respuesta": 3100,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "5.000 × 0,6 = 3.000",
+      "1.000 × 0,3 = 300",
+      "−2.000 × 0,1 = −200",
+      "E = 3.100"
+    ],
+    "pistas": [
+      "Las pérdidas entran con signo negativo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/7-11-expected-value",
+      "seccion": "7.11 Expected Value"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-supervivencia-hombre",
+    "subtema": "sg-tablas-mortalidad",
+    "formula": "probabilidad-supervivencia",
+    "enunciado": "Según la tabla 2023 de la SSA, de cada 100.000 hombres llegan 94.727 a los 40 años y 84.544 a los 60. ¿Qué probabilidad tiene un hombre de 40 de llegar a los 60?",
+    "datos": {
+      "lxn": 84544,
+      "lx": 94727
+    },
+    "calculo": "lxn / lx",
+    "respuesta": 0.8925,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "p = 84.544 ÷ 94.727",
+      "p = 0,8925 (89,3 %)"
+    ],
+    "pistas": [
+      "Divide para los sobrevivientes a la edad inicial."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ssa-tabla-vida",
+      "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "seccion": "Period Life Table, 2023"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-supervivencia-mujer",
+    "subtema": "sg-tablas-mortalidad",
+    "formula": "probabilidad-supervivencia",
+    "enunciado": "En la misma tabla, de cada 100.000 mujeres llegan 98.513 a los 30 años y 87.399 a los 65. ¿Qué probabilidad tiene una mujer de 30 de llegar a los 65?",
+    "datos": {
+      "lxn": 87399,
+      "lx": 98513
+    },
+    "calculo": "lxn / lx",
+    "respuesta": 0.8872,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "p = 87.399 ÷ 98.513",
+      "p = 0,8872 (88,7 %)"
+    ],
+    "pistas": [
+      "Compara con la probabilidad de un hombre de la misma edad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ssa-tabla-vida",
+      "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "seccion": "Period Life Table, 2023"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-prima-vida-40",
+    "subtema": "sg-prima-vida",
+    "formula": "prima-riesgo-vida",
+    "enunciado": "La probabilidad de que un hombre de 40 años muera dentro de un año es 0,003115 (tabla 2023 de la SSA). ¿Cuál es la prima de riesgo de un seguro de USD 100.000 a un año?",
+    "datos": {
+      "C": 100000,
+      "q": 0.003115
+    },
+    "calculo": "C * q",
+    "respuesta": 311.5,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "PR = 100.000 × 0,003115 = 311,50"
+    ],
+    "pistas": [
+      "Usa la probabilidad de morir, no la de sobrevivir."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ssa-tabla-vida",
+      "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "seccion": "Period Life Table, 2023"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-sg-prima-vida-65",
+    "subtema": "sg-prima-vida",
+    "formula": "prima-riesgo-vida",
+    "enunciado": "La probabilidad de que una mujer de 65 años muera dentro de un año es 0,010188 (tabla 2023 de la SSA). ¿Cuál es la prima de riesgo de un seguro de USD 20.000 a un año?",
+    "datos": {
+      "C": 20000,
+      "q": 0.010188
+    },
+    "calculo": "C * q",
+    "respuesta": 203.76,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "PR = 20.000 × 0,010188 = 203,76"
+    ],
+    "pistas": [
+      "La prima comercial sería mayor por gastos y utilidad."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "ssa-tabla-vida",
+      "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "seccion": "Period Life Table, 2023"
+    },
+    "materia": "seguros",
+    "actualizado_en": "2026-10-26"
   }
 ]

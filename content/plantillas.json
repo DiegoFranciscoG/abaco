@@ -1769,5 +1769,79 @@
       "seccion": "15.4 Applications in Performance Measurement"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "seguros-primas-indemnizaciones",
+    "nombre": "Prima pura, deducible, coaseguro y prima de vida",
+    "descripcion": "Calcula la prima pura de un grupo de asegurados, la indemnización con deducible y con coaseguro, y la prima de riesgo de un seguro de vida a un año.",
+    "materias": [
+      "seguros"
+    ],
+    "celdas": {
+      "A1": "Subgrupo",
+      "B1": "Asegurados",
+      "C1": "Daño promedio (USD)",
+      "A2": "Sin siniestro",
+      "B2": 60,
+      "C2": 100,
+      "A3": "Daño medio",
+      "B3": 30,
+      "C3": 1000,
+      "A4": "Daño grave",
+      "B4": 10,
+      "C4": 15000,
+      "A5": "Prima pura",
+      "C5": "=SUMPRODUCT(B2:B4,C2:C4)/SUM(B2:B4)",
+      "A7": "Pérdida (USD)",
+      "B7": 2300,
+      "A8": "Deducible (USD)",
+      "B8": 500,
+      "A9": "Pago con deducible",
+      "B9": "=MAX(B7-B8,0)",
+      "A10": "Coaseguro (proporción)",
+      "B10": 0.8,
+      "A11": "Pago con coaseguro",
+      "B11": "=B10*B7",
+      "A13": "Suma asegurada (USD)",
+      "B13": 50000,
+      "A14": "Probabilidad de morir en el año (qx)",
+      "B14": 0.016455,
+      "A15": "Prima de riesgo",
+      "B15": "=B13*B14"
+    },
+    "formatos": {
+      "C5": "moneda",
+      "B9": "moneda",
+      "B11": "moneda",
+      "B15": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "C5",
+        "esperado": 1860,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B9",
+        "esperado": 1800,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B11",
+        "esperado": 1840,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B15",
+        "esperado": 822.75,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

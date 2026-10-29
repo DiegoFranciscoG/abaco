@@ -891,5 +891,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "seguros",
+    "nombre": "Seguros y fundamentos actuariales",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Cómo funciona el seguro, primas actuarialmente justas, riesgo moral y selección adversa, el sistema de seguro privado ecuatoriano según la Ley General de Seguros, solvencia y siniestros, valor esperado y tablas de mortalidad.",
+    "sinonimos": [
+      "fundamentos de seguros",
+      "gestión de seguros",
+      "matemática actuarial",
+      "legislación de seguros",
+      "seguros privados",
+      "actuaría"
+    ],
+    "herramientas": [
+      "estadistica",
+      "tarjetas",
+      "notas"
+    ],
+    "orden": 40,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

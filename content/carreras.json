@@ -1251,6 +1251,16 @@
         "planes": 1
       },
       {
+        "materia": "seguros",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          5,
+          6
+        ],
+        "planes": 1
+      },
+      {
         "materia": "inteligencia-negocios",
         "ciclo": 5,
         "ciclos": [
@@ -1276,27 +1286,12 @@
         "planes": 1
       },
       {
-        "nombre": "Fundamentos de Seguros",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Gestión de Riesgos Financieros",
         "ciclo": 5,
         "planes": 1
       },
       {
-        "nombre": "Matemática Actuarial",
-        "ciclo": 5,
-        "planes": 1
-      },
-      {
         "nombre": "Finanzas Públicas",
-        "ciclo": 6,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión de Seguros",
         "ciclo": 6,
         "planes": 1
       },

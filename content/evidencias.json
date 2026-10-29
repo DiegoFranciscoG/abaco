@@ -6048,5 +6048,164 @@
       "cumulative in nature",
       "form of perpetuity"
     ]
+  },
+  {
+    "id": "sg-que-es",
+    "palabras": [
+      "premiums",
+      "among a pool of people",
+      "all insurance involves imperfect information"
+    ]
+  },
+  {
+    "id": "sg-ingresos-ley",
+    "palabras": [
+      "investment income",
+      "fundamental law of insurance"
+    ]
+  },
+  {
+    "id": "sg-grupos-riesgo",
+    "palabras": [
+      "risk group",
+      "actuarially fair"
+    ]
+  },
+  {
+    "id": "sg-seguro-social",
+    "palabras": [
+      "unemployment insurance",
+      "workman's compensation insurance",
+      "social insurance"
+    ]
+  },
+  {
+    "id": "sg-informacion-asimetrica",
+    "palabras": [
+      "asymmetric information",
+      "imperfect information",
+      "lemon"
+    ]
+  },
+  {
+    "id": "sg-riesgo-moral",
+    "palabras": [
+      "moral hazard refers to the case when people engage in riskier behavior with insurance"
+    ]
+  },
+  {
+    "id": "sg-costo-compartido",
+    "palabras": [
+      "deductibles",
+      "copayment",
+      "coinsurance",
+      "one-third less in medical care"
+    ]
+  },
+  {
+    "id": "sg-seleccion-adversa",
+    "palabras": [
+      "adverse selection refers to the problem in which insurance buyers have more information"
+    ]
+  },
+  {
+    "id": "sg-regulacion-precios",
+    "palabras": [
+      "to keep the price of insurance low and to ensure that everyone has insurance"
+    ]
+  },
+  {
+    "id": "sg-integrantes",
+    "palabras": [
+      "integran el sistema de seguro privado",
+      "vigilancia y control de la superintendencia de companias, valores y seguros"
+    ]
+  },
+  {
+    "id": "sg-ramos",
+    "palabras": [
+      "aceptar y ceder riesgos en base",
+      "son aquellas que aseguren los riesgos causados por afecciones, perdidas o danos de la salud, de los bienes o del patrimonio",
+      "son aquellas que cubren los riesgos de las personas",
+      "005-18-sin-cc"
+    ]
+  },
+  {
+    "id": "sg-reaseguro",
+    "palabras": [
+      "otorgar coberturas a una o mas empresas de seguros por los riesgos que estas hayan asumido",
+      "operaciones de retrocesion",
+      "gestionar y colocar reaseguros y retrocesiones"
+    ]
+  },
+  {
+    "id": "sg-peritos-asesores",
+    "palabras": [
+      "inspectores de riesgos",
+      "ajustadores de siniestros",
+      "agencias asesoras productoras de seguros"
+    ]
+  },
+  {
+    "id": "sg-solvencia-reservas",
+    "palabras": [
+      "regimen de reservas tecnicas",
+      "inversiones obligatorias",
+      "reservas por desviacion de siniestralidad"
+    ]
+  },
+  {
+    "id": "sg-polizas",
+    "palabras": [
+      "las tarifas de primas y notas tecnicas requeriran autorizacion previa de la superintendencia",
+      "encontrarse redactada de manera clara, de modo que sea de facil comprension para el asegurado",
+      "resultado del regimen de libre competencia del mercado de seguros"
+    ]
+  },
+  {
+    "id": "sg-pago-siniestros",
+    "palabras": [
+      "dentro del plazo de treinta (30) dias siguientes de presentada la reclamacion",
+      "podran objetar por escrito y motivadamente",
+      "causal de liquidacion forzosa"
+    ]
+  },
+  {
+    "id": "sg-fianzas-salvamento",
+    "palabras": [
+      "fianzas o garantias cuyo otorgamiento no este prohibido por ley",
+      "contragarantias personales o reales",
+      "adquiere la propiedad de los mismos sobre los cuales versa el contrato de seguro"
+    ]
+  },
+  {
+    "id": "sg-valor-esperado",
+    "palabras": [
+      "expected value",
+      "weighted mean"
+    ]
+  },
+  {
+    "id": "sg-ley-grandes-numeros",
+    "palabras": [
+      "law of large numbers",
+      "large enough that every outcome would be expected to appear at least a few times"
+    ]
+  },
+  {
+    "id": "sg-tablas-mortalidad",
+    "palabras": [
+      "period life table",
+      "probability of dying within one year",
+      "number of survivors out of 100,000 born alive"
+    ]
+  },
+  {
+    "id": "sg-prima-vida",
+    "palabras": [
+      "death probability",
+      "0.003115",
+      "0.016455"
+    ]
   }
 ]

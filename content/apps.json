@@ -61,7 +61,8 @@
       "operaciones-logistica",
       "inteligencia-negocios",
       "sistema-financiero",
-      "mercado-valores"
+      "mercado-valores",
+      "seguros"
     ],
     "areas": [
       "tecnologia"
@@ -217,7 +218,8 @@
       "derecho-empresarial",
       "contabilidad-financiera",
       "emprendimiento",
-      "mercado-valores"
+      "mercado-valores",
+      "seguros"
     ],
     "areas": [
       "derecho",

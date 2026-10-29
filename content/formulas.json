@@ -8080,5 +8080,401 @@
     "notas": [],
     "actualizado_en": "2026-10-28",
     "estado": "verificada"
+  },
+  {
+    "id": "prima-pura",
+    "nombre": "Prima pura (pérdida esperada por asegurado)",
+    "categoria": "estadistica",
+    "materias": [
+      "seguros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Prima que cubre exactamente los daños esperados de un grupo: suma de daños de cada subgrupo dividida para el número de asegurados, sin gastos ni utilidad.",
+    "latex": "PP = \\frac{\\sum n_i c_i}{\\sum n_i}",
+    "variables": [
+      {
+        "simbolo": "n_i",
+        "nombre": "n",
+        "significado": "Número de asegurados en cada subgrupo",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "c_i",
+        "nombre": "c",
+        "significado": "Daño promedio de cada subgrupo",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUMPRODUCT(n, c) / SUM(n)"
+    },
+    "excel": {
+      "es": "=SUMAPRODUCTO(n;c)/SUMA(n)",
+      "en": "=SUMPRODUCT(n,c)/SUM(n)"
+    },
+    "ejemplo": {
+      "enunciado": "De 100 conductores, 60 tienen daños de USD 100, 30 de USD 1.000 y 10 de USD 15.000 en un año. ¿Qué prima anual igual para todos cubre exactamente los daños?",
+      "entradas": {
+        "n": [
+          60,
+          30,
+          10
+        ],
+        "c": [
+          100,
+          1000,
+          15000
+        ]
+      },
+      "pasos": [
+        "Daño total = 60 × 100 + 30 × 1.000 + 10 × 15.000 = 186.000",
+        "PP = 186.000 ÷ 100",
+        "PP = 1.860"
+      ],
+      "resultado": 1860,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=(60*100+30*1000+10*15000)/100",
+      "excel_en": "=(60*100+30*1000+10*15000)/100"
+    },
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "supuestos": [
+      "No incluye gastos de administración, utilidad ni rendimiento de las inversiones."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "indemnizacion-deducible",
+    "nombre": "Indemnización con deducible",
+    "categoria": "estadistica",
+    "materias": [
+      "seguros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Lo que paga la aseguradora cuando el asegurado asume primero un monto fijo (deducible): la pérdida menos el deducible, sin bajar de cero.",
+    "latex": "I = \\max(L - D,\\ 0)",
+    "variables": [
+      {
+        "simbolo": "L",
+        "nombre": "L",
+        "significado": "Pérdida cubierta",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "D",
+        "nombre": "D",
+        "significado": "Deducible",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "MAX(L - D, 0)"
+    },
+    "excel": {
+      "es": "=MAX(L-D;0)",
+      "en": "=MAX(L-D,0)"
+    },
+    "ejemplo": {
+      "enunciado": "Una póliza de auto paga las pérdidas que superan un deducible de USD 500. Si el daño es de USD 2.300, ¿cuánto paga la aseguradora?",
+      "entradas": {
+        "L": 2300,
+        "D": 500
+      },
+      "pasos": [
+        "I = 2.300 − 500",
+        "I = 1.800"
+      ],
+      "resultado": 1800,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=MAX(2300-500;0)",
+      "excel_en": "=MAX(2300-500,0)"
+    },
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "supuestos": [
+      "La pérdida no supera la suma asegurada."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "indemnizacion-coaseguro",
+    "nombre": "Indemnización con coaseguro",
+    "categoria": "estadistica",
+    "materias": [
+      "seguros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Lo que paga la aseguradora cuando cubre solo un porcentaje del costo y el asegurado paga el resto.",
+    "latex": "I = c \\times L",
+    "variables": [
+      {
+        "simbolo": "c",
+        "nombre": "c",
+        "significado": "Porcentaje que cubre la aseguradora",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "L",
+        "nombre": "L",
+        "significado": "Pérdida cubierta",
+        "unidad": "USD"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "c * L"
+    },
+    "excel": {
+      "es": "=c*L",
+      "en": "=c*L"
+    },
+    "ejemplo": {
+      "enunciado": "Un seguro de hogar paga el 80 % de los costos de reparación tras un incendio. Si la reparación cuesta USD 15.000, ¿cuánto paga la aseguradora y cuánto el propietario?",
+      "entradas": {
+        "c": 0.8,
+        "L": 15000
+      },
+      "pasos": [
+        "I = 0,80 × 15.000 = 12.000",
+        "El propietario paga 15.000 − 12.000 = 3.000"
+      ],
+      "resultado": 12000,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,8*15000",
+      "excel_en": "=0.8*15000"
+    },
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information",
+      "seccion": "16.2 Insurance and Imperfect Information"
+    },
+    "supuestos": [],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "valor-esperado",
+    "nombre": "Valor esperado",
+    "categoria": "estadistica",
+    "materias": [
+      "seguros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Suma de cada valor posible multiplicado por su probabilidad; es la media que se observaría al repetir el experimento muchas veces.",
+    "latex": "E = \\sum x_i \\, p_i",
+    "variables": [
+      {
+        "simbolo": "x_i",
+        "nombre": "x",
+        "significado": "Valor de cada resultado",
+        "unidad": "según el problema"
+      },
+      {
+        "simbolo": "p_i",
+        "nombre": "p",
+        "significado": "Probabilidad de cada resultado (suman 1)",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUMPRODUCT(x, p)"
+    },
+    "excel": {
+      "es": "=SUMAPRODUCTO(x;p)",
+      "en": "=SUMPRODUCT(x,p)"
+    },
+    "ejemplo": {
+      "enunciado": "Al lanzar un dado común de seis caras, ¿cuál es el valor esperado del número que sale?",
+      "entradas": {
+        "x": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "p": [
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667,
+          0.1666666667
+        ]
+      },
+      "pasos": [
+        "E = (1 + 2 + 3 + 4 + 5 + 6) × 1/6",
+        "E = 21 ÷ 6",
+        "E = 3,5"
+      ],
+      "resultado": 3.5,
+      "unidad": "puntos",
+      "tolerancia": 0.0001,
+      "excel_es": "=(1+2+3+4+5+6)/6",
+      "excel_en": "=(1+2+3+4+5+6)/6"
+    },
+    "fuente": {
+      "ref": "os-cmath",
+      "url": "https://openstax.org/books/contemporary-mathematics/pages/7-11-expected-value",
+      "seccion": "7.11 Expected Value"
+    },
+    "supuestos": [],
+    "notas": [
+      "Es una media ponderada en la que los pesos son las probabilidades."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "probabilidad-supervivencia",
+    "nombre": "Probabilidad de sobrevivir entre dos edades (tabla de mortalidad)",
+    "categoria": "estadistica",
+    "materias": [
+      "seguros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Proporción de las personas vivas a una edad que siguen vivas a una edad mayor, con el número de sobrevivientes de la tabla de mortalidad.",
+    "latex": "{}_{n}p_x = \\frac{l_{x+n}}{l_x}",
+    "variables": [
+      {
+        "simbolo": "l_{x+n}",
+        "nombre": "lxn",
+        "significado": "Sobrevivientes a la edad final",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "l_x",
+        "nombre": "lx",
+        "significado": "Sobrevivientes a la edad inicial",
+        "unidad": "personas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "lxn / lx"
+    },
+    "excel": {
+      "es": "=lxn/lx",
+      "en": "=lxn/lx"
+    },
+    "ejemplo": {
+      "enunciado": "En la tabla de vida 2023 de la SSA, de cada 100.000 hombres nacidos vivos llegan 97.162 a los 30 años y 79.084 a los 65. ¿Qué probabilidad tiene un hombre de 30 años de llegar a los 65?",
+      "entradas": {
+        "lxn": 79084,
+        "lx": 97162
+      },
+      "pasos": [
+        "p = 79.084 ÷ 97.162",
+        "p = 0,8139 (81,4 %)"
+      ],
+      "resultado": 0.8139,
+      "unidad": "proporción",
+      "tolerancia": 0.0001,
+      "excel_es": "=79084/97162",
+      "excel_en": "=79084/97162"
+    },
+    "fuente": {
+      "ref": "ssa-tabla-vida",
+      "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "seccion": "Period Life Table, 2023"
+    },
+    "supuestos": [
+      "Usa las tasas de mortalidad de un solo año (tabla de período)."
+    ],
+    "notas": [
+      "La tabla corresponde a la población cubierta por la seguridad social de EE. UU.; para Ecuador se debe usar una tabla local."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "prima-riesgo-vida",
+    "nombre": "Prima de riesgo de un seguro de vida a un año",
+    "categoria": "estadistica",
+    "materias": [
+      "seguros"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Pago esperado de un seguro de vida temporal a un año: suma asegurada por la probabilidad de morir dentro del año, sin gastos, utilidad ni interés.",
+    "latex": "PR = C \\times q_x",
+    "variables": [
+      {
+        "simbolo": "C",
+        "nombre": "C",
+        "significado": "Suma asegurada",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "q_x",
+        "nombre": "q",
+        "significado": "Probabilidad de morir dentro de un año a la edad x",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "C * q"
+    },
+    "excel": {
+      "es": "=C*q",
+      "en": "=C*q"
+    },
+    "ejemplo": {
+      "enunciado": "Según la tabla de vida 2023 de la SSA, la probabilidad de que un hombre de 65 años muera dentro de un año es 0,016455. ¿Cuál es la prima de riesgo de un seguro de USD 50.000 a un año?",
+      "entradas": {
+        "C": 50000,
+        "q": 0.016455
+      },
+      "pasos": [
+        "PR = 50.000 × 0,016455",
+        "PR = 822,75"
+      ],
+      "resultado": 822.75,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=50000*0,016455",
+      "excel_en": "=50000*0.016455"
+    },
+    "fuente": {
+      "ref": "ssa-tabla-vida",
+      "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+      "seccion": "Period Life Table, 2023"
+    },
+    "supuestos": [
+      "Prima actuarialmente justa: igual al pago esperado, sin descontar intereses ni sumar gastos."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
   }
 ]

@@ -556,5 +556,14 @@
     "url": "https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/fintech/",
     "licencia": "Se cita y enlaza; redacción propia",
     "fecha_consulta": "2026-10-27"
+  },
+  {
+    "id": "ssa-tabla-vida",
+    "titulo": "Actuarial Life Table: Period Life Table, 2023, as used in the 2026 Trustees Report",
+    "autor_editor": "Social Security Administration (EE. UU.), Office of the Chief Actuary",
+    "tipo": "pagina_oficial",
+    "url": "https://www.ssa.gov/oact/STATS/table4c6.html",
+    "licencia": "Obra del Gobierno de EE. UU. (dominio público); se cita y enlaza",
+    "fecha_consulta": "2026-10-28"
   }
 ]
