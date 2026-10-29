@@ -7434,5 +7434,166 @@
       "nudge individuals in the right direction",
       "save more tomorrow"
     ]
+  },
+  {
+    "id": "rs-piramide",
+    "palabras": [
+      "pyramid of corporate social responsibility (csr)",
+      "economic responsibility as the foundation for the other three responsibilities",
+      "philanthropic responsibility"
+    ]
+  },
+  {
+    "id": "rs-legal-responsable",
+    "palabras": [
+      "two basic dimensions: legality and responsibility",
+      "irresponsible but legal behavior",
+      "certified benefit corporation"
+    ]
+  },
+  {
+    "id": "rs-primacia-accionista",
+    "palabras": [
+      "limited liability",
+      "shareholder primacy",
+      "profit-maximizing interests of its shareholders"
+    ]
+  },
+  {
+    "id": "rs-debate-friedman",
+    "palabras": [
+      "milton friedman",
+      "corporate autocracy",
+      "the community, the environment, employees, media, and the government"
+    ]
+  },
+  {
+    "id": "rs-stakeholders",
+    "palabras": [
+      "stakeholders are the individuals or groups to whom a business has a responsibility",
+      "an organization's first responsibility is to provide a job to employees",
+      "possible score of 200 points"
+    ]
+  },
+  {
+    "id": "rs-ponderar-reclamos",
+    "palabras": [
+      "the law only partially captures the ethical obligations firms owe their stakeholder",
+      "a descriptive approach, an instrumental approach, and a normative approach"
+    ]
+  },
+  {
+    "id": "rs-priorizar",
+    "palabras": [
+      "the first step in stakeholder management",
+      "stakeholder prioritization",
+      "if the firm cannot survive without this particular stakeholder"
+    ]
+  },
+  {
+    "id": "rs-inversionistas",
+    "palabras": [
+      "responsibilities to investors",
+      "limiting their investments to securities",
+      "ceos are being held to higher standards"
+    ]
+  },
+  {
+    "id": "rs-jurisprudencia-tierra",
+    "palabras": [
+      "silent spring",
+      "earth jurisprudence is an interpretation of law and governance",
+      "recognize the legal rights of earth as if it were a person"
+    ]
+  },
+  {
+    "id": "rs-sostenibilidad-negocio",
+    "palabras": [
+      "why sustainability is good for business",
+      "dispose of it properly at a safe facility, recycle and reuse it, or secretly dump it"
+    ]
+  },
+  {
+    "id": "rs-proteccion-ambiental",
+    "palabras": [
+      "business is also responsible for protecting and improving the world's fragile environment",
+      "10 million hectares of the world's forests are cut down annually"
+    ]
+  },
+  {
+    "id": "rs-ods",
+    "palabras": [
+      "17 goals",
+      "169 targets",
+      "end poverty in all its forms everywhere"
+    ]
+  },
+  {
+    "id": "rs-externalidades",
+    "palabras": [
+      "is called an externality",
+      "spillovers",
+      "negative externality"
+    ]
+  },
+  {
+    "id": "rs-comando-control",
+    "palabras": [
+      "command-and-control regulation",
+      "offers no incentive to improve the quality of the environment beyond the standard"
+    ]
+  },
+  {
+    "id": "rs-impuesto-contaminacion",
+    "palabras": [
+      "a pollution charge is a tax imposed on the quantity of pollution that a firm emits",
+      "pay as you throw"
+    ]
+  },
+  {
+    "id": "rs-permisos-propiedad",
+    "palabras": [
+      "marketable permit program (e.g., cap-and-trade)",
+      "ronald coase",
+      "property rights"
+    ]
+  },
+  {
+    "id": "rs-internacional",
+    "palabras": [
+      "international externalities",
+      "biodiversity",
+      "paris climate agreement"
+    ]
+  },
+  {
+    "id": "rs-niif-s1",
+    "palabras": [
+      "the objective of ifrs s1 is to require an entity to disclose information about its sustainability-related risks and opportunities",
+      "access to finance or cost of capital over the short, medium or long term"
+    ]
+  },
+  {
+    "id": "rs-bloques-revelacion",
+    "palabras": [
+      "the governance processes, controls and procedures the entity uses to monitor, manage and oversee sustainability-related risks and opportunities",
+      "progress towards any targets the entity has set"
+    ]
+  },
+  {
+    "id": "rs-niif-s2",
+    "palabras": [
+      "climate-related physical risks",
+      "climate-related transition risks",
+      "integrated into and inform the entity's overall risk management process"
+    ]
+  },
+  {
+    "id": "rs-historia-issb",
+    "palabras": [
+      "in june 2023, the issb issued ifrs s2",
+      "task force on climate-related financial disclosures (tcfd)",
+      "sasb standards"
+    ]
   }
 ]

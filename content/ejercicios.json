@@ -13172,5 +13172,77 @@
     },
     "materia": "economia-industrial",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rs-impuesto-a",
+    "subtema": "rs-impuesto-contaminacion",
+    "formula": "costo-cumplimiento-impuesto-ambiental",
+    "enunciado": "Con los mismos costos de reducción (USD 300, 500, 900, 1.500 y 2.500 por bloque), el impuesto sube a USD 2.000 por bloque emitido. La empresa reduce cuatro bloques y emite uno. ¿Cuál es su costo total?",
+    "datos": {
+      "cr": [
+        300,
+        500,
+        900,
+        1500
+      ],
+      "t": 2000,
+      "ne": 1
+    },
+    "calculo": "SUM(cr) + t * ne",
+    "respuesta": 5200,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Reduce mientras el costo sea menor que 2.000: 300, 500, 900 y 1.500",
+      "Reducción = 3.200",
+      "Impuesto por el bloque restante = 2.000",
+      "CT = 5.200"
+    ],
+    "pistas": [
+      "Compara cada costo de reducción con el nuevo impuesto."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools",
+      "seccion": "12.3 Market-Oriented Environmental Tools"
+    },
+    "materia": "responsabilidad-social",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-rs-impuesto-b",
+    "subtema": "rs-impuesto-contaminacion",
+    "formula": "costo-cumplimiento-impuesto-ambiental",
+    "enunciado": "Una curtiembre emite 4 bloques de efluentes. Reducir cada bloque le cuesta USD 200, 450, 800 y 1.400, y el impuesto es USD 600 por bloque. Reduce los que cuestan menos que el impuesto. ¿Cuál es su costo total?",
+    "datos": {
+      "cr": [
+        200,
+        450
+      ],
+      "t": 600,
+      "ne": 2
+    },
+    "calculo": "SUM(cr) + t * ne",
+    "respuesta": 1850,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Reduce los bloques de 200 y 450 (menores que 600)",
+      "Reducción = 650",
+      "Impuesto = 600 × 2 = 1.200",
+      "CT = 1.850"
+    ],
+    "pistas": [
+      "Los bloques de 800 y 1.400 cuestan más que el impuesto."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools",
+      "seccion": "12.3 Market-Oriented Environmental Tools"
+    },
+    "materia": "responsabilidad-social",
+    "actualizado_en": "2026-10-26"
   }
 ]

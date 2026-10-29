@@ -1132,5 +1132,32 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "responsabilidad-social",
+    "nombre": "Responsabilidad social y sostenibilidad",
+    "areas": [
+      "gestion",
+      "economia"
+    ],
+    "descripcion": "Responsabilidad social empresarial y su pirámide, primacía del accionista frente a la RSE, grupos de interés y su priorización, sostenibilidad y ODS, economía ambiental (externalidades, impuestos y permisos) e información financiera de sostenibilidad (NIIF S1 y S2).",
+    "sinonimos": [
+      "RSE",
+      "responsabilidad social empresarial",
+      "marketing sostenible",
+      "finanzas sostenibles",
+      "sostenibilidad",
+      "gestión ambiental"
+    ],
+    "herramientas": [
+      "foda",
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 49,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

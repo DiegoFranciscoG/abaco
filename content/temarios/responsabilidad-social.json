@@ -1,0 +1,494 @@
+{
+  "materia": "responsabilidad-social",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "rs-concepto",
+      "nombre": "Responsabilidad social empresarial",
+      "orden": 1,
+      "descripcion": "Pirámide de la RSE, legalidad y responsabilidad, responsabilidad limitada y primacía del accionista, y el debate con Milton Friedman.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "rs-piramide",
+          "nombre": "La pirámide de la responsabilidad social",
+          "explicacion": "La responsabilidad social empresarial (RSE) es la preocupación de las empresas por el bienestar de la sociedad en su conjunto, con obligaciones que van más allá de lo que exigen la ley o los contratos. Su pirámide tiene cuatro componentes: la responsabilidad económica, que es la base, porque si la empresa no obtiene utilidades las demás no importan; la legal, cumplir la ley; la ética, hacer lo correcto, justo y equitativo, y la filantrópica, ser un buen ciudadano corporativo. Son distintas, pero juntas forman el todo.",
+          "ejemplo": "Una empresa de alimentos que es rentable, cumple las normas sanitarias, paga precios justos a sus proveedores campesinos y financia comedores escolares cubre los cuatro niveles de la pirámide.",
+          "puntos_clave": [
+            "Más allá de la ley.",
+            "Económica, legal, ética y filantrópica.",
+            "La económica es la base."
+          ],
+          "errores_frecuentes": [
+            "Reducir la RSE a donaciones.",
+            "Olvidar que sin rentabilidad no hay RSE sostenible."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/2-3-managing-a-socially-responsible-business",
+            "seccion": "2.3 Managing a Socially Responsible Business"
+          }
+        },
+        {
+          "id": "rs-legal-responsable",
+          "nombre": "Legalidad y responsabilidad; empresas B",
+          "explicacion": "La responsabilidad social tiene dos dimensiones básicas, la legalidad y la responsabilidad, que permiten clasificar las conductas: hay comportamientos ilegales e irresponsables, que pueden arruinar a la empresa, a sus trabajadores y a sus comunidades, y comportamientos irresponsables pero legales, como hacer afirmaciones de marketing sin sustento. Para mostrar su compromiso, algunas empresas se certifican como empresas B, que deben cumplir altos estándares de desempeño social y ambiental, transparencia y responsabilidad legal.",
+          "ejemplo": "Una empresa que anuncia beneficios de salud de un producto sin estudios que los respalden puede no violar una ley concreta, pero actúa de forma irresponsable y puede ser multada.",
+          "puntos_clave": [
+            "Dimensiones: legalidad y responsabilidad.",
+            "Ilegal e irresponsable; legal pero irresponsable.",
+            "Certificación de empresa B."
+          ],
+          "errores_frecuentes": [
+            "Creer que todo lo legal es responsable.",
+            "Usar la RSE solo como publicidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/2-3-managing-a-socially-responsible-business",
+            "seccion": "2.3 Managing a Socially Responsible Business"
+          }
+        },
+        {
+          "id": "rs-primacia-accionista",
+          "nombre": "Responsabilidad limitada y primacía del accionista",
+          "explicacion": "El derecho societario permite separar la propiedad y la responsabilidad: con la responsabilidad limitada, las pérdidas de los accionistas, directores y administradores no pueden superar lo que pagaron por sus acciones. A cambio de ese beneficio, la sociedad espera algo de las empresas. La primacía del accionista sostiene que la empresa debe operar principalmente en interés de maximizar las utilidades de sus accionistas, como resolvió un tribunal estadounidense en el caso de Henry Ford y su compañía, cuando Ford quiso dejar de pagar grandes dividendos para mejorar productos, ampliar instalaciones y bajar precios.",
+          "ejemplo": "Los accionistas de una sociedad anónima que quiebra pierden lo que invirtieron en acciones, pero no responden con su casa o sus ahorros personales por las deudas de la empresa.",
+          "puntos_clave": [
+            "Responsabilidad limitada.",
+            "Primacía del accionista.",
+            "El caso de Ford y sus dividendos."
+          ],
+          "errores_frecuentes": [
+            "Creer que la responsabilidad limitada no tiene contrapartida social.",
+            "Confundir responsabilidad limitada con impunidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/4-1-corporate-law-and-corporate-responsibility",
+            "seccion": "4.1 Corporate Law and Corporate Responsibility"
+          }
+        },
+        {
+          "id": "rs-debate-friedman",
+          "nombre": "El debate: Friedman frente a la RSE",
+          "explicacion": "Un debate antiguo pregunta si una empresa tiene deberes con otros grupos además de sus accionistas, como clientes, comunidad, ambiente, empleados, medios y gobierno. Economistas como Milton Friedman, Nobel de economía, sostuvieron que las iniciativas de RSE limitan la riqueza del accionista: los accionistas deberían decidir por sí mismos a qué causas sociales apoyar, en lugar de que lo decida un ejecutivo, y demasiado poder de la gerencia para perseguir una agenda social podría llevar a una especie de autocracia corporativa. Para los defensores de la maximización de utilidades es un desperdicio, por ejemplo, reducir la contaminación por debajo de lo que exige la ley.",
+          "ejemplo": "Un gerente que destina parte de las utilidades a un programa ambiental voluntario podría ser criticado por accionistas que preferirían recibir dividendos y donar por su cuenta.",
+          "puntos_clave": [
+            "Deberes con varios grupos de interés.",
+            "Friedman: que decidan los accionistas.",
+            "Riesgo de autocracia corporativa."
+          ],
+          "errores_frecuentes": [
+            "Presentar el debate como resuelto.",
+            "Caricaturizar la postura de Friedman como desinterés social."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/4-1-corporate-law-and-corporate-responsibility",
+            "seccion": "4.1 Corporate Law and Corporate Responsibility"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rs-grupos-interes",
+      "nombre": "Grupos de interés",
+      "orden": 2,
+      "descripcion": "Responsabilidades ante empleados, clientes, público e inversionistas, enfoques para ponderar los reclamos y priorización de los grupos de interés.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "rs-stakeholders",
+          "nombre": "Responsabilidades ante los grupos de interés",
+          "explicacion": "Los grupos de interés son las personas o grupos ante quienes una empresa tiene responsabilidades: sus empleados, sus clientes, el público en general y sus inversionistas. La primera responsabilidad con los empleados es darles trabajo, y con ello tiempo para disfrutar de los frutos de su labor. Las empresas B, verificadas por la organización sin fines de lucro B Lab, se evalúan con una puntuación de impacto sobre 200 puntos en desempeño social y ambiental, transparencia y responsabilidad.",
+          "ejemplo": "Una fábrica que paga salarios justos, informa con honestidad a sus clientes, cuida el barrio donde opera y rinde cuentas a sus socios atiende a sus cuatro grupos de interés principales.",
+          "puntos_clave": [
+            "Empleados, clientes, público e inversionistas.",
+            "Dar empleo como primera responsabilidad.",
+            "Evaluación de impacto de las empresas B."
+          ],
+          "errores_frecuentes": [
+            "Pensar solo en los accionistas.",
+            "Olvidar al público y la comunidad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/2-4-responsibilities-to-stakeholders",
+            "seccion": "2.4 Responsibilities to Stakeholders"
+          }
+        },
+        {
+          "id": "rs-ponderar-reclamos",
+          "nombre": "Ponderar los reclamos de los grupos de interés",
+          "explicacion": "La ley solo recoge en parte las obligaciones éticas de las empresas con sus grupos de interés, y un reclamo puede cuestionar la postura ética incluso de una empresa que cumple la ley. Todos los reclamos merecen ser reconocidos, pero no todos tienen la misma importancia. Según Donaldson y Preston hay tres enfoques: el descriptivo, que ve a la empresa como un conjunto de grupos con intereses propios y busca equilibrarlos; el instrumental, que vincula la buena gestión de los grupos de interés con mejores resultados financieros, y el normativo, que considera a los grupos de interés como fines en sí mismos.",
+          "ejemplo": "La apertura de un gran supermercado puede ser apoyada por accionistas, empleados y consumidores por sus precios, y rechazada por pequeños comerciantes del barrio que temen perder su sustento.",
+          "puntos_clave": [
+            "La ley no agota la ética.",
+            "Reclamos de distinta importancia.",
+            "Enfoques descriptivo, instrumental y normativo."
+          ],
+          "errores_frecuentes": [
+            "Tratar todos los reclamos como iguales.",
+            "Atender solo los que aumentan las utilidades."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/3-2-weighing-stakeholder-claims",
+            "seccion": "3.2 Weighing Stakeholder Claims"
+          }
+        },
+        {
+          "id": "rs-priorizar",
+          "nombre": "Priorización de los grupos de interés",
+          "explicacion": "Si se lleva la idea al extremo, toda persona es grupo de interés de toda empresa, por eso el primer paso de la gestión de grupos de interés es definir y priorizar los significativos y luego considerar sus reclamos. Éticamente ningún grupo debería ser tratado mejor que otro, pero el tiempo y los recursos obligan a priorizar. Cada grupo espera algo distinto: los accionistas, rendimiento; los empleados, tareas interesantes, seguridad, estabilidad y buena remuneración; la comunidad, que no se dañe el ambiente ni la calidad de vida. Si la empresa no puede sobrevivir sin un grupo ni reemplazarlo con facilidad, ese grupo debe tener prioridad.",
+          "ejemplo": "Una empresa que depende de un único proveedor de insumos críticos le da prioridad en sus decisiones, aunque no ceda a todas sus exigencias.",
+          "puntos_clave": [
+            "Definir y priorizar grupos significativos.",
+            "Expectativas distintas por grupo.",
+            "Prioridad a los grupos esenciales e irreemplazables."
+          ],
+          "errores_frecuentes": [
+            "Ceder a todo lo que pide el grupo más poderoso.",
+            "Ignorar los reclamos de grupos con poco poder."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/3-3-ethical-decision-making-and-prioritizing-stakeholders",
+            "seccion": "3.3 Ethical Decision-Making and Prioritizing Stakeholders"
+          }
+        },
+        {
+          "id": "rs-inversionistas",
+          "nombre": "Responsabilidad ante los inversionistas",
+          "explicacion": "Aunque la responsabilidad económica de generar utilidades parece la principal obligación con los accionistas, algunos inversionistas ponen cada vez más énfasis en otros aspectos de la responsabilidad social y limitan sus inversiones a valores, como acciones y bonos, que coinciden con sus creencias éticas y sociales. Además, hoy los directorios, inversionistas, gobiernos, medios e incluso empleados exigen más a los gerentes generales en rendición de cuentas y conducta ética, y algunos son destituidos por faltas éticas y no solo por problemas financieros.",
+          "ejemplo": "Un fondo de inversión que excluye empresas con denuncias graves de contaminación aplica criterios de inversión socialmente responsable.",
+          "puntos_clave": [
+            "Utilidad como obligación económica.",
+            "Inversión socialmente responsable.",
+            "Mayor rendición de cuentas de los gerentes."
+          ],
+          "errores_frecuentes": [
+            "Creer que a los inversionistas solo les importa el dividendo.",
+            "Ignorar el riesgo reputacional de las faltas éticas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/2-4-responsibilities-to-stakeholders",
+            "seccion": "2.4 Responsibilities to Stakeholders"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rs-sostenibilidad",
+      "nombre": "Sostenibilidad y ambiente en la empresa",
+      "orden": 3,
+      "descripcion": "Justicia ambiental y jurisprudencia de la Tierra, sostenibilidad como buena práctica de negocio, protección ambiental y Objetivos de Desarrollo Sostenible.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "rs-jurisprudencia-tierra",
+          "nombre": "Justicia ambiental y jurisprudencia de la Tierra",
+          "explicacion": "La preocupación pública por el ambiente es relativamente reciente y suele fecharse en la década de 1960, con el libro Primavera silenciosa de Rachel Carson, de 1962. Cormac Cullinan propuso la idea de justicia o jurisprudencia de la Tierra: una interpretación del derecho y la gobernanza según la cual la sociedad solo será sostenible si se reconocen los derechos legales de la Tierra como si fuera una persona. Sus defensores señalan que el derecho ya reconoce derechos a entidades artificiales como las corporaciones.",
+          "ejemplo": "La Constitución del Ecuador reconoce derechos a la naturaleza, una idea cercana a la jurisprudencia de la Tierra que el libro analiza.",
+          "puntos_clave": [
+            "Primavera silenciosa, 1962.",
+            "Jurisprudencia de la Tierra de Cullinan.",
+            "Derechos de la naturaleza."
+          ],
+          "errores_frecuentes": [
+            "Creer que el ambiente no puede tener protección legal propia.",
+            "Confundir derechos de la naturaleza con simple regulación ambiental."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/4-2-sustainability-business-and-the-environment",
+            "seccion": "4.2 Sustainability: Business and the Environment"
+          }
+        },
+        {
+          "id": "rs-sostenibilidad-negocio",
+          "nombre": "Por qué la sostenibilidad es buen negocio",
+          "explicacion": "Ninguna empresa bien gestionada debería operar sin conciencia del frágil equilibrio entre la salud del ambiente y las utilidades: la sostenibilidad de largo plazo y la rentabilidad dependen en gran medida de ese equilibrio. Las decisiones cotidianas lo ponen a prueba: una empresa que debe deshacerse de una sustancia tóxica puede eliminarla de forma segura, reciclarla y reutilizarla, o verterla en secreto, que suele ser lo más barato y fácil pero daña el ambiente y expone a la empresa.",
+          "ejemplo": "Una curtiembre que trata sus aguas residuales gasta más hoy, pero evita multas, juicios y el rechazo de clientes que exigen proveedores responsables.",
+          "puntos_clave": [
+            "Equilibrio entre ambiente y utilidades.",
+            "Sostenibilidad y rentabilidad de largo plazo.",
+            "Eliminar, reciclar o verter."
+          ],
+          "errores_frecuentes": [
+            "Elegir la opción más barata sin medir sus riesgos.",
+            "Ver la sostenibilidad solo como costo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-be",
+            "url": "https://openstax.org/books/business-ethics/pages/4-2-sustainability-business-and-the-environment",
+            "seccion": "4.2 Sustainability: Business and the Environment"
+          }
+        },
+        {
+          "id": "rs-proteccion-ambiental",
+          "nombre": "La protección ambiental como responsabilidad",
+          "explicacion": "Las empresas también son responsables de proteger y mejorar el frágil ambiente del planeta. Entre los problemas que señala el libro están la deforestación, con unos 10 millones de hectáreas de bosque taladas cada año; cerca de 10.000 especies en peligro crítico; el daño a la capa de ozono, y la gran cantidad de basura que se descarta por persona cada año. La respuesta empresarial incluye reducir residuos, usar materiales reciclables y cuidar los recursos que usa.",
+          "ejemplo": "Una cadena de supermercados reemplaza las fundas plásticas por bolsas reutilizables y recicla el cartón de sus bodegas.",
+          "puntos_clave": [
+            "Proteger y mejorar el ambiente.",
+            "Deforestación y especies amenazadas.",
+            "Reducción de residuos."
+          ],
+          "errores_frecuentes": [
+            "Creer que el ambiente es solo responsabilidad del Estado.",
+            "Medir el impacto ambiental sin datos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/2-4-responsibilities-to-stakeholders",
+            "seccion": "2.4 Responsibilities to Stakeholders"
+          }
+        },
+        {
+          "id": "rs-ods",
+          "nombre": "Los Objetivos de Desarrollo Sostenible",
+          "explicacion": "La Agenda 2030 de las Naciones Unidas tiene 17 Objetivos de Desarrollo Sostenible (ODS) con 169 metas. Entre ellos están poner fin a la pobreza en todas sus formas, poner fin al hambre y promover la agricultura sostenible, garantizar una vida sana, una educación inclusiva y de calidad, la igualdad de género, la gestión sostenible del agua, una energía asequible y sostenible, y promover un crecimiento económico sostenido, inclusivo y sostenible con trabajo decente para todos. Las empresas suelen alinear su estrategia de sostenibilidad y su marketing con los ODS en los que más impactan.",
+          "ejemplo": "Una empresa textil que garantiza trabajo decente a sus costureras y reduce su consumo de agua alinea su gestión con los ODS 8 y 6.",
+          "puntos_clave": [
+            "17 objetivos y 169 metas.",
+            "Agenda 2030.",
+            "Alineación de la estrategia empresarial."
+          ],
+          "errores_frecuentes": [
+            "Declarar aportes a los ODS sin metas medibles.",
+            "Elegir objetivos que no tienen relación con el negocio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "onu-ods",
+            "url": "https://sdgs.un.org/goals",
+            "seccion": "The 17 Goals"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rs-economia-ambiental",
+      "nombre": "Economía ambiental",
+      "orden": 4,
+      "descripcion": "Externalidades, regulación de comando y control, impuestos a la contaminación, permisos negociables, derechos de propiedad y problemas ambientales internacionales.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "rs-externalidades",
+          "nombre": "Externalidades",
+          "explicacion": "Los mercados privados son una forma eficiente de reunir a compradores y vendedores, pero a veces un intercambio voluntario afecta a un tercero que no es ni comprador ni vendedor. Ese efecto sobre alguien externo al intercambio se llama externalidad, o efecto derrame, y puede ser negativo o positivo. La contaminación es una externalidad negativa típica: quien produce no paga el daño que causa a otros, por lo que el mercado produce más de lo socialmente deseable.",
+          "ejemplo": "Un concierto al aire libre cerca de un barrio satisface a organizadores y asistentes, pero los vecinos que no querían escuchar música esa noche soportan una externalidad negativa.",
+          "puntos_clave": [
+            "Efecto sobre terceros.",
+            "Externalidades negativas y positivas.",
+            "La contaminación como externalidad negativa."
+          ],
+          "errores_frecuentes": [
+            "Creer que todo intercambio voluntario solo afecta a las partes.",
+            "Ignorar las externalidades positivas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution",
+            "seccion": "12.1 The Economics of Pollution"
+          }
+        },
+        {
+          "id": "rs-comando-control",
+          "nombre": "Regulación de comando y control",
+          "explicacion": "La regulación de comando y control fija cuánta contaminación pueden emitir las empresas e incluso qué tecnología deben usar, con sanciones si exceden el límite; así obliga a las empresas a considerar los costos sociales de la contaminación. Ha sido muy exitosa para limpiar el aire y el agua, pero los economistas le ven tres problemas: no da incentivos para mejorar más allá del estándar, es inflexible porque exige lo mismo a empresas que pueden reducir fácil o difícilmente, y está sujeta a compromisos políticos que llenan las leyes de excepciones.",
+          "ejemplo": "Una norma que obliga a todas las fábricas a instalar el mismo filtro no premia a la que podría reducir sus emisiones a la mitad con un cambio de proceso más barato.",
+          "puntos_clave": [
+            "Límites de emisión y tecnologías obligatorias.",
+            "Exitosa pero inflexible.",
+            "Sin incentivo a ir más allá del estándar."
+          ],
+          "errores_frecuentes": [
+            "Creer que el comando y control es siempre ineficaz.",
+            "Ignorar su rigidez frente a costos distintos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/12-2-command-and-control-regulation",
+            "seccion": "12.2 Command-and-Control Regulation"
+          }
+        },
+        {
+          "id": "rs-impuesto-contaminacion",
+          "nombre": "Impuestos a la contaminación",
+          "explicacion": "Un impuesto a la contaminación grava la cantidad que emite una empresa. Le da incentivo a reducir sus emisiones mientras el costo marginal de reducirlas sea menor que el impuesto, y a buscar las tecnologías más baratas para hacerlo: las empresas que pueden reducir barato lo hacen, y las que tienen costos altos pagan el impuesto. Ejemplos son las tarifas de basura según la cantidad que se bota, los impuestos a la gasolina y los depósitos reembolsables por botellas.",
+          "ejemplo": "Con costos de reducción de USD 300, 500, 900, 1.500 y 2.500 por bloque y un impuesto de USD 1.000, la empresa reduce los tres primeros bloques (1.700) y paga el impuesto por dos (2.000): su costo total es USD 3.700.",
+          "puntos_clave": [
+            "Impuesto por unidad emitida.",
+            "Reducir mientras el costo marginal sea menor que el impuesto.",
+            "Flexibilidad y menor costo que el comando y control."
+          ],
+          "errores_frecuentes": [
+            "Creer que la empresa elimina toda la contaminación.",
+            "Comparar el costo total y no el marginal con el impuesto."
+          ],
+          "formulas": [
+            "costo-cumplimiento-impuesto-ambiental"
+          ],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools",
+            "seccion": "12.3 Market-Oriented Environmental Tools"
+          }
+        },
+        {
+          "id": "rs-permisos-propiedad",
+          "nombre": "Permisos negociables y derechos de propiedad",
+          "explicacion": "En un programa de permisos negociables, o de tope y comercio, el gobierno fija la contaminación total permitida y la reparte en permisos que se reducen con el tiempo y que las empresas pueden comprar y vender: las que reducen barato venden sus permisos sobrantes y las que tienen costos altos los compran, de modo que la contaminación baja donde es más barato reducirla. Ronald Coase, Nobel de 1991, mostró que definir con claridad los derechos de propiedad también resuelve externalidades, porque la parte responsable buscará la forma menos costosa de reducir el daño.",
+          "ejemplo": "Si una empresa reduce sus emisiones de 600 a 200 toneladas cuando sus permisos le permiten 300, puede vender 100 toneladas de permisos a otra empresa que necesita emitir.",
+          "puntos_clave": [
+            "Tope total y permisos que se reducen.",
+            "Compra y venta de permisos.",
+            "Teorema de Coase y derechos de propiedad."
+          ],
+          "errores_frecuentes": [
+            "Creer que los permisos negociables aumentan la contaminación total.",
+            "Ignorar quién tiene el derecho de propiedad."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools",
+            "seccion": "12.3 Market-Oriented Environmental Tools"
+          }
+        },
+        {
+          "id": "rs-internacional",
+          "nombre": "Problemas ambientales internacionales",
+          "explicacion": "Algunos problemas ambientales cruzan fronteras y ningún país puede resolverlos solo: el calentamiento global y la pérdida de biodiversidad son externalidades internacionales. Su solución exige negociaciones difíciles entre países de ingresos altos y bajos: los países de bajos ingresos señalan que los ricos han sido históricamente los principales emisores y que es difícil pedir a sus poblaciones que sacrifiquen bienestar por un ambiente más limpio. Esas negociaciones llevaron al Acuerdo de París de 2015, que comprometió a los países firmantes con límites a sus emisiones de dióxido de carbono.",
+          "ejemplo": "Un país amazónico que protege su selva aporta a la biodiversidad mundial, pero necesita apoyo internacional porque renuncia a ingresos de la tala.",
+          "puntos_clave": [
+            "Externalidades internacionales.",
+            "Tensión entre países ricos y pobres.",
+            "Acuerdo de París de 2015."
+          ],
+          "errores_frecuentes": [
+            "Creer que un solo país puede frenar el calentamiento global.",
+            "Ignorar las responsabilidades históricas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-econ",
+            "url": "https://openstax.org/books/principles-economics-3e/pages/12-5-international-environmental-issues",
+            "seccion": "12.5 International Environmental Issues"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rs-informacion-sostenibilidad",
+      "nombre": "Información financiera de sostenibilidad",
+      "orden": 5,
+      "descripcion": "Objetivo de las NIIF S1 y S2, los cuatro bloques de revelación, riesgos físicos y de transición y la historia de las normas del ISSB.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "rs-niif-s1",
+          "nombre": "NIIF S1: información financiera relacionada con la sostenibilidad",
+          "explicacion": "El objetivo de la NIIF S1 es que la entidad revele información sobre sus riesgos y oportunidades relacionados con la sostenibilidad que sea útil para los usuarios de los informes financieros con propósito general al decidir si aportan recursos a la entidad. Exige revelar los riesgos y oportunidades que razonablemente podrían afectar los flujos de efectivo, el acceso a financiamiento o el costo de capital en el corto, mediano o largo plazo, y fija requisitos generales de contenido y presentación.",
+          "ejemplo": "Una exportadora de banano revela que la escasez de agua en su zona podría reducir su producción y elevar su costo de financiamiento en los próximos años.",
+          "puntos_clave": [
+            "Información útil para quienes aportan recursos.",
+            "Riesgos que afectan flujos, financiamiento o costo de capital.",
+            "Requisitos generales de contenido y presentación."
+          ],
+          "errores_frecuentes": [
+            "Confundir el informe de sostenibilidad con publicidad.",
+            "Revelar riesgos sin relación con las perspectivas financieras."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ifrs-s1",
+            "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+            "seccion": "IFRS S1 — objective"
+          }
+        },
+        {
+          "id": "rs-bloques-revelacion",
+          "nombre": "Los cuatro bloques: gobernanza, estrategia, riesgos y desempeño",
+          "explicacion": "La NIIF S1 exige revelar cuatro tipos de información: la gobernanza, es decir, los procesos, controles y procedimientos con que la entidad supervisa y gestiona sus riesgos y oportunidades de sostenibilidad; la estrategia para gestionarlos; los procesos para identificarlos, evaluarlos, priorizarlos y monitorearlos, y el desempeño, incluido el avance hacia las metas que la entidad se fijó o que la ley le exige.",
+          "ejemplo": "Una empresa informa qué comité del directorio supervisa sus riesgos climáticos, su plan para reducirlos, cómo los identifica y cuánto avanzó en su meta de reducción de emisiones.",
+          "puntos_clave": [
+            "Gobernanza.",
+            "Estrategia.",
+            "Gestión de riesgos y desempeño con metas."
+          ],
+          "errores_frecuentes": [
+            "Publicar metas sin informar su avance.",
+            "Omitir quién supervisa los riesgos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ifrs-s1",
+            "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+            "seccion": "IFRS S1 — disclosures"
+          }
+        },
+        {
+          "id": "rs-niif-s2",
+          "nombre": "NIIF S2: riesgos climáticos físicos y de transición",
+          "explicacion": "La NIIF S2 exige revelar información sobre los riesgos y oportunidades relacionados con el clima que podrían afectar las perspectivas de la entidad. Se aplica a los riesgos físicos, como los daños por fenómenos climáticos, y a los riesgos de transición, como los cambios de regulación o de mercado hacia una economía baja en carbono, además de las oportunidades climáticas. Como la S1, pide información sobre gobernanza, estrategia, gestión de riesgos, integrada en la gestión general de riesgos, y desempeño frente a metas climáticas.",
+          "ejemplo": "Una camaronera revela el riesgo físico de inundaciones en sus piscinas y el riesgo de transición de nuevas exigencias de huella de carbono de sus compradores europeos.",
+          "puntos_clave": [
+            "Riesgos físicos.",
+            "Riesgos de transición.",
+            "Oportunidades climáticas y metas."
+          ],
+          "errores_frecuentes": [
+            "Considerar solo los riesgos físicos.",
+            "No integrar el riesgo climático en la gestión de riesgos general."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ifrs-s2",
+            "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s2-climate-related-disclosures/",
+            "seccion": "IFRS S2 — objective and scope"
+          }
+        },
+        {
+          "id": "rs-historia-issb",
+          "nombre": "El ISSB, la TCFD y las normas SASB",
+          "explicacion": "El Consejo de Normas Internacionales de Sostenibilidad (ISSB) publicó en marzo de 2022 el proyecto de la NIIF S1 y, tras analizar los comentarios, emitió en junio de 2023 la NIIF S1 y la NIIF S2. La S2 integra y desarrolla las recomendaciones del Grupo de Trabajo sobre Divulgaciones Financieras Relacionadas con el Clima (TCFD) e incorpora requisitos por industria derivados de las normas SASB. En diciembre de 2025 el ISSB emitió enmiendas sobre la revelación de emisiones de gases de efecto invernadero para reducir la complejidad en la etapa de implementación.",
+          "ejemplo": "Una empresa que ya reportaba con las recomendaciones de la TCFD encuentra en la NIIF S2 una estructura parecida, con requisitos adicionales para su industria.",
+          "puntos_clave": [
+            "ISSB: S1 y S2 en junio de 2023.",
+            "Base en la TCFD y las normas SASB.",
+            "Enmiendas de diciembre de 2025 sobre emisiones."
+          ],
+          "errores_frecuentes": [
+            "Creer que las normas de sostenibilidad son voluntarias en todos los países.",
+            "Confundir el ISSB con el IASB."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ifrs-s2",
+            "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s2-climate-related-disclosures/",
+            "seccion": "IFRS S2 — standard history"
+          }
+        }
+      ]
+    }
+  ]
+}

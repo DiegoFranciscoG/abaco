@@ -405,6 +405,14 @@
         "planes": 2
       },
       {
+        "materia": "responsabilidad-social",
+        "ciclo": 3,
+        "ciclos": [
+          3
+        ],
+        "planes": 1
+      },
+      {
         "materia": "auditoria",
         "ciclo": 4,
         "ciclos": [
@@ -539,11 +547,6 @@
       }
     ],
     "pendientes": [
-      {
-        "nombre": "Contabilidad de Gestión Ambiental",
-        "ciclo": 3,
-        "planes": 1
-      },
       {
         "nombre": "Fundamentos de Contabilidad Gubernamental",
         "ciclo": 5,
@@ -1011,6 +1014,15 @@
         "planes": 2
       },
       {
+        "materia": "responsabilidad-social",
+        "ciclo": 3,
+        "ciclos": [
+          3,
+          7
+        ],
+        "planes": 2
+      },
+      {
         "materia": "finanzas-corporativas",
         "ciclo": 4,
         "ciclos": [
@@ -1097,11 +1109,6 @@
         "planes": 1
       },
       {
-        "nombre": "Marketing Sostenible",
-        "ciclo": 3,
-        "planes": 2
-      },
-      {
         "nombre": "Metodos Cuantitativos",
         "ciclo": 3,
         "planes": 1
@@ -1160,6 +1167,16 @@
         "ciclo": 1,
         "ciclos": [
           1
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "responsabilidad-social",
+        "ciclo": 1,
+        "ciclos": [
+          1,
+          7,
+          8
         ],
         "planes": 1
       },
@@ -1290,11 +1307,6 @@
     ],
     "pendientes": [
       {
-        "nombre": "Responsabilidad Social",
-        "ciclo": 1,
-        "planes": 1
-      },
-      {
         "nombre": "Análisis Exploratorio de Datos",
         "ciclo": 3,
         "planes": 1
@@ -1302,16 +1314,6 @@
       {
         "nombre": "Gestión de Riesgos Financieros",
         "ciclo": 5,
-        "planes": 1
-      },
-      {
-        "nombre": "Gobierno Corporativo",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Finanzas Sostenibles",
-        "ciclo": 8,
         "planes": 1
       }
     ]
@@ -1375,6 +1377,14 @@
       },
       {
         "materia": "marketing-digital",
+        "ciclo": 2,
+        "ciclos": [
+          2
+        ],
+        "planes": 1
+      },
+      {
+        "materia": "responsabilidad-social",
         "ciclo": 2,
         "ciclos": [
           2
@@ -1510,13 +1520,7 @@
         "planes": 1
       }
     ],
-    "pendientes": [
-      {
-        "nombre": "Administración y Responsabilidad Social Empresarial (Rse)",
-        "ciclo": 2,
-        "planes": 1
-      }
-    ]
+    "pendientes": []
   },
   {
     "id": "emprendimiento-innovacion",

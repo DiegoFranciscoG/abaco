@@ -682,5 +682,32 @@
     "url": "https://www.nobelprize.org/prizes/economic-sciences/2017/popular-information/",
     "licencia": "Se cita y enlaza; redacción propia",
     "fecha_consulta": "2026-10-29"
+  },
+  {
+    "id": "ifrs-s1",
+    "titulo": "IFRS S1 General Requirements for Disclosure of Sustainability-related Financial Information",
+    "autor_editor": "IFRS Foundation — International Sustainability Standards Board (ISSB)",
+    "tipo": "norma",
+    "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ifrs-s2",
+    "titulo": "IFRS S2 Climate-related Disclosures",
+    "autor_editor": "IFRS Foundation — International Sustainability Standards Board (ISSB)",
+    "tipo": "norma",
+    "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s2-climate-related-disclosures/",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "onu-ods",
+    "titulo": "The 17 Goals (Objetivos de Desarrollo Sostenible)",
+    "autor_editor": "Naciones Unidas — Departamento de Asuntos Económicos y Sociales",
+    "tipo": "pagina_oficial",
+    "url": "https://sdgs.un.org/goals",
+    "licencia": "Se cita y enlaza; redacción propia",
+    "fecha_consulta": "2026-10-30"
   }
 ]

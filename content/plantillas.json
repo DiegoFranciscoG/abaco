@@ -2466,5 +2466,65 @@
       "seccion": "11.1 Corporate Mergers"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "impuesto-contaminacion-decision",
+    "nombre": "Decisión de reducir contaminación frente a un impuesto",
+    "descripcion": "Compara el costo de reducir cada bloque de contaminación con el impuesto, decide qué bloques reducir y calcula el costo total de la empresa.",
+    "materias": [
+      "responsabilidad-social"
+    ],
+    "celdas": {
+      "A1": "Impuesto por bloque (USD)",
+      "B1": 1000,
+      "A3": "Bloque",
+      "B3": "Costo de reducir (USD)",
+      "C3": "¿Reduce?",
+      "D3": "Costo asumido",
+      "A4": 1,
+      "B4": 300,
+      "C4": "=IF(B4<$B$1,\"Sí\",\"No\")",
+      "D4": "=IF(B4<$B$1,B4,$B$1)",
+      "A5": 2,
+      "B5": 500,
+      "C5": "=IF(B5<$B$1,\"Sí\",\"No\")",
+      "D5": "=IF(B5<$B$1,B5,$B$1)",
+      "A6": 3,
+      "B6": 900,
+      "C6": "=IF(B6<$B$1,\"Sí\",\"No\")",
+      "D6": "=IF(B6<$B$1,B6,$B$1)",
+      "A7": 4,
+      "B7": 1500,
+      "C7": "=IF(B7<$B$1,\"Sí\",\"No\")",
+      "D7": "=IF(B7<$B$1,B7,$B$1)",
+      "A8": 5,
+      "B8": 2500,
+      "C8": "=IF(B8<$B$1,\"Sí\",\"No\")",
+      "D8": "=IF(B8<$B$1,B8,$B$1)",
+      "A10": "Costo total",
+      "D10": "=SUM(D4:D8)"
+    },
+    "formatos": {
+      "B1": "moneda",
+      "D4": "moneda",
+      "D5": "moneda",
+      "D6": "moneda",
+      "D7": "moneda",
+      "D8": "moneda",
+      "D10": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "D10",
+        "esperado": 3700,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools",
+      "seccion": "12.3 Market-Oriented Environmental Tools"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

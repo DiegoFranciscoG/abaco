@@ -10682,5 +10682,79 @@
     ],
     "actualizado_en": "2026-10-29",
     "estado": "verificada"
+  },
+  {
+    "id": "costo-cumplimiento-impuesto-ambiental",
+    "nombre": "Costo total de una empresa frente a un impuesto a la contaminación",
+    "categoria": "economia",
+    "materias": [
+      "responsabilidad-social"
+    ],
+    "areas": [
+      "economia"
+    ],
+    "descripcion": "La empresa reduce la contaminación mientras el costo marginal de hacerlo sea menor que el impuesto, y paga el impuesto por lo que sigue emitiendo: costo total = suma de los costos de reducción elegidos + impuesto × bloques que sigue emitiendo.",
+    "latex": "CT = \\sum CMg_{reducción} + t \\times n_{emitidos}",
+    "variables": [
+      {
+        "simbolo": "CMg_{reducción}",
+        "nombre": "cr",
+        "significado": "Costos de los bloques de contaminación que la empresa decide reducir",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "t",
+        "nombre": "t",
+        "significado": "Impuesto por bloque de contaminación emitido",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "n_{emitidos}",
+        "nombre": "ne",
+        "significado": "Bloques que sigue emitiendo",
+        "unidad": "bloques"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "SUM(cr) + t * ne"
+    },
+    "excel": {
+      "es": "=SUMA(cr)+t*ne",
+      "en": "=SUM(cr)+t*ne"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa emite 50 libras de partículas. Reducir cada bloque de 10 libras le cuesta USD 300, 500, 900, 1.500 y 2.500, y el impuesto es USD 1.000 por bloque emitido. Reduce los tres primeros bloques (más baratos que el impuesto) y emite dos. ¿Cuál es su costo total?",
+      "entradas": {
+        "cr": [
+          300,
+          500,
+          900
+        ],
+        "t": 1000,
+        "ne": 2
+      },
+      "pasos": [
+        "Reducción: 300 + 500 + 900 = 1.700",
+        "Impuesto: 1.000 × 2 = 2.000",
+        "CT = 3.700"
+      ],
+      "resultado": 3700,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=300+500+900+1000*2",
+      "excel_en": "=300+500+900+1000*2"
+    },
+    "fuente": {
+      "ref": "os-econ",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools",
+      "seccion": "12.3 Market-Oriented Environmental Tools"
+    },
+    "supuestos": [
+      "La empresa compara cada bloque con el impuesto y reduce solo los que cuestan menos."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

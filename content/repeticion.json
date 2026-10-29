@@ -176,6 +176,14 @@
     "tipo": "materia"
   },
   {
+    "nombre": "Finanzas Sostenibles",
+    "carreras": 4,
+    "planes": 5,
+    "ciclo_habitual": 3,
+    "materia": "responsabilidad-social",
+    "tipo": "materia"
+  },
+  {
     "nombre": "Prácticas de Servicio Comunitario",
     "carreras": 4,
     "planes": 5,
