@@ -9270,5 +9270,143 @@
     "palabras": [
       "las cuentas de resultados acreedoras se liquidaran al final del ejercicio economico"
     ]
+  },
+  {
+    "id": "ac-calidad-total",
+    "palabras": [
+      "quality is the degree to which the product conforms to a set of predetermined standards",
+      "deming believed that quality control starts with top management"
+    ]
+  },
+  {
+    "id": "ac-seis-sigma",
+    "palabras": [
+      "six sigma quality aims to have every process produce no more than 3.4 defects per million",
+      "this stands for define, measure, analyze, improve, and control"
+    ]
+  },
+  {
+    "id": "ac-pdca",
+    "palabras": [
+      "the cycle consists of four key stages",
+      "act on what was learned, modify the plan, and return to the first stage in the cycle"
+    ]
+  },
+  {
+    "id": "ac-lean-jit",
+    "palabras": [
+      "jit is based on the belief that materials should arrive exactly when they are needed for production"
+    ]
+  },
+  {
+    "id": "ac-iso-9000",
+    "palabras": [
+      "with iso 9001 being the certifiable requirements standard",
+      "to register, a company must go through an audit of its manufacturing and customer service processes"
+    ]
+  },
+  {
+    "id": "ac-iso-14000",
+    "palabras": [
+      "iso 14000, launched after iso 9000",
+      "promotes clean production processes"
+    ]
+  },
+  {
+    "id": "ac-organismos",
+    "palabras": [
+      "the correct determination of the audit time for an initial audit (stage 1 plus stage 2)",
+      "cabs shall identify the audit time of the stage 1 and stage 2 initial audit and of surveillance and re-certification audits"
+    ]
+  },
+  {
+    "id": "ac-apg",
+    "palabras": [
+      "is an informal group of quality management system (qms) experts, auditors and practitioners",
+      "the papers and presentations that make up the content of the website are not definitive"
+    ]
+  },
+  {
+    "id": "ac-tiempo-duracion",
+    "palabras": [
+      "time needed to plan and accomplish a complete and effective audit of the client organization's management system",
+      "spent conducting audit activities from the opening meeting to the closing meeting"
+    ]
+  },
+  {
+    "id": "ac-etapas",
+    "palabras": [
+      "provide a starting point for estimating the audit time of an initial audit"
+    ]
+  },
+  {
+    "id": "ac-dia-auditoria",
+    "palabras": [
+      "the duration of an audit day is normally 8 hours",
+      "shall not be reduced at the planning stages by programming longer hours per working day",
+      "5.3 audit days becomes 5.5 audit days"
+    ]
+  },
+  {
+    "id": "ac-personal-efectivo",
+    "palabras": [
+      "30 part time personnel working 4 hours/day equates to 15 full time personnel",
+      "based on the personnel typically present in peak season operations"
+    ]
+  },
+  {
+    "id": "ac-tabla-qms",
+    "palabras": [
+      "should be seen as a continuum rather than a stepped change",
+      "the starting point of the graph should be personnel of 1 attracting 1.5 days"
+    ]
+  },
+  {
+    "id": "ac-ajustes",
+    "palabras": [
+      "attributing to each factor an additive or subtractive weighting to modify the base figure",
+      "the reduction of audit time of management systems shall not exceed 30%"
+    ]
+  },
+  {
+    "id": "ac-en-sitio",
+    "palabras": [
+      "should not reduce the total on-site duration of management systems audits to less than 80%"
+    ]
+  },
+  {
+    "id": "ac-justificacion",
+    "palabras": [
+      "the audit time determined by the cab and the justification for the determination shall be recorded"
+    ]
+  },
+  {
+    "id": "ac-vigilancia",
+    "palabras": [
+      "being about 1/3 of the audit time spent on the initial certification audit",
+      "it is unlikely that a surveillance audit duration will be less than one (1) audit day"
+    ]
+  },
+  {
+    "id": "ac-recertificacion",
+    "palabras": [
+      "normally approximately 2/3 of the audit time that would be required for an initial certification audit",
+      "not 2/3 of the original time spent on the initial audit"
+    ]
+  },
+  {
+    "id": "ac-ley-calidad",
+    "palabras": [
+      "esta ley tiene como objetivo establecer el marco juridico del sistema ecuatoriano de la calidad",
+      "promover e incentivar la cultura de la calidad y el mejoramiento de la competitividad en la sociedad ecuatoriana"
+    ]
+  },
+  {
+    "id": "ac-acreditacion-designacion",
+    "palabras": [
+      "cumplir las funciones de organismo tecnico nacional, en materia de la acreditacion de evaluacion de la conformidad",
+      "designar temporalmente laboratorios, organismos evaluadores de la conformidad",
+      "regular el proceso de designacion en materia de la evaluacion de la conformidad"
+    ]
   }
 ]

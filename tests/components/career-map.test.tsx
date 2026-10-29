@@ -19,7 +19,7 @@ describe('avance por malla', () => {
     expect(await screen.findByRole('link', { name: 'Elegir carrera' })).toHaveAttribute('href', '/materias');
   });
 
-  it('colors the career map with what the student did, and says what ÁBACO does not cover yet', async () => {
+  it('colors the career map with what the student did, and covers every subject of the plan', async () => {
     await updateProfile({ carrera: 'contabilidad-auditoria', ciclo: 1 }, db);
     await recordAttempt(
       { ejercicioId: 'ej-cg-patrimonio', respuesta: 32700, correcto: true, segundos: 40 },
@@ -38,6 +38,8 @@ describe('avance por malla', () => {
     expect(within(general).getByText(/1\/22 ejercicios · sin examen/)).toBeInTheDocument();
     // An ethics exam of 90 % masters a subject that has no calculation exercises; the exam loads asynchronously.
     expect(await within(map).findByRole('link', { name: /Ética profesional.*Dominada/ })).toBeInTheDocument();
-    expect(within(map).getAllByText('Aún no está en ÁBACO').length).toBeGreaterThan(0);
+    // Every subject of the reviewed plans now has its own temario, so none is shown as missing.
+    expect(within(map).queryAllByText('Aún no está en ÁBACO')).toHaveLength(0);
+    expect(within(map).queryByText(/que aún no tiene/)).not.toBeInTheDocument();
   });
 });

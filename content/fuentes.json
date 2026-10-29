@@ -880,5 +880,32 @@
     "url": "https://www.seps.gob.ec/wp-content/uploads/CUC-codificado-2023_reforma-octubre-2023.pdf",
     "licencia": "Norma pública oficial",
     "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "iaf-md5",
+    "titulo": "IAF MD 5:2023 Determination of Audit Time of Quality, Environmental, and Occupational Health & Safety Management Systems (Issue 4, Version 3)",
+    "autor_editor": "International Accreditation Forum (IAF); archivo mantenido tras su reemplazo por la Global Accreditation Cooperation",
+    "tipo": "norma",
+    "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+    "licencia": "Documento público del IAF (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "iaf-apg",
+    "titulo": "ISO 9001 Auditing Practices Group (APG)",
+    "autor_editor": "International Accreditation Forum (IAF) e ISO/TC 176",
+    "tipo": "pagina_oficial",
+    "url": "https://iaf.nu/en/accreditation-and-assessment-practices-iso9001/",
+    "licencia": "Información pública (se cita y enlaza; redacción propia)",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ro-342-calidad",
+    "titulo": "Registro Oficial, Segundo Suplemento No. 342 (6-08-2026): Acuerdo MPCEI-MPCEI-2026-0040-A, instructivo para la designación en materia de evaluación de la conformidad",
+    "autor_editor": "Ministerio de Producción, Comercio Exterior e Inversiones; archivo electrónico del Registro Oficial de la Corte Constitucional",
+    "tipo": "norma",
+    "url": "https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/eyJjYXJwZXRhIjoicm8iLCJ1dWlkIjoiMjc4ZjdhMDMtMjEyNy00YzdhLWE5ZmEtZThjYzhhZWIwZWE5LnBkZiJ9",
+    "licencia": "Norma pública oficial",
+    "fecha_consulta": "2026-10-30"
   }
 ]

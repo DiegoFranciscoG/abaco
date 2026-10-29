@@ -1452,5 +1452,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "auditoria-calidad",
+    "nombre": "Gestión y auditoría de la calidad",
+    "areas": [
+      "gestion",
+      "contabilidad"
+    ],
+    "descripcion": "Calidad total, Seis Sigma, ciclo PDCA, lean y JIT; normas ISO 9000 e ISO 14000; auditorías de certificación de sistemas de gestión según el documento obligatorio IAF MD 5 (tiempo y duración de auditoría, personal efectivo, tabla QMS 1, ajustes, vigilancia y recertificación); y el Sistema Ecuatoriano de la Calidad.",
+    "sinonimos": [
+      "auditoría de calidad",
+      "gestión de la calidad",
+      "ISO 9001",
+      "auditoría de sistemas de gestión",
+      "certificación de calidad"
+    ],
+    "herramientas": [
+      "editor",
+      "notas",
+      "tarjetas"
+    ],
+    "orden": 61,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

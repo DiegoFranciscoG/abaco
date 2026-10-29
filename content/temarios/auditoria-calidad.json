@@ -1,0 +1,483 @@
+{
+  "materia": "auditoria-calidad",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "ac-calidad",
+      "nombre": "Calidad y mejora continua",
+      "orden": 1,
+      "descripcion": "Qué es la calidad, calidad total, Seis Sigma, el ciclo PDCA y lean con justo a tiempo.",
+      "dificultad": 1,
+      "subtemas": [
+        {
+          "id": "ac-calidad-total",
+          "nombre": "Calidad y calidad total",
+          "explicacion": "Calidad y productividad van de la mano: los productos defectuosos desperdician materiales y tiempo, aumentan los costos y causan insatisfacción. Para el consumidor, la calidad es qué tan bien sirve un producto a su propósito; para el fabricante, el grado en que el producto cumple estándares predeterminados. W. Edwards Deming sostuvo que el control de calidad debe ser una meta de toda la empresa que empieza en la alta dirección, y su enfoque de calidad total (TQM) aplica principios de calidad en todas las áreas.",
+          "ejemplo": "Una panificadora que solo revisa el pan al final de la línea controla calidad; una que involucra a compras, producción y ventas en prevenir defectos practica calidad total.",
+          "puntos_clave": [
+            "Calidad y productividad juntas.",
+            "Cumplir estándares predeterminados.",
+            "TQM: toda la empresa desde la dirección."
+          ],
+          "errores_frecuentes": [
+            "Dejar la calidad solo al área de control.",
+            "Medir la calidad sin escuchar al cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6 Looking for a Better Way: Improving Production and Operations"
+          }
+        },
+        {
+          "id": "ac-seis-sigma",
+          "nombre": "Seis Sigma y DMAIC",
+          "explicacion": "Seis Sigma es un proceso de toda la empresa que mide el número de defectos y los elimina sistemáticamente para acercarse a cero defectos: su meta es que cada proceso produzca no más de 3,4 defectos por millón. También busca diseñar productos que satisfagan al cliente. Su proceso clave es DMAIC: definir, medir, analizar, mejorar y controlar.",
+          "ejemplo": "Un banco que procesa un millón de transferencias al año y solo comete 3 errores estaría en un nivel Seis Sigma.",
+          "puntos_clave": [
+            "3,4 defectos por millón.",
+            "Medir y eliminar defectos.",
+            "DMAIC."
+          ],
+          "errores_frecuentes": [
+            "Aplicar Seis Sigma sin medir primero.",
+            "Saltar la etapa de control."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6, Six Sigma"
+          }
+        },
+        {
+          "id": "ac-pdca",
+          "nombre": "El ciclo de Deming (PDCA)",
+          "explicacion": "El ciclo de Deming, o de Shewhart, integra el aprendizaje en la planificación con cuatro etapas: planificar, crear el plan; hacer, implementarlo; verificar, monitorear los resultados y aprender sobre la efectividad del plan, y actuar, aplicar lo aprendido, modificar el plan y volver a empezar. Es la base de la mejora continua que buscan los sistemas de gestión de la calidad.",
+          "ejemplo": "Una cooperativa planifica reducir el tiempo de atención, prueba un nuevo turno, mide el resultado y ajusta el plan antes de repetir el ciclo.",
+          "puntos_clave": [
+            "Planificar, hacer, verificar, actuar.",
+            "Aprendizaje en la etapa de verificación.",
+            "Mejora continua."
+          ],
+          "errores_frecuentes": [
+            "Planificar sin medir después.",
+            "Detener el ciclo tras la primera vuelta."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pmgmt",
+            "url": "https://openstax.org/books/principles-management/pages/17-2-the-planning-process",
+            "seccion": "17.2 The Planning Process (Deming cycle)"
+          }
+        },
+        {
+          "id": "ac-lean-jit",
+          "nombre": "Lean y justo a tiempo",
+          "explicacion": "La producción esbelta (lean) busca eliminar desperdicios y va de la mano con el justo a tiempo (JIT), que parte de la idea de que los materiales deben llegar exactamente cuando se necesitan para producir y no almacenarse. Con sistemas como MRP o ERP, los fabricantes piden las partes para que lleguen justo a tiempo, y los productos se 'jalan' por el proceso según la demanda, lo que exige un trabajo muy coordinado con los proveedores.",
+          "ejemplo": "Una ensambladora recibe los asientos de sus vehículos el mismo día en que los instala, sin mantener una bodega llena.",
+          "puntos_clave": [
+            "Eliminar desperdicios.",
+            "Materiales cuando se necesitan.",
+            "Producción jalada por la demanda."
+          ],
+          "errores_frecuentes": [
+            "Aplicar JIT con proveedores poco confiables.",
+            "Confundir lean con recortar personal."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6, Lean manufacturing and just-in-time"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ac-normas",
+      "nombre": "Normas ISO y certificación",
+      "orden": 2,
+      "descripcion": "La familia ISO 9000, ISO 14000, los organismos de certificación y la guía de auditoría del APG.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ac-iso-9000",
+          "nombre": "La familia ISO 9000",
+          "explicacion": "ISO 9000 es una familia de normas internacionales que ofrece una forma uniforme de determinar si las plantas y organizaciones de servicios cumplen procedimientos sólidos de control de calidad. Tiene tres normas principales y la ISO 9001 es la que contiene los requisitos certificables. Para registrarse, una empresa debe pasar una auditoría de sus procesos de fabricación y servicio al cliente, desde el diseño y la producción hasta la inspección, el empaque y la comercialización.",
+          "ejemplo": "Una exportadora de flores certifica su sistema de gestión de la calidad con ISO 9001 para demostrar a sus clientes que sus procesos están controlados.",
+          "puntos_clave": [
+            "Familia de normas de calidad.",
+            "ISO 9001: requisitos certificables.",
+            "La certificación exige una auditoría."
+          ],
+          "errores_frecuentes": [
+            "Decir que un producto es 'ISO 9001': se certifica el sistema de gestión.",
+            "Creer que la certificación es permanente sin auditorías."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6, ISO 9000"
+          }
+        },
+        {
+          "id": "ac-iso-14000",
+          "nombre": "ISO 14000 y gestión ambiental",
+          "explicacion": "ISO 14000 se creó después de ISO 9000 en respuesta a problemas ambientales como el calentamiento global y la contaminación del agua, y promueve procesos de producción limpios. Para cumplir ISO 14001, la empresa debe comprometerse a mejorar continuamente su gestión ambiental y a prevenir la contaminación.",
+          "ejemplo": "Una camaronera certificada en ISO 14001 controla sus descargas de agua y fija metas anuales de reducción.",
+          "puntos_clave": [
+            "Normas de gestión ambiental.",
+            "Producción limpia.",
+            "Mejora continua y prevención."
+          ],
+          "errores_frecuentes": [
+            "Confundir ISO 14001 con un permiso ambiental.",
+            "Certificarse sin metas de mejora."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-ib2",
+            "url": "https://openstax.org/books/introduction-business-2e/pages/10-6-looking-for-a-better-way-improving-production-and-operations",
+            "seccion": "10.6, ISO 14000"
+          }
+        },
+        {
+          "id": "ac-organismos",
+          "nombre": "Organismos de certificación y el documento IAF MD 5",
+          "explicacion": "Las auditorías de certificación las realizan organismos de evaluación de la conformidad (CAB, por sus siglas en inglés) acreditados. Determinar bien el tiempo de auditoría de la auditoría inicial, de etapa 1 y etapa 2, es parte integral de la revisión de cada solicitud. El documento obligatorio IAF MD 5 fija disposiciones para que los organismos calculen ese tiempo según el tamaño y la complejidad del cliente, con coherencia entre organismos y entre clientes similares; algunos de sus elementos, como el día de auditoría y el personal efectivo, sirven para otros esquemas basados en ISO/IEC 17021-1.",
+          "ejemplo": "Dos organismos que auditan a empresas similares deberían asignar tiempos de auditoría parecidos porque siguen el mismo documento.",
+          "puntos_clave": [
+            "Organismos acreditados.",
+            "Tiempo de auditoría en la revisión de la solicitud.",
+            "Coherencia entre organismos."
+          ],
+          "errores_frecuentes": [
+            "Negociar el tiempo de auditoría como un precio.",
+            "Ignorar la complejidad del cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "0. Introduction"
+          }
+        },
+        {
+          "id": "ac-apg",
+          "nombre": "Guía de auditoría del APG",
+          "explicacion": "El Grupo de Prácticas de Auditoría de ISO 9001 (APG) es un grupo informal de expertos, auditores y profesionales de sistemas de gestión de la calidad del IAF y del comité técnico ISO/TC 176. Publica documentos y presentaciones gratuitos con el enfoque basado en procesos que es esencial para auditar los requisitos de ISO 9001. Sus documentos no son definitivos ni constituyen requisitos: reflejan distintas visiones sobre la auditoría.",
+          "ejemplo": "Un auditor interno consulta los documentos del APG sobre auditorías remotas para planificar una auditoría por videoconferencia.",
+          "puntos_clave": [
+            "Expertos del IAF e ISO/TC 176.",
+            "Enfoque basado en procesos.",
+            "Guía, no requisito."
+          ],
+          "errores_frecuentes": [
+            "Usar la guía como si fuera la norma.",
+            "Auditar cláusula por cláusula sin seguir los procesos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iaf-apg",
+            "url": "https://iaf.nu/en/accreditation-and-assessment-practices-iso9001/",
+            "seccion": "ISO 9001 Auditing Practices Group"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ac-auditoria",
+      "nombre": "La auditoría de certificación",
+      "orden": 3,
+      "descripcion": "Tiempo y duración de la auditoría, etapas del ciclo, día de auditoría y número efectivo de personal.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ac-tiempo-duracion",
+          "nombre": "Tiempo de auditoría y duración",
+          "explicacion": "El tiempo de auditoría es el necesario para planificar y realizar una auditoría completa y eficaz del sistema de gestión del cliente. La duración es la parte de ese tiempo dedicada a las actividades de auditoría desde la reunión de apertura hasta la de cierre: revisar documentos, comunicarse durante la auditoría, asignar roles a guías y observadores, recoger y verificar información, generar hallazgos, preparar conclusiones y realizar la reunión de cierre.",
+          "ejemplo": "El auditor dedica medio día a preparar el plan; ese tiempo cuenta como tiempo de auditoría, pero la duración empieza en la reunión de apertura.",
+          "puntos_clave": [
+            "Tiempo: planificar y realizar.",
+            "Duración: de la apertura al cierre.",
+            "Hallazgos y conclusiones."
+          ],
+          "errores_frecuentes": [
+            "Confundir duración con tiempo total.",
+            "Omitir la reunión de cierre."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "1.6 y 1.7 Definitions"
+          }
+        },
+        {
+          "id": "ac-etapas",
+          "nombre": "Etapas del ciclo de certificación",
+          "explicacion": "El organismo de certificación debe definir el tiempo de la auditoría inicial, que tiene una etapa 1 y una etapa 2, y el de las auditorías de vigilancia y de recertificación de cada solicitante y cliente certificado. Las tablas del documento dan un punto de partida para estimar el tiempo de la auditoría inicial de sistemas de gestión de la calidad, ambiental y de seguridad y salud en el trabajo.",
+          "ejemplo": "Una empresa recién certificada recibe auditorías de vigilancia en los años siguientes y una recertificación al cerrar el ciclo de tres años.",
+          "puntos_clave": [
+            "Inicial: etapa 1 + etapa 2.",
+            "Vigilancia.",
+            "Recertificación."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo hay una auditoría.",
+            "Planificar la vigilancia sin revisar cambios del cliente."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "0.3 y 4.2"
+          }
+        },
+        {
+          "id": "ac-dia-auditoria",
+          "nombre": "El día de auditoría",
+          "explicacion": "Un día de auditoría dura normalmente 8 horas y puede incluir o no el almuerzo según la legislación local. Las tablas expresan el tiempo en días de auditoría, y el número de días asignados no puede reducirse en la planificación programando jornadas más largas. Si el cálculo da un número decimal, se ajusta al medio día más cercano: 5,3 días se vuelven 5,5 y 5,2 días se vuelven 5.",
+          "ejemplo": "Una auditoría calculada en 3,2 días se planifica en 3 días; una de 3,4 días, en 3,5.",
+          "puntos_clave": [
+            "Normalmente 8 horas.",
+            "No se compensan días con más horas.",
+            "Redondeo al medio día más cercano."
+          ],
+          "errores_frecuentes": [
+            "Reducir días alargando las jornadas.",
+            "Redondear siempre hacia abajo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "1.8 y 2.2 Audit day(s)"
+          }
+        },
+        {
+          "id": "ac-personal-efectivo",
+          "nombre": "Número efectivo de personal",
+          "explicacion": "El número efectivo de personal incluye a todo el personal permanente, temporal y a tiempo parcial dentro del alcance de la certificación, en todos los turnos, y a los contratistas cuando están dentro del alcance. El personal a tiempo parcial se convierte a equivalentes de tiempo completo según sus horas: 30 personas que trabajan 4 horas por día equivalen a 15 a tiempo completo. En operaciones estacionales se usa el personal típico de la temporada alta, y la justificación del cálculo debe estar disponible para el cliente y el organismo de acreditación.",
+          "ejemplo": "Un hotel de playa con 60 empleados en temporada alta y 25 en temporada baja calcula su personal efectivo con los 60.",
+          "puntos_clave": [
+            "Todo el personal del alcance.",
+            "Conversión del tiempo parcial.",
+            "Temporada alta en actividades estacionales."
+          ],
+          "errores_frecuentes": [
+            "Contar solo al personal de planta.",
+            "Usar la temporada baja para reducir el tiempo."
+          ],
+          "formulas": [
+            "personal-efectivo-auditoria"
+          ],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "1.9 y 2.3 Effective number of personnel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ac-calculo",
+      "nombre": "Cálculo y ajustes del tiempo de auditoría",
+      "orden": 4,
+      "descripcion": "Tabla QMS 1, factores de ajuste, reducción máxima, duración mínima en sitio y registro de la justificación.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "ac-tabla-qms",
+          "nombre": "La tabla QMS 1",
+          "explicacion": "La tabla QMS 1 relaciona el número efectivo de personal con el tiempo de la auditoría inicial (etapa 1 + etapa 2) de un sistema de gestión de la calidad. Por ejemplo, de 1 a 5 personas corresponden 1,5 días; de 11 a 15, 2,5 días; de 46 a 65, 5 días; de 176 a 275, 9 días, y de 626 a 875, 12 días. Las bandas deben verse como un continuo y no como saltos: el gráfico empieza con 1 persona y 1,5 días.",
+          "ejemplo": "Una empresa con 50 personas efectivas tiene un punto de partida de 5 días de auditoría inicial.",
+          "puntos_clave": [
+            "Punto de partida según el personal efectivo.",
+            "Días para etapa 1 + etapa 2.",
+            "Bandas como un continuo."
+          ],
+          "errores_frecuentes": [
+            "Tomar la tabla como el tiempo final sin ajustes.",
+            "Usar el personal total en vez del efectivo."
+          ],
+          "formulas": [
+            "tiempo-inicial-qms"
+          ],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "Table QMS 1"
+          }
+        },
+        {
+          "id": "ac-ajustes",
+          "nombre": "Factores de ajuste y reducción máxima",
+          "explicacion": "El punto de partida se ajusta por los factores significativos del cliente, asignando a cada uno un peso que suma o resta al tiempo base, como la cantidad de procesos, su complejidad o si son repetitivos. La reducción total del tiempo de auditoría no puede superar el 30 % del tiempo establecido en las tablas, por lo que el tiempo resultante no puede ser menor al 70 % del punto de partida.",
+          "ejemplo": "Si la tabla da 9 días, aunque la empresa tenga procesos muy repetitivos, el tiempo no puede bajar de 6,3 días, que se redondean a 6,5.",
+          "puntos_clave": [
+            "Factores que suman o restan.",
+            "Reducción máxima de 30 %.",
+            "Mínimo: 70 % del punto de partida."
+          ],
+          "errores_frecuentes": [
+            "Reducir más del 30 %.",
+            "No justificar los ajustes."
+          ],
+          "formulas": [
+            "fraccion-tiempo-auditoria"
+          ],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "3.7 y 3.9"
+          }
+        },
+        {
+          "id": "ac-en-sitio",
+          "nombre": "Duración mínima en sitio",
+          "explicacion": "Cuando parte de las actividades se realiza fuera del sitio, eso no debe reducir la duración total en sitio de la auditoría por debajo del 80 % del tiempo calculado con las tablas. Que se necesite tiempo adicional para planificar o redactar el informe no justifica reducir la duración en sitio.",
+          "ejemplo": "Si el tiempo calculado es de 5 días, al menos 4 deben realizarse en sitio.",
+          "puntos_clave": [
+            "Mínimo 80 % en sitio.",
+            "La planificación no reduce el tiempo en sitio.",
+            "El informe tampoco."
+          ],
+          "errores_frecuentes": [
+            "Hacer casi toda la auditoría de forma documental.",
+            "Restar del sitio el tiempo de informe."
+          ],
+          "formulas": [
+            "fraccion-tiempo-auditoria"
+          ],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "4.1"
+          }
+        },
+        {
+          "id": "ac-justificacion",
+          "nombre": "Registro y justificación del tiempo",
+          "explicacion": "El tiempo de auditoría que determina el organismo de certificación, y su justificación, deben registrarse e incluir el tiempo para cubrir todo el alcance de la certificación. El organismo entrega esa determinación y su justificación al cliente como parte del contrato y la pone a disposición de su organismo de acreditación.",
+          "ejemplo": "La propuesta de un organismo a una empresa detalla el personal efectivo, el punto de partida de la tabla y cada ajuste aplicado.",
+          "puntos_clave": [
+            "Se registra el cálculo.",
+            "Cubre todo el alcance.",
+            "Se entrega al cliente y al acreditador."
+          ],
+          "errores_frecuentes": [
+            "Presentar solo el número de días sin explicación.",
+            "Omitir sitios o procesos del alcance."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "4.3 y 4.4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ac-ciclo",
+      "nombre": "Vigilancia, recertificación y el Sistema Ecuatoriano de la Calidad",
+      "orden": 5,
+      "descripcion": "Tiempo de vigilancia y de recertificación, y el marco ecuatoriano de evaluación de la conformidad, acreditación y designación.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "ac-vigilancia",
+          "nombre": "Auditorías de vigilancia",
+          "explicacion": "Durante el primer ciclo de certificación de tres años, el tiempo de las auditorías de vigilancia debe ser proporcional al de la auditoría inicial, y el tiempo anual total de vigilancia es de cerca de 1/3 del tiempo de la auditoría inicial. En cada vigilancia, el organismo actualiza los datos del cliente y revisa el tiempo planificado; es poco probable que una vigilancia dure menos de un día de auditoría.",
+          "ejemplo": "Si la auditoría inicial fue de 9 días, la vigilancia anual será de cerca de 3 días.",
+          "puntos_clave": [
+            "Cerca de 1/3 anual.",
+            "Actualizar los datos del cliente.",
+            "Rara vez menos de un día."
+          ],
+          "errores_frecuentes": [
+            "Mantener el mismo tiempo aunque la empresa haya crecido.",
+            "Hacer vigilancias de medio día."
+          ],
+          "formulas": [
+            "fraccion-tiempo-auditoria"
+          ],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "5. Surveillance"
+          }
+        },
+        {
+          "id": "ac-recertificacion",
+          "nombre": "Recertificación",
+          "explicacion": "El tiempo de la recertificación se calcula con la información actualizada del cliente y normalmente es cerca de 2/3 del tiempo que requeriría una auditoría inicial si se hiciera en ese momento, no 2/3 del tiempo de la auditoría inicial original. Debe considerar la revisión del desempeño del sistema, que no forma parte del tiempo de auditoría, y es poco probable que dure menos de un día.",
+          "ejemplo": "Una empresa que creció de 50 a 200 personas se recertifica con 2/3 del tiempo inicial que hoy le correspondería, no del que tuvo hace tres años.",
+          "puntos_clave": [
+            "Cerca de 2/3 del tiempo inicial actual.",
+            "Con datos actualizados.",
+            "Considera el desempeño del sistema."
+          ],
+          "errores_frecuentes": [
+            "Usar el tiempo inicial de hace tres años.",
+            "Incluir la revisión de desempeño en el tiempo de auditoría."
+          ],
+          "formulas": [
+            "fraccion-tiempo-auditoria"
+          ],
+          "fuente": {
+            "ref": "iaf-md5",
+            "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+            "seccion": "6. Recertification"
+          }
+        },
+        {
+          "id": "ac-ley-calidad",
+          "nombre": "La Ley del Sistema Ecuatoriano de la Calidad",
+          "explicacion": "Según su artículo 1, la Ley del Sistema Ecuatoriano de la Calidad establece el marco jurídico del sistema para regular los principios, políticas y entidades de la evaluación de la conformidad, garantizar los derechos ciudadanos de seguridad, protección de la vida, la salud y el ambiente y de protección del consumidor frente a prácticas engañosas, y promover la cultura de la calidad y la competitividad. La ley designó al ministerio de industrias como institución rectora del sistema, competencia que hoy ejerce el Ministerio de Producción, Comercio Exterior e Inversiones.",
+          "ejemplo": "Un fabricante de cascos para motociclistas debe demostrar que su producto cumple el reglamento técnico, lo que se verifica mediante evaluación de la conformidad.",
+          "puntos_clave": [
+            "Marco jurídico de la calidad.",
+            "Evaluación de la conformidad.",
+            "Ministerio rector del sistema."
+          ],
+          "errores_frecuentes": [
+            "Confundir certificación voluntaria con reglamentos técnicos obligatorios.",
+            "Ignorar la protección al consumidor."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ro-342-calidad",
+            "url": "https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/eyJjYXJwZXRhIjoicm8iLCJ1dWlkIjoiMjc4ZjdhMDMtMjEyNy00YzdhLWE5ZmEtZThjYzhhZWIwZWE5LnBkZiJ9",
+            "seccion": "Considerandos (arts. 1 y 8 de la Ley del Sistema Ecuatoriano de la Calidad)"
+          }
+        },
+        {
+          "id": "ac-acreditacion-designacion",
+          "nombre": "Acreditación y designación de organismos",
+          "explicacion": "El organismo de acreditación ecuatoriano cumple las funciones de organismo técnico nacional en la acreditación de la evaluación de la conformidad, es decir, reconoce la competencia de laboratorios, organismos de certificación y de inspección. Cuando no existen organismos acreditados en el país para un tema, el ministerio puede designar temporalmente laboratorios u organismos evaluadores de la conformidad. El instructivo publicado en el Registro Oficial 342 de 2026 regula ese proceso de designación entre la Subsecretaría de Calidad y el Servicio de Acreditación Ecuatoriano.",
+          "ejemplo": "Si no hay un laboratorio acreditado para ensayar un tipo de neumático, el ministerio puede designar uno temporalmente para ese tema específico.",
+          "puntos_clave": [
+            "Acreditación: competencia de los evaluadores.",
+            "Designación temporal si no hay acreditados.",
+            "Subsecretaría de Calidad y SAE."
+          ],
+          "errores_frecuentes": [
+            "Confundir acreditación con certificación.",
+            "Creer que un organismo designado puede actuar en cualquier tema."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "ro-342-calidad",
+            "url": "https://esacc.corteconstitucional.gob.ec/storage/api/v1/10_DWL_FL/eyJjYXJwZXRhIjoicm8iLCJ1dWlkIjoiMjc4ZjdhMDMtMjEyNy00YzdhLWE5ZmEtZThjYzhhZWIwZWE5LnBkZiJ9",
+            "seccion": "Considerandos y art. 1 del instructivo"
+          }
+        }
+      ]
+    }
+  ]
+}

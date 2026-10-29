@@ -3166,5 +3166,66 @@
       "seccion": "Plan de cuentas"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "tiempo-auditoria-sgc",
+    "nombre": "Tiempo de auditoría de un sistema de gestión de la calidad",
+    "descripcion": "Calcula el personal efectivo, el punto de partida de la tabla QMS 1 hasta 875 personas, el mínimo tras la reducción de 30 %, la duración mínima en sitio, la vigilancia anual y la recertificación.",
+    "materias": [
+      "auditoria-calidad"
+    ],
+    "celdas": {
+      "A1": "Personal a tiempo completo",
+      "B1": 40,
+      "A2": "Personal a tiempo parcial",
+      "B2": 20,
+      "A3": "Horas diarias del tiempo parcial",
+      "B3": 4,
+      "A4": "Horas de una jornada completa",
+      "B4": 8,
+      "A5": "Personal efectivo",
+      "B5": "=B1+B2*B3/B4",
+      "A6": "Punto de partida QMS 1 (días)",
+      "B6": "=IF(B5<=5,1.5,IF(B5<=10,2,IF(B5<=15,2.5,IF(B5<=25,3,IF(B5<=45,4,IF(B5<=65,5,IF(B5<=85,6,IF(B5<=125,7,IF(B5<=175,8,IF(B5<=275,9,IF(B5<=425,10,IF(B5<=625,11,12))))))))))))",
+      "A7": "Mínimo tras reducción de 30 %",
+      "B7": "=B6*0.7",
+      "A8": "Mínimo en sitio (80 %)",
+      "B8": "=B6*0.8",
+      "A9": "Vigilancia anual (≈ 1/3)",
+      "B9": "=B6/3",
+      "A10": "Recertificación (≈ 2/3)",
+      "B10": "=B6*2/3"
+    },
+    "formatos": {
+      "B5": "numero",
+      "B6": "numero",
+      "B7": "numero",
+      "B8": "numero",
+      "B9": "numero",
+      "B10": "numero"
+    },
+    "verificacion": [
+      {
+        "celda": "B5",
+        "esperado": 50,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B6",
+        "esperado": 5,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B8",
+        "esperado": 4,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "Table QMS 1, 3.9, 4.1, 5 y 6"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]

@@ -12224,5 +12224,202 @@
     "notas": [],
     "actualizado_en": "2026-10-30",
     "estado": "verificada"
+  },
+  {
+    "id": "personal-efectivo-auditoria",
+    "nombre": "Número efectivo de personal para una auditoría",
+    "categoria": "calculo",
+    "materias": [
+      "auditoria-calidad"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Personal a tiempo completo más el personal a tiempo parcial convertido a equivalentes de tiempo completo según sus horas trabajadas.",
+    "latex": "PE = TC + TP \\times \\frac{h}{H}",
+    "variables": [
+      {
+        "simbolo": "TC",
+        "nombre": "TC",
+        "significado": "Personal a tiempo completo dentro del alcance",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "TP",
+        "nombre": "TP",
+        "significado": "Personal a tiempo parcial dentro del alcance",
+        "unidad": "personas"
+      },
+      {
+        "simbolo": "h",
+        "nombre": "h",
+        "significado": "Horas diarias que trabaja el personal a tiempo parcial",
+        "unidad": "horas"
+      },
+      {
+        "simbolo": "H",
+        "nombre": "H",
+        "significado": "Horas diarias de una jornada completa",
+        "unidad": "horas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "TC + TP * h / H"
+    },
+    "excel": {
+      "es": "=TC+TP*h/H",
+      "en": "=TC+TP*h/H"
+    },
+    "ejemplo": {
+      "enunciado": "Un organismo de certificación evalúa una empresa con 30 personas a tiempo parcial que trabajan 4 horas por día, frente a jornadas completas de 8 horas, y sin personal a tiempo completo en el alcance. ¿Cuál es el personal efectivo?",
+      "entradas": {
+        "TC": 0,
+        "TP": 30,
+        "h": 4,
+        "H": 8
+      },
+      "pasos": [
+        "PE = 0 + 30 × 4 / 8",
+        "PE = 15 personas equivalentes"
+      ],
+      "resultado": 15,
+      "unidad": "personas",
+      "tolerancia": 0.0001,
+      "excel_es": "=0+30*4/8",
+      "excel_en": "=0+30*4/8"
+    },
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "2.3.3 Part time personnel"
+    },
+    "supuestos": [
+      "Se convierte según las horas trabajadas; otros ajustes del documento no se incluyen."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "tiempo-inicial-qms",
+    "nombre": "Tiempo de auditoría inicial de un SGC según la tabla QMS 1",
+    "categoria": "calculo",
+    "materias": [
+      "auditoria-calidad"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Punto de partida, en días de auditoría (etapa 1 + etapa 2), para un sistema de gestión de la calidad según el número efectivo de personal, de 1 a 875 personas, por bandas de la tabla QMS 1; luego se ajusta por factores propios de la organización.",
+    "latex": "T_0 = \\text{QMS 1}(PE)",
+    "variables": [
+      {
+        "simbolo": "PE",
+        "nombre": "PE",
+        "significado": "Número efectivo de personal (hasta 875)",
+        "unidad": "personas"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "IF(PE <= 5, 1.5, IF(PE <= 10, 2, IF(PE <= 15, 2.5, IF(PE <= 25, 3, IF(PE <= 45, 4, IF(PE <= 65, 5, IF(PE <= 85, 6, IF(PE <= 125, 7, IF(PE <= 175, 8, IF(PE <= 275, 9, IF(PE <= 425, 10, IF(PE <= 625, 11, 12))))))))))))"
+    },
+    "excel": {
+      "es": "=SI(PE<=5;1,5;SI(PE<=10;2;SI(PE<=15;2,5;SI(PE<=25;3;SI(PE<=45;4;SI(PE<=65;5;SI(PE<=85;6;SI(PE<=125;7;SI(PE<=175;8;SI(PE<=275;9;SI(PE<=425;10;SI(PE<=625;11;12))))))))))))",
+      "en": "=IF(PE<=5,1.5,IF(PE<=10,2,IF(PE<=15,2.5,IF(PE<=25,3,IF(PE<=45,4,IF(PE<=65,5,IF(PE<=85,6,IF(PE<=125,7,IF(PE<=175,8,IF(PE<=275,9,IF(PE<=425,10,IF(PE<=625,11,12))))))))))))"
+    },
+    "ejemplo": {
+      "enunciado": "Una empresa tiene 15 personas efectivas. ¿Cuál es el punto de partida del tiempo de auditoría inicial de su sistema de gestión de la calidad?",
+      "entradas": {
+        "PE": 15
+      },
+      "pasos": [
+        "15 está en la banda de 11 a 15 personas",
+        "Punto de partida = 2,5 días de auditoría"
+      ],
+      "resultado": 2.5,
+      "unidad": "días de auditoría",
+      "tolerancia": 0.0001,
+      "excel_es": "=SI(15<=15;2,5;0)",
+      "excel_en": "=IF(15<=15,2.5,0)"
+    },
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "Table QMS 1"
+    },
+    "supuestos": [
+      "Uso de las bandas de la tabla; el documento indica que deben verse como un continuo y no como saltos."
+    ],
+    "notas": [
+      "Para más de 875 personas se sigue la progresión de la tabla."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
+  },
+  {
+    "id": "fraccion-tiempo-auditoria",
+    "nombre": "Fracción del tiempo de auditoría",
+    "categoria": "calculo",
+    "materias": [
+      "auditoria-calidad"
+    ],
+    "areas": [
+      "gestion"
+    ],
+    "descripcion": "Tiempo que resulta de aplicar una fracción al tiempo de la auditoría inicial: 0,7 para la reducción máxima de 30 %, 0,8 para la duración mínima en sitio, cerca de 1/3 para la vigilancia anual y cerca de 2/3 para la recertificación.",
+    "latex": "T = T_0 \\times f",
+    "variables": [
+      {
+        "simbolo": "T_0",
+        "nombre": "T0",
+        "significado": "Tiempo de auditoría inicial (etapa 1 + etapa 2) de referencia",
+        "unidad": "días de auditoría"
+      },
+      {
+        "simbolo": "f",
+        "nombre": "f",
+        "significado": "Fracción que establece el documento para cada caso",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "T0 * f"
+    },
+    "excel": {
+      "es": "=T0*f",
+      "en": "=T0*f"
+    },
+    "ejemplo": {
+      "enunciado": "La auditoría inicial de una organización requiere 6 días. ¿Cuánto tiempo anual de vigilancia corresponde aproximadamente?",
+      "entradas": {
+        "T0": 6,
+        "f": 0.333333333333
+      },
+      "pasos": [
+        "Vigilancia anual ≈ 1/3 de la auditoría inicial",
+        "6 × 1/3 = 2 días"
+      ],
+      "resultado": 2,
+      "unidad": "días de auditoría",
+      "tolerancia": 0.0001,
+      "excel_es": "=6*1/3",
+      "excel_en": "=6*1/3"
+    },
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "3.9, 4.1, 5 y 6"
+    },
+    "supuestos": [
+      "Los resultados con decimales se ajustan al medio día más cercano."
+    ],
+    "notas": [
+      "Es poco probable que una vigilancia o una recertificación dure menos de un día de auditoría."
+    ],
+    "actualizado_en": "2026-10-30",
+    "estado": "verificada"
   }
 ]

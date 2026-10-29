@@ -15202,5 +15202,351 @@
     },
     "materia": "contabilidad-ifis",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-pe-a",
+    "subtema": "ac-personal-efectivo",
+    "formula": "personal-efectivo-auditoria",
+    "enunciado": "Una empresa tiene 40 personas a tiempo completo y 20 a tiempo parcial que trabajan 4 horas por día, con jornadas completas de 8 horas. ¿Cuál es su personal efectivo?",
+    "datos": {
+      "TC": 40,
+      "TP": 20,
+      "h": 4,
+      "H": 8
+    },
+    "calculo": "TC + TP * h / H",
+    "respuesta": 50,
+    "unidad": "personas",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "20 × 4 / 8 = 10 equivalentes",
+      "PE = 40 + 10 = 50"
+    ],
+    "pistas": [
+      "Convierte solo al personal a tiempo parcial."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "2.3.3"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-pe-b",
+    "subtema": "ac-personal-efectivo",
+    "formula": "personal-efectivo-auditoria",
+    "enunciado": "Un hospital privado tiene 100 personas a tiempo completo y 12 a tiempo parcial que trabajan 6 horas por día, con jornadas completas de 8 horas. ¿Cuál es su personal efectivo?",
+    "datos": {
+      "TC": 100,
+      "TP": 12,
+      "h": 6,
+      "H": 8
+    },
+    "calculo": "TC + TP * h / H",
+    "respuesta": 109,
+    "unidad": "personas",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "12 × 6 / 8 = 9 equivalentes",
+      "PE = 100 + 9 = 109"
+    ],
+    "pistas": [
+      "Seis horas de ocho equivalen a 0,75 de jornada."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "2.3.3"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-qms-a",
+    "subtema": "ac-tabla-qms",
+    "formula": "tiempo-inicial-qms",
+    "enunciado": "Con 50 personas efectivas, ¿cuál es el punto de partida del tiempo de auditoría inicial de un SGC según la tabla QMS 1?",
+    "datos": {
+      "PE": 50
+    },
+    "calculo": "IF(PE <= 5, 1.5, IF(PE <= 10, 2, IF(PE <= 15, 2.5, IF(PE <= 25, 3, IF(PE <= 45, 4, IF(PE <= 65, 5, IF(PE <= 85, 6, IF(PE <= 125, 7, IF(PE <= 175, 8, IF(PE <= 275, 9, IF(PE <= 425, 10, IF(PE <= 625, 11, 12))))))))))))",
+    "respuesta": 5,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "50 está en la banda de 46 a 65",
+      "Punto de partida = 5 días"
+    ],
+    "pistas": [
+      "Busca la banda que contiene al personal efectivo."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "Table QMS 1"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-qms-b",
+    "subtema": "ac-tabla-qms",
+    "formula": "tiempo-inicial-qms",
+    "enunciado": "Una empresa tiene 200 personas efectivas. ¿Cuál es el punto de partida del tiempo de su auditoría inicial de calidad?",
+    "datos": {
+      "PE": 200
+    },
+    "calculo": "IF(PE <= 5, 1.5, IF(PE <= 10, 2, IF(PE <= 15, 2.5, IF(PE <= 25, 3, IF(PE <= 45, 4, IF(PE <= 65, 5, IF(PE <= 85, 6, IF(PE <= 125, 7, IF(PE <= 175, 8, IF(PE <= 275, 9, IF(PE <= 425, 10, IF(PE <= 625, 11, 12))))))))))))",
+    "respuesta": 9,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "200 está en la banda de 176 a 275",
+      "Punto de partida = 9 días"
+    ],
+    "pistas": [
+      "Luego se aplicarían los factores de ajuste."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "Table QMS 1"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-reduccion-a",
+    "subtema": "ac-ajustes",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "La tabla da 9 días para una organización. ¿Cuál es el tiempo mínimo posible tras aplicar la reducción máxima permitida?",
+    "datos": {
+      "T0": 9,
+      "f": 0.7
+    },
+    "calculo": "T0 * f",
+    "respuesta": 6.3,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Reducción máxima 30 %: queda 70 %",
+      "9 × 0,7 = 6,3 días, que se ajustan a 6,5"
+    ],
+    "pistas": [
+      "Después redondea al medio día más cercano."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "3.9"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-reduccion-b",
+    "subtema": "ac-ajustes",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "Una empresa pequeña tiene un punto de partida de 4 días. ¿Cuál es el mínimo tras la reducción máxima?",
+    "datos": {
+      "T0": 4,
+      "f": 0.7
+    },
+    "calculo": "T0 * f",
+    "respuesta": 2.8,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "4 × 0,7 = 2,8 días, que se ajustan a 3"
+    ],
+    "pistas": [
+      "2,8 está más cerca de 3 que de 2,5."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "3.9"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-sitio-a",
+    "subtema": "ac-en-sitio",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "El tiempo calculado de una auditoría inicial es de 5 días. ¿Cuántos días, como mínimo, deben ser en sitio?",
+    "datos": {
+      "T0": 5,
+      "f": 0.8
+    },
+    "calculo": "T0 * f",
+    "respuesta": 4,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Mínimo en sitio: 80 %",
+      "5 × 0,8 = 4 días"
+    ],
+    "pistas": [
+      "El tiempo de informe no reduce el tiempo en sitio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "4.1"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-sitio-b",
+    "subtema": "ac-en-sitio",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "Una auditoría calculada en 12 días incluye revisión documental fuera del sitio. ¿Cuál es la duración mínima en sitio?",
+    "datos": {
+      "T0": 12,
+      "f": 0.8
+    },
+    "calculo": "T0 * f",
+    "respuesta": 9.6,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "12 × 0,8 = 9,6 días, que se ajustan a 9,5"
+    ],
+    "pistas": [
+      "Redondea al medio día más cercano."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "4.1"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-vigilancia-a",
+    "subtema": "ac-vigilancia",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "La auditoría inicial de una empresa fue de 9 días. ¿Cuánto tiempo anual de vigilancia corresponde aproximadamente?",
+    "datos": {
+      "T0": 9,
+      "f": 0.333333333333
+    },
+    "calculo": "T0 * f",
+    "respuesta": 3,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "9 × 1/3 = 3 días al año"
+    ],
+    "pistas": [
+      "La vigilancia anual es cerca de un tercio."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "5. Surveillance"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-vigilancia-b",
+    "subtema": "ac-vigilancia",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "Una microempresa tuvo una auditoría inicial de 1,5 días. ¿Cuánto daría un tercio y qué duración mínima es probable en la práctica?",
+    "datos": {
+      "T0": 1.5,
+      "f": 0.333333333333
+    },
+    "calculo": "T0 * f",
+    "respuesta": 0.5,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "1,5 × 1/3 = 0,5 días",
+      "Pero es poco probable que una vigilancia dure menos de 1 día"
+    ],
+    "pistas": [
+      "Revisa la nota sobre la duración mínima."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "5. Surveillance"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-recert-a",
+    "subtema": "ac-recertificacion",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "Hoy, una auditoría inicial de la organización requeriría 9 días. ¿Cuánto dura aproximadamente su recertificación?",
+    "datos": {
+      "T0": 9,
+      "f": 0.666666666667
+    },
+    "calculo": "T0 * f",
+    "respuesta": 6,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "9 × 2/3 = 6 días"
+    ],
+    "pistas": [
+      "Usa el tiempo inicial actualizado, no el original."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "6. Recertification"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-ac-recert-b",
+    "subtema": "ac-recertificacion",
+    "formula": "fraccion-tiempo-auditoria",
+    "enunciado": "Una empresa pasó de 50 a 200 personas efectivas; con 200 personas la tabla da 9 días y con 50 daba 5. ¿Cuánto dura aproximadamente su recertificación?",
+    "datos": {
+      "T0": 9,
+      "f": 0.666666666667
+    },
+    "calculo": "T0 * f",
+    "respuesta": 6,
+    "unidad": "días de auditoría",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Se usa el tiempo inicial actual: 9 días",
+      "9 × 2/3 = 6 días (no 5 × 2/3)"
+    ],
+    "pistas": [
+      "El documento advierte no usar el tiempo original."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "iaf-md5",
+      "url": "https://iaf.nu/iaf_system/uploads/documents/IAF_MD5_Issue_4_Version_3_14062023.pdf",
+      "seccion": "6. Recertification"
+    },
+    "materia": "auditoria-calidad",
+    "actualizado_en": "2026-10-26"
   }
 ]

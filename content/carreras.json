@@ -568,15 +568,17 @@
           7
         ],
         "planes": 1
-      }
-    ],
-    "pendientes": [
+      },
       {
-        "nombre": "Auditoría de Calidad",
+        "materia": "auditoria-calidad",
         "ciclo": 8,
+        "ciclos": [
+          8
+        ],
         "planes": 1
       }
-    ]
+    ],
+    "pendientes": []
   },
   {
     "id": "economia",
