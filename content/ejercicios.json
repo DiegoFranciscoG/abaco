@@ -10798,5 +10798,250 @@
     },
     "materia": "sistema-financiero",
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-sharpe-a",
+    "subtema": "mv-sharpe",
+    "formula": "razon-sharpe",
+    "enunciado": "Un administrador obtuvo un rendimiento promedio de 18 % con una desviación estándar de 20 %; la tasa libre de riesgo fue 4 %. ¿Cuál es su razón de Sharpe?",
+    "datos": {
+      "Rp": 0.18,
+      "Rf": 0.04,
+      "sp": 0.2
+    },
+    "calculo": "(Rp - Rf) / sp",
+    "respuesta": 0.7,
+    "unidad": "razón",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Prima = 0,18 − 0,04 = 0,14",
+      "Sharpe = 0,14 ÷ 0,20 = 0,7"
+    ],
+    "pistas": [
+      "Usa los porcentajes como proporciones."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-sharpe-b",
+    "subtema": "mv-sharpe",
+    "formula": "razon-sharpe",
+    "enunciado": "Otro administrador obtuvo 22 % con una desviación estándar de 30 % en el mismo período (tasa libre de riesgo de 4 %). ¿Cuál es su razón de Sharpe y quién fue mejor por unidad de riesgo?",
+    "datos": {
+      "Rp": 0.22,
+      "Rf": 0.04,
+      "sp": 0.3
+    },
+    "calculo": "(Rp - Rf) / sp",
+    "respuesta": 0.6,
+    "unidad": "razón",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Prima = 0,22 − 0,04 = 0,18",
+      "Sharpe = 0,18 ÷ 0,30 = 0,6",
+      "0,6 < 0,7: el primero fue mejor por unidad de riesgo aunque rindió menos"
+    ],
+    "pistas": [
+      "Compara con la razón de Sharpe del ejercicio anterior."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-treynor-a",
+    "subtema": "mv-treynor",
+    "formula": "razon-treynor",
+    "enunciado": "Un portafolio rindió 15 % con una beta de 1,1; la tasa libre de riesgo fue 4 %. ¿Cuál es su razón de Treynor?",
+    "datos": {
+      "Rp": 0.15,
+      "Rf": 0.04,
+      "bp": 1.1
+    },
+    "calculo": "(Rp - Rf) / bp",
+    "respuesta": 0.1,
+    "unidad": "razón",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Prima = 0,15 − 0,04 = 0,11",
+      "Treynor = 0,11 ÷ 1,1 = 0,10"
+    ],
+    "pistas": [
+      "El denominador es la beta."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-treynor-b",
+    "subtema": "mv-treynor",
+    "formula": "razon-treynor",
+    "enunciado": "Un portafolio defensivo rindió 9 % con una beta de 0,6; la tasa libre de riesgo fue 4 %. ¿Cuál es su razón de Treynor?",
+    "datos": {
+      "Rp": 0.09,
+      "Rf": 0.04,
+      "bp": 0.6
+    },
+    "calculo": "(Rp - Rf) / bp",
+    "respuesta": 0.0833,
+    "unidad": "razón",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Prima = 0,09 − 0,04 = 0,05",
+      "Treynor = 0,05 ÷ 0,6 = 0,0833"
+    ],
+    "pistas": [
+      "Una beta menor que 1 indica menos riesgo sistemático que el mercado."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-jensen-positivo",
+    "subtema": "mv-jensen",
+    "formula": "alfa-jensen",
+    "enunciado": "Con tasa libre de riesgo de 4 %, rendimiento del mercado de 11 % y beta de 0,9, un portafolio rindió 13 %. ¿Cuál es su alfa de Jensen?",
+    "datos": {
+      "Rp": 0.13,
+      "Rf": 0.04,
+      "bp": 0.9,
+      "Rm": 0.11
+    },
+    "calculo": "Rp - (Rf + bp * (Rm - Rf))",
+    "respuesta": 0.027,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Esperado = 0,04 + 0,9 × (0,11 − 0,04) = 0,103",
+      "α = 0,13 − 0,103 = 0,027"
+    ],
+    "pistas": [
+      "Calcula primero el rendimiento esperado con el CAPM."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-jensen-negativo",
+    "subtema": "mv-jensen",
+    "formula": "alfa-jensen",
+    "enunciado": "Con tasa libre de riesgo de 4 %, mercado de 9 % y beta de 1,3, un portafolio rindió 10 %. ¿Cuál es su alfa de Jensen?",
+    "datos": {
+      "Rp": 0.1,
+      "Rf": 0.04,
+      "bp": 1.3,
+      "Rm": 0.09
+    },
+    "calculo": "Rp - (Rf + bp * (Rm - Rf))",
+    "respuesta": -0.005,
+    "unidad": "proporción",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Esperado = 0,04 + 1,3 × (0,09 − 0,04) = 0,105",
+      "α = 0,10 − 0,105 = −0,005",
+      "Alfa negativo: rindió menos de lo esperado para su riesgo"
+    ],
+    "pistas": [
+      "Un rendimiento mayor que el del mercado no garantiza un alfa positivo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-preferente-a",
+    "subtema": "mv-preferentes",
+    "formula": "valor-accion-preferente",
+    "enunciado": "Una acción preferente de valor nominal USD 100 paga un dividendo anual del 8 % y el mercado exige 10 %. ¿Cuál es su valor?",
+    "datos": {
+      "VN": 100,
+      "d": 0.08,
+      "k": 0.1
+    },
+    "calculo": "VN * d / k",
+    "respuesta": 80,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Dividendo = 100 × 0,08 = 8",
+      "Valor = 8 ÷ 0,10 = 80"
+    ],
+    "pistas": [
+      "Calcula primero el dividendo en dólares."
+    ],
+    "dificultad": 1,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/11-4-preferred-stock",
+      "seccion": "11.4 Preferred Stock"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "ej-mv-preferente-b",
+    "subtema": "mv-preferentes",
+    "formula": "valor-accion-preferente",
+    "enunciado": "Una acción preferente de valor nominal USD 50 paga 6 % anual. Si la tasa exigida es 7,5 %, ¿cuál es su valor?",
+    "datos": {
+      "VN": 50,
+      "d": 0.06,
+      "k": 0.075
+    },
+    "calculo": "VN * d / k",
+    "respuesta": 40,
+    "unidad": "USD",
+    "tolerancia": 0.0001,
+    "procedimiento": [
+      "Dividendo = 50 × 0,06 = 3",
+      "Valor = 3 ÷ 0,075 = 40",
+      "Como la tasa exigida supera la del dividendo, vale menos que su nominal"
+    ],
+    "pistas": [
+      "Compara la tasa exigida con la tasa del dividendo."
+    ],
+    "dificultad": 2,
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/11-4-preferred-stock",
+      "seccion": "11.4 Preferred Stock"
+    },
+    "materia": "mercado-valores",
+    "actualizado_en": "2026-10-26"
   }
 ]

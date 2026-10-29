@@ -7793,5 +7793,292 @@
     ],
     "actualizado_en": "2026-10-27",
     "estado": "verificada"
+  },
+  {
+    "id": "razon-sharpe",
+    "nombre": "Razón de Sharpe",
+    "categoria": "razones-financieras",
+    "materias": [
+      "mercado-valores"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Prima de riesgo del portafolio dividida para la desviación estándar de sus rendimientos: recompensa por unidad de riesgo total.",
+    "latex": "S = \\frac{R_p - R_f}{\\sigma_p}",
+    "variables": [
+      {
+        "simbolo": "R_p",
+        "nombre": "Rp",
+        "significado": "Rendimiento del portafolio",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "R_f",
+        "nombre": "Rf",
+        "significado": "Rendimiento libre de riesgo",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "\\sigma_p",
+        "nombre": "sp",
+        "significado": "Desviación estándar de los rendimientos del portafolio",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(Rp - Rf) / sp"
+    },
+    "excel": {
+      "es": "=(Rp-Rf)/sp",
+      "en": "=(Rp-Rf)/sp"
+    },
+    "ejemplo": {
+      "enunciado": "Un portafolio rindió en promedio 20 % al año con una desviación estándar de 26 %; la tasa libre de riesgo es 3 %. ¿Cuál es su razón de Sharpe?",
+      "entradas": {
+        "Rp": 0.2,
+        "Rf": 0.03,
+        "sp": 0.26
+      },
+      "pasos": [
+        "Prima de riesgo = 0,20 − 0,03 = 0,17",
+        "S = 0,17 ÷ 0,26",
+        "S = 0,65"
+      ],
+      "resultado": 0.6538,
+      "unidad": "razón",
+      "tolerancia": 0.001,
+      "excel_es": "=(0,2-0,03)/0,26",
+      "excel_en": "=(0.2-0.03)/0.26"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "supuestos": [],
+    "notas": [
+      "Es una medida relativa: se compara con otros administradores o con un índice de referencia."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "razon-treynor",
+    "nombre": "Razón de Treynor",
+    "categoria": "razones-financieras",
+    "materias": [
+      "mercado-valores"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Prima de riesgo del portafolio dividida para su beta: recompensa por unidad de riesgo sistemático.",
+    "latex": "T = \\frac{R_p - R_f}{\\beta_p}",
+    "variables": [
+      {
+        "simbolo": "R_p",
+        "nombre": "Rp",
+        "significado": "Rendimiento del portafolio",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "R_f",
+        "nombre": "Rf",
+        "significado": "Rendimiento libre de riesgo",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "\\beta_p",
+        "nombre": "bp",
+        "significado": "Beta del portafolio",
+        "unidad": "coeficiente"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "(Rp - Rf) / bp"
+    },
+    "excel": {
+      "es": "=(Rp-Rf)/bp",
+      "en": "=(Rp-Rf)/bp"
+    },
+    "ejemplo": {
+      "enunciado": "Un portafolio rindió 20 % con una beta de 1,2; la tasa libre de riesgo es 3 %. ¿Cuál es su razón de Treynor?",
+      "entradas": {
+        "Rp": 0.2,
+        "Rf": 0.03,
+        "bp": 1.2
+      },
+      "pasos": [
+        "Prima de riesgo = 0,20 − 0,03 = 0,17",
+        "T = 0,17 ÷ 1,2",
+        "T = 0,14"
+      ],
+      "resultado": 0.1417,
+      "unidad": "razón",
+      "tolerancia": 0.001,
+      "excel_es": "=(0,2-0,03)/1,2",
+      "excel_en": "=(0.2-0.03)/1.2"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "supuestos": [],
+    "notas": [
+      "Usa la beta (riesgo sistemático) en lugar de la desviación estándar (riesgo total)."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "alfa-jensen",
+    "nombre": "Alfa de Jensen",
+    "categoria": "razones-financieras",
+    "materias": [
+      "mercado-valores"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Rendimiento del portafolio menos el rendimiento esperado según el CAPM; un alfa positivo indica un rendimiento anormal.",
+    "latex": "\\alpha_p = R_p - [R_f + \\beta_p (R_m - R_f)]",
+    "variables": [
+      {
+        "simbolo": "R_p",
+        "nombre": "Rp",
+        "significado": "Rendimiento del portafolio",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "R_f",
+        "nombre": "Rf",
+        "significado": "Rendimiento libre de riesgo",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "\\beta_p",
+        "nombre": "bp",
+        "significado": "Beta del portafolio",
+        "unidad": "coeficiente"
+      },
+      {
+        "simbolo": "R_m",
+        "nombre": "Rm",
+        "significado": "Rendimiento del mercado",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "Rp - (Rf + bp * (Rm - Rf))"
+    },
+    "excel": {
+      "es": "=Rp-(Rf+bp*(Rm-Rf))",
+      "en": "=Rp-(Rf+bp*(Rm-Rf))"
+    },
+    "ejemplo": {
+      "enunciado": "Un portafolio rindió 20 % con una beta de 1,2; la tasa libre de riesgo es 3 % y el mercado rindió 12 %. ¿Cuál es su alfa de Jensen?",
+      "entradas": {
+        "Rp": 0.2,
+        "Rf": 0.03,
+        "bp": 1.2,
+        "Rm": 0.12
+      },
+      "pasos": [
+        "Rendimiento esperado = 0,03 + 1,2 × (0,12 − 0,03) = 0,138",
+        "α = 0,20 − 0,138",
+        "α = 0,062 (6,2 % sobre lo esperado)"
+      ],
+      "resultado": 0.062,
+      "unidad": "proporción",
+      "tolerancia": 0.0001,
+      "excel_es": "=0,2-(0,03+1,2*(0,12-0,03))",
+      "excel_en": "=0.2-(0.03+1.2*(0.12-0.03))"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "supuestos": [],
+    "notas": [
+      "A diferencia de Sharpe y Treynor, el alfa tiene sentido en términos absolutos."
+    ],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
+  },
+  {
+    "id": "valor-accion-preferente",
+    "nombre": "Valor de una acción preferente",
+    "categoria": "valor-dinero",
+    "materias": [
+      "mercado-valores"
+    ],
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "Valor intrínseco de una acción preferente con dividendo constante y sin vencimiento, valorada como una perpetuidad.",
+    "latex": "P = \\frac{VN \\times d}{k}",
+    "variables": [
+      {
+        "simbolo": "VN",
+        "nombre": "VN",
+        "significado": "Valor nominal de la acción preferente",
+        "unidad": "USD"
+      },
+      {
+        "simbolo": "d",
+        "nombre": "d",
+        "significado": "Tasa anual de dividendo",
+        "unidad": "proporción"
+      },
+      {
+        "simbolo": "k",
+        "nombre": "k",
+        "significado": "Tasa de descuento exigida por el mercado",
+        "unidad": "proporción"
+      }
+    ],
+    "calculo": {
+      "tipo": "directo",
+      "expresion": "VN * d / k"
+    },
+    "excel": {
+      "es": "=VN*d/k",
+      "en": "=VN*d/k"
+    },
+    "ejemplo": {
+      "enunciado": "Una acción preferente tiene un valor nominal de USD 1.000 y paga un dividendo anual del 5 %. Si el mercado exige 10 %, ¿cuál es su valor justo?",
+      "entradas": {
+        "VN": 1000,
+        "d": 0.05,
+        "k": 0.1
+      },
+      "pasos": [
+        "Dividendo = 1.000 × 0,05 = 50",
+        "P = 50 ÷ 0,10",
+        "P = 500"
+      ],
+      "resultado": 500,
+      "unidad": "USD",
+      "tolerancia": 0.0001,
+      "excel_es": "=1000*0,05/0,1",
+      "excel_en": "=1000*0.05/0.1"
+    },
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/11-4-preferred-stock",
+      "seccion": "11.4 Preferred Stock"
+    },
+    "supuestos": [
+      "El dividendo es constante y la acción no tiene vencimiento."
+    ],
+    "notas": [],
+    "actualizado_en": "2026-10-28",
+    "estado": "verificada"
   }
 ]

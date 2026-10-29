@@ -1242,6 +1242,15 @@
         "planes": 1
       },
       {
+        "materia": "mercado-valores",
+        "ciclo": 4,
+        "ciclos": [
+          4,
+          7
+        ],
+        "planes": 1
+      },
+      {
         "materia": "inteligencia-negocios",
         "ciclo": 5,
         "ciclos": [
@@ -1263,11 +1272,6 @@
       },
       {
         "nombre": "Econometría Aplicada",
-        "ciclo": 4,
-        "planes": 1
-      },
-      {
-        "nombre": "Mercado de Valores",
         "ciclo": 4,
         "planes": 1
       },
@@ -1303,11 +1307,6 @@
       },
       {
         "nombre": "Auditoría y Control Financiero",
-        "ciclo": 7,
-        "planes": 1
-      },
-      {
-        "nombre": "Gestión de Inversiones y Gestión de Portafolios",
         "ciclo": 7,
         "planes": 1
       },

@@ -865,5 +865,31 @@
       "estado": "completa",
       "unidades_objetivo": 5
     }
+  },
+  {
+    "id": "mercado-valores",
+    "nombre": "Mercado de valores e inversiones",
+    "areas": [
+      "finanzas"
+    ],
+    "descripcion": "El mercado de valores ecuatoriano según la Ley de Mercado de Valores: segmentos, oferta pública, participantes, renta fija y variable, fondos, fideicomisos y titularización; diversificación, eficiencia de mercado y medición del desempeño de portafolios.",
+    "sinonimos": [
+      "mercado de capitales",
+      "bolsa de valores",
+      "gestión de inversiones",
+      "gestión de portafolios",
+      "inversiones",
+      "ley de mercado de valores"
+    ],
+    "herramientas": [
+      "estadistica",
+      "tarjetas",
+      "notas"
+    ],
+    "orden": 39,
+    "cobertura": {
+      "estado": "completa",
+      "unidades_objetivo": 5
+    }
   }
 ]

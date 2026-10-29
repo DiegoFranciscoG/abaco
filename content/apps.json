@@ -60,7 +60,8 @@
       "ventas-distribucion",
       "operaciones-logistica",
       "inteligencia-negocios",
-      "sistema-financiero"
+      "sistema-financiero",
+      "mercado-valores"
     ],
     "areas": [
       "tecnologia"
@@ -215,7 +216,8 @@
     "materias": [
       "derecho-empresarial",
       "contabilidad-financiera",
-      "emprendimiento"
+      "emprendimiento",
+      "mercado-valores"
     ],
     "areas": [
       "derecho",

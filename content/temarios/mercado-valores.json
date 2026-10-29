@@ -1,0 +1,467 @@
+{
+  "materia": "mercado-valores",
+  "actualizado_en": "2026-10-26",
+  "temas": [
+    {
+      "id": "mv-marco",
+      "nombre": "El mercado de valores en el Ecuador",
+      "orden": 1,
+      "descripcion": "Objeto de la ley, concepto de valor, segmentos del mercado, oferta pública, catastro e información relevante y privilegiada.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mv-objeto-valor",
+          "nombre": "Objeto de la ley y concepto de valor",
+          "explicacion": "La Ley de Mercado de Valores, hoy Libro II del Código Orgánico Monetario y Financiero, tiene por objeto promover un mercado de valores organizado, integrado, eficaz y transparente, con una intermediación competitiva, ordenada, equitativa y continua. Para la ley, un valor es el derecho o conjunto de derechos de contenido esencialmente económico negociables en el mercado de valores: acciones, obligaciones, bonos, cédulas, cuotas de fondos de inversión colectivos, contratos a futuro o a término, permutas financieras, opciones y valores provenientes de titularizaciones, entre otros.",
+          "ejemplo": "Una acción de una sociedad anónima inscrita en bolsa y una obligación emitida por una empresa para financiar su expansión son valores; un préstamo bancario común no lo es, porque no se negocia en el mercado de valores.",
+          "puntos_clave": [
+            "Mercado organizado, eficaz y transparente.",
+            "Valor: derechos económicos negociables.",
+            "Acciones, obligaciones, cuotas de fondos, derivados y titularizaciones."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo las acciones son valores.",
+            "Pensar que la ley de valores es independiente del COMF."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 1-2"
+          }
+        },
+        {
+          "id": "mv-segmentos",
+          "nombre": "Mercado bursátil, extrabursátil y privado",
+          "explicacion": "El mercado de valores canaliza recursos financieros hacia las actividades productivas. El mercado bursátil está formado por ofertas, demandas y negociaciones de valores inscritos en el Catastro Público del Mercado de Valores, en las bolsas y en el Registro Especial Bursátil, realizadas por intermediarios autorizados. El extrabursátil es el mercado primario entre la institución financiera y el inversor sin intermediario de valores. Las negociaciones de mercado privado se hacen de forma directa entre comprador y vendedor, sin intermediarios. Según la ley, solo las casas de valores son intermediarios de valores.",
+          "ejemplo": "Un inversionista compra acciones en la bolsa a través de una casa de valores (bursátil); otro compra un certificado de depósito directamente en su banco (extrabursátil).",
+          "puntos_clave": [
+            "Bursátil: valores inscritos e intermediarios autorizados.",
+            "Extrabursátil: institución financiera e inversor.",
+            "Solo las casas de valores intermedian."
+          ],
+          "errores_frecuentes": [
+            "Confundir mercado extrabursátil con mercado privado.",
+            "Creer que un banco puede actuar como casa de valores."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 3-4"
+          }
+        },
+        {
+          "id": "mv-oferta-publica",
+          "nombre": "Oferta pública y Catastro Público del Mercado de Valores",
+          "explicacion": "La oferta pública de valores es la propuesta dirigida al público en general, o a sectores específicos, para negociar valores; es primaria cuando los valores se negocian por primera vez y secundaria cuando ya circulan. Para hacerla se deben cumplir requisitos, entre ellos tener calificación de riesgo los valores de deuda o de titularización (salvo excepciones como los emitidos o garantizados por el Banco Central o el Ministerio de Economía y Finanzas, y las acciones) e inscribir al emisor y sus valores en el Catastro Público del Mercado de Valores, creado dentro de la Superintendencia de Compañías. La inscripción es requisito previo para participar en los mercados bursátil y extrabursátil.",
+          "ejemplo": "Una empresa que quiere emitir obligaciones al público primero obtiene una calificación de riesgo y luego inscribe la emisión en el Catastro antes de ofrecerla en bolsa.",
+          "puntos_clave": [
+            "Oferta pública primaria y secundaria.",
+            "Calificación de riesgo para valores de deuda.",
+            "Inscripción previa en el Catastro."
+          ],
+          "errores_frecuentes": [
+            "Ofrecer valores al público sin inscribirlos.",
+            "Creer que las acciones siempre requieren calificación de riesgo."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 11, 12, 18 y 20"
+          }
+        },
+        {
+          "id": "mv-informacion",
+          "nombre": "Hechos relevantes e información privilegiada",
+          "explicacion": "Las entidades inscritas deben divulgar de forma veraz, completa, suficiente y oportuna todo hecho o información relevante que pueda afectar positiva o negativamente su situación jurídica, económica o financiera, o la de sus valores. La información privilegiada es el conocimiento de actos, hechos o acontecimientos capaces de influir en los precios de los valores mientras no se haya hecho pública; quienes accedan a ella por su cargo o relación con los participantes del mercado tienen prohibido usarla en su beneficio o en el de terceros.",
+          "ejemplo": "Si una empresa inscrita pierde a su principal cliente, debe informarlo como hecho relevante; un gerente que vende sus acciones antes del anuncio estaría usando información privilegiada.",
+          "puntos_clave": [
+            "Divulgación veraz y oportuna de hechos relevantes.",
+            "Información privilegiada: no pública y capaz de mover precios.",
+            "Prohibición de usarla."
+          ],
+          "errores_frecuentes": [
+            "Informar solo las noticias positivas.",
+            "Creer que la prohibición aplica solo a los directivos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 25 y 27"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mv-participantes",
+      "nombre": "Participantes e instrumentos",
+      "orden": 2,
+      "descripcion": "Bolsas y casas de valores, renta fija y variable, obligaciones y papel comercial, y calificación de riesgo.",
+      "dificultad": 2,
+      "subtemas": [
+        {
+          "id": "mv-bolsas-casas",
+          "nombre": "Bolsas de valores y casas de valores",
+          "explicacion": "Las bolsas de valores son sociedades anónimas cuyo objeto social único es brindar los servicios y mecanismos requeridos para la negociación de valores, además de actividades conexas autorizadas. La casa de valores es la compañía anónima autorizada y controlada por la Superintendencia de Compañías para ejercer la intermediación de valores, con objeto social único; su capital mínimo lo fija la regulación según sus actividades y debe pagarse en efectivo en su totalidad. Las casas de valores pueden negociar por cuenta de terceros o por cuenta propia.",
+          "ejemplo": "Para comprar acciones de una empresa inscrita, una persona abre una cuenta en una casa de valores, que ejecuta la orden en la bolsa.",
+          "puntos_clave": [
+            "Bolsa: mecanismos de negociación.",
+            "Casa de valores: intermediaria autorizada.",
+            "Control de la Superintendencia de Compañías."
+          ],
+          "errores_frecuentes": [
+            "Creer que se puede comprar directamente en la bolsa sin casa de valores.",
+            "Confundir la bolsa con el organismo de control."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 44 y 56"
+          }
+        },
+        {
+          "id": "mv-renta-fija-variable",
+          "nombre": "Valores de renta fija y de renta variable",
+          "explicacion": "Los valores de renta fija son aquellos cuyo rendimiento no depende de los resultados de la empresa emisora, sino que está predeterminado al momento de la emisión; el emisor debe colocarlos en el mercado bursátil a través de una casa de valores, salvo excepciones. Los de renta variable no tienen un vencimiento determinado y su rendimiento, en forma de dividendos o ganancias de capital, varía según los resultados del emisor; si están inscritos en bolsa, deben comprarse y venderse en el mercado bursátil a través de intermediarios autorizados.",
+          "ejemplo": "Una obligación que paga 8 % anual durante tres años es renta fija; una acción, cuyo dividendo depende de las utilidades de la empresa, es renta variable.",
+          "puntos_clave": [
+            "Renta fija: rendimiento predeterminado.",
+            "Renta variable: dividendos y ganancias de capital.",
+            "Negociación a través de intermediarios."
+          ],
+          "errores_frecuentes": [
+            "Creer que la renta fija no tiene riesgo.",
+            "Pensar que las acciones tienen fecha de vencimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 30 y 32"
+          }
+        },
+        {
+          "id": "mv-obligaciones",
+          "nombre": "Obligaciones, papel comercial y obligaciones convertibles",
+          "explicacion": "Las obligaciones son valores de contenido crediticio que representan deuda a cargo del emisor, que pueden emitir personas jurídicas públicas o privadas; la emisión se instrumenta en un contrato elevado a escritura pública entre el emisor y el representante de los obligacionistas. Las empresas inscritas pueden emitir obligaciones de corto plazo con garantía general, llamadas papel comercial, con plazo inferior a trescientos sesenta días. Las sociedades anónimas pueden emitir obligaciones convertibles en acciones, que dan al tenedor el derecho de cobrar o convertirlas en acciones según la escritura de emisión.",
+          "ejemplo": "Una empresa financia una planta con obligaciones a cinco años y cubre necesidades de capital de trabajo con papel comercial a 180 días.",
+          "puntos_clave": [
+            "Obligaciones: deuda del emisor.",
+            "Papel comercial: menos de 360 días.",
+            "Convertibles: derecho a pasar a acciones."
+          ],
+          "errores_frecuentes": [
+            "Confundir obligaciones con acciones.",
+            "Emitir papel comercial a más de un año."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 160, 171 y 174"
+          }
+        },
+        {
+          "id": "mv-calificacion-riesgo",
+          "nombre": "Calificación de riesgo",
+          "explicacion": "La calificación de riesgo es la actividad que realizan entidades especializadas, las calificadoras de riesgo, para dar a conocer al mercado su opinión sobre la solvencia y la probabilidad de pago del emisor frente a los compromisos de sus valores de oferta pública. Para proteger su independencia, los ingresos que una calificadora obtenga de un mismo cliente o sus empresas vinculadas no pueden exceder el veinticinco por ciento de sus ingresos anuales, y la Superintendencia de Compañías puede designar un calificador adicional a costo del emisor.",
+          "ejemplo": "Antes de comprar obligaciones, un inversionista revisa la calificación asignada a la emisión para comparar el riesgo de pago con el de otras alternativas.",
+          "puntos_clave": [
+            "Opinión sobre solvencia y probabilidad de pago.",
+            "Límite de ingresos por cliente.",
+            "Posible calificación adicional."
+          ],
+          "errores_frecuentes": [
+            "Tomar la calificación como garantía de pago.",
+            "Ignorar la calificación al comparar rendimientos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 185 y 187"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mv-fondos-fideicomisos",
+      "nombre": "Inversionistas institucionales, fondos y titularización",
+      "orden": 3,
+      "descripcion": "Inversionistas institucionales, fondos administrados y colectivos, fideicomiso mercantil y titularización.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mv-inversionistas-institucionales",
+          "nombre": "Inversionistas institucionales",
+          "explicacion": "Para la Ley de Mercado de Valores son inversionistas institucionales las instituciones del sistema financiero públicas o privadas, las mutualistas de ahorro y crédito para la vivienda, las cooperativas de ahorro y crédito que hacen intermediación con el público, las compañías de seguros y reaseguros, las corporaciones de garantía y retrogarantía, las sociedades administradoras de fondos y fideicomisos y otras entidades que señale la regulación. Por el volumen de recursos que manejan, son actores centrales en la demanda de valores.",
+          "ejemplo": "Una aseguradora invierte parte de las primas que recibe en obligaciones de empresas inscritas para respaldar sus reservas.",
+          "puntos_clave": [
+            "Bancos, mutualistas y cooperativas.",
+            "Aseguradoras y administradoras de fondos.",
+            "Grandes demandantes de valores."
+          ],
+          "errores_frecuentes": [
+            "Creer que solo las personas naturales invierten en bolsa.",
+            "Olvidar a las aseguradoras como inversionistas."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, art. 74"
+          }
+        },
+        {
+          "id": "mv-fondos",
+          "nombre": "Fondos de inversión administrados y colectivos",
+          "explicacion": "Un fondo de inversión es el patrimonio común formado por aportes de varios inversionistas para invertir en los valores, bienes y activos que permite la ley, gestionado por una compañía administradora de fondos y fideicomisos. En los fondos administrados los aportes se expresan en unidades de participación no negociables y se admite en cualquier momento el ingreso y retiro de partícipes, por lo que su patrimonio es variable. Los fondos colectivos buscan invertir en valores de proyectos productivos específicos; sus cuotas no son rescatables, se someten a calificación de riesgo y son libremente negociables.",
+          "ejemplo": "Un ahorrista entra y sale de un fondo administrado de corto plazo según sus necesidades; un inversionista que quiere salir de un fondo colectivo debe vender sus cuotas en el mercado.",
+          "puntos_clave": [
+            "Patrimonio común gestionado por una administradora.",
+            "Administrados: unidades no negociables.",
+            "Colectivos: cuotas negociables y no rescatables."
+          ],
+          "errores_frecuentes": [
+            "Pensar que se puede pedir el rescate de una cuota de fondo colectivo.",
+            "Creer que la administradora garantiza el rendimiento."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 75-76"
+          }
+        },
+        {
+          "id": "mv-fideicomiso",
+          "nombre": "El fideicomiso mercantil",
+          "explicacion": "Por el contrato de fideicomiso mercantil, uno o más constituyentes transfieren de manera temporal e irrevocable la propiedad de bienes, existentes o que se espera que existan, a un patrimonio autónomo con personalidad jurídica, para que la administradora de fondos y fideicomisos, como fiduciaria y representante legal, cumpla las finalidades del contrato en favor del propio constituyente o de un beneficiario. El patrimonio autónomo es el conjunto de derechos y obligaciones afectados a esa finalidad.",
+          "ejemplo": "Un constructor transfiere el terreno y los aportes de los compradores a un fideicomiso inmobiliario; la fiduciaria administra los recursos y entrega los departamentos al terminar la obra.",
+          "puntos_clave": [
+            "Transferencia temporal e irrevocable.",
+            "Patrimonio autónomo con personalidad jurídica.",
+            "Fiduciaria, constituyente y beneficiario."
+          ],
+          "errores_frecuentes": [
+            "Creer que el constituyente sigue siendo dueño de los bienes.",
+            "Confundir el fideicomiso con un simple mandato."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, art. 109"
+          }
+        },
+        {
+          "id": "mv-titularizacion",
+          "nombre": "Titularización de activos",
+          "explicacion": "La titularización es el proceso mediante el cual se emiten valores que pueden colocarse y negociarse libremente en el mercado bursátil, emitidos con cargo a un patrimonio autónomo. Sus partes esenciales incluyen al originador, propietario de los activos o derechos sobre flujos que se titularizan, y al agente de manejo, una administradora de fondos y fideicomisos que recibe los activos en representación del patrimonio de propósito exclusivo, emite y coloca los valores, administra los activos para obtener los flujos y distribuye los resultados entre los inversionistas.",
+          "ejemplo": "Una cadena comercial titulariza los flujos futuros de sus ventas con tarjeta: los transfiere a un patrimonio autónomo, que emite valores en bolsa y paga a los inversionistas con esos flujos.",
+          "puntos_clave": [
+            "Valores emitidos con cargo a un patrimonio autónomo.",
+            "Originador y agente de manejo.",
+            "Pago con los flujos de los activos."
+          ],
+          "errores_frecuentes": [
+            "Creer que los inversionistas cobran del patrimonio general del originador.",
+            "Confundir titularización con emisión de obligaciones."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "comf",
+            "seccion": "Libro II, Ley de Mercado de Valores, arts. 138-139"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mv-portafolio",
+      "nombre": "Riesgo, diversificación y eficiencia de mercado",
+      "orden": 4,
+      "descripcion": "Diversificación y correlación, riesgo sistemático y no sistemático, eficiencia de mercado y comportamiento histórico de los bonos.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mv-diversificacion",
+          "nombre": "Diversificación y correlación",
+          "explicacion": "Un portafolio es el conjunto de acciones u otros activos que posee un inversionista; diversificar es repartir el dinero entre varios activos para manejar el riesgo, como no poner todos los huevos en una sola canasta. La volatilidad de un portafolio no es el promedio de las volatilidades de sus activos: depende de cuánto se mueven juntos, es decir, de su coeficiente de correlación. Combinar activos que no están perfectamente correlacionados reduce el riesgo; las acciones de una misma industria suelen estar más correlacionadas y aportan menos diversificación que las de industrias distintas.",
+          "ejemplo": "Combinar acciones de una aerolínea con las de una petrolera reduce más el riesgo que combinar dos aerolíneas: cuando sube el combustible, las aerolíneas pierden y la petrolera gana.",
+          "puntos_clave": [
+            "Portafolio y diversificación.",
+            "La correlación determina la reducción de riesgo.",
+            "Industrias distintas diversifican más."
+          ],
+          "errores_frecuentes": [
+            "Creer que tener muchas acciones del mismo sector es diversificar.",
+            "Promediar las desviaciones estándar para obtener la del portafolio."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/15-2-risk-and-return-to-multiple-assets",
+            "seccion": "15.2 Risk and Return to Multiple Assets"
+          }
+        },
+        {
+          "id": "mv-riesgo-sistematico",
+          "nombre": "Riesgo específico, riesgo sistemático y tamaño del portafolio",
+          "explicacion": "El riesgo ligado a eventos de una empresa concreta, como una demanda por un producto, un invento o irregularidades contables, es el riesgo específico o no sistemático, y la diversificación protege contra él. Hay un nivel por debajo del cual el riesgo no baja aunque se agreguen más acciones: es el riesgo sistemático, el de mantener el portafolio de mercado, causado por eventos que afectan a todas las empresas, como cambios en la política monetaria y las tasas, eventos geopolíticos o pandemias. La desviación estándar cae rápido al pasar de una a dos o tres acciones y luego cada acción adicional reduce menos riesgo; un inversionista promedio puede diversificar razonablemente con alrededor de una docena de acciones poco correlacionadas.",
+          "ejemplo": "Una cartera de doce empresas de sectores distintos casi no sufre si una de ellas pierde un juicio, pero sí cae cuando suben las tasas de interés en toda la economía.",
+          "puntos_clave": [
+            "Riesgo no sistemático: se diversifica.",
+            "Riesgo sistemático: no se elimina.",
+            "Rendimientos decrecientes de agregar acciones."
+          ],
+          "errores_frecuentes": [
+            "Creer que la diversificación elimina todo el riesgo.",
+            "Pensar que más acciones siempre reducen el riesgo en la misma medida."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/15-2-risk-and-return-to-multiple-assets",
+            "seccion": "15.2 Risk and Return to Multiple Assets"
+          }
+        },
+        {
+          "id": "mv-eficiencia",
+          "nombre": "Mercados eficientes",
+          "explicacion": "Un mercado eficiente es aquel en que los costos son mínimos y los precios son actuales y justos para todos. La eficiencia operativa se refiere a la rapidez y exactitud para ejecutar una orden al mejor precio disponible; la eficiencia informativa, a qué tan rápido los precios reflejan toda la información. La hipótesis de mercados eficientes tiene tres formas: débil, en que los precios reflejan la información histórica de precios y volúmenes, por lo que el análisis técnico no supera al mercado; semifuerte, en que reflejan toda la información pública, y fuerte, en que reflejan toda la información pública y privada, la menos realista de las tres.",
+          "ejemplo": "Si una empresa anuncia utilidades mayores a las esperadas y su acción sube en segundos, el precio está incorporando rápidamente información pública, como plantea la forma semifuerte.",
+          "puntos_clave": [
+            "Eficiencia operativa e informativa.",
+            "Formas débil, semifuerte y fuerte.",
+            "Límites del análisis técnico y fundamental."
+          ],
+          "errores_frecuentes": [
+            "Creer que en un mercado eficiente nadie gana dinero.",
+            "Confundir la forma semifuerte con la fuerte."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/11-5-efficient-markets",
+            "seccion": "11.5 Efficient Markets"
+          }
+        },
+        {
+          "id": "mv-bonos-historicos",
+          "nombre": "Rendimientos históricos de los bonos",
+          "explicacion": "Los bonos del Tesoro de Estados Unidos están entre las inversiones más seguras y suelen usarse como aproximación de la tasa libre de riesgo, pero su valor cambia con las tasas de interés: aunque no incumplan, sus rendimientos anuales varían mucho, porque el rendimiento total incluye los intereses y el cambio de precio. Cuando las tasas bajan, los precios de los bonos suben, y cuando suben, los precios caen. Los bonos corporativos de calidad media no están libres de riesgo de impago y por eso exigen una prima de riesgo sobre los bonos del gobierno.",
+          "ejemplo": "Un inversionista compra un bono del gobierno; si al año siguiente las tasas del mercado suben, el precio de su bono baja y su rendimiento total de ese año puede ser negativo aunque cobre todos los intereses.",
+          "puntos_clave": [
+            "Rendimiento total = intereses + cambio de precio.",
+            "Relación inversa entre tasas y precios.",
+            "Prima de riesgo de los bonos corporativos."
+          ],
+          "errores_frecuentes": [
+            "Creer que un bono sin riesgo de impago no puede perder valor.",
+            "Ignorar la prima de los bonos corporativos."
+          ],
+          "formulas": [],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/12-3-historical-picture-of-returns-to-bonds",
+            "seccion": "12.3 Historical Picture of Returns to Bonds"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mv-desempeno",
+      "nombre": "Medición del desempeño y valoración",
+      "orden": 5,
+      "descripcion": "Razón de Sharpe, razón de Treynor, alfa de Jensen y valoración de acciones preferentes.",
+      "dificultad": 3,
+      "subtemas": [
+        {
+          "id": "mv-sharpe",
+          "nombre": "Razón de Sharpe",
+          "explicacion": "Un rendimiento promedio alto no dice nada sin conocer el riesgo asumido. La razón de Sharpe divide la prima de riesgo del portafolio, es decir, su rendimiento menos el rendimiento libre de riesgo, para la desviación estándar de sus rendimientos. Es una relación entre recompensa y riesgo total: el numerador es la recompensa por asumir riesgo y el denominador las unidades de riesgo. Es una medida relativa: se interpreta comparando con otros administradores o con un índice de referencia.",
+          "ejemplo": "Un administrador obtuvo 18 % con una desviación estándar de 20 % cuando la tasa libre de riesgo era 4 %: su razón de Sharpe es (0,18 − 0,04) ÷ 0,20 = 0,7.",
+          "puntos_clave": [
+            "Sharpe = (Rp − Rf) ÷ σp.",
+            "Recompensa por unidad de riesgo total.",
+            "Medida relativa."
+          ],
+          "errores_frecuentes": [
+            "Comparar administradores solo por su rendimiento.",
+            "Olvidar restar la tasa libre de riesgo."
+          ],
+          "formulas": [
+            "razon-sharpe"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+            "seccion": "15.4 Applications in Performance Measurement"
+          }
+        },
+        {
+          "id": "mv-treynor",
+          "nombre": "Razón de Treynor",
+          "explicacion": "La razón de Treynor también mide recompensa por riesgo, pero divide la prima de riesgo del portafolio para su beta, que mide el riesgo sistemático, en lugar de la desviación estándar, que mide el riesgo total. Igual que Sharpe, es una medida relativa: no hay un número absoluto que indique si el desempeño es bueno o malo, sino que se compara con el de otros administradores o con un índice de referencia.",
+          "ejemplo": "Un portafolio que rinde 15 % con beta de 1,1, cuando la tasa libre de riesgo es 4 %, tiene una razón de Treynor de (0,15 − 0,04) ÷ 1,1 = 0,10.",
+          "puntos_clave": [
+            "Treynor = (Rp − Rf) ÷ βp.",
+            "Usa el riesgo sistemático.",
+            "Medida relativa."
+          ],
+          "errores_frecuentes": [
+            "Usar la desviación estándar en lugar de la beta.",
+            "Interpretar el valor sin compararlo con otros."
+          ],
+          "formulas": [
+            "razon-treynor"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+            "seccion": "15.4 Applications in Performance Measurement"
+          }
+        },
+        {
+          "id": "mv-jensen",
+          "nombre": "Alfa de Jensen",
+          "explicacion": "El alfa de Jensen es el rendimiento del portafolio menos el rendimiento esperado que predice el CAPM, es decir, la tasa libre de riesgo más la beta por la prima de mercado. A diferencia de Sharpe y Treynor, tiene sentido en términos absolutos: un alfa positivo indica un rendimiento anormal, superior al esperado para su riesgo; un alfa de cero, que obtuvo exactamente lo esperado, y uno negativo, que los inversionistas no fueron recompensados por el riesgo asumido.",
+          "ejemplo": "Con tasa libre de riesgo de 4 %, mercado de 11 % y beta de 0,9, un portafolio que rindió 13 % tiene un alfa de 0,13 − (0,04 + 0,9 × 0,07) = 0,027, es decir, 2,7 % sobre lo esperado.",
+          "puntos_clave": [
+            "α = Rp − [Rf + βp (Rm − Rf)].",
+            "Medida absoluta.",
+            "Alfa positivo: rendimiento anormal."
+          ],
+          "errores_frecuentes": [
+            "Olvidar los corchetes y restar mal el rendimiento esperado.",
+            "Confundir un rendimiento alto con un alfa positivo."
+          ],
+          "formulas": [
+            "alfa-jensen"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+            "seccion": "15.4 Applications in Performance Measurement"
+          }
+        },
+        {
+          "id": "mv-preferentes",
+          "nombre": "Acciones preferentes y su valoración",
+          "explicacion": "La acción preferente es una forma de patrimonio con derechos preferentes: su dividendo debe pagarse antes que el de las acciones comunes y, en una liquidación, sus tenedores cobran antes que los accionistas comunes. Suele pagar un dividendo fijo cada período, tiene valor nominal y no tiene fecha de vencimiento. Si es acumulativa, los dividendos no pagados quedan como deuda pendiente con sus tenedores. Como el dividendo es constante y no vence, se valora como una perpetuidad: el dividendo anual dividido para la tasa de descuento exigida.",
+          "ejemplo": "Una acción preferente de valor nominal USD 100 que paga 8 % anual vale 8 ÷ 0,10 = USD 80 si el mercado exige 10 %.",
+          "puntos_clave": [
+            "Preferencia en dividendos y liquidación.",
+            "Acumulativas y no acumulativas.",
+            "Valor = dividendo ÷ tasa exigida."
+          ],
+          "errores_frecuentes": [
+            "Usar la tasa de dividendo como tasa de descuento.",
+            "Tratar la acción preferente como un bono con vencimiento."
+          ],
+          "formulas": [
+            "valor-accion-preferente"
+          ],
+          "fuente": {
+            "ref": "os-pfin2",
+            "url": "https://openstax.org/books/principles-finance-2e/pages/11-4-preferred-stock",
+            "seccion": "11.4 Preferred Stock"
+          }
+        }
+      ]
+    }
+  ]
+}

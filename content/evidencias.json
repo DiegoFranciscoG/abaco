@@ -5894,5 +5894,159 @@
       "suptech",
       "regtech"
     ]
+  },
+  {
+    "id": "mv-objeto-valor",
+    "palabras": [
+      "promover un mercado de valores organizado, integrado, eficaz y transparente",
+      "se considera valor al derecho o conjunto de derechos de contenido esencialmente economico"
+    ]
+  },
+  {
+    "id": "mv-segmentos",
+    "palabras": [
+      "mercado bursatil es el conformado por ofertas, demandas y negociaciones de valores inscritos",
+      "mercado extrabursatil es el mercado primario que se genera entre la institucion financiera y el inversor",
+      "son intermediarios de valores unicamente las casas de valores"
+    ]
+  },
+  {
+    "id": "mv-oferta-publica",
+    "palabras": [
+      "oferta publica primaria de valores",
+      "tener la calificacion de riesgo para aquellos valores representativos de deuda",
+      "catastro publico del mercado de valores en el cual se inscribira la informacion publica"
+    ]
+  },
+  {
+    "id": "mv-informacion",
+    "palabras": [
+      "todo hecho o informacion relevante",
+      "se entiende por informacion privilegiada el conocimiento de actos, hechos o acontecimientos capaces de influir en los precios"
+    ]
+  },
+  {
+    "id": "mv-bolsas-casas",
+    "palabras": [
+      "las bolsas de valores son sociedades anonimas, cuyo objeto social unico es brindar los servicios y mecanismos requeridos para la negociacion de valores",
+      "casa de valores es la compania anonima autorizada y controlada por la superintendencia de companias para ejercer la intermediacion de valores"
+    ]
+  },
+  {
+    "id": "mv-renta-fija-variable",
+    "palabras": [
+      "valores de renta fija son aquellos cuyo rendimiento no depende de los",
+      "son aquellos que no tienen un vencimiento determinado y cuyo rendimiento, en forma de dividendos o ganancias de capital"
+    ]
+  },
+  {
+    "id": "mv-obligaciones",
+    "palabras": [
+      "obligaciones son valores de contenido crediticio representativos de deuda a cargo del emisor",
+      "papel comercial con plazo inferior a trescientos sesenta dias",
+      "obligaciones convertibles en acciones"
+    ]
+  },
+  {
+    "id": "mv-calificacion-riesgo",
+    "palabras": [
+      "su opinion sobre la solvencia y probabilidad de pago",
+      "no podran exceder al veinticinco por ciento de los ingresos anuales de la sociedad calificadora"
+    ]
+  },
+  {
+    "id": "mv-inversionistas-institucionales",
+    "palabras": [
+      "se entendera por inversionistas institucionales",
+      "companias de seguros y reaseguros"
+    ]
+  },
+  {
+    "id": "mv-fondos",
+    "palabras": [
+      "fondo de inversion es el patrimonio comun, integrado por aportes de varios inversionistas",
+      "fondos administrados son aquellos que admiten la incorporacion",
+      "cuotas de participacion no son rescatables"
+    ]
+  },
+  {
+    "id": "mv-fideicomiso",
+    "palabras": [
+      "contrato de fideicomiso mercantil",
+      "de manera temporal e irrevocable, la propiedad",
+      "patrimonio autonomo"
+    ]
+  },
+  {
+    "id": "mv-titularizacion",
+    "palabras": [
+      "es el proceso mediante el cual se emiten valores susceptibles de ser colocados y negociados libremente en el mercado bursatil",
+      "originador consiste en una o mas personas",
+      "agente de manejo"
+    ]
+  },
+  {
+    "id": "mv-diversificacion",
+    "palabras": [
+      "diversification",
+      "correlation coefficient",
+      "combining stocks that are not perfectly positively correlated in a portfolio decreases risk"
+    ]
+  },
+  {
+    "id": "mv-riesgo-sistematico",
+    "palabras": [
+      "firm-specific risk",
+      "systematic risk",
+      "approximately a dozen stocks"
+    ]
+  },
+  {
+    "id": "mv-eficiencia",
+    "palabras": [
+      "operational efficiency",
+      "informational efficiency",
+      "weak form, semi-strong form, and strong form"
+    ]
+  },
+  {
+    "id": "mv-bonos-historicos",
+    "palabras": [
+      "proxy for a risk-free investment",
+      "the total returns reflect interest payments plus the change in price",
+      "risk premium"
+    ]
+  },
+  {
+    "id": "mv-sharpe",
+    "palabras": [
+      "sharpe ratio",
+      "reward-to-risk ratio",
+      "risk-free return"
+    ]
+  },
+  {
+    "id": "mv-treynor",
+    "palabras": [
+      "treynor ratio",
+      "systematic risk, using the beta of the portfolio in the denominator",
+      "relative measures of investment performance"
+    ]
+  },
+  {
+    "id": "mv-jensen",
+    "palabras": [
+      "jensen's alpha",
+      "meaningful in an absolute sense",
+      "abnormal return"
+    ]
+  },
+  {
+    "id": "mv-preferentes",
+    "palabras": [
+      "preferred stock",
+      "cumulative in nature",
+      "form of perpetuity"
+    ]
   }
 ]

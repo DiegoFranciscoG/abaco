@@ -1678,5 +1678,96 @@
       "seccion": "Arts. 190 y 328"
     },
     "actualizado_en": "2026-10-26"
+  },
+  {
+    "id": "desempeno-portafolios",
+    "nombre": "Comparación de administradores: Sharpe, Treynor y alfa de Jensen",
+    "descripcion": "Compara dos portafolios con las tres medidas de desempeño ajustado por riesgo y valora una acción preferente.",
+    "materias": [
+      "mercado-valores"
+    ],
+    "celdas": {
+      "A1": "Tasa libre de riesgo",
+      "B1": 0.04,
+      "A2": "Rendimiento del mercado",
+      "B2": 0.11,
+      "A4": "Medida",
+      "B4": "Portafolio A",
+      "C4": "Portafolio B",
+      "A5": "Rendimiento",
+      "B5": 0.13,
+      "C5": 0.15,
+      "A6": "Desviación estándar",
+      "B6": 0.15,
+      "C6": 0.25,
+      "A7": "Beta",
+      "B7": 0.9,
+      "C7": 1.4,
+      "A8": "Razón de Sharpe",
+      "B8": "=(B5-$B$1)/B6",
+      "C8": "=(C5-$B$1)/C6",
+      "A9": "Razón de Treynor",
+      "B9": "=(B5-$B$1)/B7",
+      "C9": "=(C5-$B$1)/C7",
+      "A10": "Alfa de Jensen",
+      "B10": "=B5-($B$1+B7*($B$2-$B$1))",
+      "C10": "=C5-($B$1+C7*($B$2-$B$1))",
+      "A12": "Valor nominal preferente (USD)",
+      "B12": 100,
+      "A13": "Tasa de dividendo",
+      "B13": 0.08,
+      "A14": "Tasa exigida",
+      "B14": 0.1,
+      "A15": "Valor de la acción preferente",
+      "B15": "=B12*B13/B14"
+    },
+    "formatos": {
+      "B1": "porcentaje",
+      "B2": "porcentaje",
+      "B5": "porcentaje",
+      "C5": "porcentaje",
+      "B6": "porcentaje",
+      "C6": "porcentaje",
+      "B8": "numero",
+      "C8": "numero",
+      "B9": "numero",
+      "C9": "numero",
+      "B10": "numero",
+      "C10": "numero",
+      "B15": "moneda"
+    },
+    "verificacion": [
+      {
+        "celda": "B8",
+        "esperado": 0.6,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C8",
+        "esperado": 0.44,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B10",
+        "esperado": 0.027,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "C10",
+        "esperado": 0.012,
+        "tolerancia": 0.000001
+      },
+      {
+        "celda": "B15",
+        "esperado": 80,
+        "tolerancia": 0.000001
+      }
+    ],
+    "fuente": {
+      "ref": "os-pfin2",
+      "url": "https://openstax.org/books/principles-finance-2e/pages/15-4-applications-in-performance-measurement",
+      "seccion": "15.4 Applications in Performance Measurement"
+    },
+    "actualizado_en": "2026-10-26"
   }
 ]
