@@ -42,7 +42,6 @@ async function pdfText(bytes: Uint8Array): Promise<string> {
     data: bytes,
     disableFontFace: true,
     useWasm: false,
-    isEvalSupported: false,
   }).promise;
   let out = '';
   for (let i = 1; i <= doc.numPages; i++) {
