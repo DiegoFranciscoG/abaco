@@ -272,3 +272,50 @@ Las demás plantillas nuevas de Excel citan secciones que el contenido ya usaba 
 - **SUPUESTO:** «materia dominada» en el avance por malla (examen de práctica de 70 % o más y 80 % de los ejercicios resueltos) es un criterio propio de la app y la pantalla lo dice así.
 - **Pendiente:** los porcentajes de retención del IVA no se publican hasta confirmar que la NAC-DGERCGC20-00000061 no tiene reformas posteriores a 2023 (ver [revision-anual.md](revision-anual.md)).
 - **No se encontró** en la taxonomía oficial el término «importe recuperable»; el glosario lo usa dentro de la definición de deterioro porque aparece en el texto en español de la Sección 27 publicado por la Fundación IFRS (proyecto de norma de 2013), pero no tiene ficha propia.
+
+## 17. Materias nuevas, evidencias y recursos para aprender más (verificado 2026-10-30)
+
+### Cobertura de las mallas
+
+Las 61 materias del catálogo cubren todos los nombres de los 13 planes públicos revisados: `content/carreras.json` ya no tiene materias «Aún no está en ÁBACO» en ninguna de las 7 carreras. Las materias nuevas de esta etapa y sus fuentes principales son:
+
+| Materia | Fuentes principales (todas en `content/fuentes.json`) |
+|---|---|
+| Desarrollo económico, sistema financiero, mercado de valores, seguros | COMF, Ley de Mercado de Valores y Ley General de Seguros dentro del COMF, FSB (fintech), SSA (tabla de vida), OpenStax |
+| Finanzas públicas y presupuestos | COPLAFIP (R.O. 142 de 2025) y OpenStax |
+| Economía popular y solidaria | LOEPS y su reglamento |
+| Auditoría | LOCGE, Normas de Control Interno de la CGE (2023), Reglamento PLA (Decreto 298) |
+| Contratación pública | Reglamento General de la LOSNCP (Decreto 193) |
+| Aduanas | COPCI, guía de importación del SENAE, OMA (Sistema Armonizado) y OMC (valoración) |
+| Econometría, organización industrial, responsabilidad social, programación y datos | OpenStax, Stanford Encyclopedia of Philosophy, Premios Nobel 2002 y 2017, NIIF S1 y S2, ODS de la ONU |
+| Investigación de operaciones | MIT OCW 15.053 (notas de clase, CC BY-NC-SA) |
+| Matemáticas para economistas | OpenStax *Precálculo 2ed*, *Calculus Volume 1, 2 y 3* |
+| Propiedad intelectual | Código Ingenios (R.O. 899 de 2016, texto en WIPO Lex) y páginas temáticas de la OMPI |
+| Inglés de negocios | *Business Communication for Success* (SAIT, CC BY-NC-SA) y directriz de la EPN que cita el art. 80 del Reglamento de Régimen Académico de 2019 |
+| Gestión de riesgos financieros | BCBS: nota explicativa IRB (2005), LCR (2013) y principios de riesgo operativo (2021); COMF art. 190 |
+| Diseño y evaluación de políticas públicas | Banco Mundial, *Impact Evaluation in Practice* 2.ª ed. (CC BY 3.0 IGO), y COPLAFIP |
+| Marco legal del marketing y protección de datos | Ley Orgánica de Defensa del Consumidor (WIPO Lex, reformas a 2015) y LOPDP (R.O. 459 de 2021) |
+| Modelos de simulación | MIT OCW 6.0002, clases 4 a 8 |
+| Contabilidad gubernamental | COPLAFIP arts. 148 a 160, acuerdos ministeriales 045 (2024) y 014 (2023) del MEF, instructivo de bienes e inventarios (2025) |
+| Contabilidad de instituciones financieras | Catálogo Único de Cuentas de la SEPS (codificado 2023) y COMF |
+| Gestión y auditoría de la calidad | IAF MD 5:2023, grupo APG de ISO 9001, OpenStax y R.O. 342 de 2026 (Sistema Ecuatoriano de la Calidad) |
+
+### Evidencias
+
+Los 1356 subtemas tienen palabras de evidencia en `content/evidencias.json` y `node scripts/verificar-fuentes.ts` las encontró todas en la sección citada (informe en [verificacion-contenido.md](verificacion-contenido.md)). Una prueba de integridad exige ahora que ningún subtema quede sin evidencia. Dos ajustes en esta revisión:
+
+- `ed-dispersion-posicion` cita la sección 2.3 de *Introductory Statistics 2e* para percentiles y cuartiles; la puntuación z está en la sección 2.7, y la cita lo dice.
+- En ética profesional, cinco subtemas pasaron de la página general del Código IESBA a los documentos de la IFAC que tratan su tema: la visión general de la edición 2025 (estructura), la base de conclusiones de *Role and Mindset*, el artículo de cambios clave (incentivos y presión) y las preguntas y respuestas sobre NOCLAR para contadores en la empresa.
+
+### Cursos, videos y guías («Para aprender más»)
+
+`content/recursos.json` recomienda 90 recursos gratuitos, al menos uno por materia: 61 cursos (MIT OpenCourseWare, Open Yale Courses, SRI, SERCOP, Superintendencia de Bancos, SEPS, MEF, Ministerio del Trabajo, IESS, J-PAL, BID, OMA, SDG Academy, Microsoft Learn, Python, Kaggle y FUN MOOC), 28 videos y 1 guía oficial (constitución electrónica de compañías). `node scripts/verificar-recursos.ts` los comprueba en línea: cada video debe devolver por el endpoint público oEmbed de YouTube el mismo título y canal registrados, y cada curso o guía debe responder con estado 200 y contener su frase. Resultado: 90 de 90 ([verificacion-recursos.md](verificacion-recursos.md)).
+
+Regla de selección: solo canales institucionales o académicos (MIT OpenCourseWare, YaleCourses, KhanAcademyEspañol, Banco Central del Ecuador, DANE Colombia, la oficina de licencias del MIT y TEDx). Se descartaron canales de creadores independientes sobre impuestos y contabilidad aunque fueran populares, porque sus cifras no se pueden verificar y algunas ya estaban desactualizadas.
+
+### Límites y SUPUESTOS de esta etapa
+
+- **Copias no oficiales de la norma:** no se encontró en un sitio oficial accesible el texto de la Ley Fintech, de la LOSNCP ni de la Ley de prevención de lavado de activos; se usaron el FSB, el Reglamento de la LOSNCP y el Reglamento PLA, que sí están publicados. La Ley Orgánica de Defensa del Consumidor se tomó de WIPO Lex, con reformas hasta el 16-01-2015, y el Código Ingenios en su texto de 2016: **SUPUESTO**, sin reformas posteriores que cambien los artículos citados.
+- **Sitios que bloquean el acceso automático:** ISO, ASQ y el Consejo de Europa (MCER) respondieron con desafíos anti-bots, y la página de cursos de Khan Academy también. No se intentó esquivarlos: la materia de calidad se apoya en el IAF y OpenStax, el nivel B1 en la directriz de la EPN y los videos de Khan se verifican por oEmbed.
+- **Cursos con cupos o requisitos:** los cursos del SERCOP, del SRI y del Ministerio del Trabajo abren por convocatorias; los del MEF son para servidores de entidades del Presupuesto General del Estado. La ficha lo dice; la disponibilidad de cada convocatoria no se puede verificar con anticipación.
+- **Idioma:** 22 de los 90 recursos están en español; los demás, sobre todo cursos y clases del MIT y de Yale, están en inglés. La página de cada materia muestra primero los recursos en español.

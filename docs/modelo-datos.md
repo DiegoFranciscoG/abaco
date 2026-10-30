@@ -21,6 +21,7 @@ erDiagram
   EJERCICIO }o--|| MATERIA : "practica"
   EJERCICIO }o--o| SUBTEMA : "refuerza"
   APP }o--o{ MATERIA : "tecnología externa"
+  RECURSO }o--o{ MATERIA : "para aprender más"
   HERRAMIENTA }o--o{ MATERIA : "herramienta propia"
   PLANTILLA }o--o{ MATERIA : "hoja de cálculo"
   TERMINO }o--|| FUENTE : "cita"
@@ -115,6 +116,20 @@ erDiagram
     url url_oficial
     date fecha_consulta
   }
+  RECURSO {
+    string id PK
+    enum tipo "curso|video|guia"
+    string titulo "tal como lo publica la fuente"
+    string autor "institución o canal"
+    string para_que
+    string_list materias FK
+    enum idioma "es|en"
+    enum costo "gratis|gratis-con-cuenta"
+    url url
+    string youtube_id "solo videos"
+    string frase "solo cursos y guías: debe aparecer en la página"
+    date fecha_consulta
+  }
 ```
 
 ### Reglas de negocio del contenido (se hacen cumplir con código)
@@ -126,6 +141,8 @@ erDiagram
 | Identificadores únicos y referencias existentes (materia, fórmula, subtema, fuente) | esquemas + integridad | `tests/content/integrity.test.ts` |
 | Carreras: materias existentes, ciclo habitual dentro de los ciclos de la carrera y entre los ciclos en que aparece, solo materias presentes en al menos la mitad de los planes, ninguna materia sin carrera | `carreraSchema` | integridad |
 | Cada materia tiene al menos una herramienta propia y una tecnología externa verificada | `materiaSchema` + `apps.json` | integridad |
+| Cada materia recomienda al menos un curso, video o guía gratuito; un video enlaza a `https://www.youtube.com/watch?v=<youtube_id>` y solo de canales institucionales o académicos; un curso o guía declara la frase que se busca en su página | `recursoSchema` | integridad + `scripts/verificar-recursos.ts` (oEmbed y frase, en línea) |
+| Todo subtema declara sus palabras de evidencia y la sección citada las contiene | `content/evidencias.json` | integridad + `scripts/verificar-fuentes.ts` (en línea) |
 | Cada materia, tema y subtema tiene teoría, y cada subtema un ejemplo | `subtemaSchema` (`ejemplo` obligatorio) | integridad |
 | Toda cifra normativa tiene vigencia dentro de su ejercicio fiscal, base legal y fuente oficial; las tablas por tramos encadenan | `cifraSchema` | `tests/content/t11-vigencia.test.ts` (T-11) |
 | Ninguna cifra se muestra vencida: T-11 falla desde el día siguiente a su `hasta` y avisa 60 días antes; un flujo mensual la corre sin cambios en el código | `vigenciaStatus` + `.github/workflows/vigencia.yml` | T-11 |

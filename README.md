@@ -21,7 +21,7 @@ Estudia y resuelve los deberes de las carreras económicas y administrativas de 
 
 ## Problema que resuelve
 
-Quien estudia Contabilidad, Economía, Administración o Finanzas en Ecuador junta apuntes sueltos, PDF de dudosa procedencia y calculadoras con tablas tributarias o laborales desactualizadas. ÁBACO ordena las 26 materias más frecuentes de esas carreras por **carrera y ciclo habitual**, explica cada subtema con redacción propia y cita la sección exacta de la norma o del libro abierto que lo respalda, y trae herramientas que aplican la norma vigente (SRI, IESS, Código del Trabajo) con su fuente a la vista.
+Quien estudia Contabilidad, Economía, Administración o Finanzas en Ecuador junta apuntes sueltos, PDF de dudosa procedencia y calculadoras con tablas tributarias o laborales desactualizadas. ÁBACO ordena las 61 materias de esas carreras por **carrera y ciclo habitual**, explica cada subtema con redacción propia y cita la sección exacta de la norma o del libro abierto que lo respalda, y trae herramientas que aplican la norma vigente (SRI, IESS, Código del Trabajo) con su fuente a la vista.
 
 ## Funcionalidades
 
@@ -31,17 +31,18 @@ Quien estudia Contabilidad, Economía, Administración o Finanzas en Ecuador jun
 - **Ecuador en cifras hoy**: SBU, aportes, IVA, renta, retenciones, inflación del INEC y tasas del BCE con su fuente; se copian o se comparten como imagen.
 - **¿Cuánto necesito para pasar?**: con los pesos y notas que puso tu docente calcula la nota que falta, con el procedimiento.
 - **Repaso de errores**: las preguntas que fallas vuelven con repetición espaciada hasta acertarlas tres veces; búsqueda dentro de tus PDF.
-- **Carrera → ciclo → materia → tema → subtema**: 7 carreras genéricas, 26 materias, 107 temas y 351 subtemas, sin nombres de universidades. El ciclo habitual sale de 13 planes públicos (método en [docs/investigacion.md](docs/investigacion.md#1b-carrera--ciclo--materia-sin-universidades)).
+- **Carrera → ciclo → materia → tema → subtema**: 7 carreras genéricas, 61 materias, 331 temas y 1356 subtemas, sin nombres de universidades; todas las materias de los planes revisados tienen su temario. El ciclo habitual sale de 13 planes públicos (método en [docs/investigacion.md](docs/investigacion.md#1b-carrera--ciclo--materia-sin-universidades)).
 - **Cobertura honesta**: cada materia dice cuántas unidades tiene frente al estándar de profundidad (5 a 7 unidades, 2 ejercicios por subtema de cálculo); el panel «Cobertura» de la app y [docs/cobertura.md](docs/cobertura.md) muestran lo que falta por carrera y ciclo.
-- **Teoría y ejemplo en cada subtema**: los 351 subtemas tienen explicación con fuente, un ejemplo concreto con cifras de Ecuador, puntos clave y errores frecuentes.
+- **Teoría y ejemplo en cada subtema**: los 1356 subtemas tienen explicación con fuente, un ejemplo concreto, puntos clave y errores frecuentes, y un verificador comprueba que la sección citada contiene sus palabras clave ([informe](docs/verificacion-contenido.md)).
 - **Área de estudio**: elige una materia y estudia con el contenido de ÁBACO, con tus propios PDF (se leen en tu dispositivo, no se suben) o con ambos: repaso, tarjetas para memorizar con repetición espaciada y exámenes de práctica calificados con su explicación.
 - **Enviar un PDF al autor**: si un PDF puede servir a otros, ÁBACO revisa que tenga texto, que sea de la materia y que no tenga datos personales, y prepara el correo; lo verificado se redacta de nuevo y se agrega con su fuente.
-- **93 fórmulas verificadas**: calculadora en vivo, sintaxis de Excel en español e inglés y un ejemplo que se recalcula en cada build.
+- **175 fórmulas verificadas**: calculadora en vivo, sintaxis de Excel en español e inglés y un ejemplo que se recalcula en cada build.
 - **17 herramientas propias**: calculadora de notas, editor de informes con fórmulas, libro diario y mayor, calculadora estadística, graficador, oferta y demanda, datos macro del Banco Mundial, tipos de cambio del BCE, punto de equilibrio, evaluador de proyectos (VAN, TIR), rol de pagos (IESS 2026), IVA e impuesto a la renta (tabla 2026), FODA y matriz de decisión, tarjetas con repetición espaciada (SM-2), referencias APA, laboratorio de hoja de cálculo y buscador académico.
-- **Tecnología real en cada materia**: 25 aplicaciones externas verificadas en su sitio oficial (GnuCash, GanttProject, draw.io, SRI en línea, IESS, Ministerio del Trabajo, BCE, INEC, WITS, LimeSurvey y más).
+- **Tecnología real en cada materia**: 32 aplicaciones externas verificadas en su sitio oficial (GnuCash, GanttProject, draw.io, SRI en línea, IESS, Ministerio del Trabajo, BCE, INEC, WITS, LimeSurvey y más).
+- **Para aprender más**: cada materia recomienda cursos, videos y guías gratuitos de fuentes oficiales o académicas (MIT OpenCourseWare, Open Yale Courses, Khan Academy, SRI, SERCOP, SEPS, BID y más): 90 recursos comprobados en línea, con los de español primero ([informe](docs/verificacion-recursos.md)).
 - **Buscador académico** en 5 fuentes abiertas (Crossref, OpenAlex, DOAJ, LA Referencia, Open Library) con la cita APA lista.
-- **Práctica**: 60 ejercicios con respuesta verificable en las materias de cálculo, pistas e historial; las materias teóricas se practican con tarjetas y exámenes.
-- **15 plantillas de Excel por materia**: liquidación de IVA, estadística descriptiva, intervalo de confianza, tamaño de muestra, regresión, elasticidad, inflación con el IPC, tipo de cambio, costo marginal, SUMAR.SI y más; se abren en el laboratorio o se descargan directo como .xlsx.
+- **Práctica**: 518 ejercicios con respuesta verificable en las materias de cálculo, pistas e historial; las materias teóricas se practican con tarjetas y exámenes.
+- **43 plantillas de Excel por materia**: liquidación de IVA, estadística descriptiva, intervalo de confianza, tamaño de muestra, regresión, elasticidad, inflación con el IPC, tipo de cambio, costo marginal, SUMAR.SI y más; se abren en el laboratorio o se descargan directo como .xlsx.
 - **Glosario español-inglés**: 85 términos; los 31 de NIIF usan el nombre de la traducción oficial de la Fundación IFRS. Se busca en los dos idiomas y se descarga en Excel.
 - **Modo profesor**: el docente elige ejercicios, imprime la hoja del estudiante y el solucionario por separado y comparte un enlace para que cada estudiante los resuelva con corrección automática.
 - **Mi espacio**: apuntes, estrellas, colecciones (compartibles por enlace, sin tus apuntes), recordatorios, respaldo en JSON y **avance por malla**: tu carrera ciclo por ciclo, con cada materia dominada, en curso o sin empezar.
@@ -189,11 +190,11 @@ Modelo de amenazas y correspondencia con OWASP ASVS 5.0 en [docs/seguridad.md](d
 
 ## Roadmap
 
-- Llevar al estándar de profundidad las 25 materias que siguen parciales, empezando por el primer ciclo de las cuatro carreras más grandes ([docs/cobertura.md](docs/cobertura.md)).
+- Sumar más recursos en español por materia a medida que universidades e instituciones públicas publiquen cursos abiertos verificables.
 - Publicar los porcentajes de retención del IVA cuando se confirme que no tienen reformas posteriores a 2023.
 - Pasar el glosario y los subtemas NIIF a la edición 2025 de la NIIF para las PYMES, que rige desde el 01-01-2027.
 - Revisar los PDF que envíen los estudiantes con `npm run pdf:analizar` y agregar lo verificado como subtemas, ejemplos o ejercicios con su fuente.
-- Materias optativas frecuentes (auditoría, presupuestos, mercado de valores) cuando haya fuentes abiertas verificables.
+- Revisar cada año las copias de normas tomadas de repositorios no oficiales (Ley de Defensa del Consumidor, Código Ingenios) contra el Registro Oficial ([docs/investigacion.md](docs/investigacion.md#17-materias-nuevas-evidencias-y-recursos-para-aprender-más-verificado-2026-10-30)).
 - Formulario del buzón con un servicio propio si el volumen lo justifica (requiere actualizar la política de privacidad y la CSP).
 
 ## Fuentes de datos y licencias
