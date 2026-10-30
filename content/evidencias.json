@@ -9408,5 +9408,626 @@
       "designar temporalmente laboratorios, organismos evaluadores de la conformidad",
       "regular el proceso de designacion en materia de la evaluacion de la conformidad"
     ]
+  },
+  {
+    "id": "cd-funciones-concepto",
+    "palabras": [
+      "use functional notation to evaluate a function",
+      "determine the domain and range of a function"
+    ]
+  },
+  {
+    "id": "cd-funciones-clases",
+    "palabras": [
+      "calculate the slope of a linear function and interpret its meaning",
+      "find the roots of a quadratic polynomial"
+    ]
+  },
+  {
+    "id": "cd-funciones-exponenciales",
+    "palabras": [
+      "identify the form of an exponential function",
+      "explain the relationship between exponential and logarithmic functions"
+    ]
+  },
+  {
+    "id": "cd-limites-idea",
+    "palabras": [
+      "describe the limit of a function",
+      "use a table of values to estimate the limit of a function"
+    ]
+  },
+  {
+    "id": "cd-limites-leyes",
+    "palabras": [
+      "recognize the basic limit laws",
+      "use the limit laws to evaluate the limit of a function"
+    ]
+  },
+  {
+    "id": "cd-limites-continuidad",
+    "palabras": [
+      "explain the three conditions for continuity at a point",
+      "such functions are called continuous"
+    ]
+  },
+  {
+    "id": "cd-derivada-secante",
+    "palabras": [
+      "calculate the slope of a tangent line",
+      "explain the difference between average velocity and instantaneous velocity"
+    ]
+  },
+  {
+    "id": "cd-derivada-definicion",
+    "palabras": [
+      "identify the derivative as the limit of a difference quotient",
+      "calculate the derivative of a given function at a point"
+    ]
+  },
+  {
+    "id": "cd-derivada-reglas",
+    "palabras": [
+      "state the constant, constant multiple, and power rules",
+      "use the product rule for finding the derivative of a product of functions"
+    ]
+  },
+  {
+    "id": "cd-derivada-cadena",
+    "palabras": [
+      "state the chain rule for the composition of two functions"
+    ]
+  },
+  {
+    "id": "cd-aplicaciones-marginal",
+    "palabras": [
+      "use derivatives to calculate marginal cost and revenue in a business situation"
+    ]
+  },
+  {
+    "id": "cd-aplicaciones-extremos",
+    "palabras": [
+      "define absolute extrema",
+      "explain how to find the critical points of a function over a closed interval"
+    ]
+  },
+  {
+    "id": "cd-aplicaciones-optimizacion",
+    "palabras": [
+      "set up and solve optimization problems in several applied fields",
+      "companies often want to minimize production costs or maximize revenue"
+    ]
+  },
+  {
+    "id": "cd-aplicaciones-elasticidad",
+    "palabras": [
+      "calculate the price elasticity of demand",
+      "price elasticity is the ratio between the percentage change in the quantity demanded"
+    ]
+  },
+  {
+    "id": "cg-fundamentos-usuarios",
+    "palabras": [
+      "users of accounting information are generally divided into two categories: internal and external",
+      "external users are those outside of the organization"
+    ]
+  },
+  {
+    "id": "cg-fundamentos-financiera-gestion",
+    "palabras": [
+      "accounting is the process of organizing, analyzing, and communicating financial information",
+      "managerial accounting"
+    ]
+  },
+  {
+    "id": "cg-fundamentos-supuestos",
+    "palabras": [
+      "going concern assumption",
+      "revenue recognition principle"
+    ]
+  },
+  {
+    "id": "cg-fundamentos-cualidades",
+    "palabras": [
+      "relevance",
+      "faithful representation"
+    ]
+  },
+  {
+    "id": "cg-ecuacion-elementos",
+    "palabras": [
+      "current assets",
+      "current liabilities",
+      "revenues"
+    ]
+  },
+  {
+    "id": "cg-ecuacion-plan-cuentas",
+    "palabras": [
+      "chart of accounts",
+      "expanded accounting equation"
+    ]
+  },
+  {
+    "id": "cg-ecuacion-ampliada",
+    "palabras": [
+      "expanded accounting equation",
+      "retained earnings"
+    ]
+  },
+  {
+    "id": "cg-ecuacion-transacciones",
+    "palabras": [
+      "how each transaction would affect the basic accounting equation"
+    ]
+  },
+  {
+    "id": "cg-partida-doble-reglas",
+    "palabras": [
+      "debits and credits",
+      "normal balance"
+    ]
+  },
+  {
+    "id": "cg-partida-doble-diario",
+    "palabras": [
+      "a journal is often referred to as the book of original entry"
+    ]
+  },
+  {
+    "id": "cg-partida-doble-mayor",
+    "palabras": [
+      "t-accounts as a graphic representation of any account in the general ledger"
+    ]
+  },
+  {
+    "id": "cg-partida-doble-comprobacion",
+    "palabras": [
+      "a trial balance is a list of all accounts in the general ledger that have nonzero balances"
+    ]
+  },
+  {
+    "id": "cg-estados-ajustes",
+    "palabras": [
+      "adjusting entries update accounting records at the end of a period"
+    ]
+  },
+  {
+    "id": "cg-estados-resultados",
+    "palabras": [
+      "income statement",
+      "net income"
+    ]
+  },
+  {
+    "id": "cg-estados-situacion",
+    "palabras": [
+      "elements of the financial statements",
+      "balance sheet"
+    ]
+  },
+  {
+    "id": "cg-estados-cierre",
+    "palabras": [
+      "closing entries",
+      "post-closing trial balance"
+    ]
+  },
+  {
+    "id": "cg-mercaderias-sistemas",
+    "palabras": [
+      "a perpetual inventory system automatically updates and records the inventory account",
+      "a periodic inventory system updates and records the inventory account at certain, scheduled times"
+    ]
+  },
+  {
+    "id": "cg-mercaderias-netas",
+    "palabras": [
+      "periodic inventory system",
+      "merchandise purchases"
+    ]
+  },
+  {
+    "id": "cg-mercaderias-costo",
+    "palabras": [
+      "cost of goods sold",
+      "ending inventory"
+    ]
+  },
+  {
+    "id": "cg-mercaderias-valoracion",
+    "palabras": [
+      "first-in, first-out",
+      "weighted average"
+    ]
+  },
+  {
+    "id": "ed-datos-conceptos",
+    "palabras": [
+      "the science of statistics deals with the collection, analysis, interpretation, and presentation of data",
+      "population",
+      "parameter"
+    ]
+  },
+  {
+    "id": "ed-datos-tipos",
+    "palabras": [
+      "levels of measurement",
+      "nominal",
+      "ratio"
+    ]
+  },
+  {
+    "id": "ed-datos-muestreo",
+    "palabras": [
+      "data may come from a population or from a sample",
+      "simple random sample",
+      "stratified sample"
+    ]
+  },
+  {
+    "id": "ed-graficos-frecuencias",
+    "palabras": [
+      "frequency tables",
+      "relative frequency",
+      "cumulative relative frequency"
+    ]
+  },
+  {
+    "id": "ed-graficos-histogramas",
+    "palabras": [
+      "a histogram consists of contiguous (adjoining) boxes",
+      "frequency polygons"
+    ]
+  },
+  {
+    "id": "ed-graficos-caja",
+    "palabras": [
+      "a box plot is constructed from five values: the minimum value, the first quartile, the median, the third quartile, and the maximum value"
+    ]
+  },
+  {
+    "id": "ed-centro-media",
+    "palabras": [
+      "the arithmetic mean is the most common measure of the average",
+      "weighted mean"
+    ]
+  },
+  {
+    "id": "ed-centro-mediana-moda",
+    "palabras": [
+      "the median is generally a better measure of the center when there are extreme values or outliers",
+      "mode"
+    ]
+  },
+  {
+    "id": "ed-centro-asimetria",
+    "palabras": [
+      "a distribution is symmetrical if a vertical line can be drawn at some point in the histogram",
+      "skewed"
+    ]
+  },
+  {
+    "id": "ed-dispersion-varianza",
+    "palabras": [
+      "the standard deviation is a number that measures how far data values are from their mean",
+      "variance"
+    ]
+  },
+  {
+    "id": "ed-dispersion-cv",
+    "palabras": [
+      "coefficient of variation"
+    ]
+  },
+  {
+    "id": "ed-dispersion-posicion",
+    "palabras": [
+      "quartiles divide an ordered data set into four equal parts",
+      "percentiles divide a data set into 100 equal parts"
+    ]
+  },
+  {
+    "id": "ed-relacion-dispersion",
+    "palabras": [
+      "the most common and easiest way is a scatter plot"
+    ]
+  },
+  {
+    "id": "ed-relacion-correlacion",
+    "palabras": [
+      "correlation coefficient",
+      "line of best fit or least-squares line"
+    ]
+  },
+  {
+    "id": "ed-relacion-causalidad",
+    "palabras": [
+      "correlation",
+      "causation"
+    ]
+  },
+  {
+    "id": "lm-companias-contrato",
+    "palabras": [
+      "las companias se constituyen por contrato, entre dos o mas personas naturales o juridicas que unen sus capitales"
+    ]
+  },
+  {
+    "id": "lm-companias-especies",
+    "palabras": [
+      "hay seis especies de sociedades mercantiles",
+      "estas seis especies de sociedades mercantiles constituyen personas juridicas"
+    ]
+  },
+  {
+    "id": "lm-companias-objeto",
+    "palabras": [
+      "de las que no tengan un objeto real y de licita negociacion",
+      "de las que no tengan esencia economica"
+    ]
+  },
+  {
+    "id": "lm-personas-colectivo",
+    "palabras": [
+      "la compania en nombre colectivo se constituye por una persona natural o entre dos o mas personas naturales que hacen el comercio bajo una razon social"
+    ]
+  },
+  {
+    "id": "lm-personas-comandita",
+    "palabras": [
+      "la compania en comandita simple existe bajo una razon social",
+      "llamados socios comanditarios"
+    ]
+  },
+  {
+    "id": "lm-personas-mixta",
+    "palabras": [
+      "podran participar, conjuntamente con el capital privado, en el capital y en la gestion social de esta compania"
+    ]
+  },
+  {
+    "id": "lm-limitada-naturaleza",
+    "palabras": [
+      "la compania de responsabilidad limitada se puede constituir mediante contrato o acto unilateral",
+      "solamente responden por las obligaciones sociales hasta el monto de sus aportaciones individuales"
+    ]
+  },
+  {
+    "id": "lm-limitada-socios",
+    "palabras": [
+      "no podra funcionar como tal si sus socios exceden del numero de quince",
+      "el principio de existencia de esta especie de compania es la fecha de inscripcion del contrato social"
+    ]
+  },
+  {
+    "id": "lm-limitada-capital",
+    "palabras": [
+      "el capital de la compania estara formado por las aportaciones de los socios",
+      "estara dividido en participaciones"
+    ]
+  },
+  {
+    "id": "lm-limitada-junta",
+    "palabras": [
+      "la junta general, formada por los socios legalmente convocados y reunidos, es el organo supremo de la compania",
+      "mas de la mitad del capital social"
+    ]
+  },
+  {
+    "id": "lm-capitales-anonima",
+    "palabras": [
+      "cuyo capital, dividido en acciones negociables",
+      "responden unicamente por el monto de sus acciones"
+    ]
+  },
+  {
+    "id": "lm-capitales-capital",
+    "palabras": [
+      "ninguna compania anonima podra constituirse sin que se halle suscrito totalmente su capital"
+    ]
+  },
+  {
+    "id": "lm-capitales-sas",
+    "palabras": [
+      "la sociedad por acciones simplificada es una sociedad de capitales cuya naturaleza sera siempre mercantil"
+    ]
+  },
+  {
+    "id": "lm-control-sujetos",
+    "palabras": [
+      "de las companias nacionales anonimas, en comandita por acciones y de economia mixta",
+      "de las companias de responsabilidad limitada"
+    ]
+  },
+  {
+    "id": "lm-control-informacion",
+    "palabras": [
+      "sujetas a la vigilancia y control de la superintendencia de companias, enviaran a esta, en el primer cuatrimestre de cada ano"
+    ]
+  },
+  {
+    "id": "lm-control-normativa",
+    "palabras": [
+      "el superintendente de companias expedira las regulaciones, reglamentos y resoluciones que considere necesarios para el buen gobierno, vigilancia y control"
+    ]
+  },
+  {
+    "id": "et-codigo-que-es",
+    "palabras": [
+      "sets out principles-based requirements to guide professional behavior and support accountants in acting in the public interest",
+      "adopted through legislation or regulation"
+    ]
+  },
+  {
+    "id": "et-codigo-estructura",
+    "palabras": [
+      "the 2025 edition of the international code of ethics for professional accountants",
+      "part 1 complying with the code, fundamental principles and conceptual framework",
+      "part 2 professional accountants in business"
+    ]
+  },
+  {
+    "id": "et-codigo-interes-publico",
+    "palabras": [
+      "the iesba's mission is to serve the public interest",
+      "having an inquiring mind",
+      "the role of bias, pressure and other impediments in influencing behavior"
+    ]
+  },
+  {
+    "id": "et-principios-integridad-objetividad",
+    "palabras": [
+      "integrity – to be straightforward and honest in professional and business relationships",
+      "objectivity – not to compromise professional or business judgment because of bias, conflict of interest or undue influence"
+    ]
+  },
+  {
+    "id": "et-principios-competencia",
+    "palabras": [
+      "professional competence and due care – to maintain professional knowledge and skill and act diligently"
+    ]
+  },
+  {
+    "id": "et-principios-confidencialidad",
+    "palabras": [
+      "confidentiality – to respect the confidentiality of information acquired as a result of professional and business relationships"
+    ]
+  },
+  {
+    "id": "et-principios-comportamiento",
+    "palabras": [
+      "professional behavior – to comply with laws and regulations and avoid conduct that discredits the profession"
+    ]
+  },
+  {
+    "id": "et-marco-amenazas",
+    "palabras": [
+      "step 1: identify threats to compliance with the fundamental principles",
+      "self-interest – arises when a financial or other personal interest could inappropriately influence professional judgment or behavior"
+    ]
+  },
+  {
+    "id": "et-marco-evaluar",
+    "palabras": [
+      "step 2: evaluate threats using the reasonable and informed third-party test"
+    ]
+  },
+  {
+    "id": "et-marco-responder",
+    "palabras": [
+      "step 3: address threats",
+      "apply safeguards to reduce the threat to an acceptable level"
+    ]
+  },
+  {
+    "id": "et-situaciones-incentivos",
+    "palabras": [
+      "strengthened provisions relating to offering and accepting of inducements, including gifts and hospitality"
+    ]
+  },
+  {
+    "id": "et-situaciones-presion",
+    "palabras": [
+      "allowing pressure from others to result in a breach of fundamental principles or from placing pressure on others",
+      "a new section relating to pressure to breach the fundamental principles"
+    ]
+  },
+  {
+    "id": "et-situaciones-noclar",
+    "palabras": [
+      "requires the senior paib to obtain an understanding of the matter",
+      "disclosure of noclar to an appropriate authority",
+      "escalation of the matter within the employing organization"
+    ]
+  },
+  {
+    "id": "ii-formulas-estructura",
+    "palabras": [
+      "las formulas de excel siempre comienzan con el signo igual",
+      "funciones , referencias , operadores y constantes"
+    ]
+  },
+  {
+    "id": "ii-formulas-referencias",
+    "palabras": [
+      "de forma predeterminada, una referencia de celda es una referencia relativa",
+      "presione f4 para cambiar entre los tipos de referencia",
+      "la referencia es mixta"
+    ]
+  },
+  {
+    "id": "ii-formulas-errores",
+    "palabras": [
+      "devuelve un valor que se especifica si una formula lo evalua como un error"
+    ]
+  },
+  {
+    "id": "ii-funciones-basicas",
+    "palabras": [
+      "funcion promedio devuelve el promedio de sus argumentos",
+      "funcion contar cuenta cuantos numeros hay en la lista de argumentos",
+      "funcion contara cuenta cuantos valores hay en la lista de argumentos"
+    ]
+  },
+  {
+    "id": "ii-funciones-si",
+    "palabras": [
+      "le permite realizar comparaciones logicas entre un valor y un resultado que espera"
+    ]
+  },
+  {
+    "id": "ii-funciones-sumarsi",
+    "palabras": [
+      "se usa para sumar los valores de un rango que cumplen los criterios especificados"
+    ]
+  },
+  {
+    "id": "ii-funciones-buscar",
+    "palabras": [
+      "=buscarx(valor_buscado; matriz_buscada; matriz_devuelta"
+    ]
+  },
+  {
+    "id": "ii-financieras-va-vf",
+    "palabras": [
+      "calcula el valor actual de un prestamo o una inversion a partir de una tasa de interes constante"
+    ]
+  },
+  {
+    "id": "ii-financieras-pago",
+    "palabras": [
+      "calcula el pago de un prestamo basandose en pagos constantes y en una tasa de interes constante"
+    ]
+  },
+  {
+    "id": "ii-financieras-vna-tir",
+    "palabras": [
+      "el valor neto presente de una inversion a partir de una tasa de descuento y una serie de pagos futuros"
+    ]
+  },
+  {
+    "id": "ii-datos-validacion",
+    "palabras": [
+      "use la validacion de datos para restringir el tipo de datos o los valores que los usuarios escriben en una celda"
+    ]
+  },
+  {
+    "id": "ii-datos-formato-condicional",
+    "palabras": [
+      "cree reglas que determinen el formato de las celdas en funcion de sus valores"
+    ]
+  },
+  {
+    "id": "ii-datos-tablas-dinamicas",
+    "palabras": [
+      "una tabla dinamica es una herramienta avanzada para calcular, resumir y analizar datos"
+    ]
+  },
+  {
+    "id": "ii-datos-graficos",
+    "palabras": [
+      "los graficos le ayudan a que la audiencia visualice los datos de una forma mas efectiva"
+    ]
   }
 ]

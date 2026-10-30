@@ -43,13 +43,14 @@
           "formulas": [],
           "fuente": {
             "ref": "iesba-code",
-            "seccion": "Overview of the 2025 IESBA Code"
+            "url": "https://ifacweb.blob.core.windows.net/publicfiles/2025-10/Overview-of-Code-2025-Volume-1.pdf",
+            "seccion": "Overview of the 2025 IESBA Code, Volume 1"
           }
         },
         {
           "id": "et-codigo-interes-publico",
           "nombre": "Interés público y escepticismo profesional",
-          "explicacion": "La profesión contable tiene una responsabilidad con el interés público: inversionistas, bancos, el Estado y la sociedad confían en la información que los contadores preparan o revisan. Por eso el Código pide una actitud de mente inquisitiva y juicio profesional, y advierte que relaciones cercanas o prolongadas pueden reducir el escepticismo profesional.",
+          "explicacion": "La profesión contable tiene una responsabilidad con el interés público: inversionistas, bancos, el Estado y la sociedad confían en la información que los contadores preparan o revisan. Por eso el IESBA revisó el Código para promover el papel y la actitud que se esperan del profesional: tener una mente inquisitiva, ejercer el escepticismo profesional y reconocer que el sesgo, la presión y la cultura de la organización pueden influir en su conducta.",
           "ejemplo": "Un auditor revisa por octava vez a la misma compañía y ya es amigo del gerente financiero: acepta sus explicaciones sin pedir respaldo. El Código advierte que esa cercanía puede reducir su escepticismo profesional; los inversionistas y el banco que leen el informe esperan una mente inquisitiva, no confianza automática.",
           "puntos_clave": [
             "La información contable sostiene decisiones de terceros.",
@@ -61,7 +62,8 @@
           "formulas": [],
           "fuente": {
             "ref": "iesba-code",
-            "seccion": "Role and mindset; professional skepticism"
+            "url": "https://www.ifac.org/system/files/publications/files/Basis-for-Conclusions-Role-and-Mindset.pdf",
+            "seccion": "Basis for Conclusions: Role and Mindset"
           }
         },
         {
@@ -274,7 +276,8 @@
           "formulas": [],
           "fuente": {
             "ref": "iesba-code",
-            "seccion": "Inducements (secciones 250 y 340)"
+            "url": "https://www.ifac.org/global-knowledge-gateway/ethics/discussion/international-code-ethics-professional-accountants-key",
+            "seccion": "International Code of Ethics: key changes (inducements, sections 250 and 340)"
           }
         },
         {
@@ -292,7 +295,8 @@
           "formulas": [],
           "fuente": {
             "ref": "iesba-code",
-            "seccion": "Pressure to breach the fundamental principles"
+            "url": "https://www.ifac.org/global-knowledge-gateway/ethics/discussion/international-code-ethics-professional-accountants-key",
+            "seccion": "International Code of Ethics: key changes (pressure to breach the fundamental principles)"
           }
         },
         {
@@ -310,7 +314,8 @@
           "formulas": [],
           "fuente": {
             "ref": "iesba-code",
-            "seccion": "Responding to non-compliance with laws and regulations (NOCLAR)"
+            "url": "https://www.ifac.org/_flysystem/azure-private/publications/files/NOCLAR-QAs-PAIBs-Updated-for-Revised-and-Restructured-Code-Final.pdf",
+            "seccion": "NOCLAR Q&As for professional accountants in business"
           }
         },
         {

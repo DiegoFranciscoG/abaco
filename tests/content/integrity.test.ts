@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { checkArithmetic } from '../../src/domain/content/arithmetic';
@@ -118,6 +118,16 @@ describe('integridad del contenido', () => {
       const usedBySubtopic = content.temarios.some((t) => t.data.temas.some((tema) => tema.subtemas.some((s) => s.formulas.includes(f.id))));
       expect(usedBySubtopic, `${f.id} está pendiente pero se usa en un subtema`).toBe(false);
     }
+  });
+
+  it('every subtopic declares the evidence words that scripts/verificar-fuentes.ts looks for in its cited source', () => {
+    const evidencias = JSON.parse(readFileSync(join(CONTENT_ROOT, 'evidencias.json'), 'utf8')) as {
+      id: string;
+      palabras: string[];
+    }[];
+    const conPalabras = new Set(evidencias.filter((e) => e.palabras.length > 0).map((e) => e.id));
+    const sinEvidencia = [...subtemaIds].filter((id) => !conPalabras.has(id));
+    expect(sinEvidencia).toEqual([]);
   });
 
   it('every subject, topic and subtopic has theory, and every subtopic a worked example', () => {
