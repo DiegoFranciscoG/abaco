@@ -10698,10 +10698,10 @@
       "economia"
     ],
     "descripcion": "La empresa reduce la contaminación mientras el costo marginal de hacerlo sea menor que el impuesto, y paga el impuesto por lo que sigue emitiendo: costo total = suma de los costos de reducción elegidos + impuesto × bloques que sigue emitiendo.",
-    "latex": "CT = \\sum CMg_{reducción} + t \\times n_{emitidos}",
+    "latex": "CT = \\sum CMg_{\\text{reducción}} + t \\times n_{emitidos}",
     "variables": [
       {
-        "simbolo": "CMg_{reducción}",
+        "simbolo": "CMg_{\\text{reducción}}",
         "nombre": "cr",
         "significado": "Costos de los bloques de contaminación que la empresa decide reducir",
         "unidad": "USD"
