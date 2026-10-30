@@ -151,12 +151,12 @@ Peticiones de ejemplo en [docs/http/](docs/http/).
 
 ```bash
 npm run lint && npm run format:check   # estilo
-npm run test:coverage                  # 971 pruebas unitarias, de integración, de componentes y de contenido
+npm run test:coverage                  # 1854 pruebas unitarias, de integración, de componentes y de contenido
 npx playwright install chromium
 npm run build && npx playwright test   # 100 pruebas de extremo a extremo, accesibilidad y seguridad
 ```
 
-Cobertura de la lógica de negocio (`src/domain` y `src/data`): **95,0 % de líneas**, 80,8 % de ramas (umbral mínimo 70 %). Las pruebas de contenido recalculan cada ejemplo y ejercicio, comprueban fuentes, carreras y que ninguna materia quede sin herramienta ni tecnología externa. Las pruebas con nombre del plan v2: **T-11** (ninguna cifra vencida y toda cifra declarada), **T-12** (casos resueltos a mano de los 8 entregables), **T-13** (el Excel exportado, reabierto, da los mismos números), **T-14** (cada paso del procedimiento se evalúa con el motor de Excel), **T-16** (enunciados: 81 % en un conjunto ciego), **T-17** (cobertura declarada = medida) y **T-18** (compartir una colección no filtra apuntes ni fechas). Las e2e recorren la app como estudiante en escritorio y móvil, pasan axe en 37 vistas en tema claro y oscuro, leen un PDF real en el área de estudio, comprueban que nada personal salga a la red (T-04), que funcione sin internet (T-08), y que la app no se deje enmarcar ni ejecute código inyectado.
+Cobertura de la lógica de negocio (`src/domain` y `src/data`): **95,0 % de líneas**, 80,5 % de ramas (umbral mínimo 70 %). Las pruebas de contenido recalculan cada ejemplo y ejercicio, comprueban fuentes, carreras y que ninguna materia quede sin herramienta ni tecnología externa. Las pruebas con nombre del plan v2: **T-11** (ninguna cifra vencida y toda cifra declarada), **T-12** (casos resueltos a mano de los 8 entregables), **T-13** (el Excel exportado, reabierto, da los mismos números), **T-14** (cada paso del procedimiento se evalúa con el motor de Excel), **T-16** (enunciados: 81 % en un conjunto ciego), **T-17** (cobertura declarada = medida) y **T-18** (compartir una colección no filtra apuntes ni fechas). Las e2e recorren la app como estudiante en escritorio y móvil, pasan axe en 37 vistas en tema claro y oscuro, leen un PDF real en el área de estudio, comprueban que nada personal salga a la red (T-04), que funcione sin internet (T-08), y que la app no se deje enmarcar ni ejecute código inyectado.
 
 ## Despliegue
 
