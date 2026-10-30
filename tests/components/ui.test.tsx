@@ -290,6 +290,22 @@ describe('pages', () => {
     ).toBeEnabled();
   });
 
+  it('a subject recommends verified courses and videos, Spanish ones first, opening outside the app', async () => {
+    renderRoute('/materia/estadistica-inferencial', [
+      { path: '/materia/:materiaId', element: <SubjectPage /> },
+    ]);
+    const section = (await screen.findByRole('heading', { name: 'Para aprender más' })).closest('section')!;
+    const links = within(section).getAllByRole('link');
+    expect(links[0]).toHaveAccessibleName(/Ver en YouTube: Intervalo de confianza/);
+    expect(
+      within(section).getByRole('link', { name: /Ir al curso: Statistics for Applications/ }),
+    ).toHaveAttribute('href', 'https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/');
+    for (const link of links) {
+      expect(link).toHaveAttribute('target', '_blank');
+      expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
   it('an unknown subject shows the not-found page', async () => {
     renderRoute('/materia/no-existe', [{ path: '/materia/:materiaId', element: <SubjectPage /> }]);
     expect(await screen.findByRole('heading', { name: 'Esta página no existe' })).toBeInTheDocument();

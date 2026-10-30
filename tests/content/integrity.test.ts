@@ -23,6 +23,8 @@ describe('integridad del contenido', () => {
     expect(duplicates(content.formulas.map((f) => f.id))).toEqual([]);
     expect(duplicates(content.ejercicios.map((e) => e.id))).toEqual([]);
     expect(duplicates(content.apps.map((a) => a.id))).toEqual([]);
+    expect(duplicates(content.recursos.map((r) => r.id))).toEqual([]);
+    expect(duplicates(content.recursos.map((r) => r.url))).toEqual([]);
     expect(duplicates(content.glosario.map((t) => t.id))).toEqual([]);
     expect(duplicates(content.plantillas.map((p) => p.id))).toEqual([]);
     expect(duplicates(content.temarios.flatMap((t) => t.data.temas.map((tema) => tema.id)))).toEqual([]);
@@ -79,9 +81,27 @@ describe('integridad del contenido', () => {
       ...content.formulas.flatMap((f) => f.materias.map((m) => [f.id, m])),
       ...content.apps.flatMap((a) => a.materias.map((m) => [a.id, m])),
       ...content.plantillas.flatMap((p) => p.materias.map((m) => [p.id, m])),
+      ...content.recursos.flatMap((r) => r.materias.map((m) => [r.id, m])),
     ];
     const broken = links.filter(([, m]) => !materiaIds.has(m as string));
     expect(broken).toEqual([]);
+  });
+
+  it('every subject recommends at least one free course, video or official guide to learn more', () => {
+    for (const m of content.materias) {
+      expect(content.recursos.some((r) => r.materias.includes(m.id)), `${m.id} sin recurso para aprender más`).toBe(true);
+    }
+    // Videos only come from institutional or academic channels, whose names scripts/verificar-recursos.ts confirms.
+    const canales = new Set(content.recursos.filter((r) => r.tipo === 'video').map((r) => r.autor));
+    expect([...canales].sort()).toEqual([
+      'Banco Central del Ecuador',
+      'DANE Colombia',
+      'KhanAcademyEspañol',
+      'MIT OpenCourseWare',
+      'TEDx Talks',
+      'Technology Licensing Office (TLO)',
+      'YaleCourses',
+    ]);
   });
 
   it('variables used by the examples are declared by the formula', () => {

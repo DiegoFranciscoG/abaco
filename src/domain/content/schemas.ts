@@ -393,6 +393,36 @@ export const appSchema = z.object({
 });
 export type App = z.infer<typeof appSchema>;
 
+const youtubeId = z.string().regex(/^[A-Za-z0-9_-]{11}$/, 'Identificador de video de YouTube');
+
+/**
+ * A free course, video or official guide recommended to study a subject further. `titulo` and `autor` are copied
+ * as published: for a video they are the title and channel that YouTube's oEmbed endpoint returns; for a course or
+ * guide, `frase` must appear on its page. scripts/verificar-recursos.ts checks both online.
+ */
+export const recursoSchema = z
+  .object({
+    id,
+    tipo: z.enum(['curso', 'video', 'guia']),
+    titulo: nonEmpty,
+    autor: nonEmpty,
+    para_que: nonEmpty,
+    materias: z.array(id).min(1),
+    idioma: z.enum(['es', 'en']),
+    costo: z.enum(['gratis', 'gratis-con-cuenta']),
+    url: httpsUrl,
+    youtube_id: youtubeId.optional(),
+    frase: nonEmpty.optional(),
+    fecha_consulta: isoDate,
+  })
+  .refine((r) => r.tipo !== 'video' || r.url === `https://www.youtube.com/watch?v=${r.youtube_id ?? ''}`, {
+    message: 'Un video enlaza a https://www.youtube.com/watch?v=<youtube_id>',
+  })
+  .refine((r) => r.tipo === 'video' || (r.frase !== undefined && r.youtube_id === undefined), {
+    message: 'Un curso o una guía declara la frase que se verifica en su página y no lleva youtube_id',
+  });
+export type Recurso = z.infer<typeof recursoSchema>;
+
 export const terminoSchema = z.object({
   id,
   termino: nonEmpty,
@@ -481,6 +511,7 @@ export const carrerasFileSchema = z.array(carreraSchema);
 export const formulasFileSchema = z.array(formulaSchema);
 export const ejerciciosFileSchema = z.array(ejercicioSchema);
 export const appsFileSchema = z.array(appSchema);
+export const recursosFileSchema = z.array(recursoSchema);
 export const glosarioFileSchema = z.array(terminoSchema);
 export const plantillasFileSchema = z.array(plantillaSchema);
 export const normativaFileSchema = z.array(cifraSchema);

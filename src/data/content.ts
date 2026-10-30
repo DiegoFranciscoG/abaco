@@ -11,6 +11,7 @@ import type {
   FuenteRef,
   Materia,
   Plantilla,
+  Recurso,
   Temario,
   Termino,
 } from '../domain/content/schemas';
@@ -87,6 +88,10 @@ export async function loadEjercicios(): Promise<Ejercicio[]> {
 
 export async function loadApps(): Promise<App[]> {
   return (await import('../../content/apps.json')).default as unknown as App[];
+}
+
+export async function loadRecursos(): Promise<Recurso[]> {
+  return (await import('../../content/recursos.json')).default as unknown as Recurso[];
 }
 
 export async function loadGlosario(): Promise<Termino[]> {

@@ -28,6 +28,7 @@
     "cobertura": "node scripts/cobertura.ts && prettier --write docs/cobertura.md",
     "ficha": "vitest run tests/content/ficha.test.ts --silent=false",
     "fuentes:verificar": "node scripts/verificar-fuentes.ts",
+    "recursos:verificar": "node scripts/verificar-recursos.ts",
     "cobertura:estado": "node scripts/estado-cobertura.ts"
   },
   "dependencies": {

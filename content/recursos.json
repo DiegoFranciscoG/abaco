@@ -1,0 +1,1418 @@
+[
+  {
+    "id": "ocw-14-01sc",
+    "tipo": "curso",
+    "titulo": "Principles of Microeconomics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso completo de microeconomía del MIT con clases en video, notas y problemas resueltos: oferta y demanda, consumidor, empresa y mercados.",
+    "materias": [
+      "microeconomia"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-01sc-principles-of-microeconomics-fall-2011/",
+    "frase": "Principles of Microeconomics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-02",
+    "tipo": "curso",
+    "titulo": "Principles of Macroeconomics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso de macroeconomía del MIT: producción, desempleo, inflación, política monetaria y fiscal, con lecturas y problemas.",
+    "materias": [
+      "macroeconomia"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023/",
+    "frase": "Principles of Macroeconomics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-401",
+    "tipo": "curso",
+    "titulo": "Finance Theory I",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso de finanzas del MIT Sloan: valor presente, bonos, acciones, presupuesto de capital y riesgo, con diapositivas y ejercicios.",
+    "materias": [
+      "finanzas-corporativas",
+      "matematica-financiera",
+      "evaluacion-proyectos"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+    "frase": "Finance Theory I",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-053",
+    "tipo": "curso",
+    "titulo": "Optimization Methods in Management Science",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "El curso del MIT del que salen los ejemplos de esta materia: programación lineal y entera, redes y árboles de decisión, con notas y problemas.",
+    "materias": [
+      "investigacion-operaciones"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/",
+    "frase": "Optimization Methods in Management Science",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-6-0001",
+    "tipo": "curso",
+    "titulo": "Introduction to Computer Science and Programming in Python",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Introducción a la programación en Python del MIT, con clases en video, código y tareas para quien empieza desde cero.",
+    "materias": [
+      "programacion-datos",
+      "informatica-gestion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "frase": "Introduction to Computer Science and Programming in Python",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-6-0002",
+    "tipo": "curso",
+    "titulo": "Introduction to Computational Thinking and Data Science",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Continuación del curso de Python del MIT: optimización, simulación Monte Carlo, muestreo, intervalos de confianza y análisis de datos.",
+    "materias": [
+      "modelos-simulacion",
+      "programacion-datos",
+      "estadistica-descriptiva"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+    "frase": "Introduction to Computational Thinking and Data Science",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-18-01",
+    "tipo": "curso",
+    "titulo": "Single Variable Calculus",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Cálculo de una variable del MIT con 35 clases en video: límites, derivadas, optimización e integrales.",
+    "materias": [
+      "calculo-diferencial",
+      "matematica-gestion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/",
+    "frase": "Single Variable Calculus",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-18-02",
+    "tipo": "curso",
+    "titulo": "Multivariable Calculus",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Cálculo de varias variables del MIT: vectores, derivadas parciales, máximos y mínimos y multiplicadores de Lagrange, con clases en video.",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/",
+    "frase": "Multivariable Calculus",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-18-06",
+    "tipo": "curso",
+    "titulo": "Linear Algebra",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "El curso de álgebra lineal de Gilbert Strang en el MIT: sistemas de ecuaciones, matrices, determinantes e inversas, con 35 clases en video.",
+    "materias": [
+      "matematica-economistas",
+      "matematica-gestion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+    "frase": "Linear Algebra",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-18-650",
+    "tipo": "curso",
+    "titulo": "Statistics for Applications",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Estadística inferencial del MIT con clases en video: estimación, pruebas de hipótesis, intervalos de confianza y regresión.",
+    "materias": [
+      "estadistica-inferencial",
+      "econometria"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/",
+    "frase": "Statistics for Applications",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-18-s096",
+    "tipo": "curso",
+    "titulo": "Topics in Mathematics with Applications in Finance",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Matemáticas aplicadas a las finanzas del MIT con clases en video: series de tiempo, teoría de portafolios, valor en riesgo y modelos de riesgo.",
+    "materias": [
+      "mercado-valores",
+      "gestion-riesgos-financieros"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/",
+    "frase": "Topics in Mathematics with Applications in Finance",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-s12",
+    "tipo": "curso",
+    "titulo": "Blockchain and Money",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan sobre el sistema financiero, el dinero y la tecnología blockchain, con 23 clases en video.",
+    "materias": [
+      "sistema-financiero"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/",
+    "frase": "Blockchain and Money",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-s08",
+    "tipo": "curso",
+    "titulo": "FinTech: Shaping the Financial World",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan sobre cómo la tecnología financiera transforma pagos, crédito, banca y regulación.",
+    "materias": [
+      "sistema-financiero",
+      "innovacion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-s08-fintech-shaping-the-financial-world-spring-2020/",
+    "frase": "FinTech: Shaping the Financial World",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-390",
+    "tipo": "curso",
+    "titulo": "New Enterprises",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT sobre cómo crear una empresa: oportunidad, cliente, modelo de negocio, plan y financiamiento.",
+    "materias": [
+      "emprendimiento",
+      "evaluacion-proyectos"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/",
+    "frase": "New Enterprises",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-279",
+    "tipo": "curso",
+    "titulo": "Management Communication for Undergraduates",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan de comunicación profesional en inglés: escritura de negocios, presentaciones y comunicación en equipos.",
+    "materias": [
+      "ingles-negocios",
+      "habilidades-directivas"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/",
+    "frase": "Management Communication for Undergraduates",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-871",
+    "tipo": "curso",
+    "titulo": "Introduction to System Dynamics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Introducción del MIT a la dinámica de sistemas: modelar y simular cómo evolucionan una empresa o un mercado para probar estrategias.",
+    "materias": [
+      "modelos-simulacion",
+      "planificacion-estrategica"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-871-introduction-to-system-dynamics-fall-2013/",
+    "frase": "Introduction to System Dynamics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-071",
+    "tipo": "curso",
+    "titulo": "The Analytics Edge",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de analítica aplicada: regresión, árboles de decisión y análisis de datos de negocios con casos reales.",
+    "materias": [
+      "inteligencia-negocios",
+      "econometria",
+      "investigacion-mercados"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-071-the-analytics-edge-spring-2017/",
+    "frase": "The Analytics Edge",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-515",
+    "tipo": "curso",
+    "titulo": "Financial Accounting",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso de contabilidad financiera del MIT Sloan: estados financieros, registro de transacciones y lectura de reportes, en inglés.",
+    "materias": [
+      "contabilidad-financiera",
+      "contabilidad-general",
+      "contabilidad-ifis"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-515-financial-accounting-fall-2003/",
+    "frase": "Financial Accounting",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-501",
+    "tipo": "curso",
+    "titulo": "Introduction to Financial and Managerial Accounting",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Introducción del MIT a la contabilidad financiera y de gestión: balance, resultados, costos y decisiones internas.",
+    "materias": [
+      "contabilidad-general",
+      "contabilidad-costos"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/",
+    "frase": "Introduction to Financial and Managerial Accounting",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-514",
+    "tipo": "curso",
+    "titulo": "Financial and Managerial Accounting",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de contabilidad financiera y de gestión con costeo, presupuestos y análisis de costos para decidir.",
+    "materias": [
+      "contabilidad-costos",
+      "presupuestos"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-514-financial-and-managerial-accounting-summer-2003/",
+    "frase": "Financial and Managerial Accounting",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-535",
+    "tipo": "curso",
+    "titulo": "Business Analysis Using Financial Statements",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT para analizar empresas a partir de sus estados financieros: razones, calidad de la información y valoración.",
+    "materias": [
+      "contabilidad-financiera",
+      "finanzas-corporativas",
+      "auditoria"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-535-business-analysis-using-financial-statements-spring-2003/",
+    "frase": "Business Analysis Using Financial Statements",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-311",
+    "tipo": "curso",
+    "titulo": "Organizational Processes",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan sobre cómo funcionan las organizaciones: estructura, cultura, poder y cambio.",
+    "materias": [
+      "comportamiento-organizacional",
+      "fundamentos-administracion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-311-organizational-processes-fall-2003/",
+    "frase": "Organizational Processes",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-301",
+    "tipo": "curso",
+    "titulo": "Managerial Psychology",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de psicología aplicada a la dirección: motivación, decisiones, liderazgo y trabajo en equipo.",
+    "materias": [
+      "habilidades-directivas",
+      "comportamiento-organizacional",
+      "fundamentos-administracion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-301-managerial-psychology-fall-2006/",
+    "frase": "Managerial Psychology",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-660",
+    "tipo": "curso",
+    "titulo": "Strategic HR Management",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan de gestión estratégica del talento humano: selección, incentivos, desarrollo y cultura.",
+    "materias": [
+      "talento-humano"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-660-strategic-hr-management-spring-2003/",
+    "frase": "Strategic HR Management",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-760b",
+    "tipo": "curso",
+    "titulo": "Introduction to Operations Management",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Introducción del MIT a la gestión de operaciones: procesos, capacidad, inventarios y calidad.",
+    "materias": [
+      "operaciones-logistica"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-760b-introduction-to-operations-management-spring-2004/",
+    "frase": "Introduction to Operations Management",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-esd-273j",
+    "tipo": "curso",
+    "titulo": "Logistics and Supply Chain Management",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de logística y cadena de suministro: inventarios, transporte, distribución y coordinación con proveedores.",
+    "materias": [
+      "operaciones-logistica",
+      "ventas-distribucion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/esd-273j-logistics-and-supply-chain-management-fall-2009/",
+    "frase": "Logistics and Supply Chain Management",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-54",
+    "tipo": "curso",
+    "titulo": "International Trade",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de comercio internacional: ventaja comparativa, modelos de comercio, aranceles y política comercial.",
+    "materias": [
+      "economia-internacional",
+      "aduanas"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-54-international-trade-fall-2016/",
+    "frase": "International Trade",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-015",
+    "tipo": "curso",
+    "titulo": "Macro and International Economics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan de macroeconomía abierta: tipo de cambio, crisis cambiarias y estrategias de desarrollo.",
+    "materias": [
+      "finanzas-internacionales",
+      "economia-internacional",
+      "macroeconomia"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-015-macro-and-international-economics-fall-2011/",
+    "frase": "Macro and International Economics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-74",
+    "tipo": "curso",
+    "titulo": "Foundations of Development Policy",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT sobre pobreza y políticas de desarrollo, apoyado en evaluaciones de impacto de programas reales.",
+    "materias": [
+      "desarrollo-economico",
+      "evaluacion-politicas-publicas"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-74-foundations-of-development-policy-spring-2009/",
+    "frase": "Foundations of Development Policy",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-771",
+    "tipo": "curso",
+    "titulo": "Development Economics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso de economía del desarrollo del MIT con 25 clases en video: crecimiento, instituciones, finanzas públicas y pobreza.",
+    "materias": [
+      "desarrollo-economico"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-771-development-economics-fall-2021/",
+    "frase": "Development Economics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-41",
+    "tipo": "curso",
+    "titulo": "Public Finance and Public Policy",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de finanzas públicas con 24 clases en video: impuestos, gasto, bienes públicos, análisis costo-beneficio y seguro social.",
+    "materias": [
+      "finanzas-publicas",
+      "presupuestos",
+      "contabilidad-gubernamental"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-41-public-finance-and-public-policy-fall-2024/",
+    "frase": "Public Finance and Public Policy",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-810",
+    "tipo": "curso",
+    "titulo": "Marketing Management",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT Sloan de dirección de marketing: segmentación, posicionamiento, precio, comunicación y canales.",
+    "materias": [
+      "marketing",
+      "investigacion-mercados",
+      "publicidad",
+      "ventas-distribucion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-810-marketing-management-fall-2010/",
+    "frase": "Marketing Management",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-835",
+    "tipo": "curso",
+    "titulo": "Entrepreneurial Marketing",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de marketing para empresas nuevas: conocer al cliente, lanzar el producto y llegar al mercado con pocos recursos.",
+    "materias": [
+      "emprendimiento",
+      "marketing-digital",
+      "publicidad",
+      "producto-marca"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-835-entrepreneurial-marketing-spring-2002/",
+    "frase": "Entrepreneurial Marketing",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-356",
+    "tipo": "curso",
+    "titulo": "How to Develop Breakthrough Products and Services",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT sobre métodos para crear productos y servicios innovadores a partir de las necesidades de los usuarios.",
+    "materias": [
+      "innovacion",
+      "producto-marca"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-356-how-to-develop-breakthrough-products-and-services-spring-2012/",
+    "frase": "How to Develop Breakthrough Products and Services",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-783j",
+    "tipo": "curso",
+    "titulo": "Product Design and Development",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de diseño y desarrollo de productos: oportunidad, concepto, prototipo y lanzamiento.",
+    "materias": [
+      "producto-marca",
+      "innovacion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-783j-product-design-and-development-spring-2006/",
+    "frase": "Product Design and Development",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-24-231",
+    "tipo": "curso",
+    "titulo": "Ethics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso de ética del MIT: teorías morales y su aplicación a decisiones concretas.",
+    "materias": [
+      "etica-profesional"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/24-231-ethics-fall-2009/",
+    "frase": "Ethics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-450",
+    "tipo": "curso",
+    "titulo": "Analytics of Finance",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de métodos cuantitativos en finanzas: modelos de precios, riesgo y gestión de portafolios.",
+    "materias": [
+      "gestion-riesgos-financieros"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/",
+    "frase": "Analytics of Finance",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-27",
+    "tipo": "curso",
+    "titulo": "Economics and E-Commerce",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT sobre la economía del comercio electrónico: búsqueda, precios en línea, publicidad y plataformas.",
+    "materias": [
+      "marketing-digital",
+      "economia-industrial"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-27-economics-and-e-commerce-fall-2014/",
+    "frase": "Economics and E-Commerce",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-15-062",
+    "tipo": "curso",
+    "titulo": "Data Mining",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de minería de datos para negocios: clasificación, agrupamiento y reglas de asociación.",
+    "materias": [
+      "inteligencia-negocios"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/15-062-data-mining-spring-2003/",
+    "frase": "Data Mining",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-72",
+    "tipo": "curso",
+    "titulo": "Capitalism and Its Critics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT que compara las escuelas de pensamiento económico, de los clásicos y Marx a los enfoques modernos, con lecturas originales.",
+    "materias": [
+      "pensamiento-economico"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-72-capitalism-and-its-critics-fall-2013/",
+    "frase": "Capitalism and Its Critics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-32",
+    "tipo": "curso",
+    "titulo": "Econometrics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso de econometría del MIT: regresión, supuestos, inferencia y aplicaciones con datos económicos.",
+    "materias": [
+      "econometria"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-32-econometrics-spring-2007/",
+    "frase": "Econometrics",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-6-805",
+    "tipo": "curso",
+    "titulo": "Ethics and the Law on the Electronic Frontier",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT sobre derecho y ética en el mundo digital: privacidad, datos personales, propiedad intelectual y libertad de expresión.",
+    "materias": [
+      "derecho-marketing-datos",
+      "propiedad-intelectual"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/6-805-ethics-and-the-law-on-the-electronic-frontier-fall-2005/",
+    "frase": "Ethics and the Law on the Electronic Frontier",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-16-660j",
+    "tipo": "curso",
+    "titulo": "Introduction to Lean Six Sigma Methods",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de métodos lean y Seis Sigma con 17 videos: flujo de valor, eliminación de desperdicios y mejora de procesos.",
+    "materias": [
+      "auditoria-calidad",
+      "operaciones-logistica"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/16-660j-introduction-to-lean-six-sigma-methods-january-iap-2012/",
+    "frase": "Introduction to Lean Six Sigma Methods",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ocw-14-16",
+    "tipo": "curso",
+    "titulo": "Strategy and Information",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Curso del MIT de decisiones estratégicas con teoría de juegos: competencia, negociación, subastas e información.",
+    "materias": [
+      "planificacion-estrategica",
+      "economia-industrial"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://ocw.mit.edu/courses/14-16-strategy-and-information-spring-2016/",
+    "frase": "Strategy and Information",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-khan-interes-compuesto",
+    "tipo": "video",
+    "titulo": "Introducción al Interés compuesto",
+    "autor": "KhanAcademyEspañol",
+    "para_que": "Explica con un ejemplo cómo el interés compuesto genera interés sobre el interés acumulado.",
+    "materias": [
+      "matematica-financiera"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=TP7Tmgta1ys",
+    "youtube_id": "TP7Tmgta1ys",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-khan-media-mediana-moda",
+    "tipo": "video",
+    "titulo": "Introducción a la estadística media, mediana y moda",
+    "autor": "KhanAcademyEspañol",
+    "para_que": "Introducción a las medidas de tendencia central con un conjunto de datos sencillo.",
+    "materias": [
+      "estadistica-descriptiva"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=SNkQ4NxPwEI",
+    "youtube_id": "SNkQ4NxPwEI",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-khan-media-mediana-moda-2",
+    "tipo": "video",
+    "titulo": "Media, mediana y moda",
+    "autor": "KhanAcademyEspañol",
+    "para_que": "Practica el cálculo de media, mediana y moda y cuándo conviene cada una.",
+    "materias": [
+      "estadistica-descriptiva"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=neO9iTqPR2I",
+    "youtube_id": "neO9iTqPR2I",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-khan-intervalo-confianza",
+    "tipo": "video",
+    "titulo": "Intervalo de confianza - ejemplo",
+    "autor": "KhanAcademyEspañol",
+    "para_que": "Construye paso a paso un intervalo de confianza para una media.",
+    "materias": [
+      "estadistica-inferencial"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=IX66iIg-LS0",
+    "youtube_id": "IX66iIg-LS0",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-khan-intervalo-t",
+    "tipo": "video",
+    "titulo": "Intervalo de confianza con estadístico T",
+    "autor": "KhanAcademyEspañol",
+    "para_que": "Muestra cuándo y cómo usar la distribución t para un intervalo de confianza con muestras pequeñas.",
+    "materias": [
+      "estadistica-inferencial",
+      "econometria"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=FHy7PC5ewVo",
+    "youtube_id": "FHy7PC5ewVo",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-dane-pib",
+    "tipo": "video",
+    "titulo": "#DANEExplica - Producto Interno Bruto #PIB",
+    "autor": "DANE Colombia",
+    "para_que": "La oficina de estadística de Colombia explica qué mide el PIB y cómo se calcula.",
+    "materias": [
+      "macroeconomia"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=YO-5GBmvoG4",
+    "youtube_id": "YO-5GBmvoG4",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-dane-ipc",
+    "tipo": "video",
+    "titulo": "#DANEExplica - Índice de Precios al Consumidor #IPC",
+    "autor": "DANE Colombia",
+    "para_que": "Explica qué es el índice de precios al consumidor y cómo se usa para medir la inflación.",
+    "materias": [
+      "macroeconomia",
+      "estadistica-descriptiva"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=-SU3nCjFV_0",
+    "youtube_id": "-SU3nCjFV_0",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-bce-dolarizacion",
+    "tipo": "video",
+    "titulo": "Evento 25 años de Dolarización en Ecuador: Enseñanzas, Logros y Desafíos (Paneles completos) | BCE",
+    "autor": "Banco Central del Ecuador",
+    "para_que": "Paneles del Banco Central del Ecuador sobre lo que dejaron 25 años de dolarización: estabilidad, logros y desafíos.",
+    "materias": [
+      "finanzas-internacionales",
+      "macroeconomia",
+      "sistema-financiero"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=-N3U419eWU0",
+    "youtube_id": "-N3U419eWU0",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-tedx-dolarizacion",
+    "tipo": "video",
+    "titulo": "El Día que Ecuador se Dolarizó | Wilson Vera Lasso | TEDxBCE",
+    "autor": "TEDx Talks",
+    "para_que": "Charla TEDx organizada por el Banco Central del Ecuador que relata cómo se vivió el día en que el país adoptó el dólar.",
+    "materias": [
+      "finanzas-internacionales"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=iebS4VP99Ic",
+    "youtube_id": "iebS4VP99Ic",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-14-01sc-lec1",
+    "tipo": "video",
+    "titulo": "Lec 1 | MIT 14.01SC Principles of Microeconomics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase del curso de microeconomía de Jonathan Gruber: qué estudia la microeconomía y por qué importa.",
+    "materias": [
+      "microeconomia"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=Vss3nofHpZI",
+    "youtube_id": "Vss3nofHpZI",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-14-01-2023-lec1",
+    "tipo": "video",
+    "titulo": "Lec 1: Introduction to Principles of Microeconomics and Supply & Demand",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Clase introductoria de la versión 2023 del curso, centrada en oferta y demanda.",
+    "materias": [
+      "microeconomia"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=8ssjKR7nNck",
+    "youtube_id": "8ssjKR7nNck",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-14-41-lec1",
+    "tipo": "video",
+    "titulo": "Lecture 01: Why Study Public Finance?",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase de finanzas públicas: por qué y cuándo interviene el Estado en la economía.",
+    "materias": [
+      "finanzas-publicas"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=i30jbbk7yoQ",
+    "youtube_id": "i30jbbk7yoQ",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-14-771-lec1",
+    "tipo": "video",
+    "titulo": "Lecture 1: Introduction to Development Economics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Introducción a la economía del desarrollo: preguntas, datos y métodos del campo.",
+    "materias": [
+      "desarrollo-economico"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=fIFB6SBw2lU",
+    "youtube_id": "fIFB6SBw2lU",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-18-s096-lec1",
+    "tipo": "video",
+    "titulo": "1. Introduction, Financial Terms and Concepts",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Repaso de los términos básicos de los mercados financieros: acciones, bonos, derivados y participantes.",
+    "materias": [
+      "mercado-valores"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=wvXDB9dMdEo",
+    "youtube_id": "wvXDB9dMdEo",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-18-s096-portafolio",
+    "tipo": "video",
+    "titulo": "14. Portfolio Theory",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Clase de teoría de portafolios: rendimiento, riesgo, diversificación y frontera eficiente.",
+    "materias": [
+      "gestion-riesgos-financieros",
+      "mercado-valores"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=ywl3pq6yc54",
+    "youtube_id": "ywl3pq6yc54",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-15-s12-lec1",
+    "tipo": "video",
+    "titulo": "1. Introduction for 15.S12 Blockchain and Money, Fall 2018",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase de Gary Gensler sobre el sistema financiero, el dinero y la tecnología blockchain.",
+    "materias": [
+      "sistema-financiero"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=EH6vE97qIP4",
+    "youtube_id": "EH6vE97qIP4",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-18-01-lec1",
+    "tipo": "video",
+    "titulo": "Lec 1 | MIT 18.01 Single Variable Calculus, Fall 2007",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase de cálculo: la derivada como pendiente y tasa de cambio.",
+    "materias": [
+      "calculo-diferencial",
+      "matematica-gestion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=7K1sB05pE0A",
+    "youtube_id": "7K1sB05pE0A",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-18-02-lec1",
+    "tipo": "video",
+    "titulo": "Lec 1: Dot product | MIT 18.02 Multivariable Calculus, Fall 2007",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase de cálculo multivariable: vectores y producto punto.",
+    "materias": [
+      "matematica-economistas"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=PxCxlsl_YwY",
+    "youtube_id": "PxCxlsl_YwY",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-18-06-lec1",
+    "tipo": "video",
+    "titulo": "1. The Geometry of Linear Equations",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Gilbert Strang explica los sistemas de ecuaciones lineales desde la geometría y las matrices.",
+    "materias": [
+      "matematica-economistas",
+      "matematica-gestion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=J7DzL2_Na80",
+    "youtube_id": "J7DzL2_Na80",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-18-650-lec1",
+    "tipo": "video",
+    "titulo": "1. Introduction to Statistics",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase de estadística aplicada: qué es inferir a partir de datos.",
+    "materias": [
+      "estadistica-inferencial",
+      "econometria"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=VPZD_aij8H0",
+    "youtube_id": "VPZD_aij8H0",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-6-0001-lec1",
+    "tipo": "video",
+    "titulo": "1. What is Computation?",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primera clase de programación en Python: qué es computar y cómo empezar a escribir programas.",
+    "materias": [
+      "programacion-datos"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=nykOeWgQcHM",
+    "youtube_id": "nykOeWgQcHM",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-6-0002-optimizacion",
+    "tipo": "video",
+    "titulo": "1. Introduction, Optimization Problems (MIT 6.0002 Intro to Computational Thinking and Data Science)",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Clase sobre problemas de optimización y cómo resolverlos con programas, como el problema de la mochila.",
+    "materias": [
+      "investigacion-operaciones"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=C1lhuz6pZC0",
+    "youtube_id": "C1lhuz6pZC0",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-6-0002-montecarlo",
+    "tipo": "video",
+    "titulo": "6. Monte Carlo Simulation",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "La clase de la que sale el contenido de simulación Monte Carlo de esta materia, con el ejemplo de la ruleta.",
+    "materias": [
+      "modelos-simulacion"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=OgO1gpXSUzU",
+    "youtube_id": "OgO1gpXSUzU",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-6-0002-muestreo",
+    "tipo": "video",
+    "titulo": "8. Sampling and Standard Error",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Clase sobre muestreo, teorema del límite central y error estándar de la media.",
+    "materias": [
+      "modelos-simulacion",
+      "estadistica-inferencial"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=soZv_KKax3E",
+    "youtube_id": "soZv_KKax3E",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-16-660-lean",
+    "tipo": "video",
+    "titulo": "Ses. 1-2: The Start of Your Lean Journey",
+    "autor": "MIT OpenCourseWare",
+    "para_que": "Primeras sesiones del curso de lean y Seis Sigma: principios lean y mejora continua.",
+    "materias": [
+      "auditoria-calidad",
+      "operaciones-logistica"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=T1K4pkhtad8",
+    "youtube_id": "T1K4pkhtad8",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-yale-econ-252-lec1",
+    "tipo": "video",
+    "titulo": "1. Introduction and What this Course Will Do for You and Your Purposes",
+    "autor": "YaleCourses",
+    "para_que": "Primera clase del curso de mercados financieros de Robert Shiller, premio Nobel de Economía.",
+    "materias": [
+      "mercado-valores",
+      "seguros"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=WQui_3Hpmmc",
+    "youtube_id": "WQui_3Hpmmc",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-yale-econ-159-lec1",
+    "tipo": "video",
+    "titulo": "1. Introduction: five first lessons",
+    "autor": "YaleCourses",
+    "para_que": "Primera clase del curso de teoría de juegos de Ben Polak, con el dilema del prisionero y sus primeras lecciones.",
+    "materias": [
+      "economia-industrial"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=nM3rTU927io",
+    "youtube_id": "nM3rTU927io",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yt-mit-tlo-pi",
+    "tipo": "video",
+    "titulo": "What is Intellectual Property?",
+    "autor": "Technology Licensing Office (TLO)",
+    "para_que": "La oficina de licencias tecnológicas del MIT explica qué son la propiedad intelectual, las patentes y las licencias.",
+    "materias": [
+      "propiedad-intelectual"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.youtube.com/watch?v=Oj_VwmI-Q18",
+    "youtube_id": "Oj_VwmI-Q18",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yale-econ-252",
+    "tipo": "curso",
+    "titulo": "Financial Markets (2011)",
+    "autor": "Open Yale Courses",
+    "para_que": "Curso de Robert Shiller sobre mercados financieros, seguros, bancos y regulación, con clases en video y transcripciones.",
+    "materias": [
+      "mercado-valores",
+      "seguros",
+      "sistema-financiero"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://oyc.yale.edu/economics/econ-252",
+    "frase": "Financial Markets (2011)",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "yale-econ-159",
+    "tipo": "curso",
+    "titulo": "Game Theory",
+    "autor": "Open Yale Courses",
+    "para_que": "Curso de teoría de juegos de Ben Polak con 24 clases en video: equilibrio de Nash, competencia entre empresas y estrategia.",
+    "materias": [
+      "economia-industrial",
+      "planificacion-estrategica"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://oyc.yale.edu/economics/econ-159",
+    "frase": "Game Theory",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "sri-capacitaciones",
+    "tipo": "curso",
+    "titulo": "Quiero capacitarme",
+    "autor": "Servicio de Rentas Internas (SRI)",
+    "para_que": "Capacitaciones gratuitas del SRI: cursos virtuales de autoestudio, videos tutoriales y guías para cumplir obligaciones tributarias en Ecuador.",
+    "materias": [
+      "tributacion"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.sri.gob.ec/web/intersri/quiero-capacitarme",
+    "frase": "el servicio de rentas internas pone a su disposicion capacitaciones gratuitas virtuales",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "sercop-cursos",
+    "tipo": "curso",
+    "titulo": "Oferta de Cursos Especiales",
+    "autor": "Servicio Nacional de Contratación Pública (SERCOP)",
+    "para_que": "Oferta de capacitación del SERCOP sobre contratación pública, con seminarios en línea y cursos virtuales de autocapacitación.",
+    "materias": [
+      "contratacion-publica"
+    ],
+    "idioma": "es",
+    "costo": "gratis-con-cuenta",
+    "url": "https://portal.compraspublicas.gob.ec/sercop/oferta-de-cursos-especiales/",
+    "frase": "cursos virtuales de autocapacitacion",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "sb-educacion-financiera",
+    "tipo": "curso",
+    "titulo": "Capacitación Virtual de Educación Financiera",
+    "autor": "Superintendencia de Bancos",
+    "para_que": "Programa virtual y gratuito de educación financiera de la Superintendencia de Bancos para usuarios del sistema financiero.",
+    "materias": [
+      "sistema-financiero",
+      "contabilidad-ifis"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.gob.ec/sb/tramites/capacitacion-virtual-educacion-financiera",
+    "frase": "Capacitación Virtual de Educación Financiera",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "seps-capacitacion",
+    "tipo": "curso",
+    "titulo": "Capacitación",
+    "autor": "Superintendencia de Economía Popular y Solidaria (SEPS)",
+    "para_que": "Servicio gratuito de capacitación presencial y virtual de la SEPS para cooperativas, asociaciones y demás organizaciones de la economía popular y solidaria.",
+    "materias": [
+      "economia-popular-solidaria",
+      "contabilidad-ifis"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.seps.gob.ec/inicio/capacitacion/",
+    "frase": "pone a su disposicion el servicio gratuito de capacitacion presencial y virtual",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mef-eva",
+    "tipo": "curso",
+    "titulo": "Entorno Virtual de Aprendizaje: cursos de contabilidad (eSIGEF)",
+    "autor": "Ministerio de Economía y Finanzas",
+    "para_que": "Cursos del Ministerio de Economía y Finanzas sobre contabilidad, presupuesto y tesorería en el eSIGEF; se dirigen a servidores de las entidades del Presupuesto General del Estado.",
+    "materias": [
+      "contabilidad-gubernamental",
+      "presupuestos"
+    ],
+    "idioma": "es",
+    "costo": "gratis-con-cuenta",
+    "url": "https://capacitacion.finanzas.gob.ec/eva/course/index.php?categoryid=11",
+    "frase": "esigef / contabilidad",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "mt-cursos",
+    "tipo": "curso",
+    "titulo": "Inscripción en los cursos que oferta el Ministerio del Trabajo para el fortalecimiento del perfil laboral",
+    "autor": "Ministerio del Trabajo (gob.ec)",
+    "para_que": "Trámite oficial para inscribirse en los cursos gratuitos que ofrece el Ministerio del Trabajo para fortalecer el perfil laboral.",
+    "materias": [
+      "legislacion-laboral",
+      "talento-humano"
+    ],
+    "idioma": "es",
+    "costo": "gratis-con-cuenta",
+    "url": "https://www.gob.ec/mt/tramites/inscripcion-cursos-oferta-ministerio-trabajo-fortalecimiento-perfil-laboral",
+    "frase": "Inscripción en los cursos que oferta el Ministerio del Trabajo",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "iess-riesgos",
+    "tipo": "curso",
+    "titulo": "Capacitación a trabajadores y empleadores en prevención de riesgos laborales",
+    "autor": "Instituto Ecuatoriano de Seguridad Social (gob.ec)",
+    "para_que": "Capacitación gratuita del IESS, presencial o virtual, sobre prevención de riesgos laborales para trabajadores y empleadores.",
+    "materias": [
+      "legislacion-laboral",
+      "talento-humano"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.gob.ec/iess/tramites/capacitacion-trabajadores-empleadores-prevencion-riesgos-laborales",
+    "frase": "Capacitación a trabajadores y empleadores en prevención de riesgos laborales",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "scvs-constitucion",
+    "tipo": "guia",
+    "titulo": "Constitución electrónica de compañías",
+    "autor": "Superintendencia de Compañías, Valores y Seguros (gob.ec)",
+    "para_que": "Guía oficial del trámite para constituir en línea una compañía anónima o de responsabilidad limitada, con minuta estándar o propia.",
+    "materias": [
+      "derecho-empresarial"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://www.gob.ec/scvs/tramites/constitucion-electronica-companias",
+    "frase": "constituir una compania en linea a traves del sistema de constitucion electronica",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "jpal-evaluacion-impacto",
+    "tipo": "curso",
+    "titulo": "Curso en línea gratuito: Evaluación de Impacto de Programas Sociales",
+    "autor": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+    "para_que": "Curso en español de J-PAL sobre evaluaciones aleatorizadas para probar y mejorar programas y políticas sociales.",
+    "materias": [
+      "evaluacion-politicas-publicas"
+    ],
+    "idioma": "es",
+    "costo": "gratis-con-cuenta",
+    "url": "https://www.povertyactionlab.org/es/node/4932",
+    "frase": "Curso en línea gratuito: Evaluación de Impacto de Programas Sociales",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "bid-impacto-social",
+    "tipo": "curso",
+    "titulo": "Evaluación del impacto social",
+    "autor": "Banco Interamericano de Desarrollo (BID)",
+    "para_que": "Curso autoguiado del BID sobre cómo evaluar el impacto social de proyectos.",
+    "materias": [
+      "evaluacion-politicas-publicas",
+      "evaluacion-proyectos"
+    ],
+    "idioma": "es",
+    "costo": "gratis-con-cuenta",
+    "url": "https://cursos.iadb.org/es/node/1746",
+    "frase": "Evaluación del impacto social",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "wco-clikc",
+    "tipo": "curso",
+    "titulo": "CLiKC!, the WCO Customs Learning and Knowledge Community",
+    "autor": "Organización Mundial de Aduanas (OMA)",
+    "para_que": "Plataforma de aprendizaje en línea de la Organización Mundial de Aduanas, con cursos sobre clasificación, valoración y origen; requiere registro.",
+    "materias": [
+      "aduanas"
+    ],
+    "idioma": "en",
+    "costo": "gratis-con-cuenta",
+    "url": "https://clikc.wcoomd.org/",
+    "frase": "the wco customs learning and knowledge community",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "sdg-academy",
+    "tipo": "curso",
+    "titulo": "Free Sustainable Development Courses from the SDG Academy!",
+    "autor": "SDG Academy (Red de Soluciones para el Desarrollo Sostenible de la ONU)",
+    "para_que": "Cursos gratuitos sobre los Objetivos de Desarrollo Sostenible, finanzas sostenibles y empresas responsables.",
+    "materias": [
+      "responsabilidad-social",
+      "desarrollo-economico"
+    ],
+    "idioma": "en",
+    "costo": "gratis",
+    "url": "https://www.sdgacademy.org/courses/",
+    "frase": "free sustainable development courses",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "ms-learn-power-bi",
+    "tipo": "curso",
+    "titulo": "Aprendizaje para Power BI",
+    "autor": "Microsoft Learn",
+    "para_que": "Rutas de aprendizaje gratuitas en español para preparar datos, crear modelos y construir tableros en Power BI.",
+    "materias": [
+      "inteligencia-negocios",
+      "informatica-gestion"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://learn.microsoft.com/es-es/training/powerplatform/power-bi",
+    "frase": "Aprendizaje para Power BI",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "python-tutorial-es",
+    "tipo": "curso",
+    "titulo": "El tutorial de Python",
+    "autor": "Python Software Foundation (documentación oficial en español)",
+    "para_que": "El tutorial oficial de Python traducido al español: tipos de datos, control de flujo, funciones, estructuras de datos y módulos.",
+    "materias": [
+      "programacion-datos"
+    ],
+    "idioma": "es",
+    "costo": "gratis",
+    "url": "https://docs.python.org/es/3/tutorial/",
+    "frase": "El tutorial de Python",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "kaggle-learn",
+    "tipo": "curso",
+    "titulo": "Learn Python, Data Viz, Pandas & More",
+    "autor": "Kaggle",
+    "para_que": "Microcursos prácticos de Python, pandas, visualización de datos y aprendizaje automático, con ejercicios en el navegador.",
+    "materias": [
+      "programacion-datos",
+      "inteligencia-negocios"
+    ],
+    "idioma": "en",
+    "costo": "gratis-con-cuenta",
+    "url": "https://www.kaggle.com/learn",
+    "frase": "Learn Python, Data Viz, Pandas",
+    "fecha_consulta": "2026-10-30"
+  },
+  {
+    "id": "fun-articulo-cientifico",
+    "tipo": "curso",
+    "titulo": "Writing and publishing a scientific article - REDACTAR Y PUBLICAR UN ARTíCULO CIENTíFICO",
+    "autor": "FUN MOOC",
+    "para_que": "MOOC gratuito con contenido en español, inglés y francés para aprender a leer, redactar y publicar un artículo científico.",
+    "materias": [
+      "metodologia-investigacion"
+    ],
+    "idioma": "es",
+    "costo": "gratis-con-cuenta",
+    "url": "https://www.fun-mooc.fr/en/courses/writing-and-publishing-a-scientific-article/",
+    "frase": "this mooc is completely free",
+    "fecha_consulta": "2026-10-30"
+  }
+]

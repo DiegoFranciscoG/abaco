@@ -11,6 +11,7 @@ import {
   materiasFileSchema,
   normativaFileSchema,
   plantillasFileSchema,
+  recursosFileSchema,
   temarioSchema,
 } from '../../src/domain/content/schemas';
 
@@ -30,6 +31,7 @@ export function loadAllContent() {
   const formulas = formulasFileSchema.parse(read('formulas.json'));
   const ejercicios = ejerciciosFileSchema.parse(read('ejercicios.json'));
   const apps = appsFileSchema.parse(read('apps.json'));
+  const recursos = recursosFileSchema.parse(read('recursos.json'));
   const glosario = glosarioFileSchema.parse(read('glosario.json'));
   const plantillas = plantillasFileSchema.parse(read('plantillas.json'));
   const normativa = normativaFileSchema.parse(read('normativa.json'));
@@ -42,6 +44,7 @@ export function loadAllContent() {
     formulas,
     ejercicios,
     apps,
+    recursos,
     glosario,
     plantillas,
     normativa,

@@ -6,6 +6,7 @@ import {
   loadEjercicios,
   loadFormulas,
   loadPlantillas,
+  loadRecursos,
   loadTemario,
   relatedTo,
   resolveFuente,
@@ -28,6 +29,11 @@ import { ordinal } from './career-selection';
 import { toggleMySubject } from './my-subjects';
 
 const COST_ORDER = { gratis: 0, 'gratis-con-cuenta': 1, freemium: 2, pago: 3 } as const;
+const RESOURCE_LABEL = {
+  curso: { tipo: 'Curso', accion: 'Ir al curso' },
+  video: { tipo: 'Video', accion: 'Ver en YouTube' },
+  guia: { tipo: 'Guía oficial', accion: 'Ver la guía' },
+} as const;
 
 export default function SubjectPage() {
   const { materiaId = '' } = useParams();
@@ -35,21 +41,28 @@ export default function SubjectPage() {
   const profile = useProfile();
   const toast = useToast();
   const state = useAsync(async () => {
-    const [temario, formulas, apps, plantillas, ejercicios] = await Promise.all([
+    const [temario, formulas, apps, plantillas, ejercicios, recursos] = await Promise.all([
       loadTemario(materiaId),
       loadFormulas(),
       loadApps(),
       loadPlantillas(),
       loadEjercicios(),
+      loadRecursos(),
     ]);
-    return { temario, formulas, apps, plantillas, ejercicios };
+    return { temario, formulas, apps, plantillas, ejercicios, recursos };
   }, [materiaId]);
   useDocumentTitle(materia?.nombre ?? 'Materia');
 
   if (!materia) return <NotFoundPage />;
   if (state.status === 'loading') return <Skeleton lines={5} />;
   if (state.status === 'error' || !state.data.temario) return <NotFoundPage />;
-  const { temario, formulas, apps, plantillas, ejercicios } = state.data;
+  const { temario, formulas, apps, plantillas, ejercicios, recursos } = state.data;
+  // Spanish first, then courses before videos, so the most accessible material leads.
+  const relatedResources = relatedTo(recursos, materia.id).sort(
+    (a, b) =>
+      Number(a.idioma !== 'es') - Number(b.idioma !== 'es') ||
+      Number(a.tipo === 'video') - Number(b.tipo === 'video'),
+  );
   const relatedFormulas = relatedTo(formulas, materia.id);
   const relatedApps = relatedTo(apps, materia.id).sort((a, b) => COST_ORDER[a.costo] - COST_ORDER[b.costo]);
   const relatedTemplates = relatedTo(plantillas, materia.id);
@@ -298,6 +311,42 @@ export default function SubjectPage() {
               <TemplateDownloadButton plantilla={p} compact />
             </div>
           ))}
+        </section>
+      ) : null}
+
+      {relatedResources.length > 0 ? (
+        <section aria-labelledby="aprender-mas">
+          <h2 id="aprender-mas" className="mb-1 font-display text-2xl font-semibold">
+            Para aprender más
+          </h2>
+          <p className="mb-4 text-sm text-muted">
+            Cursos y videos gratuitos de instituciones y canales oficiales, comprobados en su sitio. Se abren
+            fuera de ÁBACO, que no está afiliado a ellos.
+          </p>
+          <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedResources.map((r) => (
+              <li key={r.id}>
+                <article className="card flex h-full flex-col gap-2 p-5">
+                  <span className="text-[0.72rem] font-semibold tracking-wide text-muted uppercase">
+                    {RESOURCE_LABEL[r.tipo].tipo} · {r.idioma === 'es' ? 'Español' : 'Inglés'} ·{' '}
+                    {r.costo === 'gratis' ? 'Gratis' : 'Gratis con cuenta'}
+                  </span>
+                  <h3 className="font-semibold leading-snug">{r.titulo}</h3>
+                  <p className="text-xs text-muted">{r.autor}</p>
+                  <p className="text-sm leading-relaxed text-ink-2">{r.para_que}</p>
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-red mt-auto inline-flex items-center gap-1 text-sm"
+                  >
+                    {RESOURCE_LABEL[r.tipo].accion}
+                    <span className="sr-only">: {r.titulo}</span> <Icon name="external" size={15} />
+                  </a>
+                </article>
+              </li>
+            ))}
+          </ul>
         </section>
       ) : null}
 
