@@ -12,7 +12,8 @@ describe('LaTeX de las fórmulas', () => {
   it('every formula and every variable symbol typesets with KaTeX in strict mode', () => {
     const errores: string[] = [];
     for (const f of content.formulas) {
-      for (const [latex, display] of [[f.latex, true], ...f.variables.map((v) => [v.simbolo, false])] as const) {
+      const pieces: [string, boolean][] = [[f.latex, true], ...f.variables.map((v): [string, boolean] => [v.simbolo, false])];
+      for (const [latex, display] of pieces) {
         try {
           typeset(latex, display);
         } catch (error) {
