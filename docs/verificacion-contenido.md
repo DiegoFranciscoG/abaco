@@ -1,6 +1,6 @@
 # Verificación del contenido por subtema
 
-Generado con `node scripts/verificar-fuentes.ts` el 2026-10-30. Para cada subtema se descargó el texto de la sección citada (página oficial de OpenStax, norma o documento oficial) y se comprobó que contiene las palabras clave del concepto que explica (`content/evidencias.json`). La redacción de ÁBACO es propia: la fuente se usa para verificar, no se copia.
+Generado con `node scripts/verificar-fuentes.ts` el 2026-10-31. Para cada subtema se descargó el texto de la sección citada (página oficial de OpenStax, norma o documento oficial) y se comprobó que contiene las palabras clave del concepto que explica (`content/evidencias.json`). La redacción de ÁBACO es propia: la fuente se usa para verificar, no se copia.
 
 **1356 de 1356 subtemas verificados.**
 
@@ -1229,7 +1229,7 @@ Generado con `node scripts/verificar-fuentes.ts` el 2026-10-30. Para cada subtem
 | publicidad | pu-promo-consumidor | 15.6 Main Types of Sales Promotion | consumer-oriented sales promotion, coupons, rebates, samples, premiums, contests |
 | publicidad | pu-promo-canal | 15.6 Main Types of Sales Promotion | trade-oriented sales promotion, allowances and discounts, cooperative advertising, point-of-purchase displays |
 | publicidad | pu-influencia | 9.2 The Influence of Advertising | advertising industry revolves around creating commercial messages, social media, subliminal advertising |
-| responsabilidad-social | rs-piramide | 2.3 Managing a Socially Responsible Business | pyramid of corporate social responsibility (csr), economic responsibility as the foundation for the other three responsibilities, philanthropic responsibility |
+| responsabilidad-social | rs-piramide | 2.3 Managing a Socially Responsible Business | pyramid of corporate social responsibility (csr), economic responsibility as the foundation for the other three responsibilities, to be a good corporate citizen |
 | responsabilidad-social | rs-legal-responsable | 2.3 Managing a Socially Responsible Business | two basic dimensions: legality and responsibility, irresponsible but legal behavior, certified benefit corporation |
 | responsabilidad-social | rs-primacia-accionista | 4.1 Corporate Law and Corporate Responsibility | limited liability, shareholder primacy, profit-maximizing interests of its shareholders |
 | responsabilidad-social | rs-debate-friedman | 4.1 Corporate Law and Corporate Responsibility | milton friedman, corporate autocracy, the community, the environment, employees, media, and the government |
